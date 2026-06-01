@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MentorsDaily UPSC Notes (Next.js)
 
-## Getting Started
+SEO-friendly Next.js app for MentorsDaily UPSC notes. The Ancient Indian History complete notes (Topics 01–12) are served at `/upsc-notes/ancient-history`.
 
-First, run the development server:
+## Getting started
 
 ```bash
+npm install
+cp .env.example .env.local   # optional: set NEXT_PUBLIC_SITE_URL
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) — home page links to the full Ancient History notes.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## SEO features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Next.js `metadata` API (title, description, keywords, canonical, Open Graph, Twitter)
+- JSON-LD `Article` structured data
+- `sitemap.xml` and `robots.txt`
+- Server-rendered HTML content for crawlers
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+| Path | Purpose |
+|------|---------|
+| `src/app/upsc-notes/ancient-history/page.tsx` | Notes page with SEO metadata |
+| `src/content/ancient-history-body.html` | Main notes HTML (from original file) |
+| `src/styles/notes.css` | Original master stylesheet |
+| `src/styles/notes-supplement.css` | Styles for topic body components |
+| `src/components/notes/` | Notes body loader + scroll enhancements |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Updating notes content
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Re-export from the source HTML and run:
 
-## Deploy on Vercel
+```bash
+node scripts/extract-from-html.mjs path/to/source.html
+node scripts/fix-html-links.mjs
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Or replace `src/content/ancient-history-body.html` manually after editing.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Production build
+
+```bash
+npm run build
+npm start
+```
+
+Set `NEXT_PUBLIC_SITE_URL` to your production domain before deploying.

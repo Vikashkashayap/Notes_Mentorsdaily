@@ -1,0 +1,873 @@
+<!-- ancient-topic11 — auto-imported from ancient-topic11-gupta-era-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#5a2a8b;
+  --brand-blue-dark:#3a1a5b;
+  --brand-blue-light:#f0eafa;
+  --brand-orange:#c9a300;
+  --green:#1a7a3a;
+  --text:#1a1a1a;
+  --muted:#555;
+  --bg:#fafafa;
+  --card:#fff;
+  --border:#e2dcec;
+  --shadow:0 2px 8px rgba(58,26,91,.08);
+  --shadow-lg:0 6px 20px rgba(58,26,91,.12);
+  --radius:10px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,sans-serif;color:var(--text);background:var(--bg);line-height:1.65;font-size:16px}
+img{max-width:100%;height:auto}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.navbar{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--border);z-index:100;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.nav-inner{max-width:1400px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-weight:800;font-size:1.15rem;color:var(--brand-blue-dark);letter-spacing:-.3px}
+.logo span{color:var(--brand-orange)}
+.nav-links{display:flex;gap:20px;align-items:center;font-size:.92rem}
+.nav-links a{color:#333;font-weight:500}
+.breadcrumbs{font-size:.82rem;color:var(--muted);padding:8px 24px;background:#f3eef9;border-bottom:1px solid var(--border)}
+.breadcrumbs a{color:var(--brand-blue)}
+
+.page-wrapper{max-width:1400px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr 280px;gap:32px;margin-top:88px}
+main{min-width:0}
+aside{min-width:0}
+
+.hero{background:linear-gradient(135deg,#7a3aab 0%,#3a1a5b 60%,#2a0a4a 100%);color:#fff;padding:48px 36px;border-radius:var(--radius);margin-bottom:32px;box-shadow:var(--shadow-lg);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-50%;right:-10%;width:400px;height:400px;background:radial-gradient(circle,rgba(255,215,0,.18) 0%,transparent 70%);pointer-events:none}
+.hero h1{font-size:2.1rem;font-weight:800;margin-bottom:12px;line-height:1.2;letter-spacing:-.5px;position:relative}
+.hero .sub{font-size:1.05rem;opacity:.94;margin-bottom:20px;position:relative}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;position:relative}
+.hero-meta span{background:rgba(255,255,255,.16);padding:6px 14px;border-radius:20px;font-size:.85rem;backdrop-filter:blur(4px)}
+
+section{background:var(--card);padding:28px 32px;border-radius:var(--radius);margin-bottom:24px;box-shadow:var(--shadow);border:1px solid var(--border)}
+section h2{color:var(--brand-blue-dark);font-size:1.55rem;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--brand-orange);font-weight:700}
+section h3{color:var(--brand-blue);font-size:1.2rem;margin-top:20px;margin-bottom:10px;font-weight:700}
+section h4{color:#333;font-size:1.05rem;margin-top:14px;margin-bottom:6px;font-weight:700}
+section p{margin-bottom:12px}
+section ul, section ol{margin:8px 0 14px 22px}
+section li{margin-bottom:6px}
+
+.concept-box{background:linear-gradient(135deg,var(--brand-blue-light) 0%,#fff 100%);border-left:5px solid var(--brand-orange);padding:20px 24px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin-top:0;color:var(--brand-blue-dark)}
+.concept-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:14px}
+.concept-item{background:#fff;padding:14px 16px;border-radius:8px;border:1px solid var(--border)}
+.concept-item strong{display:block;color:var(--brand-blue);margin-bottom:4px;font-size:.95rem}
+.concept-item span{font-size:.88rem;color:var(--muted)}
+
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.92rem;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+th{background:var(--brand-blue);color:#fff;padding:10px 12px;text-align:left;font-weight:600}
+td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even){background:#f8f4fc}
+
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:16px 0}
+.card{background:#fff;border:1px solid var(--border);border-left:4px solid var(--brand-orange);padding:16px 18px;border-radius:8px;transition:transform .15s, box-shadow .15s}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.card h4{margin-top:0;color:var(--brand-blue);font-size:1rem}
+.card p{font-size:.9rem;color:#444;margin-bottom:0}
+
+.highlight{background:#fff8e8;border:1px solid #f0d9a8;border-left:4px solid var(--brand-orange);padding:14px 18px;border-radius:6px;margin:14px 0;font-size:.95rem}
+.highlight strong{color:var(--brand-blue-dark)}
+
+.svg-wrap{margin:18px 0;padding:18px;background:linear-gradient(135deg,#f7f2fc 0%,#fff 100%);border:1px solid var(--border);border-radius:10px;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:.85rem;color:var(--muted);margin-top:8px;font-style:italic}
+
+.pyq{background:#f0f6ff;border-left:4px solid #1a4a8b;padding:12px 16px;border-radius:6px;margin:10px 0;font-size:.94rem}
+.pyq strong{color:#1a4a8b}
+.pyq-tag{display:inline-block;background:#1a4a8b;color:#fff;font-size:.72rem;padding:2px 8px;border-radius:10px;margin-right:8px;font-weight:600}
+
+.revision-box{background:linear-gradient(135deg,#e8f5ec 0%,#fff 100%);border:2px dashed var(--green);padding:20px 24px;border-radius:10px;margin:20px 0}
+.revision-box h3{color:var(--green);margin-top:0}
+.revision-box ol{margin-left:24px}
+.revision-box li{margin-bottom:8px;font-size:.95rem}
+
+aside .widget{background:#fff;border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:18px;box-shadow:var(--shadow);position:sticky;top:80px}
+aside .widget + .widget{position:static}
+aside .widget h4{color:var(--brand-blue-dark);font-size:.98rem;margin-bottom:10px;padding-bottom:8px;border-bottom:2px solid var(--brand-orange);font-weight:700}
+aside table{font-size:.82rem;margin:0}
+aside table th, aside table td{padding:6px 8px}
+.bar-row{display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:.84rem}
+.bar-row span:first-child{min-width:78px;color:#444}
+.bar{flex:1;height:8px;background:#eee;border-radius:4px;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--brand-orange),var(--brand-blue))}
+.tag-cloud{display:flex;flex-wrap:wrap;gap:6px}
+.tag-cloud span{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:.74rem;padding:3px 9px;border-radius:12px;font-weight:500}
+.self-test details{margin-bottom:6px;font-size:.85rem}
+.self-test summary{cursor:pointer;color:var(--brand-blue);font-weight:600;padding:4px 0}
+.self-test p{margin:6px 0 8px;padding-left:8px;border-left:2px solid var(--brand-orange);color:#444;font-size:.83rem}
+aside ul.related{list-style:none;margin:0;padding:0;font-size:.86rem}
+aside ul.related li{padding:6px 0;border-bottom:1px dotted #ddd}
+aside ul.related li:last-child{border:none}
+
+footer{background:var(--brand-blue-dark);color:#d0c0e8;padding:30px 24px;margin-top:40px;text-align:center;font-size:.88rem}
+footer a{color:#ffd07a}
+
+@media (max-width:860px){
+  .page-wrapper{grid-template-columns:1fr;padding:0 14px;margin-top:80px}
+  aside .widget{position:static}
+  .hero{padding:28px 20px}
+  .hero h1{font-size:1.5rem}
+  section{padding:18px 18px}
+  section h2{font-size:1.25rem}
+  .nav-links{display:none}
+}
+@media print{
+  .navbar, aside, footer, .breadcrumbs{display:none}
+  .page-wrapper{grid-template-columns:1fr;margin-top:0}
+  body{font-size:11pt;background:#fff}
+  section{box-shadow:none;border:none;page-break-inside:avoid}
+  .hero{background:#3a1a5b !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+
+/* Next.js: shared app navbar; restore two-column layout */
+.notes-topic-embedded .navbar,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded .hamburger,
+.notes-topic-embedded .menu-btn,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .page-wrapper {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 280px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  margin-top: 0 !important;
+}
+
+.notes-topic-embedded .main-content,
+.notes-topic-embedded main.main-content,
+.notes-topic-embedded main {
+  margin-left: 0 !important;
+  min-width: 0;
+}
+
+.notes-topic-embedded aside,
+.notes-topic-embedded .right-sidebar,
+.notes-topic-embedded aside.sidebar {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .page-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+  .notes-topic-embedded aside,
+  .notes-topic-embedded .right-sidebar,
+  .notes-topic-embedded aside.sidebar {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="page-wrapper">
+
+
+<main>
+
+<header class="hero">
+  <h1>The Gupta Era (c. 319 – 550 AD)</h1>
+  <p class="sub">The Golden Age of ancient India — Sri Gupta to Skandagupta; administration, economy, Nagara temples, Ajanta paintings, Sarnath sculpture, Kalidasa, Aryabhata, decimal system, Hun invasions and decline. Based on RS Sharma's <em>Ancient India</em>, the Allahabad Pillar Inscription and other Gupta sources.</p>
+  <div class="hero-meta">
+    <span>Topic 11 · Ancient History</span>
+    <span>Read time: ~60 min</span>
+    <span>Prelims weight: 10/10</span>
+    <span>Mains weight: 5/5</span>
+    <span>UPSC tag: Golden Age</span>
+  </div>
+</header>
+
+<section>
+  <h2>Conceptual Clarity — Why the Gupta Era is the "Golden Age"</h2>
+  <div class="concept-box">
+    <h3>The Classical Age of India (c. 319 – 550 AD)</h3>
+    <p>The Gupta dynasty restored political unity to north India for the first time since the Mauryas — though their empire was smaller (essentially the Ganga plain and adjoining regions) and structured differently. The age earned the title <strong>"Golden / Classical Age"</strong> not for its political dimensions but for a remarkable simultaneous flowering of <strong>Sanskrit literature, mathematics, astronomy, temple architecture, sculpture, painting and coinage</strong>. The decimal system, the value of pi, the heliocentric (or at least geocentric-rotation) hypothesis, the first standardised Vishnu/Buddha images, the first Nagara-style stone temples — all crystallised in this period.</p>
+    <div class="concept-grid">
+      <div class="concept-item"><strong>Time-frame</strong><span>c. AD 319 (Chandragupta I's accession) to c. AD 550 (collapse after Huns &amp; Yashodharman).</span></div>
+      <div class="concept-item"><strong>Founder of imperial line</strong><span>Chandragupta I — first to adopt the title <em>Maharajadhiraja</em>; founder of Gupta Era (AD 319/320).</span></div>
+      <div class="concept-item"><strong>Capital</strong><span>Pataliputra; second capital Ujjain (especially under Chandragupta II).</span></div>
+      <div class="concept-item"><strong>Why Golden Age</strong><span>Sanskrit kavya, Aryabhatiya, Nagara temple, Ajanta, gold coinage — all peak simultaneously.</span></div>
+    </div>
+  </div>
+  <p><strong>Key terms to internalise:</strong> <em>Maharajadhiraja</em> (king of kings), <em>Parama-bhagavata</em> (Vaishnava devotee — Gupta royal title), <em>Vishaya</em> (district), <em>Bhukti</em> (province), <em>Uparika</em> (provincial governor), <em>Vishayapati</em> (district officer), <em>Dinara</em> (gold coin), <em>Rupaka</em> (silver coin), <em>Agrahara</em> &amp; <em>Devagrahara</em> (tax-free Brahmin/temple land grants), <em>Nagara</em> (north Indian temple style), <em>Mandapa</em>, <em>Garbhagriha</em>, <em>Shikhara</em>, <em>Bhumi-cchidranyaya</em> (right of waste-land reclamation).</p>
+</section>
+
+<section id="background">
+  <h2>1. Background of the Gupta Era</h2>
+  <p>After the disintegration of the Kushana empire in north India and the Satavahanas in the Deccan around the early 3rd century AD, North India entered a phase of political fragmentation:</p>
+  <ul>
+    <li><strong>Naga power</strong> at Padmavati, Vidisha and Mathura; <strong>Vakataka</strong> dynasty rose in the Deccan; small kingdoms across the Ganga plain (Magadha, Kosala, Vatsa, etc.).</li>
+    <li><strong>Murunda</strong>, <strong>Lichchavi</strong>, <strong>Kushana fragments</strong>, <strong>Saka Western Kshatrapas</strong> continued in their pockets.</li>
+    <li>Material conditions favoured revival of monarchy — wealthy peasant economy on the Ganga plain, declining cities (urban decline begins), growing power of guilds, increasing influence of Brahmanas via land grants.</li>
+    <li>The Guptas emerged from <strong>Magadha</strong> as a feudatory family that gradually rose to imperial heights through marriage alliances (with Lichchavis) and military prowess.</li>
+    <li><strong>Caste origin of Guptas:</strong> Disputed. Some scholars (D.C. Sircar) suggest <strong>Vaishya</strong> origin; others (R.S. Sharma) consider them Brahmins; the <em>Chandra-vyakarana</em> of Chandragomin mentions "Jato Gupta" and the suffix "-gupta" was traditionally Vaishya, though Gupta queens (Kumaradevi a Lichchavi) suggest Kshatriya alliances.</li>
+  </ul>
+
+  <h3>Sources of Gupta History</h3>
+  <ul>
+    <li><strong>Inscriptions:</strong> Allahabad Pillar (Samudragupta), Mehrauli Iron Pillar (Chandra), Udayagiri cave inscriptions (Chandragupta II), Junagadh inscription (Skandagupta), Bhitari Pillar (Skandagupta), Mandasor inscription (Yashodharman).</li>
+    <li><strong>Coins:</strong> The richest Gupta source — gold (dinara), silver (rupaka), copper. Designs identify rulers, queens, deities and titles.</li>
+    <li><strong>Literature:</strong> <em>Devichandraguptam</em> &amp; <em>Mudrarakshasa</em> of Vishakhadatta; Puranas (especially Vishnu, Vayu, Matsya); legal texts (Yajnavalkya Smriti, Narada Smriti); Kalidasa's works for cultural picture.</li>
+    <li><strong>Foreign accounts:</strong> <strong>Fa-Hien (Faxian)</strong>, the Chinese Buddhist pilgrim, visited India c. AD 401–411 during the reign of Chandragupta II — his <em>Fo-kuo-ki</em> ("Record of Buddhist Kingdoms") provides invaluable testimony.</li>
+  </ul>
+</section>
+
+<section id="dynasty">
+  <h2>2. The Gupta Dynasty — Rulers</h2>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 800 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Gupta dynasty timeline">
+      <rect x="0" y="0" width="800" height="220" fill="#f7f2fc"/>
+      <text x="400" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#3a1a5b">Imperial Gupta Lineage (c. AD 240 – 550)</text>
+      <line x1="40" y1="115" x2="760" y2="115" stroke="#5a2a8b" stroke-width="3"/>
+      <g font-size="11" fill="#333">
+        <circle cx="80" cy="115" r="8" fill="#5a2a8b"/>
+        <text x="80" y="90" text-anchor="middle" font-weight="700">c.240–280</text>
+        <text x="80" y="142" text-anchor="middle" font-weight="700" fill="#5a2a8b">Sri Gupta</text>
+        <text x="80" y="158" text-anchor="middle">Maharaja</text>
+
+        <circle cx="180" cy="115" r="8" fill="#5a2a8b"/>
+        <text x="180" y="90" text-anchor="middle" font-weight="700">c.280–319</text>
+        <text x="180" y="142" text-anchor="middle" font-weight="700" fill="#5a2a8b">Ghatotkacha</text>
+        <text x="180" y="158" text-anchor="middle">Maharaja</text>
+
+        <circle cx="290" cy="115" r="10" fill="#c9a300"/>
+        <text x="290" y="90" text-anchor="middle" font-weight="700">319–335</text>
+        <text x="290" y="142" text-anchor="middle" font-weight="700" fill="#c9a300">Chandragupta I</text>
+        <text x="290" y="158" text-anchor="middle">Maharajadhiraja;</text>
+        <text x="290" y="174" text-anchor="middle">Gupta Era starts</text>
+
+        <circle cx="420" cy="115" r="12" fill="#c9a300"/>
+        <text x="420" y="90" text-anchor="middle" font-weight="700">335–375</text>
+        <text x="420" y="142" text-anchor="middle" font-weight="700" fill="#c9a300">SAMUDRAGUPTA</text>
+        <text x="420" y="158" text-anchor="middle">"Indian Napoleon";</text>
+        <text x="420" y="174" text-anchor="middle">Allahabad Pillar</text>
+
+        <circle cx="540" cy="115" r="12" fill="#c9a300"/>
+        <text x="540" y="90" text-anchor="middle" font-weight="700">375–415</text>
+        <text x="540" y="142" text-anchor="middle" font-weight="700" fill="#c9a300">Chandragupta II</text>
+        <text x="540" y="158" text-anchor="middle">Vikramaditya;</text>
+        <text x="540" y="174" text-anchor="middle">Fa-Hien's visit</text>
+
+        <circle cx="660" cy="115" r="10" fill="#5a2a8b"/>
+        <text x="660" y="90" text-anchor="middle" font-weight="700">415–455</text>
+        <text x="660" y="142" text-anchor="middle" font-weight="700" fill="#5a2a8b">Kumaragupta I</text>
+        <text x="660" y="158" text-anchor="middle">Mahendraditya;</text>
+        <text x="660" y="174" text-anchor="middle">Nalanda founded</text>
+
+        <circle cx="760" cy="115" r="10" fill="#5a2a8b"/>
+        <text x="760" y="90" text-anchor="middle" font-weight="700">455–467</text>
+        <text x="760" y="142" text-anchor="middle" font-weight="700" fill="#5a2a8b">Skandagupta</text>
+        <text x="760" y="158" text-anchor="middle">Defeated Huns;</text>
+        <text x="760" y="174" text-anchor="middle">decline begins</text>
+      </g>
+    </svg>
+    <div class="svg-caption">Gupta imperial line from Sri Gupta to Skandagupta — the dynasty lasted ~330 years; political and cultural peak under Samudragupta and Chandragupta II.</div>
+  </div>
+
+  <h3>2.1 Sri Gupta (c. AD 240–280) and Ghatotkacha (c. 280–319)</h3>
+  <ul>
+    <li><strong>Sri Gupta</strong> is the recognised founder of the Gupta dynasty, mentioned in the <em>Prabhavati-Gupta's Poona plates</em> and the <em>Allahabad Pillar Inscription</em> as <em>"adi-raja"</em> (first king).</li>
+    <li>Bore the modest title of <strong>Maharaja</strong> only — suggesting feudatory status, possibly under the Kushanas or Lichchavis.</li>
+    <li><strong>Fa-Hien's Indian-Buddhist informant I-Tsing</strong> (visiting later) mentions Sri Gupta built a Buddhist temple at Mrigashikhavana for Chinese pilgrims — likely near Vaishali.</li>
+    <li>His son <strong>Ghatotkacha</strong> also continued with the title Maharaja; no notable achievements recorded.</li>
+  </ul>
+
+  <h3>2.2 Chandragupta I (c. AD 319–335) — Founder of Imperial Line</h3>
+  <ul>
+    <li><strong>First Gupta ruler to adopt the title "Maharajadhiraja"</strong> (Great King of Kings) — clearly imperial.</li>
+    <li><strong>Marriage to Kumaradevi</strong>, the Lichchavi princess of Vaishali — a politically transformative alliance. The Lichchavi connection so valued that Samudragupta proudly called himself <strong>"Lichchavi-dauhitra"</strong> (daughter's son of Lichchavi) on his coins.</li>
+    <li>Issued the famous <strong>"Chandragupta-Kumaradevi" gold coins</strong> — depicting the couple on the obverse and the Lichchavi tribal symbol on the reverse.</li>
+    <li><strong>Founded the Gupta Era (Gupta Samvat) in AD 319/320</strong> — the era's epoch is the date of his coronation.</li>
+    <li>Empire confined to Magadha, Saketa (Ayodhya), Prayag (Allahabad) — yet provided the political springboard for Samudragupta.</li>
+  </ul>
+
+  <h3>2.3 Samudragupta (c. AD 335–375) — "Indian Napoleon"</h3>
+  <p>The greatest Gupta ruler and one of the most accomplished conquerors in Indian history. <strong>V.A. Smith</strong> called him the "Indian Napoleon".</p>
+
+  <h4>The Allahabad (Prayag) Pillar Inscription / Prayag Prashasti</h4>
+  <div class="highlight">
+    Composed by his court poet <strong>Harisena</strong> in chaste Sanskrit (Champu style — mixed prose and verse), engraved on the <em>same Ashokan pillar</em> at Allahabad on which Ashoka's edicts also appear. The prashasti is the single most important Gupta inscription and lists Samudragupta's policies and conquests in detail.
+  </div>
+
+  <h4>Samudragupta's Five Categories of Subordinates (from the Prashasti)</h4>
+  <table>
+    <tr><th>Category</th><th>Policy</th><th>Examples</th></tr>
+    <tr><td><strong>1. Aryavarta (North India) Kings</strong></td><td><strong>Uprooted (prasabhoddharana)</strong> — annexed completely</td><td>9 kings — Rudradeva, Matila, Nagadatta, Chandravarman, Ganapatinaga, Nagasena, Achyuta, Nandin, Balavarman</td></tr>
+    <tr><td><strong>2. Dakshinapatha (South) Kings</strong></td><td><strong>Captured, then released (grahana-moksha-anugraha)</strong> — restored to thrones as tributaries</td><td>12 kings — including Mahendra of Kosala, Vyaghraraja of Mahakantara, Hastivarman of Vengi, Vishnugopa of Kanchi, Ugrasena of Palakka, Kubera of Devarashtra</td></tr>
+    <tr><td><strong>3. Atavika (Forest) Kingdoms</strong></td><td><strong>Reduced to servitude</strong></td><td>18 forest kingdoms (atavika-rajya) — likely in central India / Madhya Pradesh forests</td></tr>
+    <tr><td><strong>4. Frontier (Pratyanta) States</strong></td><td><strong>Made tributaries</strong> — paid taxes, obeyed orders, attended court</td><td>Samatata (East Bengal), Davaka (Assam), Kamarupa (Assam), Nepala (Nepal), Karttipura (Kumaon-Garhwal); republican tribes — Malavas, Arjunayanas, Yaudheyas, Madrakas, Abhiras, Prarjunas, Sanakanikas, Kakas, Kharaparikas</td></tr>
+    <tr><td><strong>5. Foreign Powers</strong></td><td><strong>Cordial relations via gifts &amp; embassies</strong></td><td>Daivaputra-Shahi-Shahanushahi (later Kushanas), Shaka (Western Kshatrapas), Murundas (in west), King of Simhala/Sri Lanka (Meghavarman), all "island-dwellers" (probably South-East Asia)</td></tr>
+  </table>
+
+  <ul>
+    <li><strong>Performed the Ashvamedha sacrifice</strong> — issued the "Ashvamedha-type" gold coins showing a sacrificial horse before a yupa (sacrificial post) and the queen on reverse. The title <em>"Restorer of the Ashvamedha long in abeyance"</em> appears on his coins.</li>
+    <li>Personally a <strong>devout Vaishnava</strong>; title <strong>"Parama-bhagavata"</strong>. But he tolerated all faiths.</li>
+    <li>The <strong>Buddhist king of Sri Lanka, Meghavarman</strong>, sought his permission to build a Buddhist monastery at Bodh Gaya for Sri Lankan pilgrims — Samudragupta granted it. Recorded by the Chinese pilgrim Wang Hsuan-tse.</li>
+    <li>Personally talented — coins depict him playing the <strong>veena (lyre-type)</strong> — confirming Harisena's description of him as <em>"Kaviraja"</em> (king of poets) and <em>"Tantri-vadya-kovida"</em> (expert in the lute).</li>
+    <li>Issued <strong>seven types of gold coins</strong> — Standard, Archer, Battle-axe, Tiger-slayer, Ashvamedha, Lyrist, Lichchavi-Kumaradevi (issued in his father's name).</li>
+  </ul>
+
+  <h3>2.4 Chandragupta II Vikramaditya (c. AD 375–415) — The Cultural Peak</h3>
+  <p>Probably succeeded after a brief reign of his elder brother <strong>Ramagupta</strong> — the <em>Devichandraguptam</em> of Vishakhadatta narrates that Ramagupta agreed to surrender his queen Dhruvadevi to the Saka king, but Chandragupta in disguise killed the Saka king, then killed Ramagupta and married Dhruvadevi. The historicity of this episode is debated but supported by some numismatic and inscriptional evidence (Ramagupta coins exist).</p>
+
+  <h4>Major Achievements</h4>
+  <ul>
+    <li><strong>Conquest of the Western Kshatrapas (Sakas of Saurashtra-Malwa-Gujarat):</strong> Defeated the last Saka king (<strong>Rudrasimha III</strong>) around AD 388–409 — added Gujarat, Saurashtra and Malwa to the empire. This gave the Guptas access to the western coast and Roman trade. The title <strong>"Sakari"</strong> (destroyer of Sakas) and <strong>"Vikramaditya"</strong> ("Sun of Valour") originated here. Capital shifted (or second capital established) at <strong>Ujjain</strong>.</li>
+    <li><strong>Matrimonial alliances:</strong> Married his daughter <strong>Prabhavatigupta</strong> to the Vakataka king <strong>Rudrasena II</strong> — when Rudrasena died, Prabhavatigupta ruled the Vakataka kingdom as regent for her sons, effectively making the Vakataka kingdom a Gupta dependency. Strategic encirclement of the Sakas.</li>
+    <li><strong>Mehrauli Iron Pillar inscription (Qutub Complex, Delhi):</strong> The Sanskrit inscription of a king "Chandra" — generally identified with Chandragupta II — records conquests in the Vanga (Bengal), Bahlika (Bactria) regions and devotion to Vishnu. The pillar itself is famous for its <strong>rust-resistance</strong> (despite being ~1600 years old).</li>
+    <li><strong>Udayagiri Cave Inscriptions (MP):</strong> Inscriptions of Chandragupta II's ministers — most famously <em>Sanakanika Maharaja's cave inscription</em> and <em>Virasena's cave inscription</em> (which calls Virasena "minister for peace and war" — Sandhivigrahika). The Udayagiri Varaha relief is a magnificent Gupta sculpture.</li>
+    <li>Personally a <strong>Parama-bhagavata</strong> (Vaishnava); the Gupta royal emblem was Garuda.</li>
+    <li><strong>The Navaratnas of Vikramaditya's court</strong> (later tradition) — though the Navaratna list is not contemporary, the actual brilliance of the court is unquestionable:</li>
+  </ul>
+
+  <table>
+    <tr><th>"Gem" (Navaratna)</th><th>Achievement</th></tr>
+    <tr><td><strong>Kalidasa</strong></td><td>Sanskrit's greatest poet-dramatist — Abhijnanashakuntalam, Meghaduta, Raghuvamsha, Kumarasambhava, Vikramorvashiyam, Malavikagnimitram, Ritusamhara</td></tr>
+    <tr><td><strong>Amarasimha</strong></td><td>Author of <em>Amarakosha</em> — the most influential Sanskrit thesaurus/dictionary</td></tr>
+    <tr><td><strong>Varahamihira</strong></td><td>Astronomer — <em>Brihatsamhita</em>, <em>Panchasiddhantika</em>, <em>Brihajjataka</em></td></tr>
+    <tr><td><strong>Dhanvantari</strong></td><td>Physician/Ayurveda</td></tr>
+    <tr><td>Vararuchi</td><td>Grammar/linguistics</td></tr>
+    <tr><td>Kshapanaka</td><td>Astronomy/lexicography</td></tr>
+    <tr><td>Ghatakarpara</td><td>Poet</td></tr>
+    <tr><td>Vetalabhatta</td><td>Sorcerer/poet</td></tr>
+    <tr><td>Shanku</td><td>Architecture (Shilpashastra)</td></tr>
+  </table>
+
+  <h4>Fa-Hien's Visit (c. AD 401–411)</h4>
+  <ul>
+    <li>Chinese Buddhist pilgrim; came via the silk route through Khotan and the Karakoram.</li>
+    <li>His <em>Fo-kuo-ki</em> describes Madhyadesha (heartland of India) under Chandragupta II:
+      <ul>
+        <li><strong>Peaceful, prosperous kingdom</strong> — people generally law-abiding, well-treated; punishments mild (only fines, no capital punishment; for rebels, the right hand was cut off).</li>
+        <li>People mostly <strong>vegetarian</strong>; did not consume onion, garlic, wine, or beef.</li>
+        <li>Chandalas (untouchables) lived <strong>outside the village</strong>; struck wood when entering town to warn others.</li>
+        <li>Coins of cowrie shells were in use; no death penalty.</li>
+        <li>Hospitality to travellers; charitable rest houses (dharma-shalas).</li>
+        <li>Visited Pataliputra (saw Ashoka's palace, "made by spirits"), Rajagriha, Bodh Gaya, Sarnath, Kushinagar.</li>
+        <li>Did <strong>not mention</strong> the king's name — focused on Buddhist sites and Buddhist welfare.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h3>2.5 Kumaragupta I (c. AD 415–455) — "Mahendraditya"</h3>
+  <ul>
+    <li>Son of Chandragupta II; also performed the Ashvamedha (silver coins record it).</li>
+    <li>Title: <strong>"Mahendraditya"</strong>.</li>
+    <li>Reign of unusual length (~40 years) — generally peaceful, though late in his reign the Pushyamitra tribe (central India) revolted; suppressed by his son Skandagupta.</li>
+    <li><strong>Founded the Nalanda Mahavihara</strong> (c. AD 450) — by tradition the founding monastery and one of the greatest Buddhist universities of antiquity.</li>
+    <li>Issued the most numerous coin types of any Gupta ruler — Archer type, Horseman type, Apratigha (irresistible) type, Karttikeya type (a peacock under feet), Tiger-slayer type, Elephant-rider type, Lyrist type (continuing his grandfather's design).</li>
+    <li>Devotee of <strong>Karttikeya / Skanda</strong> (god of war) — his coins prominently feature the peacock, Skanda's vehicle.</li>
+  </ul>
+
+  <h3>2.6 Skandagupta (c. AD 455–467) — The Last Great Gupta</h3>
+  <ul>
+    <li>Son of Kumaragupta; his birth and ascendance is partly veiled — some scholars suggest he was born of a lesser queen and had to fight off claimants.</li>
+    <li><strong>Defeated the White Huns (Hephthalites / Hunas)</strong> who invaded from the north-west — recorded in the <strong>Bhitari Stone Pillar Inscription</strong> (UP): <em>"after defeating the Hunas, Skandagupta restored the fallen fortunes of his lineage…"</em></li>
+    <li><strong>Junagadh / Girnar Inscription of Skandagupta (AD 455)</strong> — the famous Sudarshana Lake (built by Pushyagupta under Chandragupta Maurya, repaired by Tushaspha under Ashoka, again repaired by Rudradaman the Saka in AD 150) was now <em>repaired a third time</em> by Skandagupta's governor <strong>Parnadatta</strong> and his son <strong>Chakrapalita</strong>. <em>Note: This makes the Sudarshana Lake repairs a remarkable inscriptional chain across 700 years.</em></li>
+    <li>Title: <strong>"Vikramaditya"</strong> (revived after his great-grandfather Chandragupta II); also "Kramaditya".</li>
+    <li>Suffered from <strong>severe fiscal strain</strong> — his coinage shows the first signs of debasement (gold content drops; coins lighter); the empire's economic crisis becomes visible.</li>
+    <li>Despite repulsing the Huns, his reign marks the <strong>beginning of the Gupta decline</strong> — Huns returned after his death, and his successors could not stop them.</li>
+  </ul>
+
+  <h3>2.7 Later Guptas — Slow Decline (AD 467–550)</h3>
+  <ul>
+    <li>After Skandagupta — <strong>Purugupta, Kumaragupta II, Budhagupta, Vainyagupta, Narasimhagupta Baladitya, Kumaragupta III, Vishnugupta</strong> — most are known only from coins and a few inscriptions.</li>
+    <li><strong>Budhagupta (c. AD 477–495)</strong> still ruled a substantial empire; the <strong>Eran Pillar Inscription (MP)</strong> dates from his reign.</li>
+    <li><strong>Narasimhagupta Baladitya</strong> — said by Chinese sources (Hsuan-tsang's <em>Si-yu-ki</em>) to have defeated the Hun ruler <strong>Mihirakula</strong> in alliance with <strong>Yashodharman of Malwa</strong>.</li>
+    <li><strong>Yashodharman's Mandasor Pillar Inscription (c. AD 532–533)</strong> — a non-Gupta inscription — records his defeat of the Huna king Mihirakula, marking the rise of independent regional powers as Gupta authority faded.</li>
+    <li>The last known Gupta inscription is of <strong>Vishnugupta</strong> (c. AD 540s); after that the dynasty fades into obscurity by mid-6th century.</li>
+  </ul>
+</section>
+
+<section id="administration">
+  <h2>3. The Administration of the Gupta Era</h2>
+  <p>Gupta administration was less centralised than the Mauryan; it was a <strong>monarchy with strong feudal elements</strong>. Provincial governors and feudatories enjoyed considerable autonomy. The system marks a transition towards the medieval feudal pattern.</p>
+
+  <h3>3.1 Central Administration</h3>
+  <ul>
+    <li><strong>King (Maharajadhiraja, Parameshvara, Parama-Bhagavata):</strong> Supreme authority; titles emphasised divinity and devotion to Vishnu. The king was the head of the military, judiciary and revenue.</li>
+    <li><strong>Mantri-parishad / Mantri-mandala:</strong> Council of ministers. Important offices were often hereditary (e.g., Virasena, minister of Chandragupta II, descended from a long line of ministers).</li>
+    <li><strong>Yuvaraja / Yuva-maharaja:</strong> Crown prince — often a governor of a key region. Princes of the blood (kumaramatyas) held senior posts.</li>
+  </ul>
+
+  <h3>3.2 Provincial Administration</h3>
+  <table>
+    <tr><th>Unit</th><th>Head</th><th>Notes</th></tr>
+    <tr><td><strong>Desha / Rajya / Bhukti</strong> (Province)</td><td><strong>Uparika / Uparika-Maharaja</strong></td><td>Directly appointed by the king; often a prince. Pundravardhana-bhukti (Bengal), Tira-bhukti (Tirhut), Shravasti-bhukti (Awadh).</td></tr>
+    <tr><td><strong>Vishaya</strong> (District)</td><td><strong>Vishayapati</strong></td><td>Appointed by Uparika; assisted by a council of representatives (see below).</td></tr>
+    <tr><td><strong>Vithi</strong> (Sub-district)</td><td>Headman</td><td>Cluster of villages.</td></tr>
+    <tr><td><strong>Grama</strong> (Village)</td><td><strong>Gramika</strong> (headman) + <strong>Grama-sabha</strong> (council)</td><td>Considerable autonomy at village level.</td></tr>
+  </table>
+
+  <h4>Vishaya Council (Adhikarana)</h4>
+  <p>A distinctive Gupta feature — district administration had a <strong>council of four</strong>: <em>Nagara-Sreshthi</em> (chief banker/merchant), <em>Sarthavaha</em> (caravan-leader), <em>Prathama-Kulika</em> (head artisan) and <em>Prathama-Kayastha</em> (chief scribe). This represented the urban guild oligarchy in governance — a precursor to medieval guild-led civic government.</p>
+
+  <h3>3.3 City Administration</h3>
+  <ul>
+    <li>Cities had their own administrative bodies (less detailed than Mauryan Pataliputra).</li>
+    <li><strong>Purapalas</strong> were city governors.</li>
+    <li><strong>Goshthi</strong> — town committees — represented the guilds and local elites.</li>
+  </ul>
+
+  <h3>3.4 Important Officials</h3>
+  <table>
+    <tr><th>Designation</th><th>Function</th></tr>
+    <tr><td><strong>Mahasandhivigrahika</strong></td><td>Minister for foreign affairs (peace and war) — Harisena and Virasena held this office</td></tr>
+    <tr><td><strong>Mahabaladhikrita</strong></td><td>Commander-in-chief of the army</td></tr>
+    <tr><td><strong>Mahadandanayaka</strong></td><td>Chief justice / chief military officer</td></tr>
+    <tr><td><strong>Mahapratihara</strong></td><td>Chief of palace guards / chamberlain</td></tr>
+    <tr><td><strong>Mahasvapati / Bhatasvapati</strong></td><td>Commander of cavalry / infantry-cavalry</td></tr>
+    <tr><td><strong>Mahanavadhakrita</strong></td><td>Commander of the navy</td></tr>
+    <tr><td><strong>Mahapilupati</strong></td><td>Commander of the elephant corps</td></tr>
+    <tr><td><strong>Akshapataladhikrita</strong></td><td>Keeper of records / chief accountant</td></tr>
+    <tr><td><strong>Pustapala</strong></td><td>Custodian of land records (especially crucial for land grants)</td></tr>
+    <tr><td><strong>Sandhivigrahika</strong></td><td>Officer for peace and war</td></tr>
+    <tr><td><strong>Bhandagaradhikrita</strong></td><td>In charge of the royal treasury</td></tr>
+    <tr><td><strong>Dandapashika</strong></td><td>Chief of police</td></tr>
+    <tr><td><strong>Vinayasthitisthapaka</strong></td><td>Officer for maintaining discipline / moral order</td></tr>
+  </table>
+
+  <h3>3.5 Law and Order</h3>
+  <ul>
+    <li>The <strong>Yajnavalkya Smriti</strong> (c. 4th century AD) and <strong>Narada Smriti</strong> are the principal legal texts of the Gupta era.</li>
+    <li>Punishments were generally <strong>milder than Mauryan</strong>; according to Fa-Hien there was <strong>no capital punishment</strong> — only fines and, in serious cases, mutilation of the right hand for rebels.</li>
+    <li>Civil cases included property, marriage, debt, inheritance — adjudicated according to caste-specific dharma codes.</li>
+    <li>Trial by ordeal still mentioned, but in limited circumstances; usually witnesses, documents and customary law decided cases.</li>
+  </ul>
+
+  <h3>3.6 The Gupta Army</h3>
+  <ul>
+    <li>Smaller than the Mauryan standing army — relied more on feudal levies and tributary contingents.</li>
+    <li><strong>Chaturanga-bala</strong> (four-fold army) — infantry, cavalry, chariots (now largely ceremonial), elephants.</li>
+    <li><strong>Cavalry became prominent</strong> for the first time in Indian military history — coins show kings on horseback; horsemanship was elite skill. (Chariot use diminished.)</li>
+    <li>Use of iron stirrups and saddles (legacy of Sakas-Kushanas).</li>
+    <li>Naval power maintained — the Mahanavadhakrita commanded a fleet, especially relevant after Gupta conquest of Saurashtra-Gujarat coast.</li>
+    <li>The army was not always sufficient — Huns broke through repeatedly after Skandagupta. The empire's military weakness contributed to decline.</li>
+  </ul>
+</section>
+
+<section id="economy">
+  <h2>4. Economy of the Gupta Era</h2>
+  <p>The Gupta economy was overwhelmingly <strong>agrarian</strong>, with a flourishing artisanal and mercantile sector at first, but with <strong>declining urbanism</strong> in the later phase. The trend towards <strong>land grants (agraharas)</strong> created the foundations of Indian feudalism.</p>
+
+  <h3>4.1 Taxes during the Gupta Era</h3>
+  <table>
+    <tr><th>Tax</th><th>Description</th></tr>
+    <tr><td><strong>Bhaga</strong></td><td>King's share of the produce — generally 1/6th of the crop.</td></tr>
+    <tr><td><strong>Bhoga</strong></td><td>Periodic supplies of fruits, flowers, firewood etc. given to the king.</td></tr>
+    <tr><td><strong>Kara</strong></td><td>Cash tax (occasionally translated as "tax in general"); levied on village.</td></tr>
+    <tr><td><strong>Hiranya</strong></td><td>Tax in cash/gold (literally "gold tax") — on certain crops.</td></tr>
+    <tr><td><strong>Udranga</strong></td><td>Police cess / water tax on lands.</td></tr>
+    <tr><td><strong>Uparikara</strong></td><td>Tax on temporary tenants/cultivators without rights of ownership.</td></tr>
+    <tr><td><strong>Vata-bhuta</strong></td><td>Cess for wind-and-spirit-related religious offerings.</td></tr>
+    <tr><td><strong>Halikakara</strong></td><td>Plough tax — levied on each plough used by cultivator.</td></tr>
+    <tr><td><strong>Shulka</strong></td><td>Customs duty on goods at ports/borders.</td></tr>
+    <tr><td><strong>Vishti (Forced labour)</strong></td><td>Unpaid forced labour for the state — first systematically attested in Gupta inscriptions; precursor to medieval begar.</td></tr>
+    <tr><td><strong>Klipta &amp; Upaklipta</strong></td><td>Sales taxes (purchase &amp; sale of land/goods).</td></tr>
+  </table>
+
+  <h3>4.2 Trade and Commerce</h3>
+  <ul>
+    <li><strong>Early Gupta period:</strong> India's trade with Roman Empire, Byzantium, South-East Asia, China continued to flourish — major exports were spices, pearls, ivory, sandalwood, silk and cotton textiles.</li>
+    <li><strong>Western ports:</strong> Bharukaccha (Broach), Sopara, Kalyan — accessed after Chandragupta II's conquest of the Sakas.</li>
+    <li><strong>Eastern ports:</strong> Tamralipti (Tamluk, Bengal) was the chief port for South-East Asian trade — Fa-Hien embarked from here on his return.</li>
+    <li><strong>Trade with South-East Asia ("Suvarnabhumi"):</strong> Cultural and commercial Indianisation of Burma, Siam, Cambodia (Funan, Chenla), Java, Sumatra — Gupta art-styles were exported and influenced Borobudur and Angkor.</li>
+    <li><strong>Trade Guilds (Shrenis):</strong> Highly organised; some guilds (Indore copper plate of Skandagupta) acted as bankers receiving permanent endowments (akshaya-nivi) and disbursing interest to maintain temple lamps — earliest documentary banking system.</li>
+    <li><strong>Decline of trade by late Gupta period:</strong> The fall of the Western Roman Empire (AD 476) cut off the western trade; Roman gold no longer flowed in. Hun invasions disrupted the silk route. <strong>RS Sharma identifies this trade decline as a major cause of urban decay</strong> and a trigger for the feudal economy.</li>
+  </ul>
+
+  <h3>4.3 Types of Land — Gupta Land Categories</h3>
+  <table>
+    <tr><th>Land Type</th><th>Description</th></tr>
+    <tr><td><strong>Kshetra</strong></td><td>Cultivable land</td></tr>
+    <tr><td><strong>Khila</strong></td><td>Waste / uncultivated land — capable of being reclaimed (subject to <em>Bhumi-cchidranyaya</em> — the right of the reclaimer)</td></tr>
+    <tr><td><strong>Aprahata</strong></td><td>Jungle / forest land</td></tr>
+    <tr><td><strong>Vasti</strong></td><td>Inhabited/habitable land</td></tr>
+    <tr><td><strong>Gapata Sarah</strong></td><td>Pasture land</td></tr>
+    <tr><td><strong>Agrahara</strong></td><td>Tax-free land granted to <strong>Brahmin</strong> donee, hereditary, with administrative rights</td></tr>
+    <tr><td><strong>Devagrahara</strong></td><td>Tax-free land granted to <strong>temples</strong></td></tr>
+    <tr><td><strong>Bhumi-cchidranyaya</strong></td><td>The legal principle that anyone who reclaims waste land becomes its owner</td></tr>
+  </table>
+
+  <div class="highlight">
+    <strong>The Agrahara System and the Origins of Indian Feudalism:</strong> The Guptas (and especially the Vakatakas under Prabhavatigupta) issued numerous <strong>copper-plate land-grant charters</strong> to Brahmins, temples and sometimes officers. These grants were <em>hereditary, tax-free, and came with administrative and judicial authority over the granted land</em>. RS Sharma sees this as the <strong>origin of Indian feudalism</strong> — the state surrendered its revenue and administrative rights to private intermediaries, who then exploited the peasants directly. This trend intensified in the post-Gupta period and shaped early medieval India.
+  </div>
+
+  <h3>4.4 Agriculture</h3>
+  <ul>
+    <li>Agriculture was the <strong>backbone of the economy</strong>; majority of population were peasants.</li>
+    <li>Use of iron-tipped ploughs (<strong>halikaras</strong>) was now universal; irrigation by tanks, wells, canals (especially Sudarshana lake under Skandagupta).</li>
+    <li><strong>Persian Wheel (araghatta)</strong> is mentioned in <em>Panchatantra</em> (composed in Gupta period) — though full diffusion came later.</li>
+    <li>Major crops — rice, wheat, barley, pulses, oilseeds (sesame, mustard), sugar cane, cotton, indigo, hemp.</li>
+    <li>Horticulture: mango, orange, banana, jackfruit, betel-nut, betel-leaf, coconut.</li>
+    <li>Cattle breeding important; Amshuvarman of Nepal's daughter brought 8,000 head of cattle as dowry — a sign of cattle wealth.</li>
+    <li>Peasants increasingly tied to the land via the agrahara system — the genesis of <em>"village = peasants + Brahmin donee + dependent labour"</em>.</li>
+  </ul>
+
+  <h3>4.5 Coinage System of the Guptas</h3>
+  <ul>
+    <li>The Guptas issued the <strong>largest number of gold coins ("Dinara") in ancient India</strong> — earning the description "the most magnificent series of Indian coins".</li>
+    <li>Coins were standardised, well-struck, beautiful — designs include the king's portrait (obverse) and deity / symbol (reverse).</li>
+    <li><strong>Samudragupta's seven coin types:</strong> Standard, Archer, Battle-axe, Tiger-slayer, Ashvamedha, Lyrist, Lichchavi-Kumaradevi.</li>
+    <li><strong>Chandragupta II's coin types:</strong> Archer, Couch, Chhatra, Horseman, Lion-slayer (Sinha-vikrama / "Sakari"), Chakra-Vikrama. Silver coins issued for the first time by him in the western provinces, modelled on the Saka coinage.</li>
+    <li><strong>Kumaragupta I:</strong> Most numerous coin types (12+) — most notable being Karttikeya (peacock) type and Apratigha type.</li>
+    <li><strong>Late Gupta coinage:</strong> Gold content steadily debased from Skandagupta onwards — a symptom of economic decline. By the late Guptas, coins are visibly lighter and impurer.</li>
+    <li><strong>Silver coinage</strong> (rupaka) was issued primarily for the western provinces (former Saka domains) — to maintain continuity with the long-established silver coin tradition there.</li>
+    <li><strong>Copper coins</strong> were limited — far fewer than the Kushanas; a sign of contracted urban commerce.</li>
+    <li>Fa-Hien's observation about cowries used in everyday transactions suggests <strong>shortage of low-denomination coins</strong> for daily use.</li>
+  </ul>
+</section>
+
+<section id="society">
+  <h2>5. Society of the Guptas</h2>
+  <ul>
+    <li><strong>Brahmanical revival:</strong> The Guptas, especially as Parama-Bhagavatas, championed Brahmanism. Brahmins were privileged through agraharas; varnashrama-dharma was strictly upheld.</li>
+    <li><strong>Caste system rigidified:</strong> The Manusmriti, Yajnavalkya Smriti and Narada Smriti consolidated caste rules. Untouchability hardened — Fa-Hien specifically notes <em>Chandalas lived outside the village and struck wood when entering town to warn other people of their approach</em>.</li>
+    <li><strong>Position of women — declining:</strong>
+      <ul>
+        <li>Women lost most property rights except <em>stridhana</em> (gifts received at marriage).</li>
+        <li>Marriage age dropped — pre-puberty marriage became increasingly common; the Vishnu Smriti recommends marriage soon after menarche.</li>
+        <li><strong>First clear reference to sati</strong> in inscriptions — <strong>Eran Stone Pillar Inscription of Bhanugupta (AD 510)</strong> records the wife of Goparaja burning herself on his pyre after his death in battle. (Mahabharata mentions sati earlier in literature, but Eran is the earliest <em>inscriptional</em> reference.)</li>
+        <li>Practice of <strong>niyoga</strong> declined; widow remarriage became increasingly restricted in higher castes.</li>
+        <li>Yet exceptions existed — Queen <strong>Prabhavatigupta</strong> ruled the Vakataka kingdom as regent for ~20 years.</li>
+      </ul>
+    </li>
+    <li><strong>Slavery:</strong> Continued but on smaller scale; Narada Smriti lists 15 types of slaves.</li>
+    <li><strong>Vegetarianism:</strong> Fa-Hien notes most people did not eat meat, onion, garlic, intoxicants — broad vegetarianism among the upper varnas.</li>
+    <li><strong>Education:</strong> Centred on Brahmin gurus (gurukula); Nalanda Mahavihara founded by Kumaragupta I emerged as the centre of Buddhist higher learning. Sanskrit was the language of learning.</li>
+  </ul>
+
+  <h3>5.1 Buddhism and Brahmanism during the Gupta Era</h3>
+
+  <h4>Brahmanism's Triumph</h4>
+  <ul>
+    <li>Decisive shift in patronage — Brahmanism (particularly <strong>Bhagavata Vaishnavism</strong> and <strong>Shaivism</strong>) became the dominant religion of the royal court and elite.</li>
+    <li>Gupta kings styled themselves <strong>Parama-Bhagavata</strong> (devotees of Vishnu); Garuda (Vishnu's mount) was the Gupta royal emblem.</li>
+    <li><strong>Bhakti</strong> (personal devotion) ideology systematised — Bhagavad Gita's composition stabilised; Vishnu and Shiva worship spread.</li>
+    <li>Worship of <strong>Vishnu, Shiva, Brahma (rare), Surya, Karttikeya/Skanda, Ganesha, Durga, Lakshmi, the Saptamatrikas</strong> all flourish.</li>
+    <li>The <strong>Mahabharata and Ramayana</strong> reach close to their final form in this period; the major <strong>Puranas (Vishnu, Vayu, Matsya, Markandeya, Brahmanda, Bhagavata core)</strong> were compiled.</li>
+    <li><strong>Temple architecture</strong> emerges as the focal point of Brahmanical worship — replacing the open-air sacrifice (yajna) of Vedic times.</li>
+    <li><strong>Iconography</strong> standardised — the canonical forms of Vishnu (with chakra, shankha, gada, padma), Shiva (with linga &amp; trishula), Durga (slaying Mahishasura) date from this era.</li>
+  </ul>
+
+  <h4>Buddhism in the Gupta Era</h4>
+  <ul>
+    <li>Buddhism continued to flourish, though it lost royal pre-eminence to Brahmanism. Gupta kings remained tolerant Buddhist patrons.</li>
+    <li><strong>Nalanda Mahavihara</strong> founded by Kumaragupta I (~AD 450) — eventually became the greatest international Buddhist university; attracted scholars from China, Korea, Tibet, South-East Asia.</li>
+    <li>Other monastic universities: <strong>Valabhi (Gujarat)</strong> — Hinayana centre under Maitraka patronage.</li>
+    <li>Mahayana Buddhism flourished — major Mahayana texts compiled or translated.</li>
+    <li><strong>Vasubandhu</strong> (4th–5th c. AD) — Mahayana philosopher; founder (with brother Asanga) of the <strong>Yogachara / Vijnanavada</strong> school; chief works <em>Abhidharmakosha</em>, <em>Trimshika</em>, <em>Vimshika</em>.</li>
+    <li>Fa-Hien describes Buddhism as widespread — many monasteries (1000s of monks); the Buddha's birthplace, Bodh Gaya, Sarnath, Kushinagar all flourished as pilgrimage centres.</li>
+    <li>Gupta sculpture produced the most refined Buddha images — the <strong>Sarnath Buddha</strong> (preaching the first sermon, abhaya-mudra and dharmachakra-mudra) is the iconic Indian Buddha image.</li>
+  </ul>
+</section>
+
+<section id="art">
+  <h2>6. Art and Culture during the Gupta Era</h2>
+  <p>The Gupta age is rightly called the classical phase of Indian art and culture — the <strong>standards set in this age remained authoritative for centuries</strong>. Temple architecture, sculpture, painting and Sanskrit literature reach their canonical perfection.</p>
+
+  <h3>6.1 Temple Architecture — Birth of the Nagara Style</h3>
+  <ul>
+    <li>The Guptas mark the <strong>transition from rock-cut to free-standing structural temple</strong>. Earlier (pre-Gupta) "temples" were essentially shrines; under the Guptas, the structural stone temple with its standardised parts emerges.</li>
+    <li><strong>Five evolutionary stages of Gupta temples</strong> (as classified by Percy Brown):
+      <ol>
+        <li><strong>Flat-roofed square temple</strong> with shallow pillared porch — e.g., <em>Temple No. 17, Sanchi</em>; <em>Tigawa temple, Jabalpur (MP)</em>.</li>
+        <li><strong>Flat-roofed square temple with covered ambulatory (pradakshina-patha) and a porch</strong> — e.g., <em>Parvati temple at Nachna-Kuthara (MP)</em>; <em>Shiva temple at Bhumara (MP)</em>.</li>
+        <li><strong>Square temple with a low and squat shikhara (tower)</strong> above the garbhagriha — earliest example of a tower; <em>Dashavatara temple at Deogarh (UP), 6th c.</em>; <em>brick temple at Bhitargaon (UP)</em>.</li>
+        <li><strong>Rectangular temple with apsidal end</strong> — for non-deity worship; <em>Kapoteshwara temple at Chezarla (Andhra)</em>.</li>
+        <li><strong>Circular temple</strong> with shallow rectangular projections — rare; <em>Maniyar Math at Rajagriha</em>.</li>
+      </ol>
+    </li>
+    <li><strong>Dashavatara Temple at Deogarh (Lalitpur, UP, c. 6th c. AD)</strong> — finest surviving Gupta-era stone temple; west-facing; on its three exterior walls magnificent narrative panels — <em>Anantashayi Vishnu (Vishnu reclining on Shesha-naga)</em>, <em>Nara-Narayana</em>, <em>Gajendra-Moksha</em>. Garbhagriha at the centre with shallow shikhara.</li>
+    <li><strong>Bhitargaon brick temple (Kanpur, UP, c. 5th c.)</strong> — the <strong>oldest surviving brick temple in India</strong> with terracotta panels.</li>
+    <li><strong>Mundeshwari temple, Kaimur (Bihar)</strong> — sometimes claimed to be the oldest functioning Hindu temple still in use (Late Gupta period).</li>
+    <li>Temple plan crystallised: <strong>Garbhagriha (sanctum) + Antarala (vestibule) + Mandapa (pillared hall) + Ardhamandapa (porch)</strong>, with circumambulation (pradakshina-patha) and a low shikhara — basis of the later Nagara temples.</li>
+  </ul>
+
+  <h3>6.2 Paintings during the Gupta Era</h3>
+
+  <h4>Ajanta Caves (Maharashtra) — peak in Gupta-Vakataka period</h4>
+  <ul>
+    <li>30 rock-cut caves on a horseshoe-shaped escarpment above the Waghora river; mix of <em>Chaitya halls</em> (worship) and <em>Viharas</em> (residence).</li>
+    <li>Caves cut in two phases: <em>Phase 1 — Satavahana / Hinayana</em> (Caves 9, 10, 12, 13, 15A — 1st BC to 2nd AD); <em>Phase 2 — Mahayana / Gupta-Vakataka period</em> (most caves — 5th-6th c. AD, the great pictorial phase).</li>
+    <li>The <strong>finest mural paintings of ancient India</strong> — fresco-secco technique (paint on dry plaster of cow dung, rice husk, lime).</li>
+    <li>Famous panels: <strong>Padmapani Bodhisattva</strong> &amp; <strong>Vajrapani Bodhisattva</strong> (Cave 1); <strong>Mahajanaka Jataka, Vishvantara Jataka, Shibi Jataka</strong>; the <strong>Dying Princess (Cave 16)</strong> — testament to the artist's mastery of emotion.</li>
+    <li>Patronised by the <strong>Vakataka king Harishena</strong> (Cave 17 inscription confirms it) — Vakatakas were Gupta allies via Prabhavatigupta.</li>
+    <li>UNESCO World Heritage Site since 1983.</li>
+  </ul>
+
+  <h4>Bagh Caves (Madhya Pradesh)</h4>
+  <ul>
+    <li>Buddhist rock-cut caves; nine caves on the Bagh river, MP.</li>
+    <li>Paintings (5th–6th c. AD) — contemporaneous with Ajanta but more <strong>secular themes</strong> (royal processions, dancing girls, musicians); style is bolder, less spiritual than Ajanta.</li>
+    <li>Cave 4 (Rang Mahal) preserved the finest murals — sadly most have deteriorated.</li>
+  </ul>
+
+  <h4>Other Painted Sites of the Period</h4>
+  <ul>
+    <li><strong>Sittanavasal (Tamil Nadu)</strong> — Jain cave paintings; though early Pallava-Pandya period (7th-9th c.), techniques derive from Gupta tradition.</li>
+    <li><strong>Sigiriya frescoes (Sri Lanka)</strong> — 5th c. AD; show clear Indian (Ajanta-style) influence carried by Buddhist contact.</li>
+  </ul>
+
+  <h3>6.3 Caves during the Gupta Era</h3>
+  <ul>
+    <li><strong>Udayagiri Caves (near Vidisha, MP)</strong> — 20 rock-cut caves; mostly Hindu (some Jain); Cave 5 contains the famous <strong>"Varaha avatar relief"</strong> showing Vishnu in his boar incarnation rescuing the earth-goddess Bhudevi from the cosmic ocean — masterpiece of Gupta sculpture (early 5th c.). Inscriptions confirm patronage by ministers of Chandragupta II.</li>
+    <li><strong>Ajanta &amp; Bagh</strong> — covered above.</li>
+    <li><strong>Ellora Caves (Maharashtra)</strong> — earliest caves (Buddhist) at Ellora began in the late Gupta / post-Gupta period (c. AD 600+), though the famous Kailashanatha is later Rashtrakuta (8th c.).</li>
+    <li><strong>Mandapeshwar &amp; Jogeshwari Caves (Mumbai)</strong> — Late Gupta period Shaiva caves.</li>
+  </ul>
+
+  <h3>6.4 Sculpture during the Gupta Era</h3>
+  <ul>
+    <li>The Gupta sculptural style is characterised by <strong>serenity, balance, proportion, subtle modeling, and inward spirituality</strong> — represents the classical ideal of Indian sculpture.</li>
+    <li><strong>Two great schools continued — Mathura and Sarnath:</strong></li>
+  </ul>
+  <table>
+    <tr><th>Feature</th><th>Gupta Mathura School</th><th>Gupta Sarnath School</th></tr>
+    <tr><td>Material</td><td>Spotted red sandstone</td><td>Cream-coloured Chunar sandstone</td></tr>
+    <tr><td>Buddha's robe</td><td>Visible heavy folds (continuing tradition)</td><td>Smooth, plain, almost transparent — clings to body</td></tr>
+    <tr><td>Halo (prabha-mandala)</td><td>Decorated with geometric motifs</td><td>Richly carved concentric floral patterns</td></tr>
+    <tr><td>Posture</td><td>Standing, abhaya-mudra (fearlessness)</td><td>Seated padmasana, dharma-chakra-pravartana mudra (preaching first sermon)</td></tr>
+    <tr><td>Famous example</td><td>Mathura Buddha (5th c., Indian Museum Kolkata)</td><td><strong>Sarnath Buddha "Preaching" (c. AD 475)</strong> — Sarnath Museum</td></tr>
+  </table>
+
+  <h4>Other Sculptural Masterpieces</h4>
+  <ul>
+    <li><strong>Sultanganj Bronze Buddha (Bihar, ~AD 500)</strong> — 2.3m tall, ~500 kg; one of the largest surviving ancient Indian bronzes; now in Birmingham Museum (UK).</li>
+    <li><strong>Udayagiri Varaha Panel</strong> — colossal relief of Vishnu as boar (covered above).</li>
+    <li><strong>Mehrauli Iron Pillar (Delhi)</strong> — 7.2 m tall; rust-resistant — testifies to Gupta metallurgical mastery.</li>
+    <li><strong>Anantashayi Vishnu (Deogarh)</strong> — finest narrative relief on a temple wall.</li>
+    <li><strong>Saptamatrika reliefs</strong> (Seven Mother Goddesses) become popular for the first time.</li>
+  </ul>
+
+  <h3>6.5 Literature during the Gupta Era — Sanskrit's Golden Age</h3>
+
+  <h4>Kalidasa (c. 4th–5th c. AD) — Greatest Sanskrit Poet-Dramatist</h4>
+  <ul>
+    <li><strong>Plays:</strong> <em>Abhijnana-Shakuntalam</em> (translated by Sir William Jones in 1789 — first Indian play in English), <em>Vikramorvashiyam</em>, <em>Malavikagnimitram</em>.</li>
+    <li><strong>Epic poems (Mahakavya):</strong> <em>Raghuvamsha</em> (lineage of Rama), <em>Kumarasambhava</em> (birth of Karttikeya).</li>
+    <li><strong>Lyric poems:</strong> <em>Meghaduta</em> (Cloud Messenger), <em>Ritusamhara</em> (Six Seasons).</li>
+  </ul>
+
+  <h4>Other Major Gupta Sanskrit Writers</h4>
+  <ul>
+    <li><strong>Vishakhadatta</strong> — <em>Mudrarakshasa</em> (Chandragupta vs Nandas), <em>Devichandraguptam</em> (Ramagupta–Chandragupta II episode). Probably under Chandragupta II.</li>
+    <li><strong>Shudraka</strong> — <em>Mrichchhakatika</em> ("The Little Clay Cart") — social comedy on the merchant Charudatta and the courtesan Vasantasena.</li>
+    <li><strong>Bharavi</strong> — <em>Kiratarjuniya</em> — Arjuna vs Shiva-as-Kirata (hunter).</li>
+    <li><strong>Dandin</strong> — <em>Dashakumaracharita</em> (post-Gupta, but Gupta-influenced).</li>
+    <li><strong>Vatsyayana</strong> — <em>Kamasutra</em> (4th c. AD) — treatise on love, art and social life.</li>
+    <li><strong>Amarasimha</strong> — <em>Amarakosha</em> — Sanskrit thesaurus/dictionary; remained authoritative for 1,500 years.</li>
+    <li><strong>Vishnu Sharma</strong> — <em>Panchatantra</em> (collection of beast-fables, c. 4th c. AD) — translated into Pahlavi, Arabic (<em>Kalila wa Dimna</em>), and eventually most world languages.</li>
+    <li><strong>Bhasa</strong> — earlier than Kalidasa but plays (13 known) discovered together in Kerala in 1912; <em>Swapnavasavadattam, Pratima-natakam, Madhyama-vyayoga, Karna-bhara, Urubhanga</em>.</li>
+    <li><strong>Codification of legal texts:</strong> Yajnavalkya Smriti, Narada Smriti, Brihaspati Smriti.</li>
+    <li><strong>Final redaction of Mahabharata and Ramayana</strong>; compilation of major Puranas.</li>
+  </ul>
+
+  <h3>6.6 Religious Life during the Gupta Era</h3>
+  <ul>
+    <li><strong>Vaishnavism, Shaivism, Shaktism</strong> — the three streams of Brahmanical/Hindu religion crystallise.</li>
+    <li>Royal patronage to <strong>Vaishnavism</strong> — kings as Parama-Bhagavatas; Vishnu in his many forms (Vasudeva-Krishna, Narasimha, Varaha, Vamana, Rama).</li>
+    <li>Vishnu's <strong>Dashavatara doctrine</strong> consolidated — Matsya, Kurma, Varaha, Narasimha, Vamana, Parashurama, Rama, Krishna, Buddha (significant inclusion!), Kalki.</li>
+    <li><strong>Shaivism</strong> — Pashupatas, Lakulisha sect (founded by Lakulisha in MP); linga-worship spread.</li>
+    <li><strong>Shaktism (Goddess worship)</strong> — Devi-Mahatmya (part of Markandeya Purana) describes Durga's slaying of Mahishasura; cult of Saptamatrikas, Kali, Chamunda.</li>
+    <li><strong>Tantric elements</strong> begin to appear at the popular religious level — though full Tantric texts come later.</li>
+    <li><strong>Toleration:</strong> Despite royal Vaishnavism, Buddhism and Jainism were not persecuted. Fa-Hien describes coexistence; Gupta kings made donations to Buddhist monasteries too.</li>
+  </ul>
+</section>
+
+<section id="science">
+  <h2>7. Developments in Science and Technology during the Guptas</h2>
+
+  <h3>7.1 Mathematics</h3>
+  <ul>
+    <li><strong>Aryabhata (b. AD 476)</strong>:
+      <ul>
+        <li>Author of <strong>Aryabhatiya (AD 499, at age 23)</strong> — composed at Kusumapura (Pataliputra).</li>
+        <li>Explained the <strong>decimal place-value system</strong> in mathematics — gave the world the concept of zero (shunya).</li>
+        <li>Calculated the value of <strong>π (pi) as 3.1416</strong> — described as "approximate" (asanna), correct to 4 decimal places.</li>
+        <li>Stated that the Earth <strong>rotates on its own axis</strong> — a millennium before Copernicus!</li>
+        <li>Explained eclipses as natural phenomena (shadows of Earth/Moon), not as Rahu-Ketu swallowing.</li>
+        <li>Calculated solar year as 365.358 days; gave methods for finding cube roots, square roots, sine tables.</li>
+      </ul>
+    </li>
+    <li><strong>Brahmagupta</strong> (later, AD 598–668) — author of <em>Brahmasphutasiddhanta</em>; first to give rules for arithmetic with zero; foundation of Indian algebra.</li>
+    <li>India's mathematical heritage transmitted through Arab translations to Europe — Arabic numerals are originally Indian.</li>
+  </ul>
+
+  <h3>7.2 Astronomy</h3>
+  <ul>
+    <li><strong>Varahamihira (c. 6th c. AD)</strong>:
+      <ul>
+        <li><em>Brihatsamhita</em> — encyclopedia of natural sciences, astronomy, geography, omens, gem-testing.</li>
+        <li><em>Panchasiddhantika</em> — summary of five astronomical systems including the Romaka and Paulisha Siddhantas (Roman/Greek origin).</li>
+        <li><em>Brihajjataka</em> &amp; <em>Laghujataka</em> — astrology.</li>
+      </ul>
+    </li>
+    <li>Indian astronomy of this period synthesised Greek (Yavana) Hellenistic astronomy with indigenous traditions.</li>
+  </ul>
+
+  <h3>7.3 Medicine (Ayurveda)</h3>
+  <ul>
+    <li><strong>Susruta Samhita</strong> reached its present form — surgical procedures including rhinoplasty (cataract surgery, cesarean, fracture-setting).</li>
+    <li><strong>Charaka Samhita</strong> (carried forward from Kushana period) — basic Ayurvedic text on internal medicine.</li>
+    <li><strong>Vagbhata</strong> (slightly later) — <em>Ashtangahridaya</em> &amp; <em>Ashtanga-samgraha</em>.</li>
+    <li>Hospitals (mentioned by Fa-Hien at Pataliputra) for the poor and sick, funded by charity.</li>
+  </ul>
+
+  <h3>7.4 Metallurgy and Chemistry</h3>
+  <ul>
+    <li><strong>Mehrauli Iron Pillar (Delhi, 7.2 m tall, ~6 tonnes)</strong> — the rust-resistance for 1,600+ years testifies to highly advanced metallurgy. Chemical analysis shows high phosphorus content protects against rust.</li>
+    <li><strong>Sultanganj Bronze Buddha (~500 kg)</strong> demonstrates large-scale bronze casting (lost-wax process).</li>
+    <li><strong>Nagarjuna</strong> (alchemist, c. 7th c. AD; not the Mahayana philosopher) — credited with developing Indian alchemy and metallurgy; treatise <em>Rasaratnakara</em>.</li>
+  </ul>
+
+  <h3>7.5 Other Sciences</h3>
+  <ul>
+    <li><strong>Architecture/Engineering:</strong> Vastu-shastra texts compiled; standardised temple ratios.</li>
+    <li><strong>Cotton dye-craft, glass-making, gem-cutting, ship-building</strong> all flourished.</li>
+    <li><strong>Veterinary medicine:</strong> Texts on horses (Shalihotra) and elephants (Palakapya's Hastyayurveda).</li>
+  </ul>
+</section>
+
+<section id="decline">
+  <h2>8. Reasons for the Decline of the Gupta Dynasty</h2>
+  <p>The decline of the Guptas was gradual — began under Skandagupta in the mid-5th century and was complete by AD 550. Multiple factors interacted:</p>
+
+  <div class="card-grid">
+    <div class="card"><h4>1. Hun (Hephthalite) Invasions</h4><p>Repeated invasions from c. AD 450 onwards. Skandagupta initially repulsed them (Bhitari, Junagadh inscriptions) but the cost was enormous. Under <strong>Toramana &amp; Mihirakula</strong> (c. 500–540), Huns overran Punjab and parts of central India; though Yashodharman defeated Mihirakula at Mandasor, the Gupta empire was already shattered.</p></div>
+    <div class="card"><h4>2. Weak Successors</h4><p>After Skandagupta no Gupta ruler had comparable stature. The later Guptas — Purugupta, Budhagupta, Vainyagupta, Narasimhagupta, Vishnugupta — left only fragmentary inscriptions and ever-debased coinage. <strong>Succession disputes</strong> further weakened authority.</p></div>
+    <div class="card"><h4>3. Rise of Feudatories &amp; Independent Kingdoms</h4><p>Vakatakas, Maukharis, Maitrakas of Valabhi, Pushyabhutis of Thanesar, Gauda kingdom of Bengal, Yashodharman in Malwa — all asserted independence. <strong>Yashodharman's Mandasor inscription (AD 532)</strong> records his defeat of Mihirakula <em>without mentioning any Gupta overlord</em> — symbolic of Gupta eclipse.</p></div>
+    <div class="card"><h4>4. Decline of Trade &amp; Urban Economy</h4><p>The fall of the Western Roman Empire (AD 476) cut off the western trade; Roman gold dried up; the Hun invasions disrupted the silk route. <strong>RS Sharma</strong> identifies this as a primary cause — urban contraction drained tax revenues and forced kings to make more land grants in lieu of cash payments, accelerating feudalism.</p></div>
+    <div class="card"><h4>5. The Land-Grant System (Feudalism)</h4><p>The very Brahmin land grants (agraharas) that supported the Gupta state began to <strong>fragment its authority</strong>. Donees enjoyed administrative and judicial rights over their land; cumulative grants depleted state revenue and created a network of semi-independent overlords. This is the <strong>"birth of Indian feudalism"</strong> (RS Sharma, B.N.S. Yadava).</p></div>
+    <div class="card"><h4>6. Coinage Debasement &amp; Fiscal Crisis</h4><p>From Skandagupta onwards, Gupta gold coins show progressively less gold content. Lighter, baser coins reflect a deep <strong>fiscal crisis</strong> — falling trade revenues + rising military expenditure against the Huns.</p></div>
+    <div class="card"><h4>7. No Naval / Standing Army Tradition</h4><p>Gupta army relied heavily on feudal levies; no large permanent standing army like the Mauryan. When feudatories asserted independence, the king's army shrank correspondingly.</p></div>
+    <div class="card"><h4>8. Religious Patronage Imbalance</h4><p>Some historians argue heavy royal patronage to Brahmanism alienated commercial-Buddhist constituencies; but this is debated — Guptas remained tolerant patrons of all faiths in practice.</p></div>
+  </div>
+
+  <h3>End of the Gupta Empire</h3>
+  <div class="highlight">
+    By <strong>c. AD 550</strong>, no significant Gupta ruler remained. The political vacuum was filled briefly by Yashodharman of Malwa and later by <strong>Harshavardhana of Kanauj (AD 606–647)</strong> — the last great north-Indian emperor of ancient India. North India then fragmented into the Tripartite Struggle of medieval times.
+  </div>
+</section>
+
+<section id="current">
+  <h2>Current Affairs Connect — Gupta Era in News</h2>
+  <div class="card-grid">
+    <div class="card"><h4>Mehrauli Iron Pillar</h4><p>India's only ancient monument to be a candidate for <strong>"materials science world heritage"</strong>; IIT-Kanpur metallurgical studies (Prof. R. Balasubramaniam) explain the rust-resistance via phosphorus-rich slag protective layer. A symbol of ancient Indian metallurgical genius.</p></div>
+    <div class="card"><h4>Nalanda Mahavihara — UNESCO &amp; Revival</h4><p>UNESCO World Heritage Site since 2016. The new Nalanda University (Rajgir) was inaugurated in 2014; new campus inaugurated by PM Modi on <strong>19 June 2024</strong> — revival of the Gupta-era Kumaragupta I's institution as a contemporary international university.</p></div>
+    <div class="card"><h4>Ajanta &amp; Bagh Caves Conservation</h4><p>Ajanta Caves under continuous ASI conservation, especially controlling humidity damage. Bagh Cave paintings being digitally restored. UNESCO/ASI partnership active.</p></div>
+    <div class="card"><h4>National Anthem &amp; Gupta Heritage</h4><p><strong>Sanskrit literature heritage</strong> (Kalidasa, Abhijnanashakuntalam translated by Sir William Jones 1789) regularly highlighted in cultural diplomacy. India's <strong>"Knowledge Society" GS-I narrative</strong> centers on Aryabhata's zero, decimal system, value of pi.</p></div>
+  </div>
+</section>
+
+<section id="pyq">
+  <h2>Previous Year Questions (PYQs)</h2>
+  <div class="pyq"><span class="pyq-tag">Prelims 2024</span> <strong>Consider the following: 1. Allahabad Pillar Inscription 2. Hathigumpha Inscription 3. Nasik Prashasti 4. Sohgaura Copper Plate Inscription. The above are the sources for the history of which of the following dynasties?</strong> — tests cross-dynasty inscription mapping (Gupta, Chedi, Satavahana, Mauryan).</div>
+  <div class="pyq"><span class="pyq-tag">Prelims 2022</span> <strong>With reference to ancient Indian history, which of the following is/are pair(s) of king and his queen?</strong> 1. Bindusara — Subhadrangi 2. Chandragupta I — Kumaradevi 3. Pushyamitra — Agnimitra. (Answer involves Chandragupta I &amp; Kumaradevi)</div>
+  <div class="pyq"><span class="pyq-tag">Prelims 2020</span> <strong>"Aryabhatiya" was authored by Aryabhata in the:</strong> Gupta period (AD 499).</div>
+  <div class="pyq"><span class="pyq-tag">Prelims 2017</span> <strong>The Nagara, the Dravida and the Vesara are the:</strong> (a) three main racial groups of the Indian subcontinent (b) three main linguistic divisions (c) three main styles of Indian temple architecture (d) three main musical gharanas. <strong>Answer: (c)</strong> — Nagara style origins are Gupta.</div>
+  <div class="pyq"><span class="pyq-tag">Prelims 2016</span> <strong>The "Mehrauli Iron Pillar" of Delhi is famous for:</strong> Sanskrit inscription attributed to Chandragupta II and rust-resistant iron.</div>
+  <div class="pyq"><span class="pyq-tag">Prelims 2014</span> <strong>The national calendar (Saka Era) begins from 22 March, which corresponds to:</strong> 1 Chaitra (78 AD). [Bridge with Topic 10 — Kanishka started it.]</div>
+  <div class="pyq"><span class="pyq-tag">Mains 2020 GS-I</span> <strong>To what extent did the role of monarchs in the Indian history make difference in modern India? Discuss with reference to the Gupta period.</strong> — Discuss state-building, cultural patronage, Sanskrit, science legacy, and limitations of the Gupta political model.</div>
+  <div class="pyq"><span class="pyq-tag">Mains 2018 GS-I</span> <strong>Safeguarding the Indian art heritage is the need of the moment. Discuss.</strong> — Anchor on Ajanta-Bagh, Sarnath Buddha, Sultanganj Bronze, Mehrauli pillar.</div>
+  <div class="pyq"><span class="pyq-tag">Mains 2014 GS-I</span> <strong>The third battle of Panipat was fought in 1761. Why were so many empire-shaking battles fought at Panipat? — and earlier — the Gupta empire's decline shaped north Indian power dynamics</strong>: link the Gupta-Hun collapse to the long-term geopolitical opening for medieval invasions.</div>
+</section>
+
+<section id="revision">
+  <h2>Quick Revision Box — 10 Key Points</h2>
+  <div class="revision-box">
+    <h3>Memorise these for Prelims &amp; Mains</h3>
+    <ol>
+      <li><strong>Gupta Era starts AD 319/320</strong> with Chandragupta I, who first took the title Maharajadhiraja; he married Lichchavi princess Kumaradevi.</li>
+      <li><strong>Samudragupta (335–375):</strong> "Indian Napoleon"; campaigns recorded in Allahabad Pillar Inscription / Prayag Prashasti by Harisena; 5 categories of subordinates (Aryavarta uprooted, Dakshinapatha grahana-moksha, forest, frontier, foreign); performed Ashvamedha.</li>
+      <li><strong>Chandragupta II Vikramaditya (375–415):</strong> Defeated Saka Rudrasimha III; added Saurashtra-Malwa-Gujarat; second capital Ujjain; Mehrauli Iron Pillar (rust-resistant) is attributed to "Chandra"; Fa-Hien visited during his reign; Navaratnas including Kalidasa.</li>
+      <li><strong>Fa-Hien (AD 401–411):</strong> Chinese pilgrim; Fo-kuo-ki; describes mild punishments, vegetarianism, Chandalas outside village, prosperous Madhyadesha.</li>
+      <li><strong>Kumaragupta I "Mahendraditya" (415–455):</strong> Founded Nalanda Mahavihara; Karttikeya-peacock coins; longest peaceful reign.</li>
+      <li><strong>Skandagupta (455–467):</strong> Defeated Huns (Bhitari inscription); repaired Sudarshana Lake third time (Junagadh inscription); coin debasement begins; decline starts.</li>
+      <li><strong>Allahabad Pillar Inscription:</strong> Sanskrit prashasti by Harisena on Ashokan pillar; lists Samudragupta's 5 categories of subordinates.</li>
+      <li><strong>Gupta Coinage:</strong> Largest gold coinage in ancient India; Samudragupta — 7 types (Standard, Archer, Battle-axe, Tiger-slayer, Ashvamedha, Lyrist, Lichchavi-Kumaradevi); Chandragupta II — Couch, Chhatra, Horseman, Lion-slayer; silver issued for ex-Saka western provinces.</li>
+      <li><strong>Art &amp; Literature peak:</strong> Nagara temple style birth (Dashavatara Deogarh, Bhitargaon brick); Ajanta &amp; Bagh paintings; Sarnath &amp; Mathura Buddha; Mehrauli pillar; Kalidasa, Vishakhadatta, Shudraka, Amarasimha, Varahamihira; Aryabhatiya (AD 499) with decimal/zero/pi/earth-rotation.</li>
+      <li><strong>Decline causes (RS Sharma):</strong> Hun invasions, weak successors, rise of feudatories, decline of trade (Western Roman Empire fell AD 476), agrahara feudalism, coinage debasement, fiscal crisis. End by c. AD 550.</li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<aside>
+<div class="widget">
+  <h4>Gupta Rulers Quick-Reference</h4>
+  <table>
+    <tr><th>Ruler</th><th>Reign</th></tr>
+    <tr><td>Sri Gupta</td><td>c. 240–280</td></tr>
+    <tr><td>Ghatotkacha</td><td>c. 280–319</td></tr>
+    <tr><td>Chandragupta I</td><td>319–335</td></tr>
+    <tr><td><strong>Samudragupta</strong></td><td><strong>335–375</strong></td></tr>
+    <tr><td><strong>Chandragupta II</strong></td><td><strong>375–415</strong></td></tr>
+    <tr><td>Kumaragupta I</td><td>415–455</td></tr>
+    <tr><td><strong>Skandagupta</strong></td><td><strong>455–467</strong></td></tr>
+    <tr><td>Later Guptas</td><td>467–550</td></tr>
+    <tr><td>Yashodharman</td><td>c. 530s</td></tr>
+  </table>
+</div>
+
+<div class="widget">
+  <h4>Key Inscriptions</h4>
+  <table>
+    <tr><th>Inscription</th><th>Ruler</th></tr>
+    <tr><td>Allahabad Pillar</td><td>Samudragupta (Harisena)</td></tr>
+    <tr><td>Mehrauli Iron Pillar</td><td>Chandragupta II (Chandra)</td></tr>
+    <tr><td>Udayagiri Caves</td><td>Chandragupta II</td></tr>
+    <tr><td>Junagadh / Girnar</td><td>Skandagupta</td></tr>
+    <tr><td>Bhitari Pillar</td><td>Skandagupta</td></tr>
+    <tr><td>Eran Pillar</td><td>Bhanugupta (first sati)</td></tr>
+    <tr><td>Mandasor</td><td>Yashodharman</td></tr>
+  </table>
+</div>
+
+<div class="widget">
+  <h4>Difficulty / Weight</h4>
+  <div class="bar-row"><span>Prelims</span><div class="bar"><i style="width:96%"></i></div><span>10/10</span></div>
+  <div class="bar-row"><span>Mains</span><div class="bar"><i style="width:96%"></i></div><span>10/10</span></div>
+  <div class="bar-row"><span>Conceptual</span><div class="bar"><i style="width:88%"></i></div><span>9/10</span></div>
+  <div class="bar-row"><span>Memory load</span><div class="bar"><i style="width:90%"></i></div><span>9/10</span></div>
+</div>
+
+<div class="widget">
+  <h4>Must-know Terms</h4>
+  <div class="tag-cloud">
+    <span>Maharajadhiraja</span><span>Parama-bhagavata</span><span>Lichchavi-dauhitra</span><span>Allahabad Pillar</span><span>Harisena</span><span>Prayag Prashasti</span><span>Indian Napoleon</span><span>Sakari</span><span>Vikramaditya</span><span>Devichandraguptam</span><span>Navaratna</span><span>Fa-Hien</span><span>Fo-kuo-ki</span><span>Nalanda</span><span>Bhitari</span><span>Junagadh-Skandagupta</span><span>Sudarshana Lake</span><span>Mehrauli Iron Pillar</span><span>Dinara</span><span>Rupaka</span><span>Agrahara</span><span>Bhumi-cchidranyaya</span><span>Vishti</span><span>Uparika</span><span>Vishaya</span><span>Bhukti</span><span>Nagara</span><span>Dashavatara Deogarh</span><span>Bhitargaon</span><span>Ajanta</span><span>Bagh</span><span>Sarnath Buddha</span><span>Sultanganj Bronze</span><span>Udayagiri Varaha</span><span>Kalidasa</span><span>Aryabhatiya</span><span>Varahamihira</span><span>Eran sati</span><span>Toramana</span><span>Mihirakula</span><span>Yashodharman</span>
+  </div>
+</div>
+
+<div class="widget self-test">
+  <h4>Self-Test (5 Q's)</h4>
+  <details><summary>Q1. What does the Allahabad Pillar Inscription tell us?</summary><p>Composed by Harisena in Sanskrit on Ashoka's pillar; lists Samudragupta's 5 categories of subordinates — Aryavarta kings (9, uprooted), Dakshinapatha kings (12, grahana-moksha-anugraha), 18 forest kingdoms, 5 frontier kingdoms + 9 republican tribes, and 5 foreign powers including Shahanushahi and Simhala.</p></details>
+  <details><summary>Q2. Why is Chandragupta II called "Sakari"?</summary><p>Because he defeated and killed the last Saka (Western Kshatrapa) king Rudrasimha III around AD 388–409, ending Saka rule in Saurashtra-Malwa-Gujarat and annexing those territories to the Gupta empire. He took the title "Sakari" (destroyer of Sakas) and "Vikramaditya".</p></details>
+  <details><summary>Q3. List three observations of Fa-Hien about India under Chandragupta II.</summary><p>(1) No capital punishment; only fines, and right hand cut off for rebels. (2) Most people vegetarian; no onion, garlic, wine, beef. (3) Chandalas lived outside village and struck wood when entering town. Also: free hospitals at Pataliputra; cowries used in transactions; no king's name mentioned (focus on Buddhism).</p></details>
+  <details><summary>Q4. What are the three pre-Gupta and Gupta repairs of the Sudarshana Lake?</summary><p>(1) Built by Pushyagupta under Chandragupta Maurya. (2) Channels added by Tushaspha (Yavana governor) under Ashoka. (3) Repaired by Rudradaman the Saka in AD 150 (Junagadh inscription). (4) Repaired a third time by Parnadatta and Chakrapalita under Skandagupta (Junagadh inscription, AD 455).</p></details>
+  <details><summary>Q5. Name three scientific achievements of Aryabhata.</summary><p>(1) Decimal place-value system and concept of zero. (2) Value of pi as 3.1416 (correct to 4 decimal places). (3) Earth rotates on its own axis — millennium before Copernicus. (Also: solar year ≈ 365.358 days; correct explanation of eclipses.)</p></details>
+</div>
+
+<div class="widget">
+  <h4>Related UPSC Notes</h4>
+  <ul class="related">
+    <li><a href="/upsc-notes/ancient/ancient-topic10">Topic 10: Post-Mauryan Age</a></li>
+    <li><a href="/upsc-notes/ancient/ancient-topic09">Topic 09: Mauryan Empire</a></li>
+    <li><a href="/upsc-notes/ancient">Mod 3: Mauryan &amp; Gupta Age</a></li>
+    <li><a href="/upsc-notes/ancient/ancient-topic06">Topic 06: Buddhism &amp; Jainism</a></li>
+  </ul>
+</div>
+</aside>
+</div>
+</div>

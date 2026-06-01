@@ -1,0 +1,884 @@
+<!-- ancient-topic09 — auto-imported from ancient-topic09-mauryan-empire-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#8b3a1a;
+  --brand-blue-dark:#5a1f0a;
+  --brand-blue-light:#fcf3e8;
+  --brand-orange:#c97b00;
+  --green:#1a7a3a;
+  --text:#1a1a1a;
+  --muted:#555;
+  --bg:#fafafa;
+  --card:#fff;
+  --border:#e2dcd2;
+  --shadow:0 2px 8px rgba(90,31,10,.08);
+  --shadow-lg:0 6px 20px rgba(90,31,10,.12);
+  --radius:10px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,sans-serif;color:var(--text);background:var(--bg);line-height:1.65;font-size:16px}
+img{max-width:100%;height:auto}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* NAVBAR */
+.navbar{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--border);z-index:100;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.nav-inner{max-width:1400px;margin:0 auto;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-weight:800;font-size:1.15rem;color:var(--brand-blue-dark);letter-spacing:-.3px}
+.logo span{color:var(--brand-orange)}
+.nav-links{display:flex;gap:20px;align-items:center;font-size:.92rem}
+.nav-links a{color:#333;font-weight:500}
+.breadcrumbs{font-size:.82rem;color:var(--muted);padding:8px 24px;background:#f5efe5;border-bottom:1px solid var(--border)}
+.breadcrumbs a{color:var(--brand-blue)}
+
+/* LAYOUT */
+.page-wrapper{max-width:1400px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1fr 280px;gap:32px;margin-top:88px}
+main{min-width:0}
+aside{min-width:0}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#a04a25 0%,#5a1f0a 60%,#3a0a0a 100%);color:#fff;padding:48px 36px;border-radius:var(--radius);margin-bottom:32px;box-shadow:var(--shadow-lg);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-50%;right:-10%;width:400px;height:400px;background:radial-gradient(circle,rgba(255,215,0,.13) 0%,transparent 70%);pointer-events:none}
+.hero h1{font-size:2.1rem;font-weight:800;margin-bottom:12px;line-height:1.2;letter-spacing:-.5px;position:relative}
+.hero .sub{font-size:1.05rem;opacity:.94;margin-bottom:20px;position:relative}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px;position:relative}
+.hero-meta span{background:rgba(255,255,255,.16);padding:6px 14px;border-radius:20px;font-size:.85rem;backdrop-filter:blur(4px)}
+
+/* SECTIONS */
+section{background:var(--card);padding:28px 32px;border-radius:var(--radius);margin-bottom:24px;box-shadow:var(--shadow);border:1px solid var(--border)}
+section h2{color:var(--brand-blue-dark);font-size:1.55rem;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--brand-orange);font-weight:700}
+section h3{color:var(--brand-blue);font-size:1.2rem;margin-top:20px;margin-bottom:10px;font-weight:700}
+section h4{color:#333;font-size:1.05rem;margin-top:14px;margin-bottom:6px;font-weight:700}
+section p{margin-bottom:12px}
+section ul, section ol{margin:8px 0 14px 22px}
+section li{margin-bottom:6px}
+
+/* CONCEPT BOX */
+.concept-box{background:linear-gradient(135deg,var(--brand-blue-light) 0%,#fff 100%);border-left:5px solid var(--brand-orange);padding:20px 24px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin-top:0;color:var(--brand-blue-dark)}
+.concept-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:14px}
+.concept-item{background:#fff;padding:14px 16px;border-radius:8px;border:1px solid var(--border)}
+.concept-item strong{display:block;color:var(--brand-blue);margin-bottom:4px;font-size:.95rem}
+.concept-item span{font-size:.88rem;color:var(--muted)}
+
+/* TABLES */
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.92rem;background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+th{background:var(--brand-blue);color:#fff;padding:10px 12px;text-align:left;font-weight:600}
+td{padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+tr:last-child td{border-bottom:none}
+tr:nth-child(even){background:#fcf7f0}
+
+/* CARDS GRID */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:16px 0}
+.card{background:#fff;border:1px solid var(--border);border-left:4px solid var(--brand-orange);padding:16px 18px;border-radius:8px;transition:transform .15s, box-shadow .15s}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.card h4{margin-top:0;color:var(--brand-blue);font-size:1rem}
+.card p{font-size:.9rem;color:#444;margin-bottom:0}
+
+/* HIGHLIGHT BOX */
+.highlight{background:#fff8e8;border:1px solid #f0d9a8;border-left:4px solid var(--brand-orange);padding:14px 18px;border-radius:6px;margin:14px 0;font-size:.95rem}
+.highlight strong{color:var(--brand-blue-dark)}
+
+.warning{background:#fef0ef;border-left:4px solid #c0392b;padding:12px 16px;border-radius:6px;margin:12px 0;font-size:.93rem}
+
+/* SVG WRAPPER */
+.svg-wrap{margin:18px 0;padding:18px;background:linear-gradient(135deg,#fff8ed 0%,#fff 100%);border:1px solid var(--border);border-radius:10px;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:.85rem;color:var(--muted);margin-top:8px;font-style:italic}
+
+/* PYQ */
+.pyq{background:#f0f6ff;border-left:4px solid #1a4a8b;padding:12px 16px;border-radius:6px;margin:10px 0;font-size:.94rem}
+.pyq strong{color:#1a4a8b}
+.pyq-tag{display:inline-block;background:#1a4a8b;color:#fff;font-size:.72rem;padding:2px 8px;border-radius:10px;margin-right:8px;font-weight:600}
+
+/* REVISION */
+.revision-box{background:linear-gradient(135deg,#e8f5ec 0%,#fff 100%);border:2px dashed var(--green);padding:20px 24px;border-radius:10px;margin:20px 0}
+.revision-box h3{color:var(--green);margin-top:0}
+.revision-box ol{margin-left:24px}
+.revision-box li{margin-bottom:8px;font-size:.95rem}
+
+/* RIGHT SIDEBAR */
+aside .widget{background:#fff;border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:18px;box-shadow:var(--shadow);position:sticky;top:80px}
+aside .widget + .widget{position:static}
+aside .widget h4{color:var(--brand-blue-dark);font-size:.98rem;margin-bottom:10px;padding-bottom:8px;border-bottom:2px solid var(--brand-orange);font-weight:700}
+aside table{font-size:.82rem;margin:0}
+aside table th, aside table td{padding:6px 8px}
+.bar-row{display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:.84rem}
+.bar-row span:first-child{min-width:78px;color:#444}
+.bar{flex:1;height:8px;background:#eee;border-radius:4px;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--brand-orange),var(--brand-blue))}
+.tag-cloud{display:flex;flex-wrap:wrap;gap:6px}
+.tag-cloud span{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:.74rem;padding:3px 9px;border-radius:12px;font-weight:500}
+.self-test details{margin-bottom:6px;font-size:.85rem}
+.self-test summary{cursor:pointer;color:var(--brand-blue);font-weight:600;padding:4px 0}
+.self-test p{margin:6px 0 8px;padding-left:8px;border-left:2px solid var(--brand-orange);color:#444;font-size:.83rem}
+aside ul.related{list-style:none;margin:0;padding:0;font-size:.86rem}
+aside ul.related li{padding:6px 0;border-bottom:1px dotted #ddd}
+aside ul.related li:last-child{border:none}
+
+/* FOOTER */
+footer{background:var(--brand-blue-dark);color:#e0d0c0;padding:30px 24px;margin-top:40px;text-align:center;font-size:.88rem}
+footer a{color:#ffd07a}
+
+/* MOBILE */
+@media (max-width:860px){
+  .page-wrapper{grid-template-columns:1fr;padding:0 14px;margin-top:80px}
+  aside .widget{position:static}
+  .hero{padding:28px 20px}
+  .hero h1{font-size:1.5rem}
+  section{padding:18px 18px}
+  section h2{font-size:1.25rem}
+  .nav-links{display:none}
+}
+
+/* PRINT */
+@media print{
+  .navbar, aside, footer, .breadcrumbs{display:none}
+  .page-wrapper{grid-template-columns:1fr;margin-top:0}
+  body{font-size:11pt;background:#fff}
+  section{box-shadow:none;border:none;page-break-inside:avoid}
+  .hero{background:#5a1f0a !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+
+/* Next.js: shared app navbar; restore two-column layout */
+.notes-topic-embedded .navbar,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded .hamburger,
+.notes-topic-embedded .menu-btn,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .page-wrapper {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 280px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  margin-top: 0 !important;
+}
+
+.notes-topic-embedded .main-content,
+.notes-topic-embedded main.main-content,
+.notes-topic-embedded main {
+  margin-left: 0 !important;
+  min-width: 0;
+}
+
+.notes-topic-embedded aside,
+.notes-topic-embedded .right-sidebar,
+.notes-topic-embedded aside.sidebar {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .page-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+  .notes-topic-embedded aside,
+  .notes-topic-embedded .right-sidebar,
+  .notes-topic-embedded aside.sidebar {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="page-wrapper">
+
+
+<main>
+
+<header class="hero">
+  <h1>The Mauryan Empire (324–185 BC)</h1>
+  <p class="sub">Origin theories, Chandragupta–Bindusara–Ashoka–Brihadratha, Kalinga War &amp; Dhamma, Administration &amp; Economy, Edicts &amp; Sources, Causes of Fall — based on RS Sharma's <em>Ancient India</em> NCERT and original Ashokan inscriptions.</p>
+  <div class="hero-meta">
+    <span>Topic 09 · Ancient History</span>
+    <span>Read time: ~55 min</span>
+    <span>Prelims weight: 10/10</span>
+    <span>Mains weight: 5/5</span>
+    <span>UPSC tag: India's first pan-Indian empire</span>
+  </div>
+</header>
+
+<section>
+  <h2>Conceptual Clarity — Why the Mauryan Empire Matters</h2>
+  <div class="concept-box">
+    <h3>Why the Mauryas are the centrepiece of Ancient Indian History</h3>
+    <p>The Mauryan Empire (324–185 BC) was the <strong>first pan-Indian empire</strong> stretching from Afghanistan (Kandahar &amp; Kabul valley) to Karnataka and from Saurashtra to the Brahmaputra. It is the first period for which we possess <strong>dated, contemporary, inscriptional evidence</strong> in the form of Ashokan edicts — making it the first chronologically certain phase of Indian history. The empire produced the world's first ruler to renounce war on ethical grounds (Ashoka after Kalinga), the first systematic political treatise in Sanskrit (Kautilya's <em>Arthashastra</em>), and the first standing imperial bureaucracy in South Asia.</p>
+    <div class="concept-grid">
+      <div class="concept-item"><strong>Founder &amp; date</strong><span>Chandragupta Maurya, 324/321 BC, overthrew Dhana Nanda with Chanakya's aid.</span></div>
+      <div class="concept-item"><strong>Capital</strong><span>Pataliputra (Patna, Bihar) — fortified city described by Megasthenes.</span></div>
+      <div class="concept-item"><strong>Greatest extent</strong><span>Reached under Ashoka — Afghanistan to Karnataka, only Tamilakam and Kalinga (initially) outside.</span></div>
+      <div class="concept-item"><strong>Distinctive feature</strong><span>First dated inscriptions (Ashokan edicts) and first centralised imperial administration.</span></div>
+    </div>
+  </div>
+  <p><strong>Key terms to internalise:</strong> <em>Adhyaksha</em> (department head), <em>Mahamatra</em> (high officer / Dhamma Mahamatra), <em>Rajuka</em> (provincial administrator/judge), <em>Pradeshika</em> (district officer), <em>Yukta</em> (subordinate revenue officer), <em>Sita</em> (royal farms), <em>Bali</em>/<em>Bhaga</em> (land taxes), <em>Dhamma</em> (Ashoka's ethical code, not Buddhism per se), <em>Devanampiya Piyadasi</em> (Ashoka's official title in inscriptions).</p>
+</section>
+
+<section id="origin">
+  <h2>1. Different Views on the Origin of the Mauryas</h2>
+  <p>The social and ethnic origin of the Mauryan dynasty is debated because contemporary sources differ. The question matters because Chandragupta's rise represented the political triumph of a non-Kshatriya lineage and a frontier upbringing.</p>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 760 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Theories on Mauryan origin">
+      <rect x="0" y="0" width="760" height="260" fill="#fcf3e8"/>
+      <text x="380" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#5a1f0a">Five Major Theories on Mauryan Origin</text>
+      <g font-size="11" fill="#333">
+        <rect x="20" y="50" width="135" height="180" fill="#fff" stroke="#8b3a1a" stroke-width="2" rx="6"/>
+        <text x="87" y="72" text-anchor="middle" font-weight="700" fill="#8b3a1a">Brahmanical</text>
+        <text x="87" y="90" text-anchor="middle">(Puranas)</text>
+        <text x="30" y="115">Low-born</text>
+        <text x="30" y="132">Shudra origin</text>
+        <text x="30" y="150">Born of</text>
+        <text x="30" y="167">Mura, a Shudra</text>
+        <text x="30" y="185">consort of</text>
+        <text x="30" y="202">last Nanda king</text>
+
+        <rect x="170" y="50" width="135" height="180" fill="#fff" stroke="#8b3a1a" stroke-width="2" rx="6"/>
+        <text x="237" y="72" text-anchor="middle" font-weight="700" fill="#8b3a1a">Buddhist</text>
+        <text x="237" y="90" text-anchor="middle">(Mahavamsa,</text>
+        <text x="237" y="105" text-anchor="middle">Dipavamsa)</text>
+        <text x="180" y="130">Kshatriya of</text>
+        <text x="180" y="148">Moriya clan of</text>
+        <text x="180" y="166">Pipphalivana</text>
+        <text x="180" y="184">— linked to</text>
+        <text x="180" y="202">Shakyas of Buddha</text>
+
+        <rect x="320" y="50" width="135" height="180" fill="#fff" stroke="#8b3a1a" stroke-width="2" rx="6"/>
+        <text x="387" y="72" text-anchor="middle" font-weight="700" fill="#8b3a1a">Jaina</text>
+        <text x="387" y="90" text-anchor="middle">(Parishishta-</text>
+        <text x="387" y="105" text-anchor="middle">parvan)</text>
+        <text x="330" y="130">Grandson of</text>
+        <text x="330" y="148">a village</text>
+        <text x="330" y="166">headman who</text>
+        <text x="330" y="184">reared peacocks</text>
+        <text x="330" y="202">("mayura" = peacock)</text>
+
+        <rect x="470" y="50" width="135" height="180" fill="#fff" stroke="#8b3a1a" stroke-width="2" rx="6"/>
+        <text x="537" y="72" text-anchor="middle" font-weight="700" fill="#8b3a1a">Greek &amp;</text>
+        <text x="537" y="90" text-anchor="middle">Classical</text>
+        <text x="480" y="115">Justin: Sandrocottus</text>
+        <text x="480" y="132">of "humble origin"</text>
+        <text x="480" y="150">Plutarch: met</text>
+        <text x="480" y="167">Alexander as a youth</text>
+        <text x="480" y="185">Megasthenes:</text>
+        <text x="480" y="202">"Sandrocottus" king</text>
+
+        <rect x="620" y="50" width="120" height="180" fill="#fff" stroke="#8b3a1a" stroke-width="2" rx="6"/>
+        <text x="680" y="72" text-anchor="middle" font-weight="700" fill="#8b3a1a">Mudrarakshasa</text>
+        <text x="680" y="90" text-anchor="middle">(Vishakhadatta)</text>
+        <text x="630" y="115">Calls Chandragupta</text>
+        <text x="630" y="132">"Vrishala" and</text>
+        <text x="630" y="150">"Kulahina" —</text>
+        <text x="630" y="167">low-born,</text>
+        <text x="630" y="185">but a coalition</text>
+        <text x="630" y="202">leader.</text>
+      </g>
+    </svg>
+    <div class="svg-caption">The Buddhist Moriya-Kshatriya view is most accepted by modern historians; the Shudra origin appears in hostile Brahmanical sources.</div>
+  </div>
+
+  <h3>Summary of Sources on Origin</h3>
+  <table>
+    <tr><th>Source</th><th>Tradition</th><th>What it says about Mauryan origin</th></tr>
+    <tr><td>Vishnu Purana, Mudrarakshasa</td><td>Brahmanical</td><td>Chandragupta born of Mura — a Shudra woman; therefore Maurya = low-born</td></tr>
+    <tr><td>Mahavamsa, Dipavamsa, Mahaparinibbana Sutta</td><td>Buddhist</td><td>Kshatriya clan of <strong>Moriyas of Pipphalivana</strong>, related to Shakyas — most accepted view</td></tr>
+    <tr><td>Parishishtaparvan (Hemachandra)</td><td>Jaina</td><td>Daughter of a peacock-tamer (mayura-poshaka); explains the name Maurya</td></tr>
+    <tr><td>Justin, Plutarch, Appian</td><td>Greek</td><td>"Sandrocottus" — youthful exile, of humble birth, met Alexander</td></tr>
+    <tr><td>Junagadh Inscription of Rudradaman (AD 150)</td><td>Epigraphic</td><td>Earliest inscription that mentions Chandragupta Maurya by name as a ruler</td></tr>
+  </table>
+  <p><strong>Modern verdict (RS Sharma, Romila Thapar):</strong> The Moriya-Kshatriya theory has the strongest evidence — it agrees with Buddhist sources (closer in time), with Chandragupta's eventual conversion to Jainism (suggesting heterodox affiliation), and with the absence of any orthodox Brahmin priests in Mauryan court records.</p>
+</section>
+
+<section id="dynasty">
+  <h2>2. The Mauryan Dynasty — Rulers</h2>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mauryan dynasty timeline">
+      <rect x="0" y="0" width="760" height="200" fill="#fff8ed"/>
+      <line x1="40" y1="100" x2="720" y2="100" stroke="#8b3a1a" stroke-width="3"/>
+      <g font-size="11" fill="#333">
+        <circle cx="80" cy="100" r="9" fill="#8b3a1a"/>
+        <text x="80" y="78" text-anchor="middle" font-weight="700">324 BC</text>
+        <text x="80" y="132" text-anchor="middle" font-weight="700" fill="#8b3a1a">Chandragupta</text>
+        <text x="80" y="148" text-anchor="middle">(324–297)</text>
+        <text x="80" y="164" text-anchor="middle">Sallekhana</text>
+        <text x="80" y="178" text-anchor="middle">at Shravanabelagola</text>
+
+        <circle cx="240" cy="100" r="9" fill="#8b3a1a"/>
+        <text x="240" y="78" text-anchor="middle" font-weight="700">297 BC</text>
+        <text x="240" y="132" text-anchor="middle" font-weight="700" fill="#8b3a1a">Bindusara</text>
+        <text x="240" y="148" text-anchor="middle">(297–273)</text>
+        <text x="240" y="164" text-anchor="middle">"Amitraghata"</text>
+        <text x="240" y="178" text-anchor="middle">Slayer of foes</text>
+
+        <circle cx="420" cy="100" r="11" fill="#c97b00"/>
+        <text x="420" y="78" text-anchor="middle" font-weight="700">268 BC</text>
+        <text x="420" y="132" text-anchor="middle" font-weight="700" fill="#c97b00">ASHOKA</text>
+        <text x="420" y="148" text-anchor="middle">(268–232)</text>
+        <text x="420" y="164" text-anchor="middle">Kalinga War 261 BC</text>
+        <text x="420" y="178" text-anchor="middle">Dhamma</text>
+
+        <circle cx="600" cy="100" r="9" fill="#8b3a1a"/>
+        <text x="600" y="78" text-anchor="middle" font-weight="700">232 BC</text>
+        <text x="600" y="132" text-anchor="middle" font-weight="700" fill="#8b3a1a">Successors</text>
+        <text x="600" y="148" text-anchor="middle">Dasharatha, Samprati,</text>
+        <text x="600" y="164" text-anchor="middle">Shalishuka,</text>
+        <text x="600" y="178" text-anchor="middle">Devavarman, Shatadhanu</text>
+
+        <circle cx="700" cy="100" r="9" fill="#5a1f0a"/>
+        <text x="700" y="78" text-anchor="middle" font-weight="700">185 BC</text>
+        <text x="700" y="132" text-anchor="middle" font-weight="700" fill="#5a1f0a">Brihadratha</text>
+        <text x="700" y="148" text-anchor="middle">killed by</text>
+        <text x="700" y="164" text-anchor="middle">Pushyamitra</text>
+        <text x="700" y="178" text-anchor="middle">Shunga</text>
+      </g>
+    </svg>
+    <div class="svg-caption">Mauryan succession from 324 BC to 185 BC — the empire lasted 137 years.</div>
+  </div>
+
+  <h3>2.1 Chandragupta Maurya (324/321 – 297 BC)</h3>
+  <ul>
+    <li><strong>Rise to power:</strong> Overthrew the last Nanda king <em>Dhana Nanda</em> (called <em>Agrammes/Xandrames</em> by Greeks) around 324–321 BC with the strategic guidance of <strong>Kautilya / Chanakya / Vishnugupta</strong>, his Brahmin mentor and author of the <em>Arthashastra</em>.</li>
+    <li><strong>Conquest of the north-west:</strong> Liberated Punjab and Sindh from Seleucid (Greek) garrisons left behind by Alexander.</li>
+    <li><strong>Seleucid War (c. 305 BC):</strong> Defeated <strong>Seleucus Nikator</strong>, Alexander's general. By treaty Chandragupta received <em>Aria (Herat), Arachosia (Kandahar), Gedrosia (Baluchistan) and Paropamisadae (Kabul)</em> in exchange for <strong>500 war elephants</strong>. The treaty included a matrimonial alliance (<em>epigamia</em>).</li>
+    <li><strong>Megasthenes</strong> was sent as Seleucid ambassador to Chandragupta's court at Pataliputra; he wrote <em>Indica</em>.</li>
+    <li><strong>Empire's extent:</strong> Afghanistan to Bengal, Hindu Kush to Mysore — first time the subcontinent was politically unified up to the Vindhyas (the deep south was reached only under Bindusara/Ashoka).</li>
+    <li><strong>Religion &amp; death:</strong> According to Jaina tradition (Parishishtaparvan), Chandragupta abdicated, became a Jain monk under <strong>Bhadrabahu</strong>, migrated to <strong>Shravanabelagola (Karnataka)</strong> and ended his life by <strong>Sallekhana</strong> (ritual fast unto death) c. 297 BC.</li>
+  </ul>
+
+  <h3>2.2 Bindusara (297 – 273 BC)</h3>
+  <ul>
+    <li>Title <strong>"Amitraghata"</strong> (Slayer of Foes / Greek <em>Amitrochates</em>). Consolidated his father's gains; said by the Tibetan historian Taranatha to have conquered <strong>"the land between the two seas"</strong> — i.e., extended Mauryan reach into the Deccan.</li>
+    <li>Maintained diplomatic relations with the Hellenistic world. <strong>Deimachos</strong> was sent as ambassador by Seleucid king <em>Antiochus I</em>, and <strong>Dionysius</strong> by Ptolemy II Philadelphus of Egypt.</li>
+    <li>Famously asked Antiochus to send him "sweet wine, dried figs and a sophist" — Antiochus replied that Greek law forbade selling a sophist (philosopher).</li>
+    <li>Followed the <strong>Ajivika sect</strong> (Pingalavatsa was his court Ajivika).</li>
+    <li>Faced a revolt at <strong>Taxila</strong>, which Ashoka (as Kumara/prince) was sent to suppress as Viceroy of <em>Uttarapatha</em> (Taxila).</li>
+  </ul>
+
+  <h3>2.3 Ashoka (268 – 232 BC)</h3>
+  <p>The greatest Mauryan ruler and arguably the most celebrated ruler in Indian history. Known in his inscriptions as <strong>Devanampiya Piyadasi</strong> ("Beloved of the Gods, Of Pleasing Appearance"). His name "Ashoka" appears only in a handful of inscriptions (notably the <strong>Maski</strong>, Gujarra, Nittur and Udegolam Minor Rock Edicts) — these helped confirm Devanampiya Piyadasi was indeed Ashoka.</p>
+
+  <h4>Accession</h4>
+  <ul>
+    <li>As prince, served as <strong>Viceroy of Taxila and Ujjain (Avantirashtra)</strong> under Bindusara.</li>
+    <li>According to Buddhist legends, fought a succession war against his brothers (Sushima/Susima); coronation delayed by 4 years (268 BC formal coronation).</li>
+    <li>Married <strong>Devi (Vidisha-Mahadevi)</strong> at Vidisha — their children <strong>Mahendra</strong> and <strong>Sanghamitra</strong> later carried Buddhism to Sri Lanka.</li>
+  </ul>
+
+  <h4>Kalinga War (261 BC) — turning point of Ashoka's reign</h4>
+  <div class="highlight">
+    <strong>Rock Edict XIII</strong> (the longest and most famous edict) records: <em>"1,50,000 were carried away captive, 1,00,000 were slain and many times that number perished. The Beloved of the Gods… felt profound sorrow and remorse… For the Beloved of the Gods, the chief conquest is the conquest by Dhamma (Dhammavijaya), not by war (Bherighosha → Dhammaghosha)."</em>
+  </div>
+  <ul>
+    <li>Fought in the <strong>8th regnal year</strong> of Ashoka against the powerful kingdom of <strong>Kalinga</strong> (modern Odisha + parts of Andhra), which had broken away from Mauryan suzerainty.</li>
+    <li>Kalinga's strategic value: rich rice country, control of Bay of Bengal trade with South-East Asia.</li>
+    <li><strong>Consequences:</strong>
+      <ul>
+        <li>Ashoka renounced <em>Digvijaya</em> (military conquest) for <em>Dhammavijaya</em> (conquest through Dhamma).</li>
+        <li>The war drum (<strong>Bherighosha</strong>) was replaced by the drum of Dhamma (<strong>Dhammaghosha</strong>).</li>
+        <li>Ashoka adopted Buddhism — became an <em>upasaka</em> (lay disciple) and, according to Buddhist tradition, later a <em>bhikkhu-gatika</em> (associated with the Sangha).</li>
+        <li>Kalinga was incorporated as a province with its own special edicts (the <strong>Separate Kalinga Edicts at Dhauli and Jaugada</strong>) urging humane treatment of subjects.</li>
+        <li>Significantly, Edicts XI–XIII (which mention Kalinga) were <em>omitted</em> at Dhauli and Jaugada — evidently to avoid reopening wounds in the conquered region.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h4>Propagation of Buddhism by Ashoka</h4>
+  <div class="card-grid">
+    <div class="card"><h4>Third Buddhist Council (250 BC)</h4><p>Held at <strong>Pataliputra</strong> under <strong>Moggaliputta Tissa</strong>. Compiled the <em>Abhidhamma Pitaka</em>. Decided to send missions abroad.</p></div>
+    <div class="card"><h4>Buddhist Missions Abroad</h4><p>Sent to 9 destinations: Sri Lanka (Mahendra), Suvarnabhumi/Burma (Sona &amp; Uttara), Kashmir-Gandhara, Mahishamandala, Vanavasi, Aparantaka, Maharashtra, Yona country and the Himalayan region.</p></div>
+    <div class="card"><h4>Dhamma Mahamatras</h4><p>A new class of officers appointed in his 14th regnal year to propagate Dhamma, welfare work and inter-religious harmony.</p></div>
+    <div class="card"><h4>Dhamma-yatras</h4><p>Replaced royal hunting tours (<em>vihara-yatras</em>) with pilgrimage tours to Buddhist sites — Lumbini (birth), Bodh Gaya (enlightenment), Sarnath, Kushinagar.</p></div>
+    <div class="card"><h4>Stupas &amp; Viharas</h4><p>Traditionally credited with building <strong>84,000 stupas</strong>. Original Stupa No. 1 at Sanchi, original Dharmarajika stupa at Sarnath, Bharhut stupa attributed to his patronage.</p></div>
+    <div class="card"><h4>Lumbini Pillar (Rummindei)</h4><p>His pillar there declares — <em>"Here was born the Buddha, the Shakyamuni"</em> — and grants Lumbini tax exemption (only <em>ashtabhagiya</em> = 1/8th of produce instead of 1/6th).</p></div>
+  </div>
+
+  <h4>Ashoka's Dhamma — what it was and what it was not</h4>
+  <div class="highlight">
+    <strong>Ashoka's Dhamma was NOT Buddhism in narrow sense.</strong> It was a code of ethical conduct meant for <em>all</em> his subjects regardless of sect. Key principles (from various edicts): <em>respect for elders, parents, teachers; non-injury to living beings (ahimsa); truthfulness; tolerance for all sects; sympathy towards slaves and servants; minimum expenditure and minimum possessions; abstaining from animal sacrifice; promotion of medical care for humans and animals (RE II); welfare works — wells, rest houses, planting trees and medicinal herbs (PE VII).</em>
+  </div>
+
+  <h3>2.4 Successors and Brihadratha (232 – 185 BC)</h3>
+  <ul>
+    <li>After Ashoka's death (232 BC), the empire fragmented under weak successors over ~50 years.</li>
+    <li>Traditional list (Puranas): <strong>Dasharatha</strong> (Nagarjuni Hill caves bear his Ajivika dedications), <strong>Samprati</strong> (a Jaina patron), Shalishuka, Devavarman, Shatadhanu, and finally <strong>Brihadratha</strong>.</li>
+    <li><strong>Brihadratha</strong> was the last Mauryan emperor. In <strong>185 BC</strong> he was assassinated during a military review by his own commander-in-chief <strong>Pushyamitra Shunga</strong>, who founded the <strong>Shunga dynasty</strong>. This event is recorded in the <em>Harshacharita</em> of Banabhatta (7th century AD).</li>
+  </ul>
+</section>
+
+<section id="administration">
+  <h2>3. Mauryan Administration</h2>
+  <p>The Mauryan administration was the first <strong>centralised imperial bureaucracy</strong> in India. Our knowledge of it is reconstructed from three principal sources: Kautilya's <em>Arthashastra</em> (idealised theory), Megasthenes' <em>Indica</em> (eyewitness, but selective), and Ashokan inscriptions (direct evidence).</p>
+
+  <h3>3.1 Central Government</h3>
+  <table>
+    <tr><th>Officer / Body</th><th>Role</th></tr>
+    <tr><td><strong>King (Rajan/Samrat)</strong></td><td>Absolute head — final authority in legislation, judiciary and executive. Ashoka calls himself "Devanampiya Piyadasi". The king is "father of his subjects" (RE II Separate Edict).</td></tr>
+    <tr><td><strong>Mantri Parishad</strong></td><td>Council of ministers — Arthashastra recommends 12–20 members. <em>Mantrins</em> (inner cabinet) of 3–4 ministers were consulted on key matters.</td></tr>
+    <tr><td><strong>Purohita</strong></td><td>Royal chaplain — spiritual advisor; under Chandragupta this was Chanakya.</td></tr>
+    <tr><td><strong>Senapati</strong></td><td>Commander-in-chief.</td></tr>
+    <tr><td><strong>Yuvaraja</strong></td><td>Crown prince — often governed an important province (Ashoka governed Taxila and Ujjain).</td></tr>
+    <tr><td><strong>Amatyas</strong></td><td>High civil servants — equivalent to modern IAS officers; Arthashastra lists qualifications (high birth, intelligence, integrity, training).</td></tr>
+    <tr><td><strong>Adhyakshas (Superintendents)</strong></td><td>Arthashastra lists ~27 adhyakshas — of agriculture (Sitadhyaksha), commerce (Panyadhyaksha), gold (Suvarnadhyaksha), mint (Lakshanadhyaksha), forests (Kupyadhyaksha), weights (Pautavadhyaksha), customs (Shulkadhyaksha), prostitutes (Ganikadhyaksha), liquor (Suradhyaksha), gambling, ports, prisons, horses, elephants etc.</td></tr>
+  </table>
+
+  <h3>3.2 Provincial Administration</h3>
+  <p>The empire was divided into <strong>five (later four) major provinces (Pradeshas / Chakras)</strong>, each governed by a Kumara (royal prince) or Aryaputra:</p>
+  <table>
+    <tr><th>Province</th><th>Capital</th><th>Notes</th></tr>
+    <tr><td>Uttarapatha (Northern)</td><td>Taxila</td><td>Ashoka served here as Viceroy under Bindusara. Strategic north-western frontier.</td></tr>
+    <tr><td>Avantirashtra (Western)</td><td>Ujjain</td><td>Trade hub; Ashoka was viceroy here as well.</td></tr>
+    <tr><td>Dakshinapatha (Southern)</td><td>Suvarnagiri</td><td>Modern Karnataka — Brahmagiri, Maski, Yerragudi edicts.</td></tr>
+    <tr><td>Kalinga (added after 261 BC)</td><td>Tosali</td><td>Special administration with Separate Kalinga Edicts.</td></tr>
+    <tr><td>Prachya / Magadha (Central)</td><td>Pataliputra</td><td>Directly under the king.</td></tr>
+  </table>
+
+  <h3>3.3 District &amp; Village Administration</h3>
+  <ul>
+    <li><strong>Pradeshika</strong> — District officer (~modern DM); responsible for general administration of a Pradesha.</li>
+    <li><strong>Rajuka</strong> — Important Mauryan officer combining revenue and judicial functions; Ashoka in <strong>Pillar Edict IV</strong> grants Rajukas independence in judicial matters, comparing their role to that of "an experienced nurse" entrusted with a child.</li>
+    <li><strong>Yukta</strong> — Subordinate revenue officer, treasury work.</li>
+    <li><strong>Gopa</strong> — In charge of 5 or 10 villages; maintained census, boundaries, accounts.</li>
+    <li><strong>Gramika / Gramini</strong> — Village headman, non-paid; elected by the village.</li>
+    <li><strong>Sthanika</strong> — Officer in charge of a quarter of a janapada.</li>
+  </ul>
+
+  <h3>3.4 City Administration — Pataliputra (Megasthenes' account)</h3>
+  <p>Pataliputra was administered by a board of <strong>30 members divided into 6 committees of 5</strong> each:</p>
+  <table>
+    <tr><th>Committee</th><th>Function</th></tr>
+    <tr><td>1st</td><td>Industrial arts &amp; crafts — fixed wages, ensured quality</td></tr>
+    <tr><td>2nd</td><td>Care of foreigners — accommodation, escorts, attending in illness, burial in case of death</td></tr>
+    <tr><td>3rd</td><td>Registration of births &amp; deaths — for taxation and statistics</td></tr>
+    <tr><td>4th</td><td>Trade &amp; commerce — weights, measures, regulation of markets</td></tr>
+    <tr><td>5th</td><td>Manufactured articles — provision for inspection and sale; new and old goods kept separate</td></tr>
+    <tr><td>6th</td><td>Collection of sales tax — 1/10th (tenth) of sale value</td></tr>
+  </table>
+
+  <h3>3.5 Espionage and Surveillance</h3>
+  <p>Arthashastra elaborately describes an espionage system — <em>Gudhapurushas</em> (secret agents). Two main types:</p>
+  <ul>
+    <li><strong>Sansthas (stationary spies):</strong> Five sub-types — Kapatika-chhatra (fraudulent student), Udasthita (apostate monk), Grihapatika (householder), Vaidehika (merchant), Tapasa (ascetic).</li>
+    <li><strong>Sancharas (wandering spies):</strong> Sattri (informer), Tikshna (assassin/desperado), Rasada (poisoner), Bhikshuki (mendicant woman).</li>
+  </ul>
+
+  <h3>3.6 Judicial System</h3>
+  <ul>
+    <li>King was supreme judge.</li>
+    <li><strong>Dharmasthiya courts</strong> dealt with civil matters; <strong>Kantakashodhana courts</strong> dealt with criminal/anti-state matters (the very name means "removal of thorns" — i.e., antisocial elements).</li>
+    <li>Punishments were harsh by Arthashastra — fines, mutilation and capital punishment.</li>
+    <li>Ashoka's <strong>Pillar Edict IV</strong> introduced <strong>Vyavahara-samata</strong> (equality in judicial procedure) and <strong>Danda-samata</strong> (equality in punishment).</li>
+    <li>Ashoka also granted <strong>three days of respite</strong> (Pillar Edict IV) to those condemned to death before execution.</li>
+  </ul>
+
+  <h3>3.7 Army &amp; Military Administration (Megasthenes)</h3>
+  <p>Megasthenes records an army of <strong>6,00,000 infantry, 30,000 cavalry, 9,000 elephants and 8,000 chariots</strong>. The army was managed by a <strong>War Office of 30 members organised in 6 committees of 5</strong> each:</p>
+  <table>
+    <tr><th>Committee</th><th>Branch</th></tr>
+    <tr><td>1st</td><td>Admiralty / Navy</td></tr>
+    <tr><td>2nd</td><td>Transport, commissariat &amp; army service (medicines, food, fodder)</td></tr>
+    <tr><td>3rd</td><td>Infantry</td></tr>
+    <tr><td>4th</td><td>Cavalry</td></tr>
+    <tr><td>5th</td><td>War chariots</td></tr>
+    <tr><td>6th</td><td>Elephants</td></tr>
+  </table>
+  <p><em>Note:</em> Megasthenes' figures are likely exaggerated; the existence of a separate naval committee is the earliest reference to an Indian navy.</p>
+</section>
+
+<section id="economy">
+  <h2>4. Economy of the Mauryas</h2>
+  <p>The Mauryan economy was largely <strong>state-controlled</strong>. Kautilya's Arthashastra treats agriculture, mining and trade as essentially state enterprises — earning the state the bulk of revenue.</p>
+
+  <h3>4.1 Agriculture</h3>
+  <ul>
+    <li><strong>Sita</strong> lands were crown lands cultivated directly by the state under the <strong>Sitadhyaksha</strong>, using state slaves, hired labourers and prisoners.</li>
+    <li><strong>Janapada</strong> lands belonged to peasants who paid revenue.</li>
+    <li>State undertook clearing of forests, settling cultivators in newly-cleared areas (<em>shudras</em> were settled here — RS Sharma emphasises this).</li>
+    <li>Iron tools (now widely available) revolutionised agriculture; the Mauryan period saw <strong>large-scale paddy transplantation</strong> in the middle Ganga plain.</li>
+    <li><strong>Irrigation:</strong> The <em>Sudarshana lake</em> at Girnar (Saurashtra) was constructed by <strong>Pushyagupta</strong>, governor under Chandragupta, and its <strong>channels added by Tushaspha</strong>, the Yavana governor under Ashoka (recorded in Rudradaman's Junagadh inscription).</li>
+  </ul>
+
+  <h3>4.2 Land Revenue and Taxation</h3>
+  <table>
+    <tr><th>Tax</th><th>Description</th></tr>
+    <tr><td><strong>Bhaga</strong></td><td>Royal share of agricultural produce — generally <strong>1/6th</strong> (shadbhaga), but Arthashastra mentions ranges from 1/4th to 1/8th depending on soil and irrigation.</td></tr>
+    <tr><td><strong>Bali</strong></td><td>Additional tax / religious cess on land.</td></tr>
+    <tr><td><strong>Kara</strong></td><td>Tax on fruits/flowers, paid in cash.</td></tr>
+    <tr><td><strong>Senabhakta</strong></td><td>Supplies for the army when on march.</td></tr>
+    <tr><td><strong>Pranaya</strong></td><td>"Emergency / benevolence" tax in times of crisis — up to 1/3rd of produce.</td></tr>
+    <tr><td><strong>Vivit</strong></td><td>Pasture tax.</td></tr>
+    <tr><td><strong>Setubandha</strong></td><td>Tax for irrigation works built by the state — Arthashastra prescribes 1/5th of produce extra for state irrigation.</td></tr>
+    <tr><td><strong>Shulka</strong></td><td>Customs duty — generally 1/10th (10%) on imports/exports.</td></tr>
+    <tr><td><strong>Vartani / Atyaya</strong></td><td>Road cess / fines.</td></tr>
+    <tr><td><strong>Rummindei tax cut</strong></td><td>Ashoka reduced Lumbini's bhaga from 1/6th to <strong>1/8th (ashtabhagiya)</strong> as it was the Buddha's birthplace.</td></tr>
+  </table>
+
+  <h3>4.3 Trade, Industry &amp; Currency</h3>
+  <ul>
+    <li><strong>State monopolies:</strong> mines, salt, liquor, gambling, prostitution, arms-manufacture, ship-building — all under respective adhyakshas.</li>
+    <li><strong>Punch-marked silver coins</strong> (called <strong>Karshapana / Pana</strong>) were the main currency — usually 32 ratti silver. Copper Karshapanas (Mashaka, Kakini) circulated for daily transactions. Gold coins (Suvarna, Nishka) are mentioned but rare.</li>
+    <li><strong>Roads:</strong> The Royal Road from Pataliputra to Taxila (later the Grand Trunk Road) was 1,850 miles long with milestones and rest houses every 10 stadia — described by Megasthenes.</li>
+    <li><strong>Foreign trade:</strong> With Hellenistic west — through Bharukaccha (Broach) and the Persian Gulf; with Sri Lanka; with South-East Asia via Tamralipti (Bengal).</li>
+    <li><strong>Crafts:</strong> Mauryan polished stone — the famous Sarnath Lion Capital, the Didarganj Yakshi, polished sandstone pillars — testify to a high-quality state-supported craft industry. <strong>Northern Black Polished Ware (NBPW)</strong> reached its peak in the Mauryan period.</li>
+  </ul>
+</section>
+
+<section id="society">
+  <h2>5. Mauryan Society</h2>
+  <ul>
+    <li><strong>Varna system</strong> was firmly established; Arthashastra strictly upholds Brahmanical varnashrama, prescribing differential punishments based on varna.</li>
+    <li><strong>Megasthenes' Seven Classes:</strong> Megasthenes described Indian society as divided into 7 endogamous classes (not 4 varnas) —
+      <ol>
+        <li>Philosophers (Brahmins &amp; Shramanas)</li>
+        <li>Farmers / Husbandmen (largest group, exempt from war)</li>
+        <li>Soldiers (well-paid, second largest)</li>
+        <li>Herdsmen &amp; hunters</li>
+        <li>Artisans &amp; traders</li>
+        <li>Overseers / Spies / Magistrates</li>
+        <li>Councillors &amp; Assessors</li>
+      </ol>
+      This classification differs from the four-varna scheme — historians explain it as Megasthenes confusing varna with occupation.</li>
+    <li><strong>Slavery:</strong> Megasthenes famously claimed "there are no slaves in India". However, Arthashastra has an entire chapter (<em>Dasakalpa</em>) on slaves — Megasthenes probably meant that Indian slavery was milder than Greek slavery (slaves had rights, could own property, could buy freedom; Arya children could not be sold into slavery).</li>
+    <li><strong>Position of women:</strong> Polygamy was practiced in royal households. Women worked as <em>ganikas</em> (state-regulated courtesans, under Ganikadhyaksha), spinners, weavers, midwives and even spies. Arthashastra prescribes alimony for divorced/abandoned women and recognises divorce in cases of cruelty or impotence.</li>
+    <li><strong>Heterodox sects:</strong> Buddhism, Jainism, Ajivikas all flourished. <strong>Barabar Hill caves</strong> were donated by Ashoka to <strong>Ajivikas</strong> (Lomas Rishi cave); Nagarjuni Hill caves donated by Dasharatha to Ajivikas.</li>
+    <li><strong>Education:</strong> Taxila was the great university — Chanakya himself taught here. Pataliputra had its court of scholars. Brahmi script became widely used (Ashoka's edicts are largely in Brahmi).</li>
+  </ul>
+</section>
+
+<section id="sources">
+  <h2>6. Sources of the Mauryan Empire</h2>
+  <p>Mauryan history is reconstructed from two broad source streams: <strong>Archaeological</strong> (largely Ashokan inscriptions, numismatic and material remains) and <strong>Literary</strong> (Indian and Foreign).</p>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 760 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sources of Mauryan empire">
+      <rect x="0" y="0" width="760" height="280" fill="#fcf3e8"/>
+      <text x="380" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#5a1f0a">Sources of the Mauryan Empire</text>
+      <rect x="320" y="40" width="120" height="36" fill="#8b3a1a" rx="6"/>
+      <text x="380" y="63" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">Mauryan Sources</text>
+      <line x1="380" y1="76" x2="180" y2="100" stroke="#8b3a1a" stroke-width="2"/>
+      <line x1="380" y1="76" x2="580" y2="100" stroke="#8b3a1a" stroke-width="2"/>
+      <rect x="100" y="100" width="160" height="34" fill="#c97b00" rx="6"/>
+      <text x="180" y="121" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Archaeological</text>
+      <rect x="500" y="100" width="160" height="34" fill="#c97b00" rx="6"/>
+      <text x="580" y="121" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Literary</text>
+      <g font-size="10.5" fill="#333">
+        <line x1="180" y1="134" x2="70" y2="160" stroke="#888" stroke-width="1"/>
+        <line x1="180" y1="134" x2="180" y2="160" stroke="#888" stroke-width="1"/>
+        <line x1="180" y1="134" x2="290" y2="160" stroke="#888" stroke-width="1"/>
+        <rect x="20" y="160" width="100" height="100" fill="#fff" stroke="#8b3a1a" rx="4"/>
+        <text x="70" y="178" text-anchor="middle" font-weight="700">Inscriptions</text>
+        <text x="70" y="195" text-anchor="middle">14 Major RE</text>
+        <text x="70" y="210" text-anchor="middle">Minor RE</text>
+        <text x="70" y="225" text-anchor="middle">7 Major PE</text>
+        <text x="70" y="240" text-anchor="middle">Minor PE</text>
+        <text x="70" y="255" text-anchor="middle">Cave inscr.</text>
+        <rect x="130" y="160" width="100" height="100" fill="#fff" stroke="#8b3a1a" rx="4"/>
+        <text x="180" y="178" text-anchor="middle" font-weight="700">Material</text>
+        <text x="180" y="195" text-anchor="middle">Punch-marked</text>
+        <text x="180" y="210" text-anchor="middle">silver coins</text>
+        <text x="180" y="225" text-anchor="middle">NBPW</text>
+        <text x="180" y="240" text-anchor="middle">Pillars,</text>
+        <text x="180" y="255" text-anchor="middle">Yaksha statues</text>
+        <rect x="240" y="160" width="100" height="100" fill="#fff" stroke="#8b3a1a" rx="4"/>
+        <text x="290" y="178" text-anchor="middle" font-weight="700">Sites</text>
+        <text x="290" y="195" text-anchor="middle">Kumrahar</text>
+        <text x="290" y="210" text-anchor="middle">(Pataliputra)</text>
+        <text x="290" y="225" text-anchor="middle">Bulandibagh</text>
+        <text x="290" y="240" text-anchor="middle">Lauriya</text>
+        <text x="290" y="255" text-anchor="middle">Nandangarh</text>
+
+        <line x1="580" y1="134" x2="470" y2="160" stroke="#888" stroke-width="1"/>
+        <line x1="580" y1="134" x2="690" y2="160" stroke="#888" stroke-width="1"/>
+        <rect x="420" y="160" width="100" height="100" fill="#fff" stroke="#8b3a1a" rx="4"/>
+        <text x="470" y="178" text-anchor="middle" font-weight="700">Indian</text>
+        <text x="470" y="195" text-anchor="middle">Arthashastra</text>
+        <text x="470" y="210" text-anchor="middle">Mudrarakshasa</text>
+        <text x="470" y="225" text-anchor="middle">Mahavamsa</text>
+        <text x="470" y="240" text-anchor="middle">Dipavamsa</text>
+        <text x="470" y="255" text-anchor="middle">Puranas</text>
+        <rect x="640" y="160" width="100" height="100" fill="#fff" stroke="#8b3a1a" rx="4"/>
+        <text x="690" y="178" text-anchor="middle" font-weight="700">Foreign</text>
+        <text x="690" y="195" text-anchor="middle">Megasthenes</text>
+        <text x="690" y="210" text-anchor="middle">(Indica)</text>
+        <text x="690" y="225" text-anchor="middle">Strabo</text>
+        <text x="690" y="240" text-anchor="middle">Arrian</text>
+        <text x="690" y="255" text-anchor="middle">Plutarch, Justin</text>
+      </g>
+    </svg>
+    <div class="svg-caption">Source tree for the Mauryan Empire — archaeological (mainly Ashokan inscriptions) and literary (Indian + Foreign).</div>
+  </div>
+
+  <h3>6.1 Archaeological Sources</h3>
+
+  <h4>A. Inscriptions — the most authentic source</h4>
+  <p>Ashokan inscriptions are the <strong>first dated inscriptional record</strong> of Indian history. <strong>James Prinsep</strong> deciphered the Brahmi script of Ashokan edicts in <strong>1837</strong>. They are written in <strong>Prakrit</strong> in four scripts:</p>
+  <table>
+    <tr><th>Script</th><th>Region</th><th>Examples</th></tr>
+    <tr><td>Brahmi</td><td>Bulk of India</td><td>Most Major and Minor Edicts</td></tr>
+    <tr><td>Kharoshthi</td><td>North-western (Shahbazgarhi, Mansehra)</td><td>Right-to-left script of Aramaic origin</td></tr>
+    <tr><td>Aramaic</td><td>Afghanistan</td><td>Laghman, Taxila inscriptions</td></tr>
+    <tr><td>Greek + Aramaic (bilingual)</td><td>Kandahar</td><td>Famous Shar-i-Kuna bilingual edict</td></tr>
+  </table>
+
+  <h4>14 Major Rock Edicts (MRE I–XIV)</h4>
+  <table>
+    <tr><th>Edict</th><th>Theme / Content</th></tr>
+    <tr><td>MRE I</td><td>Prohibition of animal sacrifice and festive gatherings (<em>samaja</em>); reduction of slaughter in royal kitchen.</td></tr>
+    <tr><td>MRE II</td><td>Medical treatment for humans and animals; planting of medicinal herbs, fruit-trees and digging of wells throughout the empire and in neighbouring kingdoms (Chola, Pandya, Satyaputra, Keralaputra, Tamraparni / Sri Lanka, the Yona king Antiochos).</td></tr>
+    <tr><td>MRE III</td><td>Yuktas, Rajukas, Pradeshikas to tour every 5 years and propagate Dhamma; obedience to parents, generosity to Brahmins &amp; Shramanas.</td></tr>
+    <tr><td>MRE IV</td><td>"Bherighosha to Dhammaghosha" — sound of war drum replaced by sound of Dhamma.</td></tr>
+    <tr><td>MRE V</td><td>Appointment of <strong>Dhamma Mahamatras</strong> in his 14th regnal year to spread Dhamma and welfare.</td></tr>
+    <tr><td>MRE VI</td><td>Royal accessibility — Ashoka declares "at all times and at all places, whether I am dining, in the harem, in the inner apartment… informers (Pativedakas) must report to me the affairs of the people."</td></tr>
+    <tr><td>MRE VII</td><td>Toleration of all sects — every sect desires self-control and purity of mind.</td></tr>
+    <tr><td>MRE VIII</td><td>Replacement of pleasure tours (vihara-yatras) with <strong>Dhamma-yatras</strong> — Ashoka's visit to Sambodhi (Bodh Gaya) in his 10th regnal year.</td></tr>
+    <tr><td>MRE IX</td><td>Denounces ceremonies of trivial kind; true ceremony is Dhamma-mangala (practice of Dhamma).</td></tr>
+    <tr><td>MRE X</td><td>Denounces fame and glory; only Dhamma matters.</td></tr>
+    <tr><td>MRE XI</td><td>Greatness of <em>Dhamma-dana</em> (the gift of Dhamma) above all other gifts.</td></tr>
+    <tr><td>MRE XII</td><td>Most important on religious tolerance — "Honour another's sect, for by doing so one increases one's own sect and benefits that of the other man."</td></tr>
+    <tr><td>MRE XIII</td><td><strong>The longest and most famous</strong> — describes the Kalinga War, Ashoka's remorse, his policy of Dhammavijaya, names five Hellenistic kings to whom he sent missions (<strong>Antiochus II of Syria, Ptolemy II of Egypt, Antigonus of Macedon, Magas of Cyrene, Alexander of Epirus</strong>) and southern kingdoms (Cholas, Pandyas, Satyaputras, Keralaputras, Tamraparni).</td></tr>
+    <tr><td>MRE XIV</td><td>Purpose of inscriptions and that they were placed at strategic locations.</td></tr>
+  </table>
+  <p><strong>Find spots of the 14 MRE:</strong> Kalsi (Uttarakhand), Shahbazgarhi (Pakistan, Kharoshthi), Mansehra (Pakistan, Kharoshthi), Girnar (Gujarat), Sopara (Maharashtra — only Edict VIII), Yerragudi (Andhra), Dhauli (Odisha — Edicts XI–XIII replaced by Separate Kalinga Edicts), Jaugada (Odisha — same omission).</p>
+
+  <h4>Minor Rock Edicts (MRE I–III)</h4>
+  <ul>
+    <li>Found at 15+ sites including <strong>Maski, Gujarra, Nittur, Udegolam, Brahmagiri, Yerragudi, Bairat, Sahasram, Rupnath</strong>.</li>
+    <li><strong>Maski, Gujarra, Nittur and Udegolam</strong> are crucial because they explicitly name <strong>"Ashoka"</strong> instead of just "Devanampiya Piyadasi" — Maski (discovered by C. Beadon in 1915 in Karnataka) was the first to make this identification certain.</li>
+    <li>Speak of Ashoka's personal involvement with the Sangha — <em>"For more than two and a half years I was a lay disciple, but I did not exert myself zealously. But now, for more than a year, I have drawn closer to the Sangha and have exerted myself zealously."</em></li>
+    <li><strong>Bhabru / Bairat Edict</strong> (Rajasthan) — Ashoka addresses the Sangha and recommends 7 specific Buddhist texts (<em>Vinaya-samukasa, Aliya-vasani, Anagatabhayani, Muni-gatha, Moneya-sute, Upatisa-pasine, Laghulovada</em>) for study.</li>
+  </ul>
+
+  <h4>Pillar Edicts — Major (PE I–VII) and Minor</h4>
+  <ul>
+    <li><strong>7 Major Pillar Edicts</strong> issued in Ashoka's 26th/27th regnal year (last set of edicts). Found at <strong>Topra (originally Topra, Haryana; relocated to Delhi-Topra by Firoz Shah Tughlaq), Meerut (relocated to Delhi-Meerut), Lauriya-Araraj, Lauriya-Nandangarh, Rampurva (Bihar), Allahabad-Kosam (Prayagraj) and Sanchi/Sarnath/Nigali Sagar (some carry only some PEs).</strong></li>
+    <li><strong>PE VII</strong> (longest, on Delhi-Topra pillar) summarises Ashoka's achievements — Dhamma-Mahamatras, planting trees, digging wells, building rest houses, organising welfare for humans and animals.</li>
+    <li><strong>Minor Pillar Edicts</strong>:
+      <ul>
+        <li><strong>Sarnath / Sanchi / Allahabad-Kosam Schism Edict</strong> — warns against creating schisms in the Sangha; expelled monks/nuns to wear white robes.</li>
+        <li><strong>Rummindei (Lumbini) Pillar Edict</strong> — commemorates Ashoka's visit; declares Lumbini the birthplace of the Buddha; grants tax concession (1/8th bhaga).</li>
+        <li><strong>Nigali Sagar Pillar Edict</strong> — records that Ashoka doubled the stupa of <strong>Kanakamuni Buddha</strong> in his 14th regnal year.</li>
+        <li><strong>Queen's Edict</strong> on Allahabad-Kosam pillar — mentions donations of Queen <strong>Karuvaki</strong>, mother of Tivara (Ashoka's only named son in inscriptions).</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h4>Cave Inscriptions</h4>
+  <ul>
+    <li><strong>Barabar Hill caves (Bihar)</strong> — Lomas Rishi cave and 3 others donated by Ashoka to the <strong>Ajivika</strong> sect (not Buddhists!). Earliest rock-cut caves in India; have the famous mirror-finish "Mauryan polish".</li>
+    <li><strong>Nagarjuni Hill caves</strong> — donated by Dasharatha (Ashoka's grandson) to Ajivikas.</li>
+  </ul>
+
+  <h4>Other Inscriptions (Post-Mauryan, naming Mauryas)</h4>
+  <ul>
+    <li><strong>Junagadh Rock Inscription of Rudradaman (AD 150)</strong> — earliest inscription to mention Chandragupta Maurya by name and the construction of Sudarshana lake by Pushyagupta during his reign.</li>
+    <li><strong>Sohgaura copper plate (Gorakhpur)</strong> and <strong>Mahasthan inscription (Bangladesh)</strong> — likely Mauryan famine relief orders; among the few non-Ashokan Mauryan inscriptions.</li>
+  </ul>
+
+  <h3>6.2 Literary Sources</h3>
+
+  <h4>A. Indian Literary Sources</h4>
+
+  <h4>Brahmanical Literature</h4>
+  <ul>
+    <li><strong>Puranas (Vishnu, Vayu, Matsya, Bhagavata)</strong> — provide dynastic lists and chronology of Mauryan rulers (and the only sources naming all the post-Ashoka Mauryan kings up to Brihadratha).</li>
+    <li><strong>Patanjali's Mahabhashya</strong> — refers to Mauryas; mentions the manufacture of images by Mauryas for monetary gain.</li>
+  </ul>
+
+  <h4>Buddhist Literature</h4>
+  <ul>
+    <li><strong>Dipavamsa &amp; Mahavamsa</strong> (Sri Lankan Pali chronicles) — extensive account of Ashoka, Third Buddhist Council, Mahendra's mission to Sri Lanka.</li>
+    <li><strong>Divyavadana</strong> (Sanskrit Buddhist text) — contains <em>Ashokavadana</em> and <em>Pamsupradanavadana</em>, narrating Ashoka's life and conversion.</li>
+    <li><strong>Mahabodhivamsa</strong> — Sri Lankan; on the Bodhi-tree mission.</li>
+    <li><strong>Lalitavistara, Avadana-shataka</strong> — references to Ashoka.</li>
+    <li><strong>Tibetan tradition — Taranatha</strong> — names Bindusara as conqueror of "land between two seas".</li>
+  </ul>
+
+  <h4>Jaina Texts</h4>
+  <ul>
+    <li><strong>Parishishtaparvan (Hemachandra, 12th c. AD)</strong> — narrates Chandragupta's accession with Chanakya, his Jain conversion under Bhadrabahu, migration to Shravanabelagola, Sallekhana death.</li>
+    <li><strong>Kalpasutra (Bhadrabahu)</strong> and <strong>Brihatkalpa-sutra</strong> — references to Chandragupta and Samprati's patronage of Jainism.</li>
+  </ul>
+
+  <h4>Arthashastra (Kautilya)</h4>
+  <div class="highlight">
+    <strong>Arthashastra</strong> is a Sanskrit treatise on statecraft in <strong>15 books (Adhikaranas), 150 chapters and ~6,000 sutras</strong>. Authorship attributed to <strong>Kautilya / Chanakya / Vishnugupta</strong>, minister of Chandragupta. The manuscript was <strong>rediscovered in 1905 by R. Shamashastry</strong> at the Oriental Research Institute, Mysore, and published in 1909.
+  </div>
+  <ul>
+    <li>It is a <strong>theoretical/prescriptive</strong> work, not strictly a chronicle — it describes how a state <em>should</em> be run, not necessarily how the Mauryan state actually was.</li>
+    <li>Contains the <strong>Saptanga theory</strong> (seven elements of state: Swami, Amatya, Janapada, Durga, Kosha, Danda, Mitra) and the <strong>Mandala theory</strong> of foreign policy (concentric rings of friends and enemies).</li>
+    <li>The four <em>Upayas</em> of statecraft: <em>Sama</em> (conciliation), <em>Dana</em> (gift), <em>Bheda</em> (dissension), <em>Danda</em> (force).</li>
+    <li>Modern scholarship (Thomas Trautmann, Patrick Olivelle) considers the present text a compilation with later additions, but the core reflects Mauryan administrative thought.</li>
+  </ul>
+
+  <h4>Mudrarakshasa (Vishakhadatta)</h4>
+  <ul>
+    <li>A <strong>Sanskrit political play</strong> in 7 acts written around <strong>4th–5th century AD (Gupta period)</strong>.</li>
+    <li>Plot: how Chanakya wins over <strong>Rakshasa</strong>, the loyal minister of the Nandas, to the Mauryan side — a political thriller of intrigue, forgery and counter-plot.</li>
+    <li>Provides corroborative evidence (though much later) of Chandragupta's overthrow of the Nandas and uses terms like "Vrishala" (low-born) for Chandragupta.</li>
+  </ul>
+
+  <h4>Other Indian Sources</h4>
+  <ul>
+    <li><strong>Banabhatta's Harshacharita (7th c. AD)</strong> — describes the killing of Brihadratha by Pushyamitra Shunga during a military review.</li>
+    <li><strong>Kathasaritsagara (Somadeva, 11th c. AD)</strong> — preserves the Chanakya legend.</li>
+    <li><strong>Rajatarangini (Kalhana, 12th c.)</strong> — mentions Ashoka's patronage of Buddhism in Kashmir, his foundation of Srinagar (Srinagari).</li>
+  </ul>
+
+  <h4>B. Foreign Literary Sources</h4>
+
+  <h4>Indica of Megasthenes</h4>
+  <ul>
+    <li><strong>Megasthenes</strong> was the Greek ambassador sent by <strong>Seleucus Nikator</strong> to Chandragupta's court (~302–298 BC). He resided at Pataliputra.</li>
+    <li>His book <em>Indica</em> is <strong>lost in the original</strong>; we know it only through fragments quoted by later Greek/Roman writers — <strong>Strabo (Geography), Arrian (Indika), Diodorus Siculus (Bibliotheca), and Pliny the Elder (Natural History).</strong></li>
+    <li>Key descriptions: 7 endogamous classes; the city of Pataliputra (9 miles long, 1.5 miles wide, 64 gates, 570 towers, palisade with moat); the 6 committees of 5 administering Pataliputra; the 6 committees of 5 administering the army; royal court; absence of slavery (misinterpreted); famine never afflicting India (also inaccurate).</li>
+    <li>Other Greek ambassadors who wrote on India — <strong>Deimachos</strong> (to Bindusara) and <strong>Dionysius</strong> (to Bindusara from Ptolemy II) — but their works are entirely lost.</li>
+  </ul>
+
+  <h4>Other Greek &amp; Latin Writers</h4>
+  <ul>
+    <li><strong>Strabo (1st c. BC)</strong>, <strong>Arrian (2nd c. AD)</strong>, <strong>Plutarch (1st c. AD)</strong>, <strong>Justin (epitome of Trogus, 3rd c. AD)</strong>, <strong>Pliny the Elder</strong> — provide details on Sandrocottus (Chandragupta), Amitrochates (Bindusara), Alexander's invasion and Indo-Greek relations.</li>
+    <li>The <strong>Sandrocottus = Chandragupta Maurya</strong> identification by <strong>Sir William Jones</strong> (1793) became the <strong>"sheet anchor of Indian chronology"</strong> — fixed Chandragupta's accession to c. 322–321 BC.</li>
+  </ul>
+</section>
+
+<section id="fall">
+  <h2>7. Causes of the Fall of the Mauryan Empire</h2>
+  <p>Within 50 years of Ashoka's death (232 BC), the empire collapsed and the last Mauryan, <strong>Brihadratha</strong>, was assassinated by his general <strong>Pushyamitra Shunga</strong> in <strong>185 BC</strong>. RS Sharma in <em>Ancient India</em> lists five major causes:</p>
+
+  <div class="card-grid">
+    <div class="card"><h4>1. Brahmanical Reaction</h4><p>Originally proposed by <strong>H.P. Shastri</strong>: Ashoka's anti-sacrifice policy, ban on animal slaughter, appointment of Dhamma Mahamatras (who interfered in private affairs of Brahmins) and patronage of Buddhism antagonised the orthodox Brahmin elite. Pushyamitra Shunga (a Brahmin) performing the Ashvamedha sacrifice symbolises Brahmanical revanche.</p></div>
+    <div class="card"><h4>2. Financial Crisis</h4><p>Mauryan empire maintained the <strong>largest army (6,00,000 + 30,000 + 9,000 elephants)</strong> and a vast bureaucracy. According to RS Sharma, the cost of this — combined with Ashoka's lavish donations to Buddhist Sangha, building of 84,000 stupas, and welfare expenditure — created a severe fiscal crisis. The <strong>Mauryans debased their silver punch-marked coins</strong> with copper as evidence of this strain.</p></div>
+    <div class="card"><h4>3. Oppressive Rule (Provincial)</h4><p>The Kalinga Edicts (Separate I &amp; II) themselves show that provincial officials were oppressing subjects — Ashoka warns Mahamatras of Tosali and Samapa against <em>"unjust imprisonment and unjust torture"</em>. Revolts at <strong>Taxila</strong> during Bindusara's and Ashoka's reigns confirm this. Bindusara reportedly said the Taxila revolt was against the <em>dushtamatyas</em> (wicked officers), not the king.</p></div>
+    <div class="card"><h4>4. Spread of New Material Knowledge</h4><p><strong>RS Sharma's distinctive contribution</strong>: Mauryan power rested on the Magadhan monopoly of iron, NBPW pottery, advanced agriculture and writing. As these spread to peripheral regions (Deccan, eastern India, north-west) during Ashoka's reign, these regions could now sustain their own kingdoms — making central control impossible. <em>"The very success of the Mauryan policy contained the seeds of its disintegration."</em></p></div>
+    <div class="card"><h4>5. Neglect of NW Frontier</h4><p>Originally proposed by <strong>Romila Thapar</strong>: Ashoka's pacifist Dhamma policy, his preoccupation with internal Dhamma propagation and weak successors led to neglect of the strategic Hindu Kush frontier. The <strong>Greco-Bactrians under Demetrius</strong> began invading northwest India around 200 BC, and weak Mauryan successors could not resist.</p></div>
+    <div class="card"><h4>6. Weak Successors (additional)</h4><p>After Ashoka, no successor commanded comparable authority. The empire was partitioned — Eastern half (with Pataliputra) under one branch; the Western half (with Taxila/Ujjain) under another (Kunala/Samprati). This partition is recorded in the Puranas and weakened both halves.</p></div>
+  </div>
+
+  <h3>7.1 Other Theories</h3>
+  <ul>
+    <li><strong>D.D. Kosambi:</strong> Stress on economic factors — currency debasement and overstretched economy.</li>
+    <li><strong>D.N. Jha:</strong> Combination of all factors with emphasis on regional autonomy and decentralisation.</li>
+    <li><strong>HC Raychaudhuri:</strong> Blamed Ashoka's pacifism for the empire's defenselessness — but this view is now considered overstated; Ashoka did NOT disband the army (he in fact warns rebellious forest tribes in MRE XIII).</li>
+  </ul>
+
+  <h3>7.2 End of the Empire — 185 BC</h3>
+  <div class="warning">
+    <strong>Brihadratha</strong>, the last Mauryan, was reviewing his army at Pataliputra in <strong>185 BC</strong> when his Brahmin general <strong>Pushyamitra Shunga</strong> assassinated him in public — recorded in Banabhatta's <em>Harshacharita</em>: <em>"The base-born Pushyamitra, having struck down his master Brihadratha…"</em> Pushyamitra founded the <strong>Shunga dynasty</strong>, performed Ashvamedha twice, and was associated with renewed persecution of Buddhists (though this last point is debated).
+  </div>
+</section>
+
+<section id="current">
+  <h2>Current Affairs Connect — Mauryan Empire in News</h2>
+  <div class="card-grid">
+    <div class="card"><h4>Sarnath Lion Capital (National Emblem)</h4><p>Adopted as India's State Emblem on <strong>26 January 1950</strong>. The original is housed in the <strong>Sarnath Museum</strong>. A controversial 9.5-tonne <strong>cast of the Lion Capital was unveiled atop the new Parliament Building</strong> on 11 July 2022 — debates over whether the lions look "fierce" vs "calm" as in original.</p></div>
+    <div class="card"><h4>Ashoka Chakra on National Flag</h4><p>The 24-spoked wheel at the centre of the Indian flag is <strong>Ashoka's Dhamma Chakra</strong> from his Sarnath pillar capital and Lion Capital abacus.</p></div>
+    <div class="card"><h4>Kandahar Bilingual Edict</h4><p>The Greek-Aramaic bilingual edict at Kandahar — earliest indication of Ashokan rule in Afghanistan — remains relevant in studies of Indo-Hellenistic interaction. Taliban-era concerns over heritage preservation.</p></div>
+    <div class="card"><h4>Lumbini Pillar &amp; Buddhist Diplomacy</h4><p>PM Modi's <strong>visits to Lumbini (Nepal)</strong> in 2014 and 2022 invoked Ashoka's pillar declaring it the Buddha's birthplace — used for India-Nepal Buddhist heritage diplomacy and the SARAI Mountain Climate Resilience announcements.</p></div>
+  </div>
+</section>
+
+<section id="pyq">
+  <h2>Previous Year Questions (PYQs)</h2>
+  <div class="pyq"><span class="pyq-tag">Prelims 2020</span> <strong>With reference to the history of ancient India, Bhavabhuti, Hastimalla and Kshemeshvara were famous</strong> — (a) Jain monks (b) playwrights (c) temple architects (d) philosophers. <strong>Answer: (b) Playwrights.</strong> Mudrarakshasa is by Vishakhadatta, an earlier playwright in the same tradition.</div>
+  <div class="pyq"><span class="pyq-tag">Prelims 2019</span> <strong>Which one of the following is associated with the Mauryan dynasty's administration?</strong> Consider statements on Rajukas, Yuktas and Pradeshikas — testing knowledge of Mauryan officials. <em>(Memorise the 3-officer touring system of MRE III.)</em></div>
+  <div class="pyq"><span class="pyq-tag">Prelims 2016</span> <strong>The Bhagavadgita mentions guna theory; with reference to ancient Indian texts, "Bhakti" is mentioned in the Shvetashvatara Upanishad too.</strong> Frequent Mauryan-era source (Upanishadic) questions.</div>
+  <div class="pyq"><span class="pyq-tag">Prelims 2014</span> <strong>"Sannati" in Karnataka, recently in news, is famous for which one of the following?</strong> — Answer: An Ashokan inscription site. (Sannati is the only place where a portrait of Ashoka was identified.)</div>
+  <div class="pyq"><span class="pyq-tag">Prelims 2013</span> <strong>The Mauryan ruler Ashoka, in his rock edicts, claimed sending missions to all the following territories EXCEPT</strong> — (a) Egypt (b) Greece (c) Sri Lanka (d) China. <strong>Answer: (d) China.</strong> Rock Edict XIII names Egypt (Ptolemy II), Greece/Macedon (Antigonus), Cyrene (Magas), Epirus (Alexander) and Syria (Antiochus II) — but NOT China.</div>
+  <div class="pyq"><span class="pyq-tag">Mains 2020 GS-I</span> <strong>Pala period is the most significant phase in the history of Buddhism in India. Enumerate.</strong> — Connect to Ashoka's foundational role: Third Council, missions, monastery culture that continued into the Pala phase.</div>
+  <div class="pyq"><span class="pyq-tag">Mains 2016 GS-I</span> <strong>Early Buddhist Stupa-art, while depicting folk motifs and narratives, successfully expounds Buddhist ideals. Elucidate.</strong> — Begin with Ashoka's stupa-building (Sanchi Stupa-I core, Bharhut origin), railings adding Jatakas, narrative panels.</div>
+  <div class="pyq"><span class="pyq-tag">Mains 2014 GS-I</span> <strong>To what extent has the urban planning and culture of the Indus Valley Civilization provided inputs to the present-day urbanization? Discuss.</strong> — Comparison opportunity with Mauryan urbanism (Pataliputra, Megasthenes' account) is a value-add.</div>
+</section>
+
+<section id="revision">
+  <h2>Quick Revision Box — 10 Key Points</h2>
+  <div class="revision-box">
+    <h3>Memorise these for Prelims &amp; Mains</h3>
+    <ol>
+      <li><strong>Foundation:</strong> Chandragupta Maurya, 324/321 BC, overthrew Dhana Nanda with Chanakya's help; capital Pataliputra.</li>
+      <li><strong>Seleucid Treaty (305 BC):</strong> Chandragupta got Aria, Arachosia, Gedrosia, Paropamisadae for 500 elephants; Megasthenes sent as ambassador.</li>
+      <li><strong>Bindusara "Amitraghata":</strong> 297–273 BC; ambassador Deimachos; Ajivika follower; "land between two seas".</li>
+      <li><strong>Ashoka:</strong> "Devanampiya Piyadasi" in inscriptions; name "Ashoka" confirmed only by Maski, Gujarra, Nittur, Udegolam Minor RE; coronation 268 BC.</li>
+      <li><strong>Kalinga War 261 BC (8th regnal year):</strong> 1,00,000 slain + 1,50,000 deported (MRE XIII); Bherighosha → Dhammaghosha; conversion to Buddhism.</li>
+      <li><strong>Edicts:</strong> 14 Major Rock Edicts + Minor Rock Edicts + 7 Major Pillar Edicts + Minor Pillar Edicts + Cave inscriptions. Scripts: Brahmi (bulk), Kharoshthi (Shahbazgarhi, Mansehra), Aramaic + Greek (Kandahar bilingual).</li>
+      <li><strong>Provinces:</strong> 5 — Uttarapatha (Taxila), Avantirashtra (Ujjain), Dakshinapatha (Suvarnagiri), Kalinga (Tosali), Prachya (Pataliputra). Each under a Kumara.</li>
+      <li><strong>Officials:</strong> Pradeshika (district), Rajuka (revenue + judicial — PE IV gave them independence), Yukta (subordinate), Gopa (5–10 villages), Gramika (village).</li>
+      <li><strong>Sources:</strong> Arthashastra (Kautilya, rediscovered by Shamashastry 1905), Indica (Megasthenes, lost — known via Strabo/Arrian/Diodorus), Mudrarakshasa (Vishakhadatta), Mahavamsa, Junagadh inscription of Rudradaman.</li>
+      <li><strong>End:</strong> Brihadratha killed by Pushyamitra Shunga in 185 BC — founding the Shunga dynasty. RS Sharma's 5 causes: Brahmanical reaction, fiscal crisis, oppressive rule, spread of material knowledge to periphery, NW frontier neglect.</li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<aside>
+<div class="widget">
+  <h4>Mauryan Rulers — Quick Reference</h4>
+  <table>
+    <tr><th>Ruler</th><th>Reign</th></tr>
+    <tr><td>Chandragupta</td><td>324–297 BC</td></tr>
+    <tr><td>Bindusara</td><td>297–273 BC</td></tr>
+    <tr><td><strong>Ashoka</strong></td><td><strong>268–232 BC</strong></td></tr>
+    <tr><td>Dasharatha</td><td>232–224 BC</td></tr>
+    <tr><td>Samprati</td><td>224–215 BC</td></tr>
+    <tr><td>Shalishuka</td><td>215–202 BC</td></tr>
+    <tr><td>Devavarman</td><td>202–195 BC</td></tr>
+    <tr><td>Shatadhanu</td><td>195–187 BC</td></tr>
+    <tr><td>Brihadratha</td><td>187–185 BC</td></tr>
+  </table>
+</div>
+
+<div class="widget">
+  <h4>Ashokan Edicts — Snapshot</h4>
+  <table>
+    <tr><th>Type</th><th>Count</th></tr>
+    <tr><td>Major Rock Edicts</td><td>14</td></tr>
+    <tr><td>Minor Rock Edicts</td><td>3 + variants</td></tr>
+    <tr><td>Major Pillar Edicts</td><td>7</td></tr>
+    <tr><td>Minor Pillar Edicts</td><td>~5 (Schism, Rummindei, Nigali Sagar, Queen's, Bhabru)</td></tr>
+    <tr><td>Sep. Kalinga Edicts</td><td>2 (Dhauli, Jaugada)</td></tr>
+    <tr><td>Cave inscriptions</td><td>3 (Barabar)</td></tr>
+    <tr><td>Scripts</td><td>Brahmi, Kharoshthi, Aramaic, Greek</td></tr>
+  </table>
+</div>
+
+<div class="widget">
+  <h4>Difficulty / Weight</h4>
+  <div class="bar-row"><span>Prelims</span><div class="bar"><i style="width:96%"></i></div><span>10/10</span></div>
+  <div class="bar-row"><span>Mains</span><div class="bar"><i style="width:92%"></i></div><span>9/10</span></div>
+  <div class="bar-row"><span>Conceptual</span><div class="bar"><i style="width:86%"></i></div><span>8/10</span></div>
+  <div class="bar-row"><span>Memory load</span><div class="bar"><i style="width:90%"></i></div><span>9/10</span></div>
+</div>
+
+<div class="widget">
+  <h4>Must-know Terms</h4>
+  <div class="tag-cloud">
+    <span>Devanampiya Piyadasi</span><span>Sandrocottus</span><span>Amitraghata</span><span>Dhammavijaya</span><span>Bherighosha</span><span>Dhammaghosha</span><span>Dhamma Mahamatra</span><span>Rajuka</span><span>Pradeshika</span><span>Yukta</span><span>Sitadhyaksha</span><span>Sita land</span><span>Karshapana</span><span>NBPW</span><span>Saptanga</span><span>Mandala theory</span><span>Sallekhana</span><span>Maski edict</span><span>Bhabru edict</span><span>Rummindei</span><span>Pushyamitra</span>
+  </div>
+</div>
+
+<div class="widget self-test">
+  <h4>Self-Test (5 Q's)</h4>
+  <details><summary>Q1. Which edict gives the Kalinga War account?</summary><p>Major Rock Edict XIII — the longest edict; gives casualty figures (1,00,000 slain, 1,50,000 deported) and names 5 Hellenistic kings to whom Dhamma missions were sent.</p></details>
+  <details><summary>Q2. Where was Ashoka's name "Ashoka" first conclusively found?</summary><p>Maski (Karnataka) — Minor Rock Edict discovered by C. Beadon in 1915. Subsequent Gujarra, Nittur and Udegolam edicts also name him.</p></details>
+  <details><summary>Q3. What did Ashoka grant Lumbini in the Rummindei pillar?</summary><p>Tax concession — reduction of bhaga from 1/6th to 1/8th (ashtabhagiya) because it was the Buddha's birthplace.</p></details>
+  <details><summary>Q4. Who were the Mauryan administrative officers in Pillar Edict IV?</summary><p>Rajukas — given independence in judicial matters, compared to "an experienced nurse" entrusted with a child.</p></details>
+  <details><summary>Q5. Who rediscovered Kautilya's Arthashastra and when?</summary><p>R. Shamashastry in 1905 at the Oriental Research Institute, Mysore; published in 1909.</p></details>
+</div>
+
+<div class="widget">
+  <h4>Related UPSC Notes</h4>
+  <ul class="related">
+    <li><a href="/upsc-notes/ancient/ancient-topic07">Topic 07: Mahajanapada Period</a></li>
+    <li><a href="/upsc-notes/ancient/ancient-topic08">Topic 08: Foreign Invasions</a></li>
+    <li><a href="/upsc-notes/ancient/ancient-topic06">Topic 06: Buddhism &amp; Jainism</a></li>
+    <li><a href="/upsc-notes/ancient">Mod 3: Mauryan &amp; Gupta Age</a></li>
+  </ul>
+</div>
+</aside>
+</div>
+</div>

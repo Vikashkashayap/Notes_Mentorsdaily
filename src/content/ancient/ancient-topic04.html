@@ -1,0 +1,1198 @@
+<!-- ancient-topic04 — auto-imported from ancient-topic04-ivc-upsc-notes.html -->
+<style data-topic-notes>
+    :root {
+      --primary: #1a3c5e;
+      --primary-light: #2a5c8e;
+      --secondary: #0a4a5e;
+      --accent: #1a7a9a;
+      --accent-light: #2a9abf;
+      --success: #27ae60;
+      --success-light: #2ecc71;
+      --warning: #f39c12;
+      --info: #2980b9;
+      --bg-main: #f4f6f9;
+      --bg-card: #ffffff;
+      --bg-sidebar: #1a2940;
+      --bg-sidebar-hover: #243b55;
+      --text-primary: #1a2533;
+      --text-secondary: #4a5568;
+      --text-muted: #718096;
+      --text-light: #f0f4f8;
+      --border-light: #e2e8f0;
+      --border-medium: #cbd5e0;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.10);
+      --shadow-lg: 0 8px 24px rgba(0,0,0,0.13);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-main); background: var(--bg-main); color: var(--text-primary); line-height: 1.7; }
+
+    .sidebar { width: 270px; background: var(--bg-sidebar); color: var(--text-light); position: fixed; top: 0; left: 0; height: 100vh; overflow-y: auto; z-index: 100; transition: transform 0.3s ease; }
+    .sidebar-logo { padding: 20px 18px 14px; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; gap: 10px; }
+    .sidebar-logo .logo-icon { font-size: 1.6rem; }
+    .sidebar-logo .logo-text { font-size: 1rem; font-weight: 700; color: var(--text-light); }
+    .sidebar-logo .logo-sub { font-size: 0.72rem; color: rgba(255,255,255,0.5); display: block; }
+    .sidebar-section { padding: 14px 10px 4px; }
+    .sidebar-section-title { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: rgba(255,255,255,0.35); padding: 0 6px 6px; }
+    .sidebar-item { display: flex; align-items: center; gap: 8px; padding: 7px 10px; border-radius: var(--radius-sm); color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.82rem; transition: background 0.18s, color 0.18s; }
+    .sidebar-item:hover { background: var(--bg-sidebar-hover); color: #fff; }
+    .sidebar-item.active { background: var(--accent); color: #fff; font-weight: 600; }
+    .sidebar-item .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+    .sidebar-item.active .dot { background: #fff; }
+    .main-content { margin-left: 270px; min-height: 100vh; }
+    @media (max-width: 860px) { .sidebar { transform: translateX(-100%); } .sidebar.open { transform: translateX(0); } .main-content { margin-left: 0; } }
+
+    .topbar { background: var(--bg-card); border-bottom: 1px solid var(--border-light); padding: 10px 28px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 50; }
+    .menu-btn { display: none; background: none; border: none; cursor: pointer; font-size: 1.3rem; color: var(--primary); padding: 4px; }
+    @media (max-width: 860px) { .menu-btn { display: block; } }
+    .breadcrumb { font-size: 0.8rem; color: var(--text-muted); }
+    .breadcrumb a { color: var(--primary); text-decoration: none; }
+    .badge { font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+    .badge.gs1 { background: linear-gradient(90deg, var(--secondary), var(--accent)); color: #fff; }
+
+    .hero { background: linear-gradient(135deg, var(--secondary) 0%, #082838 50%, var(--primary) 100%); color: #fff; padding: 38px 32px 34px; }
+    .hero-module { font-size: 0.78rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 8px; }
+    .hero h1 { font-size: 2rem; font-weight: 800; line-height: 1.2; margin-bottom: 10px; }
+    .hero-sub { font-size: 0.95rem; color: rgba(255,255,255,0.82); margin-bottom: 16px; }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.8rem; color: rgba(255,255,255,0.7); }
+
+    .content-wrap { padding: 26px 28px 40px; max-width: 980px; }
+    .card { background: var(--bg-card); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); margin-bottom: 22px; overflow: hidden; border: 1px solid var(--border-light); }
+    .card-header { display: flex; align-items: center; gap: 10px; padding: 16px 20px 14px; border-bottom: 1px solid var(--border-light); background: linear-gradient(90deg, rgba(10,74,94,0.07) 0%, transparent 100%); }
+    .card-icon { font-size: 1.2rem; }
+    .card-header h2 { font-size: 1.05rem; font-weight: 700; color: var(--primary); }
+    .card-body { padding: 18px 20px; }
+
+    .sec-h3 { font-size: 0.95rem; font-weight: 700; color: var(--secondary); margin: 18px 0 8px; padding-left: 10px; border-left: 3px solid var(--accent); }
+    .sec-h4 { font-size: 0.88rem; font-weight: 700; color: var(--primary); margin: 14px 0 6px; }
+
+    .highlight-box { border-radius: var(--radius-md); padding: 13px 16px; margin: 12px 0; font-size: 0.88rem; line-height: 1.65; }
+    .highlight-box.yellow { background: #fffbeb; border-left: 4px solid var(--warning); }
+    .highlight-box.green { background: #f0faf4; border-left: 4px solid var(--success); }
+    .highlight-box.red { background: #fff5f5; border-left: 4px solid #e74c3c; }
+    .highlight-box.blue { background: #f0f7ff; border-left: 4px solid var(--info); }
+    .highlight-box.indus { background: #f0faff; border-left: 4px solid var(--accent); }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 7px; margin: 14px 0; }
+    .tag { font-size: 0.75rem; font-weight: 600; padding: 4px 11px; border-radius: 20px; background: #eef1f7; color: var(--primary); border: 1px solid var(--border-medium); }
+    .tag.hot { background: linear-gradient(90deg, var(--secondary), var(--accent)); color: #fff; border-color: transparent; }
+
+    .info-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; margin: 14px 0; }
+    .info-tile { background: #f8fafc; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 10px 13px; }
+    .tile-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-muted); margin-bottom: 3px; }
+    .tile-value { font-size: 0.83rem; font-weight: 600; color: var(--primary); }
+
+    .table-wrap { overflow-x: auto; margin: 12px 0; border-radius: var(--radius-md); border: 1px solid var(--border-light); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+    thead tr { background: var(--secondary); color: #fff; }
+    thead th { padding: 10px 12px; text-align: left; font-weight: 700; font-size: 0.8rem; }
+    tbody tr { border-bottom: 1px solid var(--border-light); }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:nth-child(even) { background: #fafbfc; }
+    tbody td { padding: 9px 12px; vertical-align: top; }
+
+    .styled-list { list-style: none; padding: 0; margin: 8px 0; }
+    .styled-list li { padding: 5px 0 5px 18px; position: relative; font-size: 0.88rem; border-bottom: 1px solid var(--border-light); }
+    .styled-list li:last-child { border-bottom: none; }
+    .styled-list li::before { content: "▸"; position: absolute; left: 0; color: var(--accent); font-size: 0.75rem; top: 7px; }
+
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 12px 0; }
+    @media (max-width: 640px) { .two-col { grid-template-columns: 1fr; } }
+    .mini-card { background: #f8fafc; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 12px 14px; border-top: 3px solid var(--accent); }
+    .mini-card-title { font-size: 0.85rem; font-weight: 700; color: var(--secondary); margin-bottom: 6px; }
+    .mini-card-body { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.6; }
+
+    .site-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; margin: 14px 0; }
+    .site-card { border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 12px 14px; background: #fff; border-left: 4px solid var(--accent); }
+    .site-name { font-size: 0.9rem; font-weight: 800; color: var(--secondary); margin-bottom: 3px; }
+    .site-sub { font-size: 0.75rem; font-weight: 700; color: var(--accent); margin-bottom: 7px; }
+    .site-row { font-size: 0.81rem; margin-bottom: 3px; color: var(--text-secondary); }
+    .site-row strong { color: var(--text-primary); }
+
+    .phase-row { display: grid; grid-template-columns: 140px 1fr; gap: 0; margin: 0; }
+    .phase-label { background: var(--secondary); color: #fff; padding: 10px 14px; font-size: 0.82rem; font-weight: 700; display: flex; align-items: center; border-radius: var(--radius-sm) 0 0 var(--radius-sm); margin-bottom: 6px; }
+    .phase-content { background: #f0faff; padding: 10px 14px; font-size: 0.82rem; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; margin-bottom: 6px; border: 1px solid var(--border-light); border-left: none; }
+
+    .svg-container { background: var(--bg-card); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); margin-bottom: 22px; padding: 20px; border: 1px solid var(--border-light); overflow-x: auto; }
+    .svg-container svg { display: block; max-width: 100%; }
+    .svg-caption { font-size: 0.78rem; color: var(--text-muted); text-align: center; margin-top: 10px; font-style: italic; }
+
+    .ca-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; margin-top: 14px; }
+    .ca-card { background: #f8fafc; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 14px 16px; }
+    .ca-year { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 4px; }
+    .ca-title { font-size: 0.87rem; font-weight: 700; color: var(--primary); margin-bottom: 5px; }
+    .ca-body { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.55; }
+
+    .pyq-item { background: #f8fafc; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 14px 16px; margin-bottom: 12px; }
+    .pyq-meta { font-size: 0.72rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+    .pyq-q { font-size: 0.88rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+    .pyq-hint { font-size: 0.83rem; color: var(--text-secondary); background: white; border-radius: var(--radius-sm); padding: 8px 12px; border-left: 3px solid var(--success); }
+
+    .revision-box { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: #fff; border-radius: var(--radius-lg); padding: 24px 26px; }
+    .revision-box h2 { font-size: 1.05rem; font-weight: 700; margin-bottom: 16px; }
+    .revision-list { list-style: none; padding: 0; counter-reset: rev; }
+    .revision-list li { counter-increment: rev; display: flex; gap: 12px; padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,0.12); font-size: 0.87rem; line-height: 1.5; }
+    .revision-list li::before { content: counter(rev, decimal-leading-zero); flex-shrink: 0; font-size: 0.7rem; font-weight: 800; background: rgba(255,255,255,0.18); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+    .revision-list li:last-child { border-bottom: none; }
+
+    .cta-bar { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 16px 22px; display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin-bottom: 22px; }
+    .cta-text strong { font-size: 0.92rem; color: var(--primary); display: block; }
+    .cta-text span { font-size: 0.8rem; color: var(--text-muted); }
+    .cta-btn { background: linear-gradient(90deg, var(--secondary), var(--accent)); color: #fff; padding: 9px 20px; border-radius: 24px; text-decoration: none; font-size: 0.84rem; font-weight: 700; white-space: nowrap; }
+
+    @media print {
+      .sidebar, .topbar, .menu-btn, .cta-bar { display: none !important; }
+      .main-content { margin-left: 0; }
+      .card, .svg-container { box-shadow: none; border: 1px solid #ccc; break-inside: avoid; }
+    }
+  
+/* Next.js: shared app navbar; restore two-column layout */
+.notes-topic-embedded .navbar,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded .hamburger,
+.notes-topic-embedded .menu-btn,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .page-wrapper {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 280px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  margin-top: 0 !important;
+}
+
+.notes-topic-embedded .main-content,
+.notes-topic-embedded main.main-content,
+.notes-topic-embedded main {
+  margin-left: 0 !important;
+  min-width: 0;
+}
+
+.notes-topic-embedded aside,
+.notes-topic-embedded .right-sidebar,
+.notes-topic-embedded aside.sidebar {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .page-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+  .notes-topic-embedded aside,
+  .notes-topic-embedded .right-sidebar,
+  .notes-topic-embedded aside.sidebar {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="page-wrapper"><main class="main-content">
+  <div class="topbar">
+    <nav class="breadcrumb">
+      
+      <a href="/upsc-notes">Notes Hub</a> › <a href="/upsc-notes/ancient">Ancient History</a> › Indus Valley Civilization
+    </nav>
+    <span class="badge gs1">GS Paper 1</span>
+  </div>
+
+  <div class="hero">
+    <div class="hero-module">Ancient History · Topic 04</div>
+    <h1>Indus Valley Civilization <span style="font-size:1.2rem; opacity:0.8;">(c. 3300–1200 BCE)</span></h1>
+    <p class="hero-sub">Harappa · Mohenjo-daro · Dholavira · Lothal · Rakhigarhi · Town Planning · Great Bath · Pashupati Seal · Indus Script · Decline</p>
+    <div class="hero-meta">
+      <span>📄 GS Paper 1</span>
+      <span>⏱ 45 min read</span>
+      <span>🎯 Prelims: sites, excavators, features; Mains: urban planning, trade, decline theories</span>
+      <span>📅 Updated: May 2026</span>
+    </div>
+  </div>
+
+  <div class="content-wrap">
+
+    <!-- Conceptual Clarity -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">💡</span><h2>Conceptual Clarity — IVC in UPSC Context</h2></div>
+      <div class="card-body">
+        <div class="highlight-box yellow">
+          <strong>What Is the Indus Valley Civilization?</strong>
+          The Indus Valley Civilization (IVC), also called the <em>Harappan Civilization</em>, was a <strong>Bronze Age urban civilization</strong> (c. 3300–1200 BCE, with Mature phase c. 2550–1900 BCE) that flourished in the northwestern Indian subcontinent — primarily in present-day Pakistan and northwestern India. It was one of the world's <strong>four earliest urban civilizations</strong> alongside Mesopotamia (Tigris-Euphrates), Egypt (Nile), and China (Yellow River). IVC is distinguished by its extraordinary <strong>town planning, standardized weights &amp; measures, advanced drainage, and undeciphered script</strong> — but by the conspicuous <em>absence</em> of temples, palaces, and royal tombs typical of other ancient civilizations.
+        </div>
+        <div class="highlight-box indus">
+          <strong>Key UPSC Naming Conventions</strong>
+          Three names are used: (1) <strong>Indus Valley Civilization</strong> — coined by John Marshall (1924), emphasizes the Indus river geography; (2) <strong>Harappan Civilization</strong> — named after the first excavated site; preferred by most archaeologists; (3) <strong>Saraswati-Sindhu Civilization</strong> — preferred by some Indian scholars to include the Ghaggar-Hakra (dried Saraswati) basin sites, which house &gt;60% of known IVC sites. In UPSC questions, all three are acceptable.
+        </div>
+        <div class="tags">
+          <span class="tag hot">Town Planning</span>
+          <span class="tag hot">Great Bath</span>
+          <span class="tag hot">Pashupati Seal</span>
+          <span class="tag hot">Indus Script</span>
+          <span class="tag hot">Dholavira</span>
+          <span class="tag hot">Lothal Dockyard</span>
+          <span class="tag">Rakhigarhi</span>
+          <span class="tag">Bronze Dancing Girl</span>
+          <span class="tag">Decline Theories</span>
+          <span class="tag">Weights &amp; Measures</span>
+        </div>
+        <div class="info-tiles">
+          <div class="info-tile"><div class="tile-label">Period</div><div class="tile-value">c. 3300–1200 BCE</div></div>
+          <div class="info-tile"><div class="tile-label">Mature Phase</div><div class="tile-value">c. 2550–1900 BCE</div></div>
+          <div class="info-tile"><div class="tile-label">Discovery Year</div><div class="tile-value">1921 (Harappa); 1922 (MJD)</div></div>
+          <div class="info-tile"><div class="tile-label">Coined by</div><div class="tile-value">Sir John Marshall, 1924</div></div>
+          <div class="info-tile"><div class="tile-label">Largest Site (India)</div><div class="tile-value">Rakhigarhi, Haryana</div></div>
+          <div class="info-tile"><div class="tile-label">Area Covered</div><div class="tile-value">~1.5 million sq km</div></div>
+          <div class="info-tile"><div class="tile-label">Metal Age</div><div class="tile-value">Bronze (no iron)</div></div>
+          <div class="info-tile"><div class="tile-label">Script</div><div class="tile-value">Undeciphered (~400–600 signs)</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 1: Discovery -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">🔍</span><h2>1. Discovery of the Indus Valley Civilization</h2></div>
+      <div class="card-body">
+        <div class="highlight-box indus">
+          The IVC was rediscovered through systematic archaeology — the civilization had been completely forgotten for over 3,000 years until the 19th–20th century. Its discovery fundamentally changed understanding of South Asian prehistory, pushing back the origins of urban culture in the subcontinent by nearly two millennia.
+        </div>
+        <h3 class="sec-h3">Timeline of Discovery</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Year</th><th>Person / Event</th><th>Significance</th></tr></thead>
+            <tbody>
+              <tr><td><strong>1842</strong></td><td>Charles Masson (British traveller)</td><td>First to note the Harappa mound in Punjab; described "a ruined brick castle" but did not excavate</td></tr>
+              <tr><td><strong>1856</strong></td><td>John and William Brunton (railway engineers)</td><td>Used Harappan bricks as ballast for Lahore–Multan railway; unknowingly destroyed archaeological layers</td></tr>
+              <tr><td><strong>1875</strong></td><td>Alexander Cunningham (Director General, ASI)</td><td>Visited Harappa during an ASI survey; collected a seal but did not recognize its significance; identified as a Buddhist site</td></tr>
+              <tr><td><strong>1921</strong></td><td><strong>Daya Ram Sahni</strong> (ASI)</td><td>First systematic excavation of <strong>Harappa</strong> — the civilization's first formally excavated site; under John Marshall's direction</td></tr>
+              <tr><td><strong>1922</strong></td><td><strong>R.D. Banerjee</strong> (ASI)</td><td>Excavated <strong>Mohenjo-daro</strong> ("Mound of the Dead") in Sindh; recognized the non-Buddhist, non-Aryan character of the remains</td></tr>
+              <tr><td><strong>1924</strong></td><td><strong>Sir John Marshall</strong></td><td>Announced the discovery to the world in the Illustrated London News; <strong>coined the term "Indus Valley Civilization"</strong>; recognized it as a distinct, pre-Aryan, Bronze Age urban culture</td></tr>
+              <tr><td><strong>1931</strong></td><td>John Marshall</td><td>Published landmark monograph <em>Mohenjo-daro and the Indus Civilization</em> (3 volumes)</td></tr>
+              <tr><td><strong>1944–48</strong></td><td><strong>Sir Mortimer Wheeler</strong> (Director General, ASI)</td><td>Major re-excavations at Harappa and Mohenjo-daro; introduced stratigraphy-based dating; proposed Aryan Invasion Theory of IVC decline</td></tr>
+              <tr><td><strong>1954–63</strong></td><td><strong>S.R. Rao</strong></td><td>Excavated <strong>Lothal</strong> (Gujarat) — discovered the world's earliest dockyard/tidal dock</td></tr>
+              <tr><td><strong>1960–69</strong></td><td><strong>B.B. Lal &amp; A. Ghosh</strong></td><td>Excavated <strong>Kalibangan</strong> (Rajasthan) — found earliest ploughed field (pre-Harappan level)</td></tr>
+              <tr><td><strong>1990–present</strong></td><td><strong>R.S. Bisht</strong></td><td>Excavated <strong>Dholavira</strong> (Gujarat) — unique 3-part town plan; large water reservoirs; 10-sign signboard inscription; UNESCO World Heritage 2021</td></tr>
+              <tr><td><strong>2014–present</strong></td><td>Vasant Shinde (Deccan College)</td><td>Major excavations at <strong>Rakhigarhi</strong> (Haryana); DNA analysis showing IVC as a genetically distinct population</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="highlight-box yellow">
+          <strong>Memory Hook — Discoverers</strong>
+          <strong>D</strong>aya Ram Sahni → <strong>H</strong>arappa (1921) | <strong>R</strong>.D. Banerjee → <strong>M</strong>ohenjo-daro (1922) | <strong>S</strong>.R. Rao → <strong>L</strong>othal | <strong>B</strong>.B. Lal → <strong>K</strong>alibangan | <strong>R</strong>.S. Bisht → <strong>D</strong>holavira
+          <br/>Marshall announced + coined the name (1924). Wheeler re-excavated (1944–48).
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: Geographical Extent -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">🗺️</span><h2>2. Geographical Extent</h2></div>
+      <div class="card-body">
+        <div class="highlight-box indus">
+          <strong>Largest of the Four Ancient Civilizations</strong>
+          The IVC covered approximately <strong>1.5 million sq km</strong> — larger than the combined area of Egypt and Mesopotamia, making it the largest of the four early urban civilizations by geographical spread. Over <strong>2,600+ sites</strong> have been identified (as of 2024), of which most are in India, spread across 7–8 modern states.
+        </div>
+        <h3 class="sec-h3">Boundary Coordinates</h3>
+        <div class="two-col">
+          <div class="mini-card">
+            <div class="mini-card-title">Westernmost Site</div>
+            <div class="mini-card-body"><strong>Sutkagendor</strong> (Balochistan, Pakistan) — near the Makran coast on the Arabian Sea; likely a maritime trade outpost; excavated by Sir Aurel Stein and George Dales</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-title">Easternmost Site</div>
+            <div class="mini-card-body"><strong>Alamgirpur</strong> (Meerut district, Uttar Pradesh, India) — on the Hindon river (tributary of Yamuna); excavated by Y.D. Sharma (1958)</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-title">Northernmost Site</div>
+            <div class="mini-card-body"><strong>Manda</strong> (Akhnoor, Jammu &amp; Kashmir, India) — on the Chenab river; northernmost limit of the civilization</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card-title">Southernmost Site</div>
+            <div class="mini-card-body"><strong>Daimabad</strong> (Ahmednagar district, Maharashtra, India) — on the Pravara river; also known for Daimabad bronzes (chariot, elephant, rhino, buffalo)</div>
+          </div>
+        </div>
+        <h3 class="sec-h3">River-wise Distribution</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>River</th><th>Major Sites</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Indus</strong></td><td>Mohenjo-daro, Chanhudaro, Amri, Sutkagendor</td></tr>
+              <tr><td><strong>Ravi</strong></td><td>Harappa</td></tr>
+              <tr><td><strong>Ghaggar-Hakra (dried Saraswati)</strong></td><td>Kalibangan, Banawali, Rakhigarhi, Ganweriwala — <em>majority of sites are on this river system</em></td></tr>
+              <tr><td><strong>Sabarmati / Bhogava</strong></td><td>Lothal (on a tributary)</td></tr>
+              <tr><td><strong>Luni</strong></td><td>Kalibangan (also Ghaggar tributary region)</td></tr>
+              <tr><td><strong>Oxus / Amu Darya area</strong></td><td>Shortugai (Afghanistan) — lapis lazuli trade colony</td></tr>
+              <tr><td><strong>Rann of Kutch</strong></td><td>Dholavira (on Khadir island in the Rann)</td></tr>
+              <tr><td><strong>Chenab</strong></td><td>Manda (Jammu)</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="highlight-box yellow">
+          <strong>Key Fact for Prelims:</strong> The <strong>Ghaggar-Hakra</strong> river system (identified by many scholars as the dried course of the Vedic <em>Saraswati</em>) has MORE IVC sites than the Indus river itself. This is why some Indian scholars prefer the term "Saraswati-Sindhu Civilization." The river dried up due to tectonic shifts and monsoon weakening around 2000–1900 BCE, which is also linked to IVC decline.
+        </div>
+        <div class="highlight-box indus">
+          <strong>Rakhigarhi — Largest IVC Site</strong>
+          Rakhigarhi (Hisar district, Haryana) has emerged as the largest known IVC site in the entire Indian subcontinent, spread over ~350–550 hectares. Recent DNA analysis (2019, Vasant Shinde + Harvard team) of a Rakhigarhi skeleton showed the IVC population was genetically distinct from steppe pastoralists (challenging the Aryan migration timeline) and had South Asian ancestry mixed with Iranian farmer ancestry.
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3: Phases -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">📅</span><h2>3. Phases of the Indus Valley Civilization</h2></div>
+      <div class="card-body">
+        <div class="highlight-box blue">
+          The IVC did not appear fully formed — it evolved over centuries from earlier Neolithic/Chalcolithic village cultures. Archaeologists divide its development into three broad phases. The Pre/Early Harappan phase represents the formative stage; the Mature phase is the peak urban civilization; the Late/Post-Harappan phase is the gradual de-urbanization.
+        </div>
+        <h3 class="sec-h3">Phase 1: Pre-Harappan / Early Harappan (c. 3200–2550 BCE)</h3>
+        <ul class="styled-list">
+          <li><strong>Character:</strong> Small farming villages transitioning to towns; proto-urban features beginning to appear; IVC's distinct style not yet fully formed</li>
+          <li><strong>Key Sites:</strong> Mehrgarh (earliest, Neolithic precursor, c. 7000–2600 BCE), Amri, Kot Diji, Rahman Dheri, Kalibangan-I (pre-Harappan ploughed field), Harappa-Period I</li>
+          <li><strong>Kot Diji Phase (c. 2800–2600 BCE):</strong> Formative Harappan culture named after the site in Sindh; pottery shows early IVC-style; some evidence of destruction layers preceding Mature phase</li>
+          <li><strong>Mehrgarh:</strong> On the Bolan Pass (Pakistan), excavated by J.F. Jarrige; dates from c. 7000 BCE — earliest farming community in South Asia; considered the "nursery" of IVC; evidence of cotton cultivation, mud-brick houses, bead making</li>
+          <li><strong>Agriculture:</strong> Wheat, barley, cotton introduced; domestication of cattle, sheep, goat</li>
+          <li><strong>Pottery:</strong> Crude hand-made, then wheel-made; regional variations; not yet standardized</li>
+        </ul>
+        <h3 class="sec-h3">Phase 2: Mature Harappan (c. 2550–1900 BCE)</h3>
+        <ul class="styled-list">
+          <li><strong>Character:</strong> Peak urban phase — fully developed cities, standardized writing/weights/measures/bricks, long-distance trade; simultaneous uniformity across 1,500+ km</li>
+          <li><strong>Key Sites:</strong> Harappa, Mohenjo-daro, Dholavira, Lothal, Kalibangan-II, Rakhigarhi, Banawali, Ganweriwala, Chanhudaro, Surkotada</li>
+          <li><strong>Urban features:</strong> Citadel + Lower Town two-part city plan; grid streets; advanced drainage; burnt brick construction (1:2:4 ratio)</li>
+          <li><strong>Trade:</strong> Active trade with Mesopotamia (Sumerian records refer to "Meluhha" = IVC), Persian Gulf, Afghanistan (lapis lazuli from Shortugai)</li>
+          <li><strong>Uniformity:</strong> Identical weights, seals, pottery styles, and brick ratios across sites separated by 1,500 km — remarkable feature with no clear parallel in other ancient civilizations</li>
+          <li><strong>Population:</strong> Estimated 1–5 million people at peak; Harappa and Mohenjo-daro each had ~30,000–40,000 population</li>
+        </ul>
+        <h3 class="sec-h3">Phase 3: Late / Post-Harappan (c. 1900–1200 BCE)</h3>
+        <ul class="styled-list">
+          <li><strong>Character:</strong> Gradual de-urbanization; cities shrink or are abandoned; pottery becomes coarser; standardization breaks down; population migrates eastward and southward</li>
+          <li><strong>Cemetery H Culture:</strong> Late phase at Harappa — different burial practices (pot burials with painted designs of trees, peacocks, stars); skeletal remains smaller; thought to represent a new population element</li>
+          <li><strong>OCP (Ochre Coloured Pottery) Culture:</strong> Found in upper Gangetic plains (Uttar Pradesh, Haryana) — considered successor/migration culture; associated with copper hoards</li>
+          <li><strong>Survival Sites:</strong> Some late IVC settlements persisted in Gujarat (Rangpur, Rojdi) and Haryana until c. 1200 BCE, maintaining some Harappan traditions in diluted form</li>
+          <li><strong>Eastward shift:</strong> Over 200 late Harappan sites found in UP and Bihar — evidence of large-scale migration into the Gangetic plains</li>
+          <li><strong>Regional Differentiation:</strong> Instead of uniform culture, distinct regional Post-Harappan cultures emerge — Jhukar (Sindh), Jhangar, Cemetery H (Punjab), Late Harappan (Gujarat, UP)</li>
+        </ul>
+        <div class="highlight-box yellow">
+          <strong>Phase Summary Table</strong>
+          <br/>Early Harappan: 3200–2550 BCE | Formative/Pre-urban | Mehrgarh, Amri, Kot Diji
+          <br/>Mature Harappan: 2550–1900 BCE | Urban peak | Harappa, MJD, Dholavira, Lothal
+          <br/>Late Harappan: 1900–1200 BCE | De-urbanization | Cemetery H, OCP, Rangpur
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4: Major Sites -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">🏛️</span><h2>4. Major Sites and Excavators</h2></div>
+      <div class="card-body">
+        <div class="site-grid">
+          <div class="site-card">
+            <div class="site-name">Harappa</div>
+            <div class="site-sub">Punjab, Pakistan · River: Ravi</div>
+            <div class="site-row"><strong>Excavator:</strong> Daya Ram Sahni (1921); M.S. Vats (later)</div>
+            <div class="site-row"><strong>Key finds:</strong> Two granary rows (12 blocks); workers' quarters nearby; R-37 Cemetery (main burial ground); two-piece male torso (red sandstone, highly polished); faience tablets; cemetery-H (Late Harappan burial)</div>
+            <div class="site-row"><strong>First excavated site</strong> of the IVC; gives civilization its alternate name</div>
+          </div>
+          <div class="site-card">
+            <div class="site-name">Mohenjo-daro</div>
+            <div class="site-sub">Sindh, Pakistan · River: Indus</div>
+            <div class="site-row"><strong>Excavator:</strong> R.D. Banerjee (1922); John Marshall; E.J.H. Mackay; Wheeler</div>
+            <div class="site-row"><strong>Key finds:</strong> Great Bath; Granary (largest building of IVC, 54.86×36.6 m); "Priest-King" bust (steatite, trefoil robe); Bronze Dancing Girl (lost-wax casting); Pashupati Seal; 2,500+ seals (majority of IVC seals found here)</div>
+            <div class="site-row"><strong>Largest Mature Harappan site;</strong> UNESCO World Heritage Site (Pakistan)</div>
+          </div>
+          <div class="site-card">
+            <div class="site-name">Dholavira</div>
+            <div class="site-sub">Kutch, Gujarat · Rann of Kutch (Khadir island)</div>
+            <div class="site-row"><strong>Excavator:</strong> J.P. Joshi (1967 initial); R.S. Bisht (1990–2005, major)</div>
+            <div class="site-row"><strong>Key finds:</strong> <em>Unique 3-part town plan</em> (Citadel + Middle Town + Lower Town); large stepwell-type water reservoirs (16 reservoirs); 10-sign inscription on wooden signboard — largest IVC inscription; sophisticated water management; stadium-like ground</div>
+            <div class="site-row"><strong>UNESCO World Heritage Site (India), 2021;</strong> largest IVC site in India after Rakhigarhi</div>
+          </div>
+          <div class="site-card">
+            <div class="site-name">Lothal</div>
+            <div class="site-sub">Saurashtra, Gujarat · River: Bhogava (Sabarmati tributary)</div>
+            <div class="site-row"><strong>Excavator:</strong> S.R. Rao (1954–63)</div>
+            <div class="site-row"><strong>Key finds:</strong> <em>World's earliest tidal dockyard</em> (222×37 m; connected to estuary via inlet); warehouse/granary near dockyard; fire altars; Persian Gulf-type seal; double-burial (man + woman = evidence of <em>sati</em>?); rice husk impressions; ivory scale</div>
+            <div class="site-row">Gateway for <strong>maritime trade</strong> with Gulf and Mesopotamia</div>
+          </div>
+          <div class="site-card">
+            <div class="site-name">Kalibangan</div>
+            <div class="site-sub">Rajasthan · River: Ghaggar (Saraswati)</div>
+            <div class="site-row"><strong>Excavator:</strong> A. Ghosh (1960); B.B. Lal &amp; B.K. Thapar (1961–69)</div>
+            <div class="site-row"><strong>Key finds:</strong> <em>Earliest ploughed field in the world</em> (Pre-Harappan level; two-crop ploughing visible from furrow marks); fire altars on citadel (evidence of fire worship); no Great Bath (only IVC major city without one); cylindrical seals (Mesopotamian influence?); camel bones</div>
+            <div class="site-row">"Kali" = black; "bangan" = bangles — site of black bangles</div>
+          </div>
+          <div class="site-card">
+            <div class="site-name">Rakhigarhi</div>
+            <div class="site-sub">Hisar, Haryana · River: Ghaggar-Hakra</div>
+            <div class="site-row"><strong>Excavator:</strong> Amarendra Nath (1997–99); Vasant Shinde (2014–present)</div>
+            <div class="site-row"><strong>Key finds:</strong> Largest IVC site in India (~350–550 ha); cemetery with 70+ burials; bronze, gold ornaments; DNA analysis (2019) — IVC population genetically distinct; female figurines; terracotta cakes</div>
+            <div class="site-row"><strong>Largest IVC site</strong> in the Indian subcontinent; ongoing excavations</div>
+          </div>
+          <div class="site-card">
+            <div class="site-name">Chanhudaro</div>
+            <div class="site-sub">Sindh, Pakistan · River: Indus</div>
+            <div class="site-row"><strong>Excavator:</strong> N.G. Majumdar (1931); E.J.H. Mackay (1935–36)</div>
+            <div class="site-row"><strong>Key finds:</strong> <em>Only major IVC city with NO citadel</em> (no raised platform); bead-making industry (carnelian, steatite); inkpot (bronze); small bronze carts with driver; "lipstick" case; a cat's paw print on a brick chasing a dog's paw print (inscribed in clay before firing)</div>
+          </div>
+          <div class="site-card">
+            <div class="site-name">Banawali</div>
+            <div class="site-sub">Fatehabad, Haryana · Dried Saraswati</div>
+            <div class="site-row"><strong>Excavator:</strong> R.S. Bisht (1974–77)</div>
+            <div class="site-row"><strong>Key finds:</strong> Both Pre-Harappan and Mature Harappan layers; no clear street grid (unlike other sites); fire altars; barley (largest barley deposit in IVC); tilla (sesame/til) seeds; good quality pottery; lapis lazuli beads</div>
+          </div>
+          <div class="site-card">
+            <div class="site-name">Surkotada</div>
+            <div class="site-sub">Kutch, Gujarat</div>
+            <div class="site-row"><strong>Excavator:</strong> J.P. Joshi (1964–68)</div>
+            <div class="site-row"><strong>Key finds:</strong> <em>Horse bones</em> (Equus caballus — controversial; disputed by some as Equus hemionus/wild ass); pot burials; single-compartment structure (citadel + lower town as single fortified unit)</div>
+          </div>
+          <div class="site-card">
+            <div class="site-name">Shortugai</div>
+            <div class="site-sub">Kunduz, Afghanistan</div>
+            <div class="site-row"><strong>Excavator:</strong> Francfort (1975–78)</div>
+            <div class="site-row"><strong>Key finds:</strong> Northernmost IVC site (Afghanistan); Harappan pottery, seals, weights; near <em>lapis lazuli</em> mines — this was an IVC trading colony to control lapis lazuli supply for trade with Mesopotamia</div>
+          </div>
+          <div class="site-card">
+            <div class="site-name">Sutkagendor</div>
+            <div class="site-sub">Balochistan, Pakistan · Dasht River</div>
+            <div class="site-row"><strong>Excavator:</strong> Sir Aurel Stein (1927); George Dales (1962)</div>
+            <div class="site-row"><strong>Key finds:</strong> <em>Westernmost IVC site</em>; near Makran coast (Arabian Sea); maritime trade outpost connecting IVC with Persian Gulf and Mesopotamia; Harappan pottery and weights; stone citadel wall</div>
+          </div>
+          <div class="site-card">
+            <div class="site-name">Alamgirpur</div>
+            <div class="site-sub">Meerut, Uttar Pradesh · River: Hindon</div>
+            <div class="site-row"><strong>Excavator:</strong> Y.D. Sharma (1958)</div>
+            <div class="site-row"><strong>Key finds:</strong> <em>Easternmost IVC site;</em> impression of Harappan cloth on a trough; Late Harappan phase; marks eastern limits of IVC cultural spread into the Gangetic plain</div>
+          </div>
+        </div>
+        <div class="highlight-box yellow">
+          <strong>Quick Recall — Unique Features of Sites</strong>
+          <br/>Great Bath → Mohenjo-daro | World's first Dockyard → Lothal | Earliest ploughed field → Kalibangan | No citadel → Chanhudaro | 3-part town plan + Water reservoirs → Dholavira | Horse bones (disputed) → Surkotada | Lapis lazuli colony → Shortugai | Westernmost → Sutkagendor | Easternmost → Alamgirpur | Northernmost → Manda | Southernmost → Daimabad | Largest (India) → Rakhigarhi
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 5: Urban Features -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">🏗️</span><h2>5. Urban Features — Town Planning &amp; Civic Architecture</h2></div>
+      <div class="card-body">
+        <div class="highlight-box indus">
+          The IVC's town planning is its most celebrated achievement — a level of urban sophistication not seen again in the subcontinent until the colonial period. Cities were laid out on a grid with remarkable uniformity across sites separated by 1,500 km.
+        </div>
+
+        <h3 class="sec-h3">5A. Town Planning</h3>
+        <ul class="styled-list">
+          <li><strong>Two-part layout:</strong> Every major IVC city was divided into two zones — (1) a raised <em>Citadel</em> (western mound, Acropolis/Upper Town) housing public/administrative/ritual structures; (2) a larger <em>Lower Town</em> (eastern mound) for residential and commercial use. Exception: Dholavira had a 3-part plan (Citadel + Middle Town + Lower Town)</li>
+          <li><strong>Grid street pattern:</strong> Streets intersected at right angles (cardinal directions), dividing the city into rectangular blocks. Main streets (9–10 m wide) ran north-south or east-west; cross streets (1.5–3 m wide) served residential blocks</li>
+          <li><strong>Standardized burnt bricks:</strong> Ratio <strong>1:2:4</strong> (thickness: width: length) used across the entire civilization — e.g., 7×14×28 cm. Bricks were kiln-fired (not sun-dried), making them water-resistant. The standardized ratio across 1,500+ km is remarkable evidence of centralized authority or a strong trade convention</li>
+          <li><strong>No windows on main streets:</strong> Houses opened onto lanes, not main streets — privacy and dust-control consideration. Ventilation via courtyards</li>
+          <li><strong>Wells:</strong> Each house had its own well; community wells also lined the streets. Mohenjo-daro had over 700 wells</li>
+          <li><strong>Garbage bins:</strong> Terracotta bins placed at street corners for garbage collection — evidence of civic sanitation management</li>
+          <li><strong>House construction:</strong> Mud-brick platforms (damp-proofing); burnt brick walls; flat roofs; internal courtyards; staircases (indicating upper floors); few external windows</li>
+          <li><strong>Citadel platform:</strong> Built on a mud-brick platform ~6–12 m above ground level; surrounding walls provided defense and separation from the lower town</li>
+        </ul>
+
+        <h3 class="sec-h3">5B. The Great Bath (Mohenjo-daro)</h3>
+        <div class="highlight-box indus">
+          <strong>Dimensions:</strong> 11.88 m (length) × 7.01 m (width) × 2.43 m (depth) — roughly the size of a large modern swimming pool. Located at the heart of the Citadel mound at Mohenjo-daro.
+        </div>
+        <ul class="styled-list">
+          <li><strong>Construction:</strong> Floor and sides of finely fitted burnt bricks; the floor was laid with bitumen (natural asphalt/tar) to prevent leakage — the earliest known use of bitumen as a waterproofing agent in construction</li>
+          <li><strong>Access:</strong> Two staircases (north and south ends) descending into the pool; a corbelled drain at the south-west corner for emptying the bath</li>
+          <li><strong>Surroundings:</strong> Colonnaded verandah on all sides; changing rooms (small chambers) arranged around the verandah; a large well to the east supplied fresh water</li>
+          <li><strong>John Marshall:</strong> Called it "the earliest public water tank in the ancient world"</li>
+          <li><strong>Purpose:</strong> Almost certainly ritual/religious purification (bathing as a sacred act) — this is supported by the fact it is located in the citadel (which housed public/administrative/ritual structures). John Marshall compared it to Hindu ritual bathing tanks (pushkarini)</li>
+          <li><strong>Unique:</strong> No comparable structure exists in any other Bronze Age civilization of the period; shows that public ritual bathing was central to Harappan religious life</li>
+        </ul>
+
+        <h3 class="sec-h3">5C. The Granary</h3>
+        <ul class="styled-list">
+          <li><strong>Harappa Granary:</strong> Located outside (west of) the citadel; two rows of 6 granaries each (12 granaries total); floor plan ~50×40 m; air ducts beneath the floor (for ventilation to prevent grain moisture); nearby workers' barracks found — evidence of organized labour</li>
+          <li><strong>Mohenjo-daro Granary:</strong> The largest single building of the entire IVC (54.86 m × 36.6 m); divided into 27 blocks; located in the citadel area</li>
+          <li><strong>Wheeler's interpretation:</strong> Called these structures "granaries" (1950s) — state grain storage centres suggesting centralized taxation or redistribution economy. However, this identification has been <em>questioned</em> by later archaeologists (no grain found in situ at most)</li>
+          <li><strong>Alternative identification:</strong> Some scholars now identify the Harappa "granary" as a large hall or assembly building, not necessarily for grain storage</li>
+          <li><strong>Lothal:</strong> Has a warehouse/granary (c. 50×40 m) near the dockyard — clearly a trade storage facility</li>
+        </ul>
+
+        <h3 class="sec-h3">5D. The Drainage System</h3>
+        <div class="highlight-box green">
+          <strong>Most Advanced Drainage of the Ancient World</strong>
+          The IVC drainage system is frequently described as the most sophisticated urban sanitation system of any civilization before the Roman Empire. This feature alone — a civilization-wide priority for public health — distinguishes IVC from all contemporaneous cultures.
+        </div>
+        <ul class="styled-list">
+          <li><strong>Underground drains:</strong> Every street had a covered brick-lined drain running along it; drains were covered with corbelled bricks or stone slabs (removable for cleaning/maintenance)</li>
+          <li><strong>Manhole inspection:</strong> At intervals, manholes were provided for inspection and desilting — showing long-term maintenance planning</li>
+          <li><strong>House connection:</strong> Every house had a private drain connected to the street drain through a soakpit or channel; bathrooms in each house drained into the street drain system</li>
+          <li><strong>Hierarchy:</strong> House drains → lane drains → main street drains → large collector/trunk drains → city outfall. A fully hierarchical, engineered drainage network</li>
+          <li><strong>Sump pits/cesspits:</strong> At houses and street junctions; allowed sediment to settle before overflow entered the main drain</li>
+          <li><strong>Comparison:</strong> No other Bronze Age civilization (Egypt, Mesopotamia, China) had an equivalent city-wide covered underground drainage system. Egypt used open channels; Mesopotamia had simpler pit-and-channel systems</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- Section 6: Economic Life -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">⚖️</span><h2>6. Economic Life</h2></div>
+      <div class="card-body">
+
+        <h3 class="sec-h3">6A. Agriculture</h3>
+        <ul class="styled-list">
+          <li><strong>Main crops:</strong> Wheat (<em>Triticum compactum, T. sphaerococcum</em>) and barley were the primary staples; evidence from Harappa, Mohenjo-daro, Banawali</li>
+          <li><strong>Rice:</strong> Found at Lothal and Rangpur (Gujarat) — earliest evidence of rice cultivation in the IVC; may have been from southern/eastern regions; not the primary crop</li>
+          <li><strong>Cotton:</strong> IVC was the <strong>first civilization in the world to cultivate cotton</strong>. Greeks called it <em>sindon</em> (from Sindh). Cotton threads found on a silver vase at Mohenjo-daro; impression on copper objects at Mohenjo-daro. This is one of IVC's greatest contributions to world civilization</li>
+          <li><strong>Other crops:</strong> Dates, sesame (til/tilla — large deposit at Banawali), mustard, peas, lentils, jowar, ragi; evidence of field peas and melon</li>
+          <li><strong>Plough marks:</strong> Kalibangan (Pre-Harappan level) shows the <strong>earliest ploughed field in the world</strong> — two sets of furrows at right angles (indicating simultaneous two-crop planting); field was just outside the citadel</li>
+          <li><strong>Irrigation:</strong> Canals and wells likely used; Shortugai (Afghanistan) shows evidence of canal irrigation; flood plain agriculture along Indus and Ghaggar rivers</li>
+          <li><strong>Tools:</strong> No iron tools; stone blades, copper axes, and wooden ploughs (ard/scratch plough, not deep-furrow plough); sickles of chert blades</li>
+          <li><strong>Storage:</strong> Granaries at Harappa and Mohenjo-daro suggest centralized grain management (taxation/redistribution)</li>
+        </ul>
+
+        <h3 class="sec-h3">6B. Trade and Commerce</h3>
+        <div class="highlight-box indus">
+          <strong>Meluhha — IVC in Mesopotamian Records</strong>
+          Sumerian cuneiform texts (c. 2350–1900 BCE) refer to trade with <strong>Meluhha</strong> (widely identified as IVC/Indus region), <strong>Dilmun</strong> (Bahrain — middleman), and <strong>Magan</strong> (Makran/Oman coast). Sumerian records mention importing copper, gold, carnelian beads, ivory, timber, cotton textiles, and "fish-eyes" (etched carnelian beads) from Meluhha — all characteristic IVC export items.
+        </div>
+        <ul class="styled-list">
+          <li><strong>Internal trade:</strong> Raw materials flowed to manufacturing centres; finished goods (beads, textiles, copper tools) distributed across the civilization; standardized weights/measures facilitated exchange</li>
+          <li><strong>External/long-distance trade:</strong> With Mesopotamia (Sumer/Akkad), Persian Gulf, Afghanistan, Central Asia, and possibly East Africa</li>
+          <li><strong>Lothal dockyard:</strong> The world's first known tidal dock (222×37 m) at Lothal was designed with a sluice gate system to maintain water level regardless of tides — evidence of sophisticated hydraulic engineering and organized maritime trade</li>
+          <li><strong>Shortugai (Afghanistan):</strong> An IVC colony/trading post near lapis lazuli mines — IVC controlled the supply chain of lapis lazuli (blue semi-precious stone) traded to Mesopotamia</li>
+          <li><strong>Sutkagendor:</strong> Persian Gulf–coast trading post on Makran coast — gateway for maritime trade with Gulf</li>
+          <li><strong>Goods exported to Mesopotamia:</strong> Carnelian (etched) beads, lapis lazuli, copper, timber, cotton textiles, ivory, shell objects, gold</li>
+          <li><strong>Goods imported:</strong> Tin (from Afghanistan/Central Asia — needed for bronze alloy), silver (from Afghanistan, Iran), gold (from Kolar, Karnataka or Afghanistan)</li>
+          <li><strong>Currency:</strong> No coins — trade was by barter; standardized weights served as a universal measure of exchange value</li>
+          <li><strong>Transportation:</strong> Bullock carts (terracotta models found); boats (for river and sea trade); pack animals</li>
+        </ul>
+
+        <h3 class="sec-h3">6C. Domestication of Animals</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Animal</th><th>Evidence</th><th>Note</th></tr></thead>
+            <tbody>
+              <tr><td>Humped bull (zebu)</td><td>Bones + seal depictions</td><td>Most prominently depicted animal on seals; symbol of power/fertility</td></tr>
+              <tr><td>Buffalo</td><td>Bones + seals</td><td>Used for agriculture and meat</td></tr>
+              <tr><td>Sheep &amp; Goat</td><td>Bones at many sites</td><td>Common domestic animals; wool used for textiles</td></tr>
+              <tr><td>Dog</td><td>Bones; paw print at Chanhudaro</td><td>Domesticated; a dog's and cat's paw print found on a Chanhudaro brick</td></tr>
+              <tr><td>Cat</td><td>Paw print at Chanhudaro</td><td>Probably domesticated</td></tr>
+              <tr><td>Elephant</td><td>Bones + seal depictions</td><td>May have been tamed/used for labour; depicted on Daimabad bronze</td></tr>
+              <tr><td>Camel</td><td>Bones at Kalibangan</td><td>May have been used for transport; presence debated</td></tr>
+              <tr><td><strong>Horse</strong></td><td>Disputed — Surkotada bones</td><td><strong>Highly debated:</strong> Surkotada (J.P. Joshi) found bones identified as Equus caballus by A. Clutton-Brock; disputed as Equus hemionus. No clear horse depiction on Mature Harappan seals. Absence of horse is one reason for distinguishing IVC from Vedic culture</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="sec-h3">6D. Weights and Measures</h3>
+        <ul class="styled-list">
+          <li><strong>Material:</strong> Chert (crypto-crystalline silica) — cubical weights, perfectly polished, found across all major sites</li>
+          <li><strong>Binary-decimal system:</strong> Lower values used binary progression: 1, 2, 4, 8, 16, 32, 64; higher values used decimal progression: 160, 200, 320, 640. This dual system is unique and highly efficient for trade</li>
+          <li><strong>Uniformity:</strong> Identical weight ratios found at Harappa, Mohenjo-daro, Lothal, Chanhudaro, and other sites — the most compelling evidence of a centralized authority or powerful commercial convention governing the entire civilization</li>
+          <li><strong>Measuring rods:</strong> Shell measuring rods (graduated scale) found at Mohenjo-daro; ivory scale at Lothal (smallest division: 1.7 mm — comparable to modern precision instruments); bronze rod at Harappa</li>
+          <li><strong>Unit:</strong> The basic unit of the IVC scale (c. 1.7 mm) has been identified as consistent across all sites; the "Indus inch" (~3.35 cm) is also identified</li>
+        </ul>
+
+        <h3 class="sec-h3">6E. Seals</h3>
+        <ul class="styled-list">
+          <li><strong>Total found:</strong> Over 4,000 seals identified across all sites; majority from Mohenjo-daro</li>
+          <li><strong>Shape:</strong> Mostly square (2.5–5 cm); also rectangular, cylindrical (Kalibangan — Mesopotamian influence), and circular</li>
+          <li><strong>Material:</strong> Primarily steatite (soapstone — fired to harden); also copper, gold, terracotta, faience</li>
+          <li><strong>Structure:</strong> Animal/figure carved on face + Indus Script inscription above animal; perforated boss on the reverse (for stringing and affixing to goods)</li>
+          <li><strong>Most common animal:</strong> <em>Unicorn</em> (~70% of all seals) — a bull-like animal with a single horn; depicted with a "standard" (incense burner/manger?) in front; its identity and symbolism remain mysterious</li>
+          <li><strong>Other animals:</strong> Zebu bull, elephant, tiger, rhinoceros, crocodile, bison, gharial; composite mythical animals also appear</li>
+          <li><strong>Pashupati Seal:</strong> Found at Mohenjo-daro; depicts a cross-legged figure (possibly in yogic posture) wearing a horned headdress, surrounded by four animals — elephant (right), rhinoceros (right lower), buffalo (left lower), tiger (left); two deer below the throne. Marshall identified the figure as "proto-Shiva" or Pashupati (Lord of Animals). This is the most discussed single artifact from the IVC</li>
+          <li><strong>Functions of seals:</strong> Trade (stamping on bales of goods to identify ownership/origin); administrative identity tokens; amulets; possibly for signing documents (clay sealings/tags found)</li>
+          <li><strong>Persian Gulf seal:</strong> A distinctive Gulf-type circular seal found at Lothal — direct evidence of trade contact between Lothal and Persian Gulf traders</li>
+        </ul>
+
+        <h3 class="sec-h3">6F. Metals and Tools</h3>
+        <ul class="styled-list">
+          <li><strong>No iron:</strong> The IVC was a Bronze Age civilization — iron is completely absent; its appearance in north India (c. 1000 BCE) postdates IVC by nearly a millennium</li>
+          <li><strong>Copper and Bronze:</strong> Most tools and weapons were copper or bronze (copper + tin alloy); sources of copper: Khetri (Rajasthan), Baluchistan; tin from Afghanistan/Central Asia</li>
+          <li><strong>Copper objects:</strong> Axes, chisels, saws, knives, spearheads, fish-hooks, needles, razors; all utilitarian</li>
+          <li><strong>Bronze:</strong> Used for higher-quality castings — Dancing Girl (Mohenjo-daro), scale pans (Mohenjo-daro), vessels; lost-wax (cire perdue) casting technique</li>
+          <li><strong>Gold:</strong> Used exclusively for ornaments; sourced from Kolar (Karnataka) or Afghanistan; gold granulation technique used</li>
+          <li><strong>Silver:</strong> Silver vessels, ornaments found at Mohenjo-daro; sourced from Afghanistan or Iran</li>
+          <li><strong>Faience:</strong> A glass-like material made from quartz/sand + copper/tin glaze — used for beads, bangles, seals; invented in Mesopotamia but used extensively in IVC</li>
+          <li><strong>Bead industry:</strong> Highly specialized — carnelian (etched = boiled in alkali then etched with acid for white patterns), lapis lazuli, steatite, shell, gold, faience; Chanhudaro and Lothal were bead-making centres; IVC etched carnelian beads found in royal graves at Ur (Mesopotamia) — direct evidence of trade</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 7: Society -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">👥</span><h2>7. Society</h2></div>
+      <div class="card-body">
+        <div class="highlight-box indus">
+          Harappan society remains poorly understood compared to Egypt or Mesopotamia because the script is undeciphered and no royal inscriptions, king lists, or religious texts exist. Social reconstruction is based entirely on archaeological evidence — house sizes, burial goods, craft specialization, and artefact distribution.
+        </div>
+        <ul class="styled-list">
+          <li><strong>Social stratification:</strong> Evidence suggests class differentiation — some houses are significantly larger than others; elite residences near citadel; workers' quarters near Harappa granary. However, the stratification appears moderate compared to Egypt/Mesopotamia — no extreme concentration of wealth in royal tombs</li>
+          <li><strong>No untouchability evidence:</strong> Burial practices do not show the extreme stratification of caste; no "slave quarters" identified; grave goods are relatively modest and broadly similar across burials</li>
+          <li><strong>Gender:</strong> Large number of terracotta female figurines suggests a strong female role in religious/ritual life; some scholars argue for matriarchal tendencies or goddess-centred religion; however, male figures also found</li>
+          <li><strong>Craft specialization:</strong> Distinct artisan quarters identifiable — potters' kilns, bead-making workshops (Chanhudaro, Lothal), copper-smithing areas; this implies a developed division of labour and occupational specialization</li>
+          <li><strong>Clothing:</strong> Cotton and wool garments; shawl-like garment worn over one shoulder (as depicted on "Priest-King" bust); possibly also linen</li>
+          <li><strong>Ornaments:</strong> Both men and women wore ornaments — necklaces, bangles, earrings, finger rings, anklets; made of gold, silver, copper, faience, terracotta, shell, semi-precious stones; one of the few ancient civilizations where men appear to have worn as much jewellery as women</li>
+          <li><strong>Food:</strong> Wheat, barley, rice, fish (depicted in art; fish bones at Mohenjo-daro), meat (cattle, sheep), milk products, dates, sesame</li>
+          <li><strong>Recreation:</strong> Terracotta toys — carts, animals, rattles, dice; spinning tops; chess-like board games?; dancing (Bronze Dancing Girl)</li>
+          <li><strong>Burial practices:</strong>
+            <br/>— <em>Extended burial</em> (most common): body laid in rectangular pit (grave), head pointing north, feet south; grave goods (pottery, ornaments) placed alongside
+            <br/>— <em>R-37 Cemetery (Harappa):</em> main burial ground; over 50 graves excavated; shows consistent rites
+            <br/>— <em>Fractional burial:</em> only selected bones buried after exposure (excarnation)
+            <br/>— <em>Pot/urn burial:</em> found at some sites; common in later Chalcolithic cultures (Jorwe)
+            <br/>— <em>Double burial (Lothal):</em> man and woman buried together — some interpret as evidence of sati, but not conclusive
+            <br/>— <em>Cemetery-H (Late Harappan, Harappa):</em> different burial traditions — smaller graves; pottery with painted motifs of peacocks, trees, stars; skeletal remains different from Mature phase — possibly a new population group</li>
+          <li><strong>No caste system:</strong> No archaeological evidence for rigid hereditary caste divisions; occupational specialization existed but evidence of mobility between groups</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 8: Religion, Art & Culture -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">🎨</span><h2>8. Religion, Art &amp; Culture</h2></div>
+      <div class="card-body">
+
+        <h3 class="sec-h3">8A. Religion</h3>
+        <ul class="styled-list">
+          <li><strong>No identified temple:</strong> Unlike Mesopotamia and Egypt, no building at any IVC site has been definitively identified as a temple — one of the most striking features of IVC religion. Religion appears to have been practiced at home, at open-air platforms (fire altars at Kalibangan, Lothal), and possibly at the Great Bath</li>
+          <li><strong>Mother Goddess worship:</strong> Over 2,000 terracotta female figurines found — the most common religious object; often shown with elaborate headdresses and fan-shaped ornaments; many depict pregnancy; interpreted as a fertility/mother goddess cult</li>
+          <li><strong>Pashupati (Proto-Shiva) worship:</strong> The Pashupati Seal (Mohenjo-daro) shows a three-faced, cross-legged, ithyphallic figure in yogic posture surrounded by four animals (tiger, elephant, rhinoceros, buffalo) with deer below — identified by Marshall as proto-Shiva/Pashupati (Lord of Animals). This suggests continuity between IVC religion and later Shaivism</li>
+          <li><strong>Phallus (lingam) and ring stones (yoni):</strong> Numerous stone phalluses and perforated ring stones found — widely interpreted as Shiva-lingam and yoni worship; further evidence of proto-Shaiva religion</li>
+          <li><strong>Animal worship:</strong> Unicorn (most prominent seal animal), humped bull, elephant, tiger, pipal tree, crocodile — all apparently sacred</li>
+          <li><strong>Tree worship:</strong> Pipal tree depicted on seals and tablets (a deity or spirit stands in a pipal tree; a kneeling worshipper below); pipal is still sacred in Hinduism/Buddhism — long continuity</li>
+          <li><strong>Water worship:</strong> Great Bath suggests ritual bathing as a purification rite; water clearly had a sacred dimension</li>
+          <li><strong>Fire worship:</strong> Fire altars found at Kalibangan (on the citadel — 7 fire altars in a row with ash and animal bones; possibly for Vedic-style yajna?), Lothal, and Banawali — earliest evidence of fire worship/ritual in South Asia</li>
+          <li><strong>Amulets:</strong> Terracotta amulets with protective designs widely used — suggests belief in evil spirits and protective magic</li>
+        </ul>
+
+        <h3 class="sec-h3">8B. The Indus Script</h3>
+        <div class="highlight-box red">
+          <strong>Still Undeciphered — The Greatest Mystery of IVC</strong>
+          The Indus Script has resisted all decipherment attempts for over 100 years. Without being able to read it, we cannot know the IVC's language, governance, religious texts, laws, or self-identity — making it the ancient world's greatest linguistic enigma.
+        </div>
+        <ul class="styled-list">
+          <li><strong>Signs:</strong> ~400–600 distinct signs (scholars disagree on the exact count); this number is consistent with a logosyllabic script (like Sumerian cuneiform or Chinese), not a pure alphabet (~20–30 signs) or pure syllabary (~50–100 signs)</li>
+          <li><strong>Direction:</strong> Written predominantly <strong>right-to-left</strong>; some inscriptions show boustrophedon (alternating right-to-left and left-to-right) — similar to early Greek writing direction</li>
+          <li><strong>Inscription length:</strong> Most inscriptions on seals have only 4–5 signs; the longest known inscription has only 26 signs. This makes statistical/frequency analysis very difficult</li>
+          <li><strong>No bilingual text:</strong> No Rosetta Stone equivalent has been found — the main barrier to decipherment</li>
+          <li><strong>Where found:</strong> Seals (most common), pottery graffiti, copper tablets, bronze objects, ivory rods, terracotta tablets</li>
+          <li><strong>Decipherment attempts:</strong>
+            <br/>— <strong>S.R. Rao (India):</strong> Claimed Indus Script is a proto-Brahmi/Semitic script representing early Sanskrit; not widely accepted
+            <br/>— <strong>Asko Parpola (Finland):</strong> Most systematic modern study; argues the script represents an early <em>proto-Dravidian</em> language (ancestral to Tamil/Dravidian family); Fish sign (<em>min</em> in Dravidian = fish/star) — his most famous phonetic reading
+            <br/>— <strong>I. Mahadevan (India):</strong> Built the definitive concordance/index of Indus signs; also supports proto-Dravidian hypothesis
+            <br/>— <strong>Farmer, Sproat, Witzel:</strong> Contrarian view — argue Indus "script" is not true writing but a non-linguistic symbol system (like heraldic symbols)</li>
+          <li><strong>Significance for UPSC:</strong> The undeciphered script is why IVC is called a "proto-historic" civilization (has writing but unreadable) rather than "historic" (readable writing). Once deciphered, it could revolutionize our understanding of early India</li>
+        </ul>
+
+        <h3 class="sec-h3">8C. Arts and Crafts</h3>
+        <ul class="styled-list">
+          <li><strong>Bronze Dancing Girl (Mohenjo-daro):</strong> The most celebrated IVC artwork — a 10.5 cm bronze statuette of a young girl in a confident pose (right hand on hip, left arm with bangles extended); cast by lost-wax (cire perdue) technique; shows mature artistic confidence; now in National Museum, New Delhi. Her bangles (shell?), necklace, and posture suggest she is a dancer or performer. The high technical skill of lost-wax casting in this period is remarkable</li>
+          <li><strong>"Priest-King" bust (Mohenjo-daro):</strong> 17.5 cm steatite bust of a seated figure wearing a trefoil-patterned robe (trefoils filled with red); eyes half-closed (meditative); drilled holes in the robe (originally inlaid with coloured material?). Identified tentatively as a priest-king or administrator. Now in National Museum of Pakistan, Karachi</li>
+          <li><strong>Male torso (Harappa):</strong> Small red sandstone male torso; highly polished; shows anatomically correct proportions; unique naturalistic style unlike most ancient Indian art; arms were socketed (separate, now missing)</li>
+          <li><strong>Terracotta figurines:</strong> Abundant female (Mother Goddess) figurines; animal figurines (bulls, dogs, birds, monkeys); toy carts with movable wheels; rattles; terracotta masks</li>
+          <li><strong>Seal carving:</strong> The finest miniature art of IVC — animal seals show mastery of form and proportion in a very small space (2–5 cm); the unicorn seal is a masterpiece of ancient miniature carving</li>
+          <li><strong>Bead making:</strong> Extraordinarily sophisticated — IVC craftspeople drilled tiny holes through hard carnelian using a rod drill (possibly copper tipped); etched carnelian beads (white geometric patterns on red background) required multi-step chemical process and are found as far as Mesopotamia</li>
+          <li><strong>Metalwork:</strong> Copper and bronze tools, vessels, mirrors, razors; lost-wax bronze casting; gold granulation; silver vessels</li>
+          <li><strong>Shell industry:</strong> Shell bangles, ladles, inlays; shells sourced from Gujarat coast; shell-working centres at Chanhudaro, Lothal</li>
+        </ul>
+
+        <h3 class="sec-h3">8D. Pottery</h3>
+        <ul class="styled-list">
+          <li><strong>Wheel-made:</strong> All Mature Harappan pottery was made on the fast potter's wheel — shows a specialized professional pottery industry</li>
+          <li><strong>Characteristic type:</strong> Red ware with black painted designs — plain red/buff slip as background; black geometric patterns (intersecting circles, fish-scale, leaf/plant motifs, peacock, pipal tree) painted on top. Occasionally white slip under black painting</li>
+          <li><strong>Perforated pottery:</strong> Pots with holes in the base — used as sieves, incense burners, or flower pots</li>
+          <li><strong>Goblets and dishes-on-stand:</strong> Characteristic forms; the "S-form" jar is a distinctive Harappan shape</li>
+          <li><strong>Standardized forms:</strong> Pottery shapes were highly standardized across the entire civilization — the same vessel types at Harappa and Lothal (1,500+ km apart)</li>
+          <li><strong>Terracotta:</strong> Used also for making figurines, toys, seals, sling balls, cakes (purpose unknown — possibly votive offerings or barter counters), net weights, spindle whorls</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 9: Political Organization -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">🏛️</span><h2>9. Political Organization</h2></div>
+      <div class="card-body">
+        <div class="highlight-box red">
+          <strong>The Great IVC Mystery — No King, No Palace, No Temple</strong>
+          Unlike every other Bronze Age civilization, IVC has left no evidence of kings, palaces, temples, or standing armies. This is either because (a) such evidence has not been found yet, (b) the IVC was governed differently from other civilizations, or (c) power was distributed rather than concentrated. All political theories for IVC remain hypotheses.
+        </div>
+        <h3 class="sec-h3">Evidence for Centralized Authority</h3>
+        <ul class="styled-list">
+          <li>Uniform <strong>brick ratios (1:2:4)</strong> across 1,500+ km — would require either very strong trade conventions or central authority</li>
+          <li>Uniform <strong>weights and measures</strong> across all sites — strongest argument for centralized economic governance</li>
+          <li>Uniform <strong>town planning</strong> — grid streets, two-part cities, covered drains — across hundreds of sites</li>
+          <li>Identical <strong>pottery styles and seal types</strong> over the entire civilization</li>
+          <li>Evidence of <strong>worker quarters near granaries</strong> at Harappa suggests organized labour management</li>
+        </ul>
+        <h3 class="sec-h3">Major Scholarly Theories</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Scholar</th><th>Theory</th><th>Basis</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Sir Mortimer Wheeler</strong></td><td><em>Theocracy</em> — priest-kings ruled the city-states; the "Priest-King" bust from Mohenjo-daro was the ruler-image</td><td>Citadel location of granary/Great Bath = priest controls resources + ritual; "Priest-King" bust</td></tr>
+              <tr><td><strong>Stuart Piggott</strong></td><td><em>Oligarchy of merchants/traders</em> — a ruling class of wealthy merchants governed through commercial networks</td><td>No evidence of military power; trade standardization suggests merchant control</td></tr>
+              <tr><td><strong>A. Ghosh</strong></td><td><em>City-state model</em> — each major city (Harappa, MJD, Dholavira, Kalibangan) was a semi-autonomous city-state with its own local authority; linked by trade but not politically unified</td><td>Different local features at each city; no single capital identified</td></tr>
+              <tr><td><strong>Shereen Ratnagar</strong></td><td><em>Redistributive economy model</em> — centralized collection (grain tribute) and redistribution by an elite class; granaries as state stores</td><td>Large granaries at citadel; uniform weights for taxation measurement</td></tr>
+              <tr><td><strong>Jonathan Mark Kenoyer</strong></td><td><em>Multiple elite groups</em> — merchants, ritual specialists, and administrators shared power; no single ruler; power was decentralized and negotiated</td><td>Lack of single dominant symbol/iconography; no palace or royal tomb</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="highlight-box yellow">
+          <strong>What is NOT found in IVC (unlike Egypt/Mesopotamia):</strong>
+          No palace | No identified temple | No royal tomb with extraordinary grave goods | No standing army evidence | No war scenes in art | No king-list or royal inscription | No monument celebrating a ruler | No law code | No royal seal
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 10: Decline -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">📉</span><h2>10. Decline of the Indus Valley Civilization</h2></div>
+      <div class="card-body">
+        <div class="highlight-box indus">
+          The decline of IVC was not a sudden collapse but a <strong>gradual process of de-urbanization</strong> beginning around 1900 BCE, accelerating through 1700 BCE, and resulting in the complete abandonment of all major urban centres by 1200 BCE. No single cause explains the entire phenomenon — different sites declined for different reasons at different times.
+        </div>
+        <h3 class="sec-h3">Theory 1: Aryan Invasion / Migration (Wheeler, Piggott, Gordon Childe)</h3>
+        <ul class="styled-list">
+          <li>Proposed by Mortimer Wheeler in the 1940s–50s based on: (a) Rigveda's description of Indra as <em>Purandara</em> (destroyer of forts/puras); (b) a group of ~37 skeletons found in the upper levels of Mohenjo-daro in what appeared to be a hasty, violent death</li>
+          <li>Wheeler argued these were massacred by invading Indo-Aryan warriors who destroyed IVC cities</li>
+          <li><strong>Now largely discredited:</strong> (a) The MJD skeletons are from different time periods, not a single massacre event; (b) they show no sword/battle injuries consistent with military attack; (c) the "forts" in the Rigveda may refer to stone fortifications of nomadic peoples, not IVC cities; (d) no clear destruction/battle layer at any major IVC site; (e) DNA evidence (Rakhigarhi 2019) does not support a massive external invasion replacing the IVC population</li>
+        </ul>
+        <h3 class="sec-h3">Theory 2: Climate Change and Monsoon Failure (Possehl, Giosan, Petrie)</h3>
+        <ul class="styled-list">
+          <li>A 2012 Yale University/PNAS study (Giosan et al.) using geomorphological and palaeoclimatic data showed that <strong>South Asian monsoons weakened significantly around 2100–1900 BCE</strong> — precisely when IVC began its decline</li>
+          <li>Reduced rainfall → reduced river flows → crop failures → food insecurity → abandonment of sites that depended on regular flooding for agriculture</li>
+          <li>Eastern sites (Gangetic plain) were less affected — explains why Late Harappan cultures expanded eastward while western/Indus-valley sites were abandoned</li>
+          <li><strong>Currently the most widely accepted primary cause</strong> of IVC decline in mainstream archaeology</li>
+        </ul>
+        <h3 class="sec-h3">Theory 3: Drying of the Saraswati / Ghaggar-Hakra (B.B. Lal, K.S. Valdiya, Possehl)</h3>
+        <ul class="styled-list">
+          <li>The Ghaggar-Hakra river system (identified by many with the Vedic Saraswati) was the most densely settled IVC zone — more sites than the Indus river itself</li>
+          <li>Tectonic activity and/or reduced Himalayan glacial melt (linked to monsoon weakening) caused the Ghaggar-Hakra to dry up around 2000–1900 BCE</li>
+          <li>This deprived hundreds of eastern IVC sites of water, forcing mass migration; explains sudden abandonment of sites like Kalibangan, Banawali</li>
+          <li>K.S. Valdiya's satellite/geological studies have traced the course of a once-mighty river system that dried up in this period</li>
+        </ul>
+        <h3 class="sec-h3">Theory 4: Tectonic Activity and Flooding (Robert Raikes, Lambrick)</h3>
+        <ul class="styled-list">
+          <li>At Mohenjo-daro specifically, evidence of repeated flooding is visible in the stratigraphic layers — habitation floors were raised repeatedly (up to 10 times) to escape flood levels</li>
+          <li>Raikes and Dales proposed that tectonic uplift downstream dammed the Indus, causing extensive flooding of Mohenjo-daro repeatedly — eventually making the site uninhabitable</li>
+          <li>Explains Mohenjo-daro's decline specifically; less applicable to other sites far from the Indus</li>
+        </ul>
+        <h3 class="sec-h3">Theory 5: Trade Disruption (Chakrabarti, others)</h3>
+        <ul class="styled-list">
+          <li>The Akkadian Empire (Mesopotamia) collapsed around 2200–2150 BCE (possibly also due to climate change), disrupting the long-distance trade network that IVC depended on</li>
+          <li>Loss of trade revenue undermined the IVC urban economy; manufacturing centres lost their markets; urban populations could not be sustained without trade-based food surplus</li>
+          <li>Sumerian records show Meluhha trade declining after c. 2000 BCE — corroborating evidence</li>
+        </ul>
+        <h3 class="sec-h3">Theory 6: Epidemic Disease</h3>
+        <ul class="styled-list">
+          <li>Some skeletal evidence at Mohenjo-daro shows signs of infectious disease (possibly malaria or cholera) — dense urban populations with close-quarter living are vulnerable to epidemic spread</li>
+          <li>Less widely supported; may be a contributing factor rather than primary cause</li>
+        </ul>
+        <h3 class="sec-h3">Consensus View: Gradual Multi-Causal Decline with Eastward Migration</h3>
+        <div class="highlight-box green">
+          <strong>Gregory Possehl, Jonathan Mark Kenoyer, and Shereen Ratnagar</strong> — the leading contemporary IVC scholars — agree that no single cause explains IVC decline. The process was:
+          <br/>(1) <strong>Gradual, not sudden</strong> — 300–700 years of slow de-urbanization
+          <br/>(2) <strong>Multi-causal</strong> — climate change + river shifts + trade disruption + possibly other factors acting together
+          <br/>(3) <strong>Transformative, not terminal</strong> — IVC populations did not disappear; they migrated eastward/southward and contributed to the OCP culture, Black-and-Red Ware cultures, and ultimately to the cultural substrate of Gangetic civilization
+          <br/>(4) <strong>Eastern expansion:</strong> 200+ Late Harappan sites found in UP/Haryana; IVC traditions survive in diluted form in post-urban Chalcolithic cultures of Gujarat, Deccan, and UP
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Theory</th><th>Scholar(s)</th><th>Evidence For</th><th>Evidence Against</th></tr></thead>
+            <tbody>
+              <tr><td>Aryan Invasion</td><td>Wheeler, Piggott, Gordon Childe</td><td>MJD skeletons; Rigveda "Purandara"</td><td>No battle evidence; skeletons from different periods; DNA does not support</td></tr>
+              <tr><td>Climate Change / Monsoon Failure</td><td>Possehl, Giosan, Petrie</td><td>Palaeoclimate data; monsoon weakening 2100–1900 BCE; PNAS 2012</td><td>Some sites in drier areas survived longer</td></tr>
+              <tr><td>Drying of Saraswati</td><td>B.B. Lal, Valdiya, Possehl</td><td>Ghaggar-Hakra drying; abandonment of eastern sites; satellite geology</td><td>Some dispute Ghaggar = Saraswati identification</td></tr>
+              <tr><td>Tectonic Flooding</td><td>Raikes, Lambrick</td><td>Flood layers at Mohenjo-daro; repeated floor-raising</td><td>Applies only to Mohenjo-daro; not civilization-wide</td></tr>
+              <tr><td>Trade Collapse</td><td>Various</td><td>Decline of Mesopotamian records of Meluhha after c. 2000 BCE; Akkadian collapse</td><td>Trade was secondary to agriculture for most IVC population</td></tr>
+              <tr><td>Multi-causal gradual decline</td><td>Possehl, Kenoyer, Ratnagar</td><td>Different timing at different sites; eastward migration; OCP successor culture</td><td>Does not explain a single proximate cause</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- SVG 1: IVC Sites Map -->
+    <div class="svg-container">
+      <svg viewBox="0 0 860 420" xmlns="http://www.w3.org/2000/svg" aria-label="Major IVC Sites and Geographical Extent">
+        <defs>
+          <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#e8f4f8"/>
+            <stop offset="100%" stop-color="#d0eaf5"/>
+          </linearGradient>
+        </defs>
+        <!-- Background -->
+        <rect width="860" height="420" fill="url(#bgGrad)" rx="10"/>
+        <text x="430" y="28" text-anchor="middle" font-size="15" font-weight="800" fill="#0a4a5e">Geographical Extent of the Indus Valley Civilization</text>
+        <text x="430" y="46" text-anchor="middle" font-size="10" fill="#4a6a7a">~1.5 million sq km · 2,600+ sites · Mature Phase: 2550–1900 BCE</text>
+
+        <!-- Rough landmass outline (schematic) -->
+        <path d="M120,70 L200,60 L310,55 L420,62 L520,58 L620,68 L700,78 L740,100 L750,140 L740,180 L730,220 L700,270 L680,310 L650,350 L600,380 L540,395 L460,400 L380,395 L300,380 L240,355 L190,320 L160,280 L140,240 L120,200 L110,160 L112,120 Z" fill="#f5f0e8" stroke="#c8b89a" stroke-width="1.5" opacity="0.8"/>
+
+        <!-- Rivers (schematic) -->
+        <!-- Indus -->
+        <path d="M300,70 Q330,120 320,180 Q310,250 330,310 Q350,360 370,390" fill="none" stroke="#1a7a9a" stroke-width="2.5" opacity="0.7"/>
+        <text x="265" y="200" font-size="9" fill="#1a7a9a" font-weight="700" transform="rotate(-75,265,200)">Indus River</text>
+
+        <!-- Ghaggar-Hakra (dashed - dried) -->
+        <path d="M420,80 Q460,110 490,150 Q520,190 550,220 Q570,250 560,290" fill="none" stroke="#d4891a" stroke-width="2" stroke-dasharray="6,4" opacity="0.8"/>
+        <text x="530" y="155" font-size="8.5" fill="#d4891a" font-weight="700">Ghaggar-Hakra</text>
+        <text x="530" y="167" font-size="8" fill="#d4891a">(dried Saraswati)</text>
+
+        <!-- Ravi -->
+        <path d="M370,72 Q380,100 390,130 Q400,160 410,190" fill="none" stroke="#2980b9" stroke-width="1.8" opacity="0.6"/>
+        <text x="354" y="115" font-size="8.5" fill="#2980b9" font-weight="600" transform="rotate(-80,354,115)">Ravi</text>
+
+        <!-- Gujarat coast (schematic) -->
+        <path d="M290,360 Q310,380 340,390 Q360,398 380,398" fill="none" stroke="#1a7a9a" stroke-width="1.5" opacity="0.5"/>
+
+        <!-- Boundary box (approximate extent) -->
+        <rect x="135" y="65" width="590" height="310" fill="none" stroke="#0a4a5e" stroke-width="1.5" stroke-dasharray="10,6" rx="8" opacity="0.5"/>
+        <text x="138" y="82" font-size="8" fill="#0a4a5e" opacity="0.7">Manda (N)</text>
+        <text x="695" y="82" font-size="8" fill="#0a4a5e" opacity="0.7">Shortugai</text>
+        <text x="138" y="375" font-size="8" fill="#0a4a5e" opacity="0.7">Sutkagendor (W)</text>
+        <text x="690" y="375" font-size="8" fill="#0a4a5e" opacity="0.7">Alamgirpur (E)</text>
+
+        <!-- Site dots and labels -->
+        <!-- Harappa -->
+        <circle cx="390" cy="108" r="7" fill="#0a4a5e" stroke="white" stroke-width="1.5"/>
+        <text x="402" y="107" font-size="9.5" font-weight="700" fill="#0a4a5e">Harappa</text>
+        <text x="402" y="119" font-size="8" fill="#555">Ravi · 1921 · Sahni</text>
+
+        <!-- Mohenjo-daro -->
+        <circle cx="270" cy="195" r="7" fill="#0a4a5e" stroke="white" stroke-width="1.5"/>
+        <text x="196" y="193" font-size="9.5" font-weight="700" fill="#0a4a5e">Mohenjo-daro</text>
+        <text x="196" y="205" font-size="8" fill="#555">Indus · 1922 · Banerjee</text>
+
+        <!-- Dholavira -->
+        <circle cx="270" cy="310" r="6" fill="#1a7a9a" stroke="white" stroke-width="1.5"/>
+        <text x="280" y="308" font-size="9" font-weight="700" fill="#1a7a9a">Dholavira</text>
+        <text x="280" y="320" font-size="8" fill="#555">Kutch · R.S. Bisht · UNESCO</text>
+
+        <!-- Lothal -->
+        <circle cx="248" cy="348" r="6" fill="#1a7a9a" stroke="white" stroke-width="1.5"/>
+        <text x="215" y="344" font-size="9" font-weight="700" fill="#1a7a9a">Lothal</text>
+        <text x="210" y="356" font-size="8" fill="#555">Dockyard · S.R. Rao</text>
+
+        <!-- Kalibangan -->
+        <circle cx="470" cy="148" r="6" fill="#e67e22" stroke="white" stroke-width="1.5"/>
+        <text x="480" y="147" font-size="9" font-weight="700" fill="#c0600a">Kalibangan</text>
+        <text x="480" y="159" font-size="8" fill="#555">Ghaggar · B.B. Lal</text>
+
+        <!-- Rakhigarhi -->
+        <circle cx="510" cy="178" r="6" fill="#e67e22" stroke="white" stroke-width="1.5"/>
+        <text x="520" y="177" font-size="9" font-weight="700" fill="#c0600a">Rakhigarhi</text>
+        <text x="520" y="189" font-size="8" fill="#555">Largest (India)</text>
+
+        <!-- Banawali -->
+        <circle cx="488" cy="162" r="5" fill="#888" stroke="white" stroke-width="1"/>
+        <text x="497" y="168" font-size="8" fill="#555">Banawali</text>
+
+        <!-- Sutkagendor -->
+        <circle cx="148" cy="232" r="5" fill="#888" stroke="white" stroke-width="1"/>
+        <text x="158" y="231" font-size="8" fill="#555">Sutkagendor</text>
+        <text x="158" y="241" font-size="7.5" fill="#888">(Westernmost)</text>
+
+        <!-- Shortugai -->
+        <circle cx="710" cy="84" r="5" fill="#888" stroke="white" stroke-width="1"/>
+        <text x="718" y="90" font-size="8" fill="#555">Shortugai</text>
+        <text x="718" y="100" font-size="7.5" fill="#888">(Afghanistan)</text>
+
+        <!-- Alamgirpur -->
+        <circle cx="700" cy="178" r="5" fill="#888" stroke="white" stroke-width="1"/>
+        <text x="648" y="194" font-size="8" fill="#555">Alamgirpur</text>
+        <text x="655" y="204" font-size="7.5" fill="#888">(Easternmost)</text>
+
+        <!-- Manda -->
+        <circle cx="450" cy="78" r="5" fill="#888" stroke="white" stroke-width="1"/>
+        <text x="458" y="85" font-size="8" fill="#555">Manda (N)</text>
+
+        <!-- Chanhudaro -->
+        <circle cx="295" cy="240" r="5" fill="#888" stroke="white" stroke-width="1"/>
+        <text x="304" y="246" font-size="8" fill="#555">Chanhudaro</text>
+
+        <!-- Daimabad -->
+        <circle cx="490" cy="372" r="5" fill="#888" stroke="white" stroke-width="1"/>
+        <text x="498" y="372" font-size="8" fill="#555">Daimabad (S)</text>
+
+        <!-- Surkotada -->
+        <circle cx="310" cy="335" r="5" fill="#888" stroke="white" stroke-width="1"/>
+        <text x="318" y="341" font-size="8" fill="#555">Surkotada</text>
+
+        <!-- Legend -->
+        <rect x="600" y="270" width="230" height="130" rx="8" fill="white" opacity="0.92" stroke="#ddd"/>
+        <text x="715" y="288" text-anchor="middle" font-size="9.5" font-weight="800" fill="#0a4a5e">LEGEND</text>
+        <circle cx="615" cy="302" r="6" fill="#0a4a5e" stroke="white" stroke-width="1.5"/>
+        <text x="626" y="306" font-size="9" fill="#333">Major city (Mature Harappan)</text>
+        <circle cx="615" cy="320" r="6" fill="#1a7a9a" stroke="white" stroke-width="1.5"/>
+        <text x="626" y="324" font-size="9" fill="#333">Important Gujarat sites</text>
+        <circle cx="615" cy="338" r="6" fill="#e67e22" stroke="white" stroke-width="1.5"/>
+        <text x="626" y="342" font-size="9" fill="#333">Eastern IVC (Ghaggar)</text>
+        <circle cx="615" cy="356" r="5" fill="#888" stroke="white" stroke-width="1"/>
+        <text x="626" y="360" font-size="9" fill="#333">Other significant sites</text>
+        <line x1="608" y1="374" x2="625" y2="374" stroke="#d4891a" stroke-width="2" stroke-dasharray="5,3"/>
+        <text x="628" y="378" font-size="9" fill="#d4891a">Dried Ghaggar-Hakra</text>
+      </svg>
+      <p class="svg-caption">Schematic map of major Indus Valley Civilization sites — the civilization covered ~1.5 million sq km across present-day Pakistan, India, and Afghanistan</p>
+    </div>
+
+    <!-- SVG 2: Town Planning and Great Bath -->
+    <div class="svg-container">
+      <svg viewBox="0 0 860 400" xmlns="http://www.w3.org/2000/svg" aria-label="IVC Town Planning and Great Bath diagram">
+        <rect width="860" height="400" fill="#f8fafc" rx="10"/>
+        <text x="430" y="26" text-anchor="middle" font-size="14" font-weight="800" fill="#0a4a5e">IVC Town Planning &amp; Great Bath — Key Features</text>
+
+        <!-- Left side: Town Plan schematic -->
+        <!-- Citadel -->
+        <rect x="30" y="50" width="180" height="150" rx="6" fill="#0a4a5e" opacity="0.15" stroke="#0a4a5e" stroke-width="2"/>
+        <text x="120" y="70" text-anchor="middle" font-size="11" font-weight="800" fill="#0a4a5e">CITADEL</text>
+        <text x="120" y="83" text-anchor="middle" font-size="8.5" fill="#0a4a5e">(Upper Town / West)</text>
+        <!-- Great Bath box in citadel -->
+        <rect x="45" y="90" width="65" height="45" rx="4" fill="#1a7a9a" opacity="0.4" stroke="#1a7a9a" stroke-width="1.5"/>
+        <text x="77" y="108" text-anchor="middle" font-size="8.5" font-weight="700" fill="#0a3a4e">Great Bath</text>
+        <text x="77" y="120" text-anchor="middle" font-size="7.5" fill="#0a3a4e">11.88×7.01m</text>
+        <!-- Granary box in citadel -->
+        <rect x="125" y="90" width="70" height="45" rx="4" fill="#e67e22" opacity="0.3" stroke="#e67e22" stroke-width="1.5"/>
+        <text x="160" y="108" text-anchor="middle" font-size="8.5" font-weight="700" fill="#8B4513">Granary</text>
+        <text x="160" y="120" text-anchor="middle" font-size="7.5" fill="#8B4513">54.86×36.6m (MJD)</text>
+        <!-- Assembly hall -->
+        <rect x="45" y="148" width="150" height="35" rx="4" fill="#27ae60" opacity="0.2" stroke="#27ae60" stroke-width="1.5"/>
+        <text x="120" y="168" text-anchor="middle" font-size="8.5" font-weight="700" fill="#1a6a3a">Assembly Hall / Admin</text>
+
+        <!-- Lower Town -->
+        <rect x="230" y="50" width="240" height="150" rx="6" fill="#f39c12" opacity="0.1" stroke="#f39c12" stroke-width="2"/>
+        <text x="350" y="70" text-anchor="middle" font-size="11" font-weight="800" fill="#8B6914">LOWER TOWN (East)</text>
+        <text x="350" y="83" text-anchor="middle" font-size="8.5" fill="#8B6914">Residential + Commercial</text>
+        <!-- Grid streets in lower town -->
+        <line x1="280" y1="90" x2="280" y2="195" stroke="#ccc" stroke-width="1"/>
+        <line x1="330" y1="90" x2="330" y2="195" stroke="#ccc" stroke-width="1"/>
+        <line x1="380" y1="90" x2="380" y2="195" stroke="#ccc" stroke-width="1"/>
+        <line x1="420" y1="90" x2="420" y2="195" stroke="#ccc" stroke-width="1"/>
+        <line x1="240" y1="120" x2="462" y2="120" stroke="#ccc" stroke-width="1"/>
+        <line x1="240" y1="150" x2="462" y2="150" stroke="#ccc" stroke-width="1"/>
+        <line x1="240" y1="175" x2="462" y2="175" stroke="#ccc" stroke-width="1"/>
+        <!-- House blocks -->
+        <rect x="285" y="125" width="40" height="22" rx="2" fill="#f39c12" opacity="0.3"/>
+        <rect x="335" y="125" width="40" height="22" rx="2" fill="#f39c12" opacity="0.3"/>
+        <rect x="385" y="125" width="30" height="22" rx="2" fill="#f39c12" opacity="0.3"/>
+        <rect x="285" y="155" width="40" height="17" rx="2" fill="#f39c12" opacity="0.3"/>
+        <rect x="335" y="155" width="40" height="17" rx="2" fill="#f39c12" opacity="0.3"/>
+        <text x="350" y="140" text-anchor="middle" font-size="8" fill="#8B6914">Grid streets</text>
+        <text x="350" y="152" text-anchor="middle" font-size="8" fill="#8B6914">Housing blocks</text>
+        <text x="350" y="188" text-anchor="middle" font-size="8" fill="#8B6914">Wells + Drains on every street</text>
+
+        <!-- Defensive wall around citadel -->
+        <rect x="22" y="42" width="196" height="166" rx="8" fill="none" stroke="#0a4a5e" stroke-width="3" stroke-dasharray="6,3"/>
+        <text x="30" y="222" font-size="8.5" fill="#0a4a5e">Defensive wall (raised platform)</text>
+
+        <!-- Dividing label -->
+        <text x="207" y="130" font-size="9" fill="#888" transform="rotate(90,207,130)">WEST | EAST</text>
+
+        <!-- Brick ratio box -->
+        <rect x="30" y="220" width="440" height="40" rx="6" fill="#0a4a5e" opacity="0.08" stroke="#0a4a5e" stroke-width="1"/>
+        <text x="250" y="235" text-anchor="middle" font-size="9.5" font-weight="700" fill="#0a4a5e">Standard Burnt Brick Ratio: 1 : 2 : 4 (Thickness : Width : Length) — uniform across 1,500+ km</text>
+        <text x="250" y="251" text-anchor="middle" font-size="8.5" fill="#4a6a8a">e.g., 7 cm × 14 cm × 28 cm | Kiln-fired (water-resistant) | No windows on main streets</text>
+
+        <!-- Right side: Great Bath cross-section -->
+        <rect x="500" y="44" width="340" height="220" rx="8" fill="white" stroke="#1a7a9a" stroke-width="2"/>
+        <text x="670" y="62" text-anchor="middle" font-size="12" font-weight="800" fill="#0a4a5e">Great Bath — Cross Section</text>
+        <text x="670" y="76" text-anchor="middle" font-size="9" fill="#1a7a9a">Mohenjo-daro · 11.88m × 7.01m × 2.43m deep</text>
+
+        <!-- Bath cross section drawing -->
+        <!-- Ground level -->
+        <line x1="520" y1="145" x2="820" y2="145" stroke="#888" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <text x="510" y="143" font-size="8" fill="#888" text-anchor="end">Ground</text>
+
+        <!-- Bath walls and floor -->
+        <rect x="555" y="110" width="230" height="100" rx="0" fill="#c8e8f8" stroke="#1a7a9a" stroke-width="2.5"/>
+        <!-- Water in bath -->
+        <rect x="557" y="155" width="226" height="53" fill="#1a7a9a" opacity="0.3"/>
+        <!-- Bitumen layer -->
+        <rect x="555" y="206" width="230" height="5" fill="#333" opacity="0.7"/>
+        <text x="672" y="218" text-anchor="middle" font-size="8" fill="#333">Bitumen waterproof layer (floor + sides)</text>
+
+        <!-- Staircase left -->
+        <rect x="540" y="120" width="16" height="80" fill="#a0c8e0" stroke="#1a7a9a" stroke-width="1"/>
+        <text x="520" y="168" font-size="7.5" fill="#0a4a5e" text-anchor="middle">Steps</text>
+        <text x="520" y="178" font-size="7.5" fill="#0a4a5e" text-anchor="middle">(N)</text>
+
+        <!-- Staircase right -->
+        <rect x="784" y="120" width="16" height="80" fill="#a0c8e0" stroke="#1a7a9a" stroke-width="1"/>
+        <text x="818" y="168" font-size="7.5" fill="#0a4a5e" text-anchor="middle">Steps</text>
+        <text x="818" y="178" font-size="7.5" fill="#0a4a5e" text-anchor="middle">(S)</text>
+
+        <!-- Colonnaded verandah -->
+        <rect x="515" y="105" width="28" height="115" fill="#e8d8c0" stroke="#b08040" stroke-width="1.5" opacity="0.8"/>
+        <rect x="797" y="105" width="28" height="115" fill="#e8d8c0" stroke="#b08040" stroke-width="1.5" opacity="0.8"/>
+        <!-- Columns in verandah -->
+        <rect x="521" y="108" width="8" height="100" fill="#c0a870" rx="2"/>
+        <rect x="535" y="108" width="8" height="100" fill="#c0a870" rx="2"/>
+        <rect x="800" y="108" width="8" height="100" fill="#c0a870" rx="2"/>
+        <rect x="814" y="108" width="8" height="100" fill="#c0a870" rx="2"/>
+        <text x="503" y="163" font-size="7.5" fill="#7a5a20" transform="rotate(-90,503,163)">Verandah</text>
+        <text x="840" y="163" font-size="7.5" fill="#7a5a20" transform="rotate(90,840,163)">Verandah</text>
+
+        <!-- Well -->
+        <circle cx="605" cy="98" r="12" fill="#c8e8f8" stroke="#1a7a9a" stroke-width="1.5"/>
+        <text x="605" y="96" text-anchor="middle" font-size="7.5" font-weight="700" fill="#0a4a5e">Well</text>
+        <text x="605" y="106" text-anchor="middle" font-size="6.5" fill="#0a4a5e">(fresh water)</text>
+
+        <!-- Drain outlet -->
+        <rect x="772" y="203" width="30" height="8" fill="#888" rx="2"/>
+        <text x="806" y="210" font-size="7.5" fill="#555">Drain</text>
+
+        <!-- Changing rooms indication -->
+        <rect x="557" y="88" width="226" height="20" fill="#ffe0b0" stroke="#e67e22" stroke-width="1" rx="0"/>
+        <text x="670" y="101" text-anchor="middle" font-size="8" font-weight="700" fill="#8B4513">Changing Rooms (on all sides)</text>
+
+        <!-- Depth dimension -->
+        <line x1="786" y1="110" x2="786" y2="210" stroke="#e74c3c" stroke-width="1.5" marker-start="url(#arr)" marker-end="url(#arr)"/>
+        <text x="800" y="163" font-size="8" fill="#e74c3c" transform="rotate(90,800,163)">2.43m</text>
+
+        <!-- Bottom summary boxes -->
+        <rect x="30" y="272" width="195" height="115" rx="8" fill="white" stroke="#0a4a5e" stroke-width="1.5"/>
+        <text x="127" y="288" text-anchor="middle" font-size="9.5" font-weight="800" fill="#0a4a5e">Drainage System</text>
+        <text x="40" y="303" font-size="8.5" fill="#333">• Underground covered drains</text>
+        <text x="40" y="317" font-size="8.5" fill="#333">• Manholes for maintenance</text>
+        <text x="40" y="331" font-size="8.5" fill="#333">• Every house connected</text>
+        <text x="40" y="345" font-size="8.5" fill="#333">• Hierarchy: house→lane→street</text>
+        <text x="40" y="359" font-size="8.5" fill="#333">• No equal in Bronze Age world</text>
+        <text x="40" y="377" font-size="8" fill="#1a7a9a">Most advanced ancient drainage</text>
+
+        <rect x="238" y="272" width="195" height="115" rx="8" fill="white" stroke="#1a7a9a" stroke-width="1.5"/>
+        <text x="335" y="288" text-anchor="middle" font-size="9.5" font-weight="800" fill="#0a4a5e">Great Bath Facts</text>
+        <text x="248" y="303" font-size="8.5" fill="#333">• Mohenjo-daro citadel</text>
+        <text x="248" y="317" font-size="8.5" fill="#333">• Bitumen waterproofing</text>
+        <text x="248" y="331" font-size="8.5" fill="#333">• 2 staircases (N + S ends)</text>
+        <text x="248" y="345" font-size="8.5" fill="#333">• Colonnaded verandah</text>
+        <text x="248" y="359" font-size="8.5" fill="#333">• Purpose: ritual purification</text>
+        <text x="248" y="377" font-size="8" fill="#1a7a9a">John Marshall: "earliest public water tank"</text>
+
+        <rect x="446" y="272" width="195" height="115" rx="8" fill="white" stroke="#e67e22" stroke-width="1.5"/>
+        <text x="543" y="288" text-anchor="middle" font-size="9.5" font-weight="800" fill="#0a4a5e">Standardization Across IVC</text>
+        <text x="456" y="303" font-size="8.5" fill="#333">• Brick ratio 1:2:4 everywhere</text>
+        <text x="456" y="317" font-size="8.5" fill="#333">• Identical weights &amp; measures</text>
+        <text x="456" y="331" font-size="8.5" fill="#333">• Same pottery forms</text>
+        <text x="456" y="345" font-size="8.5" fill="#333">• Same seal designs</text>
+        <text x="456" y="359" font-size="8.5" fill="#333">• Grid street pattern</text>
+        <text x="456" y="377" font-size="8" fill="#e67e22">Strongest evidence for central authority</text>
+
+        <rect x="654" y="272" width="186" height="115" rx="8" fill="white" stroke="#27ae60" stroke-width="1.5"/>
+        <text x="747" y="288" text-anchor="middle" font-size="9.5" font-weight="800" fill="#0a4a5e">Dholavira Unique Features</text>
+        <text x="664" y="303" font-size="8.5" fill="#333">• 3-part town plan (unique)</text>
+        <text x="664" y="317" font-size="8.5" fill="#333">• 16 water reservoirs</text>
+        <text x="664" y="331" font-size="8.5" fill="#333">• 10-sign signboard inscription</text>
+        <text x="664" y="345" font-size="8.5" fill="#333">• Stadium-like ground</text>
+        <text x="664" y="359" font-size="8.5" fill="#333">• UNESCO WHS: 2021</text>
+        <text x="664" y="377" font-size="8" fill="#27ae60">R.S. Bisht excavations: 1990–2005</text>
+      </svg>
+      <p class="svg-caption">Town planning diagram showing the two-part (Citadel + Lower Town) layout common to most IVC cities, and a cross-section of the Great Bath at Mohenjo-daro</p>
+    </div>
+
+    <!-- Current Affairs -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">📰</span><h2>Current Affairs — IVC in Recent News</h2></div>
+      <div class="card-body">
+        <div class="ca-grid">
+          <div class="ca-card">
+            <div class="ca-year">UNESCO 2021</div>
+            <div class="ca-title">Dholavira declared UNESCO World Heritage Site</div>
+            <div class="ca-body">Dholavira (Gujarat) was inscribed as a UNESCO World Heritage Site on 27 July 2021 — India's 40th WHS. It was recognized for its outstanding universal value as an IVC site with unique triple-division town planning and advanced water management. Excavated by R.S. Bisht since 1990.</div>
+          </div>
+          <div class="ca-card">
+            <div class="ca-year">DNA Study 2019</div>
+            <div class="ca-title">Rakhigarhi DNA Analysis — IVC Genetic Identity</div>
+            <div class="ca-body">Vasant Shinde (Deccan College) and Harvard's David Reich team published ancient DNA analysis from a 4,500-year-old Rakhigarhi skeleton. Key finding: The IVC person showed no Steppe-pastoralist ancestry (challenging Aryan invasion/migration timeline), descended from South Asian hunter-gatherers + Iranian-related farmers. The study suggests IVC developed indigenously.</div>
+          </div>
+          <div class="ca-card">
+            <div class="ca-year">Excavation 2023–24</div>
+            <div class="ca-title">New IVC Sites Discovered in Haryana and Rajasthan</div>
+            <div class="ca-body">ASI and state archaeology departments continue discovering Late Harappan and IVC-linked sites in Haryana's Ghaggar belt. The total count of known IVC/Harappan sites has now crossed 2,600, with India having more sites than Pakistan. Haryana has the highest concentration of IVC sites within India.</div>
+          </div>
+          <div class="ca-card">
+            <div class="ca-year">Climate Research 2022</div>
+            <div class="ca-title">Climate Change as Primary Driver — New Evidence</div>
+            <div class="ca-body">Studies using oxygen isotopes from Himalayan speleothems (cave formations) confirm a significant weakening of Indian Summer Monsoon between 2200–1900 BCE, coinciding precisely with the beginning of IVC decline. Cambridge (Petrie) and other teams are building a site-by-site archaeological-climate correlation model for IVC's de-urbanization.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PYQs -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">📝</span><h2>Previous Year Questions (UPSC)</h2></div>
+      <div class="card-body">
+        <h3 class="sec-h3">Prelims PYQs</h3>
+        <div class="pyq-item">
+          <div class="pyq-meta">Prelims 2021 (Similar pattern)</div>
+          <div class="pyq-q">With reference to the Indus Valley Civilization, which of the following statements is/are correct? (1) Cotton was cultivated in the IVC. (2) The IVC had trade relations with Mesopotamia. (3) Iron was extensively used by the IVC people.</div>
+          <div class="pyq-hint"><strong>Answer: 1 &amp; 2 only.</strong> Cotton was first cultivated by IVC (Greeks called it sindon). Trade with Mesopotamia (Meluhha in Sumerian records) is well-documented via Lothal dockyard and Mesopotamian texts. Iron was ABSENT — IVC was a Bronze Age civilization. Iron appears in India only after c. 1000 BCE.</div>
+        </div>
+        <div class="pyq-item">
+          <div class="pyq-meta">Prelims 2019</div>
+          <div class="pyq-q">In which of the following sites of the Indus Valley Civilization, evidence of a tidal dockyard has been found? (a) Harappa (b) Mohenjo-daro (c) Lothal (d) Dholavira</div>
+          <div class="pyq-hint"><strong>Answer: (c) Lothal.</strong> S.R. Rao excavated Lothal (1954–63) and discovered a 222×37 m tidal dock with sluice gate mechanism — considered the world's first known tidal dockyard. Dholavira is known for water reservoirs, not a dockyard.</div>
+        </div>
+        <div class="pyq-item">
+          <div class="pyq-meta">Prelims 2020 (Pattern)</div>
+          <div class="pyq-q">The 'Pashupati Seal' found from which IVC site shows a cross-legged figure surrounded by animals?</div>
+          <div class="pyq-hint"><strong>Answer: Mohenjo-daro.</strong> The Pashupati Seal (steatite) was found at Mohenjo-daro. The figure is seated in yogic posture with a horned headdress, surrounded by elephant, rhinoceros, buffalo (right), tiger (left), and deer below. Marshall identified the figure as proto-Shiva/Pashupati.</div>
+        </div>
+        <div class="pyq-item">
+          <div class="pyq-meta">Prelims 2018</div>
+          <div class="pyq-q">Which IVC site is known for (1) evidence of the earliest ploughed field in the world, and (2) fire altars on the citadel?</div>
+          <div class="pyq-hint"><strong>Answer: Kalibangan (Rajasthan).</strong> The pre-Harappan level at Kalibangan shows the world's earliest ploughed field — two sets of furrows at right angles. The Mature Harappan citadel had a row of 7 fire altars. Excavated by A. Ghosh and B.B. Lal (1960–69). Also notable: only major IVC city without a Great Bath.</div>
+        </div>
+        <div class="pyq-item">
+          <div class="pyq-meta">Prelims 2022 (Pattern)</div>
+          <div class="pyq-q">With reference to Dholavira, recently in news, which of the following statements is correct? (a) It is the largest IVC site in India (b) It was inscribed as a UNESCO World Heritage Site in 2021 (c) It was excavated by B.B. Lal (d) It is located on the banks of the Indus river</div>
+          <div class="pyq-hint"><strong>Answer: (b)</strong> Dholavira was inscribed as UNESCO WHS on 27 July 2021 (India's 40th). It is NOT the largest IVC site in India — Rakhigarhi is. It was excavated by R.S. Bisht (not B.B. Lal). It is located on Khadir island in the Rann of Kutch (not on the Indus river).</div>
+        </div>
+
+        <h3 class="sec-h3">Mains PYQs</h3>
+        <div class="pyq-item">
+          <div class="pyq-meta">Mains GS1 2018 — 15 marks</div>
+          <div class="pyq-q">"The Indus Valley Civilization was far ahead of its time in urban planning." Critically examine this statement with reference to town planning, sanitation and public amenities.</div>
+          <div class="pyq-hint"><strong>Framework:</strong> (1) Introduction — IVC as Bronze Age urban civilization; 2550–1900 BCE peak; (2) Grid-pattern streets + standardized brick ratios 1:2:4; (3) Two-part city plan (Citadel + Lower Town); (4) Great Bath — ritual + public hygiene consciousness; (5) Drainage — underground brick drains, manholes, sump pits — unmatched in contemporaneous civilizations; (6) Wells (700+ at MJD); (7) Garbage bins on streets; (8) Critical note — our knowledge is limited by undeciphered script; (9) Conclusion — yes, far ahead especially in sanitation.</div>
+        </div>
+        <div class="pyq-item">
+          <div class="pyq-meta">Mains GS1 2020 — 10 marks</div>
+          <div class="pyq-q">Examine the different theories proposed for the decline of the Indus Valley Civilization. Which theory do you find most convincing and why?</div>
+          <div class="pyq-hint"><strong>Framework:</strong> (1) Brief each theory — Aryan Invasion (Wheeler; now discredited), Climate Change/Monsoon (Possehl, Giosan — PNAS 2012; currently most accepted), Drying of Saraswati/Ghaggar-Hakra (B.B. Lal), Tectonic Flooding (Raikes — specific to MJD), Trade Collapse, Multi-causal (Kenoyer); (2) Evaluation — Aryan Invasion largely rejected; Climate + River drying have strongest palaeoclimatic evidence; (3) Most convincing = multi-causal with climate change as primary driver — cite Rakhigarhi DNA evidence, eastward migration pattern, OCP culture as successor.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Revision Box -->
+    <div class="revision-box">
+      <h2>⚡ 10-Point Rapid Revision — Indus Valley Civilization</h2>
+      <ol class="revision-list">
+        <li><strong>Discovery:</strong> Harappa (1921, Daya Ram Sahni, Ravi river); Mohenjo-daro (1922, R.D. Banerjee, Indus); coined "IVC" — Sir John Marshall, 1924</li>
+        <li><strong>Extent:</strong> ~1.5 million sq km; W: Sutkagendor (Balochistan); E: Alamgirpur (UP); N: Manda (J&amp;K); S: Daimabad (Maharashtra); 2,600+ sites</li>
+        <li><strong>Phases:</strong> Early Harappan 3200–2550 BCE (Mehrgarh, Kot Diji) → Mature 2550–1900 BCE (peak urban) → Late 1900–1200 BCE (de-urbanization; Cemetery H; OCP)</li>
+        <li><strong>Key Site Features:</strong> MJD = Great Bath + Granary + Priest-King bust + Bronze Dancing Girl; Lothal = Dockyard + fire altars; Kalibangan = earliest ploughed field + fire altars (NO Great Bath); Dholavira = 3-part plan + water reservoirs (UNESCO 2021); Rakhigarhi = largest site in India; Chanhudaro = only city with NO citadel</li>
+        <li><strong>Town Planning:</strong> Grid streets; 2-part city (Citadel + Lower Town); burnt brick 1:2:4; covered underground drains with manholes; Great Bath (11.88×7.01×2.43 m; bitumen waterproofed; ritual purpose)</li>
+        <li><strong>Economy:</strong> Bronze Age (no iron); cotton first cultivated; wheat+barley staples; trade with Mesopotamia (Meluhha); Lothal dockyard; weights — binary-decimal chert cubes; bead industry (carnelian etching)</li>
+        <li><strong>Seals:</strong> 4,000+ found; steatite; square with perforated boss; unicorn most common (~70%); Pashupati Seal (proto-Shiva; MJD) = yogic figure + 4 animals; used for trade identity</li>
+        <li><strong>Indus Script:</strong> ~400–600 signs; undeciphered; right-to-left; no bilingual text; Asko Parpola (proto-Dravidian hypothesis); I. Mahadevan (concordance)</li>
+        <li><strong>Religion/Art:</strong> Mother Goddess figurines (most common); Pashupati/proto-Shiva; phallus + ring stones; pipal tree; fire altars (Kalibangan, Lothal); NO identified temple or palace; Bronze Dancing Girl (lost-wax); Priest-King bust (steatite)</li>
+        <li><strong>Decline:</strong> Gradual 1900–1200 BCE; multi-causal — climate change/monsoon weakening (Possehl, Giosan, PNAS 2012 = most accepted), drying of Ghaggar-Hakra, tectonic flooding (MJD only), trade collapse; Aryan Invasion (Wheeler) — discredited; eastward migration → OCP culture</li>
+      </ol>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-bar" style="margin-top:22px;">
+      <div class="cta-text">
+        <strong>Continue with Vedic Civilization</strong>
+        <span>Topic 05: The Vedic Age — Rigvedic and Later Vedic periods, society, economy, religion</span>
+      </div>
+      <a href="/upsc-notes/ancient" class="cta-btn">Next Topic →</a>
+    </div>
+
+  </div><!-- end content-wrap --></main></div>
+</div>

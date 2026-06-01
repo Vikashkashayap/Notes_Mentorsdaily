@@ -1,0 +1,956 @@
+<!-- ancient-topic02 — auto-imported from ancient-topic02-stone-age-upsc-notes.html -->
+<style data-topic-notes>
+    :root {
+      --primary: #1a3c5e;
+      --primary-light: #2a5c8e;
+      --secondary: #4a5a1a;
+      --accent: #7a9a2a;
+      --accent-light: #9aba3a;
+      --success: #27ae60;
+      --success-light: #2ecc71;
+      --warning: #f39c12;
+      --info: #2980b9;
+      --bg-main: #f4f6f9;
+      --bg-card: #ffffff;
+      --bg-sidebar: #1a2940;
+      --bg-sidebar-hover: #243b55;
+      --text-primary: #1a2533;
+      --text-secondary: #4a5568;
+      --text-muted: #718096;
+      --text-light: #f0f4f8;
+      --border-light: #e2e8f0;
+      --border-medium: #cbd5e0;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.10);
+      --shadow-lg: 0 8px 24px rgba(0,0,0,0.13);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-main); background: var(--bg-main); color: var(--text-primary); line-height: 1.7; }
+
+    /* Layout */
+    .sidebar {
+      width: 270px; background: var(--bg-sidebar); color: var(--text-light);
+      position: fixed; top: 0; left: 0; height: 100vh; overflow-y: auto;
+      z-index: 100; transition: transform 0.3s ease;
+    }
+    .sidebar-logo { padding: 20px 18px 14px; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; gap: 10px; }
+    .sidebar-logo .logo-icon { font-size: 1.6rem; }
+    .sidebar-logo .logo-text { font-size: 1rem; font-weight: 700; color: var(--text-light); }
+    .sidebar-logo .logo-sub { font-size: 0.72rem; color: rgba(255,255,255,0.5); display: block; }
+    .sidebar-section { padding: 14px 10px 4px; }
+    .sidebar-section-title { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: rgba(255,255,255,0.35); padding: 0 6px 6px; }
+    .sidebar-item { display: flex; align-items: center; gap: 8px; padding: 7px 10px; border-radius: var(--radius-sm); color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.82rem; transition: background 0.18s, color 0.18s; }
+    .sidebar-item:hover { background: var(--bg-sidebar-hover); color: #fff; }
+    .sidebar-item.active { background: var(--accent); color: #fff; font-weight: 600; }
+    .sidebar-item .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+    .sidebar-item.active .dot { background: #fff; }
+    .main-content { margin-left: 270px; min-height: 100vh; }
+    @media (max-width: 860px) {
+      .sidebar { transform: translateX(-100%); }
+      .sidebar.open { transform: translateX(0); }
+      .main-content { margin-left: 0; }
+    }
+
+    /* Topbar */
+    .topbar { background: var(--bg-card); border-bottom: 1px solid var(--border-light); padding: 10px 28px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 50; }
+    .menu-btn { display: none; background: none; border: none; cursor: pointer; font-size: 1.3rem; color: var(--primary); padding: 4px; }
+    @media (max-width: 860px) { .menu-btn { display: block; } }
+    .breadcrumb { font-size: 0.8rem; color: var(--text-muted); }
+    .breadcrumb a { color: var(--primary); text-decoration: none; }
+    .badge { font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+    .badge.gs1 { background: linear-gradient(90deg, var(--secondary), var(--accent)); color: #fff; }
+
+    /* Hero */
+    .hero { background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 60%, var(--primary-light) 100%); color: #fff; padding: 38px 32px 34px; }
+    .hero-module { font-size: 0.78rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 8px; }
+    .hero h1 { font-size: 2rem; font-weight: 800; line-height: 1.2; margin-bottom: 10px; }
+    .hero-sub { font-size: 0.95rem; color: rgba(255,255,255,0.82); margin-bottom: 16px; }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.8rem; color: rgba(255,255,255,0.7); }
+
+    /* Content */
+    .content-wrap { padding: 26px 28px 40px; max-width: 980px; }
+    .card { background: var(--bg-card); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); margin-bottom: 22px; overflow: hidden; border: 1px solid var(--border-light); }
+    .card-header { display: flex; align-items: center; gap: 10px; padding: 16px 20px 14px; border-bottom: 1px solid var(--border-light); background: linear-gradient(90deg, rgba(74,90,26,0.06) 0%, transparent 100%); }
+    .card-icon { font-size: 1.2rem; }
+    .card-header h2 { font-size: 1.05rem; font-weight: 700; color: var(--primary); }
+    .card-body { padding: 18px 20px; }
+
+    /* Section headings */
+    .sec-h3 { font-size: 0.95rem; font-weight: 700; color: var(--secondary); margin: 18px 0 8px; padding-left: 10px; border-left: 3px solid var(--accent); }
+    .sec-h4 { font-size: 0.88rem; font-weight: 700; color: var(--primary); margin: 14px 0 6px; }
+
+    /* Highlight boxes */
+    .highlight-box { border-radius: var(--radius-md); padding: 13px 16px; margin: 12px 0; font-size: 0.88rem; line-height: 1.65; }
+    .highlight-box.yellow { background: #fffbeb; border-left: 4px solid var(--warning); }
+    .highlight-box.green { background: #f0faf4; border-left: 4px solid var(--success); }
+    .highlight-box.red { background: #fff5f5; border-left: 4px solid #e74c3c; }
+    .highlight-box.blue { background: #f0f7ff; border-left: 4px solid var(--info); }
+    .highlight-box.olive { background: #f6f9f0; border-left: 4px solid var(--accent); }
+
+    /* Tags */
+    .tags { display: flex; flex-wrap: wrap; gap: 7px; margin: 14px 0; }
+    .tag { font-size: 0.75rem; font-weight: 600; padding: 4px 11px; border-radius: 20px; background: #eef1f7; color: var(--primary); border: 1px solid var(--border-medium); }
+    .tag.hot { background: linear-gradient(90deg, var(--secondary), var(--accent)); color: #fff; border-color: transparent; }
+
+    /* Info tiles */
+    .info-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; margin: 14px 0; }
+    .info-tile { background: #f8fafc; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 10px 13px; }
+    .tile-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-muted); margin-bottom: 3px; }
+    .tile-value { font-size: 0.83rem; font-weight: 600; color: var(--primary); }
+
+    /* Table */
+    .table-wrap { overflow-x: auto; margin: 12px 0; border-radius: var(--radius-md); border: 1px solid var(--border-light); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+    thead tr { background: var(--secondary); color: #fff; }
+    thead th { padding: 10px 12px; text-align: left; font-weight: 700; font-size: 0.8rem; }
+    tbody tr { border-bottom: 1px solid var(--border-light); }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:nth-child(even) { background: #fafbfc; }
+    tbody td { padding: 9px 12px; vertical-align: top; }
+
+    /* Styled list */
+    .styled-list { list-style: none; padding: 0; margin: 8px 0; }
+    .styled-list li { padding: 5px 0 5px 18px; position: relative; font-size: 0.88rem; border-bottom: 1px solid var(--border-light); }
+    .styled-list li:last-child { border-bottom: none; }
+    .styled-list li::before { content: "▸"; position: absolute; left: 0; color: var(--accent); font-size: 0.75rem; top: 7px; }
+
+    /* SVG */
+    .svg-container { background: var(--bg-card); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); margin-bottom: 22px; padding: 20px; border: 1px solid var(--border-light); overflow-x: auto; }
+    .svg-container svg { display: block; max-width: 100%; }
+    .svg-caption { font-size: 0.78rem; color: var(--text-muted); text-align: center; margin-top: 10px; font-style: italic; }
+
+    /* Current Affairs */
+    .ca-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; margin-top: 14px; }
+    .ca-card { background: #f8fafc; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 14px 16px; }
+    .ca-year { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 4px; }
+    .ca-title { font-size: 0.87rem; font-weight: 700; color: var(--primary); margin-bottom: 5px; }
+    .ca-body { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.55; }
+
+    /* PYQ */
+    .pyq-item { background: #f8fafc; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 14px 16px; margin-bottom: 12px; }
+    .pyq-meta { font-size: 0.72rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+    .pyq-q { font-size: 0.88rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+    .pyq-hint { font-size: 0.83rem; color: var(--text-secondary); background: white; border-radius: var(--radius-sm); padding: 8px 12px; border-left: 3px solid var(--success); }
+
+    /* Revision Box */
+    .revision-box { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: #fff; border-radius: var(--radius-lg); padding: 24px 26px; }
+    .revision-box h2 { font-size: 1.05rem; font-weight: 700; margin-bottom: 16px; }
+    .revision-list { list-style: none; padding: 0; counter-reset: rev; }
+    .revision-list li { counter-increment: rev; display: flex; gap: 12px; padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,0.12); font-size: 0.87rem; line-height: 1.5; }
+    .revision-list li::before { content: counter(rev, decimal-leading-zero); flex-shrink: 0; font-size: 0.7rem; font-weight: 800; background: rgba(255,255,255,0.18); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+    .revision-list li:last-child { border-bottom: none; }
+
+    /* CTA */
+    .cta-bar { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 16px 22px; display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin-bottom: 22px; }
+    .cta-text strong { font-size: 0.92rem; color: var(--primary); display: block; }
+    .cta-text span { font-size: 0.8rem; color: var(--text-muted); }
+    .cta-btn { background: linear-gradient(90deg, var(--secondary), var(--accent)); color: #fff; padding: 9px 20px; border-radius: 24px; text-decoration: none; font-size: 0.84rem; font-weight: 700; white-space: nowrap; }
+
+    /* Print */
+    @media print {
+      .sidebar, .topbar, .menu-btn, .cta-bar { display: none !important; }
+      .main-content { margin-left: 0; }
+      .card, .svg-container { box-shadow: none; border: 1px solid #ccc; break-inside: avoid; }
+    }
+  
+/* Next.js: shared app navbar; restore two-column layout */
+.notes-topic-embedded .navbar,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded .hamburger,
+.notes-topic-embedded .menu-btn,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .page-wrapper {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 280px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  margin-top: 0 !important;
+}
+
+.notes-topic-embedded .main-content,
+.notes-topic-embedded main.main-content,
+.notes-topic-embedded main {
+  margin-left: 0 !important;
+  min-width: 0;
+}
+
+.notes-topic-embedded aside,
+.notes-topic-embedded .right-sidebar,
+.notes-topic-embedded aside.sidebar {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .page-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+  .notes-topic-embedded aside,
+  .notes-topic-embedded .right-sidebar,
+  .notes-topic-embedded aside.sidebar {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="page-wrapper"><main class="main-content">
+  <div class="topbar">
+    <nav class="breadcrumb">
+      
+      <a href="/upsc-notes">Notes Hub</a> › <a href="/upsc-notes/ancient">Ancient History</a> › The Stone Age
+    </nav>
+    <span class="badge gs1">GS Paper 1</span>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-module">Ancient History · Topic 02</div>
+    <h1>The Stone Age</h1>
+    <p class="hero-sub">Palaeolithic (Early, Middle, Upper) · Mesolithic · Neolithic · Megalithic Culture · Prehistoric Rock Art</p>
+    <div class="hero-meta">
+      <span>📄 GS Paper 1</span>
+      <span>⏱ 35 min read</span>
+      <span>🎯 High-Value Prelims Topic — Sites, tools, and timelines asked repeatedly</span>
+      <span>📅 Updated: May 2026</span>
+    </div>
+  </div>
+
+  <div class="content-wrap">
+
+    <!-- Conceptual Clarity -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">💡</span><h2>Conceptual Clarity — Why Stone Age Matters for UPSC</h2></div>
+      <div class="card-body">
+        <div class="highlight-box yellow">
+          <strong>The Foundation of All Indian Civilisation</strong>
+          The Stone Age is not merely ancient history — it is the biological and cultural bedrock of Indian civilization. By the time the Indus Valley Civilisation emerged (~3300 BCE), India had already seen millions of years of human habitation. Understanding the Stone Age tells us: <em>when</em> humans first arrived in India, <em>how</em> they adapted from nomadic hunters to settled farmers, and <em>why</em> certain regions (Gangetic plains, Deccan plateau, Kashmir) became cradles of civilization. UPSC tests this topic primarily through Prelims questions on specific sites, tools, pottery types, and discoverers.
+        </div>
+        <div class="tags">
+          <span class="tag hot">Palaeolithic Age</span>
+          <span class="tag hot">Bhimbetka Rock Art</span>
+          <span class="tag hot">Mehrgarh (Neolithic)</span>
+          <span class="tag hot">Microliths</span>
+          <span class="tag">Megalithic Culture</span>
+          <span class="tag">Narmada Man</span>
+          <span class="tag">Bagor Site</span>
+          <span class="tag">Black-and-Red Ware</span>
+        </div>
+        <div class="info-tiles">
+          <div class="info-tile"><div class="tile-label">Oldest Human Fossil (India)</div><div class="tile-value">Narmada Man, ~250,000 BCE</div></div>
+          <div class="info-tile"><div class="tile-label">Oldest Neolithic Site (S. Asia)</div><div class="tile-value">Mehrgarh, c. 7000 BCE</div></div>
+          <div class="info-tile"><div class="tile-label">Largest Mesolithic Site</div><div class="tile-value">Bagor, Rajasthan</div></div>
+          <div class="info-tile"><div class="tile-label">Bhimbetka Discovered by</div><div class="tile-value">V.S. Wakankar, 1957–58</div></div>
+          <div class="info-tile"><div class="tile-label">Megalithic Pottery</div><div class="tile-value">Black-and-Red Ware (BRW)</div></div>
+          <div class="info-tile"><div class="tile-label">First Domesticated Animal</div><div class="tile-value">Dog — evidence at Bagor</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 1: Phases Overview -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">🗿</span><h2>1. Phases of Stone Age — Overview</h2></div>
+      <div class="card-body">
+        <div class="highlight-box olive">
+          <strong>Classification Basis: Tool Technology</strong>
+          The Stone Age is classified primarily on the basis of <em>tool-making technique</em> and <em>material</em> — not simply by time. As human cognitive and manual skills evolved, tools became progressively smaller, more refined, and more specialised. This progression from large, rough core tools to tiny, geometric microliths is the central story of Stone Age India.
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Age</th><th>Time Period (approx.)</th><th>Characteristic Tools</th><th>Subsistence</th><th>Key India Sites</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Early Palaeolithic</strong></td>
+                <td>500,000 – 150,000 BCE</td>
+                <td>Hand-axes, cleavers, choppers (core tools)</td>
+                <td>Hunter-gatherer; food scavenging</td>
+                <td>Soan Valley, Belan Valley, Narmada, Bhimbetka</td>
+              </tr>
+              <tr>
+                <td><strong>Middle Palaeolithic</strong></td>
+                <td>150,000 – 40,000 BCE</td>
+                <td>Flake tools — scrapers, borers, points</td>
+                <td>Hunter-gatherer; improved hunting</td>
+                <td>Narmada, Tungabhadra, Son Valley</td>
+              </tr>
+              <tr>
+                <td><strong>Upper Palaeolithic</strong></td>
+                <td>40,000 – 10,000 BCE</td>
+                <td>Blade tools, bone tools, burins</td>
+                <td>Hunting, fishing; earliest art</td>
+                <td>Bhimbetka, Renigunta (AP), Belan Valley</td>
+              </tr>
+              <tr>
+                <td><strong>Mesolithic</strong></td>
+                <td>10,000 – 4,000 BCE</td>
+                <td>Microliths — tiny geometric blades</td>
+                <td>Hunting, fishing, plant gathering; animal domestication begins</td>
+                <td>Bagor (Raj.), Bhimbetka, Langhnaj (Guj.), Chopani Mando (UP)</td>
+              </tr>
+              <tr>
+                <td><strong>Neolithic</strong></td>
+                <td>6,000 – 1,000 BCE</td>
+                <td>Polished stone tools, ground-edge axes</td>
+                <td>Agriculture, animal husbandry, permanent settlements</td>
+                <td>Mehrgarh (Pak.), Burzahom (J&amp;K), Chirand (Bihar), Brahmagiri (Kar.)</td>
+              </tr>
+              <tr>
+                <td><strong>Megalithic / Iron Age</strong></td>
+                <td>1,500 – 500 BCE</td>
+                <td>Iron tools; large stone burial monuments</td>
+                <td>Pastoral + agricultural; organised burials</td>
+                <td>Brahmagiri (Kar.), Adichanallur (TN), Hallur (Kar.)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 2: Palaeolithic Age -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">🪨</span><h2>2. Palaeolithic Age (Old Stone Age)</h2></div>
+      <div class="card-body">
+        <div class="highlight-box blue">
+          <strong>Palaeolithic = "Old Stone" (Greek: palaeos + lithos)</strong>
+          The Palaeolithic Age in India covers the longest span of human prehistory — from roughly 500,000 BCE to 10,000 BCE. Humans were food-gatherers (not producers): they hunted animals, fished, and collected wild plants. They had no agriculture, no pottery, and no permanent settlements. They lived in rock shelters and open-air campsites. Climate during this period was determined by glacial and inter-glacial cycles (Pleistocene epoch); India had a cooler, moister climate during glacial phases.
+        </div>
+
+        <!-- Early Palaeolithic -->
+        <div class="sec-h3">A. Early Palaeolithic (c. 500,000 – 150,000 BCE)</div>
+        <ul class="styled-list">
+          <li><strong>Tool type:</strong> Large core tools — <em>hand-axes</em> (bifacial, pointed/oval), <em>cleavers</em> (flat cutting edge), and <em>choppers</em> (single-faced). Tools made by striking flakes off a stone core. Large, heavy, and multipurpose.</li>
+          <li><strong>Material:</strong> Quartzite — abundant and hard; later sites use flint and chert.</li>
+          <li><strong>Narmada Man (Hathnoora, Hoshangabad, MP):</strong> Skull cap of Homo erectus found by Arun Sonakia (1982); estimated age 250,000–500,000 BCE. Oldest human fossil discovered in India. Shows India had human habitation during the Middle Pleistocene.</li>
+          <li><strong>Climate and fauna:</strong> Co-existed with rhinoceros, hippopotamus, and elephant (Pleistocene megafauna). Cool, moist climate in many periods. People lived near river valleys and water sources.</li>
+          <li><strong>No fire evidence</strong> in earliest sites; fire use developed later in this phase.</li>
+        </ul>
+        <div class="table-wrap" style="margin-top:10px;">
+          <table>
+            <thead><tr><th>Site</th><th>Location</th><th>Significance</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Soan Valley</strong></td><td>Punjab (now Pakistan)</td><td>Rich chopper-chopping tool tradition; stratified deposits of Early Palaeolithic tools</td></tr>
+              <tr><td><strong>Belan Valley</strong></td><td>Mirzapur/Allahabad, UP</td><td>Evidence of all three Palaeolithic phases in sequence; best stratified site in India</td></tr>
+              <tr><td><strong>Narmada Valley</strong></td><td>Madhya Pradesh</td><td>Narmada Man (oldest human fossil); hand-axes, cleavers; rich Palaeolithic evidence</td></tr>
+              <tr><td><strong>Bhimbetka</strong></td><td>Raisen, MP</td><td>Habitation evidence from Early Palaeolithic + rock paintings from Upper Palaeolithic</td></tr>
+              <tr><td><strong>16R Singi Talav &amp; 27H2 (Didwana)</strong></td><td>Rajasthan</td><td>Open-air Early Palaeolithic site; dated to ~700,000 BCE — among India's oldest</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Middle Palaeolithic -->
+        <div class="sec-h3">B. Middle Palaeolithic (c. 150,000 – 40,000 BCE)</div>
+        <ul class="styled-list">
+          <li><strong>Tool type:</strong> <em>Flake tools</em> — struck from a prepared core; lighter and more varied than hand-axes. Types include scrapers (for scraping hides), points (for piercing), and borers.</li>
+          <li><strong>Significance:</strong> Represents a major technological advance — humans became more efficient hunters; lighter tools could be hafted (attached to handles). Greater diversity of tool types suggests more specialised activities.</li>
+          <li><strong>Sites:</strong> Predominantly in river valley regions — Narmada, Tungabhadra (Andhra/Karnataka), Son Valley (MP), Belan Valley (UP). Also found in Maharashtra (Nevasa) and Gujarat.</li>
+          <li><strong>Nevasa (Maharashtra):</strong> Important Middle Palaeolithic site where tools were excavated alongside fauna; associated with Tethys sea-related geological deposits.</li>
+          <li>No evidence of art or deliberate burial; brain capacity increasing toward Homo sapiens range.</li>
+        </ul>
+
+        <!-- Upper Palaeolithic -->
+        <div class="sec-h3">C. Upper Palaeolithic (c. 40,000 – 10,000 BCE)</div>
+        <ul class="styled-list">
+          <li><strong>Tool type:</strong> <em>Blade tools</em> — long, thin parallel-sided flakes; also <em>burins</em> (chisel-like tools for engraving bone/antler) and <em>bone tools</em> (needles, points, fish hooks). Tools become much more refined and standardised.</li>
+          <li><strong>Homo sapiens sapiens:</strong> Anatomically modern humans appear in India during this phase. Greater cognitive capacity enables planning, communication, and artistic expression.</li>
+          <li><strong>Beginning of art:</strong> Rock paintings and engravings appear — earliest examples at Bhimbetka. The fact that early humans made art indicates symbolic thinking, social communication, and likely ritual/spiritual life.</li>
+          <li><strong>Climate:</strong> End of the last glacial maximum (~18,000 BCE); India becoming warmer and drier — this drove faunal and human adaptations that eventually led to Mesolithic microliths.</li>
+          <li><strong>Key sites:</strong> Bhimbetka (MP), Renigunta (AP), Inamgaon (Maharashtra), Belan Valley (UP), Patna area.</li>
+        </ul>
+        <div class="highlight-box green">
+          <strong>UPSC Mnemonic — Palaeolithic Phases</strong>
+          <strong>E-M-U</strong>: <strong>E</strong>arly = hand-<strong>A</strong>xes (core tools); <strong>M</strong>iddle = <strong>F</strong>lake tools; <strong>U</strong>pper = <strong>B</strong>lade tools. Each phase = tools get smaller and more refined. Early Palaeolithic site = Narmada (Narmada Man). Upper Palaeolithic = Bhimbetka (rock art begins).
+        </div>
+      </div>
+    </div>
+
+    <!-- SVG 1: Stone Age Timeline -->
+    <div class="svg-container">
+      <svg viewBox="0 0 800 390" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stone Age Phases Timeline">
+        <defs>
+          <linearGradient id="stoneGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#4a5a1a;stop-opacity:0.12"/>
+            <stop offset="100%" style="stop-color:#1a3c5e;stop-opacity:0.08"/>
+          </linearGradient>
+        </defs>
+        <rect width="800" height="390" fill="url(#stoneGrad)" rx="12"/>
+        <text x="400" y="28" text-anchor="middle" font-size="14" font-weight="800" fill="#1a3c5e">Stone Age of India — Chronological Timeline &amp; Key Sites</text>
+
+        <!-- Timeline axis -->
+        <line x1="50" y1="90" x2="750" y2="90" stroke="#4a5a1a" stroke-width="2.5"/>
+        <text x="50" y="108" font-size="9" fill="#718096" text-anchor="middle">500,000 BCE</text>
+        <text x="750" y="108" font-size="9" fill="#718096" text-anchor="middle">500 BCE</text>
+
+        <!-- Phase blocks -->
+        <!-- Early Palaeolithic: 500k–150k -->
+        <rect x="50" y="60" width="168" height="30" rx="5" fill="#4a5a1a" opacity="0.85"/>
+        <text x="134" y="79" text-anchor="middle" font-size="10" font-weight="700" fill="white">Early Palaeolithic</text>
+
+        <!-- Middle Palaeolithic: 150k–40k -->
+        <rect x="218" y="60" width="110" height="30" rx="5" fill="#5a6a2a" opacity="0.85"/>
+        <text x="273" y="79" text-anchor="middle" font-size="10" font-weight="700" fill="white">Middle Palaeo.</text>
+
+        <!-- Upper Palaeolithic: 40k–10k -->
+        <rect x="328" y="60" width="90" height="30" rx="5" fill="#6a7a3a" opacity="0.85"/>
+        <text x="373" y="79" text-anchor="middle" font-size="10" font-weight="700" fill="white">Upper Palaeo.</text>
+
+        <!-- Mesolithic: 10k–4k -->
+        <rect x="418" y="60" width="90" height="30" rx="5" fill="#2a7a5a" opacity="0.85"/>
+        <text x="463" y="79" text-anchor="middle" font-size="10" font-weight="700" fill="white">Mesolithic</text>
+
+        <!-- Neolithic: 6k–1k (overlaps Mesolithic) -->
+        <rect x="460" y="60" width="160" height="30" rx="5" fill="#2a5a7a" opacity="0.80"/>
+        <text x="540" y="79" text-anchor="middle" font-size="10" font-weight="700" fill="white">Neolithic</text>
+
+        <!-- Megalithic: 1.5k–0.5k -->
+        <rect x="640" y="60" width="110" height="30" rx="5" fill="#7a3a2a" opacity="0.85"/>
+        <text x="695" y="79" text-anchor="middle" font-size="10" font-weight="700" fill="white">Megalithic / Iron Age</text>
+
+        <!-- Key Sites Section -->
+        <!-- Column headers -->
+        <text x="20" y="135" font-size="11" font-weight="800" fill="#1a3c5e">Key Sites by Phase</text>
+
+        <!-- Early Palaeolithic sites -->
+        <rect x="20" y="145" width="175" height="95" rx="8" fill="white" stroke="#4a5a1a" stroke-width="1.2"/>
+        <rect x="20" y="145" width="175" height="24" rx="8" fill="#4a5a1a"/>
+        <text x="107" y="161" text-anchor="middle" font-size="10" font-weight="700" fill="white">EARLY PALAEOLITHIC</text>
+        <text x="30" y="182" font-size="9.5" fill="#1a2533">• Narmada (Narmada Man)</text>
+        <text x="30" y="197" font-size="9.5" fill="#1a2533">• Belan Valley (UP)</text>
+        <text x="30" y="212" font-size="9.5" fill="#1a2533">• Soan Valley (Punjab)</text>
+        <text x="30" y="227" font-size="9.5" fill="#1a2533">• Bhimbetka (MP)</text>
+
+        <!-- Middle Palaeolithic sites -->
+        <rect x="210" y="145" width="165" height="95" rx="8" fill="white" stroke="#5a6a2a" stroke-width="1.2"/>
+        <rect x="210" y="145" width="165" height="24" rx="8" fill="#5a6a2a"/>
+        <text x="292" y="161" text-anchor="middle" font-size="10" font-weight="700" fill="white">MIDDLE PALAEOLITHIC</text>
+        <text x="220" y="182" font-size="9.5" fill="#1a2533">• Narmada Valley (MP)</text>
+        <text x="220" y="197" font-size="9.5" fill="#1a2533">• Tungabhadra Valley</text>
+        <text x="220" y="212" font-size="9.5" fill="#1a2533">• Son Valley (MP)</text>
+        <text x="220" y="227" font-size="9.5" fill="#1a2533">• Nevasa (Maharashtra)</text>
+
+        <!-- Upper Palaeolithic + Mesolithic sites -->
+        <rect x="390" y="145" width="185" height="95" rx="8" fill="white" stroke="#6a7a3a" stroke-width="1.2"/>
+        <rect x="390" y="145" width="185" height="24" rx="8" fill="#2a7a5a"/>
+        <text x="482" y="161" text-anchor="middle" font-size="10" font-weight="700" fill="white">UPPER PALAEO. / MESOLITHIC</text>
+        <text x="400" y="182" font-size="9.5" fill="#1a2533">• Bhimbetka (art begins)</text>
+        <text x="400" y="197" font-size="9.5" fill="#1a2533">• Bagor, Rajasthan (largest Meso.)</text>
+        <text x="400" y="212" font-size="9.5" fill="#1a2533">• Langhnaj, Gujarat</text>
+        <text x="400" y="227" font-size="9.5" fill="#1a2533">• Chopani Mando, UP</text>
+
+        <!-- Neolithic + Megalithic sites -->
+        <rect x="590" y="145" width="190" height="95" rx="8" fill="white" stroke="#2a5a7a" stroke-width="1.2"/>
+        <rect x="590" y="145" width="190" height="24" rx="8" fill="#2a5a7a"/>
+        <text x="685" y="161" text-anchor="middle" font-size="10" font-weight="700" fill="white">NEOLITHIC / MEGALITHIC</text>
+        <text x="600" y="182" font-size="9.5" fill="#1a2533">• Mehrgarh (7000 BCE) — earliest</text>
+        <text x="600" y="197" font-size="9.5" fill="#1a2533">• Burzahom, J&amp;K (pit dwellings)</text>
+        <text x="600" y="212" font-size="9.5" fill="#1a2533">• Brahmagiri, Karnataka</text>
+        <text x="600" y="227" font-size="9.5" fill="#1a2533">• Adichanallur, Tamil Nadu</text>
+
+        <!-- Tool progression bar -->
+        <text x="20" y="262" font-size="11" font-weight="800" fill="#1a3c5e">Tool Evolution</text>
+        <rect x="20" y="270" width="175" height="28" rx="5" fill="#e8f0da" stroke="#4a5a1a" stroke-width="1"/>
+        <text x="107" y="288" text-anchor="middle" font-size="9.5" font-weight="700" fill="#4a5a1a">Hand-axes / Cleavers</text>
+        <text x="107" y="300" text-anchor="middle" font-size="8.5" fill="#718096">(Core tools — large, rough)</text>
+
+        <rect x="210" y="270" width="165" height="28" rx="5" fill="#e8f0da" stroke="#5a6a2a" stroke-width="1"/>
+        <text x="292" y="288" text-anchor="middle" font-size="9.5" font-weight="700" fill="#5a6a2a">Flake Tools — Scrapers</text>
+        <text x="292" y="300" text-anchor="middle" font-size="8.5" fill="#718096">(Lighter, specialised)</text>
+
+        <rect x="390" y="270" width="185" height="28" rx="5" fill="#e8f0da" stroke="#2a7a5a" stroke-width="1"/>
+        <text x="482" y="288" text-anchor="middle" font-size="9.5" font-weight="700" fill="#2a7a5a">Blades → Microliths</text>
+        <text x="482" y="300" text-anchor="middle" font-size="8.5" fill="#718096">(Tiny geometric composites)</text>
+
+        <rect x="590" y="270" width="190" height="28" rx="5" fill="#e8f0da" stroke="#2a5a7a" stroke-width="1"/>
+        <text x="685" y="288" text-anchor="middle" font-size="9.5" font-weight="700" fill="#2a5a7a">Polished Stone → Iron</text>
+        <text x="685" y="300" text-anchor="middle" font-size="8.5" fill="#718096">(Ground-edge axes; iron in Megalithic)</text>
+
+        <!-- Arrows between boxes -->
+        <text x="198" y="287" font-size="14" fill="#4a5a1a">→</text>
+        <text x="379" y="287" font-size="14" fill="#4a5a1a">→</text>
+        <text x="579" y="287" font-size="14" fill="#4a5a1a">→</text>
+
+        <!-- Bottom note -->
+        <text x="400" y="342" text-anchor="middle" font-size="9.5" fill="#718096" font-style="italic">Note: Phases overlap in different regions of India — e.g. Neolithic (6000 BCE) begins before Mesolithic ends</text>
+        <text x="400" y="357" text-anchor="middle" font-size="9.5" font-weight="700" fill="#e74c3c">UPSC Prelims Hotspot: Bhimbetka (UNESCO WHS), Mehrgarh (oldest Neolithic), Bagor (largest Mesolithic), Narmada Man</text>
+      </svg>
+      <div class="svg-caption">Figure 1: Stone Age Phases — Timeline, Key Sites, and Tool Evolution</div>
+    </div>
+
+    <!-- Section 3: Mesolithic Age -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">🔪</span><h2>3. Mesolithic Age (Middle Stone Age, c. 10,000 – 4,000 BCE)</h2></div>
+      <div class="card-body">
+        <div class="highlight-box olive">
+          <strong>Transition Era — From Pure Hunter to Domesticator</strong>
+          The Mesolithic Age bridges the Palaeolithic (pure hunting) and Neolithic (farming). The defining characteristic is the <em>microlith</em> — a tiny, geometrically shaped stone blade. Mesolithic people were still primarily hunters, fishers, and gatherers, but they began domesticating animals and showing evidence of more complex social organisation. The warmer post-glacial climate (from ~10,000 BCE) caused changes in fauna (megafauna died out) and forced adaptations — smaller, more precise tools for hunting smaller animals.
+        </div>
+
+        <div class="sec-h3">Microliths — The Defining Tool</div>
+        <ul class="styled-list">
+          <li><strong>Size:</strong> Usually less than 5 cm; often 1–3 cm. Geometric shapes: triangles, trapezoids, lunates (crescents), points.</li>
+          <li><strong>Material:</strong> Quartz, chert, chalcedony, jasper — hard, fine-grained stones that flake predictably.</li>
+          <li><strong>Use:</strong> Not used alone — hafted (fixed) onto bone/wood handles to make composite tools: arrows, sickles, knives, harpoons. This "composite tool technology" is more efficient than single large tools.</li>
+          <li><strong>Significance:</strong> The development of composite tools shows cognitive advances — planning, specialisation, and the ability to construct complex objects from multiple components.</li>
+        </ul>
+
+        <div class="sec-h3">Key Mesolithic Sites</div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Site</th><th>Location</th><th>Key Finds</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><strong>Bagor</strong></td>
+                <td>Bhilwara, Rajasthan (on Kothari river)</td>
+                <td>Largest Mesolithic site in India; evidence of earliest domesticated dog in India; microliths in abundance; occupation from c. 5000–2000 BCE; also cattle bones suggest early animal domestication</td>
+              </tr>
+              <tr>
+                <td><strong>Bhimbetka</strong></td>
+                <td>Raisen, Madhya Pradesh</td>
+                <td>Rock shelters show continuous habitation from Upper Palaeolithic; Mesolithic rock paintings; microliths found; shows cultural continuity from Palaeolithic to historical period</td>
+              </tr>
+              <tr>
+                <td><strong>Langhnaj</strong></td>
+                <td>Mehsana, Gujarat</td>
+                <td>Important Mesolithic cemetery; human burials with grave goods; evidence of ritual practices; plant remains suggest beginning of food collection</td>
+              </tr>
+              <tr>
+                <td><strong>Chopani Mando</strong></td>
+                <td>Allahabad (Prayagraj), UP (Belan Valley)</td>
+                <td>Earliest evidence of crude pottery in South Asia from this site; shows overlap of Mesolithic tool-making with early ceramic technology; dated ~7000 BCE</td>
+              </tr>
+              <tr>
+                <td><strong>Adamgarh</strong></td>
+                <td>Hoshangabad, MP</td>
+                <td>Rock shelters with Mesolithic paintings; microliths; early evidence of animal domestication (cattle, sheep — debated); near Narmada Man discovery site</td>
+              </tr>
+              <tr>
+                <td><strong>Sarai Nahar Rai</strong></td>
+                <td>Pratapgarh, UP</td>
+                <td>Mesolithic burial ground; multiple human skeletons; shows social practices around death; evidence of interpersonal violence (embedded stone points in bones)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="highlight-box green">
+          <strong>Mesolithic Society — What We Know</strong>
+          Mesolithic people lived in small bands of 20–30 individuals near water sources (rivers, lakes). They were semi-nomadic — following seasonal animal migrations but returning to favoured rock shelters. Evidence of burial suggests belief in afterlife. Rock art shows communal hunting, dancing, and possibly ritual ceremonies. The dog — domesticated from wolves — was their first partner in hunting, explaining why dog bones are found alongside human burials at some sites.
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 4: Neolithic Age -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">🌾</span><h2>4. Neolithic Age (New Stone Age, c. 6,000 – 1,000 BCE)</h2></div>
+      <div class="card-body">
+        <div class="highlight-box yellow">
+          <strong>The Neolithic Revolution — The Most Important Transformation in Human History</strong>
+          The Neolithic Revolution — the shift from food-gathering to food-production — is arguably the single most consequential change in human history. It enabled permanent settlements, population growth, surplus production, social hierarchy, and ultimately urban civilisation (IVC). In India, this revolution occurred at different times in different regions: c. 7000 BCE at Mehrgarh (northwest), ~3000 BCE in the Gangetic plains, and ~2000 BCE in South India.
+        </div>
+
+        <div class="sec-h3">A. Characteristic Features of Neolithic Culture</div>
+        <ul class="styled-list">
+          <li><strong>Polished stone tools:</strong> Ground-edge axes and adzes with polished surfaces — sharper, more durable, capable of clearing forests for agriculture. This is the defining technological change from Mesolithic.</li>
+          <li><strong>Agriculture:</strong> Cultivation of cereals — wheat and barley (northwest), rice (east India, Koldihwa site in UP dated ~7000 BCE — debated), millets (south India). Marks transition from food-gatherer to food-producer.</li>
+          <li><strong>Animal husbandry:</strong> Domestication of cattle, sheep, goat; later buffalo, pig, and horse. Animals used for food, milk, hides, and traction (ploughing).</li>
+          <li><strong>Pottery:</strong> Handmade pottery — the earliest; later wheel-thrown pottery. Pottery is crucial for storing grain and water — enables sedentary life. Neolithic pottery is typically coarse, hand-made, and burnished.</li>
+          <li><strong>Permanent settlements:</strong> Villages emerge; rectangular mud-brick or wattle-and-daub houses; evidence of storage pits and granaries.</li>
+          <li><strong>Burial practices:</strong> Deliberate burial of dead — sometimes under house floors (Mehrgarh); grave goods (pottery, ornaments) indicate belief in afterlife.</li>
+        </ul>
+
+        <div class="sec-h3">B. Key Neolithic Sites</div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Site</th><th>Location</th><th>Date</th><th>Key Features</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><strong>Mehrgarh</strong></td>
+                <td>Kachi plain, Balochistan (now Pakistan)</td>
+                <td>c. 7000 BCE</td>
+                <td>Earliest Neolithic site in South Asia. Evidence of wheat, barley, cotton cultivation; cattle, sheep, goat domestication. Mud-brick houses; burials with grave goods. Excavated by French team led by Jean-François Jarrige (1974 onwards). Pre-IVC settlement — shows continuity into Harappan culture.</td>
+              </tr>
+              <tr>
+                <td><strong>Burzahom</strong></td>
+                <td>Kashmir Valley, J&amp;K</td>
+                <td>c. 2700–1500 BCE</td>
+                <td>Famous for <em>pit dwellings</em> — semi-subterranean houses dug into the ground (protection against Kashmir's cold). Dog buried alongside human masters — only Indian site with this practice. Bone tools; evidence of hunting large mammals including deer and bears. Gufkaral is a sister site in Kashmir with similar features.</td>
+              </tr>
+              <tr>
+                <td><strong>Koldihwa</strong></td>
+                <td>Allahabad, UP (Belan Valley)</td>
+                <td>c. 7000–6000 BCE</td>
+                <td>Claimed to have <em>earliest rice cultivation</em> in the world (disputed; confirmed ~5000 BCE); handmade coarse pottery; evidence of domesticated cattle. Represents earliest Neolithic in Gangetic region.</td>
+              </tr>
+              <tr>
+                <td><strong>Chirand</strong></td>
+                <td>Saran, Bihar (on Ganga)</td>
+                <td>c. 2500–1500 BCE</td>
+                <td>Important Neolithic site in eastern India; bone tools found in large numbers (antler/bone); transition from Neolithic to Chalcolithic visible in upper layers; evidence of rice and wheat.</td>
+              </tr>
+              <tr>
+                <td><strong>Piklihal, Brahmagiri, Maski, Hallur</strong></td>
+                <td>Karnataka, Deccan</td>
+                <td>c. 2800–1200 BCE</td>
+                <td>South Indian Neolithic-Chalcolithic; large cattle pens (ash mounds — burnt cattle dung heaps are characteristic of South Indian Neolithic); domesticated sheep and cattle; blade tools; later transition to iron/Megalithic.</td>
+              </tr>
+              <tr>
+                <td><strong>Paiyampalli</strong></td>
+                <td>Tamil Nadu</td>
+                <td>c. 2000–1000 BCE</td>
+                <td>Neolithic-Iron Age transition site; evidence of millet cultivation; stone tools alongside early copper/iron; continuity into Megalithic.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="highlight-box blue">
+          <strong>Ash Mounds — Unique Feature of South Indian Neolithic</strong>
+          The Deccan Neolithic is uniquely characterised by large <em>ash mounds</em> — hillocks formed by the repeated burning of cattle dung in large cattle pens or enclosures. Sites like Utnur, Piklihal, and Kodekal (all in Karnataka/Andhra) have these mounds. They indicate semi-pastoral communities where cattle were the most important animals — driven into pens seasonally and the dung periodically fired. This pattern differs from northwest Indian Neolithic (crop agriculture at Mehrgarh) and Kashmir Neolithic (hunting + agriculture at Burzahom).
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 5: Megalithic Culture -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">🏛️</span><h2>5. Megalithic Culture (Iron Age Burials, c. 1,500 – 500 BCE)</h2></div>
+      <div class="card-body">
+        <div class="highlight-box red">
+          <strong>Prehistoric Despite Being Iron Age</strong>
+          Megalithic culture belongs to the Iron Age — the people used iron tools, had organised communities, and possibly practised agriculture. Yet they are classified as "prehistoric" because they left <em>no written records</em>. Our only evidence of their lives comes from burial monuments and grave goods. They represent an important pre-literate Iron Age culture of South India that eventually gave rise to the early Tamil (Sangam) civilisation.
+        </div>
+
+        <div class="sec-h3">Types of Megalithic Monuments</div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Type</th><th>Description</th><th>Examples</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><strong>Dolmens</strong></td>
+                <td>Stone "table" — two or more vertical stones supporting a horizontal capstone; burial chamber inside</td>
+                <td>Brahmagiri (Karnataka), Kerala hills</td>
+              </tr>
+              <tr>
+                <td><strong>Menhirs</strong></td>
+                <td>Single upright standing stone; memorial markers; may mark graves or boundaries</td>
+                <td>Found across Deccan and South India</td>
+              </tr>
+              <tr>
+                <td><strong>Cist Graves</strong></td>
+                <td>Box-like burial chamber made of flat stone slabs; covered with capstone; often underground</td>
+                <td>Most common megalithic form in South India; Adichanallur (TN)</td>
+              </tr>
+              <tr>
+                <td><strong>Cairn Circles</strong></td>
+                <td>Ring of small stones placed around a burial mound; sometimes with capstone</td>
+                <td>Common in Karnataka and Andhra</td>
+              </tr>
+              <tr>
+                <td><strong>Topikals / Hood Stones</strong></td>
+                <td>Umbrella or hood-shaped stone covers over burial pits; peculiar to some Maharashtra sites</td>
+                <td>Vidarbha, Maharashtra</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="sec-h3">Key Features &amp; Grave Goods</div>
+        <ul class="styled-list">
+          <li><strong>Black-and-Red Ware (BRW):</strong> The characteristic pottery of Megalithic burials — black on the inside and upper portion, red on the outside and lower portion. Wheel-thrown and well-fired. Found in virtually every Megalithic grave across South India.</li>
+          <li><strong>Iron tools and weapons:</strong> Swords, daggers, spearheads, horse-bits, sickles — confirm Iron Age dating. Iron technology reached South India c. 1000–1500 BCE, earlier than north India in some regions.</li>
+          <li><strong>Horse remains:</strong> Horse bones and horse-bits found in burials — horses were prestige items; suggest pastoralism and possibly warfare.</li>
+          <li><strong>Rice and other grains:</strong> Charred grain found at some sites — confirms agriculture alongside pastoralism.</li>
+          <li><strong>No writing:</strong> Despite the sophistication of the burials and iron technology, no inscriptions or writing systems found — hence "prehistoric."</li>
+        </ul>
+
+        <div class="sec-h3">Key Megalithic Sites</div>
+        <ul class="styled-list">
+          <li><strong>Brahmagiri (Chitradurga, Karnataka):</strong> Excavated by Mortimer Wheeler (1947) — established the three-fold cultural sequence: Stone Age → Megalithic → Early Historical (Andhra/Satavahana). A landmark excavation that proved the Iron Age Megalithic culture preceded historical civilisation in South India.</li>
+          <li><strong>Adichanallur (Tirunelveli, Tamil Nadu):</strong> Large urn burial site; hundreds of burial urns containing human skeletal remains, iron tools, copper objects, gold ornaments; excavated by A. Rea (1902) and later ASI; one of the largest Megalithic cemeteries in India.</li>
+          <li><strong>Hallur (Haveri, Karnataka):</strong> Shows overlap of Neolithic → Megalithic transition; iron appears alongside polished stone tools in transitional layers.</li>
+          <li><strong>Nagarjunakonda (Andhra Pradesh):</strong> Megalithic burials found alongside later Buddhist remains; multiple cultural phases visible.</li>
+          <li><strong>Vidarbha (Maharashtra):</strong> Distinct Megalithic tradition with topikals/hood stones; possibly connected with ancestral Maratha hill communities.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 6: Prehistoric Art -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">🎨</span><h2>6. Prehistoric Art — Rock Paintings &amp; Cave Art</h2></div>
+      <div class="card-body">
+        <div class="highlight-box olive">
+          <strong>Art as Historical Evidence</strong>
+          Prehistoric rock paintings are not mere aesthetics — they are historical documents. They show us what animals existed (palaeontological evidence), how communities hunted and organised (social evidence), what rituals they practised (religious/spiritual evidence), and how artistic styles evolved over thousands of years (cultural evidence). India's rock art tradition is one of the richest and longest-running in the world.
+        </div>
+
+        <div class="sec-h3">A. Bhimbetka — The Most Important Prehistoric Art Site</div>
+        <ul class="styled-list">
+          <li><strong>Location:</strong> Raisen district, Madhya Pradesh; ~45 km south of Bhopal; in the Vindhya hills.</li>
+          <li><strong>Discovery:</strong> V.S. Wakankar, archaeologist of Vikram University Ujjain, discovered the rock shelters in 1957–58 while travelling by train (he noticed similar rock formations to sites he had studied in Europe and Spain).</li>
+          <li><strong>UNESCO World Heritage Site:</strong> Inscribed in 2003 for its outstanding universal value as evidence of human habitation and rock art spanning over 100,000 years.</li>
+          <li><strong>Scale:</strong> Over 700 rock shelters in a forested area; approximately 500 contain paintings. Paintings span from Upper Palaeolithic (~10,000 BCE) to early historical period (c. 1st millennium CE) — an unbroken artistic tradition of ~10,000 years.</li>
+          <li><strong>Subjects:</strong> Wild animals — bison (gaur), deer, elephant, rhinoceros, tiger, horse, peacock; hunting scenes; warriors with bows/arrows; dancing figures; communal celebrations; geometric patterns; scenes of childbirth; mother-and-child figures.</li>
+          <li><strong>Colours and pigments:</strong>
+            <ul style="margin-left:16px; font-size:0.87rem;">
+              <li>Red — from haematite (iron oxide); the most common colour; durable, survives millennia</li>
+              <li>White — from limestone (calcium carbonate)</li>
+              <li>Green — from chalcedony or malachite</li>
+              <li>Yellow and orange — from ochre</li>
+            </ul>
+          </li>
+          <li><strong>Periods of paintings:</strong> Seven identified periods, from crude animal outlines of the Upper Palaeolithic to elaborate multi-coloured paintings of the Mesolithic and Chalcolithic periods. Historical-period paintings show horses and chariots — confirming the site was used well into the historical era.</li>
+        </ul>
+
+        <div class="sec-h3">B. Other Rock Art Sites</div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Site</th><th>Location</th><th>Significance</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><strong>Adamgarh</strong></td>
+                <td>Hoshangabad, MP</td>
+                <td>Mesolithic rock paintings; depicts animals being domesticated — possible earliest evidence of animal domestication scenes; near Narmada Man site</td>
+              </tr>
+              <tr>
+                <td><strong>Mirzapur (Son/Belan Valley)</strong></td>
+                <td>Uttar Pradesh</td>
+                <td>Many rock shelters with paintings; hunting scenes; geometric patterns; extends rock art tradition to eastern UP</td>
+              </tr>
+              <tr>
+                <td><strong>Jogimara Cave</strong></td>
+                <td>Surguja, Chhattisgarh</td>
+                <td>Contains both prehistoric paintings AND the earliest known dramatic inscription (Brahmi/Prakrit, c. 1st–3rd century BCE) — the cave was used as a theatre/performance space (nata = dancer inscribed inside)</td>
+              </tr>
+              <tr>
+                <td><strong>Kupgal (Bellary, Karnataka)</strong></td>
+                <td>Karnataka</td>
+                <td>Prehistoric rock engravings (petroglyphs) on granite outcrops; cattle and hunting scenes; associated with Neolithic-Megalithic cultures of Deccan</td>
+              </tr>
+              <tr>
+                <td><strong>Edakkal Caves</strong></td>
+                <td>Wayanad, Kerala</td>
+                <td>Neolithic carvings and engravings; geometric patterns; human and animal figures; among oldest carvings in Kerala; unique chisel-carved petroglyphs</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="highlight-box green">
+          <strong>What Rock Art Tells Us About Prehistoric Society</strong>
+          (1) <em>Social organisation:</em> Group hunting scenes show coordinated community activity — leader-follower dynamics, proto-social hierarchy. (2) <em>Diet and fauna:</em> The animals depicted confirm which species existed — rhinoceros, hippopotamus, and extinct megafauna in older paintings; domestic cattle in later ones. (3) <em>Ritual/religion:</em> Dancing figures, masked dancers, and scenes that may depict shamanic rituals suggest a rich spiritual life. (4) <em>Technology:</em> Bow-and-arrow, spears, traps — tools visible in paintings cross-confirm the archaeological record of stone tools.
+        </div>
+      </div>
+    </div>
+
+    <!-- SVG 2: Prehistoric Art Classification -->
+    <div class="svg-container">
+      <svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Prehistoric Art and Megalithic Culture Overview">
+        <rect width="800" height="420" fill="#fafbfc" rx="12" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="400" y="25" text-anchor="middle" font-size="14" font-weight="800" fill="#1a3c5e">Prehistoric Art &amp; Megalithic Culture — Visual Summary</text>
+
+        <!-- Left: Rock Art -->
+        <rect x="15" y="38" width="375" height="368" rx="10" fill="white" stroke="#7a9a2a" stroke-width="1.5"/>
+        <rect x="15" y="38" width="375" height="32" rx="10" fill="#4a5a1a" opacity="0.9"/>
+        <text x="202" y="58" text-anchor="middle" font-size="12" font-weight="700" fill="white">🎨 PREHISTORIC ROCK ART</text>
+
+        <!-- Bhimbetka box -->
+        <rect x="25" y="80" width="355" height="90" rx="8" fill="#f6f9f0" stroke="#7a9a2a" stroke-width="1"/>
+        <text x="35" y="97" font-size="10" font-weight="800" fill="#4a5a1a">BHIMBETKA (Raisen, MP) — UNESCO WHS 2003</text>
+        <text x="35" y="112" font-size="9.5" fill="#1a2533">Discovered by: V.S. Wakankar (1957–58)</text>
+        <text x="35" y="126" font-size="9.5" fill="#1a2533">700+ rock shelters; 500 with paintings</text>
+        <text x="35" y="140" font-size="9.5" fill="#1a2533">Duration: Upper Palaeolithic → Early Historical (~10,000 yrs)</text>
+        <text x="35" y="154" font-size="9.5" fill="#1a2533">Subjects: Bison, deer, elephant, hunting, dancing, rituals</text>
+        <text x="35" y="162" font-size="8" fill="#e74c3c">★ Most asked prehistoric art site in UPSC</text>
+
+        <!-- Colours -->
+        <text x="25" y="190" font-size="10" font-weight="700" fill="#4a5a1a">Pigments Used:</text>
+        <rect x="25" y="196" width="80" height="22" rx="4" fill="#c0392b"/>
+        <text x="65" y="211" text-anchor="middle" font-size="9" font-weight="700" fill="white">Red (Haematite)</text>
+        <rect x="115" y="196" width="75" height="22" rx="4" fill="#bdc3c7" stroke="#999"/>
+        <text x="152" y="211" text-anchor="middle" font-size="9" font-weight="700" fill="#333">White (Limestone)</text>
+        <rect x="200" y="196" width="75" height="22" rx="4" fill="#27ae60"/>
+        <text x="237" y="211" text-anchor="middle" font-size="9" font-weight="700" fill="white">Green (Chalcedony)</text>
+        <rect x="285" y="196" width="75" height="22" rx="4" fill="#e67e22"/>
+        <text x="322" y="211" text-anchor="middle" font-size="9" font-weight="700" fill="white">Yellow (Ochre)</text>
+
+        <!-- Other sites -->
+        <text x="25" y="240" font-size="10" font-weight="700" fill="#4a5a1a">Other Important Rock Art Sites:</text>
+        <text x="25" y="256" font-size="9.5" fill="#1a2533">• Adamgarh (Hoshangabad, MP) — animal domestication scenes</text>
+        <text x="25" y="271" font-size="9.5" fill="#1a2533">• Mirzapur (UP) — Son/Belan Valley; hunting scenes</text>
+        <text x="25" y="286" font-size="9.5" fill="#1a2533">• Jogimara Cave (Chhattisgarh) — oldest dramatic inscription</text>
+        <text x="25" y="301" font-size="9.5" fill="#1a2533">• Edakkal Caves (Wayanad, Kerala) — Neolithic petroglyphs</text>
+        <text x="25" y="316" font-size="9.5" fill="#1a2533">• Kupgal (Bellary, Karnataka) — granite engravings</text>
+
+        <!-- What rock art tells us -->
+        <rect x="25" y="328" width="355" height="68" rx="6" fill="#f0faf4" stroke="#27ae60" stroke-width="1"/>
+        <text x="35" y="344" font-size="9.5" font-weight="700" fill="#27ae60">What Rock Art Tells Us:</text>
+        <text x="35" y="358" font-size="9" fill="#1a2533">Social: Group hunting → coordinated community activity</text>
+        <text x="35" y="371" font-size="9" fill="#1a2533">Fauna: Rhino, hippo (extinct) in older; cattle in newer paintings</text>
+        <text x="35" y="384" font-size="9" fill="#1a2533">Ritual: Masked dancers → spiritual/shamanic practices</text>
+
+        <!-- Right: Megalithic -->
+        <rect x="405" y="38" width="380" height="368" rx="10" fill="white" stroke="#7a3a2a" stroke-width="1.5"/>
+        <rect x="405" y="38" width="380" height="32" rx="10" fill="#7a3a2a" opacity="0.9"/>
+        <text x="595" y="58" text-anchor="middle" font-size="12" font-weight="700" fill="white">🏛️ MEGALITHIC CULTURE</text>
+
+        <!-- Megalithic overview -->
+        <text x="415" y="83" font-size="10" font-weight="700" fill="#7a3a2a">Period: c. 1500–500 BCE | Region: South India (Deccan + Peninsula)</text>
+        <text x="415" y="98" font-size="9.5" fill="#1a2533">Iron Age | No written records → "Prehistoric" | Black-and-Red Ware</text>
+
+        <!-- Monument types -->
+        <text x="415" y="118" font-size="10" font-weight="700" fill="#7a3a2a">Types of Megalithic Monuments:</text>
+
+        <rect x="415" y="124" width="170" height="50" rx="6" fill="#fff5f5" stroke="#e74c3c" stroke-width="1"/>
+        <text x="500" y="142" text-anchor="middle" font-size="10" font-weight="700" fill="#c0392b">Dolmens</text>
+        <text x="500" y="156" text-anchor="middle" font-size="8.5" fill="#555">Stone table burial chambers</text>
+        <text x="500" y="168" text-anchor="middle" font-size="8.5" fill="#555">Karnataka, Kerala hills</text>
+
+        <rect x="600" y="124" width="175" height="50" rx="6" fill="#fff5f5" stroke="#e74c3c" stroke-width="1"/>
+        <text x="687" y="142" text-anchor="middle" font-size="10" font-weight="700" fill="#c0392b">Menhirs</text>
+        <text x="687" y="156" text-anchor="middle" font-size="8.5" fill="#555">Single upright standing stone</text>
+        <text x="687" y="168" text-anchor="middle" font-size="8.5" fill="#555">Memorial / boundary markers</text>
+
+        <rect x="415" y="182" width="170" height="50" rx="6" fill="#fff5f5" stroke="#e74c3c" stroke-width="1"/>
+        <text x="500" y="200" text-anchor="middle" font-size="10" font-weight="700" fill="#c0392b">Cist Graves</text>
+        <text x="500" y="214" text-anchor="middle" font-size="8.5" fill="#555">Stone-box underground burial</text>
+        <text x="500" y="226" text-anchor="middle" font-size="8.5" fill="#555">Most common; Adichanallur</text>
+
+        <rect x="600" y="182" width="175" height="50" rx="6" fill="#fff5f5" stroke="#e74c3c" stroke-width="1"/>
+        <text x="687" y="200" text-anchor="middle" font-size="10" font-weight="700" fill="#c0392b">Cairn Circles</text>
+        <text x="687" y="214" text-anchor="middle" font-size="8.5" fill="#555">Stone ring around burial mound</text>
+        <text x="687" y="226" text-anchor="middle" font-size="8.5" fill="#555">Karnataka, Andhra</text>
+
+        <!-- Key sites -->
+        <text x="415" y="252" font-size="10" font-weight="700" fill="#7a3a2a">Key Sites:</text>
+        <text x="415" y="267" font-size="9.5" fill="#1a2533">• Brahmagiri (Karnataka) — excavated by Mortimer Wheeler 1947</text>
+        <text x="415" y="282" font-size="9.5" fill="#1a2533">• Adichanallur (Tamil Nadu) — largest urn-burial site in India</text>
+        <text x="415" y="297" font-size="9.5" fill="#1a2533">• Hallur (Karnataka) — Neolithic→Megalithic transition</text>
+        <text x="415" y="312" font-size="9.5" fill="#1a2533">• Nagarjunakonda (AP) — Megalithic + later Buddhist</text>
+
+        <!-- Grave goods -->
+        <rect x="415" y="323" width="358" height="73" rx="6" fill="#fff5f5" stroke="#e74c3c" stroke-width="1"/>
+        <text x="425" y="339" font-size="9.5" font-weight="700" fill="#c0392b">Grave Goods Found:</text>
+        <text x="425" y="354" font-size="9" fill="#1a2533">🏺 Black-and-Red Ware pottery (diagnostic)</text>
+        <text x="425" y="367" font-size="9" fill="#1a2533">⚔️ Iron swords, daggers, spearheads — Iron Age confirmed</text>
+        <text x="425" y="380" font-size="9" fill="#1a2533">🐴 Horse-bits — prestige animal; suggests pastoral economy</text>
+        <text x="425" y="393" font-size="9" fill="#1a2533">📿 Gold ornaments (Adichanallur) — social hierarchy</text>
+      </svg>
+      <div class="svg-caption">Figure 2: Prehistoric Rock Art (Bhimbetka) and Megalithic Culture — Monuments, Sites, and Grave Goods</div>
+    </div>
+
+    <!-- Current Affairs -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">📰</span><h2>Current Affairs Connect (2024–2026)</h2></div>
+      <div class="card-body">
+        <div class="ca-grid">
+          <div class="ca-card">
+            <div class="ca-year">2023 – UNESCO / ASI</div>
+            <div class="ca-title">Bhimbetka Conservation — Climate Threat</div>
+            <div class="ca-body">ASI and UNESCO raised concerns about increasing moisture damage and algal growth threatening Bhimbetka's rock paintings. Climate change causing higher rainfall and humidity is accelerating the decay of 10,000-year-old paintings. ASI initiated micro-climate monitoring and chemical stabilisation programme. Bhimbetka's inscription as UNESCO WHS (2003) puts it under global heritage protection.</div>
+          </div>
+          <div class="ca-card">
+            <div class="ca-year">2024 – Archaeological Survey</div>
+            <div class="ca-title">New Megalithic Sites Found in Kerala</div>
+            <div class="ca-body">ASI surveys identified new clusters of dolmens and menhirs in the Nilgiris and Wayanad region of Kerala during systematic survey. These extend the geographic distribution of Megalithic culture further into the Western Ghats. Combined with Edakkal Cave Neolithic carvings nearby, it suggests a rich prehistoric cultural zone in this biodiversity hotspot region.</div>
+          </div>
+          <div class="ca-card">
+            <div class="ca-year">2024 – Research</div>
+            <div class="ca-title">Adichanallur DNA &amp; Dating Study</div>
+            <div class="ca-body">Researchers from CCMB Hyderabad extracted ancient DNA from Adichanallur urn burials (Tamil Nadu) and confirmed the site dates to ~1000 BCE (Iron Age Megalithic). The DNA showed genetic continuity with modern South Indians, supporting the view that Megalithic populations are ancestral to present-day Dravidian communities. Also showed long-distance genetic connections with Southeast Asia — evidence of ancient maritime contacts.</div>
+          </div>
+          <div class="ca-card">
+            <div class="ca-year">2025 – Excavation</div>
+            <div class="ca-title">Palaeolithic Site Found in Rajasthan</div>
+            <div class="ca-body">ASI excavations near Jodhpur in Rajasthan uncovered Early and Middle Palaeolithic tools in a stratified deposit near a dried lake bed. The site, dated by Optically Stimulated Luminescence (OSL) to ~300,000 BCE, adds to evidence of dense early human occupation of the Thar Desert region — which had a wetter climate during interglacial periods. Supports the "Out of Africa via Arabia into India" migration hypothesis.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PYQs -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">📝</span><h2>Previous Year Questions (UPSC Prelims &amp; Mains)</h2></div>
+      <div class="card-body">
+        <div class="pyq-item">
+          <div class="pyq-meta">UPSC Prelims — repeated pattern</div>
+          <div class="pyq-q">With reference to the history of ancient India, the term 'Microlith' refers to: (a) Small polished stone tools used in Neolithic period (b) Tiny geometric stone tools used in Mesolithic period (c) Bone tools used in Upper Palaeolithic (d) Painted stone tablets used in Chalcolithic</div>
+          <div class="pyq-hint">Ans: (b). Microliths = Mesolithic. They are tiny, geometric, often less than 5 cm, made from quartz/chert/chalcedony. Used as composite tools. The largest Mesolithic site in India is Bagor (Rajasthan). Do not confuse: Neolithic = polished stone (ground-edge axes), not microliths.</div>
+        </div>
+        <div class="pyq-item">
+          <div class="pyq-meta">UPSC Prelims — directly asked</div>
+          <div class="pyq-q">The rock shelters and cave paintings at Bhimbetka are a UNESCO World Heritage Site. They were discovered by: (a) Dayaram Sahni (b) R.D. Banerji (c) V.S. Wakankar (d) Mortimer Wheeler</div>
+          <div class="pyq-hint">Ans: (c) V.S. Wakankar (1957–58). Remember: Dayaram Sahni = Harappa; R.D. Banerji = Mohenjo-daro; Mortimer Wheeler = Director-General of ASI who excavated Brahmagiri (Megalithic). Bhimbetka = Wakankar. UNESCO WHS 2003.</div>
+        </div>
+        <div class="pyq-item">
+          <div class="pyq-meta">UPSC Prelims — site identification</div>
+          <div class="pyq-q">Which of the following sites is considered the earliest Neolithic site in the Indian subcontinent? (a) Burzahom (b) Chirand (c) Mehrgarh (d) Koldihwa</div>
+          <div class="pyq-hint">Ans: (c) Mehrgarh (c. 7000 BCE), Balochistan (now Pakistan). Burzahom (Kashmir) is also Neolithic but dates to ~2700 BCE. Chirand (Bihar) ~2500 BCE. Koldihwa ~7000–6000 BCE (debated as rival to Mehrgarh for earliest rice). For "earliest Neolithic in Indian subcontinent" = Mehrgarh is the standard answer.</div>
+        </div>
+        <div class="pyq-item">
+          <div class="pyq-meta">UPSC Prelims — Megalithic</div>
+          <div class="pyq-q">Black-and-Red Ware pottery is most closely associated with which culture? (a) Harappan Civilisation (b) Megalithic burials of South India (c) Neolithic Ash Mound culture (d) Painted Grey Ware culture of Gangetic plains</div>
+          <div class="pyq-hint">Ans: (b). Black-and-Red Ware (BRW) = Megalithic burials = Iron Age South India. Distinguish: Grey Ware / PGW = Vedic period Gangetic plains. NBPW = Mauryan period. Harappan pottery is red ware with black paintings. BRW is the only pottery that is literally two-coloured — black inside/top, red outside/bottom.</div>
+        </div>
+        <div class="pyq-item">
+          <div class="pyq-meta">UPSC Prelims — Narmada Man</div>
+          <div class="pyq-q">The fossil of 'Narmada Man' found in India belongs to which species? (a) Homo habilis (b) Homo erectus (c) Homo sapiens (d) Homo neanderthalensis</div>
+          <div class="pyq-hint">Ans: (b) Homo erectus. Found near Hathnoora village, Hoshangabad district, MP (Narmada Valley) by Arun Sonakia in 1982. Estimated age: 250,000–500,000 BCE. This is the oldest human fossil found in India and shows that India was inhabited during the Middle Pleistocene — corresponding to Early Palaeolithic period.</div>
+        </div>
+        <div class="pyq-item">
+          <div class="pyq-meta">UPSC Mains GS-1 — 15 Marks type</div>
+          <div class="pyq-q">Critically examine the significance of the Megalithic culture for understanding the pre-history of South India. How does it connect to the early historical (Sangam) period?</div>
+          <div class="pyq-hint">Framework: (1) Define Megalithic — Iron Age, no written records, large stone burials, c. 1500–500 BCE, South India. (2) Evidence from Brahmagiri (Mortimer Wheeler's three-phase sequence), Adichanallur (DNA continuity to modern South Indians). (3) Black-and-Red Ware, iron tools, horse-bits, gold ornaments — social hierarchy and pastoral economy. (4) Connection to Sangam: same region, same communities — Tamil Sangam literature (~300 BCE–300 CE) is essentially the literate continuation of Megalithic culture. Sangam poetry mentions burial urns, iron weapons, cattle raids — exact Megalithic practices becoming literary. (5) ASI/CCMB DNA studies (2024) confirm genetic continuity. Conclude: Megalithic culture = the "missing link" between Stone Age India and the historically documented Dravidian civilisations.</div>
+        </div>
+        <div class="pyq-item">
+          <div class="pyq-meta">UPSC Mains GS-1 — Answer Writing</div>
+          <div class="pyq-q">What does prehistoric rock art tell us about the social and spiritual life of early humans in India? Use specific examples from rock art sites.</div>
+          <div class="pyq-hint">Framework: (1) Bhimbetka as primary example — 700 shelters, 10,000 years of continuous art, discovered by V.S. Wakankar. (2) Social: group hunting → coordination; scenes of communal dancing → festivals; mother-child figures → family structure. (3) Economic: animals depicted (bison, deer) = prey species; later cattle → domestication; transition visible in art itself. (4) Spiritual: masked dancers, shamanic figures, hand prints → ritual practices; geometric patterns may be proto-symbols. (5) Technology: bows, arrows, spears visible → cross-confirms archaeological tool record. (6) Limitation: art is interpretive — we cannot know intent. Conclude: Rock art is unmatched as a window into the cognitive and social evolution of prehistoric humans — uniquely direct, unmediated evidence.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Revision Box -->
+    <div class="revision-box">
+      <h2>⚡ 10-Point Rapid Revision — The Stone Age</h2>
+      <ol class="revision-list">
+        <li>Early Palaeolithic = hand-axes/cleavers (core tools); Middle = flake tools; Upper = blade tools + earliest rock art; tool types are the primary basis of classification</li>
+        <li>Narmada Man (Hathnoora, MP, found by Arun Sonakia 1982) = oldest human fossil in India; Homo erectus; Early Palaeolithic (~250,000–500,000 BCE)</li>
+        <li>Mesolithic = microliths (tiny geometric composite tools, &lt;5 cm); c. 10,000–4,000 BCE; largest site = Bagor (Rajasthan); first domesticated animal = dog (Bagor evidence)</li>
+        <li>Neolithic = polished stone tools + agriculture + permanent settlements; earliest South Asian site = Mehrgarh (Balochistan, c. 7000 BCE); excavated by Jean-François Jarrige</li>
+        <li>Burzahom (Kashmir) = pit dwellings + dog buried with masters; Ash Mounds (Karnataka/AP) = unique South Indian Neolithic feature (burnt cattle-dung heaps)</li>
+        <li>Megalithic = Iron Age (c. 1500–500 BCE); South India; NO written records → prehistoric; characteristic pottery = Black-and-Red Ware (BRW)</li>
+        <li>Megalithic monument types: Dolmens (stone table), Menhirs (upright stone), Cist Graves (stone-box), Cairn Circles; key sites: Brahmagiri (Karnataka), Adichanallur (TN)</li>
+        <li>Brahmagiri excavated by Mortimer Wheeler (1947) — proved 3-phase sequence: Stone Age → Megalithic → Early Historical; landmark for South Indian archaeology</li>
+        <li>Bhimbetka (Raisen, MP) — discovered by V.S. Wakankar (1957–58); UNESCO WHS 2003; 700+ shelters; paintings from Upper Palaeolithic to early historical (~10,000 years); pigments: red (haematite), white (limestone), green (chalcedony)</li>
+        <li>Chopani Mando (UP) = earliest pottery in South Asia (crude hand-made, ~7000 BCE); Koldihwa (UP) = claimed earliest rice cultivation; these two UP sites mark Mesolithic-Neolithic transition in Gangetic region</li>
+      </ol>
+    </div>
+
+    <!-- Navigation CTAs -->
+    <div class="cta-bar" style="margin-top: 28px;">
+      <div class="cta-text">
+        <strong>← Previous: Sources of Ancient Indian History</strong>
+        <span>Topic 01 — Inscriptions, Coins, Literary Sources, Foreign Accounts</span>
+      </div>
+      <a href="/upsc-notes/ancient/ancient-topic01" class="cta-btn">← Topic 01</a>
+    </div>
+    <div class="cta-bar">
+      <div class="cta-text">
+        <strong>Next Topic: Indus Valley Civilisation →</strong>
+        <span>Continue building your Ancient History foundation</span>
+      </div>
+      <a href="/upsc-notes/ancient" class="cta-btn">Next Topic →</a>
+    </div>
+
+  </div><!-- end content-wrap --></main></div>
+</div>

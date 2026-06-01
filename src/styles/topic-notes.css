@@ -1,0 +1,82 @@
+.notes-topic-page {
+  min-height: 100vh;
+  background: #f4f6f9;
+  padding-top: 64px;
+}
+
+.notes-topic-body {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 20px 20px 48px;
+}
+
+/* Ensure main + aside sit in two columns (fixes broken nested main from import) */
+.notes-topic-embedded .page-wrapper {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 280px !important;
+  gap: 28px !important;
+  align-items: start !important;
+}
+
+.notes-topic-embedded .page-wrapper > main,
+.notes-topic-embedded .page-wrapper > .main-content:first-child {
+  grid-column: 1;
+  min-width: 0;
+}
+
+.notes-topic-embedded .page-wrapper > aside,
+.notes-topic-embedded .page-wrapper > .right-sidebar,
+.notes-topic-embedded .page-wrapper > .sidebar {
+  grid-column: 2;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .page-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+
+  .notes-topic-embedded .page-wrapper > aside,
+  .notes-topic-embedded .page-wrapper > .right-sidebar {
+    grid-column: 1;
+  }
+}
+
+.notes-topic-footer-nav {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px 32px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.notes-topic-footer-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  color: #1a4f9c;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.notes-topic-footer-nav a:hover {
+  background: #e8f0fb;
+}
+
+@media print {
+  .site-navbar,
+  .notes-topic-footer-nav {
+    display: none !important;
+  }
+
+  .notes-topic-page {
+    padding-top: 0;
+  }
+}

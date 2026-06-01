@@ -1,0 +1,838 @@
+<!-- ancient-topic08 — auto-imported from ancient-topic08-foreign-invasions-upsc-notes.html -->
+<style data-topic-notes>
+:root {
+  --brand-blue: #5a1a6b;
+  --brand-blue-dark: #3a0e4a;
+  --brand-blue-light: #f5eafa;
+  --brand-orange: #b8860b;
+  --brand-orange-light: #fff8e8;
+  --green: #1a6b3a;
+  --green-light: #e8f5ee;
+  --text-dark: #1a1a2e;
+  --text-mid: #444;
+  --text-light: #888;
+  --border: #e2e8f0;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: #f8fafd; color: var(--text-dark); line-height: 1.7; }
+
+.navbar { position: fixed; top: 0; left: 0; right: 0; height: 64px; background: #fff; border-bottom: 2px solid var(--brand-blue); z-index: 1000; display: flex; align-items: center; padding: 0 24px; gap: 16px; box-shadow: 0 2px 8px rgba(90,26,107,0.08); }
+.nav-logo { font-size: 1.35rem; font-weight: 800; color: var(--brand-blue); text-decoration: none; white-space: nowrap; letter-spacing: -0.5px; }
+.nav-logo span { color: var(--brand-orange); }
+.nav-breadcrumb { font-size: 0.78rem; color: var(--text-light); display: flex; align-items: center; gap: 6px; flex: 1; overflow: hidden; }
+.nav-breadcrumb a { color: var(--brand-blue); text-decoration: none; white-space: nowrap; }
+.nav-breadcrumb a:hover { text-decoration: underline; }
+.nav-breadcrumb .sep { color: var(--border); }
+.nav-breadcrumb .current { color: var(--text-mid); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.nav-actions { display: flex; align-items: center; gap: 10px; white-space: nowrap; }
+.btn-back { font-size: 0.8rem; color: var(--brand-blue); text-decoration: none; border: 1px solid var(--brand-blue); padding: 5px 12px; border-radius: 6px; transition: background 0.2s; }
+.btn-back:hover { background: var(--brand-blue-light); }
+.btn-download { font-size: 0.8rem; background: var(--brand-orange); color: #fff; border: none; padding: 6px 14px; border-radius: 6px; cursor: pointer; transition: background 0.2s; font-family: inherit; }
+.btn-download:hover { background: #8a6500; }
+
+.page-wrapper { max-width: 1100px; margin: 0 auto; padding: 84px 20px 60px; display: grid; grid-template-columns: 1fr 280px; gap: 28px; align-items: start; }
+.main-content { min-width: 0; }
+.sidebar { position: sticky; top: 80px; }
+
+.hero { background: linear-gradient(135deg, #6a2a7a 0%, #3a0e4a 60%, #2a1a4e 100%); border-radius: 16px; padding: 40px 36px 36px; color: #fff; margin-bottom: 28px; position: relative; overflow: hidden; }
+.hero::before { content: ''; position: absolute; top: -40px; right: -40px; width: 200px; height: 200px; background: rgba(184,134,11,0.15); border-radius: 50%; }
+.hero-tag { display: inline-block; background: rgba(184,134,11,0.25); border: 1px solid rgba(184,134,11,0.5); color: #ffd580; font-size: 0.72rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 16px; }
+.hero h1 { font-size: 2rem; font-weight: 800; line-height: 1.2; margin-bottom: 12px; text-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+.hero h1 span { color: #ffd580; }
+.hero-sub { font-size: 1rem; opacity: 0.88; margin-bottom: 20px; max-width: 560px; }
+.hero-meta { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-badge { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; padding: 4px 14px; font-size: 0.78rem; font-weight: 600; }
+
+.section-card { background: #fff; border-radius: 12px; padding: 28px; margin-bottom: 24px; border: 1px solid var(--border); box-shadow: 0 1px 6px rgba(0,0,0,0.04); }
+.section-card h2 { font-size: 1.22rem; font-weight: 700; color: var(--brand-blue); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--brand-blue-light); display: flex; align-items: center; gap: 8px; }
+.section-card h3 { font-size: 1.02rem; font-weight: 700; color: var(--brand-blue); margin: 20px 0 10px; }
+.section-card h4 { font-size: 0.92rem; font-weight: 700; color: var(--text-mid); margin: 14px 0 6px; }
+.section-card p { margin-bottom: 10px; font-size: 0.93rem; }
+.section-card ul, .section-card ol { padding-left: 20px; margin-bottom: 10px; }
+.section-card li { font-size: 0.93rem; margin-bottom: 4px; }
+
+.clarity-box { background: linear-gradient(135deg, #fff8e8 0%, #f5eafa 100%); border: 2px solid var(--brand-orange); border-radius: 12px; padding: 24px 28px; margin-bottom: 28px; }
+.clarity-box h2 { color: var(--brand-orange); font-size: 1.1rem; font-weight: 800; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.5px; }
+.clarity-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.clarity-item { background: #fff; border-radius: 8px; padding: 14px 16px; border-left: 4px solid var(--brand-orange); }
+.clarity-item strong { display: block; font-size: 0.82rem; color: var(--brand-orange); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+.clarity-item p { font-size: 0.88rem; color: var(--text-mid); margin: 0; }
+
+.note-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 14px 0; }
+.note-table th { background: var(--brand-blue); color: #fff; padding: 9px 12px; text-align: left; font-weight: 700; font-size: 0.82rem; }
+.note-table td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.note-table tr:nth-child(even) td { background: #f9f9fc; }
+.note-table tr:hover td { background: var(--brand-blue-light); }
+
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin: 14px 0; }
+.info-card { background: var(--brand-blue-light); border-radius: 10px; padding: 16px; border-top: 3px solid var(--brand-blue); }
+.info-card .card-title { font-size: 0.82rem; font-weight: 800; color: var(--brand-blue); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.info-card p { font-size: 0.85rem; color: var(--text-mid); margin: 0; }
+.orange-card { background: var(--brand-orange-light); border-top-color: var(--brand-orange); }
+.orange-card .card-title { color: var(--brand-orange); }
+.green-card { background: var(--green-light); border-top-color: var(--green); }
+.green-card .card-title { color: var(--green); }
+
+.highlight-box { border-radius: 8px; padding: 14px 16px; margin: 12px 0; font-size: 0.9rem; }
+.highlight-blue { background: var(--brand-blue-light); border-left: 4px solid var(--brand-blue); }
+.highlight-orange { background: var(--brand-orange-light); border-left: 4px solid var(--brand-orange); }
+.highlight-green { background: var(--green-light); border-left: 4px solid var(--green); }
+.highlight-box strong { color: var(--brand-blue); }
+.highlight-orange strong { color: var(--brand-orange); }
+.highlight-green strong { color: var(--green); }
+
+.ruler-card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 18px 20px; margin-bottom: 14px; border-left: 5px solid var(--brand-blue); }
+.ruler-card.orange { border-left-color: var(--brand-orange); }
+.ruler-card h4 { font-size: 1rem; font-weight: 800; color: var(--brand-blue); margin-bottom: 6px; }
+.ruler-card.orange h4 { color: var(--brand-orange); }
+.ruler-card .ruler-meta { font-size: 0.75rem; color: var(--text-light); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 10px; }
+.ruler-card ul { padding-left: 18px; }
+.ruler-card li { font-size: 0.88rem; margin-bottom: 3px; }
+
+.pyq-section { background: linear-gradient(135deg, #f0f4ff 0%, #fff8e8 100%); border-radius: 12px; padding: 24px 28px; margin-bottom: 24px; border: 1px solid #d0d8f0; }
+.pyq-section h2 { font-size: 1.12rem; font-weight: 800; color: var(--brand-blue); margin-bottom: 16px; }
+.pyq-item { background: #fff; border-radius: 8px; padding: 14px 16px; margin-bottom: 10px; border-left: 4px solid var(--brand-blue); }
+.pyq-item .pyq-meta { font-size: 0.75rem; font-weight: 700; color: var(--brand-orange); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 4px; }
+.pyq-item p { font-size: 0.9rem; color: var(--text-dark); margin: 0; }
+.pyq-mains { border-left-color: var(--green); }
+.pyq-mains .pyq-meta { color: var(--green); }
+
+.revision-box { background: linear-gradient(135deg, #3a0e4a 0%, #5a1a6b 100%); border-radius: 14px; padding: 28px; color: #fff; margin-bottom: 24px; }
+.revision-box h2 { font-size: 1.12rem; font-weight: 800; margin-bottom: 18px; color: #ffd580; }
+.revision-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.revision-point { background: rgba(255,255,255,0.1); border-radius: 8px; padding: 10px 14px; font-size: 0.85rem; border-left: 3px solid #ffd580; }
+.revision-point strong { display: block; font-size: 0.78rem; color: #ffd580; margin-bottom: 2px; }
+
+.ca-section { background: var(--green-light); border: 1px solid #b0d8c0; border-radius: 12px; padding: 22px 26px; margin-bottom: 24px; }
+.ca-section h2 { font-size: 1.08rem; font-weight: 800; color: var(--green); margin-bottom: 14px; }
+.ca-item { background: #fff; border-radius: 8px; padding: 12px 16px; margin-bottom: 10px; border-left: 4px solid var(--green); font-size: 0.88rem; }
+.ca-item strong { color: var(--green); display: block; margin-bottom: 2px; }
+
+.svg-wrap { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin: 16px 0; text-align: center; }
+.svg-caption { font-size: 0.8rem; color: var(--text-light); margin-top: 8px; font-style: italic; }
+
+.sidebar-card { background: #fff; border-radius: 12px; padding: 18px; margin-bottom: 16px; border: 1px solid var(--border); box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+.sidebar-card h3 { font-size: 0.9rem; font-weight: 800; color: var(--brand-blue); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); text-transform: uppercase; letter-spacing: 0.5px; }
+.sidebar-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+.sidebar-table td { padding: 6px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.sidebar-table td:first-child { font-weight: 600; color: var(--brand-blue); width: 45%; }
+.diff-row { margin-bottom: 10px; }
+.diff-label { display: flex; justify-content: space-between; font-size: 0.78rem; font-weight: 600; color: var(--text-mid); margin-bottom: 4px; }
+.diff-bar { height: 6px; background: #e8eaf0; border-radius: 3px; overflow: hidden; }
+.diff-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--brand-blue), var(--brand-orange)); }
+.tag-cloud { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag { background: var(--brand-blue-light); color: var(--brand-blue); font-size: 0.72rem; font-weight: 600; padding: 3px 9px; border-radius: 12px; border: 1px solid #dcc0e0; }
+.self-test-item { margin-bottom: 8px; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.self-test-q { background: var(--brand-blue-light); padding: 8px 12px; font-size: 0.8rem; font-weight: 600; color: var(--brand-blue); cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }
+.self-test-q:hover { background: #ebd8f0; }
+.self-test-a { display: none; padding: 8px 12px; font-size: 0.78rem; color: var(--text-mid); background: #fff; }
+.related-links a { display: block; font-size: 0.8rem; color: var(--brand-blue); text-decoration: none; padding: 5px 0; border-bottom: 1px solid var(--border); }
+.related-links a:last-child { border-bottom: none; }
+.related-links a:hover { color: var(--brand-orange); }
+
+@media print {
+  .navbar, .sidebar { display: none; }
+  .page-wrapper { grid-template-columns: 1fr; padding-top: 0; }
+  .section-card, .clarity-box { break-inside: avoid; }
+}
+
+@media (max-width: 860px) {
+  .page-wrapper { grid-template-columns: 1fr; }
+  .sidebar { position: static; }
+  .hero h1 { font-size: 1.55rem; }
+  .clarity-grid, .revision-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 580px) {
+  .cards-grid { grid-template-columns: 1fr; }
+  .note-table { font-size: 0.78rem; }
+}
+
+/* Next.js: shared app navbar; restore two-column layout */
+.notes-topic-embedded .navbar,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded .hamburger,
+.notes-topic-embedded .menu-btn,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .page-wrapper {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 280px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  margin-top: 0 !important;
+}
+
+.notes-topic-embedded .main-content,
+.notes-topic-embedded main.main-content,
+.notes-topic-embedded main {
+  margin-left: 0 !important;
+  min-width: 0;
+}
+
+.notes-topic-embedded aside,
+.notes-topic-embedded .right-sidebar,
+.notes-topic-embedded aside.sidebar {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .page-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+  .notes-topic-embedded aside,
+  .notes-topic-embedded .right-sidebar,
+  .notes-topic-embedded aside.sidebar {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="page-wrapper">
+<main class="main-content">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-tag">Ancient History · Topic 08</div>
+    <h1>Foreign <span>Invasions</span> on India</h1>
+    <p class="hero-sub">Persians and Macedonians enter the Indian subcontinent — Cyrus, Darius I, Xerxes, Alexander the Great, Porus, the Battle of Hydaspes, and the cultural legacy that reshaped India's NW frontier.</p>
+    <div class="hero-meta">
+      <span class="hero-badge">📅 535–326 BCE</span>
+      <span class="hero-badge">🔥 Prelims: 8/10</span>
+      <span class="hero-badge">📝 Mains: 4/5</span>
+      <span class="hero-badge">⏱ 35 min read</span>
+      <span class="hero-badge">🌍 Iran &amp; Greece</span>
+    </div>
+  </div>
+
+  <!-- CONCEPTUAL CLARITY -->
+  <div class="clarity-box">
+    <h2>⚡ Conceptual Clarity: Why Did Foreigners Come?</h2>
+    <div class="clarity-grid">
+      <div class="clarity-item">
+        <strong>Strategic Context</strong>
+        <p>India's NW frontier (Gandhara, Kamboja, Sindh) was the gateway to the subcontinent through the Khyber and Bolan passes. Whoever controlled NW could threaten the Gangetic plain — and access India's wealth in gold, spices, and cotton.</p>
+      </div>
+      <div class="clarity-item">
+        <strong>Why India Was Vulnerable</strong>
+        <p>The 16 Mahajanapadas were fragmented. Magadha (the strongest) was on the eastern frontier, far from the NW. The NW Mahajanapadas (Gandhara, Kamboja) were small republics or monarchies with limited military power compared to the Achaemenid Persian Empire — the largest empire in the world at that time.</p>
+      </div>
+      <div class="clarity-item">
+        <strong>Two Waves</strong>
+        <p><strong>Wave 1 (c. 535–486 BCE):</strong> Achaemenid Persians under Cyrus, Darius I, Xerxes. <strong>Wave 2 (327–325 BCE):</strong> Macedonian Greeks under Alexander the Great. Both confined to the NW; neither reached the Ganga.</p>
+      </div>
+      <div class="clarity-item">
+        <strong>Lasting Importance</strong>
+        <p>Though militarily limited, these invasions: (1) introduced Persian/Greek administrative ideas; (2) spurred Indo-Greek and Gandhara art; (3) opened East-West trade routes; (4) gave us our first reliable foreign accounts of India; (5) indirectly catalysed the rise of the Maurya Empire.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 1: PERSIAN INVASION -->
+  <div class="section-card">
+    <h2>🦁 1. Iranian / Persian (Achaemenid) Invasion of India</h2>
+
+    <h3>1.1 Background — The Achaemenid Empire</h3>
+    <p>The <strong>Achaemenid Empire</strong> (c. 550–330 BCE), founded by <em>Cyrus the Great</em>, was the largest empire the world had ever seen — stretching from Egypt and Asia Minor in the west to the Indus valley in the east, ruled by the so-called "King of Kings" (Shahanshah). The empire was divided into <strong>satrapies</strong> (provinces) ruled by <em>satraps</em> (governors). Royal road networks, postal services, and an efficient tax system characterised its administration.</p>
+
+    <div class="ruler-card">
+      <h4>Cyrus the Great / Cyrus II (558–530 BCE) — First Persian in India</h4>
+      <div class="ruler-meta">Achaemenid Dynasty · Founder of Persian Empire</div>
+      <ul>
+        <li>Founder of the Achaemenid Empire; defeated the Medes, Lydians, and Babylonians.</li>
+        <li>First Persian emperor to interact militarily with India — invaded <strong>Gandhara region</strong> and <strong>Kabul valley</strong> around 535 BCE.</li>
+        <li>Conquered <strong>Kamboja, Gandhara</strong> and the lands west of the Indus.</li>
+        <li>Captured <strong>Kapisa</strong> (Begram, near modern Kabul) — destroyed it according to Greek sources (Pliny).</li>
+        <li>Did <strong>not cross the Indus</strong>; his Indian frontier was the Hindu Kush region.</li>
+        <li>Died in 530 BCE while campaigning against the Massagetae (Central Asian nomads).</li>
+      </ul>
+    </div>
+
+    <div class="ruler-card">
+      <h4>Darius I (522–486 BCE) — Major Indian Conquest</h4>
+      <div class="ruler-meta">Achaemenid Dynasty · Greatest Achaemenid King</div>
+      <ul>
+        <li>The <strong>real conqueror of India</strong> for the Achaemenids. Around 518 BCE, sent his admiral <strong>Scylax of Caryanda</strong> on a naval expedition down the Indus river to map the region — first known maritime survey of Indian waters by a foreign power.</li>
+        <li>Annexed the <strong>Indus valley</strong> (Punjab + Sindh) as the <strong>20th satrapy</strong> of the Persian Empire, called <strong>Hindush</strong> (the Persian form of "Sindhu"). This is the origin of the names "Hindu" and "India" via Greek "Indos".</li>
+        <li><strong>Tribute:</strong> Hindush paid <strong>360 talents of gold dust</strong> annually — about <em>1/3 of the entire Achaemenid Empire's revenue</em>, making India the richest satrapy.</li>
+        <li><strong>Naqsh-e-Rustam, Behistun, and Persepolis inscriptions</strong> mention "Hidu/Hindush" and "Gandara" among Darius's possessions — these are the <strong>earliest historical inscriptions referring to India by name</strong> outside of India itself.</li>
+        <li>Indian soldiers served in Persian armies — a contingent of Indian troops fought in Xerxes's Greek campaign (490–480 BCE), including at the Battle of Plataea (479 BCE).</li>
+      </ul>
+    </div>
+
+    <div class="ruler-card">
+      <h4>Xerxes I (486–465 BCE) — Indian Troops in Greek Wars</h4>
+      <div class="ruler-meta">Achaemenid Dynasty · Son of Darius I</div>
+      <ul>
+        <li>Used <strong>Indian soldiers in the Greco-Persian wars</strong> — the famous Battle of Thermopylae (480 BCE) and Battle of Plataea (479 BCE) included Indian contingents (described by Herodotus as wearing cotton garments and using cane bows and iron-tipped arrows).</li>
+        <li>This is the <strong>first time Indians appeared on European soil</strong> as soldiers.</li>
+        <li>By Xerxes's reign, Persian hold over India had weakened; revolts in the Indian satrapy were common.</li>
+        <li>Indian satrapy continued nominally under Achaemenids until 330 BCE, when Alexander defeated <strong>Darius III</strong> at Gaugamela (Indian troops fought for Darius III) — ending Achaemenid rule including over their Indian satrapy.</li>
+      </ul>
+    </div>
+
+    <h3>1.2 Impact of Persian Invasion on India</h3>
+    <div class="cards-grid">
+      <div class="info-card">
+        <div class="card-title">Kharoshthi Script</div>
+        <p>Persians introduced <strong>Aramaic script</strong>, which evolved into <strong>Kharoshthi script</strong> — written right-to-left. Used in NW India for ~800 years. Ashoka's NW Edicts (Shahbazgarhi, Mansehra) are in Kharoshthi. Later replaced by Brahmi-derived scripts.</p>
+      </div>
+      <div class="info-card orange-card">
+        <div class="card-title">Coinage</div>
+        <p>Persian <strong>sigloi</strong> (silver coins) circulated in NW India. Persian coin tradition influenced India's punch-marked coins. Bent-bar/silver shatamana coins of NW India show Persian standards.</p>
+      </div>
+      <div class="info-card green-card">
+        <div class="card-title">Administration</div>
+        <p>Persian <strong>satrapy system</strong> (provincial governorship under a satrap) directly influenced Maurya provincial administration. Concepts like royal post, royal road, regular taxation — all visible later in Kautilya's Arthashastra.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-title">Architecture &amp; Art</div>
+        <p><strong>Persepolis-style pillars</strong> with <strong>bell-shaped capitals</strong> and animal figures influenced Ashokan pillars. Polishing technique (highly lustrous Mauryan polish) is thought to be Persian-inspired. Stone-cutting expertise transferred via Gandhara.</p>
+      </div>
+      <div class="info-card orange-card">
+        <div class="card-title">Trade &amp; Commerce</div>
+        <p>Opened <strong>land routes</strong> between India and West Asia — Indian spices, cotton, indigo flowed west; precious metals and horses flowed east. The Indo-Persian trade was active for the next 200 years.</p>
+      </div>
+      <div class="info-card green-card">
+        <div class="card-title">Idea of Imperial Rule</div>
+        <p>The concept of a <strong>universal empire</strong> (Shahanshah — "King of Kings") inspired Indian rulers. The Mauryan title <em>Chakravartin</em> and the concept of pan-Indian sovereignty owe much to Persian precedent.</p>
+      </div>
+    </div>
+
+    <div class="highlight-box highlight-blue">
+      <strong>Origin of "Hindu" and "India":</strong> The Sanskrit word <em>Sindhu</em> (river/Indus) became Persian <em>Hindu</em> (note the H instead of S — characteristic Iranian phonetic shift). The Greeks borrowed it as <em>Indos</em> (the Greeks dropped the H), giving us "India". So the words "Hindu" and "India" both derive ultimately from Persian usage during Darius I's reign — a direct legacy of this invasion.
+    </div>
+  </div>
+
+  <!-- SECTION 2: MACEDONIAN INVASION -->
+  <div class="section-card">
+    <h2>⚔ 2. Macedonian (Greek) Invasion of India</h2>
+
+    <h3>2.1 Background — Alexander the Great</h3>
+    <p><strong>Alexander III of Macedon</strong> (356–323 BCE) — son of Philip II of Macedonia and student of Aristotle — became king at age 20 (336 BCE). His ambition was the conquest of the entire known world. In a brief 13 years, he conquered Greece, Egypt, Persia, Central Asia, and reached India — building the largest empire of the ancient world before his early death at 32.</p>
+
+    <h4>The Road to India (334–327 BCE)</h4>
+    <ul>
+      <li><strong>334 BCE:</strong> Crossed into Asia Minor; defeated Persians at Battle of Granicus.</li>
+      <li><strong>333 BCE:</strong> Defeated Darius III at <strong>Battle of Issus</strong>.</li>
+      <li><strong>331 BCE:</strong> Decisive victory at <strong>Battle of Gaugamela</strong> — destroyed Achaemenid Empire. (Indian troops fought on the Persian side; this is the last Achaemenid use of Indians.)</li>
+      <li><strong>330 BCE:</strong> Darius III killed by his own satrap Bessus; Alexander succeeded as ruler of Persia.</li>
+      <li><strong>329–327 BCE:</strong> Conquered Bactria and Sogdiana (Central Asia); married <em>Roxana</em> (Bactrian princess).</li>
+      <li><strong>327 BCE:</strong> Crossed Hindu Kush; entered India through the <strong>Khyber Pass</strong>.</li>
+    </ul>
+
+    <h3>2.2 Alexander's Indian Campaign (327–325 BCE)</h3>
+
+    <!-- SVG: Alexander's route -->
+    <div class="svg-wrap">
+      <svg viewBox="0 0 540 320" width="540" height="320" xmlns="http://www.w3.org/2000/svg">
+        <rect width="540" height="320" fill="#f5eafa" rx="10"/>
+        <text x="270" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#3a0e4a" font-family="sans-serif">Alexander's Indian Campaign (327–325 BCE)</text>
+
+        <!-- Rivers (5 rivers of Punjab) -->
+        <path d="M 200 80 Q 220 140 245 220 Q 260 270 280 290" stroke="#4a90d9" stroke-width="2" fill="none" opacity="0.6"/>
+        <text x="195" y="80" font-size="8" fill="#4a90d9" font-family="sans-serif" font-weight="600">Indus</text>
+
+        <path d="M 250 70 Q 270 130 290 200 Q 305 250 320 280" stroke="#4a90d9" stroke-width="1.8" fill="none" opacity="0.6"/>
+        <text x="245" y="70" font-size="8" fill="#4a90d9" font-family="sans-serif" font-weight="600">Jhelum</text>
+
+        <path d="M 300 70 Q 320 130 340 200 Q 360 250 370 280" stroke="#4a90d9" stroke-width="1.8" fill="none" opacity="0.6"/>
+        <text x="295" y="70" font-size="8" fill="#4a90d9" font-family="sans-serif" font-weight="600">Chenab</text>
+
+        <path d="M 350 70 Q 370 130 390 200 Q 405 250 415 280" stroke="#4a90d9" stroke-width="1.8" fill="none" opacity="0.6"/>
+        <text x="345" y="70" font-size="8" fill="#4a90d9" font-family="sans-serif" font-weight="600">Ravi</text>
+
+        <path d="M 400 70 Q 420 130 440 200 Q 455 250 465 280" stroke="#4a90d9" stroke-width="1.8" fill="none" opacity="0.6"/>
+        <text x="395" y="70" font-size="8" fill="#4a90d9" font-family="sans-serif" font-weight="600">Beas</text>
+
+        <!-- Locations -->
+        <!-- Khyber Pass entry -->
+        <circle cx="120" cy="100" r="6" fill="#b8860b"/>
+        <text x="118" y="95" text-anchor="middle" font-size="9" fill="#3a0e4a" font-weight="700" font-family="sans-serif">Khyber Pass</text>
+        <text x="118" y="118" text-anchor="middle" font-size="8" fill="#666" font-family="sans-serif">327 BCE: Entry</text>
+
+        <!-- Taxila -->
+        <circle cx="200" cy="155" r="7" fill="#1a6b3a"/>
+        <text x="200" y="148" text-anchor="middle" font-size="9" fill="#3a0e4a" font-weight="700" font-family="sans-serif">Taxila</text>
+        <text x="200" y="175" text-anchor="middle" font-size="8" fill="#666" font-family="sans-serif">Ambhi welcomed</text>
+
+        <!-- Battle of Hydaspes -->
+        <rect x="262" y="180" width="58" height="36" rx="6" fill="#8b0000"/>
+        <text x="291" y="197" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="sans-serif">HYDASPES</text>
+        <text x="291" y="210" text-anchor="middle" font-size="7" fill="#ffd" font-family="sans-serif">326 BCE · Porus</text>
+
+        <!-- Hyphasis Mutiny -->
+        <rect x="395" y="155" width="80" height="36" rx="6" fill="#b8860b"/>
+        <text x="435" y="172" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="sans-serif">HYPHASIS MUTINY</text>
+        <text x="435" y="185" text-anchor="middle" font-size="7" fill="#ffd" font-family="sans-serif">326 BCE · Turn back</text>
+
+        <!-- Arrows showing Alexander's path -->
+        <defs>
+          <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 Z" fill="#5a1a6b"/>
+          </marker>
+          <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 Z" fill="#b8860b"/>
+          </marker>
+        </defs>
+
+        <!-- Path: Khyber → Taxila -->
+        <line x1="128" y1="108" x2="190" y2="148" stroke="#5a1a6b" stroke-width="2" marker-end="url(#arrow)"/>
+        <!-- Path: Taxila → Hydaspes -->
+        <line x1="210" y1="162" x2="260" y2="190" stroke="#5a1a6b" stroke-width="2" marker-end="url(#arrow)"/>
+        <!-- Path: Hydaspes → Hyphasis -->
+        <line x1="322" y1="190" x2="395" y2="175" stroke="#5a1a6b" stroke-width="2" marker-end="url(#arrow)"/>
+
+        <!-- Return path -->
+        <path d="M 395 185 Q 350 250 280 280" stroke="#b8860b" stroke-width="2" fill="none" stroke-dasharray="5,3" marker-end="url(#arrowGold)"/>
+        <text x="320" y="260" font-size="9" fill="#b8860b" font-family="sans-serif" font-style="italic" font-weight="600">Return via Indus → Babylon</text>
+
+        <!-- Legend -->
+        <rect x="15" y="280" width="14" height="14" fill="#5a1a6b" rx="2"/>
+        <text x="35" y="291" font-size="9" fill="#333" font-family="sans-serif">Advance into India</text>
+        <rect x="160" y="280" width="14" height="14" fill="#b8860b" rx="2"/>
+        <text x="180" y="291" font-size="9" fill="#333" font-family="sans-serif">Forced retreat</text>
+        <rect x="280" y="280" width="14" height="14" fill="#8b0000" rx="2"/>
+        <text x="300" y="291" font-size="9" fill="#333" font-family="sans-serif">Major battle</text>
+      </svg>
+      <p class="svg-caption">Alexander entered through the Khyber Pass, was welcomed at Taxila (Ambhi), defeated Porus at Hydaspes, was forced back at Hyphasis (Beas), then retreated via the Indus river to Babylon</p>
+    </div>
+
+    <h4>Entry into India (327 BCE)</h4>
+    <ul>
+      <li>Crossed the <strong>Hindu Kush</strong> and entered India through the <strong>Khyber Pass</strong>.</li>
+      <li>First subdued the tribes of the lower Kabul valley — the <strong>Aspasioi</strong> and <strong>Assakenoi</strong>. The Assakenoi put up the fiercest resistance at the fortress of <strong>Massaga</strong>, where their queen <em>Cleophis</em> (Apama) led the defence after her husband's death.</li>
+      <li><strong>Aornos fortress:</strong> A nearly impregnable rocky stronghold in the Swat region — captured after a difficult siege; Alexander considered this one of his greatest military feats (Hercules himself was said to have failed there).</li>
+      <li>Crossed the Indus at <strong>Ohind</strong> (modern Hund, near Attock) in early 326 BCE.</li>
+    </ul>
+
+    <h4>Taxila — A Diplomatic Victory</h4>
+    <ul>
+      <li><strong>Ambhi</strong> (Greek: <em>Omphis</em>), king of <strong>Taxila</strong>, voluntarily submitted to Alexander, hoping to use him as an ally against his rival Porus.</li>
+      <li>Alexander entered Taxila peacefully; received gifts, tribute, and the famous philosophical exchanges with Indian sages (the "Gymnosophists" — possibly Jain or Ajivika ascetics).</li>
+      <li>One sage, <strong>Kalanos</strong> (Calanus), reportedly accompanied Alexander back to Persia and famously self-immolated on a pyre at Susa.</li>
+    </ul>
+
+    <h3>2.3 Battle of Hydaspes (326 BCE) — Alexander vs. Porus</h3>
+
+    <!-- SVG: Battle of Hydaspes -->
+    <div class="svg-wrap">
+      <svg viewBox="0 0 560 340" width="560" height="340" xmlns="http://www.w3.org/2000/svg">
+        <rect width="560" height="340" fill="#f0f4ff" rx="10"/>
+        <text x="280" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#3a0e4a" font-family="sans-serif">Battle of Hydaspes (May 326 BCE) — Tactical Diagram</text>
+
+        <!-- Hydaspes river -->
+        <path d="M 60 170 Q 280 165 500 170" stroke="#4a90d9" stroke-width="14" fill="none" opacity="0.5"/>
+        <text x="50" y="173" text-anchor="middle" font-size="9" fill="#2a5a99" font-weight="700" font-family="sans-serif">↑ N</text>
+        <text x="280" y="195" text-anchor="middle" font-size="11" fill="#2a5a99" font-weight="700" font-family="sans-serif">HYDASPES (JHELUM) RIVER</text>
+
+        <!-- Alexander's main camp (south of river) -->
+        <rect x="220" y="245" width="100" height="50" rx="6" fill="#5a1a6b"/>
+        <text x="270" y="265" text-anchor="middle" font-size="10" fill="#fff" font-weight="700" font-family="sans-serif">ALEXANDER</text>
+        <text x="270" y="280" text-anchor="middle" font-size="8" fill="#ffd" font-family="sans-serif">Main camp (decoy)</text>
+        <text x="270" y="291" text-anchor="middle" font-size="8" fill="#ffd" font-family="sans-serif">Craterus commanding</text>
+
+        <!-- Alexander's actual crossing point (NW) -->
+        <rect x="70" y="80" width="100" height="50" rx="6" fill="#b8860b"/>
+        <text x="120" y="100" text-anchor="middle" font-size="10" fill="#fff" font-weight="700" font-family="sans-serif">Alexander crosses</text>
+        <text x="120" y="114" text-anchor="middle" font-size="8" fill="#ffd" font-family="sans-serif">28 km upstream</text>
+        <text x="120" y="125" text-anchor="middle" font-size="8" fill="#ffd" font-family="sans-serif">During night storm</text>
+
+        <!-- Crossing arrow -->
+        <path d="M 120 130 Q 130 155 145 175" stroke="#b8860b" stroke-width="3" fill="none" marker-end="url(#a2)"/>
+        <defs>
+          <marker id="a2" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 Z" fill="#b8860b"/>
+          </marker>
+          <marker id="a3" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 Z" fill="#5a1a6b"/>
+          </marker>
+        </defs>
+
+        <!-- Porus's army (north of river) -->
+        <rect x="240" y="80" width="120" height="60" rx="6" fill="#8b0000"/>
+        <text x="300" y="100" text-anchor="middle" font-size="10" fill="#fff" font-weight="700" font-family="sans-serif">PORUS (Paurava)</text>
+        <text x="300" y="114" text-anchor="middle" font-size="8" fill="#ffd" font-family="sans-serif">30,000 inf · 4,000 cav</text>
+        <text x="300" y="125" text-anchor="middle" font-size="8" fill="#ffd" font-family="sans-serif">300 chariots · 200 elephants</text>
+
+        <!-- Movement of Alexander -->
+        <path d="M 170 130 Q 220 130 240 110" stroke="#b8860b" stroke-width="3" fill="none" marker-end="url(#a2)"/>
+        <text x="195" y="160" font-size="9" fill="#b8860b" font-family="sans-serif" font-weight="600">Surprise flank attack</text>
+
+        <!-- Porus's elephant strategy -->
+        <text x="430" y="100" font-size="9" fill="#8b0000" font-family="sans-serif" font-weight="700">Strategy:</text>
+        <text x="430" y="115" font-size="8" fill="#5a0000" font-family="sans-serif">Elephants in front line</text>
+        <text x="430" y="128" font-size="8" fill="#5a0000" font-family="sans-serif">to break Greek phalanx</text>
+
+        <text x="430" y="245" font-size="9" fill="#5a1a6b" font-family="sans-serif" font-weight="700">Alexander's tactics:</text>
+        <text x="430" y="258" font-size="8" fill="#3a0e4a" font-family="sans-serif">1. Decoy main force south</text>
+        <text x="430" y="270" font-size="8" fill="#3a0e4a" font-family="sans-serif">2. Cross upstream at night</text>
+        <text x="430" y="282" font-size="8" fill="#3a0e4a" font-family="sans-serif">3. Storm masks crossing</text>
+        <text x="430" y="294" font-size="8" fill="#3a0e4a" font-family="sans-serif">4. Cavalry archers hit</text>
+        <text x="430" y="306" font-size="8" fill="#3a0e4a" font-family="sans-serif">   elephants from rear</text>
+
+        <!-- Outcome -->
+        <rect x="20" y="240" width="170" height="60" rx="6" fill="#1a6b3a"/>
+        <text x="105" y="262" text-anchor="middle" font-size="10" fill="#fff" font-weight="700" font-family="sans-serif">OUTCOME</text>
+        <text x="105" y="278" text-anchor="middle" font-size="8" fill="#ffd" font-family="sans-serif">Porus defeated but spared</text>
+        <text x="105" y="290" text-anchor="middle" font-size="8" fill="#ffd" font-family="sans-serif">Reinstated as ally king</text>
+      </svg>
+      <p class="svg-caption">Battle of Hydaspes — Alexander used a decoy at the main camp and crossed the river 28 km upstream under cover of a thunderstorm, surprising Porus's army</p>
+    </div>
+
+    <table class="note-table">
+      <tr><th>Aspect</th><th>Details</th></tr>
+      <tr><td><strong>Date</strong></td><td>May 326 BCE (during a heavy monsoon storm)</td></tr>
+      <tr><td><strong>Location</strong></td><td>Banks of the <strong>Jhelum river</strong> (Greek: <em>Hydaspes</em>) in Punjab — near modern Jhelum city, Pakistan</td></tr>
+      <tr><td><strong>Opponents</strong></td><td>Alexander the Great vs. King Porus (Sanskrit: <em>Paurava</em>) of the Paurava kingdom (between Jhelum and Chenab)</td></tr>
+      <tr><td><strong>Alexander's forces</strong></td><td>~50,000 troops, predominantly Macedonian cavalry and phalanx infantry; supported by Ambhi of Taxila</td></tr>
+      <tr><td><strong>Porus's forces</strong></td><td>~30,000 infantry; 4,000 cavalry; 300 chariots; 200 war elephants — the elephants were the key strategic weapon</td></tr>
+      <tr><td><strong>Alexander's tactic</strong></td><td>(1) Left main camp opposite Porus as decoy (under Craterus); (2) Crossed Hydaspes 28 km upstream at night during a thunderstorm; (3) Took Porus's army by surprise from the flank; (4) Used mounted archers and horse javelineers to terrorise elephants from the rear</td></tr>
+      <tr><td><strong>Outcome</strong></td><td>Porus's army defeated. Porus fought valiantly until wounded multiple times. His sons died in the battle. Alexander, impressed, asked how he should be treated — Porus replied <em>"As a king treats another king"</em>. Alexander reinstated Porus and even expanded his kingdom as a vassal-ally.</td></tr>
+      <tr><td><strong>Alexander's loss</strong></td><td>His beloved horse <strong>Bucephalus</strong> died either in or shortly after the battle. Alexander founded a city in his honour: <em>Bucephala</em> (modern Jalalpur, Punjab, Pakistan). Founded another city <em>Nicaea</em> (Victory) nearby.</td></tr>
+    </table>
+
+    <div class="highlight-box highlight-orange">
+      <strong>Why Hydaspes is Historically Important:</strong> (1) Alexander's last major pitched battle — eastern limit of his military career; (2) First time Greek-style warfare encountered Indian war elephants on a large scale; (3) Established the model of "ally-king" diplomacy in the NW that Maurya rulers later inherited; (4) Showed both the military strength and limits of Greek tactics in Indian conditions.
+    </div>
+
+    <h3>2.4 The Hyphasis Mutiny (326 BCE) — End of the Eastward March</h3>
+    <ul>
+      <li>After defeating Porus, Alexander marched east through Punjab and reached the <strong>Beas river</strong> (Greek: <em>Hyphasis</em>).</li>
+      <li>His soldiers had been campaigning continuously for <strong>8 years</strong> (since 334 BCE), having marched over 17,000 km.</li>
+      <li>Greek scouts and Porus reported about the powerful <strong>Nanda Empire</strong> across the Beas — with Dhana Nanda's army of <strong>200,000 infantry, 20,000 cavalry, 2,000 chariots, and 3,000 (some say 6,000) war elephants</strong>.</li>
+      <li>Faced with the prospect of fighting a force far larger than what had defeated Porus (200 elephants), the army refused to advance.</li>
+      <li>Alexander sulked in his tent for 3 days, but finally relented. He turned around at the Beas — <strong>the eastern limit of Greek conquest</strong>.</li>
+      <li>Erected <strong>12 stone altars</strong> at the Beas to mark the easternmost point of his empire (later destroyed; site still debated).</li>
+    </ul>
+
+    <h3>2.5 The Retreat and Alexander's Death</h3>
+    <ul>
+      <li><strong>Retreat down the Indus (326–325 BCE):</strong> Sailed down the Indus to its mouth. Faced fierce resistance from the <strong>Malloi (Malavas)</strong> and <strong>Oxydrakai (Kshudrakas)</strong> tribes — Alexander himself was severely wounded fighting the Mallians.</li>
+      <li><strong>Indus Delta:</strong> Reached Patala (modern Hyderabad, Sindh) in 325 BCE.</li>
+      <li><strong>Three-way return:</strong> Alexander divided his army — (1) <strong>Nearchus</strong> commanded the naval fleet sailing west along the coast; (2) <strong>Craterus</strong> took one land route through southern Iran; (3) Alexander himself crossed the brutal <strong>Gedrosian Desert</strong> (Makran, Baluchistan) — most of his soldiers died of starvation and dehydration in this disastrous march.</li>
+      <li><strong>Death:</strong> Reached Babylon in 324 BCE. Died there in <strong>June 323 BCE</strong> at age 32 — possibly from malaria, typhoid, alcohol poisoning, or poisoning by enemies.</li>
+      <li><strong>Indian governors:</strong> Alexander appointed Macedonian and Greek satraps over conquered Indian territories — but these were quickly overthrown after his death. By c. 317 BCE, Chandragupta Maurya had absorbed Punjab into the Mauryan Empire.</li>
+    </ul>
+  </div>
+
+  <!-- SECTION 3: IMPACT OF MACEDONIAN INVASION -->
+  <div class="section-card">
+    <h2>🌐 3. Impact of Macedonian Invasion on India</h2>
+
+    <h3>3.1 Political Impact</h3>
+    <div class="cards-grid">
+      <div class="info-card">
+        <div class="card-title">Indirect Rise of Mauryas</div>
+        <p>Alexander's invasion exposed the political weakness and disunity of NW India. Within 5 years of Alexander's death, <strong>Chandragupta Maurya</strong> (advised by Chanakya) absorbed the Greek satraps, then turned east and overthrew the Nandas (321 BCE). India's first pan-Indian empire was the indirect result.</p>
+      </div>
+      <div class="info-card orange-card">
+        <div class="card-title">Seleucid Treaty (305 BCE)</div>
+        <p>Alexander's general Seleucus Nicator inherited Persia. He marched to recover India in 305 BCE but was decisively defeated by Chandragupta. The resulting treaty ceded <strong>Afghanistan, Baluchistan, Gandhara, and parts of Iran</strong> to the Mauryas in exchange for <strong>500 war elephants</strong> + a marriage alliance.</p>
+      </div>
+      <div class="info-card green-card">
+        <div class="card-title">End of NW Republics</div>
+        <p>Alexander destroyed numerous small republics and monarchies of the NW. The political vacuum was filled first by Greek satraps, then by the Mauryas — ending the era of small Mahajanapadas in NW India forever.</p>
+      </div>
+    </div>
+
+    <h3>3.2 Cultural &amp; Artistic Impact</h3>
+    <div class="cards-grid">
+      <div class="info-card">
+        <div class="card-title">Gandhara Art (Greco-Buddhist)</div>
+        <p>Greek artistic influence in Gandhara gave rise to <strong>Gandhara school of art</strong> (1st century BCE onwards) — the first physical (anthropomorphic) depictions of Buddha, with Hellenistic features (wavy hair, draped robes, athletic build). Centred at Taxila, Peshawar, Begram.</p>
+      </div>
+      <div class="info-card orange-card">
+        <div class="card-title">Indo-Greek Kingdoms</div>
+        <p>After Alexander, Greek successors founded Indo-Greek kingdoms (Bactrian Greek and later) — <strong>Demetrius, Menander (Milinda)</strong>, etc. Menander reigned from Sialkot, converted to Buddhism (dialogue: <em>Milindapanha</em>), and minted bilingual Greek-Kharoshthi coins.</p>
+      </div>
+      <div class="info-card green-card">
+        <div class="card-title">Coinage Revolution</div>
+        <p>Greek-style coinage — die-struck coins with king's portrait, bilingual legends (Greek + Kharoshthi/Brahmi) — replaced punch-marked coins in NW India. This Greek innovation persisted in Indian coinage until the Mughals.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-title">Foreign Accounts of India</div>
+        <p>Alexander's campaign produced the <strong>first reliable foreign accounts of India</strong> by Greek historians who accompanied or followed him: <em>Nearchus</em> (admiral's log), <em>Onesicritus, Aristobulus</em>. Later authors like <em>Megasthenes</em> (Seleucid ambassador to Chandragupta — wrote <em>Indica</em>), <em>Arrian, Strabo, Plutarch, Diodorus, Curtius</em> drew on these.</p>
+      </div>
+      <div class="info-card orange-card">
+        <div class="card-title">Astronomy &amp; Science</div>
+        <p>Indo-Greek interaction in subsequent centuries brought Greek astronomy and astrology to India — visible in the <em>Yavanajataka</em> (a 3rd century CE Sanskrit translation of a Greek astrological text). Indian astronomers later adopted Greek epicycle theory.</p>
+      </div>
+      <div class="info-card green-card">
+        <div class="card-title">Theatre &amp; Drama</div>
+        <p>Some scholars argue the curtain in Sanskrit drama (<em>yavanika</em>, literally "Greek/Ionian curtain") was adopted from Greek theatre. Sanskrit drama's structured acts may also have Greek inspiration.</p>
+      </div>
+    </div>
+
+    <h3>3.3 Economic Impact</h3>
+    <ul>
+      <li><strong>Opened east-west land trade:</strong> Alexander's campaign and the subsequent Hellenistic kingdoms (Seleucid, Bactrian, etc.) created a continuous trade network from the Mediterranean to the Indus. India exported spices, cotton, precious stones; imported wine, glass, coral, horses.</li>
+      <li><strong>Sea routes mapped:</strong> Nearchus's coastal voyage from the Indus to the Persian Gulf was the first systematic survey of the Arabian Sea coastline by a foreign power — pioneered the maritime route used later by Indo-Roman trade.</li>
+      <li><strong>Greek colonies founded by Alexander:</strong> Numerous Alexandrias — including Alexandria in the Caucasus (Bagram, Afghanistan), Bucephala (Jalalpur), and Nicaea — became commercial and cultural hubs.</li>
+    </ul>
+
+    <h3>3.4 Historiographic Impact — First "Date Anchor"</h3>
+    <div class="highlight-box highlight-blue">
+      <strong>Alexander's invasion gave Indian history its first secure date anchor.</strong> Before this, dates in ancient Indian history are largely relative (based on king lists in Puranas, Buddhist/Jain traditions). The 326 BCE Battle of Hydaspes, attested independently in Greek, Roman, and Indian sources, allows us to date Chandragupta Maurya's accession (321 BCE), Ashoka's reign, and earlier events with confidence. This is why Alexander matters so much to historians, even though his territorial impact in India was modest.
+    </div>
+
+    <h3>3.5 What Alexander Did NOT Do</h3>
+    <ul>
+      <li>He did NOT conquer "India" — he held only Punjab and parts of Sindh, less than 5% of the subcontinent.</li>
+      <li>He did NOT meet Chandragupta Maurya. (Some accounts claim Chandragupta saw him as a young man in Punjab and was inspired, but this is unverified legend.)</li>
+      <li>He did NOT cross the Beas (Hyphasis) — never saw the Gangetic plain or Magadha.</li>
+      <li>His direct Indian satrapies were lost within 5 years of his death — Greek political control in India was extremely short-lived.</li>
+    </ul>
+  </div>
+
+  <!-- SECTION 4: COMPARISON OF TWO INVASIONS -->
+  <div class="section-card">
+    <h2>⚖ 4. Comparison: Persian vs Macedonian Invasions</h2>
+    <table class="note-table">
+      <tr><th>Aspect</th><th>Persian (Achaemenid)</th><th>Macedonian (Greek)</th></tr>
+      <tr><td>Period</td><td>c. 535–330 BCE (over 200 years)</td><td>327–325 BCE (just 2 years)</td></tr>
+      <tr><td>Key Rulers</td><td>Cyrus II, Darius I, Xerxes</td><td>Alexander the Great</td></tr>
+      <tr><td>Territory Controlled</td><td>Indus Valley as 20th satrapy (Hindush); long-term administrative integration</td><td>Punjab + parts of Sindh; held briefly, lost within 5 years of Alexander's death</td></tr>
+      <tr><td>Duration of Rule</td><td>Long-term (~200 years as a satrapy)</td><td>Very short-term (~5 years)</td></tr>
+      <tr><td>Major Battle</td><td>No major Indian battle recorded; absorption was gradual</td><td>Battle of Hydaspes (326 BCE) — defining moment</td></tr>
+      <tr><td>Script</td><td>Introduced Aramaic → evolved into Kharoshthi</td><td>Introduced Greek script (used on bilingual coins)</td></tr>
+      <tr><td>Coinage</td><td>Silver sigloi; influenced punch-marked coins</td><td>Die-struck portrait coins; bilingual legends</td></tr>
+      <tr><td>Art &amp; Architecture</td><td>Bell-shaped capitals, polished stone pillars (Ashokan influence)</td><td>Gandhara school — first anthropomorphic Buddha images</td></tr>
+      <tr><td>Administration</td><td>Satrapy system — directly inherited by Mauryas</td><td>No lasting administrative legacy</td></tr>
+      <tr><td>Foreign Accounts</td><td>Herodotus, Behistun inscriptions</td><td>Arrian, Plutarch, Megasthenes, Strabo</td></tr>
+      <tr><td>Indirect Impact</td><td>Idea of empire; "Hindu/India" naming</td><td>Rise of Maurya Empire; Indo-Greek kingdoms; Date anchor for Indian history</td></tr>
+    </table>
+  </div>
+
+  <!-- CURRENT AFFAIRS -->
+  <div class="ca-section">
+    <h2>📰 Current Affairs Linkages (2024–26)</h2>
+
+    <div class="ca-item">
+      <strong>Behistun Inscription &amp; Iran-India Heritage</strong>
+      The Behistun Inscription (UNESCO World Heritage, 2006) of Darius I in Iran mentions "Hidu/Hindush" — the earliest historical reference to India by name. Iran-India heritage cooperation includes joint research on Achaemenid-era India contacts. Relevant to UPSC India-Iran cultural diplomacy questions.
+    </div>
+
+    <div class="ca-item">
+      <strong>Taxila — UNESCO World Heritage Site</strong>
+      Taxila (in modern Pakistan) — site of Alexander's diplomatic victory and later a major Mauryan, Indo-Greek, and Kushana city — is a UNESCO World Heritage Site (1980). Ongoing India-Pakistan academic cooperation around Gandhara archaeology is occasionally in the news.
+    </div>
+
+    <div class="ca-item">
+      <strong>Gandhara Art Repatriation Debates</strong>
+      Several Gandhara-era Buddha sculptures (from sites associated with Alexander's campaign area) have been at the centre of antiquities repatriation cases. India and Pakistan have both successfully secured returns from US and European auction houses in 2023–24.
+    </div>
+
+    <div class="ca-item">
+      <strong>"Alexandria in the Caucasus" — Begram Discoveries</strong>
+      Begram in Afghanistan (founded by Alexander) — earlier known for Greco-Buddhist treasures — has been in the news due to Taliban-era heritage protection concerns. India has supported UNESCO efforts on Afghan heritage preservation.
+    </div>
+  </div>
+
+  <!-- PYQs -->
+  <div class="pyq-section">
+    <h2>📋 Previous Year Questions (UPSC)</h2>
+
+    <div class="pyq-item">
+      <div class="pyq-meta">Prelims 2020</div>
+      <p>Which of the following statements about Alexander's invasion of India is/are correct? (1) Alexander defeated Porus at the Battle of Hydaspes; (2) Ambhi of Taxila welcomed Alexander; (3) Alexander crossed the Beas river and entered the Ganga plain. Select using codes given.</p>
+    </div>
+
+    <div class="pyq-item">
+      <div class="pyq-meta">Prelims 2018</div>
+      <p>The term 'Hindush' in the Behistun inscription of Darius I refers to: (a) The Indus valley region added as a Persian satrapy; (b) The Gangetic plain; (c) The Deccan region; (d) The whole of India.</p>
+    </div>
+
+    <div class="pyq-item">
+      <div class="pyq-meta">Prelims 2016</div>
+      <p>The Hyphasis Mutiny refers to: (a) An uprising by Indian troops against Persian rule; (b) The refusal of Alexander's army to cross the Beas river; (c) A revolt against Chandragupta Maurya; (d) A peasant uprising in Magadha.</p>
+    </div>
+
+    <div class="pyq-item">
+      <div class="pyq-meta">Prelims 2013</div>
+      <p>Which of the following was/were introduced into India as a result of the Persian invasion? (1) Kharoshthi script; (2) Aramaic script; (3) Sigloi silver coinage; (4) The satrapy administrative system. Select using codes.</p>
+    </div>
+
+    <div class="pyq-item">
+      <div class="pyq-meta">Prelims 2011</div>
+      <p>Alexander founded several cities in the lands he conquered, including in India. Which two cities did Alexander found in India after the Battle of Hydaspes? (a) Bucephala and Nicaea; (b) Alexandria and Patala; (c) Taxila and Pushkalavati; (d) Sangala and Aornos.</p>
+    </div>
+
+    <div class="pyq-item pyq-mains">
+      <div class="pyq-meta">Mains GS-1 2020</div>
+      <p>"Although the Macedonian invasion did not result in long-term political conquest, its consequences for India were far-reaching." Discuss the political, economic, cultural and historiographic impact of Alexander's invasion on India. (250 words)</p>
+    </div>
+
+    <div class="pyq-item pyq-mains">
+      <div class="pyq-meta">Mains GS-1 2017</div>
+      <p>Examine the impact of the Achaemenid Persian invasion on the political and cultural life of ancient India. How did it influence subsequent Indian developments? (150 words)</p>
+    </div>
+  </div>
+
+  <!-- REVISION BOX -->
+  <div class="revision-box">
+    <h2>⚡ 10-Point Rapid Revision</h2>
+    <div class="revision-grid">
+      <div class="revision-point">
+        <strong>1. Achaemenid Empire</strong>
+        Founded by Cyrus the Great (558–530 BCE); largest empire of antiquity; first interaction with India c. 535 BCE.
+      </div>
+      <div class="revision-point">
+        <strong>2. Darius I — Hindush</strong>
+        Annexed Indus Valley as 20th satrapy (Hindush); paid 360 talents of gold dust = 1/3 of Persian revenue.
+      </div>
+      <div class="revision-point">
+        <strong>3. Behistun Inscription</strong>
+        Earliest foreign reference to India by name — "Hidu/Hindush" mentioned in Darius's inscriptions (Behistun, Naqsh-e-Rustam, Persepolis).
+      </div>
+      <div class="revision-point">
+        <strong>4. Persian Legacy</strong>
+        Kharoshthi script (from Aramaic), satrapy system, bell-shaped pillar capitals, sigloi coinage, idea of empire.
+      </div>
+      <div class="revision-point">
+        <strong>5. Alexander Enters India</strong>
+        327 BCE via Khyber Pass; subdued Aspasioi and Assakenoi (Queen Cleophis defended Massaga); captured Aornos fortress.
+      </div>
+      <div class="revision-point">
+        <strong>6. Taxila — Ambhi</strong>
+        King Ambhi (Greek: Omphis) submitted voluntarily; Alexander met Gymnosophists; Kalanos accompanied him back to Susa.
+      </div>
+      <div class="revision-point">
+        <strong>7. Battle of Hydaspes (326 BCE)</strong>
+        Alexander vs Porus on Jhelum; crossed 28km upstream during storm; defeated Porus but reinstated him ("Treat me as a king"); Bucephalus died; founded Bucephala &amp; Nicaea.
+      </div>
+      <div class="revision-point">
+        <strong>8. Hyphasis Mutiny</strong>
+        At Beas river — army refused to advance fearing Nanda Empire (200,000 inf + 3,000 elephants); 12 stone altars erected at easternmost limit.
+      </div>
+      <div class="revision-point">
+        <strong>9. Return &amp; Death</strong>
+        Retreat via Indus; Nearchus by sea; Alexander through Gedrosian desert; died at Babylon June 323 BCE, age 32.
+      </div>
+      <div class="revision-point">
+        <strong>10. Indirect Impact</strong>
+        Catalysed Maurya rise; Seleucid treaty 305 BCE (Chandragupta got Afghanistan + 500 war elephants); Gandhara art; first secure date anchor in Indian history.
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ═══════════════════════ RIGHT SIDEBAR ═══════════════════════ -->
+<aside class="sidebar">
+
+  <div class="sidebar-card">
+    <h3>🦁 Persian Invasion</h3>
+    <table class="sidebar-table">
+      <tr><td>Cyrus II</td><td>558–530 BCE</td></tr>
+      <tr><td>1st Indian invasion</td><td>c. 535 BCE (Gandhara)</td></tr>
+      <tr><td>Darius I</td><td>522–486 BCE</td></tr>
+      <tr><td>Indus = satrapy</td><td>20th (Hindush)</td></tr>
+      <tr><td>Tribute</td><td>360 talents gold dust</td></tr>
+      <tr><td>Naval mission</td><td>Scylax of Caryanda</td></tr>
+      <tr><td>Xerxes I</td><td>486–465 BCE</td></tr>
+      <tr><td>Indians in Greek wars</td><td>Thermopylae, Plataea</td></tr>
+      <tr><td>Achaemenid end</td><td>330 BCE (Gaugamela)</td></tr>
+    </table>
+  </div>
+
+  <div class="sidebar-card">
+    <h3>⚔ Alexander in India</h3>
+    <table class="sidebar-table">
+      <tr><td>Entry</td><td>327 BCE (Khyber)</td></tr>
+      <tr><td>Taxila</td><td>Ambhi welcomed</td></tr>
+      <tr><td>Hydaspes</td><td>May 326 BCE</td></tr>
+      <tr><td>Defeated</td><td>Porus (Paurava)</td></tr>
+      <tr><td>Horse died</td><td>Bucephalus</td></tr>
+      <tr><td>Cities founded</td><td>Bucephala, Nicaea</td></tr>
+      <tr><td>Easternmost point</td><td>Beas (Hyphasis)</td></tr>
+      <tr><td>Mutiny</td><td>326 BCE — turned back</td></tr>
+      <tr><td>Return route</td><td>Indus → Gedrosia</td></tr>
+      <tr><td>Naval admiral</td><td>Nearchus</td></tr>
+      <tr><td>Death</td><td>Babylon, 323 BCE</td></tr>
+    </table>
+  </div>
+
+  <div class="sidebar-card">
+    <h3>📊 Difficulty Rating</h3>
+    <div class="diff-row">
+      <div class="diff-label"><span>Prelims</span><span>8/10</span></div>
+      <div class="diff-bar"><div class="diff-fill" style="width:80%"></div></div>
+    </div>
+    <div class="diff-row">
+      <div class="diff-label"><span>Mains GS-1</span><span>7/10</span></div>
+      <div class="diff-bar"><div class="diff-fill" style="width:70%"></div></div>
+    </div>
+    <div class="diff-row">
+      <div class="diff-label"><span>Conceptual</span><span>7/10</span></div>
+      <div class="diff-bar"><div class="diff-fill" style="width:70%"></div></div>
+    </div>
+  </div>
+
+  <div class="sidebar-card">
+    <h3>🎯 Must-Know Terms</h3>
+    <div class="tag-cloud">
+      <span class="tag">Hindush</span>
+      <span class="tag">Kharoshthi</span>
+      <span class="tag">Behistun</span>
+      <span class="tag">Satrapy</span>
+      <span class="tag">Sigloi</span>
+      <span class="tag">Scylax</span>
+      <span class="tag">Hydaspes</span>
+      <span class="tag">Bucephalus</span>
+      <span class="tag">Porus / Paurava</span>
+      <span class="tag">Ambhi / Omphis</span>
+      <span class="tag">Hyphasis</span>
+      <span class="tag">Aornos</span>
+      <span class="tag">Kalanos</span>
+      <span class="tag">Nearchus</span>
+      <span class="tag">Gedrosia</span>
+      <span class="tag">Megasthenes</span>
+    </div>
+  </div>
+
+  <div class="sidebar-card">
+    <h3>✏ Self-Test (Click to Reveal)</h3>
+    <div class="self-test-item">
+      <div class="self-test-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">Which Persian emperor annexed the Indus valley? <span>▼</span></div>
+      <div class="self-test-a">Darius I (522–486 BCE). He made the Indus valley the 20th satrapy of the Achaemenid Empire, called "Hindush". It paid 360 talents of gold dust annually — about 1/3 of the empire's total revenue.</div>
+    </div>
+    <div class="self-test-item">
+      <div class="self-test-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">How did Alexander win at the Battle of Hydaspes? <span>▼</span></div>
+      <div class="self-test-a">Tactical surprise. Alexander left a decoy force at the main camp opposite Porus, crossed the river 28 km upstream at night during a thunderstorm, and attacked Porus's army from the flank. He used mounted archers to harass elephants from the rear, neutralising Porus's biggest advantage.</div>
+    </div>
+    <div class="self-test-item">
+      <div class="self-test-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">Why is Alexander's invasion historiographically important? <span>▼</span></div>
+      <div class="self-test-a">It gave Indian history its first secure date anchor. The 326 BCE Battle of Hydaspes, attested in Greek, Roman, and Indian sources, allows historians to date Chandragupta Maurya's accession (321 BCE) and all subsequent ancient Indian dates with confidence.</div>
+    </div>
+    <div class="self-test-item">
+      <div class="self-test-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">What were the Hyphasis altars? <span>▼</span></div>
+      <div class="self-test-a">When Alexander's army refused to cross the Beas (Hyphasis) river and march further east in 326 BCE, Alexander erected 12 monumental stone altars on the western bank to mark the easternmost limit of his empire. The altars have long since disappeared; their site is still debated by archaeologists.</div>
+    </div>
+    <div class="self-test-item">
+      <div class="self-test-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">What was the Seleucid Treaty of 305 BCE? <span>▼</span></div>
+      <div class="self-test-a">After Alexander's death, his general Seleucus Nicator tried to recover India in 305 BCE but was defeated by Chandragupta Maurya. The treaty gave Chandragupta: (1) Afghanistan, Baluchistan, Gandhara, parts of Iran; (2) A marriage alliance (Seleucid princess). In return, Seleucus got 500 war elephants — used decisively at the Battle of Ipsus (301 BCE).</div>
+    </div>
+  </div>
+
+  <div class="sidebar-card">
+    <h3>🔗 Related Notes</h3>
+    <div class="related-links">
+      <a href="/upsc-notes/ancient/ancient-topic07">← Topic 07: Mahajanapadas</a>
+      <a href="/upsc-notes/ancient/ancient-topic06">← Topic 06: Buddhism &amp; Jainism</a>
+      <a href="/upsc-notes/ancient">→ Module 3: Mauryan Empire</a>
+      <a href="/upsc-notes">📚 All Ancient History Notes</a>
+      <a href="/upsc-notes">🏠 UPSC Notes Home</a>
+    </div>
+  </div>
+
+</aside>
+</div>
+</div>

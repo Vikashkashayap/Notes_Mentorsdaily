@@ -1,0 +1,799 @@
+<!-- ancient-topic03 — auto-imported from ancient-topic03-chalcolithic-age-upsc-notes.html -->
+<style data-topic-notes>
+    :root {
+      --primary: #1a3c5e;
+      --primary-light: #2a5c8e;
+      --secondary: #7a3a0a;
+      --accent: #b05a1a;
+      --accent-light: #c87a30;
+      --success: #27ae60;
+      --success-light: #2ecc71;
+      --warning: #f39c12;
+      --info: #2980b9;
+      --bg-main: #f4f6f9;
+      --bg-card: #ffffff;
+      --bg-sidebar: #1a2940;
+      --bg-sidebar-hover: #243b55;
+      --text-primary: #1a2533;
+      --text-secondary: #4a5568;
+      --text-muted: #718096;
+      --text-light: #f0f4f8;
+      --border-light: #e2e8f0;
+      --border-medium: #cbd5e0;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.10);
+      --shadow-lg: 0 8px 24px rgba(0,0,0,0.13);
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font-main); background: var(--bg-main); color: var(--text-primary); line-height: 1.7; }
+
+    .sidebar { width: 270px; background: var(--bg-sidebar); color: var(--text-light); position: fixed; top: 0; left: 0; height: 100vh; overflow-y: auto; z-index: 100; transition: transform 0.3s ease; }
+    .sidebar-logo { padding: 20px 18px 14px; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; gap: 10px; }
+    .sidebar-logo .logo-icon { font-size: 1.6rem; }
+    .sidebar-logo .logo-text { font-size: 1rem; font-weight: 700; color: var(--text-light); }
+    .sidebar-logo .logo-sub { font-size: 0.72rem; color: rgba(255,255,255,0.5); display: block; }
+    .sidebar-section { padding: 14px 10px 4px; }
+    .sidebar-section-title { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: rgba(255,255,255,0.35); padding: 0 6px 6px; }
+    .sidebar-item { display: flex; align-items: center; gap: 8px; padding: 7px 10px; border-radius: var(--radius-sm); color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.82rem; transition: background 0.18s, color 0.18s; }
+    .sidebar-item:hover { background: var(--bg-sidebar-hover); color: #fff; }
+    .sidebar-item.active { background: var(--accent); color: #fff; font-weight: 600; }
+    .sidebar-item .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); flex-shrink: 0; }
+    .sidebar-item.active .dot { background: #fff; }
+    .main-content { margin-left: 270px; min-height: 100vh; }
+    @media (max-width: 860px) { .sidebar { transform: translateX(-100%); } .sidebar.open { transform: translateX(0); } .main-content { margin-left: 0; } }
+
+    .topbar { background: var(--bg-card); border-bottom: 1px solid var(--border-light); padding: 10px 28px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 50; }
+    .menu-btn { display: none; background: none; border: none; cursor: pointer; font-size: 1.3rem; color: var(--primary); padding: 4px; }
+    @media (max-width: 860px) { .menu-btn { display: block; } }
+    .breadcrumb { font-size: 0.8rem; color: var(--text-muted); }
+    .breadcrumb a { color: var(--primary); text-decoration: none; }
+    .badge { font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; }
+    .badge.gs1 { background: linear-gradient(90deg, var(--secondary), var(--accent)); color: #fff; }
+
+    .hero { background: linear-gradient(135deg, var(--secondary) 0%, #5a2a0a 50%, var(--primary) 100%); color: #fff; padding: 38px 32px 34px; }
+    .hero-module { font-size: 0.78rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 8px; }
+    .hero h1 { font-size: 2rem; font-weight: 800; line-height: 1.2; margin-bottom: 10px; }
+    .hero-sub { font-size: 0.95rem; color: rgba(255,255,255,0.82); margin-bottom: 16px; }
+    .hero-meta { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.8rem; color: rgba(255,255,255,0.7); }
+
+    .content-wrap { padding: 26px 28px 40px; max-width: 980px; }
+    .card { background: var(--bg-card); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); margin-bottom: 22px; overflow: hidden; border: 1px solid var(--border-light); }
+    .card-header { display: flex; align-items: center; gap: 10px; padding: 16px 20px 14px; border-bottom: 1px solid var(--border-light); background: linear-gradient(90deg, rgba(122,58,10,0.07) 0%, transparent 100%); }
+    .card-icon { font-size: 1.2rem; }
+    .card-header h2 { font-size: 1.05rem; font-weight: 700; color: var(--primary); }
+    .card-body { padding: 18px 20px; }
+
+    .sec-h3 { font-size: 0.95rem; font-weight: 700; color: var(--secondary); margin: 18px 0 8px; padding-left: 10px; border-left: 3px solid var(--accent); }
+    .sec-h4 { font-size: 0.88rem; font-weight: 700; color: var(--primary); margin: 14px 0 6px; }
+
+    .highlight-box { border-radius: var(--radius-md); padding: 13px 16px; margin: 12px 0; font-size: 0.88rem; line-height: 1.65; }
+    .highlight-box.yellow { background: #fffbeb; border-left: 4px solid var(--warning); }
+    .highlight-box.green { background: #f0faf4; border-left: 4px solid var(--success); }
+    .highlight-box.red { background: #fff5f5; border-left: 4px solid #e74c3c; }
+    .highlight-box.blue { background: #f0f7ff; border-left: 4px solid var(--info); }
+    .highlight-box.copper { background: #fff8f3; border-left: 4px solid var(--accent); }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 7px; margin: 14px 0; }
+    .tag { font-size: 0.75rem; font-weight: 600; padding: 4px 11px; border-radius: 20px; background: #eef1f7; color: var(--primary); border: 1px solid var(--border-medium); }
+    .tag.hot { background: linear-gradient(90deg, var(--secondary), var(--accent)); color: #fff; border-color: transparent; }
+
+    .info-tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; margin: 14px 0; }
+    .info-tile { background: #f8fafc; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 10px 13px; }
+    .tile-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-muted); margin-bottom: 3px; }
+    .tile-value { font-size: 0.83rem; font-weight: 600; color: var(--primary); }
+
+    .table-wrap { overflow-x: auto; margin: 12px 0; border-radius: var(--radius-md); border: 1px solid var(--border-light); }
+    table { width: 100%; border-collapse: collapse; font-size: 0.84rem; }
+    thead tr { background: var(--secondary); color: #fff; }
+    thead th { padding: 10px 12px; text-align: left; font-weight: 700; font-size: 0.8rem; }
+    tbody tr { border-bottom: 1px solid var(--border-light); }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:nth-child(even) { background: #fafbfc; }
+    tbody td { padding: 9px 12px; vertical-align: top; }
+
+    .styled-list { list-style: none; padding: 0; margin: 8px 0; }
+    .styled-list li { padding: 5px 0 5px 18px; position: relative; font-size: 0.88rem; border-bottom: 1px solid var(--border-light); }
+    .styled-list li:last-child { border-bottom: none; }
+    .styled-list li::before { content: "▸"; position: absolute; left: 0; color: var(--accent); font-size: 0.75rem; top: 7px; }
+
+    /* Culture Cards */
+    .culture-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; margin: 14px 0; }
+    .culture-card { border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 14px 16px; background: #fff; border-top: 3px solid var(--accent); }
+    .culture-name { font-size: 0.92rem; font-weight: 800; color: var(--secondary); margin-bottom: 4px; }
+    .culture-tag { display: inline-block; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 10px; background: var(--accent); color: #fff; margin-bottom: 8px; }
+    .culture-row { font-size: 0.82rem; margin-bottom: 4px; }
+    .culture-row span { font-weight: 700; color: var(--primary); }
+
+    .svg-container { background: var(--bg-card); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); margin-bottom: 22px; padding: 20px; border: 1px solid var(--border-light); overflow-x: auto; }
+    .svg-container svg { display: block; max-width: 100%; }
+    .svg-caption { font-size: 0.78rem; color: var(--text-muted); text-align: center; margin-top: 10px; font-style: italic; }
+
+    .ca-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; margin-top: 14px; }
+    .ca-card { background: #f8fafc; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 14px 16px; }
+    .ca-year { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 4px; }
+    .ca-title { font-size: 0.87rem; font-weight: 700; color: var(--primary); margin-bottom: 5px; }
+    .ca-body { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.55; }
+
+    .pyq-item { background: #f8fafc; border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 14px 16px; margin-bottom: 12px; }
+    .pyq-meta { font-size: 0.72rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+    .pyq-q { font-size: 0.88rem; font-weight: 600; color: var(--text-primary); margin-bottom: 8px; }
+    .pyq-hint { font-size: 0.83rem; color: var(--text-secondary); background: white; border-radius: var(--radius-sm); padding: 8px 12px; border-left: 3px solid var(--success); }
+
+    .revision-box { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: #fff; border-radius: var(--radius-lg); padding: 24px 26px; }
+    .revision-box h2 { font-size: 1.05rem; font-weight: 700; margin-bottom: 16px; }
+    .revision-list { list-style: none; padding: 0; counter-reset: rev; }
+    .revision-list li { counter-increment: rev; display: flex; gap: 12px; padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,0.12); font-size: 0.87rem; line-height: 1.5; }
+    .revision-list li::before { content: counter(rev, decimal-leading-zero); flex-shrink: 0; font-size: 0.7rem; font-weight: 800; background: rgba(255,255,255,0.18); color: #fff; width: 24px; height: 24px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-top: 2px; }
+    .revision-list li:last-child { border-bottom: none; }
+
+    .cta-bar { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 16px 22px; display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin-bottom: 22px; }
+    .cta-text strong { font-size: 0.92rem; color: var(--primary); display: block; }
+    .cta-text span { font-size: 0.8rem; color: var(--text-muted); }
+    .cta-btn { background: linear-gradient(90deg, var(--secondary), var(--accent)); color: #fff; padding: 9px 20px; border-radius: 24px; text-decoration: none; font-size: 0.84rem; font-weight: 700; white-space: nowrap; }
+
+    @media print {
+      .sidebar, .topbar, .menu-btn, .cta-bar { display: none !important; }
+      .main-content { margin-left: 0; }
+      .card, .svg-container { box-shadow: none; border: 1px solid #ccc; break-inside: avoid; }
+    }
+  
+/* Next.js: shared app navbar; restore two-column layout */
+.notes-topic-embedded .navbar,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded .hamburger,
+.notes-topic-embedded .menu-btn,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .page-wrapper {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 280px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  margin-top: 0 !important;
+}
+
+.notes-topic-embedded .main-content,
+.notes-topic-embedded main.main-content,
+.notes-topic-embedded main {
+  margin-left: 0 !important;
+  min-width: 0;
+}
+
+.notes-topic-embedded aside,
+.notes-topic-embedded .right-sidebar,
+.notes-topic-embedded aside.sidebar {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .page-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+  .notes-topic-embedded aside,
+  .notes-topic-embedded .right-sidebar,
+  .notes-topic-embedded aside.sidebar {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="page-wrapper"><main class="main-content">
+  <div class="topbar">
+    <nav class="breadcrumb">
+      
+      <a href="/upsc-notes">Notes Hub</a> › <a href="/upsc-notes/ancient">Ancient History</a> › The Chalcolithic Age
+    </nav>
+    <span class="badge gs1">GS Paper 1</span>
+  </div>
+
+  <div class="hero">
+    <div class="hero-module">Ancient History · Topic 03</div>
+    <h1>The Chalcolithic Age <span style="font-size:1.2rem; opacity:0.8;">(3000–500 BCE)</span></h1>
+    <p class="hero-sub">Copper-Stone Age · Ahar · Malwa · Kayatha · Jorwe · Savalda · Rangpur · Inamgaon · Daimabad</p>
+    <div class="hero-meta">
+      <span>📄 GS Paper 1</span>
+      <span>⏱ 30 min read</span>
+      <span>🎯 Prelims: pottery types &amp; sites; Mains: social evolution &amp; Inamgaon</span>
+      <span>📅 Updated: May 2026</span>
+    </div>
+  </div>
+
+  <div class="content-wrap">
+
+    <!-- Conceptual Clarity -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">💡</span><h2>Conceptual Clarity — The Chalcolithic Age in UPSC Context</h2></div>
+      <div class="card-body">
+        <div class="highlight-box yellow">
+          <strong>What Is the Chalcolithic Age?</strong>
+          <em>Chalcolithic</em> derives from Greek: <em>khalkos</em> (copper) + <em>lithos</em> (stone). It is the transitional phase when humans first began using <strong>copper alongside stone tools</strong> — the first metal to be used in human history because copper occurs in pure form in nature and can be hammered without smelting. India's Chalcolithic cultures (c. 3000–500 BCE) were mostly <strong>village-based, non-urban</strong> cultures in the Deccan, central India, Rajasthan and Gujarat — distinct from and contemporary with the Harappan urban Bronze Age civilisation of the northwest. They represent an independent path of cultural development that was neither urban like the IVC nor purely stone-age like the preceding Neolithic cultures.
+        </div>
+        <div class="highlight-box copper">
+          <strong>Key UPSC Distinction: Chalcolithic ≠ Harappan</strong>
+          A common confusion: the Harappan/IVC was a <em>Bronze Age urban civilisation</em> with writing, city planning, and long-distance trade. The Chalcolithic cultures (Ahar, Malwa, Jorwe etc.) were <em>rural village cultures</em> that used copper but had no cities, no writing, and no planned drainage. They were <strong>contemporary</strong> with and sometimes overlapped geographically with the IVC periphery, but they developed independently. Only the Rangpur culture in Gujarat has clear Harappan connections.
+        </div>
+        <div class="tags">
+          <span class="tag hot">Jorwe Culture</span>
+          <span class="tag hot">Inamgaon</span>
+          <span class="tag hot">Ahar/Banas Culture</span>
+          <span class="tag hot">Malwa Culture</span>
+          <span class="tag">Daimabad Bronzes</span>
+          <span class="tag">Navdatoli</span>
+          <span class="tag">Intramural Burial</span>
+          <span class="tag">Black-and-Red Ware</span>
+        </div>
+        <div class="info-tiles">
+          <div class="info-tile"><div class="tile-label">Period</div><div class="tile-value">c. 3000–500 BCE</div></div>
+          <div class="info-tile"><div class="tile-label">Defining Feature</div><div class="tile-value">Copper + Stone tools</div></div>
+          <div class="info-tile"><div class="tile-label">Most Excavated Site</div><div class="tile-value">Inamgaon (Jorwe, Maharashtra)</div></div>
+          <div class="info-tile"><div class="tile-label">Widest Spread Culture</div><div class="tile-value">Malwa Culture (MP + Rajasthan)</div></div>
+          <div class="info-tile"><div class="tile-label">Famous Bronze Hoard</div><div class="tile-value">Daimabad Bronzes (Maharashtra)</div></div>
+          <div class="info-tile"><div class="tile-label">Gujarat Culture</div><div class="tile-value">Rangpur (Late Harappan link)</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 1: Chalcolithic Cultures -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">🏺</span><h2>1. Chalcolithic Cultures of India</h2></div>
+      <div class="card-body">
+        <div class="highlight-box blue">
+          <strong>Regional Distribution</strong>
+          India's Chalcolithic cultures were not a single unified civilisation but a family of distinct regional cultures, each identified primarily by its characteristic pottery type. They flourished across the Deccan plateau (Maharashtra), central India (MP), Rajasthan, and Gujarat. Most were riverine — located along rivers that provided water for agriculture and clay for pottery.
+        </div>
+
+        <!-- Culture Cards -->
+        <div class="culture-grid">
+          <!-- Ahar -->
+          <div class="culture-card">
+            <div class="culture-name">Ahar Culture</div>
+            <div class="culture-tag">Also: Banas Culture</div>
+            <div class="culture-row"><span>Region:</span> Rajasthan (Ahar river, Udaipur)</div>
+            <div class="culture-row"><span>Date:</span> c. 2800–1500 BCE</div>
+            <div class="culture-row"><span>Pottery:</span> Black-and-Red Ware (BRW) with white painted designs</div>
+            <div class="culture-row"><span>Metal:</span> Abundant copper — possibly called <em>'Tambavati'</em></div>
+            <div class="culture-row"><span>Key Sites:</span> Ahar, Gilund</div>
+            <div class="culture-row"><span>Note:</span> Contemporary with IVC; stone-foundation houses</div>
+          </div>
+          <!-- Malwa -->
+          <div class="culture-card">
+            <div class="culture-name">Malwa Culture</div>
+            <div class="culture-tag">Most Widespread</div>
+            <div class="culture-row"><span>Region:</span> Malwa plateau, western MP &amp; eastern Rajasthan</div>
+            <div class="culture-row"><span>Date:</span> c. 1700–1200 BCE</div>
+            <div class="culture-row"><span>Pottery:</span> Malwa Ware — cream/buff slip, red/brown geometric designs</div>
+            <div class="culture-row"><span>Key Sites:</span> Navdatoli (on Narmada), Eran, Nagda</div>
+            <div class="culture-row"><span>Excavator:</span> H.D. Sankalia at Navdatoli; best crop data</div>
+          </div>
+          <!-- Kayatha -->
+          <div class="culture-card">
+            <div class="culture-name">Kayatha Culture</div>
+            <div class="culture-tag">Chambal Valley</div>
+            <div class="culture-row"><span>Region:</span> Chambal valley, central MP (near Ujjain)</div>
+            <div class="culture-row"><span>Date:</span> c. 2450–1700 BCE</div>
+            <div class="culture-row"><span>Pottery:</span> Kayatha Ware — reddish-brown slip, combed/incised patterns</div>
+            <div class="culture-row"><span>Key Sites:</span> Kayatha (type site), Nagda</div>
+            <div class="culture-row"><span>Note:</span> Early Chalcolithic; stone blade tradition continues</div>
+          </div>
+          <!-- Jorwe -->
+          <div class="culture-card">
+            <div class="culture-name">Jorwe Culture</div>
+            <div class="culture-tag">Most Important — Maharashtra</div>
+            <div class="culture-row"><span>Region:</span> Deccan plateau, Maharashtra</div>
+            <div class="culture-row"><span>Date:</span> c. 1400–700 BCE</div>
+            <div class="culture-row"><span>Pottery:</span> Jorwe Ware — red slip, black painted geometric designs</div>
+            <div class="culture-row"><span>Key Sites:</span> Inamgaon, Daimabad, Chandoli, Nevasa</div>
+            <div class="culture-row"><span>Excavator:</span> M.K. Dhavalikar at Inamgaon — most data</div>
+          </div>
+          <!-- Savalda -->
+          <div class="culture-card">
+            <div class="culture-name">Savalda Culture</div>
+            <div class="culture-tag">Tapi Valley</div>
+            <div class="culture-row"><span>Region:</span> Tapi valley, Khandesh (N. Maharashtra)</div>
+            <div class="culture-row"><span>Date:</span> c. 2300–2000 BCE</div>
+            <div class="culture-row"><span>Pottery:</span> Savalda Ware — red slip with white painted designs</div>
+            <div class="culture-row"><span>Key Sites:</span> Savalda (type site), Dhulia region</div>
+            <div class="culture-row"><span>Note:</span> Earlier than Jorwe; less excavated; pre-Jorwe Maharashtra</div>
+          </div>
+          <!-- Rangpur -->
+          <div class="culture-card">
+            <div class="culture-name">Rangpur Culture</div>
+            <div class="culture-tag">Gujarat / Late Harappan</div>
+            <div class="culture-row"><span>Region:</span> Saurashtra coast, Gujarat</div>
+            <div class="culture-row"><span>Date:</span> c. 2000–1400 BCE</div>
+            <div class="culture-row"><span>Pottery:</span> Lustrous Red Ware — well-fired, glossy, red</div>
+            <div class="culture-row"><span>Key Sites:</span> Rangpur, Lothal, Surkotada</div>
+            <div class="culture-row"><span>Note:</span> Late Harappan phase; rice evidence at Rangpur; Harappan links</div>
+          </div>
+        </div>
+
+        <!-- Comparison Table -->
+        <div class="sec-h3">Quick Comparison — All Six Chalcolithic Cultures</div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Culture</th><th>Region</th><th>Date (BCE)</th><th>Diagnostic Pottery</th><th>Key Site (Excavator)</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Ahar (Banas)</strong></td><td>Rajasthan</td><td>2800–1500</td><td>Black-and-Red Ware + white designs</td><td>Ahar; Gilund</td></tr>
+              <tr><td><strong>Kayatha</strong></td><td>Chambal valley, MP</td><td>2450–1700</td><td>Reddish-brown slip, combed patterns</td><td>Kayatha (type site)</td></tr>
+              <tr><td><strong>Savalda</strong></td><td>Tapi valley, Maharashtra</td><td>2300–2000</td><td>Red slip + white painted</td><td>Savalda (type site)</td></tr>
+              <tr><td><strong>Malwa</strong></td><td>Malwa plateau, MP + Raj.</td><td>1700–1200</td><td>Cream/buff slip + red/brown designs</td><td>Navdatoli (H.D. Sankalia)</td></tr>
+              <tr><td><strong>Rangpur</strong></td><td>Saurashtra, Gujarat</td><td>2000–1400</td><td>Lustrous Red Ware</td><td>Rangpur; Lothal</td></tr>
+              <tr><td><strong>Jorwe</strong></td><td>Deccan plateau, Maharashtra</td><td>1400–700</td><td>Red slip + black geometric designs</td><td>Inamgaon (M.K. Dhavalikar)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- SVG 1: Regional map / distribution -->
+    <div class="svg-container">
+      <svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Chalcolithic Cultures of India — Regional Distribution">
+        <defs>
+          <linearGradient id="chalcoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#7a3a0a;stop-opacity:0.1"/>
+            <stop offset="100%" style="stop-color:#1a3c5e;stop-opacity:0.07"/>
+          </linearGradient>
+        </defs>
+        <rect width="800" height="420" fill="url(#chalcoGrad)" rx="12"/>
+        <text x="400" y="26" text-anchor="middle" font-size="14" font-weight="800" fill="#1a3c5e">Chalcolithic Cultures of India — Regional Distribution &amp; Pottery</text>
+
+        <!-- India outline simplified schematic -->
+        <!-- North box = Rajasthan (Ahar) -->
+        <rect x="60" y="45" width="170" height="100" rx="10" fill="#fff8f3" stroke="#b05a1a" stroke-width="1.5"/>
+        <rect x="60" y="45" width="170" height="28" rx="10" fill="#7a3a0a" opacity="0.9"/>
+        <text x="145" y="63" text-anchor="middle" font-size="11" font-weight="700" fill="white">AHAR / BANAS</text>
+        <text x="70" y="92" font-size="9.5" fill="#1a2533">📍 Rajasthan (Udaipur)</text>
+        <text x="70" y="107" font-size="9.5" fill="#1a2533">📅 2800–1500 BCE</text>
+        <text x="70" y="122" font-size="9.5" fill="#1a2533">🏺 BRW + white designs</text>
+        <text x="70" y="137" font-size="9.5" fill="#b05a1a">🔶 Sites: Ahar, Gilund</text>
+
+        <!-- MP box = Kayatha + Malwa -->
+        <rect x="260" y="45" width="175" height="100" rx="10" fill="#fff8f3" stroke="#b05a1a" stroke-width="1.5"/>
+        <rect x="260" y="45" width="175" height="28" rx="10" fill="#7a3a0a" opacity="0.9"/>
+        <text x="347" y="63" text-anchor="middle" font-size="11" font-weight="700" fill="white">KAYATHA + MALWA</text>
+        <text x="270" y="92" font-size="9.5" fill="#1a2533">📍 Chambal + Malwa (MP)</text>
+        <text x="270" y="107" font-size="9.5" fill="#1a2533">📅 Kayatha: 2450–1700 BCE</text>
+        <text x="270" y="122" font-size="9.5" fill="#1a2533">📅 Malwa: 1700–1200 BCE</text>
+        <text x="270" y="137" font-size="9.5" fill="#b05a1a">🔶 Navdatoli; Kayatha</text>
+
+        <!-- Gujarat box = Rangpur -->
+        <rect x="460" y="45" width="160" height="100" rx="10" fill="#fff8f3" stroke="#b05a1a" stroke-width="1.5"/>
+        <rect x="460" y="45" width="160" height="28" rx="10" fill="#2a5a7a" opacity="0.9"/>
+        <text x="540" y="63" text-anchor="middle" font-size="11" font-weight="700" fill="white">RANGPUR (Gujarat)</text>
+        <text x="470" y="92" font-size="9.5" fill="#1a2533">📍 Saurashtra coast</text>
+        <text x="470" y="107" font-size="9.5" fill="#1a2533">📅 2000–1400 BCE</text>
+        <text x="470" y="122" font-size="9.5" fill="#1a2533">🏺 Lustrous Red Ware</text>
+        <text x="470" y="137" font-size="9.5" fill="#2a5a7a">🔷 Late Harappan link</text>
+
+        <!-- Maharashtra box = Savalda + Jorwe -->
+        <rect x="160" y="175" width="460" height="110" rx="10" fill="#fff8f3" stroke="#b05a1a" stroke-width="1.5"/>
+        <rect x="160" y="175" width="460" height="28" rx="10" fill="#7a3a0a" opacity="0.9"/>
+        <text x="390" y="193" text-anchor="middle" font-size="11" font-weight="700" fill="white">MAHARASHTRA — SAVALDA (2300–2000 BCE) + JORWE (1400–700 BCE)</text>
+        <text x="170" y="220" font-size="9.5" fill="#1a2533">📍 Savalda: Tapi valley (Khandesh) — red slip + white designs — Savalda type site</text>
+        <text x="170" y="235" font-size="9.5" fill="#1a2533">📍 Jorwe: Deccan plateau — red slip + black geometric — Most important Maharashtra culture</text>
+        <text x="170" y="250" font-size="9.5" fill="#b05a1a">🔶 Jorwe sites: Inamgaon (most excavated), Daimabad (bronze hoard), Chandoli, Nevasa</text>
+        <text x="170" y="265" font-size="9.5" fill="#1a2533">Excavator: M.K. Dhavalikar at Inamgaon — revealed social stratification + drought evidence</text>
+
+        <!-- Pottery legend -->
+        <text x="30" y="308" font-size="11" font-weight="800" fill="#1a3c5e">Pottery Type Identifier (Prelims Key):</text>
+        <rect x="30" y="318" width="110" height="28" rx="5" fill="#2c2c2c"/>
+        <rect x="30" y="318" width="110" height="14" rx="5" fill="#1a1a1a"/>
+        <rect x="30" y="332" width="110" height="14" rx="0" fill="#c0392b"/>
+        <text x="85" y="337" text-anchor="middle" font-size="9" font-weight="700" fill="white">BRW (Ahar)</text>
+
+        <rect x="155" y="318" width="110" height="28" rx="5" fill="#d4a96a"/>
+        <text x="210" y="336" text-anchor="middle" font-size="9" font-weight="700" fill="#333">Malwa Ware (buff)</text>
+
+        <rect x="280" y="318" width="110" height="28" rx="5" fill="#8b4513" opacity="0.8"/>
+        <text x="335" y="336" text-anchor="middle" font-size="9" font-weight="700" fill="white">Kayatha Ware</text>
+
+        <rect x="405" y="318" width="110" height="28" rx="5" fill="#c0392b"/>
+        <text x="460" y="332" text-anchor="middle" font-size="8.5" font-weight="700" fill="white">Jorwe Ware</text>
+        <text x="460" y="343" text-anchor="middle" font-size="8" fill="white">(red + black pattern)</text>
+
+        <rect x="530" y="318" width="110" height="28" rx="5" fill="#e74c3c" opacity="0.7"/>
+        <text x="585" y="332" text-anchor="middle" font-size="8.5" font-weight="700" fill="white">Lustrous Red Ware</text>
+        <text x="585" y="343" text-anchor="middle" font-size="8" fill="white">(Rangpur/Gujarat)</text>
+
+        <rect x="655" y="318" width="115" height="28" rx="5" fill="#e8e0d0" stroke="#999"/>
+        <text x="712" y="332" text-anchor="middle" font-size="8.5" font-weight="700" fill="#333">Savalda Ware</text>
+        <text x="712" y="343" text-anchor="middle" font-size="8" fill="#555">(red + white design)</text>
+
+        <!-- Timeline -->
+        <text x="30" y="370" font-size="10" font-weight="800" fill="#1a3c5e">Chronological Sequence:</text>
+        <line x1="30" y1="383" x2="770" y2="383" stroke="#7a3a0a" stroke-width="1.5"/>
+        <text x="30" y="398" font-size="9" fill="#555">← 3000 BCE</text>
+        <text x="140" y="398" font-size="8.5" fill="#7a3a0a" font-weight="700">Ahar/Kayatha/Savalda</text>
+        <text x="320" y="398" font-size="8.5" fill="#7a3a0a" font-weight="700">Malwa/Rangpur</text>
+        <text x="490" y="398" font-size="8.5" fill="#c0392b" font-weight="700">Jorwe (ends ~700 BCE)</text>
+        <text x="720" y="398" font-size="9" fill="#555">500 BCE →</text>
+      </svg>
+      <div class="svg-caption">Figure 1: Regional Distribution of Chalcolithic Cultures — Pottery Types and Key Sites</div>
+    </div>
+
+    <!-- Section 2: Characteristics -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">⚗️</span><h2>2. Characteristics of the Chalcolithic Age</h2></div>
+      <div class="card-body">
+
+        <!-- Pottery -->
+        <div class="sec-h3">A. Pottery of the Chalcolithic Age</div>
+        <div class="highlight-box copper">
+          <strong>Pottery = Cultural Fingerprint</strong>
+          Pottery is the most important material indicator for identifying and dating Chalcolithic cultures. Each culture had its own distinctive pottery style — colour, slip, decoration, firing technique — which archaeologists use as a "fingerprint" to trace cultural boundaries, trade contacts, and chronological sequences. Wheel-thrown pottery (faster, more uniform) had replaced entirely hand-made pottery by this period in most regions.
+        </div>
+        <ul class="styled-list">
+          <li><strong>General technique:</strong> Mostly wheel-thrown; fired in kilns; slipped (coated with fine clay) before firing to achieve smooth surface and colour. Red slip over grey/buff body is most common base.</li>
+          <li><strong>Black-and-Red Ware (BRW) — Ahar culture:</strong> Created by a special firing technique — pots placed upside-down in kiln so the rim/interior (exposed to reducing atmosphere) turned black while the exterior (oxidising atmosphere) turned red. White geometric and floral designs painted on the black portion. Also found in Megalithic contexts later.</li>
+          <li><strong>Malwa Ware:</strong> Cream or buff-coloured slip; red or dark brown painted designs — geometric patterns, animal figures, hatching. Considered the most aesthetically sophisticated of Chalcolithic pottery traditions. Found across widest geographic area — reflects Malwa culture's widespread influence.</li>
+          <li><strong>Jorwe Ware:</strong> Red slip with black painted geometric designs — squares, crosses, triangles, wavy lines. Distinctive and easily recognisable. Deterioration in quality visible in later Jorwe period — possibly linked to social stress and drought.</li>
+          <li><strong>Lustrous Red Ware (Rangpur):</strong> Well-fired, highly polished red ware found in Gujarat; associated with Late Harappan phase. Very high quality — reflects continuation of Harappan ceramic traditions.</li>
+          <li><strong>Storage jars and cooking vessels:</strong> Besides fine ware, all cultures made coarse storage pottery for grain, water, and cooking — functional and thick-walled, less decorated.</li>
+        </ul>
+
+        <!-- Ornaments -->
+        <div class="sec-h3">B. Ornaments of the Chalcolithic Age</div>
+        <ul class="styled-list">
+          <li><strong>Copper ornaments:</strong> Bangles, rings, pins, anklets — hammered from native copper sheets. Copper was prestigious but not scarce in Rajasthan (near Khetri mines). Ahar culture particularly copper-rich.</li>
+          <li><strong>Semi-precious stone beads:</strong> Carnelian (red-orange, prized), agate, chalcedony, steatite — drilled and strung. Some found only at certain burial sites — indicating bead-wearing was status-linked.</li>
+          <li><strong>Terracotta beads and pendants:</strong> Made by all cultures; cheap alternative to stone beads; found abundantly at Inamgaon and Navdatoli.</li>
+          <li><strong>Shell ornaments:</strong> Bangles and rings made from conch/gastropod shells; indicates trade contacts with coastal regions even for inland cultures.</li>
+          <li><strong>Absence of gold and silver:</strong> Unlike the IVC (where gold/silver ornaments were common), Chalcolithic cultures generally did not use gold or silver. This is consistent with their lower level of economic complexity and absence of long-distance luxury trade.</li>
+        </ul>
+
+        <!-- Agriculture -->
+        <div class="sec-h3">C. Agricultural Practices</div>
+        <ul class="styled-list">
+          <li><strong>Multi-crop farming:</strong> Multiple crops cultivated at a single site — wheat and barley (rabi/winter crops), rice (kharif/monsoon crop), lentils, peas, chickpeas, and grass peas (Lathyrus). Navdatoli provides the most detailed crop evidence: wheat, barley, rice, lentils, peas, and grass peas all identified from charred seeds.</li>
+          <li><strong>Cotton:</strong> Evidence of cotton at some Deccan sites (Inamgaon) — indicates textile production was a Chalcolithic activity, not exclusively an IVC feature.</li>
+          <li><strong>Animal husbandry:</strong> Cattle (most important — for milk, traction, and meat), sheep, goat, pig, dog. Deer and other wild animals also hunted — hunting supplemented farming. Horse bones found at some sites — horses were known but not primary work animals.</li>
+          <li><strong>Plough agriculture:</strong> Ox-drawn ploughing likely used — large-scale cereal production would require breaking heavier soils. Bull figurines and ox bones support this.</li>
+          <li><strong>Rain-fed agriculture:</strong> No evidence of large-scale irrigation. Chalcolithic farmers depended on monsoon rains — making them vulnerable to drought. At Inamgaon, the dramatic population decline in late Jorwe phase is attributed to a prolonged drought (c. 1000–700 BCE) — one of the earliest documented climate-induced cultural collapses in South Asia.</li>
+          <li><strong>Storage:</strong> Large storage pits dug into the ground at Inamgaon and Navdatoli — for grain storage across seasons. Marks significant advance in economic planning over purely hand-to-mouth Stone Age subsistence.</li>
+        </ul>
+
+        <!-- Religion -->
+        <div class="sec-h3">D. Religious Practices</div>
+        <ul class="styled-list">
+          <li><strong>Mother Goddess worship:</strong> Terracotta female figurines found at virtually all Chalcolithic sites — represent a fertility/mother deity. Similar tradition to Neolithic and IVC, suggesting continuity of this religious practice from pre-Chalcolithic times across South Asia.</li>
+          <li><strong>Bull worship:</strong> Terracotta bull figurines, bull horns in ritual contexts. The bull was associated with strength, fertility, and rain — critical concerns for agricultural communities. Bull worship continues into the Vedic age (Nandi, Indra's bull) and later traditions.</li>
+          <li><strong>Fire worship:</strong> Fire altars and evidence of ritual fires found at Navdatoli and some other sites. Fire as a purifying and auspicious force — a practice that later became central in Vedic religion (yajna).</li>
+          <li><strong>No temples:</strong> No separate temple structures identified. Worship was household-based — figurines kept in domestic spaces. Some post-holes suggest raised platforms that may have had ritual use.</li>
+          <li><strong>Nature worship:</strong> Trees, rivers, and natural features likely venerated — consistent with pan-South Asian traditions of nature spirits (yakshas, nagas etc.) that appear in later art and literature.</li>
+        </ul>
+
+        <!-- Tools -->
+        <div class="sec-h3">E. Tools of the Chalcolithic Age</div>
+        <ul class="styled-list">
+          <li><strong>Copper tools:</strong> Flat axes (for carpentry and forest clearing), chisels, fish-hooks, arrowheads, pins, needles. Copper was cast in simple open moulds or hammered. Tools were not very hard — copper is softer than bronze — limiting their effectiveness for heavy work. Hence stone tools continued alongside.</li>
+          <li><strong>Stone tools (microliths continue):</strong> Blades and microliths of flint, chert, jasper still used for cutting, scraping, and arrow/spear tips. Stone tools were cheaper and often more practical than copper for many tasks. The co-existence of copper and stone tools is the defining feature — hence "Chalcolithic."</li>
+          <li><strong>Bone tools:</strong> Needles, points, and awls made from animal bones — for stitching hides and baskets. Found at most sites.</li>
+          <li><strong>Absence of iron:</strong> No iron tools in Chalcolithic contexts. Iron appears only in the later Megalithic/Iron Age (c. 1000–500 BCE). This is an important distinction — Chalcolithic is copper, not iron.</li>
+          <li><strong>Querns and grinding stones:</strong> For processing grain (wheat/barley into flour); found at all agricultural Chalcolithic sites. Saddle querns (flat lower stone + rubbing stone) precede the rotary quern.</li>
+        </ul>
+
+        <!-- Burials -->
+        <div class="sec-h3">F. Burials during the Chalcolithic Age</div>
+        <div class="highlight-box yellow">
+          <strong>Intramural Burial — The Most Distinctive Chalcolithic Practice</strong>
+          The most characteristic burial practice of Chalcolithic cultures is <em>intramural burial</em> — burying the dead <strong>under the floors of houses</strong> (or very close to the living space), unlike later traditions of extramural cemeteries. This practice suggests a close relationship between the living and the dead — ancestors may have been seen as protectors of the household. Evidence from Inamgaon: adult burials in pits under house floors, children in burial urns placed beneath floors.
+        </div>
+        <ul class="styled-list">
+          <li><strong>Adults:</strong> Buried in extended supine (lying flat on back) position, oriented north-south at most sites. Grave pits dug into house floors.</li>
+          <li><strong>Children:</strong> Characteristically buried in pottery urns (urn burial / pot burial) placed under house floors or in courtyards. The urn symbolically enclosed the child — possibly a "return to the womb" belief. A very characteristic Chalcolithic (especially Jorwe) feature.</li>
+          <li><strong>Grave goods:</strong> Copper objects, pottery vessels (for food/drink in afterlife), beads. The quantity and quality of grave goods varies — more prestigious burials had more goods, indicating social stratification emerging in Chalcolithic society.</li>
+          <li><strong>Social stratification in burial (Inamgaon):</strong> Burials at Inamgaon show differential treatment — some individuals buried with more grave goods, possibly the village headman/chief and family. This is direct archaeological evidence of early social hierarchy — not fully egalitarian communities.</li>
+          <li><strong>Double burial:</strong> Evidence of husband and wife buried together in the same pit at some Jorwe sites — suggests pair-bonding was recognised and commemorated in death rituals.</li>
+          <li><strong>Post-burial rituals:</strong> Evidence of pottery smashing near burials — possibly a ritual of "breaking vessels" to accompany the dead or close the burial ceremony.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section 3: Important Sites -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">🗺️</span><h2>3. Important Chalcolithic Sites</h2></div>
+      <div class="card-body">
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Site</th><th>Location</th><th>Culture</th><th>Key Findings</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><strong>Ahar</strong></td>
+                <td>Udaipur, Rajasthan (on Ahar river)</td>
+                <td>Ahar/Banas</td>
+                <td>Type site; BRW pottery; copper objects; stone-foundation houses; multiple phases of occupation; wheat, barley, rice</td>
+              </tr>
+              <tr>
+                <td><strong>Gilund</strong></td>
+                <td>Rajsamand, Rajasthan</td>
+                <td>Ahar/Banas</td>
+                <td>Largest Ahar culture site; possibly a central place in the Banas valley; evidence of storage facilities suggesting proto-urban administration</td>
+              </tr>
+              <tr>
+                <td><strong>Navdatoli</strong></td>
+                <td>Maheshwar, Madhya Pradesh (on Narmada)</td>
+                <td>Malwa</td>
+                <td>Most extensively excavated Malwa site; excavated by H.D. Sankalia; excellent crop data (wheat, barley, rice, lentils, peas, grass peas); large rectangular houses; evidence of weaving (terracotta spindle whorls)</td>
+              </tr>
+              <tr>
+                <td><strong>Eran</strong></td>
+                <td>Sagar, Madhya Pradesh</td>
+                <td>Malwa / multi-phase</td>
+                <td>Important Malwa-period site; later becomes historically significant (Gupta-period inscriptions); long cultural sequence</td>
+              </tr>
+              <tr>
+                <td><strong>Kayatha</strong></td>
+                <td>Ujjain district, Madhya Pradesh</td>
+                <td>Kayatha</td>
+                <td>Type site; characteristic reddish-brown combed pottery; copper bangles and rings; stone blades; among the earliest Chalcolithic settlements of central India</td>
+              </tr>
+              <tr>
+                <td><strong>Inamgaon</strong></td>
+                <td>Pune district, Maharashtra (on Ghod river)</td>
+                <td>Jorwe (Early + Late phases)</td>
+                <td>Most extensively excavated Chalcolithic site in India; excavated by M.K. Dhavalikar, M.S. Shinde; reveals: (1) Social stratification — headman's large house at centre; (2) Craft specialisation zones; (3) Five-aisled granary/storage structure; (4) Intramural burials of adults + urn burials of children; (5) Drought-driven population decline in late phase; (6) Multi-crop agriculture (wheat, barley, rice, lentils, cotton); (7) Evidence of craft exchange with IVC periphery</td>
+              </tr>
+              <tr>
+                <td><strong>Daimabad</strong></td>
+                <td>Ahmednagar, Maharashtra (on Pravara river)</td>
+                <td>Multi-phase: Savalda → Malwa → Jorwe → Harappan-related</td>
+                <td>Site of the famous <strong>Daimabad Bronzes</strong> — a hoard of four remarkable cast bronze objects: a chariot with driver (humped bull pulling), an elephant, a rhinoceros, and a buffalo; made using <em>lost-wax (cire perdue)</em> technique; displayed in National Museum, New Delhi. Also important for multi-phase stratigraphy linking several Chalcolithic traditions.</td>
+              </tr>
+              <tr>
+                <td><strong>Chandoli</strong></td>
+                <td>Pune district, Maharashtra</td>
+                <td>Jorwe</td>
+                <td>Well-documented Jorwe burial ground; multiple adult and child burials; grave goods (pottery, copper objects, beads); copper fish-hooks — evidence of fishing supplementing agriculture</td>
+              </tr>
+              <tr>
+                <td><strong>Rangpur</strong></td>
+                <td>Saurashtra, Gujarat</td>
+                <td>Rangpur/Late Harappan</td>
+                <td>Evidence of rice cultivation; Lustrous Red Ware pottery; Late Harappan cultural traits; transition from Harappan urban phase to rural Chalcolithic</td>
+              </tr>
+              <tr>
+                <td><strong>Nevasa</strong></td>
+                <td>Ahmednagar, Maharashtra (on Pravara)</td>
+                <td>Multi-phase (Stone Age + Jorwe)</td>
+                <td>Established the Jorwe pottery sequence; evidence of stone tools + copper; important for understanding the Stone Age–Chalcolithic transition in Maharashtra</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="highlight-box green">
+          <strong>Daimabad Bronzes — Extra Detail for Mains</strong>
+          The four Daimabad bronzes (chariot-and-driver, elephant, rhinoceros, buffalo) are technically far superior to typical Jorwe culture objects — leading some archaeologists (like S.R. Rao) to argue they are Harappan in origin, perhaps traded or gifted to a Jorwe settlement. Others maintain they represent independent local artistic excellence. The <em>lost-wax (cire perdue)</em> casting technique used requires sophisticated metallurgy — modelling the object in wax, encasing it in clay, melting out the wax, and pouring molten bronze into the mould. The presence of a wheeled chariot in bronze is also significant — confirms the chariot was known in Bronze Age India.
+        </div>
+      </div>
+    </div>
+
+    <!-- SVG 2: Inamgaon village layout + characteristics summary -->
+    <div class="svg-container">
+      <svg viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Inamgaon Village Layout and Chalcolithic Characteristics">
+        <rect width="800" height="420" fill="#fafbfc" rx="12" stroke="#e2e8f0" stroke-width="1"/>
+        <text x="400" y="25" text-anchor="middle" font-size="14" font-weight="800" fill="#1a3c5e">Inamgaon Village (Jorwe Culture) — Social Structure &amp; Chalcolithic Characteristics</text>
+
+        <!-- Left: Inamgaon schematic -->
+        <rect x="15" y="38" width="340" height="370" rx="10" fill="white" stroke="#b05a1a" stroke-width="1.5"/>
+        <rect x="15" y="38" width="340" height="30" rx="10" fill="#7a3a0a" opacity="0.9"/>
+        <text x="185" y="57" text-anchor="middle" font-size="12" font-weight="700" fill="white">🏘️ INAMGAON — Village Layout</text>
+
+        <!-- Village schematic -->
+        <!-- Central headman house -->
+        <rect x="130" y="88" width="110" height="65" rx="6" fill="#f9e4d0" stroke="#b05a1a" stroke-width="2"/>
+        <text x="185" y="118" text-anchor="middle" font-size="9.5" font-weight="800" fill="#7a3a0a">HEADMAN'S HOUSE</text>
+        <text x="185" y="131" text-anchor="middle" font-size="8.5" fill="#555">(largest, central)</text>
+        <text x="185" y="144" text-anchor="middle" font-size="8" fill="#555">5-aisle granary adjacent</text>
+
+        <!-- Craftsmen houses -->
+        <rect x="25" y="88" width="90" height="50" rx="5" fill="#fdf0e0" stroke="#b05a1a" stroke-width="1"/>
+        <text x="70" y="110" text-anchor="middle" font-size="8.5" font-weight="700" fill="#7a3a0a">Potter's quarter</text>
+        <text x="70" y="123" text-anchor="middle" font-size="8" fill="#555">kiln remains</text>
+
+        <rect x="255" y="88" width="90" height="50" rx="5" fill="#fdf0e0" stroke="#b05a1a" stroke-width="1"/>
+        <text x="300" y="110" text-anchor="middle" font-size="8.5" font-weight="700" fill="#7a3a0a">Copper-smith area</text>
+        <text x="300" y="123" text-anchor="middle" font-size="8" fill="#555">crucible fragments</text>
+
+        <!-- Worker houses -->
+        <rect x="25" y="155" width="90" height="45" rx="5" fill="#e8f5e9" stroke="#27ae60" stroke-width="1"/>
+        <text x="70" y="175" text-anchor="middle" font-size="8.5" font-weight="700" fill="#27ae60">Farming families</text>
+        <text x="70" y="187" text-anchor="middle" font-size="8" fill="#555">smaller houses</text>
+
+        <rect x="255" y="155" width="90" height="45" rx="5" fill="#e8f5e9" stroke="#27ae60" stroke-width="1"/>
+        <text x="300" y="175" text-anchor="middle" font-size="8.5" font-weight="700" fill="#27ae60">Farming families</text>
+        <text x="300" y="187" text-anchor="middle" font-size="8" fill="#555">smaller houses</text>
+
+        <!-- Burials below houses -->
+        <rect x="25" y="215" width="320" height="55" rx="5" fill="#fff5f5" stroke="#e74c3c" stroke-width="1"/>
+        <text x="185" y="237" text-anchor="middle" font-size="9.5" font-weight="700" fill="#c0392b">INTRAMURAL BURIALS (under house floors)</text>
+        <text x="185" y="252" text-anchor="middle" font-size="8.5" fill="#555">Adults: extended supine in pits | Children: in pottery urns</text>
+        <text x="185" y="264" text-anchor="middle" font-size="8.5" fill="#555">Grave goods: pottery, copper objects, beads</text>
+
+        <!-- Crop/Agriculture -->
+        <rect x="25" y="285" width="150" height="55" rx="5" fill="#f0faf4" stroke="#27ae60" stroke-width="1"/>
+        <text x="100" y="303" text-anchor="middle" font-size="9" font-weight="700" fill="#27ae60">Crops at Inamgaon:</text>
+        <text x="100" y="317" text-anchor="middle" font-size="8.5" fill="#555">Wheat, Barley, Rice</text>
+        <text x="100" y="330" text-anchor="middle" font-size="8.5" fill="#555">Lentils, Peas, Cotton</text>
+
+        <!-- Drought evidence -->
+        <rect x="190" y="285" width="155" height="55" rx="5" fill="#fff8e1" stroke="#f39c12" stroke-width="1"/>
+        <text x="267" y="303" text-anchor="middle" font-size="9" font-weight="700" fill="#e67e22">Drought Evidence:</text>
+        <text x="267" y="317" text-anchor="middle" font-size="8.5" fill="#555">Late Jorwe (1000–700 BCE)</text>
+        <text x="267" y="330" text-anchor="middle" font-size="8.5" fill="#555">Population decline; smaller houses</text>
+
+        <text x="185" y="360" text-anchor="middle" font-size="8.5" fill="#e74c3c" font-weight="700">⚠ First documented climate-driven cultural collapse in South Asia</text>
+        <text x="185" y="375" text-anchor="middle" font-size="8" fill="#718096" font-style="italic">Excavated by: M.K. Dhavalikar &amp; M.S. Shinde (Deccan College, Pune)</text>
+        <text x="185" y="390" text-anchor="middle" font-size="8" fill="#718096" font-style="italic">Jorwe Culture: c. 1400–700 BCE | Ghod river, Pune dist. Maharashtra</text>
+
+        <!-- Right: Characteristics Summary -->
+        <rect x="370" y="38" width="415" height="370" rx="10" fill="white" stroke="#b05a1a" stroke-width="1.5"/>
+        <rect x="370" y="38" width="415" height="30" rx="10" fill="#7a3a0a" opacity="0.9"/>
+        <text x="577" y="57" text-anchor="middle" font-size="12" font-weight="700" fill="white">⚗️ CHALCOLITHIC CHARACTERISTICS</text>
+
+        <!-- Pottery -->
+        <text x="380" y="82" font-size="10" font-weight="800" fill="#7a3a0a">🏺 Pottery (Culture Identifier):</text>
+        <text x="380" y="96" font-size="9" fill="#1a2533">BRW (Ahar) | Malwa Ware (buff) | Kayatha Ware (reddish-brown combed)</text>
+        <text x="380" y="110" font-size="9" fill="#1a2533">Jorwe Ware (red+black) | Savalda (red+white) | Lustrous Red Ware (Rangpur)</text>
+
+        <!-- Tools -->
+        <text x="380" y="130" font-size="10" font-weight="800" fill="#7a3a0a">🔧 Tools:</text>
+        <text x="380" y="144" font-size="9" fill="#1a2533">Copper: flat axes, chisels, fish-hooks, arrowheads</text>
+        <text x="380" y="158" font-size="9" fill="#1a2533">Stone microliths (continue) + Bone tools (needles, awls)</text>
+        <text x="380" y="172" font-size="9" fill="#c0392b" font-weight="700">NO IRON — Iron only in Megalithic/later Iron Age</text>
+
+        <!-- Ornaments -->
+        <text x="380" y="192" font-size="10" font-weight="800" fill="#7a3a0a">💍 Ornaments:</text>
+        <text x="380" y="206" font-size="9" fill="#1a2533">Copper bangles/rings | Carnelian, agate, steatite beads</text>
+        <text x="380" y="220" font-size="9" fill="#1a2533">Terracotta beads | Shell bangles | NO gold/silver</text>
+
+        <!-- Agriculture -->
+        <text x="380" y="240" font-size="10" font-weight="800" fill="#7a3a0a">🌾 Agriculture:</text>
+        <text x="380" y="254" font-size="9" fill="#1a2533">Multi-crop: wheat, barley, rice, lentils, peas, cotton</text>
+        <text x="380" y="268" font-size="9" fill="#1a2533">Cattle most important; rain-fed (no large irrigation)</text>
+        <text x="380" y="282" font-size="9" fill="#1a2533">Storage pits; ox-drawn plough likely</text>
+
+        <!-- Religion -->
+        <text x="380" y="302" font-size="10" font-weight="800" fill="#7a3a0a">🙏 Religion:</text>
+        <text x="380" y="316" font-size="9" fill="#1a2533">Mother Goddess (terracotta female figurines — all cultures)</text>
+        <text x="380" y="330" font-size="9" fill="#1a2533">Bull worship | Fire worship | No temples → household worship</text>
+
+        <!-- Burials -->
+        <text x="380" y="350" font-size="10" font-weight="800" fill="#7a3a0a">⚰️ Burials:</text>
+        <text x="380" y="364" font-size="9" fill="#1a2533">Intramural burial (under house floor) — most distinctive feature</text>
+        <text x="380" y="378" font-size="9" fill="#1a2533">Adults: extended supine | Children: urn/pot burial</text>
+        <text x="380" y="392" font-size="9" fill="#1a2533">Grave goods vary → social stratification evidence</text>
+      </svg>
+      <div class="svg-caption">Figure 2: Inamgaon Village Social Structure and Summary of Chalcolithic Characteristics</div>
+    </div>
+
+    <!-- Section 4: Importance -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">⭐</span><h2>4. Importance of Chalcolithic Culture</h2></div>
+      <div class="card-body">
+        <div class="highlight-box yellow">
+          <strong>Bridge between Prehistory and History</strong>
+          The Chalcolithic cultures occupy a crucial position in India's historical timeline — they bridge the gap between the purely prehistoric Stone Age and the fully historical Iron Age/Vedic civilisation. They also show that India's cultural development was not a simple, linear progression from Stone Age → IVC → Vedic; rather, multiple parallel cultural streams — urban (IVC), rural Chalcolithic, and pastoral Megalithic — developed simultaneously across the subcontinent.
+        </div>
+        <ul class="styled-list">
+          <li><strong>First use of metal in peninsular India:</strong> The Chalcolithic cultures introduced copper metallurgy to regions like the Deccan and central India that had no direct Harappan connections. This marks the beginning of the metal age in these regions — a technologically transformative shift.</li>
+          <li><strong>Development of agriculture and food security:</strong> Multi-crop farming (wheat + rice + legumes) provided dietary diversity and reduced risk of total crop failure. Storage pits at Inamgaon suggest planned, systematic food storage — an advance in economic organisation that enabled communities to survive lean years.</li>
+          <li><strong>Evidence of early social stratification:</strong> Inamgaon's differential burial goods and the headman's large central house show that Chalcolithic society was not egalitarian — hierarchies were forming even in village settings. This is a critical stage in the evolution toward state formation.</li>
+          <li><strong>Pre-Aryan/pre-Vedic cultural tradition:</strong> Chalcolithic cultures in the Deccan and central India predate or are contemporary with the Vedic cultures of the north. They represent an independent cultural stream with its own religion (Mother Goddess, bull worship), art (terracotta figurines), and social organisation — contributing to the composite nature of Indian civilisation.</li>
+          <li><strong>Artistic and metallurgical excellence:</strong> The Daimabad bronzes demonstrate that Chalcolithic artisans had achieved sophisticated lost-wax casting — a high level of metallurgical knowledge independent of the IVC tradition.</li>
+          <li><strong>Evidence of climate sensitivity:</strong> The collapse of Jorwe culture at Inamgaon due to drought (c. 1000–700 BCE) is one of the earliest documented cases of climate-induced cultural transformation in South Asia — highly relevant for modern discussions of climate and civilisation.</li>
+          <li><strong>Cultural continuity into historical period:</strong> Many Chalcolithic practices (Mother Goddess worship, terracotta figurines, bull veneration, agricultural festivals) have direct parallels in later Indian folk religion and rural traditions — showing deep cultural continuity from prehistoric to historical times.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Current Affairs -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">📰</span><h2>Current Affairs Connect (2024–2026)</h2></div>
+      <div class="card-body">
+        <div class="ca-grid">
+          <div class="ca-card">
+            <div class="ca-year">2024 – ASI Excavation</div>
+            <div class="ca-title">New Chalcolithic Sites in Rajasthan</div>
+            <div class="ca-body">ASI and Rajasthan heritage surveys identified new Ahar/Banas culture sites along the Banas and Berach river valleys in Rajasthan. The surveys found BRW pottery, copper objects, and terracotta figurines consistent with the Ahar culture (c. 2800–1500 BCE). The finds extend the known geographic range of the Banas culture and suggest a denser settlement network than previously mapped.</div>
+          </div>
+          <div class="ca-card">
+            <div class="ca-year">2024 – Research Publication</div>
+            <div class="ca-title">Chalcolithic Climate Collapse — Inamgaon Study</div>
+            <div class="ca-body">A study published in a peer-reviewed archaeology journal confirmed using palaeoclimatic proxies (pollen analysis, isotope data from cattle bones) that the late Jorwe culture decline at Inamgaon (c. 1000–700 BCE) was driven by a prolonged monsoon failure. The study cited this as a prehistoric analogue for modern climate-agriculture stress — directly relevant to discussions of climate resilience in Indian agriculture policy.</div>
+          </div>
+          <div class="ca-card">
+            <div class="ca-year">2025 – National Museum</div>
+            <div class="ca-title">Daimabad Bronzes — New Dating</div>
+            <div class="ca-body">Researchers applied new Accelerator Mass Spectrometry (AMS) radiocarbon dating to organic residues found with the Daimabad bronze hoard and confirmed a date range of c. 2000–1700 BCE — consistent with the Savalda-Malwa transition phase, which pre-dates the main Jorwe period. This resolves some debate about their cultural attribution. The bronzes remain on display at the National Museum, New Delhi.</div>
+          </div>
+          <div class="ca-card">
+            <div class="ca-year">2025 – UNESCO Consideration</div>
+            <div class="ca-title">Inamgaon — World Heritage Nomination</div>
+            <div class="ca-body">India's Ministry of Culture submitted a tentative nomination for Inamgaon as a UNESCO World Heritage Site, citing its status as the best-preserved and most completely excavated Chalcolithic village in South Asia. Inamgaon's evidence of social stratification, craft specialisation, multi-crop agriculture, and climate-driven collapse makes it a site of outstanding universal value for understanding early village civilisation.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PYQs -->
+    <div class="card">
+      <div class="card-header"><span class="card-icon">📝</span><h2>Previous Year Questions (UPSC Prelims &amp; Mains)</h2></div>
+      <div class="card-body">
+        <div class="pyq-item">
+          <div class="pyq-meta">UPSC Prelims — pottery identification (repeated pattern)</div>
+          <div class="pyq-q">Which of the following pottery types is most closely associated with the Jorwe culture of Maharashtra? (a) Black-and-Red Ware with white designs (b) Cream/buff slipped ware with red geometric designs (c) Red slipped ware with black painted geometric designs (d) Lustrous Red Ware</div>
+          <div class="pyq-hint">Ans: (c). Jorwe Ware = red slip + black geometric designs. Do not confuse: (a) = Ahar/Banas Culture (Rajasthan); (b) = Malwa Ware; (d) = Lustrous Red Ware = Rangpur/Late Harappan (Gujarat). Pottery type is the diagnostic criterion for each Chalcolithic culture — know all six.</div>
+        </div>
+        <div class="pyq-item">
+          <div class="pyq-meta">UPSC Prelims — site-culture matching</div>
+          <div class="pyq-q">Inamgaon, an important Chalcolithic site, is located in which state and associated with which culture? (a) Rajasthan — Ahar Culture (b) Madhya Pradesh — Malwa Culture (c) Maharashtra — Jorwe Culture (d) Gujarat — Rangpur Culture</div>
+          <div class="pyq-hint">Ans: (c) Maharashtra — Jorwe Culture. Inamgaon is on the Ghod river, Pune district. Excavated by M.K. Dhavalikar. It is the most extensively excavated Chalcolithic village in India and provides the best evidence for Chalcolithic social organisation (social stratification, craft specialisation, intramural burials, drought-driven collapse).</div>
+        </div>
+        <div class="pyq-item">
+          <div class="pyq-meta">UPSC Prelims — excavator/discoverer</div>
+          <div class="pyq-q">Navdatoli, an important Chalcolithic site on the Narmada river, was excavated by: (a) M.K. Dhavalikar (b) H.D. Sankalia (c) Mortimer Wheeler (d) B.B. Lal</div>
+          <div class="pyq-hint">Ans: (b) H.D. Sankalia. Navdatoli (Maheshwar, MP) = Malwa culture; H.D. Sankalia of Deccan College, Pune. Remember: M.K. Dhavalikar = Inamgaon (Jorwe); Mortimer Wheeler = Brahmagiri (Megalithic) + Harappa; B.B. Lal = Hastinapura (PGW/Mahabharata excavation).</div>
+        </div>
+        <div class="pyq-item">
+          <div class="pyq-meta">UPSC Prelims — Daimabad</div>
+          <div class="pyq-q">The Daimabad bronzes, a famous prehistoric bronze hoard from Maharashtra, include all of the following EXCEPT: (a) A chariot with a driver (b) An elephant (c) A rhinoceros (d) A horse</div>
+          <div class="pyq-hint">Ans: (d) A horse. The four Daimabad bronzes are: chariot-with-driver (humped bull pulling it), elephant, rhinoceros, and buffalo. There is NO horse in the hoard. Technique: lost-wax (cire perdue) casting. Now at National Museum, New Delhi. The site (Daimabad, Ahmednagar, Maharashtra) has multi-phase stratigraphy spanning Savalda → Malwa → Jorwe cultures.</div>
+        </div>
+        <div class="pyq-item">
+          <div class="pyq-meta">UPSC Prelims — Burial practice</div>
+          <div class="pyq-q">The practice of burying children in pottery urns under the floor of houses is most characteristic of which prehistoric culture? (a) Megalithic culture (b) Chalcolithic Jorwe culture (c) Neolithic Burzahom culture (d) IVC Harappan culture</div>
+          <div class="pyq-hint">Ans: (b). Urn burial of children = diagnostic feature of Jorwe/Chalcolithic cultures (intramural burial under house floors). Megalithic = extramural cist graves. Burzahom = dog buried with humans. IVC = generally extramural cemeteries (like R-37 at Harappa). The combination of intramural + urn burial of children is uniquely Chalcolithic.</div>
+        </div>
+        <div class="pyq-item">
+          <div class="pyq-meta">UPSC Mains GS-1 — 15 Marks</div>
+          <div class="pyq-q">Discuss the significance of the Chalcolithic cultures in understanding the social and economic evolution of ancient India. How does Inamgaon provide evidence for early social stratification?</div>
+          <div class="pyq-hint">Framework: (1) Define Chalcolithic — copper+stone, c. 3000–500 BCE, village cultures of Deccan/central India; not urban like IVC. (2) Economic significance: first metals in peninsular India; multi-crop agriculture (wheat+rice+lentils at Navdatoli, Inamgaon); storage facilities → surplus → economic complexity. (3) Social stratification at Inamgaon: headman's larger central house; differential grave goods (some burials richer); craft specialisation zones (potters, copper-smiths) → division of labour. This is proto-state social organisation. (4) Cultural significance: independent cultural stream from IVC; pre-Vedic religious tradition (Mother Goddess, bull); Daimabad bronzes = metallurgical sophistication. (5) Environmental insight: Jorwe collapse due to drought c. 1000 BCE = earliest climate-civilisation interaction in South Asia. Conclude: Chalcolithic fills the critical gap in Indian civilisational evolution between Neolithic village life and the complex Vedic-Iron Age society — showing that Indian village communities had achieved considerable social and economic sophistication well before the historical period.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Revision Box -->
+    <div class="revision-box">
+      <h2>⚡ 10-Point Rapid Revision — The Chalcolithic Age</h2>
+      <ol class="revision-list">
+        <li>Chalcolithic = Copper + Stone Age (c. 3000–500 BCE); not urban; village cultures of Deccan, MP, Rajasthan, Gujarat; distinct from and contemporary with IVC</li>
+        <li>Six cultures: Ahar/Banas (Rajasthan, BRW), Kayatha (Chambal/MP, reddish-brown combed), Savalda (Tapi valley, red+white), Malwa (widest spread, buff/cream ware), Rangpur (Gujarat, Lustrous Red Ware), Jorwe (Maharashtra, red+black — most important)</li>
+        <li>Ahar = BRW + white designs; possibly called 'Tambavati' (copper people); sites: Ahar, Gilund; contemporary with IVC</li>
+        <li>Navdatoli (Malwa culture, MP) — excavated by H.D. Sankalia; best crop data: wheat, barley, rice, lentils, peas, grass peas</li>
+        <li>Inamgaon (Jorwe, Maharashtra, Pune dist.) — most excavated Chalcolithic site; excavated by M.K. Dhavalikar; shows social stratification + drought collapse</li>
+        <li>Daimabad bronzes (Maharashtra): chariot-driver, elephant, rhinoceros, buffalo — made by lost-wax casting; National Museum, New Delhi; NO horse in hoard</li>
+        <li>Intramural burial = most distinctive Chalcolithic burial practice (under house floors); adults extended supine; children in pottery urns (urn burial)</li>
+        <li>Copper tools: flat axes, chisels, fish-hooks, arrowheads; stone microliths continue alongside; NO iron in Chalcolithic period</li>
+        <li>Religion: Mother Goddess (terracotta female figurines, all cultures), bull worship, fire altars; NO temples — household worship</li>
+        <li>Rangpur (Gujarat) = Late Harappan / Chalcolithic overlap; Lustrous Red Ware; rice evidence; links Harappan decline with post-urban Chalcolithic phase</li>
+      </ol>
+    </div>
+
+    <!-- Navigation CTAs -->
+    <div class="cta-bar" style="margin-top: 28px;">
+      <div class="cta-text">
+        <strong>← Previous: The Stone Age</strong>
+        <span>Topic 02 — Palaeolithic, Mesolithic, Neolithic, Megalithic &amp; Rock Art</span>
+      </div>
+      <a href="/upsc-notes/ancient/ancient-topic02" class="cta-btn">← Topic 02</a>
+    </div>
+    <div class="cta-bar">
+      <div class="cta-text">
+        <strong>Next: Indus Valley Civilisation →</strong>
+        <span>Harappa, Mohenjo-daro, town planning, trade and the Harappan decline</span>
+      </div>
+      <a href="/upsc-notes/ancient" class="cta-btn">Next →</a>
+    </div>
+
+  </div></main></div>
+</div>

@@ -1,0 +1,1106 @@
+<!-- ancient-topic07 — auto-imported from ancient-topic07-mahajanapadas-upsc-notes.html -->
+<style data-topic-notes>
+:root {
+  --brand-blue: #1a4a1a;
+  --brand-blue-dark: #0a2a0a;
+  --brand-blue-light: #edf7ed;
+  --brand-orange: #b56a00;
+  --brand-orange-light: #fff8ea;
+  --green: #1a6b3a;
+  --green-light: #e8f5ee;
+  --text-dark: #1a1a2e;
+  --text-mid: #444;
+  --text-light: #888;
+  --border: #e2e8f0;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  background: #f8fafd;
+  color: var(--text-dark);
+  line-height: 1.7;
+}
+
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 64px;
+  background: #fff;
+  border-bottom: 2px solid var(--brand-blue);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  gap: 16px;
+  box-shadow: 0 2px 8px rgba(26,74,26,0.08);
+}
+
+.nav-logo { font-size: 1.35rem; font-weight: 800; color: var(--brand-blue); text-decoration: none; white-space: nowrap; letter-spacing: -0.5px; }
+.nav-logo span { color: var(--brand-orange); }
+.nav-breadcrumb { font-size: 0.78rem; color: var(--text-light); display: flex; align-items: center; gap: 6px; flex: 1; overflow: hidden; }
+.nav-breadcrumb a { color: var(--brand-blue); text-decoration: none; white-space: nowrap; }
+.nav-breadcrumb a:hover { text-decoration: underline; }
+.nav-breadcrumb .sep { color: var(--border); }
+.nav-breadcrumb .current { color: var(--text-mid); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.nav-actions { display: flex; align-items: center; gap: 10px; white-space: nowrap; }
+.btn-back { font-size: 0.8rem; color: var(--brand-blue); text-decoration: none; border: 1px solid var(--brand-blue); padding: 5px 12px; border-radius: 6px; transition: background 0.2s; }
+.btn-back:hover { background: var(--brand-blue-light); }
+.btn-download { font-size: 0.8rem; background: var(--brand-orange); color: #fff; border: none; padding: 6px 14px; border-radius: 6px; cursor: pointer; transition: background 0.2s; font-family: inherit; }
+.btn-download:hover { background: #8a5000; }
+
+.page-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 84px 20px 60px;
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 28px;
+  align-items: start;
+}
+
+.main-content { min-width: 0; }
+.sidebar { position: sticky; top: 80px; }
+
+.hero {
+  background: linear-gradient(135deg, #2a6a1a 0%, #0a2a0a 60%, #1a2a4e 100%);
+  border-radius: 16px;
+  padding: 40px 36px 36px;
+  color: #fff;
+  margin-bottom: 28px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 200px; height: 200px;
+  background: rgba(181,106,0,0.12);
+  border-radius: 50%;
+}
+
+.hero-tag { display: inline-block; background: rgba(181,106,0,0.25); border: 1px solid rgba(181,106,0,0.5); color: #ffd580; font-size: 0.72rem; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; padding: 4px 12px; border-radius: 20px; margin-bottom: 16px; }
+.hero h1 { font-size: 2rem; font-weight: 800; line-height: 1.2; margin-bottom: 12px; text-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+.hero h1 span { color: #ffd580; }
+.hero-sub { font-size: 1rem; opacity: 0.88; margin-bottom: 20px; max-width: 560px; }
+.hero-meta { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-badge { background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); border-radius: 20px; padding: 4px 14px; font-size: 0.78rem; font-weight: 600; }
+
+.section-card { background: #fff; border-radius: 12px; padding: 28px; margin-bottom: 24px; border: 1px solid var(--border); box-shadow: 0 1px 6px rgba(0,0,0,0.04); }
+.section-card h2 { font-size: 1.22rem; font-weight: 700; color: var(--brand-blue); margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid var(--brand-blue-light); display: flex; align-items: center; gap: 8px; }
+.section-card h3 { font-size: 1.02rem; font-weight: 700; color: var(--brand-blue); margin: 20px 0 10px; }
+.section-card h4 { font-size: 0.92rem; font-weight: 700; color: var(--text-mid); margin: 14px 0 6px; }
+.section-card p { margin-bottom: 10px; font-size: 0.93rem; }
+.section-card ul, .section-card ol { padding-left: 20px; margin-bottom: 10px; }
+.section-card li { font-size: 0.93rem; margin-bottom: 4px; }
+
+.clarity-box { background: linear-gradient(135deg, #fff8ea 0%, #edf7ed 100%); border: 2px solid var(--brand-orange); border-radius: 12px; padding: 24px 28px; margin-bottom: 28px; }
+.clarity-box h2 { color: var(--brand-orange); font-size: 1.1rem; font-weight: 800; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.5px; }
+.clarity-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.clarity-item { background: #fff; border-radius: 8px; padding: 14px 16px; border-left: 4px solid var(--brand-orange); }
+.clarity-item strong { display: block; font-size: 0.82rem; color: var(--brand-orange); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+.clarity-item p { font-size: 0.88rem; color: var(--text-mid); margin: 0; }
+
+.note-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; margin: 14px 0; }
+.note-table th { background: var(--brand-blue); color: #fff; padding: 9px 12px; text-align: left; font-weight: 700; font-size: 0.82rem; }
+.note-table td { padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.note-table tr:nth-child(even) td { background: #f9f9fc; }
+.note-table tr:hover td { background: var(--brand-blue-light); }
+
+.cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin: 14px 0; }
+.info-card { background: var(--brand-blue-light); border-radius: 10px; padding: 16px; border-top: 3px solid var(--brand-blue); }
+.info-card .card-title { font-size: 0.82rem; font-weight: 800; color: var(--brand-blue); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.info-card p { font-size: 0.85rem; color: var(--text-mid); margin: 0; }
+.orange-card { background: var(--brand-orange-light); border-top-color: var(--brand-orange); }
+.orange-card .card-title { color: var(--brand-orange); }
+.green-card { background: var(--green-light); border-top-color: var(--green); }
+.green-card .card-title { color: var(--green); }
+
+.highlight-box { border-radius: 8px; padding: 14px 16px; margin: 12px 0; font-size: 0.9rem; }
+.highlight-blue { background: var(--brand-blue-light); border-left: 4px solid var(--brand-blue); }
+.highlight-orange { background: var(--brand-orange-light); border-left: 4px solid var(--brand-orange); }
+.highlight-green { background: var(--green-light); border-left: 4px solid var(--green); }
+.highlight-box strong { color: var(--brand-blue); }
+.highlight-orange strong { color: var(--brand-orange); }
+.highlight-green strong { color: var(--green); }
+
+/* DYNASTY RULER CARD */
+.ruler-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  border-left: 5px solid var(--brand-blue);
+}
+.ruler-card.orange { border-left-color: var(--brand-orange); }
+.ruler-card.gold { border-left-color: #c49a00; }
+.ruler-card h4 { font-size: 1rem; font-weight: 800; color: var(--brand-blue); margin-bottom: 6px; }
+.ruler-card.orange h4 { color: var(--brand-orange); }
+.ruler-card .ruler-meta { font-size: 0.75rem; color: var(--text-light); font-weight: 600; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 10px; }
+.ruler-card ul { padding-left: 18px; }
+.ruler-card li { font-size: 0.88rem; margin-bottom: 3px; }
+
+/* MAHAJANAPADA CARDS */
+.jana-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 16px 0; }
+.jana-card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; border-top: 3px solid var(--brand-blue); }
+.jana-card.republic { border-top-color: var(--brand-orange); }
+.jana-card .jana-name { font-size: 0.95rem; font-weight: 800; color: var(--brand-blue); margin-bottom: 4px; }
+.jana-card.republic .jana-name { color: var(--brand-orange); }
+.jana-card .jana-badge { display: inline-block; font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; padding: 2px 8px; border-radius: 10px; margin-bottom: 8px; }
+.jana-card .jana-badge.monarchy { background: #e8f0e8; color: var(--brand-blue); }
+.jana-card .jana-badge.republic { background: #fff3e0; color: var(--brand-orange); }
+.jana-card p { font-size: 0.82rem; color: var(--text-mid); margin-bottom: 4px; }
+.jana-card p strong { color: var(--text-dark); }
+
+.pyq-section { background: linear-gradient(135deg, #f0f4ff 0%, #fff8ea 100%); border-radius: 12px; padding: 24px 28px; margin-bottom: 24px; border: 1px solid #d0d8f0; }
+.pyq-section h2 { font-size: 1.12rem; font-weight: 800; color: var(--brand-blue); margin-bottom: 16px; }
+.pyq-item { background: #fff; border-radius: 8px; padding: 14px 16px; margin-bottom: 10px; border-left: 4px solid var(--brand-blue); }
+.pyq-item .pyq-meta { font-size: 0.75rem; font-weight: 700; color: var(--brand-orange); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 4px; }
+.pyq-item p { font-size: 0.9rem; color: var(--text-dark); margin: 0; }
+.pyq-mains { border-left-color: var(--green); }
+.pyq-mains .pyq-meta { color: var(--green); }
+
+.revision-box { background: linear-gradient(135deg, #0a2a0a 0%, #1a4a1a 100%); border-radius: 14px; padding: 28px; color: #fff; margin-bottom: 24px; }
+.revision-box h2 { font-size: 1.12rem; font-weight: 800; margin-bottom: 18px; color: #ffd580; }
+.revision-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.revision-point { background: rgba(255,255,255,0.1); border-radius: 8px; padding: 10px 14px; font-size: 0.85rem; border-left: 3px solid #ffd580; }
+.revision-point strong { display: block; font-size: 0.78rem; color: #ffd580; margin-bottom: 2px; }
+
+.ca-section { background: var(--green-light); border: 1px solid #b0d8c0; border-radius: 12px; padding: 22px 26px; margin-bottom: 24px; }
+.ca-section h2 { font-size: 1.08rem; font-weight: 800; color: var(--green); margin-bottom: 14px; }
+.ca-item { background: #fff; border-radius: 8px; padding: 12px 16px; margin-bottom: 10px; border-left: 4px solid var(--green); font-size: 0.88rem; }
+.ca-item strong { color: var(--green); display: block; margin-bottom: 2px; }
+
+.svg-wrap { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 20px; margin: 16px 0; text-align: center; }
+.svg-caption { font-size: 0.8rem; color: var(--text-light); margin-top: 8px; font-style: italic; }
+
+/* SIDEBAR */
+.sidebar-card { background: #fff; border-radius: 12px; padding: 18px; margin-bottom: 16px; border: 1px solid var(--border); box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+.sidebar-card h3 { font-size: 0.9rem; font-weight: 800; color: var(--brand-blue); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); text-transform: uppercase; letter-spacing: 0.5px; }
+.sidebar-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+.sidebar-table td { padding: 6px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.sidebar-table td:first-child { font-weight: 600; color: var(--brand-blue); width: 45%; }
+.diff-row { margin-bottom: 10px; }
+.diff-label { display: flex; justify-content: space-between; font-size: 0.78rem; font-weight: 600; color: var(--text-mid); margin-bottom: 4px; }
+.diff-bar { height: 6px; background: #e8eaf0; border-radius: 3px; overflow: hidden; }
+.diff-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--brand-blue), var(--brand-orange)); }
+.tag-cloud { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.tag { background: var(--brand-blue-light); color: var(--brand-blue); font-size: 0.72rem; font-weight: 600; padding: 3px 9px; border-radius: 12px; border: 1px solid #c0d8c0; }
+.self-test-item { margin-bottom: 8px; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.self-test-q { background: var(--brand-blue-light); padding: 8px 12px; font-size: 0.8rem; font-weight: 600; color: var(--brand-blue); cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }
+.self-test-q:hover { background: #d0e8d0; }
+.self-test-a { display: none; padding: 8px 12px; font-size: 0.78rem; color: var(--text-mid); background: #fff; }
+.related-links a { display: block; font-size: 0.8rem; color: var(--brand-blue); text-decoration: none; padding: 5px 0; border-bottom: 1px solid var(--border); }
+.related-links a:last-child { border-bottom: none; }
+.related-links a:hover { color: var(--brand-orange); }
+
+/* DYNASTY TIMELINE VISUAL */
+.dynasty-timeline { display: flex; flex-direction: column; gap: 0; margin: 16px 0; }
+.dt-row { display: flex; gap: 14px; align-items: flex-start; padding: 14px 0; border-bottom: 1px dashed var(--border); }
+.dt-row:last-child { border-bottom: none; }
+.dt-year { min-width: 80px; font-size: 0.8rem; font-weight: 700; color: var(--text-light); text-align: right; padding-top: 2px; }
+.dt-dot { width: 14px; height: 14px; border-radius: 50%; background: var(--brand-blue); margin-top: 4px; flex-shrink: 0; border: 2px solid #fff; box-shadow: 0 0 0 2px var(--brand-blue); }
+.dt-dot.orange { background: var(--brand-orange); box-shadow: 0 0 0 2px var(--brand-orange); }
+.dt-dot.green { background: var(--green); box-shadow: 0 0 0 2px var(--green); }
+.dt-dot.red { background: #b01a1a; box-shadow: 0 0 0 2px #b01a1a; }
+.dt-content { flex: 1; }
+.dt-title { font-weight: 700; font-size: 0.9rem; color: var(--brand-blue); }
+.dt-title.orange { color: var(--brand-orange); }
+.dt-title.green { color: var(--green); }
+.dt-desc { font-size: 0.82rem; color: var(--text-mid); margin-top: 2px; }
+
+@media print {
+  .navbar, .sidebar { display: none; }
+  .page-wrapper { grid-template-columns: 1fr; padding-top: 0; }
+  .section-card, .clarity-box { break-inside: avoid; }
+}
+
+@media (max-width: 860px) {
+  .page-wrapper { grid-template-columns: 1fr; }
+  .sidebar { position: static; }
+  .hero h1 { font-size: 1.55rem; }
+  .clarity-grid, .revision-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 580px) {
+  .cards-grid, .jana-grid { grid-template-columns: 1fr; }
+  .note-table { font-size: 0.78rem; }
+}
+
+/* Next.js: shared app navbar; restore two-column layout */
+.notes-topic-embedded .navbar,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded .hamburger,
+.notes-topic-embedded .menu-btn,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .page-wrapper {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 280px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  margin-top: 0 !important;
+}
+
+.notes-topic-embedded .main-content,
+.notes-topic-embedded main.main-content,
+.notes-topic-embedded main {
+  margin-left: 0 !important;
+  min-width: 0;
+}
+
+.notes-topic-embedded aside,
+.notes-topic-embedded .right-sidebar,
+.notes-topic-embedded aside.sidebar {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .page-wrapper {
+    grid-template-columns: 1fr !important;
+  }
+  .notes-topic-embedded aside,
+  .notes-topic-embedded .right-sidebar,
+  .notes-topic-embedded aside.sidebar {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="page-wrapper">
+<main class="main-content">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-tag">Ancient History · Topic 07</div>
+    <h1>The <span>Mahajanapada</span> Period</h1>
+    <p class="hero-sub">600–300 BC — India's Second Urbanisation. 16 great kingdoms and republics emerge from tribal confederacies. Magadha rises to dominate, laying the foundation for the first pan-Indian empire.</p>
+    <div class="hero-meta">
+      <span class="hero-badge">📅 600–300 BCE</span>
+      <span class="hero-badge">🔥 Prelims: 9/10</span>
+      <span class="hero-badge">📝 Mains: 4/5</span>
+      <span class="hero-badge">⏱ 55 min read</span>
+      <span class="hero-badge">🏛 Iron Age India</span>
+    </div>
+  </div>
+
+  <!-- CONCEPTUAL CLARITY -->
+  <div class="clarity-box">
+    <h2>⚡ Conceptual Clarity: What is a Mahajanapada?</h2>
+    <div class="clarity-grid">
+      <div class="clarity-item">
+        <strong>Etymology</strong>
+        <p><em>Maha</em> = great; <em>Jana</em> = people/tribe; <em>Pada</em> = foot/territory. A Mahajanapada is literally a "great territory of the people" — a large territorial state evolved from earlier Janapadas (smaller tribal republics of the Vedic period).</p>
+      </div>
+      <div class="clarity-item">
+        <strong>Sources</strong>
+        <p>Listed in <strong>Anguttara Nikaya</strong> (Buddhist Pali text) and <strong>Bhagavati Sutra</strong> (Jain text). Also referenced in <strong>Ashtadhyayi</strong> (Panini's grammar, c. 400 BCE) and the <strong>Puranas</strong>. Both lists slightly differ.</p>
+      </div>
+      <div class="clarity-item">
+        <strong>Context: Second Urbanisation</strong>
+        <p>The Mahajanapada era marks India's <em>second urbanisation</em> (first = IVC). Driven by the Iron Age: iron ploughshares → agricultural surplus → population growth → trade → cities. NBP ware and punch-marked coins are its material markers.</p>
+      </div>
+      <div class="clarity-item">
+        <strong>Types of Government</strong>
+        <p>Two types: <strong>Monarchy (Rajya)</strong> — hereditary kings (10 of 16) and <strong>Oligarchic Republics (Gana-Sanghas)</strong> — councils of Kshatriya warriors (6 of 16). Vajji, Malla, Kamboja, Kuru, Panchala, Shakya (sub-state) were republics.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 1: 16 MAHAJANAPADAS -->
+  <div class="section-card">
+    <h2>🗺 1. All 16 Mahajanapadas — Overview</h2>
+
+    <!-- SVG: Schematic map of 16 Mahajanapadas -->
+    <div class="svg-wrap">
+      <svg viewBox="0 0 560 420" width="560" height="420" xmlns="http://www.w3.org/2000/svg">
+        <rect width="560" height="420" fill="#f0f7f0" rx="10"/>
+        <text x="280" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#1a4a1a" font-family="sans-serif">Approximate Locations of 16 Mahajanapadas (600–300 BCE)</text>
+
+        <!-- River lines (schematic) -->
+        <!-- Indus (NW) -->
+        <path d="M 80 50 Q 100 120 90 200" stroke="#4a90d9" stroke-width="2" fill="none" opacity="0.5"/>
+        <text x="68" y="130" font-size="8" fill="#4a90d9" font-family="sans-serif" font-weight="600">Indus</text>
+        <!-- Jhelum/Chenab -->
+        <path d="M 120 50 Q 130 100 125 160" stroke="#4a90d9" stroke-width="1.5" fill="none" opacity="0.4"/>
+        <!-- Ganga (main) -->
+        <path d="M 180 160 Q 280 180 380 200 Q 440 210 490 240" stroke="#4a90d9" stroke-width="3" fill="none" opacity="0.6"/>
+        <text x="290" y="196" font-size="8" fill="#4a90d9" font-family="sans-serif" font-weight="700">Ganga</text>
+        <!-- Yamuna -->
+        <path d="M 220 100 Q 230 150 250 180" stroke="#4a90d9" stroke-width="1.5" fill="none" opacity="0.4"/>
+        <!-- Son -->
+        <path d="M 360 240 Q 380 260 400 280" stroke="#4a90d9" stroke-width="1.5" fill="none" opacity="0.4"/>
+        <!-- Godavari (south) -->
+        <path d="M 280 360 Q 330 370 380 355" stroke="#4a90d9" stroke-width="1.5" fill="none" opacity="0.4"/>
+        <text x="300" y="380" font-size="8" fill="#4a90d9" font-family="sans-serif">Godavari</text>
+
+        <!-- Mahajanapada regions (colored blocks) -->
+        <!-- NW: Gandhara -->
+        <rect x="60" y="40" width="80" height="50" rx="6" fill="#8b3030" opacity="0.8"/>
+        <text x="100" y="60" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="sans-serif">Gandhara</text>
+        <text x="100" y="74" text-anchor="middle" font-size="7.5" fill="#ffd" font-family="sans-serif">Cap: Taxila</text>
+
+        <!-- Kamboja -->
+        <rect x="60" y="100" width="70" height="45" rx="6" fill="#5a2070" opacity="0.8"/>
+        <text x="95" y="118" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="sans-serif">Kamboja</text>
+        <text x="95" y="130" text-anchor="middle" font-size="7.5" fill="#ffd" font-family="sans-serif">Cap: Rajapura</text>
+
+        <!-- Kuru -->
+        <rect x="190" y="100" width="70" height="45" rx="6" fill="#1a4a1a" opacity="0.85"/>
+        <text x="225" y="118" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="sans-serif">Kuru</text>
+        <text x="225" y="130" text-anchor="middle" font-size="7.5" fill="#ffd" font-family="sans-serif">Cap: Indraprastha</text>
+
+        <!-- Panchala -->
+        <rect x="270" y="100" width="70" height="45" rx="6" fill="#2a5a1a" opacity="0.85"/>
+        <text x="305" y="118" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="sans-serif">Panchala</text>
+        <text x="305" y="130" text-anchor="middle" font-size="7.5" fill="#ffd" font-family="sans-serif">Ahichhatra/Kampilya</text>
+
+        <!-- Matsya -->
+        <rect x="170" y="155" width="65" height="42" rx="6" fill="#3a5a0a" opacity="0.85"/>
+        <text x="202" y="172" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="sans-serif">Matsya</text>
+        <text x="202" y="185" text-anchor="middle" font-size="7.5" fill="#ffd" font-family="sans-serif">Cap: Viratanagara</text>
+
+        <!-- Surasena -->
+        <rect x="245" y="155" width="65" height="42" rx="6" fill="#4a6a10" opacity="0.85"/>
+        <text x="277" y="172" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="sans-serif">Surasena</text>
+        <text x="277" y="185" text-anchor="middle" font-size="7.5" fill="#ffd" font-family="sans-serif">Cap: Mathura</text>
+
+        <!-- Koshala -->
+        <rect x="320" y="148" width="68" height="48" rx="6" fill="#1a5a2a" opacity="0.85"/>
+        <text x="354" y="168" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="sans-serif">Koshala</text>
+        <text x="354" y="180" text-anchor="middle" font-size="7.5" fill="#ffd" font-family="sans-serif">Cap: Shravasti</text>
+
+        <!-- Vajji (Republic) -->
+        <rect x="396" y="148" width="68" height="48" rx="6" fill="#b56a00" opacity="0.85"/>
+        <text x="430" y="168" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="sans-serif">Vajji ®</text>
+        <text x="430" y="180" text-anchor="middle" font-size="7.5" fill="#ffd" font-family="sans-serif">Cap: Vaishali</text>
+
+        <!-- Kashi -->
+        <rect x="328" y="205" width="60" height="40" rx="6" fill="#0a5a3a" opacity="0.85"/>
+        <text x="358" y="222" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="sans-serif">Kashi</text>
+        <text x="358" y="235" text-anchor="middle" font-size="7.5" fill="#ffd" font-family="sans-serif">Cap: Varanasi</text>
+
+        <!-- Malla (Republic) -->
+        <rect x="396" y="205" width="65" height="40" rx="6" fill="#c47d00" opacity="0.85"/>
+        <text x="428" y="222" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="sans-serif">Malla ®</text>
+        <text x="428" y="235" text-anchor="middle" font-size="7.5" fill="#ffd" font-family="sans-serif">Kushinagar/Pava</text>
+
+        <!-- Vatsa -->
+        <rect x="268" y="205" width="54" height="40" rx="6" fill="#2a6a0a" opacity="0.85"/>
+        <text x="295" y="222" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="sans-serif">Vatsa</text>
+        <text x="295" y="235" text-anchor="middle" font-size="7.5" fill="#ffd" font-family="sans-serif">Cap: Kaushambi</text>
+
+        <!-- Chedi -->
+        <rect x="245" y="253" width="62" height="40" rx="6" fill="#1a5a4a" opacity="0.85"/>
+        <text x="276" y="270" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="sans-serif">Chedi</text>
+        <text x="276" y="283" text-anchor="middle" font-size="7.5" fill="#ffd" font-family="sans-serif">Cap: Shuktimati</text>
+
+        <!-- Magadha -->
+        <rect x="396" y="253" width="75" height="48" rx="6" fill="#8b0000" opacity="0.9"/>
+        <text x="433" y="274" text-anchor="middle" font-size="10" fill="#ffd580" font-weight="700" font-family="sans-serif">MAGADHA</text>
+        <text x="433" y="288" text-anchor="middle" font-size="7.5" fill="#ffd" font-family="sans-serif">Rajagriha/Pataliputra</text>
+
+        <!-- Anga -->
+        <rect x="476" y="205" width="60" height="48" rx="6" fill="#6b2a0a" opacity="0.85"/>
+        <text x="506" y="225" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="sans-serif">Anga</text>
+        <text x="506" y="238" text-anchor="middle" font-size="7.5" fill="#ffd" font-family="sans-serif">Cap: Champa</text>
+
+        <!-- Avanti -->
+        <rect x="160" y="290" width="68" height="48" rx="6" fill="#4a1a6a" opacity="0.85"/>
+        <text x="194" y="310" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="sans-serif">Avanti</text>
+        <text x="194" y="323" text-anchor="middle" font-size="7.5" fill="#ffd" font-family="sans-serif">Ujjain/Mahishmati</text>
+
+        <!-- Ashmaka (south of Vindhyas) -->
+        <rect x="270" y="345" width="72" height="42" rx="6" fill="#3a3a0a" opacity="0.85"/>
+        <text x="306" y="362" text-anchor="middle" font-size="9" fill="#fff" font-weight="700" font-family="sans-serif">Ashmaka</text>
+        <text x="306" y="375" text-anchor="middle" font-size="7.5" fill="#ffd" font-family="sans-serif">Cap: Potana (Godavari)</text>
+
+        <!-- Legend -->
+        <rect x="10" y="355" width="14" height="14" fill="#1a4a1a" rx="3" opacity="0.85"/>
+        <text x="30" y="366" font-size="9" fill="#333" font-family="sans-serif">Monarchy</text>
+        <rect x="100" y="355" width="14" height="14" fill="#b56a00" rx="3" opacity="0.85"/>
+        <text x="120" y="366" font-size="9" fill="#333" font-family="sans-serif">Republic ®</text>
+        <rect x="185" y="355" width="14" height="14" fill="#8b0000" rx="3" opacity="0.85"/>
+        <text x="205" y="366" font-size="9" fill="#333" font-family="sans-serif">Magadha (dominant)</text>
+
+        <!-- Vindhya Mountains schematic -->
+        <path d="M 120 310 Q 200 295 280 305 Q 350 315 420 305" stroke="#888" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/>
+        <text x="170" y="340" font-size="8" fill="#888" font-family="sans-serif" font-style="italic">— — Vindhyas — —</text>
+
+        <text x="280" y="408" text-anchor="middle" font-size="8" fill="#888" font-family="sans-serif" font-style="italic">® = Oligarchic Republic (Gana-Sangha). All locations are approximate.</text>
+      </svg>
+      <p class="svg-caption">Schematic map of the 16 Mahajanapadas. Green shades = monarchies; Orange/Brown = republics; Dark red = Magadha (eventually absorbed all others).</p>
+    </div>
+
+    <h3>Master Reference Table</h3>
+    <table class="note-table">
+      <tr>
+        <th>#</th><th>Mahajanapada</th><th>Capital(s)</th><th>Govt Type</th><th>Region (Modern)</th><th>Key Facts</th>
+      </tr>
+      <tr><td>1</td><td><strong>Magadha</strong></td><td>Rajagriha → Pataliputra</td><td>Monarchy</td><td>Bihar</td><td>Most powerful; rose to dominate all others; base of Maurya Empire</td></tr>
+      <tr><td>2</td><td><strong>Koshala</strong></td><td>Shravasti (N); Ayodhya (S)</td><td>Monarchy</td><td>E. UP, Oudh</td><td>Rival of Magadha; King Prasenjit = contemporary of Buddha; absorbed Kashi</td></tr>
+      <tr><td>3</td><td><strong>Vajji</strong></td><td>Vaishali</td><td>Republic</td><td>N. Bihar</td><td>Lichchhavi-led confederacy of 8 clans; first republic; Buddha + Mahavira connection; Ambapali</td></tr>
+      <tr><td>4</td><td><strong>Malla</strong></td><td>Kushinagar &amp; Pava</td><td>Republic</td><td>Gorakhpur/Deoria, UP</td><td>Two branches; Buddha died at Kushinagar; Mahavira died at Pava</td></tr>
+      <tr><td>5</td><td><strong>Kashi</strong></td><td>Varanasi</td><td>Monarchy</td><td>Varanasi, UP</td><td>Oldest city; famous for cloth/trade; absorbed by Koshala; first sermon of Buddha at Sarnath (in Kashi)</td></tr>
+      <tr><td>6</td><td><strong>Anga</strong></td><td>Champa</td><td>Monarchy</td><td>Bhagalpur, Bihar</td><td>First conquered by Magadha (Bimbisara killed Brahmadatta); river trade hub; Champa = great trading port</td></tr>
+      <tr><td>7</td><td><strong>Vatsa</strong></td><td>Kaushambi</td><td>Monarchy</td><td>Allahabad-Mirzapur, UP</td><td>King Udayana; rival of Magadha and Avanti; absorbed eventually; important trade and Buddhist centre</td></tr>
+      <tr><td>8</td><td><strong>Avanti</strong></td><td>Ujjain (N); Mahishmati (S)</td><td>Monarchy</td><td>Malwa, MP</td><td>King Pradyota; major rival of Magadha; destroyed by Shishunaga; Ujjain = important Buddhist/trade centre</td></tr>
+      <tr><td>9</td><td><strong>Gandhara</strong></td><td>Taxila (Takshasila)</td><td>Monarchy</td><td>NW Frontier (Pakistan/Afghanistan)</td><td>Famous university at Taxila; Persian Achaemenid influence; gateway for Greek interaction; on trade routes</td></tr>
+      <tr><td>10</td><td><strong>Kamboja</strong></td><td>Rajapura</td><td>Republic</td><td>NW (S. Afghanistan/Pakistan)</td><td>Famous for horses (Kamboja horses); close to Gandhara; frontier state; mentioned in Arthashastra</td></tr>
+      <tr><td>11</td><td><strong>Kuru</strong></td><td>Indraprastha / Hastinapur</td><td>Monarchy</td><td>Delhi-Meerut, Haryana</td><td>Linked to Mahabharata; Kurukshetra in territory; declining power by 600 BCE; merged into Panchala area</td></tr>
+      <tr><td>12</td><td><strong>Panchala</strong></td><td>Ahichhatra (N); Kampilya (S)</td><td>Monarchy/Republic</td><td>Bareilly-Budaun, UP</td><td>Divided N-S; Mahabharata connection (Draupadi = Panchali); became republic later; merged with Kuru</td></tr>
+      <tr><td>13</td><td><strong>Matsya</strong></td><td>Viratanagara</td><td>Monarchy</td><td>Alwar-Bharatpur, Rajasthan</td><td>Founded by king Virata (Mahabharata); not very prominent politically; bordered Kuru and Surasena</td></tr>
+      <tr><td>14</td><td><strong>Surasena</strong></td><td>Mathura</td><td>Monarchy</td><td>Braj region, Mathura, UP</td><td>Krishna connection; king Avantiputta contemporary of Buddha; absorbed by Magadha; Mathura = major city</td></tr>
+      <tr><td>15</td><td><strong>Chedi</strong></td><td>Shuktimati (Sothivati)</td><td>Monarchy</td><td>Bundelkhand, MP/UP</td><td>King Shishupala (Mahabharata); between Yamuna and Narmada; absorbed by Magadha sphere</td></tr>
+      <tr><td>16</td><td><strong>Ashmaka</strong></td><td>Potana / Potali</td><td>Monarchy</td><td>Godavari valley, Maharashtra</td><td>Only Mahajanapada south of Vindhyas; on Godavari river; also called Assaka; absorbed by Avanti</td></tr>
+    </table>
+
+    <div class="highlight-box highlight-orange">
+      <strong>Memory Trick for 16 Mahajanapadas:</strong> <em>"A Cheeky Kid Might Get Very Angry Kungfu Punches. Mama Says Shut Up!"</em> = <strong>A</strong>nga, <strong>Ch</strong>edi, <strong>K</strong>ashi, <strong>M</strong>agadha, <strong>G</strong>andhara, <strong>V</strong>atsa, <strong>A</strong>vanti, <strong>K</strong>oshala, <strong>K</strong>amboja, <strong>P</strong>anchala, <strong>Ma</strong>tsya, <strong>S</strong>urasena, <strong>S</strong>huro (Surasena again), <strong>U</strong>... Alternative: Learn all 16 with their capitals as a table.
+    </div>
+
+    <h3>Republics (Gana-Sanghas) — Special Focus</h3>
+    <p>Of the 16, at least 6 were oligarchic republics where power was shared by Kshatriya warrior clans voting in assemblies (Sangas/Parishads). UPSC often asks about this.</p>
+    <div class="jana-grid">
+      <div class="jana-card republic">
+        <div class="jana-name">Vajji Confederation</div>
+        <div class="jana-badge republic">Republic</div>
+        <p><strong>Capital:</strong> Vaishali</p>
+        <p><strong>Clans:</strong> 8 clans — Lichchhavis (dominant), Videhas, Jnatrikas, Vajjis</p>
+        <p><strong>Key:</strong> Most powerful republic; Buddha visited; Mahavira born here in Jnatrika clan; Ambapali (courtesan) donated mango grove to Buddha</p>
+      </div>
+      <div class="jana-card republic">
+        <div class="jana-name">Malla Republic</div>
+        <div class="jana-badge republic">Republic</div>
+        <p><strong>Capital:</strong> Kushinagar (N) &amp; Pava (S)</p>
+        <p><strong>Key:</strong> Buddha attained Mahaparinirvana at Kushinagar; Mahavira died at Pava; two separate Malla republics (not unified)</p>
+      </div>
+      <div class="jana-card republic">
+        <div class="jana-name">Kamboja</div>
+        <div class="jana-badge republic">Republic</div>
+        <p><strong>Capital:</strong> Rajapura (Hataka)</p>
+        <p><strong>Key:</strong> NW frontier; mentioned in Arthashastra as Vartashastra (earned by agriculture + trade + arms); famous for horses</p>
+      </div>
+      <div class="jana-card republic">
+        <div class="jana-name">Kuru</div>
+        <div class="jana-badge republic">Republic</div>
+        <p><strong>Capital:</strong> Indraprastha / Hastinapur</p>
+        <p><strong>Key:</strong> Originally monarchy (Mahabharata era); by 6th century BCE transformed into republic; Kurukshetra battle site in its territory</p>
+      </div>
+      <div class="jana-card republic">
+        <div class="jana-name">Panchala</div>
+        <div class="jana-badge republic">Republic</div>
+        <p><strong>Capital:</strong> Ahichhatra (N); Kampilya (S)</p>
+        <p><strong>Key:</strong> Draupadi = Panchali (from Panchala); transformed from monarchy to republic; Brahmavarta region (core Brahmin cultural zone)</p>
+      </div>
+      <div class="jana-card republic">
+        <div class="jana-name">Shakya (sub-state)</div>
+        <div class="jana-badge republic">Republic</div>
+        <p><strong>Capital:</strong> Kapilavastu</p>
+        <p><strong>Key:</strong> Not in Anguttara Nikaya's list but a prominent Gana-Sangha; Gautama Buddha was born here; within Koshala sphere; eventually absorbed</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: RISE AND GROWTH OF MAGADHA -->
+  <div class="section-card">
+    <h2>👑 2. Rise and Growth of Magadha</h2>
+
+    <h3>2.1 Causes of Magadha's Success</h3>
+    <div class="cards-grid">
+      <div class="info-card">
+        <div class="card-title">Geographic Advantage</div>
+        <p>Surrounded by rivers — Ganga (N), Son (W), Champa (E) — acted as natural moats. Strategic location controlling both land routes and river trade. Capital Pataliputra at Ganga-Son-Gandaki confluence.</p>
+      </div>
+      <div class="info-card orange-card">
+        <div class="card-title">Iron Ore &amp; Resources</div>
+        <p>Chota Nagpur plateau rich in iron ore — superior iron weapons, iron-tipped ploughshares → agricultural surplus → military power. Elephant forests of Vindhyas → war elephants. Timber for ship-building.</p>
+      </div>
+      <div class="info-card green-card">
+        <div class="card-title">Able Rulers</div>
+        <p>Unbroken series of capable, aggressive kings: Bimbisara (diplomatic alliances), Ajatashatru (military innovation), Udayin (Pataliputra), Shishunaga (destroyed Avanti), Mahapadma Nanda (Ekrat).</p>
+      </div>
+      <div class="info-card">
+        <div class="card-title">Military Innovation</div>
+        <p>Ajatashatru's <strong>Mahashilakantaka</strong> (catapult hurling large stones) and <strong>Rathamusala</strong> (war chariot with rotating blades/scythe) — game-changing weapons against Vajji confederacy.</p>
+      </div>
+      <div class="info-card orange-card">
+        <div class="card-title">Trade &amp; Revenue</div>
+        <p>Control of Gangetic waterways = control of trade. Systematic revenue administration from Bimbisara onwards: officials (rajjukas, graminis), regular taxation, road network for movement of goods and troops.</p>
+      </div>
+      <div class="info-card green-card">
+        <div class="card-title">Non-Kshatriya Openness</div>
+        <p>Unlike Koshala or Avanti, Magadha was outside the Brahminical heartland — more open to Kshatriyas, Vaishyas, even Shudras gaining power. Buddhism and Jainism (both born here) gave ideological legitimacy beyond varna.</p>
+      </div>
+    </div>
+
+    <div class="highlight-box highlight-blue">
+      <strong>UPSC Key Point:</strong> Magadha's rise illustrates how geographical determinism, economic surplus, military innovation, and political pragmatism combine to create imperial power. The same factors later enabled the Maurya Empire to become India's first pan-Indian state.
+    </div>
+
+    <h3>2.2 Dynasty Timeline</h3>
+
+    <!-- SVG: Dynasty timeline -->
+    <div class="svg-wrap">
+      <svg viewBox="0 0 540 280" width="540" height="280" xmlns="http://www.w3.org/2000/svg">
+        <rect width="540" height="280" fill="#f0f7f0" rx="10"/>
+        <text x="270" y="22" text-anchor="middle" font-size="12" font-weight="700" fill="#1a4a1a" font-family="sans-serif">Dynasties of Magadha (544–321 BCE)</text>
+
+        <!-- Timeline bar -->
+        <line x1="60" y1="50" x2="500" y2="50" stroke="#ccc" stroke-width="2"/>
+        <!-- Year labels -->
+        <text x="60" y="65" text-anchor="middle" font-size="9" fill="#888" font-family="sans-serif">544 BCE</text>
+        <text x="168" y="65" text-anchor="middle" font-size="9" fill="#888" font-family="sans-serif">413 BCE</text>
+        <text x="268" y="65" text-anchor="middle" font-size="9" fill="#888" font-family="sans-serif">345 BCE</text>
+        <text x="500" y="65" text-anchor="middle" font-size="9" fill="#888" font-family="sans-serif">321 BCE</text>
+
+        <!-- Haryanka block -->
+        <rect x="60" y="75" width="108" height="50" rx="6" fill="#1a4a1a"/>
+        <text x="114" y="96" text-anchor="middle" font-size="10" fill="#fff" font-weight="700" font-family="sans-serif">HARYANKA</text>
+        <text x="114" y="110" text-anchor="middle" font-size="8" fill="#ffd" font-family="sans-serif">544–413 BCE</text>
+
+        <!-- Shishunaga block -->
+        <rect x="168" y="75" width="100" height="50" rx="6" fill="#2a6a2a"/>
+        <text x="218" y="96" text-anchor="middle" font-size="10" fill="#fff" font-weight="700" font-family="sans-serif">SHISHUNAGA</text>
+        <text x="218" y="110" text-anchor="middle" font-size="8" fill="#ffd" font-family="sans-serif">413–345 BCE</text>
+
+        <!-- Nanda block -->
+        <rect x="268" y="75" width="232" height="50" rx="6" fill="#b56a00"/>
+        <text x="384" y="96" text-anchor="middle" font-size="10" fill="#fff" font-weight="700" font-family="sans-serif">NANDA DYNASTY</text>
+        <text x="384" y="110" text-anchor="middle" font-size="8" fill="#ffd" font-family="sans-serif">345–321 BCE</text>
+
+        <!-- Rulers row -->
+        <!-- Haryanka rulers -->
+        <rect x="62" y="140" width="70" height="32" rx="5" fill="#edf7ed" stroke="#1a4a1a" stroke-width="1"/>
+        <text x="97" y="152" text-anchor="middle" font-size="8.5" fill="#1a4a1a" font-weight="700" font-family="sans-serif">Bimbisara</text>
+        <text x="97" y="164" text-anchor="middle" font-size="7.5" fill="#666" font-family="sans-serif">544–492 BCE</text>
+
+        <rect x="136" y="140" width="70" height="32" rx="5" fill="#edf7ed" stroke="#1a4a1a" stroke-width="1"/>
+        <text x="171" y="152" text-anchor="middle" font-size="8.5" fill="#1a4a1a" font-weight="700" font-family="sans-serif">Ajatashatru</text>
+        <text x="171" y="164" text-anchor="middle" font-size="7.5" fill="#666" font-family="sans-serif">492–460 BCE</text>
+
+        <!-- Udayin -->
+        <rect x="209" y="140" width="55" height="32" rx="5" fill="#edf7ed" stroke="#1a4a1a" stroke-width="1"/>
+        <text x="236" y="152" text-anchor="middle" font-size="8.5" fill="#1a4a1a" font-weight="700" font-family="sans-serif">Udayin</text>
+        <text x="236" y="164" text-anchor="middle" font-size="7.5" fill="#666" font-family="sans-serif">460–444</text>
+
+        <!-- Shishunaga rulers -->
+        <rect x="270" y="140" width="68" height="32" rx="5" fill="#e8f5e8" stroke="#2a6a2a" stroke-width="1"/>
+        <text x="304" y="152" text-anchor="middle" font-size="8.5" fill="#2a6a2a" font-weight="700" font-family="sans-serif">Shishunaga</text>
+        <text x="304" y="164" text-anchor="middle" font-size="7.5" fill="#666" font-family="sans-serif">413–395 BCE</text>
+
+        <rect x="342" y="140" width="68" height="32" rx="5" fill="#e8f5e8" stroke="#2a6a2a" stroke-width="1"/>
+        <text x="376" y="152" text-anchor="middle" font-size="8.5" fill="#2a6a2a" font-weight="700" font-family="sans-serif">Kalashoka</text>
+        <text x="376" y="164" text-anchor="middle" font-size="7.5" fill="#666" font-family="sans-serif">395–367 BCE</text>
+
+        <!-- Nanda rulers -->
+        <rect x="414" y="140" width="78" height="32" rx="5" fill="#fff8ea" stroke="#b56a00" stroke-width="1"/>
+        <text x="453" y="152" text-anchor="middle" font-size="8.5" fill="#b56a00" font-weight="700" font-family="sans-serif">Mahapadma N.</text>
+        <text x="453" y="164" text-anchor="middle" font-size="7.5" fill="#666" font-family="sans-serif">345–329 BCE</text>
+
+        <!-- Key events -->
+        <text x="97" y="200" text-anchor="middle" font-size="8" fill="#555" font-family="sans-serif">Conquered Anga</text>
+        <text x="97" y="212" text-anchor="middle" font-size="8" fill="#555" font-family="sans-serif">Married into Lichchhavi</text>
+        <text x="171" y="200" text-anchor="middle" font-size="8" fill="#555" font-family="sans-serif">Defeated Vajji (16 yrs)</text>
+        <text x="171" y="212" text-anchor="middle" font-size="8" fill="#555" font-family="sans-serif">Mahashilakantaka</text>
+        <text x="236" y="200" text-anchor="middle" font-size="8" fill="#555" font-family="sans-serif">Founded Pataliputra</text>
+        <text x="304" y="200" text-anchor="middle" font-size="8" fill="#555" font-family="sans-serif">Destroyed Avanti</text>
+        <text x="376" y="200" text-anchor="middle" font-size="8" fill="#555" font-family="sans-serif">2nd Buddhist Council</text>
+        <text x="453" y="200" text-anchor="middle" font-size="8" fill="#555" font-family="sans-serif">"Ekrat" — united India</text>
+
+        <!-- Arrow to Maurya -->
+        <line x1="500" y1="100" x2="525" y2="100" stroke="#888" stroke-width="1.5" marker-end="url(#arrow)"/>
+        <text x="527" y="96" font-size="9" fill="#888" font-family="sans-serif">→ Maurya</text>
+        <text x="527" y="108" font-size="9" fill="#888" font-family="sans-serif">321 BCE</text>
+      </svg>
+      <p class="svg-caption">Magadha's three dynasties before the Mauryas — Haryanka (544–413 BCE), Shishunaga (413–345 BCE), and Nanda (345–321 BCE)</p>
+    </div>
+
+    <h3>2.3 Haryanka Dynasty (c. 544–413 BCE)</h3>
+
+    <div class="ruler-card">
+      <h4>Bimbisara (c. 544–492 BCE) — Founder of Magadhan Imperialism</h4>
+      <div class="ruler-meta">Haryanka Dynasty · First Great King of Magadha</div>
+      <ul>
+        <li><strong>Matrimonial alliances (Kula-Sangrahani Niti):</strong> Married <em>Kosaladevi</em> (sister of Prasenjit of Koshala) — received Kashi as dowry; <em>Chellana</em> (daughter of Lichchhavi chief Chetak of Vaishali); <em>Khema</em> of Madra clan. This policy = foundation of Magadha's expansion without war.</li>
+        <li><strong>First conquest:</strong> Annexed <strong>Anga</strong> (capital Champa) by killing king Brahmadatta — doubled Magadha's territory and gained access to river trade of Champa port.</li>
+        <li><strong>Administration:</strong> Introduced systematic revenue collection; appointed <em>graminis</em> (village headmen), <em>rajjukas</em> (revenue officials); built royal road network; first regular standing army.</li>
+        <li><strong>Religious:</strong> Befriended both Gautama Buddha (donated <em>Veluvana</em> — Bamboo Grove — to Sangha at Rajagriha) and Mahavira. Exemplifies Mahajanapada-era tolerance.</li>
+        <li><strong>Death:</strong> Imprisoned by son Ajatashatru (parricide) — known as <em>Pitrghatin</em> (father-killer). Buddha was deeply distressed by this news. Also called <em>Srenika</em> in Jain texts.</li>
+      </ul>
+    </div>
+
+    <div class="ruler-card">
+      <h4>Ajatashatru (c. 492–460 BCE) — The Warrior King</h4>
+      <div class="ruler-meta">Haryanka Dynasty · Son of Bimbisara</div>
+      <ul>
+        <li><strong>Wars with Koshala:</strong> Fought King Prasenjit; resolved through marriage (married Prasenjit's daughter Vajira); Kashi dowry retained.</li>
+        <li><strong>War against Vajji (16 years):</strong> Defeated the powerful Lichchhavi-led Vajji confederacy using two revolutionary weapons: <strong>Mahashilakantaka</strong> (a great stone-throwing catapult/ballista) and <strong>Rathamusala</strong> (war chariot with a rotating blade/scythe that mowed down infantry).</li>
+        <li><strong>Strategic intelligence:</strong> Used his minister <em>Vassakara</em> to sow dissension among the Lichchhavi chiefs before attacking — earliest recorded use of political espionage (also mentioned in Arthashastra tradition).</li>
+        <li><strong>Buddhist connection:</strong> After Buddha's death (483 BCE), Ajatashatru was filled with remorse; claimed a share of Buddha's relics and built a stupa; patronised the <strong>First Buddhist Council</strong> at Rajagriha (Saptaparni Cave).</li>
+        <li><strong>Death:</strong> Killed by his own son Udayin — the Haryanka dynasty known for parricide.</li>
+      </ul>
+    </div>
+
+    <div class="ruler-card">
+      <h4>Udayin (c. 460–444 BCE) — Founder of Pataliputra</h4>
+      <div class="ruler-meta">Haryanka Dynasty · Son of Ajatashatru</div>
+      <ul>
+        <li><strong>Founded Pataliputra</strong> (modern Patna) at the strategic confluence of the <strong>Ganga, Son, and Gandaki</strong> rivers — replacing Rajagriha as capital. This was perhaps Magadha's most consequential administrative decision: Pataliputra remained India's pre-eminent city for nearly 1,000 years (until c. 550 CE).</li>
+        <li>According to Buddhist sources, Udayin was also killed by his own son (Nagadasi) — the parricide pattern continued.</li>
+        <li>After Udayin, the Haryanka line ended (Nagadasi, Anuruddha briefly ruled) and the dynasty was replaced by Shishunaga.</li>
+      </ul>
+    </div>
+
+    <h3>2.4 Shishunaga Dynasty (c. 413–345 BCE)</h3>
+
+    <div class="ruler-card orange">
+      <h4>Shishunaga (c. 413–395 BCE) — Destroyer of Avanti</h4>
+      <div class="ruler-meta">Shishunaga Dynasty · Founded by a minister/Viceroy of Varanasi</div>
+      <ul>
+        <li><strong>Greatest achievement:</strong> Permanently destroyed the power of the <strong>Pradyota dynasty of Avanti</strong> (Ujjain) — Magadha's principal rival for 100+ years — and merged Avanti with Magadha. Magadha was now unchallenged in northern India.</li>
+        <li>Temporarily shifted capital to <strong>Vaishali</strong> (possibly his birthplace; he was of Lichchhavi origin according to some sources), later returned to Pataliputra.</li>
+        <li>Also reduced the power of Vatsa and Koshala.</li>
+      </ul>
+    </div>
+
+    <div class="ruler-card orange">
+      <h4>Kalashoka / Kakavarna (c. 395–367 BCE)</h4>
+      <div class="ruler-meta">Shishunaga Dynasty · Son of Shishunaga</div>
+      <ul>
+        <li>Presided over the <strong>Second Buddhist Council</strong> at <strong>Vaishali</strong> (~383 BCE) — the council that debated 10 points of Vinaya and caused the first formal split in Buddhism (Sthaviravadins vs Mahasanghikas).</li>
+        <li>Capital firmly restored to <strong>Pataliputra</strong>.</li>
+        <li>Assassinated by <strong>Mahapadma Nanda</strong>, who seized power and founded the Nanda dynasty — ending Shishunaga line.</li>
+        <li>Had 10 sons (according to Puranas) who ruled briefly before Nanda takeover.</li>
+      </ul>
+    </div>
+
+    <h3>2.5 Nanda Dynasty (c. 345–321 BCE)</h3>
+
+    <div class="highlight-box highlight-orange">
+      <strong>Key Identity:</strong> The Nanda dynasty was the <em>first non-Kshatriya</em> imperial dynasty of India. Mahapadma Nanda was of low/Shudra origin (son of a barber according to some Puranas, or of a Shudra woman and a Kshatriya father). This represents a fundamental social shift — Kshatriya monopoly on kingship broken permanently.
+    </div>
+
+    <div class="ruler-card gold">
+      <h4>Mahapadma Nanda (c. 345–329 BCE) — "Ekrat" (Sole Sovereign)</h4>
+      <div class="ruler-meta">Nanda Dynasty · Founder · First Non-Kshatriya Emperor</div>
+      <ul>
+        <li><strong>"Ekrat" (Sole Sovereign):</strong> Called <em>Ugrasena</em> (fierce army) in Puranas. Destroyed all the remaining Kshatriya kingdoms — Ikshvaku, Panchalas, Kasis, Haihayas, Kurus, Maithilas, Shurasenas, Vitihotras — and became the sole paramount power.</li>
+        <li><strong>Largest army:</strong> Built a massive professional standing army. Greek sources (referring to his successor) mention: 200,000 infantry, 20,000 cavalry, 2,000 chariots, 3,000+ war elephants — which deterred Alexander's soldiers from advancing further east in 326 BCE.</li>
+        <li><strong>Territorial expansion:</strong> Extended Magadha's reach into Deccan (Asmaka region) and possibly Kalinga (later confirmed by Ashoka's inscription about Kalinga being conquered).</li>
+        <li><strong>Revenue system:</strong> Introduced highly organised, systematic taxation — one of the richest treasuries in the ancient world. The Nanda treasury was legendary.</li>
+      </ul>
+    </div>
+
+    <div class="ruler-card gold">
+      <h4>Dhana Nanda (c. 329–321 BCE) — The Last Nanda</h4>
+      <div class="ruler-meta">Nanda Dynasty · Last Ruler · Overthrown by Chandragupta</div>
+      <ul>
+        <li>Last of the Nandas (8 brothers ruled after Mahapadma Nanda; Dhana Nanda was the last).</li>
+        <li><strong>Alexander's invasion (326 BCE):</strong> Alexander the Great invaded NW India during Dhana Nanda's reign. His soldiers, upon hearing of the Nanda army's size, refused to cross the Beas river (<em>Hyphasis Mutiny</em>) — the eastward limit of Alexander's advance.</li>
+        <li><strong>Unpopularity:</strong> Taxed everything — pastures, animals, skins, stones, charcoal. Known as <em>Agrahayana</em> (avaricious) in Greek sources (Agrammes/Xandrames).</li>
+        <li><strong>Overthrown c. 321 BCE</strong> by <strong>Chandragupta Maurya</strong> with the strategic assistance of <strong>Chanakya (Kautilya/Vishnugupta)</strong> — ending the Nanda dynasty and beginning the Maurya Empire.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- SECTION 3: SOCIETY -->
+  <div class="section-card">
+    <h2>🏛 3. Society in the Age of Mahajanapadas</h2>
+
+    <h3>3.1 Social Order and Legislation</h3>
+    <ul>
+      <li><strong>Varna system solidifying:</strong> The four-fold Varna hierarchy (Brahmin, Kshatriya, Vaishya, Shudra) was becoming increasingly rigid. Jati (sub-caste) distinctions within Varnas multiplied — making social mobility more difficult.</li>
+      <li><strong>Vaishya class rising:</strong> Growth of trade, guilds (shrenis/nigamas), and caravan trade created a newly prosperous merchant class seeking social recognition — one key reason for the popularity of Buddhism and Jainism which rejected caste by birth.</li>
+      <li><strong>Kshatriya assertion:</strong> Both Buddha and Mahavira were Kshatriyas who challenged Brahmin intellectual supremacy. The rise of the Nanda dynasty (non-Kshatriya) further eroded the Kshatriya monopoly on kingship.</li>
+      <li><strong>Women's status:</strong> Declining from the relative freedom of the Rig Vedic period. However, Buddhist and Jain texts record women merchants, scholars (like Gargi in dialogues), bhikkhunis (nuns), and donors — showing continued agency among upper-class women. Courtesans like Ambapali had significant social status.</li>
+      <li><strong>Shudras:</strong> Primarily artisans and labourers. Buddhist texts show Shudras as potters (kumbakaras), smiths, weavers — skilled craftspeople integral to urban economy. Some Shudras gained power (Nanda origin, Maurya Chandragupta's contested origins).</li>
+      <li><strong>Slavery:</strong> Existed but milder than Greek/Roman slavery. Buddhist texts mention different types of dasa (slave/servant). Arthashastra later regulated it.</li>
+    </ul>
+
+    <h3>3.2 Gana-Sanghas (Republics) — Democratic Elements</h3>
+    <div class="highlight-box highlight-green">
+      <strong>India's Ancient Democracies:</strong> Gana-Sanghas like Vajji and Malla had elected heads, assemblies (Santhagara — assembly hall) where warrior-clan members voted on policy decisions. The Lichchhavi assembly at Vaishali reportedly had 7,707 rajas (council members). This is often cited as the world's earliest functioning republic, predating Athens by centuries — though participation was limited to the Kshatriya clan, not all citizens.
+    </div>
+
+    <h3>3.3 Legislation and Justice</h3>
+    <table class="note-table">
+      <tr><th>Aspect</th><th>Details</th></tr>
+      <tr><td>King's role</td><td>Supreme judge in monarchies; dispensed justice in royal court (dharmasthiya = civil court; kantakasodhana = criminal court — from Arthashastra reflecting this period)</td></tr>
+      <tr><td>Guilds (Shrenis)</td><td>Had own internal courts and bye-laws (shreni dharma); disputes among guild members resolved internally; respected by the state</td></tr>
+      <tr><td>Village level</td><td>Village headman (gramani/gramika) handled local disputes; village assembly (grama sabha) also had a role</td></tr>
+      <tr><td>Republics</td><td>Assembly (parishad/santha) voted on major issues including war, peace, and justice; decisions by majority vote (salaka — ticket voting system used in Buddhist Sangha mirrored political practice)</td></tr>
+      <tr><td>Sources</td><td>Arthashastra (Kautilya, c. 300 BCE), early Dharmasutras (Apastamba, Baudhayana), Buddhist Vinaya Pitaka — all reflect social/legal norms of this period</td></tr>
+    </table>
+  </div>
+
+  <!-- SECTION 4: ADMINISTRATIVE SYSTEM -->
+  <div class="section-card">
+    <h2>⚙ 4. Administrative System in Mahajanapadas</h2>
+
+    <h3>4.1 Monarchical Administration</h3>
+    <table class="note-table">
+      <tr><th>Level</th><th>Title</th><th>Function</th></tr>
+      <tr><td>Supreme</td><td><strong>Raja (King)</strong></td><td>Supreme executive, judicial, and military authority; assisted by council (parishad)</td></tr>
+      <tr><td>Advisory</td><td><strong>Mantriparishad</strong> (Council of Ministers)</td><td>Advised the king on policy; ministers (mantrin) held specific portfolios</td></tr>
+      <tr><td>Key Ministers</td><td><strong>Mahamatra / Amatya</strong></td><td>Senior officials handling revenue, justice, army; "officer" class of professional administrators</td></tr>
+      <tr><td>Revenue</td><td><strong>Rajjuka / Gramika</strong></td><td>Revenue collectors; village-level officials who assessed and collected taxes</td></tr>
+      <tr><td>Military</td><td><strong>Senapati</strong></td><td>Commander of the army; second most powerful after the king</td></tr>
+      <tr><td>Treasury</td><td><strong>Sannidhata</strong></td><td>Treasurer; managed state finances</td></tr>
+      <tr><td>Provincial</td><td><strong>Uparika / Pradeshika</strong></td><td>Governor of provinces/districts (janapada)</td></tr>
+      <tr><td>Village</td><td><strong>Gramani / Gramika</strong></td><td>Village headman; basic unit of administration; hereditary in many cases</td></tr>
+    </table>
+
+    <h3>4.2 Republican (Gana-Sangha) Administration</h3>
+    <ul>
+      <li><strong>Ganapramukha / Ganamukhya:</strong> Elected head of the republic (not hereditary).</li>
+      <li><strong>Parishad/Santhagara:</strong> Council assembly where all eligible Kshatriyas voted on policy. The Lichchhavi Santhagara at Vaishali is described in Buddhist texts as a grand assembly hall.</li>
+      <li><strong>Vinichaya-Mahaamatya:</strong> Chief judicial officer in Vajji republic.</li>
+      <li><strong>Voting system:</strong> <em>Salaka-gahapaka</em> (ballot collector) distributed voting sticks (salaka) — an ancient form of voting. This system was mirrored in Buddhist Sangha decision-making.</li>
+      <li><strong>Limitation:</strong> Participation was restricted to the ruling Kshatriya clan — not a democracy in the modern sense, but an oligarchic republic.</li>
+    </ul>
+
+    <div class="highlight-box highlight-blue">
+      <strong>Why Republics Failed Against Monarchies:</strong> Republics like Vajji were confederacies — decision-making was slow and internal divisions easy to exploit (Ajatashatru used Vassakara to sow discord). Monarchies with centralised command, professional armies, and single-point decision-making ultimately overpowered collegial republics in existential conflicts.
+    </div>
+  </div>
+
+  <!-- SECTION 5: MATERIAL LIFE -->
+  <div class="section-card">
+    <h2>🏺 5. Material Life in the Mahajanapada Period</h2>
+
+    <h3>5.1 Iron Age and Agriculture</h3>
+    <ul>
+      <li><strong>Iron ploughshares:</strong> The most transformative technology — iron ploughs (with multiple tips) enabled deeper tilling of the heavy alluvial soil of the Gangetic plain, unlocking enormous agricultural productivity.</li>
+      <li><strong>Rice cultivation:</strong> Gangetic plain ideally suited; two crops per year possible with irrigation. Agricultural surplus funded armies and trade.</li>
+      <li><strong>Irrigation:</strong> Canal systems (nala), tanks, and wells expanded cultivated area. State investment in irrigation noted in later Arthashastra.</li>
+    </ul>
+
+    <h3>5.2 Northern Black Polished Ware (NBP Ware)</h3>
+    <div class="cards-grid">
+      <div class="info-card">
+        <div class="card-title">What is NBP Ware?</div>
+        <p>High-quality, wheel-thrown pottery with a brilliant <strong>mirror-like lustrous surface</strong> — achieved by fine levigation, burnishing, and firing at 1000°C+. Usually black or steel-grey; occasionally brown or gold tinted.</p>
+      </div>
+      <div class="info-card orange-card">
+        <div class="card-title">Period &amp; Distribution</div>
+        <p>c. <strong>700–200 BCE</strong> — perfectly aligns with the Mahajanapada period. Found across Gangetic plain from Taxila to Bengal. Key sites: Vaishali, Varanasi, Pataliputra, Kaushambi, Rajghat, Sravasti, Taxila, Hastinapur.</p>
+      </div>
+      <div class="info-card green-card">
+        <div class="card-title">Significance</div>
+        <p>Primary <strong>archaeological marker</strong> of the Mahajanapada/second urbanisation period. Associated with the urban elite and merchant classes. Succeeds <strong>PGW (Painted Grey Ware)</strong> of the Vedic period and precedes the coarser pottery of post-Maurya era.</p>
+      </div>
+    </div>
+
+    <h3>5.3 Punch-Marked Coins (PMC)</h3>
+    <div class="highlight-box highlight-orange">
+      <strong>India's First Coins:</strong> Punch-Marked Coins (Ahata Mudra / Karshapana) — earliest Indian coinage, c. 600 BCE. Silver and copper pieces punched (not cast/struck) with multiple symbols (sun, six-armed symbol, elephant, hill, bull, etc.). Issued by both janapadas (state) and merchant guilds (srenis). Standard unit = <strong>Karshapana</strong> (silver). Discovery across Gangetic cities confirms extensive trade networks. These coins replaced the earlier barter system, enabling complex commerce.
+    </div>
+
+    <h3>5.4 Urban Centres and Trade</h3>
+    <table class="note-table">
+      <tr><th>City</th><th>Mahajanapada</th><th>Economic/Cultural Significance</th></tr>
+      <tr><td><strong>Varanasi</strong></td><td>Kashi</td><td>Oldest continuously inhabited city; famous for fine muslin/silk cloth (Kashi cloth); major trade and religious centre</td></tr>
+      <tr><td><strong>Taxila</strong></td><td>Gandhara</td><td>Northwestern trade hub; famous university; junction of three trade routes; Persian Achaemenid presence</td></tr>
+      <tr><td><strong>Vaishali</strong></td><td>Vajji</td><td>Prosperous republic capital; famous for courtesans (Ambapali's mango grove); trade with Nepal hills</td></tr>
+      <tr><td><strong>Champa</strong></td><td>Anga</td><td>Major river port on Ganga; trade with Southeast Asia (Suvarnabhumi); mentioned in Jataka tales</td></tr>
+      <tr><td><strong>Kaushambi</strong></td><td>Vatsa</td><td>Major trade junction at Yamuna confluence; Buddhist centre; excavations confirm NBP ware, structures</td></tr>
+      <tr><td><strong>Ujjain</strong></td><td>Avanti</td><td>Gateway to Deccan trade; later Maurya provincial capital; astronomical importance (prime meridian in ancient Indian astronomy)</td></tr>
+      <tr><td><strong>Rajagriha</strong></td><td>Magadha</td><td>First Magadhan capital; surrounded by 5 hills — natural fort; trade and pilgrimage centre</td></tr>
+    </table>
+
+    <h3>5.5 Trade and Commerce</h3>
+    <ul>
+      <li><strong>Guilds (Shrenis/Nigamas):</strong> Organised trade associations of merchants and craftsmen; had own governance, law, and banking functions. Setthis (seths) = wealthy guild leaders. Sarthavahas = caravan leaders.</li>
+      <li><strong>Routes:</strong> Uttarapatha (Northern Route: Taxila–Mathura–Pataliputra–Tamralipti) and Dakshinapatha (Southern Route: Pataliputra–Ujjain–coast). River routes on Ganga, Yamuna, Son central to bulk trade.</li>
+      <li><strong>Exports:</strong> Cloth, spices, ivory, iron goods, semi-precious stones.</li>
+      <li><strong>Imports from NW:</strong> Horses (essential for cavalry), gold, silver, copper, tin.</li>
+    </ul>
+  </div>
+
+  <!-- SECTION 6: ARMY AND TAXATION -->
+  <div class="section-card">
+    <h2>⚔ 6. Army and Taxation in Mahajanapadas</h2>
+
+    <h3>6.1 The Four-Fold Army (Chaturanga Bala)</h3>
+    <div class="cards-grid">
+      <div class="info-card">
+        <div class="card-title">Patti (Infantry)</div>
+        <p>Foot soldiers — the largest component. Armed with bows (dhanush), spears (shula), swords (khadga), and shields. Recruited from all varnas including Shudras in Nanda times.</p>
+      </div>
+      <div class="info-card orange-card">
+        <div class="card-title">Ashva (Cavalry)</div>
+        <p>Horse-mounted soldiers. Horses imported from NW (Kamboja, Sindh, Gandhara). Crucial for rapid flanking movements. The Nanda cavalry was reportedly 20,000 strong.</p>
+      </div>
+      <div class="info-card green-card">
+        <div class="card-title">Ratha (Chariots)</div>
+        <p>War chariots — declining importance by later Mahajanapada period as cavalry and elephants dominated. Ajatashatru's Rathamusala (scythe-chariot) was an innovation on the traditional chariot.</p>
+      </div>
+      <div class="info-card">
+        <div class="card-title">Gaja (War Elephants)</div>
+        <p>Magadha's decisive advantage — elephant forests of Vindhya/Chota Nagpur provided unlimited supply. Elephants used to breach fortifications, trample infantry, and psychological terror. Nanda reportedly had 3,000+.</p>
+      </div>
+    </div>
+
+    <h3>6.2 Military Innovations of Ajatashatru</h3>
+    <table class="note-table">
+      <tr><th>Weapon</th><th>Pali Name</th><th>Description</th><th>Used Against</th></tr>
+      <tr><td><strong>Stone Catapult</strong></td><td>Mahashilakantaka</td><td>"Great stone-thrower" — a large catapult/ballista capable of hurling boulders at enemy formations and fortifications from a distance</td><td>Vajji confederacy (16-year war)</td></tr>
+      <tr><td><strong>Scythed War Chariot</strong></td><td>Rathamusala</td><td>"Chariot with pestle" — a war chariot with rotating blades/scythes attached to the axle, mowing down soldiers as it moved through formations</td><td>Vajji confederacy</td></tr>
+    </table>
+
+    <h3>6.3 Taxation System</h3>
+    <table class="note-table">
+      <tr><th>Tax</th><th>Sanskrit/Pali Term</th><th>Rate / Description</th></tr>
+      <tr><td>Agricultural tax</td><td><strong>Bhaga</strong></td><td>1/6th of produce (shadbhaga) — the king's share of the harvest; the most important revenue source</td></tr>
+      <tr><td>Forced labour</td><td><strong>Vishti / Bali</strong></td><td>Compulsory unpaid labour service for state projects (roads, forts, irrigation); also called <em>bali</em> in early period</td></tr>
+      <tr><td>Trade/customs</td><td><strong>Sulka / Shulka</strong></td><td>Custom duties on goods entering/leaving cities; collected at city gates and river crossings</td></tr>
+      <tr><td>Forest produce</td><td><strong>Vana-bhaga</strong></td><td>Tax on forest products — timber, ivory, animal skins; important revenue given Magadha's forested hinterland</td></tr>
+      <tr><td>Pasture tax</td><td><strong>Vivita</strong></td><td>Tax on grazing lands; Dhana Nanda notoriously taxed even pastures, animal skins, and charcoal</td></tr>
+      <tr><td>Exemptions</td><td>—</td><td>Brahmins traditionally exempt from tax (agrahara grants); Buddhist monasteries often received land grants and exemptions</td></tr>
+    </table>
+
+    <div class="highlight-box highlight-blue">
+      <strong>Nanda Treasury:</strong> Greek sources (Curtius, Diodorus) mention that the Nanda treasury was so vast that Alexander's soldiers were told the Nanda king had an army of 200,000 infantry, 20,000 cavalry, 2,000 chariots, and 3,000 elephants — and unlimited gold. This was the primary reason for the <strong>Hyphasis Mutiny (326 BCE)</strong> — Alexander's soldiers at the Beas river refused to march further east.
+    </div>
+  </div>
+
+  <!-- CURRENT AFFAIRS -->
+  <div class="ca-section">
+    <h2>📰 Current Affairs Linkages (2024–26)</h2>
+
+    <div class="ca-item">
+      <strong>Vaishali (Bihar) — UNESCO Tentative List</strong>
+      The ancient site of Vaishali (capital of Vajji republic, birthplace of Mahavira) has been on India's tentative UNESCO World Heritage list. Bihar government has been pushing for its nomination. The site includes the Ashoka pillar, Coronation Tank (Abhishek Pushkarini), and the Kutagarasala (Buddha's meeting hall). Relevant when UPSC asks about heritage conservation.
+    </div>
+
+    <div class="ca-item">
+      <strong>Rajgir (Rajagriha) Development — Buddhism Tourism</strong>
+      Rajgir (ancient Rajagriha, first capital of Magadha) in Bihar receiving major tourism infrastructure investment. Nalanda-Rajgir Buddhist circuit being developed. Rajgir Glass Bridge, ropeway expansion, and the new Nalanda University campus (2024) are part of Bihar's Buddhist tourism push.
+    </div>
+
+    <div class="ca-item">
+      <strong>Taxila (Gandhara) and India-Pakistan Heritage</strong>
+      Taxila (ancient capital of Gandhara Mahajanapada, now in Pakistan) is a UNESCO World Heritage Site. India-Pakistan heritage cooperation — including access to Taxila for Indian scholars and Buddhist pilgrims — periodically discussed in diplomatic context. Relevant to India's Buddhist soft power diplomacy.
+    </div>
+
+    <div class="ca-item">
+      <strong>Alexander's India Campaign — Hyphasis Site Identification</strong>
+      Archaeological work continues on identifying the exact location of Alexander's Hyphasis camp (modern Beas river, Punjab). Relevant to discussions of Alexander's 326 BCE India campaign, which highlights the strength of the Nanda Empire as a deterrent. Punjab government identified possible sites near Gurdaspur district.
+    </div>
+  </div>
+
+  <!-- PYQs -->
+  <div class="pyq-section">
+    <h2>📋 Previous Year Questions (UPSC)</h2>
+
+    <div class="pyq-item">
+      <div class="pyq-meta">Prelims 2022</div>
+      <p>Consider the following statements: (1) Vajji was a republican state; (2) Its capital was Vaishali; (3) It was a confederacy of 8 clans. Which of the above statements are correct?</p>
+    </div>
+
+    <div class="pyq-item">
+      <div class="pyq-meta">Prelims 2019</div>
+      <p>Which of the following statements is/are correct regarding the Nanda Dynasty? (1) Mahapadma Nanda was the founder; (2) He was of Shudra origin; (3) He was known as 'Ekrat'. Select using codes given.</p>
+    </div>
+
+    <div class="pyq-item">
+      <div class="pyq-meta">Prelims 2017</div>
+      <p>The term 'Northern Black Polished Ware' is associated with which phase of ancient Indian history? (a) Vedic Period; (b) Mahajanapada Period; (c) Gupta Period; (d) Post-Gupta Period.</p>
+    </div>
+
+    <div class="pyq-item">
+      <div class="pyq-meta">Prelims 2016</div>
+      <p>Bimbisara's matrimonial alliances are known as 'Kula-Sangrahani Niti'. Which of the following statements best describes this policy? (a) Alliance through conquest; (b) Alliance through marriage to avoid war; (c) Religious diplomacy; (d) Economic treaties.</p>
+    </div>
+
+    <div class="pyq-item">
+      <div class="pyq-meta">Prelims 2014</div>
+      <p>Ajatashatru used two innovative weapons in his war against the Vajji confederacy. Which of the following correctly names these weapons? (a) Mahashilakantaka and Rathamusala; (b) Agniketu and Vajrapata; (c) Vajrayudha and Shankhachakra; (d) None of the above.</p>
+    </div>
+
+    <div class="pyq-item pyq-mains">
+      <div class="pyq-meta">Mains GS-1 2021</div>
+      <p>The Mahajanapada period represents a crucial transition in ancient Indian political history. Examine the factors that led to the rise of Magadha as the dominant power, and how this laid the foundation for the emergence of the Maurya Empire. (250 words)</p>
+    </div>
+
+    <div class="pyq-item pyq-mains">
+      <div class="pyq-meta">Mains GS-1 2018</div>
+      <p>Discuss the significance of the Gana-Sanghas (republican states) in the Mahajanapada period. How do they reflect the democratic traditions of ancient India? (150 words)</p>
+    </div>
+  </div>
+
+  <!-- REVISION BOX -->
+  <div class="revision-box">
+    <h2>⚡ 10-Point Rapid Revision</h2>
+    <div class="revision-grid">
+      <div class="revision-point">
+        <strong>1. Sources</strong>
+        16 Mahajanapadas listed in Anguttara Nikaya (Buddhist) and Bhagavati Sutra (Jain). Period: 600–300 BCE.
+      </div>
+      <div class="revision-point">
+        <strong>2. Republics</strong>
+        Vajji (Vaishali), Malla (Kushinagar/Pava), Kamboja, Kuru, Panchala = Gana-Sanghas; oligarchic, Kshatriya council voting.
+      </div>
+      <div class="revision-point">
+        <strong>3. Only South-of-Vindhyas</strong>
+        Ashmaka — only Mahajanapada south of Vindhyas; on Godavari river; capital Potana.
+      </div>
+      <div class="revision-point">
+        <strong>4. Bimbisara</strong>
+        Kula-Sangrahani Niti (matrimonial alliances); conquered Anga; donated Veluvana to Buddha; killed by son Ajatashatru.
+      </div>
+      <div class="revision-point">
+        <strong>5. Ajatashatru's Weapons</strong>
+        Mahashilakantaka (stone catapult) + Rathamusala (scythe chariot) against Vajji; used Vassakara (espionage).
+      </div>
+      <div class="revision-point">
+        <strong>6. Pataliputra</strong>
+        Founded by Udayin at Ganga-Son-Gandaki confluence; remained India's premier city for ~1,000 years.
+      </div>
+      <div class="revision-point">
+        <strong>7. Shishunaga</strong>
+        Destroyed Avanti (Pradyota dynasty) — Magadha's century-old rival; Kalashoka patronised 2nd Buddhist Council.
+      </div>
+      <div class="revision-point">
+        <strong>8. Nanda Dynasty</strong>
+        First non-Kshatriya dynasty; Mahapadma Nanda = "Ekrat"; largest ancient Indian army deterred Alexander (Hyphasis Mutiny, 326 BCE).
+      </div>
+      <div class="revision-point">
+        <strong>9. NBP Ware</strong>
+        Northern Black Polished Ware (700–200 BCE) = archaeological marker of Mahajanapada second urbanisation. Mirror-like lustrous black surface.
+      </div>
+      <div class="revision-point">
+        <strong>10. Punch-Marked Coins</strong>
+        India's first coins (Karshapana) — silver/copper punched with multiple symbols; c. 600 BCE; issued by states and guilds.
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ═══════════════════════ RIGHT SIDEBAR ═══════════════════════ -->
+<aside class="sidebar">
+
+  <div class="sidebar-card">
+    <h3>👑 Magadha Dynasties</h3>
+    <table class="sidebar-table">
+      <tr><td>Haryanka</td><td>544–413 BCE</td></tr>
+      <tr><td>Bimbisara</td><td>544–492 BCE</td></tr>
+      <tr><td>Ajatashatru</td><td>492–460 BCE</td></tr>
+      <tr><td>Udayin</td><td>460–444 BCE</td></tr>
+      <tr><td>Shishunaga</td><td>413–345 BCE</td></tr>
+      <tr><td>Shishunaga</td><td>413–395 BCE</td></tr>
+      <tr><td>Kalashoka</td><td>395–367 BCE</td></tr>
+      <tr><td>Nanda</td><td>345–321 BCE</td></tr>
+      <tr><td>Mahapadma Nanda</td><td>345–329 BCE</td></tr>
+      <tr><td>Dhana Nanda</td><td>329–321 BCE</td></tr>
+      <tr><td>→ Maurya Empire</td><td>321 BCE</td></tr>
+    </table>
+  </div>
+
+  <div class="sidebar-card">
+    <h3>🏛 16 Capitals Quick Ref</h3>
+    <table class="sidebar-table">
+      <tr><td>Magadha</td><td>Rajagriha/Pataliputra</td></tr>
+      <tr><td>Koshala</td><td>Shravasti</td></tr>
+      <tr><td>Vajji ®</td><td>Vaishali</td></tr>
+      <tr><td>Malla ®</td><td>Kushinagar/Pava</td></tr>
+      <tr><td>Kashi</td><td>Varanasi</td></tr>
+      <tr><td>Anga</td><td>Champa</td></tr>
+      <tr><td>Vatsa</td><td>Kaushambi</td></tr>
+      <tr><td>Avanti</td><td>Ujjain/Mahishmati</td></tr>
+      <tr><td>Gandhara</td><td>Taxila</td></tr>
+      <tr><td>Kamboja ®</td><td>Rajapura</td></tr>
+      <tr><td>Ashmaka</td><td>Potana</td></tr>
+      <tr><td>Matsya</td><td>Viratanagara</td></tr>
+      <tr><td>Surasena</td><td>Mathura</td></tr>
+      <tr><td>Chedi</td><td>Shuktimati</td></tr>
+      <tr><td>Panchala</td><td>Ahichhatra</td></tr>
+      <tr><td>Kuru ®</td><td>Indraprastha</td></tr>
+    </table>
+  </div>
+
+  <div class="sidebar-card">
+    <h3>📊 Difficulty Rating</h3>
+    <div class="diff-row">
+      <div class="diff-label"><span>Prelims</span><span>9/10</span></div>
+      <div class="diff-bar"><div class="diff-fill" style="width:90%"></div></div>
+    </div>
+    <div class="diff-row">
+      <div class="diff-label"><span>Mains GS-1</span><span>8/10</span></div>
+      <div class="diff-bar"><div class="diff-fill" style="width:80%"></div></div>
+    </div>
+    <div class="diff-row">
+      <div class="diff-label"><span>Conceptual</span><span>7/10</span></div>
+      <div class="diff-bar"><div class="diff-fill" style="width:70%"></div></div>
+    </div>
+  </div>
+
+  <div class="sidebar-card">
+    <h3>🎯 Must-Know Terms</h3>
+    <div class="tag-cloud">
+      <span class="tag">Gana-Sangha</span>
+      <span class="tag">Kula-Sangrahani</span>
+      <span class="tag">Mahashilakantaka</span>
+      <span class="tag">Rathamusala</span>
+      <span class="tag">Ekrat</span>
+      <span class="tag">NBP Ware</span>
+      <span class="tag">Karshapana</span>
+      <span class="tag">Pataliputra</span>
+      <span class="tag">Shreni</span>
+      <span class="tag">Vassakara</span>
+      <span class="tag">Hyphasis Mutiny</span>
+      <span class="tag">Chaturanga</span>
+      <span class="tag">Bhaga (1/6)</span>
+    </div>
+  </div>
+
+  <div class="sidebar-card">
+    <h3>✏ Self-Test (Click to Reveal)</h3>
+    <div class="self-test-item">
+      <div class="self-test-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">Which is the only Mahajanapada south of Vindhyas? <span>▼</span></div>
+      <div class="self-test-a">Ashmaka — capital Potana, on the Godavari river, in modern Maharashtra. Also called Assaka in Pali texts.</div>
+    </div>
+    <div class="self-test-item">
+      <div class="self-test-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">What was Bimbisara's matrimonial policy called? <span>▼</span></div>
+      <div class="self-test-a">Kula-Sangrahani Niti — alliance through marriage. He married Kosaladevi (dowry: Kashi), Chellana of Lichchhavi (Vaishali alliance), and a Madra princess.</div>
+    </div>
+    <div class="self-test-item">
+      <div class="self-test-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">Why is Mahapadma Nanda called 'Ekrat'? <span>▼</span></div>
+      <div class="self-test-a">Ekrat = Sole Sovereign. He destroyed all remaining Kshatriya kingdoms and became the unchallenged paramount power across northern India — the first ruler to effectively unify most of the Gangetic plain.</div>
+    </div>
+    <div class="self-test-item">
+      <div class="self-test-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">What is NBP Ware and why is it significant? <span>▼</span></div>
+      <div class="self-test-a">Northern Black Polished Ware — high-quality lustrous black pottery (700–200 BCE). Primary archaeological marker of the Mahajanapada period / second urbanisation. Found across Gangetic plain from Taxila to Bengal.</div>
+    </div>
+    <div class="self-test-item">
+      <div class="self-test-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">Who founded Pataliputra and why was it strategic? <span>▼</span></div>
+      <div class="self-test-a">Udayin of the Haryanka dynasty. Located at the confluence of Ganga, Son, and Gandaki rivers — commanding river trade, providing natural moat defence, controlling N-S and E-W routes. Remained India's premier city for ~1,000 years.</div>
+    </div>
+  </div>
+
+  <div class="sidebar-card">
+    <h3>🔗 Related Notes</h3>
+    <div class="related-links">
+      <a href="/upsc-notes/ancient/ancient-topic06">← Topic 06: Buddhism &amp; Jainism</a>
+      <a href="/upsc-notes/ancient/ancient-topic05">← Topic 05: Vedic Age</a>
+      <a href="/upsc-notes/ancient">Module 2: Overview</a>
+      <a href="/upsc-notes">📚 All Ancient History Notes</a>
+      <a href="/upsc-notes">🏠 UPSC Notes Home</a>
+    </div>
+  </div>
+
+</aside>
+</div>
+</div>
