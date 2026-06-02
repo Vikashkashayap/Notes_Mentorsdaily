@@ -1,6 +1,10 @@
 import { isAncientTopicId } from "@/lib/ancient-notes";
 import { getAncientChapter, getAncientTopicSlug } from "@/lib/ancient-notes";
 import {
+  getEthicsTopicSlug,
+  isEthicsTopicId,
+} from "@/lib/ethics-notes";
+import {
   getMedievalTopicSlug,
   isMedievalTopicId,
 } from "@/lib/medieval-notes";
@@ -33,6 +37,9 @@ export function topicPath(subjectKey: SubjectKey, chapterId: string): string {
   if (subjectKey === "medieval" && isMedievalTopicId(chapterId)) {
     return `${subjectHubPath("medieval")}/${getMedievalTopicSlug(chapterId)}`;
   }
+  if (subjectKey === "ethics" && isEthicsTopicId(chapterId)) {
+    return `${subjectHubPath("ethics")}/${getEthicsTopicSlug(chapterId)}`;
+  }
   return `${subjectHubPath(subjectKey)}/${topicSlugFromChapterId(chapterId)}`;
 }
 
@@ -53,6 +60,11 @@ export function getChapterByTopicSlug(
         isMedievalTopicId(ch.id) && getMedievalTopicSlug(ch.id) === slug,
     );
   }
+  if (subjectKey === "ethics") {
+    return subject.chapters.find(
+      (ch) => isEthicsTopicId(ch.id) && getEthicsTopicSlug(ch.id) === slug,
+    );
+  }
   return subject.chapters.find(
     (ch) => topicSlugFromChapterId(ch.id) === slug,
   );
@@ -71,6 +83,10 @@ export function getChapterHref(
     if (!isMedievalTopicId(chapter.id)) return null;
     return topicPath("medieval", chapter.id);
   }
+  if (subjectKey === "ethics" || isEthicsTopicId(chapter.id)) {
+    if (!isEthicsTopicId(chapter.id)) return null;
+    return topicPath("ethics", chapter.id);
+  }
   return topicPath(subjectKey, chapter.id);
 }
 
@@ -87,7 +103,9 @@ export function getAllTopicPaths(): { subjectKey: SubjectKey; slug: string }[] {
         paths.push({ subjectKey: key, slug: getAncientTopicSlug(ch.id) });
       } else if (key === "medieval" && isMedievalTopicId(ch.id)) {
         paths.push({ subjectKey: key, slug: getMedievalTopicSlug(ch.id) });
-      } else if (key !== "ancient" && key !== "medieval") {
+      } else if (key === "ethics" && isEthicsTopicId(ch.id)) {
+        paths.push({ subjectKey: key, slug: getEthicsTopicSlug(ch.id) });
+      } else if (key !== "ancient" && key !== "medieval" && key !== "ethics") {
         paths.push({
           subjectKey: key,
           slug: topicSlugFromChapterId(ch.id),

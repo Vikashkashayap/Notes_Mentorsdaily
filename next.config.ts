@@ -77,6 +77,96 @@ const nextConfig: NextConfig = {
         destination: "/medieval-history/bhakti-and-sufi-religious-movements",
         permanent: true,
       },
+      {
+        source: "/upsc-notes/ethics-topic01-ethics-human-interface-upsc-notes.html",
+        destination: "/ethics/ethics-and-human-interface",
+        permanent: true,
+      },
+      {
+        source: "/upsc-notes/ethics-topic02-attitude-social-influence-upsc-notes.html",
+        destination: "/ethics/attitude-and-social-influence",
+        permanent: true,
+      },
+      {
+        source: "/upsc-notes/ethics-topic03-aptitude-civil-service-values-upsc-notes.html",
+        destination: "/ethics/aptitude-and-foundational-values-for-civil-services",
+        permanent: true,
+      },
+      {
+        source: "/upsc-notes/ethics-topic04-emotional-intelligence-upsc-notes.html",
+        destination: "/ethics/emotional-intelligence",
+        permanent: true,
+      },
+      {
+        source: "/upsc-notes/ethics-topic05-indian-moral-thinkers-upsc-notes.html",
+        destination: "/ethics/indian-moral-thinkers-and-philosophers",
+        permanent: true,
+      },
+      {
+        source: "/upsc-notes/ethics-topic06-western-moral-philosophers-upsc-notes.html",
+        destination: "/ethics/western-moral-philosophers",
+        permanent: true,
+      },
+      {
+        source: "/upsc-notes/ethics-topic07-public-administration-corporate-governance-upsc-notes.html",
+        destination: "/ethics/public-administration-ethics-and-corporate-governance",
+        permanent: true,
+      },
+      {
+        source: "/upsc-notes/ethics-topic08-probity-governance-upsc-notes.html",
+        destination: "/ethics/probity-in-governance",
+        permanent: true,
+      },
+      {
+        source: "/upsc-notes/ethics-topic09-case-study-frameworks-upsc-notes.html",
+        destination: "/ethics/case-study-frameworks-and-answer-writing",
+        permanent: true,
+      },
+      {
+        source: "/ethics/ethics-topic01",
+        destination: "/ethics/ethics-and-human-interface",
+        permanent: true,
+      },
+      {
+        source: "/ethics/ethics-topic02",
+        destination: "/ethics/attitude-and-social-influence",
+        permanent: true,
+      },
+      {
+        source: "/ethics/ethics-topic03",
+        destination: "/ethics/aptitude-and-foundational-values-for-civil-services",
+        permanent: true,
+      },
+      {
+        source: "/ethics/ethics-topic04",
+        destination: "/ethics/emotional-intelligence",
+        permanent: true,
+      },
+      {
+        source: "/ethics/ethics-topic05",
+        destination: "/ethics/indian-moral-thinkers-and-philosophers",
+        permanent: true,
+      },
+      {
+        source: "/ethics/ethics-topic06",
+        destination: "/ethics/western-moral-philosophers",
+        permanent: true,
+      },
+      {
+        source: "/ethics/ethics-topic07",
+        destination: "/ethics/public-administration-ethics-and-corporate-governance",
+        permanent: true,
+      },
+      {
+        source: "/ethics/ethics-topic08",
+        destination: "/ethics/probity-in-governance",
+        permanent: true,
+      },
+      {
+        source: "/ethics/ethics-topic09",
+        destination: "/ethics/case-study-frameworks-and-answer-writing",
+        permanent: true,
+      },
     ];
   },
   images: {

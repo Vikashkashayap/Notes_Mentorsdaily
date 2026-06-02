@@ -1,0 +1,700 @@
+<!-- ethics-topic09 — auto-imported from ethics-topic09-case-study-frameworks-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --brand-orange-light:#fff8ee;
+  --green:#2e7a47;
+  --green-light:#eaf5ef;
+  --text-dark:#1a1a2e;
+  --text-mid:#444;
+  --text-light:#888;
+  --border:#e2e8f0;
+  --bg:#fafaf8;
+  --card:#ffffff;
+  --accent:#edf2f7;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Inter','Segoe UI',-apple-system,sans-serif;color:var(--text-dark);background:var(--bg);line-height:1.65;font-size:16px}
+.topnav{background:var(--brand-blue-dark);color:#fff;padding:14px 28px;position:sticky;top:0;z-index:50;box-shadow:0 2px 6px rgba(0,0,0,0.22);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.nav-logo{font-size:20px;font-weight:800;color:#fff;text-decoration:none;letter-spacing:-0.5px}
+.nav-logo span{color:var(--brand-orange)}
+.nav-pills{display:flex;flex-wrap:wrap;gap:7px}
+.pill{background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.22);color:#fff;padding:5px 12px;border-radius:99px;font-size:12px;font-weight:500}
+.hero{background:linear-gradient(135deg,#1a3d5c 0%,#0d2035 55%,#060f1a 100%);color:#fff;padding:54px 28px 44px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(196,120,32,0.22),transparent 55%);pointer-events:none}
+.hero-inner{max-width:1240px;margin:0 auto;position:relative;z-index:2}
+.breadcrumb{font-size:13px;color:rgba(255,255,255,0.65);margin-bottom:14px}
+.hero h1{font-size:38px;margin:0 0 14px;font-weight:800;letter-spacing:-0.5px;line-height:1.18}
+.hero-sub{font-size:17px;color:rgba(255,255,255,0.80);max-width:880px;margin:0 0 20px;line-height:1.6}
+.hero-pills{display:flex;flex-wrap:wrap;gap:8px}
+.hero-pills span{background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.22);color:#fff;padding:6px 13px;border-radius:99px;font-size:12.5px;font-weight:500}
+.layout{display:grid;grid-template-columns:1fr 320px;gap:28px;max-width:1240px;margin:28px auto;padding:0 28px}
+@media(max-width:1024px){.layout{grid-template-columns:1fr;padding:0 18px}}
+main{min-width:0}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 22px;margin-bottom:22px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--brand-blue);font-weight:700}
+.toc ol{margin:0;padding-left:22px;font-size:14.5px;column-count:2;column-gap:24px}
+@media(max-width:680px){.toc ol{column-count:1}}
+.toc li{margin:4px 0;break-inside:avoid}
+.toc a{color:var(--text-dark);text-decoration:none}
+.toc a:hover{color:var(--brand-blue);text-decoration:underline}
+.concept-box{background:linear-gradient(135deg,#e8f0f8 0%,#d0e3f5 100%);border-left:5px solid var(--brand-orange);border-radius:10px;padding:22px 26px;margin-bottom:26px;box-shadow:0 2px 6px rgba(196,120,32,0.10)}
+.concept-box h3{margin:0 0 10px;font-size:18px;color:var(--brand-blue-dark);font-weight:700}
+.concept-box p{margin:0 0 10px;font-size:15px;color:#0d2035}
+.concept-box ul{margin:8px 0 0;padding-left:22px}
+.concept-box li{margin:5px 0;font-size:14.5px;color:#0d2035}
+.notes{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:26px 30px;margin-bottom:22px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.notes h2{font-size:24px;color:var(--brand-blue-dark);margin:0 0 14px;padding-bottom:10px;border-bottom:2px solid var(--accent);font-weight:700}
+.notes h3{font-size:18px;color:var(--brand-blue);margin:22px 0 10px;font-weight:700}
+.notes h4{font-size:15.5px;color:var(--brand-blue-dark);margin:16px 0 8px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px}
+.notes p{margin:0 0 12px}
+.notes ul,.notes ol{margin:8px 0 14px;padding-left:24px}
+.notes li{margin:5px 0}
+.notes strong{color:var(--brand-blue-dark)}
+.notes em{color:#7a4d0a;font-style:italic}
+.callout{background:var(--brand-blue-light);border-left:4px solid var(--brand-blue);padding:14px 18px;border-radius:6px;margin:14px 0;font-size:14.5px}
+.callout.gold{background:var(--brand-orange-light);border-left-color:var(--brand-orange)}
+.callout.green{background:var(--green-light);border-left-color:var(--green)}
+.callout.warn{background:#fef0e6;border-left-color:#c25e1c}
+.tbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+.tbl th,.tbl td{border:1px solid var(--border);padding:8px 11px;text-align:left;vertical-align:top}
+.tbl th{background:var(--brand-blue);color:#fff;font-weight:600}
+.tbl tr:nth-child(even) td{background:var(--brand-blue-light)}
+.answer-box{background:linear-gradient(135deg,#f0f7ff,#fff);border:1.5px solid var(--brand-blue);border-left:5px solid var(--brand-blue);padding:18px 22px;border-radius:8px;margin:18px 0}
+.answer-box h4{color:var(--brand-blue-dark);margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px}
+.keyword-box{background:var(--brand-orange-light);border:1px solid var(--brand-orange);padding:14px 18px;border-radius:8px;margin:14px 0;font-size:14px}
+.keyword-box strong{color:var(--brand-blue-dark)}
+.ethics-quote{border-left:4px solid var(--brand-orange);padding:12px 20px;margin:16px 0;font-style:italic;background:#fffdf5;border-radius:0 8px 8px 0;font-size:15px}
+.ethics-quote cite{display:block;margin-top:6px;font-style:normal;font-size:13px;color:var(--text-light);font-weight:600}
+.compare-table th{background:var(--brand-blue-dark);color:#fff}
+.compare-table td:first-child{font-weight:600;color:var(--brand-blue-dark)}
+.mains-tag{display:inline-block;background:#1a3d5c;color:#fff;font-size:11px;padding:2px 8px;border-radius:4px;margin-left:8px;vertical-align:middle;font-weight:600;letter-spacing:0.5px}
+.pyq-item{background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin-bottom:20px}
+.pyq-meta{font-size:13px;color:var(--text-light);margin-bottom:8px}
+.pyq-year{background:var(--brand-blue);color:#fff;padding:2px 10px;border-radius:4px;font-size:12px;font-weight:700;margin-right:8px}
+.pyq-q{font-weight:600;margin-bottom:12px;color:var(--text-dark)}
+.model-answer{background:var(--brand-blue-light);border-radius:6px;padding:14px 18px;margin-top:10px}
+.model-answer h5{color:var(--brand-blue-dark);font-size:13px;text-transform:uppercase;letter-spacing:0.6px;margin:0 0 8px}
+.model-answer ol{margin:0;padding-left:20px;font-size:14px}
+.model-answer li{margin-bottom:6px}
+.case-box{background:#fff9f0;border:1.5px solid var(--brand-orange);border-radius:10px;padding:20px 24px;margin-bottom:22px}
+.case-box h4{color:var(--brand-blue-dark);font-size:15px;font-weight:700;margin:0 0 10px;border-bottom:1px solid rgba(196,120,32,0.3);padding-bottom:8px}
+.case-box .scenario{font-size:14.5px;color:var(--text-dark);margin-bottom:12px;line-height:1.7}
+.case-box .step{background:var(--brand-blue-light);border-radius:6px;padding:12px 16px;margin-bottom:8px;font-size:14px}
+.case-box .step strong{color:var(--brand-blue-dark)}
+.revision{background:linear-gradient(135deg,#0d2035 0%,#1a3d5c 100%);color:#fff;border-radius:12px;padding:26px 30px;margin-bottom:22px}
+.revision h3{color:var(--brand-orange);margin:0 0 14px;font-size:20px}
+.revision ol{padding-left:22px;margin:0}
+.revision li{margin:6px 0;font-size:14.5px;color:#c8daf0}
+aside{min-width:0}
+.widget{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:18px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.widget h4{margin:0 0 10px;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--brand-blue);font-weight:700;border-bottom:1px solid var(--border);padding-bottom:7px}
+.widget .miniref{font-size:13px;list-style:none;padding:0;margin:0}
+.widget .miniref li{margin:5px 0;padding-left:14px;position:relative}
+.widget .miniref li::before{content:"›";position:absolute;left:0;color:var(--brand-blue);font-weight:700}
+.bar{display:flex;align-items:center;gap:8px;margin:6px 0;font-size:13px}
+.bar .lbl{width:120px;color:var(--text-mid)}
+.bar .track{flex:1;height:7px;background:#eee;border-radius:99px;overflow:hidden}
+.bar .fill{height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange));border-radius:99px}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tags span{background:var(--brand-blue-light);color:var(--brand-blue);padding:3px 9px;border-radius:99px;font-size:11.5px;font-weight:500}
+.related{list-style:none;padding:0;margin:0;font-size:13.5px}
+.related li{margin:6px 0}
+.related a{color:var(--brand-blue);text-decoration:none;font-weight:500}
+.related a:hover{text-decoration:underline}
+.checklist{font-size:13.5px;list-style:none;padding:0;margin:0}
+.checklist li{margin:5px 0;padding-left:22px;position:relative}
+.checklist li.yes::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:700}
+.checklist li.no::before{content:"✗";position:absolute;left:0;color:#c0392b;font-weight:700}
+.widget details{margin-top:4px}
+.widget summary{cursor:pointer;font-size:13px;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+footer{background:var(--brand-blue-dark);color:#c8daf0;padding:24px 28px;text-align:center;font-size:13px;margin-top:34px}
+footer strong{color:#fff}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="hero">
+  <div class="hero-inner">
+    <div class="breadcrumb"><a href="/ethics" style="color:rgba(255,255,255,0.65);text-decoration:none">UPSC Notes</a> › Ethics GS Paper IV › Topic 09</div>
+    <h1>Case Study Frameworks &amp; Answer Writing</h1>
+    <p class="hero-sub">Systematic frameworks for dissecting ethical dilemmas — DECIDE model, stakeholder mapping, course-of-action analysis, and fully-solved practice cases from UPSC 2013–2025. The most scoring section of GS Paper IV if approached methodically.</p>
+    <div class="hero-pills">
+      <span>GS Paper IV — Mains Only</span>
+      <span>Case Studies · Ethical Dilemma</span>
+      <span>~45 min read</span>
+      <span>DECIDE Framework · Stakeholder Analysis</span>
+      <span>60 Marks — 3 Compulsory Cases</span>
+    </div>
+  </div>
+</div>
+<div class="layout">
+<main>
+
+<div class="toc">
+  <h3>On This Page</h3>
+  <ol>
+    <li><a href="#s1">Case Study Format in UPSC</a></li>
+    <li><a href="#s2">DECIDE Framework — 6 Steps</a></li>
+    <li><a href="#s3">Stakeholder Analysis</a></li>
+    <li><a href="#s4">Course of Action (CoA) Analysis</a></li>
+    <li><a href="#s5">Common Ethical Dilemma Types</a></li>
+    <li><a href="#s6">Applying Ethical Theories to Cases</a></li>
+    <li><a href="#s7">Answer Structure Masterclass</a></li>
+    <li><a href="#s8">Language and Vocabulary</a></li>
+    <li><a href="#s9">Examiner Expectations</a></li>
+    <li><a href="#s10">Practice Cases — Fully Solved</a></li>
+    <li><a href="#s11">Common Mistakes to Avoid</a></li>
+    <li><a href="#pyq">Actual UPSC Case Studies</a></li>
+    <li><a href="#revision">Quick Revision Box</a></li>
+  </ol>
+</div>
+
+<!-- SECTION 1 -->
+<section class="notes" id="s1">
+  <h2>1. Case Study Format in UPSC GS Paper IV</h2>
+  <div class="concept-box">
+    <h3>What the Examiner Wants</h3>
+    <p>Section B of GS Paper IV is entirely case studies — <strong>3 compulsory cases, 20 marks each = 60 marks</strong>. Each case presents a real-life governance scenario with ethical tensions. The examiner does NOT want the "correct" answer — they want <strong>a structured, empathetic, legally-grounded, ethically-reasoned response</strong> that demonstrates the qualities of a good civil servant.</p>
+    <ul>
+      <li><strong>What is being tested:</strong> Ethical sensitivity, stakeholder empathy, decision-making under pressure, awareness of rules and values, ability to balance competing goods</li>
+      <li><strong>What is NOT being tested:</strong> Whether you chose option A over B — both may be valid if well-argued</li>
+      <li><strong>Word limit:</strong> Typically 250–300 words per case; sub-questions may be 100–150 words each</li>
+      <li><strong>Key signal:</strong> "What would YOU do?" — the answer must be first-person, decisive, and grounded</li>
+    </ul>
+  </div>
+
+  <h3>1.1 Typical Case Study Structure</h3>
+  <table class="tbl">
+    <tr><th>Element</th><th>What It Contains</th><th>What to Extract</th></tr>
+    <tr><td><strong>Context</strong></td><td>Setting, your role (IAS/IPS/IFS/other), the situation</td><td>Your official capacity and legal authority</td></tr>
+    <tr><td><strong>Stakeholders</strong></td><td>Individuals or groups affected by your decision</td><td>Their interests, rights, vulnerabilities</td></tr>
+    <tr><td><strong>Ethical tension</strong></td><td>Two or more competing obligations/values</td><td>The precise nature of the dilemma</td></tr>
+    <tr><td><strong>Options</strong></td><td>Sometimes stated; always need to be generated</td><td>At least 3 courses of action with pros/cons</td></tr>
+    <tr><td><strong>Question</strong></td><td>What would you do? Examine the ethical issues. What options are available?</td><td>Your mandatory deliverables</td></tr>
+  </table>
+
+  <h3>1.2 Marks Distribution (Recent Pattern)</h3>
+  <table class="tbl">
+    <tr><th>Sub-question Type</th><th>Typical Marks</th><th>What to Write</th></tr>
+    <tr><td>Identify ethical issues/stakeholders</td><td>5–8 marks</td><td>List with brief explanation of why each matters</td></tr>
+    <tr><td>Courses of action with pros/cons</td><td>8–10 marks</td><td>3 options, structured analysis, select one with reasons</td></tr>
+    <tr><td>What would you do / your decision</td><td>8–10 marks</td><td>Decisive, first-person, with ethical justification and practical steps</td></tr>
+  </table>
+</section>
+
+<!-- SECTION 2 -->
+<section class="notes" id="s2">
+  <h2>2. DECIDE Framework — 6-Step Approach</h2>
+  <div class="concept-box">
+    <h3>The DECIDE Model</h3>
+    <p>Developed from medical ethics and adapted for administrative decision-making. A universal 6-step framework for any ethical dilemma in UPSC case studies.</p>
+    <ul>
+      <li><strong>D — Define</strong> the ethical issue(s) precisely</li>
+      <li><strong>E — Enumerate</strong> all stakeholders and their interests</li>
+      <li><strong>C — Consider</strong> all possible courses of action</li>
+      <li><strong>I — Identify</strong> the best option through ethical analysis</li>
+      <li><strong>D — Decide</strong> and act — clearly state your decision</li>
+      <li><strong>E — Evaluate</strong> — anticipate outcomes, mitigate risks</li>
+    </ul>
+  </div>
+
+  <h3>2.1 Step-by-Step Breakdown</h3>
+
+  <h4>Step D — Define the Ethical Issue</h4>
+  <p>Be precise. Don't say "there is a conflict." Say: <em>"There is a tension between my duty of loyalty to a superior officer (Conduct Rules) and my duty to prevent public harm (Constitutional oath, Article 21)."</em> Name the competing values explicitly — this signals ethical sophistication.</p>
+  <div class="callout gold">
+    <strong>Common value pairs in UPSC cases:</strong> Loyalty vs Integrity · Rule-bound action vs Compassion · Public interest vs Individual rights · Short-term expediency vs Long-term good · Personal career vs Institutional obligation
+  </div>
+
+  <h4>Step E — Enumerate Stakeholders</h4>
+  <p>Use 4 concentric circles: (1) Direct parties — those immediately affected; (2) Institutional parties — departments, governments; (3) Community — broader public; (4) Future generation — environmental or policy implications. Each stakeholder has <em>rights</em> (what they are entitled to) and <em>interests</em> (what they want).</p>
+
+  <h4>Step C — Consider Courses of Action</h4>
+  <p>Always generate <strong>at least 3 options</strong> — never fewer. Common error: candidates list only 2 (act vs don't act). The third option is typically a creative middle path that partially satisfies multiple stakeholders while preserving institutional integrity.</p>
+
+  <h4>Step I — Identify Best Option</h4>
+  <p>Apply at least 2 ethical frameworks to test your preferred option:</p>
+  <ul>
+    <li><strong>Consequentialist test:</strong> Which option produces the best outcomes for the greatest number?</li>
+    <li><strong>Deontological test:</strong> Does it violate any fundamental duty, right, or rule?</li>
+    <li><strong>Virtue ethics test:</strong> Is this what a person of good character would do?</li>
+    <li><strong>Rawlsian test:</strong> Would you choose this option if you didn't know which stakeholder you would be?</li>
+  </ul>
+
+  <h4>Step D — Decide</h4>
+  <p>Be decisive. The UPSC examiner penalises wishy-washy answers. Write: <em>"I will take the following action…"</em> Not: <em>"One could consider…"</em> Decisiveness with ethical grounding is the hallmark of a good civil servant.</p>
+
+  <h4>Step E — Evaluate</h4>
+  <p>Anticipate second-order effects. What could go wrong? How will you monitor and course-correct? This shows administrative maturity beyond textbook ethics.</p>
+</section>
+
+<!-- SECTION 3 -->
+<section class="notes" id="s3">
+  <h2>3. Stakeholder Analysis — Deep Dive</h2>
+
+  <h3>3.1 Stakeholder Mapping Grid</h3>
+  <table class="tbl">
+    <tr><th>Stakeholder</th><th>Interest (What they want)</th><th>Right (What they're entitled to)</th><th>Vulnerability</th><th>Your Obligation</th></tr>
+    <tr><td><em>[Direct victim]</em></td><td>Immediate relief, justice</td><td>Article 21 — life and dignity</td><td>Economically/socially weak</td><td>Highest priority — protect first</td></tr>
+    <tr><td><em>[Superior officer]</em></td><td>Compliance, loyalty</td><td>Administrative authority under service rules</td><td>Political pressure, career risk</td><td>Respect authority but not beyond constitutional limits</td></tr>
+    <tr><td><em>[Political figure]</em></td><td>Electoral benefit, cover</td><td>Democratic legitimacy of instructions</td><td>Accountability to voters</td><td>Follow only lawful instructions (Conduct Rules Rule 3)</td></tr>
+    <tr><td><em>[Community]</em></td><td>Safe, equitable services</td><td>Equal treatment, non-discrimination</td><td>Diffuse, unorganised</td><td>Public interest — terminal value</td></tr>
+    <tr><td><em>[Whistleblower / informant]</em></td><td>Protection, vindication</td><td>Protection from retaliation (Whistleblowers Act)</td><td>Highly vulnerable, exposed</td><td>Protect identity; act on information</td></tr>
+  </table>
+
+  <h3>3.2 The "Last Person" Test</h3>
+  <p>Gandhi's Talisman — <em>"Whenever you are in doubt... recall the face of the poorest and weakest man whom you may have seen, and ask yourself if the step you contemplate is going to be of any use to him."</em> Apply this to every case: who is the most vulnerable person affected by your decision?</p>
+
+  <div class="callout green">
+    <strong>Examiner signal:</strong> Mentioning the Gandhi Talisman in the stakeholder section of a case answer immediately elevates the response. It signals both value awareness and the ability to personalise abstract ethics. Connect it to the specific vulnerable party in the case.
+  </div>
+</section>
+
+<!-- SECTION 4 -->
+<section class="notes" id="s4">
+  <h2>4. Course of Action Analysis</h2>
+
+  <h3>4.1 Generating Options — The 3-Option Template</h3>
+  <div class="answer-box">
+    <h4>Standard 3-CoA Structure</h4>
+    <p><strong>Option 1 — Status quo / compliance:</strong> Follow existing instructions/rules strictly. Safe, predictable, but may perpetuate injustice or harm.<br>
+    <strong>Option 2 — Defiance / whistleblowing:</strong> Refuse to comply; report upward or publicly. Principled, but high personal risk; may be disproportionate.<br>
+    <strong>Option 3 — Creative middle path:</strong> Find a procedurally sound way to advance the right outcome while protecting yourself through documentation, escalation through proper channels, seeking legal opinion, involving other institutions. <em>This is almost always the best answer.</em></p>
+  </div>
+
+  <h3>4.2 Evaluating Each CoA — PEAL Framework</h3>
+  <table class="tbl">
+    <tr><th>Criterion</th><th>Question to Ask</th></tr>
+    <tr><td><strong>P — Principled</strong></td><td>Does it align with constitutional values, service rules, and ethical principles?</td></tr>
+    <tr><td><strong>E — Effective</strong></td><td>Does it actually solve the problem and protect the affected parties?</td></tr>
+    <tr><td><strong>A — Accountable</strong></td><td>Can I defend this decision before a superior, a court, or the public?</td></tr>
+    <tr><td><strong>L — Lawful</strong></td><td>Does it comply with applicable laws and rules? Does it exceed my authority?</td></tr>
+  </table>
+
+  <h3>4.3 The Documentation Principle</h3>
+  <p>In almost every UPSC case, one of the most important actions is to <strong>put objections in writing</strong>. Why? (i) Creates a record of your dissent; (ii) Protects against false attribution; (iii) Compels superiors to take formal responsibility; (iv) Satisfies conduct rules (Rule 3 — proper channel). Never rely on oral objections alone.</p>
+
+  <div class="callout gold">
+    <strong>Key phrase for answers:</strong> "I will record my objections in writing and forward them through proper channel, while simultaneously ensuring that no irreversible harm occurs to the affected parties in the interim."
+  </div>
+</section>
+
+<!-- SECTION 5 -->
+<section class="notes" id="s5">
+  <h2>5. Common Ethical Dilemma Types in UPSC Cases</h2>
+
+  <table class="tbl compare-table">
+    <tr><th>Dilemma Type</th><th>Core Tension</th><th>Key Principle to Apply</th><th>Frequent UPSC Themes</th></tr>
+    <tr><td><strong>Loyalty vs Integrity</strong></td><td>Superior orders something illegal/unethical</td><td>Nolan: Integrity trumps loyalty; Conduct Rules: only lawful orders must be obeyed</td><td>Transfer orders, land acquisition, police encounter</td></tr>
+    <tr><td><strong>Rule vs Compassion</strong></td><td>Strict application of rule causes hardship</td><td>Aristotle: Equity (epieikeia) — wise application of rules to circumstances; Article 21</td><td>Widow's BPL card, disabled person's certificate, elderly displaced by project</td></tr>
+    <tr><td><strong>Public interest vs Individual rights</strong></td><td>Infrastructure project vs displacement/environment</td><td>Rawls: Difference Principle — what compensation makes displacement just? Constitutional safeguards</td><td>Dam construction, highway project, forest rights vs mining</td></tr>
+    <tr><td><strong>Conflict of interest</strong></td><td>Personal benefit possible from official decision</td><td>Nolan: Integrity; CCS Rules: recusal; DRAM framework (Disclose-Recuse-Approve-Monitor)</td><td>Contractor relative, former employer's case, family land in acquisition zone</td></tr>
+    <tr><td><strong>Whistleblowing dilemma</strong></td><td>Knowledge of corruption but uncertain what to do</td><td>Duty to report (conduct rules, RTI) vs proportionality; protect yourself first</td><td>Senior colleague corruption, electoral malpractice, fund diversion</td></tr>
+    <tr><td><strong>Political vs Constitutional</strong></td><td>Politically influential instruction vs constitutional duty</td><td>Constitutional oath; Conduct Rules Rule 3 (no political activity); only lawful instructions followed</td><td>Police case, FIR registration, forest encroachment, relief distribution</td></tr>
+    <tr><td><strong>Short-term vs Long-term</strong></td><td>Quick fix harms sustainable outcome</td><td>Utilitarianism (Rule): long-term aggregate good; Intergenerational justice (Rawls)</td><td>Environmental clearance, groundwater depletion, subsidy vs livelihood</td></tr>
+    <tr><td><strong>Cultural sensitivity vs Universal values</strong></td><td>Local custom conflicts with fundamental rights</td><td>Constitutional morality (Ambedkar) over social morality; Article 14/17 are non-negotiable</td><td>Caste discrimination, child marriage, gender practices, tribal customs</td></tr>
+  </table>
+</section>
+
+<!-- SECTION 6 -->
+<section class="notes" id="s6">
+  <h2>6. Applying Ethical Theories to Case Studies</h2>
+
+  <h3>6.1 Theory Application Quick Reference</h3>
+  <table class="tbl">
+    <tr><th>Theory</th><th>Apply When…</th><th>Argument Form</th><th>Limitation to Note</th></tr>
+    <tr><td><strong>Utilitarianism (Bentham/Mill)</strong></td><td>Large-scale decisions affecting many; resource allocation</td><td>"This action produces the greatest benefit for the greatest number because…"</td><td>"However, it risks sacrificing the rights of the minority/individual…"</td></tr>
+    <tr><td><strong>Kant's Deontology</strong></td><td>Rights violations; lying; using someone as a means</td><td>"Regardless of outcomes, this action violates a fundamental duty/right because…"</td><td>"However, strict rule-following may cause disproportionate harm in this case…"</td></tr>
+    <tr><td><strong>Virtue Ethics (Aristotle)</strong></td><td>Character question; what a good officer would do</td><td>"A person of integrity, compassion, and practical wisdom (phronesis) would…"</td><td>"However, virtuous intent must be matched by effective institutional action…"</td></tr>
+    <tr><td><strong>Rawls' Justice</strong></td><td>Distribution of burdens/benefits; vulnerable groups</td><td>"Under the Veil of Ignorance, the just policy would… because it protects the worst-off…"</td><td>"However, Rawlsian maximin may be too conservative in emergency situations…"</td></tr>
+    <tr><td><strong>Care Ethics (Gilligan)</strong></td><td>Relationships, context, vulnerability</td><td>"The relational context demands special attention to the particular needs of…"</td><td>"However, particularism must not compromise impartiality required by law…"</td></tr>
+    <tr><td><strong>Gandhi's ethics</strong></td><td>Truth, non-violence, service to the poor</td><td>"Applying the Gandhi Talisman, the poorest affected stakeholder demands that…"</td><td>"However, non-violent resistance must translate into institutional action…"</td></tr>
+  </table>
+
+  <div class="callout">
+    <strong>Pro tip:</strong> Never rely on a single theory. Show dialectical thinking: "Consequentialism supports Option 2 because [X]. However, from a deontological lens, Option 2 violates [Y]. The synthesis — Option 3 — satisfies both the duty test and the outcome test."
+  </div>
+</section>
+
+<!-- SECTION 7 -->
+<section class="notes" id="s7">
+  <h2>7. Answer Structure Masterclass</h2>
+
+  <h3>7.1 Universal 5-Para Template for Case Study Answer</h3>
+  <div class="answer-box">
+    <h4>5-Paragraph Model Answer Structure</h4>
+    <ol>
+      <li><strong>Para 1 — Situation and Ethical Issues (2–3 sentences):</strong> Briefly restate the situation in your own words. Identify the <em>core ethical tension</em> precisely — name the competing values. Do NOT just list facts from the case.</li>
+      <li><strong>Para 2 — Stakeholder Analysis (3–4 bullet points):</strong> List 3–4 key stakeholders with their interests and rights. Include the most vulnerable party. Use the Gandhi Talisman if relevant.</li>
+      <li><strong>Para 3 — Courses of Action (3 options with brief pros/cons):</strong> Present 3 options. Use structured format: Option 1 (and its merit/limitation), Option 2, Option 3. Make the third option your preferred choice — but don't state that yet.</li>
+      <li><strong>Para 4 — Decision and Justification (decisive, first-person):</strong> "I will pursue Option 3 because…" Apply 2 ethical frameworks to justify. Quote a principle/thinker if natural. State practical steps you will take.</li>
+      <li><strong>Para 5 — Safeguards and Conclusion (2–3 sentences):</strong> Anticipate challenges; state how you will document, monitor, and protect yourself. End with a values statement: "My constitutional oath and commitment to [value] guide this decision."</li>
+    </ol>
+  </div>
+
+  <h3>7.2 Sub-Question Answering Strategy</h3>
+  <p>Most UPSC cases split into 2–3 sub-questions. Treat each sub-question as a <em>distinct analytical task</em>:</p>
+  <ul>
+    <li><strong>"What are the ethical issues?" →</strong> Don't narrate the case. List issues as: Issue 1: [name] — because [why it's an ethical issue]. Minimum 3–4 issues.</li>
+    <li><strong>"What options are available?" →</strong> Generate 3 options. Use a table: Option | Pros | Cons. Never state your preferred option here.</li>
+    <li><strong>"What would you do?" →</strong> Now be decisive. Link back to the analysis. One clear action with 3–4 justified steps.</li>
+    <li><strong>"What personal values guide you?" →</strong> Name 2–3 specific values (integrity, compassion, rule of law) and link each to a concrete element of the case.</li>
+  </ul>
+</section>
+
+<!-- SECTION 8 -->
+<section class="notes" id="s8">
+  <h2>8. Language, Vocabulary, and Quotations</h2>
+
+  <h3>8.1 Power Phrases for Case Answers</h3>
+  <table class="tbl">
+    <tr><th>Purpose</th><th>Phrase to Use</th></tr>
+    <tr><td>Identify dilemma</td><td>"This case presents a tension between [Value A] and [Value B]…"</td></tr>
+    <tr><td>Name ethical issue</td><td>"The core ethical issue is [name] — specifically, [one-sentence explanation]…"</td></tr>
+    <tr><td>Stakeholder vulnerability</td><td>"The most vulnerable stakeholder is [X] because [reason], and their Article 21 right to [Y] is at risk…"</td></tr>
+    <tr><td>Apply theory</td><td>"Applying the Kantian categorical imperative, I ask: could I universalise this action without contradiction? [Yes/No, because…]"</td></tr>
+    <tr><td>Decision sentence</td><td>"Balancing all considerations, I will [specific action], ensuring that [outcome], while safeguarding [right/interest]…"</td></tr>
+    <tr><td>Documentation</td><td>"I will record my objections and the reasons for my decision in writing, to ensure institutional accountability…"</td></tr>
+    <tr><td>Close with values</td><td>"My decision is guided by [value], consistent with my constitutional oath to serve the public interest with integrity and compassion…"</td></tr>
+  </table>
+
+  <h3>8.2 Thinker Quotations for Case Answers</h3>
+  <table class="tbl">
+    <tr><th>Situation</th><th>Quote and Attribution</th></tr>
+    <tr><td>Duty vs outcomes conflict</td><td>"The good will is not good because of what it effects or accomplishes… it is good through its willing alone." — Kant</td></tr>
+    <tr><td>Serving the poor</td><td>"Recall the face of the poorest and the weakest man and ask yourself if the step contemplates being of any use to him." — Gandhi's Talisman</td></tr>
+    <tr><td>Moral courage</td><td>"The hottest places in hell are reserved for those who, in times of great moral crisis, maintain their neutrality." — Dante</td></tr>
+    <tr><td>Power and responsibility</td><td>"With great power comes great responsibility." — Spider-Man (popularised) / Voltaire origin</td></tr>
+    <tr><td>Integrity under pressure</td><td>"The time is always right to do what is right." — Martin Luther King Jr.</td></tr>
+    <tr><td>Bureaucratic integrity</td><td>"A public servant is the servant of the public, not of the government in power." — Sardar Patel</td></tr>
+    <tr><td>Constitutional morality</td><td>"Constitutional morality is not a natural sentiment. It has to be cultivated." — Ambedkar</td></tr>
+  </table>
+
+  <h3>8.3 What NOT to Write</h3>
+  <ul>
+    <li><strong>Don't be vague:</strong> "I will take appropriate action" — meaningless. Name the action.</li>
+    <li><strong>Don't moralize:</strong> "This is completely wrong and shameful" — sounds immature. Analyse, don't lecture.</li>
+    <li><strong>Don't ignore the sub-questions:</strong> If asked for 3 things, give exactly 3 — not 2, not 5.</li>
+    <li><strong>Don't contradict yourself:</strong> Your final decision must be consistent with your CoA analysis.</li>
+    <li><strong>Don't be preachy about personal virtue:</strong> "I am a very honest person and will never compromise" — show it through action, not self-praise.</li>
+  </ul>
+</section>
+
+<!-- SECTION 9 -->
+<section class="notes" id="s9">
+  <h2>9. Examiner Expectations — What Gets High Marks</h2>
+
+  <div class="concept-box">
+    <h3>What Examiners Look For</h3>
+    <ul>
+      <li><strong>Ethical sensitivity:</strong> Do you notice ALL the ethical dimensions, not just the obvious one?</li>
+      <li><strong>Empathy:</strong> Do you genuinely understand the vulnerability of each affected party?</li>
+      <li><strong>Decisiveness:</strong> Do you take a clear stand and act — not equivocate?</li>
+      <li><strong>Practical wisdom:</strong> Is your solution implementable, not just theoretically correct?</li>
+      <li><strong>Institutional knowledge:</strong> Do you know the rules, laws, and structures relevant to your role?</li>
+      <li><strong>Value clarity:</strong> Can you name and defend the values driving your decision?</li>
+      <li><strong>Proportionality:</strong> Is your response appropriate to the severity of the problem?</li>
+    </ul>
+  </div>
+
+  <h3>9.1 Marks Benchmark</h3>
+  <table class="tbl">
+    <tr><th>Score Range</th><th>What This Answer Looks Like</th></tr>
+    <tr><td><strong>16–20/20</strong></td><td>All ethical issues identified precisely; multi-stakeholder empathy; 3 well-analysed CoAs; decisive first-person decision with dual ethical theory support; practical safeguards; apt quote; fluent prose</td></tr>
+    <tr><td><strong>12–15/20</strong></td><td>Main issues identified; 2–3 stakeholders; 2 CoAs; decision taken but partially justified; some theory applied</td></tr>
+    <tr><td><strong>8–11/20</strong></td><td>Basic issues listed; decision given but poorly justified; no theory; narrative retelling of case rather than analysis</td></tr>
+    <tr><td><strong>Below 8/20</strong></td><td>No ethical framework; narrative only; vague or no decision; missed key stakeholders</td></tr>
+  </table>
+</section>
+
+<!-- SECTION 10 -->
+<section class="notes" id="s10">
+  <h2>10. Practice Cases — Fully Solved</h2>
+
+  <!-- CASE 1 -->
+  <div class="case-box">
+    <h4>Practice Case 1 — The Contractor Relative (Conflict of Interest)</h4>
+    <p class="scenario">You are a District Collector overseeing a Rs. 20 crore road construction tender. During technical evaluation, you discover that the lowest bidder — and technically strongest — happens to be a company in which your brother-in-law is a major shareholder. You had no prior knowledge of this connection. Your department needs this road urgently (monsoon approaching in 6 weeks). What do you do?</p>
+    <div class="step"><strong>Ethical Issues:</strong> (1) Conflict of Interest — personal relationship compromising impartiality (Nolan: Integrity); (2) Public duty — urgent infrastructure need vs procedural integrity; (3) Fairness to other bidders — rule of law, equal treatment</div>
+    <div class="step"><strong>Stakeholders:</strong> (a) Public — need road, monsoon deadline; (b) Other bidders — right to fair competition; (c) Brother-in-law's company — legitimate bid; (d) Government — reputational and legal risk; (e) You — career and legal exposure</div>
+    <div class="step"><strong>Courses of Action:</strong> Option 1: Recuse yourself immediately, hand over to Additional DC — preserves integrity, slight delay. Option 2: Proceed with award (technically best bid) — legally risky, perception problem, violates Nolan Principles. Option 3: Disclose the relationship in writing to immediate superior, request formal written authorisation to continue OR formal recusal with handover, document everything.</div>
+    <div class="step"><strong>Decision (Option 3):</strong> I will immediately disclose the familial relationship in writing to the Divisional Commissioner, seek formal guidance, and recuse from the final award decision. I will simultaneously identify the Additional DC to continue the process. Documentation protects the institution and all parties. The DRAM framework (Disclose–Recuse–Approve–Monitor) applies precisely here. The road deadline is important but not a justification to compromise impartiality — a proper handover can be completed within 48 hours without jeopardising the monsoon timeline.</div>
+  </div>
+
+  <!-- CASE 2 -->
+  <div class="case-box">
+    <h4>Practice Case 2 — The Politically Influenced Transfer (Loyalty vs Integrity)</h4>
+    <p class="scenario">You are an SP (Superintendent of Police) in a district. A legislator from the ruling party calls you directly and instructs you not to file an FIR in a land grabbing case where his associate is the accused. The victim is a tribal widow who came to you personally. The legislator has indirect influence over your transfer. What do you do?</p>
+    <div class="step"><strong>Ethical Issues:</strong> (1) Duty to enforce law vs pressure from political authority — CrPC Section 154 mandates FIR registration for cognizable offences; (2) Vulnerability of tribal widow — Article 21, SC/ST (PoA) Act 1989; (3) Constitutional oath vs political loyalty; (4) Threat to personal career vs institutional integrity</div>
+    <div class="step"><strong>Stakeholders:</strong> (a) Tribal widow — most vulnerable; right to equal justice, Article 21; (b) Accused — presumption of innocence, due process; (c) Legislator — democratic legitimacy but no lawful authority over police filing; (d) Police institution — credibility, rule of law; (e) You — legal duty, career</div>
+    <div class="step"><strong>Courses of Action:</strong> Option 1: Register FIR immediately as legally required — principled, legally correct, career risk. Option 2: Delay/refuse FIR — illegal (Lalita Kumari SC 2014: FIR mandatory for cognizable offences), exposes you to contempt. Option 3: Register FIR immediately (non-negotiable legal duty), simultaneously report the legislator's call in writing to the DIG/Commissioner and State DGP, seek documented protection.</div>
+    <div class="step"><strong>Decision (Option 3):</strong> I will register the FIR immediately — this is a non-discretionary legal duty (Lalita Kumari, 2014 SC). Simultaneously, I will write to my superior (DIG) documenting the legislator's call and its timing relative to the FIR registration. Under Rule 3 of CCS (Conduct) Rules, political interference with law enforcement is unlawful — I have not only the right but the duty to report it. The tribal widow's Article 21 right and SC/ST PoA Act protection are paramount. My career is a legitimate concern, but an unlawful FIR refusal would expose me to criminal liability under Section 166 IPC (public servant disobeying law) far more severely.</div>
+  </div>
+
+  <!-- CASE 3 -->
+  <div class="case-box">
+    <h4>Practice Case 3 — Rule vs Compassion (BPL Card)</h4>
+    <p class="scenario">You are a Block Development Officer. An elderly widow approaches you — her husband died 3 months ago, and she needs a BPL card for subsidised rations. As per procedure, the process takes 6 months and requires fresh survey verification. She shows visible signs of malnutrition. Your hands are technically tied by the process. What do you do?</p>
+    <div class="step"><strong>Ethical Issues:</strong> (1) Procedural rules vs immediate humanitarian need — tension between formal justice and substantive justice; (2) Article 21 — right to food as part of right to life; (3) Risk of abuse if rules bypassed vs risk to life if rule strictly applied; (4) Discretion — do you have authority to act?</div>
+    <div class="step"><strong>Stakeholders:</strong> (a) Widow — most vulnerable; immediate risk to life; Article 21; (b) Government/scheme integrity — risk of misuse if rules bypassed; (c) Other genuine applicants — fairness of process; (d) You — accountability if you act or don't act</div>
+    <div class="step"><strong>Courses of Action:</strong> Option 1: Follow 6-month process strictly — legally safe for you, but widow faces starvation risk. Option 2: Issue BPL card bypassing process — compassionate, but legally irregular, risk of audit objection. Option 3: Issue emergency ration under NFSA 2013 temporary allocation / Antyodaya interim provision; simultaneously initiate expedited verification; document compassionate ground; seek superior approval for interim measure.</div>
+    <div class="step"><strong>Decision (Option 3):</strong> I will invoke whatever emergency/interim provisions exist under NFSA 2013 or state scheme for immediate temporary ration access, document it clearly as an interim measure pending verification, and personally expedite the verification to 30 days rather than 6 months. Aristotle's concept of epieikeia — equity as wise adaptation of law to circumstances — supports this. The legislative intent of NFSA is food security; strict proceduralism that causes starvation defeats the very purpose of the law. I will document the exceptional circumstances in writing, ensuring full transparency and accountability.</div>
+  </div>
+
+  <!-- CASE 4 -->
+  <div class="case-box">
+    <h4>Practice Case 4 — Whistleblowing Dilemma (Institutional Corruption)</h4>
+    <p class="scenario">You are a Joint Secretary in a Ministry. You discover that a senior colleague (Additional Secretary) has been systematically approving substandard materials in a major infrastructure project in exchange for bribes. The project is critical for national security. Your colleague is well-connected and respected. Exposing him will disrupt the project and invite personal retaliation. What do you do?</p>
+    <div class="step"><strong>Ethical Issues:</strong> (1) Integrity vs institutional stability — exposing corruption vs project disruption; (2) Duty to report under conduct rules vs personal risk; (3) National security project continuity vs rule of law; (4) Protecting subordinates who may be complicit vs justice obligation</div>
+    <div class="step"><strong>Stakeholders:</strong> (a) Public — safety risk from substandard infrastructure (life-safety dimension); (b) Corrupt AS — due process rights even for accused; (c) National security institution — reputational and operational risk; (d) Project workers/contractors — innocent parties caught; (e) You — legal duty to report, personal risk</div>
+    <div class="step"><strong>Courses of Action:</strong> Option 1: Report directly to the Minister/Cabinet Secretary — immediate escalation, high profile. Option 2: File complaint with CVC confidentially under PVCA 2014 — structured, institutional, provides protection. Option 3: Document all evidence carefully, file with CVC and simultaneously ensure that project quality inspection is independently conducted by a third party, to prevent ongoing harm while investigation proceeds.</div>
+    <div class="step"><strong>Decision (Option 3):</strong> I will file a complaint with the Central Vigilance Commission, protected under the Public Interest Disclosure (Prevention of Victimisation) provisions. Simultaneously, I will request through official channels that an independent quality audit of the project materials be conducted — this addresses the immediate safety risk without me unilaterally halting a national security project. I will document all evidence with timestamps and store it securely. Under CCS Conduct Rules Rule 3 read with Section 19 of the PCA 1988, an officer who is aware of corruption and does nothing is potentially liable. The Satyendra Dubey case is a reminder of the cost of inaction — and the cost of acting without institutional protection. Option 3 gives both.</div>
+  </div>
+</section>
+
+<!-- SECTION 11 -->
+<section class="notes" id="s11">
+  <h2>11. Common Mistakes to Avoid</h2>
+  <table class="tbl">
+    <tr><th>Mistake</th><th>Why It Hurts Your Score</th><th>Correction</th></tr>
+    <tr><td>Retelling the case narrative</td><td>Wastes words; examiner already knows the case; shows no analysis</td><td>Start from the ethical issue, not the story</td></tr>
+    <tr><td>Only 2 CoAs</td><td>Examiner expects at least 3; shows limited analytical creativity</td><td>Always generate 3 options; third = creative middle path</td></tr>
+    <tr><td>No decision / hedging</td><td>"Both options have merit..." — signals indecisiveness; penalised heavily</td><td>Be decisive: "I will..." followed by justification</td></tr>
+    <tr><td>Ignoring the most vulnerable</td><td>Shows lack of empathy — the core civil service value being tested</td><td>Always identify and address the most vulnerable stakeholder first</td></tr>
+    <tr><td>Using only one ethical theory</td><td>Shows shallow knowledge of ethics; UPSC expects multi-framework thinking</td><td>Apply 2 theories; show tension if they conflict; resolve with practical wisdom</td></tr>
+    <tr><td>Citing irrelevant laws</td><td>"I will invoke Section XYZ of IPC" without explaining how it applies</td><td>Only cite law you can connect directly to the case; explain the connection</td></tr>
+    <tr><td>Moralizing / lecturing</td><td>"This officer's behaviour is absolutely shameful..." — sounds immature</td><td>Stay analytical: "This creates a conflict between X and Y, which requires..."</td></tr>
+    <tr><td>Ignoring practical steps</td><td>Decision without implementation = incomplete answer</td><td>After deciding, give 3 specific action steps with sequence</td></tr>
+  </table>
+</section>
+
+<!-- ACTUAL UPSC CASE STUDIES -->
+<section class="notes" id="pyq">
+  <h2>Actual UPSC Case Studies — Frameworks Applied</h2>
+
+  <div class="pyq-item">
+    <div class="pyq-meta"><span class="pyq-year">UPSC GS IV 2015</span> Case Study · 25 Marks</div>
+    <p class="pyq-q">You are an IAS officer posted as a DM in a drought-affected district. Relief funds have been misappropriated by the implementing agency. Beneficiaries are destitute, monsoon is weeks away. Your superior asks you to close the matter quietly — investigation would embarrass senior officials of the same party in power. <span class="mains-tag">MAINS</span></p>
+    <div class="model-answer">
+      <h5>Framework Application</h5>
+      <ol>
+        <li><strong>Ethical issues:</strong> (1) Duty to beneficiaries (Art.21 — right to life in drought) vs institutional pressure; (2) Political loyalty vs constitutional oath; (3) Anti-corruption obligation (CVC, PCA) vs superior's instruction; (4) Accountability for public funds (CAG, PFMS)</li>
+        <li><strong>Stakeholders:</strong> Destitute beneficiaries (most vulnerable — immediate life risk); senior officials (accountability); government (institutional credibility); you (legal duty)</li>
+        <li><strong>CoA:</strong> Option 1 — Close the matter (superior's instruction) — illegal and immoral. Option 2 — Immediately report to CVC and State AG — principled but exposes you without protection. Option 3 — Document misappropriation with evidence, simultaneously ensure emergency funds reach beneficiaries through alternative channel (State Disaster Relief Fund), file formal complaint with CVC, inform superior in writing of your legal obligation to report</li>
+        <li><strong>Decision:</strong> Pursue Option 3. Emergency relief to beneficiaries is non-negotiable — I will invoke SDRF provisions immediately. The misappropriation report goes to CVC and the Divisional Commissioner in writing. My superior's instruction cannot override the Prevention of Corruption Act. I document everything. Gandhi Talisman: the destitute drought victim is the face that guides this decision.</li>
+        <li><strong>Values:</strong> Integrity (Nolan), Constitutional Morality (Ambedkar), Compassion (Gandhi), Rule of Law</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq-item">
+    <div class="pyq-meta"><span class="pyq-year">UPSC GS IV 2019</span> Case Study · 20 Marks</div>
+    <p class="pyq-q">You are an IPS officer. A source informs you that a fellow officer is accepting bribes to ignore drug trafficking in your jurisdiction. This officer is your batch-mate and friend. The evidence is credible but not yet court-ready. Your senior asks you to handle it "internally." What do you do? <span class="mains-tag">MAINS</span></p>
+    <div class="model-answer">
+      <h5>Framework Application</h5>
+      <ol>
+        <li><strong>Ethical issues:</strong> (1) Personal loyalty vs institutional duty; (2) Drug trafficking harms — community, youth, national security; (3) "Internal handling" vs due process; (4) Timing — evidence not court-ready</li>
+        <li><strong>Stakeholders:</strong> Drug victims/community (most vulnerable — Article 21); accused officer (due process rights); police institution (credibility); your friend (professional consequences); you (legal duty under NDPS Act, CrPC)</li>
+        <li><strong>CoA:</strong> Option 1 — Handle internally (soft warning) — insufficient; perpetuates crime. Option 2 — Immediately file formal complaint without telling anyone — may jeopardise case if evidence is thin. Option 3 — Secure additional evidence through lawful surveillance/SIT; simultaneously inform superior in writing that "internal handling" is insufficient for a criminal matter under NDPS Act; flag to Anti-Corruption Bureau if superior is also compromised</li>
+        <li><strong>Decision:</strong> Option 3. Friendship cannot override the NDPS Act or my constitutional oath. However, premature action with thin evidence could damage the prosecution. I will (i) secure evidence formally within 2 weeks, (ii) file a written note to my superior stating I cannot suppress a cognizable offence, (iii) escalate to ACB if superior insists on suppression. "The time is always right to do what is right" — MLK.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq-item">
+    <div class="pyq-meta"><span class="pyq-year">UPSC GS IV 2022</span> Case Study · 20 Marks</div>
+    <p class="pyq-q">You are a young civil servant. Your department head, who has been very supportive of your career, asks you to sign off on a file recommending an exemption for a company in which he has undisclosed financial interests. You discover the conflict only after signing. What do you do? <span class="mains-tag">MAINS</span></p>
+    <div class="model-answer">
+      <h5>Framework Application</h5>
+      <ol>
+        <li><strong>Ethical issues:</strong> (1) Your signature creates retrospective complicity — you are now potentially implicated; (2) Loyalty to mentor vs institutional integrity; (3) DRAM framework — neither of you disclosed the conflict before decision; (4) Administrative consequence of reversing a signed file</li>
+        <li><strong>Stakeholders:</strong> You (legal and career risk); department head (accountability); company (legitimate/illegitimate interest); government (conflict of interest undermines public trust)</li>
+        <li><strong>CoA:</strong> Option 1 — Do nothing; the file is signed — abdicates responsibility and makes you complicit. Option 2 — Confront the head privately and ask him to withdraw — gives opportunity to correct but may be suppressed. Option 3 — Write a noting on file immediately disclosing that you have only now become aware of the conflict of interest; recommend that the file be returned for fresh decision by an officer with no conflict; inform the head in writing of your action; if no response, escalate to CVC</li>
+        <li><strong>Decision:</strong> Option 3. By noting the newly discovered conflict of interest on the file and recommending fresh decision, I am correcting the procedural defect proactively. Under Conduct Rules, an official who discovers a conflict after action has an obligation to disclose it. Gratitude to a mentor cannot extend to institutional complicity — doing so would harm both the institution and ultimately the mentor himself when the conflict is discovered.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq-item">
+    <div class="pyq-meta"><span class="pyq-year">Expected UPSC 2026</span> Predicted Case Study · 20 Marks</div>
+    <p class="pyq-q">You are an IAS officer posted as CEO of a Smart City Mission authority. An AI-based facial recognition system proposed by a private vendor promises 40% improvement in traffic management efficiency. However, it collects biometric data without explicit consent and the DPDP Act 2023 exemptions are ambiguous about Smart City use. Your superior is enthusiastic; civil society groups are opposed. What do you do? <span class="mains-tag">MAINS</span></p>
+    <div class="model-answer">
+      <h5>Framework Application</h5>
+      <ol>
+        <li><strong>Ethical issues:</strong> (1) Privacy (Puttaswamy 2017: informational privacy is a fundamental right) vs efficiency gain; (2) Informed consent vs public interest justification; (3) DPDP Act 2023 ambiguity — accountability gap in digital governance; (4) Civil society participation vs administrative enthusiasm; (5) Surveillance risk — mission creep from traffic to general monitoring</li>
+        <li><strong>Stakeholders:</strong> Citizens (privacy, consent, dignity — most fundamental); civil society (legitimate watchdog role); private vendor (commercial interest — must not drive policy); superior (enthusiasm — but not a legal override); future citizens (precedent for surveillance infrastructure)</li>
+        <li><strong>CoA:</strong> Option 1 — Approve system (superior's preference) — legally risky; ambiguous DPDP compliance; no consent mechanism. Option 2 — Reject system — misses legitimate efficiency gain; ignores mandate. Option 3 — Commission independent legal and privacy audit of DPDP compliance; design opt-in consent mechanism or exclude personally identifiable data from retention; establish an independent oversight committee including civil society representative; proceed only if audit clears privacy concerns</li>
+        <li><strong>Decision:</strong> Option 3. The Puttaswamy proportionality test requires that any infringement on privacy be (i) lawful, (ii) necessary, (iii) proportionate. Without independent legal clearance on DPDP compliance, deploying biometric collection is premature. I will commission the audit, design consent/anonymisation protocols, and create a public dashboard showing data usage — this builds trust while pursuing efficiency. My institutional enthusiasm for technology must be tempered by constitutional responsibility for citizen rights. "Constitutional morality is not a natural sentiment — it has to be cultivated" (Ambedkar).</li>
+      </ol>
+    </div>
+  </div>
+
+</section>
+
+<!-- REVISION BOX -->
+<section class="revision" id="revision">
+  <h3>Quick Revision — Case Study Frameworks</h3>
+  <ol>
+    <li><strong>DECIDE:</strong> Define · Enumerate · Consider · Identify · Decide · Evaluate</li>
+    <li><strong>3 CoA rule:</strong> Always 3 options — status quo, radical, creative middle path (usually best)</li>
+    <li><strong>PEAL test:</strong> Principled · Effective · Accountable · Lawful — test every option</li>
+    <li><strong>Documentation principle:</strong> Always put objections in writing; creates institutional record and legal protection</li>
+    <li><strong>Stakeholder circles:</strong> Direct parties → Institutional → Community → Future generation</li>
+    <li><strong>Gandhi Talisman:</strong> Who is the poorest, weakest face affected? Protect them first.</li>
+    <li><strong>5-para template:</strong> Situation + issues → Stakeholders → CoAs → Decision → Safeguards</li>
+    <li><strong>Theory application:</strong> Use 2 frameworks; show tension if they conflict; resolve with phronesis</li>
+    <li><strong>Score benchmark:</strong> 16–20/20 = all issues + 3 CoAs + decisive first-person + 2 theories + quote</li>
+    <li><strong>Never:</strong> Hedge, moralize, narrate the case, cite irrelevant laws, ignore the vulnerable</li>
+  </ol>
+</section>
+
+</main>
+
+<aside>
+
+  <!-- WIDGET 1: Quick Reference -->
+  <div class="widget">
+    <h4>Quick Reference</h4>
+    <ul class="miniref">
+      <li>DECIDE: Define-Enumerate-Consider-Identify-Decide-Evaluate</li>
+      <li>PEAL: Principled-Effective-Accountable-Lawful</li>
+      <li>3 CoA minimum: status quo / radical / creative middle</li>
+      <li>Documentation principle: always put dissent in writing</li>
+      <li>Gandhi Talisman: poorest weakest face test</li>
+      <li>Section B: 3 compulsory cases × 20 marks = 60 marks</li>
+      <li>Lalita Kumari 2014: FIR mandatory for cognizable offences</li>
+      <li>DRAM (CoI): Disclose-Recuse-Approve-Monitor</li>
+      <li>Nolan 7: always relevant for "what values guide you"</li>
+      <li>Ambedkar: Constitutional > social morality</li>
+    </ul>
+  </div>
+
+  <!-- WIDGET 2: Snapshot Table -->
+  <div class="widget">
+    <h4>Dilemma Type Quick-Pick</h4>
+    <table class="tbl" style="font-size:12.5px;margin:0">
+      <tr><th>Dilemma</th><th>Key Principle</th></tr>
+      <tr><td>Loyalty vs Integrity</td><td>Nolan; Conduct Rules</td></tr>
+      <tr><td>Rule vs Compassion</td><td>Aristotle epieikeia</td></tr>
+      <tr><td>Conflict of Interest</td><td>DRAM; Nolan Integrity</td></tr>
+      <tr><td>Whistleblowing</td><td>PCA; CVC; documentation</td></tr>
+      <tr><td>Cultural vs Universal</td><td>Ambedkar constitutional morality</td></tr>
+      <tr><td>Political vs Constitutional</td><td>Constitutional oath; Rule 3</td></tr>
+    </table>
+  </div>
+
+  <!-- WIDGET 3: Difficulty Bars -->
+  <div class="widget">
+    <h4>Exam Difficulty</h4>
+    <div class="bar"><span class="lbl">Prelims</span><div class="track"><div class="fill" style="width:0%"></div></div></div>
+    <div class="bar"><span class="lbl">Factual</span><div class="track"><div class="fill" style="width:30%"></div></div></div>
+    <div class="bar"><span class="lbl">Analytical</span><div class="track"><div class="fill" style="width:80%"></div></div></div>
+    <div class="bar"><span class="lbl">Writing Skill</span><div class="track"><div class="fill" style="width:95%"></div></div></div>
+    <p style="font-size:12px;color:var(--text-light);margin:8px 0 0">Most marks come from structured analysis and decisive writing, not memorisation.</p>
+  </div>
+
+  <!-- WIDGET 4: Must-Know Tags -->
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <div class="tags">
+      <span>DECIDE Framework</span>
+      <span>Stakeholder Analysis</span>
+      <span>PEAL Test</span>
+      <span>3 CoA Rule</span>
+      <span>Documentation Principle</span>
+      <span>Gandhi Talisman</span>
+      <span>DRAM (CoI)</span>
+      <span>Epieikeia Aristotle</span>
+      <span>Constitutional Morality</span>
+      <span>Lalita Kumari 2014</span>
+      <span>Nolan Principles</span>
+      <span>Phronesis</span>
+      <span>Whistleblower Protection</span>
+      <span>CVC Complaint</span>
+      <span>Puttaswamy 2017</span>
+    </div>
+  </div>
+
+  <!-- WIDGET 5: Answer Writing Checklist -->
+  <div class="widget">
+    <h4>Case Answer Checklist</h4>
+    <ul class="checklist">
+      <li class="yes">Identify ALL ethical issues (not just the obvious)</li>
+      <li class="yes">Name the most vulnerable stakeholder</li>
+      <li class="yes">Generate exactly 3 courses of action</li>
+      <li class="yes">Apply 2 different ethical theories</li>
+      <li class="yes">Take a decisive first-person decision</li>
+      <li class="yes">Include documentation / institutional steps</li>
+      <li class="yes">End with values/constitutional anchor</li>
+      <li class="no">Don't retell the case narrative</li>
+      <li class="no">Don't hedge or avoid a decision</li>
+      <li class="no">Don't moralize or lecture the characters</li>
+    </ul>
+    <details>
+      <summary>Opening Line Template</summary>
+      <p style="font-size:12.5px;margin:6px 0;color:var(--text-mid)">"This case presents a fundamental tension between [Value A] and [Value B] — a dilemma that goes to the heart of what it means to serve the public interest with integrity. The competing obligations I face are: [obligation 1] and [obligation 2]."</p>
+    </details>
+    <details>
+      <summary>Decision Line Template</summary>
+      <p style="font-size:12.5px;margin:6px 0;color:var(--text-mid)">"Balancing all considerations through the lens of [theory 1] and [theory 2], I will pursue Option 3: [action]. My first step will be [specific action] within [timeframe], followed by [step 2] and [step 3]. This decision is guided by my constitutional oath and my commitment to [values]."</p>
+    </details>
+  </div>
+
+  <!-- WIDGET 6: Related Notes -->
+  <div class="widget">
+    <h4>Related Notes</h4>
+    <ul class="related">
+      <li><a href="/ethics/ethics-and-human-interface">T01 — Ethics &amp; Human Interface</a></li>
+      <li><a href="/ethics/aptitude-and-foundational-values-for-civil-services">T03 — Civil Service Values</a></li>
+      <li><a href="/ethics/emotional-intelligence">T04 — Emotional Intelligence</a></li>
+      <li><a href="/ethics/western-moral-philosophers">T06 — Western Moral Philosophers</a></li>
+      <li><a href="/ethics/public-administration-ethics-and-corporate-governance">T07 — Public Administration &amp; Governance</a></li>
+      <li><a href="/ethics/probity-in-governance">T08 — Probity in Governance</a></li>
+    </ul>
+  </div>
+
+</aside>
+</div>
+</div>

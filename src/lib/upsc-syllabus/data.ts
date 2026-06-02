@@ -199,12 +199,15 @@ export const SYLLABUS_DATA = {
     paper: "GS Paper 4",
     description: "Ethics, integrity, and aptitude for civil services — Mains only paper",
     chapters: [
-      { id:"ethics-basics", title:"Ethics: Concepts & Dimensions", sub:"Morality, ethics in public life, thinkers", priority:"high", prelims:0, mains:8, status:"coming-soon", readTime:18, tags:["Ethics","Morality","Public service","Values"] },
-      { id:"attitude-values", title:"Attitude, Values & Aptitude", sub:"Attitude components, value formation", priority:"high", prelims:0, mains:6, status:"coming-soon", readTime:14, tags:["Attitude","Values","Aptitude","Social influence"] },
-      { id:"emotional-intelligence", title:"Emotional Intelligence", sub:"EI concepts, applications in governance", priority:"high", prelims:0, mains:5, status:"coming-soon", readTime:12, tags:["EI","Emotional intelligence","Self-awareness"] },
-      { id:"probity-governance", title:"Probity in Governance", sub:"Integrity, accountability, codes of conduct", priority:"high", prelims:0, mains:7, status:"coming-soon", readTime:14, tags:["Probity","Integrity","RTI","Whistleblowers"] },
-      { id:"case-studies", title:"Case Studies", sub:"Ethical dilemmas in public administration", priority:"high", prelims:0, mains:10, status:"coming-soon", readTime:20, tags:["Case Studies","Ethical dilemma","Decision making"] },
-      { id:"thinkers", title:"Ethical Thinkers & Philosophers", sub:"Gandhi, Kant, Mill, Aristotle contributions", priority:"medium", prelims:0, mains:5, status:"coming-soon", readTime:12, tags:["Gandhi","Kant","Aristotle","Mill","Confucius"] }
+      { id:"ethics-topic01", title:"Ethics & Human Interface", sub:"Topic 01: Essence, determinants, dimensions of ethics, human values", priority:"high", prelims:0, mains:8, status:"live", readTime:50, tags:["Ethics","Morality","Human values","Kohlberg","Code of conduct"] },
+      { id:"ethics-topic02", title:"Attitude & Social Influence", sub:"Topic 02: ABC model, cognitive dissonance, prejudice, attitude change", priority:"high", prelims:0, mains:6, status:"live", readTime:45, tags:["Attitude","Social influence","Prejudice","Cognitive dissonance"] },
+      { id:"ethics-topic03", title:"Aptitude & Foundational Values for Civil Services", sub:"Topic 03: Integrity, impartiality, compassion, dedication to public service", priority:"high", prelims:0, mains:7, status:"live", readTime:45, tags:["Integrity","Impartiality","Compassion","Civil service values"] },
+      { id:"ethics-topic04", title:"Emotional Intelligence", sub:"Topic 04: Goleman model, EI in governance and administration", priority:"high", prelims:0, mains:5, status:"live", readTime:40, tags:["EI","Goleman","Self-awareness","Empathy"] },
+      { id:"ethics-topic05", title:"Indian Moral Thinkers & Philosophers", sub:"Topic 05: Gandhi, Ambedkar, Kautilya, Vivekananda, Tagore", priority:"high", prelims:0, mains:6, status:"live", readTime:50, tags:["Gandhi","Ambedkar","Kautilya","Vivekananda"] },
+      { id:"ethics-topic06", title:"Western Moral Philosophers", sub:"Topic 06: Kant, Mill, Aristotle, Rawls, virtue ethics, utilitarianism", priority:"high", prelims:0, mains:6, status:"live", readTime:50, tags:["Kant","Mill","Aristotle","Rawls","Utilitarianism"] },
+      { id:"ethics-topic07", title:"Public Administration Ethics & Corporate Governance", sub:"Topic 07: Codes of conduct, corporate governance, stakeholder theory", priority:"high", prelims:0, mains:6, status:"live", readTime:45, tags:["Corporate governance","Stakeholders","CSR","Public administration"] },
+      { id:"ethics-topic08", title:"Probity in Governance", sub:"Topic 08: Integrity, accountability, RTI, whistleblowers, citizen charter", priority:"high", prelims:0, mains:7, status:"live", readTime:45, tags:["Probity","Integrity","RTI","Whistleblowers"] },
+      { id:"ethics-topic09", title:"Case Study Frameworks & Answer Writing", sub:"Topic 09: Ethical dilemmas, decision frameworks, GS4 case studies", priority:"high", prelims:0, mains:10, status:"live", readTime:55, tags:["Case studies","Ethical dilemma","Answer writing","Stakeholder analysis"] }
     ]
   },
   current: {
