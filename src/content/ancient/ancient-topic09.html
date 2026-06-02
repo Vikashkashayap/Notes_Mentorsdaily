@@ -1,4 +1,4 @@
-<!-- ancient-topic09 — auto-imported from ancient-topic09-mauryan-empire-upsc-notes.html -->
+<!-- ancient-topic09 — auto-imported from ancient-topic09-mauryan-empire-upsc-notes (1).html -->
 <style data-topic-notes>
 :root{
   --brand-blue:#8b3a1a;
@@ -144,12 +144,15 @@ footer a{color:#ffd07a}
 /* Next.js: shared app navbar; restore two-column layout */
 .notes-topic-embedded .navbar,
 .notes-topic-embedded nav.navbar,
+.notes-topic-embedded .topnav,
+.notes-topic-embedded nav.topnav,
 .notes-topic-embedded .breadcrumbs,
 .notes-topic-embedded .hamburger,
 .notes-topic-embedded .menu-btn,
 .notes-topic-embedded footer { display: none !important; }
 
-.notes-topic-embedded .page-wrapper {
+.notes-topic-embedded .page-wrapper,
+.notes-topic-embedded .layout {
   display: grid !important;
   grid-template-columns: minmax(0, 1fr) 280px !important;
   gap: 28px !important;
@@ -160,8 +163,14 @@ footer a{color:#ffd07a}
   margin-top: 0 !important;
 }
 
+.notes-topic-embedded .hero {
+  grid-column: 1 / -1;
+}
+
 .notes-topic-embedded .main-content,
 .notes-topic-embedded main.main-content,
+.notes-topic-embedded .layout > main,
+.notes-topic-embedded .page-wrapper > main,
 .notes-topic-embedded main {
   margin-left: 0 !important;
   min-width: 0;
@@ -169,6 +178,8 @@ footer a{color:#ffd07a}
 
 .notes-topic-embedded aside,
 .notes-topic-embedded .right-sidebar,
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .page-wrapper > aside,
 .notes-topic-embedded aside.sidebar {
   position: sticky !important;
   top: 88px !important;
@@ -176,11 +187,14 @@ footer a{color:#ffd07a}
 }
 
 @media (max-width: 960px) {
-  .notes-topic-embedded .page-wrapper {
+  .notes-topic-embedded .page-wrapper,
+  .notes-topic-embedded .layout {
     grid-template-columns: 1fr !important;
   }
   .notes-topic-embedded aside,
   .notes-topic-embedded .right-sidebar,
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .page-wrapper > aside,
   .notes-topic-embedded aside.sidebar {
     position: static !important;
   }
@@ -873,10 +887,10 @@ footer a{color:#ffd07a}
 <div class="widget">
   <h4>Related UPSC Notes</h4>
   <ul class="related">
-    <li><a href="/upsc-notes/ancient/ancient-topic07">Topic 07: Mahajanapada Period</a></li>
-    <li><a href="/upsc-notes/ancient/ancient-topic08">Topic 08: Foreign Invasions</a></li>
-    <li><a href="/upsc-notes/ancient/ancient-topic06">Topic 06: Buddhism &amp; Jainism</a></li>
-    <li><a href="/upsc-notes/ancient">Mod 3: Mauryan &amp; Gupta Age</a></li>
+    <li><a href="/ancient-history/the-mahajanapada-period-600-300-bc">Topic 07: Mahajanapada Period</a></li>
+    <li><a href="/ancient-history/foreign-invasions-on-india">Topic 08: Foreign Invasions</a></li>
+    <li><a href="/ancient-history/buddhism-and-jainism">Topic 06: Buddhism &amp; Jainism</a></li>
+    <li><a href="/ancient-history">Mod 3: Mauryan &amp; Gupta Age</a></li>
   </ul>
 </div>
 </aside>

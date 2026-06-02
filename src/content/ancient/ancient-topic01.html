@@ -1,198 +1,98 @@
-<!-- ancient-topic01 — auto-imported from ancient-topic01-sources-upsc-notes.html -->
+<!-- ancient-topic01 — auto-imported from ancient-topic01-sources-upsc-notes (1).html -->
 <style data-topic-notes>
     :root {
-      --primary: #1a3c5e;
-      --primary-light: #2a5c8e;
-      --secondary: #7d4e12;
-      --accent: #e67e22;
-      --accent-light: #f39c12;
-      --success: #27ae60;
-      --success-light: #2ecc71;
-      --warning: #f39c12;
-      --info: #2980b9;
-      --bg-main: #f4f6f9;
-      --bg-card: #ffffff;
-      --bg-sidebar: #1a2940;
-      --bg-sidebar-hover: #243b55;
-      --text-primary: #1a2533;
-      --text-secondary: #4a5568;
-      --text-muted: #718096;
-      --text-light: #f0f4f8;
-      --border-light: #e2e8f0;
-      --border-medium: #cbd5e0;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-      --shadow-md: 0 4px 12px rgba(0,0,0,0.10);
-      --shadow-lg: 0 8px 24px rgba(0,0,0,0.13);
-      --radius-sm: 6px;
-      --radius-md: 10px;
-      --radius-lg: 16px;
-      --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      --brand-blue: #5d3a1a;
+      --brand-blue-dark: #2e1a0a;
+      --brand-blue-light: #f5ece0;
+      --brand-orange: #c47a20;
+      --text: #1a1f2e;
+      --muted: #5a6478;
+      --bg: #fafaf7;
+      --card: #ffffff;
+      --border: #e4ddc8;
+      --accent: #f7f4ef;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: var(--font-main); background: var(--bg-main); color: var(--text-primary); line-height: 1.7; }
-
-    /* Layout */
-    .sidebar {
-      width: 270px; background: var(--bg-sidebar); color: var(--text-light);
-      position: fixed; top: 0; left: 0; height: 100vh; overflow-y: auto;
-      z-index: 100; transition: transform 0.3s ease;
-    }
-    .sidebar-logo { padding: 20px 18px 14px; border-bottom: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; gap: 10px; }
-    .sidebar-logo .logo-icon { font-size: 1.6rem; }
-    .sidebar-logo .logo-text { font-size: 1rem; font-weight: 700; color: var(--text-light); }
-    .sidebar-logo .logo-sub { font-size: 0.72rem; color: rgba(255,255,255,0.5); display: block; }
-    .sidebar-section { padding: 14px 12px 6px; }
-    .sidebar-section-title { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px; color: rgba(255,255,255,0.35); padding: 0 6px 6px; }
-    .sidebar-item {
-      display: flex; align-items: center; gap: 8px; padding: 8px 10px;
-      border-radius: var(--radius-sm); margin-bottom: 2px;
-      text-decoration: none; color: rgba(255,255,255,0.72); font-size: 0.84rem; transition: all 0.2s;
-    }
-    .sidebar-item:hover { background: var(--bg-sidebar-hover); color: #fff; }
-    .sidebar-item.active { background: var(--primary-light); color: #fff; }
-    .sidebar-item .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--success); flex-shrink: 0; }
-    .sidebar-item .dot.soon { background: var(--text-muted); }
-    .main-content { margin-left: 270px; flex: 1; min-width: 0; }
-
-    /* Topbar */
-    .topbar { background: var(--bg-card); border-bottom: 1px solid var(--border-light); padding: 10px 28px; display: flex; align-items: center; gap: 12px; position: sticky; top: 0; z-index: 50; }
-    .breadcrumb { font-size: 0.8rem; color: var(--text-muted); }
-    .breadcrumb a { color: var(--primary); text-decoration: none; }
-    .breadcrumb a:hover { text-decoration: underline; }
-    .badge { background: var(--primary); color: #fff; padding: 3px 9px; border-radius: 20px; font-size: 0.72rem; font-weight: 600; margin-left: auto; }
-    .badge.gs1 { background: var(--secondary); }
-
-    /* Hero */
-    .hero {
-      background: linear-gradient(135deg, #5d3a1a 0%, #7d4e12 55%, #1a3c5e 100%);
-      color: #fff; padding: 42px 36px 36px; position: relative; overflow: hidden;
-    }
-    .hero::before { content: ''; position: absolute; top: -60px; right: -60px; width: 280px; height: 280px; border-radius: 50%; background: rgba(255,255,255,0.04); }
-    .hero-module { font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; opacity: 0.75; margin-bottom: 8px; }
-    .hero h1 { font-size: 2rem; font-weight: 800; line-height: 1.25; margin-bottom: 10px; }
-    .hero-sub { font-size: 1rem; opacity: 0.85; margin-bottom: 20px; max-width: 640px; }
-    .hero-meta { display: flex; flex-wrap: wrap; gap: 14px; font-size: 0.8rem; opacity: 0.8; }
-
-    /* Content */
-    .content-wrap { max-width: 900px; margin: 0 auto; padding: 32px 28px 60px; }
-
-    /* Cards */
-    .card { background: var(--bg-card); border-radius: var(--radius-lg); box-shadow: var(--shadow-sm); border: 1px solid var(--border-light); margin-bottom: 28px; overflow: hidden; }
-    .card-header { padding: 16px 22px; border-bottom: 1px solid var(--border-light); display: flex; align-items: center; gap: 10px; }
-    .card-header h2 { font-size: 1.05rem; font-weight: 700; color: var(--primary); }
-    .card-icon { font-size: 1.2rem; }
-    .card-body { padding: 20px 22px; }
-
-    /* Clarity box */
-    .clarity-box { background: linear-gradient(135deg, #fef9f0 0%, #fdebd0 100%); border: 1.5px solid var(--accent); border-radius: var(--radius-md); padding: 18px 22px; margin-bottom: 22px; }
-    .clarity-box h3 { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--accent); margin-bottom: 10px; }
-    .clarity-box p { font-size: 0.92rem; color: var(--text-primary); line-height: 1.7; }
-
-    /* Info grid */
-    .info-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; margin-bottom: 22px; }
-    .info-tile { background: var(--bg-main); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 14px 16px; }
-    .info-tile .tile-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-muted); margin-bottom: 5px; }
-    .info-tile .tile-value { font-size: 0.9rem; color: var(--text-primary); font-weight: 600; line-height: 1.4; }
-
-    /* Table */
-    .table-wrap { overflow-x: auto; margin-bottom: 18px; }
-    table { width: 100%; border-collapse: collapse; font-size: 0.87rem; }
-    th { background: var(--primary); color: #fff; padding: 10px 13px; text-align: left; font-weight: 600; }
-    td { padding: 9px 13px; border-bottom: 1px solid var(--border-light); vertical-align: top; }
-    tr:nth-child(even) td { background: #f8fafc; }
-    tr:hover td { background: #eef2ff; }
-
-    /* Lists */
-    .styled-list { list-style: none; padding: 0; }
-    .styled-list li { padding: 7px 0 7px 22px; position: relative; border-bottom: 1px solid var(--border-light); font-size: 0.9rem; }
-    .styled-list li:last-child { border-bottom: none; }
-    .styled-list li::before { content: '▸'; position: absolute; left: 0; color: var(--secondary); font-size: 0.85rem; }
-
-    /* Highlight boxes */
-    .highlight-box { border-radius: var(--radius-md); padding: 14px 18px; margin-bottom: 16px; border-left: 4px solid; font-size: 0.9rem; }
-    .highlight-box.amber { background: #fef9f0; border-color: var(--accent); }
-    .highlight-box.blue { background: #eff6ff; border-color: var(--info); }
-    .highlight-box.green { background: #f0fff4; border-color: var(--success); }
-    .highlight-box.red { background: #fff5f5; border-color: #c0392b; }
-    .highlight-box strong { display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 5px; }
-    .highlight-box.amber strong { color: var(--accent); }
-    .highlight-box.blue strong { color: var(--info); }
-    .highlight-box.green strong { color: var(--success); }
-    .highlight-box.red strong { color: #c0392b; }
-
-    /* SVG */
-    .svg-container { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 16px; margin-bottom: 18px; overflow-x: auto; }
-    .svg-container svg { display: block; margin: 0 auto; max-width: 100%; }
-    .svg-caption { text-align: center; font-size: 0.78rem; color: var(--text-muted); margin-top: 8px; }
-
-    /* PYQ */
-    .pyq-item { border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 14px 16px; margin-bottom: 12px; }
-    .pyq-tag { display: inline-block; background: var(--primary); color: #fff; font-size: 0.7rem; font-weight: 700; padding: 2px 8px; border-radius: 12px; margin-bottom: 7px; }
-    .pyq-tag.mains { background: var(--secondary); }
-    .pyq-q { font-size: 0.9rem; font-weight: 600; margin-bottom: 5px; }
-    .pyq-hint { font-size: 0.82rem; color: var(--text-muted); }
-
-    /* CA */
-    .ca-item { display: flex; gap: 14px; padding: 12px 0; border-bottom: 1px solid var(--border-light); }
-    .ca-item:last-child { border-bottom: none; }
-    .ca-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
-    .ca-title { font-size: 0.9rem; font-weight: 600; margin-bottom: 4px; }
-    .ca-body { font-size: 0.84rem; color: var(--text-secondary); }
-
-    /* Revision */
-    .revision-box { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: #fff; border-radius: var(--radius-lg); padding: 24px 26px; }
-    .revision-box h2 { font-size: 1.05rem; font-weight: 700; margin-bottom: 16px; }
-    .revision-list { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; counter-reset: item; }
-    .revision-list li { padding: 8px 12px 8px 30px; position: relative; background: rgba(255,255,255,0.08); border-radius: var(--radius-sm); font-size: 0.84rem; line-height: 1.5; }
-    .revision-list li::before { content: counter(item); counter-increment: item; position: absolute; left: 8px; top: 8px; font-weight: 800; font-size: 0.75rem; color: var(--accent-light); }
-
-    /* CTA */
-    .cta-bar { background: linear-gradient(135deg, var(--secondary) 0%, var(--accent) 100%); border-radius: var(--radius-md); padding: 18px 22px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin-bottom: 28px; }
-    .cta-bar .cta-text { color: #fff; }
-    .cta-bar .cta-text strong { font-size: 1rem; display: block; }
-    .cta-bar .cta-text span { font-size: 0.83rem; opacity: 0.88; }
-    .cta-btn { background: #fff; color: var(--secondary); border: none; cursor: pointer; padding: 9px 20px; border-radius: 20px; font-weight: 700; font-size: 0.88rem; text-decoration: none; white-space: nowrap; transition: all 0.2s; }
-    .cta-btn:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); }
-
-    /* Tags */
-    .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
-    .tag { background: var(--bg-main); border: 1px solid var(--border-medium); padding: 4px 10px; border-radius: 20px; font-size: 0.78rem; color: var(--text-secondary); font-weight: 500; }
-    .tag.hot { background: #fef9f0; border-color: var(--accent); color: var(--secondary); }
-
-    /* Section sub-heading */
-    .sec-h3 { font-size: 0.95rem; font-weight: 700; color: var(--primary); margin: 16px 0 10px; }
-    .sec-h4 { font-size: 0.88rem; font-weight: 700; color: var(--secondary); margin: 12px 0 8px; border-left: 3px solid var(--accent); padding-left: 8px; }
-
-    /* Hamburger */
-    .hamburger { display: none; position: fixed; top: 12px; left: 12px; z-index: 200; background: var(--primary); border: none; color: #fff; border-radius: var(--radius-sm); padding: 8px 10px; cursor: pointer; font-size: 1.1rem; }
-
-    @media print {
-      .sidebar, .topbar, .hamburger, .cta-bar { display: none !important; }
-      .main-content { margin-left: 0; }
-      .card { box-shadow: none; border: 1px solid #ccc; break-inside: avoid; }
-    }
-    @media (max-width: 860px) {
-      .sidebar { transform: translateX(-100%); }
-      .sidebar.open { transform: translateX(0); }
-      .main-content { margin-left: 0; }
-      .hamburger { display: block; }
-      .hero { padding: 52px 18px 28px; }
-      .hero h1 { font-size: 1.45rem; }
-      .content-wrap { padding: 20px 14px 50px; }
-      .revision-list { grid-template-columns: 1fr; }
-      .topbar { padding: 10px 14px; }
-    }
-    @media (max-width: 540px) { .info-grid { grid-template-columns: 1fr 1fr; } }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body { font-family: 'Inter', 'Segoe UI', -apple-system, sans-serif; color: var(--text); background: var(--bg); line-height: 1.65; font-size: 16px; }
+    .topnav { background: var(--brand-blue-dark); color: #fff; padding: 14px 28px; position: sticky; top: 0; z-index: 50; box-shadow: 0 2px 6px rgba(0,0,0,0.18); }
+    .topnav .breadcrumbs { font-size: 13px; color: #d6dce7; }
+    .topnav .breadcrumbs a { color: #fff; text-decoration: none; font-weight: 500; }
+    .hero { background: linear-gradient(135deg, #8b5e2a 0%, #5d3a1a 55%, #2e1a0a 100%); color: #fff; padding: 54px 28px 44px; position: relative; overflow: hidden; }
+    .hero .wrap { max-width: 1240px; margin: 0 auto; position: relative; z-index: 2; }
+    .hero h1 { font-size: 38px; margin: 0 0 14px; font-weight: 800; letter-spacing: -0.5px; }
+    .hero p.sub { font-size: 16px; opacity: 0.88; margin: 0 0 20px; max-width: 680px; }
+    .pills { display: flex; flex-wrap: wrap; gap: 8px; }
+    .pill { background: rgba(255,255,255,0.13); border: 1px solid rgba(255,255,255,0.22); color: #fff; padding: 6px 13px; border-radius: 99px; font-size: 12.5px; }
+    .pill.gold { background: rgba(201,162,39,0.22); border-color: rgba(201,162,39,0.45); }
+    .layout { display: grid; grid-template-columns: 1fr 320px; gap: 28px; max-width: 1240px; margin: 28px auto; padding: 0 28px; }
+    @media (max-width: 1024px) { .layout { grid-template-columns: 1fr; } }
+    .toc { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px 22px; margin-bottom: 22px; }
+    .toc h3 { margin: 0 0 10px; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; color: var(--brand-blue); font-weight: 700; }
+    .toc ol { margin: 0; padding-left: 22px; font-size: 14.5px; column-count: 2; column-gap: 24px; }
+    .toc ol li { margin: 4px 0; }
+    .toc ol a { color: var(--brand-blue); text-decoration: none; }
+    .toc ol a:hover { text-decoration: underline; }
+    .concept-box { background: linear-gradient(135deg, #fefbf0, #fdf6dc); border-left: 5px solid var(--brand-orange); border-radius: 10px; padding: 22px 26px; margin-bottom: 26px; }
+    .concept-box h3 { margin: 0 0 10px; font-size: 18px; color: var(--brand-blue-dark); font-weight: 700; }
+    .concept-box p { margin: 0 0 10px; font-size: 15px; }
+    .concept-box ul { margin: 0; padding-left: 20px; }
+    .concept-box ul li { margin: 6px 0; font-size: 14.5px; }
+    .notes { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 26px 30px; margin-bottom: 22px; }
+    .notes h2 { font-size: 24px; color: var(--brand-blue-dark); margin: 0 0 14px; padding-bottom: 10px; border-bottom: 2px solid var(--accent); font-weight: 700; }
+    .notes h3 { font-size: 18px; color: var(--brand-blue); margin: 22px 0 10px; font-weight: 700; }
+    .notes h4 { font-size: 15.5px; color: var(--brand-blue-dark); margin: 16px 0 8px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+    .notes p { margin: 0 0 12px; font-size: 15px; }
+    .notes ul, .notes ol { padding-left: 22px; margin: 0 0 14px; }
+    .notes li { margin: 6px 0; font-size: 15px; }
+    .callout { background: var(--brand-blue-light); border-left: 4px solid var(--brand-blue); padding: 14px 18px; border-radius: 6px; margin: 14px 0; font-size: 14.5px; }
+    .callout.gold { background: #fdf6dc; border-left-color: var(--brand-orange); }
+    .callout strong { display: block; margin-bottom: 4px; }
+    .tbl { width: 100%; border-collapse: collapse; margin: 14px 0; font-size: 14px; }
+    .tbl th, .tbl td { border: 1px solid var(--border); padding: 8px 11px; text-align: left; vertical-align: top; }
+    .tbl th { background: var(--brand-blue); color: #fff; font-weight: 600; }
+    .tbl tr:nth-child(even) td { background: #fafaf3; }
+    .pyq { background: #fff; border: 1px solid var(--border); border-left: 4px solid var(--brand-orange); border-radius: 6px; padding: 12px 16px; margin: 10px 0; font-size: 14.5px; }
+    .pyq .year { display: inline-block; background: var(--brand-orange); color: #fff; padding: 2px 9px; border-radius: 99px; font-size: 12px; font-weight: 600; margin-bottom: 6px; }
+    .revision { background: linear-gradient(135deg, var(--brand-blue-dark), var(--brand-blue)); color: #fff; border-radius: 12px; padding: 26px 30px; margin-bottom: 22px; }
+    .revision h3 { color: var(--brand-orange); margin: 0 0 14px; font-size: 20px; font-weight: 700; }
+    .revision ol { padding-left: 22px; margin: 0; }
+    .revision li { margin: 6px 0; font-size: 14.5px; color: #e6e9f0; }
+    .widget { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; margin-bottom: 18px; }
+    .widget h4 { margin: 0 0 10px; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: var(--brand-blue); font-weight: 700; border-bottom: 1px solid var(--border); padding-bottom: 7px; }
+    .miniref { font-size: 13px; list-style: none; padding: 0; margin: 0; }
+    .miniref li { margin: 5px 0; color: var(--text); }
+    .miniref li strong { color: var(--brand-blue-dark); }
+    .bar { display: flex; align-items: center; gap: 8px; margin: 6px 0; font-size: 13px; }
+    .bar .lbl { width: 88px; color: var(--muted); }
+    .bar .track { flex: 1; height: 7px; background: #eee; border-radius: 99px; overflow: hidden; }
+    .bar .fill { height: 100%; background: linear-gradient(90deg, var(--brand-orange), #a87f1c); border-radius: 99px; }
+    .tags { display: flex; flex-wrap: wrap; gap: 5px; }
+    .tags span { background: var(--accent); color: #6b5118; padding: 3px 9px; border-radius: 99px; font-size: 11.5px; font-weight: 500; }
+    .related { list-style: none; padding: 0; margin: 0; font-size: 13.5px; }
+    .related li { margin: 6px 0; }
+    .related a { color: var(--brand-blue); text-decoration: none; font-weight: 500; }
+    .related a:hover { text-decoration: underline; }
+    .quiz { font-size: 13.5px; }
+    .quiz details { margin: 7px 0; border-bottom: 1px dashed var(--border); padding-bottom: 7px; }
+    .quiz details:last-child { border-bottom: none; }
+    .quiz summary { cursor: pointer; font-weight: 600; color: var(--brand-blue-dark); }
+    .quiz p { margin: 6px 0 0; color: var(--muted); font-size: 13px; }
+    footer { background: var(--brand-blue-dark); color: #cfd5e2; padding: 24px 28px; text-align: center; font-size: 13px; margin-top: 34px; }
+    footer a { color: #e6be7a; text-decoration: none; }
   
 /* Next.js: shared app navbar; restore two-column layout */
 .notes-topic-embedded .navbar,
 .notes-topic-embedded nav.navbar,
+.notes-topic-embedded .topnav,
+.notes-topic-embedded nav.topnav,
 .notes-topic-embedded .breadcrumbs,
 .notes-topic-embedded .hamburger,
 .notes-topic-embedded .menu-btn,
 .notes-topic-embedded footer { display: none !important; }
 
-.notes-topic-embedded .page-wrapper {
+.notes-topic-embedded .page-wrapper,
+.notes-topic-embedded .layout {
   display: grid !important;
   grid-template-columns: minmax(0, 1fr) 280px !important;
   gap: 28px !important;
@@ -203,8 +103,14 @@
   margin-top: 0 !important;
 }
 
+.notes-topic-embedded .hero {
+  grid-column: 1 / -1;
+}
+
 .notes-topic-embedded .main-content,
 .notes-topic-embedded main.main-content,
+.notes-topic-embedded .layout > main,
+.notes-topic-embedded .page-wrapper > main,
 .notes-topic-embedded main {
   margin-left: 0 !important;
   min-width: 0;
@@ -212,6 +118,8 @@
 
 .notes-topic-embedded aside,
 .notes-topic-embedded .right-sidebar,
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .page-wrapper > aside,
 .notes-topic-embedded aside.sidebar {
   position: sticky !important;
   top: 88px !important;
@@ -219,673 +127,531 @@
 }
 
 @media (max-width: 960px) {
-  .notes-topic-embedded .page-wrapper {
+  .notes-topic-embedded .page-wrapper,
+  .notes-topic-embedded .layout {
     grid-template-columns: 1fr !important;
   }
   .notes-topic-embedded aside,
   .notes-topic-embedded .right-sidebar,
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .page-wrapper > aside,
   .notes-topic-embedded aside.sidebar {
     position: static !important;
   }
 }
 </style>
 <div class="notes-topic-embedded">
-<div class="page-wrapper"><main class="main-content">
-  <div class="topbar">
-    <nav class="breadcrumb">
-      <a href="/upsc-notes">Notes Hub</a> › <a href="/upsc-notes/ancient">Ancient History</a> › Sources of Ancient Indian History
-    </nav>
-    <span class="badge gs1">GS Paper 1</span>
-  </div>
-
-  <!-- Hero -->
-  <div class="hero">
-    <div class="hero-module">Ancient History · Topic 01</div>
+<div class="hero">
+  <div class="wrap">
     <h1>Sources of Ancient Indian History</h1>
-    <p class="hero-sub">Archaeological Sources (Inscriptions, Coins, Monuments) &amp; Literary Sources (Vedas, Arthashastra, Foreign Accounts)</p>
-    <div class="hero-meta">
-      <span>📄 GS Paper 1</span>
-      <span>⏱ 30 min read</span>
-      <span>🎯 Foundation Topic — Every UPSC aspirant must know</span>
-      <span>📅 Updated: May 2026</span>
+    <p class="sub">Archaeological Sources (Inscriptions, Coins, Monuments) &amp; Literary Sources (Vedas, Arthashastra, Foreign Accounts)</p>
+    <div class="pills">
+      <span class="pill gold">UPSC Prelims &middot; Mains GS-I</span>
+      <span class="pill">Epigraphic &amp; Numismatic Sources</span>
+      <span class="pill">~30 min read</span>
+      <span class="pill">Ashokan Inscriptions &middot; Brahmi &middot; Kharosthi</span>
+      <span class="pill">Megasthenes &middot; Fahien &middot; Xuanzang</span>
     </div>
   </div>
+</div>
+<div class="layout">
+  <main>
 
-  <div class="content-wrap">
-
-    <!-- Conceptual Clarity -->
-    <div class="clarity-box">
-      <h3>Conceptual Clarity — Why Sources Matter for UPSC</h3>
-      <p>"Sources of History" is not merely an introductory topic — it is the <strong>epistemological backbone</strong> of all ancient history questions. When UPSC asks "how do we know about Ashoka's Dhamma?" or "what is the evidence for Chandragupta Maurya's empire?", the answer lies here. Understanding sources helps you <strong>evaluate the reliability of historical claims</strong>, a skill tested directly in Mains answers. Prelims frequently asks about who deciphered Brahmi, which foreign traveller visited which king, and what a specific inscription says.</p>
-    </div>
-
-    <!-- CTA 1 -->
-    <div class="cta-bar">
-      <div class="cta-text">
-        <strong>Build a rock-solid Ancient History foundation with MentorsDaily</strong>
-        <span>Structured notes + mentorship = UPSC rank</span>
-      </div>
-      <a href="https://mentorsdaily.com" class="cta-btn">Join MentorsDaily →</a>
-    </div>
-
-    <!-- Tags -->
-    <div class="tag-row">
-      <span class="tag hot">Epigraphic Sources</span>
-      <span class="tag hot">Numismatic Sources</span>
-      <span class="tag hot">Ashokan Inscriptions</span>
-      <span class="tag hot">Megasthenes Indica</span>
-      <span class="tag">Brahmi Script</span>
-      <span class="tag">Arthashastra</span>
-      <span class="tag">Fahien Xuanzang</span>
-      <span class="tag">Puranas</span>
-      <span class="tag">GS Paper 1</span>
-    </div>
-
-    <!-- Quick Reference -->
-    <div class="card">
-      <div class="card-header"><span class="card-icon">⚡</span><h2>Quick Reference — Key Facts</h2></div>
-      <div class="card-body">
-        <div class="info-grid">
-          <div class="info-tile"><div class="tile-label">Brahmi Deciphered by</div><div class="tile-value">James Prinsep, 1837</div></div>
-          <div class="info-tile"><div class="tile-label">Kharosthi Deciphered by</div><div class="tile-value">James Prinsep &amp; C. Lassen, 1838</div></div>
-          <div class="info-tile"><div class="tile-label">Oldest Inscriptions</div><div class="tile-value">Ashokan Edicts, 3rd century BCE</div></div>
-          <div class="info-tile"><div class="tile-label">Earliest Coins</div><div class="tile-value">Punch-marked coins, c. 600 BCE</div></div>
-          <div class="info-tile"><div class="tile-label">Megasthenes visited</div><div class="tile-value">Chandragupta Maurya's court, c. 302 BCE</div></div>
-          <div class="info-tile"><div class="tile-label">Fahien visited</div><div class="tile-value">Chandragupta II (Vikramaditya), 399–414 CE</div></div>
-          <div class="info-tile"><div class="tile-label">Xuanzang (Hiuen Tsang) visited</div><div class="tile-value">Harsha's court, 629–645 CE</div></div>
-          <div class="info-tile"><div class="tile-label">First Historian of India</div><div class="tile-value">Kalhana — Rajatarangini (1148 CE)</div></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section 1: Archaeological Sources -->
-    <div class="card">
-      <div class="card-header"><span class="card-icon">🪨</span><h2>1. Archaeological Sources of Ancient Indian History</h2></div>
-      <div class="card-body">
-
-        <div class="highlight-box amber">
-          <strong>What Are Archaeological Sources?</strong>
-          Archaeological sources are material remains of the past — physical objects, structures, and inscriptions that survived through time and can be studied scientifically. They are generally more reliable than literary sources because they are <em>contemporary</em> (created at the time of the events) and not subject to later editorial changes. However, they require skilled interpretation and are often silent on cultural and intellectual aspects.
-        </div>
-
-        <!-- 1A: Inscriptions -->
-        <div class="sec-h3">A. Epigraphic Sources (Inscriptions)</div>
-        <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:12px;">Inscriptions are writings engraved on hard surfaces — rock, stone pillars, copper plates, cave walls, and temple walls. They are the most reliable archaeological source.</p>
-
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Inscription</th><th>Ruler / Period</th><th>Script / Language</th><th>Historical Significance</th></tr></thead>
-            <tbody>
-              <tr>
-                <td><strong>Ashokan Edicts</strong> (Major &amp; Minor Rock Edicts, Pillar Edicts)</td>
-                <td>Ashoka, 3rd century BCE</td>
-                <td>Brahmi (mostly), Kharosthi (NW), Greek &amp; Aramaic (frontier)</td>
-                <td>Dhamma policy, Kalinga War, administration, spread of Buddhism, first datable inscriptions in India</td>
-              </tr>
-              <tr>
-                <td><strong>Hathigumpha Inscription</strong></td>
-                <td>Kharavela, King of Kalinga, 1st century BCE</td>
-                <td>Brahmi</td>
-                <td>Details Kharavela's military campaigns and Jain patronage; key source for post-Maurya period</td>
-              </tr>
-              <tr>
-                <td><strong>Junagarh Rock Inscription</strong></td>
-                <td>Rudradaman I (Western Kshatrap), 150 CE</td>
-                <td>Sanskrit (earliest long prose inscription in Sanskrit)</td>
-                <td>Sudarshana Lake renovation; confirms Sanskrit as administrative language; Saka chronology</td>
-              </tr>
-              <tr>
-                <td><strong>Allahabad Pillar Inscription (Prayag Prashasti)</strong></td>
-                <td>Samudragupta, 4th century CE (composed by Harishena)</td>
-                <td>Sanskrit</td>
-                <td>Lists kingdoms conquered; describes Samudragupta as warrior, poet, musician — "Napoleon of India"</td>
-              </tr>
-              <tr>
-                <td><strong>Mehrauli Iron Pillar Inscription</strong></td>
-                <td>Chandragupta II (Vikramaditya), 4th–5th century CE</td>
-                <td>Sanskrit (Brahmi)</td>
-                <td>Confirms Chandragupta II's northern campaigns; pillar famous for rust-free iron metallurgy</td>
-              </tr>
-              <tr>
-                <td><strong>Aihole Inscription</strong></td>
-                <td>Pulakesi II (Chalukya), 634 CE (composed by Ravikirti)</td>
-                <td>Sanskrit + Kannada</td>
-                <td>Records Pulakesi II's victory over Harsha; key for Deccan history</td>
-              </tr>
-              <tr>
-                <td><strong>Copper Plate Grants</strong></td>
-                <td>Various dynasties (Guptas, Palas, Rashtrakutas)</td>
-                <td>Sanskrit, regional languages</td>
-                <td>Land grants, administrative details, genealogy of dynasties; important for agrarian and social history</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="highlight-box blue">
-          <strong>James Prinsep — Decipherer of Brahmi (1837)</strong>
-          James Prinsep, Secretary of the Asiatic Society of Bengal, deciphered Brahmi script in 1837 by analysing Ashokan coins and inscriptions. This single achievement unlocked centuries of Indian history — before Prinsep, Ashokan inscriptions were unreadable and Ashoka was unknown to modern scholarship. Kharosthi (written right to left, used in NW India) was also deciphered around 1838 by Prinsep and C. Lassen.
-        </div>
-
-        <!-- 1B: Coins -->
-        <div class="sec-h3">B. Numismatic Sources (Coins)</div>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Coin Type / Period</th><th>Key Feature</th><th>Historical Information</th></tr></thead>
-            <tbody>
-              <tr><td><strong>Punch-Marked Coins</strong> (c. 600 BCE – 300 CE)</td><td>Silver/copper; symbols punched; no inscriptions, no ruler names</td><td>Earliest coins; janapada economy; trade routes; Mauryan period most common</td></tr>
-              <tr><td><strong>Indo-Greek Coins</strong> (2nd–1st century BCE)</td><td>Bilingual (Greek + Kharosthi); realistic portraits of rulers</td><td>ONLY source for many Indo-Greek kings (Menander/Milinda, Demetrius); numismatic portraits first in Indian subcontinent</td></tr>
-              <tr><td><strong>Kushana Coins</strong> (1st–3rd century CE)</td><td>Gold coins; images of Kushana kings + deities (Hindu, Buddhist, Zoroastrian, Greek)</td><td>Religious syncretism under Kushanas; Kanishka's coins show Buddha — evidence of Buddhist patronage</td></tr>
-              <tr><td><strong>Gupta Gold Coins (Dinars)</strong></td><td>Highest gold purity in ancient world; scenes of rulers playing veena, hunting, performing Ashvamedha</td><td>Economic prosperity of Gupta age; individual personality of rulers; artistic excellence</td></tr>
-              <tr><td><strong>Satavahana Coins</strong></td><td>Lead, copper; Brahmi inscriptions; ship designs</td><td>Trade with Rome; maritime connections; dynastic chronology</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="highlight-box green">
-          <strong>Why Coins Are Especially Valuable for Indo-Greek History</strong>
-          For the Indo-Greek kings (Bactrian Greeks who ruled northwest India, c. 180–10 BCE), coins are practically the ONLY source. Indian literary sources mostly ignore them. Coins give us rulers' names, portraits, titles, and the extent of their territories. Menander (Milinda) — whose philosophical dialogue with Buddhist monk Nagasena is recorded in "Milindapanha" — is known from both coins and this Buddhist text, making him one of the best-documented Indo-Greek kings.
-        </div>
-
-        <!-- 1C: Monuments & Excavations -->
-        <div class="sec-h3">C. Monuments, Architecture &amp; Excavations</div>
-        <ul class="styled-list">
-          <li><strong>IVC Excavations (Harappa 1921, Mohenjo-daro 1922):</strong> Excavated by Daya Ram Sahni and R.D. Banerji respectively; revealed urban civilisation predating the Vedic age; great bath, granaries, grid town planning, drainage system</li>
-          <li><strong>Megaliths (South India):</strong> Iron Age burial sites (Brahmagiri, Adichanallur); reveal pre-historic south Indian cultures; iron tools, black-and-red ware pottery</li>
-          <li><strong>Buddhist Stupas:</strong> Sanchi, Bharhut, Amaravati — sculptural panels are historical records; depict Jataka stories, events from Buddha's life, contemporary society</li>
-          <li><strong>Rock-Cut Caves:</strong> Ajanta (Buddhist), Ellora (Buddhist + Hindu + Jain), Elephanta — art history and religious patronage evidence</li>
-          <li><strong>Taxila, Nalanda Excavations:</strong> Evidence of urban settlements, universities, trade; layers of occupation allow chronological sequencing</li>
-          <li><strong>Pottery:</strong> Painted Grey Ware (PGW, 1100–600 BCE — associated with Later Vedic period &amp; Mahajanapadas); Northern Black Polished Ware (NBPW, 600–100 BCE — urban second urbanisation, Mauryan period)</li>
-        </ul>
-
-        <!-- 1D: Scientific Dating Methods -->
-        <div class="sec-h3">D. Scientific Dating Methods</div>
-        <div class="highlight-box blue">
-          <strong>Relative vs. Absolute Dating</strong>
-          Archaeological dating works at two levels: <em>relative dating</em> (establishing that A is older or younger than B, without giving a calendar year) and <em>absolute dating</em> (assigning an actual year or date range). Stratigraphy gives relative dates; Carbon-14 and other scientific techniques give absolute dates. Together, they allow historians to build a firm chronological skeleton for ancient India.
-        </div>
-        <ul class="styled-list">
-          <li><strong>Stratigraphy:</strong> The most fundamental archaeological dating principle — objects found in <em>lower strata</em> (deeper layers of earth) are older than those in upper strata. Each layer (stratum) represents a distinct phase of occupation or cultural period. Excavations at Mohenjo-daro, Taxila, and Hastinapura use stratigraphy to establish cultural sequences. Limitation: gives only <em>relative</em> chronology, not calendar years. When coins of known rulers are found in a stratum, they provide a <em>terminus post quem</em> (earliest possible date), converting relative dates into absolute ones.</li>
-          <li><strong>Radiocarbon Dating (Carbon-14, C-14):</strong> Developed by American chemist W.F. Libby (1949); Nobel Prize 1960. All living organisms absorb C-14, which begins decaying after death at a known half-life (~5,730 years). Measuring residual C-14 in organic material (charcoal, bone, wood, seeds) can date it up to ~50,000 years. Used to date Harappan remains, pre-historic bone deposits, and Vedic-era fire altars. Limitation: ±200–300 year margin of error; only dates organic material, not stone or metal.</li>
-          <li><strong>Thermoluminescence (TL) Dating:</strong> Measures light emitted when pottery or baked clay is reheated in a lab; the amount of light indicates how long ago the material was last fired. Crucial for dating ceramics (PGW, NBPW, IVC pottery) where Carbon-14 cannot be applied since pottery is inorganic. Has confirmed the dates of Harappan pottery.</li>
-          <li><strong>Dendrochronology:</strong> Dating by counting annual growth rings in preserved wood — each ring represents one year. Limited application in India due to tropical climate (wood decays faster), but used where ancient beams or logs have survived at waterlogged sites.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- SVG 1: Archaeological Sources Map -->
-    <div class="svg-container">
-      <svg viewBox="0 0 780 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Archaeological Sources Classification">
-        <defs>
-          <linearGradient id="archGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color:#5d3a1a;stop-opacity:0.1"/>
-            <stop offset="100%" style="stop-color:#1a3c5e;stop-opacity:0.08"/>
-          </linearGradient>
-        </defs>
-        <rect width="780" height="400" fill="url(#archGrad)" rx="12"/>
-        <text x="390" y="28" text-anchor="middle" font-size="14" font-weight="800" fill="#1a3c5e">Archaeological Sources of Ancient Indian History</text>
-
-        <!-- Central node -->
-        <ellipse cx="390" cy="110" rx="110" ry="30" fill="#5d3a1a" opacity="0.9"/>
-        <text x="390" y="114" text-anchor="middle" font-size="12" font-weight="700" fill="white">ARCHAEOLOGICAL SOURCES</text>
-
-        <!-- Branch lines -->
-        <line x1="280" y1="110" x2="140" y2="155" stroke="#7d4e12" stroke-width="2"/>
-        <line x1="390" y1="140" x2="390" y2="165" stroke="#7d4e12" stroke-width="2"/>
-        <line x1="500" y1="110" x2="640" y2="155" stroke="#7d4e12" stroke-width="2"/>
-        <line x1="310" y1="125" x2="155" y2="250" stroke="#7d4e12" stroke-width="1.5" stroke-dasharray="4,3"/>
-        <line x1="475" y1="125" x2="620" y2="250" stroke="#7d4e12" stroke-width="1.5" stroke-dasharray="4,3"/>
-
-        <!-- Node 1: Inscriptions -->
-        <rect x="55" y="150" width="170" height="32" rx="8" fill="#2980b9" opacity="0.9"/>
-        <text x="140" y="170" text-anchor="middle" font-size="11" font-weight="700" fill="white">Epigraphic (Inscriptions)</text>
-        <rect x="55" y="190" width="170" height="130" rx="8" fill="white" opacity="0.92" stroke="#2980b9" stroke-width="1"/>
-        <text x="70" y="210" font-size="9.5" fill="#1a2533">• Ashokan Edicts (Brahmi/Kharosthi)</text>
-        <text x="70" y="226" font-size="9.5" fill="#1a2533">• Hathigumpha (Kharavela)</text>
-        <text x="70" y="242" font-size="9.5" fill="#1a2533">• Allahabad Pillar (Samudragupta)</text>
-        <text x="70" y="258" font-size="9.5" fill="#1a2533">• Junagarh Rock (Rudradaman I)</text>
-        <text x="70" y="274" font-size="9.5" fill="#1a2533">• Aihole (Pulakesi II)</text>
-        <text x="70" y="290" font-size="9.5" fill="#1a2533">• Copper Plate Grants</text>
-        <text x="70" y="307" font-size="9" fill="#718096">Deciphered: Brahmi→Prinsep 1837</text>
-
-        <!-- Node 2: Coins -->
-        <rect x="305" y="160" width="170" height="32" rx="8" fill="#e67e22" opacity="0.9"/>
-        <text x="390" y="180" text-anchor="middle" font-size="11" font-weight="700" fill="white">Numismatic (Coins)</text>
-        <rect x="305" y="200" width="170" height="115" rx="8" fill="white" opacity="0.92" stroke="#e67e22" stroke-width="1"/>
-        <text x="320" y="220" font-size="9.5" fill="#1a2533">• Punch-marked (600 BCE+)</text>
-        <text x="320" y="236" font-size="9.5" fill="#1a2533">• Indo-Greek (bilingual portraits)</text>
-        <text x="320" y="252" font-size="9.5" fill="#1a2533">• Kushana (religious syncretism)</text>
-        <text x="320" y="268" font-size="9.5" fill="#1a2533">• Gupta gold dinars</text>
-        <text x="320" y="284" font-size="9.5" fill="#1a2533">• Satavahana lead coins</text>
-        <text x="320" y="301" font-size="9" fill="#718096">Key for Indo-Greek kings (only source)</text>
-
-        <!-- Node 3: Monuments -->
-        <rect x="555" y="150" width="170" height="32" rx="8" fill="#27ae60" opacity="0.9"/>
-        <text x="640" y="170" text-anchor="middle" font-size="11" font-weight="700" fill="white">Monuments &amp; Excavations</text>
-        <rect x="555" y="190" width="170" height="130" rx="8" fill="white" opacity="0.92" stroke="#27ae60" stroke-width="1"/>
-        <text x="570" y="210" font-size="9.5" fill="#1a2533">• IVC sites (Harappa, MJD)</text>
-        <text x="570" y="226" font-size="9.5" fill="#1a2533">• Stupas (Sanchi, Bharhut)</text>
-        <text x="570" y="242" font-size="9.5" fill="#1a2533">• Caves (Ajanta, Ellora)</text>
-        <text x="570" y="258" font-size="9.5" fill="#1a2533">• Megaliths (Iron Age S. India)</text>
-        <text x="570" y="274" font-size="9.5" fill="#1a2533">• Pottery (PGW, NBPW)</text>
-        <text x="570" y="290" font-size="9.5" fill="#1a2533">• Taxila, Nalanda excavations</text>
-        <text x="570" y="307" font-size="9" fill="#718096">Excavated: Daya Ram Sahni, R.D. Banerji</text>
-
-        <!-- Pottery timeline -->
-        <rect x="55" y="340" width="670" height="46" rx="8" fill="white" opacity="0.9" stroke="#e2e8f0" stroke-width="1"/>
-        <text x="390" y="358" text-anchor="middle" font-size="10" font-weight="700" fill="#1a3c5e">Pottery Chronology (UPSC Prelims Favourite)</text>
-        <text x="90" y="376" font-size="9.5" fill="#1a2533">Ochre Colour Pottery (OCP): 2000–1500 BCE</text>
-        <text x="330" y="376" font-size="9.5" fill="#1a2533">Painted Grey Ware (PGW): 1100–600 BCE → Vedic</text>
-        <text x="570" y="376" font-size="9.5" fill="#1a2533">NBPW: 600–100 BCE → Mauryan</text>
-
-        <text x="390" y="393" text-anchor="middle" font-size="9" fill="#718096">MentorsDaily.com · UPSC GS Paper 1 · Ancient History Topic 01</text>
-      </svg>
-      <div class="svg-caption">Figure 1: Classification of Archaeological Sources — Inscriptions, Coins, and Monuments</div>
-    </div>
-
-    <!-- Section 2: Literary Sources -->
-    <div class="card">
-      <div class="card-header"><span class="card-icon">📖</span><h2>2. Literary Sources of Ancient Indian History</h2></div>
-      <div class="card-body">
-
-        <div class="highlight-box amber">
-          <strong>Religious vs. Secular vs. Foreign — The Three Pillars</strong>
-          Literary sources are divided into: (1) <strong>Religious Literature</strong> — Vedas, Upanishads, Puranas, Buddhist Pitakas, Jain Agamas — primarily composed for spiritual purposes but contain historical data; (2) <strong>Secular Literature</strong> — Arthashastra, Mudrarakshasa, Rajatarangini — written for political/administrative purposes; (3) <strong>Foreign Accounts</strong> — Greek, Chinese, Arab travellers — most historically precise because they record observations, not tradition.
-        </div>
-
-        <!-- 2A: Religious Literature -->
-        <div class="sec-h3">A. Religious Literature</div>
-
-        <div class="sec-h4">i. Vedic Literature</div>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Text</th><th>Period</th><th>Historical Information</th></tr></thead>
-            <tbody>
-              <tr><td><strong>Rigveda</strong> (earliest)</td><td>c. 1500–1000 BCE</td><td>Early Vedic society; Aryans in Punjab; river names (Sapta Sindhu); tribal battles (Dasarajna — Battle of Ten Kings); cattle economy; no agriculture</td></tr>
-              <tr><td><strong>Samaveda, Yajurveda, Atharvaveda</strong></td><td>c. 1000–800 BCE</td><td>Atharvaveda: magical rites, disease treatment, social customs; Yajurveda: sacrificial rituals; all reflect transition to settled agriculture</td></tr>
-              <tr><td><strong>Brahmanas</strong></td><td>c. 900–700 BCE</td><td>Elaborate sacrificial procedures; Shatapatha Brahmana — Aryan expansion eastward into Gangetic plains (Videha migration story)</td></tr>
-              <tr><td><strong>Upanishads (108 total; 12 major)</strong></td><td>c. 800–500 BCE</td><td>Philosophical speculation; Brihadaranyaka, Chandogya (oldest); challenge Vedic ritualism; background for rise of Buddhism and Jainism</td></tr>
-              <tr><td><strong>Mahabharata &amp; Ramayana (Epics / Itihasas)</strong></td><td>400 BCE – 400 CE (final form)</td><td>Social norms, polity, ethics; Mahabharata (1,00,000 shlokas) includes Bhagavad Gita; historical kernel of Bharata clan conflict; geography of ancient India</td></tr>
-              <tr><td><strong>Puranas (18 major)</strong></td><td>c. 300–1200 CE</td><td>Dynastic lists (king lists) of Mauryas, Guptas, Satavahanas; Vishnu Purana, Matsya Purana most historically useful; mix fact with mythology; identify rulers and genealogies</td></tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="sec-h4">ii. Buddhist Literature</div>
-        <ul class="styled-list">
-          <li><strong>Tripitaka (Three Baskets):</strong> Vinaya Pitaka (monastic rules), Sutta Pitaka (Buddha's discourses), Abhidhamma Pitaka (philosophy) — written in Pali; key source for Mauryan period and spread of Buddhism</li>
-          <li><strong>Jataka Tales (547 stories):</strong> Previous lives of Buddha — contain vivid descriptions of social and economic life; towns, trade, guilds, caste conditions in 6th–4th century BCE India</li>
-          <li><strong>Dipavamsa and Mahavamsa (Sri Lankan chronicles):</strong> Details of Ashoka's reign and missions; Sangha history; valuable for Buddhist chronology</li>
-          <li><strong>Milindapanha:</strong> Dialogue between Buddhist monk Nagasena and Indo-Greek king Menander (Milinda); confirms Menander's conversion to Buddhism</li>
-          <li><strong>Buddhacharita:</strong> Ashvaghosha's biography of Buddha (1st–2nd century CE, Sanskrit) — literary and historical value</li>
-        </ul>
-
-        <div class="sec-h4">iii. Jain Literature</div>
-        <ul class="styled-list">
-          <li><strong>Agamas (Jain canonical texts):</strong> Written in Ardhamagadhi Prakrit; information on Vardhaman Mahavira's life, Jain philosophy, social conditions</li>
-          <li><strong>Parishishtaparvan (Hemachandra, 12th century CE):</strong> Lives of Jain elders; mentions Chandragupta Maurya's connection with Jainism and his end at Shravanabelagola</li>
-          <li><strong>Kalpasutra (Bhadrabahu):</strong> Biographies of Jain Tirthankaras including Mahavira; list of Jain teachers</li>
-        </ul>
-
-        <!-- 2B: Secular Literature -->
-        <div class="sec-h3">B. Secular Literature</div>
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Text</th><th>Author / Period</th><th>Historical Significance</th></tr></thead>
-            <tbody>
-              <tr>
-                <td><strong>Arthashastra</strong></td>
-                <td>Kautilya (Chanakya / Vishnugupta), c. 3rd century BCE (rediscovered 1905 by R. Shamasastry)</td>
-                <td>Comprehensive treatise on statecraft, economy, law, warfare, espionage; primary source for Mauryan administration; describes the king's duties, taxation, agriculture, trade, foreign policy</td>
-              </tr>
-              <tr>
-                <td><strong>Mudrarakshasa</strong></td>
-                <td>Vishakhadatta, c. 5th century CE (drama)</td>
-                <td>Chandragupta Maurya's rise to power; Chanakya's statecraft; confirms founding of Mauryan Empire</td>
-              </tr>
-              <tr>
-                <td><strong>Ashtadhyayi</strong></td>
-                <td>Panini, c. 4th century BCE (grammar)</td>
-                <td>Sanskrit grammar; incidentally provides social, geographic, and cultural information about 4th century BCE; mentions cities, trades, and political entities</td>
-              </tr>
-              <tr>
-                <td><strong>Rajatarangini (River of Kings)</strong></td>
-                <td>Kalhana, 1148 CE (Kashmir)</td>
-                <td>History of Kashmir from mythological times to 12th century; first genuine <em>historical</em> text in India — uses dated records, official documents, eye-witness accounts; Kalhana called "India's first historian"</td>
-              </tr>
-              <tr>
-                <td><strong>Sangam Literature (Tamil)</strong></td>
-                <td>c. 300 BCE – 300 CE; compiled in academies (Sangams)</td>
-                <td>Ettutogai, Patthupattu, Tolkappiyam (grammar); primary source for early South Indian history — three Tamil kingdoms (Cheras, Cholas, Pandyas), trade with Rome, social life, heroes, love poetry</td>
-              </tr>
-              <tr>
-                <td><strong>Manusmriti</strong></td>
-                <td>c. 200 BCE – 200 CE</td>
-                <td>Dharmashastra — social norms, caste rules, legal code; evidence of patriarchal social structure; used cautiously (prescriptive not descriptive)</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- 2C: Foreign Accounts -->
-        <div class="sec-h3">C. Foreign Accounts</div>
-
-        <div class="highlight-box green">
-          <strong>Why Foreign Accounts Are Often More Historically Reliable</strong>
-          Indian scholars writing religious or secular texts had no tradition of chronological history — they mixed myth, legend, and fact. Foreign travellers recorded what they <em>observed</em> — administration, social customs, geography, economic conditions — from an outsider's perspective. Their accounts, while sometimes containing errors, provide dateable, verifiable information. Most crucially, they correlate Indian chronology with that of the Greeks, Romans, and Chinese.
-        </div>
-
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Author</th><th>Period / King Visited</th><th>Work</th><th>Key Information</th></tr></thead>
-            <tbody>
-              <tr>
-                <td><strong>Herodotus</strong> (Greek)</td>
-                <td>c. 484–425 BCE (pre-Alexander)</td>
-                <td>Histories (Book III &amp; IV)</td>
-                <td>Called "Father of History"; earliest Greek writer to mention India. Describes India as the most populous and wealthiest land; mentions Indian gold-digging ants (likely garbled account of Himalayan marmots collecting gold dust). Not based on first-hand observation — relies on Persian sources. First non-Indian external reference to India's geography and people.</td>
-              </tr>
-              <tr>
-                <td><strong>Nearchus</strong> (Greek)</td>
-                <td>c. 325–312 BCE; accompanied Alexander the Great</td>
-                <td>Periplus (voyage account; preserved in Arrian's Indica)</td>
-                <td>Admiral of Alexander's fleet; sailed from the mouth of the Indus to the Persian Gulf after Alexander's Indian campaign. Describes the Indian Ocean coast, ports, local peoples of Sindh and Balochistan. Corroborates other accounts of Alexander's Indian campaign; provides earliest detailed description of India's northwest coastal geography.</td>
-              </tr>
-              <tr>
-                <td><strong>Megasthenes</strong> (Greek)</td>
-                <td>c. 302–298 BCE; Chandragupta Maurya</td>
-                <td>Indica (original lost; known through Arrian, Strabo, Diodorus Siculus)</td>
-                <td>Pataliputra's administration; city's fortifications and roads; 7-fold caste system (his error); no slavery in India; agricultural prosperity; Mauryan army; descriptions of Indian geography (Himalayan rivers)</td>
-              </tr>
-              <tr>
-                <td><strong>Deimachos</strong> (Greek)</td>
-                <td>Embassy to Bindusara's court</td>
-                <td>Fragments only</td>
-                <td>Contemporary account of Maurya court; limited information</td>
-              </tr>
-              <tr>
-                <td><strong>Fahien (Fa Hien)</strong> (Chinese Buddhist)</td>
-                <td>399–414 CE; Chandragupta II (Vikramaditya)</td>
-                <td>Record of Buddhist Kingdoms</td>
-                <td>Gupta Empire prosperity; people gentle and peace-loving; untouchability practices; pilgrimage to Buddhist sites; confirms Gupta golden age</td>
-              </tr>
-              <tr>
-                <td><strong>Xuanzang (Hiuen Tsang)</strong> (Chinese Buddhist)</td>
-                <td>629–645 CE; Harsha's court</td>
-                <td>Si-Yu-Ki (Records of Western Regions)</td>
-                <td>Detailed geography; Harsha's administration and generosity; description of Nalanda university (10,000 students, 2,000 teachers); decline of Buddhism in some regions; social conditions; invaluable for 7th century India</td>
-              </tr>
-              <tr>
-                <td><strong>I-tsing</strong> (Chinese Buddhist)</td>
-                <td>671–695 CE</td>
-                <td>Buddhist accounts</td>
-                <td>Visited Nalanda; describes its curriculum, rules, discipline; confirms continued Buddhist learning in post-Harsha period</td>
-              </tr>
-              <tr>
-                <td><strong>Periplus of the Erythraean Sea</strong> (Anonymous, Greek-Alexandrian)</td>
-                <td>c. 1st century CE (Kushan-Satavahana period)</td>
-                <td>Periplus Maris Erythraei</td>
-                <td>Practical merchant's guide to Red Sea and Indian Ocean trade routes. Describes Indian ports — Barygaza (Bharuch/Broach, Gujarat), Muziri (Kerala), Arikamedu (near Puducherry). Lists imports (wine, metal) and exports (pepper, spices, cotton, ivory). Provides evidence for flourishing Indo-Roman trade and names of Indo-Parthian rulers of northwest India. Invaluable for reconstructing ancient port cities and maritime trade networks.</td>
-              </tr>
-              <tr>
-                <td><strong>Arrian</strong> (Greek/Roman)</td>
-                <td>c. 2nd century CE</td>
-                <td>Indika (compiled from Megasthenes)</td>
-                <td>Preserved much of Megasthenes' lost Indica; also compiled Nearchus's voyage account; key source for Alexander's campaigns in India</td>
-              </tr>
-              <tr>
-                <td><strong>Al-Biruni</strong> (Persian/Arab)</td>
-                <td>1017–1030 CE; came with Mahmud of Ghazni</td>
-                <td>Kitab-ul-Hind (Tahqiq-i-Hind)</td>
-                <td>Detailed and critical study of Indian science, philosophy, religion, customs; learned Sanskrit; most scholarly medieval foreign account</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="highlight-box red">
-          <strong>Limitations of Foreign Accounts</strong>
-          Megasthenes — never learned Sanskrit; relied on interpreters; his "7 castes" description is inaccurate. Chinese accounts (Fahien, Xuanzang) focused on Buddhist sites and monastic life — biased toward Buddhist perspective; may have exaggerated Buddhist prosperity. All foreign travellers were outsiders who could not fully understand Indian social complexity. Al-Biruni is exception — he learned Sanskrit and was remarkably self-critical about his own biases.
-        </div>
-      </div>
-    </div>
-
-    <!-- SVG 2: Literary Sources Mind Map -->
-    <div class="svg-container">
-      <svg viewBox="0 0 780 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Literary Sources of Ancient Indian History">
-        <rect width="780" height="420" fill="#fafbfc" rx="12" stroke="#e2e8f0" stroke-width="1"/>
-        <text x="390" y="25" text-anchor="middle" font-size="14" font-weight="800" fill="#1a3c5e">Literary Sources — Classification &amp; Key Texts</text>
-
-        <!-- Three columns -->
-        <!-- Col 1: Religious -->
-        <rect x="20" y="40" width="230" height="360" rx="10" fill="white" stroke="#e67e22" stroke-width="1.5" opacity="0.97"/>
-        <rect x="20" y="40" width="230" height="34" rx="10" fill="#e67e22" opacity="0.9"/>
-        <text x="135" y="61" text-anchor="middle" font-size="12" font-weight="700" fill="white">RELIGIOUS LITERATURE</text>
-
-        <text x="35" y="92" font-size="10" font-weight="700" fill="#e67e22">Vedic:</text>
-        <text x="35" y="107" font-size="9.5" fill="#1a2533">Rigveda (1500–1000 BCE)</text>
-        <text x="35" y="121" font-size="9.5" fill="#1a2533">Brahmanas → Aryan expansion E</text>
-        <text x="35" y="135" font-size="9.5" fill="#1a2533">Upanishads (800–500 BCE)</text>
-
-        <text x="35" y="155" font-size="10" font-weight="700" fill="#e67e22">Epics &amp; Puranas:</text>
-        <text x="35" y="169" font-size="9.5" fill="#1a2533">Mahabharata + Ramayana</text>
-        <text x="35" y="183" font-size="9.5" fill="#1a2533">Puranas → dynastic king lists</text>
-        <text x="35" y="197" font-size="9.5" fill="#1a2533">   (Mauryas, Guptas, Satavahana)</text>
-
-        <text x="35" y="217" font-size="10" font-weight="700" fill="#e67e22">Buddhist:</text>
-        <text x="35" y="231" font-size="9.5" fill="#1a2533">Tripitaka (Pali) — Mauryan era</text>
-        <text x="35" y="245" font-size="9.5" fill="#1a2533">Jataka Tales — social history</text>
-        <text x="35" y="259" font-size="9.5" fill="#1a2533">Dipavamsa, Mahavamsa (Lanka)</text>
-        <text x="35" y="273" font-size="9.5" fill="#1a2533">Milindapanha — Menander</text>
-
-        <text x="35" y="293" font-size="10" font-weight="700" fill="#e67e22">Jain:</text>
-        <text x="35" y="307" font-size="9.5" fill="#1a2533">Agamas — Mahavira's life</text>
-        <text x="35" y="321" font-size="9.5" fill="#1a2533">Parishishtaparvan — Chandragupta</text>
-        <text x="35" y="335" font-size="9.5" fill="#1a2533">Kalpasutra — Tirthankaras</text>
-
-        <text x="35" y="360" font-size="9" fill="#c0392b" font-weight="600">⚠ Limitation: Sectarian bias;</text>
-        <text x="35" y="374" font-size="9" fill="#c0392b">myth mixed with history</text>
-
-        <!-- Col 2: Secular -->
-        <rect x="275" y="40" width="230" height="360" rx="10" fill="white" stroke="#2980b9" stroke-width="1.5" opacity="0.97"/>
-        <rect x="275" y="40" width="230" height="34" rx="10" fill="#2980b9" opacity="0.9"/>
-        <text x="390" y="61" text-anchor="middle" font-size="12" font-weight="700" fill="white">SECULAR LITERATURE</text>
-
-        <text x="290" y="92" font-size="10" font-weight="700" fill="#2980b9">Administrative:</text>
-        <text x="290" y="107" font-size="9.5" fill="#1a2533">Arthashastra (Kautilya, 3rd BCE)</text>
-        <text x="290" y="121" font-size="9.5" fill="#1a2533">   → Mauryan admin, economy</text>
-        <text x="290" y="135" font-size="9.5" fill="#1a2533">   Rediscovered: R. Shamasastry 1905</text>
-
-        <text x="290" y="155" font-size="10" font-weight="700" fill="#2980b9">Drama &amp; Literature:</text>
-        <text x="290" y="169" font-size="9.5" fill="#1a2533">Mudrarakshasa (Vishakhadatta)</text>
-        <text x="290" y="183" font-size="9.5" fill="#1a2533">   → Chandragupta Maurya's rise</text>
-        <text x="290" y="197" font-size="9.5" fill="#1a2533">Kamasutra (Vatsyayana) → society</text>
-
-        <text x="290" y="217" font-size="10" font-weight="700" fill="#2980b9">Grammar &amp; Linguistics:</text>
-        <text x="290" y="231" font-size="9.5" fill="#1a2533">Ashtadhyayi (Panini, 4th BCE)</text>
-        <text x="290" y="245" font-size="9.5" fill="#1a2533">   → social &amp; geographic data</text>
-
-        <text x="290" y="265" font-size="10" font-weight="700" fill="#2980b9">History:</text>
-        <text x="290" y="279" font-size="9.5" fill="#1a2533">Rajatarangini (Kalhana, 1148 CE)</text>
-        <text x="290" y="293" font-size="9.5" fill="#1a2533">   → India's FIRST historian</text>
-        <text x="290" y="307" font-size="9.5" fill="#1a2533">   → Kashmir history</text>
-
-        <text x="290" y="327" font-size="10" font-weight="700" fill="#2980b9">Tamil (Sangam):</text>
-        <text x="290" y="341" font-size="9.5" fill="#1a2533">Ettutogai, Tolkappiyam</text>
-        <text x="290" y="355" font-size="9.5" fill="#1a2533">   → 3 Tamil kingdoms, Rome trade</text>
-
-        <text x="290" y="375" font-size="9" fill="#27ae60" font-weight="600">✓ More reliable for admin &amp; polity</text>
-
-        <!-- Col 3: Foreign -->
-        <rect x="530" y="40" width="230" height="360" rx="10" fill="white" stroke="#27ae60" stroke-width="1.5" opacity="0.97"/>
-        <rect x="530" y="40" width="230" height="34" rx="10" fill="#27ae60" opacity="0.9"/>
-        <text x="645" y="61" text-anchor="middle" font-size="12" font-weight="700" fill="white">FOREIGN ACCOUNTS</text>
-
-        <text x="545" y="92" font-size="10" font-weight="700" fill="#27ae60">Greek Accounts:</text>
-        <text x="545" y="107" font-size="9.5" fill="#1a2533">Megasthenes — Indica (c. 302 BCE)</text>
-        <text x="545" y="121" font-size="9.5" fill="#1a2533">   Chandragupta Maurya's court</text>
-        <text x="545" y="135" font-size="9.5" fill="#1a2533">   Pataliputra; 7-caste description</text>
-        <text x="545" y="149" font-size="9.5" fill="#1a2533">Arrian → preserved Megasthenes</text>
-
-        <text x="545" y="169" font-size="10" font-weight="700" fill="#27ae60">Chinese Accounts:</text>
-        <text x="545" y="184" font-size="9.5" fill="#1a2533">Fahien (399–414 CE)</text>
-        <text x="545" y="198" font-size="9.5" fill="#1a2533">   Chandragupta II; Gupta society</text>
-        <text x="545" y="212" font-size="9.5" fill="#1a2533">Xuanzang (629–645 CE)</text>
-        <text x="545" y="226" font-size="9.5" fill="#1a2533">   Harsha; Nalanda (10k students)</text>
-        <text x="545" y="240" font-size="9.5" fill="#1a2533">I-tsing (671–695 CE) — Nalanda</text>
-
-        <text x="545" y="260" font-size="10" font-weight="700" fill="#27ae60">Arab/Persian:</text>
-        <text x="545" y="275" font-size="9.5" fill="#1a2533">Al-Biruni — Kitab-ul-Hind (1030)</text>
-        <text x="545" y="289" font-size="9.5" fill="#1a2533">   Most scholarly; learned Sanskrit</text>
-        <text x="545" y="303" font-size="9.5" fill="#1a2533">   Science, philosophy, society</text>
-
-        <text x="545" y="325" font-size="10" font-weight="700" fill="#27ae60">Value:</text>
-        <text x="545" y="340" font-size="9.5" fill="#1a2533">• Corroborate Indian chronology</text>
-        <text x="545" y="354" font-size="9.5" fill="#1a2533">• Objective observation (outsiders)</text>
-        <text x="545" y="368" font-size="9.5" fill="#1a2533">• Details absent in Indian texts</text>
-
-        <text x="545" y="388" font-size="9" fill="#c0392b" font-weight="600">⚠ Limitation: language barrier;</text>
-
-        <text x="390" y="410" text-anchor="middle" font-size="9" fill="#718096">MentorsDaily.com · UPSC GS Paper 1 · Ancient History Topic 01</text>
-      </svg>
-      <div class="svg-caption">Figure 2: Literary Sources — Religious, Secular, and Foreign Accounts Classified</div>
-    </div>
-
-    <!-- Comparison -->
-    <div class="card">
-      <div class="card-header"><span class="card-icon">⚖️</span><h2>Archaeological vs. Literary Sources — Comparison</h2></div>
-      <div class="card-body">
-        <div class="table-wrap">
-          <table>
-            <thead><tr><th>Aspect</th><th>Archaeological Sources</th><th>Literary Sources</th></tr></thead>
-            <tbody>
-              <tr><td><strong>Contemporaneity</strong></td><td>Generally contemporary — created at time of events</td><td>Often written much later; epics/puranas compiled over centuries</td></tr>
-              <tr><td><strong>Reliability</strong></td><td>High — physical evidence; not subject to editorial changes</td><td>Lower — subject to interpolation, religious bias, sectarian editing</td></tr>
-              <tr><td><strong>Cultural information</strong></td><td>Limited — artifacts show material culture but not thought</td><td>Rich — philosophical, religious, intellectual, social details</td></tr>
-              <tr><td><strong>Political history</strong></td><td>Inscriptions give precise information about rulers, wars, policies</td><td>Often mythologised — Puranas mix real and legendary kings</td></tr>
-              <tr><td><strong>Economic history</strong></td><td>Coins, trade objects — direct evidence of trade and economy</td><td>Arthashastra, Sangam literature — describe but may be prescriptive</td></tr>
-              <tr><td><strong>Chronology</strong></td><td>Exact dating possible (scientific methods, stratigraphy)</td><td>Dates uncertain; Indian texts rarely mention regnal years</td></tr>
-              <tr><td><strong>Coverage</strong></td><td>Only for societies that left durable physical remains</td><td>Only for literate, text-producing communities; oral traditions lost</td></tr>
-              <tr><td><strong>Best use</strong></td><td>Verifying and dating claims; filling gaps left by texts</td><td>Understanding culture, religion, philosophy, social structure</td></tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-
-    <!-- Current Affairs -->
-    <div class="card">
-      <div class="card-header"><span class="card-icon">📰</span><h2>Current Affairs Connect (2024–2026)</h2></div>
-      <div class="card-body">
-        <div class="ca-item">
-          <div class="ca-icon">🪨</div>
-          <div>
-            <div class="ca-title">New Ashokan Inscription Discovered in Madhya Pradesh (2023)</div>
-            <div class="ca-body">A minor rock edict of Ashoka was discovered near Panguraria, Madhya Pradesh — adding to the known corpus of Ashokan inscriptions. UPSC may ask: What is the significance of Ashokan inscriptions as a primary source? How do they confirm Buddhist textual accounts of Ashoka's reign?</div>
-          </div>
-        </div>
-        <div class="ca-item">
-          <div class="ca-icon">🏺</div>
-          <div>
-            <div class="ca-title">Dholavira (IVC Site) Inscribed as UNESCO World Heritage Site — 2021</div>
-            <div class="ca-body">Dholavira (Gujarat) was inscribed on UNESCO World Heritage List in July 2021 — a landmark recognition of IVC archaeological evidence. UPSC: What does Dholavira reveal about IVC that is absent in literary sources? How does the undeciphered Indus script limit our understanding?</div>
-          </div>
-        </div>
-        <div class="ca-item">
-          <div class="ca-icon">📜</div>
-          <div>
-            <div class="ca-title">Arthashastra Relevance in Modern Governance Debates</div>
-            <div class="ca-body">Kautilya's Arthashastra is frequently cited in debates about Indian strategic autonomy, economic policy, and statecraft. UPSC: "The Arthashastra is as much a contemporary policy document as a historical source." Critically examine this statement with reference to its content on taxation, espionage, and foreign policy.</div>
-          </div>
-        </div>
-        <div class="ca-item">
-          <div class="ca-icon">🌐</div>
-          <div>
-            <div class="ca-title">Sangam Literature — Tamil Classical Heritage Recognition</div>
-            <div class="ca-body">Government's initiatives for Classical Tamil recognition and promotion of Sangam literature as part of India's cultural diplomacy in the Indo-Pacific. UPSC: How does Sangam literature serve as a historical source for early South Indian history? What does it reveal about Indo-Roman trade?</div>
-          </div>
-        </div>
-        <div class="ca-item">
-          <div class="ca-icon">🔬</div>
-          <div>
-            <div class="ca-title">Carbon Dating &amp; Scientific Archaeology — Rakhigarhi DNA Study</div>
-            <div class="ca-body">The Rakhigarhi (Haryana, largest IVC site) DNA study (2019) used skeletal remains to argue for continuity between IVC and later South Asian populations. UPSC: How do modern scientific methods (radiocarbon dating, DNA analysis, Lidar) supplement traditional archaeological and literary sources in reconstructing ancient history?</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CTA 2 -->
-    <div class="cta-bar">
-      <div class="cta-text">
-        <strong>Build the foundation right — start with Sources, ace every topic</strong>
-        <span>MentorsDaily structured programme covers all 65 UPSC modules</span>
-      </div>
-      <a href="https://mentorsdaily.com" class="cta-btn">Explore →</a>
-    </div>
-
-    <!-- PYQs -->
-    <div class="card">
-      <div class="card-header"><span class="card-icon">🎯</span><h2>Previous Year Questions (UPSC)</h2></div>
-      <div class="card-body">
-        <div class="pyq-item">
-          <span class="pyq-tag">Prelims 2020</span>
-          <div class="pyq-q">With reference to the history of ancient India, Antiochus, Ptolemy, Antigonus, Alexander and Seleucus were: (a) Indo-Greek rulers (b) Successors of Alexander in West Asia and Egypt (c) Ambassadors to Mauryan court (d) Officers in Alexander's army</div>
-          <div class="pyq-hint">Ans: (b). These are the Diadochi — successors of Alexander who divided his empire. Seleucus (Syria/Persia) was the one who fought Chandragupta Maurya and sent Megasthenes as ambassador. Do not confuse Diadochi with Indo-Greek rulers (later, 2nd–1st century BCE).</div>
-        </div>
-        <div class="pyq-item">
-          <span class="pyq-tag">Prelims 2018</span>
-          <div class="pyq-q">Who among the following is known as the first Indian historian? (a) Banabhatta (b) Kalhana (c) Vishakhadatta (d) Hemachandra</div>
-          <div class="pyq-hint">Ans: (b) Kalhana. Author of Rajatarangini (1148 CE), a history of Kashmir — the first truly historical text in Indian tradition that uses dated records, cross-references sources, and distinguishes fact from legend. Banabhatta wrote Harshacharita (biography, not structured history).</div>
-        </div>
-        <div class="pyq-item">
-          <span class="pyq-tag">Prelims 2016</span>
-          <div class="pyq-q">The Chinese traveller Hiuen Tsang visited India during the reign of: (a) Chandragupta II (b) Ashoka (c) Harshavardhana (d) Chandragupta I</div>
-          <div class="pyq-hint">Ans: (c) Harshavardhana (629–645 CE). Standard question repeated multiple times. Fahien = Chandragupta II (Vikramaditya), Xuanzang = Harsha. Never confuse these two.</div>
-        </div>
-        <div class="pyq-item">
-          <span class="pyq-tag">Prelims 2022</span>
-          <div class="pyq-q">The Arthashastra of Kautilya is primarily concerned with: (a) Military tactics (b) Statecraft and political economy (c) Religious law (d) Foreign policy only</div>
-          <div class="pyq-hint">Ans: (b). Arthashastra covers statecraft comprehensively — administration, law, taxation, agriculture, trade, espionage, foreign policy, and military. It is NOT limited to any one aspect. "Artha" = wealth/material well-being; "Shastra" = science/treatise.</div>
-        </div>
-        <div class="pyq-item">
-          <span class="pyq-tag mains">Mains 2019 GS1</span>
-          <div class="pyq-q">Evaluate the archaeological evidence and the literary sources for the reconstruction of ancient Indian history. Which type of source is more reliable and why?</div>
-          <div class="pyq-hint">Framework: Define both types → Compare on parameters (contemporaneity, reliability, cultural coverage, chronology) → State neither is absolutely superior — they are complementary. Archaeological: reliable, dated, unbiased but culturally limited. Literary: culturally rich but biased, interpolated. Best: cross-reference both — Ashokan inscriptions + Buddhist texts confirm each other for Mauryan period. Cite specific examples for each type.</div>
-        </div>
-        <div class="pyq-item">
-          <span class="pyq-tag mains">Mains 2021 GS1</span>
-          <div class="pyq-q">Assess the value of foreign accounts in reconstructing ancient Indian history with special reference to Greek and Chinese sources.</div>
-          <div class="pyq-hint">Value: (1) Chronological anchor — Greek accounts link Indian with Western chronology (Megasthenes = Chandragupta Maurya's reign placed at 323–297 BCE); (2) Objective outsider view — not bound by Indian sectarian biases; (3) Unique information — Pataliputra's description, Nalanda's scale. Limitations: language barrier, short visits, Buddhist focus (Chinese). Conclude: Foreign accounts are essential supplements to Indian sources, not replacements.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Revision Box -->
-    <div class="revision-box">
-      <h2>⚡ 10-Point Rapid Revision — Sources of Ancient Indian History</h2>
-      <ol class="revision-list">
-        <li>Archaeological sources: epigraphic (inscriptions), numismatic (coins), monuments, pottery, excavations — <em>more reliable</em> as contemporary, unedited evidence</li>
-        <li>Brahmi deciphered by James Prinsep (1837); Kharosthi by Prinsep &amp; C. Lassen (1838); unlocked all Ashokan inscriptions</li>
-        <li>Ashokan inscriptions = oldest datable Indian inscriptions; Brahmi (India), Kharosthi (NW), Greek/Aramaic (frontier)</li>
-        <li>Stratigraphy = relative dating (lower strata = older); Carbon-14 by W.F. Libby (1949) = absolute dating for organic material; TL dating for pottery</li>
-        <li>Pottery chronology: OCP → PGW (Vedic, 1100–600 BCE) → NBPW (Mauryan, 600–100 BCE)</li>
-        <li>Coins most important for Indo-Greek history — only source for many rulers; Periplus of Erythraean Sea (1st CE) = key source for Indo-Roman trade</li>
-        <li>Literary: Religious (Vedas, Puranas, Buddhist Pitakas, Jain Agamas), Secular (Arthashastra, Rajatarangini, Sangam), Foreign accounts</li>
-        <li>Arthashastra by Kautilya (Chanakya) — primary source for Mauryan admin; rediscovered 1905 by R. Shamasastry</li>
-        <li>Foreign accounts in order: Herodotus (484–425 BCE, "Father of History") → Nearchus (325 BCE, Alexander's admiral) → Megasthenes (302 BCE, Chandragupta Maurya) → Fahien (399 CE, Chandragupta II) → Xuanzang (629 CE, Harsha) → Al-Biruni (1017 CE)</li>
-        <li>Archaeological &amp; literary are complementary: Ashokan edicts + Mahavamsa together confirm Ashoka's Buddhist missions; neither is complete alone</li>
+    <div class="toc">
+      <h3>On this page</h3>
+      <ol>
+        <li><a href="#concept">Conceptual Clarity</a></li>
+        <li><a href="#arch">Archaeological Sources</a></li>
+        <li><a href="#inscriptions">Epigraphic Sources</a></li>
+        <li><a href="#coins">Numismatic Sources</a></li>
+        <li><a href="#monuments">Monuments &amp; Excavations</a></li>
+        <li><a href="#dating">Scientific Dating Methods</a></li>
+        <li><a href="#literary">Literary Sources</a></li>
+        <li><a href="#religious">Religious Literature</a></li>
+        <li><a href="#secular">Secular Literature</a></li>
+        <li><a href="#foreign">Foreign Accounts</a></li>
+        <li><a href="#comparison">Archaeological vs. Literary</a></li>
+        <li><a href="#ca">Current Affairs Link</a></li>
+        <li><a href="#pyq">Previous Year Questions</a></li>
       </ol>
     </div>
 
-    <!-- CTA 3 -->
-    <div class="cta-bar" style="margin-top: 28px;">
-      <div class="cta-text">
-        <strong>Next Topic: Prehistoric India &amp; Indus Valley Civilisation</strong>
-        <span>Continue building your Ancient History foundation</span>
-      </div>
-      <a href="/upsc-notes/ancient" class="cta-btn">Next Topic →</a>
+    <div class="concept-box" id="concept">
+      <h3>Conceptual Clarity — What to remember about Sources of Ancient Indian History</h3>
+      <p>"Sources of History" is the <strong>epistemological backbone</strong> of all ancient history questions. When UPSC asks "how do we know about Ashoka's Dhamma?" or "what is the evidence for Chandragupta Maurya's empire?", the answer lies here. Understanding sources helps you <strong>evaluate the reliability of historical claims</strong> — a skill tested directly in Mains answers.</p>
+      <ul>
+        <li><strong>Archaeological sources</strong> are generally more reliable — they are contemporary, physical, and not subject to later editorial changes.</li>
+        <li><strong>Literary sources</strong> are richer in cultural content but suffer from sectarian bias, interpolations, and lack of precise dates.</li>
+        <li><strong>Foreign accounts</strong> are often the most historically precise because they record firsthand observations and correlate Indian chronology with Greek/Chinese timelines.</li>
+        <li><strong>James Prinsep (1837)</strong> deciphering Brahmi script is one of the most consequential moments in Indian historiography — before it, Ashoka was unknown to modern scholarship.</li>
+        <li>Archaeological and literary sources are <strong>complementary</strong>, not competing — Ashokan edicts + Buddhist texts together confirm Mauryan history.</li>
+      </ul>
     </div>
 
-  </div><!-- end content-wrap --></main></div>
+    <section class="notes" id="arch">
+      <h2>1. Archaeological Sources — Overview</h2>
+      <p>Archaeological sources are material remains of the past — physical objects, structures, and inscriptions that survived through time and can be studied scientifically. They are generally more reliable than literary sources because they are <em>contemporary</em> and not subject to later editorial changes. However, they require skilled interpretation and are often silent on cultural and intellectual aspects.</p>
+      <div class="callout">
+        <strong>Four main types of archaeological sources:</strong>
+        Epigraphic (inscriptions), Numismatic (coins), Monuments &amp; Excavations, and Scientific Dating Methods. Each type provides different and complementary evidence.
+      </div>
+    </section>
+
+    <section class="notes" id="inscriptions">
+      <h2>2. Epigraphic Sources (Inscriptions)</h2>
+      <p>Inscriptions are writings engraved on hard surfaces — rock, stone pillars, copper plates, cave walls, and temple walls. They are the most reliable archaeological source.</p>
+      <table class="tbl">
+        <thead><tr><th>Inscription</th><th>Ruler / Period</th><th>Script / Language</th><th>Historical Significance</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Ashokan Edicts</strong> (Major &amp; Minor Rock Edicts, Pillar Edicts)</td>
+            <td>Ashoka, 3rd century BCE</td>
+            <td>Brahmi (mostly), Kharosthi (NW), Greek &amp; Aramaic (frontier)</td>
+            <td>Dhamma policy, Kalinga War, administration, spread of Buddhism — first datable inscriptions in India</td>
+          </tr>
+          <tr>
+            <td><strong>Hathigumpha Inscription</strong></td>
+            <td>Kharavela, King of Kalinga, 1st century BCE</td>
+            <td>Brahmi</td>
+            <td>Details Kharavela's military campaigns and Jain patronage; key source for post-Maurya period</td>
+          </tr>
+          <tr>
+            <td><strong>Junagarh Rock Inscription</strong></td>
+            <td>Rudradaman I (Western Kshatrap), 150 CE</td>
+            <td>Sanskrit (earliest long prose inscription in Sanskrit)</td>
+            <td>Sudarshana Lake renovation; confirms Sanskrit as administrative language; Saka chronology</td>
+          </tr>
+          <tr>
+            <td><strong>Allahabad Pillar Inscription (Prayag Prashasti)</strong></td>
+            <td>Samudragupta, 4th century CE (composed by Harishena)</td>
+            <td>Sanskrit</td>
+            <td>Lists kingdoms conquered; describes Samudragupta as warrior, poet, musician — "Napoleon of India"</td>
+          </tr>
+          <tr>
+            <td><strong>Mehrauli Iron Pillar Inscription</strong></td>
+            <td>Chandragupta II (Vikramaditya), 4th–5th century CE</td>
+            <td>Sanskrit (Brahmi)</td>
+            <td>Confirms Chandragupta II's northern campaigns; pillar famous for rust-free iron metallurgy</td>
+          </tr>
+          <tr>
+            <td><strong>Aihole Inscription</strong></td>
+            <td>Pulakesi II (Chalukya), 634 CE (composed by Ravikirti)</td>
+            <td>Sanskrit + Kannada</td>
+            <td>Records Pulakesi II's victory over Harsha; key for Deccan history</td>
+          </tr>
+          <tr>
+            <td><strong>Copper Plate Grants</strong></td>
+            <td>Various dynasties (Guptas, Palas, Rashtrakutas)</td>
+            <td>Sanskrit, regional languages</td>
+            <td>Land grants, administrative details, genealogy of dynasties; important for agrarian and social history</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="callout">
+        <strong>James Prinsep — Decipherer of Brahmi (1837):</strong>
+        Prinsep, Secretary of the Asiatic Society of Bengal, deciphered Brahmi script in 1837 by analysing Ashokan coins and inscriptions. This single achievement unlocked centuries of Indian history — before Prinsep, Ashokan inscriptions were unreadable and Ashoka was unknown to modern scholarship. Kharosthi (written right to left, used in NW India) was also deciphered around 1838 by Prinsep and C. Lassen.
+      </div>
+    </section>
+
+    <section class="notes" id="coins">
+      <h2>3. Numismatic Sources (Coins)</h2>
+      <p>Coins provide information about rulers' names and portraits, economic conditions, religious beliefs, and chronology. They are especially valuable where literary sources are silent.</p>
+      <table class="tbl">
+        <thead><tr><th>Coin Type / Period</th><th>Key Feature</th><th>Historical Information</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Punch-Marked Coins</strong> (c. 600 BCE – 300 CE)</td><td>Silver/copper; symbols punched; no inscriptions, no ruler names</td><td>Earliest coins; janapada economy; trade routes; Mauryan period most common</td></tr>
+          <tr><td><strong>Indo-Greek Coins</strong> (2nd–1st century BCE)</td><td>Bilingual (Greek + Kharosthi); realistic portraits of rulers</td><td>ONLY source for many Indo-Greek kings (Menander/Milinda, Demetrius); first numismatic portraits in Indian subcontinent</td></tr>
+          <tr><td><strong>Kushana Coins</strong> (1st–3rd century CE)</td><td>Gold coins; images of Kushana kings + deities (Hindu, Buddhist, Zoroastrian, Greek)</td><td>Religious syncretism under Kushanas; Kanishka's coins show Buddha — evidence of Buddhist patronage</td></tr>
+          <tr><td><strong>Gupta Gold Coins (Dinars)</strong></td><td>Highest gold purity in ancient world; scenes of rulers playing veena, hunting, Ashvamedha</td><td>Economic prosperity of Gupta age; individual personality of rulers; artistic excellence</td></tr>
+          <tr><td><strong>Satavahana Coins</strong></td><td>Lead, copper; Brahmi inscriptions; ship designs</td><td>Trade with Rome; maritime connections; dynastic chronology</td></tr>
+        </tbody>
+      </table>
+      <div class="callout gold">
+        <strong>Why Coins Are Especially Valuable for Indo-Greek History:</strong>
+        For the Indo-Greek kings (Bactrian Greeks who ruled northwest India, c. 180–10 BCE), coins are practically the ONLY source. Indian literary sources mostly ignore them. Coins give us rulers' names, portraits, titles, and the extent of their territories. Menander (Milinda) is known from both coins and the Buddhist text Milindapanha, making him one of the best-documented Indo-Greek kings.
+      </div>
+    </section>
+
+    <section class="notes" id="monuments">
+      <h2>4. Monuments, Architecture &amp; Excavations</h2>
+      <ul>
+        <li><strong>IVC Excavations (Harappa 1921, Mohenjo-daro 1922):</strong> Excavated by Daya Ram Sahni and R.D. Banerji respectively; revealed urban civilisation predating the Vedic age; great bath, granaries, grid town planning, drainage system.</li>
+        <li><strong>Megaliths (South India):</strong> Iron Age burial sites (Brahmagiri, Adichanallur); reveal pre-historic south Indian cultures; iron tools, black-and-red ware pottery.</li>
+        <li><strong>Buddhist Stupas:</strong> Sanchi, Bharhut, Amaravati — sculptural panels are historical records; depict Jataka stories, events from Buddha's life, contemporary society.</li>
+        <li><strong>Rock-Cut Caves:</strong> Ajanta (Buddhist), Ellora (Buddhist + Hindu + Jain), Elephanta — art history and religious patronage evidence.</li>
+        <li><strong>Taxila, Nalanda Excavations:</strong> Evidence of urban settlements, universities, trade; layers of occupation allow chronological sequencing.</li>
+        <li><strong>Pottery:</strong> Painted Grey Ware (PGW, 1100–600 BCE — associated with Later Vedic period &amp; Mahajanapadas); Northern Black Polished Ware (NBPW, 600–100 BCE — Mauryan period second urbanisation).</li>
+      </ul>
+    </section>
+
+    <section class="notes" id="dating">
+      <h2>5. Scientific Dating Methods</h2>
+      <div class="callout">
+        <strong>Relative vs. Absolute Dating:</strong>
+        Relative dating establishes that A is older or younger than B. Absolute dating assigns an actual year or date range. Stratigraphy gives relative dates; Carbon-14 and other scientific techniques give absolute dates.
+      </div>
+      <ul>
+        <li><strong>Stratigraphy:</strong> Objects found in lower strata (deeper layers) are older than those in upper strata. Excavations at Mohenjo-daro, Taxila, and Hastinapura use stratigraphy to establish cultural sequences. Limitation: gives only relative chronology. Coins of known rulers found in a stratum provide terminus post quem (earliest possible date).</li>
+        <li><strong>Radiocarbon Dating (Carbon-14, C-14):</strong> Developed by W.F. Libby (1949); Nobel Prize 1960. Measures residual C-14 in organic material (charcoal, bone, wood) to date up to ~50,000 years. Used to date Harappan remains, pre-historic bone deposits, and Vedic-era fire altars. Limitation: ±200–300 year margin of error; only dates organic material.</li>
+        <li><strong>Thermoluminescence (TL) Dating:</strong> Measures light emitted when pottery or baked clay is reheated; the amount of light indicates how long ago the material was last fired. Crucial for dating ceramics (PGW, NBPW, IVC pottery) where Carbon-14 cannot be applied.</li>
+        <li><strong>Dendrochronology:</strong> Dating by counting annual growth rings in preserved wood — each ring represents one year. Limited application in India due to tropical climate, but used where ancient beams or logs survive at waterlogged sites.</li>
+      </ul>
+    </section>
+
+    <section class="notes" id="literary">
+      <h2>6. Literary Sources — Overview</h2>
+      <p>Literary sources are divided into: (1) <strong>Religious Literature</strong> — Vedas, Upanishads, Puranas, Buddhist Pitakas, Jain Agamas; (2) <strong>Secular Literature</strong> — Arthashastra, Mudrarakshasa, Rajatarangini; and (3) <strong>Foreign Accounts</strong> — Greek, Chinese, Arab travellers. Foreign accounts are often the most historically precise as they record observations, not tradition.</p>
+    </section>
+
+    <section class="notes" id="religious">
+      <h2>7. Religious Literature</h2>
+      <h3>Vedic Literature</h3>
+      <table class="tbl">
+        <thead><tr><th>Text</th><th>Period</th><th>Historical Information</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Rigveda</strong> (earliest)</td><td>c. 1500–1000 BCE</td><td>Early Vedic society; Aryans in Punjab; river names (Sapta Sindhu); tribal battles (Dasarajna — Battle of Ten Kings); cattle economy; no agriculture</td></tr>
+          <tr><td><strong>Samaveda, Yajurveda, Atharvaveda</strong></td><td>c. 1000–800 BCE</td><td>Atharvaveda: magical rites, disease treatment, social customs; all reflect transition to settled agriculture</td></tr>
+          <tr><td><strong>Brahmanas</strong></td><td>c. 900–700 BCE</td><td>Elaborate sacrificial procedures; Shatapatha Brahmana — Aryan expansion eastward into Gangetic plains (Videha migration story)</td></tr>
+          <tr><td><strong>Upanishads (108 total; 12 major)</strong></td><td>c. 800–500 BCE</td><td>Philosophical speculation; Brihadaranyaka, Chandogya (oldest); challenge Vedic ritualism; background for rise of Buddhism and Jainism</td></tr>
+          <tr><td><strong>Mahabharata &amp; Ramayana (Itihasas)</strong></td><td>400 BCE – 400 CE (final form)</td><td>Social norms, polity, ethics; Mahabharata (1,00,000 shlokas) includes Bhagavad Gita; historical kernel of Bharata clan conflict</td></tr>
+          <tr><td><strong>Puranas (18 major)</strong></td><td>c. 300–1200 CE</td><td>Dynastic lists of Mauryas, Guptas, Satavahanas; Vishnu Purana, Matsya Purana most historically useful; mix fact with mythology</td></tr>
+        </tbody>
+      </table>
+      <h3>Buddhist Literature</h3>
+      <ul>
+        <li><strong>Tripitaka (Three Baskets):</strong> Vinaya Pitaka (monastic rules), Sutta Pitaka (Buddha's discourses), Abhidhamma Pitaka (philosophy) — written in Pali; key source for Mauryan period and spread of Buddhism.</li>
+        <li><strong>Jataka Tales (547 stories):</strong> Previous lives of Buddha — contain vivid descriptions of social and economic life; towns, trade, guilds, caste conditions in 6th–4th century BCE India.</li>
+        <li><strong>Dipavamsa and Mahavamsa (Sri Lankan chronicles):</strong> Details of Ashoka's reign and missions; Sangha history; valuable for Buddhist chronology.</li>
+        <li><strong>Milindapanha:</strong> Dialogue between Buddhist monk Nagasena and Indo-Greek king Menander (Milinda); confirms Menander's conversion to Buddhism.</li>
+        <li><strong>Buddhacharita:</strong> Ashvaghosha's biography of Buddha (1st–2nd century CE, Sanskrit) — literary and historical value.</li>
+      </ul>
+      <h3>Jain Literature</h3>
+      <ul>
+        <li><strong>Agamas (Jain canonical texts):</strong> Written in Ardhamagadhi Prakrit; information on Vardhaman Mahavira's life, Jain philosophy, social conditions.</li>
+        <li><strong>Parishishtaparvan (Hemachandra, 12th century CE):</strong> Lives of Jain elders; mentions Chandragupta Maurya's connection with Jainism and his end at Shravanabelagola.</li>
+        <li><strong>Kalpasutra (Bhadrabahu):</strong> Biographies of Jain Tirthankaras including Mahavira; list of Jain teachers.</li>
+      </ul>
+    </section>
+
+    <section class="notes" id="secular">
+      <h2>8. Secular Literature</h2>
+      <table class="tbl">
+        <thead><tr><th>Text</th><th>Author / Period</th><th>Historical Significance</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Arthashastra</strong></td>
+            <td>Kautilya (Chanakya / Vishnugupta), c. 3rd century BCE (rediscovered 1905 by R. Shamasastry)</td>
+            <td>Comprehensive treatise on statecraft, economy, law, warfare, espionage; primary source for Mauryan administration; describes king's duties, taxation, agriculture, trade, foreign policy</td>
+          </tr>
+          <tr>
+            <td><strong>Mudrarakshasa</strong></td>
+            <td>Vishakhadatta, c. 5th century CE (drama)</td>
+            <td>Chandragupta Maurya's rise to power; Chanakya's statecraft; confirms founding of Mauryan Empire</td>
+          </tr>
+          <tr>
+            <td><strong>Ashtadhyayi</strong></td>
+            <td>Panini, c. 4th century BCE (grammar)</td>
+            <td>Sanskrit grammar; incidentally provides social, geographic, and cultural information about 4th century BCE; mentions cities, trades, and political entities</td>
+          </tr>
+          <tr>
+            <td><strong>Rajatarangini (River of Kings)</strong></td>
+            <td>Kalhana, 1148 CE (Kashmir)</td>
+            <td>History of Kashmir from mythological times to 12th century; first genuine historical text in India — uses dated records, official documents, eye-witness accounts; Kalhana called "India's first historian"</td>
+          </tr>
+          <tr>
+            <td><strong>Sangam Literature (Tamil)</strong></td>
+            <td>c. 300 BCE – 300 CE; compiled in academies (Sangams)</td>
+            <td>Ettutogai, Patthupattu, Tolkappiyam (grammar); primary source for early South Indian history — three Tamil kingdoms (Cheras, Cholas, Pandyas), trade with Rome, social life</td>
+          </tr>
+          <tr>
+            <td><strong>Manusmriti</strong></td>
+            <td>c. 200 BCE – 200 CE</td>
+            <td>Dharmashastra — social norms, caste rules, legal code; evidence of patriarchal social structure; used cautiously (prescriptive not descriptive)</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="notes" id="foreign">
+      <h2>9. Foreign Accounts</h2>
+      <div class="callout gold">
+        <strong>Why Foreign Accounts Are Often More Historically Reliable:</strong>
+        Indian scholars writing religious or secular texts had no tradition of chronological history. Foreign travellers recorded what they observed — administration, social customs, geography, economic conditions — from an outsider's perspective. Most crucially, they correlate Indian chronology with that of the Greeks, Romans, and Chinese.
+      </div>
+      <table class="tbl">
+        <thead><tr><th>Author</th><th>Period / King Visited</th><th>Work</th><th>Key Information</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>Herodotus</strong> (Greek)</td>
+            <td>c. 484–425 BCE (pre-Alexander)</td>
+            <td>Histories (Book III &amp; IV)</td>
+            <td>"Father of History"; earliest Greek writer to mention India. Describes India as most populous and wealthiest land. Not based on first-hand observation — relies on Persian sources. First non-Indian external reference to India's geography and people.</td>
+          </tr>
+          <tr>
+            <td><strong>Nearchus</strong> (Greek)</td>
+            <td>c. 325–312 BCE; accompanied Alexander the Great</td>
+            <td>Periplus (preserved in Arrian's Indica)</td>
+            <td>Admiral of Alexander's fleet; sailed from mouth of Indus to Persian Gulf. Describes Indian Ocean coast, ports, local peoples of Sindh and Balochistan. Earliest detailed description of India's northwest coastal geography.</td>
+          </tr>
+          <tr>
+            <td><strong>Megasthenes</strong> (Greek)</td>
+            <td>c. 302–298 BCE; Chandragupta Maurya</td>
+            <td>Indica (original lost; known through Arrian, Strabo, Diodorus Siculus)</td>
+            <td>Pataliputra's administration; city's fortifications and roads; 7-fold caste system (his error); no slavery in India; agricultural prosperity; Mauryan army; descriptions of Indian geography</td>
+          </tr>
+          <tr>
+            <td><strong>Fahien (Fa Hien)</strong> (Chinese Buddhist)</td>
+            <td>399–414 CE; Chandragupta II (Vikramaditya)</td>
+            <td>Record of Buddhist Kingdoms</td>
+            <td>Gupta Empire prosperity; people gentle and peace-loving; untouchability practices; pilgrimage to Buddhist sites; confirms Gupta golden age</td>
+          </tr>
+          <tr>
+            <td><strong>Xuanzang (Hiuen Tsang)</strong> (Chinese Buddhist)</td>
+            <td>629–645 CE; Harsha's court</td>
+            <td>Si-Yu-Ki (Records of Western Regions)</td>
+            <td>Detailed geography; Harsha's administration and generosity; description of Nalanda university (10,000 students, 2,000 teachers); decline of Buddhism in some regions; social conditions; invaluable for 7th century India</td>
+          </tr>
+          <tr>
+            <td><strong>Periplus of the Erythraean Sea</strong> (Anonymous, Greek-Alexandrian)</td>
+            <td>c. 1st century CE (Kushan-Satavahana period)</td>
+            <td>Periplus Maris Erythraei</td>
+            <td>Practical merchant's guide to Red Sea and Indian Ocean trade routes. Describes Indian ports — Barygaza (Gujarat), Muziri (Kerala), Arikamedu (near Puducherry). Lists imports (wine, metal) and exports (pepper, spices, cotton, ivory). Key evidence for Indo-Roman trade.</td>
+          </tr>
+          <tr>
+            <td><strong>Al-Biruni</strong> (Persian/Arab)</td>
+            <td>1017–1030 CE; came with Mahmud of Ghazni</td>
+            <td>Kitab-ul-Hind (Tahqiq-i-Hind)</td>
+            <td>Detailed and critical study of Indian science, philosophy, religion, customs; learned Sanskrit; most scholarly medieval foreign account</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="callout">
+        <strong>Limitations of Foreign Accounts:</strong>
+        Megasthenes never learned Sanskrit; relied on interpreters; his "7 castes" description is inaccurate. Chinese accounts (Fahien, Xuanzang) focused on Buddhist sites — biased toward Buddhist perspective. All foreign travellers were outsiders who could not fully understand Indian social complexity. Al-Biruni is an exception — he learned Sanskrit and was remarkably self-critical about his own biases.
+      </div>
+    </section>
+
+    <section class="notes" id="comparison">
+      <h2>10. Archaeological vs. Literary Sources — Comparison</h2>
+      <table class="tbl">
+        <thead><tr><th>Aspect</th><th>Archaeological Sources</th><th>Literary Sources</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Contemporaneity</strong></td><td>Generally contemporary — created at time of events</td><td>Often written much later; epics/puranas compiled over centuries</td></tr>
+          <tr><td><strong>Reliability</strong></td><td>High — physical evidence; not subject to editorial changes</td><td>Lower — subject to interpolation, religious bias, sectarian editing</td></tr>
+          <tr><td><strong>Cultural information</strong></td><td>Limited — artifacts show material culture but not thought</td><td>Rich — philosophical, religious, intellectual, social details</td></tr>
+          <tr><td><strong>Political history</strong></td><td>Inscriptions give precise information about rulers, wars, policies</td><td>Often mythologised — Puranas mix real and legendary kings</td></tr>
+          <tr><td><strong>Economic history</strong></td><td>Coins, trade objects — direct evidence of trade and economy</td><td>Arthashastra, Sangam literature — describe but may be prescriptive</td></tr>
+          <tr><td><strong>Chronology</strong></td><td>Exact dating possible (scientific methods, stratigraphy)</td><td>Dates uncertain; Indian texts rarely mention regnal years</td></tr>
+          <tr><td><strong>Best use</strong></td><td>Verifying and dating claims; filling gaps left by texts</td><td>Understanding culture, religion, philosophy, social structure</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="notes" id="ca">
+      <h2>11. Current Affairs Link (2024–2026)</h2>
+      <h3>New Ashokan Inscription Discovered in Madhya Pradesh (2023)</h3>
+      <p>A minor rock edict of Ashoka was discovered near Panguraria, Madhya Pradesh — adding to the known corpus of Ashokan inscriptions. UPSC angle: What is the significance of Ashokan inscriptions as a primary source? How do they confirm Buddhist textual accounts of Ashoka's reign?</p>
+      <h3>Dholavira (IVC Site) Inscribed as UNESCO World Heritage Site — 2021</h3>
+      <p>Dholavira (Gujarat) was inscribed on UNESCO World Heritage List in July 2021. UPSC angle: What does Dholavira reveal about IVC that is absent in literary sources? How does the undeciphered Indus script limit our understanding?</p>
+      <h3>Arthashastra Relevance in Modern Governance Debates</h3>
+      <p>Kautilya's Arthashastra is frequently cited in debates about Indian strategic autonomy, economic policy, and statecraft. UPSC Mains angle: "The Arthashastra is as much a contemporary policy document as a historical source." Critically examine with reference to its content on taxation, espionage, and foreign policy.</p>
+      <h3>Carbon Dating &amp; Scientific Archaeology — Rakhigarhi DNA Study</h3>
+      <p>The Rakhigarhi (Haryana, largest IVC site) DNA study (2019) used skeletal remains to argue for continuity between IVC and later South Asian populations. UPSC angle: How do modern scientific methods (radiocarbon dating, DNA analysis, Lidar) supplement traditional archaeological and literary sources in reconstructing ancient history?</p>
+      <h3>Sangam Literature — Tamil Classical Heritage Recognition</h3>
+      <p>Government's initiatives for Classical Tamil recognition and promotion of Sangam literature as part of India's cultural diplomacy in the Indo-Pacific. UPSC angle: How does Sangam literature serve as a historical source for early South Indian history? What does it reveal about Indo-Roman trade?</p>
+    </section>
+
+    <section class="notes" id="pyq">
+      <h2>12. Previous Year Questions (UPSC)</h2>
+
+      <div class="pyq">
+        <span class="year">UPSC Prelims 2020</span><br>
+        <strong>Q.</strong> With reference to the history of ancient India, Antiochus, Ptolemy, Antigonus, Alexander and Seleucus were: (a) Indo-Greek rulers (b) Successors of Alexander in West Asia and Egypt (c) Ambassadors to Mauryan court (d) Officers in Alexander's army
+        <em>Hint: Ans (b). These are the Diadochi — successors of Alexander who divided his empire. Seleucus (Syria/Persia) was the one who fought Chandragupta Maurya and sent Megasthenes as ambassador. Do not confuse Diadochi with Indo-Greek rulers (later, 2nd–1st century BCE).</em>
+      </div>
+
+      <div class="pyq">
+        <span class="year">UPSC Prelims 2018</span><br>
+        <strong>Q.</strong> Who among the following is known as the first Indian historian? (a) Banabhatta (b) Kalhana (c) Vishakhadatta (d) Hemachandra
+        <em>Hint: Ans (b) Kalhana. Author of Rajatarangini (1148 CE), a history of Kashmir — the first truly historical text in Indian tradition that uses dated records, cross-references sources, and distinguishes fact from legend.</em>
+      </div>
+
+      <div class="pyq">
+        <span class="year">UPSC Prelims 2016</span><br>
+        <strong>Q.</strong> The Chinese traveller Hiuen Tsang visited India during the reign of: (a) Chandragupta II (b) Ashoka (c) Harshavardhana (d) Chandragupta I
+        <em>Hint: Ans (c) Harshavardhana (629–645 CE). Standard question. Fahien = Chandragupta II (Vikramaditya). Xuanzang = Harsha. Never confuse these two.</em>
+      </div>
+
+      <div class="pyq">
+        <span class="year">UPSC Prelims 2022</span><br>
+        <strong>Q.</strong> The Arthashastra of Kautilya is primarily concerned with: (a) Military tactics (b) Statecraft and political economy (c) Religious law (d) Foreign policy only
+        <em>Hint: Ans (b). Arthashastra covers statecraft comprehensively — administration, law, taxation, agriculture, trade, espionage, foreign policy, and military. "Artha" = wealth/material well-being; "Shastra" = science/treatise.</em>
+      </div>
+
+      <div class="pyq">
+        <span class="year">UPSC Prelims 2014</span><br>
+        <strong>Q.</strong> With reference to ancient Indian history, which of the following is/are the key sources for Indo-Greek history? (a) Puranas (b) Coins and inscriptions (c) Arthashastra (d) Buddhist Pitakas
+        <em>Hint: Ans (b). For Indo-Greek history, coins are practically the ONLY source — they provide names, portraits, and titles of kings otherwise absent from Indian literary tradition. The Periplus of the Erythraean Sea also provides context for this period.</em>
+      </div>
+
+      <div class="pyq">
+        <span class="year">UPSC Mains GS-I 2019</span><br>
+        <strong>Q.</strong> Evaluate the archaeological evidence and the literary sources for the reconstruction of ancient Indian history. Which type of source is more reliable and why?
+        <em>Hint: Framework: Define both types &rarr; Compare on parameters (contemporaneity, reliability, cultural coverage, chronology) &rarr; State neither is absolutely superior — they are complementary. Archaeological: reliable, dated, unbiased but culturally limited. Literary: culturally rich but biased, interpolated. Best: cross-reference both — Ashokan inscriptions + Buddhist texts confirm each other for Mauryan period. Cite specific examples for each type.</em>
+      </div>
+
+      <div class="pyq">
+        <span class="year">UPSC Mains GS-I 2021</span><br>
+        <strong>Q.</strong> Assess the value of foreign accounts in reconstructing ancient Indian history with special reference to Greek and Chinese sources.
+        <em>Hint: Value: (1) Chronological anchor — Greek accounts link Indian with Western chronology; (2) Objective outsider view — not bound by Indian sectarian biases; (3) Unique information — Pataliputra's description, Nalanda's scale. Limitations: language barrier, short visits, Buddhist focus (Chinese). Conclude: Foreign accounts are essential supplements to Indian sources, not replacements.</em>
+      </div>
+    </section>
+
+    <div class="revision" id="revision">
+      <h3>15-Minute Revision Box — Sources of Ancient Indian History Snapshot</h3>
+      <ol>
+        <li>Archaeological sources: epigraphic (inscriptions), numismatic (coins), monuments, pottery, excavations — <em>more reliable</em> as contemporary, unedited evidence.</li>
+        <li>Brahmi deciphered by James Prinsep (1837); Kharosthi by Prinsep &amp; C. Lassen (1838); unlocked all Ashokan inscriptions.</li>
+        <li>Ashokan inscriptions = oldest datable Indian inscriptions; Brahmi (India), Kharosthi (NW), Greek/Aramaic (frontier).</li>
+        <li>Stratigraphy = relative dating (lower strata = older); Carbon-14 by W.F. Libby (1949) = absolute dating for organic material; TL dating for pottery.</li>
+        <li>Pottery chronology: OCP &rarr; PGW (Vedic, 1100–600 BCE) &rarr; NBPW (Mauryan, 600–100 BCE).</li>
+        <li>Coins most important for Indo-Greek history — only source for many rulers.</li>
+        <li>Periplus of the Erythraean Sea (1st CE) = key source for Indo-Roman trade; ports: Barygaza, Muziri, Arikamedu.</li>
+        <li>Literary: Religious (Vedas, Puranas, Buddhist Pitakas, Jain Agamas), Secular (Arthashastra, Rajatarangini, Sangam), Foreign accounts.</li>
+        <li>Arthashastra by Kautilya (Chanakya) — primary source for Mauryan admin; rediscovered 1905 by R. Shamasastry.</li>
+        <li>Kalhana = India's first historian; Rajatarangini (1148 CE) = first historical text with dated records.</li>
+        <li>Foreign accounts in order: Herodotus (484–425 BCE, "Father of History") &rarr; Nearchus (325 BCE, Alexander's admiral) &rarr; Megasthenes (302 BCE, Chandragupta Maurya) &rarr; Fahien (399 CE, Chandragupta II) &rarr; Xuanzang (629 CE, Harsha) &rarr; Al-Biruni (1017 CE).</li>
+        <li>Fahien visited Chandragupta II (Vikramaditya); Xuanzang visited Harsha — the most frequently confused pair in UPSC Prelims.</li>
+        <li>Megasthenes' Indica (original lost) preserved by Arrian, Strabo, Diodorus Siculus; his "7 castes" is his most famous error.</li>
+        <li>Jataka Tales (547 stories) = most vivid picture of social and economic life in 6th–4th century BCE India.</li>
+        <li>Archaeological &amp; literary are complementary: Ashokan edicts + Mahavamsa together confirm Ashoka's Buddhist missions; neither is complete alone.</li>
+      </ol>
+    </div>
+
+  </main>
+  <aside>
+
+    <div class="widget">
+      <h4>Quick Reference — Key Sources</h4>
+      <ul class="miniref">
+        <li><strong>Brahmi deciphered:</strong> James Prinsep, 1837</li>
+        <li><strong>Kharosthi deciphered:</strong> Prinsep &amp; C. Lassen, 1838</li>
+        <li><strong>Oldest inscriptions:</strong> Ashokan Edicts, 3rd BCE</li>
+        <li><strong>Earliest coins:</strong> Punch-marked, c. 600 BCE</li>
+        <li><strong>Megasthenes visited:</strong> Chandragupta Maurya, 302 BCE</li>
+        <li><strong>Fahien visited:</strong> Chandragupta II, 399–414 CE</li>
+        <li><strong>Xuanzang visited:</strong> Harsha, 629–645 CE</li>
+        <li><strong>India's first historian:</strong> Kalhana — Rajatarangini, 1148 CE</li>
+        <li><strong>Arthashastra rediscovered:</strong> R. Shamasastry, 1905</li>
+        <li><strong>Harappa excavated:</strong> Daya Ram Sahni, 1921</li>
+        <li><strong>MJD excavated:</strong> R.D. Banerji, 1922</li>
+        <li><strong>C-14 developed:</strong> W.F. Libby, 1949</li>
+      </ul>
+    </div>
+
+    <div class="widget">
+      <h4>Source Types Snapshot</h4>
+      <ul class="miniref">
+        <li><strong>Most reliable type:</strong> Inscriptions (epigraphic)</li>
+        <li><strong>Only source for Indo-Greeks:</strong> Coins</li>
+        <li><strong>Indo-Roman trade source:</strong> Periplus of Erythraean Sea</li>
+        <li><strong>Most scholarly foreign account:</strong> Al-Biruni's Kitab-ul-Hind</li>
+        <li><strong>Primary Mauryan admin source:</strong> Arthashastra</li>
+        <li><strong>Sangam period (Tamil) source:</strong> Ettutogai, Tolkappiyam</li>
+        <li><strong>Earliest Sanskrit prose inscription:</strong> Junagarh Rock (Rudradaman I)</li>
+        <li><strong>TL dating used for:</strong> Pottery (PGW, NBPW, IVC ware)</li>
+      </ul>
+    </div>
+
+    <div class="widget">
+      <h4>Difficulty &amp; Importance</h4>
+      <div class="bar"><span class="lbl">Prelims</span><span class="track"><span class="fill" style="width:92%"></span></span><span>92%</span></div>
+      <div class="bar"><span class="lbl">Mains GS-I</span><span class="track"><span class="fill" style="width:85%"></span></span><span>85%</span></div>
+      <div class="bar"><span class="lbl">Art &amp; Culture</span><span class="track"><span class="fill" style="width:70%"></span></span><span>70%</span></div>
+      <div class="bar"><span class="lbl">Current Affairs</span><span class="track"><span class="fill" style="width:60%"></span></span><span>60%</span></div>
+    </div>
+
+    <div class="widget">
+      <h4>Must-Know Tags</h4>
+      <div class="tags">
+        <span>Epigraphic Sources</span>
+        <span>Numismatic Sources</span>
+        <span>Ashokan Inscriptions</span>
+        <span>Brahmi Script</span>
+        <span>Kharosthi Script</span>
+        <span>James Prinsep</span>
+        <span>Megasthenes</span>
+        <span>Indica</span>
+        <span>Fahien</span>
+        <span>Xuanzang</span>
+        <span>Arthashastra</span>
+        <span>Kautilya</span>
+        <span>Rajatarangini</span>
+        <span>Kalhana</span>
+        <span>Periplus</span>
+        <span>Sangam Literature</span>
+        <span>Tripitaka</span>
+        <span>Jataka Tales</span>
+        <span>Puranas</span>
+        <span>Rigveda</span>
+        <span>Punch-Marked Coins</span>
+        <span>Indo-Greek Coins</span>
+        <span>Gupta Dinars</span>
+        <span>Stratigraphy</span>
+        <span>Carbon-14 Dating</span>
+        <span>TL Dating</span>
+        <span>W.F. Libby</span>
+        <span>Hathigumpha</span>
+        <span>Allahabad Pillar</span>
+        <span>Prayag Prashasti</span>
+        <span>Junagarh Rock</span>
+        <span>Al-Biruni</span>
+        <span>Kitab-ul-Hind</span>
+        <span>Herodotus</span>
+        <span>Nearchus</span>
+        <span>Painted Grey Ware</span>
+        <span>NBPW</span>
+      </div>
+    </div>
+
+    <div class="widget">
+      <h4>5-Question Self-Test</h4>
+      <div class="quiz">
+        <details>
+          <summary>1. Who deciphered Brahmi script and when?</summary>
+          <p>James Prinsep, Secretary of the Asiatic Society of Bengal, deciphered Brahmi in 1837. Kharosthi was deciphered by Prinsep and C. Lassen in 1838. This unlocked all Ashokan inscriptions and effectively founded modern Indian historical scholarship.</p>
+        </details>
+        <details>
+          <summary>2. Which Chinese traveller visited Harsha and which visited Chandragupta II?</summary>
+          <p>Fahien (Fa Hien) visited Chandragupta II Vikramaditya (399–414 CE). Xuanzang (Hiuen Tsang) visited Harsha (629–645 CE). I-tsing visited later (671–695 CE) and described Nalanda in detail. This distinction is frequently asked in Prelims.</p>
+        </details>
+        <details>
+          <summary>3. Why are Indo-Greek coins especially important?</summary>
+          <p>For Indo-Greek kings (c. 180–10 BCE), coins are practically the ONLY source — Indian literary tradition mostly ignores them. Coins provide names, portraits, bilingual (Greek + Kharosthi) inscriptions, and titles. Menander (Milinda) is known from both coins and the Buddhist Milindapanha.</p>
+        </details>
+        <details>
+          <summary>4. What is the difference between stratigraphy and Carbon-14 dating?</summary>
+          <p>Stratigraphy gives relative dating — lower strata are older than upper, but no calendar year is assigned. Carbon-14 (developed by W.F. Libby, 1949) gives absolute dating — an actual year range for organic material. Thermoluminescence (TL) gives absolute dating for pottery (inorganic). Together these form the complete dating toolkit.</p>
+        </details>
+        <details>
+          <summary>5. What are the key limitations of Megasthenes' Indica?</summary>
+          <p>Megasthenes never learned Sanskrit and relied on interpreters — so his information is second-hand. His description of "7 castes" in India is incorrect (India's varna system has 4, not 7). The original Indica is lost and survives only through fragments in Arrian, Strabo, and Diodorus Siculus. Despite these limitations, it remains the most detailed external account of Mauryan administration.</p>
+        </details>
+      </div>
+    </div>
+
+    <div class="widget">
+      <h4>Related UPSC Notes</h4>
+      <ul class="related">
+        <li><a href="/ancient-history/the-stone-age">Topic 02: The Stone Age — Palaeolithic, Mesolithic, Neolithic</a></li>
+        <li><a href="/ancient-history">Prehistoric India &amp; Indus Valley Civilisation</a></li>
+        <li><a href="/ancient-history">Vedic Age, Jainism &amp; Buddhism</a></li>
+        <li><a href="/ancient-history">Mauryan &amp; Gupta Age</a></li>
+        <li><a href="/upsc-notes">Delhi Sultanate</a></li>
+        <li><a href="/ancient-history">All UPSC Notes</a></li>
+      </ul>
+    </div>
+
+  </aside>
+</div>
 </div>

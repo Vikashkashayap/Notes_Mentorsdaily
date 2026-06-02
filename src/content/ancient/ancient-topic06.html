@@ -1,610 +1,156 @@
-<!-- ancient-topic06 — auto-imported from ancient-topic06-buddhism-jainism-upsc-notes.html -->
+<!-- ancient-topic06 — auto-imported from ancient-topic06-buddhism-jainism-upsc-notes (1).html -->
 <style data-topic-notes>
-:root {
-  --brand-blue: #6b1a1a;
-  --brand-blue-dark: #3d0e0e;
-  --brand-blue-light: #fdf0f0;
-  --brand-orange: #c47d00;
-  --brand-orange-light: #fff8ea;
-  --green: #2e7a47;
-  --green-light: #eaf5ef;
-  --text-dark: #1a1a2e;
-  --text-mid: #444;
-  --text-light: #888;
-  --border: #e2e8f0;
+:root{
+  --brand-blue:#6b1a1a;
+  --brand-blue-dark:#3d0e0e;
+  --brand-blue-light:#fdf0f0;
+  --brand-orange:#c47d00;
+  --text:#1a1a2e;
+  --muted:#5a6478;
+  --bg:#fafaf7;
+  --card:#ffffff;
+  --border:#e2e8f0;
+  --accent:#fdf0f0;
 }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Inter','Segoe UI',-apple-system,sans-serif;color:var(--text);background:var(--bg);line-height:1.65;font-size:16px}
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-body {
-  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  background: #f8fafd;
-  color: var(--text-dark);
-  line-height: 1.7;
-}
-
-/* NAVBAR */
-.navbar {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  height: 64px;
-  background: #fff;
-  border-bottom: 2px solid var(--brand-blue);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  padding: 0 24px;
-  gap: 16px;
-  box-shadow: 0 2px 8px rgba(107,26,26,0.08);
-}
-
-.nav-logo {
-  font-size: 1.35rem;
-  font-weight: 800;
-  color: var(--brand-blue);
-  text-decoration: none;
-  white-space: nowrap;
-  letter-spacing: -0.5px;
-}
-
-.nav-logo span { color: var(--brand-orange); }
-
-.nav-breadcrumb {
-  font-size: 0.78rem;
-  color: var(--text-light);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  flex: 1;
-  overflow: hidden;
-}
-
-.nav-breadcrumb a {
-  color: var(--brand-blue);
-  text-decoration: none;
-  white-space: nowrap;
-}
-
-.nav-breadcrumb a:hover { text-decoration: underline; }
-.nav-breadcrumb .sep { color: var(--border); }
-.nav-breadcrumb .current {
-  color: var(--text-mid);
-  font-weight: 600;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.nav-actions {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  white-space: nowrap;
-}
-
-.btn-back {
-  font-size: 0.8rem;
-  color: var(--brand-blue);
-  text-decoration: none;
-  border: 1px solid var(--brand-blue);
-  padding: 5px 12px;
-  border-radius: 6px;
-  transition: background 0.2s;
-}
-
-.btn-back:hover { background: var(--brand-blue-light); }
-
-.btn-download {
-  font-size: 0.8rem;
-  background: var(--brand-orange);
-  color: #fff;
-  border: none;
-  padding: 6px 14px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.2s;
-  font-family: inherit;
-}
-
-.btn-download:hover { background: #a86900; }
-
-/* PAGE WRAPPER */
-.page-wrapper {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 84px 20px 60px;
-  display: grid;
-  grid-template-columns: 1fr 280px;
-  gap: 28px;
-  align-items: start;
-}
-
-.main-content { min-width: 0; }
-
-/* SIDEBAR */
-.sidebar {
-  position: sticky;
-  top: 80px;
-}
+/* TOPNAV */
+.topnav{background:var(--brand-blue-dark);color:#fff;padding:14px 28px;position:sticky;top:0;z-index:50;box-shadow:0 2px 6px rgba(0,0,0,0.18);display:flex;align-items:center;flex-wrap:wrap;gap:10px}
+.topnav .site-name{font-size:15px;font-weight:800;color:#fff;letter-spacing:-0.3px;white-space:nowrap}
+.topnav .site-name span{color:var(--brand-orange)}
+.topnav .nav-pills{display:flex;flex-wrap:wrap;gap:6px;margin-left:16px}
+.topnav .nav-pill{background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.22);color:#fff;padding:4px 11px;border-radius:99px;font-size:12px;font-weight:500;text-decoration:none;white-space:nowrap}
+.topnav .nav-pill:hover{background:rgba(255,255,255,0.22)}
 
 /* HERO */
-.hero {
-  background: linear-gradient(135deg, #8b2020 0%, #3d0e0e 60%, #1a1a4e 100%);
-  border-radius: 16px;
-  padding: 40px 36px 36px;
-  color: #fff;
-  margin-bottom: 28px;
-  position: relative;
-  overflow: hidden;
-}
+.hero{background:linear-gradient(135deg,#8b2020 0%,#3d0e0e 55%,#1a1a4e 100%);color:#fff;padding:54px 28px 44px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(196,125,0,0.18),transparent 55%);pointer-events:none}
+.hero-inner{max-width:1240px;margin:0 auto;position:relative;z-index:2}
+.breadcrumb{font-size:12.5px;color:rgba(255,255,255,0.65);margin-bottom:14px}
+.breadcrumb a{color:rgba(255,255,255,0.85);text-decoration:none}
+.breadcrumb a:hover{color:#fff;text-decoration:underline}
+.hero h1{font-size:38px;margin:0 0 14px;font-weight:800;letter-spacing:-0.5px;line-height:1.18}
+.hero p.hero-sub{font-size:17px;color:rgba(255,255,255,0.82);max-width:880px;margin:0 0 20px;line-height:1.6}
+.hero-pills{display:flex;flex-wrap:wrap;gap:8px}
+.hero-pill{background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.22);color:#fff;padding:6px 13px;border-radius:99px;font-size:12.5px;font-weight:500;backdrop-filter:blur(6px)}
+.hero-pill.gold{background:rgba(196,125,0,0.25);border-color:rgba(196,125,0,0.5)}
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: -40px; right: -40px;
-  width: 200px; height: 200px;
-  background: rgba(196,125,0,0.12);
-  border-radius: 50%;
-}
+/* LAYOUT */
+.layout{display:grid;grid-template-columns:1fr 320px;gap:28px;max-width:1240px;margin:28px auto;padding:0 28px}
+@media(max-width:1024px){.layout{grid-template-columns:1fr;padding:0 18px}}
+main{min-width:0}
 
-.hero-tag {
-  display: inline-block;
-  background: rgba(196,125,0,0.25);
-  border: 1px solid rgba(196,125,0,0.5);
-  color: #ffd580;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  padding: 4px 12px;
-  border-radius: 20px;
-  margin-bottom: 16px;
-}
+/* TOC */
+.toc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 22px;margin-bottom:22px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--brand-blue);font-weight:700}
+.toc ol{margin:0;padding-left:22px;font-size:14.5px;column-count:2;column-gap:24px}
+@media(max-width:680px){.toc ol{column-count:1}}
+.toc li{margin:4px 0;break-inside:avoid}
+.toc a{color:var(--text);text-decoration:none}
+.toc a:hover{color:var(--brand-blue);text-decoration:underline}
 
-.hero h1 {
-  font-size: 2rem;
-  font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: 12px;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
-}
+/* CONCEPT BOX */
+.concept-box{background:linear-gradient(135deg,#fefbf0,#fdf0f0);border-left:5px solid var(--brand-orange);border-radius:10px;padding:22px 26px;margin-bottom:26px;box-shadow:0 2px 6px rgba(196,125,0,0.10)}
+.concept-box h3{margin:0 0 10px;font-size:18px;color:var(--brand-blue-dark);font-weight:700}
+.concept-box p{margin:0 0 10px;font-size:15px}
+.concept-box ul{margin:8px 0 0;padding-left:22px}
+.concept-box li{margin:5px 0;font-size:14.5px}
 
-.hero h1 span { color: #ffd580; }
+/* NOTES SECTIONS */
+.notes{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:26px 30px;margin-bottom:22px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.notes h2{font-size:24px;color:var(--brand-blue-dark);margin:0 0 14px;padding-bottom:10px;border-bottom:2px solid var(--accent);font-weight:700}
+.notes h3{font-size:18px;color:var(--brand-blue);margin:22px 0 10px;font-weight:700}
+.notes h4{font-size:15.5px;color:var(--brand-blue-dark);margin:16px 0 8px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px}
+.notes p{margin:0 0 12px;font-size:15px}
+.notes ul,.notes ol{margin:8px 0 14px;padding-left:24px}
+.notes li{margin:5px 0;font-size:14.5px}
+.notes strong{color:var(--brand-blue-dark)}
 
-.hero-sub {
-  font-size: 1rem;
-  opacity: 0.88;
-  margin-bottom: 20px;
-  max-width: 560px;
-}
-
-.hero-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.hero-badge {
-  background: rgba(255,255,255,0.12);
-  border: 1px solid rgba(255,255,255,0.2);
-  border-radius: 20px;
-  padding: 4px 14px;
-  font-size: 0.78rem;
-  font-weight: 600;
-}
-
-/* SECTION CARDS */
-.section-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 28px;
-  margin-bottom: 24px;
-  border: 1px solid var(--border);
-  box-shadow: 0 1px 6px rgba(0,0,0,0.04);
-}
-
-.section-card h2 {
-  font-size: 1.22rem;
-  font-weight: 700;
-  color: var(--brand-blue);
-  margin-bottom: 16px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid var(--brand-blue-light);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.section-card h3 {
-  font-size: 1.02rem;
-  font-weight: 700;
-  color: var(--brand-blue);
-  margin: 20px 0 10px;
-}
-
-.section-card h4 {
-  font-size: 0.92rem;
-  font-weight: 700;
-  color: var(--text-mid);
-  margin: 14px 0 6px;
-}
-
-.section-card p { margin-bottom: 10px; font-size: 0.93rem; }
-
-.section-card ul, .section-card ol {
-  padding-left: 20px;
-  margin-bottom: 10px;
-}
-
-.section-card li { font-size: 0.93rem; margin-bottom: 4px; }
-
-/* CLARITY BOX */
-.clarity-box {
-  background: linear-gradient(135deg, #fff8ea 0%, #fdf0f0 100%);
-  border: 2px solid var(--brand-orange);
-  border-radius: 12px;
-  padding: 24px 28px;
-  margin-bottom: 28px;
-}
-
-.clarity-box h2 {
-  color: var(--brand-orange);
-  font-size: 1.1rem;
-  font-weight: 800;
-  margin-bottom: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.clarity-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-
-.clarity-item {
-  background: #fff;
-  border-radius: 8px;
-  padding: 14px 16px;
-  border-left: 4px solid var(--brand-orange);
-}
-
-.clarity-item strong {
-  display: block;
-  font-size: 0.82rem;
-  color: var(--brand-orange);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 4px;
-}
-
-.clarity-item p { font-size: 0.88rem; color: var(--text-mid); margin: 0; }
+/* CALLOUT */
+.callout{background:var(--brand-blue-light);border-left:4px solid var(--brand-blue);padding:14px 18px;border-radius:6px;margin:14px 0;font-size:14.5px}
+.callout.gold{background:#fdf6dc;border-left-color:var(--brand-orange)}
 
 /* TABLES */
-.note-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.88rem;
-  margin: 14px 0;
-}
+.tbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+.tbl th,.tbl td{border:1px solid var(--border);padding:8px 11px;text-align:left;vertical-align:top}
+.tbl th{background:var(--brand-blue);color:#fff;font-weight:600}
+.tbl tr:nth-child(even) td{background:#fdf5f5}
+.tbl tr:hover td{background:var(--brand-blue-light)}
 
-.note-table th {
-  background: var(--brand-blue);
-  color: #fff;
-  padding: 9px 12px;
-  text-align: left;
-  font-weight: 700;
-  font-size: 0.82rem;
-}
+/* CA BOX */
+.ca-box{background:#eaf5ef;border:1px solid #b0dcc0;border-radius:12px;padding:22px 26px;margin-bottom:22px}
+.ca-box h2{font-size:20px;color:#2e7a47;margin:0 0 14px;font-weight:700}
+.ca-box .ca-item{background:#fff;border-radius:8px;padding:12px 16px;margin-bottom:10px;border-left:4px solid #2e7a47;font-size:14.5px}
+.ca-box .ca-item strong{color:#2e7a47;display:block;margin-bottom:3px;font-size:13px;text-transform:uppercase;letter-spacing:0.5px}
 
-.note-table td {
-  padding: 9px 12px;
-  border-bottom: 1px solid var(--border);
-  vertical-align: top;
-}
+/* PYQ */
+.pyq-item{background:#fff;border:1px solid var(--border);border-left:4px solid var(--brand-orange);border-radius:6px;padding:12px 16px;margin:10px 0;font-size:14.5px}
+.pyq-item .pyq-meta{margin-bottom:6px}
+.pyq-item .pyq-year{display:inline-block;background:var(--brand-orange);color:#fff;padding:2px 9px;border-radius:99px;font-size:12px;font-weight:600}
+.pyq-item p{margin:0 0 8px}
+.pyq-item details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);font-size:13.5px}
+.pyq-item details p{margin:6px 0 0;color:var(--muted);font-size:13px}
+.pyq-mains{border-left-color:#2e7a47}
+.pyq-mains .pyq-year{background:#2e7a47}
 
-.note-table tr:nth-child(even) td { background: #f9f9fc; }
-.note-table tr:hover td { background: var(--brand-blue-light); }
+/* REVISION */
+.revision{background:linear-gradient(135deg,var(--brand-blue-dark),var(--brand-blue));color:#fff;border-radius:12px;padding:26px 30px;margin-bottom:22px}
+.revision h3{color:var(--brand-orange);margin:0 0 14px;font-size:20px;font-weight:700}
+.revision ol{padding-left:22px;margin:0}
+.revision li{margin:6px 0;font-size:14.5px;color:#f0d8d8}
 
-/* CARDS GRID */
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 14px;
-  margin: 14px 0;
-}
+/* ASIDE / WIDGETS */
+aside{min-width:0}
+.widget{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:18px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.widget h4{margin:0 0 10px;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--brand-blue);font-weight:700;border-bottom:1px solid var(--border);padding-bottom:7px}
+.miniref{font-size:13px;list-style:none;padding:0;margin:0}
+.miniref li{margin:5px 0;padding:3px 0;border-bottom:1px dashed var(--border)}
+.miniref li:last-child{border-bottom:none}
+.bar{display:flex;align-items:center;gap:8px;margin:6px 0;font-size:13px}
+.bar .lbl{width:100px;color:var(--muted);font-size:12px}
+.bar .track{flex:1;height:7px;background:#eee;border-radius:99px;overflow:hidden}
+.bar .fill{height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange));border-radius:99px}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tags span{background:var(--brand-blue-light);color:var(--brand-blue);padding:3px 9px;border-radius:99px;font-size:11.5px;font-weight:500;border:1px solid #dac0c0}
+.related{list-style:none;padding:0;margin:0;font-size:13.5px}
+.related li{margin:6px 0}
+.related a{color:var(--brand-blue);text-decoration:none;font-weight:500}
+.related a:hover{text-decoration:underline;color:var(--brand-orange)}
+.quiz{font-size:13.5px}
+.quiz details{margin:7px 0;border-bottom:1px dashed var(--border);padding-bottom:7px}
+.quiz details:last-child{border-bottom:none}
+.quiz summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark)}
+.quiz p{margin:6px 0 0;color:var(--muted);font-size:13px}
+.widget-tbl{width:100%;border-collapse:collapse;font-size:12px}
+.widget-tbl th{background:var(--brand-blue);color:#fff;padding:5px 7px;text-align:left;font-size:11px}
+.widget-tbl td{padding:5px 7px;border-bottom:1px solid var(--border);vertical-align:top;font-size:12px}
+.widget-tbl tr:last-child td{border-bottom:none}
 
-.info-card {
-  background: var(--brand-blue-light);
-  border-radius: 10px;
-  padding: 16px;
-  border-top: 3px solid var(--brand-blue);
-}
-
-.info-card .card-title {
-  font-size: 0.82rem;
-  font-weight: 800;
-  color: var(--brand-blue);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 6px;
-}
-
-.info-card p { font-size: 0.85rem; color: var(--text-mid); margin: 0; }
-
-.orange-card {
-  background: var(--brand-orange-light);
-  border-top-color: var(--brand-orange);
-}
-
-.orange-card .card-title { color: var(--brand-orange); }
-
-.green-card {
-  background: var(--green-light);
-  border-top-color: var(--green);
-}
-
-.green-card .card-title { color: var(--green); }
-
-/* HIGHLIGHT BOXES */
-.highlight-box {
-  border-radius: 8px;
-  padding: 14px 16px;
-  margin: 12px 0;
-  font-size: 0.9rem;
-}
-
-.highlight-blue { background: var(--brand-blue-light); border-left: 4px solid var(--brand-blue); }
-.highlight-orange { background: var(--brand-orange-light); border-left: 4px solid var(--brand-orange); }
-.highlight-green { background: var(--green-light); border-left: 4px solid var(--green); }
-
-.highlight-box strong { color: var(--brand-blue); }
-.highlight-orange strong { color: var(--brand-orange); }
-.highlight-green strong { color: var(--green); }
-
-/* PYQ SECTION */
-.pyq-section {
-  background: linear-gradient(135deg, #f0f4ff 0%, #fff8ea 100%);
-  border-radius: 12px;
-  padding: 24px 28px;
-  margin-bottom: 24px;
-  border: 1px solid #d0d8f0;
-}
-
-.pyq-section h2 {
-  font-size: 1.12rem;
-  font-weight: 800;
-  color: var(--brand-blue);
-  margin-bottom: 16px;
-}
-
-.pyq-item {
-  background: #fff;
-  border-radius: 8px;
-  padding: 14px 16px;
-  margin-bottom: 10px;
-  border-left: 4px solid var(--brand-blue);
-}
-
-.pyq-item .pyq-meta {
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--brand-orange);
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  margin-bottom: 4px;
-}
-
-.pyq-item p { font-size: 0.9rem; color: var(--text-dark); margin: 0; }
-
-.pyq-mains { border-left-color: var(--green); }
-.pyq-mains .pyq-meta { color: var(--green); }
-
-/* REVISION BOX */
-.revision-box {
-  background: linear-gradient(135deg, #3d0e0e 0%, #6b1a1a 100%);
-  border-radius: 14px;
-  padding: 28px;
-  color: #fff;
-  margin-bottom: 24px;
-}
-
-.revision-box h2 {
-  font-size: 1.12rem;
-  font-weight: 800;
-  margin-bottom: 18px;
-  color: #ffd580;
-}
-
-.revision-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.revision-point {
-  background: rgba(255,255,255,0.1);
-  border-radius: 8px;
-  padding: 10px 14px;
-  font-size: 0.85rem;
-  border-left: 3px solid #ffd580;
-}
-
-.revision-point strong {
-  display: block;
-  font-size: 0.78rem;
-  color: #ffd580;
-  margin-bottom: 2px;
-}
-
-/* CURRENT AFFAIRS */
-.ca-section {
-  background: var(--green-light);
-  border: 1px solid #b0dcc0;
-  border-radius: 12px;
-  padding: 22px 26px;
-  margin-bottom: 24px;
-}
-
-.ca-section h2 {
-  font-size: 1.08rem;
-  font-weight: 800;
-  color: var(--green);
-  margin-bottom: 14px;
-}
-
-.ca-item {
-  background: #fff;
-  border-radius: 8px;
-  padding: 12px 16px;
-  margin-bottom: 10px;
-  border-left: 4px solid var(--green);
-  font-size: 0.88rem;
-}
-
-.ca-item strong { color: var(--green); display: block; margin-bottom: 2px; }
-
-/* SIDEBAR CARDS */
-.sidebar-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 18px;
-  margin-bottom: 16px;
-  border: 1px solid var(--border);
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-}
-
-.sidebar-card h3 {
-  font-size: 0.9rem;
-  font-weight: 800;
-  color: var(--brand-blue);
-  margin-bottom: 12px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--border);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.sidebar-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.8rem;
-}
-
-.sidebar-table td {
-  padding: 6px 8px;
-  border-bottom: 1px solid var(--border);
-  vertical-align: top;
-}
-
-.sidebar-table td:first-child { font-weight: 600; color: var(--brand-blue); width: 45%; }
-
-/* DIFFICULTY BARS */
-.diff-row { margin-bottom: 10px; }
-.diff-label {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--text-mid);
-  margin-bottom: 4px;
-}
-.diff-bar { height: 6px; background: #e8eaf0; border-radius: 3px; overflow: hidden; }
-.diff-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, var(--brand-blue), var(--brand-orange)); }
-
-/* MUST-KNOW TAGS */
-.tag-cloud { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
-.tag {
-  background: var(--brand-blue-light);
-  color: var(--brand-blue);
-  font-size: 0.72rem;
-  font-weight: 600;
-  padding: 3px 9px;
-  border-radius: 12px;
-  border: 1px solid #dac0c0;
-}
-
-/* SELF TEST */
-.self-test-item { margin-bottom: 8px; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
-.self-test-q {
-  background: var(--brand-blue-light);
-  padding: 8px 12px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--brand-blue);
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  user-select: none;
-}
-.self-test-q:hover { background: #f0d8d8; }
-.self-test-a {
-  display: none;
-  padding: 8px 12px;
-  font-size: 0.78rem;
-  color: var(--text-mid);
-  background: #fff;
-}
-
-/* SVG DIAGRAM */
-.svg-wrap {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 20px;
-  margin: 16px 0;
-  text-align: center;
-}
-
-.svg-caption {
-  font-size: 0.8rem;
-  color: var(--text-light);
-  margin-top: 8px;
-  font-style: italic;
-}
-
-/* RELATED LINKS */
-.related-links a {
-  display: block;
-  font-size: 0.8rem;
-  color: var(--brand-blue);
-  text-decoration: none;
-  padding: 5px 0;
-  border-bottom: 1px solid var(--border);
-}
-.related-links a:last-child { border-bottom: none; }
-.related-links a:hover { color: var(--brand-orange); }
-
-/* PRINT */
-@media print {
-  .navbar, .sidebar { display: none; }
-  .page-wrapper { grid-template-columns: 1fr; padding-top: 0; }
-  .section-card, .clarity-box { break-inside: avoid; }
-}
+/* FOOTER */
+footer{background:var(--brand-blue-dark);color:#c8d4e0;padding:24px 28px;text-align:center;font-size:13px;margin-top:34px}
+footer strong{color:#fff}
 
 /* RESPONSIVE */
-@media (max-width: 860px) {
-  .page-wrapper { grid-template-columns: 1fr; }
-  .sidebar { position: static; }
-  .hero h1 { font-size: 1.55rem; }
-  .clarity-grid, .revision-grid { grid-template-columns: 1fr; }
-}
-
-@media (max-width: 580px) {
-  .cards-grid { grid-template-columns: 1fr; }
-  .note-table { font-size: 0.78rem; }
+@media(max-width:680px){
+  .hero h1{font-size:26px}
+  .notes{padding:16px 18px}
+  .tbl{font-size:12px}
 }
 
 /* Next.js: shared app navbar; restore two-column layout */
 .notes-topic-embedded .navbar,
 .notes-topic-embedded nav.navbar,
+.notes-topic-embedded .topnav,
+.notes-topic-embedded nav.topnav,
 .notes-topic-embedded .breadcrumbs,
 .notes-topic-embedded .hamburger,
 .notes-topic-embedded .menu-btn,
 .notes-topic-embedded footer { display: none !important; }
 
-.notes-topic-embedded .page-wrapper {
+.notes-topic-embedded .page-wrapper,
+.notes-topic-embedded .layout {
   display: grid !important;
   grid-template-columns: minmax(0, 1fr) 280px !important;
   gap: 28px !important;
@@ -615,8 +161,14 @@ body {
   margin-top: 0 !important;
 }
 
+.notes-topic-embedded .hero {
+  grid-column: 1 / -1;
+}
+
 .notes-topic-embedded .main-content,
 .notes-topic-embedded main.main-content,
+.notes-topic-embedded .layout > main,
+.notes-topic-embedded .page-wrapper > main,
 .notes-topic-embedded main {
   margin-left: 0 !important;
   min-width: 0;
@@ -624,6 +176,8 @@ body {
 
 .notes-topic-embedded aside,
 .notes-topic-embedded .right-sidebar,
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .page-wrapper > aside,
 .notes-topic-embedded aside.sidebar {
   position: sticky !important;
   top: 88px !important;
@@ -631,988 +185,589 @@ body {
 }
 
 @media (max-width: 960px) {
-  .notes-topic-embedded .page-wrapper {
+  .notes-topic-embedded .page-wrapper,
+  .notes-topic-embedded .layout {
     grid-template-columns: 1fr !important;
   }
   .notes-topic-embedded aside,
   .notes-topic-embedded .right-sidebar,
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .page-wrapper > aside,
   .notes-topic-embedded aside.sidebar {
     position: static !important;
   }
 }
 </style>
 <div class="notes-topic-embedded">
-<div class="page-wrapper">
-<!-- ═══════════════════════════════════════════════════════ MAIN CONTENT -->
-  <main class="main-content">
-
-    <!-- HERO -->
-    <div class="hero">
-      <div class="hero-tag">Ancient History · Topic 06</div>
-      <h1>Buddhism &amp; <span>Jainism</span></h1>
-      <p class="hero-sub">Heterodox movements that challenged Brahminism — Four Noble Truths, Eightfold Path, Pancha Mahavrata, Triratna, and the dawn of philosophical pluralism in Ancient India.</p>
-      <div class="hero-meta">
-        <span class="hero-badge">📅 6th century BCE</span>
-        <span class="hero-badge">🔥 Prelims: 9/10</span>
-        <span class="hero-badge">📝 Mains: 5/5</span>
-        <span class="hero-badge">⏱ 50 min read</span>
-        <span class="hero-badge">📍 Gangetic Plain</span>
-      </div>
+<div class="hero">
+  <div class="hero-inner">
+    <div class="breadcrumb"><a href="/ancient-history">Home</a> &rsaquo; <a href="/ancient-history">UPSC Notes</a> &rsaquo; <a href="/ancient-history">Ancient History</a> &rsaquo; Topic 06</div>
+    <h1>Buddhism and Jainism &mdash; Complete UPSC Notes</h1>
+    <p class="hero-sub">Gautama Buddha &middot; Four Noble Truths &middot; Mahavira &middot; Triratna &middot; Buddhist Councils</p>
+    <div class="hero-pills">
+      <span class="hero-pill gold">Buddha's Life</span>
+      <span class="hero-pill">Four Noble Truths</span>
+      <span class="hero-pill">Buddhist Schools</span>
+      <span class="hero-pill">Mahavira</span>
+      <span class="hero-pill">Jain Philosophy</span>
     </div>
-
-    <!-- CONCEPTUAL CLARITY BOX -->
-    <div class="clarity-box">
-      <h2>⚡ Conceptual Clarity: Why Two New Religions?</h2>
-      <div class="clarity-grid">
-        <div class="clarity-item">
-          <strong>The Problem</strong>
-          <p>Vedic Brahminism — expensive sacrifices (yajnas), Sanskrit exclusivity, rigid varna hierarchy, animal slaughter — had become oppressive for the masses and the rising mercantile class.</p>
-        </div>
-        <div class="clarity-item">
-          <strong>The Solution</strong>
-          <p>Both Buddhism and Jainism preached in Prakrit/Pali (common languages), rejected caste by birth, emphasised personal ethics over ritual, and offered salvation accessible to all — including women and Shudras.</p>
-        </div>
-        <div class="clarity-item">
-          <strong>The Context</strong>
-          <p>6th century BCE: Iron Age urbanisation, rise of 16 Mahajanapadas, growth of trade guilds (shrenis), Kshatriya assertiveness against Brahmin ritual monopoly — eastern India (Bihar, UP) as the epicentre.</p>
-        </div>
-        <div class="clarity-item">
-          <strong>The Legacy</strong>
-          <p>Buddhism became a world religion (Asia). Jainism stayed concentrated but shaped Indian ethics (Gandhi's ahimsa, anekantavada in jurisprudence). Both produced rich art, architecture and philosophical traditions.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- ═══════ SECTION 1: REASONS FOR NEW RELIGIONS -->
-    <div class="section-card">
-      <h2>🌱 1. Reasons for Emergence of New Religions</h2>
-
-      <h3>Social Factors</h3>
-      <ul>
-        <li><strong>Caste Rigidity:</strong> The rigid varna system placed Brahmins at the apex. Kshatriyas and Vaishyas resented Brahmin dominance over religious life.</li>
-        <li><strong>Birth-based discrimination:</strong> Jati (sub-caste) distinctions had multiplied, denying social mobility to talented individuals.</li>
-        <li><strong>Status of Women:</strong> Women's participation in Vedic rituals had diminished significantly in Later Vedic period.</li>
-      </ul>
-
-      <h3>Religious &amp; Philosophical Factors</h3>
-      <ul>
-        <li><strong>Ritualism &amp; formalism:</strong> Elaborate yajnas (Ashvamedha, Rajasuya) were expensive, priestly monopolised, and had degenerated into mechanical rites.</li>
-        <li><strong>Animal sacrifice:</strong> Mass slaughter in Vedic yajnas horrified agricultural communities who depended on cattle.</li>
-        <li><strong>Sanskrit barrier:</strong> Religious knowledge locked in Sanskrit (Brahmin monopoly); people could not access scriptures.</li>
-        <li><strong>Upanishadic search:</strong> Growing philosophical tradition (Atman–Brahman unity) created receptive audience for metaphysical questioning.</li>
-      </ul>
-
-      <h3>Economic Factors</h3>
-      <ul>
-        <li><strong>Rise of Vaishya class:</strong> Prosperous merchants (sarthavahas — caravan leaders) sought religious sanction and social dignity outside the varna hierarchy.</li>
-        <li><strong>Cattle protection:</strong> Farmers needed cattle for agriculture; Vedic sacrifices destroying cattle was economically devastating.</li>
-        <li><strong>Trade routes:</strong> New urban centres and trade networks along Gangetic plain demanded a universal, non-exclusive religion.</li>
-      </ul>
-
-      <h3>Political Factors</h3>
-      <ul>
-        <li><strong>Kshatriya revolt:</strong> Both Mahavira and Gautama Buddha were Kshatriyas — symbolising Kshatriya challenge to Brahmin intellectual supremacy.</li>
-        <li><strong>Royal patronage:</strong> Rulers of Magadha (Bimbisara, Ajatashatru), Kosala, and later Mauryas were attracted to non-Brahminical faiths as tools for administrative unity.</li>
-      </ul>
-
-      <div class="highlight-box highlight-blue">
-        <strong>UPSC Angle:</strong> The emergence of Buddhism and Jainism is best understood as a <em>reform movement</em>, not a revolution — they accepted karma and rebirth from Hindu philosophy but rejected caste by birth, Vedic authority, and ritual sacrifice.
-      </div>
-    </div>
-
-    <!-- ═══════ SECTION 2: BUDDHISM -->
-    <div class="section-card">
-      <h2>☸ 2. Buddhism</h2>
-
-      <h3>2.1 Life of Gautama Buddha</h3>
-      <div class="cards-grid">
-        <div class="info-card">
-          <div class="card-title">Birth</div>
-          <p><strong>563 BCE</strong> (traditional) / 480 BCE (revised). Lumbini, Nepal. Father: Shuddhodana (Shakya clan chief). Mother: Mayadevi (died 7 days after birth). Raised by aunt Prajapati Gautami.</p>
-        </div>
-        <div class="info-card">
-          <div class="card-title">The Four Sights</div>
-          <p>Triggered renunciation: (1) Old man, (2) Sick man, (3) Dead body, (4) Wandering ascetic at peace — revealed Dukkha and the monastic path.</p>
-        </div>
-        <div class="info-card">
-          <div class="card-title">Renunciation</div>
-          <p><strong>Mahabhinishkramana</strong> — Great Departure at age 29. Left wife Yashodhara, son Rahula. Studied under Alara Kalama (Vaishali) and Uddaka Ramaputta (Rajagriha).</p>
-        </div>
-        <div class="info-card">
-          <div class="card-title">Enlightenment</div>
-          <p><strong>Nirvana</strong> at <strong>Bodh Gaya</strong> (under Peepal/Bodhi tree), age 35. After 6 years of austerities and 49 days of meditation. Middle Path — rejected extreme asceticism.</p>
-        </div>
-        <div class="info-card">
-          <div class="card-title">First Sermon</div>
-          <p><strong>Dhammachakka Pavattana</strong> (Turning of the Wheel of Law) at <strong>Sarnath</strong> (Deer Park, Isipatana) to 5 disciples — the Panchavargiya Bhikshus. This event = <strong>Dhamma-Chakra-Pravartana</strong>.</p>
-        </div>
-        <div class="info-card">
-          <div class="card-title">Death</div>
-          <p><strong>Mahaparinirvana</strong> at <strong>Kushinagar</strong> (UP), <strong>483 BCE</strong>. Age 80. Under two Sala trees. Last meal: Sukara-maddava (possibly pork or soft mushroom) from Cunda the smith.</p>
-        </div>
-      </div>
-
-      <h3>2.2 Major Disciples</h3>
-      <table class="note-table">
-        <tr><th>Disciple</th><th>Role/Distinction</th></tr>
-        <tr><td>Ananda</td><td>Personal attendant; "treasurer of the Dhamma"; memorised Buddha's sermons; instrumental in First Council</td></tr>
-        <tr><td>Sariputta</td><td>Chief disciple; "General of the Dhamma"; supreme in wisdom</td></tr>
-        <tr><td>Moggallana</td><td>Chief disciple; supreme in supernatural powers</td></tr>
-        <tr><td>Kassapa (Mahakassapa)</td><td>Presided over First Buddhist Council at Rajagriha</td></tr>
-        <tr><td>Upali</td><td>Expert in Vinaya (monastic discipline); recited Vinaya Pitaka at First Council</td></tr>
-        <tr><td>Devadatta</td><td>Cousin; schismatic — tried to split Sangha; attempted to kill Buddha</td></tr>
-        <tr><td>Rahula</td><td>Buddha's son; became a monk</td></tr>
-        <tr><td>Ambapali</td><td>Courtesan of Vaishali; donated mango grove; exemplifies Buddhism's social inclusivity</td></tr>
-      </table>
-
-      <h3>2.3 Core Teachings</h3>
-
-      <h4>Four Noble Truths (Arya Satya / Chatur Arya Satya)</h4>
-      <table class="note-table">
-        <tr><th>Truth</th><th>Pali Term</th><th>Meaning</th></tr>
-        <tr><td>1st — Suffering</td><td>Dukkha</td><td>Life is fundamentally characterized by dissatisfaction/suffering</td></tr>
-        <tr><td>2nd — Cause</td><td>Samudaya</td><td>Craving/desire (tanha) + ignorance (avidya) cause suffering</td></tr>
-        <tr><td>3rd — Cessation</td><td>Nirodha</td><td>Suffering can end — Nirvana is possible</td></tr>
-        <tr><td>4th — Path</td><td>Marga</td><td>The Eightfold Path (Ashtangika Marga) leads to cessation</td></tr>
-      </table>
-
-      <h4>The Noble Eightfold Path (Ashtangika Marga) — The Middle Path</h4>
-
-      <!-- SVG: Dhamma Wheel with 8 spokes -->
-      <div class="svg-wrap">
-        <svg viewBox="0 0 480 360" width="480" height="360" xmlns="http://www.w3.org/2000/svg">
-          <!-- Background -->
-          <rect width="480" height="360" fill="#fdf8f0" rx="10"/>
-          <text x="240" y="24" text-anchor="middle" font-size="13" font-weight="700" fill="#6b1a1a" font-family="sans-serif">The Noble Eightfold Path (Ashtangika Marga)</text>
-
-          <!-- Central wheel hub -->
-          <circle cx="240" cy="185" r="90" fill="none" stroke="#c47d00" stroke-width="3"/>
-          <circle cx="240" cy="185" r="28" fill="#6b1a1a"/>
-          <text x="240" y="181" text-anchor="middle" font-size="9" fill="#ffd580" font-weight="700" font-family="sans-serif">DHAMMA</text>
-          <text x="240" y="193" text-anchor="middle" font-size="9" fill="#ffd580" font-weight="700" font-family="sans-serif">CHAKRA</text>
-          <circle cx="240" cy="185" r="8" fill="#ffd580"/>
-
-          <!-- 8 spokes -->
-          <g stroke="#c47d00" stroke-width="2">
-            <line x1="240" y1="157" x2="240" y2="97"/>
-            <line x1="264" y1="161" x2="303" y2="122"/>
-            <line x1="268" y1="185" x2="330" y2="185"/>
-            <line x1="264" y1="209" x2="303" y2="248"/>
-            <line x1="240" y1="213" x2="240" y2="273"/>
-            <line x1="216" y1="209" x2="177" y2="248"/>
-            <line x1="212" y1="185" x2="150" y2="185"/>
-            <line x1="216" y1="161" x2="177" y2="122"/>
-          </g>
-
-          <!-- 8 path labels -->
-          <!-- 1 - Top -->
-          <rect x="195" y="72" width="90" height="22" rx="4" fill="#6b1a1a"/>
-          <text x="240" y="87" text-anchor="middle" font-size="9" fill="#fff" font-family="sans-serif" font-weight="700">1. Right View (Sammaditthi)</text>
-
-          <!-- 2 - Top-right -->
-          <rect x="308" y="100" width="90" height="22" rx="4" fill="#8b3030"/>
-          <text x="353" y="114" text-anchor="middle" font-size="9" fill="#fff" font-family="sans-serif" font-weight="700">2. Right Intention</text>
-
-          <!-- 3 - Right -->
-          <rect x="334" y="174" width="90" height="22" rx="4" fill="#6b1a1a"/>
-          <text x="379" y="188" text-anchor="middle" font-size="9" fill="#fff" font-family="sans-serif" font-weight="700">3. Right Speech</text>
-
-          <!-- 4 - Bottom-right -->
-          <rect x="308" y="248" width="90" height="22" rx="4" fill="#8b3030"/>
-          <text x="353" y="262" text-anchor="middle" font-size="9" fill="#fff" font-family="sans-serif" font-weight="700">4. Right Action</text>
-
-          <!-- 5 - Bottom -->
-          <rect x="195" y="278" width="90" height="22" rx="4" fill="#6b1a1a"/>
-          <text x="240" y="292" text-anchor="middle" font-size="9" fill="#fff" font-family="sans-serif" font-weight="700">5. Right Livelihood</text>
-
-          <!-- 6 - Bottom-left -->
-          <rect x="82" y="248" width="90" height="22" rx="4" fill="#8b3030"/>
-          <text x="127" y="262" text-anchor="middle" font-size="9" fill="#fff" font-family="sans-serif" font-weight="700">6. Right Effort</text>
-
-          <!-- 7 - Left -->
-          <rect x="56" y="174" width="90" height="22" rx="4" fill="#6b1a1a"/>
-          <text x="101" y="188" text-anchor="middle" font-size="9" fill="#fff" font-family="sans-serif" font-weight="700">7. Right Mindfulness</text>
-
-          <!-- 8 - Top-left -->
-          <rect x="82" y="100" width="90" height="22" rx="4" fill="#8b3030"/>
-          <text x="127" y="114" text-anchor="middle" font-size="9" fill="#fff" font-family="sans-serif" font-weight="700">8. Right Concentration</text>
-
-          <!-- Three categories legend -->
-          <rect x="60" y="320" width="12" height="12" fill="#c47d00" rx="2"/>
-          <text x="78" y="331" font-size="10" fill="#555" font-family="sans-serif">Prajna (Wisdom): 1,2</text>
-          <rect x="195" y="320" width="12" height="12" fill="#6b1a1a" rx="2"/>
-          <text x="213" y="331" font-size="10" fill="#555" font-family="sans-serif">Sila (Morality): 3,4,5</text>
-          <rect x="340" y="320" width="12" height="12" fill="#8b3030" rx="2"/>
-          <text x="358" y="331" font-size="10" fill="#555" font-family="sans-serif">Samadhi (Meditation): 6,7,8</text>
-        </svg>
-        <p class="svg-caption">The Dhamma Chakra — 8 spokes represent the Eightfold Path grouped into Prajna (Wisdom), Sila (Morality), and Samadhi (Meditation)</p>
-      </div>
-
-      <h4>Key Doctrines</h4>
-      <table class="note-table">
-        <tr><th>Doctrine</th><th>Meaning</th><th>Significance</th></tr>
-        <tr><td><strong>Pratityasamutpada</strong></td><td>Dependent Origination — everything arises in dependence upon conditions</td><td>Core metaphysics; rejects both eternalism and nihilism</td></tr>
-        <tr><td><strong>Anicca</strong></td><td>Impermanence — all conditioned phenomena are transient</td><td>Why attachment leads to suffering</td></tr>
-        <tr><td><strong>Anatta</strong></td><td>No-soul / No-self — no permanent, unchanging self (vs Hindu Atman)</td><td>Most radical departure from Brahminism</td></tr>
-        <tr><td><strong>Nirvana</strong></td><td>Blowing out of the flame of desire; liberation from samsara</td><td>Ultimate goal — not union with God but extinction of craving</td></tr>
-        <tr><td><strong>Ahimsa</strong></td><td>Non-violence towards all living beings</td><td>Shaped Indian ethics; influenced Gandhi</td></tr>
-        <tr><td><strong>Karma</strong></td><td>Actions have consequences across lives (accepted, but no Atman to transmigrate)</td><td>Rebirth without a permanent soul — unique Buddhist position</td></tr>
-      </table>
-
-      <h4>Triratna (Three Jewels) of Buddhism</h4>
-      <div class="cards-grid">
-        <div class="info-card">
-          <div class="card-title">Buddha (The Enlightened One)</div>
-          <p>Refuge in the teacher who found and taught the path to liberation.</p>
-        </div>
-        <div class="info-card">
-          <div class="card-title">Dhamma (The Teaching)</div>
-          <p>Refuge in the teaching — the Four Noble Truths, Eightfold Path, all Buddhist doctrine.</p>
-        </div>
-        <div class="info-card orange-card">
-          <div class="card-title">Sangha (The Community)</div>
-          <p>Refuge in the monastic community of monks (bhikkhus) and nuns (bhikkhunis) who preserve and transmit the Dhamma.</p>
-        </div>
-      </div>
-
-      <div class="highlight-box highlight-orange">
-        <strong>Brahmaviharas (Four Divine Abodes):</strong> Metta (loving-kindness), Karuna (compassion), Mudita (sympathetic joy), Upekkha (equanimity) — the four qualities to cultivate towards all beings. Central to Buddhist ethics and meditation.
-      </div>
-
-      <h3>2.4 Buddhist Councils</h3>
-      <table class="note-table">
-        <tr>
-          <th>Council</th><th>Date</th><th>Place</th><th>Chairman</th><th>Patron</th><th>Outcome</th>
-        </tr>
-        <tr>
-          <td><strong>First</strong></td>
-          <td>483 BCE (immediately after Buddha's death)</td>
-          <td>Rajagriha (Saptaparni Cave)</td>
-          <td>Mahakassapa</td>
-          <td>Ajatashatru (Magadha)</td>
-          <td>Ananda recited Sutta Pitaka; Upali recited Vinaya Pitaka. Oral compilation of scriptures.</td>
-        </tr>
-        <tr>
-          <td><strong>Second</strong></td>
-          <td>383 BCE</td>
-          <td>Vaishali</td>
-          <td>Sabakami</td>
-          <td>Kalasoka</td>
-          <td>Dispute over 10 points of Vinaya (monastic rules). Split into Sthaviravadins (orthodox) and Mahasanghikas (liberal) — seeds of Hinayana/Mahayana split.</td>
-        </tr>
-        <tr>
-          <td><strong>Third</strong></td>
-          <td>250 BCE</td>
-          <td>Pataliputra</td>
-          <td>Moggaliputta Tissa</td>
-          <td>Ashoka (Maurya)</td>
-          <td>Compiled Abhidhamma Pitaka. Expelled heretics. Sent missionaries to 9 regions including Lanka (Mahinda), Greece (Dharmaraksita), Burma. Tripitaka finalised.</td>
-        </tr>
-        <tr>
-          <td><strong>Fourth</strong></td>
-          <td>1st century CE</td>
-          <td>Kundalvana, Kashmir</td>
-          <td>Vasumitra</td>
-          <td>Kanishka (Kushan)</td>
-          <td>Compiled Mahavibhasha (great commentary). Formalised Mahayana–Hinayana split. NOT recognised by Theravada Buddhism.</td>
-        </tr>
-      </table>
-
-      <h3>2.5 Buddhist Sects / Schools</h3>
-      <div class="cards-grid">
-        <div class="info-card">
-          <div class="card-title">Hinayana (Theravada)</div>
-          <p><em>"Lesser Vehicle"</em> — individual salvation; strict monastic discipline; no idol worship; Buddha as great teacher; Pali language; ideal = Arhat (personal liberation). Survived in Sri Lanka, Myanmar, Thailand.</p>
-        </div>
-        <div class="info-card orange-card">
-          <div class="card-title">Mahayana</div>
-          <p><em>"Greater Vehicle"</em> — universal salvation via Bodhisattva ideal; elaborate ritual; idol worship; Sanskrit; Buddha as deity; ideal = Bodhisattva. Spread to China, Japan, Korea, Tibet. Nagarjuna (Madhyamaka), Asanga (Yogacara).</p>
-        </div>
-        <div class="info-card green-card">
-          <div class="card-title">Vajrayana</div>
-          <p><em>"Thunderbolt/Diamond Vehicle"</em> — tantric Buddhism; use of mantras, mudras, mandalas; esoteric practices; emerged c. 7th century CE; dominant in Tibet/Nepal. Also called Tantrayana or Mantrayana.</p>
-        </div>
-      </div>
-
-      <h3>2.6 Buddhist Bodhisattvas</h3>
-      <table class="note-table">
-        <tr><th>Bodhisattva</th><th>Quality / Domain</th><th>Note</th></tr>
-        <tr><td>Avalokiteshvara (Padmapani)</td><td>Compassion (Karuna)</td><td>Most popular; holds lotus; Guanyin in China; depicted at Ajanta</td></tr>
-        <tr><td>Manjushri</td><td>Wisdom; holds sword + book</td><td>Popular in Nepal, Tibet; cuts ignorance with sword</td></tr>
-        <tr><td>Maitreya</td><td>Future Buddha; loving-kindness</td><td>The Buddha yet to come; currently a Bodhisattva in Tushita heaven</td></tr>
-        <tr><td>Vajrapani</td><td>Power; holds thunderbolt (vajra)</td><td>Protector of the Buddha; one of earliest depicted</td></tr>
-        <tr><td>Tara</td><td>Swift compassion; removes suffering</td><td>Female Bodhisattva; Green Tara, White Tara — prominent in Vajrayana</td></tr>
-      </table>
-
-      <h3>2.7 Buddhist Architecture &amp; Art</h3>
-      <table class="note-table">
-        <tr><th>Structure</th><th>Description</th><th>Key Examples</th></tr>
-        <tr><td><strong>Stupa</strong></td><td>Hemispherical dome (Anda) over relic chamber; surrounded by vedika (railing) and torana (gateway); circumambulatory path (pradakshina-patha)</td><td>Sanchi (Madhya Pradesh) — Ashoka; Bharhut; Amaravati; Nagarjunakonda</td></tr>
-        <tr><td><strong>Chaitya</strong></td><td>Prayer hall with apsidal plan; stupa at one end; rows of pillars; barrel-vaulted roof</td><td>Karla (largest), Ajanta (Caves 9,10,19,26), Bhaja, Bedsa</td></tr>
-        <tr><td><strong>Vihara</strong></td><td>Monastery — cells around central courtyard; residential for monks</td><td>Nalanda, Vikramashila, Taxila, Odantapuri</td></tr>
-        <tr><td><strong>Rock-cut Caves</strong></td><td>Excavated into hillsides; combined Chaitya + Vihara</td><td>Ajanta (painting), Ellora (sculpture), Kanheri (Mumbai)</td></tr>
-      </table>
-
-      <div class="highlight-box highlight-blue">
-        <strong>Stupa Parts (UPSC favourite):</strong> Medhi (base/drum) → Anda (dome/egg) → Harmika (square railing at top) → Chattravali (umbrella shaft — 1–3 tiers = status) → Vedika (outer railing) → Torana (gateway — 4 at Sanchi) → Pradakshinapatha (circumambulatory path).
-      </div>
-
-      <h3>2.8 Buddhist Literature (Tipitaka / Tripitaka)</h3>
-      <table class="note-table">
-        <tr><th>Pitaka</th><th>Meaning</th><th>Contents</th></tr>
-        <tr><td><strong>Vinaya Pitaka</strong></td><td>Basket of Discipline</td><td>Monastic rules for monks and nuns; compiled by Upali at First Council; 3 parts: Suttavibhanga, Khandhaka, Parivara</td></tr>
-        <tr><td><strong>Sutta Pitaka</strong></td><td>Basket of Discourses</td><td>Buddha's actual sermons; compiled by Ananda; 5 Nikayas: Digha, Majjhima, Samyutta, Anguttara, Khuddaka (includes Dhammapada, Jatakas)</td></tr>
-        <tr><td><strong>Abhidhamma Pitaka</strong></td><td>Basket of Higher Teachings</td><td>Philosophical analysis of mind and matter; compiled at Third Council; 7 books</td></tr>
-      </table>
-
-      <div class="highlight-box highlight-orange">
-        <strong>Key Buddhist Texts:</strong> Mahavastu (biography of Buddha), Lalitavistara (Mahayana biography), Milindapanha (dialogue between Milinda/Menander and monk Nagasena), Buddhacharita (Ashvaghosa's biography of Buddha — earliest complete), Jataka Tales (547 stories of Buddha's previous lives — historical source for social/economic life), Dipavamsa &amp; Mahavamsa (Sri Lankan chronicles for Maurya era).
-      </div>
-
-      <h3>2.9 Spread of Buddhism</h3>
-      <ul>
-        <li><strong>Within India:</strong> Magadha → Kosala → Avanti → North-West India under Ashoka.</li>
-        <li><strong>Ceylon/Lanka:</strong> Ashoka's son <strong>Mahinda</strong> and daughter <strong>Sanghamitta</strong> (who brought the sacred Bodhi tree sapling). Theravada Buddhism still dominant.</li>
-        <li><strong>Central Asia &amp; China:</strong> Kushan Empire (Kanishka) facilitated Silk Road spread; Mahayana Buddhism entered China ~1st century CE.</li>
-        <li><strong>South-East Asia:</strong> Trade routes carried Buddhism to Burma, Thailand, Cambodia (Angkor Wat), Indonesia (Borobudur).</li>
-        <li><strong>Tibet:</strong> 7th century CE — King Songtsen Gampo; Padmasambhava brought Vajrayana ~8th century.</li>
-      </ul>
-
-      <h3>2.10 Decline of Buddhism in India</h3>
-      <ul>
-        <li><strong>Internal factors:</strong> Monastic corruption; accumulation of wealth; split into sects; Brahminisation of Mahayana practices (idol worship, Sanskrit).</li>
-        <li><strong>Brahminical revival:</strong> Kumaragupta's support for Gupta Brahminism; Shankaracharya's Advaita Vedanta intellectually challenged Buddhism (8th century).</li>
-        <li><strong>Bhakti movement:</strong> Absorbed Buddhist elements into Hindu fold (Buddha as 9th avatar of Vishnu).</li>
-        <li><strong>Turkish invasions:</strong> Muhammad Bin Bakhtiyar Khilji destroyed Nalanda (1193 CE) — physical destruction of monastic centres. Monks fled to Tibet and South-East Asia.</li>
-        <li><strong>Loss of royal patronage:</strong> Post-Harsha, Buddhist patronage declined.</li>
-      </ul>
-
-      <h3>2.11 Royal Patrons of Buddhism</h3>
-      <table class="note-table">
-        <tr><th>Patron</th><th>Dynasty/Period</th><th>Contribution</th></tr>
-        <tr><td>Bimbisara</td><td>Haryanka, Magadha (~544–492 BCE)</td><td>Welcomed Buddha to Rajagriha; donated Veluvana (Bamboo Grove)</td></tr>
-        <tr><td>Ajatashatru</td><td>Haryanka (~492–460 BCE)</td><td>Patronised First Council; built stupas over Buddha's relics</td></tr>
-        <tr><td>Ashoka</td><td>Maurya (268–232 BCE)</td><td>Converted after Kalinga (261 BCE); built 84,000 stupas; sent missionaries; Third Council; Dhamma policy</td></tr>
-        <tr><td>Kanishka</td><td>Kushan (1st–2nd century CE)</td><td>Fourth Council; patronised Mahayana; built Kanishka stupa at Peshawar</td></tr>
-        <tr><td>Harsha</td><td>Vardhana (606–647 CE)</td><td>Organised Buddhist assemblies; welcomed Xuanzang (Hiuen Tsang)</td></tr>
-        <tr><td>Palas</td><td>Bengal (8th–12th century CE)</td><td>Built Nalanda, Vikramashila, Odantapuri universities; last major Buddhist patrons in India</td></tr>
-      </table>
-    </div>
-
-    <!-- ═══════ SECTION 3: JAINISM -->
-    <div class="section-card">
-      <h2>🕉 3. Jainism</h2>
-
-      <h3>3.1 Tirthankaras (Ford-Makers)</h3>
-      <p>Jainism recognises <strong>24 Tirthankaras</strong> — perfected beings who have crossed the ocean of samsara and show others the way.</p>
-      <table class="note-table">
-        <tr><th>Tirthankara</th><th>No.</th><th>Symbol</th><th>Significance</th></tr>
-        <tr><td><strong>Rishabhanatha (Adinatha)</strong></td><td>1st</td><td>Bull</td><td>Mythological founder; mentioned in Rigveda and Bhagavata Purana — indicates Jainism's antiquity claim</td></tr>
-        <tr><td><strong>Aristanemi</strong></td><td>22nd</td><td>Conch</td><td>Mentioned in Vedic literature; cousin of Krishna according to Jain texts</td></tr>
-        <tr><td><strong>Parshvanatha</strong></td><td>23rd</td><td>Serpent</td><td>Historical figure; c. 850–750 BCE; preached 4 vows (no Brahmacharya); founder of pre-Mahavira Jain community</td></tr>
-        <tr><td><strong>Vardhamana Mahavira</strong></td><td>24th</td><td>Lion</td><td>Last Tirthankara; historical founder of the current Jain community; added Brahmacharya as 5th vow</td></tr>
-      </table>
-
-      <h3>3.2 Life of Mahavira</h3>
-      <div class="cards-grid">
-        <div class="info-card">
-          <div class="card-title">Birth</div>
-          <p><strong>599 BCE</strong>. Kundagrama (near Vaishali, Bihar). Father: Siddhartha (Lichchhavi chief). Mother: Trishala (sister of Lichchhavi chief Chetak). Born in Jnatrika Kshatriya clan.</p>
-        </div>
-        <div class="info-card">
-          <div class="card-title">Renunciation</div>
-          <p>Age 30. Left wife Yasoda, daughter Priyadarshana. Practised extreme asceticism (12+ years) — wore no clothes, pulled out hair by roots (Kesh-loch), endured hardships silently.</p>
-        </div>
-        <div class="info-card">
-          <div class="card-title">Enlightenment</div>
-          <p><strong>Kaivalya</strong> (omniscience) under Sala tree at <strong>Jrimbhikagrama</strong> (near Vaishali), age 42. Also called <strong>Jina</strong> (conqueror) — those who follow = Jains.</p>
-        </div>
-        <div class="info-card">
-          <div class="card-title">Death</div>
-          <p><strong>Nirvana</strong> at <strong>Pavapuri</strong> (near Rajgir, Bihar), <strong>527 BCE</strong>. Age 72. Death by voluntary starvation (<strong>Sallekhana/Santhara</strong>) — died simultaneously with Nanda chief Hastipala.</p>
-        </div>
-      </div>
-
-      <div class="highlight-box highlight-blue">
-        <strong>Titles of Mahavira:</strong> Vardhamana (grows in virtue), Jina (conqueror of passions), Mahavira (great hero), Nirgantha (free from all ties), Kashyapa (clan name), Shraman/Shramana (ascetic).
-      </div>
-
-      <h3>3.3 Jain Doctrines</h3>
-
-      <h4>Pancha Mahavrata (Five Great Vows — for Monks)</h4>
-      <table class="note-table">
-        <tr><th>Vow</th><th>Meaning</th><th>Practice</th></tr>
-        <tr><td><strong>Ahimsa</strong></td><td>Non-violence</td><td>Avoid harm to any living being; use of broom (rajoharana), mouth-mask, strain water. Supreme principle.</td></tr>
-        <tr><td><strong>Satya</strong></td><td>Truthfulness</td><td>Speak only what is true, kind, and helpful</td></tr>
-        <tr><td><strong>Asteya</strong></td><td>Non-stealing</td><td>Take nothing not given</td></tr>
-        <tr><td><strong>Brahmacharya</strong></td><td>Celibacy</td><td>Added by Mahavira (Parshvanatha had only 4 vows)</td></tr>
-        <tr><td><strong>Aparigraha</strong></td><td>Non-possession</td><td>Complete renunciation of property and attachments</td></tr>
-      </table>
-
-      <h4>Triratna (Three Jewels) of Jainism</h4>
-      <div class="cards-grid">
-        <div class="info-card">
-          <div class="card-title">Samyak Darshana</div>
-          <p>Right Faith — correct belief in the Jain teaching and the Tirthankaras; the foundation.</p>
-        </div>
-        <div class="info-card orange-card">
-          <div class="card-title">Samyak Jnana</div>
-          <p>Right Knowledge — correct, complete understanding of the nature of reality (anekanta), the soul, karma, and liberation.</p>
-        </div>
-        <div class="info-card green-card">
-          <div class="card-title">Samyak Charitra</div>
-          <p>Right Conduct — acting in accordance with the Five Vows; the practical path to liberation.</p>
-        </div>
-      </div>
-
-      <h4>Anekantavada, Syadvada, and Nayavada</h4>
-      <table class="note-table">
-        <tr><th>Doctrine</th><th>Meaning</th><th>Example</th></tr>
-        <tr><td><strong>Anekantavada</strong></td><td>Non-absolutism / many-sidedness of reality — no single statement captures full truth</td><td>The blind men and the elephant story</td></tr>
-        <tr><td><strong>Syadvada</strong></td><td>Doctrine of conditional predication — every statement preceded by "syat" (in some respect/perhaps); 7 forms (Saptabhangi)</td><td>"Syat asti" (it is, in some respect); "Syat nasti" (it is not, in some respect)</td></tr>
-        <tr><td><strong>Nayavada</strong></td><td>Doctrine of partial standpoints — truth has many nayas (perspectives); each naya is partial truth</td><td>A pot viewed from above vs. side — both views are true from their standpoint</td></tr>
-      </table>
-
-      <h4>Jain Cosmology &amp; Soul (Jiva)</h4>
-      <ul>
-        <li><strong>Two realities:</strong> Jiva (soul/living) and Ajiva (non-living: matter/pudgala, space, time, motion, rest).</li>
-        <li><strong>Karma:</strong> Subtle matter that sticks to the soul; all action (good or bad) generates karma.</li>
-        <li><strong>Bondage:</strong> Karma accumulation = bondage (bandha).</li>
-        <li><strong>Liberation (Moksha):</strong> Stop new karma (samvara) + shed existing karma (nirjara) through asceticism → pure soul rises to Siddhashila (top of universe).</li>
-        <li><strong>Lokakasha:</strong> The occupied universe — finite, shaped like a cosmic person; Siddhashila is at the very top.</li>
-      </ul>
-
-      <h3>3.4 Jain Sects</h3>
-      <table class="note-table">
-        <tr><th>Feature</th><th>Digambara (Sky-clad)</th><th>Shvetambara (White-clad)</th></tr>
-        <tr><td>Clothing</td><td>Monks go nude — complete renunciation of possessions</td><td>Monks wear white robes</td></tr>
-        <tr><td>Women's liberation</td><td>Women cannot attain moksha in current life; must be reborn as men</td><td>Women can attain moksha; 19th Tirthankara Malli was a woman</td></tr>
-        <tr><td>Mahavira's life</td><td>Mahavira was never married</td><td>Mahavira was married (wife: Yasoda; daughter: Priyadarshana)</td></tr>
-        <tr><td>Scriptures</td><td>Original Agamas lost; do not accept Shvetambara Agamas as authentic</td><td>Accept 45 Agamas (compiled at Council of Valabhi, 454 CE)</td></tr>
-        <tr><td>Food</td><td>Eat from hands, accept food only once a day</td><td>Use bowls; more flexible eating rules</td></tr>
-        <tr><td>Geographic base</td><td>South India (Karnataka — Gomateshvara at Shravanabelagola)</td><td>Gujarat, Rajasthan</td></tr>
-        <tr><td>Split</td><td colspan="2">Traditionally dated to c. 300 BCE — Chandraguptamaurya's association with Bhadrabahu (Digambara) who led migration to South India during famine; Sthulabhadra remained in North (became Shvetambara)</td></tr>
-      </table>
-
-      <h3>3.5 Jain Literature (Agamas)</h3>
-      <p>The canonical Jain scriptures are called <strong>Agamas</strong> (or Siddhanta). Shvetambaras recognise <strong>45 Agamas</strong> (compiled at Council of Valabhi, 5th–6th century CE).</p>
-      <table class="note-table">
-        <tr><th>Category</th><th>Texts</th><th>Content</th></tr>
-        <tr><td><strong>Angas</strong> (12 main)</td><td>Acharanga Sutra, Sutrakritanga, Sthananga…</td><td>Core doctrinal texts; Acharanga = oldest, describes Mahavira's ascetic life</td></tr>
-        <tr><td><strong>Upangas</strong> (12)</td><td>Aupapatikasutra, Rajaprashniya…</td><td>Supplementary texts; cosmology, astronomy</td></tr>
-        <tr><td><strong>Prakirnakas</strong> (10)</td><td>Various</td><td>Miscellaneous minor texts</td></tr>
-        <tr><td><strong>Chhedasutras</strong> (6)</td><td>Nishitha, Mahanishitha, Vyavaharasutra…</td><td>Monastic discipline (like Vinaya Pitaka)</td></tr>
-        <tr><td><strong>Mulasutras</strong> (4)</td><td>Uttaradhyayana, Avashyaka…</td><td>Fundamental rules for novice monks</td></tr>
-      </table>
-
-      <h3>3.6 Jain Councils</h3>
-      <table class="note-table">
-        <tr><th>Council</th><th>Date</th><th>Place</th><th>Outcome</th></tr>
-        <tr><td>First Jain Council</td><td>c. 300 BCE</td><td>Pataliputra</td><td>Under Sthulabhadra; compiled 12 Angas; Digambaras (led by Bhadrabahu) disagreed — went south with Chandragupta Maurya</td></tr>
-        <tr><td>Second Jain Council</td><td>512–513 CE (traditionally)</td><td>Valabhi (Gujarat)</td><td>Under Devardhigani Kshamashraman; final written compilation of 45 Agamas (Shvetambara canon)</td></tr>
-      </table>
-
-      <h3>3.7 Jain Architecture</h3>
-      <ul>
-        <li><strong>Gomateshvara (Bahubali) statue:</strong> Shravanabelagola, Karnataka — 18 metres, monolithic, carved ~983 CE; Mahamastakabhisheka festival every 12 years.</li>
-        <li><strong>Dilwara Temples:</strong> Mount Abu, Rajasthan — 11th–13th century; Vimala Vasahi (marble, dedicated to Adinatha) and Luna Vasahi; finest Jain architecture.</li>
-        <li><strong>Ranakpur Temple:</strong> Rajasthan — 15th century; 1,444 uniquely carved marble pillars; dedicated to Adinatha.</li>
-        <li><strong>Palitana Temples:</strong> Shatrunjaya Hill, Gujarat — 900+ temples; considered holiest Jain pilgrimage site.</li>
-        <li><strong>Rock-cut Caves:</strong> Udayagiri and Khandagiri (Odisha) — excavated under Kharavela (Kalinga king, c. 1st century BCE); inscriptions on Hathigumpha Cave.</li>
-      </ul>
-
-      <h3>3.8 Royal Patrons of Jainism</h3>
-      <table class="note-table">
-        <tr><th>Patron</th><th>Dynasty/Period</th><th>Contribution</th></tr>
-        <tr><td>Chandragupta Maurya</td><td>Maurya (c. 322–298 BCE)</td><td>Abdicated throne; followed Digambara monk Bhadrabahu to Karnataka; died at Shravanabelagola by Sallekhana</td></tr>
-        <tr><td>Kharavela</td><td>Kalinga (c. 1st century BCE)</td><td>Mahameghavahana dynasty; Hathigumpha inscription; restored Jain images looted by Nanda king; built Udayagiri-Khandagiri caves</td></tr>
-        <tr><td>Samprati</td><td>Maurya (grandson of Ashoka)</td><td>Known as "Jain Ashoka"; patronised Jainism extensively in western India</td></tr>
-        <tr><td>Amoghavarsha</td><td>Rashtrakuta (814–878 CE)</td><td>Author of Kavirajamarga (Kannada); abdicated to follow Jainism under Jinasena</td></tr>
-        <tr><td>Kumarapala</td><td>Chaulukya (Gujarat, 12th century)</td><td>Patronised Hemachandra (great Jain scholar); made Gujarat temporarily vegetarian</td></tr>
-      </table>
-
-      <h3>3.9 Spread and Decline of Jainism</h3>
-      <div class="cards-grid">
-        <div class="info-card">
-          <div class="card-title">Spread</div>
-          <p>Strong in Gujarat, Rajasthan, Karnataka, Madhya Pradesh. Merchant communities (Marwaris, Oswals) adopted Jainism — non-violence compatible with trade. Never spread as a world religion unlike Buddhism.</p>
-        </div>
-        <div class="info-card orange-card">
-          <div class="card-title">Survival Factors</div>
-          <p>Strong lay community (shravaka/shravika) supporting monastic order; merchant wealth funding temples; localized communities; not tied to royal patronage as exclusively as Buddhism.</p>
-        </div>
-        <div class="info-card green-card">
-          <div class="card-title">Modern Relevance</div>
-          <p>~4.5 million Jains in India (0.4% population) but disproportionate economic influence. Anekantavada: pluralism in democratic discourse. Gandhi drew directly from Jain ahimsa via mother Putlibai.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- ═══════ SECTION 4: COMPARISON -->
-    <div class="section-card">
-      <h2>⚖ 4. Buddhism vs Jainism — Comparison</h2>
-
-      <!-- SVG: Side-by-side comparison diagram -->
-      <div class="svg-wrap">
-        <svg viewBox="0 0 520 380" width="520" height="380" xmlns="http://www.w3.org/2000/svg">
-          <rect width="520" height="380" fill="#fdf8f0" rx="10"/>
-          <text x="260" y="26" text-anchor="middle" font-size="13" font-weight="700" fill="#3d0e0e" font-family="sans-serif">Buddhism vs Jainism — Key Comparisons</text>
-
-          <!-- Column headers -->
-          <rect x="10" y="36" width="155" height="30" rx="6" fill="#6b1a1a"/>
-          <text x="87" y="56" text-anchor="middle" font-size="11" fill="#fff" font-weight="700" font-family="sans-serif">Feature</text>
-
-          <rect x="175" y="36" width="155" height="30" rx="6" fill="#c47d00"/>
-          <text x="252" y="56" text-anchor="middle" font-size="11" fill="#fff" font-weight="700" font-family="sans-serif">☸ Buddhism</text>
-
-          <rect x="340" y="36" width="170" height="30" rx="6" fill="#2e7a47"/>
-          <text x="425" y="56" text-anchor="middle" font-size="11" fill="#fff" font-weight="700" font-family="sans-serif">🕉 Jainism</text>
-
-          <!-- Rows -->
-          <g font-family="sans-serif" font-size="9.5">
-            <!-- Row 1 -->
-            <rect x="10" y="72" width="155" height="26" fill="#f5e8e8"/>
-            <text x="87" y="89" text-anchor="middle" fill="#3d0e0e" font-weight="600">Founder</text>
-            <rect x="175" y="72" width="155" height="26" fill="#fff8ea"/>
-            <text x="252" y="89" text-anchor="middle" fill="#555">Gautama Buddha (563 BCE)</text>
-            <rect x="340" y="72" width="170" height="26" fill="#eaf5ef"/>
-            <text x="425" y="89" text-anchor="middle" fill="#555">Vardhamana Mahavira (599 BCE)</text>
-
-            <!-- Row 2 -->
-            <rect x="10" y="100" width="155" height="26" fill="#f5e8e8"/>
-            <text x="87" y="117" text-anchor="middle" fill="#3d0e0e" font-weight="600">Place of Birth</text>
-            <rect x="175" y="100" width="155" height="26" fill="#fff"/>
-            <text x="252" y="117" text-anchor="middle" fill="#555">Lumbini, Nepal</text>
-            <rect x="340" y="100" width="170" height="26" fill="#fff"/>
-            <text x="425" y="117" text-anchor="middle" fill="#555">Kundagrama, Bihar</text>
-
-            <!-- Row 3 -->
-            <rect x="10" y="128" width="155" height="26" fill="#f5e8e8"/>
-            <text x="87" y="145" text-anchor="middle" fill="#3d0e0e" font-weight="600">Enlightenment Place</text>
-            <rect x="175" y="128" width="155" height="26" fill="#fff8ea"/>
-            <text x="252" y="145" text-anchor="middle" fill="#555">Bodh Gaya (Bodhi Tree)</text>
-            <rect x="340" y="128" width="170" height="26" fill="#eaf5ef"/>
-            <text x="425" y="145" text-anchor="middle" fill="#555">Jrimbhikagrama (Sala Tree)</text>
-
-            <!-- Row 4 -->
-            <rect x="10" y="156" width="155" height="26" fill="#f5e8e8"/>
-            <text x="87" y="173" text-anchor="middle" fill="#3d0e0e" font-weight="600">Attitude to Vedas</text>
-            <rect x="175" y="156" width="155" height="26" fill="#fff"/>
-            <text x="252" y="173" text-anchor="middle" fill="#555">Rejected Vedic authority</text>
-            <rect x="340" y="156" width="170" height="26" fill="#fff"/>
-            <text x="425" y="173" text-anchor="middle" fill="#555">Rejected Vedic authority</text>
-
-            <!-- Row 5 -->
-            <rect x="10" y="184" width="155" height="26" fill="#f5e8e8"/>
-            <text x="87" y="201" text-anchor="middle" fill="#3d0e0e" font-weight="600">Attitude to Soul</text>
-            <rect x="175" y="184" width="155" height="26" fill="#fff8ea"/>
-            <text x="252" y="201" text-anchor="middle" fill="#555">Anatta — no permanent soul</text>
-            <rect x="340" y="184" width="170" height="26" fill="#eaf5ef"/>
-            <text x="425" y="201" text-anchor="middle" fill="#555">Jiva — eternal individual soul</text>
-
-            <!-- Row 6 -->
-            <rect x="10" y="212" width="155" height="26" fill="#f5e8e8"/>
-            <text x="87" y="229" text-anchor="middle" fill="#3d0e0e" font-weight="600">Asceticism</text>
-            <rect x="175" y="212" width="155" height="26" fill="#fff"/>
-            <text x="252" y="229" text-anchor="middle" fill="#555">Middle Path (not extreme)</text>
-            <rect x="340" y="212" width="170" height="26" fill="#fff"/>
-            <text x="425" y="229" text-anchor="middle" fill="#555">Extreme asceticism advocated</text>
-
-            <!-- Row 7 -->
-            <rect x="10" y="240" width="155" height="26" fill="#f5e8e8"/>
-            <text x="87" y="257" text-anchor="middle" fill="#3d0e0e" font-weight="600">Karma</text>
-            <rect x="175" y="240" width="155" height="26" fill="#fff8ea"/>
-            <text x="252" y="257" text-anchor="middle" fill="#555">Mental intention = karma</text>
-            <rect x="340" y="240" width="170" height="26" fill="#eaf5ef"/>
-            <text x="425" y="257" text-anchor="middle" fill="#555">All action (thought+word+deed)</text>
-
-            <!-- Row 8 -->
-            <rect x="10" y="268" width="155" height="26" fill="#f5e8e8"/>
-            <text x="87" y="285" text-anchor="middle" fill="#3d0e0e" font-weight="600">God / Creation</text>
-            <rect x="175" y="268" width="155" height="26" fill="#fff"/>
-            <text x="252" y="285" text-anchor="middle" fill="#555">Agnostic on God; no creator</text>
-            <rect x="340" y="268" width="170" height="26" fill="#fff"/>
-            <text x="425" y="285" text-anchor="middle" fill="#555">No creator God; universe eternal</text>
-
-            <!-- Row 9 -->
-            <rect x="10" y="296" width="155" height="26" fill="#f5e8e8"/>
-            <text x="87" y="313" text-anchor="middle" fill="#3d0e0e" font-weight="600">Women</text>
-            <rect x="175" y="296" width="155" height="26" fill="#fff8ea"/>
-            <text x="252" y="313" text-anchor="middle" fill="#555">Women accepted in Sangha</text>
-            <rect x="340" y="296" width="170" height="26" fill="#eaf5ef"/>
-            <text x="425" y="313" text-anchor="middle" fill="#555">Split: Shvetambara=yes; Digambara=no</text>
-
-            <!-- Row 10 -->
-            <rect x="10" y="324" width="155" height="26" fill="#f5e8e8"/>
-            <text x="87" y="341" text-anchor="middle" fill="#3d0e0e" font-weight="600">Global Spread</text>
-            <rect x="175" y="324" width="155" height="26" fill="#fff"/>
-            <text x="252" y="341" text-anchor="middle" fill="#555">World religion (Asia, globally)</text>
-            <rect x="340" y="324" width="170" height="26" fill="#fff"/>
-            <text x="425" y="341" text-anchor="middle" fill="#555">Remained concentrated in India</text>
-          </g>
-
-          <!-- Divider lines -->
-          <line x1="10" y1="66" x2="510" y2="66" stroke="#ddd" stroke-width="1"/>
-          <line x1="165" y1="36" x2="165" y2="354" stroke="#ddd" stroke-width="1"/>
-          <line x1="330" y1="36" x2="330" y2="354" stroke="#ddd" stroke-width="1"/>
-        </svg>
-        <p class="svg-caption">Buddhism vs Jainism — comparative overview of key doctrinal and historical features</p>
-      </div>
-
-      <h3>4.1 Similarities</h3>
-      <ul>
-        <li>Both rejected the authority of the Vedas and the supremacy of the Brahmin priestly class.</li>
-        <li>Both rejected animal sacrifice in Vedic yajnas and stressed <strong>Ahimsa</strong>.</li>
-        <li>Both accepted <strong>Karma and Rebirth</strong> — but without a permanent Atman (Buddhism) or with eternal individual Jiva (Jainism).</li>
-        <li>Both were founded by <strong>Kshatriya princes</strong> from the Gangetic plain.</li>
-        <li>Both preached in <strong>Prakrit languages</strong> (Pali — Buddhism; Ardha-Magadhi — Jainism), not Sanskrit.</li>
-        <li>Both established <strong>monastic orders</strong> (Sangha/Bhikshu Sangha) and accepted women as nuns.</li>
-        <li>Both preached universal ethics accessible to all castes.</li>
-        <li>Both opposed the caste hierarchy based on birth.</li>
-        <li>Both received patronage from kings, merchants, and trading guilds (shrenis).</li>
-      </ul>
-
-      <h3>4.2 Differences (Key UPSC Distinctions)</h3>
-      <table class="note-table">
-        <tr><th>Basis</th><th>Buddhism</th><th>Jainism</th></tr>
-        <tr><td>Soul (Atman)</td><td>Anatta — no permanent self; rebirth without soul</td><td>Jiva — eternal individual soul that can attain liberation</td></tr>
-        <tr><td>Asceticism</td><td>Middle Path — rejected extreme mortification</td><td>Tapas (penance) essential; extreme asceticism glorified</td></tr>
-        <tr><td>Karma</td><td>Intention (cetana) determines karma; mental act = primary</td><td>ALL acts (thought, word, deed) generate karma — karmic matter physically sticks to soul</td></tr>
-        <tr><td>Liberation</td><td>Nirvana — extinguishing of craving; no afterlife state described</td><td>Moksha — pure soul rises to Siddhashila at top of universe; positive state</td></tr>
-        <tr><td>Non-violence</td><td>Important but pragmatic — permitted eating meat if not killed for you (3 pure kinds)</td><td>Absolute — avoid harming even micro-organisms; strict vegetarianism; Digambara monks don't cook</td></tr>
-        <tr><td>Cosmos</td><td>Universe is beginningless, endless; no creator</td><td>Universe is eternal, divided into Lokakasha (occupied) and Alokakasha; elaborate cosmology with 14 Rajloka</td></tr>
-        <tr><td>Fate of Religion</td><td>Declined in India; became world religion</td><td>Survived in India as minority religion (c. 4.5 million)</td></tr>
-      </table>
-    </div>
-
-    <!-- ═══════ SECTION 5: OTHER HETERODOX SECTS -->
-    <div class="section-card">
-      <h2>🔮 5. Other Heterodox Sects (Shramana Traditions)</h2>
-      <p>The 6th century BCE saw a proliferation of shramana (non-Brahminical) philosophical movements. Buddhist texts mention <strong>six major non-Buddhist teachers</strong> (Titthiyas) besides Buddha. Several key schools:</p>
-
-      <table class="note-table">
-        <tr><th>Sect / School</th><th>Key Figure</th><th>Core Doctrine</th><th>UPSC Significance</th></tr>
-        <tr>
-          <td><strong>Ajivika</strong></td>
-          <td>Makkhali Gosala (a disciple-turned-rival of Mahavira)</td>
-          <td><strong>Niyativada (Absolute Determinism)</strong> — every soul will attain liberation after exactly 8,400,000 rebirths regardless of action; no free will; universe operates on a fixed plan (Niyati = fate)</td>
-          <td>Most important heterodox sect after Buddhism and Jainism; received royal patronage (Bindusara, Ashoka gave Barabar caves). Disappeared by 14th century CE.</td>
-        </tr>
-        <tr>
-          <td><strong>Lokayata / Charvaka</strong></td>
-          <td>Charvaka (legendary), Ajita Kesakambali (historical teacher)</td>
-          <td><strong>Materialist philosophy</strong> — only the perceivable world exists; no soul, no afterlife, no karma, no God; "eat, drink and be merry" (hedonism); perception (pratyaksha) is the only valid means of knowledge</td>
-          <td>India's only full materialist school; extremely radical — rejected all Vedic and shramana metaphysics. Brihaspatya Sutra attributed to it. Sarvasiddhantasamgraha describes its doctrines.</td>
-        </tr>
-        <tr>
-          <td><strong>Ajnana / Agnosticism</strong></td>
-          <td>Sanjaya Belaṭṭhaputta (one of the six teachers)</td>
-          <td><strong>Radical scepticism</strong> — it is impossible to know metaphysical truths (soul, afterlife, karma); refused to make any definite philosophical assertions; "eel-wriggling" philosophy (Amaravikkhepika)</td>
-          <td>Two of Buddha's chief disciples (Sariputta and Moggallana) were originally followers of Sanjaya before converting to Buddhism.</td>
-        </tr>
-        <tr>
-          <td><strong>Uchchhedavada</strong></td>
-          <td>Ajita Kesakambali</td>
-          <td><strong>Annihilationism</strong> — at death, all four elements (earth, water, fire, air) dissolve back into nature; no soul survives death; no rebirth; all consciousness ends permanently at death</td>
-          <td>Directly opposed to both Brahminical soul theory and Buddhist subtle rebirth; rejected by Buddha in Majjhima Nikaya as extreme nihilism</td>
-        </tr>
-        <tr>
-          <td><strong>Akriyavada</strong></td>
-          <td>Purana Kassapa</td>
-          <td><strong>Non-action doctrine</strong> — actions have no moral consequences (neither merit nor demerit); killing, lying, stealing produce no karma; complete moral nihilism</td>
-          <td>Denied the entire Indian karmic framework; mentioned in Buddhist sources as one of the six heretical teachers</td>
-        </tr>
-        <tr>
-          <td><strong>Aniccitvada / Sassatavada</strong></td>
-          <td>Pakudha Kacchayana</td>
-          <td><strong>Eternalism of seven elements</strong> — earth, water, fire, air, pleasure, pain, and the soul are eternal, unchanging, and uncreated; no one can actually kill or be killed since these elements simply rearrange</td>
-          <td>Quasi-materialist eternalism; countered by Buddha's dependent origination and impermanence</td>
-        </tr>
-      </table>
-
-      <div class="highlight-box highlight-orange">
-        <strong>The Six Heretical Teachers (Titthiyas) in Buddhist texts:</strong> (1) Purana Kassapa — Akriyavada; (2) Makkhali Gosala — Niyativada/Ajivika; (3) Ajita Kesakambali — Uchchhedavada/Lokayata; (4) Pakudha Kacchayana — Sassatavada/Seven eternals; (5) Nigantha Nataputta — Mahavira/Jainism; (6) Sanjaya Belaṭṭhaputta — Agnosticism/Eel-wriggling.
-      </div>
-
-      <h3>Comparison: Key Heterodox Schools</h3>
-      <table class="note-table">
-        <tr><th>School</th><th>Soul</th><th>Karma</th><th>Free Will</th><th>God</th></tr>
-        <tr><td>Buddhism</td><td>No permanent soul (Anatta)</td><td>Accepted (intention-based)</td><td>Yes — path to liberation</td><td>Agnostic</td></tr>
-        <tr><td>Jainism</td><td>Eternal Jiva</td><td>Accepted (all action)</td><td>Yes — through tapas</td><td>No creator God</td></tr>
-        <tr><td>Ajivika</td><td>Soul exists</td><td>No effect on liberation</td><td>No — total determinism</td><td>No</td></tr>
-        <tr><td>Lokayata</td><td>No soul</td><td>Rejected</td><td>Free will = hedonism</td><td>No</td></tr>
-        <tr><td>Ajnana</td><td>Unknown/unknowable</td><td>Unknown</td><td>Unknown</td><td>Unknown</td></tr>
-      </table>
-    </div>
-
-    <!-- ═══════ SECTION 6: IMPORTANCE & RELEVANCE -->
-    <div class="section-card">
-      <h2>🌟 6. Importance and Modern Relevance</h2>
-
-      <div class="cards-grid">
-        <div class="info-card">
-          <div class="card-title">Buddhism's Global Legacy</div>
-          <p>500 million Buddhists worldwide (3rd largest religion). Mindfulness, meditation practices (MBSR) mainstreamed globally. UNESCO World Heritage Sites: Bodh Gaya, Sanchi, Sarnath area.</p>
-        </div>
-        <div class="info-card orange-card">
-          <div class="card-title">Jainism &amp; Ahimsa</div>
-          <p>Gandhi's ahimsa directly derived from Jain influence. Anekantavada cited in Indian Supreme Court judgements on religious pluralism. Jain vegetarianism influenced animal rights movements.</p>
-        </div>
-        <div class="info-card green-card">
-          <div class="card-title">Art &amp; Architecture</div>
-          <p>Ajanta-Ellora (UNESCO), Sanchi Stupa, Nalanda University (now UNESCO site), Buddhist Circuit tourism. Dilwara, Ranakpur, Gomateshvara — major architectural monuments.</p>
-        </div>
-        <div class="info-card">
-          <div class="card-title">Social Reform</div>
-          <p>Both movements challenged caste hierarchy, created social space for women and lower castes, established educational institutions (Nalanda, Vikramashila), and spread literacy through vernacular languages.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- CURRENT AFFAIRS -->
-    <div class="ca-section">
-      <h2>📰 Current Affairs Linkages (2024–26)</h2>
-
-      <div class="ca-item">
-        <strong>Buddhist Circuit &amp; India's Soft Power (2024–25)</strong>
-        Ministry of Tourism promoting Buddhist Circuit (Lumbini, Bodh Gaya, Sarnath, Kushinagar) as international pilgrimage route. Kushinagar International Airport (inaugurated 2021) receiving Buddhist pilgrims from Southeast Asia. India–Sri Lanka–Japan collaboration on Buddhist heritage tourism.
-      </div>
-
-      <div class="ca-item">
-        <strong>Sallekhana Controversy (2015 onwards — still debated)</strong>
-        Rajasthan HC (2015) declared Sallekhana (Jain voluntary fasting unto death) illegal; Supreme Court stayed the order. Case raises debates on religious freedom (Article 25), right to die with dignity (Article 21), and the status of ancient religious practices under modern law. Still pending final resolution.
-      </div>
-
-      <div class="ca-item">
-        <strong>Nalanda University Reestablishment</strong>
-        Nalanda University (New Nalanda, Bihar) — inaugurated campus 2024 by PM Modi. East Asia Summit initiative; 17 countries involved. Adjacent to ruins of ancient Nalanda (destroyed 1193 CE by Bakhtiyar Khilji). Symbolises India's Buddhist soft power in Asia. PM Modi inaugurated new campus in June 2024.
-      </div>
-
-      <div class="ca-item">
-        <strong>Bodh Gaya Attacks &amp; Security of Buddhist Heritage</strong>
-        Recurrent security concerns at Bodh Gaya (2013 IED blasts by Indian Mujahideen). Ongoing debate on protecting India's Buddhist heritage sites. Archaeological Survey of India's conservation at Sanchi, Amaravati, Sarnath.
-      </div>
-
-      <div class="ca-item">
-        <strong>Anekantavada in Constitutional Debates</strong>
-        Several legal scholars and SC judges have cited Jain Anekantavada (many-sidedness of truth) in support of India's pluralistic constitutional framework. Relevance to debates on free speech, religious pluralism, and the limits of absolute claims in democratic society.
-      </div>
-    </div>
-
-    <!-- PYQs -->
-    <div class="pyq-section">
-      <h2>📋 Previous Year Questions (UPSC)</h2>
-
-      <div class="pyq-item">
-        <div class="pyq-meta">Prelims 2020</div>
-        <p>With reference to the history of ancient India, which of the following was/were common to both Buddhism and Jainism? (1) Avoidance of extremities of penance and enjoyment; (2) Indifference to the authority of the Vedas; (3) Denial of efficacy of rituals. Select using codes.</p>
-      </div>
-
-      <div class="pyq-item">
-        <div class="pyq-meta">Prelims 2018</div>
-        <p>Consider the following statements: (1) The First Buddhist Council was held at Rajagriha; (2) The Second Buddhist Council was held at Vaishali; (3) In the Third Buddhist Council, Buddhism was divided into Mahayana and Hinayana sects; (4) The Fourth Buddhist Council was held at Kashmir under the patronage of Kanishka. Which are correct?</p>
-      </div>
-
-      <div class="pyq-item">
-        <div class="pyq-meta">Prelims 2016</div>
-        <p>Which of the following is/are the characteristic/characteristics of the Mahayana Buddhism? (1) It believed in the bodhisattva path open to all; (2) It is characterised by idol worship and rituals; (3) It included magical formulae and spells. Select using codes.</p>
-      </div>
-
-      <div class="pyq-item">
-        <div class="pyq-meta">Prelims 2015</div>
-        <p>Consider the following statements about Jainism: (1) Mahavira was the last Tirthankara of Jainism; (2) Parshvanatha preached four vows; (3) Digambaras believe that women cannot attain liberation. Which are correct?</p>
-      </div>
-
-      <div class="pyq-item">
-        <div class="pyq-meta">Prelims 2013</div>
-        <p>The Ajivika sect was founded by: (a) Makkhali Gosala; (b) Sanjaya Belaṭṭhaputta; (c) Purana Kassapa; (d) Pakudha Kacchayana.</p>
-      </div>
-
-      <div class="pyq-item pyq-mains">
-        <div class="pyq-meta">Mains GS-1 2020</div>
-        <p>The emergence of Buddhism in India in the 6th century BCE was a social and intellectual revolution. Examine the reasons for its emergence and the factors behind its eventual decline in the land of its birth. (250 words)</p>
-      </div>
-
-      <div class="pyq-item pyq-mains">
-        <div class="pyq-meta">Mains GS-1 2017</div>
-        <p>Assess the contribution of Buddhism and Jainism to Indian art, architecture, and social reform. How do these traditions remain relevant in contemporary India? (250 words)</p>
-      </div>
-    </div>
-
-    <!-- REVISION BOX -->
-    <div class="revision-box">
-      <h2>⚡ 10-Point Rapid Revision</h2>
-      <div class="revision-grid">
-        <div class="revision-point">
-          <strong>1. Buddha's Life</strong>
-          Birth: Lumbini (563 BCE) → Nirvana: Bodh Gaya → First Sermon: Sarnath → Death: Kushinagar (483 BCE)
-        </div>
-        <div class="revision-point">
-          <strong>2. Four Noble Truths</strong>
-          Dukkha → Samudaya (cause: craving) → Nirodha (cessation) → Marga (Eightfold Path)
-        </div>
-        <div class="revision-point">
-          <strong>3. Buddhist Councils</strong>
-          1st–Rajagriha (Ajatashatru) → 2nd–Vaishali (Kalasoka) → 3rd–Pataliputra (Ashoka) → 4th–Kashmir (Kanishka)
-        </div>
-        <div class="revision-point">
-          <strong>4. Buddhist Sects</strong>
-          Hinayana (Theravada) = individual, Arhat ideal | Mahayana = universal, Bodhisattva | Vajrayana = tantric
-        </div>
-        <div class="revision-point">
-          <strong>5. Mahavira's Life</strong>
-          Birth: Kundagrama (599 BCE) → Kaivalya: Jrimbhikagrama → Death: Pavapuri (527 BCE) by Sallekhana
-        </div>
-        <div class="revision-point">
-          <strong>6. Pancha Mahavrata</strong>
-          Ahimsa + Satya + Asteya + Brahmacharya (added by Mahavira) + Aparigraha
-        </div>
-        <div class="revision-point">
-          <strong>7. Jain Sects Split</strong>
-          Digambara (nude, south India, no moksha for women) vs Shvetambara (white robes, Gujarat-Rajasthan)
-        </div>
-        <div class="revision-point">
-          <strong>8. Key Difference: Soul</strong>
-          Buddhism = Anatta (no soul) | Jainism = eternal Jiva | Brahminism = Atman = Brahman
-        </div>
-        <div class="revision-point">
-          <strong>9. Ajivika</strong>
-          Makkhali Gosala; Niyativada (absolute determinism, no free will); Barabar caves from Ashoka/Bindusara
-        </div>
-        <div class="revision-point">
-          <strong>10. Anekantavada</strong>
-          Jain doctrine of many-sidedness; Syadvada (conditional predication); Nayavada (partial standpoints) — epistemological pluralism
-        </div>
-      </div>
-    </div>
-
-  </main>
-  <!-- ═══════════════════════════════════════════════════════ END MAIN -->
-
-  <!-- ═══════════════════════════════════════════════════════ RIGHT SIDEBAR -->
-  <aside class="sidebar">
-
-    <!-- Quick Reference: Buddha -->
-    <div class="sidebar-card">
-      <h3>☸ Buddha — Quick Ref</h3>
-      <table class="sidebar-table">
-        <tr><td>Born</td><td>Lumbini, 563 BCE</td></tr>
-        <tr><td>Clan</td><td>Shakya (Kshatriya)</td></tr>
-        <tr><td>Father</td><td>Shuddhodana</td></tr>
-        <tr><td>Nirvana</td><td>Bodh Gaya</td></tr>
-        <tr><td>1st Sermon</td><td>Sarnath (Deer Park)</td></tr>
-        <tr><td>Death</td><td>Kushinagar, 483 BCE</td></tr>
-        <tr><td>Language</td><td>Pali</td></tr>
-        <tr><td>Council 1</td><td>Rajagriha (Ajatashatru)</td></tr>
-        <tr><td>Council 3</td><td>Pataliputra (Ashoka)</td></tr>
-        <tr><td>Spread by</td><td>Ashoka's missionaries</td></tr>
-      </table>
-    </div>
-
-    <!-- Quick Reference: Mahavira -->
-    <div class="sidebar-card">
-      <h3>🕉 Mahavira — Quick Ref</h3>
-      <table class="sidebar-table">
-        <tr><td>Born</td><td>Kundagrama, 599 BCE</td></tr>
-        <tr><td>Clan</td><td>Jnatrika (Kshatriya)</td></tr>
-        <tr><td>Father</td><td>Siddhartha</td></tr>
-        <tr><td>Mother</td><td>Trishala</td></tr>
-        <tr><td>Kaivalya</td><td>Jrimbhikagrama</td></tr>
-        <tr><td>Death</td><td>Pavapuri, 527 BCE</td></tr>
-        <tr><td>Language</td><td>Ardha-Magadhi</td></tr>
-        <tr><td>Prev. Tirthankara</td><td>Parshvanatha (23rd)</td></tr>
-        <tr><td>Digambara base</td><td>Karnataka (South)</td></tr>
-        <tr><td>Shvetambara base</td><td>Gujarat, Rajasthan</td></tr>
-      </table>
-    </div>
-
-    <!-- Difficulty Bars -->
-    <div class="sidebar-card">
-      <h3>📊 Difficulty Rating</h3>
-      <div class="diff-row">
-        <div class="diff-label"><span>Prelims</span><span>9.5/10</span></div>
-        <div class="diff-bar"><div class="diff-fill" style="width:95%"></div></div>
-      </div>
-      <div class="diff-row">
-        <div class="diff-label"><span>Mains GS-1</span><span>9/10</span></div>
-        <div class="diff-bar"><div class="diff-fill" style="width:90%"></div></div>
-      </div>
-      <div class="diff-row">
-        <div class="diff-label"><span>Conceptual</span><span>8/10</span></div>
-        <div class="diff-bar"><div class="diff-fill" style="width:80%"></div></div>
-      </div>
-    </div>
-
-    <!-- Must-Know Tags -->
-    <div class="sidebar-card">
-      <h3>🎯 Must-Know Terms</h3>
-      <div class="tag-cloud">
-        <span class="tag">Anatta</span>
-        <span class="tag">Nirvana</span>
-        <span class="tag">Triratna</span>
-        <span class="tag">Bodhisattva</span>
-        <span class="tag">Ahimsa</span>
-        <span class="tag">Pancha Mahavrata</span>
-        <span class="tag">Kaivalya</span>
-        <span class="tag">Anekantavada</span>
-        <span class="tag">Syadvada</span>
-        <span class="tag">Digambara</span>
-        <span class="tag">Niyativada</span>
-        <span class="tag">Sallekhana</span>
-        <span class="tag">Tipitaka</span>
-        <span class="tag">Mahayana</span>
-        <span class="tag">Dhammachakra</span>
-      </div>
-    </div>
-
-    <!-- Self-Test -->
-    <div class="sidebar-card">
-      <h3>✏ Self-Test (Click to Reveal)</h3>
-      <div class="self-test-item">
-        <div class="self-test-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">
-          Where did Buddha deliver his first sermon? <span>▼</span>
-        </div>
-        <div class="self-test-a">Sarnath (Deer Park / Isipatana), near Varanasi — the event is called Dhammachakka Pavattana (Turning of the Wheel of Law). To the 5 Panchavargiya Bhikshus.</div>
-      </div>
-      <div class="self-test-item">
-        <div class="self-test-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">
-          Which vow did Mahavira add to Parshvanatha's four? <span>▼</span>
-        </div>
-        <div class="self-test-a">Brahmacharya (celibacy). Parshvanatha's four: Ahimsa, Satya, Asteya, Aparigraha. Mahavira added Brahmacharya as the fourth, making Aparigraha the fifth.</div>
-      </div>
-      <div class="self-test-item">
-        <div class="self-test-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">
-          Who founded the Ajivika sect? <span>▼</span>
-        </div>
-        <div class="self-test-a">Makkhali Gosala — originally a disciple of Mahavira who broke away. Preached Niyativada (absolute determinism): all souls take exactly 8,400,000 rebirths and then automatically attain liberation regardless of effort.</div>
-      </div>
-      <div class="self-test-item">
-        <div class="self-test-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">
-          What is Anekantavada? <span>▼</span>
-        </div>
-        <div class="self-test-a">Jain doctrine of many-sidedness of truth — no single statement fully captures reality. Has two corollaries: Syadvada (each statement true only from a standpoint, prefixed by "syat") and Nayavada (truth has many partial perspectives/nayas).</div>
-      </div>
-      <div class="self-test-item">
-        <div class="self-test-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">
-          Name the patron and venue of the Third Buddhist Council. <span>▼</span>
-        </div>
-        <div class="self-test-a">Patron: Ashoka (Maurya). Venue: Pataliputra. Chairman: Moggaliputta Tissa. Outcome: Compiled Abhidhamma Pitaka, expelled heretics, sent Buddhist missionaries to 9 regions (Mahinda to Lanka, Dharmaraksita to Greece, etc.).</div>
-      </div>
-    </div>
-
-    <!-- Related Notes -->
-    <div class="sidebar-card">
-      <h3>🔗 Related Notes</h3>
-      <div class="related-links">
-        <a href="/upsc-notes/ancient/ancient-topic05">← Topic 05: The Vedic Age</a>
-        <a href="/upsc-notes/ancient/ancient-topic04">← Topic 04: Indus Valley Civilization</a>
-        <a href="/upsc-notes/ancient">Module 2: Vedic + Buddhism Overview</a>
-        <a href="/upsc-notes">📚 All Ancient History Notes</a>
-        <a href="/upsc-notes">🏠 UPSC Notes Home</a>
-      </div>
-    </div>
-
-  </aside>
-  <!-- ═══════════════════════════════════════════════════════ END SIDEBAR -->
+  </div>
+</div>
+<div class="layout">
+<main>
+
+<!-- TABLE OF CONTENTS -->
+<div class="toc">
+<h3>On This Page</h3>
+<ol>
+  <li><a href="#concept">Conceptual Clarity</a></li>
+  <li><a href="#s1">Why Buddhism &amp; Jainism Emerged</a></li>
+  <li><a href="#s2">Life of Gautama Buddha</a></li>
+  <li><a href="#s3">Buddhist Philosophy</a></li>
+  <li><a href="#s4">Buddhist Schools</a></li>
+  <li><a href="#s5">Four Buddhist Councils</a></li>
+  <li><a href="#s6">Buddhist Literature &amp; Art</a></li>
+  <li><a href="#s7">Jainism: Mahavira's Life</a></li>
+  <li><a href="#s8">Jain Philosophy</a></li>
+  <li><a href="#s9">Jain Sects &amp; Literature</a></li>
+  <li><a href="#ca">Current Affairs Link</a></li>
+  <li><a href="#pyq">Previous Year Questions</a></li>
+  <li><a href="#revision">Rapid Revision Box</a></li>
+</ol>
+</div>
+
+<!-- CONCEPT BOX -->
+<div class="concept-box" id="concept">
+<h3>Conceptual Clarity &mdash; Why Two New Religions in the 6th Century BCE?</h3>
+<p>Buddhism and Jainism emerged as the <strong>two most consequential heterodox (non-Vedic) movements</strong> of ancient India. UPSC treats this topic as one of the highest-scoring areas in both Prelims and Mains GS-I. Precision on dates, places, doctrines, and distinctions between the two faiths is essential.</p>
+<ul>
+<li><strong>Both founders were Kshatriyas from eastern India</strong> &mdash; symbolising Kshatriya intellectual revolt against Brahmin ritual monopoly.</li>
+<li><strong>Key UPSC distinction:</strong> Buddhism = Anatta (no soul); Jainism = eternal Jiva (soul). Buddhism = Middle Path (no extreme asceticism); Jainism = extreme tapas.</li>
+<li><strong>Buddhist Councils are a Prelims favourite</strong> &mdash; memorise: Rajagriha (Ajatashatru) → Vaishali (Kalashoka) → Pataliputra (Ashoka) → Kashmir (Kanishka).</li>
+<li><strong>Jain Mahavira birth date:</strong> Traditional 599 BCE (NCERT uses 540 BCE). Both dates appear in question sets &mdash; mention both.</li>
+<li><strong>Art &amp; Culture overlap:</strong> Stupa parts (anda, harmika, yashti, chattra), Gandhara vs Mathura schools, Ajanta caves &mdash; all frequently tested in Art &amp; Culture section.</li>
+</ul>
+</div>
+
+<!-- SECTION 1 -->
+<section class="notes" id="s1">
+<h2>1. Why Buddhism and Jainism Emerged (6th Century BCE Context)</h2>
+
+<h3>Social Factors</h3>
+<ul>
+<li><strong>Caste Rigidity:</strong> The rigid varna system placed Brahmins at the apex. Birth-based discrimination denied social mobility. Kshatriyas and Vaishyas resented Brahmin dominance over religious and intellectual life.</li>
+<li><strong>Status of Women:</strong> Women's participation in Vedic rituals had diminished significantly in the Later Vedic period, creating dissatisfaction with the existing religious order.</li>
+</ul>
+
+<h3>Religious and Philosophical Factors</h3>
+<ul>
+<li><strong>Brahminical Dominance and Ritualism:</strong> Elaborate yajnas (Ashvamedha, Rajasuya) were expensive, priest-monopolised, and had degenerated into mechanical rites divorced from genuine spirituality.</li>
+<li><strong>Costly Vedic Sacrifices:</strong> Vedic yajnas required massive wealth &mdash; bullocks, gold, horses, grains &mdash; burdening both kings and communities. Animal sacrifice horrified agricultural communities dependent on cattle.</li>
+<li><strong>Sanskrit Barrier:</strong> Religious knowledge locked in Sanskrit (Brahmin monopoly). Pali and Prakrit (languages of the common people) made Buddhism and Jainism immediately accessible.</li>
+<li><strong>Upanishadic Tradition:</strong> Growing philosophical questioning of Vedic ritualism (Atman&ndash;Brahman debates) had already softened the ground for new metaphysical exploration.</li>
+</ul>
+
+<h3>Economic Factors</h3>
+<ul>
+<li><strong>Rise of Trade and Urban Centres:</strong> The Iron Age brought urbanisation, the 16 Mahajanapadas, and thriving trade guilds (shrenis) along the Gangetic plain.</li>
+<li><strong>Vaishya Class Aspirations:</strong> Prosperous merchants (sarthavahas &mdash; caravan leaders) sought religious sanction and social dignity outside the varna hierarchy. Buddhism and Jainism welcomed them without birth stigma.</li>
+<li><strong>Cattle Protection:</strong> Vedic animal sacrifice was economically devastating for farming communities. Ahimsa had immediate agrarian logic.</li>
+</ul>
+
+<h3>Political Factors</h3>
+<ul>
+<li><strong>Both Founders Were Kshatriyas:</strong> Siddhartha Gautama (Shakya clan) and Vardhamana Mahavira (Jnatrika clan) &mdash; both from eastern India, both Kshatriyas. Their choice of renunciation over rule was symbolically powerful.</li>
+<li><strong>Eastern India as Epicentre:</strong> Bihar and eastern UP &mdash; where Brahminism was less entrenched than in the western Gangetic plain &mdash; became the cradle of both movements.</li>
+<li><strong>Royal Patronage:</strong> Kings of Magadha (Bimbisara, Ajatashatru) and later Mauryas were attracted to non-Brahminical faiths as tools for administrative unity.</li>
+</ul>
+
+<div class="callout gold"><strong>UPSC Angle:</strong> Buddhism and Jainism are best understood as <em>reform movements</em>, not revolutions. They accepted karma and rebirth from Hindu philosophy but rejected caste by birth, Vedic authority, and ritual sacrifice. Both preached in Prakrit/Pali &mdash; not Sanskrit &mdash; making them instantly democratic.</div>
+</section>
+
+<!-- SECTION 2 -->
+<section class="notes" id="s2">
+<h2>2. Life of Gautama Buddha</h2>
+
+<h3>Key Biographical Events</h3>
+<table class="tbl">
+<tr><th>Event</th><th>Date / Place</th><th>Details</th></tr>
+<tr><td><strong>Birth</strong></td><td>563 BCE, Lumbini (Nepal)</td><td>Father: Shuddhodana (Shakya clan chief, Kapilavastu). Mother: Mayadevi (died 7 days after birth). Raised by aunt Prajapati Gautami. Born Siddhartha Gautama.</td></tr>
+<tr><td><strong>The Four Sights</strong></td><td>Age ~29, Kapilavastu</td><td>(1) Old man, (2) Sick man, (3) Dead body, (4) Wandering ascetic at peace &mdash; revealed Dukkha and the monastic path to Siddhartha.</td></tr>
+<tr><td><strong>Great Renunciation (Mahabhinishkramana)</strong></td><td>Age 29</td><td>Left wife Yashodhara and son Rahula. Studied under Alara Kalama (Vaishali) and Uddaka Ramaputta (Rajagriha) &mdash; dissatisfied with both teachers.</td></tr>
+<tr><td><strong>Six Years of Austerities</strong></td><td>Uruvela forest</td><td>Practised extreme asceticism with five companions (Panchavargiya Bhikshus). Nearly starved. Rejected extreme mortification &mdash; formulated the Middle Path.</td></tr>
+<tr><td><strong>Enlightenment (Nirvana / Bodhi)</strong></td><td>Age 35, Bodh Gaya (Uruvela)</td><td>After 49 days of meditation under the Peepal (Bodhi) tree. Became the <em>Tathagata</em> (Thus Come One) &mdash; the Enlightened One.</td></tr>
+<tr><td><strong>First Sermon (Dhammachakkapavattana Sutta)</strong></td><td>Sarnath (Isipatana/Deer Park)</td><td>Turning of the Wheel of Dhamma. Preached to the five Panchavargiya Bhikshus. This event = Dhamma-Chakra-Pravartana (Dharma Chakra Pravartan).</td></tr>
+<tr><td><strong>Teaching Ministry</strong></td><td>45 years across Gangetic plain</td><td>Wandered from Rajagriha to Vaishali, Sravasti, Kosambi. Established the Sangha. Attracted kings (Bimbisara, Ajatashatru, Prasenajit), merchants, and outcasts alike.</td></tr>
+<tr><td><strong>Mahaparinirvana</strong></td><td>483 BCE, Kushinara (Kushinagar, UP)</td><td>Died at age 80 under two Sala trees. Last meal from Cunda the smith (Sukara-maddava). Last words: "All conditioned things are impermanent. Work out your salvation with diligence."</td></tr>
+</table>
+
+<h3>The Middle Path</h3>
+<p>After experiencing both royal luxury and extreme asceticism, Buddha formulated the <strong>Middle Path (Majjhima Patipada)</strong> &mdash; avoiding the two extremes of self-indulgence and self-mortification. This became the foundational ethical principle of Buddhism and is directly reflected in the Eightfold Path.</p>
+
+<h3>Key Disciples</h3>
+<table class="tbl">
+<tr><th>Disciple</th><th>Role / Distinction</th></tr>
+<tr><td><strong>Ananda</strong></td><td>Personal attendant; "treasurer of the Dhamma"; memorised all Buddha's sermons; instrumental in First Council (recited Sutta Pitaka)</td></tr>
+<tr><td><strong>Sariputta</strong></td><td>Chief disciple; "General of the Dhamma"; supreme in wisdom</td></tr>
+<tr><td><strong>Moggallana</strong></td><td>Chief disciple; supreme in supernatural powers</td></tr>
+<tr><td><strong>Mahakassapa</strong></td><td>Presided over First Buddhist Council at Rajagriha after Buddha's death</td></tr>
+<tr><td><strong>Upali</strong></td><td>Expert in Vinaya (monastic discipline); recited Vinaya Pitaka at First Council</td></tr>
+<tr><td><strong>Devadatta</strong></td><td>Cousin; schismatic &mdash; tried to split Sangha; attempted to kill Buddha</td></tr>
+<tr><td><strong>Ambapali</strong></td><td>Courtesan of Vaishali; donated mango grove; exemplifies Buddhism's social inclusivity</td></tr>
+</table>
+</section>
+
+<!-- SECTION 3 -->
+<section class="notes" id="s3">
+<h2>3. Buddhist Philosophy</h2>
+
+<h3>Four Noble Truths (Chatur Arya Satya)</h3>
+<table class="tbl">
+<tr><th>Truth</th><th>Pali Term</th><th>Meaning</th></tr>
+<tr><td><strong>1st &mdash; Suffering</strong></td><td>Dukkha</td><td>Life is fundamentally characterized by dissatisfaction, suffering, and imperfection. Birth, ageing, death, separation from loved ones &mdash; all are Dukkha.</td></tr>
+<tr><td><strong>2nd &mdash; Cause</strong></td><td>Samudaya</td><td>Craving/desire (tanha) and ignorance (avidya) are the causes of suffering. The three types of craving: sensual pleasure, existence, non-existence.</td></tr>
+<tr><td><strong>3rd &mdash; Cessation</strong></td><td>Nirodha</td><td>Suffering can be ended &mdash; Nirvana is possible. Complete cessation of craving = liberation from samsara.</td></tr>
+<tr><td><strong>4th &mdash; Path</strong></td><td>Marga</td><td>The Noble Eightfold Path (Ashtangika Marga) is the way to the cessation of suffering.</td></tr>
+</table>
+
+<h3>The Noble Eightfold Path (Ashtangika Marga) &mdash; The Middle Path</h3>
+<table class="tbl">
+<tr><th>Category</th><th>Path Element</th><th>Meaning</th></tr>
+<tr><td rowspan="2"><strong>Prajna (Wisdom)</strong></td><td>1. Right View (Samma Ditthi)</td><td>Understanding the Four Noble Truths; seeing reality as it is</td></tr>
+<tr><td>2. Right Intention (Samma Sankappa)</td><td>Intention of renunciation, goodwill, non-harm</td></tr>
+<tr><td rowspan="3"><strong>Sila (Morality)</strong></td><td>3. Right Speech (Samma Vaca)</td><td>Abstaining from lying, slander, harsh speech, idle chatter</td></tr>
+<tr><td>4. Right Action (Samma Kammanta)</td><td>Abstaining from killing, stealing, sexual misconduct</td></tr>
+<tr><td>5. Right Livelihood (Samma Ajiva)</td><td>Earning a living without harming others</td></tr>
+<tr><td rowspan="3"><strong>Samadhi (Meditation)</strong></td><td>6. Right Effort (Samma Vayama)</td><td>Preventing unwholesome states; cultivating wholesome states</td></tr>
+<tr><td>7. Right Mindfulness (Samma Sati)</td><td>Mindfulness of body, feelings, mind, and mental objects</td></tr>
+<tr><td>8. Right Concentration (Samma Samadhi)</td><td>The four levels of meditative absorption (jhanas)</td></tr>
+</table>
+
+<h3>Three Jewels (Triratna) of Buddhism</h3>
+<table class="tbl">
+<tr><th>Jewel</th><th>Meaning</th></tr>
+<tr><td><strong>Buddha</strong></td><td>Refuge in the teacher who found and taught the path to liberation</td></tr>
+<tr><td><strong>Dhamma</strong></td><td>Refuge in the teaching &mdash; the Four Noble Truths, Eightfold Path, all Buddhist doctrine</td></tr>
+<tr><td><strong>Sangha</strong></td><td>Refuge in the monastic community of monks (bhikkhus) and nuns (bhikkhunis) who preserve and transmit the Dhamma</td></tr>
+</table>
+
+<h3>Key Buddhist Doctrines</h3>
+<table class="tbl">
+<tr><th>Doctrine</th><th>Meaning</th><th>Significance</th></tr>
+<tr><td><strong>Pratityasamutpada (Dependent Origination)</strong></td><td>Everything arises in dependence upon conditions &mdash; the 12-link chain of causation (nidana chain)</td><td>Core metaphysics of Buddhism; rejects both eternalism and nihilism</td></tr>
+<tr><td><strong>Anicca (Impermanence)</strong></td><td>All conditioned phenomena are transient; nothing lasts</td><td>Explains why attachment leads to suffering (Dukkha)</td></tr>
+<tr><td><strong>Anatta / Anatman (No-Soul)</strong></td><td>No permanent, unchanging self or soul; the "self" is a stream of arising and passing phenomena</td><td>Most radical departure from Brahminism (which posited eternal Atman); unique Buddhist position</td></tr>
+<tr><td><strong>Nirvana</strong></td><td>Blowing out of the flame of desire; liberation from the cycle of samsara</td><td>Ultimate goal &mdash; not union with God but extinction of craving; beyond description</td></tr>
+<tr><td><strong>Karma and Rebirth Without a Soul</strong></td><td>Actions have consequences across lives, but there is no permanent soul to transmigrate &mdash; only a causal stream of consciousness</td><td>Unique Buddhist position: rebirth occurs through karmic energy, not a migrating self</td></tr>
+</table>
+
+<div class="callout"><strong>Three Marks of Existence (Tilakhana):</strong> Anicca (impermanence), Dukkha (suffering), Anatta (no-self) &mdash; all conditioned phenomena share these three characteristics. Recognising them leads to dispassion and liberation.</div>
+</section>
+
+<!-- SECTION 4 -->
+<section class="notes" id="s4">
+<h2>4. Buddhist Schools</h2>
+
+<h3>Hinayana vs Mahayana &mdash; Comparison</h3>
+<table class="tbl">
+<tr><th>Feature</th><th>Hinayana (Theravada)</th><th>Mahayana</th></tr>
+<tr><td><strong>Meaning</strong></td><td>"Lesser Vehicle"</td><td>"Greater Vehicle"</td></tr>
+<tr><td><strong>Salvation</strong></td><td>Individual liberation (personal Nirvana)</td><td>Universal salvation &mdash; help all beings attain liberation</td></tr>
+<tr><td><strong>Ideal</strong></td><td>Arhat &mdash; the personally liberated monk</td><td>Bodhisattva &mdash; one who postpones Nirvana to help others</td></tr>
+<tr><td><strong>Buddha's Status</strong></td><td>Great human teacher (not divine)</td><td>Divine/cosmic being; object of devotion and worship</td></tr>
+<tr><td><strong>Idol Worship</strong></td><td>No &mdash; anionic tradition</td><td>Yes &mdash; elaborate iconography developed</td></tr>
+<tr><td><strong>Language</strong></td><td>Pali (scriptures in Pali canon)</td><td>Sanskrit (Mahayanan texts in Sanskrit)</td></tr>
+<tr><td><strong>Geography</strong></td><td>Sri Lanka, Myanmar, Thailand, Cambodia (Southeast Asia)</td><td>China, Japan, Korea, Tibet, Nepal, Vietnam</td></tr>
+<tr><td><strong>Monastic Emphasis</strong></td><td>Strict monasticism; laypeople have secondary role</td><td>Both lay and monastic paths equally valid</td></tr>
+<tr><td><strong>Key Philosophers</strong></td><td>Moggaliputta Tissa</td><td>Nagarjuna (Madhyamaka), Asanga and Vasubandhu (Yogacara)</td></tr>
+</table>
+
+<h3>Vajrayana (Tantric Buddhism)</h3>
+<ul>
+<li>Also called <strong>Tantrayana</strong> or <strong>Mantrayana</strong> &mdash; the "Thunderbolt/Diamond Vehicle."</li>
+<li>Emerged c. 7th century CE; uses mantras, mudras, mandalas, and esoteric rituals for rapid liberation.</li>
+<li>Dominant in <strong>Tibet and Nepal</strong>; the Tibetan Book of the Dead (Bardo Thodol) is its most famous text.</li>
+<li>Combined Buddhist philosophy with Tantric practices; Guru (Lama) plays a central role.</li>
+</ul>
+
+<h3>Madhyamaka School &mdash; Nagarjuna</h3>
+<ul>
+<li>Founded by <strong>Nagarjuna</strong> (c. 2nd century CE) &mdash; perhaps the greatest Buddhist philosopher after Buddha himself.</li>
+<li>Core doctrine: <strong>Sunyata (Emptiness)</strong> &mdash; all phenomena are empty of inherent existence; they exist only relationally through dependent origination.</li>
+<li>Key text: <em>Mulamadhyamakakarika</em> (Fundamental Verses on the Middle Way).</li>
+<li>The "Middle Way" here refers to avoiding both existence and non-existence as absolute truths.</li>
+</ul>
+
+<h3>Yogacara School &mdash; Asanga and Vasubandhu</h3>
+<ul>
+<li>Founded by <strong>Asanga</strong> and his brother <strong>Vasubandhu</strong> (c. 4th&ndash;5th century CE).</li>
+<li>Core doctrine: <strong>Vijnanavada (Mind-Only)</strong> &mdash; external reality does not exist independently; only consciousness (vijnana) is real.</li>
+<li>Key texts: <em>Yogacharabhumi</em> (Asanga), <em>Abhidharmakosa</em> (Vasubandhu).</li>
+</ul>
+
+<h3>The Bodhisattva Concept</h3>
+<p>Central to Mahayana Buddhism. A <strong>Bodhisattva</strong> is one who has generated Bodhichitta (the aspiration to attain Buddhahood for the benefit of all sentient beings) and postpones personal Nirvana until all beings are liberated. Key Bodhisattvas: Avalokiteshvara (compassion), Manjushri (wisdom), Maitreya (future Buddha), Tara (swift compassion).</p>
+</section>
+
+<!-- SECTION 5 -->
+<section class="notes" id="s5">
+<h2>5. Four Buddhist Councils</h2>
+<table class="tbl">
+<tr><th>Council</th><th>Date</th><th>Location</th><th>King / Patron</th><th>Chairman</th><th>Key Outcome</th></tr>
+<tr><td><strong>1st Council</strong></td><td>483 BCE (immediately after Buddha's death)</td><td>Rajagriha (Saptaparni Cave)</td><td>Ajatashatru (Magadha, Haryanka dynasty)</td><td>Mahakassapa</td><td>Ananda recited Sutta Pitaka; Upali recited Vinaya Pitaka. Oral compilation of Buddha's teachings. Abhidhamma not yet compiled.</td></tr>
+<tr><td><strong>2nd Council</strong></td><td>383 BCE</td><td>Vaishali</td><td>Kalashoka (Shishunaga dynasty)</td><td>Sabbakami (Sabakami)</td><td>Dispute over 10 points of Vinaya (monastic rules). First schism &mdash; split into Sthaviravadins (orthodox) and Mahasanghikas (liberal). Seeds of Hinayana/Mahayana division.</td></tr>
+<tr><td><strong>3rd Council</strong></td><td>250 BCE</td><td>Pataliputra</td><td>Ashoka (Maurya dynasty)</td><td>Moggaliputta Tissa</td><td>Compiled Abhidhamma Pitaka; Tripitaka finalised. Expelled heretics. Sent Buddhist missionaries to 9 regions: Mahinda to Lanka, Dharmaraksita to Greece, Majjhantika to Kashmir, Sona and Uttara to Burma, etc.</td></tr>
+<tr><td><strong>4th Council</strong></td><td>1st century CE</td><td>Kundalvana, Kashmir</td><td>Kanishka (Kushan dynasty)</td><td>Vasumitra (presided); Ashvaghosha (participated)</td><td>Compiled Mahavibhasha (great commentary on Abhidharma). Formalised Mahayana&ndash;Hinayana split. NOT recognised by Theravada Buddhism. Mahayana Buddhism spread through Silk Route.</td></tr>
+</table>
+
+<div class="callout gold"><strong>Memory Hook for Buddhist Councils:</strong> <strong>R</strong>ajagriha → <strong>V</strong>aishali → <strong>P</strong>ataliputra → <strong>K</strong>ashmir = <strong>RVPK</strong>. Patrons: Ajatashatru → Kalashoka → Ashoka → Kanishka. Outcomes: Sutta+Vinaya compiled → First schism → Abhidhamma+Missions → Mahayana split.</div>
+</section>
+
+<!-- SECTION 6 -->
+<section class="notes" id="s6">
+<h2>6. Buddhist Literature and Art</h2>
+
+<h3>The Tripitaka (Pali Canon)</h3>
+<table class="tbl">
+<tr><th>Pitaka</th><th>Meaning</th><th>Contents</th></tr>
+<tr><td><strong>Vinaya Pitaka</strong></td><td>Basket of Discipline</td><td>Monastic rules for monks and nuns; compiled by Upali at First Council. 3 parts: Suttavibhanga (rules with analysis), Khandhaka (procedures), Parivara (summary).</td></tr>
+<tr><td><strong>Sutta Pitaka</strong></td><td>Basket of Discourses</td><td>Buddha's actual sermons; compiled by Ananda. 5 Nikayas: Digha, Majjhima, Samyutta, Anguttara, Khuddaka (includes <strong>Dhammapada</strong> and <strong>Jataka Tales</strong>).</td></tr>
+<tr><td><strong>Abhidhamma Pitaka</strong></td><td>Basket of Higher Teachings</td><td>Philosophical analysis of mind and matter; compiled at Third Council under Ashoka. 7 books. Foundation of Buddhist psychology (Abhidharma).</td></tr>
+</table>
+
+<h3>Jatakas</h3>
+<p>547 stories of Buddha's previous lives (past incarnations as Bodhisattva). An invaluable <strong>historical source for social, economic, and political life</strong> of ancient India &mdash; mentions merchants, guilds, kings, occupations, trade routes, and popular customs.</p>
+
+<h3>Stupa Architecture</h3>
+<table class="tbl">
+<tr><th>Component</th><th>Description</th></tr>
+<tr><td><strong>Medhi</strong></td><td>Base/drum on which the stupa stands</td></tr>
+<tr><td><strong>Anda</strong></td><td>The hemispherical dome &mdash; symbolises the universe / Buddha's relics</td></tr>
+<tr><td><strong>Harmika</strong></td><td>Square railing at the top of the dome; represents the realm of the gods</td></tr>
+<tr><td><strong>Yashti</strong></td><td>The central axis pole through the stupa; connects earth to heaven</td></tr>
+<tr><td><strong>Chattra (Chattravali)</strong></td><td>Umbrella(s) on top of yashti; 1 to 3 tiers indicating status/importance</td></tr>
+<tr><td><strong>Vedika</strong></td><td>Outer railing enclosing the stupa and pradakshina path</td></tr>
+<tr><td><strong>Torana</strong></td><td>Ornamental gateways (4 at Sanchi &mdash; north, south, east, west) with carved narrative panels</td></tr>
+<tr><td><strong>Pradakshina Path</strong></td><td>Circumambulatory path for ritual clockwise walk around the stupa</td></tr>
+</table>
+
+<h3>Buddhist Art Schools</h3>
+<table class="tbl">
+<tr><th>School</th><th>Location / Period</th><th>Key Features</th></tr>
+<tr><td><strong>Gandhara School</strong></td><td>Northwest India (modern Pakistan/Afghanistan); 1st&ndash;5th century CE</td><td>Greco-Roman influence (Hellenistic); Buddha shown in human form for the first time; wavy hair, toga-like robe; influenced by Greek sculptors left by Alexander's campaigns</td></tr>
+<tr><td><strong>Mathura School</strong></td><td>Mathura, UP; 1st&ndash;3rd century CE</td><td>Indigenous Indian tradition; Buddha shown with shaved head, thin muslin robe; robust physique; both Buddhist and Jain images produced</td></tr>
+<tr><td><strong>Sarnath School</strong></td><td>Sarnath, UP; Gupta period (4th&ndash;6th century CE)</td><td>Synthesis of Gandhara and Mathura; serene, spiritual expression; clinging transparent robe; considered finest representation of Gupta Buddhist art</td></tr>
+</table>
+
+<h3>Key Buddhist Sites</h3>
+<ul>
+<li><strong>Sanchi (Madhya Pradesh):</strong> Most complete group of Buddhist monuments in India. Stupa No. 1 (Great Stupa) built by Ashoka, enlarged later. Four toranas with Jataka scenes. UNESCO World Heritage Site.</li>
+<li><strong>Bharhut (Madhya Pradesh):</strong> 2nd century BCE stupa railing; earliest narrative Buddhist art; Jataka stories in relief; now in Indian Museum, Kolkata.</li>
+<li><strong>Amaravati (Andhra Pradesh):</strong> 2nd century BCE &mdash; 3rd century CE; white marble; the Amaravati school of art; Dipankara Jataka and Buddha life scenes.</li>
+<li><strong>Ajanta Caves (Maharashtra):</strong> 29 rock-cut caves (Buddhist); Hinayana phase (Caves 9,10 &mdash; 2nd century BCE) and Mahayana phase (Caves 1&ndash;25 &mdash; Gupta period). Famous for painted frescoes depicting Jataka tales and Bodhisattvas. UNESCO World Heritage Site.</li>
+</ul>
+</section>
+
+<!-- SECTION 7 -->
+<section class="notes" id="s7">
+<h2>7. Jainism: Mahavira's Life</h2>
+
+<h3>The 24 Tirthankaras</h3>
+<p>Jainism recognises <strong>24 Tirthankaras</strong> (Ford-Makers &mdash; perfected beings who cross the ocean of samsara and show others the way). Key Tirthankaras for UPSC:</p>
+<table class="tbl">
+<tr><th>Tirthankara</th><th>Number</th><th>Symbol</th><th>Significance</th></tr>
+<tr><td><strong>Rishabhanatha (Adinatha)</strong></td><td>1st</td><td>Bull</td><td>Mythological founder of Jainism; mentioned in the Rigveda and Bhagavata Purana &mdash; Jainism's claim to greater antiquity than Buddhism</td></tr>
+<tr><td><strong>Parshvanatha</strong></td><td>23rd</td><td>Serpent</td><td>Historical figure; c. 850&ndash;750 BCE; preached 4 vows (Ahimsa, Satya, Asteya, Aparigraha) &mdash; no Brahmacharya; founder of pre-Mahavira Jain community</td></tr>
+<tr><td><strong>Vardhamana Mahavira</strong></td><td>24th (last)</td><td>Lion</td><td>Historical reformer and effective founder of present Jain community; added Brahmacharya as 5th vow</td></tr>
+</table>
+
+<h3>Life of Vardhamana Mahavira</h3>
+<table class="tbl">
+<tr><th>Event</th><th>Date / Place</th><th>Details</th></tr>
+<tr><td><strong>Birth</strong></td><td>540 BCE (traditional: 599 BCE), Vaishali (Kundagrama)</td><td>Father: Siddhartha (chief of Jnatrika Kshatriya clan, Lichchhavi confederation). Mother: Trishala (sister of Lichchhavi chief Chetak). Born Vardhamana.</td></tr>
+<tr><td><strong>Renunciation</strong></td><td>Age 30</td><td>Left wife Yasoda and daughter Priyadarshana. Practised extreme asceticism for 12+ years: wore no clothes, pulled out hair by roots (kesh-loch), endured hardships silently.</td></tr>
+<tr><td><strong>Enlightenment (Kaivalya)</strong></td><td>Age 42, Jrimbhikagrama (near Vaishali)</td><td>Attained omniscience (Kevala-jnana) under a Sala tree. Became <strong>Jina</strong> (conqueror of passions) &mdash; followers called Jains. Also called <strong>Mahavira</strong> (Great Hero) and <strong>Nirgantha</strong> (free from all ties).</td></tr>
+<tr><td><strong>Teaching Ministry</strong></td><td>30 years</td><td>Preached in Ardha-Magadhi Prakrit. Established the fourfold Sangha: monks (sadhus), nuns (sadhvis), laymen (shravaka), laywomen (shravika).</td></tr>
+<tr><td><strong>Mahaparinirvana</strong></td><td>468 BCE (traditional: 527 BCE), Pavapuri (near Rajgir, Bihar)</td><td>Death by voluntary fasting unto death &mdash; Sallekhana (also called Santhara). Age 72. Pavapuri is now a major Jain pilgrimage site.</td></tr>
+</table>
+</section>
+
+<!-- SECTION 8 -->
+<section class="notes" id="s8">
+<h2>8. Jain Philosophy</h2>
+
+<h3>Triratna (Three Jewels) of Jainism</h3>
+<table class="tbl">
+<tr><th>Jewel</th><th>Term</th><th>Meaning</th></tr>
+<tr><td><strong>Right Faith</strong></td><td>Samyak Darshana</td><td>Correct belief in the Jain teachings and the Tirthankaras; the foundational orientation</td></tr>
+<tr><td><strong>Right Knowledge</strong></td><td>Samyak Jnana</td><td>Correct and complete understanding of reality, the soul (jiva), karma, and the path to liberation</td></tr>
+<tr><td><strong>Right Conduct</strong></td><td>Samyak Charitra</td><td>Acting in accordance with the Five Vows; the practical path to liberation</td></tr>
+</table>
+
+<h3>Pancha Mahavrata (Five Great Vows) &mdash; for Monks</h3>
+<table class="tbl">
+<tr><th>Vow</th><th>Meaning</th><th>Observance</th></tr>
+<tr><td><strong>Ahimsa</strong></td><td>Non-violence</td><td>Avoid harm to any living being. Supreme principle: Jain monks use brooms (rajoharana) to sweep insects from their path and wear mouth-masks (muhpatti). Strict vegetarianism; Digambara monks do not cook.</td></tr>
+<tr><td><strong>Satya</strong></td><td>Truthfulness</td><td>Speak only what is true, kind, and helpful</td></tr>
+<tr><td><strong>Asteya</strong></td><td>Non-stealing</td><td>Take nothing not freely given</td></tr>
+<tr><td><strong>Brahmacharya</strong></td><td>Celibacy</td><td>Added by Mahavira to Parshvanatha's original four vows &mdash; the key distinguishing addition</td></tr>
+<tr><td><strong>Aparigraha</strong></td><td>Non-possession</td><td>Complete renunciation of property and all attachments. Digambara monks own nothing, not even clothes.</td></tr>
+</table>
+
+<div class="callout gold"><strong>Lay Vows (Anu-vratas):</strong> Lay Jains observe lesser versions (Anu-vratas) of the five vows &mdash; for example, limiting possessions rather than giving them up entirely, and practising vegetarianism rather than absolute ahimsa.</div>
+
+<h3>Anekantavada, Syadvada, and Nayavada</h3>
+<table class="tbl">
+<tr><th>Doctrine</th><th>Meaning</th><th>Significance</th></tr>
+<tr><td><strong>Anekantavada</strong></td><td>Non-absolutism / many-sidedness: reality is complex; no single statement captures full truth. The blind men and the elephant &mdash; each touches a different part and claims to know the whole animal.</td><td>Prevents dogmatism; promotes intellectual tolerance and pluralism; cited in Indian Supreme Court judgements</td></tr>
+<tr><td><strong>Syadvada</strong></td><td>Conditional predication: every statement is true only from a particular standpoint, prefixed by "syat" (in some respect/perhaps). 7 forms (Saptabhangi): "Syat asti" (it is), "Syat nasti" (it is not), etc.</td><td>Epistemological humility; prevents absolute claims; compatible with democratic pluralism</td></tr>
+<tr><td><strong>Nayavada</strong></td><td>Doctrine of partial standpoints: truth has many nayas (perspectives); each naya is a partial truth. A complete statement requires all nayas.</td><td>Foundation of Jain logic and theory of knowledge</td></tr>
+</table>
+
+<h3>Jain Cosmology and Soul (Jiva)</h3>
+<ul>
+<li><strong>Two Fundamental Realities:</strong> Jiva (soul/living) and Ajiva (non-living: matter/pudgala, space, time, motion, rest).</li>
+<li><strong>Karma as Subtle Matter:</strong> Unlike Buddhism (where karma = mental intention), in Jainism karma is <strong>subtle material particles</strong> that physically stick to the soul when actions are performed.</li>
+<li><strong>Bondage (Bandha):</strong> Karma accumulation = bondage of the soul.</li>
+<li><strong>Liberation (Moksha):</strong> Stop new karma (samvara) + shed existing karma (nirjara) through asceticism → pure soul rises to <strong>Siddhashila</strong> (top of the universe) in a state of eternal bliss and omniscience.</li>
+<li><strong>Ahimsa as Supreme Principle:</strong> Since even micro-organisms have souls (one-sensed beings), causing harm to any living thing generates karma. This is why Jains sweep the ground before walking, strain water before drinking, and wear mouth-masks.</li>
+</ul>
+
+<h3>Karma in Buddhism vs Jainism &mdash; Key Distinction</h3>
+<table class="tbl">
+<tr><th>Aspect</th><th>Buddhism</th><th>Jainism</th></tr>
+<tr><td>Nature of Karma</td><td>Mental intention (cetana) is the primary determinant; an act without intention generates no karma</td><td>ALL acts &mdash; thought, word, and deed &mdash; generate karma; even involuntary harm creates karma</td></tr>
+<tr><td>Karma as</td><td>Moral force / causal energy</td><td>Subtle material particles that physically adhere to the soul</td></tr>
+<tr><td>Liberation from Karma</td><td>Cessation through the Eightfold Path &mdash; no extreme austerity needed</td><td>Requires tapas (intense austerity) to burn off existing karma + stop new karma</td></tr>
+</table>
+</section>
+
+<!-- SECTION 9 -->
+<section class="notes" id="s9">
+<h2>9. Jain Sects, Literature, and Contributions</h2>
+
+<h3>The Digambara&ndash;Shvetambara Split</h3>
+<p>The schism is traditionally dated to c. <strong>300 BCE</strong> and is linked to a famine in Magadha. <strong>Bhadrabahu</strong>, the leading Jain monk, predicted the famine and led a group of monks (including the recently abdicated <strong>Chandragupta Maurya</strong>) south to Karnataka. The monks who remained in the north under <strong>Sthulabhadra</strong> gradually adopted white robes &mdash; becoming the Shvetambaras.</p>
+
+<table class="tbl">
+<tr><th>Feature</th><th>Digambara (Sky-Clad)</th><th>Shvetambara (White-Clad)</th></tr>
+<tr><td><strong>Clothing</strong></td><td>Monks go completely nude &mdash; complete renunciation of all possessions including clothing</td><td>Monks wear white robes</td></tr>
+<tr><td><strong>Women's Liberation</strong></td><td>Women cannot attain moksha in current life; must be reborn as men first</td><td>Women can attain moksha; 19th Tirthankara Mallinatha was a woman</td></tr>
+<tr><td><strong>Mahavira's Life</strong></td><td>Mahavira was never married; lived as an ascetic from birth</td><td>Mahavira was married (wife: Yasoda; daughter: Priyadarshana)</td></tr>
+<tr><td><strong>Scriptures</strong></td><td>Original 12 Angas (Agamas) lost; do not accept Shvetambara Agamas as fully authentic</td><td>Accept 45 Agamas as canonical (compiled at Council of Valabhi, 454 CE)</td></tr>
+<tr><td><strong>Geographic Base</strong></td><td>South India, particularly Karnataka (Gomateshvara at Shravanabelagola)</td><td>Gujarat, Rajasthan (Dilwara temples, Palitana)</td></tr>
+<tr><td><strong>Chandragupta Maurya's Association</strong></td><td>Followed Bhadrabahu south; died at Shravanabelagola by Sallekhana (voluntary starvation)</td><td>Sthulabhadra's followers remained north; later became Shvetambara</td></tr>
+</table>
+
+<h3>Jain Councils</h3>
+<table class="tbl">
+<tr><th>Council</th><th>Date</th><th>Place</th><th>Leader</th><th>Outcome</th></tr>
+<tr><td><strong>First Jain Council</strong></td><td>c. 300 BCE</td><td>Pataliputra</td><td>Sthulabhadra</td><td>Compiled 12 Angas; Bhadrabahu and Digambaras disagreed and went south with Chandragupta Maurya &mdash; formal Digambara&ndash;Shvetambara divergence</td></tr>
+<tr><td><strong>Second Jain Council</strong></td><td>512&ndash;513 CE</td><td>Valabhi (Gujarat)</td><td>Devardhigani Kshamashraman</td><td>Final written compilation of 45 Agamas &mdash; the Shvetambara canonical scriptures</td></tr>
+</table>
+
+<h3>Jain Literature (Agamas)</h3>
+<p>The canonical Jain scriptures are called <strong>Agamas</strong> (or Siddhanta). Composed in <strong>Ardha-Magadhi Prakrit</strong> (Shvetambara) or Shauraseni Prakrit (Digambara). Shvetambaras recognise 45 Agamas including 12 Angas, 12 Upangas, 10 Prakirnakas, 6 Chhedasutras, and 4 Mulasutras.</p>
+<p>Key texts: <strong>Acharanga Sutra</strong> (oldest; describes Mahavira's ascetic life), Sutrakritanga, Uttaradhyayana Sutra. Non-canonical: Kalpasutra (biographies of Tirthankaras by Bhadrabahu II).</p>
+
+<h3>Jain Contributions to Tamil Literature</h3>
+<p>Jain scholars made extraordinary contributions to early Tamil literature. The epic <strong>Silappadikaram</strong> (5 Epics of Tamil &mdash; attributed to Ilango Adigal, a Jain/Buddhist prince) has strong Jain ethical themes. <strong>Thirukkural</strong> (attributed to Tiruvalluvar) shows Jain ethical influences. Other Jain Tamil works: <em>Civaka Cintamani</em>, <em>Valayapathi</em>, <em>Kundalakesi</em>. Jain scholars preserved and enriched Old Tamil grammar and poetry from c. 2nd&ndash;10th centuries CE.</p>
+
+<h3>Key Jain Architecture</h3>
+<ul>
+<li><strong>Gomateshvara (Bahubali) at Shravanabelagola (Karnataka):</strong> 18-metre monolithic statue carved c. 983 CE. Mahamastakabhisheka (head-anointing) festival every 12 years &mdash; largest peaceful religious gathering in India.</li>
+<li><strong>Dilwara Temples (Mount Abu, Rajasthan):</strong> 11th&ndash;13th century marble temples; Vimala Vasahi (dedicated to Adinatha) and Luna Vasahi; considered the finest example of Jain architectural achievement.</li>
+<li><strong>Udayagiri and Khandagiri Caves (Odisha):</strong> Rock-cut caves excavated under <strong>Kharavela</strong> (Kalinga king, c. 1st century BCE); Hathigumpha inscription is a key historical source.</li>
+</ul>
+</section>
+
+<!-- CURRENT AFFAIRS -->
+<div class="ca-box" id="ca">
+<h2>Current Affairs Linkages (2024&ndash;26)</h2>
+
+<div class="ca-item">
+<strong>Buddhist Circuit and India's Soft Power (2024&ndash;25)</strong>
+Ministry of Tourism promoting the Buddhist Circuit (Lumbini, Bodh Gaya, Sarnath, Kushinagar) as an international pilgrimage route. Kushinagar International Airport (inaugurated 2021) receiving Buddhist pilgrims from Southeast Asia. India&ndash;Sri Lanka&ndash;Japan collaboration on Buddhist heritage tourism. Connects to India's foreign policy outreach to East and Southeast Asian Buddhist nations.
+</div>
+
+<div class="ca-item">
+<strong>Nalanda University Reestablishment (Inaugurated June 2024)</strong>
+New Nalanda University campus inaugurated by PM Modi in June 2024. East Asia Summit initiative; 17 countries involved. Built adjacent to ruins of ancient Nalanda (destroyed 1193 CE by Bakhtiyar Khilji). Symbolises India's Buddhist soft power in Asia and cultural diplomacy with ASEAN and East Asian nations.
+</div>
+
+<div class="ca-item">
+<strong>Sallekhana/Santhara Controversy (2015 onwards &mdash; pending)</strong>
+Rajasthan HC (2015) declared Sallekhana (Jain voluntary fasting unto death) illegal as violating the right to life. Supreme Court stayed the order. Case raises fundamental tensions: religious freedom (Article 25), right to die with dignity (Article 21), and status of ancient practices under modern law. Still pending final SC resolution.
+</div>
+
+<div class="ca-item">
+<strong>Anekantavada in Constitutional Discourse</strong>
+Legal scholars and Supreme Court judges have cited Jain Anekantavada in support of India's pluralistic constitutional framework &mdash; particularly relevant to debates on freedom of speech, limits of religious claims, and the accommodation of diverse perspectives in democratic governance.
+</div>
+
+<div class="ca-item">
+<strong>Conservation of Buddhist Heritage Sites (2024&ndash;25)</strong>
+ASI undertaking conservation at Sanchi, Amaravati, Bharhut, and Sarnath. Growing concern over moisture damage and structural deterioration at Ajanta caves. UNESCO India Desk working on integrated conservation plans. Bodhisattva figurines from Nalanda excavations periodically returned from international collections.
+</div>
+</div>
+
+<!-- PYQs -->
+<section class="notes" id="pyq">
+<h2>Previous Year Questions (UPSC)</h2>
+
+<div class="pyq-item">
+  <div class="pyq-meta"><span class="pyq-year">UPSC Prelims 2020</span> &mdash; Prelims</div>
+  <p>With reference to the history of ancient India, which of the following was/were common to both Buddhism and Jainism? (1) Avoidance of extremities of penance and enjoyment; (2) Indifference to the authority of the Vedas; (3) Denial of efficacy of rituals. Select using codes.</p>
+  <details><summary>Answer Hint</summary><p>Statements 2 and 3 are correct for both. Statement 1 is correct only for Buddhism (Middle Path) &mdash; Jainism advocates extreme asceticism (tapas). Both rejected Vedic authority and denied the efficacy of rituals for liberation.</p></details>
+</div>
+
+<div class="pyq-item">
+  <div class="pyq-meta"><span class="pyq-year">UPSC Prelims 2018</span> &mdash; Prelims</div>
+  <p>Consider the following statements: (1) The First Buddhist Council was held at Rajagriha; (2) The Second Buddhist Council was held at Vaishali; (3) In the Third Buddhist Council, Buddhism was divided into Mahayana and Hinayana sects; (4) The Fourth Buddhist Council was held at Kashmir under the patronage of Kanishka. Which are correct?</p>
+  <details><summary>Answer Hint</summary><p>Statements 1, 2, and 4 are correct. Statement 3 is wrong &mdash; the Mahayana&ndash;Hinayana split was formalised at the FOURTH Council (Kashmir, Kanishka). The Third Council (Pataliputra, Ashoka) compiled the Abhidhamma Pitaka and sent missionaries.</p></details>
+</div>
+
+<div class="pyq-item">
+  <div class="pyq-meta"><span class="pyq-year">UPSC Prelims 2016</span> &mdash; Prelims</div>
+  <p>Which of the following is/are the characteristic/characteristics of Mahayana Buddhism? (1) It believed in the Bodhisattva path open to all; (2) It is characterised by idol worship and rituals; (3) It included magical formulae and spells. Select using codes.</p>
+  <details><summary>Answer Hint</summary><p>Statements 1 and 2 are definitely Mahayana. Statement 3 describes Vajrayana (Tantric Buddhism) &mdash; a later development from Mahayana. In UPSC context, answer is usually 1 and 2. Bodhisattva ideal and idol worship are the defining Mahayana characteristics for Prelims.</p></details>
+</div>
+
+<div class="pyq-item">
+  <div class="pyq-meta"><span class="pyq-year">UPSC Prelims 2015</span> &mdash; Prelims</div>
+  <p>Consider the following statements about Jainism: (1) Mahavira was the last Tirthankara of Jainism; (2) Parshvanatha preached four vows; (3) Digambaras believe that women cannot attain liberation. Which are correct?</p>
+  <details><summary>Answer Hint</summary><p>All three are correct. (1) Mahavira = 24th and last Tirthankara. (2) Parshvanatha's 4 vows: Ahimsa, Satya, Asteya, Aparigraha (Brahmacharya added by Mahavira). (3) Digambaras hold that women must be reborn as men before attaining moksha; Shvetambaras disagree.</p></details>
+</div>
+
+<div class="pyq-item">
+  <div class="pyq-meta"><span class="pyq-year">UPSC Prelims 2013</span> &mdash; Prelims</div>
+  <p>The Ajivika sect was founded by: (a) Makkhali Gosala; (b) Sanjaya Belattputta; (c) Purana Kassapa; (d) Pakudha Kacchayana.</p>
+  <details><summary>Answer Hint</summary><p>(a) Makkhali Gosala. He was originally a disciple of Mahavira but broke away. His core doctrine: Niyativada (absolute determinism) &mdash; all souls take exactly 8,400,000 rebirths regardless of effort and then attain liberation automatically. Ashoka gave Ajivikas the Barabar rock-cut caves.</p></details>
+</div>
+
+<div class="pyq-item pyq-mains">
+  <div class="pyq-meta"><span class="pyq-year">UPSC Mains GS-I 2020</span> &mdash; Mains</div>
+  <p>The emergence of Buddhism in India in the 6th century BCE was a social and intellectual revolution. Examine the reasons for its emergence and the factors behind its eventual decline in the land of its birth. (250 words)</p>
+  <details><summary>Answer Hint</summary><p>Emergence: (1) Brahminical dominance and costly Vedic sacrifices; (2) Caste rigidity; (3) Kshatriya revolt against Brahmin supremacy; (4) Rise of Vaishya trade class; (5) Pali language accessibility; (6) Eastern India as a less Brahminised zone. Decline: (1) Internal monastic corruption; (2) Brahminical Bhakti revival; (3) Shankaracharya's Advaita Vedanta; (4) Absorption of Buddha as Vishnu's avatar; (5) Destruction of Nalanda (1193 CE) by Bakhtiyar Khilji; (6) Loss of royal patronage after Harsha.</p></details>
+</div>
+
+<div class="pyq-item pyq-mains">
+  <div class="pyq-meta"><span class="pyq-year">UPSC Mains GS-I 2017</span> &mdash; Mains</div>
+  <p>Assess the contribution of Buddhism and Jainism to Indian art, architecture, and social reform. How do these traditions remain relevant in contemporary India? (250 words)</p>
+  <details><summary>Answer Hint</summary><p>Art: Stupa architecture (Sanchi, Amaravati, Bharhut); Gandhara school (first anthropomorphic Buddha); Mathura and Sarnath schools; Ajanta frescoes (UNESCO). Architecture: Chaityas, Viharas, rock-cut caves. Social Reform: challenged caste hierarchy; accepted women in Sangha; promoted education (Nalanda, Vikramashila); spread literacy through Pali/Prakrit. Contemporary: 500M Buddhists globally; Gandhi's ahimsa from Jainism; Anekantavada in constitutional pluralism debates; mindfulness/meditation mainstreamed; Buddhist Circuit tourism; Nalanda University re-establishment 2024.</p></details>
+</div>
+</section>
+
+<!-- REVISION BOX -->
+<div class="revision" id="revision">
+<h3>15-Point Rapid Revision &mdash; Buddhism and Jainism</h3>
+<ol>
+<li><strong>Buddha's Life Timeline:</strong> Born Lumbini (563 BCE) → Four Sights → Great Renunciation (Mahabhinishkramana) → Enlightenment Bodh Gaya (under Peepal tree) → First Sermon Sarnath (Dhammachakkapavattana Sutta) → 45 years teaching → Mahaparinirvana Kushinara (483 BCE).</li>
+<li><strong>Four Noble Truths:</strong> Dukkha (suffering) → Samudaya (cause: tanha/craving) → Nirodha (cessation) → Marga (Eightfold Path).</li>
+<li><strong>Eightfold Path Groups:</strong> Prajna = Right View + Intention; Sila = Right Speech + Action + Livelihood; Samadhi = Right Effort + Mindfulness + Concentration.</li>
+<li><strong>Triratna (Buddhism):</strong> Buddha + Dhamma + Sangha. Three Marks of Existence: Anicca + Dukkha + Anatta.</li>
+<li><strong>Buddhist Councils &mdash; RVPK:</strong> 1st Rajagriha (Ajatashatru, Mahakassapa) → 2nd Vaishali (Kalashoka, Sabbakami) → 3rd Pataliputra (Ashoka, Moggaliputta Tissa) → 4th Kashmir (Kanishka, Vasumitra).</li>
+<li><strong>Buddhist Schools:</strong> Hinayana = Arhat ideal, Pali, no idols, individual salvation. Mahayana = Bodhisattva ideal, Sanskrit, idols, universal salvation. Vajrayana = Tantric, 7th century CE, Tibet.</li>
+<li><strong>Buddhist Art:</strong> Gandhara = Greco-Roman, first human Buddha; Mathura = indigenous Indian; Sarnath = Gupta synthesis, finest. Stupa components: Anda + Harmika + Yashti + Chattra + Vedika + Torana + Pradakshina path.</li>
+<li><strong>Mahavira's Life:</strong> Born Vaishali/Kundagrama (540 BCE) → 12 years extreme asceticism → Kaivalya at Jrimbhikagrama → Mahaparinirvana at Pavapuri (468 BCE). Titles: Jina, Mahavira, Nirgantha.</li>
+<li><strong>24 Tirthankaras:</strong> Rishabha (1st) &mdash; Parshvanatha (23rd, 4 vows) &mdash; Mahavira (24th, added Brahmacharya = 5 vows).</li>
+<li><strong>Pancha Mahavrata:</strong> Ahimsa + Satya + Asteya + Brahmacharya (added by Mahavira) + Aparigraha.</li>
+<li><strong>Triratna (Jainism):</strong> Samyak Darshana (Right Faith) + Samyak Jnana (Right Knowledge) + Samyak Charitra (Right Conduct).</li>
+<li><strong>Anekantavada + Syadvada + Nayavada:</strong> Many-sidedness → Conditional predication (syat prefix, 7 forms/Saptabhangi) → Partial standpoints.</li>
+<li><strong>Jain Sects Split:</strong> Bhadrabahu led monks south (→ Digambara: sky-clad, Karnataka) vs Sthulabhadra remained north (→ Shvetambara: white-clad, Gujarat/Rajasthan). Chandragupta Maurya followed Bhadrabahu.</li>
+<li><strong>Key Distinction &mdash; Soul:</strong> Buddhism = Anatta (no permanent soul; rebirth via karmic stream). Jainism = eternal individual Jiva (soul). Brahminism = Atman = Brahman.</li>
+<li><strong>Modern Relevance:</strong> Buddhism &mdash; 500M believers globally, Buddhist Circuit, Nalanda re-opened 2024. Jainism &mdash; Gandhi's ahimsa, Anekantavada in SC judgements, Sallekhana case pending.</li>
+</ol>
+</div>
+
+</main>
+
+<!-- ASIDE: 6 WIDGETS -->
+<aside>
+
+<!-- Widget 1: Quick Reference -->
+<div class="widget">
+<h4>Quick Reference</h4>
+<ul class="miniref">
+<li><strong>Buddha born:</strong> 563 BCE, Lumbini (Nepal)</li>
+<li><strong>Enlightenment:</strong> Bodh Gaya (Uruvela), under Peepal tree</li>
+<li><strong>First Sermon:</strong> Sarnath — Dhammachakkapavattana Sutta</li>
+<li><strong>Mahaparinirvana:</strong> 483 BCE, Kushinara</li>
+<li><strong>Mahavira born:</strong> 540 BCE, Vaishali (Kundagrama)</li>
+<li><strong>Mahavira's Enlightenment:</strong> Jrimbhikagrama (Kaivalya)</li>
+<li><strong>Mahavira's Death:</strong> 468 BCE, Pavapuri</li>
+<li><strong>Both founders:</strong> Kshatriyas, Eastern India (Gangetic plain)</li>
+</ul>
+</div>
+
+<!-- Widget 2: Buddhist Councils Snapshot -->
+<div class="widget">
+<h4>Buddhist Councils Snapshot</h4>
+<table class="widget-tbl">
+<tr><th>Council</th><th>Venue</th><th>Patron</th><th>Key Outcome</th></tr>
+<tr><td>1st (483 BCE)</td><td>Rajagriha</td><td>Ajatashatru</td><td>Vinaya + Sutta Pitaka compiled</td></tr>
+<tr><td>2nd (383 BCE)</td><td>Vaishali</td><td>Kalashoka</td><td>First schism over monastic rules</td></tr>
+<tr><td>3rd (250 BCE)</td><td>Pataliputra</td><td>Ashoka</td><td>Abhidhamma Pitaka; Buddhist missions sent abroad</td></tr>
+<tr><td>4th (1st CE)</td><td>Kashmir / Kundalvana</td><td>Kanishka</td><td>Mahayana&ndash;Hinayana formal split; Vasumitra presided</td></tr>
+</table>
+</div>
+
+<!-- Widget 3: Difficulty and Importance -->
+<div class="widget">
+<h4>Difficulty &amp; Importance</h4>
+<div class="bar"><span class="lbl">Prelims</span><div class="track"><div class="fill" style="width:95%"></div></div></div>
+<div class="bar"><span class="lbl">Mains GS-I</span><div class="track"><div class="fill" style="width:85%"></div></div></div>
+<div class="bar"><span class="lbl">Art &amp; Culture</span><div class="track"><div class="fill" style="width:90%"></div></div></div>
+<div class="bar"><span class="lbl">Current Affairs</span><div class="track"><div class="fill" style="width:70%"></div></div></div>
+</div>
+
+<!-- Widget 4: Must-Know Tags -->
+<div class="widget">
+<h4>Must-Know Tags</h4>
+<div class="tags">
+<span>Buddhism</span><span>Jainism</span><span>Gautama Buddha</span><span>Lumbini</span><span>Bodh Gaya</span><span>Sarnath</span><span>Kushinara</span><span>Four Sights</span><span>Great Renunciation</span><span>Middle Path</span><span>Four Noble Truths</span><span>Dukkha</span><span>Tanha</span><span>Eightfold Path</span><span>Nirvana</span><span>Pratitya Samutpada</span><span>Anatman</span><span>Anicca</span><span>Tripitaka</span><span>Vinaya Pitaka</span><span>Sutta Pitaka</span><span>Abhidhamma Pitaka</span><span>Jatakas</span><span>Three Jewels</span><span>Hinayana</span><span>Theravada</span><span>Mahayana</span><span>Vajrayana</span><span>Bodhisattva</span><span>Gandhara Art</span><span>Ajanta</span><span>Sanchi Stupa</span><span>Mahavira</span><span>Vaishali</span><span>24 Tirthankaras</span><span>Rishabha</span><span>Triratna</span><span>Pancha Mahavrata</span><span>Ahimsa</span><span>Anekantavada</span><span>Syadvada</span><span>Digambara</span><span>Shvetambara</span><span>Bhadrabahu</span><span>Four Buddhist Councils</span><span>Ashoka</span><span>Kanishka</span><span>Ajatashatru</span>
+</div>
+</div>
+
+<!-- Widget 5: Self-Test -->
+<div class="widget">
+<h4>5-Question Self-Test</h4>
+<div class="quiz">
+<details>
+<summary>Q1. What is the difference between Hinayana and Mahayana Buddhism?</summary>
+<p>Hinayana (Theravada): individual salvation, Arhat ideal, no idol worship, Pali language, strict monasticism, Buddha as human teacher. Mahayana: universal salvation, Bodhisattva ideal, idol worship, Sanskrit language, Buddha as divine cosmic being. Mahayana spread to China/Japan/Korea/Tibet; Hinayana to Sri Lanka/Myanmar/Thailand.</p>
+</details>
+<details>
+<summary>Q2. Name the Four Buddhist Councils and their patrons.</summary>
+<p>1st &mdash; Rajagriha &mdash; Ajatashatru (483 BCE). 2nd &mdash; Vaishali &mdash; Kalashoka (383 BCE). 3rd &mdash; Pataliputra &mdash; Ashoka (250 BCE). 4th &mdash; Kashmir &mdash; Kanishka (1st century CE). Memory: RVPK.</p>
+</details>
+<details>
+<summary>Q3. What is Anekantavada in Jainism?</summary>
+<p>Doctrine of many-sidedness &mdash; reality is complex; no single statement fully describes it. Leads to Syadvada (conditional predication, every statement prefixed by "syat") and Nayavada (partial standpoints). Prevents dogmatism; cited in Indian Supreme Court pluralism debates.</p>
+</details>
+<details>
+<summary>Q4. Which vow did Mahavira add to Parshvanatha's four vows?</summary>
+<p>Brahmacharya (celibacy) &mdash; making the Pancha Mahavrata (Five Great Vows). Parshvanatha's four: Ahimsa, Satya, Asteya, Aparigraha. Mahavira's addition of Brahmacharya is a key UPSC-tested distinction.</p>
+</details>
+<details>
+<summary>Q5. Why did Buddhism and Jainism emerge in the 6th century BCE?</summary>
+<p>Brahminical dominance, costly Vedic sacrifices, caste rigidity, rise of urban trade (Vaishya class seeking dignity), Prakrit/Pali accessibility vs Sanskrit monopoly, both founders were Kshatriyas from eastern India where Brahminism was less entrenched, and the Iron Age urban economic boom that weakened the old agrarian ritual order.</p>
+</details>
+</div>
+</div>
+
+<!-- Widget 6: Related UPSC Notes -->
+<div class="widget">
+<h4>Related UPSC Notes</h4>
+<ul class="related">
+<li><a href="/ancient-history/the-vedic-age">Topic 05: The Vedic Age</a></li>
+<li><a href="/ancient-history/the-mahajanapada-period-600-300-bc">Topic 07: Mahajanapadas &amp; Rise of Magadha</a></li>
+<li><a href="/ancient-history/foreign-invasions-on-india">Topic 08: Foreign Invasions (Persian &amp; Greek)</a></li>
+<li><a href="/ancient-history/the-mauryan-empire-324-185-bc">Topic 09: The Mauryan Empire</a></li>
+<li><a href="/ancient-history/the-post-mauryan-age-185-bc-300-ad">Topic 10: Post-Mauryan Period</a></li>
+</ul>
+</div>
+
+</aside>
 </div>
 </div>

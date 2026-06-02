@@ -1,4 +1,4 @@
-<!-- ancient-topic12 — auto-imported from ancient-topic12-post-gupta-age-upsc-notes.html -->
+<!-- ancient-topic12 — auto-imported from ancient-topic12-post-gupta-age-upsc-notes (1).html -->
 <style data-topic-notes>
 :root{
   --brand-blue:#1a5a4a;
@@ -102,12 +102,15 @@ footer a{color:#fff}
 /* Next.js: shared app navbar; restore two-column layout */
 .notes-topic-embedded .navbar,
 .notes-topic-embedded nav.navbar,
+.notes-topic-embedded .topnav,
+.notes-topic-embedded nav.topnav,
 .notes-topic-embedded .breadcrumbs,
 .notes-topic-embedded .hamburger,
 .notes-topic-embedded .menu-btn,
 .notes-topic-embedded footer { display: none !important; }
 
-.notes-topic-embedded .page-wrapper {
+.notes-topic-embedded .page-wrapper,
+.notes-topic-embedded .layout {
   display: grid !important;
   grid-template-columns: minmax(0, 1fr) 280px !important;
   gap: 28px !important;
@@ -118,8 +121,14 @@ footer a{color:#fff}
   margin-top: 0 !important;
 }
 
+.notes-topic-embedded .hero {
+  grid-column: 1 / -1;
+}
+
 .notes-topic-embedded .main-content,
 .notes-topic-embedded main.main-content,
+.notes-topic-embedded .layout > main,
+.notes-topic-embedded .page-wrapper > main,
 .notes-topic-embedded main {
   margin-left: 0 !important;
   min-width: 0;
@@ -127,6 +136,8 @@ footer a{color:#fff}
 
 .notes-topic-embedded aside,
 .notes-topic-embedded .right-sidebar,
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .page-wrapper > aside,
 .notes-topic-embedded aside.sidebar {
   position: sticky !important;
   top: 88px !important;
@@ -134,11 +145,14 @@ footer a{color:#fff}
 }
 
 @media (max-width: 960px) {
-  .notes-topic-embedded .page-wrapper {
+  .notes-topic-embedded .page-wrapper,
+  .notes-topic-embedded .layout {
     grid-template-columns: 1fr !important;
   }
   .notes-topic-embedded aside,
   .notes-topic-embedded .right-sidebar,
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .page-wrapper > aside,
   .notes-topic-embedded aside.sidebar {
     position: static !important;
   }
@@ -848,10 +862,10 @@ footer a{color:#fff}
 <div class="widget">
   <h4>Related UPSC Notes</h4>
   <ul class="related">
-    <li><a href="/upsc-notes/ancient/ancient-topic11">Topic 11: The Gupta Era</a></li>
-    <li><a href="/upsc-notes/ancient/ancient-topic10">Topic 10: Post-Mauryan Age</a></li>
-    <li><a href="/upsc-notes/ancient/ancient-topic09">Topic 09: Mauryan Empire</a></li>
-    <li><a href="/upsc-notes/ancient">Mod 3: Mauryan &amp; Gupta Age</a></li>
+    <li><a href="/ancient-history/the-gupta-era-319-550-ad">Topic 11: The Gupta Era</a></li>
+    <li><a href="/ancient-history/the-post-mauryan-age-185-bc-300-ad">Topic 10: Post-Mauryan Age</a></li>
+    <li><a href="/ancient-history/the-mauryan-empire-324-185-bc">Topic 09: Mauryan Empire</a></li>
+    <li><a href="/ancient-history">Mod 3: Mauryan &amp; Gupta Age</a></li>
   </ul>
 </div>
 </aside>
