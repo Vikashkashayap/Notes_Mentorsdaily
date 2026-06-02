@@ -1,0 +1,728 @@
+<!-- medieval-topic05 — auto-imported from medieval-topic05-vijayanagar-bahmani-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a5c3a;
+  --brand-blue-dark:#0d3321;
+  --brand-blue-light:#e6f2ec;
+  --brand-orange:#c9940a;
+  --text:#1a1f1e;
+  --muted:#4a6058;
+  --bg:#fafaf7;
+  --card:#ffffff;
+  --border:#dde8e2;
+  --accent:#f2f9ef;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Inter','Segoe UI',-apple-system,sans-serif;color:var(--text);background:var(--bg);line-height:1.65;font-size:16px}
+.topnav{background:var(--brand-blue-dark);color:#fff;padding:14px 28px;position:sticky;top:0;z-index:50;box-shadow:0 2px 6px rgba(0,0,0,0.18)}
+.topnav .breadcrumbs{font-size:13px;color:#c8ddd4}
+.topnav .breadcrumbs a{color:#fff;text-decoration:none;font-weight:500}
+.topnav .breadcrumbs a:hover{color:var(--brand-orange)}
+.hero{background:linear-gradient(135deg,#2e7d52 0%,#1a5c3a 55%,#0d3321 100%);color:#fff;padding:54px 28px 44px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(201,148,10,0.20),transparent 55%);pointer-events:none}
+.hero .wrap{max-width:1240px;margin:0 auto;position:relative;z-index:2}
+.hero h1{font-size:38px;margin:0 0 14px;font-weight:800;letter-spacing:-0.5px;line-height:1.18}
+.hero p.sub{font-size:17px;color:#c8e8d8;max-width:880px;margin:0 0 20px;line-height:1.6}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.22);color:#fff;padding:6px 13px;border-radius:99px;font-size:12.5px;font-weight:500;backdrop-filter:blur(6px)}
+.pill.gold{background:rgba(201,148,10,0.25);border-color:rgba(201,148,10,0.5)}
+.layout{display:grid;grid-template-columns:1fr 320px;gap:28px;max-width:1240px;margin:28px auto;padding:0 28px}
+@media(max-width:1024px){.layout{grid-template-columns:1fr;padding:0 18px}}
+main{min-width:0}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 22px;margin-bottom:22px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--brand-blue);font-weight:700}
+.toc ol{margin:0;padding-left:22px;font-size:14.5px;column-count:2;column-gap:24px}
+@media(max-width:680px){.toc ol{column-count:1}}
+.toc li{margin:4px 0;break-inside:avoid}
+.toc a{color:var(--text);text-decoration:none}
+.toc a:hover{color:var(--brand-blue);text-decoration:underline}
+.concept-box{background:linear-gradient(135deg,#f5fbf7 0%,#e8f5ec 100%);border-left:5px solid var(--brand-orange);border-radius:10px;padding:22px 26px;margin-bottom:26px;box-shadow:0 2px 6px rgba(201,148,10,0.10)}
+.concept-box h3{margin:0 0 10px;font-size:18px;color:var(--brand-blue-dark);font-weight:700}
+.concept-box p{margin:0 0 10px;font-size:15px;color:#1a3325}
+.concept-box ul{margin:8px 0 0;padding-left:22px}
+.concept-box li{margin:5px 0;font-size:14.5px;color:#1a3325}
+.notes{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:26px 30px;margin-bottom:22px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.notes h2{font-size:24px;color:var(--brand-blue-dark);margin:0 0 14px;padding-bottom:10px;border-bottom:2px solid var(--accent);font-weight:700}
+.notes h3{font-size:18px;color:var(--brand-blue);margin:22px 0 10px;font-weight:700}
+.notes h4{font-size:15.5px;color:var(--brand-blue-dark);margin:16px 0 8px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px}
+.notes p{margin:0 0 12px}
+.notes ul,.notes ol{margin:8px 0 14px;padding-left:24px}
+.notes li{margin:5px 0}
+.notes strong{color:var(--brand-blue-dark)}
+.notes em{color:#7a4d0a;font-style:italic}
+.callout{background:var(--brand-blue-light);border-left:4px solid var(--brand-blue);padding:14px 18px;border-radius:6px;margin:14px 0;font-size:14.5px}
+.callout.gold{background:#fef9ec;border-left-color:var(--brand-orange)}
+.callout.warn{background:#fef0e6;border-left-color:#c25e1c}
+.tbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+.tbl th,.tbl td{border:1px solid var(--border);padding:8px 11px;text-align:left;vertical-align:top}
+.tbl th{background:var(--brand-blue);color:#fff;font-weight:600}
+.tbl tr:nth-child(even) td{background:#f5fbf7}
+.pyq{background:#fff;border:1px solid var(--border);border-left:4px solid var(--brand-orange);border-radius:6px;padding:12px 16px;margin:10px 0;font-size:14.5px}
+.pyq .year{display:inline-block;background:var(--brand-orange);color:#fff;padding:2px 9px;border-radius:99px;font-size:12px;font-weight:600;margin-bottom:6px}
+.revision{background:linear-gradient(135deg,#0d3321 0%,#1a5c3a 100%);color:#fff;border-radius:12px;padding:26px 30px;margin-bottom:22px}
+.revision h3{color:var(--brand-orange);margin:0 0 14px;font-size:20px}
+.revision ol{padding-left:22px;margin:0}
+.revision li{margin:6px 0;font-size:14.5px;color:#c8e8d8}
+aside{min-width:0}
+.widget{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:18px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.widget h4{margin:0 0 10px;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--brand-blue);font-weight:700;border-bottom:1px solid var(--border);padding-bottom:7px}
+.widget .miniref{font-size:13px;list-style:none;padding:0;margin:0}
+.widget .miniref li{margin:5px 0}
+.bar{display:flex;align-items:center;gap:8px;margin:6px 0;font-size:13px}
+.bar .lbl{width:88px;color:var(--muted)}
+.bar .track{flex:1;height:7px;background:#eee;border-radius:99px;overflow:hidden}
+.bar .fill{height:100%;background:linear-gradient(90deg,var(--brand-orange),#9a7008);border-radius:99px}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tags span{background:var(--accent);color:#1a5c3a;padding:3px 9px;border-radius:99px;font-size:11.5px;font-weight:500}
+.related{list-style:none;padding:0;margin:0;font-size:13.5px}
+.related li{margin:6px 0}
+.related a{color:var(--brand-blue);text-decoration:none;font-weight:500}
+.related a:hover{text-decoration:underline}
+.quiz{font-size:13.5px}
+.quiz details{margin:7px 0;border-bottom:1px dashed var(--border);padding-bottom:7px}
+.quiz summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark)}
+.quiz p{margin:6px 0 0;color:var(--muted);font-size:13px}
+footer{background:var(--brand-blue-dark);color:#c8ddd4;padding:24px 28px;text-align:center;font-size:13px;margin-top:34px}
+footer strong{color:#fff}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="hero">
+<div class="wrap">
+<h1>Topic 05: Vijayanagar Empire &amp; Bahmani Sultanate</h1>
+<p class="sub">Two rival powers that defined the Deccan for nearly two centuries — the last great Hindu empire at Hampi and the first independent Islamic sultanate south of the Vindhyas, culminating in the catastrophic Battle of Talikota (1565) and the birth of five Deccan successor states.</p>
+<div class="pills">
+<span class="pill gold">UPSC Prelims · Mains GS-I</span>
+<span class="pill">Nuniz · Domingo Paes · Barani · Ferishta</span>
+<span class="pill">~65 min read</span>
+<span class="pill">Hampi UNESCO · Vittala Temple · Gol Gumbaz</span>
+<span class="pill">Krishna Deva Raya · Mahmud Gawan · Aliya Rama Raya</span>
+</div>
+</div>
+</div>
+<div class="layout">
+<main>
+
+<div class="toc">
+<h3>On this page</h3>
+<ol>
+<li><a href="#concept">Conceptual Clarity</a></li>
+<li><a href="#foundation">Foundation of Vijayanagar</a></li>
+<li><a href="#sangama">Sangama Dynasty (1336–1485)</a></li>
+<li><a href="#saluva">Saluva Dynasty (1485–1505)</a></li>
+<li><a href="#tuluva">Tuluva Dynasty (1505–1570)</a></li>
+<li><a href="#aravidu">Aravidu Dynasty (1570–1650)</a></li>
+<li><a href="#admin">Administration of Vijayanagar</a></li>
+<li><a href="#economy">Economy of Vijayanagar</a></li>
+<li><a href="#culture">Art &amp; Culture of Vijayanagar</a></li>
+<li><a href="#bahmani">Bahmani Sultanate — Political History</a></li>
+<li><a href="#decline">Decline of the Bahmani Kingdom</a></li>
+<li><a href="#deccan5">Five Deccan Sultanates</a></li>
+<li><a href="#portuguese">Advent of the Portuguese</a></li>
+<li><a href="#ca">Current Affairs Link</a></li>
+<li><a href="#pyq">Previous Year Questions</a></li>
+<li><a href="#revision">15-Minute Revision Box</a></li>
+</ol>
+</div>
+
+<div class="concept-box" id="concept">
+<h3>Conceptual Clarity — What to remember about Vijayanagar &amp; Bahmani</h3>
+<p>These two powers are <strong>inseparable</strong> — Vijayanagara was founded in direct response to the Sultanate's southern expansion, and its entire political life was shaped by its contests with the Bahmani and successor states. The exam tests <em>periodisation</em>, <em>cultural achievements</em>, and the <em>causes of Talikota</em> more than individual ruler dates.</p>
+<ul>
+<li><strong>Two stories, one Deccan:</strong> Vijayanagara is the Hindu response to Sultanate pressure; Bahmani is the Deccan Muslim state that was distinct from — often hostile to — the Delhi Sultanate. Both were syncretic in practice.</li>
+<li><strong>The peak defines the era:</strong> Everything builds toward Krishna Deva Raya (1509–29) — the greatest ruler of South India in the medieval period. Know his conquests, his court (Ashtadiggajas), his buildings (Vittala, Krishna Swami), and his own writing (<em>Amuktamalyada</em>).</li>
+<li><strong>Talikota (1565) is not just a battle:</strong> It is a structural collapse — the confederacy of four sultanates + Rama Raya's overreach + the defection of the Gilani brothers. Hampi was not abandoned because of defeat; it was systematically sacked for six months.</li>
+<li><strong>Mahmud Gawan is the Bahmani pivot:</strong> His reforms held the state together; his judicial murder in 1482 broke it irreparably — within 40 years, five successor kingdoms had declared independence.</li>
+<li><strong>Portuguese changed the power equation:</strong> Whoever controlled Arabian Sea horse trade controlled the Deccan's cavalry armies. Understanding this makes the Portuguese's Goa (1510) geopolitically logical, not just commercial.</li>
+</ul>
+</div>
+
+<section class="notes" id="foundation">
+<h2>1. Foundation of the Vijayanagar Empire</h2>
+<p>The Vijayanagar Empire (<em>Vijayanagara</em> = "City of Victory") was founded <strong>1336 AD</strong> on the southern bank of the river <strong>Tungabhadra</strong> in the Deccan. Its founding is one of the most debated events in medieval Indian history.</p>
+
+<h3>Context — Why Vijayanagara was born</h3>
+<ul>
+<li>Muhammad bin Tughlaq's southern campaigns (1327–34) had installed Sultanate governors as far as Madurai.</li>
+<li>The Sultanate's hold was already crumbling — the Madurai Sultanate went independent 1335.</li>
+<li>Local Kannada-Telugu chiefs and warriors needed a political nucleus to resist Sultanate pressure.</li>
+</ul>
+
+<h3>Founding Traditions</h3>
+<p>Three traditions explain the foundation — each important for the exam:</p>
+<table class="tbl">
+<tr><th>Tradition</th><th>Account</th><th>Source</th></tr>
+<tr><td><strong>Harihara-Bukka tradition</strong></td><td>Two brothers — <strong>Harihara I</strong> and <strong>Bukka I</strong>, commanders under the Hoysala king Vira Ballala III — founded the state; converted to Islam under Sultans, then reconverted to Hinduism under the sage <strong>Vidyaranya</strong> (Madhava).</td><td>Telugu and Kannada copper-plate grants, <em>Madhuravijayam</em></td></tr>
+<tr><td><strong>Kampili origin</strong></td><td>Harihara-Bukka were officers of the Kampili kingdom (modern Hospet area), captured by Alauddin Khalji during Devagiri campaign.</td><td>Persian chronicles</td></tr>
+<tr><td><strong>Yadava/Sangama origin</strong></td><td>Both were sons of <em>Sangama</em> — hence "Sangama dynasty." Five brothers total: Harihara, Bukka, Kampana, Muddappa, Marappa.</td><td>Vijaya-Narasimha grants</td></tr>
+</table>
+
+<h3>Role of Vidyaranya (Madhava)</h3>
+<ul>
+<li><strong>Vidyaranya</strong> — Advaita Vedanta scholar, later <em>Shankaracharya</em> of the Sringeri Math — is credited with inspiring and consecrating the new kingdom as a defender of dharma against Sultanate expansion.</li>
+<li>He is the <em>ideological founder</em>; Harihara I is the political founder. The city was named after <strong>Vijayanagara</strong> in his honour.</li>
+<li>Modern historians (Suryanath Kamath, Nilakanta Sastri) caution that Vidyaranya's role may be retrospectively exaggerated in later temple tradition.</li>
+</ul>
+<div class="callout gold"><strong>Exam edge:</strong> The capital was called by many names — <em>Vijayanagara</em>, <em>Vidyanagara</em>, <em>Hastinavati</em>. Foreign visitors called it "<strong>Bisnagar</strong>" (City of Vishnu — from Abdur Razzaq, Domingo Paes). Modern name of the ruins site: <strong>Hampi</strong> (UNESCO World Heritage Site, 1986).</div>
+</section>
+
+<section class="notes" id="sangama">
+<h2>2. Sangama Dynasty (1336–1485 AD)</h2>
+
+<h3>Harihara I (1336–1356)</h3>
+<ul>
+<li>First ruler of Vijayanagara; consolidated control over Kannada country; extended to Mysore and eastern Karnataka.</li>
+<li>Shaivite by faith; title <strong>Purvapaschima Samudradhishvara</strong> ("Lord of the seas east and west").</li>
+</ul>
+
+<h3>Bukka I (1356–1377)</h3>
+<ul>
+<li>Expanded empire into Tamil Nadu; defeated the <strong>Madurai Sultanate</strong> — his general <strong>Kumara Kampana</strong> destroyed it (c. 1378); this campaign is commemorated in his wife Gangadevi's Sanskrit poem <em><strong>Madhuravijayam</strong></em> — a primary source.</li>
+<li>Extended Vijayanagara to Cape Comorin.</li>
+<li>Sent envoy to the Ming Emperor of China (1374) — earliest Vijayanagara-China contact.</li>
+</ul>
+
+<h3>Harihara II (1377–1404)</h3>
+<ul>
+<li>Consolidated hold over all of South India; controlled Goa, Belgaum, Tulu country (Karnataka coast), and parts of Andhra.</li>
+<li>First to use the title <strong>Maharajadhiraja</strong>.</li>
+</ul>
+
+<h3>Deva Raya I (1406–1422)</h3>
+<ul>
+<li>Fought the Bahmani Sultanate over the <strong>Raichur Doab</strong> (fertile land between Krishna and Tungabhadra rivers) — this became the perennial bone of contention.</li>
+<li>Defeated by Firuz Shah Bahmani; compelled to give his daughter in marriage and pay indemnity.</li>
+<li>First Vijayanagara ruler to recruit <strong>Muslim soldiers and archers</strong> into his army; began importing <strong>Arab horses</strong>.</li>
+<li>Built the dam across the Tungabhadra — earliest recorded irrigation project in Vijayanagara.</li>
+</ul>
+
+<h3>Deva Raya II / Gajabetekara (1424–1446)</h3>
+<ul>
+<li>The greatest ruler of the Sangama dynasty — titled <strong>"Gajabetekara"</strong> (elephant hunter) and <em>Immadi Deva Raya</em>.</li>
+<li>Heavily recruited <strong>Muslim cavalry and archers</strong>; built mosques inside the city for them; gave Muslim soldiers equal status — pragmatic secularism.</li>
+<li>Defeated the Bahmani Sultan Ahmad Shah I; controlled Lanka, Orissa, Kerala.</li>
+<li><strong>Abdur Razzaq</strong> (Persian ambassador from Timur's court, 1443) visited — left the most famous foreign description of Vijayanagara: "<em>The city of Vijayanagara is such that the pupil of the eye has never seen a place like it, and the ear of intelligence has never been informed that there existed anything to equal it in the world.</em>"</li>
+<li>Patronised Kannada poet <strong>Chamarasa</strong> (<em>Prabhulinga Lile</em>) and Telugu scholar <strong>Srinatha</strong>.</li>
+</ul>
+
+<h3>Decline of the Sangama Dynasty</h3>
+<ul>
+<li>Deva Raya II's successors — Mallikarjuna (1446–65) and Virupaksha II (1465–85) — were weak; Bahmani raids intensified.</li>
+<li>General <strong>Saluva Narasimha</strong> effectively replaced the Sangamas — the dynasty ended 1485 in a palace coup.</li>
+</ul>
+</section>
+
+<section class="notes" id="saluva">
+<h2>3. Saluva Dynasty (1485–1505 AD)</h2>
+<ul>
+<li><strong>Saluva Narasimha (1485–91)</strong> — usurped power from Sangamas; a military general who stabilised the state against growing Bahmani and Orissa pressure; died after 6 years.</li>
+<li>His general <strong>Narasa Nayaka</strong> (of the Tuluva clan) dominated the regency, sidelining Saluva's sons.</li>
+<li><strong>Immadi Narasimha (1491–1505)</strong> — last Saluva ruler; nominal; Narasa Nayaka and then his son <strong>Vira Narasimha</strong> held real power.</li>
+<li>Saluva Dynasty: a brief <em>interregnum</em> between Sangama glory and Tuluva peak. Important in the exam only as a transition.</li>
+</ul>
+</section>
+
+<section class="notes" id="tuluva">
+<h2>4. Tuluva Dynasty (1505–1570 AD)</h2>
+<p>The <strong>Tuluva dynasty</strong> produced the zenith of Vijayanagara — in territory, architecture, literature, and administration. Everything before it was prologue; everything after, epilogue.</p>
+
+<h3>Vira Narasimha (1505–1509)</h3>
+<ul>
+<li>Technically the founder — killed the last Saluva king and seized the throne.</li>
+<li>Repelled Bijapur's encroachments; stabilised the kingdom for his brother.</li>
+</ul>
+
+<h3>Krishna Deva Raya (1509–1529) — The Greatest</h3>
+<p>"<em>The most powerful king of India</em>" — Domingo Paes, Portuguese visitor, 1520.</p>
+<h4>Military Campaigns</h4>
+<table class="tbl">
+<tr><th>Year</th><th>Campaign</th><th>Outcome</th></tr>
+<tr><td>1509–12</td><td>Bijapur (Adil Shahi)</td><td>Recaptured Raichur Doab; decisive victory at Battle of Diwani 1512.</td></tr>
+<tr><td>1513–18</td><td>Orissa Gajapati (Prataparudra)</td><td>Invaded Kalinga; captured Udayagiri, Kondavidu; <strong>Treaty of Udayagiri 1516</strong> — Gajapati gave daughter <em>Tukka Devi</em> in marriage; frontier fixed at Krishna river.</td></tr>
+<tr><td>1520</td><td>Battle of Raichur</td><td>Defeated Bijapur sultan Ismail Adil Shah; recaptured Raichur and Mudgal — peak territorial control.</td></tr>
+<tr><td>Various</td><td>Bidar, Gulbarga, Bijapur</td><td>Raided and extracted tribute from all Deccan sultans; humiliated Bijapur by watering his horse in the Sultan's palace (symbolic).</td></tr>
+</table>
+
+<h4>Cultural Patronage — the Ashtadiggajas</h4>
+<p>Krishna Deva Raya maintained a court of <strong>eight Telugu poets</strong> called the <em>Ashtadiggajas</em> (Eight Elephants of the Directions):</p>
+<table class="tbl">
+<tr><th>Poet</th><th>Major Work</th></tr>
+<tr><td><strong>Allasani Peddana</strong> (the <em>Andhra Kavita Pitamaha</em>)</td><td><em>Manucharitra</em> / <em>Svaroochi Sambhava</em> — greatest of the eight</td></tr>
+<tr><td>Nandi Timmana</td><td><em>Parijataapaharanamu</em></td></tr>
+<tr><td>Madayagari Mallana</td><td><em>Rajashekhara Charitra</em></td></tr>
+<tr><td>Dhurjati</td><td><em>Kaladnatha</em>, <em>Srikalahastimahatmya</em></td></tr>
+<tr><td>Ayyalaraju Ramabhadra</td><td><em>Ramaabhyudayamu</em></td></tr>
+<tr><td>Pingali Surana</td><td><em>Kalapurnodayam</em>, <em>Raghavapandaviyam</em></td></tr>
+<tr><td>Ramarajabhushana (Bhattu Murthi)</td><td><em>Vasucharitra</em></td></tr>
+<tr><td>Tenali Rama(krishna)</td><td><em>Panduranga Mahatmyam</em> — also the legendary court jester</td></tr>
+</table>
+<p>Krishna Deva Raya himself wrote the Telugu classic <em><strong>Amuktamalyada</strong></em> (also called <em>Vishnuchittiyam</em>) — a devotional poem on Andal; and the Sanskrit works <em>Jambavati Kalyanam</em> (play) and <em>Madalasa Charita</em>.</p>
+
+<h4>Buildings</h4>
+<ul>
+<li><strong>Vittala Temple complex</strong> at Hampi — the stone chariot, musical pillars, and the Vittala shrine; never consecrated in his lifetime.</li>
+<li><strong>Krishna Swami Temple</strong> at Hampi — built to commemorate Udayagiri victory (1516); installed image of Balakrishna brought from Udayagiri.</li>
+<li>Built a new royal enclosure — <strong>Hazara Rama Temple</strong> (with bas-relief Ramayana panels).</li>
+<li>Expanded <strong>Tirumala-Tirupati</strong> temples; gold-plating of the <em>vimana</em> attributed to him.</li>
+</ul>
+<div class="callout gold"><strong>Foreign accounts:</strong> <strong>Domingo Paes</strong> (Portuguese, 1520) describes the city as larger than Rome; <strong>Barbosa</strong> (1516) writes on trade, society, and the position of women; <strong>Nuniz</strong> (1535–37) — writing after KDR's death — covers the administration. All three are primary UPSC sources.</div>
+
+<h3>Achyuta Raya (1529–1542)</h3>
+<ul>
+<li>Krishna Deva Raya's brother; maintained peace with the Deccan sultanates.</li>
+<li>Built <strong>Achyutaraya Temple</strong> at Hampi; patronised Kannada scholars.</li>
+<li>Orissa and Bijapur made small encroachments; empire still stable at this point.</li>
+</ul>
+
+<h3>Sadashiva Raya (1542–1570) &amp; Aliya Rama Raya</h3>
+<ul>
+<li><strong>Sadashiva Raya</strong> was the nominal king; real power held by the regent <strong>Aliya Rama Raya</strong> (son-in-law of Krishna Deva Raya).</li>
+<li>Rama Raya was a consummate power-player — he intervened in wars between the Deccan sultans, extracting territory from each.</li>
+<li>He played Bijapur against Ahmadnagar and Golconda against Bijapur — temporarily effective, but bred fatal resentment.</li>
+<li>The four Deccan Sultanates (Bijapur, Ahmadnagar, Golconda, Bidar) united against him — "<em>Vijayanagara must be destroyed</em>".</li>
+</ul>
+
+<h3>Battle of Talikota / Rakshasa-Tangadi (23 January 1565)</h3>
+<ul>
+<li>Location: <strong>Rakshasa-Tangadi</strong> near Talikota (in modern Karnataka) — armies met on the banks of the Krishna.</li>
+<li>Vijayanagara had an estimated 900,000-strong army; the confederacy was smaller but better equipped with artillery and cavalry.</li>
+<li><strong>Decisive moment:</strong> Two Muslim commanders in Rama Raya's own army — <strong>Gilani brothers</strong> (from Bijapur) — defected mid-battle and turned artillery on Vijayanagara's flank.</li>
+<li>Rama Raya, aged ~90, was <strong>captured and beheaded</strong> by Hussain Nizam Shah I; his head paraded on a spear.</li>
+<li>The confederacy sacked Hampi continuously for <strong>~6 months</strong> — stone was overturned, temples smashed, the city abandoned. Nuniz had already left; later Portuguese accounts record the desolation.</li>
+<li><strong>Why did Vijayanagara lose?</strong>
+<ul>
+<li>Rama Raya's over-confident, divisive politics alienated all potential allies.</li>
+<li>Dependence on foreign Muslim commanders in key positions.</li>
+<li>Superior Deccan artillery — partly Portuguese-supplied.</li>
+<li>Defection of Gilani brothers was the immediate trigger.</li>
+</ul></li>
+</ul>
+</section>
+
+<section class="notes" id="aravidu">
+<h2>5. Aravidu Dynasty (1570–1650 AD)</h2>
+<ul>
+<li><strong>Tirumala</strong> (1565–72) — brother of Rama Raya; escaped Talikota with the royal treasury; established new capital at <strong>Penukonda</strong> (later <strong>Chandragiri</strong>).</li>
+<li><strong>Sriranga I</strong> (1572–85) — nominal control; Telugu chiefs (Nayakas of Thanjavur, Madurai, Ikkeri, Keladi) became increasingly independent.</li>
+<li><strong>Venkata II / Venkatapati Raya</strong> (1586–1614) — the <em>last effective ruler</em>; repelled Golconda and Bijapur invasions; patronised Telugu and Sanskrit literature; received the English East India Company's first embassy (1611) — gave permission to trade.</li>
+<li>After Venkata II: rapid succession, palace intrigues; the Nayaka chiefs of Thanjavur, Madurai, Gingee became fully independent.</li>
+<li><strong>Sriranga III</strong> (1642–46) — defeated by Bijapur; fled to Vellore; the empire formally ended <strong>c. 1646–50</strong>.</li>
+<li>The empire's cultural legacy survived through the Nayaka kingdoms — particularly <strong>Thanjavur Nayakas</strong> who became great temple-builders and literature patrons.</li>
+</ul>
+</section>
+
+<section class="notes" id="admin">
+<h2>6. Administration of the Vijayanagar Kingdom</h2>
+
+<h3>Central Government</h3>
+<ul>
+<li><strong>King</strong> was the supreme authority — combined military commander, chief judge, and religious patron; but not a theocrat — used pragmatic, syncretic approach.</li>
+<li><strong>Pradhani / Mahamantri</strong> (prime minister) headed the council of ministers.</li>
+<li><strong>Ashtapradhana</strong> — council of eight ministers (different from Maratha Ashtapradhana): included <em>mahamantri</em>, <em>sachiva</em> (secretary), <em>amatya</em> (revenue), <em>sumanta</em> (ceremonies), <em>senadhipati</em> (military), <em>dandanayaka</em> (justice) etc.</li>
+<li>Court language: <strong>Telugu and Sanskrit</strong> (for official inscriptions); Kannada widely used.</li>
+</ul>
+
+<h3>Provincial Administration — Nayankara System</h3>
+<ul>
+<li>Empire divided into <strong>Rajyas</strong> (provinces) → <strong>Venthes/Kotas</strong> (districts) → <strong>Sthala</strong> (sub-district) → <strong>Grama</strong> (village).</li>
+<li><strong>Nayankara system</strong> was the bedrock: the king granted military chiefs (<em>nayakas</em>) an <em>amaram</em> (revenue assignment, similar to iqta) to maintain troops — typically cavalry, infantry, and elephants.
+<ul>
+<li>Nayakas paid fixed revenue (annual tribute) to the centre and supplied soldiers in war.</li>
+<li>Not hereditary in theory — but became so in practice after Talikota.</li>
+<li>Key nayaka centres: Thanjavur, Madurai, Ikkeri/Keladi, Gingee, Senji — all became independent post-1565.</li>
+</ul></li>
+<li><strong>Ayagars</strong> — the village service community (12 hereditary village functionaries including accountant, watchman, carpenter, blacksmith, potter, astrologer) — a South Indian administrative institution that Vijayanagara formalised.</li>
+</ul>
+
+<h3>Military</h3>
+<ul>
+<li>Army organised into four divisions: <em>hastikula</em> (elephants), <em>ashvakula</em> (cavalry), <em>rathasena</em> (chariots), <em>padatikula</em> (infantry).</li>
+<li>Heavy reliance on <strong>imported horses</strong> — from Arabia, Persia, Central Asia — via Gujarat and Malabar ports. This dependence was a chronic strategic vulnerability.</li>
+<li><strong>Recruited Muslim soldiers</strong> from early Deva Raya I onwards — especially archers and cavalry; reached peak under Krishna Deva Raya.</li>
+</ul>
+</section>
+
+<section class="notes" id="economy">
+<h2>7. Economy of the Vijayanagar Empire</h2>
+
+<h3>Agriculture</h3>
+<ul>
+<li>Land revenue was the primary income — assessed on the basis of soil quality and crop type.</li>
+<li>Elaborate <strong>tank irrigation system</strong> — hundreds of <em>eries</em> (tanks) built and maintained; Deva Raya I's dam on the Tungabhadra is the earliest record.</li>
+<li>Main crops: rice, millets, cotton, sugar, betel, coconut; spices in the Malabar/coastal areas.</li>
+</ul>
+
+<h3>Trade and Commerce</h3>
+<ul>
+<li><strong>Vijayanagara was one of the great trading empires</strong> — Hampi was a commercial metropolis; Abdullah (Portuguese) and Paes describe streets of market stalls selling jewels, textiles, and horses.</li>
+<li><strong>Ports:</strong> Calicut (Kozhikode), Cannanore, Cochin on the Malabar Coast; Bhatkal and Honavar on the Karnataka coast — all under Vijayanagara influence.</li>
+<li><strong>Exports:</strong> cotton textiles, spices (pepper, cardamom, turmeric), iron and steel, rice, indigo.</li>
+<li><strong>Imports:</strong> horses (vital — from Arabia and Persia via Gujarat ports or Portuguese), copper, mercury, coral, elephants from Ceylon.</li>
+<li><strong>Currency:</strong> gold <em>hun</em> (pagoda / <em>varaha</em>); silver <em>tara</em>; copper <em>jital</em>. The gold pagoda was so reliable it continued to circulate after the empire's fall.</li>
+<li><strong>Guilds:</strong> merchant guilds like <em>Ayyavole-500</em> (Five Hundred of Ayyavole) continued from Chola period; <em>Manigramam</em> trade guild active.</li>
+</ul>
+
+<h3>Horse Trade — Strategic Significance</h3>
+<ul>
+<li>Vijayanagara consumed tens of thousands of horses annually — horses could not be bred effectively in South India's climate.</li>
+<li>Supply chain: Arabian/Persian horses → Gujarat/Malabar ports → sold to the highest bidder (Vijayanagara and Deccan Sultans competed).</li>
+<li>The Portuguese understood this lever immediately — <strong>Albuquerque's capture of Goa (1510)</strong> was partly about controlling this trade.</li>
+<li>Paes: the king (Krishna Deva Raya) spent more on horses than on anything else in the treasury.</li>
+</ul>
+</section>
+
+<section class="notes" id="culture">
+<h2>8. Art &amp; Culture of the Vijayanagar Empire</h2>
+
+<h3>Architecture</h3>
+<p>Vijayanagara architecture is a distinct style — a <strong>fusion of Chalukya, Hoysala, Pallava, and Chola traditions</strong>, identifiable by its massive <em>gopurams</em> (gateway towers), long pillared halls (<em>kalyana mandapas</em>), and intricate sculptural programmes.</p>
+<h4>Defining Features</h4>
+<ul>
+<li><strong>Gopuram (gateway towers)</strong> — tall, tapering, covered with stucco sculpture; grew taller in the Nayaka period.</li>
+<li><strong>Kalyana Mandapa / Mahamandapa</strong> — large pillared marriage halls attached to temples; pillars have rearing horses (<em>yali</em>) carvings — signature Vijayanagara motif.</li>
+<li><strong>Amman shrine</strong> — separate shrine for the goddess, distinct from the main deity.</li>
+<li><strong>Enclosure walls</strong> — vast fortified enclosures (<em>prakaras</em>) around temple complexes.</li>
+<li><strong>Material:</strong> granite, chloritic schite, and brick — hard stone of the Deccan gave Vijayanagara sculpture a bold, uncluttered quality.</li>
+</ul>
+<h4>Key Monuments at Hampi (UNESCO, 1986)</h4>
+<table class="tbl">
+<tr><th>Monument</th><th>Patron</th><th>Significance</th></tr>
+<tr><td><strong>Vittala Temple</strong></td><td>Deva Raya II / Krishna Deva Raya</td><td>Unfinished masterpiece; <strong>stone chariot</strong> (wheels once turned); <strong>musical pillars</strong> (emit sounds when struck); 56 columns in the <em>maha-mandapa</em>.</td></tr>
+<tr><td><strong>Hazara Rama Temple</strong></td><td>Krishna Deva Raya</td><td>Royal chapel with bas-relief panels of the entire Ramayana; thousand Ramas.</td></tr>
+<tr><td><strong>Krishna Swami Temple</strong></td><td>Krishna Deva Raya (1516)</td><td>Built after Udayagiri victory; enshrined Balakrishna image from Orissa.</td></tr>
+<tr><td><strong>Achyutaraya Temple</strong></td><td>Achyuta Raya</td><td>Long colonnaded street of shops (<em>chariot street</em>) leading to the temple.</td></tr>
+<tr><td><strong>Virupaksha Temple</strong></td><td>Pre-Vijayanagara; expanded by successive kings</td><td>Oldest functioning temple at Hampi; Pampa Devi and Virupaksha (Shiva); gopuram added by Krishnadevaraya.</td></tr>
+<tr><td><strong>Lotus Mahal / Kamal Mahal</strong></td><td>Zenana enclosure</td><td>Indo-Islamic fusion — cusped arches over a Hindu plan; ladies' pavilion.</td></tr>
+<tr><td><strong>Elephant Stables</strong></td><td>Vijayanagara court</td><td>Indo-Islamic style; 11 chambers for royal elephants.</td></tr>
+</table>
+<div class="callout"><strong>Beyond Hampi:</strong> <strong>Lepakshi Temple</strong> (Andhra Pradesh) — Veerabhadra shrine, hanging pillar, large Nandi, famous <em>Vijayanagara murals</em> in ceiling. <strong>Tadpatri</strong> (Andhra) — Ramachandra and Chintala Venkataramana temples, finest Vijayanagara stone-carving outside Hampi.</div>
+
+<h3>Literature</h3>
+<h4>Telugu Literature — Golden Age</h4>
+<ul>
+<li>The Vijayanagara period is the <strong>golden age of Telugu literature</strong> — the Ashtadiggajas under Krishna Deva Raya are the peak.</li>
+<li><strong>Prabandha style</strong> dominated: elaborate, ornate Sanskrit-influenced verse in Telugu — <em>Dvipada, Shatpada, Champu</em> metres.</li>
+<li><strong>Srinatha</strong> (pre-KDR) — prolific; <em>Marutratcharitra, Sringara Naishadha, Haravilasam</em>; famous for witty extemporaneous verse.</li>
+<li>KDR himself: <em>Amuktamalyada</em> (Telugu) and <em>Jambavati Kalyanam</em> (Sanskrit play).</li>
+</ul>
+<h4>Kannada Literature</h4>
+<ul>
+<li><strong>Kumara Vyasa</strong> (Gadugina Naranappa) — <em>Karnata Bharata Kathamanjari</em> (Kannada Mahabharata); dedicated to Virupaksha deity at Hampi.</li>
+<li><strong>Chamarasa</strong> — <em>Prabhulinga Lile</em> (Veerashaiva/Lingayat devotional); patronised by Deva Raya II.</li>
+</ul>
+<h4>Sanskrit and Tamil</h4>
+<ul>
+<li><strong>Vidyaranya</strong> — <em>Panchadashi, Sarvadarshana Sangraha</em> (compendium of all philosophical schools) — pre-empire foundation.</li>
+<li><strong>Sayana</strong> (Vidyaranya's brother) — compiled the <strong>definitive commentaries on the four Vedas</strong> (<em>Rig-Veda Bhashya</em> etc.) under Bukka I's patronage — monumental contribution to Sanskrit scholarship.</li>
+<li>Tamil: the Shaiva and Vaishnava traditions were patronised; <strong>Arunagirinathar</strong> (composer of <em>Tiruppugazh</em>) flourished in this period.</li>
+</ul>
+</section>
+
+<section class="notes" id="bahmani">
+<h2>9. Bahmani Sultanate — Political History (1347–1527 AD)</h2>
+<p>The Bahmani Sultanate was the first independent Deccan Muslim state — founded in <strong>1347</strong> when nobles of Muhammad bin Tughlaq's Deccan province revolted. Its capital was <strong>Gulbarga</strong> (1347–1425), then <strong>Bidar</strong> (1425 onwards). Chief source: <strong>Ferishta's <em>Tarikh-i-Ferishta</em></strong> (c. 1610) — most comprehensive account.</p>
+<p>A chronic tension ran through the Bahmani court: <strong>Dakhanis</strong> (locally-born Muslims of Indian origin) vs. <strong>Afaqis</strong> (foreign Muslims from Persia, Arabia, Khorasan). This ethnic rivalry ultimately broke the kingdom.</p>
+
+<h3>Alauddin Hasan Bahman Shah (1347–1358)</h3>
+<ul>
+<li>Founded the kingdom; real name <strong>Hasan Gangu</strong> — a Dakhani noble; assumed the name "Bahman" (claiming descent from the Persian hero Bahman, son of Isfandiyar) to legitimise himself.</li>
+<li>Capital: <strong>Gulbarga (Ahsanabad)</strong>; built the <strong>Gulbarga Fort</strong> and the distinctive <em>Jama Masjid of Gulbarga</em> (unique — a single enclosed space without an open courtyard, influenced by the mosque at Córdoba, Spain).</li>
+<li>Divided the kingdom into four provinces (<em>tarafs</em>): Gulbarga, Daulatabad, Berar, Bidar — each under a <em>tarafdar</em>.</li>
+<li>Title: <em>Sultan Alauddin Hasan Bahman Shah</em>.</li>
+</ul>
+
+<h3>Mohammad Shah I (1358–1377)</h3>
+<ul>
+<li>Conquered Golconda from the Musunuri Nayakas; fought Vijayanagara over the Raichur Doab — first of many such wars.</li>
+<li>Fought the <strong>Battle of Adoni (1365)</strong> — major Bahmani-Vijayanagara clash; recorded as extreme in its violence.</li>
+<li>Established the pattern of Deccan warfare: the Raichur Doab was the perennial flashpoint.</li>
+</ul>
+
+<h3>Taj-ud-din Firuz Shah (1397–1422)</h3>
+<ul>
+<li>The most cultured and learned Bahmani Sultan — multilingual (spoke 14 languages according to Ferishta); astronomer, poet, scholar.</li>
+<li>Moved the capital from Gulbarga to <strong>Bidar</strong> (1425 — formally under his son Ahmad Shah).</li>
+<li>Invited scholars, poets, Sufis from Persia, Iraq, Arabia — made the Bahmani court a centre of Islamic learning; introduced <strong>Persian administrative culture</strong> systematically.</li>
+<li>Defeated Deva Raya I of Vijayanagara; received his daughter in marriage + tribute.</li>
+<li>Built <strong>Firuzabad</strong> on the Krishna river.</li>
+</ul>
+
+<h3>Ahmad Shah Wali (1422–1435)</h3>
+<ul>
+<li>Known as "<strong>Wali</strong>" (saint) — devoted follower of Sufi saint <strong>Gesudaraz (Bandanawaz)</strong> of Gulbarga; Gesudaraz's dargah at Gulbarga is one of the most important Sufi shrines in the Deccan.</li>
+<li>Formally shifted capital to <strong>Bidar</strong> — built the magnificent <strong>Bidar Fort</strong> and the <em>Madrasa of Mahmud Gawan</em> (though he preceded Mahmud Gawan; Mahmud Gawan built the madrasa later under a different sultan).</li>
+<li>Cruel in warfare — massacred Brahmins and Hindus at Vijayanagara territory; Ferishta records extreme violence.</li>
+</ul>
+
+<h3>Humayun Shah "the Cruel" (1458–1461)</h3>
+<ul>
+<li>Earned the epithet for extraordinary cruelty — executed nobles on whims; his vizier attempted a palace coup backed by Vijayanagara.</li>
+<li>Short reign; killed in a conspiracy; succeeded by the child king Nizam Shah and then Mohammad Shah III — during whose reign Mahmud Gawan became dominant.</li>
+</ul>
+
+<h3>Mahmud Gawan — Wazir (1461–1482)</h3>
+<p>Mahmud Gawan was not a sultan but the <strong>greatest statesman</strong> the Bahmani Sultanate produced. Born in Gilan (Persia), a horse-merchant who entered the Bahmani court under Humayun Shah; rose to become wazir under three successive sultans.</p>
+<h4>Achievements</h4>
+<ul>
+<li><strong>Administrative reform:</strong> Divided the original four <em>tarafs</em> into <strong>eight smaller provinces</strong> — reducing each tarafdar's power and bringing more territory under direct crown control.</li>
+<li><strong>Revenue reform:</strong> Began direct revenue assessment on some crown lands; curbed the tarafdars' freedom to extract.</li>
+<li><strong>Afaqi promotion:</strong> Staffed key positions with Persian and foreign Muslims — which enraged the Dakhani faction.</li>
+<li><strong>Military campaigns:</strong> Led campaigns against Vijayanagara (captured Goa and Kanara 1471); against Orissa (1478); maintained Bahmani at peak power.</li>
+<li><strong>Madrasa-i-Mahmud Gawan (c. 1472)</strong> at Bidar — three-storeyed, with a library, mosque, and rooms for 3,000 students; tile-work mosaic of turquoise, white and black in Persian style; still partially standing.</li>
+</ul>
+<h4>Execution (1482) — The Fatal Blow</h4>
+<ul>
+<li>Dakhani nobles forged a letter in Mahmud Gawan's name — apparently offering to betray the Sultan to Vijayanagara.</li>
+<li>Sultan Mohammad Shah III — drunk and credulous — executed Mahmud Gawan without proper inquiry, <strong>9 April 1482</strong>.</li>
+<li>Mahmud Gawan reportedly said at his execution: "<em>The pen that wrote this letter is not mine, but the blood that flows is mine.</em>"</li>
+<li><strong>Consequence:</strong> The last check on Dakhani-Afaqi centrifugal forces was removed; within a decade tarafdars began declaring independence.</li>
+</ul>
+</section>
+
+<section class="notes" id="decline">
+<h2>10. Decline of the Bahmani Kingdom</h2>
+<ul>
+<li><strong>Structural cause:</strong> The chronic Dakhani–Afaqi rivalry — never resolved; the state could not build a unified bureaucracy or army.</li>
+<li><strong>Size:</strong> The kingdom was too large for its administrative apparatus — four (later eight) tarafdars were effectively warlords, not governors.</li>
+<li><strong>Removal of Mahmud Gawan (1482):</strong> The one man holding the centre together was gone; tarafdars moved quickly.</li>
+<li><strong>Weak successors:</strong> Mohammad Shah III (1463–82), Mahmud Shah (1482–1518) — nominal rule; no central authority to coerce tarafdars.</li>
+<li><strong>Succession of independence declarations (1490–1527):</strong>
+<ul>
+<li>1490: Malik Ahmad → <strong>Ahmadnagar</strong> (Nizam Shahi)</li>
+<li>1490: Yusuf Adil Shah → <strong>Bijapur</strong> (Adil Shahi)</li>
+<li>1490: Fathullah Imad-ul-Mulk → <strong>Berar</strong> (Imad Shahi)</li>
+<li>1512: Sultan Quli Qutb Shah → <strong>Golconda</strong> (Qutb Shahi)</li>
+<li>1527: Amir Barid Shah → <strong>Bidar</strong> (Barid Shahi)</li>
+</ul></li>
+<li>The last nominal Bahmani Sultan Kalimullah (1526–27) fled to Bijapur; the dynasty ended 1527.</li>
+</ul>
+</section>
+
+<section class="notes" id="deccan5">
+<h2>11. The Five Deccan Sultanates</h2>
+<p>Also called the "<strong>Deccan Sultanates</strong>" or "<em>Panj Hazari</em>" — five states carved from the Bahmani's corpse. Their history culminates in the <strong>Battle of Talikota (1565)</strong> against Vijayanagara and later in the Mughal annexation (Ahmadnagar 1636, Bijapur 1686, Golconda 1687).</p>
+
+<table class="tbl">
+<tr><th>Kingdom</th><th>Capital</th><th>Founder (Year)</th><th>Key Rulers / Monuments</th></tr>
+<tr><td><strong>Nizam Shahis of Ahmadnagar</strong></td><td>Ahmadnagar</td><td>Malik Ahmad / Ahmad Nizam Shah (1490)</td><td>Hussain Nizam Shah I — beheaded Rama Raya at Talikota 1565; <strong>Chand Bibi</strong> defended Ahmadnagar against Mughals 1595; absorbed by Mughals 1636 under Shah Jahan.</td></tr>
+<tr><td><strong>Adil Shahis of Bijapur</strong></td><td>Bijapur</td><td>Yusuf Adil Shah (1490)</td><td>Ibrahim Adil Shah II — "<em>Jagadguru</em>", patron of arts, author of <em>Kitab-i-Nauras</em>; built <strong>Gol Gumbaz</strong> (Muhammad Adil Shah, 1656) — second-largest dome in the world, whispering gallery; fell to Aurangzeb 1686.</td></tr>
+<tr><td><strong>Imad Shahis of Berar</strong></td><td>Ellichpur (Achalpur)</td><td>Fathullah Imad-ul-Mulk (1490)</td><td>Smallest and weakest; absorbed by <strong>Ahmadnagar 1574</strong> — first to be extinguished.</td></tr>
+<tr><td><strong>Qutb Shahis of Golconda</strong></td><td>Golconda → Hyderabad</td><td>Sultan Quli Qutb Shah (1512)</td><td>Built <strong>Golconda Fort</strong>; Muhammad Quli Qutb Shah founded <strong>Hyderabad (1591)</strong> and built <strong>Charminar</strong>; diamond trade (Golconda diamonds — Koh-i-Noor, Hope Diamond from Kollur mines); fell to Aurangzeb 1687.</td></tr>
+<tr><td><strong>Barid Shahis of Bidar</strong></td><td>Bidar</td><td>Amir Barid Shah (1527)</td><td>Weakest; maintained <strong>Bidar's Bidriware</strong> tradition (zinc-alloy metalwork inlaid with silver — unique Deccan craft); absorbed by Bijapur 1619.</td></tr>
+</table>
+<div class="callout gold"><strong>Cultural legacy:</strong> The Deccan Sultanates produced a distinct <strong>Deccani painting school</strong> (c. 1565–1700) — a synthesis of Persian, Hindu, and local styles; manuscripts like <em>Tarif-i-Hussain Shahi</em> (Ahmadnagar), <em>Nujum-ul-Ulum</em> (Bijapur), and portraits from Golconda are among India's finest miniature paintings. The <strong>Deccani Urdu / Dakhni language</strong> also developed here — predating Mughal Urdu.</div>
+</section>
+
+<section class="notes" id="portuguese">
+<h2>12. Advent of the Portuguese &amp; their Impact</h2>
+
+<h3>Background</h3>
+<ul>
+<li><strong>Vasco da Gama</strong> reached Calicut (Kozhikode) <strong>May 1498</strong> — opened the direct sea route from Europe to India; disrupted the Arab-Venetian monopoly on spice trade.</li>
+<li><strong>Pedro Álvares Cabral</strong> (1500) — second voyage; conflict with Calicut's Zamorin; established first Portuguese factory at Cochin.</li>
+<li><strong>Francisco de Almeida</strong> (1505–09) — first Viceroy; "<em>Blue Water Policy</em>" (<em>Cartaz system</em>): all ships in the Indian Ocean must carry a Portuguese pass or be sunk; defeated the combined Mamluk-Calicut fleet at <strong>Battle of Diu 1509</strong> — established Portuguese naval supremacy.</li>
+<li><strong>Afonso de Albuquerque</strong> (1509–15) — the architect of the Portuguese empire in Asia; captured <strong>Goa from Bijapur's Yusuf Adil Shah</strong> (25 November 1510); made Goa the capital of <em>Estado da India</em> (Portuguese State of India).</li>
+</ul>
+
+<h3>Impact on Trade</h3>
+<ul>
+<li><strong>Horse trade disrupted and controlled:</strong> Portuguese monopolised the Persian Gulf and Red Sea trade routes — all horse imports to the Deccan now required Portuguese mediation or passed through Goa. They sold to Vijayanagara and Bijapur at their own price; playing both sides.</li>
+<li><strong>Spice trade redirected:</strong> Portuguese carried pepper and spices directly to Lisbon; Arab-Egyptian-Venetian middlemen bypassed; prices in Europe dropped; Indian spice merchant networks disrupted.</li>
+<li><strong>Cartaz system (sea-pass):</strong> All vessels had to purchase a <em>cartaz</em> (licence) from the Portuguese or be seized. This was the first systematic maritime toll-gate in the Indian Ocean — prototype of later European colonial trade control.</li>
+<li><strong>New commodities:</strong> Portuguese introduced <strong>chillies, tobacco, maize, potatoes, tomatoes, cashew, pineapple, papaya</strong> (Columbian Exchange) to India — transforming Indian cuisine and agriculture permanently.</li>
+<li><strong>Cotton textiles trade:</strong> Gujarat cotton goods — particularly indigo-dyed calico — became the Portuguese's most lucrative Indian export to Africa and Brazil.</li>
+</ul>
+
+<h3>Impact on Politics</h3>
+<ul>
+<li><strong>Goa (1510):</strong> Albuquerque captured Goa from the Adil Shahi — Bijapur never forgave this; it coloured Bijapur-Portuguese relations for a century.</li>
+<li><strong>Alliance with Vijayanagara:</strong> Portuguese supplied horses to Vijayanagara; Krishna Deva Raya used them to defeat Bijapur at Raichur (1520). In return, KDR gave the Portuguese land for a fort at Bhatkal.</li>
+<li><strong>Firearms technology:</strong> Portuguese supplied and sometimes operated artillery and matchlocks for Vijayanagara — the first large-scale introduction of gunpowder weaponry to South India. The Deccan Sultans also acquired this technology — contributing to Talikota's firepower balance.</li>
+<li><strong>Hormuz (1515) and Malacca (1511):</strong> Albuquerque's capture of these strategic ports sealed Portuguese control of all Western trade routes — both the spice and horse trades were now mediated by Lisbon.</li>
+</ul>
+
+<h3>Impact on Society</h3>
+<ul>
+<li><strong>Christian missions:</strong> Franciscan, Dominican, and later Jesuit missions (St. Francis Xavier reached Goa 1542); mass conversions in Goa under Inquisition pressure (Goa Inquisition — 1560–1812); destruction of temples in Portuguese-controlled territories.</li>
+<li><strong>Goa Inquisition (1560):</strong> Targeted both Hindu converts suspected of relapse and Jews; one of the harshest Inquisition regimes; formally suppressed only in 1812.</li>
+<li><strong>Intermarriage policy:</strong> Albuquerque actively encouraged Portuguese soldiers to marry local women — created the <em>Luso-Indian (Mestiços)</em> community; unique social hybrid that shaped Goan society.</li>
+<li><strong>Printing press:</strong> First printing press in India set up at Goa 1556 — <em>Doctrina Christam</em> was the first printed book in India; Portuguese brought European typography and book culture.</li>
+<li><strong>Medicine and science:</strong> Garcia de Orta's <em>Colóquios dos Simples</em> (1563) — first scientific study of Indian plants and medicines, published in Goa; foundation of tropical botany.</li>
+</ul>
+</section>
+
+<section class="notes" id="ca">
+<h2>13. Current Affairs Link</h2>
+<ul>
+<li><strong>Hampi (UNESCO, 1986)</strong> — perennially in news for illegal construction, tourism pressure, and the ongoing effort to protect the 4,187-hectare site; ASI and Karnataka government disputes over buffer zone development.</li>
+<li><strong>Gol Gumbaz and Bidar Fort</strong> — ASI conservation and Bidar's push for UNESCO listing; Bidriware craft is on the GI (Geographical Indication) registry.</li>
+<li><strong>Hyderabad's Charminar and Golconda Fort</strong> — urban heritage management; Telangana government's Qutb Shahi tombs UNESCO inscription efforts (Qutb Shahi Heritage Park).</li>
+<li><strong>Goa Inquisition memorialisation</strong> — periodic political debate around acknowledging the Goa Inquisition in school curricula; relevant to freedom of religion discussions.</li>
+<li><strong>Columbian Exchange's legacy</strong> — climate-change discussions about food security often trace India's dependence on chilli, potato, and maize to Portuguese introduction — a Mains link to GS-III agriculture topics.</li>
+</ul>
+</section>
+
+<section class="notes" id="pyq">
+<h2>14. Previous Year Questions (UPSC)</h2>
+
+<div class="pyq"><span class="year">UPSC Prelims 2010</span><br><strong>Q.</strong> The Vijayanagara ruler Krishnadev Raya maintained friendly relations with the: (a) French (b) Portuguese (c) Dutch (d) English<br><em>Hint: Portuguese — supplied horses; KDR allied with them against Bijapur; Domingo Paes was Portuguese visitor.</em></div>
+
+<div class="pyq"><span class="year">UPSC Prelims 2014</span><br><strong>Q.</strong> The well-known painting "Bani Thani" belongs to which school of miniature painting? — (separate question; not Vijayanagara). In the same year: With reference to the Vijayanagara Kingdom, which of the following statements is/are correct? 1. It was founded by Harihara and Bukka. 2. The Battle of Talikota was fought in 1565. Select the correct answer.<br><em>Hint: Both correct.</em></div>
+
+<div class="pyq"><span class="year">UPSC Prelims 2017</span><br><strong>Q.</strong> With reference to the history of India, which of the following pairs are correctly matched? — Mahmud Gawan : Bidar; Gol Gumbaz : Bijapur; Charminar : Golconda. Select: only 1 and 2 correct.<br><em>Hint: Charminar is in Hyderabad (Golconda Qutb Shahi built Hyderabad, not the Golconda fort city). The pairing requires precision.</em></div>
+
+<div class="pyq"><span class="year">UPSC Prelims 2020</span><br><strong>Q.</strong> With reference to Sufism in medieval India, consider the following statements: ...(separate). Also 2020: Ashtadiggajas were: poets in the court of Krishna Deva Raya of Vijayanagara.<br><em>Hint: Ashtadiggajas — eight Telugu poets; Allasani Peddana was the greatest (Andhra Kavita Pitamaha).</em></div>
+
+<div class="pyq"><span class="year">UPSC Mains 2013</span><br><strong>Q.</strong> The Vijayanagar Empire was not merely a state but a civilisation. Discuss with reference to its art, architecture, trade and administration.<br><em>Hint: Nayankara system, horse trade dependence, Hampi monuments, Ashtadiggajas, Abdur Razzaq-Paes-Nuniz accounts — use all four domains.</em></div>
+
+<div class="pyq"><span class="year">UPSC Mains 2016</span><br><strong>Q.</strong> Assess the importance of the Bahmani Sultanate in the history of the Deccan. Discuss the causes of its fall.<br><em>Hint: First independent Deccan Muslim state; Dakhani-Afaqi rivalry; Mahmud Gawan's reforms and execution; structural over-extension; five successor states as legacy.</em></div>
+
+<div class="pyq"><span class="year">UPSC Mains 2018</span><br><strong>Q.</strong> Examine the impact of the Portuguese arrival on the political and economic structure of the Deccan.<br><em>Hint: Horse trade, Goa 1510, Vijayanagara alliance, cartaz system, firearms technology, trade routes redirected from Arab to Atlantic.</em></div>
+
+<div class="pyq"><span class="year">UPSC Prelims 2023</span><br><strong>Q.</strong> With reference to the Vijayanagara Empire, consider the following: (1) The Nayankara system was similar to the feudal system in Europe. (2) The Ayagars were village functionaries. (3) Horse trade was controlled by Arab and Portuguese merchants. How many are correct?<br><em>Hint: All three correct. Nayankara = military chiefs granted amaram (land) for service — comparable to European feudal fiefs; Ayagars = hereditary village servants (12 functionaries: accountant/blacksmith/potter etc.); horse trade — Arabs initially, then Portuguese after 1498 dominated, giving Vijayanagara critical military leverage.</em></div>
+
+<div class="pyq"><span class="year">UPSC Prelims 2024</span><br><strong>Q.</strong> With reference to Krishna Deva Raya's literary contributions, which of the following is/are correct? (1) He authored 'Amuktamalyada' in Telugu. (2) He was a poet in both Telugu and Sanskrit. (3) He is called 'Andhra Bhoja'. Select the correct answer.<br><em>Hint: All three correct. KDR's Amuktamalyada (Telugu) and Jambavati Kalyanam (Sanskrit play) confirm bilingual literary output; 'Andhra Bhoja' = his honorific (comparing him to Raja Bhoja of Paramara dynasty as the ideal scholar-king). Also 'Abhinava Bhoja' used in some sources.</em></div>
+
+<div class="pyq"><span class="year">UPSC Mains GS-I 2023</span><br><strong>Q.</strong> The Battle of Talikota (1565) is often described as the end of an era. Critically examine whether the fall of Vijayanagara was inevitable given the internal weaknesses of the empire.<br><em>Hint: Internal weaknesses — Nayankara system created centrifugal forces; over-dependence on horse trade (Portuguese leverage); Aravidu dynasty's legitimacy crisis; Rama Raya's aggressive interventionist policy in Deccan Sultanate politics alienated all five simultaneously. However: not inevitable — Battle itself was due to Telegu Nayaka defection mid-battle; different diplomatic strategy might have split the coalition. Internal + external causation, not pure inevitability.</em></div>
+
+<div class="pyq"><span class="year">UPSC Mains GS-I 2025</span><br><strong>Q.</strong> Examine the role of the Portuguese in reshaping the political economy of the Deccan in the 16th century, with reference to Vijayanagara and the Deccan Sultanates.<br><em>Hint: Portuguese controlled Goa (1510) and Indian Ocean trade routes; horse supply monopoly — sold to Vijayanagara AND Deccan Sultanates (whoever paid more), creating strategic dependency; introduced firearms (matchlock muskets) — changed Deccan warfare; cartaz system taxed Arab trade; Columbian Exchange — chilli/tobacco/potato introduced; Goa became cosmopolitan entrepôt; ultimately Portuguese weakened Arab commercial dominance and restructured Deccan power balance.</em></div>
+</section>
+
+<div class="revision" id="revision">
+<h3>15-Minute Revision Box — Vijayanagar &amp; Bahmani Snapshot</h3>
+<ol>
+<li><strong>Foundation (1336):</strong> Harihara I and Bukka I, sons of Sangama; capital Vijayanagara on the Tungabhadra; inspired by Vidyaranya; city later called Hampi (UNESCO 1986).</li>
+<li><strong>Sangama dynasty (1336–1485):</strong> Harihara I → Bukka I (Kumara Kampana destroys Madurai Sultanate; Gangadevi's <em>Madhuravijayam</em>) → Harihara II → Deva Raya I (Arab horses + Muslim recruits; Tungabhadra dam) → Deva Raya II / Gajabetekara (Abdur Razzaq 1443; peak Sangama power).</li>
+<li><strong>Saluva dynasty (1485–1505):</strong> Brief transition; Saluva Narasimha → Narasa Nayaka (Tuluva) takes real power.</li>
+<li><strong>Tuluva dynasty (1505–1570):</strong> Vira Narasimha → Krishna Deva Raya → Achyuta Raya → Sadashiva Raya (regent: Aliya Rama Raya).</li>
+<li><strong>Krishna Deva Raya (1509–29):</strong> Defeated Bijapur, Orissa (Treaty of Udayagiri 1516), Raichur 1520; Ashtadiggajas (Peddana is the greatest); wrote <em>Amuktamalyada</em>; built Vittala Temple, Krishna Swami Temple, Hazara Rama; Domingo Paes visited.</li>
+<li><strong>Battle of Talikota (23 Jan 1565):</strong> Four Deccan Sultanates (Bijapur + Ahmadnagar + Golconda + Bidar) vs Aliya Rama Raya; Gilani brothers defected; Rama Raya beheaded; Hampi sacked 6 months.</li>
+<li><strong>Aravidu dynasty (1570–1650):</strong> Capital moved to Penukonda → Chandragiri; Venkata II last effective ruler; Nayaka kingdoms fully independent after Talikota.</li>
+<li><strong>Nayankara system:</strong> Nayakas received amaram (revenue assignment) and supplied troops; became independent post-1565 (Thanjavur, Madurai, Ikkeri, Gingee).</li>
+<li><strong>Economy:</strong> Horse imports critical; gold pagoda/varaha currency; Hampi markets described by Paes; Ayyavole-500 guild active; ports: Calicut, Bhatkal, Honavar.</li>
+<li><strong>Architecture:</strong> Gopuram, yali pillars, kalyana mandapa; Vittala (stone chariot, musical pillars), Hazara Rama, Virupaksha, Lotus Mahal, Lepakshi murals.</li>
+<li><strong>Bahmani (1347–1527):</strong> Founded by Hasan Gangu (Alauddin Hasan Bahman Shah); capital Gulbarga then Bidar; Dakhani vs Afaqi rivalry throughout.</li>
+<li><strong>Key Bahmani rulers:</strong> Hasan Bahman Shah (Gulbarga Fort, Jama Masjid Gulbarga) → Mohammad Shah I (Raichur Doab wars) → Firuz Shah (multilingual scholar, moved to Bidar) → Ahmad Shah Wali (Gesudaraz's follower) → Humayun "the Cruel".</li>
+<li><strong>Mahmud Gawan (wazir, 1461–82):</strong> 4 provinces → 8; Afaqi promotion; military campaigns; Madrasa-i-Mahmud Gawan at Bidar; executed 1482 on forged letter — Bahmani fatally weakened.</li>
+<li><strong>Five Deccan Sultanates (1490–1527):</strong> Nizam Shahi Ahmadnagar (Chand Bibi) · Adil Shahi Bijapur (Gol Gumbaz) · Imad Shahi Berar (absorbed 1574) · Qutb Shahi Golconda (Hyderabad 1591, Charminar) · Barid Shahi Bidar (Bidriware).</li>
+<li><strong>Portuguese:</strong> Vasco da Gama 1498; Almeida 1505 (cartaz system, Battle of Diu 1509); Albuquerque captures Goa 25 Nov 1510; horse trade controlled; firearms supplied; Columbian Exchange (chilli, potato, tobacco, maize); printing press Goa 1556; Goa Inquisition 1560.</li>
+</ol>
+</div>
+
+</main>
+
+<aside>
+<div class="widget">
+<h4>Quick Reference — Major Rulers</h4>
+<ul class="miniref">
+<li><strong>Harihara I</strong> 1336–56 · Vijayanagara founder</li>
+<li><strong>Bukka I</strong> 1356–77 · Madurai Sultanate destroyed</li>
+<li><strong>Deva Raya II</strong> 1424–46 · Gajabetekara · Abdur Razzaq</li>
+<li><strong>Saluva Narasimha</strong> 1485–91 · dynasty transition</li>
+<li><strong>Krishna Deva Raya</strong> 1509–29 · peak · Ashtadiggajas</li>
+<li><strong>Aliya Rama Raya</strong> regent 1542–65 · Talikota</li>
+<li><strong>Venkata II</strong> 1586–1614 · last effective ruler</li>
+<li><strong>Hasan Bahman Shah</strong> 1347–58 · Bahmani founder</li>
+<li><strong>Firuz Shah Bahmani</strong> 1397–1422 · scholar-sultan</li>
+<li><strong>Ahmad Shah Wali</strong> 1422–35 · Bidar capital</li>
+<li><strong>Mahmud Gawan</strong> wazir 1461–82 · executed</li>
+<li><strong>Yusuf Adil Shah</strong> 1490 · Bijapur founder</li>
+<li><strong>Sultan Quli Qutb Shah</strong> 1512 · Golconda founder</li>
+<li><strong>Albuquerque</strong> 1510 · Goa captured</li>
+</ul>
+</div>
+
+<div class="widget">
+<h4>Talikota (1565) — Snapshot</h4>
+<ul class="miniref">
+<li><strong>Date:</strong> 23 January 1565</li>
+<li><strong>Also called:</strong> Battle of Rakshasa-Tangadi</li>
+<li><strong>Vijayanagara side:</strong> Aliya Rama Raya</li>
+<li><strong>Confederacy:</strong> Bijapur + Ahmadnagar + Golconda + Bidar</li>
+<li><strong>Turning point:</strong> Gilani brothers defected mid-battle</li>
+<li><strong>Outcome:</strong> Rama Raya captured + beheaded; Hampi sacked 6 months</li>
+<li><strong>Long-term:</strong> Aravidu dynasty survives at Penukonda till 1650</li>
+</ul>
+</div>
+
+<div class="widget">
+<h4>Difficulty &amp; Importance</h4>
+<div class="bar"><span class="lbl">Prelims</span><div class="track"><div class="fill" style="width:88%"></div></div></div>
+<div class="bar"><span class="lbl">Mains GS-I</span><div class="track"><div class="fill" style="width:90%"></div></div></div>
+<div class="bar"><span class="lbl">Art &amp; Culture</span><div class="track"><div class="fill" style="width:85%"></div></div></div>
+<div class="bar"><span class="lbl">Current Affairs</span><div class="track"><div class="fill" style="width:50%"></div></div></div>
+</div>
+
+<div class="widget">
+<h4>Must-Know Tags</h4>
+<div class="tags">
+<span>Vijayanagara</span><span>Hampi UNESCO 1986</span><span>Harihara Bukka</span><span>Sangama</span><span>Vidyaranya</span><span>Sayana Vedic Commentaries</span><span>Deva Raya II</span><span>Gajabetekara</span><span>Abdur Razzaq 1443</span><span>Bisnagar</span><span>Saluva</span><span>Tuluva</span><span>Krishna Deva Raya</span><span>Amuktamalyada</span><span>Ashtadiggajas</span><span>Allasani Peddana</span><span>Andhra Kavita Pitamaha</span><span>Tenali Rama</span><span>Vittala Temple</span><span>Stone Chariot</span><span>Musical Pillars</span><span>Hazara Rama</span><span>Krishna Swami Temple</span><span>Udayagiri 1516</span><span>Raichur 1520</span><span>Domingo Paes</span><span>Nuniz</span><span>Barbosa</span><span>Achyuta Raya</span><span>Aliya Rama Raya</span><span>Talikota 1565</span><span>Rakshasa-Tangadi</span><span>Gilani Brothers</span><span>Aravidu</span><span>Penukonda</span><span>Venkata II</span><span>Nayankara System</span><span>Amaram</span><span>Thanjavur Nayaka</span><span>Madurai Nayaka</span><span>Horse Trade</span><span>Gold Pagoda Varaha</span><span>Ayagars</span><span>Ayyavole 500</span><span>Gopuram</span><span>Yali Pillar</span><span>Kalyana Mandapa</span><span>Lepakshi</span><span>Hasan Bahman Shah</span><span>Hasan Gangu</span><span>Gulbarga</span><span>Bidar</span><span>Dakhani Afaqi</span><span>Tarafdar</span><span>Mohammad Shah I</span><span>Firuz Shah Bahmani</span><span>Ahmad Shah Wali</span><span>Gesudaraz Bandanawaz</span><span>Humayun the Cruel</span><span>Mahmud Gawan</span><span>Madrasa-i-Mahmud Gawan</span><span>Eight Provinces</span><span>Forged Letter 1482</span><span>Nizam Shahi Ahmadnagar</span><span>Chand Bibi</span><span>Adil Shahi Bijapur</span><span>Gol Gumbaz</span><span>Ibrahim Adil Shah II</span><span>Kitab-i-Nauras</span><span>Imad Shahi Berar</span><span>Qutb Shahi Golconda</span><span>Hyderabad 1591</span><span>Charminar</span><span>Golconda Diamond</span><span>Koh-i-Noor</span><span>Barid Shahi Bidar</span><span>Bidriware</span><span>Deccani Painting</span><span>Dakhni Urdu</span><span>Vasco da Gama 1498</span><span>Almeida</span><span>Cartaz System</span><span>Battle of Diu 1509</span><span>Albuquerque</span><span>Goa 1510</span><span>Estado da India</span><span>Columbian Exchange</span><span>Chilli Potato Tobacco Maize</span><span>Printing Press Goa 1556</span><span>Goa Inquisition 1560</span><span>St Francis Xavier</span><span>Garcia de Orta</span>
+</div>
+</div>
+
+<div class="widget">
+<h4>5-Question Self-Test</h4>
+<div class="quiz">
+<details><summary>1. What was the Nayankara system and how did Talikota break it?</summary><p>Nayankara: king granted nayakas an amaram (revenue assignment) in exchange for maintaining troops and paying tribute. After Talikota (1565), the centre collapsed — nayakas of Thanjavur, Madurai, Ikkeri, Gingee declared themselves independent rulers, keeping the administrative shell but owing nothing to Vijayanagara.</p></details>
+<details><summary>2. Name the Ashtadiggajas and identify the greatest among them.</summary><p>Eight Telugu poets of KDR's court: Allasani Peddana (greatest — Andhra Kavita Pitamaha; Manucharitra), Nandi Timmana, Madayagari Mallana, Dhurjati, Ayyalaraju Ramabhadra, Pingali Surana, Ramarajabhushana, Tenali Ramakrishna.</p></details>
+<details><summary>3. Why was Mahmud Gawan's execution in 1482 the real death of the Bahmani Sultanate?</summary><p>Mahmud Gawan was the last force holding the centre together — his 8-province reform had reduced tarafdar power; his execution on a forged letter by a drunk sultan removed all restraint on Dakhani centrifugal forces. Within 8 years, three provinces (Ahmadnagar, Bijapur, Berar) had declared independence.</p></details>
+<details><summary>4. How did Portuguese control of the horse trade affect both Vijayanagara and the Deccan Sultanates?</summary><p>After capturing Goa (1510), Portugal controlled the main horse-import port on India's west coast. Both Vijayanagara and the Deccan Sultanates depended on imported Arabian horses for cavalry. Portuguese sold to the highest bidder — played both sides. KDR allied with Portugal (horses for land rights at Bhatkal). The Deccan Sultans could not cut off this supply without alternate sources. Portugal used the lever to extract commercial concessions from both.</p></details>
+<details><summary>5. What is the significance of Sayana's Vedic commentaries for Indian scholarship?</summary><p>Sayana (brother of Vidyaranya, c. 1315–87) compiled the most comprehensive and authoritative Sanskrit commentaries on all four Vedas under Bukka I's patronage at Vijayanagara. His Rig-Veda Bhashya became the definitive reference — European orientalists (Max Müller) used Sayana's commentaries when publishing the Rig-Veda in the 19th century. This is among the greatest contributions of any medieval Indian kingdom to Sanskrit scholarship.</p></details>
+</div>
+</div>
+
+<div class="widget">
+<h4>Related UPSC Notes</h4>
+<ul class="related">
+  <li><a href="/medieval-history/the-delhi-sultanate-1206-1526-ad">Topic 04: The Delhi Sultanate</a></li>
+  <li><a href="/medieval-history/the-age-of-conflict-and-turkish-invasions-c-1000-1200-ad">Topic 03: Age of Conflict & Turkish Invasions</a></li>
+  <li><a href="/medieval-history/the-chola-empire-c-850-1200-ad">Topic 02: The Chola Empire</a></li>
+  <li><a href="/ancient-history">Ancient History — Complete</a></li>
+  <li><a href="/upsc-notes">All UPSC Notes</a></li>
+</ul>
+</div>
+</aside>
+
+</div>
+
+</main>
+</div>

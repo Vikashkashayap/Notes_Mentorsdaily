@@ -1,0 +1,930 @@
+<!-- medieval-topic01 — auto-imported from medieval-topic01-early-medieval-india-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#7a1f3a;
+  --brand-blue-dark:#4a0f25;
+  --brand-blue-light:#f7eaef;
+  --brand-orange:#b8860b;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(135deg,#9a2a4a 0%,#5a1a30 60%,#3a0a20 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(184,134,11,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ol{margin:0;padding-left:22px;font-size:14px;columns:2;column-gap:24px}
+.toc li{margin-bottom:5px;break-inside:avoid}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout strong{color:var(--brand-blue-dark)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#e6cdd6;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ol{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Early Medieval India (c. 750–1200 AD) — Pratihara, Pala, Rashtrakuta, Tripartite Struggle &amp; Regional Dynasties</h1>
+  <p class="sub">After Harshavardhana, India entered an age of vigorous regional powers — the Gurjara Pratiharas of Kannauj, the Palas of Bengal, the Rashtrakutas of the Deccan — locked in the famous <em>Tripartite Struggle</em> for paramountcy. Alongside them rose the Senas, Chedis, Western and Eastern Gangas, the Eastern and Western Chalukyas (Vengi &amp; Kalyani), and the brilliant Karkota–Utpala–Hindushahi line in Kashmir. This topic also covers the consolidation of caste, the early phase of Indian feudalism, the revival of Hinduism (Adi Shankara, Ramanuja's precursors), the great mathematician Mahaviracharya and the start of Indo-Roman/Arab trade.</p>
+  <div class="meta">
+    <span class="pill">UPSC Prelims · Mains GS-I</span>
+    <span class="pill">RS Sharma · Satish Chandra</span>
+    <span class="pill">~65 min read</span>
+    <span class="pill">Rajatarangini · Khalimpur Plate</span>
+    <span class="pill">Ellora Cave 16 · Martand</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ol>
+    <li><a href="#concept">Conceptual Clarity</a></li>
+    <li><a href="#pratihara">Gurjara Pratihara Dynasty</a></li>
+    <li><a href="#pala">Pala Dynasty of Bengal</a></li>
+    <li><a href="#rashtrakuta">Rashtrakuta Dynasty (Deccan)</a></li>
+    <li><a href="#tripartite">Tripartite Struggle for Kannauj</a></li>
+    <li><a href="#others">Other Early Medieval Dynasties</a></li>
+    <li><a href="#chalukyas">Chalukyas — Vengi &amp; Kalyani</a></li>
+    <li><a href="#kashmir">Dynasties of Kashmir</a></li>
+    <li><a href="#society">Society of Early Medieval India</a></li>
+    <li><a href="#economy">Economic Life — Trade &amp; Commerce</a></li>
+    <li><a href="#ca">Current Affairs Link</a></li>
+    <li><a href="#pyq">Previous Year Questions</a></li>
+    <li><a href="#revision">15-Minute Revision Box</a></li>
+  </ol>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity — What is "Early Medieval India"?</h3>
+  <p><strong>Early Medieval India (c. 750–1200 AD)</strong> is the historiographical bridge between the classical Gupta–Harsha age and the Delhi Sultanate. Its defining features:</p>
+  <ul>
+    <li><strong>Political regionalism:</strong> India splintered into competing regional dynasties — no pan-Indian empire. The Pratiharas, Palas and Rashtrakutas dominated their respective zones (North, East, Deccan) and fought for Kannauj — the famed <em>Tripartite Struggle</em>.</li>
+    <li><strong>Indian feudalism (RS Sharma's thesis):</strong> Proliferation of land grants (<em>Brahmadeya, Agrahara, Devadana</em>) created a class of <em>samantas</em> (vassals) and <em>mahasamantas</em>; the state's reach weakened, peasants became tenants, and trade decline accelerated.</li>
+    <li><strong>Revival of Hinduism:</strong> The <em>Bhakti</em> movement of the Alvars and Nayanars in the south, Adi Shankaracharya's <em>Advaita Vedanta</em> (early 9th c.), the Puranic and Tantric streams — all reshaped religion. Buddhism survived mainly under the Palas (Nalanda, Vikramshila, Odantapuri).</li>
+    <li><strong>Cultural florescence:</strong> Kailasa temple at Ellora (Rashtrakuta), Martand Sun temple (Karkota), Khajuraho Chandelas (start of), Brihadeshwara prelude (Cholas), Kavirajamarga (first Kannada poetics), Ganitasarasangraha (Jain mathematics).</li>
+    <li><strong>Prelude to invasions:</strong> The Hindushahis of Kabul–Punjab bore the brunt of the early Ghaznavid raids; the mutual exhaustion of regional powers made northern India vulnerable to the Turkish invasions after 1000 AD.</li>
+  </ul>
+</div>
+
+<section class="notes" id="pratihara">
+  <h2>1. The Gurjara Pratihara Dynasty (c. 730–1036 AD)</h2>
+  <p>The Gurjara Pratiharas were the dominant power of North India between c. 800 and 1000 AD, ruling from <strong>Kannauj</strong> at their peak. They are credited with successfully <strong>resisting the early Arab invasions</strong> from Sindh and providing a 200-year shield to the Indo-Gangetic plain.</p>
+
+  <h3>1.1 Origin &amp; Founder</h3>
+  <ul>
+    <li><strong>Origin:</strong> Debated — three views: (i) descended from the Gurjaras, a foreign pastoral people who entered India with the Hunas in the 5th–6th century; (ii) of indigenous Kshatriya (Rajput) origin claiming descent from Lakshmana (the "Pratihara" or door-keeper of Rama in the Ramayana); (iii) of mixed origin assimilated into Kshatriya status. The third view (Romila Thapar) is most accepted.</li>
+    <li>Two main branches: the <strong>Gurjaras of Bhinmal (Jodhpur)</strong> — early line; and the <strong>Pratiharas of Avanti–Kannauj</strong> — the imperial line.</li>
+    <li><strong>Founder of imperial line:</strong> <em>Nagabhata I</em> (c. 730–760 AD), ruling from Ujjain. He repulsed the <strong>Arab invasion under Junaid</strong>, governor of Sindh — a victory commemorated in the <em>Gwalior Prashasti</em> of his descendant Bhoja.</li>
+  </ul>
+
+  <h3>1.2 Major Rulers</h3>
+  <table>
+    <tr><th>Ruler</th><th>Reign</th><th>Highlights</th></tr>
+    <tr><td><strong>Nagabhata I</strong></td><td>c. 730–760</td><td>Founder; defeated Arab invasion of Junaid; capital Ujjain.</td></tr>
+    <tr><td>Vatsaraja</td><td>c. 778–805</td><td>Defeated Pala king Dharmapala — first round of Tripartite Struggle; but defeated by Rashtrakuta <em>Dhruva</em> who briefly took Kannauj.</td></tr>
+    <tr><td>Nagabhata II</td><td>c. 805–833</td><td>Defeated Chakrayudha (Pala vassal at Kannauj) and shifted capital to <strong>Kannauj</strong> — the symbolic centre of N. India; defeated by Rashtrakuta Govinda III.</td></tr>
+    <tr><td>Ramabhadra</td><td>c. 833–836</td><td>Brief reign; lost ground to Palas.</td></tr>
+    <tr><td><strong>Mihir Bhoja (Bhoja I)</strong></td><td>c. 836–885</td><td>Greatest Pratihara; defeated the Palas (Devapala's successors) and Rashtrakutas; consolidated empire from Sutlej to Narmada. Devout Vaishnava (title <em>Adivaraha</em>); Arab traveller <em>Sulaiman</em> praised the strength of his cavalry and called his kingdom <em>"Jurz"</em> (Gurjara) — one of the four great empires of the world.</td></tr>
+    <tr><td>Mahendrapala I</td><td>c. 885–910</td><td>Empire reached its widest extent — from Punjab to Bihar to Saurashtra. Patronised the great Sanskrit poet <strong>Rajashekhara</strong> (author of <em>Karpuramanjari</em>, <em>Kavyamimamsa</em>, <em>Balaramayana</em>).</td></tr>
+    <tr><td>Mahipala I</td><td>c. 913–944</td><td>Defeated and Kannauj sacked by Rashtrakuta <em>Indra III</em> (c. 916 AD) — a fatal blow from which the Pratiharas never fully recovered.</td></tr>
+    <tr><td>Rajyapala</td><td>c. 1018</td><td>Last effective king; fled Kannauj when <strong>Mahmud of Ghazni</strong> sacked it in 1018 AD; killed by Chandela Vidyadhara for his cowardice.</td></tr>
+    <tr><td>Yashapala</td><td>c. 1036</td><td>Last Pratihara; the dynasty ended; successor states emerged — Chandelas, Paramaras, Chauhans, Gahadavalas.</td></tr>
+  </table>
+
+  <h3>1.3 Significance of the Pratiharas</h3>
+  <ul>
+    <li><strong>Bulwark against Arab expansion:</strong> The Pratiharas held back the Arab armies that had taken Sindh (711 AD) — preventing them from advancing into the Gangetic plain for nearly 300 years.</li>
+    <li><strong>Cultural patronage:</strong> Mihir Bhoja's Vaishnavism; Mahendrapala's patronage of Rajashekhara; the <em>Maru-Gurjara</em> style of temple architecture (precursor to Khajuraho and Modhera).</li>
+    <li><strong>Decline factors:</strong> The Rashtrakuta sack of Kannauj (916), succession disputes, the rise of Chandelas/Paramaras as feudatories, and finally Mahmud of Ghazni's raid (1018).</li>
+  </ul>
+
+  <div class="callout info"><strong>Foreign accounts on Pratiharas:</strong> <em>Sulaiman</em> (c. 851 AD) called them "Jurz", their army the strongest in cavalry; <em>Al-Masudi</em> (c. 915 AD) visited and described "Baura" (Bhoja). <em>Al-Biruni</em> later memorialised them.</div>
+</section>
+
+<section class="notes" id="pala">
+  <h2>2. The Pala Dynasty of Bengal (c. 750–1161 AD)</h2>
+  <p>The Palas restored political unity to Bengal after the prolonged anarchy of <em>Matsyanyaya</em> following Shashanka and Harsha. For more than 400 years they ruled Bengal and Bihar, becoming the last great Buddhist royal dynasty of India and the dominant power in the East during the Tripartite Struggle.</p>
+
+  <h3>2.1 Foundation — Gopala &amp; Matsyanyaya</h3>
+  <ul>
+    <li>After the death of Harshavardhana (647 AD) and Shashanka of Gauda (c. 625 AD), Bengal slid into a century of anarchy called <strong><em>Matsyanyaya</em></strong> ("law of fishes — strong devour the weak") — described in the <strong>Khalimpur copper-plate inscription</strong> of Dharmapala.</li>
+    <li>To end this, the leading men of Gauda <strong>elected Gopala</strong> (c. 750 AD) as their king — a unique instance of a king elected by his subjects in early medieval India.</li>
+    <li>Gopala was a <em>Buddhist</em> — he built the famous <strong>Odantapuri (Vikramshila) monastery</strong> in Bihar.</li>
+  </ul>
+
+  <h3>2.2 Major Pala Rulers</h3>
+  <table>
+    <tr><th>Ruler</th><th>Reign</th><th>Highlights</th></tr>
+    <tr><td><strong>Gopala</strong></td><td>c. 750–770</td><td>Founder (elected); restored order; built Odantapuri vihara.</td></tr>
+    <tr><td><strong>Dharmapala</strong></td><td>c. 770–810</td><td>Empire builder; took Kannauj from Indrayudha and installed his nominee Chakrayudha; opened the Tripartite Struggle by clashing with Pratihara Vatsaraja; defeated by Rashtrakuta Dhruva but recovered. Founded <strong>Vikramshila University</strong> and the <strong>Somapura Mahavihara</strong> at Paharpur (UNESCO WHS). Sponsored the great Buddhist scholar <em>Haribhadra</em>.</td></tr>
+    <tr><td><strong>Devapala</strong></td><td>c. 810–850</td><td>Greatest Pala; empire stretched from Assam to Kamboja (Afghanistan?). Defeated Pratihara Ramabhadra; received the request of <strong>Balaputradeva of Sumatra (Shailendra)</strong> who built a monastery at Nalanda — recorded in the <em>Nalanda copper-plate</em>. Patron of <em>Vajrayana</em> Buddhism.</td></tr>
+    <tr><td>Vigrahapala &amp; Narayanapala</td><td>c. 850–908</td><td>Empire shrank; defeated by Pratihara Mihir Bhoja and Rashtrakuta Krishna II.</td></tr>
+    <tr><td><strong>Mahipala I</strong></td><td>c. 988–1038</td><td>"Second founder" of Pala power; recovered N &amp; E Bengal and Bihar; faced the <em>raid of Rajendra Chola</em> (c. 1023 AD) — Chola crossed the Ganga from the south to assume the title <em>Gangaikondachola</em>; built temples at Sarnath and revived Nalanda.</td></tr>
+    <tr><td>Ramapala</td><td>c. 1077–1120</td><td>Last great Pala; suppressed the <strong>Kaivarta revolt</strong> in Varendra led by Bhima — recorded in <em>Sandhyakaranandi's "Ramacharita"</em>, a Sanskrit kavya with double meaning (Ramayana of king Rama + biography of Ramapala).</td></tr>
+    <tr><td>Madanapala</td><td>c. 1144–1161</td><td>Last Pala; replaced by the Senas.</td></tr>
+  </table>
+
+  <h3>2.3 Pala Achievements</h3>
+  <ul>
+    <li><strong>Last great Buddhist patrons:</strong> Palas were devout Mahayana (and later Vajrayana) Buddhists. They built and supported the four <strong>Mahaviharas</strong> — <em>Nalanda, Vikramshila, Somapura (Paharpur), Odantapuri</em> — making Bengal–Bihar the centre of Buddhism in the early medieval world.</li>
+    <li><strong>Pala School of Art:</strong> Distinctive style of bronze and stone sculpture — sleek, elongated, blackish bluestone Buddhas; gilded bronze Tara and Avalokiteshvara. Influenced Tibetan, Burmese, Sri Lankan and SE Asian art.</li>
+    <li><strong>International contacts:</strong> Balaputradeva of Sumatra (Shailendra) endowed a monastery at Nalanda under Devapala. Pala–Tibet, Pala–Burma, Pala–Sri Vijaya contacts disseminated Tantric Buddhism (Atisha Dipankara went to Tibet from Vikramshila c. 1042).</li>
+    <li><strong>Literature:</strong> Sanskrit poet <em>Sandhyakaranandi</em> (<em>Ramacharita</em>); Buddhist scholars Haribhadra, Atisha, Naropa, Tilopa.</li>
+  </ul>
+
+  <div class="callout warn"><strong>PYQ Hook:</strong> Three things to never forget about Palas — <em>(i)</em> Gopala elected by people; <em>(ii)</em> Vikramshila founded by Dharmapala; <em>(iii)</em> Atisha Dipankara went to Tibet from Vikramshila under Mahipala I — a key pivot in Indo-Tibetan religious history.</div>
+</section>
+
+<section class="notes" id="rashtrakuta">
+  <h2>3. The Rashtrakuta Dynasty (c. 753–982 AD)</h2>
+  <p>The Rashtrakutas of <em>Manyakheta</em> (Malkhed in modern Karnataka) were the most powerful Deccan dynasty of the early medieval period. Their territorial range — from Kanyakumari to the Vindhyas — and their <strong>extraordinary patronage of art</strong> (the monolithic Kailasa temple at Ellora) made them the bridge between the Chalukyas of Badami and the Western Chalukyas of Kalyani.</p>
+
+  <h3>3.1 Political History of the Rashtrakuta Dynasty</h3>
+  <ul>
+    <li><strong>Origin:</strong> Disputed — possibly Kannada-origin agriculturists who served as feudatories of the Chalukyas of Badami. The name "Rashtrakuta" means <em>"chief of a rashtra (district)"</em>.</li>
+    <li><strong>Founder: Dantidurga</strong> (c. 735–756 AD) — overthrew the last Chalukya of Badami, <em>Kirtivarman II</em>, around 753 AD; performed the <em>Hiranyagarbha mahadana</em> at Ujjain — symbolising imperial status.</li>
+    <li><strong>Krishna I</strong> (c. 756–774 AD) — Dantidurga's uncle and successor; completed the conquest of the Chalukya territory; commissioned the magnificent <strong>Kailasanatha (Kailasa) Temple at Ellora — Cave 16</strong>, the largest monolithic rock-cut temple in the world.</li>
+    <li><strong>Dhruva Dharavarsha</strong> (c. 780–793 AD) — the first Rashtrakuta to <strong>intervene in northern politics</strong>; crossed the Vindhyas and defeated both <strong>Vatsaraja Pratihara</strong> and <strong>Dharmapala Pala</strong> in the same campaign — opening the Tripartite Struggle decisively.</li>
+    <li><strong>Govinda III</strong> (c. 793–814 AD) — son of Dhruva; the greatest military commander of the dynasty; campaigned across India, defeating <strong>Nagabhata II Pratihara</strong> and <strong>Dharmapala Pala</strong>, briefly held Kannauj; extended Rashtrakuta power up to the Himalayas in the north and Kanyakumari in the south. Title <em>Jagattunga, Tribhuvanadhavala</em>.</li>
+    <li><strong>Amoghavarsha I</strong> (c. 814–878 AD) — son of Govinda III; ruled for ~64 years from his new capital <strong>Manyakheta (Malkhed)</strong> — making him one of the longest-reigning monarchs in Indian history. A devout Jain who was the patron and pupil of <em>Jinasena</em>. Authored <strong><em>Kavirajamarga</em></strong> — earliest extant work on poetics in Kannada — and the Sanskrit <em>Prashnottararatnamalika</em>. Patron of <em>Mahaviracharya</em> the Jain mathematician. Arab traveller <strong>Sulaiman</strong> ranked him among the <em>"four great kings of the world"</em> along with the Caliph of Baghdad, the Emperor of China and the Roman (Byzantine) Emperor.</li>
+    <li><strong>Krishna II</strong> (c. 878–914 AD) — fought the Pratiharas, Eastern Chalukyas of Vengi and the Cholas.</li>
+    <li><strong>Indra III</strong> (c. 914–929 AD) — <strong>sacked Kannauj in 916 AD</strong> and ejected Mahipala I Pratihara — the most decisive blow to the Pratiharas. Visited by Arab traveller Al-Masudi who described his capital's magnificence.</li>
+    <li><strong>Krishna III</strong> (c. 939–967 AD) — last great Rashtrakuta; defeated the Chola king Parantaka I at the <strong>Battle of Takkolam (949 AD)</strong>, killing the Chola crown prince Rajaditya; raised a pillar of victory at Rameshwaram.</li>
+    <li><strong>Karka II</strong> (last ruler) — overthrown by his feudatory <strong>Tailapa II of the Western Chalukyas of Kalyani</strong> in 974 AD, ending the dynasty.</li>
+  </ul>
+
+  <h3>3.2 Administration &amp; Military during the Rashtrakuta Dynasty</h3>
+  <ul>
+    <li><strong>Hereditary monarchy</strong> — king assisted by a council of ministers. Crown prince title — <em>Yuvaraja</em>.</li>
+    <li><strong>Territorial divisions (top to bottom):</strong>
+      <ol>
+        <li><em>Rashtra</em> (province) under a <em>Rashtrapati</em>.</li>
+        <li><em>Vishaya</em> (district) under a <em>Vishayapati</em>.</li>
+        <li><em>Bhukti</em> (sub-district / group of villages) under a <em>Bhogapati</em>.</li>
+        <li><em>Gram</em> (village) under a <em>Gramapati</em> with the help of village headman (<em>Gavunda</em>) and accountant.</li>
+      </ol>
+    </li>
+    <li><strong>Feudal structure:</strong> Powerful feudatories called <em>Samantas</em> and <em>Mahasamantas</em> were granted lands in lieu of military service — the classic early medieval feudal pattern.</li>
+    <li><strong>Military:</strong> A strong standing army of <strong>infantry, cavalry, elephants and a small navy</strong>. The Rashtrakuta cavalry was particularly feared — Sulaiman described it as among the most powerful in India.</li>
+    <li><strong>Officials:</strong> <em>Mahapradhana</em> (PM), <em>Senapati</em> (army chief), <em>Rajaguru</em> (royal preceptor), <em>Mahasandhivigrahika</em> (foreign affairs).</li>
+  </ul>
+
+  <h3>3.3 Economy during the Rashtrakuta Dynasty</h3>
+  <ul>
+    <li><strong>Agriculture</strong> was the mainstay — land revenue was the principal source of state income, paid in cash and in kind, normally 1/6th of the produce (called <em>Bhaga</em>). Various other levies — <em>Bhoga</em>, <em>Kara</em>, <em>Upakara</em>, <em>Mannadere</em> (house tax), <em>Sulka</em> (commercial tax).</li>
+    <li><strong>Trade and commerce</strong> flourished — both inland and maritime. Major ports were <strong>Sopara, Thane, Saimur (Chemul), Cambay</strong>. Active commerce with the Arabs — the Arabs in fact established their first Indian Muslim settlements on the western coast under Rashtrakuta tolerance.</li>
+    <li><strong>Currency</strong> — gold coins (<em>Suvarna, Gadyanaka</em>), silver coins (<em>Drammas</em>), and copper coins were issued.</li>
+    <li><strong>Guilds</strong> (<em>Srenis</em>) of merchants, weavers, oil-pressers and goldsmiths were powerful corporate bodies; some doubled as bankers.</li>
+  </ul>
+
+  <h3>3.4 Social Life during the Rashtrakuta Dynasty</h3>
+  <ul>
+    <li><strong>Varna system</strong> was firmly entrenched; Brahmanas were highly privileged with tax-free <em>Agraharas</em> and judicial immunity.</li>
+    <li>Position of <strong>women declined</strong>: girl-marriage was common, <em>sati</em> existed but was not yet widespread in the south; some women rulers (e.g., Akkadevi) held power as feudatories.</li>
+    <li><strong>Caste mobility</strong> was limited but possible — many merchant and military castes rose by service.</li>
+    <li>Joint family system, vegetarianism among upper castes (especially Jain courts), elaborate hospitality codes.</li>
+    <li><strong>Foreign communities</strong> — Arabs, Persians, Jews and Syrian Christians — coexisted on the west coast.</li>
+  </ul>
+
+  <h3>3.5 Religion &amp; Language during the Rashtrakuta Dynasty</h3>
+  <ul>
+    <li><strong>Religious tolerance</strong> was a hallmark. Though the Rashtrakuta kings were mostly <strong>Hindus (Shaiva or Vaishnava)</strong>, they were also great patrons of <strong>Jainism</strong> — especially Amoghavarsha I, who studied under <em>Jinasena</em> (author of <em>Adipurana</em>) and his disciple Gunabhadra (<em>Uttarapurana</em>).</li>
+    <li>Famous Jain mathematician <strong>Mahaviracharya</strong> wrote <strong><em>Ganitasarasangraha</em></strong> at Amoghavarsha's court — the first Indian textbook devoted exclusively to mathematics.</li>
+    <li><strong>Buddhism survived</strong> in pockets, especially at Kanheri caves. Islam took its earliest peaceful root on the west coast under Rashtrakuta protection.</li>
+    <li><strong>Languages:</strong> Sanskrit was the court language; <strong>Kannada</strong> rose to literary status with Amoghavarsha's <em>Kavirajamarga</em> and the Jain Kannada poets of the <em>"Three Gems"</em> period (Pampa, Ponna, Ranna — though Pampa flourished under the Chalukyas of Vemulavada).</li>
+  </ul>
+
+  <h3>3.6 Art &amp; Architecture during the Rashtrakuta Dynasty</h3>
+  <p>Rashtrakuta art is best remembered for the cluster of <strong>rock-cut temples at Ellora and Elephanta</strong> in modern Maharashtra.</p>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Rashtrakuta Art Triangle">
+      <rect x="0" y="0" width="700" height="240" fill="#fafbfc" stroke="#dde3e8"/>
+      <text x="350" y="22" text-anchor="middle" font-weight="bold" fill="#4a0f25" font-size="14">Rashtrakuta Art &amp; Architecture — Major Sites</text>
+
+      <rect x="40" y="60" width="180" height="150" fill="#fde2e8" stroke="#7a1f3a" stroke-width="2" rx="8"/>
+      <text x="130" y="82" text-anchor="middle" font-weight="bold" font-size="14" fill="#4a0f25">ELLORA</text>
+      <text x="130" y="100" text-anchor="middle" font-size="11">34 caves (Hindu/Jain/Buddhist)</text>
+      <text x="130" y="116" text-anchor="middle" font-size="11">Cave 16 — Kailasanatha</text>
+      <text x="130" y="132" text-anchor="middle" font-size="11">Built by Krishna I (~765)</text>
+      <text x="130" y="148" text-anchor="middle" font-size="11">Largest monolithic temple</text>
+      <text x="130" y="164" text-anchor="middle" font-size="11">in the world</text>
+      <text x="130" y="180" text-anchor="middle" font-size="11">UNESCO WHS (1983)</text>
+      <text x="130" y="200" text-anchor="middle" font-size="10" fill="#5a6266" font-style="italic">Top-down monolithic carving</text>
+
+      <rect x="260" y="60" width="180" height="150" fill="#fff4e0" stroke="#b8860b" stroke-width="2" rx="8"/>
+      <text x="350" y="82" text-anchor="middle" font-weight="bold" font-size="14" fill="#7a5a00">ELEPHANTA</text>
+      <text x="350" y="100" text-anchor="middle" font-size="11">7 caves on Gharapuri Island</text>
+      <text x="350" y="116" text-anchor="middle" font-size="11">Cave 1 — Shiva (Mahesha)</text>
+      <text x="350" y="132" text-anchor="middle" font-size="11">Trimurti Sadashiva (5.5 m)</text>
+      <text x="350" y="148" text-anchor="middle" font-size="11">Ardhanarishvara, Nataraja</text>
+      <text x="350" y="164" text-anchor="middle" font-size="11">Gangadhara, Andhakasuravadha</text>
+      <text x="350" y="180" text-anchor="middle" font-size="11">UNESCO WHS (1987)</text>
+      <text x="350" y="200" text-anchor="middle" font-size="10" fill="#5a6266" font-style="italic">Attributed to Rashtrakutas</text>
+
+      <rect x="480" y="60" width="180" height="150" fill="#e6f0e8" stroke="#2a6a4a" stroke-width="2" rx="8"/>
+      <text x="570" y="82" text-anchor="middle" font-weight="bold" font-size="14" fill="#0a3a2a">JAIN GROUP</text>
+      <text x="570" y="100" text-anchor="middle" font-size="11">Ellora Caves 30–34</text>
+      <text x="570" y="116" text-anchor="middle" font-size="11">Indra Sabha (Cave 32)</text>
+      <text x="570" y="132" text-anchor="middle" font-size="11">Jagannath Sabha (Cave 33)</text>
+      <text x="570" y="148" text-anchor="middle" font-size="11">Patron: Amoghavarsha I</text>
+      <text x="570" y="164" text-anchor="middle" font-size="11">Mahavira, Parshvanatha</text>
+      <text x="570" y="180" text-anchor="middle" font-size="11">9th c. AD</text>
+      <text x="570" y="200" text-anchor="middle" font-size="10" fill="#5a6266" font-style="italic">Jainism flourishes</text>
+
+      <text x="350" y="230" text-anchor="middle" font-size="11" fill="#5a6266">Rashtrakuta caves cap the rock-cut tradition that began in Mauryan times at Barabar</text>
+    </svg>
+    <div class="svg-caption">Figure 3.1 — The three architectural jewels of the Rashtrakutas</div>
+  </div>
+
+  <h4>(a) Kailasanatha Temple, Ellora — Cave 16</h4>
+  <ul>
+    <li>Commissioned by <strong>Krishna I</strong> around <strong>756–774 AD</strong>; carved <em>top-down</em> from a single basalt rock outcrop in the Charanandri hills.</li>
+    <li>Dimensions: ~50 m long × 33 m wide × 30 m high; 2 lakh tons of rock excavated.</li>
+    <li>Modeled on the <strong>Pallava Kailasanatha at Kanchi</strong> and the <strong>Chalukya Virupaksha at Pattadakal</strong> — a synthesis of <em>Dravida</em> features with Deccan idiom.</li>
+    <li>Sculptural highlights: <em>Ravana shaking Mount Kailasa</em> (Shiva and Parvati above), <em>Lakshmi with elephants</em>, the elephant frieze around the base, the two free-standing <em>dhwajastambhas</em>, the Nandi mandapa, and the gopurams.</li>
+    <li>The largest <strong>monolithic rock-cut temple in the world</strong>; UNESCO World Heritage Site (1983).</li>
+  </ul>
+
+  <h4>(b) Elephanta Caves (Gharapuri Island, Mumbai harbour)</h4>
+  <ul>
+    <li>A group of <strong>7 rock-cut caves</strong> on Elephanta Island — attributed to the Rashtrakutas (some scholars date earlier to the Konkan Mauryas or the Kalachuris).</li>
+    <li><strong>Main cave (Cave 1)</strong> dedicated to Shiva — contains the famous <strong><em>Trimurti Sadashiva</em></strong> — a 5.5 m three-headed bust showing Aghora (terrible), Tatpurusha (preserver) and Vamadeva (creator); among the masterpieces of Indian sculpture.</li>
+    <li>Other panels — <em>Ardhanarishvara, Nataraja, Gangadhara, Andhakasuravadha, Kalyanasundara (Shiva–Parvati marriage), Ravananugraha</em>.</li>
+    <li>UNESCO World Heritage Site (1987).</li>
+  </ul>
+
+  <h4>(c) Other Rashtrakuta monuments</h4>
+  <ul>
+    <li><strong>Ellora Caves 14–29</strong> — Hindu caves; <strong>Caves 30–34</strong> — Jain caves (Indra Sabha, Jagannath Sabha) added under Amoghavarsha I.</li>
+    <li><strong>Pattadakal Jain Narayana temple</strong> — late Rashtrakuta period addition.</li>
+    <li>The Rashtrakuta sculptural style — robust, dramatic, deeply carved — fed into both later Deccan and South Indian temple art.</li>
+  </ul>
+</section>
+
+<section class="notes" id="tripartite">
+  <h2>4. The Tripartite Struggle (c. 790–910 AD)</h2>
+  <p>The <strong>Tripartite Struggle</strong> for control of <strong>Kannauj</strong> — the political prize of north India after Harshavardhana — was the defining conflict of the early medieval age. It involved three powers: the <strong>Gurjara Pratiharas</strong> (Avanti–Kannauj), the <strong>Palas</strong> (Bengal–Bihar), and the <strong>Rashtrakutas</strong> (Deccan). Kannauj's strategic location at the head of the Doab made it the key to dominance over the Indo-Gangetic plain.</p>
+
+  <h3>4.1 Why Kannauj?</h3>
+  <ul>
+    <li>Capital of Harshavardhana → became the symbol of <strong>"Lord of Aryavarta"</strong> (paramountcy over the North).</li>
+    <li>Strategically located at the head of the Ganga–Yamuna Doab — controlling it meant controlling trade routes, agricultural surplus, and military mobility.</li>
+    <li>Cultural prestige — the city was a centre of Brahmanical learning and royal patronage.</li>
+  </ul>
+
+  <h3>4.2 Course of the Struggle</h3>
+  <table>
+    <tr><th>Round</th><th>Approx. Date</th><th>Pratihara</th><th>Pala</th><th>Rashtrakuta</th><th>Outcome</th></tr>
+    <tr><td>I</td><td>c. 790 AD</td><td>Vatsaraja</td><td>Dharmapala</td><td>Dhruva</td><td>Vatsaraja defeats Dharmapala in Doab → Dhruva crosses Vindhyas and defeats <em>both</em> Vatsaraja and Dharmapala; returns south. Kannauj left in chaos.</td></tr>
+    <tr><td>II</td><td>c. 800 AD</td><td>—</td><td>Dharmapala</td><td>—</td><td>Dharmapala reasserts himself; installs his nominee <em>Chakrayudha</em> as ruler of Kannauj; conducts an imperial darbar.</td></tr>
+    <tr><td>III</td><td>c. 810 AD</td><td>Nagabhata II</td><td>Dharmapala</td><td>Govinda III</td><td>Nagabhata II defeats Chakrayudha and Dharmapala; takes Kannauj as his capital. But Govinda III then crosses the Vindhyas, defeats Nagabhata II and Dharmapala both.</td></tr>
+    <tr><td>IV</td><td>c. 830 AD</td><td>Mihir Bhoja's father Ramabhadra</td><td>Devapala</td><td>—</td><td>Devapala Pala defeats the Pratiharas and is the dominant power in the East-North.</td></tr>
+    <tr><td>V</td><td>c. 850 AD</td><td><strong>Mihir Bhoja</strong></td><td>Narayanapala</td><td>—</td><td>After Devapala's death, Mihir Bhoja consolidates Kannauj and inflicts defeat on the Palas. Pratiharas become the dominant northern power for c. 50 years.</td></tr>
+    <tr><td>VI</td><td>c. 916 AD</td><td>Mahipala I</td><td>—</td><td><strong>Indra III</strong></td><td>Rashtrakuta Indra III sacks Kannauj and ejects Mahipala I — the final blow. All three powers exhaust themselves; smaller dynasties (Chandelas, Paramaras, Chauhans, Senas) rise to fill the vacuum.</td></tr>
+  </table>
+
+  <h3>4.3 Consequences of the Tripartite Struggle</h3>
+  <ul>
+    <li><strong>Mutual exhaustion</strong> of the three great powers — none could establish lasting paramountcy.</li>
+    <li><strong>Rise of smaller dynasties</strong> as the imperial Pratiharas weakened — Chandelas (Bundelkhand), Paramaras (Malwa), Chauhans (Sapadalaksha), Tomaras (Delhi), Gahadavalas (Kannauj after 1085), Senas (Bengal).</li>
+    <li><strong>Vulnerability to Turkish invasions</strong> — political fragmentation made northern India unable to resist <em>Mahmud of Ghazni</em>'s raids (1000–1027 AD) and later <em>Muhammad of Ghor</em> (after 1175 AD).</li>
+    <li><strong>Cultural cross-fertilisation</strong> — paradoxically, the wars brought Northern, Eastern and Deccan elite into contact: temple styles, languages, marriage alliances spread.</li>
+  </ul>
+
+  <div class="callout warn"><strong>Mnemonic — Tripartite Struggle:</strong> "<em>Three powers fight, none unite; Kannauj passes hand-to-hand; Indra III's sack of 916 is the final brand.</em>"</div>
+</section>
+
+<section class="notes" id="others">
+  <h2>5. Other Dynasties of Early Medieval India</h2>
+  <p>Alongside the three great powers of the Tripartite Struggle, a constellation of regional dynasties shaped early medieval India — the Senas of Bengal who replaced the Palas, the Chedis of Tripuri in central India, the Western and Eastern Gangas of Karnataka and Orissa, and the two great Chalukya offshoots at Vengi and Kalyani.</p>
+
+  <h3>5.1 The Sena Dynasty of Bengal (c. 1097–1225 AD)</h3>
+  <ul>
+    <li><strong>Origin:</strong> Brahma-Kshatriya origin from Karnataka — descendants of the Senas who entered Bengal as military officers under the later Palas.</li>
+    <li><strong>Founder:</strong> <em>Samantasena</em> (late 11th c.) — feudatory of the Palas.</li>
+    <li><strong>Hemantasena &amp; Vijayasena</strong> (c. 1097–1158) — Vijayasena overthrew the last Pala kings (Madanapala) and founded the imperial Sena line; capital at <em>Vijayapura</em> and later <em>Lakhnauti (Gaur)</em>. The <em>Deopara Prashasti</em> records his exploits.</li>
+    <li><strong>Vallalasena</strong> (c. 1158–1179) — codified the rigid caste hierarchy of Bengal known as <strong><em>Kulinism</em></strong>; promoted Brahmanical orthodoxy; authored <em>Danasagara</em> and <em>Adbhutasagara</em>.</li>
+    <li><strong>Lakshmana Sena</strong> (c. 1179–1206) — the last great Sena; greatly patronised Sanskrit literature — his court hosted <strong>Jayadeva</strong> (author of <em>Gita Govinda</em>), <strong>Dhoyi</strong> (<em>Pavanaduta</em>), <strong>Sharanadeva</strong> and <strong>Halayudha</strong> (<em>Brahmana-sarvasva</em>). Defeated and dethroned in 1204–05 by the Turkish raider <strong><em>Bakhtiyar Khalji</em></strong> who, with a small cavalry force, took Nadia by surprise — marking the end of Hindu rule in Bengal.</li>
+    <li><strong>Significance:</strong> The Senas revived Brahmanism and Sanskrit learning in Bengal, displacing the long Buddhist patronage of the Palas — preparing the ground for Bengali culture's Brahmanical orientation.</li>
+  </ul>
+
+  <h3>5.2 The Chedi Dynasty of Tripuri (Kalachuris of Tripuri, c. 845–1212 AD)</h3>
+  <ul>
+    <li>Ruled <em>Dahala-mandala</em> in central India (modern Madhya Pradesh) from their capital <strong>Tripuri</strong> (modern Tewar near Jabalpur).</li>
+    <li>Also called the <strong>Kalachuris of Tripuri</strong> to distinguish them from the Kalachuris of Kalyani.</li>
+    <li><strong>Kokalla I</strong> (c. 845 AD) — founder; matrimonial alliances with the Rashtrakutas and Chandelas.</li>
+    <li><strong>Gangeyadeva</strong> (c. 1015–1041) — assumed the title <em>Vikramaditya</em>; introduced gold coinage; defeated the Palas and reached Kashi (Varanasi). His <em>Sodasa Mahadana</em> at Prayag established his imperial pretensions.</li>
+    <li><strong>Karna (Lakshmikarna)</strong> (c. 1041–1073) — greatest Chedi; defeated Bhoja of Dhara and pushed Chedi influence to the doorstep of Bengal. Patron of the great Sanskrit poet <em>Bilhana</em> (who later wrote <em>Vikramankadevacharita</em> at Kalyani).</li>
+    <li>Decline: weakened by the rising Chandelas, Paramaras and Gahadavalas; finally absorbed by the Delhi Sultanate.</li>
+  </ul>
+
+  <h3>5.3 The Western Ganga Dynasty (c. 350–1000 AD)</h3>
+  <ul>
+    <li>Ruled <em>Gangavadi</em> — southern Karnataka (modern Mysore region) — from capital <strong>Talakad</strong> (and earlier Kuvalala/Kolar).</li>
+    <li><strong>Founder:</strong> <em>Konganivarman Madhava</em> (c. 350 AD).</li>
+    <li>Long political subordination — feudatories of the Pallavas, Chalukyas of Badami and finally the Rashtrakutas.</li>
+    <li><strong>Strong patrons of Jainism.</strong> Minister <strong>Chamundaraya</strong> of King Rachamalla IV commissioned the <strong>monolithic Bahubali (Gommateshvara) statue at Shravanabelagola</strong> in 982 AD — at 57 ft, India's tallest monolith; the <em>Mahamastakabhisheka</em> anointing is held once every 12 years.</li>
+    <li>Literary patronage: <strong>Pampa</strong> ("Adikavi" of Kannada) and <strong>Ponna</strong> flourished in the Ganga region.</li>
+    <li>Overthrown by the Cholas under Rajaraja I around 1000 AD.</li>
+  </ul>
+
+  <h3>5.4 The Ganga (Chodaganga) Dynasty of Orissa (c. 1078–1434 AD)</h3>
+  <ul>
+    <li>Also called the <strong>Eastern Gangas</strong> — not to be confused with the Western Gangas of Karnataka.</li>
+    <li>Ruled <em>Trikalinga</em> (modern Odisha, parts of Andhra and Bengal) from capitals at Kalinganagara and later <em>Cuttack</em>.</li>
+    <li><strong>Anantavarman Chodaganga Deva</strong> (c. 1078–1147) — founder of the imperial line; consolidated Orissa from the Ganga in the north to the Godavari in the south. He started the construction of the <strong>Jagannath Temple at Puri</strong>.</li>
+    <li><strong>Narasimhadeva I</strong> (c. 1238–1264) — built the legendary <strong>Konark Sun Temple (Black Pagoda)</strong> — UNESCO World Heritage Site (1984) — designed as a colossal stone chariot with 24 carved wheels and 7 horses pulling the chariot of Surya. Also a great military king who repulsed the Turko-Afghan raids of the Delhi Sultanate.</li>
+    <li>The Eastern Gangas thus produced <strong>two of Odisha's three great Hindu temples</strong>: Jagannath Puri and Konark (the third — Lingaraja at Bhubaneswar — being earlier, under the Somavamshis).</li>
+    <li>Replaced by the Suryavamshi Gajapatis after 1434 AD.</li>
+  </ul>
+</section>
+
+<section class="notes" id="chalukyas">
+  <h2>6. The Chalukya Dynasties — Vengi &amp; Kalyani</h2>
+  <p>The Chalukya house — first installed by Pulakeshin II of Badami in the 7th century — survived the Rashtrakuta interregnum through two collateral branches: the <strong>Eastern Chalukyas of Vengi</strong> in Andhra and the <strong>Western Chalukyas of Kalyani</strong> in Karnataka.</p>
+
+  <h3>6.1 Eastern Chalukyas of Vengi (c. 624–1130 AD)</h3>
+  <ul>
+    <li><strong>Founder:</strong> <em>Kubja Vishnuvardhana</em> — brother of <em>Pulakeshin II</em> of Badami who installed him as viceroy of <em>Vengi</em> (between the Krishna and the Godavari rivers in Andhra) c. 624 AD; he soon became independent.</li>
+    <li><strong>Capital:</strong> initially <em>Pishtapura</em>, later <em>Vengi</em>, then <em>Rajamahendri (Rajahmundry)</em>.</li>
+    <li>Long political tightrope between the Rashtrakutas, Cholas and Western Chalukyas of Kalyani — frequent matrimonial and military alliances with the Cholas.</li>
+    <li><strong>Vimaladitya</strong> (c. 1011–1018) — married a Chola princess Kundavai (sister of Rajaraja I) — beginning a long Chalukya–Chola family alliance.</li>
+    <li><strong>Rajaraja Narendra</strong> (c. 1019–1061) — patron of the Telugu poet <strong>Nannaya</strong>, who began translating the <em>Mahabharata</em> into Telugu (<em>Andhra Mahabharatam</em>) — Nannaya is hailed as the <strong>"Adikavi" of Telugu literature</strong>.</li>
+    <li><strong>Kulottunga I</strong> (c. 1070–1122) — actually a Chalukya prince of Vengi who, through his Chola maternal line, ascended the <strong>Chola throne at Tanjavur</strong> as Kulottunga I — merging the two dynasties (the <em>Chalukya-Chola line</em>).</li>
+    <li>After Kulottunga's accession to the Chola throne, the Vengi line continued under junior princes until merging fully with the Cholas.</li>
+  </ul>
+
+  <h3>6.2 Western Chalukyas of Kalyani (c. 973–1189 AD)</h3>
+  <ul>
+    <li>Also called the <strong>Later Chalukyas</strong>; revived the Chalukya house in the Deccan after the Rashtrakutas were overthrown.</li>
+    <li><strong>Founder:</strong> <strong>Tailapa II</strong> (c. 973–997 AD) — a feudatory of the Rashtrakutas who overthrew the last Rashtrakuta king <em>Karka II</em> and established his capital at <em>Manyakheta</em>, later shifted to <strong>Kalyani (modern Basavakalyan)</strong>.</li>
+    <li><strong>Satyashraya</strong> (c. 997–1008) — repulsed the Chola invasion of Rajaraja I.</li>
+    <li><strong>Someshvara I (Ahavamalla)</strong> (c. 1042–1068) — founded the city of <strong>Kalyani</strong> as the new capital; fought a long, draining war with the Cholas — defeated and killed Chola king Rajadhiraja at the <strong>Battle of Koppam (1052)</strong>. Committed <em>jala-samadhi</em> in the Tungabhadra when terminally ill.</li>
+    <li><strong>Vikramaditya VI</strong> (c. 1076–1126) — greatest king; ruled for 50 years. Established the <strong><em>Chalukya–Vikrama Era</em></strong> in 1076 AD (in lieu of the Saka era — though Saka continued to dominate). His court poet <strong>Bilhana</strong> (a Kashmiri) wrote the famous Sanskrit biographical poem <strong><em>Vikramankadevacharita</em></strong>. The legal scholar <strong>Vijnaneshvara</strong> wrote <strong><em>Mitakshara</em></strong> — a commentary on the <em>Yajnavalkya Smriti</em> — which became the most authoritative Hindu legal text in most of India (excluding Bengal where the Dayabhaga of Jimutavahana prevailed).</li>
+    <li><strong>Someshvara III</strong> — authored the <strong><em>Manasollasa</em></strong> (also called <em>Abhilashitarthachintamani</em>) — an encyclopaedic Sanskrit work on royal life, arts, dietetics, music, and even early references to chess and food preparation.</li>
+    <li>Architecture: <strong>Vesara style</strong> — fusion of Nagara and Dravida — best seen at <strong>Lakkundi, Gadag, Dambal, Itagi (Mahadeva temple — "emperor of temples")</strong>.</li>
+    <li>Religion: <em>Veera Shaivism</em> founded by <strong>Basavanna</strong> (philosopher-minister of King Bijjala) emerged in this period — leading to the <em>Lingayat</em> reform movement.</li>
+    <li><strong>Decline:</strong> Around 1189 AD, the Chalukyas of Kalyani were overthrown by their feudatories — the <em>Yadavas of Devagiri</em>, <em>Hoysalas of Dwarasamudra</em>, and <em>Kakatiyas of Warangal</em> — who carved out independent kingdoms.</li>
+  </ul>
+
+  <div class="callout info"><strong>Cultural pearls of Kalyani:</strong> Three Sanskrit gems were composed here — <em>Vikramankadevacharita</em> (Bilhana), <em>Mitakshara</em> (Vijnaneshvara) and <em>Manasollasa</em> (Someshvara III). For UPSC, remember these three works = three immortal contributions.</div>
+</section>
+
+<section class="notes" id="kashmir">
+  <h2>7. Dynasties of Kashmir (c. 625–1338 AD)</h2>
+  <p>The history of early medieval Kashmir is uniquely well-documented thanks to <strong>Kalhana's <em>Rajatarangini</em></strong> (c. 1148–49 AD) — the earliest historical chronicle of Kashmir in Sanskrit, often described as India's first true historical work. It covers four major successive dynasties.</p>
+
+  <h3>7.1 Karkota Dynasty (c. 625–855 AD)</h3>
+  <ul>
+    <li><strong>Founder:</strong> <em>Durlabhavardhana</em> (c. 625 AD) — son-in-law of the last Gonanda king Baladitya.</li>
+    <li><strong>Lalitaditya Muktapida</strong> (c. 724–760 AD) — <strong>greatest Karkota king</strong>; described by Kalhana as a <em>Digvijayi</em> conqueror who marched across north India defeating <em>Yashovarman of Kannauj</em> (the patron of Bhavabhuti and Vakpati), the Turks of Tukharistan, and reached central Asia.
+      <ul>
+        <li>Built the magnificent <strong>Martand Sun Temple</strong> near Anantnag (Kashmir, c. 8th c. AD) — fused Gandharan, Gupta and indigenous Kashmiri styles; now in ruins but architecturally seminal.</li>
+        <li>Founded the city of <strong>Parihasapura</strong>.</li>
+        <li>His vast empire collapsed after his death.</li>
+      </ul>
+    </li>
+    <li><strong>Jayapida</strong> (c. 770–807) — grandson of Lalitaditya; renewed conquests but his administration was oppressive; harsh tax policies described in <em>Rajatarangini</em>.</li>
+    <li>After Jayapida, the Karkotas declined; usurped by Avantivarman of the Utpala dynasty.</li>
+  </ul>
+
+  <h3>7.2 Utpala Dynasty (c. 855–1003 AD)</h3>
+  <ul>
+    <li><strong>Founder:</strong> <strong>Avantivarman</strong> (c. 855–883 AD) — usurped the Karkota throne. Founded the city of <strong>Avantipur</strong> with its famous <em>Avantishvara</em> (Shiva) and <em>Avantisvami</em> (Vishnu) temples.</li>
+    <li>His minister-engineer <strong>Suyya</strong> regulated the course of the Vitasta (Jhelum) river — a pioneering hydraulic engineering feat that drained marshes and brought back agricultural prosperity. The town of <em>Suyyapura</em> was named after him.</li>
+    <li><strong>Shankaravarman</strong> (c. 883–902 AD) — son of Avantivarman; expanded into Punjab and reached the Hindushahi frontier but was killed in battle. His widow <strong>Queen Sugandha</strong> ruled as regent.</li>
+    <li>The dynasty declined into a series of weak rulers, palace intrigues and rule of <em>Tantrins</em> (mercenary foot-soldiers).</li>
+    <li><strong>Queen Didda</strong> (c. 980–1003 AD) — granddaughter of Bhima Shahi (Hindushahi); first as regent, then as sovereign queen — strong ruler who held Kashmir for two decades; named her Khasa nephew Sangrama Raja as successor → founding the <em>First Lohara dynasty</em>.</li>
+  </ul>
+
+  <h3>7.3 Yashaskara Dynasty (c. 939–1003 AD — sometimes treated as a minor interregnum within the Utpalas)</h3>
+  <ul>
+    <li><strong>Founder:</strong> <strong>Yashaskara</strong> (c. 939–948 AD) — a Brahmana chosen as king by an assembly of priests (a unique constitutional moment in Kashmir).</li>
+    <li>His reign was marked by good administration and patronage of learning.</li>
+    <li>The dynasty was short-lived (3 weak successors) and the throne returned to the Utpala line / chaos.</li>
+  </ul>
+
+  <h3>7.4 Hindushahi Dynasty (c. 822–1026 AD)</h3>
+  <ul>
+    <li>Strictly speaking, the Hindushahis ruled the <strong>Kabul valley and the Punjab (Gandhara region)</strong> — not Kashmir proper — but they are conventionally grouped under "Kashmir dynasties" because of their geographic and political contact with it.</li>
+    <li>Succeeded the earlier <strong>Turkshahi</strong> dynasty around 822 AD when their last Turkshahi king Lagaturman was deposed by his Brahmana minister <strong>Kallar</strong>, who founded the Hindushahi line.</li>
+    <li>Capital initially at <em>Kabul</em>, later shifted east to <em>Udabhandapura (Hund)</em> on the Indus after Arab pressure.</li>
+    <li><strong>Major rulers:</strong>
+      <ul>
+        <li><strong>Bhima Shahi</strong> — early Hindushahi king; grandfather of Queen Didda of Kashmir (matrimonial link).</li>
+        <li><strong>Jayapala</strong> (c. 964–1001) — opposed the rising Ghaznavid power; <strong>defeated by Sabuktigin at Lamghan (Laghman)</strong> in 989. Later defeated by Sabuktigin's son <em>Mahmud of Ghazni</em> at the <strong>Battle of Peshawar (1001 AD)</strong>; captured and ransomed; later immolated himself in despair.</li>
+        <li><strong>Anandapala</strong> (1001–1010) — son of Jayapala; gathered a confederacy of Indian kings (Ujjain, Gwalior, Kalinjar, Kannauj, Delhi, Ajmer) but was decisively defeated by <strong>Mahmud of Ghazni at the Battle of Chach (Waihind / Hund, 1008 AD)</strong> — the battle that opened the Punjab to the Ghaznavids.</li>
+        <li><strong>Trilochanapala</strong> (1010–1021) — fought heroically but was killed; Hindushahi power collapsed.</li>
+        <li><strong>Bhimapala</strong> ("Nidar Bhim") — last Hindushahi; killed in 1026.</li>
+      </ul>
+    </li>
+    <li><strong>Historical significance:</strong> The Hindushahis were the <strong>first Indian dynasty to confront the Turkish onslaught</strong>; their century-long resistance (Sabuktigin–Jayapala–Anandapala–Trilochanapala–Bhimapala) bore the brunt of the Ghaznavid expansion and bought time for the rest of India. Al-Biruni, who came to India with Mahmud of Ghazni, paid them a memorable tribute in his <em>Kitab-ul-Hind</em>: <em>"In all their grandeur, they never slackened in their ardent desire of doing that which is good and right ... what a noble sentiment in barbarous times!"</em></li>
+  </ul>
+
+  <div class="callout warn"><strong>Mnemonic — Kashmir dynastic sequence:</strong> <em>Gonanda → Karkota (Lalitaditya, Martand) → Utpala (Avantivarman, Avantipur, Suyya) → Yashaskara (brief) → First Lohara (Didda's nephew) → Second Lohara → Sultanate (1339).</em> Hindushahis ran parallel in Punjab.</div>
+</section>
+
+<section class="notes" id="society">
+  <h2>8. Society of Early Medieval India</h2>
+
+  <h3>8.1 Condition of People in Early Medieval India</h3>
+  <ul>
+    <li>The <strong>bulk of the population</strong> remained agricultural — peasants (<em>krishakas, halikas</em>) cultivating lands often under tenancy.</li>
+    <li><strong>Rise of an intermediary class</strong> — Brahmana donees (<em>brahmadeya</em>), temple authorities (<em>devadana</em>) and military feudatories (<em>samantas, mahasamantas</em>) — extracted dues from the peasants on behalf of (or in lieu of) the state.</li>
+    <li><strong>Peasant condition deteriorated</strong> in many regions — multiple cesses (<em>kara, bhoga, sulka, mannadere, halibhata</em>), corvée labour (<em>vishti</em>), restrictions on movement.</li>
+    <li><strong>Tribal absorption</strong> continued — many tribal communities were integrated into the lower rungs of caste society.</li>
+  </ul>
+
+  <h3>8.2 Nature of Society in Early Medieval India</h3>
+
+  <h4>(a) Caste System</h4>
+  <ul>
+    <li><strong>Rigidification</strong> of the 4-fold varna order; proliferation of <em>jatis</em> (sub-castes) — by the time of Al-Biruni (c. 1030 AD), he counted dozens of named jatis in India.</li>
+    <li><strong>Mixed-caste origins</strong> (<em>anuloma</em> and <em>pratiloma</em>) were systematised in the Smritis.</li>
+    <li><strong>Kshatriya status</strong> was claimed by many new ruling groups — Pratiharas, Chandelas, Paramaras, Chauhans, Senas — who originated as Gurjaras, Bhilas, agriculturists or feudatories; many were ritually re-consecrated as Rajputs through the <em>Agnikula</em> myth of Mount Abu.</li>
+    <li>Vallalasena of Bengal codified <strong>Kulinism</strong> — a tier of "noble" Brahmana lineages within the Brahmana caste itself — which froze marriage circles in Bengal for centuries.</li>
+  </ul>
+
+  <h4>(b) Untouchability</h4>
+  <ul>
+    <li>Untouchability became <strong>fully institutionalised</strong>. The <em>Chandalas</em>, <em>Doms</em>, <em>Madigas</em>, <em>Paraiyars</em> were not allowed to enter villages, draw water from common wells, or even walk on main paths — they had to announce their approach.</li>
+    <li>Al-Biruni described <strong>eight categories of untouchables</strong> in India.</li>
+    <li>This rigid stratification later facilitated mass conversions to Islam (and from the 15th c., to Bhakti and Sufi inclusive sects).</li>
+  </ul>
+
+  <h3>8.3 Condition of Women in Early Medieval India</h3>
+  <ul>
+    <li><strong>Position deteriorated sharply</strong> in upper-caste society. Pre-puberty marriage became normative; <em>sati</em> spread across Rajasthan, Kashmir and the Deccan.</li>
+    <li>Widow remarriage and divorce — disallowed in upper varnas; remained acceptable in lower castes and tribal groups.</li>
+    <li>Property rights restricted to <em>stridhana</em>; the <em>Mitakshara</em> codified women's limited inheritance rights.</li>
+    <li><strong>Exceptional women:</strong> Queen <em>Didda</em> of Kashmir (sole sovereign queen, c. 980–1003), Queen <em>Sugandha</em>, the Western Ganga princess <em>Attimabbe</em> (Jain patron), and several Rashtrakuta and Chalukya princesses ruled as feudatory governors.</li>
+    <li><strong>Devadasi system</strong> — institutionalised in temple economies; girls "married" to the deity served as temple dancers, musicians and ritualists; many came from elite families.</li>
+  </ul>
+
+  <h3>8.4 Ways of Dressing, Food and Amusement during Early Medieval India</h3>
+  <ul>
+    <li><strong>Dress:</strong> Men — <em>dhoti</em>, upper cloth, turban; women — <em>sari</em> or <em>antariya</em> with breast-cloth (<em>kanchuka</em>); cotton was the common fabric, silk reserved for the wealthy. Jewellery was elaborate — gold, silver, gemstones — in both sexes.</li>
+    <li><strong>Food:</strong> Rice, wheat, barley, millets; pulses; ghee and milk products; meat (mostly mutton, fowl, fish — beef now strictly avoided in Brahmanical society); vegetarianism was the rising norm among upper castes, especially under Jain and Vaishnava influence.</li>
+    <li><strong>Amusements:</strong> Dance (<em>nritya</em>), music (vocal and instrumental — <em>vina</em>, <em>mridanga</em>, <em>flute</em>), chess (<em>chaturanga</em>), dice, polo, hunting (royal pastime), wrestling, swimming, festivals. The Manasollasa of Someshvara III describes royal pastimes in detail.</li>
+    <li><strong>Festivals:</strong> Holi, Diwali, Shivaratri, Navaratri, Sankranti, Onam, Pongal — many regional festivals took their modern shape in this period.</li>
+  </ul>
+
+  <h3>8.5 Condition of Education in Early Medieval India</h3>
+  <ul>
+    <li><strong>Brahmanical</strong> education centred on the <em>gurukula</em> system and at temple colleges (<em>ghatika</em> / <em>matha</em>).</li>
+    <li><strong>Buddhist learning</strong> flourished at the four Pala Mahaviharas — <em>Nalanda, Vikramshila, Somapura (Paharpur), Odantapuri</em>. <strong>Atisha Dipankara Srijnana</strong>, abbot of Vikramshila, went to Tibet c. 1042 AD at the invitation of the king of Tibet — a pivotal moment in Indo-Tibetan religious history.</li>
+    <li><strong>Jain education</strong> at Shravanabelagola (Western Ganga) and at Manyakheta (Rashtrakuta).</li>
+    <li><strong>Specialised centres:</strong> <em>Kashi</em> (Sanskrit), <em>Mithila</em> (Nyaya), <em>Kanchi</em> (Ghatika of the South), <em>Vallabhi</em> (mixed), <em>Sharada Peeth</em> (Kashmir — for grammar and Shaiva philosophy).</li>
+    <li><strong>Sharada Peeth</strong> in Kashmir gave its name to the <em>Sharada script</em> from which the modern Gurmukhi and Devanagari descend.</li>
+  </ul>
+
+  <h3>8.6 Developments in the Field of Science during Early Medieval India</h3>
+  <ul>
+    <li><strong>Mathematics &amp; astronomy:</strong>
+      <ul>
+        <li><strong>Brahmagupta</strong> (c. 598–668 AD, just before this period) — his <em>Brahmasphutasiddhanta</em> was translated into Arabic in the 8th century at Baghdad — the route by which Indian decimal numerals reached Europe.</li>
+        <li><strong>Mahaviracharya</strong> (9th c., Amoghavarsha's court) — <em>Ganitasarasangraha</em>, the first Sanskrit textbook devoted exclusively to mathematics.</li>
+        <li><strong>Bhaskara II (Bhaskaracharya)</strong> (c. 1114–1185, Western Chalukya region) — <em>Siddhantashiromani</em> (4 parts — <em>Lilavati, Bijaganita, Grahaganita, Goladhyaya</em>); anticipated calculus by his concept of <em>Tatkalika gati</em> (instantaneous motion).</li>
+      </ul>
+    </li>
+    <li><strong>Medicine:</strong> Continued development of the <em>Charaka–Susruta</em> tradition. <strong>Vagbhata's <em>Ashtangahridaya</em></strong> (c. 7th c.) was widely studied. <strong>Madhavakara's <em>Rugviniscaya</em></strong> (c. 9th c.) — a systematic diagnostic compendium.</li>
+    <li><strong>Metallurgy:</strong> Continued excellence in the iron and steel industry — the Mehrauli iron pillar (Gupta) tradition continued; the bronze sculpture of the Palas, Cholas and Rashtrakutas reached technical peaks.</li>
+    <li><strong>Hydraulic engineering:</strong> Suyya in Kashmir; the immense step-wells (<em>vavs / baolis</em>) of Gujarat and Rajasthan; the irrigation tanks of Vidarbha and Karnataka.</li>
+    <li><strong>Architecture as science:</strong> The <em>Vastushastra</em> tradition matured — <em>Mayamatam</em>, <em>Manasara</em>, <em>Samaranganasutradhara</em> of Bhoja Paramara (11th c.) — detailed treatises on temple-building, town-planning and even early references to mechanical contrivances.</li>
+  </ul>
+
+  <h3>8.7 Religious Learning during Early Medieval India</h3>
+
+  <h4>(a) Revival of Hinduism</h4>
+  <ul>
+    <li>The most defining religious movement of the period was the <strong>revival of Brahmanical Hinduism</strong> at the expense of Buddhism — driven by three forces:
+      <ol>
+        <li><strong>Adi Shankaracharya</strong> (c. 788–820 AD) of Kaladi (Kerala) — synthesised the Upanishadic doctrine into <strong>Advaita Vedanta</strong> ("non-dualism"). Travelled across India, founded the four <strong><em>mathas</em></strong> at Sringeri (south), Dwarka (west), Puri (east) and Jyotirmath (north) — institutionalising Hinduism. His commentaries (<em>bhashyas</em>) on the Brahma Sutras, Upanishads and Bhagavad Gita are foundational.</li>
+        <li><strong>The Bhakti movement</strong> — the <em>Alvars</em> (Vaishnava) and <em>Nayanars</em> (Shaiva) of the Tamil country composed devotional hymns in Tamil. Twelve Alvars (incl. Andal, Nammalvar) and 63 Nayanars (incl. Appar, Sambandar, Sundarar, Manikkavachakar). Their hymns were canonised as the <em>Nalayira Divya Prabandham</em> (Vaishnava) and the <em>Tirumurai</em> (Shaiva).</li>
+        <li><strong>Puranic Hinduism</strong> — the 18 Mahapuranas reached their final form, popularising Shiva, Vishnu and Devi cults across India through mythology, pilgrimage and temple ritual.</li>
+      </ol>
+    </li>
+    <li><strong>Tantra</strong> rose to prominence — both within Hinduism (Kashmir Shaivism — Vasugupta's <em>Shiva Sutras</em>, Abhinavagupta's <em>Tantraloka</em>) and Buddhism (Vajrayana under the Palas).</li>
+    <li><strong>Buddhism survived</strong> mainly in Bihar–Bengal (Pala patronage), Kashmir, Sri Lanka, Tibet, Burma. It declined elsewhere due to (i) Brahmanical revival, (ii) loss of merchant patronage, (iii) absorption of Buddhist deities into Hinduism (Buddha as the 9th avatar of Vishnu), and (iv) Turkish destruction of monasteries after 1200 AD (Bakhtiyar Khalji destroyed Nalanda and Vikramshila).</li>
+    <li><strong>Jainism</strong> flourished in Karnataka (Rashtrakutas, Gangas), Gujarat (Solankis) and Rajasthan.</li>
+    <li><strong>Islam</strong> arrived peacefully on the west coast through Arab traders — the earliest Indian mosques are at Kerala (Cheraman Juma Masjid, traditional date 629 AD) and on the Konkan/Gujarat coast under Rashtrakuta tolerance.</li>
+  </ul>
+</section>
+
+<section class="notes" id="economy">
+  <h2>9. Economic Life during Early Medieval India</h2>
+
+  <h3>9.1 The Feudal Economy — RS Sharma's Thesis</h3>
+  <ul>
+    <li><strong>RS Sharma</strong> argued that early medieval India experienced <strong>"Indian feudalism"</strong> — characterised by:
+      <ol>
+        <li>Proliferation of land grants (<em>brahmadeya, agrahara, devadana</em>, secular grants to officials).</li>
+        <li>Rise of an intermediary class of <em>samantas</em> and <em>mahasamantas</em> between the king and the cultivator.</li>
+        <li>Decline of long-distance trade and urban centres.</li>
+        <li>Restriction of peasants' mobility — they became virtual serfs (<em>halikas</em>) on the land.</li>
+        <li>Coinage decline — copper and base-metal coins increasingly replaced gold.</li>
+      </ol>
+    </li>
+    <li><strong>Counter-thesis (Harbans Mukhia, BD Chattopadhyaya):</strong> The land grants were not "feudal" in the European sense — there was no vassal–lord contract, peasants were not legal serfs, and trade did not fully collapse — especially in the Deccan and South which saw vigorous Indo-Arab commerce.</li>
+  </ul>
+
+  <h3>9.2 Trade and Commerce during Early Medieval India</h3>
+  <ul>
+    <li><strong>Inland trade</strong> continued through major routes — the <em>Uttarapatha</em> (north) and <em>Dakshinapatha</em> (south) — connecting all major capitals. Trade-fairs at Hardwar, Prayag, Pushkar, Sonepur (the Sonpur cattle fair of Bihar), Pattadakal flourished.</li>
+    <li><strong>Maritime trade</strong> on the west coast revived strongly under the Rashtrakutas and later the Solankis of Gujarat — with the Arabs, Persians and East Africans. Ports: <strong>Sopara, Thane, Saimur (Chemul), Cambay, Bharuch, Quilon</strong>.</li>
+    <li><strong>East coast maritime trade</strong> was dominated by the <strong>Cholas</strong> (south of our scope here) with SE Asia (Sri Vijaya) and China.</li>
+    <li><strong>Merchant guilds (Srenis)</strong> were powerful corporate bodies — the <em>Nakaras</em> (Karnataka), <em>Manigramam</em> and <em>Ainnurruvar (Five Hundred) of Ayyavole</em> (Aihole) had members spread across the Deccan, Tamil country and even Southeast Asia. They acted as bankers, organised caravans, and built temples.</li>
+    <li><strong>Imports:</strong> horses (from Arabia, Central Asia — vital for cavalry), gold, silver, silks, glassware, slaves.</li>
+    <li><strong>Exports:</strong> cotton textiles, spices (especially pepper from Malabar), indigo, sugar, precious stones, sandalwood, ivory.</li>
+    <li><strong>Coinage:</strong> Gold coinage declined in north India compared to the Gupta age, but the Rashtrakutas, Palas, Chalukyas and Cholas continued issuing gold and silver coins. The Pratiharas issued the famous <em>"Adivaraha" drammas</em> (Mihir Bhoja's silver coins).</li>
+    <li><strong>Urban centres</strong>: while many ancient cities (Pataliputra, Vaishali) had decayed, new ones flourished — <strong>Kannauj, Manyakheta, Tanjavur, Vengi, Rajamahendri, Lakhnauti, Cuttack, Anhilwad-Patan, Multan</strong> — driven by political capitals and pilgrimage trade.</li>
+  </ul>
+
+  <div class="callout"><strong>The "Five Hundred" of Ayyavole:</strong> Ayyavole (Aihole in Bagalkot, Karnataka) hosted the most famous medieval Indian merchant guild — the <em>Ainnurruvar / Aiyyavole 500</em>. Their inscriptions are found from Anuradhapura (Sri Lanka) to Sumatra. They were truly transnational merchants centuries before the European East India companies.</div>
+</section>
+
+<section class="notes" id="ca">
+  <h2>10. Current Affairs Link</h2>
+  <ul>
+    <li><strong>Ellora Cave 16 (Kailasanatha)</strong> — continues to feature in news for conservation; ASI restoration ongoing; impact of monsoon water seepage being studied.</li>
+    <li><strong>Konark Sun Temple</strong> — Phase III conservation work by ASI and INTACH; sand-filling controversy of the Jagamohana under review.</li>
+    <li><strong>Sharada Peeth in PoK</strong> — appeals for opening the Sharada Peeth corridor in PoK have been made periodically; a key religious-diplomatic issue.</li>
+    <li><strong>Martand Sun Temple</strong> — ASI is conducting structural survey; Kashmir's archaeological heritage is once again in the spotlight after the 2019 reorganisation.</li>
+    <li><strong>Shravanabelagola Mahamastakabhisheka</strong> — last held in 2018; once-in-12-years ceremony anointing the Bahubali monolith built by Chamundaraya under the Western Gangas.</li>
+    <li><strong>Bakhtiyar Khalji's conquest of Bengal (1204)</strong> and his attack on Nalanda — periodically discussed in academic/historiographical debates on the "decline of Buddhism in India".</li>
+    <li><strong>Jagannath Temple Puri</strong> — Rath Yatra; conservation of the 12th-century Eastern Ganga structure.</li>
+  </ul>
+</section>
+
+<section class="notes" id="pyq">
+  <h2>11. Previous Year Questions (UPSC)</h2>
+
+  <div class="pyq"><span class="year">UPSC Prelims 2014</span><br>
+    <strong>Q.</strong> The Nagara, the Dravida and the Vesara are the —<br>
+    (a) three main racial groups of the Indian subcontinent &nbsp; <strong>(b) three main linguistic divisions into which the languages of India can be classified</strong> — incorrect; the correct answer is (c) three main styles of Indian temple architecture &nbsp; (d) three main musical traditions<br>
+    <em>Hint: The Rashtrakuta–Chalukya zone is the cradle of the Vesara style (fusion of Nagara &amp; Dravida) — Pattadakal, Lakkundi, Itagi.</em>
+  </div>
+
+  <div class="pyq"><span class="year">UPSC Prelims 2016</span><br>
+    <strong>Q.</strong> Banjaras during the medieval period of Indian history were generally —<br>
+    <em>Hint: The Banjaras were caravan-trading communities whose roots go back to the early medieval merchant guilds; they were the long-distance bullock-cart traders of pre-modern India.</em>
+  </div>
+
+  <div class="pyq"><span class="year">UPSC Prelims 2019</span><br>
+    <strong>Q.</strong> With reference to the cultural history of India, consider the following statements: (1) Mitakshara was the civil law for upper castes and Dayabhaga was the civil law for lower castes. (2) ... <br>
+    <em>Hint: Wrong — Mitakshara (Vijnaneshvara) was the dominant law school of most of India; Dayabhaga (Jimutavahana) was the law school of Bengal. Both were composed in the early medieval period under the Chalukyas of Kalyani and the Senas of Bengal respectively.</em>
+  </div>
+
+  <div class="pyq"><span class="year">UPSC Mains GS-I 2018</span><br>
+    <strong>Q.</strong> Safeguarding the Indian art heritage is the need of the moment. Discuss.<br>
+    <em>Hint: Use Ellora, Elephanta, Konark and Martand as case studies — combine archaeological challenges with cultural significance.</em>
+  </div>
+
+  <div class="pyq"><span class="year">UPSC Mains GS-I 2020</span><br>
+    <strong>Q.</strong> Pala period is the most significant phase in the history of Buddhism in India. Enumerate.<br>
+    <em>Hint: Discuss Mahaviharas (Nalanda, Vikramshila, Somapura, Odantapuri), Pala art school, Atisha Dipankara to Tibet, Vajrayana Buddhism, royal patronage from Gopala to Mahipala I. Conclude with Bakhtiyar Khalji's destruction (1204) and the survival of Pala Buddhist tradition in Tibet.</em>
+  </div>
+
+  <div class="pyq"><span class="year">UPSC Mains GS-I 2019</span><br>
+    <strong>Q.</strong> Discuss the Tripartite Struggle for control over Kannauj in the early medieval period.<br>
+    <em>Hint: Structure the answer as Why Kannauj → 3 powers (Pratihara, Pala, Rashtrakuta) → 5–6 rounds in chronological order → 916 sack as climax → consequences (mutual exhaustion, rise of Rajput dynasties, vulnerability to Mahmud of Ghazni).</em>
+  </div>
+
+<div class="pyq"><span class="year">UPSC Prelims 2023</span><br><strong>Q.</strong> With reference to the history of India, consider the following pairs: (1) Pala Empire — founded by Gopala; (2) Pratihara Empire — founded by Nagabhata I; (3) Rashtrakuta dynasty — founded by Dantidurga. How many of the above pairs are correctly matched?<br><em>Hint: All three correct. This tests foundational knowledge of early medieval dynasties. Gopala (750 CE), Nagabhata I (c.730 CE), Dantidurga (c.753 CE) all correct founding figures.</em></div>
+
+<div class="pyq"><span class="year">UPSC Prelims 2024</span><br><strong>Q.</strong> With reference to the Gurjara-Pratiharas, which of the following statements is/are correct? (1) They successfully halted Arab advance into India. (2) Mihira Bhoja was their greatest ruler. (3) They were defeated by the Rashtrakutas. Select the correct answer.<br><em>Hint: All three correct. The Pratiharas under Mihira Bhoja (836-885 CE) were the primary barrier to Arab expansion; they fought multiple conflicts with Rashtrakutas over Kanauj (tripartite struggle).</em></div>
+
+<div class="pyq"><span class="year">UPSC Mains GS-I 2023</span><br><strong>Q.</strong> Discuss the factors responsible for the decline of large empires in India after the 7th century CE and the rise of regional kingdoms.<br><em>Hint: Feudalisation (landlord-vassal system), decline of long-distance trade, regional identities and language, absence of centralised revenue, military decentralisation, Arab/Turkish pressure on northwest — all weakened central authority and enabled Rajput kingdoms, Palas, Rashtrakutas to emerge.</em></div>
+
+<div class="pyq"><span class="year">UPSC Mains GS-I 2025</span><br><strong>Q.</strong> Analyse the significance of the tripartite struggle among the Palas, Pratiharas, and Rashtrakutas for Kanauj. What does it reveal about the political economy of early medieval India?<br><em>Hint: Kanauj = symbolic imperial capital (Harsha's legacy) + trade/resource node; control = legitimacy claim. Reveals: decentralised agrarian economy, importance of symbolic capital over territorial expansion, failure of confederation-building, and how military feudalism prevented stable large empires.</em></div>
+</section>
+
+<section class="notes" id="revision">
+  <div class="revision-box">
+    <h3>15-Minute Revision Box — Early Medieval India Snapshot</h3>
+    <ol>
+      <li><strong>Gurjara Pratiharas</strong> — Nagabhata I (founder, beat Arabs of Junaid); Nagabhata II (Kannauj capital); <strong>Mihir Bhoja</strong> (greatest, Adivaraha, Sulaiman called him "Jurz"); Mahendrapala I (court of Rajashekhara); fell after Indra III sacked Kannauj (916) and Mahmud of Ghazni sacked Kannauj (1018).</li>
+      <li><strong>Palas of Bengal</strong> — <em>Gopala</em> elected by people (Matsyanyaya ended c. 750); <em>Dharmapala</em> (Vikramshila, Somapura/Paharpur); <em>Devapala</em> (greatest; Balaputradeva Sumatra link); <em>Mahipala I</em> revived; <em>Ramapala</em> (Kaivarta revolt, Ramacharita by Sandhyakaranandi). <strong>Atisha Dipankara → Tibet (c. 1042).</strong></li>
+      <li><strong>Rashtrakutas</strong> — <em>Dantidurga</em> overthrew last Chalukya of Badami (753); <em>Krishna I</em> built Ellora Kailasa (Cave 16); <em>Dhruva</em> and <em>Govinda III</em> dominated Tripartite Struggle; <em>Amoghavarsha I</em> (Kavirajamarga, Mahaviracharya, Manyakheta — Sulaiman ranked him among 4 great kings of the world); <em>Indra III</em> sacked Kannauj (916); <em>Krishna III</em> (Takkolam 949); fell to Tailapa II Chalukya of Kalyani (974).</li>
+      <li><strong>Tripartite Struggle</strong> — 6 rounds over Kannauj (c. 790–916); Pratihara, Pala, Rashtrakuta exhaust each other → opens way for Turks.</li>
+      <li><strong>Sena Dynasty (Bengal)</strong> — Vijayasena replaced Palas; Vallalasena codified <em>Kulinism</em>; Lakshmana Sena's court → Jayadeva (Gita Govinda), Dhoyi, Halayudha; defeated by Bakhtiyar Khalji at Nadia (1204–05).</li>
+      <li><strong>Chedi (Kalachuri) Tripuri</strong> — Kokalla I founder; Gangeyadeva; Karna (Lakshmikarna) — patron of Bilhana; central India.</li>
+      <li><strong>Western Gangas (Karnataka)</strong> — Talakad; Konganivarman founder; <em>Chamundaraya</em> built monolithic Bahubali at Shravanabelagola (982); Jain patrons; ended by Chola Rajaraja I.</li>
+      <li><strong>Eastern Gangas (Odisha)</strong> — <em>Anantavarman Chodaganga</em> founder; began Jagannath Puri; <em>Narasimhadeva I</em> built Konark Sun Temple (UNESCO WHS); ended 1434.</li>
+      <li><strong>Eastern Chalukyas of Vengi</strong> — founded by Kubja Vishnuvardhana (brother of Pulakeshin II); <em>Nannaya</em> Adikavi of Telugu (Andhra Mahabharatam); merged with Cholas via <em>Kulottunga I</em>.</li>
+      <li><strong>Western Chalukyas of Kalyani</strong> — <em>Tailapa II</em> overthrew Rashtrakutas (974); <em>Someshvara I</em> founded Kalyani; <em>Vikramaditya VI</em> (50-yr reign, Vikrama era 1076, court of Bilhana, Vijnaneshvara wrote <em>Mitakshara</em>); <em>Someshvara III</em> wrote <em>Manasollasa</em>; <em>Vesara</em> temples (Itagi, Lakkundi).</li>
+      <li><strong>Karkota dynasty (Kashmir)</strong> — <em>Lalitaditya Muktapida</em> (724–760) — built Martand Sun Temple, founded Parihasapura, defeated Yashovarman.</li>
+      <li><strong>Utpala</strong> — Avantivarman (built Avantipur); Suyya regulated Vitasta; Queen Didda last great ruler (980–1003).</li>
+      <li><strong>Hindushahi</strong> — Kabul–Punjab; Kallar founder (822); Jayapala–Anandapala fought Mahmud of Ghazni (Peshawar 1001, Chach/Waihind 1008); first Indian dynasty to face Turks; Al-Biruni's moving tribute.</li>
+      <li><strong>Society</strong> — varna rigidification, Kulinism, untouchability institutionalised (Al-Biruni: 8 categories), sati spreads, Devadasi system, women's status declines.</li>
+      <li><strong>Religion</strong> — <em>Adi Shankaracharya</em> (788–820) Advaita Vedanta + 4 mathas; Alvars/Nayanars Bhakti; Tantra; Buddhism survives mainly under Palas; Jainism under Rashtrakutas/Gangas/Solankis; Islam arrives peacefully on west coast via Arabs.</li>
+      <li><strong>Science</strong> — Mahaviracharya (Ganitasarasangraha), Bhaskaracharya II (Siddhantashiromani — Lilavati), Vagbhata (Ashtangahridaya); Suyya hydraulic engineering; Vastushastra: Samaranganasutradhara of Bhoja Paramara.</li>
+      <li><strong>Economy</strong> — RS Sharma's "Indian feudalism"; brahmadeyas; declining urbanism; Mihir Bhoja's Adivaraha drammas; <em>Ayyavole 500</em> merchant guild from Aihole — operated from Sri Lanka to Sumatra.</li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<aside>
+<div class="aside-sticky">
+
+<div class="widget">
+  <h4>Quick Reference — Major Dynasties</h4>
+  <table>
+    <tr><th>Dynasty</th><th>Capital</th><th>Greatest</th></tr>
+    <tr><td>Pratihara</td><td>Kannauj</td><td>Mihir Bhoja</td></tr>
+    <tr><td>Pala</td><td>Pataliputra/Munger</td><td>Devapala</td></tr>
+    <tr><td>Rashtrakuta</td><td>Manyakheta</td><td>Amoghavarsha I</td></tr>
+    <tr><td>Sena</td><td>Lakhnauti</td><td>Lakshmana Sena</td></tr>
+    <tr><td>Chedi</td><td>Tripuri</td><td>Karna</td></tr>
+    <tr><td>W. Ganga</td><td>Talakad</td><td>Rachamalla IV (Chamundaraya)</td></tr>
+    <tr><td>E. Ganga</td><td>Cuttack</td><td>Narasimhadeva I</td></tr>
+    <tr><td>E. Chalukya (Vengi)</td><td>Rajamahendri</td><td>Kulottunga I (merged Chola)</td></tr>
+    <tr><td>W. Chalukya (Kalyani)</td><td>Kalyani</td><td>Vikramaditya VI</td></tr>
+    <tr><td>Karkota</td><td>Srinagar/Parihasapura</td><td>Lalitaditya Muktapida</td></tr>
+    <tr><td>Utpala</td><td>Avantipur</td><td>Avantivarman / Didda</td></tr>
+    <tr><td>Hindushahi</td><td>Kabul → Hund</td><td>Jayapala / Anandapala</td></tr>
+  </table>
+</div>
+
+<div class="widget">
+  <h4>Tripartite Struggle Snapshot</h4>
+  <table>
+    <tr><th>Power</th><th>Best</th><th>Key year</th></tr>
+    <tr><td>Pratihara</td><td>Mihir Bhoja</td><td>c. 850</td></tr>
+    <tr><td>Pala</td><td>Devapala</td><td>c. 830</td></tr>
+    <tr><td>Rashtrakuta</td><td>Indra III</td><td>916 (sack of Kannauj)</td></tr>
+  </table>
+</div>
+
+<div class="widget">
+  <h4>Difficulty &amp; Importance</h4>
+  <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:88%"></span></span></div>
+  <div class="bar"><span class="lbl">Mains GS-I</span><span class="fill"><span style="width:92%"></span></span></div>
+  <div class="bar"><span class="lbl">Art &amp; Culture</span><span class="fill"><span style="width:95%"></span></span></div>
+  <div class="bar"><span class="lbl">Conceptual</span><span class="fill"><span style="width:82%"></span></span></div>
+</div>
+
+<div class="widget">
+  <h4>Must-Know Tags</h4>
+  <div>
+    <span class="tag">Gurjara Pratihara</span>
+    <span class="tag">Mihir Bhoja</span>
+    <span class="tag">Adivaraha</span>
+    <span class="tag">Nagabhata I</span>
+    <span class="tag">Nagabhata II</span>
+    <span class="tag">Mahendrapala I</span>
+    <span class="tag">Rajashekhara</span>
+    <span class="tag">Gwalior Prashasti</span>
+    <span class="tag">Junaid</span>
+    <span class="tag orange">Pala Dynasty</span>
+    <span class="tag orange">Gopala</span>
+    <span class="tag orange">Matsyanyaya</span>
+    <span class="tag orange">Dharmapala</span>
+    <span class="tag orange">Devapala</span>
+    <span class="tag orange">Khalimpur Plate</span>
+    <span class="tag orange">Vikramshila</span>
+    <span class="tag orange">Somapura</span>
+    <span class="tag orange">Paharpur</span>
+    <span class="tag orange">Atisha Dipankara</span>
+    <span class="tag orange">Balaputradeva</span>
+    <span class="tag">Rashtrakuta</span>
+    <span class="tag">Dantidurga</span>
+    <span class="tag">Krishna I</span>
+    <span class="tag">Ellora Cave 16</span>
+    <span class="tag">Kailasanatha Ellora</span>
+    <span class="tag">Govinda III</span>
+    <span class="tag">Amoghavarsha I</span>
+    <span class="tag">Kavirajamarga</span>
+    <span class="tag">Mahaviracharya</span>
+    <span class="tag">Ganitasarasangraha</span>
+    <span class="tag">Manyakheta</span>
+    <span class="tag">Indra III</span>
+    <span class="tag">Krishna III</span>
+    <span class="tag">Takkolam</span>
+    <span class="tag">Elephanta</span>
+    <span class="tag">Trimurti</span>
+    <span class="tag green">Tripartite Struggle</span>
+    <span class="tag green">Kannauj</span>
+    <span class="tag green">Sena Dynasty</span>
+    <span class="tag green">Vijayasena</span>
+    <span class="tag green">Vallalasena</span>
+    <span class="tag green">Kulinism</span>
+    <span class="tag green">Lakshmana Sena</span>
+    <span class="tag green">Jayadeva</span>
+    <span class="tag green">Gita Govinda</span>
+    <span class="tag green">Bakhtiyar Khalji</span>
+    <span class="tag">Chedi Tripuri</span>
+    <span class="tag">Kalachuri</span>
+    <span class="tag">Karna</span>
+    <span class="tag">Western Ganga</span>
+    <span class="tag">Talakad</span>
+    <span class="tag">Chamundaraya</span>
+    <span class="tag">Shravanabelagola</span>
+    <span class="tag">Bahubali</span>
+    <span class="tag">Eastern Ganga</span>
+    <span class="tag">Chodaganga</span>
+    <span class="tag">Konark</span>
+    <span class="tag">Narasimhadeva I</span>
+    <span class="tag">Jagannath Puri</span>
+    <span class="tag orange">Eastern Chalukya Vengi</span>
+    <span class="tag orange">Kubja Vishnuvardhana</span>
+    <span class="tag orange">Nannaya</span>
+    <span class="tag orange">Kulottunga I</span>
+    <span class="tag orange">W. Chalukya Kalyani</span>
+    <span class="tag orange">Tailapa II</span>
+    <span class="tag orange">Vikramaditya VI</span>
+    <span class="tag orange">Bilhana</span>
+    <span class="tag orange">Vikramankadevacharita</span>
+    <span class="tag orange">Vijnaneshvara</span>
+    <span class="tag orange">Mitakshara</span>
+    <span class="tag orange">Someshvara III</span>
+    <span class="tag orange">Manasollasa</span>
+    <span class="tag orange">Vesara</span>
+    <span class="tag orange">Itagi</span>
+    <span class="tag green">Karkota</span>
+    <span class="tag green">Lalitaditya Muktapida</span>
+    <span class="tag green">Martand</span>
+    <span class="tag green">Rajatarangini</span>
+    <span class="tag green">Kalhana</span>
+    <span class="tag green">Utpala</span>
+    <span class="tag green">Avantivarman</span>
+    <span class="tag green">Suyya</span>
+    <span class="tag green">Didda</span>
+    <span class="tag green">Hindushahi</span>
+    <span class="tag green">Kallar</span>
+    <span class="tag green">Jayapala</span>
+    <span class="tag green">Anandapala</span>
+    <span class="tag green">Chach Waihind 1008</span>
+    <span class="tag">Adi Shankaracharya</span>
+    <span class="tag">Advaita Vedanta</span>
+    <span class="tag">Four Mathas</span>
+    <span class="tag">Alvars Nayanars</span>
+    <span class="tag">Bhakti Movement</span>
+    <span class="tag">RS Sharma Feudalism</span>
+    <span class="tag">Ayyavole 500</span>
+    <span class="tag">Dayabhaga</span>
+    <span class="tag">Jimutavahana</span>
+    <span class="tag">Veera Shaivism</span>
+    <span class="tag">Basavanna</span>
+  </div>
+</div>
+
+<div class="widget">
+  <h4>5-Question Self-Test</h4>
+  <details>
+    <summary>Q1. Who was the founder of the Pala dynasty and how did he come to power?</summary>
+    <p><strong>Gopala</strong> (c. 750 AD) was <em>elected</em> by the leading men of Gauda to end the anarchy of <em>Matsyanyaya</em> ("law of fishes") — a unique instance of an elected monarch in early medieval India, recorded in the <em>Khalimpur copper-plate inscription</em> of his son Dharmapala.</p>
+  </details>
+  <details>
+    <summary>Q2. Who built the Kailasanatha temple at Ellora and what is its architectural significance?</summary>
+    <p>Built by the Rashtrakuta king <strong>Krishna I</strong> (c. 756–774 AD), it is the largest monolithic rock-cut temple in the world, carved <em>top-down</em> from a single basalt outcrop. It is modeled on the Pallava Kailasanatha (Kanchi) and the Chalukya Virupaksha (Pattadakal). UNESCO World Heritage Site (1983).</p>
+  </details>
+  <details>
+    <summary>Q3. What was the Tripartite Struggle, and which event marked its decisive end?</summary>
+    <p>The century-long contest among the <strong>Pratiharas</strong>, <strong>Palas</strong> and <strong>Rashtrakutas</strong> over <strong>Kannauj</strong> (c. 790–910 AD). The decisive end came in <strong>916 AD</strong> when the Rashtrakuta king <strong>Indra III</strong> sacked Kannauj and ejected Mahipala I Pratihara — a blow from which the Pratiharas never recovered.</p>
+  </details>
+  <details>
+    <summary>Q4. Which Kashmiri king conducted extensive military campaigns across northern India, and what does Kalhana record about him?</summary>
+    <p><strong>Lalitaditya Muktapida</strong> of the <strong>Karkota dynasty</strong> (c. 724–760 AD). <em>Kalhana's Rajatarangini</em> describes him as a <em>Digvijayi</em> who defeated <em>Yashovarman of Kannauj</em>, the Turks of Tukharistan and reached central Asia. He built the famous <strong>Martand Sun Temple</strong> and founded the city of Parihasapura.</p>
+  </details>
+  <details>
+    <summary>Q5. Which three immortal Sanskrit works were composed at the Western Chalukya court of Kalyani?</summary>
+    <p>(1) <em>Vikramankadevacharita</em> by <strong>Bilhana</strong> — biographical poem on Vikramaditya VI; (2) <em>Mitakshara</em> by <strong>Vijnaneshvara</strong> — the authoritative Hindu law commentary on the Yajnavalkya Smriti; (3) <em>Manasollasa</em> by <strong>Someshvara III</strong> — encyclopaedia of royal life, arts and sciences.</p>
+  </details>
+</div>
+
+<div class="widget">
+  <h4>Related UPSC Notes</h4>
+  <ul class="related">
+    <li><a href="/ancient-history">Topic 12 (Ancient): Post-Gupta Age</a></li>
+    <li><a href="/ancient-history">Topic 11 (Ancient): Gupta Era</a></li>
+    <li><a href="/ancient-history">Ancient History — Complete</a></li>
+    <li><a href="/upsc-notes">All UPSC Notes</a></li>
+  </ul>
+</div>
+</aside>
+
+</div>
+</div>

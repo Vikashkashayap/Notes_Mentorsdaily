@@ -1,0 +1,923 @@
+<!-- medieval-topic02 — auto-imported from medieval-topic02-chola-empire-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#8b4513;
+  --brand-blue-dark:#5a2a0a;
+  --brand-blue-light:#f5ebe0;
+  --brand-orange:#d4af37;
+  --green:#2a6b4a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(135deg,#a85a30 0%,#6a3a1a 60%,#3a1a08 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(212,175,55,0.32),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ol{margin:0;padding-left:22px;font-size:14px;columns:2;column-gap:24px}
+.toc li{margin-bottom:5px;break-inside:avoid}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout strong{color:var(--brand-blue-dark)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#e6cdb5;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ol{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:24px}
+  section.notes{padding:18px}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>The Chola Empire (c. 850–1200 AD) — Rajaraja I, Rajendra I &amp; the Apex of Dravida Civilisation</h1>
+  <p class="sub">The Imperial Cholas of Tanjore — from Vijayalaya's revival (850 AD) through Rajaraja I (Brihadeshwara) and Rajendra I (Gangaikondacholapuram, Srivijaya naval raid 1025) to Kulottunga I and the end at the hands of Jatavarman Sundara Pandya (1279). The age of the Uttaramerur Sabha, Dravida temple architecture, Nataraja bronzes and Tamil mercantile guilds in the Indian Ocean.</p>
+  <div class="meta">
+    <span class="pill">UPSC Prelims · Mains GS-I</span>
+    <span class="pill">Nilakanta Sastri · Subbarayalu</span>
+    <span class="pill">~65 min read</span>
+    <span class="pill">Brihadeshwara · Uttaramerur</span>
+    <span class="pill">Bronze Nataraja · Srivijaya</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ol>
+    <li><a href="#concept">Conceptual Clarity</a></li>
+    <li><a href="#origin">Origin &amp; Rise of the Chola Empire</a></li>
+    <li><a href="#sources">Sources of Chola History</a></li>
+    <li><a href="#political">Political History — Vijayalaya to Vira Rajendra</a></li>
+    <li><a href="#admin">Administrative Structure &amp; Local Self-Government</a></li>
+    <li><a href="#economy">Economic Structure — Land, Trade, Guilds</a></li>
+    <li><a href="#society">Society &amp; Social Groups</a></li>
+    <li><a href="#culture">Cultural Life — Architecture, Bronze, Literature</a></li>
+    <li><a href="#end">End of the Chola Empire</a></li>
+    <li><a href="#ca">Current Affairs Link</a></li>
+    <li><a href="#pyq">Previous Year Questions</a></li>
+    <li><a href="#revision">15-Minute Revision Box</a></li>
+  </ol>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity — What to remember about the Chola Empire</h3>
+  <p>The Imperial Cholas (c. 850–1279 AD) revived a Sangam-age lineage and built the most sophisticated state of medieval South India — combining strong central monarchy with the most developed local self-government tradition in pre-modern India. The period is defined by:</p>
+  <ul>
+    <li><strong>Apex of Dravida civilisation</strong> — temple architecture (Brihadeshwara), bronze casting (Nataraja), Tamil literature (Kamban's <em>Ramavataram</em>, Sekkilar's <em>Periyapuranam</em>) all reach their peak.</li>
+    <li><strong>Local self-government</strong> — the Uttaramerur inscriptions of Parantaka I (919–921 AD) record the Sabha–Ur–Nagaram tiered village democracy under the Kudavolai (palm-leaf lottery) ballot.</li>
+    <li><strong>Indian Ocean reach</strong> — Rajendra I's 1025 AD naval raid on Srivijaya is the rare medieval Indian transoceanic military expedition; embassies to Sung China in 1015 and 1033.</li>
+    <li><strong>Centralisation vs feudalisation</strong> — Burton Stein's "segmentary state" thesis vs Y. Subbarayalu's evidence of fiscal centralisation under Rajaraja I.</li>
+    <li><strong>Bhakti continuity</strong> — 63 Saiva Nayanars and 12 Vaishnava Alvars canonised; Ramanuja's Vishishtadvaita founded at Srirangam.</li>
+  </ul>
+</div>
+
+<section class="notes" id="origin">
+<h2>1. Origin &amp; Rise of the Chola Empire</h2>
+
+<h3>1.1 Ancient Roots — The Sangam Cholas</h3>
+<p>The Cholas are among the three traditional "crowned kings" (<em>muvendar</em> — Chera, Chola, Pandya) of the Tamilakam mentioned in <strong>Ashokan Rock Edict XIII</strong> (3rd c. BC) and the Sangam corpus. Their capital was <strong>Uraiyur</strong> (modern Tiruchirappalli) on the Kaveri, and their port was <strong>Kaveripattinam (Puhar)</strong>. The most famous Sangam-age Chola was <strong>Karikala Chola</strong> (c. 190 AD) — celebrated for defeating a Chera-Pandya-Velir confederacy at <strong>Venni</strong>, constructing the <strong>Kallanai (Grand Anicut) dam</strong> on the Kaveri, and patronising Tamil literature (<em>Pattinappalai</em>).</p>
+<p>After the Sangam age, Chola power eclipsed for nearly six centuries (3rd–9th c. AD) as the <strong>Kalabhras</strong>, <strong>Pallavas</strong> (from Kanchi) and <strong>Pandyas</strong> (from Madurai) dominated the Tamil country. The Cholas survived as <strong>feudatories of the Pallavas</strong>, confined to the Uraiyur–Tanjore tract.</p>
+
+<h3>1.2 Revival under Vijayalaya (c. 850 AD)</h3>
+<p>Around <strong>850 AD</strong>, exploiting the weakness of both the Pallavas (declining after Aparajitavarman) and the Pandyas (defeated at Sripurambiyam c. 879 by his son), the Chola feudatory <strong>Vijayalaya</strong> seized <strong>Tanjore (Thanjavur)</strong> from the Muttaraiyar chieftains. He converted Tanjore into the Imperial Chola capital and built the <strong>Nishumbhasudini (Durga) temple</strong> there — the foundational shrine of the Imperial line.</p>
+
+<div class="callout info">
+<strong>Why Tanjore?</strong> Strategic location at the head of the Kaveri delta — India's most fertile rice basin. Control of Tanjore meant control of agrarian surplus + a riverine corridor to the coast. Vijayalaya's choice of capital determined Chola statecraft for 400 years.
+</div>
+
+<h3>1.3 Geographical Setting — The <em>Cholamandalam</em></h3>
+<p>The Chola heartland (<strong>Cholamandalam</strong> — anglicised "Coromandel") comprised:</p>
+<ul>
+  <li><strong>Kaveri delta</strong> — the rice bowl of South India, with cities at Tanjore, Uraiyur, Kumbakonam, Tiruchirappalli.</li>
+  <li><strong>Coastal Tamilakam</strong> — ports at Kaveripattinam, Nagapattinam, Mahabalipuram.</li>
+  <li>At its peak under <strong>Rajendra I</strong>, the empire extended from the <strong>Tungabhadra in the north</strong> to <strong>Sri Lanka in the south</strong>, with vassal/raid reach up to <strong>Bengal (Pala territory)</strong> and across the Bay to <strong>Srivijaya (Sumatra–Malaya)</strong>.</li>
+</ul>
+
+<div class="svg-wrap">
+<svg viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Map sketch of Chola territorial reach">
+  <rect width="700" height="280" fill="#fff8f0"/>
+  <text x="350" y="22" text-anchor="middle" font-size="14" font-weight="800" fill="#5a2a0a">CHOLA TERRITORIAL REACH (under Rajendra I, c. 1025 AD)</text>
+  <!-- Core -->
+  <ellipse cx="280" cy="170" rx="70" ry="40" fill="#d4af37" opacity="0.5"/>
+  <text x="280" y="173" text-anchor="middle" font-size="11" font-weight="700" fill="#3a1a08">Cholamandalam</text>
+  <text x="280" y="187" text-anchor="middle" font-size="9" fill="#3a1a08">(Tanjore, Uraiyur, Kaveri)</text>
+  <!-- South -->
+  <ellipse cx="280" cy="240" rx="35" ry="20" fill="#a85a30" opacity="0.4"/>
+  <text x="280" y="244" text-anchor="middle" font-size="10" font-weight="700" fill="#3a1a08">Sri Lanka (annexed)</text>
+  <!-- North reach -->
+  <ellipse cx="280" cy="80" rx="80" ry="22" fill="#a85a30" opacity="0.3"/>
+  <text x="280" y="84" text-anchor="middle" font-size="10" font-weight="700" fill="#3a1a08">Vengi · Kalinga · up to Bengal (raid)</text>
+  <!-- West -->
+  <ellipse cx="160" cy="170" rx="40" ry="25" fill="#a85a30" opacity="0.3"/>
+  <text x="160" y="173" text-anchor="middle" font-size="10" font-weight="700" fill="#3a1a08">Chera / Kerala</text>
+  <!-- East overseas -->
+  <ellipse cx="500" cy="170" rx="90" ry="30" fill="#8b4513" opacity="0.4"/>
+  <text x="500" y="167" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">SRIVIJAYA (naval raid 1025)</text>
+  <text x="500" y="183" text-anchor="middle" font-size="9" fill="#fff">Sumatra · Malaya · Nicobar (Manakkavaram)</text>
+  <!-- Arrows -->
+  <line x1="280" y1="135" x2="280" y2="100" stroke="#5a2a0a" stroke-width="2" marker-end="url(#arr2)"/>
+  <line x1="320" y1="170" x2="420" y2="170" stroke="#5a2a0a" stroke-width="2" marker-end="url(#arr2)"/>
+  <line x1="280" y1="210" x2="280" y2="225" stroke="#5a2a0a" stroke-width="2" marker-end="url(#arr2)"/>
+  <line x1="240" y1="170" x2="195" y2="170" stroke="#5a2a0a" stroke-width="2" marker-end="url(#arr2)"/>
+  <defs>
+    <marker id="arr2" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <polygon points="0,0 8,4 0,8" fill="#5a2a0a"/>
+    </marker>
+  </defs>
+</svg>
+<div class="svg-caption">Schematic — not to scale. Core <em>Cholamandalam</em> radiated north (Vengi, Kalinga, Bengal raid), south (Lanka), west (Chera) and across the Bay (Srivijaya, 1025 AD).</div>
+</div>
+</section>
+
+<section class="notes" id="sources">
+<h2>2. Sources of Chola History</h2>
+<p>The Cholas left the <strong>richest epigraphic record</strong> of any medieval Indian dynasty — over <strong>10,000 inscriptions</strong> recovered, more than half of all Tamil inscriptions known. The combination of copper-plate land grants, stone wall inscriptions on temples, and a flourishing Tamil literary tradition makes Chola historiography unusually dense.</p>
+
+<table>
+<thead><tr><th>Source Type</th><th>Key Documents</th><th>Information Provided</th></tr></thead>
+<tbody>
+<tr><td><strong>Copper-plate grants</strong> (long genealogies)</td><td>Anbil plates of Sundara Chola; Tiruvalangadu plates of Rajendra I; Karandai plates of Rajendra I; Leiden plates (Larger Leiden — Rajaraja I, Smaller Leiden — Kulottunga I)</td><td>Genealogy, succession, military campaigns, grants to Buddhist viharas (e.g., Chudamani Vihara at Nagapattinam built by Srivijaya king Mara-Vijayottungavarman with Rajaraja I's permission)</td></tr>
+<tr><td><strong>Stone wall inscriptions</strong> (donative)</td><td>Brihadeshwara temple walls (Rajaraja I) — over 4 km of inscriptions; Gangaikondacholapuram inscriptions (Rajendra I); Uttaramerur inscriptions (Parantaka I, 919–921 AD)</td><td>Temple revenue, daily ritual schedule, names of dancers/musicians/priests, village governance rules</td></tr>
+<tr><td><strong>Tamil literature</strong></td><td>Kamban's <em>Ramavataram</em> (Kulottunga III); Jayamkondar's <em>Kalingattuparani</em> (war-poem on Kulottunga I's Kalinga campaign); Sekkilar's <em>Periyapuranam</em> (lives of 63 Nayanars, under Kulottunga II); Ottakuttar's praise poems</td><td>Court culture, religion, Saiva bhakti revival, military narrative, royal panegyric</td></tr>
+<tr><td><strong>Sanskrit texts</strong></td><td>Bilhana's <em>Vikramankadevacharita</em> (mentions Chola–W. Chalukya conflict); Kalhana's <em>Rajatarangini</em> (passing references)</td><td>Northern perspective on Chola military reach</td></tr>
+<tr><td><strong>Foreign accounts</strong></td><td>Chinese Sung dynasty annals (record Chola embassies of 1015 and 1033); Arab travellers (Al-Idrisi, Marco Polo on later phase); Sri Lankan <em>Mahavamsa / Culavamsa</em> (Chola conquest)</td><td>Maritime trade, embassies, southern campaigns</td></tr>
+<tr><td><strong>Monuments</strong></td><td>Brihadeshwara (Thanjavur), Gangaikondacholapuram, Airavateshwara (Darasuram) — UNESCO "Great Living Chola Temples"</td><td>Temple economy, sculpture, Saiva iconography, royal self-image</td></tr>
+</tbody>
+</table>
+
+<div class="callout">
+<strong>Why this matters:</strong> Chola inscriptions are the <em>only</em> medieval Indian source dense enough to support quantitative reconstructions — Y. Subbarayalu, Noboru Karashima and others have used them to map land tenure, taxation rates and merchant networks. This is why Chola historiography drives broader medieval-India debates (e.g., Burton Stein's segmentary state vs centralised state).
+</div>
+</section>
+
+<section class="notes" id="political">
+<h2>3. Political History — Vijayalaya to Vira Rajendra</h2>
+
+<table>
+<thead><tr><th>Ruler</th><th>Reign</th><th>Key Achievements / Identifiers</th></tr></thead>
+<tbody>
+<tr><td><strong>Vijayalaya</strong></td><td>c. 848–871</td><td>Founder; captured Tanjore from Muttaraiyars; built Nishumbhasudini (Durga) temple at Tanjore.</td></tr>
+<tr><td><strong>Aditya I</strong></td><td>871–907</td><td>Defeated Pallava Aparajita (c. 893) — Pallavas extinct; absorbed Tondaimandalam (Kanchi region); built a chain of Shiva temples along the Kaveri.</td></tr>
+<tr><td><strong>Parantaka I</strong></td><td>907–955</td><td>Conquered Madurai (Pandyas) — title <em>Madurai-konda</em>; <strong>Uttaramerur inscriptions (919–921)</strong>; defeated at <strong>Takkolam (949)</strong> by Rashtrakuta Krishna III — loss of Tondaimandalam.</td></tr>
+<tr><td>Gandaraditya, Arinjaya, Sundara Chola</td><td>955–985</td><td>Interim phase; loss of territory to Rashtrakutas, Pandyas; <strong>Sundara Chola</strong> (Parantaka II) recovered Madurai. Aditya Karikala (Sundara's elder son) assassinated 969 — disputed succession.</td></tr>
+<tr><td><strong>Rajaraja Chola I</strong> (<em>the Great</em>)</td><td>985–1014</td><td>True architect of empire; titles <em>Mummudi Chola</em> ("triple-crowned"), <em>Jayankonda</em>; conquered Sri Lanka (renamed Anuradhapura → <em>Jananathamangalam</em>; new capital at Polonnaruwa); subdued Cheras (Kandalur Salai), Pandyas; defeated W. Chalukya Satyashraya; consecrated <strong>Brihadeshwara/Rajarajeshwara temple (1010)</strong>; ordered first land survey; allowed Srivijaya king to build <strong>Chudamani Vihara at Nagapattinam</strong>.</td></tr>
+<tr><td><strong>Rajendra Chola I</strong></td><td>1014–1044</td><td>Apex of empire. Title <em>Gangaikonda Chola</em>; <strong>Ganges expedition (c. 1019–1022)</strong> defeated Mahipala I of Bengal; built new capital <strong>Gangaikondacholapuram</strong> with the artificial lake <em>Cholaganga</em>; <strong>Srivijaya naval raid (1025)</strong> against Sangrama Vijayottungavarman — captured 14 ports incl. Kadaram/Kedah and Sri Vishaya (Palembang); sent two embassies to Sung China.</td></tr>
+<tr><td><strong>Rajadhiraja Chola I</strong></td><td>1044–1054</td><td>Title <em>Vijayarajendra</em>; fought four wars with W. Chalukya Someshvara I; killed in battle at <strong>Koppam (1054)</strong> — first Indian emperor killed in battle since Harsha's father; performed <em>Virabhisheka</em> (anointment as hero) on the battlefield.</td></tr>
+<tr><td><strong>Rajendra Chola II</strong></td><td>1054–1063</td><td>Younger brother of Rajadhiraja; took kingship at Koppam after his brother's death; consolidated against Chalukyas.</td></tr>
+<tr><td><strong>Vira Rajendra</strong></td><td>1063–1070</td><td>Defeated W. Chalukya Someshvara II at <strong>Kudal-Sangamam</strong>; established Chola supremacy over Vengi by installing his son-in-law on the Vengi throne — set up the fateful Chola–Eastern Chalukya merger.</td></tr>
+<tr><td>Athirajendra (last "pure" Chola)</td><td>1070</td><td>Brief reign; killed in a Saiva–Vaishnava revolt — direct line of Vijayalaya extinguished.</td></tr>
+<tr><td><strong>Kulottunga I</strong> (Chalukya-Chola)</td><td>1070–1122</td><td>Originally <em>Rajendra II of Vengi</em> — son of E. Chalukya Rajaraja Narendra and Chola princess Ammangadevi. Founded the <strong>Chalukya–Chola line</strong>; ruled 52 years; remitted tolls — title <em>Sungam-tavirtta-Cholan</em> ("Chola who abolished tolls"); Kalingattuparani celebrates his Kalinga campaign.</td></tr>
+</tbody>
+</table>
+
+<h3>3.1 Vijayalaya (c. 848–871 AD) — The Founder</h3>
+<ul>
+  <li>Originally a Chola feudatory in the Uraiyur–Pudukkottai belt under the Pallavas.</li>
+  <li>Around 850 AD, <strong>captured Tanjore</strong> from the Muttaraiyar chiefs — a Pandya-allied lineage.</li>
+  <li>Built the <strong>Nishumbhasudini (Durga) temple</strong> at Tanjore — the foundational Chola shrine.</li>
+  <li>Strategic significance: consolidated control over the central Kaveri delta — agrarian heartland.</li>
+</ul>
+
+<h3>3.2 Parantaka Chola I (907–955 AD) — Builder of Institutions</h3>
+<ul>
+  <li>Sometimes counted as the third ruler (after Aditya I). Reigned ~48 years — second-longest in dynasty.</li>
+  <li>Captured Madurai from the Pandyas (Maravarman Rajasimha II) — assumed title <strong><em>Madurai-konda</em></strong> ("conqueror of Madurai").</li>
+  <li>Allied with Sinhalese Kassapa V; defeated Pandya-Sinhalese alliance at Vellur.</li>
+  <li><strong>Uttaramerur inscriptions (919 &amp; 921 AD)</strong> — most detailed Indian record of village self-government (see §4 below).</li>
+  <li>Built the <strong>Naganatha temple at Tirunageshwaram</strong>; covered the Chidambaram Nataraja shrine with gold.</li>
+  <li><strong>Disaster at Takkolam (949 AD):</strong> his son Rajaditya was defeated and killed by Rashtrakuta <strong>Krishna III</strong>. Cholas lost Tondaimandalam (Kanchi region) for ~30 years.</li>
+</ul>
+
+<div class="callout warn">
+<strong>Battle of Takkolam (949)</strong> — Rashtrakuta Krishna III vs. Rajaditya Chola. Decisive Rashtrakuta victory; Rajaditya killed on his elephant. Marks the lowest point between Vijayalaya's founding and Rajaraja I's resurgence. Krishna III's Atakur inscription celebrates this.
+</div>
+
+<h3>3.3 Rajaraja Chola I (985–1014 AD) — The Great</h3>
+<p>Birth name <strong>Arulmozhivarman</strong>; son of Sundara Chola. Acceded after the contested 16-year regency that followed his elder brother Aditya Karikala's assassination. He is regarded as the true architect of the Chola Empire — transforming a regional kingdom into a pan-South Indian, naval-projecting state.</p>
+
+<h4>Military Campaigns</h4>
+<table>
+<thead><tr><th>Theatre</th><th>Campaign &amp; Outcome</th></tr></thead>
+<tbody>
+<tr><td><strong>Chera (Kerala)</strong></td><td>Destroyed the Chera fleet at <strong>Kandalur Salai</strong> (near Trivandrum) — early sea power demonstration. Title <em>Kandalur Salai Kalamarutta</em>.</td></tr>
+<tr><td><strong>Pandya</strong></td><td>Defeated Amarabhujanga; annexed Pandyan country; assumed title <em>Pandyakulasani</em>.</td></tr>
+<tr><td><strong>Sri Lanka</strong></td><td>Defeated Sinhalese king Mahinda V; sacked Anuradhapura (renamed <em>Jananathamangalam</em>); shifted capital to <strong>Polonnaruwa</strong>; built a Shiva temple there.</td></tr>
+<tr><td><strong>Vengi (E. Chalukya)</strong></td><td>Restored Saktivarman/Vimaladitya to throne; married daughter Kundavai to Vimaladitya — diplomatic alliance against W. Chalukyas.</td></tr>
+<tr><td><strong>W. Chalukya (Kalyani)</strong></td><td>Defeated Satyashraya; raided Banavasi and Donur. Reached Krishna river.</td></tr>
+<tr><td><strong>Maldives</strong></td><td>Naval conquest of "old islands of the sea numbering 12,000" — extended Indian Ocean reach.</td></tr>
+</tbody>
+</table>
+
+<h4>Administrative &amp; Economic Reforms</h4>
+<ul>
+  <li>Ordered the <strong>first comprehensive land survey</strong> in South India — basis of the new revenue assessment.</li>
+  <li>Rationalised <strong>provincial divisions</strong> — Mandalam → Valanadu → Nadu → Kurram → Ur structure formalised.</li>
+  <li>Standardised <strong>weights and measures</strong>.</li>
+  <li>Permitted the Srivijaya king <strong>Mara-Vijayottungavarman</strong> to build the <strong>Chudamani Vihara at Nagapattinam</strong> (a Buddhist monastery for Sumatran merchants) — endowed it with the income of Anaimangalam village (recorded in the <strong>Larger Leiden Plates</strong>).</li>
+</ul>
+
+<h4>The Brihadeshwara (Rajarajeshwara) Temple — Thanjavur</h4>
+<ul>
+  <li><strong>Consecrated 1010 AD</strong> (Rajaraja's 25th regnal year); planned and chief architect <strong>Kunjara Mallan Raja Raja Perunthachan</strong>.</li>
+  <li>Tallest vimana of its time — <strong>66 m / 216 ft</strong>; topped by a single 80-ton granite cap (<em>kalasha</em>).</li>
+  <li>Built entirely of <strong>granite</strong> — no granite quarry within 60 km; logistics unmatched.</li>
+  <li>Walls inscribed with <strong>~4 km of donative inscriptions</strong> — listing 600+ servants, dancers (devadasis), musicians, priests; daily food/oil/flower allotments.</li>
+  <li>Houses the original <strong>Chola fresco cycle</strong> (rediscovered 1930s under later Nayaka paintings).</li>
+  <li><strong>UNESCO World Heritage</strong> (1987 + extension 2004) as part of "Great Living Chola Temples" — with Gangaikondacholapuram and Airavateshwara (Darasuram).</li>
+</ul>
+
+<div class="callout info">
+<strong>Identity-politics today:</strong> The <em>Sengol</em> sceptre installed in the new Indian Parliament building (May 2023) is presented as a Chola-era symbol of just transfer of power (handed by Tamil Saiva mathadhipatis to Nehru in 1947, per the official narrative). This re-centred the Cholas in current-affairs discourse on cultural heritage.
+</div>
+
+<h3>3.4 Rajendra Chola I (1014–1044 AD) — Empire at its Zenith</h3>
+<p>Son of Rajaraja I; co-regent from 1012. Rajendra pushed the Chola standard further than any Indian ruler of the medieval era — to the Ganges in the north and across the Bay of Bengal in the east.</p>
+
+<h4>The Ganges Expedition (c. 1019–1022)</h4>
+<ul>
+  <li>Northern campaign through Kalinga (defeated Indraratha) into Bengal.</li>
+  <li>Defeated <strong>Mahipala I</strong> of the Pala dynasty.</li>
+  <li>Symbolic act: had Ganges water carried back in golden pots by defeated chieftains and poured into a newly-dug artificial reservoir, the <strong>Cholaganga</strong>, at his new capital.</li>
+  <li>Assumed the title <strong><em>Gangaikonda Chola</em></strong> ("Chola who took the Ganges").</li>
+  <li>Built the new capital <strong>Gangaikondacholapuram</strong> with a sister temple to Brihadeshwara — known for the finest Chola bronze sculptures.</li>
+</ul>
+
+<h4>The Srivijaya Naval Expedition (1025 AD) — Indian Ocean Power Projection</h4>
+<ul>
+  <li>Crossed the Bay of Bengal in a great naval armada — the only major Indian transoceanic military expedition of the medieval era.</li>
+  <li>Target: <strong>Sangrama Vijayottungavarman</strong>, Sailendra king of Srivijaya, who was throttling the Tamil merchant guilds' access to the China trade.</li>
+  <li>Captured 14 ports incl. <strong>Kadaram (Kedah, Malaya), Sri Vishaya (Palembang, Sumatra), Tambralinga (south Thailand), Pannai, Lankasoka, Lamuri, Nakkavaram (Nicobar — first recorded Indian name)</strong>.</li>
+  <li>Imposed tribute; did not annex (logistically impossible) — but secured Tamil merchant guilds' freedom of trade.</li>
+  <li>Title <strong><em>Kadaram-konda</em></strong>.</li>
+  <li>Sent embassies to <strong>Sung China</strong> in 1015 and 1033 — recorded in Sung annals.</li>
+</ul>
+
+<div class="callout">
+<strong>Why Srivijaya?</strong> Srivijaya controlled the Strait of Malacca — the chokepoint between the Indian Ocean and South China Sea trade. Tamil merchant guilds (Ayyavole 500, Manigramam) had been increasingly squeezed by Srivijaya tolls and seizure of cargo. Rajendra's raid was, in effect, a state-led trade-protection war — perhaps the earliest documented use of state navy to enforce mercantile rights in the Indian Ocean.
+</div>
+
+<h3>3.5 Rajadhiraja Chola I (1044–1054 AD) — The Warrior King</h3>
+<ul>
+  <li>Eldest son of Rajendra I; co-regent from 1018.</li>
+  <li>Performed two <em>Ashwamedha</em>-style horse sacrifices; assumed title <strong><em>Vijayarajendra</em></strong>.</li>
+  <li>Fought four wars with W. Chalukya <strong>Someshvara I (Ahavamalla)</strong>.</li>
+  <li>Killed on his elephant at the <strong>Battle of Koppam (1054)</strong> on the banks of the Krishna — his younger brother Rajendra II performed the unique <strong><em>Virabhisheka</em></strong> (coronation as hero) on the battlefield over the corpse.</li>
+  <li>Title <em>Yana-Vijaya</em> ("victorious even in death").</li>
+</ul>
+
+<h3>3.6 Rajendra Chola II (1054–1063 AD)</h3>
+<ul>
+  <li>Took kingship at Koppam after the death of Rajadhiraja.</li>
+  <li>Pressed Someshvara I back across the Tungabhadra; campaigned in Vengi.</li>
+  <li>His son Rajamahendra predeceased him.</li>
+</ul>
+
+<h3>3.7 Vira Rajendra Chola (1063–1070 AD)</h3>
+<ul>
+  <li>Defeated W. Chalukya <strong>Someshvara II</strong> at <strong>Kudal-Sangamam</strong> on the Tungabhadra.</li>
+  <li>Intervened in Vengi; installed his son-in-law (the future <strong>Kulottunga I</strong>) on the Vengi throne — a fateful step.</li>
+  <li>Founded the Vedic college (<em>vedavidya-paraganam</em>) at Tribhuvani.</li>
+</ul>
+
+<h3>3.8 Vira Chola / Athirajendra (1070) and the Transition to Kulottunga I</h3>
+<ul>
+  <li>The last "pure" Chola in Vijayalaya's male line; killed in a civil disturbance (often described as a Saiva–Vaishnava clash) within a year.</li>
+  <li>The throne passed to <strong>Kulottunga I (r. 1070–1122)</strong> — son of E. Chalukya Rajaraja Narendra and Chola princess Ammangadevi — fusing the two royal lines into the <strong>Chalukya-Chola dynasty</strong> that ruled till c. 1279.</li>
+  <li>Kulottunga I remitted tolls on internal trade — title <strong><em>Sungam-tavirtta-Cholan</em></strong> ("Chola who abolished tolls"). His Kalinga campaign is celebrated in Jayamkondar's Tamil war-poem <strong><em>Kalingattuparani</em></strong>.</li>
+</ul>
+
+<section class="notes" id="admin">
+<h2>4. Administrative Structure &amp; Local Self-Government</h2>
+<p>The Chola state combined a strong central monarchy with what is often described as the <strong>most developed system of local self-government in pre-modern India</strong>. The Uttaramerur inscriptions remain a UPSC perennial.</p>
+
+<h3>4.1 The King &amp; the Centre</h3>
+<ul>
+  <li>King styled <em>Cholendrasimha</em>, <em>Ulagudai Perumal</em> ("Lord of the Earth"). Assumed grandiloquent titles after each major campaign.</li>
+  <li>Theory of divine kingship — king described as <em>devar</em> (god); statues installed in temples (Rajaraja I's statue in Brihadeshwara).</li>
+  <li>Council of ministers (<em>udankuttam</em>) — but king's authority paramount; succession primarily by primogeniture with co-regency tradition.</li>
+  <li>The <strong>royal secretariat (<em>tirumandira-olai</em>)</strong> issued and authenticated all royal orders (<em>tiruvay-kelvi</em> — "what the sacred mouth heard").</li>
+</ul>
+
+<h3>4.2 Provincial Hierarchy</h3>
+<div class="svg-wrap">
+<svg viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Chola administrative hierarchy">
+  <rect width="700" height="280" fill="#fff8f0"/>
+  <text x="350" y="22" text-anchor="middle" font-size="14" font-weight="800" fill="#5a2a0a">CHOLA ADMINISTRATIVE HIERARCHY</text>
+  <!-- Levels -->
+  <rect x="270" y="40" width="160" height="34" rx="6" fill="#8b4513"/>
+  <text x="350" y="62" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">MANDALAM (Province)</text>
+  <text x="540" y="62" font-size="10" fill="#5a2a0a">9 mandalams under Rajendra I</text>
+
+  <rect x="270" y="84" width="160" height="34" rx="6" fill="#a85a30"/>
+  <text x="350" y="106" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">VALANADU (Division)</text>
+  <text x="540" y="106" font-size="10" fill="#5a2a0a">Created by Rajaraja I</text>
+
+  <rect x="270" y="128" width="160" height="34" rx="6" fill="#c97b00"/>
+  <text x="350" y="150" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">NADU (District)</text>
+  <text x="540" y="150" font-size="10" fill="#5a2a0a">Assembly: Nattar</text>
+
+  <rect x="270" y="172" width="160" height="34" rx="6" fill="#d4af37"/>
+  <text x="350" y="194" text-anchor="middle" font-size="13" font-weight="700" fill="#3a1a08">KURRAM / KOTTAM (Taluk)</text>
+
+  <rect x="170" y="216" width="120" height="34" rx="6" fill="#2a6b4a"/>
+  <text x="230" y="238" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">UR (village)</text>
+
+  <rect x="300" y="216" width="120" height="34" rx="6" fill="#0a6644"/>
+  <text x="360" y="238" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">SABHA (brahmadeya)</text>
+
+  <rect x="430" y="216" width="130" height="34" rx="6" fill="#5a8a3a"/>
+  <text x="495" y="238" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">NAGARAM (mercantile)</text>
+
+  <line x1="350" y1="74" x2="350" y2="84" stroke="#5a2a0a" stroke-width="2"/>
+  <line x1="350" y1="118" x2="350" y2="128" stroke="#5a2a0a" stroke-width="2"/>
+  <line x1="350" y1="162" x2="350" y2="172" stroke="#5a2a0a" stroke-width="2"/>
+  <line x1="350" y1="206" x2="350" y2="212" stroke="#5a2a0a" stroke-width="2"/>
+  <line x1="230" y1="212" x2="495" y2="212" stroke="#5a2a0a" stroke-width="1.5"/>
+  <line x1="230" y1="212" x2="230" y2="216" stroke="#5a2a0a" stroke-width="2"/>
+  <line x1="360" y1="212" x2="360" y2="216" stroke="#5a2a0a" stroke-width="2"/>
+  <line x1="495" y1="212" x2="495" y2="216" stroke="#5a2a0a" stroke-width="2"/>
+</svg>
+<div class="svg-caption">Five-tier territorial pyramid: Mandalam → Valanadu → Nadu → Kurram → Village. At the village level, three parallel assemblies — Ur, Sabha and Nagaram — corresponding to village type.</div>
+</div>
+
+<table>
+<thead><tr><th>Level</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td><strong>Mandalam</strong></td><td>Largest unit — province; usually governed by a royal prince (<em>chola-mandalam</em>, <em>nigarili-chola-mandalam</em>, etc.). 9 mandalams under Rajendra I.</td></tr>
+<tr><td><strong>Valanadu</strong></td><td>Innovation of Rajaraja I — a revenue division between mandalam and nadu, named after rivers (e.g., <em>Arumolideva-valanadu</em>).</td></tr>
+<tr><td><strong>Nadu</strong></td><td>District; the most stable unit historically (predates Cholas). Run by the <strong>nattar</strong> assembly of landholding farmers.</td></tr>
+<tr><td><strong>Kurram / Kottam</strong></td><td>Smaller division — group of villages; <em>kottam</em> in Tondaimandalam, <em>kurram</em> in Cholamandalam.</td></tr>
+<tr><td><strong>Ur</strong></td><td>Ordinary peasant village — open assembly of all male landholders (non-Brahmin). Less formal.</td></tr>
+<tr><td><strong>Sabha</strong></td><td>Brahmin village (<em>brahmadeya</em>) — elected, formal, highly structured. The Uttaramerur Sabha.</td></tr>
+<tr><td><strong>Nagaram</strong></td><td>Market town / merchant settlement — assembly of merchants.</td></tr>
+</tbody>
+</table>
+
+<h3>4.3 Local Self-Government — The Uttaramerur Inscription</h3>
+<p>The two inscriptions of <strong>Parantaka I (919 &amp; 921 AD)</strong> on the Vaikuntha Perumal temple walls at <strong>Uttaramerur</strong> (Kanchipuram district, Tamil Nadu) record, in extraordinary detail, the constitution of a Brahmin Sabha. Together with a third earlier inscription (Cheramahadevi), they are the foundational text of medieval Indian village democracy.</p>
+
+<h4>The Kudavolai (Pot-Ticket) Election System</h4>
+<div class="grid-2">
+<div class="card">
+<h4>Ward Division</h4>
+<p>The village was divided into <strong>30 wards (<em>kudumbu</em>)</strong>. Each ward sent one representative to the Sabha annually. Total: 30 members + an Annual Committee, Garden Committee, Tank Committee etc. drawn by lot from the 30.</p>
+</div>
+<div class="card">
+<h4>Eligibility</h4>
+<ul style="margin:0;padding-left:18px">
+  <li>Owner of taxable land &gt; 1/4 <em>veli</em> (~1.5 acre); residence built on own site.</li>
+  <li>Age between <strong>35 and 70</strong>.</li>
+  <li>Knowledge of Vedas and Bhashyas (commentaries).</li>
+  <li>"Virtuous &amp; learned" — must know mantras.</li>
+</ul>
+</div>
+<div class="card">
+<h4>Disqualifications</h4>
+<ul style="margin:0;padding-left:18px">
+  <li>Has served on a committee in the previous three years.</li>
+  <li>Has not submitted accounts of past committee work.</li>
+  <li>Guilty of incest with sister/mother-in-law/brother's wife.</li>
+  <li>Has eaten with outcastes.</li>
+  <li>Foreman of cheating gang; murderer; thief; drunkard.</li>
+  <li>Close kin of someone disqualified.</li>
+</ul>
+</div>
+<div class="card">
+<h4>The Lottery — Kudavolai</h4>
+<ol style="margin:0;padding-left:18px">
+  <li>Names of all eligibles in each ward written on palm-leaf tickets.</li>
+  <li>Tickets bundled, placed in a pot (<em>kuda</em>) before the temple assembly.</li>
+  <li>A young boy (un-tutored) drew one ticket per ward — read out by the priest.</li>
+  <li>Selected members served for 1 year.</li>
+  <li>Sub-committees (<em>variyam</em>) drawn similarly from the 30.</li>
+</ol>
+</div>
+</div>
+
+<h4>The Variyam (Committees)</h4>
+<table>
+<thead><tr><th>Committee</th><th>Function</th></tr></thead>
+<tbody>
+<tr><td><strong>Samvatsara-variyam</strong> (Annual)</td><td>General executive — 12 members.</td></tr>
+<tr><td><strong>Tottam / Garden Committee</strong></td><td>Maintenance of orchards, gardens.</td></tr>
+<tr><td><strong>Eri / Tank Committee</strong></td><td>Irrigation tanks, sluices, embankments — the most prized.</td></tr>
+<tr><td><strong>Pancha-vara-variyam</strong></td><td>Five-fold committee — supervision of revenue collection.</td></tr>
+<tr><td><strong>Pon-variyam</strong> (Gold)</td><td>Temple gold, treasury.</td></tr>
+<tr><td><strong>Nyayattar</strong></td><td>Judicial bench within the sabha.</td></tr>
+</tbody>
+</table>
+
+<div class="callout info">
+<strong>Why UPSC loves Uttaramerur:</strong> It supplies four exam-ready themes — (a) earliest detailed written constitution of any local body in India; (b) gender-restricted but rules-based democracy with disqualification clauses; (c) lot-based selection (<em>sortition</em>) — relevant to comparative political theory; (d) precursor cited in PM speeches on Indian democratic heritage (e.g., Uttaramerur visit December 2021). Asked directly in Prelims 2017.
+</div>
+</section>
+
+<section class="notes" id="economy">
+<h2>5. Economic Structure during the Chola Empire</h2>
+
+<h3>5.1 Agrarian Base</h3>
+<ul>
+  <li><strong>Kaveri delta = rice bowl.</strong> Two and even three crops a year on irrigated land. The "wet zone" (<em>marudam</em>) supported the Chola surplus.</li>
+  <li>Irrigation by river channels, tanks (<em>eri</em>) and wells. The <strong>Kallanai (Grand Anicut)</strong> originally built by Sangam Karikala Chola was maintained and extended.</li>
+  <li>Rajendra I's artificial lake <strong>Cholaganga</strong> at Gangaikondacholapuram — 16 miles long — irrigated thousands of acres.</li>
+  <li>Land categories: <strong>vellanvagai</strong> (peasant proprietor villages), <strong>brahmadeya</strong> (tax-free Brahmin grants), <strong>devadana</strong> (temple grants), <strong>pallichchandam</strong> (Jain grants), <strong>kanimurruttu</strong> (military service grants), <strong>vetti vagai</strong> (officials' service grants).</li>
+</ul>
+
+<h3>5.2 Revenue System</h3>
+<ul>
+  <li>Land tax (<em>kadamai</em>) — paid in kind or coin; theoretically <strong>1/3 of produce</strong>, but practical incidence usually 1/6 to 1/4.</li>
+  <li><strong>Rajaraja I's land survey</strong> (<em>nilam ulavu</em>) standardised assessment — measured land in <em>veli</em> and <em>ma</em>.</li>
+  <li>Other dues: <em>vetti</em> (forced labour), <em>kudimai</em> (customary dues), <em>tirumukha-kanam</em> (tax on commercial trees like areca).</li>
+  <li>Tolls on trade — abolished by Kulottunga I (<em>Sungam-tavirtta-Cholan</em>).</li>
+</ul>
+
+<h3>5.3 Trade &amp; Commerce</h3>
+<h4>Tamil Merchant Guilds</h4>
+<ul>
+  <li><strong>Ayyavole 500</strong> (also <em>Nanadesi</em>, <em>Tisai-ayirattu-ainnurruvar</em>) — pan-Indian guild based at Aihole, very active in Cholamandalam; their inscriptions found in Sumatra (Lobu Tua, 1088 — the famous Tamil inscription).</li>
+  <li><strong>Manigramam</strong> — a guild specialising in long-distance and overseas trade.</li>
+  <li><strong>Nanadesi</strong> — itinerant traders ("those of many countries").</li>
+  <li><strong>Anjuvannam</strong> — guild of foreign (often West Asian Jewish/Christian/Muslim) merchants, particularly on the Kerala coast — interlinked with Manigramam.</li>
+  <li>Domestic guild of artisans — <strong>Valanjiyar</strong>.</li>
+</ul>
+
+<h4>Ports &amp; Overseas Trade</h4>
+<table>
+<thead><tr><th>Port</th><th>Significance</th></tr></thead>
+<tbody>
+<tr><td><strong>Nagapattinam</strong></td><td>Main port for South-East Asia trade; site of the Buddhist <em>Chudamani Vihara</em> built by Srivijaya king.</td></tr>
+<tr><td><strong>Kaveripattinam (Puhar)</strong></td><td>Old Sangam-age port; declined but still functioned.</td></tr>
+<tr><td><strong>Mahabalipuram</strong></td><td>Pallava-era port retained for shipping.</td></tr>
+<tr><td><strong>Quilon (Kollam)</strong></td><td>Chera port — terminus of the Arabian Sea trade.</td></tr>
+<tr><td><strong>Krishnapatnam, Visakhapatnam</strong></td><td>East-coast outlets to Vengi and the north.</td></tr>
+</tbody>
+</table>
+<ul>
+  <li><strong>Exports:</strong> textiles (Kanchi silk, Tanjavur cotton), spices (pepper, cardamom), sandalwood, ivory, gems, iron and steel (the "wootz" steel that made Damascus blades).</li>
+  <li><strong>Imports:</strong> Chinese porcelain &amp; silk, horses from West Asia, gold from Africa via Arabs.</li>
+  <li><strong>Coinage:</strong> Gold <em>kasu</em> (with "Rajaraja" / "Yuddhamalla" legend), silver fanams, copper <em>amman-kasu</em>. Standardised by Rajaraja I.</li>
+</ul>
+
+<div class="callout">
+<strong>Sung China link:</strong> Rajendra I's two embassies to the Sung court (1015 &amp; 1033) appear in the Sung-shih. Tamil inscription found at Quanzhou (south China) — a Shiva temple was maintained there for Tamil merchants by the early 14th c. The Cholas thus globalised Tamil mercantile reach from East Africa to South China.
+</div>
+</section>
+
+<section class="notes" id="society">
+<h2>6. Society during the Chola Empire</h2>
+
+<h3>6.1 General Features</h3>
+<ul>
+  <li><strong>Caste rigidity</strong> intensified — temple society in particular was strictly stratified.</li>
+  <li>Brahmins formed a privileged corporate body — <em>brahmadeya</em> villages multiplied massively; Brahmin Sabhas (as at Uttaramerur) had near-autonomy.</li>
+  <li><strong>Bhakti revival</strong> (Saiva Nayanars, Vaishnava Alvars) — Saiva-Vaishnava sectarianism sharpened (the disturbance that killed Athirajendra c. 1070 was reportedly a Saiva–Vaishnava clash).</li>
+  <li>Hereditary occupational groups (<em>kudi</em>) — weavers, oil-pressers, potters, smiths — each with internal panchayats.</li>
+</ul>
+
+<h3>6.2 Social Groups — Valangai &amp; Idangai</h3>
+<p>A distinctive Chola/post-Chola institution was the division of society into two great occupational alliances:</p>
+<table>
+<thead><tr><th>Faction</th><th>Composition</th><th>Identity Markers</th></tr></thead>
+<tbody>
+<tr><td><strong>Valangai (Right-Hand)</strong></td><td>Agriculturist castes — Vellalas, peasants of the wet zone; some artisan groups attached.</td><td>Identified with land, plough, and "rooted" status. Carried <em>right-hand</em> weaponry.</td></tr>
+<tr><td><strong>Idangai (Left-Hand)</strong></td><td>Artisan-trader castes — weavers, smiths, oil-pressers, leather workers; mobile occupational groups.</td><td>Identified with crafts and commerce. Carried <em>left-hand</em> weaponry.</td></tr>
+</tbody>
+</table>
+<p>The two divisions occasionally erupted into riot over ritual rank — processional precedence, palanquin rights, conch-blowing rights. The British Madras administration was still adjudicating Valangai–Idangai disputes into the 18th–19th centuries.</p>
+
+<h3>6.3 Position of Women</h3>
+<ul>
+  <li>Royal women were powerful patrons: <strong>Sembiyan Mahadevi</strong> (Aditya II's queen mother) was the great temple-builder of the late 10th century — built numerous Shiva temples and shaped early imperial style. <strong>Kundavai</strong>, sister of Rajaraja I, was a major patron and political force; <strong>Lokamahadevi</strong>, queen of Rajaraja, gifted lavishly to Brihadeshwara.</li>
+  <li>Property rights: women could own and donate property — inscriptions record many female donors.</li>
+  <li><strong>Devadasi system</strong> formalised on a vast scale — Rajaraja I's Brihadeshwara inscriptions list <strong>400 devadasis</strong> (<em>talichcheri-pendir</em>) attached to the temple, each with named allotments.</li>
+  <li>Sati attested but not widespread; widow remarriage absent in upper castes.</li>
+</ul>
+
+<h3>6.4 Untouchability &amp; Lower Castes</h3>
+<ul>
+  <li><em>Paraiyars</em> and <em>Pulaiyars</em> remained outside the village proper — bonded labour on temple and brahmadeya lands.</li>
+  <li>Saiva bhakti poetry (Nayanars) included some saints of low caste — <strong>Tiruppanalvar</strong> (Paraiya), <strong>Nandanar</strong> (Pulaiyar) — but the inclusion was symbolic, not structural.</li>
+</ul>
+</section>
+
+<section class="notes" id="culture">
+<h2>7. Cultural Life — Architecture, Bronze, Literature</h2>
+
+<h3>7.1 Temple Architecture — The Dravida Apex</h3>
+<p>The Cholas perfected the Dravida temple form inherited from the Pallavas, transforming the modest Pallava prototype into colossal granite monuments.</p>
+
+<h4>Stages of Chola Architecture</h4>
+<table>
+<thead><tr><th>Phase</th><th>Period</th><th>Examples</th><th>Characteristics</th></tr></thead>
+<tbody>
+<tr><td><strong>Early Chola</strong></td><td>c. 850–985</td><td>Vijayalayacholeshvara (Narttamalai), Koranganatha (Srinivasanallur), Muvarkoil (Kodumbalur)</td><td>Modest size; experiment with Pallava Dravida idiom; ribbed pillars, lion bases.</td></tr>
+<tr><td><strong>Middle Chola — Sembiyan Phase</strong></td><td>985–1014</td><td>Sembiyan Mahadevi's many shrines</td><td>Standardisation of plan; sculptural niches with named deities.</td></tr>
+<tr><td><strong>High Chola</strong> — Imperial</td><td>1010–1044</td><td>Brihadeshwara (Thanjavur, 1010); Gangaikondacholapuram (1035)</td><td>Colossal scale; granite throughout; tall pyramidal vimana over sanctum; encircling cloister; freshwater tank.</td></tr>
+<tr><td><strong>Later Chola</strong></td><td>1070–1250</td><td>Airavateshwara (Darasuram, Rajaraja II); Kampahareshwara (Tribhuvanam, Kulottunga III)</td><td>Smaller scale; greater decorative refinement; intricate sculpture; "musical pillars".</td></tr>
+</tbody>
+</table>
+
+<h4>The Three "Great Living Chola Temples" — UNESCO World Heritage</h4>
+<div class="svg-wrap">
+<svg viewBox="0 0 700 270" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Three Great Living Chola Temples">
+  <rect width="700" height="270" fill="#fff8f0"/>
+  <text x="350" y="22" text-anchor="middle" font-size="14" font-weight="800" fill="#5a2a0a">GREAT LIVING CHOLA TEMPLES (UNESCO World Heritage)</text>
+  <!-- Brihadeshwara -->
+  <g transform="translate(110,40)">
+    <polygon points="40,160 0,160 20,40 40,30 60,40 80,160" fill="#a85a30"/>
+    <rect x="20" y="160" width="40" height="40" fill="#8b4513"/>
+    <text x="40" y="220" text-anchor="middle" font-size="11" font-weight="800" fill="#5a2a0a">BRIHADESHWARA</text>
+    <text x="40" y="232" text-anchor="middle" font-size="9" fill="#5a2a0a">Thanjavur · 1010</text>
+    <text x="40" y="242" text-anchor="middle" font-size="9" fill="#5a2a0a">Rajaraja I · 66 m</text>
+  </g>
+  <!-- Gangaikondacholapuram -->
+  <g transform="translate(310,40)">
+    <polygon points="40,160 5,160 20,55 40,45 60,55 75,160" fill="#c97b00"/>
+    <rect x="20" y="160" width="40" height="40" fill="#8b4513"/>
+    <text x="40" y="220" text-anchor="middle" font-size="11" font-weight="800" fill="#5a2a0a">GANGAIKONDA</text>
+    <text x="40" y="232" text-anchor="middle" font-size="11" font-weight="800" fill="#5a2a0a">CHOLAPURAM</text>
+    <text x="40" y="244" text-anchor="middle" font-size="9" fill="#5a2a0a">1035 · Rajendra I · 55 m</text>
+  </g>
+  <!-- Airavateshwara -->
+  <g transform="translate(510,40)">
+    <polygon points="40,160 10,160 20,80 40,72 60,80 70,160" fill="#d4af37"/>
+    <rect x="20" y="160" width="40" height="40" fill="#8b4513"/>
+    <text x="40" y="220" text-anchor="middle" font-size="11" font-weight="800" fill="#5a2a0a">AIRAVATESHWARA</text>
+    <text x="40" y="232" text-anchor="middle" font-size="9" fill="#5a2a0a">Darasuram · c. 1166</text>
+    <text x="40" y="242" text-anchor="middle" font-size="9" fill="#5a2a0a">Rajaraja II · refined art</text>
+  </g>
+</svg>
+<div class="svg-caption">The three Chola temples jointly inscribed in UNESCO World Heritage (1987, extended 2004) — Brihadeshwara (Thanjavur), Gangaikondacholapuram, and Airavateshwara (Darasuram).</div>
+</div>
+
+<h4>Brihadeshwara Temple — Key Facts</h4>
+<ul>
+  <li>Other names: <strong>Rajarajeshwaram</strong>, <strong>Peruvudaiyar Kovil</strong>.</li>
+  <li>Architect: <strong>Kunjara Mallan Raja Raja Perunthachan</strong>.</li>
+  <li>Vimana: 66 m (216 ft) — tallest of its time in India; <strong>13-storey pyramidal</strong> shrine tower.</li>
+  <li>Capstone (<em>kalasha</em>): single granite block, <strong>~80 tonnes</strong>. Tradition: raised on a 6-km ramp from Sarapallam.</li>
+  <li>Dwarapalakas (door-guardians) — over 6 m tall.</li>
+  <li>Massive Nandi monolith — 16 ft long, 13 ft tall — second largest in India (after Lepakshi).</li>
+  <li>Frescoes inside circumambulation — Chola originals discovered under later Nayaka overpainting.</li>
+  <li>1000th anniversary of consecration celebrated 2010.</li>
+</ul>
+
+<h4>Gangaikondacholapuram</h4>
+<ul>
+  <li>Built by <strong>Rajendra I (c. 1035 AD)</strong> at his new capital — celebrates the Ganges expedition.</li>
+  <li>Vimana ~55 m; concave-curved silhouette ("feminine" — contrasts with Brihadeshwara's straight pyramidal "masculine" form).</li>
+  <li>Famous for the finest Chola bronzes; sculpture of Rajendra I crowning his son.</li>
+  <li>Adjacent artificial lake <strong>Cholaganga</strong> — 16 mi long, filled with Gangetic water carried by defeated kings.</li>
+</ul>
+
+<h4>Airavateshwara — Darasuram</h4>
+<ul>
+  <li>Built by <strong>Rajaraja II (c. 1166 AD)</strong>; named after Indra's elephant Airavata, who is said to have worshipped Shiva here.</li>
+  <li>Smaller (24 m) but extraordinarily refined; chariot-shaped <em>mandapa</em> with stone wheels and horses.</li>
+  <li>"Musical pillars" emit notes when struck; depictions of Karaikkal Ammaiyar.</li>
+</ul>
+
+<h3>7.2 Chola Bronzes — The Nataraja</h3>
+<ul>
+  <li>The Chola era is the <strong>golden age of Indian bronze sculpture</strong>, using the <strong>lost-wax (cire perdue) process</strong>.</li>
+  <li><strong>Nataraja</strong> — Shiva as cosmic dancer — became the iconic Chola masterpiece. Standardised iconography: four arms (drum/abhaya/fire/elephant-trunk pose); apasmara dwarf trampled underfoot; flaming halo (<em>prabhamandala</em>); coiled jata hair flying.</li>
+  <li>Other masterpieces: <strong>Rama–Sita–Lakshmana bronze set</strong>, <strong>Vrishabhantika Shiva</strong>, <strong>Ardhanarishvara</strong>, <strong>Somaskanda</strong>, <strong>Kalyanasundara</strong>.</li>
+  <li>Workshop centres: Thanjavur, <strong>Swamimalai</strong> (still produces the bronzes today using identical lost-wax technique), Tiruvarur.</li>
+  <li>Nataraja installed at <strong>CERN, Geneva</strong> (2004) — symbol of cosmic dance of subatomic particles.</li>
+</ul>
+
+<h3>7.3 Painting</h3>
+<ul>
+  <li><strong>Chola murals at Brihadeshwara</strong> — rediscovered 1930s; depict Shiva as Tripurantaka, dancers, Rajaraja and his guru Karuvur Devar.</li>
+  <li>Style: red ochre and earth pigments on lime plaster; precursor to later Vijayanagara murals.</li>
+</ul>
+
+<h3>7.4 Tamil Literature</h3>
+<table>
+<thead><tr><th>Work</th><th>Author</th><th>Period / Patron</th><th>Significance</th></tr></thead>
+<tbody>
+<tr><td><strong>Periyapuranam</strong></td><td>Sekkilar</td><td>Kulottunga II</td><td>Hagiography of the 63 Saiva Nayanars; cornerstone of Tamil Saiva tradition.</td></tr>
+<tr><td><strong>Ramavataram (Kambaramayanam)</strong></td><td>Kamban</td><td>Kulottunga III (late 12th c.)</td><td>Tamil Ramayana — independent literary classic.</td></tr>
+<tr><td><strong>Kalingattuparani</strong></td><td>Jayamkondar</td><td>Kulottunga I</td><td>War-poem (<em>parani</em> = genre celebrating slaughter of 1000 elephants) on Kulottunga's Kalinga campaign.</td></tr>
+<tr><td><strong>Nalavenba</strong></td><td>Pugazhendi</td><td>11th–12th c.</td><td>Tamil version of the Nala-Damayanti story.</td></tr>
+<tr><td><strong>Jivaka-chintamani</strong></td><td>Tirutakkadevar</td><td>10th c.</td><td>Jain Tamil epic, court of Aditya I/Parantaka I.</td></tr>
+<tr><td><strong>Mooventhar Ula</strong></td><td>Ottakuttar</td><td>Three later Chola kings</td><td>"Procession" genre — praise of king as he moves through city.</td></tr>
+<tr><td><strong>Tirumurai</strong> compilation</td><td>Nambiyandar Nambi</td><td>Rajaraja I's reign</td><td>Compiled the canonical 12 books of Tamil Saiva hymns.</td></tr>
+</tbody>
+</table>
+
+<h3>7.5 Religion</h3>
+<ul>
+  <li><strong>Saivism</strong> dominant — royal patronage; Brihadeshwara is Shiva-Rajarajeshwara. The 12 <em>Tirumurai</em> compiled, the 63 Nayanars canonised.</li>
+  <li><strong>Vaishnavism</strong> robust — Ramanuja (1017–1137) founded <strong>Vishishtadvaita</strong> at Srirangam during this era; though he had to flee to Hoysala territory under the Saivite Kulottunga II.</li>
+  <li><strong>Buddhism</strong> tolerated — Chudamani Vihara at Nagapattinam stood till the 16th c.</li>
+  <li><strong>Jainism</strong> in decline — but Jain Tamil literature (Jivaka-chintamani) produced.</li>
+</ul>
+</section>
+
+<section class="notes" id="end">
+<h2>8. The End of the Chola Empire</h2>
+
+<h3>8.1 Internal Decay</h3>
+<ul>
+  <li><strong>Feudalisation</strong> — proliferation of <em>brahmadeya</em>, <em>devadana</em> and military service grants reduced the king's effective revenue base.</li>
+  <li>Powerful Nadu and Nagaram bodies began acting independently from the late 12th c.</li>
+  <li>Saiva–Vaishnava sectarian disturbance — Kulottunga II is said to have persecuted Ramanuja; Kulottunga III's reign saw temple riots.</li>
+  <li>Succession disputes within the Chalukya-Chola line.</li>
+</ul>
+
+<h3>8.2 External Pressures — The Three-Front Squeeze</h3>
+<table>
+<thead><tr><th>Front</th><th>Adversary</th><th>Decisive Episode</th></tr></thead>
+<tbody>
+<tr><td><strong>South — Pandya revival</strong></td><td>Second Pandya Empire of Madurai — Maravarman Sundara Pandya (r. 1216); Jatavarman Sundara Pandya (r. 1251)</td><td>Jatavarman Sundara Pandya defeated Rajendra III decisively c. 1279, ended the Chola dynasty.</td></tr>
+<tr><td><strong>West — Hoysala pressure</strong></td><td>Hoysalas of Dwarasamudra — Vira Ballala II (1173–1220), Vira Narasimha II</td><td>Annexed northern Chola territory; arbitrated Chola–Pandya quarrels in their own interest.</td></tr>
+<tr><td><strong>North — Kakatiya expansion</strong></td><td>Kakatiyas of Warangal — Ganapati Deva (1199–1262)</td><td>Pushed south into Nellore–Kanchi belt.</td></tr>
+</tbody>
+</table>
+
+<h3>8.3 The Last Cholas</h3>
+<ul>
+  <li><strong>Vikrama Chola (1118–1135)</strong> — recovered Kalinga; Ottakuttar's <em>Vikramacholan-ula</em> composed in his praise.</li>
+  <li><strong>Kulottunga II (1135–1150)</strong> — Saivite zealot; persecuted Vaishnavas. Sekkilar wrote <em>Periyapuranam</em>.</li>
+  <li><strong>Rajaraja II (1150–1173)</strong> — built Airavateshwara at Darasuram.</li>
+  <li><strong>Rajadhiraja II (1173–1178)</strong> — intervened in Sri Lankan succession; faltered.</li>
+  <li><strong>Kulottunga III (1178–1218)</strong> — last strong Chola; defeated Pandya rebels temporarily; Kamban composed <em>Ramavataram</em> in his court.</li>
+  <li><strong>Rajaraja III (1218–1256)</strong> — overrun by Pandyas at Tellaru; rescued only by Hoysala Vira Narasimha II.</li>
+  <li><strong>Rajendra III (1246–1279)</strong> — last Chola; defeated by Jatavarman Sundara Pandya; empire dissolved into Pandya supremacy.</li>
+</ul>
+
+<div class="callout warn">
+<strong>1279 AD — End of the Imperial Cholas.</strong> After 430 years from Vijayalaya's capture of Tanjore, the Imperial line ended. Pandya supremacy lasted only briefly — Malik Kafur's raid on Madurai in 1311 ended Tamil independence, ushering in the Delhi Sultanate's southern conquests and, eventually, the Vijayanagara Empire (1336) which preserved Dravida cultural continuity.
+</div>
+
+<h3>8.4 Legacy</h3>
+<ul>
+  <li>Tamil literary canon, temple architecture and bronze tradition continued unbroken into the Vijayanagara-Nayaka era.</li>
+  <li>Local self-government tradition — the Sabha-Ur-Nagaram model survived into the 18th c. as <em>nadu-gauda</em> assemblies.</li>
+  <li>Tamil mercantile diaspora — Ayyavole 500 and Manigramam inscriptions outlast the dynasty.</li>
+  <li>Cultural diplomacy: the Chola legacy is now invoked in India's "Act East" engagement with ASEAN; the <strong>Sengol</strong> in the new Parliament (2023) and the Brihadeshwara millennium (2010) make Chola statecraft a current discourse.</li>
+</ul>
+</section>
+
+<section class="notes" id="ca">
+<h2>9. Current Affairs Link</h2>
+<ul>
+  <li><strong>Sengol in New Parliament (May 2023)</strong> — Chola-era ceremonial sceptre installed near the Speaker's chair as a symbol of "just transfer of power"; revived debate over Chola institutional symbolism.</li>
+  <li><strong>PM's Uttaramerur visit (December 2021)</strong> — referenced the Kudavolai system as the heritage of Indian democracy; surfaced in panchayati raj discussions.</li>
+  <li><strong>UNESCO Great Living Chola Temples</strong> — Brihadeshwara (Thanjavur), Gangaikondacholapuram and Airavateshwara (Darasuram) under continuous ASI conservation; Brihadeshwara 1010th anniversary observed in 2010.</li>
+  <li><strong>Chola-era idol restitution</strong> — Sripuranthan Nataraja restituted from NGA Australia; ongoing recoveries by the "Idol Wing" of Tamil Nadu police.</li>
+  <li><strong>Tamil mercantile diaspora</strong> — the Lobu Tua Tamil inscription (1088 AD, Sumatra) and Quanzhou Shiva temple references invoked in India's Indo-Pacific cultural diplomacy with ASEAN.</li>
+</ul>
+</section>
+
+<section class="notes" id="pyq">
+<h2>10. Previous Year Questions (UPSC)</h2>
+
+<div class="pyq"><span class="year">UPSC Mains GS-I 2013</span><br>
+  <strong>Q.</strong> The Chola architecture represents a high watermark in the evolution of temple architecture. Discuss.<br>
+  <em>Hint: Direct Chola question. Trace Vijayalayacholeshvara (Narttamalai) → Koranganatha (Srinivasanallur) → Sembiyan phase → Brihadeshwara (Rajaraja I, 1010) → Gangaikondacholapuram (Rajendra I, c. 1035) → Airavateshwara at Darasuram (Rajaraja II, c. 1166); add bronze Nataraja and UNESCO Great Living Chola Temples.</em>
+</div>
+
+<div class="pyq"><span class="year">UPSC Prelims 2014</span><br>
+  <strong>Q.</strong> With reference to the cultural history of India, the term <em>Panchayatan</em> refers to —<br>
+  (a) an assembly of village elders &nbsp; <strong>(b) a style of temple construction</strong> &nbsp; (c) an administrative functionary &nbsp; (d) a religious ritual<br>
+  <em>Hint: Panchayatan — main shrine + 4 subsidiary shrines at corners; used in many Chola temples.</em>
+</div>
+
+<div class="pyq"><span class="year">UPSC Mains GS-I 2014</span><br>
+  <strong>Q.</strong> Discuss the role of Tamil Nadu in the development of education and learning in ancient and medieval India.<br>
+  <em>Hint: Chola court patronage; the Tribhuvani Vedic college founded by Vira Rajendra; Tamil literary efflorescence — Sekkilar's Periyapuranam, Kamban's Ramavataram, Jayamkondar's Kalingattuparani.</em>
+</div>
+
+<div class="pyq"><span class="year">UPSC Mains GS-I 2020</span><br>
+  <strong>Q.</strong> The rock-cut architecture represents one of the most important sources of our knowledge of early Indian art and history. Discuss.<br>
+  <em>Hint: Frame the Chola structural shift after Pallava rock-cut beginnings — Mandagappattu (Pallava) → Pancha Rathas (monolithic) → Chola structural temple.</em>
+</div>
+
+<div class="pyq"><span class="year">UPSC Mains GS-I 2019</span><br>
+  <strong>Q.</strong> The Bhakti movement received a remarkable re-orientation with the advent of Sri Chaitanya Mahaprabhu. Discuss.<br>
+  <em>Hint: The Tamil Bhakti foundation under the Cholas (63 Nayanars, 12 Alvars) and Ramanuja's Vishishtadvaita at Srirangam (1017–1137) form the indispensable starting paragraph.</em>
+</div>
+
+<div class="pyq"><span class="year">UPSC Mains GS-I 2022</span><br>
+  <strong>Q.</strong> How will you explain that medieval Indian temple sculptures represent the social life of those days?<br>
+  <em>Hint: Brihadeshwara inscriptions list 400 devadasis with named allotments; Airavateshwara depicts Karaikkal Ammaiyar and daily life; Chola bronzes document court attire and ritual.</em>
+</div>
+
+<div class="pyq"><span class="year">UPSC Prelims 2023</span><br><strong>Q.</strong> With reference to the Chola bronzes, which of the following statements is/are correct? (1) The lost-wax (cire perdue) technique was used. (2) The Nataraja image represents Shiva's cosmic dance. (3) These bronzes were made for processional purposes. Select the correct answer.<br><em>Hint: All three correct. Lost-wax (Madhuchchishtavidhana) was the technique; Nataraja = Ananda Tandava; processional use (utsavamurtis) is confirmed by Chola temple records.</em></div>
+
+<div class="pyq"><span class="year">UPSC Prelims 2024</span><br><strong>Q.</strong> With reference to the Uttaramerur inscription, consider the following statements: (1) It belongs to the reign of Parantaka I. (2) It describes a system of election by lottery (kudavolai system). (3) It is located in Tamil Nadu. How many of the above statements are correct?<br><em>Hint: All three correct. Uttaramerur (Kanchipuram district, Tamil Nadu) inscription of Parantaka I (10th century) describes ward committees (variyam), qualifications for membership, and the kudavolai (pot-lottery) election system — a model of local self-government.</em></div>
+
+<div class="pyq"><span class="year">UPSC Mains GS-I 2023</span><br><strong>Q.</strong> The Chola period is considered a golden age in the history of Tamil Nadu. Elaborate with reference to polity, art, architecture and literature.<br><em>Hint: Polity — nadus/kurrams, sabha/ur, Uttaramerur local self-govt; Art — Nataraja bronze, Parantaka/Rajaraja temple bronzes; Architecture — Dravidian vimana peak (Brihadeeswara, Gangaikondacholapuram); Literature — Devaram, Kamban's Ramayana, Jayankondar — comprehensive Chola cultural synthesis.</em></div>
+
+<div class="pyq"><span class="year">UPSC Mains GS-I 2024</span><br><strong>Q.</strong> Evaluate the Chola naval expeditions and their impact on the trade networks of South and Southeast Asia.<br><em>Hint: Rajendra I's 1025 CE naval campaign against Srivijaya (Malaya/Sumatra) — controlled Bay of Bengal trade; boosted Indian Ocean commerce; Tamil merchant guilds (Ayyavole 500) operated across Southeast Asia; Chola commercial network linked India-Southeast Asia-China.</em></div>
+</section>
+
+<section class="notes" id="revision">
+<div class="revision-box">
+<h3>15-Minute Revision Box — Chola Empire Snapshot</h3>
+<ol>
+  <li><strong>Vijayalaya</strong> (c. 850) — captured Tanjore from Muttaraiyars; built Nishumbhasudini (Durga) temple.</li>
+  <li><strong>Aditya I</strong> — defeated Pallava Aparajita (c. 893) — Pallavas extinct.</li>
+  <li><strong>Parantaka I</strong> (907–955) — <em>Madurai-konda</em>; <strong>Uttaramerur inscriptions (919, 921)</strong>; defeated &amp; son Rajaditya killed at <strong>Takkolam (949)</strong> by Rashtrakuta Krishna III.</li>
+  <li><strong>Rajaraja I</strong> (985–1014) — <em>Mummudi Chola</em>; conquered Sri Lanka (Polonnaruwa new capital); built <strong>Brihadeshwara (1010)</strong> — architect Kunjara Mallan; 4 km inscriptions; allowed Srivijaya king to build Chudamani Vihara at Nagapattinam (Larger Leiden Plates).</li>
+  <li><strong>Rajendra I</strong> (1014–1044) — <em>Gangaikonda Chola</em>; Ganges expedition c. 1019–22 against Mahipala I; built Gangaikondacholapuram + Cholaganga; <strong>1025 naval raid on Srivijaya</strong> (Sangrama Vijayottungavarman) — captured Kadaram, Palembang, Nicobar; embassies to Sung China 1015, 1033.</li>
+  <li><strong>Rajadhiraja I</strong> — killed at <strong>Koppam (1054)</strong> by W. Chalukya Someshvara I; Virabhisheka.</li>
+  <li><strong>Vira Rajendra</strong> — defeated Someshvara II at <strong>Kudal-Sangamam</strong>.</li>
+  <li><strong>Kulottunga I</strong> (1070–1122) — Chalukya-Chola line; <em>Sungam-tavirtta-Cholan</em>; Jayamkondar's <em>Kalingattuparani</em>.</li>
+  <li><strong>Administrative tiers:</strong> Mandalam → Valanadu (Rajaraja I) → Nadu → Kurram → Ur/Sabha/Nagaram.</li>
+  <li><strong>Uttaramerur (Parantaka I, 919–921):</strong> 30 wards (kudumbu); Kudavolai pot-ticket lottery; age 35–70; disqualifications include serving in last 3 years, eating with outcastes; Variyam committees (Annual, Garden, Tank, Pancha-vara, Pon, Nyayattar).</li>
+  <li><strong>Merchant guilds:</strong> Ayyavole 500 (Aihole-based, inscription in Sumatra at Lobu Tua 1088); Manigramam; Nanadesi; Anjuvannam (foreign merchants).</li>
+  <li><strong>Ports:</strong> Nagapattinam (Chudamani Vihara), Kaveripattinam, Mahabalipuram, Quilon.</li>
+  <li><strong>Social groups:</strong> Valangai (right-hand, agricultural) vs Idangai (left-hand, artisan-mercantile) — survived into British era.</li>
+  <li><strong>Royal women:</strong> Sembiyan Mahadevi (temple-builder), Kundavai (Rajaraja's sister), Lokamahadevi (Rajaraja's queen). <strong>400 devadasis</strong> at Brihadeshwara.</li>
+  <li><strong>Temple progression:</strong> Vijayalayacholeshvara (Narttamalai) → Koranganatha (Srinivasanallur) → Sembiyan shrines → <strong>Brihadeshwara (1010)</strong> 66 m vimana, 80-ton kalasha → Gangaikondacholapuram (1035) 55 m → Airavateshwara/Darasuram (1166) chariot mandapa, musical pillars.</li>
+  <li><strong>Bronzes:</strong> lost-wax casting; Nataraja standardised; Swamimalai workshop; CERN Nataraja (2004).</li>
+  <li><strong>Tamil literature:</strong> Sekkilar's <em>Periyapuranam</em> (Kulottunga II), Kamban's <em>Ramavataram</em> (Kulottunga III), Jayamkondar's <em>Kalingattuparani</em> (Kulottunga I), Ottakuttar's <em>Ulas</em>, Nambiyandar Nambi's compilation of <em>Tirumurai</em> (Rajaraja I).</li>
+  <li><strong>Bhakti:</strong> 63 Nayanars (Saiva) + 12 Alvars (Vaishnava). Ramanuja (1017–1137) at Srirangam — Vishishtadvaita.</li>
+  <li><strong>End:</strong> three-front squeeze — Pandya (Jatavarman Sundara Pandya c. 1279), Hoysala (Vira Ballala II), Kakatiya (Ganapati Deva). Rajendra III last Chola, defeated 1279.</li>
+  <li><strong>Current affairs:</strong> Sengol in new Parliament (2023); PM's Uttaramerur visit (Dec 2021); UNESCO Great Living Chola Temples (1987 + 2004).</li>
+</ol>
+</div>
+</section>
+
+</main>
+
+<aside>
+<div class="aside-sticky">
+
+<div class="widget">
+<h4>Quick Reference — Major Rulers</h4>
+<table>
+<tr><th>Ruler</th><th>Hallmark</th></tr>
+<tr><td>Vijayalaya</td><td>c. 850 — Tanjore</td></tr>
+<tr><td>Aditya I</td><td>Pallavas extinct</td></tr>
+<tr><td>Parantaka I</td><td>Uttaramerur 919/921</td></tr>
+<tr><td>Rajaditya †</td><td>Takkolam 949</td></tr>
+<tr><td>Rajaraja I</td><td>Brihadeshwara 1010</td></tr>
+<tr><td>Rajendra I</td><td>Gangaikonda; Srivijaya 1025</td></tr>
+<tr><td>Rajadhiraja I †</td><td>Koppam 1054</td></tr>
+<tr><td>Vira Rajendra</td><td>Kudal-Sangamam</td></tr>
+<tr><td>Athirajendra †</td><td>1070 — line ends</td></tr>
+<tr><td>Kulottunga I</td><td>Chalukya-Chola; abolished tolls</td></tr>
+<tr><td>Kulottunga III</td><td>Last strong Chola</td></tr>
+<tr><td>Rajendra III</td><td>1279 — empire ends</td></tr>
+</table>
+</div>
+
+<div class="widget">
+<h4>Uttaramerur — Snapshot of Local Self-Government</h4>
+<table>
+<tr><th>Item</th><th>Detail</th></tr>
+<tr><td>Issuer</td><td>Parantaka I</td></tr>
+<tr><td>Date</td><td>919 &amp; 921 AD</td></tr>
+<tr><td>Location</td><td>Vaikuntha Perumal temple, Kanchipuram dist.</td></tr>
+<tr><td>Wards</td><td>30 (kudumbu)</td></tr>
+<tr><td>Age band</td><td>35–70</td></tr>
+<tr><td>Method</td><td>Kudavolai (palm-leaf lottery)</td></tr>
+<tr><td>Committees</td><td>Annual, Garden, Tank, Pancha-vara, Pon, Nyayattar</td></tr>
+</table>
+</div>
+
+<div class="widget">
+<h4>Difficulty &amp; Importance</h4>
+<div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:92%"></span></span></div>
+<div class="bar"><span class="lbl">Mains GS-I</span><span class="fill"><span style="width:85%"></span></span></div>
+<div class="bar"><span class="lbl">Art &amp; Culture</span><span class="fill"><span style="width:88%"></span></span></div>
+<div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:78%"></span></span></div>
+</div>
+
+<div class="widget">
+<h4>Must-Know Tags</h4>
+<span class="tag">Vijayalaya</span><span class="tag">Tanjore 850</span><span class="tag">Muttaraiyar</span><span class="tag">Nishumbhasudini</span><span class="tag">Aditya I</span><span class="tag">Aparajita Pallava</span><span class="tag">Parantaka I</span><span class="tag">Madurai-konda</span><span class="tag">Uttaramerur 919</span><span class="tag">Kudavolai</span><span class="tag">Kudumbu 30</span><span class="tag">Variyam</span><span class="tag">Pancha-vara</span><span class="tag">Eri Tank Cttee</span><span class="tag">Takkolam 949</span><span class="tag">Rajaditya</span><span class="tag">Krishna III Rashtrakuta</span><span class="tag">Sembiyan Mahadevi</span><span class="tag">Sundara Chola</span><span class="tag">Rajaraja I</span><span class="tag">Arulmozhivarman</span><span class="tag">Mummudi Chola</span><span class="tag">Kandalur Salai</span><span class="tag">Polonnaruwa</span><span class="tag">Jananathamangalam</span><span class="tag">Brihadeshwara 1010</span><span class="tag">Rajarajeshwaram</span><span class="tag">Kunjara Mallan</span><span class="tag">Peruvudaiyar</span><span class="tag">66 m vimana</span><span class="tag">80-ton kalasha</span><span class="tag">Chudamani Vihara</span><span class="tag">Nagapattinam</span><span class="tag">Larger Leiden Plates</span><span class="tag">Mara-Vijayottungavarman</span><span class="tag">Kundavai</span><span class="tag">Lokamahadevi</span><span class="tag">Rajendra I</span><span class="tag">Gangaikonda Chola</span><span class="tag">Mahipala I</span><span class="tag">Cholaganga</span><span class="tag">Gangaikondacholapuram</span><span class="tag">Srivijaya 1025</span><span class="tag">Sangrama Vijayottungavarman</span><span class="tag">Kadaram</span><span class="tag">Palembang</span><span class="tag">Nakkavaram Nicobar</span><span class="tag">Sung embassies 1015 1033</span><span class="tag">Rajadhiraja I</span><span class="tag">Koppam 1054</span><span class="tag">Virabhisheka</span><span class="tag">Someshvara I</span><span class="tag">Rajendra II</span><span class="tag">Vira Rajendra</span><span class="tag">Kudal-Sangamam</span><span class="tag">Someshvara II</span><span class="tag">Athirajendra</span><span class="tag">Kulottunga I</span><span class="tag">Chalukya-Chola</span><span class="tag">Sungam-tavirtta</span><span class="tag">Kalingattuparani</span><span class="tag">Jayamkondar</span><span class="tag">Mandalam</span><span class="tag">Valanadu</span><span class="tag">Nadu Nattar</span><span class="tag">Kurram Kottam</span><span class="tag">Ur Sabha Nagaram</span><span class="tag">Brahmadeya</span><span class="tag">Devadana</span><span class="tag">Vellanvagai</span><span class="tag">Kadamai</span><span class="tag">Land Survey</span><span class="tag">Veli</span><span class="tag">Ayyavole 500</span><span class="tag">Manigramam</span><span class="tag">Nanadesi</span><span class="tag">Anjuvannam</span><span class="tag">Lobu Tua 1088</span><span class="tag">Valangai</span><span class="tag">Idangai</span><span class="tag">400 Devadasis</span><span class="tag">Talichcheri-pendir</span><span class="tag">Nayanars 63</span><span class="tag">Alvars 12</span><span class="tag">Ramanuja</span><span class="tag">Vishishtadvaita</span><span class="tag">Srirangam</span><span class="tag">Periyapuranam</span><span class="tag">Sekkilar</span><span class="tag">Kamban Ramavataram</span><span class="tag">Tirumurai</span><span class="tag">Nambiyandar Nambi</span><span class="tag">Ottakuttar</span><span class="tag">Nataraja Bronze</span><span class="tag">Lost-wax</span><span class="tag">Swamimalai</span><span class="tag">Airavateshwara Darasuram</span><span class="tag">Rajaraja II</span><span class="tag">Pandya Revival</span><span class="tag">Jatavarman Sundara Pandya</span><span class="tag">Hoysala Vira Ballala</span><span class="tag">Kakatiya Ganapati Deva</span><span class="tag">Rajendra III 1279</span><span class="tag">Sengol 2023</span><span class="tag">CERN Nataraja</span>
+</div>
+
+<div class="widget">
+<h4>5-Question Self-Test</h4>
+<details><summary>Q1. Who founded the Imperial Chola line and from whom did he capture Tanjore?</summary><p>Vijayalaya Chola (c. 850 AD); captured Tanjore from the Muttaraiyar chieftains who were Pandya feudatories. Built the Nishumbhasudini (Durga) temple there.</p></details>
+<details><summary>Q2. Describe the Kudavolai system.</summary><p>The palm-leaf-and-pot lottery used by the Uttaramerur Sabha (Parantaka I, 919–921 AD). Village divided into 30 wards (kudumbu); names of eligible men (age 35–70, land-holder, Veda-literate) written on palm-leaf tickets, placed in a pot, drawn by a young boy. Selected members served 1 year. Sub-committees (Variyam) selected similarly.</p></details>
+<details><summary>Q3. Why did Rajendra I attack Srivijaya in 1025?</summary><p>To break Srivijaya's chokehold on the Strait of Malacca and free up the China trade for Tamil merchant guilds (Ayyavole 500, Manigramam). Defeated Sailendra king Sangrama Vijayottungavarman; captured Kadaram (Kedah), Palembang (Sri Vishaya), Nicobar (Nakkavaram). Title <em>Kadaram-konda</em>.</p></details>
+<details><summary>Q4. Name the three Great Living Chola Temples.</summary><p>(i) Brihadeshwara/Rajarajeshwaram at Thanjavur — Rajaraja I, 1010 AD; (ii) Gangaikondacholeshwara at Gangaikondacholapuram — Rajendra I, c. 1035; (iii) Airavateshwara at Darasuram — Rajaraja II, c. 1166. UNESCO World Heritage (1987, extended 2004).</p></details>
+<details><summary>Q5. What ended the Chola Empire?</summary><p>Three-front squeeze: (a) Pandya revival under Maravarman &amp; Jatavarman Sundara Pandya — defeated Rajendra III c. 1279; (b) Hoysala pressure under Vira Ballala II–III; (c) Kakatiya expansion under Ganapati Deva. Internal feudalisation and Saiva-Vaishnava sectarianism weakened the centre.</p></details>
+</div>
+
+<div class="widget">
+<h4>Related UPSC Notes</h4>
+<ul class="related">
+  <li><a href="/medieval-history/early-medieval-india-c-750-1200-ad">Topic 01: Early Medieval India</a></li>
+  <li><a href="/ancient-history">Topic 12 (Ancient): Post-Gupta Age</a></li>
+  <li><a href="/ancient-history">Ancient History — Complete</a></li>
+  <li><a href="/upsc-notes">All UPSC Notes</a></li>
+</ul>
+</div>
+</aside>
+
+</div>
+</div>

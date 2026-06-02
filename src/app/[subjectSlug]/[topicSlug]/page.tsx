@@ -4,6 +4,8 @@ import { TopicNotesBody } from "@/components/notes/TopicNotesBody";
 import { TopicNotesEnhancements } from "@/components/notes/TopicNotesEnhancements";
 import { TopicNotesFooterNav } from "@/components/notes/TopicNotesFooterNav";
 import { TopicPageLayout } from "@/components/notes/TopicPageLayout";
+import { MedievalTopicFooterNav } from "@/components/notes/MedievalTopicFooterNav";
+import { MedievalTopicNotesBody } from "@/components/notes/MedievalTopicNotesBody";
 import { buildTopicMetadata, publisherMetadata } from "@/lib/seo/metadata";
 import { getChapterByTopicSlug } from "@/lib/seo/routes";
 import {
@@ -12,6 +14,7 @@ import {
 } from "@/lib/seo/routes";
 import { SUBJECT_SLUG } from "@/lib/seo/slugs";
 import { isAncientTopicId, type AncientTopicId } from "@/lib/ancient-notes";
+import { isMedievalTopicId, type MedievalTopicId } from "@/lib/medieval-notes";
 
 export const revalidate = 86400;
 
@@ -56,6 +59,8 @@ export default async function TopicPage({ params }: PageProps) {
 
   const isAncient =
     subjectKey === "ancient" && isAncientTopicId(chapter.id);
+  const isMedieval =
+    subjectKey === "medieval" && isMedievalTopicId(chapter.id);
 
   if (isAncient) {
     const topicId = chapter.id as AncientTopicId;
@@ -63,6 +68,17 @@ export default async function TopicPage({ params }: PageProps) {
       <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
         <TopicNotesBody topicId={topicId} />
         <TopicNotesFooterNav topicId={topicId} />
+        <TopicNotesEnhancements />
+      </TopicPageLayout>
+    );
+  }
+
+  if (isMedieval) {
+    const topicId = chapter.id as MedievalTopicId;
+    return (
+      <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
+        <MedievalTopicNotesBody topicId={topicId} />
+        <MedievalTopicFooterNav topicId={topicId} />
         <TopicNotesEnhancements />
       </TopicPageLayout>
     );

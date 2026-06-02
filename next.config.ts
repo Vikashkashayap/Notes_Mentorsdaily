@@ -35,6 +35,48 @@ const nextConfig: NextConfig = {
         destination: "/ancient-history/:topicId",
         permanent: true,
       },
+      {
+        source: "/medieval-history/medieval-topic01",
+        destination: "/medieval-history/early-medieval-india-c-750-1200-ad",
+        permanent: true,
+      },
+      {
+        source: "/medieval-history/medieval-topic02",
+        destination: "/medieval-history/the-chola-empire-c-850-1200-ad",
+        permanent: true,
+      },
+      {
+        source: "/medieval-history/medieval-topic03",
+        destination:
+          "/medieval-history/the-age-of-conflict-and-turkish-invasions-c-1000-1200-ad",
+        permanent: true,
+      },
+      {
+        source: "/medieval-history/medieval-topic04",
+        destination: "/medieval-history/the-delhi-sultanate-1206-1526-ad",
+        permanent: true,
+      },
+      {
+        source: "/medieval-history/medieval-topic05",
+        destination:
+          "/medieval-history/vijayanagar-and-bahmani-kingdoms-1336-1646-ad",
+        permanent: true,
+      },
+      {
+        source: "/medieval-history/medieval-topic06",
+        destination: "/medieval-history/the-mughal-empire-1526-1707-ad",
+        permanent: true,
+      },
+      {
+        source: "/medieval-history/medieval-topic07",
+        destination: "/medieval-history/marathas-and-regional-states-1707-1818-ad",
+        permanent: true,
+      },
+      {
+        source: "/medieval-history/medieval-topic08",
+        destination: "/medieval-history/bhakti-and-sufi-religious-movements",
+        permanent: true,
+      },
     ];
   },
   images: {

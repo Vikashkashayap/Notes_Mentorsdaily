@@ -1,5 +1,9 @@
 import { isAncientTopicId } from "@/lib/ancient-notes";
 import { getAncientChapter, getAncientTopicSlug } from "@/lib/ancient-notes";
+import {
+  getMedievalTopicSlug,
+  isMedievalTopicId,
+} from "@/lib/medieval-notes";
 import { SYLLABUS_DATA } from "@/lib/upsc-syllabus/data";
 import type { Chapter } from "@/lib/upsc-syllabus/types";
 import type { SubjectKey } from "@/lib/upsc-syllabus/types";
@@ -26,6 +30,9 @@ export function topicPath(subjectKey: SubjectKey, chapterId: string): string {
   if (subjectKey === "ancient" && isAncientTopicId(chapterId)) {
     return `${subjectHubPath("ancient")}/${getAncientTopicSlug(chapterId)}`;
   }
+  if (subjectKey === "medieval" && isMedievalTopicId(chapterId)) {
+    return `${subjectHubPath("medieval")}/${getMedievalTopicSlug(chapterId)}`;
+  }
   return `${subjectHubPath(subjectKey)}/${topicSlugFromChapterId(chapterId)}`;
 }
 
@@ -38,6 +45,12 @@ export function getChapterByTopicSlug(
     return subject.chapters.find(
       (ch) =>
         isAncientTopicId(ch.id) && getAncientTopicSlug(ch.id) === slug,
+    );
+  }
+  if (subjectKey === "medieval") {
+    return subject.chapters.find(
+      (ch) =>
+        isMedievalTopicId(ch.id) && getMedievalTopicSlug(ch.id) === slug,
     );
   }
   return subject.chapters.find(
@@ -54,6 +67,10 @@ export function getChapterHref(
     if (!isAncientTopicId(chapter.id)) return null;
     return topicPath("ancient", chapter.id);
   }
+  if (subjectKey === "medieval" || isMedievalTopicId(chapter.id)) {
+    if (!isMedievalTopicId(chapter.id)) return null;
+    return topicPath("medieval", chapter.id);
+  }
   return topicPath(subjectKey, chapter.id);
 }
 
@@ -68,7 +85,9 @@ export function getAllTopicPaths(): { subjectKey: SubjectKey; slug: string }[] {
       if (ch.status !== "live") continue;
       if (key === "ancient" && isAncientTopicId(ch.id)) {
         paths.push({ subjectKey: key, slug: getAncientTopicSlug(ch.id) });
-      } else if (key !== "ancient") {
+      } else if (key === "medieval" && isMedievalTopicId(ch.id)) {
+        paths.push({ subjectKey: key, slug: getMedievalTopicSlug(ch.id) });
+      } else if (key !== "ancient" && key !== "medieval") {
         paths.push({
           subjectKey: key,
           slug: topicSlugFromChapterId(ch.id),
