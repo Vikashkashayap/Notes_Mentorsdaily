@@ -1,0 +1,918 @@
+<!-- polity-topic02 — auto-imported from polity-topic02-salient-features-sources-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(135deg,#1b3a4b 0%,#0d2535 55%,#061018 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ol{margin:0;padding-left:22px;font-size:14px;columns:2;column-gap:24px}
+.toc li{margin-bottom:5px;break-inside:avoid}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout strong{color:var(--brand-blue-dark)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ol{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Topic 02: Salient Features &amp; Sources of the Indian Constitution</h1>
+    <p class="sub">A thorough analysis of what makes the Indian Constitution unique — its structural features, the global sources it borrowed from, its quasi-federal character, and a comparative lens with US and UK constitutions. High-yield for Prelims and Mains GS-II.</p>
+    <div class="meta">
+      <span class="pill">Indian Polity – GS II</span>
+      <span class="pill">Prelims + Mains</span>
+      <span class="pill">High Weightage</span>
+      <span class="pill">Updated: 3 June 2026</span>
+    </div>
+  </div>
+
+  <!-- TOC -->
+  <div class="toc">
+    <h3>Contents</h3>
+    <ol>
+      <li><a href="#conceptual-clarity">Conceptual Clarity</a></li>
+      <li><a href="#salient-features">Salient Features</a></li>
+      <li><a href="#sources">Sources of the Constitution</a></li>
+      <li><a href="#india-vs-us">India vs US Constitution</a></li>
+      <li><a href="#india-vs-uk">India vs UK Constitution</a></li>
+      <li><a href="#quasi-federal">Quasi-Federal Nature</a></li>
+      <li><a href="#prelims-pyq">Prelims PYQs</a></li>
+      <li><a href="#mains-pyq">Mains PYQs</a></li>
+      <li><a href="#revision">15-Minute Revision Box</a></li>
+    </ol>
+  </div>
+
+  <!-- SECTION 1: CONCEPTUAL CLARITY -->
+  <section class="notes" id="conceptual-clarity">
+    <h2>1. Conceptual Clarity</h2>
+    <div class="concept-box">
+      <h3>Why This Topic Matters for UPSC</h3>
+      <p>This topic forms the structural backbone of Indian Polity. UPSC regularly tests identification of borrowed features, numerical facts (number of articles, schedules, amendments), and the "quasi-federal" debate. Mains 2013, 2015, 2018, and 2023 all had direct or indirect questions on this theme.</p>
+    </div>
+    <h3>What UPSC Asks</h3>
+    <ul>
+      <li><strong>Prelims:</strong> Source country for a specific provision (e.g., DPSP from Ireland), number of schedules, articles, which amendment added Fundamental Duties, etc.</li>
+      <li><strong>Mains GS-II:</strong> "Discuss the salient features of the Indian Constitution." / "Is India's constitution truly federal?" / "Critically examine the sources of the Indian Constitution."</li>
+      <li><strong>Essay:</strong> "The Indian Constitution is a unique document — it is neither purely federal nor purely unitary."</li>
+    </ul>
+    <div class="callout info">
+      <strong>Remember:</strong> The Constituent Assembly took 2 years, 11 months and 18 days (9 Dec 1946 – 26 Nov 1949) to draft the Constitution. It came into force on <strong>26 January 1950</strong>.
+    </div>
+  </section>
+
+  <!-- SECTION 2: SALIENT FEATURES -->
+  <section class="notes" id="salient-features">
+    <h2>2. Salient Features of the Indian Constitution</h2>
+    <p>The Indian Constitution is remarkable for both its comprehensiveness and its adaptability. Below are the key features that UPSC expects you to explain and analyse.</p>
+
+    <h3>1. Lengthiest Written Constitution</h3>
+    <p>Originally the Constitution had <strong>395 articles</strong>, <strong>8 schedules</strong>, and <strong>22 parts</strong>. Due to numerous amendments, it now contains approximately <strong>470 articles</strong>, <strong>12 schedules</strong>, and <strong>25 parts</strong>. It is the lengthiest written constitution of any sovereign nation in the world.</p>
+    <div class="callout warn">
+      <strong>Reason for length:</strong> Single constitution for both Centre and States; incorporation of provisions from GoI Act 1935; detailed administrative provisions; diversity of India requiring elaborate provisions.
+    </div>
+
+    <h3>2. Drawn from Various Sources</h3>
+    <p>The framers studied over <strong>60 constitutions</strong> of the world. The single largest source is the <strong>Government of India Act, 1935</strong> (~250 provisions). The rest were drawn from the USA, UK, Ireland, Canada, Australia, Germany, South Africa, USSR, Japan, and France. (See Section 3 for the full sources table.)</p>
+
+    <h3>3. Blend of Rigidity and Flexibility</h3>
+    <p>The Constitution can be amended by different procedures depending on the nature of the provision:</p>
+    <ul>
+      <li><strong>Simple majority</strong> of Parliament — Admission of new states, creation of new states, etc.</li>
+      <li><strong>Special majority</strong> (2/3rd of members present and voting + majority of total membership) — Most provisions under Article 368.</li>
+      <li><strong>Special majority + ratification by half the states</strong> — Federal provisions: election of President, extent of executive power of Union/States, SC/HC, distribution of legislative powers, representation in Parliament, etc.</li>
+    </ul>
+    <div class="callout">
+      <strong>K.C. Wheare:</strong> Called India's amendment procedure "neither purely rigid nor purely flexible" — a middle path.
+    </div>
+
+    <h3>4. Federal System with Unitary Bias (Quasi-Federal)</h3>
+    <p>The Indian Constitution establishes a federal structure (dual polity, division of powers, written constitution, supremacy of constitution, independent judiciary, bicameralism) but has strong unitary features. <strong>K.C. Wheare</strong> described it as <em>"quasi-federal"</em>; <strong>Granville Austin</strong> called it <em>"cooperative federalism"</em>; <strong>D.D. Basu</strong> called it <em>"neither purely federal nor purely unitary."</em></p>
+
+    <h3>5. Parliamentary Form of Government</h3>
+    <p>India follows the Westminster model of parliamentary democracy (borrowed from UK). The executive is responsible to the legislature. The President is the nominal executive; the Prime Minister and Council of Ministers form the real executive. The PM must command majority in the Lok Sabha.</p>
+
+    <h3>6. Synthesis of Parliamentary Sovereignty and Judicial Supremacy</h3>
+    <p>Unlike the UK (parliamentary sovereignty) or USA (judicial supremacy), India combines both. Parliament is supreme in its legislative domain, but the Supreme Court has the power of <strong>judicial review</strong> to strike down laws violating the Constitution. The <strong>Basic Structure Doctrine</strong> (Kesavananda Bharati, 1973) further limits Parliament's amendment power.</p>
+
+    <h3>7. Integrated and Independent Judiciary</h3>
+    <p>India has a single integrated judicial system — the Supreme Court at the apex, followed by High Courts, and subordinate courts. The judiciary is independent of the executive and legislature. Judges are appointed by a collegium-based system, and removal requires impeachment by Parliament.</p>
+
+    <h3>8. Fundamental Rights (Part III, Articles 12–35)</h3>
+    <p>Originally 7 categories; currently <strong>6 Fundamental Rights</strong> (Right to Property removed as FR by 44th Amendment, 1978 — now a constitutional/legal right under Art. 300A):</p>
+    <div class="grid-2">
+      <div class="card"><h4>Right to Equality (Arts 14–18)</h4><p>Equality before law, prohibition of discrimination, equality of opportunity, abolition of untouchability, abolition of titles.</p></div>
+      <div class="card"><h4>Right to Freedom (Arts 19–22)</h4><p>6 freedoms under Art. 19, protection against arbitrary arrest (Arts 20–22).</p></div>
+      <div class="card"><h4>Right against Exploitation (Arts 23–24)</h4><p>Prohibition of traffic in human beings, forced labour, and child labour.</p></div>
+      <div class="card"><h4>Right to Freedom of Religion (Arts 25–28)</h4><p>Freedom of conscience, right to manage religious affairs, freedom from religious instruction in state-aided schools.</p></div>
+      <div class="card"><h4>Cultural &amp; Educational Rights (Arts 29–30)</h4><p>Protection of interests of minorities, right of minorities to establish and administer educational institutions.</p></div>
+      <div class="card"><h4>Right to Constitutional Remedies (Art 32)</h4><p>Dr Ambedkar called this the "heart and soul" of the Constitution. Five writs: Habeas Corpus, Mandamus, Certiorari, Prohibition, Quo Warranto.</p></div>
+    </div>
+
+    <h3>9. Directive Principles of State Policy (Part IV, Arts 36–51)</h3>
+    <p>Borrowed from the Irish Constitution. Non-justiciable but fundamental to governance. The Supreme Court held in <strong>Minerva Mills (1980)</strong> that FRs and DPSPs are complementary and must be harmonised. DPSPs represent the socio-economic ideals of the Constitution.</p>
+
+    <h3>10. Fundamental Duties (Part IVA, Art 51A)</h3>
+    <p>Added by the <strong>42nd Amendment, 1976</strong> on the recommendation of the <strong>Swaran Singh Committee</strong>. Originally 10 duties; an 11th duty (duty of parents to provide education to children aged 6–14) was added by the <strong>86th Amendment, 2002</strong>. Borrowed from the Soviet (USSR) Constitution.</p>
+
+    <h3>11. Secular State</h3>
+    <p>The word <strong>"Secular"</strong> was added to the Preamble by the <strong>42nd Amendment, 1976</strong>. India follows "positive secularism" — the state treats all religions equally, neither favouring nor opposing any. Religious freedom is guaranteed under Arts 25–28.</p>
+
+    <h3>12. Universal Adult Franchise</h3>
+    <p>Article 326 provides for elections on the basis of adult suffrage. Originally the voting age was 21 years. The <strong>61st Amendment, 1988</strong> reduced it to <strong>18 years</strong>. No discrimination on grounds of religion, race, caste, sex, etc.</p>
+
+    <h3>13. Single Citizenship</h3>
+    <p>Despite its federal structure, India (like UK) provides only one citizenship — Indian citizenship. There is no separate state citizenship. This promotes national integration.</p>
+
+    <h3>14. Independent Constitutional Bodies</h3>
+    <p>The Constitution provides for autonomous bodies insulated from executive interference: <strong>Election Commission (Art 324)</strong>, <strong>Comptroller and Auditor General (Art 148)</strong>, <strong>Union Public Service Commission (Art 315)</strong>, Finance Commission, National Commissions, etc.</p>
+
+    <h3>15. Emergency Provisions</h3>
+    <p>Three types of emergencies: <strong>National Emergency (Art 352)</strong> — external aggression/armed rebellion; <strong>President's Rule (Art 356)</strong> — failure of constitutional machinery in a state; <strong>Financial Emergency (Art 360)</strong> — threat to financial stability. These shift the federal balance towards the Centre.</p>
+
+    <h3>16. Three-Tier Government (73rd &amp; 74th Amendments, 1992)</h3>
+    <p>The <strong>73rd Amendment</strong> gave constitutional status to Panchayati Raj Institutions (rural local government) and the <strong>74th Amendment</strong> to Urban Local Bodies. Added Part IX (Arts 243–243O) and Part IX-A (Arts 243P–243ZG), making local government the <strong>third tier</strong> of government.</p>
+  </section>
+
+  <!-- SECTION 3: SOURCES -->
+  <section class="notes" id="sources">
+    <h2>3. Sources of the Indian Constitution</h2>
+    <p>The Constituent Assembly studied constitutions from across the world. The table below summarises all major sources examined in UPSC.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Country / Source</th>
+          <th>Features Borrowed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Government of India Act, 1935</strong></td>
+          <td>Federal scheme; Emergency provisions; Public Service Commissions; Judiciary structure; Administrative details (~250 provisions form the structural backbone)</td>
+        </tr>
+        <tr>
+          <td><strong>United Kingdom</strong></td>
+          <td>Parliamentary system of government; Cabinet system; PM's role; Bicameralism; Single citizenship; Rule of Law; Writs; Legislative privileges; Lawmaking procedure</td>
+        </tr>
+        <tr>
+          <td><strong>United States of America</strong></td>
+          <td>Fundamental Rights; Preamble; Judicial review; Independence of judiciary; Impeachment of President; Removal of SC/HC judges; Post of Vice-President; Equal protection clause</td>
+        </tr>
+        <tr>
+          <td><strong>Ireland</strong></td>
+          <td>Directive Principles of State Policy (DPSP); Nomination of members to Rajya Sabha (Art 80 — 12 members nominated by President); Method of election of President (proportional representation via single transferable vote)</td>
+        </tr>
+        <tr>
+          <td><strong>Canada</strong></td>
+          <td>Quasi-federal features; Residuary powers vested in Centre; Advisory jurisdiction of Supreme Court; Federation with a strong Centre; Appointment of State governors by Centre</td>
+        </tr>
+        <tr>
+          <td><strong>Australia</strong></td>
+          <td>Concurrent List; Joint sitting of Parliament (Art 108); Freedom of trade, commerce and intercourse; Language of the preamble</td>
+        </tr>
+        <tr>
+          <td><strong>Germany (Weimar Republic)</strong></td>
+          <td>Suspension of Fundamental Rights during Emergency; Emergency provisions that affect fundamental rights</td>
+        </tr>
+        <tr>
+          <td><strong>South Africa</strong></td>
+          <td>Procedure for amendment of the Constitution (Art 368 — special majority required); Election of members of Rajya Sabha</td>
+        </tr>
+        <tr>
+          <td><strong>USSR (Soviet Union)</strong></td>
+          <td>Fundamental Duties (Art 51A); Ideals of social, economic and political justice in the Preamble; Planned economic development (Five-Year Plans concept)</td>
+        </tr>
+        <tr>
+          <td><strong>Japan</strong></td>
+          <td>"Procedure established by law" (Art 21 — the phrase used instead of US "due process of law"); Basis for procedure in deprivation of life or personal liberty</td>
+        </tr>
+        <tr>
+          <td><strong>France</strong></td>
+          <td>Concept of Republic; Ideals of Liberty, Equality and Fraternity in the Preamble; Republic and elected executive</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="callout">
+      <strong>Mnemonic — "GUISCAFJSUK":</strong> GoI Act 1935, USA, Ireland, South Africa, Canada, Australia, France, Japan, Soviet Union, UK — the 10 key sources. Practice matching each to its features.
+    </div>
+
+    <div class="svg-wrap">
+      <svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+        <!-- Central circle -->
+        <circle cx="350" cy="210" r="55" fill="#1a3d5c"/>
+        <text x="350" y="205" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">Indian</text>
+        <text x="350" y="220" text-anchor="middle" fill="#fff" font-size="11" font-weight="bold">Constitution</text>
+
+        <!-- UK — top (12 o'clock) -->
+        <line x1="350" y1="155" x2="350" y2="65" stroke="#1a3d5c" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <rect x="265" y="18" width="170" height="48" rx="6" fill="#e8f0f8" stroke="#1a3d5c" stroke-width="1.2"/>
+        <text x="350" y="35" text-anchor="middle" fill="#1a3d5c" font-size="11" font-weight="bold">UK</text>
+        <text x="350" y="49" text-anchor="middle" fill="#1a3d5c" font-size="9">Parliamentary system, Cabinet</text>
+        <text x="350" y="61" text-anchor="middle" fill="#1a3d5c" font-size="9">Rule of Law, Single Citizenship</text>
+
+        <!-- USA — top-right (1–2 o'clock) -->
+        <line x1="393" y1="168" x2="530" y2="88" stroke="#1a3d5c" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <rect x="523" y="50" width="168" height="48" rx="6" fill="#e8f0f8" stroke="#1a3d5c" stroke-width="1.2"/>
+        <text x="607" y="67" text-anchor="middle" fill="#1a3d5c" font-size="11" font-weight="bold">USA</text>
+        <text x="607" y="81" text-anchor="middle" fill="#1a3d5c" font-size="9">Fundamental Rights, Preamble</text>
+        <text x="607" y="93" text-anchor="middle" fill="#1a3d5c" font-size="9">Judicial Review</text>
+
+        <!-- Ireland — right (3 o'clock) -->
+        <line x1="405" y1="210" x2="530" y2="210" stroke="#1a3d5c" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <rect x="528" y="182" width="163" height="48" rx="6" fill="#e8f0f8" stroke="#1a3d5c" stroke-width="1.2"/>
+        <text x="610" y="199" text-anchor="middle" fill="#1a3d5c" font-size="11" font-weight="bold">Ireland</text>
+        <text x="610" y="213" text-anchor="middle" fill="#1a3d5c" font-size="9">DPSP, Nomination to RS</text>
+        <text x="610" y="225" text-anchor="middle" fill="#1a3d5c" font-size="9">Presidential election method</text>
+
+        <!-- Australia — bottom-right (4–5 o'clock) -->
+        <line x1="393" y1="252" x2="520" y2="330" stroke="#1a3d5c" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <rect x="514" y="320" width="175" height="48" rx="6" fill="#e8f0f8" stroke="#1a3d5c" stroke-width="1.2"/>
+        <text x="601" y="337" text-anchor="middle" fill="#1a3d5c" font-size="11" font-weight="bold">Australia</text>
+        <text x="601" y="351" text-anchor="middle" fill="#1a3d5c" font-size="9">Concurrent List, Joint Sitting</text>
+        <text x="601" y="363" text-anchor="middle" fill="#1a3d5c" font-size="9">Freedom of Trade</text>
+
+        <!-- Canada — bottom (6 o'clock) -->
+        <line x1="350" y1="265" x2="350" y2="356" stroke="#1a3d5c" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <rect x="265" y="354" width="170" height="48" rx="6" fill="#e8f0f8" stroke="#1a3d5c" stroke-width="1.2"/>
+        <text x="350" y="371" text-anchor="middle" fill="#1a3d5c" font-size="11" font-weight="bold">Canada</text>
+        <text x="350" y="385" text-anchor="middle" fill="#1a3d5c" font-size="9">Federal + Quasi-federal</text>
+        <text x="350" y="397" text-anchor="middle" fill="#1a3d5c" font-size="9">Residuary Powers with Centre</text>
+
+        <!-- Germany — bottom-left (7–8 o'clock) -->
+        <line x1="307" y1="252" x2="180" y2="330" stroke="#1a3d5c" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <rect x="9" y="320" width="173" height="48" rx="6" fill="#e8f0f8" stroke="#1a3d5c" stroke-width="1.2"/>
+        <text x="95" y="337" text-anchor="middle" fill="#1a3d5c" font-size="11" font-weight="bold">Germany</text>
+        <text x="95" y="351" text-anchor="middle" fill="#1a3d5c" font-size="9">Emergency Provisions</text>
+        <text x="95" y="363" text-anchor="middle" fill="#1a3d5c" font-size="9">Suspension of FRs</text>
+
+        <!-- South Africa — left (9 o'clock) -->
+        <line x1="295" y1="210" x2="172" y2="210" stroke="#1a3d5c" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <rect x="9" y="182" width="165" height="48" rx="6" fill="#e8f0f8" stroke="#1a3d5c" stroke-width="1.2"/>
+        <text x="91" y="199" text-anchor="middle" fill="#1a3d5c" font-size="11" font-weight="bold">South Africa</text>
+        <text x="91" y="213" text-anchor="middle" fill="#1a3d5c" font-size="9">Amendment Procedure</text>
+        <text x="91" y="225" text-anchor="middle" fill="#1a3d5c" font-size="9">RS Election</text>
+
+        <!-- USSR — top-left (10–11 o'clock) -->
+        <line x1="307" y1="168" x2="178" y2="90" stroke="#1a3d5c" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <rect x="8" y="50" width="173" height="48" rx="6" fill="#e8f0f8" stroke="#1a3d5c" stroke-width="1.2"/>
+        <text x="94" y="67" text-anchor="middle" fill="#1a3d5c" font-size="11" font-weight="bold">USSR</text>
+        <text x="94" y="81" text-anchor="middle" fill="#1a3d5c" font-size="9">Fundamental Duties</text>
+        <text x="94" y="93" text-anchor="middle" fill="#1a3d5c" font-size="9">Social justice ideals (Preamble)</text>
+
+        <!-- Japan — top (between UK and USA) -->
+        <line x1="371" y1="156" x2="460" y2="100" stroke="#c47820" stroke-width="1.5" stroke-dasharray="4,3"/>
+        <rect x="426" y="84" width="160" height="34" rx="6" fill="#fff4e0" stroke="#c47820" stroke-width="1.2"/>
+        <text x="506" y="99" text-anchor="middle" fill="#c47820" font-size="10" font-weight="bold">Japan</text>
+        <text x="506" y="113" text-anchor="middle" fill="#c47820" font-size="9">"Procedure established by law"</text>
+      </svg>
+      <div class="svg-caption">Fig 2.1 — Sources of the Indian Constitution: Features borrowed from different countries</div>
+    </div>
+
+    <h3>The Government of India Act, 1935 — The Dominant Source</h3>
+    <p>About <strong>250 of the original 395 articles</strong> were derived directly or with modification from the GoI Act, 1935. Key provisions include:</p>
+    <ul>
+      <li>Federal structure with a strong Centre</li>
+      <li>Separate legislative lists (Union, State, Concurrent)</li>
+      <li>Emergency provisions (though the 1935 Act's emergency was far more autocratic)</li>
+      <li>Public Service Commissions at Centre and State levels</li>
+      <li>Structure of the High Courts</li>
+      <li>Provisions relating to the Governor's office</li>
+    </ul>
+    <div class="callout warn">
+      <strong>Criticism by Dr Ambedkar:</strong> "Our constitution is a carbon copy of the Government of India Act, 1935." This is an exaggeration — the philosophical underpinning (FRs, DPSPs, universal franchise, parliamentary democracy) was entirely new.
+    </div>
+  </section>
+
+  <!-- SECTION 4: INDIA VS US -->
+  <section class="notes" id="india-vs-us">
+    <h2>4. Comparison: Indian vs US Constitution</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>India</th>
+          <th>USA</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Type of Constitution</td>
+          <td>Written, longest in the world</td>
+          <td>Written, shortest (7 original Articles)</td>
+        </tr>
+        <tr>
+          <td>Government System</td>
+          <td>Parliamentary (Westminster model)</td>
+          <td>Presidential</td>
+        </tr>
+        <tr>
+          <td>Head of State</td>
+          <td>President (nominal executive)</td>
+          <td>President (real executive)</td>
+        </tr>
+        <tr>
+          <td>Executive Accountability</td>
+          <td>Council of Ministers accountable to Lok Sabha</td>
+          <td>President not accountable to Congress</td>
+        </tr>
+        <tr>
+          <td>Judiciary</td>
+          <td>Integrated single judiciary</td>
+          <td>Dual judiciary (federal + state)</td>
+        </tr>
+        <tr>
+          <td>Citizenship</td>
+          <td>Single citizenship</td>
+          <td>Dual citizenship (state + federal)</td>
+        </tr>
+        <tr>
+          <td>Residuary Powers</td>
+          <td>With Centre (Art 248)</td>
+          <td>With States (10th Amendment)</td>
+        </tr>
+        <tr>
+          <td>Amendment Procedure</td>
+          <td>Relatively flexible (Art 368)</td>
+          <td>Rigid (2/3 Congress + 3/4 states)</td>
+        </tr>
+        <tr>
+          <td>Bill of Rights / FRs</td>
+          <td>Part III — justified limitations</td>
+          <td>First 10 amendments — near-absolute</td>
+        </tr>
+        <tr>
+          <td>Federalism</td>
+          <td>Quasi-federal (unitary bias)</td>
+          <td>Classic federal (centrifugal tendency)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="svg-wrap">
+      <svg viewBox="0 0 700 220" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+        <defs>
+          <marker id="t02c-arr" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+            <polygon points="0 0, 7 3.5, 0 7" fill="#1a3d5c"/>
+          </marker>
+        </defs>
+
+        <!-- Header row -->
+        <rect x="10" y="10" width="200" height="32" rx="5" fill="#5a6266"/>
+        <text x="110" y="31" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">Feature</text>
+        <rect x="220" y="10" width="225" height="32" rx="5" fill="#1a3d5c"/>
+        <text x="333" y="31" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">India</text>
+        <rect x="455" y="10" width="235" height="32" rx="5" fill="#c47820"/>
+        <text x="572" y="31" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">USA</text>
+
+        <!-- Row 1: Executive -->
+        <rect x="10" y="52" width="200" height="50" rx="5" fill="#e8f0f8" stroke="#dde3e8" stroke-width="1"/>
+        <text x="110" y="72" text-anchor="middle" fill="#1a3d5c" font-size="11" font-weight="bold">Executive</text>
+        <text x="110" y="88" text-anchor="middle" fill="#5a6266" font-size="9">System &amp; Accountability</text>
+
+        <rect x="220" y="52" width="225" height="50" rx="5" fill="#e8f0f8" stroke="#1a3d5c" stroke-width="1"/>
+        <text x="333" y="70" text-anchor="middle" fill="#1a3d5c" font-size="10">PM + Cabinet</text>
+        <text x="333" y="84" text-anchor="middle" fill="#1a3d5c" font-size="9">Collective responsibility to Lok Sabha</text>
+        <text x="333" y="97" text-anchor="middle" fill="#1a3d5c" font-size="9">President = nominal head</text>
+
+        <rect x="455" y="52" width="235" height="50" rx="5" fill="#fff4e0" stroke="#c47820" stroke-width="1"/>
+        <text x="572" y="70" text-anchor="middle" fill="#c47820" font-size="10">President (fixed 4-yr term)</text>
+        <text x="572" y="84" text-anchor="middle" fill="#c47820" font-size="9">Not responsible to Congress</text>
+        <text x="572" y="97" text-anchor="middle" fill="#c47820" font-size="9">Real + nominal head combined</text>
+
+        <!-- Row 2: Judiciary -->
+        <rect x="10" y="112" width="200" height="50" rx="5" fill="#e8f0f8" stroke="#dde3e8" stroke-width="1"/>
+        <text x="110" y="132" text-anchor="middle" fill="#1a3d5c" font-size="11" font-weight="bold">Judiciary</text>
+        <text x="110" y="148" text-anchor="middle" fill="#5a6266" font-size="9">Court structure</text>
+
+        <rect x="220" y="112" width="225" height="50" rx="5" fill="#e8f0f8" stroke="#1a3d5c" stroke-width="1"/>
+        <text x="333" y="130" text-anchor="middle" fill="#1a3d5c" font-size="10">Integrated single system</text>
+        <text x="333" y="144" text-anchor="middle" fill="#1a3d5c" font-size="9">SC → HC → District Courts</text>
+        <text x="333" y="157" text-anchor="middle" fill="#1a3d5c" font-size="9">One hierarchy for all laws</text>
+
+        <rect x="455" y="112" width="235" height="50" rx="5" fill="#fff4e0" stroke="#c47820" stroke-width="1"/>
+        <text x="572" y="130" text-anchor="middle" fill="#c47820" font-size="10">Dual system</text>
+        <text x="572" y="144" text-anchor="middle" fill="#c47820" font-size="9">Federal courts + State courts</text>
+        <text x="572" y="157" text-anchor="middle" fill="#c47820" font-size="9">Separate hierarchies co-exist</text>
+
+        <!-- Row 3: Fundamental Rights -->
+        <rect x="10" y="172" width="200" height="40" rx="5" fill="#e8f0f8" stroke="#dde3e8" stroke-width="1"/>
+        <text x="110" y="190" text-anchor="middle" fill="#1a3d5c" font-size="11" font-weight="bold">Fundamental Rights</text>
+        <text x="110" y="205" text-anchor="middle" fill="#5a6266" font-size="9">Modifiability</text>
+
+        <rect x="220" y="172" width="225" height="40" rx="5" fill="#e8f0f8" stroke="#1a3d5c" stroke-width="1"/>
+        <text x="333" y="189" text-anchor="middle" fill="#1a3d5c" font-size="9">Not absolute; Parliament can modify</text>
+        <text x="333" y="203" text-anchor="middle" fill="#1a3d5c" font-size="9">by 2/3 majority (Art 368)</text>
+
+        <rect x="455" y="172" width="235" height="40" rx="5" fill="#fff4e0" stroke="#c47820" stroke-width="1"/>
+        <text x="572" y="189" text-anchor="middle" fill="#c47820" font-size="9">Near-absolute; very hard to amend</text>
+        <text x="572" y="203" text-anchor="middle" fill="#c47820" font-size="9">2/3 Congress + 3/4 states required</text>
+      </svg>
+      <div class="svg-caption">Fig 2.3 — India vs USA: Key constitutional differences</div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: INDIA VS UK -->
+  <section class="notes" id="india-vs-uk">
+    <h2>5. Comparison: Indian vs UK Constitution</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>India</th>
+          <th>United Kingdom</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Type of Constitution</td>
+          <td>Written and codified</td>
+          <td>Unwritten — conventions, statutes, common law</td>
+        </tr>
+        <tr>
+          <td>Parliamentary Sovereignty</td>
+          <td>Limited by Constitution and judicial review</td>
+          <td>Parliament is supreme (no written limit)</td>
+        </tr>
+        <tr>
+          <td>Judicial Review</td>
+          <td>Yes — courts can strike down laws</td>
+          <td>No traditional judicial review of primary legislation</td>
+        </tr>
+        <tr>
+          <td>Head of State</td>
+          <td>Elected President</td>
+          <td>Hereditary Monarch</td>
+        </tr>
+        <tr>
+          <td>Citizenship</td>
+          <td>Single citizenship</td>
+          <td>Single citizenship</td>
+        </tr>
+        <tr>
+          <td>Rule of Law</td>
+          <td>Yes (borrowed from Dicey's concept)</td>
+          <td>Dicey's Rule of Law originated here</td>
+        </tr>
+        <tr>
+          <td>Federalism</td>
+          <td>Federal (with unitary bias)</td>
+          <td>Unitary state (devolution, not federalism)</td>
+        </tr>
+        <tr>
+          <td>Bill of Rights</td>
+          <td>Fundamental Rights (Part III)</td>
+          <td>Human Rights Act 1998 (not entrenched)</td>
+        </tr>
+        <tr>
+          <td>Cabinet System</td>
+          <td>PM and Council accountable to Lok Sabha</td>
+          <td>PM and Cabinet accountable to House of Commons</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- SECTION 6: QUASI-FEDERAL -->
+  <section class="notes" id="quasi-federal">
+    <h2>6. Quasi-Federal Nature of the Indian Constitution</h2>
+    <p>The debate on whether India is "truly federal" is a perennial UPSC Mains topic. The answer lies in recognising that India has <strong>federal features</strong> in ordinary times but <strong>unitary features</strong> in emergencies and constitutional design.</p>
+
+    <h3>Features of Federalism in the Indian Constitution</h3>
+    <ul>
+      <li>Written and supreme Constitution (Art 13)</li>
+      <li>Division of powers between Union and States (7th Schedule — Union List, State List, Concurrent List)</li>
+      <li>Independent judiciary with power of judicial review</li>
+      <li>Bicameral Parliament (Lok Sabha + Rajya Sabha)</li>
+      <li>Rigidity of constitutional amendment for federal provisions</li>
+      <li>Separate executive for Centre and States</li>
+    </ul>
+
+    <h3>Features of Unitarism (Unitary Bias) in the Indian Constitution</h3>
+    <ul>
+      <li><strong>Strong Centre:</strong> Union List has more subjects (100 vs 61 in State List); residuary powers with Centre (Art 248)</li>
+      <li><strong>Single Constitution:</strong> Unlike USA/Australia, states do not have their own constitutions</li>
+      <li><strong>Single citizenship</strong> (unlike USA with dual citizenship)</li>
+      <li><strong>Flexibility of Constitution:</strong> Centre can reorganise states (Art 3) without their consent</li>
+      <li><strong>Integrated judiciary:</strong> Single hierarchy of courts applies both central and state laws</li>
+      <li><strong>All-India Services:</strong> IAS, IPS — recruited by Centre, but serve in states</li>
+      <li><strong>Appointment of Governors:</strong> Governors appointed by President and act as agents of Centre</li>
+      <li><strong>Emergency provisions:</strong> National Emergency (Art 352), President's Rule (Art 356) and Financial Emergency (Art 360) severely curtail state autonomy</li>
+      <li><strong>Parliament's power to legislate on State List:</strong> In national interest (Art 249), during Emergency, and for implementation of international treaties (Art 253)</li>
+    </ul>
+
+    <div class="callout">
+      <strong>K.C. Wheare's View:</strong> "The constitution of India is only quasi-federal." He defined "federal" as one where there is co-ordinate authority between Centre and States with neither subordinate to the other. India fails this test because of the Centre's overriding powers.
+    </div>
+    <div class="callout warn">
+      <strong>Granville Austin's View:</strong> Called the Indian Constitution a "cooperative federalism" where both levels of government work together, especially on socio-economic development, rather than being in permanent competition.
+    </div>
+    <div class="callout info">
+      <strong>Sarkaria Commission (1983):</strong> Appointed to review Centre-State relations. Recommended restoration of balance and cooperative federalism. Its recommendations shaped debates on federalism and the Punchhi Commission (2007) further revisited these issues.
+    </div>
+
+    <div class="svg-wrap">
+      <svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+        <!-- Left box: Federal Features -->
+        <rect x="12" y="12" width="270" height="216" rx="6" fill="#e8f0f8" stroke="#1a3d5c" stroke-width="2"/>
+        <rect x="12" y="12" width="270" height="36" rx="6" fill="#1a3d5c"/>
+        <rect x="12" y="30" width="270" height="18" fill="#1a3d5c"/>
+        <text x="147" y="35" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">FEDERAL Features</text>
+        <text x="147" y="68" text-anchor="middle" fill="#1a3d5c" font-size="10">&#x2713; Written &amp; Supreme Constitution</text>
+        <text x="147" y="86" text-anchor="middle" fill="#1a3d5c" font-size="10">&#x2713; Bicameral Parliament (LS + RS)</text>
+        <text x="147" y="104" text-anchor="middle" fill="#1a3d5c" font-size="10">&#x2713; Independent Judiciary</text>
+        <text x="147" y="122" text-anchor="middle" fill="#1a3d5c" font-size="10">&#x2713; Division of Powers (7th Schedule)</text>
+        <text x="147" y="140" text-anchor="middle" fill="#1a3d5c" font-size="10">&#x2713; Separate Executive: Centre &amp; States</text>
+        <text x="147" y="158" text-anchor="middle" fill="#1a3d5c" font-size="10">&#x2713; Rigid amendment for federal provisions</text>
+        <text x="147" y="176" text-anchor="middle" fill="#1a3d5c" font-size="10">&#x2713; SC can settle Centre-State disputes</text>
+
+        <!-- Right box: Unitary Features -->
+        <rect x="418" y="12" width="270" height="216" rx="6" fill="#fff4e0" stroke="#c47820" stroke-width="2"/>
+        <rect x="418" y="12" width="270" height="36" rx="6" fill="#c47820"/>
+        <rect x="418" y="30" width="270" height="18" fill="#c47820"/>
+        <text x="553" y="35" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">UNITARY Features (Tilt)</text>
+        <text x="553" y="68" text-anchor="middle" fill="#c47820" font-size="10">&#x2715; Single Citizenship</text>
+        <text x="553" y="86" text-anchor="middle" fill="#c47820" font-size="10">&#x2715; Integrated Single Judiciary</text>
+        <text x="553" y="104" text-anchor="middle" fill="#c47820" font-size="10">&#x2715; Emergency Provisions (Arts 352, 356, 360)</text>
+        <text x="553" y="122" text-anchor="middle" fill="#c47820" font-size="10">&#x2715; All-India Services (IAS, IPS)</text>
+        <text x="553" y="140" text-anchor="middle" fill="#c47820" font-size="10">&#x2715; Strong Centre — Residuary Powers</text>
+        <text x="553" y="158" text-anchor="middle" fill="#c47820" font-size="10">&#x2715; Governor appointed by Centre</text>
+        <text x="553" y="176" text-anchor="middle" fill="#c47820" font-size="10">&#x2715; Centre can reorganise states (Art 3)</text>
+
+        <!-- Centre label -->
+        <rect x="285" y="80" width="130" height="80" rx="6" fill="#fff" stroke="#1a3d5c" stroke-width="1.5"/>
+        <text x="350" y="103" text-anchor="middle" fill="#1a3d5c" font-size="11" font-weight="bold">INDIA =</text>
+        <text x="350" y="120" text-anchor="middle" fill="#1a3d5c" font-size="11" font-weight="bold">Quasi-Federal</text>
+        <text x="350" y="142" text-anchor="middle" fill="#5a6266" font-size="8" font-style="italic">"Federal in form,</text>
+        <text x="350" y="153" text-anchor="middle" fill="#5a6266" font-size="8" font-style="italic">Unitary in spirit"</text>
+        <text x="350" y="164" text-anchor="middle" fill="#c47820" font-size="8" font-weight="bold">— K.C. Wheare</text>
+
+        <!-- Arrows -->
+        <line x1="282" y1="120" x2="250" y2="120" stroke="#1a3d5c" stroke-width="1.5" marker-end="url(#t02b-arr-l)"/>
+        <line x1="418" y1="120" x2="450" y2="120" stroke="#c47820" stroke-width="1.5" marker-end="url(#t02b-arr-r)"/>
+        <defs>
+          <marker id="t02b-arr-l" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+            <polygon points="0 0, 7 3.5, 0 7" fill="#1a3d5c"/>
+          </marker>
+          <marker id="t02b-arr-r" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+            <polygon points="0 0, 7 3.5, 0 7" fill="#c47820"/>
+          </marker>
+        </defs>
+      </svg>
+      <div class="svg-caption">Fig 2.2 — India's Quasi-Federal Structure: Federal features vs Unitary tilts</div>
+    </div>
+
+    <h3>Relevant Supreme Court Cases</h3>
+    <ul>
+      <li><strong>State of West Bengal v. Union of India (1963):</strong> SC held India is not a "true federation" — Parliament can legislate on state subjects in national interest.</li>
+      <li><strong>Kesavananda Bharati v. State of Kerala (1973):</strong> "Federal character of the Constitution" is part of the basic structure and cannot be destroyed even by constitutional amendment.</li>
+      <li><strong>S.R. Bommai v. Union of India (1994):</strong> Curbed misuse of Art. 356; held federalism is a basic feature of the Constitution.</li>
+    </ul>
+  </section>
+
+  <!-- SECTION 7: Prelims PYQs -->
+  <section class="notes" id="prelims-pyq">
+    <h2>7. Prelims PYQs</h2>
+
+    <div class="pyq">
+      <div class="year">Prelims 2022</div>
+      <p><strong>Q:</strong> Which of the following provisions were borrowed by India from the Constitution of Australia?<br>
+      (1) Concurrent List (2) Joint sitting of Parliament (3) Freedom of trade and commerce<br>
+      <strong>Ans:</strong> All three — Concurrent List, joint sitting of Parliament (Art 108), and freedom of trade/commerce were borrowed from Australia.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">Prelims 2020</div>
+      <p><strong>Q:</strong> The concept of "Judicial Review" in the Indian Constitution has been borrowed from which country?<br>
+      <strong>Ans:</strong> United States of America.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">Prelims 2019</div>
+      <p><strong>Q:</strong> The "procedure established by law" principle used in Article 21 of the Indian Constitution was borrowed from which country's constitution?<br>
+      <strong>Ans:</strong> Japan. (India deliberately chose "procedure established by law" over the American "due process of law" to prevent courts from striking down social legislation on grounds of unreasonableness.)</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">Prelims 2018</div>
+      <p><strong>Q:</strong> With reference to the Indian Constitution, which one of the following pairs is correctly matched?<br>
+      <em>Option C: Directive Principles of State Policy — Constitution of Ireland</em><br>
+      <strong>Ans:</strong> DPSP was borrowed from the Irish Constitution (Directive Principles of Social Policy in the Irish Constitution of 1937).</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">Prelims 2017</div>
+      <p><strong>Q:</strong> The method of election of the President of India was borrowed from which country?<br>
+      <strong>Ans:</strong> Ireland — proportional representation via single transferable vote.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">Prelims 2015</div>
+      <p><strong>Q:</strong> The provisions of the Indian Constitution related to "Fundamental Duties" were added by which amendment?<br>
+      <strong>Ans:</strong> 42nd Amendment, 1976 (on the recommendation of the Swaran Singh Committee). The 11th duty was added by the 86th Amendment, 2002.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">Prelims 2013</div>
+      <p><strong>Q:</strong> Universal Adult Franchise in India was provided for under which article of the Constitution, and the voting age was reduced to 18 years by which amendment?<br>
+      <strong>Ans:</strong> Article 326; 61st Constitutional Amendment Act, 1988.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 8: Mains PYQs -->
+  <section class="notes" id="mains-pyq">
+    <h2>8. Mains PYQs</h2>
+
+    <div class="pyq">
+      <div class="year">Mains GS-II 2023</div>
+      <p><strong>Q:</strong> "The Indian Constitution is not merely a legal document but a social document." Elaborate. (150 words)<br>
+      <strong>Approach:</strong> Social document aspects — DPSP (socioeconomic justice), Fundamental Rights (equality, dignity), Preamble values (justice, liberty, equality, fraternity), special provisions for SC/ST/OBCs, Fundamental Duties. Link to Dr Ambedkar's vision of a transformative constitution.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">Mains GS-II 2015</div>
+      <p><strong>Q:</strong> "India is a quasi-federal state." Comment. (150 words)<br>
+      <strong>Approach:</strong> Explain K.C. Wheare's definition → list federal features → list unitary features → cite S.R. Bommai case → conclude with Granville Austin's "cooperative federalism" as a more accurate description for modern India.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">Mains GS-II 2013</div>
+      <p><strong>Q:</strong> Discuss the salient features of the Indian Constitution that make it unique among the constitutions of the world. (200 words)<br>
+      <strong>Approach:</strong> Cover: lengthiest written constitution; synthesis of rigidity and flexibility; quasi-federal nature; FRs + DPSPs; parliamentary system with presidential features; secular democratic republic; universal franchise; independent judiciary; emergency provisions.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 9: REVISION BOX -->
+  <section class="notes" id="revision">
+    <h2>9. 15-Minute Revision Box</h2>
+    <div class="revision-box">
+      <h3>Key Numbers to Remember</h3>
+      <ul>
+        <li><strong>Original articles:</strong> 395 | <strong>Current articles:</strong> ~470</li>
+        <li><strong>Original schedules:</strong> 8 | <strong>Current schedules:</strong> 12</li>
+        <li><strong>Original parts:</strong> 22 | <strong>Current parts:</strong> 25</li>
+        <li><strong>GoI Act provisions borrowed:</strong> ~250</li>
+        <li><strong>Fundamental Rights categories:</strong> 6 (originally 7; Right to Property removed by 44th Amendment, 1978)</li>
+        <li><strong>Fundamental Duties:</strong> 11 (10 added by 42nd Amendment 1976; 11th by 86th Amendment 2002)</li>
+        <li><strong>Voting age reduced to 18:</strong> 61st Amendment, 1988</li>
+        <li><strong>"Secular" + "Socialist" in Preamble:</strong> 42nd Amendment, 1976</li>
+      </ul>
+      <h3>Sources — Quick Recall</h3>
+      <table>
+        <thead><tr><th>Country</th><th>Key Feature</th></tr></thead>
+        <tbody>
+          <tr><td>USA</td><td>FRs, Preamble, Judicial Review, Impeachment</td></tr>
+          <tr><td>UK</td><td>Parliamentary system, Cabinet, PM, Rule of Law, Single citizenship</td></tr>
+          <tr><td>Ireland</td><td>DPSP, RS nominations, President's election method</td></tr>
+          <tr><td>Canada</td><td>Quasi-federal, Residuary with Centre, Advisory jurisdiction of SC</td></tr>
+          <tr><td>Australia</td><td>Concurrent List, Joint sitting, Freedom of trade</td></tr>
+          <tr><td>Germany</td><td>Suspension of FRs during Emergency</td></tr>
+          <tr><td>South Africa</td><td>Amendment procedure, RS election</td></tr>
+          <tr><td>USSR</td><td>Fundamental Duties, Justice ideals in Preamble</td></tr>
+          <tr><td>Japan</td><td>Procedure established by law</td></tr>
+          <tr><td>France</td><td>Republic, Liberty-Equality-Fraternity</td></tr>
+        </tbody>
+      </table>
+      <h3>Must-Know Quotes</h3>
+      <ul>
+        <li><strong>K.C. Wheare:</strong> "Quasi-federal" (co-ordinate principle fails — Centre dominates)</li>
+        <li><strong>Granville Austin:</strong> "Cooperative federalism" / "First and foremost a social document"</li>
+        <li><strong>Dr Ambedkar (on Art 32):</strong> "Heart and soul of the Constitution"</li>
+        <li><strong>Ivor Jennings:</strong> "The constitution was copied from the Government of India Act, 1935 with modifications."</li>
+        <li><strong>Kesavananda Bharati (1973):</strong> Federal character = Basic Structure, cannot be amended away</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- ASIDE -->
+<aside>
+<div class="aside-sticky">
+
+  <!-- Widget 1: Quick Reference — Sources -->
+  <div class="widget">
+    <h4>Sources at a Glance</h4>
+    <table>
+      <thead><tr><th>Country</th><th>Borrowed</th></tr></thead>
+      <tbody>
+        <tr><td>GoI Act 1935</td><td>~250 provisions, federal scheme</td></tr>
+        <tr><td>UK</td><td>Parliamentary system, PM, Cabinet</td></tr>
+        <tr><td>USA</td><td>FRs, Judicial Review, Preamble</td></tr>
+        <tr><td>Ireland</td><td>DPSP, RS nominations</td></tr>
+        <tr><td>Canada</td><td>Quasi-federal, Residuary powers</td></tr>
+        <tr><td>Australia</td><td>Concurrent List, Joint sitting</td></tr>
+        <tr><td>Germany</td><td>Emergency suspension of FRs</td></tr>
+        <tr><td>S. Africa</td><td>Amendment procedure</td></tr>
+        <tr><td>USSR</td><td>Fundamental Duties</td></tr>
+        <tr><td>Japan</td><td>Procedure established by law</td></tr>
+        <tr><td>France</td><td>Republic, Liberty-Equality-Fraternity</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Widget 2: Key Numbers -->
+  <div class="widget">
+    <h4>Constitutional Numbers</h4>
+    <table>
+      <thead><tr><th>Parameter</th><th>Original</th><th>Current</th></tr></thead>
+      <tbody>
+        <tr><td>Articles</td><td>395</td><td>~470</td></tr>
+        <tr><td>Schedules</td><td>8</td><td>12</td></tr>
+        <tr><td>Parts</td><td>22</td><td>25</td></tr>
+        <tr><td>Fundamental Rights</td><td>7</td><td>6</td></tr>
+        <tr><td>Fundamental Duties</td><td>—</td><td>11</td></tr>
+        <tr><td>Amendments</td><td>—</td><td>106+</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Widget 3: Difficulty & Importance -->
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><div class="fill"><span style="width:90%"></span></div></div>
+    <div class="bar"><span class="lbl">Mains GS-II</span><div class="fill"><span style="width:85%"></span></div></div>
+    <div class="bar"><span class="lbl">Difficulty</span><div class="fill"><span style="width:55%"></span></div></div>
+    <div class="bar"><span class="lbl">PYQ Freq.</span><div class="fill"><span style="width:80%"></span></div></div>
+    <div class="bar"><span class="lbl">Overlap</span><div class="fill"><span style="width:70%"></span></div></div>
+  </div>
+
+  <!-- Widget 4: Must-Know Tags -->
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">42nd Amendment</span>
+    <span class="tag orange">44th Amendment</span>
+    <span class="tag">K.C. Wheare</span>
+    <span class="tag">Granville Austin</span>
+    <span class="tag green">Quasi-Federal</span>
+    <span class="tag green">DPSP</span>
+    <span class="tag">Fundamental Duties</span>
+    <span class="tag orange">GoI Act 1935</span>
+    <span class="tag">Art 32 — Heart &amp; Soul</span>
+    <span class="tag green">Kesavananda Bharati</span>
+    <span class="tag">S.R. Bommai</span>
+    <span class="tag orange">61st Amendment</span>
+    <span class="tag">Basic Structure</span>
+    <span class="tag green">Secularism</span>
+  </div>
+
+  <!-- Widget 5: Related Topics -->
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/indian-polity/constitutional-framework">Topic 01: Historical Background</a></li>
+      <li><a href="/indian-polity/parts-and-schedules-of-the-constitution">Topic 03: Preamble of the Constitution</a></li>
+      <li><a href="/indian-polity/preamble-of-the-constitution">Topic 04: Union and Its Territory</a></li>
+      <li><a href="/indian-polity/union-and-its-territory">Topic 05: Citizenship</a></li>
+      <li><a href="/indian-polity/citizenship">Topic 06: Fundamental Rights</a></li>
+    </ul>
+  </div>
+
+  <!-- Widget 6: Quick Navigation -->
+  <div class="widget">
+    <h4>Jump To</h4>
+    <ul>
+      <li><a href="#conceptual-clarity">Conceptual Clarity</a></li>
+      <li><a href="#salient-features">Salient Features</a></li>
+      <li><a href="#sources">Sources Table</a></li>
+      <li><a href="#india-vs-us">India vs USA</a></li>
+      <li><a href="#india-vs-uk">India vs UK</a></li>
+      <li><a href="#quasi-federal">Quasi-Federal Debate</a></li>
+      <li><a href="#prelims-pyq">Prelims PYQs</a></li>
+      <li><a href="#mains-pyq">Mains PYQs</a></li>
+      <li><a href="#revision">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+</div>
+</div>

@@ -18,6 +18,9 @@ import { SUBJECT_SLUG } from "@/lib/seo/slugs";
 import { isAncientTopicId, type AncientTopicId } from "@/lib/ancient-notes";
 import { isEthicsTopicId, type EthicsTopicId } from "@/lib/ethics-notes";
 import { isMedievalTopicId, type MedievalTopicId } from "@/lib/medieval-notes";
+import { isPolityTopicId, type PolityTopicId } from "@/lib/polity-notes";
+import { PolityTopicFooterNav } from "@/components/notes/PolityTopicFooterNav";
+import { PolityTopicNotesBody } from "@/components/notes/PolityTopicNotesBody";
 
 export const revalidate = 86400;
 
@@ -65,6 +68,7 @@ export default async function TopicPage({ params }: PageProps) {
   const isMedieval =
     subjectKey === "medieval" && isMedievalTopicId(chapter.id);
   const isEthics = subjectKey === "ethics" && isEthicsTopicId(chapter.id);
+  const isPolity = subjectKey === "polity" && isPolityTopicId(chapter.id);
 
   if (isAncient) {
     const topicId = chapter.id as AncientTopicId;
@@ -94,6 +98,17 @@ export default async function TopicPage({ params }: PageProps) {
       <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
         <EthicsTopicNotesBody topicId={topicId} />
         <EthicsTopicFooterNav topicId={topicId} />
+        <TopicNotesEnhancements />
+      </TopicPageLayout>
+    );
+  }
+
+  if (isPolity) {
+    const topicId = chapter.id as PolityTopicId;
+    return (
+      <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
+        <PolityTopicNotesBody topicId={topicId} />
+        <PolityTopicFooterNav topicId={topicId} />
         <TopicNotesEnhancements />
       </TopicPageLayout>
     );

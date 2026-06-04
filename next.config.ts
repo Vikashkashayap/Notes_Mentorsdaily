@@ -167,6 +167,121 @@ const nextConfig: NextConfig = {
         destination: "/ethics/case-study-frameworks-and-answer-writing",
         permanent: true,
       },
+      {
+        source: "/indian-polity/union-territory",
+        destination: "/indian-polity/union-and-its-territory",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic01",
+        destination: "/indian-polity/constitutional-framework",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic02",
+        destination: "/indian-polity/salient-features-and-sources-of-the-constitution",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic03",
+        destination: "/indian-polity/parts-and-schedules-of-the-constitution",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic04",
+        destination: "/indian-polity/preamble-of-the-constitution",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic05",
+        destination: "/indian-polity/union-and-its-territory",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic06",
+        destination: "/indian-polity/citizenship",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic07",
+        destination: "/indian-polity/fundamental-rights",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic08",
+        destination: "/indian-polity/directive-principles-and-fundamental-duties",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic09",
+        destination: "/indian-polity/amendment-and-basic-structure-doctrine",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic10",
+        destination: "/indian-polity/parliament",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic11",
+        destination: "/indian-polity/president-and-vice-president",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic12",
+        destination: "/indian-polity/prime-minister-cabinet-and-com",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic13",
+        destination: "/indian-polity/parliamentary-and-federal-system",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic14",
+        destination: "/indian-polity/centre-state-relations",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic15",
+        destination: "/indian-polity/emergency-provisions",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic16",
+        destination: "/indian-polity/governor-cm-and-state-com",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic17",
+        destination: "/indian-polity/state-legislature",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic18",
+        destination: "/indian-polity/uts-scheduled-and-tribal-areas",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic19",
+        destination: "/indian-polity/panchayati-raj-and-municipalities",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic20",
+        destination: "/indian-polity/supreme-court",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic21",
+        destination: "/indian-polity/high-courts-and-subordinate-courts",
+        permanent: true,
+      },
+      {
+        source: "/indian-polity/polity-topic22",
+        destination: "/indian-polity/judicial-review-activism-and-pil",
+        permanent: true,
+      },
     ];
   },
   images: {

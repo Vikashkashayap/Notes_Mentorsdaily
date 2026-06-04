@@ -1,0 +1,913 @@
+<!-- polity-topic04 — auto-imported from polity-topic04-preamble-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(135deg,#1b3a4b 0%,#0d2535 55%,#061018 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ol{margin:0;padding-left:22px;font-size:14px;columns:2;column-gap:24px}
+.toc li{margin-bottom:5px;break-inside:avoid}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout strong{color:var(--brand-blue-dark)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ol{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Topic 04: Preamble of the Constitution</h1>
+    <p class="sub">The soul of the Constitution — understand the 9 keywords, the 42nd Amendment, landmark cases (Kesavananda Bharati, Berubari, LIC of India), and why the Preamble is a key to interpret the entire document.</p>
+    <div class="meta">
+      <span class="pill">GS Paper II — Polity</span>
+      <span class="pill">UPSC Prelims + Mains</span>
+      <span class="pill">High Importance</span>
+      <span class="pill">Updated: June 2026</span>
+    </div>
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ol>
+      <li><a href="#preamble-text">The Preamble Text</a></li>
+      <li><a href="#conceptual-clarity">Conceptual Clarity</a></li>
+      <li><a href="#nine-keywords">9 Keywords Explained</a></li>
+      <li><a href="#42nd-amendment">42nd Constitutional Amendment</a></li>
+      <li><a href="#basic-structure">Preamble &amp; Basic Structure</a></li>
+      <li><a href="#objectives-resolution">Preamble vs Objectives Resolution</a></li>
+      <li><a href="#india-vs-us">India vs US Preamble</a></li>
+      <li><a href="#current-affairs">Current Affairs Link</a></li>
+      <li><a href="#prelims-pyq">Prelims PYQs</a></li>
+      <li><a href="#mains-pyq">Mains PYQs</a></li>
+      <li><a href="#revision">15-Minute Revision Box</a></li>
+    </ol>
+  </div>
+
+  <!-- SECTION 1: THE PREAMBLE TEXT -->
+  <section class="notes" id="preamble-text">
+    <h2>1. The Preamble Text</h2>
+    <p>The Preamble is the introductory statement that sets out the guiding purpose and principles of the Constitution. It was enacted on <strong>26 November 1949</strong> and came into force on <strong>26 January 1950</strong>.</p>
+
+    <h3>Original Preamble (1949)</h3>
+    <div class="concept-box">
+      <h3>Original Preamble — As Enacted in 1949</h3>
+      <p style="font-family:Georgia,serif;font-size:15px;line-height:1.8;color:#0d2035;">
+        WE, THE PEOPLE OF INDIA, having solemnly resolved to constitute India into a
+        <strong>SOVEREIGN DEMOCRATIC REPUBLIC</strong>
+        and to secure to all its citizens:<br><br>
+        <strong>JUSTICE</strong>, social, economic and political;<br>
+        <strong>LIBERTY</strong> of thought, expression, belief, faith and worship;<br>
+        <strong>EQUALITY</strong> of status and of opportunity;<br>
+        and to promote among them all<br>
+        <strong>FRATERNITY</strong> assuring the dignity of the individual and the <strong>unity of the Nation</strong>;<br><br>
+        IN OUR CONSTITUENT ASSEMBLY this twenty-sixth day of November, 1949, do HEREBY ADOPT, ENACT AND GIVE TO OURSELVES THIS CONSTITUTION.
+      </p>
+    </div>
+
+    <h3>Preamble After 42nd Amendment (1976)</h3>
+    <div class="concept-box">
+      <h3>Amended Preamble — As It Stands Today (Post 42nd Amendment, 1976)</h3>
+      <p style="font-family:Georgia,serif;font-size:15px;line-height:1.8;color:#0d2035;">
+        WE, THE PEOPLE OF INDIA, having solemnly resolved to constitute India into a
+        <strong>SOVEREIGN <mark style="background:#ffe0a0;padding:0 3px;border-radius:3px;">SOCIALIST</mark> <mark style="background:#ffe0a0;padding:0 3px;border-radius:3px;">SECULAR</mark> DEMOCRATIC REPUBLIC</strong>
+        and to secure to all its citizens:<br><br>
+        <strong>JUSTICE</strong>, social, economic and political;<br>
+        <strong>LIBERTY</strong> of thought, expression, belief, faith and worship;<br>
+        <strong>EQUALITY</strong> of status and of opportunity;<br>
+        and to promote among them all<br>
+        <strong>FRATERNITY</strong> assuring the dignity of the individual and the <strong><mark style="background:#ffe0a0;padding:0 3px;border-radius:3px;">unity and integrity</mark> of the Nation</strong>;<br><br>
+        IN OUR CONSTITUENT ASSEMBLY this twenty-sixth day of November, 1949, do HEREBY ADOPT, ENACT AND GIVE TO OURSELVES THIS CONSTITUTION.
+      </p>
+    </div>
+
+    <div class="callout info">
+      <strong>What Changed in 1976:</strong> The 42nd Constitutional Amendment added the words <strong>"Socialist"</strong> and <strong>"Secular"</strong> between "Sovereign" and "Democratic". It also changed <strong>"Unity of the Nation"</strong> to <strong>"Unity and Integrity of the Nation"</strong>.
+    </div>
+
+    <div class="svg-wrap">
+      <svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+        <!-- Top box: We the People -->
+        <rect x="20" y="10" width="660" height="34" rx="6" fill="#1a3d5c"/>
+        <text x="350" y="32" text-anchor="middle" fill="#fff" font-size="13" font-weight="700">WE, THE PEOPLE OF INDIA</text>
+
+        <!-- Row 2: Sovereign | Socialist* | Secular* -->
+        <rect x="20" y="54" width="210" height="34" rx="5" fill="#1a7a5a"/>
+        <text x="125" y="72" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">SOVEREIGN</text>
+        <rect x="244" y="54" width="212" height="34" rx="5" fill="#2a5a7a"/>
+        <text x="350" y="68" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">SOCIALIST*</text>
+        <text x="350" y="82" text-anchor="middle" fill="#ffe0a0" font-size="9">*Added by 42nd Amdt 1976</text>
+        <rect x="470" y="54" width="210" height="34" rx="5" fill="#2a5a7a"/>
+        <text x="575" y="68" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">SECULAR*</text>
+        <text x="575" y="82" text-anchor="middle" fill="#ffe0a0" font-size="9">*Added by 42nd Amdt 1976</text>
+
+        <!-- Row 3: Democratic | Republic -->
+        <rect x="20" y="98" width="322" height="34" rx="5" fill="#1a3d5c"/>
+        <text x="181" y="120" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">DEMOCRATIC</text>
+        <rect x="358" y="98" width="322" height="34" rx="5" fill="#1a3d5c"/>
+        <text x="519" y="120" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">REPUBLIC</text>
+
+        <!-- Label row -->
+        <text x="350" y="152" text-anchor="middle" fill="#5a6266" font-size="10" font-style="italic">having solemnly resolved to constitute India into a ... and to secure to all its citizens:</text>
+
+        <!-- Row 5: Justice | Liberty | Equality -->
+        <rect x="20" y="160" width="205" height="42" rx="5" fill="#c47820"/>
+        <text x="122" y="177" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">JUSTICE</text>
+        <text x="122" y="193" text-anchor="middle" fill="#fff" font-size="9">Social, Economic, Political</text>
+        <rect x="247" y="160" width="206" height="42" rx="5" fill="#c47820"/>
+        <text x="350" y="177" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">LIBERTY</text>
+        <text x="350" y="193" text-anchor="middle" fill="#fff" font-size="9">Thought, Expression, Belief, Faith, Worship</text>
+        <rect x="475" y="160" width="205" height="42" rx="5" fill="#c47820"/>
+        <text x="578" y="177" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">EQUALITY</text>
+        <text x="578" y="193" text-anchor="middle" fill="#fff" font-size="9">Of Status and Opportunity</text>
+
+        <!-- Row 6: Fraternity -->
+        <rect x="20" y="212" width="660" height="34" rx="5" fill="#c47820"/>
+        <text x="350" y="226" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">FRATERNITY</text>
+        <text x="350" y="240" text-anchor="middle" fill="#fff" font-size="9">assuring dignity of the individual and unity and integrity of the Nation</text>
+
+        <!-- Bottom box -->
+        <rect x="20" y="256" width="660" height="34" rx="5" fill="#0d2035"/>
+        <text x="350" y="269" text-anchor="middle" fill="#fff" font-size="9">IN OUR CONSTITUENT ASSEMBLY this 26th day of November, 1949,</text>
+        <text x="350" y="283" text-anchor="middle" fill="#ffe0a0" font-size="9" font-weight="700">do HEREBY ADOPT, ENACT AND GIVE TO OURSELVES THIS CONSTITUTION</text>
+      </svg>
+      <div class="svg-caption">Fig 4.1 — Preamble Structure: Key terms and their categories</div>
+    </div>
+
+    <h3>Key Structural Features of the Preamble</h3>
+    <ul>
+      <li><strong>Source of authority</strong> — "We, the People of India" — sovereignty lies with the people.</li>
+      <li><strong>Nature of the State</strong> — Sovereign, Socialist, Secular, Democratic, Republic.</li>
+      <li><strong>Objectives</strong> — Justice, Liberty, Equality, Fraternity.</li>
+      <li><strong>Date of adoption</strong> — 26 November 1949.</li>
+    </ul>
+  </section>
+
+  <!-- SECTION 2: CONCEPTUAL CLARITY -->
+  <section class="notes" id="conceptual-clarity">
+    <h2>2. Conceptual Clarity</h2>
+
+    <h3>Is the Preamble Part of the Constitution?</h3>
+    <div class="grid-2">
+      <div class="card">
+        <h4>Berubari Union Case (1960)</h4>
+        <p>Supreme Court held that the Preamble is <strong>NOT a part</strong> of the Constitution. It cannot be treated as a source of any substantive power nor can it be enforced in a court of law. The Preamble was merely a key to the minds of framers.</p>
+        <span class="tag orange">Overruled Later</span>
+      </div>
+      <div class="card">
+        <h4>Kesavananda Bharati v. State of Kerala (1973)</h4>
+        <p>13-judge bench <strong>overruled Berubari</strong>. Held that the Preamble <strong>IS a part</strong> of the Constitution. The Preamble can be amended under Article 368. However, the <strong>basic structure</strong> of the Preamble cannot be destroyed.</p>
+        <span class="tag green">Landmark Case</span>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>LIC of India Case (1995):</strong> The Supreme Court once again reaffirmed that the Preamble is an integral part of the Constitution and must be read along with the provisions of the Constitution for interpretation.
+    </div>
+
+    <h3>Is the Preamble Enforceable (Justiciable)?</h3>
+    <div class="callout warn">
+      <strong>No — The Preamble is NOT justiciable.</strong> No one can approach a court for enforcement of the ideals contained in the Preamble alone. However, it serves as a vital <strong>interpretive tool</strong> — courts use it to resolve ambiguity in Constitutional provisions and to understand the intent of the framers.
+    </div>
+
+    <h3>Summary: Status of the Preamble</h3>
+    <table>
+      <tr><th>Question</th><th>Answer</th><th>Authority</th></tr>
+      <tr><td>Is it part of the Constitution?</td><td>YES</td><td>Kesavananda Bharati (1973), LIC of India (1995)</td></tr>
+      <tr><td>Can it be amended?</td><td>YES — under Article 368</td><td>Kesavananda Bharati (1973)</td></tr>
+      <tr><td>Can basic structure be destroyed by amendment?</td><td>NO</td><td>Basic Structure Doctrine</td></tr>
+      <tr><td>Is it justiciable/enforceable?</td><td>NO</td><td>Settled Constitutional law</td></tr>
+      <tr><td>Can it be used for interpretation?</td><td>YES — key aid to interpretation</td><td>All courts</td></tr>
+    </table>
+
+    <div class="callout info">
+      <strong>Key Quote (N.A. Palkhivala):</strong> The Preamble is "the identity card of the Constitution." It is not just a preface but an integral part of the document that reveals the ideology and philosophy of the whole Constitution.
+    </div>
+  </section>
+
+  <!-- SECTION 3: 9 KEYWORDS -->
+  <section class="notes" id="nine-keywords">
+    <h2>3. The 9 Keywords of the Preamble — Detailed Explanation</h2>
+    <p>The Preamble encapsulates <strong>9 key concepts</strong> — 5 describing the nature of the Indian State, and 4 describing the objectives to be secured to citizens.</p>
+
+    <h3>Nature of the State (5 Words)</h3>
+
+    <h4>1. Sovereign</h4>
+    <p>India is <strong>externally free</strong> (not subject to any external authority) and <strong>internally supreme</strong> (the Constitution is the supreme law within the territory). No foreign power can dictate India's policies or governance.</p>
+    <ul>
+      <li>India's membership of the Commonwealth of Nations does not compromise its sovereignty — it is a voluntary association.</li>
+      <li>India's membership of the United Nations does not affect sovereignty — decisions bind only to the extent India accepts them.</li>
+      <li>The Parliament of India has the power to acquire or cede territory — this is an expression of sovereignty.</li>
+    </ul>
+    <div class="callout info">
+      <strong>Constitutional Provision:</strong> Article 1 declares India as a "Union of States." The concept of sovereignty underlies the entire Constitutional framework.
+    </div>
+
+    <h4>2. Socialist</h4>
+    <p>Added by the <strong>42nd Amendment, 1976</strong>. India follows <strong>democratic socialism</strong> — a mixed economy model (public + private sectors co-exist) — as opposed to communist/state socialism where all property is owned by the State.</p>
+    <ul>
+      <li>SC in <strong>Excel Wear v. Union of India (1979)</strong>: Socialism does not mean nationalization of all industries; private enterprise is consistent with socialism.</li>
+      <li>DPSP under Article 39 (b) and (c) — no concentration of wealth and redistribution — gives content to socialist ideals.</li>
+      <li>Post-1991 liberalisation — SC held that economic liberalisation does not violate the socialist character of the Preamble.</li>
+    </ul>
+
+    <h4>3. Secular</h4>
+    <p>Added by the <strong>42nd Amendment, 1976</strong>. India has <strong>no official State religion</strong>. The State treats all religions equally — this is called <strong>positive secularism</strong> (as opposed to the Western model of strict separation of State and Church).</p>
+    <ul>
+      <li><strong>SR Bommai v. Union of India (1994)</strong>: Supreme Court held that secularism is a <strong>basic feature</strong> of the Constitution. A State government which acts against secularism can be dismissed under Article 356.</li>
+      <li>Articles 25–28 guarantee freedom of religion to all persons (not just citizens).</li>
+      <li>State can regulate secular activities associated with religion (Art. 25), can acquire religious property (Art. 31A), and must maintain secular education in State-aided schools (Art. 28).</li>
+    </ul>
+    <div class="callout">
+      <strong>Indian Secularism vs Western Secularism:</strong> Western secularism = strict wall of separation between State and religion. Indian secularism = equal respect and equal protection for all religions (Sarva Dharma Sambhava).
+    </div>
+
+    <h4>4. Democratic</h4>
+    <p>Government derives its authority from the <strong>will of the people</strong>. Direct democracy (as in ancient Athens) is impractical for a country of India's size and population, so India follows <strong>representative democracy</strong> through free and fair elections.</p>
+    <ul>
+      <li><strong>Political democracy</strong>: Universal adult franchise (Art. 326), free and fair elections, periodic elections, independent Election Commission.</li>
+      <li><strong>Social democracy</strong>: Equality and dignity for all — Fundamental Rights (Part III), Directive Principles (Part IV).</li>
+      <li>Dr. Ambedkar stressed that political democracy without social and economic democracy is hollow.</li>
+    </ul>
+
+    <h4>5. Republic</h4>
+    <p>India's <strong>Head of State (President) is elected</strong>, not hereditary. A republic stands in contrast to a monarchy where the head of state inherits the position. It also means that political sovereignty ultimately vests with the people.</p>
+    <ul>
+      <li>India became a republic on <strong>26 January 1950</strong> — before that (1947–1950) India was a dominion with the British Crown as the head.</li>
+      <li>The President is elected by an electoral college (Art. 54) — not directly by the people, but is still an elected office.</li>
+      <li>No hereditary offices — all public offices are open to all citizens.</li>
+    </ul>
+
+    <h3>Objectives Secured to Citizens (4 Words)</h3>
+
+    <h4>6. Justice (Social, Economic, Political)</h4>
+    <div class="grid-3">
+      <div class="card">
+        <h4>Social Justice</h4>
+        <p>No discrimination on grounds of caste, sex, religion, race, etc. Achieved through Fundamental Rights — Arts 14, 15, 16, 17, 18. Abolition of untouchability (Art. 17).</p>
+      </div>
+      <div class="card">
+        <h4>Economic Justice</h4>
+        <p>No concentration of wealth. Equitable distribution. Achieved primarily through DPSPs — Art. 39(b): distribution of material resources; Art. 39(c): prevent concentration of wealth.</p>
+      </div>
+      <div class="card">
+        <h4>Political Justice</h4>
+        <p>Equal political rights — universal adult franchise (Art. 326), equal access to public offices (Art. 16), no discrimination in political participation.</p>
+      </div>
+    </div>
+    <div class="callout info">
+      <strong>Source:</strong> The concept of Justice in the Preamble is borrowed from the <strong>Russian Revolution</strong> (1917) which emphasised social and economic justice.
+    </div>
+
+    <h4>7. Liberty (of Thought, Expression, Belief, Faith and Worship)</h4>
+    <p>Liberty does not mean absence of all restraints — it means <strong>regulated freedom</strong>. Liberty is not absolute; it is subject to reasonable restrictions under Article 19(2)–(6).</p>
+    <ul>
+      <li><strong>Liberty of thought and expression</strong> — Art. 19(1)(a): Freedom of speech and expression.</li>
+      <li><strong>Liberty of belief, faith and worship</strong> — Arts 25–28: Freedom of religion.</li>
+      <li>Positive liberty: freedom to do something (not merely absence of interference).</li>
+      <li>Borrowed from the <strong>French Revolution</strong> (Liberty, Equality, Fraternity).</li>
+    </ul>
+
+    <h4>8. Equality (of Status and Opportunity)</h4>
+    <p>Two dimensions of equality guaranteed by the Preamble:</p>
+    <ul>
+      <li><strong>Equality of status</strong>: Formal equality — all persons equal before law (Art. 14); no discrimination by State (Art. 15).</li>
+      <li><strong>Equality of opportunity</strong>: Substantive equality — equal opportunity in public employment (Art. 16); reservations for SC/ST/OBC are permissible as a means of achieving real equality.</li>
+    </ul>
+    <div class="callout">
+      <strong>Equality vs Identical Treatment:</strong> The Constitution recognizes that treating unequals equally is itself inequality. Hence, protective discrimination (reservation) is consistent with the Preamble's goal of real equality.
+    </div>
+
+    <h4>9. Fraternity (Dignity of Individual + Unity and Integrity of Nation)</h4>
+    <p>Fraternity is <strong>unique to the Indian Preamble</strong> — it does not appear in the US Preamble or most other Constitutions. It is borrowed from the <strong>French Revolution</strong> slogan (Liberté, Égalité, Fraternité).</p>
+    <ul>
+      <li><strong>Dignity of the individual</strong>: Links to Art. 21 (Right to Life and Personal Liberty). Respect for human dignity is fundamental — SC has expanded Art. 21 to include right to live with dignity.</li>
+      <li><strong>Unity and Integrity of the Nation</strong>: Ensures emotional and social cohesion across India's diverse religious, linguistic, and cultural communities. The word "Integrity" was added by the 42nd Amendment, 1976.</li>
+      <li>Dr. Ambedkar considered Fraternity as the most important objective — without fraternity, equality and liberty are meaningless.</li>
+    </ul>
+    <div class="callout warn">
+      <strong>Mnemonic:</strong> Remember the 9 keywords as <strong>S-S-S-D-R</strong> (Sovereign, Socialist, Secular, Democratic, Republic) for the nature of the state, and <strong>J-L-E-F</strong> (Justice, Liberty, Equality, Fraternity) for the objectives.
+    </div>
+  </section>
+
+  <!-- SECTION 4: 42ND AMENDMENT -->
+  <section class="notes" id="42nd-amendment">
+    <h2>4. The 42nd Constitutional Amendment, 1976</h2>
+    <p>The 42nd Amendment Act, 1976, is often called the <strong>"Mini-Constitution"</strong> because it made the most sweeping changes to the Constitution in its history. It was passed during the Emergency period (1975–1977) by the Indira Gandhi government.</p>
+
+    <h3>Changes Made to the Preamble</h3>
+    <table>
+      <tr><th>Before 42nd Amendment</th><th>After 42nd Amendment</th><th>Words Added/Changed</th></tr>
+      <tr><td>SOVEREIGN DEMOCRATIC REPUBLIC</td><td>SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC</td><td>Added: Socialist, Secular</td></tr>
+      <tr><td>Unity of the Nation</td><td>Unity and Integrity of the Nation</td><td>Added: "and Integrity"</td></tr>
+    </table>
+
+    <div class="svg-wrap">
+      <svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+        <defs>
+          <marker id="t04c-arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto">
+            <path d="M1,2 L9,5 L1,8 Z" fill="#1a3d5c"/>
+          </marker>
+        </defs>
+
+        <!-- Left box: Original 1949 -->
+        <rect x="20" y="20" width="270" height="150" rx="6" fill="#e8f0f8" stroke="#1a3d5c" stroke-width="2"/>
+        <rect x="20" y="20" width="270" height="30" rx="6" fill="#1a3d5c"/>
+        <rect x="20" y="44" width="270" height="6" rx="0" fill="#1a3d5c"/>
+        <text x="155" y="41" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">ORIGINAL PREAMBLE (1949)</text>
+        <text x="155" y="78" text-anchor="middle" fill="#1a3d5c" font-size="12" font-weight="700">SOVEREIGN</text>
+        <text x="155" y="102" text-anchor="middle" fill="#1a3d5c" font-size="12" font-weight="700">DEMOCRATIC</text>
+        <text x="155" y="126" text-anchor="middle" fill="#1a3d5c" font-size="12" font-weight="700">REPUBLIC</text>
+        <text x="155" y="156" text-anchor="middle" fill="#5a6266" font-size="9" font-style="italic">"unity of the Nation"</text>
+
+        <!-- Arrow -->
+        <line x1="300" y1="95" x2="395" y2="95" stroke="#1a3d5c" stroke-width="2.5" marker-end="url(#t04c-arrow)"/>
+        <text x="348" y="86" text-anchor="middle" fill="#c47820" font-size="9" font-weight="700">42nd Amendment</text>
+        <text x="348" y="98" text-anchor="middle" fill="#c47820" font-size="9" font-weight="700">1976</text>
+
+        <!-- Right box: After 42nd Amendment -->
+        <rect x="405" y="20" width="275" height="150" rx="6" fill="#fff4e0" stroke="#c47820" stroke-width="2"/>
+        <rect x="405" y="20" width="275" height="30" rx="6" fill="#c47820"/>
+        <rect x="405" y="44" width="275" height="6" rx="0" fill="#c47820"/>
+        <text x="542" y="41" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">AFTER 42nd AMENDMENT (1976)</text>
+        <text x="542" y="70" text-anchor="middle" fill="#1a3d5c" font-size="12" font-weight="700">SOVEREIGN</text>
+        <rect x="465" y="76" width="155" height="18" rx="4" fill="#ffe0a0"/>
+        <text x="542" y="89" text-anchor="middle" fill="#c47820" font-size="12" font-weight="700">SOCIALIST  ✦ NEW</text>
+        <rect x="465" y="97" width="155" height="18" rx="4" fill="#ffe0a0"/>
+        <text x="542" y="110" text-anchor="middle" fill="#c47820" font-size="12" font-weight="700">SECULAR  ✦ NEW</text>
+        <text x="542" y="130" text-anchor="middle" fill="#1a3d5c" font-size="12" font-weight="700">DEMOCRATIC</text>
+        <text x="542" y="150" text-anchor="middle" fill="#1a3d5c" font-size="12" font-weight="700">REPUBLIC</text>
+        <text x="542" y="164" text-anchor="middle" fill="#5a6266" font-size="9" font-style="italic">"unity and integrity of the Nation" ✦ NEW</text>
+      </svg>
+      <div class="svg-caption">Fig 4.3 — Impact of 42nd Amendment (1976) on the Preamble: Three new words added</div>
+    </div>
+
+    <h3>Context: Why Were These Words Added?</h3>
+    <ul>
+      <li><strong>Emergency (1975–1977)</strong>: The amendments were passed during the period of national emergency proclaimed by President Fakhruddin Ali Ahmed on 25 June 1975.</li>
+      <li>The government argued that socialist and secular ideals were already implicit in the Constitution (DPSPs, FRs) — the 42nd Amendment merely made them explicit.</li>
+      <li>"Integrity" was added in response to secessionist movements and threats to national unity (Naxal movement, insurgencies in the north-east).</li>
+    </ul>
+
+    <h3>Criticism of the 42nd Amendment</h3>
+    <ul>
+      <li>Passed when Parliament was under Emergency — opposition MPs were in jail; debates were curtailed.</li>
+      <li>Critics argued that inserting "Socialist" restricts economic policy choices of future governments.</li>
+      <li>The words "Socialist" and "Secular" were already implicit — their explicit insertion was seen as politically motivated.</li>
+    </ul>
+
+    <h3>Other Major Changes by 42nd Amendment</h3>
+    <ul>
+      <li>Added Fundamental Duties (Part IVA, Art. 51A).</li>
+      <li>Extended duration of Lok Sabha and State Assemblies from 5 to 6 years (later reversed by 44th Amendment).</li>
+      <li>Made the President bound by the advice of the Council of Ministers.</li>
+      <li>Added three new DPSPs (Arts 39A, 43A, 48A).</li>
+      <li>Restricted the power of courts to review Constitutional amendments.</li>
+    </ul>
+
+    <div class="callout info">
+      <strong>44th Amendment (1978):</strong> The Janata Party government reversed several provisions of the 42nd Amendment after the Emergency ended — but the Preamble changes (Socialist, Secular, Integrity) were retained.
+    </div>
+  </section>
+
+  <!-- SECTION 5: BASIC STRUCTURE -->
+  <section class="notes" id="basic-structure">
+    <h2>5. The Preamble as Basic Structure</h2>
+    <p>The <strong>Basic Structure Doctrine</strong> was laid down in <strong>Kesavananda Bharati v. State of Kerala (1973)</strong> — a 13-judge bench of the Supreme Court. The court held that Parliament can amend any part of the Constitution under Art. 368, but cannot <strong>destroy or abrogate its basic structure</strong>.</p>
+
+    <h3>Preamble Keywords as Basic Structure Elements</h3>
+    <div class="callout">
+      <strong>Key Principle:</strong> All elements of the Preamble form part of the Basic Structure of the Constitution and cannot be abrogated by any amendment.
+    </div>
+    <table>
+      <tr><th>Preamble Keyword</th><th>Basic Structure Element</th><th>Key Case</th></tr>
+      <tr><td>Sovereign</td><td>Sovereignty of India</td><td>Kesavananda Bharati (1973)</td></tr>
+      <tr><td>Socialist</td><td>Welfare state; no concentration of wealth</td><td>Excel Wear (1979)</td></tr>
+      <tr><td>Secular</td><td>Secularism as basic feature</td><td>SR Bommai (1994)</td></tr>
+      <tr><td>Democratic</td><td>Democratic form of government; free &amp; fair elections</td><td>Indira Nehru Gandhi (1975)</td></tr>
+      <tr><td>Republic</td><td>Republican character; no hereditary rule</td><td>Kesavananda Bharati (1973)</td></tr>
+      <tr><td>Justice</td><td>Social justice; rule of law</td><td>Minerva Mills (1980)</td></tr>
+      <tr><td>Liberty</td><td>Fundamental freedoms; liberty of thought &amp; expression</td><td>Maneka Gandhi (1978)</td></tr>
+      <tr><td>Equality</td><td>Equality before law; equal protection</td><td>Art. 14, 15, 16</td></tr>
+      <tr><td>Fraternity</td><td>Unity and integrity; dignity of individual</td><td>Art. 21; 42nd Amendment</td></tr>
+    </table>
+
+    <h3>Significance of Kesavananda Bharati Case</h3>
+    <ul>
+      <li>Heard by the largest bench ever (13 judges) in Indian judicial history — 11:2 majority.</li>
+      <li>Established the Basic Structure doctrine — Parliament's amending power under Art. 368 is limited.</li>
+      <li>Recognised Preamble as an integral part of the Constitution.</li>
+      <li>Held that Preamble can be amended but its essence/basic structure cannot be damaged.</li>
+      <li>Prevented the Parliament from converting India into a totalitarian state under the guise of constitutional amendment.</li>
+    </ul>
+
+    <div class="callout warn">
+      <strong>UPSC Alert:</strong> The question "Can Parliament amend the Preamble?" is frequently asked. The answer is YES — under Art. 368 — but it CANNOT destroy the basic structure. The 42nd Amendment's changes to the Preamble were themselves an exercise of this amending power.
+    </div>
+
+    <div class="svg-wrap">
+      <svg viewBox="0 0 700 340" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+        <defs>
+          <marker id="t04b-arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+            <path d="M1,1 L7,4 L1,7 Z" fill="#aab8c4"/>
+          </marker>
+        </defs>
+        <!-- Vertical spine -->
+        <line x1="120" y1="20" x2="120" y2="320" stroke="#dde3e8" stroke-width="2" marker-end="url(#t04b-arrow)"/>
+
+        <!-- 1950 -->
+        <circle cx="120" cy="30" r="7" fill="#1a3d5c"/>
+        <text x="108" y="34" text-anchor="end" fill="#1a3d5c" font-size="11" font-weight="700">1950</text>
+        <rect x="135" y="18" width="250" height="24" rx="5" fill="#e8f0f8"/>
+        <text x="260" y="34" text-anchor="middle" fill="#0d2035" font-size="10" font-weight="700">Constitution enacted (26 Jan 1950)</text>
+
+        <!-- 1951 -->
+        <circle cx="120" cy="72" r="7" fill="#1a3d5c"/>
+        <text x="108" y="76" text-anchor="end" fill="#1a3d5c" font-size="11" font-weight="700">1951</text>
+        <rect x="135" y="60" width="250" height="24" rx="5" fill="#1a3d5c"/>
+        <text x="260" y="76" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Shankari Prasad — Parliament CAN amend FRs</text>
+        <text x="395" y="70" text-anchor="start" fill="#1a7a5a" font-size="9">Art. 13 doesn't include</text>
+        <text x="395" y="82" text-anchor="start" fill="#1a7a5a" font-size="9">Constitutional Amendments</text>
+
+        <!-- 1967 -->
+        <circle cx="120" cy="122" r="7" fill="#c47820"/>
+        <text x="108" y="126" text-anchor="end" fill="#c47820" font-size="11" font-weight="700">1967</text>
+        <rect x="135" y="110" width="250" height="24" rx="5" fill="#c47820"/>
+        <text x="260" y="126" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Golaknath — Parliament CANNOT amend FRs</text>
+        <text x="395" y="120" text-anchor="start" fill="#cc3333" font-size="9">Overruled Shankari Prasad;</text>
+        <text x="395" y="132" text-anchor="start" fill="#cc3333" font-size="9">FRs are beyond Parliament's reach</text>
+
+        <!-- 1971 -->
+        <circle cx="120" cy="172" r="7" fill="#1a7a5a"/>
+        <text x="108" y="176" text-anchor="end" fill="#1a7a5a" font-size="11" font-weight="700">1971</text>
+        <rect x="135" y="160" width="250" height="24" rx="5" fill="#1a7a5a"/>
+        <text x="260" y="176" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">24th Amendment — Parliament reaffirmed</text>
+        <text x="395" y="170" text-anchor="start" fill="#5a6266" font-size="9">Expressly gave Parliament power</text>
+        <text x="395" y="182" text-anchor="start" fill="#5a6266" font-size="9">to amend any/all provisions incl. FRs</text>
+
+        <!-- 1973 -->
+        <circle cx="120" cy="222" r="9" fill="#1a3d5c" stroke="#c47820" stroke-width="2"/>
+        <text x="108" y="226" text-anchor="end" fill="#1a3d5c" font-size="11" font-weight="700">1973</text>
+        <rect x="135" y="210" width="250" height="24" rx="5" fill="#1a3d5c"/>
+        <text x="260" y="226" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Kesavananda Bharati — BASIC STRUCTURE</text>
+        <text x="395" y="216" text-anchor="start" fill="#0d2035" font-size="9">Can amend BUT NOT destroy</text>
+        <text x="395" y="228" text-anchor="start" fill="#0d2035" font-size="9">basic structure · 13-judge bench (11:2)</text>
+
+        <!-- 1980 -->
+        <circle cx="120" cy="272" r="7" fill="#c47820"/>
+        <text x="108" y="276" text-anchor="end" fill="#c47820" font-size="11" font-weight="700">1980</text>
+        <rect x="135" y="260" width="250" height="24" rx="5" fill="#c47820"/>
+        <text x="260" y="276" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Minerva Mills — struck down 42nd Amdt</text>
+        <text x="395" y="266" text-anchor="start" fill="#5a6266" font-size="9">Art. 368(4)(5) struck down;</text>
+        <text x="395" y="278" text-anchor="start" fill="#5a6266" font-size="9">reaffirmed Kesavananda</text>
+
+        <!-- 2015 -->
+        <circle cx="120" cy="315" r="7" fill="#1a7a5a"/>
+        <text x="108" y="319" text-anchor="end" fill="#1a7a5a" font-size="11" font-weight="700">2015</text>
+        <rect x="135" y="303" width="250" height="24" rx="5" fill="#1a7a5a"/>
+        <text x="260" y="319" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">NJAC Judgment — struck down 99th Amdt</text>
+        <text x="395" y="309" text-anchor="start" fill="#5a6266" font-size="9">Judicial appointments = basic structure;</text>
+        <text x="395" y="321" text-anchor="start" fill="#5a6266" font-size="9">NJAC unconstitutional</text>
+      </svg>
+      <div class="svg-caption">Fig 4.2 — Basic Structure Doctrine: Evolution through landmark cases (1951–2015)</div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: PREAMBLE VS OBJECTIVES RESOLUTION -->
+  <section class="notes" id="objectives-resolution">
+    <h2>6. Preamble vs Objectives Resolution</h2>
+
+    <h3>The Objectives Resolution</h3>
+    <ul>
+      <li>Moved by <strong>Jawaharlal Nehru</strong> in the Constituent Assembly on <strong>13 December 1946</strong>.</li>
+      <li>Adopted unanimously on <strong>22 January 1947</strong>.</li>
+      <li>It set out the broad objectives and aspirations for the Constitution being framed.</li>
+      <li>The Preamble of the Constitution is directly derived from the Objectives Resolution.</li>
+    </ul>
+
+    <h3>Key Differences</h3>
+    <table>
+      <tr><th>Aspect</th><th>Objectives Resolution</th><th>Preamble (1949)</th></tr>
+      <tr><td>Nature of the State</td><td>"Sovereign Independent Republic"</td><td>"Sovereign Democratic Republic"</td></tr>
+      <tr><td>Emphasis</td><td>More explicit on minorities, tribal areas, FRs</td><td>More philosophical; focuses on ideals</td></tr>
+      <tr><td>Territories</td><td>Mentioned British India + Princely States</td><td>No mention of specific territories</td></tr>
+      <tr><td>Status</td><td>A resolution of the Constituent Assembly</td><td>Integral part of the Constitution</td></tr>
+      <tr><td>Enforceability</td><td>Not enforceable</td><td>Not directly enforceable, but aids interpretation</td></tr>
+    </table>
+
+    <div class="callout info">
+      <strong>Why "Independent" was dropped:</strong> The word "Independent" in the Objectives Resolution was replaced by "Democratic" in the Preamble because by 1949, India was already independent — the Preamble focused on the character of governance rather than the status of independence.
+    </div>
+  </section>
+
+  <!-- SECTION 7: INDIA VS US PREAMBLE -->
+  <section class="notes" id="india-vs-us">
+    <h2>7. Comparison: Indian Preamble vs US Preamble</h2>
+    <table>
+      <tr><th>Aspect</th><th>Indian Preamble</th><th>US Preamble</th></tr>
+      <tr><td>Opening words</td><td>"We, the People of India..."</td><td>"We the People of the United States..."</td></tr>
+      <tr><td>Length</td><td>Detailed; names specific socio-economic goals</td><td>Brief; focuses on broad constitutional purposes</td></tr>
+      <tr><td>Social objectives</td><td>Explicitly mentions Justice, Equality, Liberty, Fraternity</td><td>General — "form a more perfect Union", "general Welfare"</td></tr>
+      <tr><td>Fraternity</td><td>Explicitly mentioned (unique)</td><td>Not mentioned</td></tr>
+      <tr><td>Secular/Socialist</td><td>Explicitly stated (after 42nd Amendment)</td><td>Not mentioned; but 1st Amendment guarantees religious freedom</td></tr>
+      <tr><td>Part of the Constitution?</td><td>YES — Kesavananda Bharati (1973)</td><td>NO — not considered part of the Constitution by US courts (Jacobson v. Massachusetts, 1905)</td></tr>
+      <tr><td>Justiciable?</td><td>No — not directly enforceable</td><td>No — not directly enforceable</td></tr>
+      <tr><td>Amended?</td><td>Yes — 42nd Amendment 1976</td><td>Never amended</td></tr>
+    </table>
+
+    <div class="concept-box">
+      <h3>US Preamble (Full Text)</h3>
+      <p style="font-family:Georgia,serif;font-size:14px;line-height:1.8;color:#0d2035;font-style:italic;">
+        "We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America."
+      </p>
+    </div>
+
+    <h3>Common Features</h3>
+    <ul>
+      <li>Both begin with <strong>"We, the People"</strong> — signifying popular sovereignty.</li>
+      <li>Both mention <strong>Justice</strong> as an objective.</li>
+      <li>Both mention <strong>Liberty</strong> as an objective.</li>
+      <li>Both establish a republican form of government.</li>
+    </ul>
+  </section>
+
+  <!-- SECTION 8: CURRENT AFFAIRS -->
+  <section class="notes" id="current-affairs">
+    <h2>8. Current Affairs Link</h2>
+
+    <h3>Samvidhan Divas (Constitution Day) — 26 November</h3>
+    <ul>
+      <li>India has been observing <strong>26 November as Samvidhan Divas (Constitution Day)</strong> since 2015 — on the initiative of PM Narendra Modi to mark the 125th birth anniversary of Dr. B.R. Ambedkar.</li>
+      <li>On this day, the Preamble is read out in Parliament, schools, and government offices.</li>
+      <li>In the 2024 Winter Session, a controversy arose when some MPs read out the <em>original</em> (pre-42nd Amendment) Preamble without the words "Socialist" and "Secular" in Parliament.</li>
+    </ul>
+
+    <h3>SC Petitions Challenging "Socialist" and "Secular" in Preamble (2024)</h3>
+    <div class="callout warn">
+      <strong>2024 Petitions:</strong> Several petitions were filed in the Supreme Court challenging the insertion of "Socialist" and "Secular" by the 42nd Amendment (1976), arguing these words were inserted during Emergency when Parliament was not freely functioning.
+    </div>
+    <ul>
+      <li>The Supreme Court <strong>refused to entertain</strong> the petitions challenging the 42nd Amendment's insertions, observing that these words are part of the basic structure of the Constitution.</li>
+      <li>The SC noted that "Secular" is already implicit in Articles 25–28 and "Socialist" is implicit in the DPSP framework.</li>
+      <li>This controversy brought renewed attention to the Preamble's status and the Basic Structure doctrine.</li>
+    </ul>
+
+    <h3>Preamble in Parliament (December 2024)</h3>
+    <ul>
+      <li>During the 75th anniversary celebrations of the Constitution (26 November 2024), MPs were given copies of the Constitution with the current Preamble prominently displayed.</li>
+      <li>The government emphasised that the Preamble's ideals must guide policy-making.</li>
+    </ul>
+
+    <div class="callout info">
+      <strong>UPSC Relevance:</strong> This current affairs angle is highly relevant for GS Paper II (Polity) as well as Essay Paper. The question of whether the Emergency-era insertions can be challenged is a live constitutional issue.
+    </div>
+  </section>
+
+  <!-- SECTION 9: Prelims PYQs -->
+  <section class="notes" id="prelims-pyq">
+    <h2>9. Prelims PYQs</h2>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2023</div>
+      <p><strong>Q:</strong> Which of the following is NOT a feature of the Indian concept of secularism as reflected in the Preamble?</p>
+      <p><strong>Ans:</strong> "Strict separation of State and religion" — India follows positive secularism (equal respect for all religions), NOT strict separation as in the Western model.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2022</div>
+      <p><strong>Q:</strong> The concept of "fraternity" in the Preamble ensures — (a) dignity of the individual (b) unity and integrity of the nation (c) Both (a) and (b) (d) Neither (a) nor (b)</p>
+      <p><strong>Ans:</strong> (c) Both. Fraternity assures the dignity of the individual AND the unity and integrity of the nation.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2021</div>
+      <p><strong>Q:</strong> The Preamble of the Constitution of India was amended by the — (a) 38th Amendment (b) 42nd Amendment (c) 44th Amendment (d) 46th Amendment</p>
+      <p><strong>Ans:</strong> (b) 42nd Amendment, 1976 — the only amendment to the Preamble so far.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2020</div>
+      <p><strong>Q:</strong> With reference to the Preamble to the Constitution of India, consider the following: (1) It contains a declaration of the people of India. (2) It is enforceable in a court of law. Which of the above is/are correct?</p>
+      <p><strong>Ans:</strong> Only (1). The Preamble contains a declaration by the people but is NOT enforceable in a court of law.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2018</div>
+      <p><strong>Q:</strong> The 42nd Amendment to the Constitution of India, 1976 added which of the following words to the Preamble?</p>
+      <p><strong>Ans:</strong> "Socialist" and "Secular" were added between "Sovereign" and "Democratic"; "Integrity" was added to "Unity of the Nation."</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2016</div>
+      <p><strong>Q:</strong> The Berubari Union case (1960) is associated with — (a) the status of the Preamble (b) the status of DPSPs (c) the Basic Structure doctrine (d) the doctrine of separation of powers</p>
+      <p><strong>Ans:</strong> (a). The Berubari Union case held (incorrectly, later overruled) that the Preamble is NOT a part of the Constitution.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2015</div>
+      <p><strong>Q:</strong> In the context of the Preamble of the Constitution, which of the following is/are the Objectives of the Indian State? (1) Justice (2) Liberty (3) Equality (4) Fraternity — Which is correct?</p>
+      <p><strong>Ans:</strong> All four — Justice, Liberty, Equality, and Fraternity — are the four objectives mentioned in the Preamble.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 10: Mains PYQs -->
+  <section class="notes" id="mains-pyq">
+    <h2>10. Mains PYQs</h2>
+
+    <div class="pyq">
+      <div class="year">Mains GS-II 2019</div>
+      <p><strong>Q:</strong> "The Preamble to the Constitution of India is the soul of the Constitution." Elucidate. (150 words)</p>
+      <p><strong>Key Points:</strong> Preamble as key to interpret the Constitution; not enforceable but vital; Kesavananda Bharati case; 9 keywords; basic structure; source of authority (We the People); objectives — Justice, Liberty, Equality, Fraternity; 42nd Amendment changes.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">Mains GS-II 2017</div>
+      <p><strong>Q:</strong> In the Kesavananda Bharati case, the Supreme Court propounded the doctrine of Basic Structure. Explain how this doctrine limits the amending power of Parliament with reference to the Preamble.</p>
+      <p><strong>Key Points:</strong> Art. 368 gives constituent power; Kesavananda Bharati (1973) limited this power; basic structure cannot be abrogated; Preamble is part of Constitution and contains basic structure elements (Sovereignty, Democracy, Secularism, etc.); Parliament can amend but cannot destroy essence.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">Mains GS-II 2014</div>
+      <p><strong>Q:</strong> "India is a secular state." Critically examine this statement in the light of the Constitutional provisions and judicial interpretations.</p>
+      <p><strong>Key Points:</strong> Secular added by 42nd Amendment; Articles 25–28 (freedom of religion); Indian secularism = equal respect (not strict separation); SR Bommai (1994) — secularism as basic feature; Criticism: State intervenes in religious matters (e.g., temple regulation).</p>
+    </div>
+  </section>
+
+  <!-- SECTION 11: REVISION BOX -->
+  <section class="notes" id="revision">
+    <h2>11. 15-Minute Revision Box</h2>
+    <div class="revision-box">
+      <h3>Rapid Revision — Preamble of the Constitution</h3>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">The 5 Natures of the State (S-S-S-D-R)</h4>
+      <ul>
+        <li><strong>Sovereign</strong> — Externally free, internally supreme. No foreign authority.</li>
+        <li><strong>Socialist</strong> — Added 1976. Democratic socialism (mixed economy). Not state socialism.</li>
+        <li><strong>Secular</strong> — Added 1976. No state religion. Equal respect for all religions. Positive secularism.</li>
+        <li><strong>Democratic</strong> — Representative democracy. Universal adult franchise. Political + social democracy.</li>
+        <li><strong>Republic</strong> — Elected head of state (President). Not hereditary. Since 26 Jan 1950.</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">The 4 Objectives (J-L-E-F)</h4>
+      <ul>
+        <li><strong>Justice</strong> — Social (FRs), Economic (DPSP Art. 39), Political (universal franchise).</li>
+        <li><strong>Liberty</strong> — Thought, expression, belief, faith, worship. Subject to Art. 19 restrictions.</li>
+        <li><strong>Equality</strong> — Status (Art. 14, 15) and Opportunity (Art. 16, reservations).</li>
+        <li><strong>Fraternity</strong> — Dignity of individual (Art. 21) + Unity and Integrity of Nation. Unique to India.</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Key Cases — Must Remember</h4>
+      <ul>
+        <li><strong>Berubari Union (1960)</strong>: Preamble NOT part of Constitution [OVERRULED].</li>
+        <li><strong>Kesavananda Bharati (1973)</strong>: Preamble IS part; can be amended; basic structure cannot be destroyed.</li>
+        <li><strong>LIC of India (1995)</strong>: Reaffirmed — Preamble is integral part of Constitution.</li>
+        <li><strong>SR Bommai (1994)</strong>: Secularism is basic feature; Preamble's secular character protected.</li>
+        <li><strong>Excel Wear v. UoI (1979)</strong>: Socialism does not mean nationalization of all property.</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">42nd Amendment, 1976 — Preamble Changes</h4>
+      <ul>
+        <li>Added: <strong>Socialist</strong> and <strong>Secular</strong> (before "Democratic").</li>
+        <li>Changed: "Unity of the Nation" → "<strong>Unity and Integrity of the Nation</strong>".</li>
+        <li>Only amendment to the Preamble in Indian constitutional history.</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Quick Facts</h4>
+      <ul>
+        <li>Preamble is NOT justiciable — cannot be enforced in court directly.</li>
+        <li>Preamble CAN be used for interpretation of ambiguous provisions.</li>
+        <li>Objectives Resolution moved by Nehru on 13 Dec 1946; adopted 22 Jan 1947.</li>
+        <li>Preamble borrowed from: French Revolution (Liberty, Equality, Fraternity) + US Preamble ("We the People").</li>
+        <li>Samvidhan Divas — 26 November every year (since 2015).</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- ASIDE / SIDEBAR -->
+<aside>
+  <div class="aside-sticky">
+
+    <!-- WIDGET 1: Keywords Quick Reference -->
+    <div class="widget">
+      <h4>Preamble Keywords — Quick Reference</h4>
+      <table>
+        <tr><th>Keyword</th><th>Core Meaning</th></tr>
+        <tr><td><strong>Sovereign</strong></td><td>Externally free, internally supreme</td></tr>
+        <tr><td><strong>Socialist</strong></td><td>Mixed economy; no concentration of wealth</td></tr>
+        <tr><td><strong>Secular</strong></td><td>Equal respect for all religions; no state religion</td></tr>
+        <tr><td><strong>Democratic</strong></td><td>Govt by the people; free &amp; fair elections</td></tr>
+        <tr><td><strong>Republic</strong></td><td>Elected head of state; no hereditary rule</td></tr>
+        <tr><td><strong>Justice</strong></td><td>Social, Economic, Political</td></tr>
+        <tr><td><strong>Liberty</strong></td><td>Thought, Expression, Belief, Faith, Worship</td></tr>
+        <tr><td><strong>Equality</strong></td><td>Of status and opportunity</td></tr>
+        <tr><td><strong>Fraternity</strong></td><td>Dignity + Unity &amp; Integrity of Nation</td></tr>
+      </table>
+    </div>
+
+    <!-- WIDGET 2: Key Cases -->
+    <div class="widget">
+      <h4>Key Cases on Preamble</h4>
+      <ul>
+        <li><strong>Berubari Union (1960)</strong><br><span style="color:var(--muted);font-size:11px;">Preamble NOT part of Constitution [Overruled]</span></li>
+        <li><strong>Kesavananda Bharati (1973)</strong><br><span style="color:var(--muted);font-size:11px;">Preamble IS part; basic structure cannot be abrogated</span></li>
+        <li><strong>LIC of India (1995)</strong><br><span style="color:var(--muted);font-size:11px;">Reaffirmed Preamble as integral part</span></li>
+        <li><strong>SR Bommai (1994)</strong><br><span style="color:var(--muted);font-size:11px;">Secularism = basic feature of Constitution</span></li>
+        <li><strong>Excel Wear v. UoI (1979)</strong><br><span style="color:var(--muted);font-size:11px;">Socialism ≠ nationalization of all property</span></li>
+        <li><strong>Indira Nehru Gandhi (1975)</strong><br><span style="color:var(--muted);font-size:11px;">Free &amp; fair elections = basic structure</span></li>
+      </ul>
+    </div>
+
+    <!-- WIDGET 3: Difficulty & Importance -->
+    <div class="widget">
+      <h4>Difficulty &amp; Importance</h4>
+      <div class="bar"><span class="lbl">Prelims Weight</span><span class="fill"><span style="width:85%"></span></span></div>
+      <div class="bar"><span class="lbl">Mains Relevance</span><span class="fill"><span style="width:90%"></span></span></div>
+      <div class="bar"><span class="lbl">Conceptual Depth</span><span class="fill"><span style="width:75%"></span></span></div>
+      <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:80%"></span></span></div>
+      <div class="bar"><span class="lbl">Overall Importance</span><span class="fill"><span style="width:92%"></span></span></div>
+      <p style="margin-top:8px;font-size:11px;color:var(--muted);">High importance topic — asked almost every year in Prelims and frequently in Mains.</p>
+    </div>
+
+    <!-- WIDGET 4: Must-Know Tags -->
+    <div class="widget">
+      <h4>Must-Know Tags</h4>
+      <span class="tag">42nd Amendment</span>
+      <span class="tag">Kesavananda Bharati</span>
+      <span class="tag orange">Basic Structure</span>
+      <span class="tag">Art. 368</span>
+      <span class="tag green">Berubari Union</span>
+      <span class="tag">Objectives Resolution</span>
+      <span class="tag orange">Secularism</span>
+      <span class="tag">SR Bommai</span>
+      <span class="tag">Socialism</span>
+      <span class="tag green">Fraternity</span>
+      <span class="tag">We the People</span>
+      <span class="tag orange">Samvidhan Divas</span>
+      <span class="tag">26 Nov 1949</span>
+      <span class="tag">26 Jan 1950</span>
+    </div>
+
+    <!-- WIDGET 5: Related Topics -->
+    <div class="widget">
+      <h4>Related Topics</h4>
+      <ul class="related">
+        <li><a href="/indian-polity/constitutional-framework">T01: Constitutional Framework &amp; Making</a></li>
+        <li><a href="/indian-polity/salient-features-and-sources-of-the-constitution">T02: Union &amp; Its Territory</a></li>
+        <li><a href="/indian-polity/parts-and-schedules-of-the-constitution">T03: Citizenship</a></li>
+        <li><a href="/indian-polity/preamble-of-the-constitution">T05: Fundamental Rights (Part III)</a></li>
+        <li><a href="/indian-polity/union-and-its-territory">T06: DPSP &amp; Fundamental Duties</a></li>
+        <li><a href="/indian-polity/citizenship">T07: Amendment &amp; Basic Structure</a></li>
+      </ul>
+    </div>
+
+    <!-- WIDGET 6: Quick Navigation -->
+    <div class="widget">
+      <h4>Quick Navigation</h4>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="margin:4px 0;"><a href="#preamble-text" style="font-size:12px;">The Preamble Text</a></li>
+        <li style="margin:4px 0;"><a href="#conceptual-clarity" style="font-size:12px;">Conceptual Clarity &amp; Cases</a></li>
+        <li style="margin:4px 0;"><a href="#nine-keywords" style="font-size:12px;">9 Keywords Explained</a></li>
+        <li style="margin:4px 0;"><a href="#42nd-amendment" style="font-size:12px;">42nd Amendment 1976</a></li>
+        <li style="margin:4px 0;"><a href="#basic-structure" style="font-size:12px;">Preamble &amp; Basic Structure</a></li>
+        <li style="margin:4px 0;"><a href="#objectives-resolution" style="font-size:12px;">vs Objectives Resolution</a></li>
+        <li style="margin:4px 0;"><a href="#india-vs-us" style="font-size:12px;">India vs US Preamble</a></li>
+        <li style="margin:4px 0;"><a href="#current-affairs" style="font-size:12px;">Current Affairs Link</a></li>
+        <li style="margin:4px 0;"><a href="#pyqs" style="font-size:12px;">Previous Year Questions</a></li>
+        <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">15-Min Revision Box</a></li>
+      </ul>
+    </div>
+
+  </div>
+</aside>
+</div>
+</div>

@@ -5,6 +5,10 @@ import {
   isEthicsTopicId,
 } from "@/lib/ethics-notes";
 import {
+  getPolityTopicSlug,
+  isPolityTopicId,
+} from "@/lib/polity-notes";
+import {
   getMedievalTopicSlug,
   isMedievalTopicId,
 } from "@/lib/medieval-notes";
@@ -40,6 +44,9 @@ export function topicPath(subjectKey: SubjectKey, chapterId: string): string {
   if (subjectKey === "ethics" && isEthicsTopicId(chapterId)) {
     return `${subjectHubPath("ethics")}/${getEthicsTopicSlug(chapterId)}`;
   }
+  if (subjectKey === "polity" && isPolityTopicId(chapterId)) {
+    return `${subjectHubPath("polity")}/${getPolityTopicSlug(chapterId)}`;
+  }
   return `${subjectHubPath(subjectKey)}/${topicSlugFromChapterId(chapterId)}`;
 }
 
@@ -65,6 +72,11 @@ export function getChapterByTopicSlug(
       (ch) => isEthicsTopicId(ch.id) && getEthicsTopicSlug(ch.id) === slug,
     );
   }
+  if (subjectKey === "polity") {
+    return subject.chapters.find(
+      (ch) => isPolityTopicId(ch.id) && getPolityTopicSlug(ch.id) === slug,
+    );
+  }
   return subject.chapters.find(
     (ch) => topicSlugFromChapterId(ch.id) === slug,
   );
@@ -87,6 +99,10 @@ export function getChapterHref(
     if (!isEthicsTopicId(chapter.id)) return null;
     return topicPath("ethics", chapter.id);
   }
+  if (subjectKey === "polity" || isPolityTopicId(chapter.id)) {
+    if (!isPolityTopicId(chapter.id)) return null;
+    return topicPath("polity", chapter.id);
+  }
   return topicPath(subjectKey, chapter.id);
 }
 
@@ -105,7 +121,14 @@ export function getAllTopicPaths(): { subjectKey: SubjectKey; slug: string }[] {
         paths.push({ subjectKey: key, slug: getMedievalTopicSlug(ch.id) });
       } else if (key === "ethics" && isEthicsTopicId(ch.id)) {
         paths.push({ subjectKey: key, slug: getEthicsTopicSlug(ch.id) });
-      } else if (key !== "ancient" && key !== "medieval" && key !== "ethics") {
+      } else if (key === "polity" && isPolityTopicId(ch.id)) {
+        paths.push({ subjectKey: key, slug: getPolityTopicSlug(ch.id) });
+      } else if (
+        key !== "ancient" &&
+        key !== "medieval" &&
+        key !== "ethics" &&
+        key !== "polity"
+      ) {
         paths.push({
           subjectKey: key,
           slug: topicSlugFromChapterId(ch.id),
