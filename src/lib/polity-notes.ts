@@ -27,6 +27,22 @@ export const POLITY_TOPIC_IDS = [
   "polity-topic20",
   "polity-topic21",
   "polity-topic22",
+  "polity-topic23",
+  "polity-topic24",
+  "polity-topic25",
+  "polity-topic26",
+  "polity-topic27",
+  "polity-topic28",
+  "polity-topic29",
+  "polity-topic30",
+  "polity-topic31",
+  "polity-topic32",
+  "polity-topic33",
+  "polity-topic34",
+  "polity-topic35",
+  "polity-topic36",
+  "polity-topic37",
+  "polity-topic38",
 ] as const;
 
 export type PolityTopicId = (typeof POLITY_TOPIC_IDS)[number];
