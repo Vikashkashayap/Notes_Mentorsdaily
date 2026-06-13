@@ -121,6 +121,22 @@ export const SYLLABUS_DATA = {
       { id:"disasters", title:"Natural Disasters & Management", sub:"Earthquakes, floods, cyclones, NDMA", priority:"high", prelims:6, mains:5, status:"coming-soon", readTime:14, tags:["NDMA","Earthquake zones","Cyclone","Tsunami"] }
     ]
   },
+  society: {
+    name: "Indian Society",
+    icon: "👥",
+    paper: "GS Paper 1",
+    description: "Social structure, caste, tribes, regionalism, secularism, social justice, women, and globalization",
+    chapters: [
+      { id:"society-topic01", title:"Indian Society — Structure, Features & Evolution", sub:"Topic 01: Demographic structure, evolution, hierarchy, diversity & unity", priority:"high", prelims:2, mains:4, status:"live", readTime:22, tags:["Demographic Dividend","Sanskritization","Diversity","Unity in Diversity","M.N. Srinivas"] },
+      { id:"society-topic02", title:"Caste System, Casteism & Reservation Policy", sub:"Topic 02: Theories of origin, SC issues, caste-vote bank, reservation policy", priority:"high", prelims:3, mains:5, status:"live", readTime:25, tags:["Caste System","Reservation","Mandal Commission","Ambedkar","Davinder Singh"] },
+      { id:"society-topic03", title:"Tribes, Family, Kinship & Marriage Institutions", sub:"Topic 03: Tribes in India, joint vs nuclear family, marriage types, kinship systems", priority:"high", prelims:3, mains:4, status:"live", readTime:20, tags:["PVTG","FRA 2006","PESA","Joint Family","Kinship"] },
+      { id:"society-topic04", title:"Regionalism, Communalism & Linguism", sub:"Topic 04: Types of regionalism, communalism stages, linguistic states", priority:"high", prelims:2, mains:3, status:"live", readTime:22, tags:["Regionalism","Communalism","Linguism","Sons of Soil","8th Schedule"] },
+      { id:"society-topic05", title:"Cultural Identity, Minorities & Secularism", sub:"Topic 05: Community identity, minority rights, Indian vs Western secularism, UCC", priority:"high", prelims:2, mains:3, status:"live", readTime:20, tags:["Secularism","Sachar Committee","UCC","Minority Rights","Art.29"] },
+      { id:"society-topic06", title:"Social Justice & Vulnerable Sections", sub:"Topic 06: Social inequalities, OBC, children, elderly, disabled, transgender rights", priority:"high", prelims:2, mains:3, status:"live", readTime:20, tags:["OBC","RPWD 2016","NALSA","POCSO","SHG"] },
+      { id:"society-topic07", title:"Women in India — Issues, Status & Empowerment", sub:"Topic 07: Gender wage gap, domestic violence, POSH Act, government initiatives", priority:"high", prelims:2, mains:3, status:"live", readTime:22, tags:["POSH Act","Gender Gap","Beti Bachao Beti Padhao","Domestic Violence","Women SHGs"] },
+      { id:"society-topic08", title:"Urbanization, Globalization & Indian Diaspora", sub:"Topic 08: Urbanization, smart cities, migration, globalization, PIO/OCI diaspora", priority:"high", prelims:2, mains:6, status:"live", readTime:22, tags:["Urbanization","Globalization","Smart Cities","PIO/OCI","Pravasi Bharatiya"] },
+    ]
+  },
   worldgeo: {
     name: "World Geography",
     icon: "🌐",
@@ -207,12 +223,21 @@ export const SYLLABUS_DATA = {
     name: "Internal Security",
     icon: "🛡️",
     paper: "GS Paper 3",
-    description: "Terrorism, border security, cyber threats, and security agencies",
+    description: "Terrorism, border security, cyber threats, insurgency, and security agencies",
     chapters: [
-      { id:"terrorism-extremism", title:"Terrorism & Left-Wing Extremism", sub:"Naxalism, NE insurgency, counter-terrorism", priority:"high", prelims:5, mains:6, status:"coming-soon", readTime:14, tags:["Naxalism","UAPA","NIA","Counter-terrorism"] },
-      { id:"border-management", title:"Border Management", sub:"Land borders, coastal security, BSF", priority:"medium", prelims:5, mains:5, status:"coming-soon", readTime:12, tags:["BSF","Coast Guard","ITBP","Border fencing"] },
-      { id:"cyber-security-internal", title:"Cyber Security", sub:"Cyber threats, CERT-In, national policy", priority:"medium", prelims:5, mains:4, status:"coming-soon", readTime:12, tags:["CERT-In","Cyber threats","Dark web","Ransomware"] },
-      { id:"security-agencies", title:"Security Agencies & Intelligence", sub:"RAW, IB, CBI, NIA, NSG", priority:"medium", prelims:6, mains:3, status:"coming-soon", readTime:12, tags:["RAW","IB","CBI","NIA","NSG"] }
+      { id:"security-topic01", title:"External Factors in Internal Security", sub:"Topic 01: State & non-state actors, proxy war, CPEC, Operation Sindoor", priority:"high", prelims:3, mains:4, status:"live", readTime:18, tags:["Proxy War","State Actors","CPEC","Operation Sindoor"] },
+      { id:"security-topic02", title:"Border Management in India", sub:"Topic 02: Six land borders, guarding forces, BADP, CIBMS, vibrant villages", priority:"high", prelims:4, mains:4, status:"live", readTime:20, tags:["BSF","ITBP","BADP","CIBMS","Vibrant Villages"] },
+      { id:"security-topic03", title:"Coastal & Maritime Security in India", sub:"Topic 03: Three-tier architecture, IMAC, NC3I, SAGAR to MAHASAGAR", priority:"high", prelims:3, mains:3, status:"live", readTime:16, tags:["IMAC","NC3I","Coast Guard","SAGAR","MAHASAGAR"] },
+      { id:"security-topic04", title:"Terrorism & Terror Financing", sub:"Topic 04: Types, terror funding sources, FATF, UAPA, NIA, Operation Sindoor", priority:"high", prelims:4, mains:4, status:"live", readTime:20, tags:["UAPA","NIA","FATF","Terror Financing","Operation Sindoor"] },
+      { id:"security-topic05", title:"Left-Wing Extremism (Naxalism)", sub:"Topic 05: Maoist ideology, Naxalbari, Red Corridor, SAMADHAN doctrine", priority:"high", prelims:4, mains:4, status:"live", readTime:18, tags:["Naxalism","CPI Maoist","SAMADHAN","Red Corridor","LWE"] },
+      { id:"security-topic06", title:"Insurgency in North East India", sub:"Topic 06: Naga & Manipur insurgency, AFSPA, peace accords, Act East Policy", priority:"high", prelims:4, mains:4, status:"live", readTime:18, tags:["AFSPA","Naga Insurgency","Sixth Schedule","Act East","Manipur"] },
+      { id:"security-topic07", title:"Insurgency in Jammu & Kashmir", sub:"Topic 07: Article 370 abrogation, proxy war, counter-insurgency, Pahalgam 2025", priority:"high", prelims:3, mains:3, status:"live", readTime:18, tags:["Article 370","Proxy War","Counter-Insurgency","Pahalgam","Operation Sindoor"] },
+      { id:"security-topic08", title:"Radicalism, Communalism & Other Threats", sub:"Topic 08: Radicalisation, communal violence, regionalism, digital disinformation", priority:"high", prelims:3, mains:3, status:"live", readTime:14, tags:["Radicalisation","Communalism","Separatism","Fake News","Disinformation"] },
+      { id:"security-topic09", title:"Cyber Security", sub:"Topic 09: CIA triad, cyber attacks, CERT-In, NCIIPC, DPDP Act 2023", priority:"high", prelims:4, mains:4, status:"live", readTime:18, tags:["CERT-In","NCIIPC","DPDP Act","Cyber Attacks","CII"] },
+      { id:"security-topic10", title:"Media & Social Networking in Internal Security", sub:"Topic 10: Social media impact, fake news, IT Rules 2021, DPDP Act", priority:"high", prelims:3, mains:3, status:"live", readTime:14, tags:["Fake News","IT Rules 2021","Deepfakes","Social Media","Disinformation"] },
+      { id:"security-topic11", title:"Money Laundering & Organised Crime", sub:"Topic 11: PMLA, ED, FIU-IND, FATF, crime-terror nexus, BNS 2023", priority:"high", prelims:4, mains:4, status:"live", readTime:16, tags:["PMLA","ED","FATF","Money Laundering","Organised Crime"] },
+      { id:"security-topic12", title:"Security Forces, Agencies & National Security Architecture", sub:"Topic 12: CAPF, intelligence agencies, AFSPA, NSC, NSA, CDS, theaterisation", priority:"high", prelims:4, mains:4, status:"live", readTime:18, tags:["CAPF","RAW","IB","NSC","CDS","AFSPA"] },
+      { id:"security-topic13", title:"Police Reforms in India", sub:"Topic 13: Police Act 1861, Prakash Singh case, Model Police Act, CCTNS", priority:"high", prelims:3, mains:3, status:"live", readTime:14, tags:["Prakash Singh","Police Act 1861","CCTNS","SMART Policing","BNS 2023"] },
     ]
   },
   ethics: {

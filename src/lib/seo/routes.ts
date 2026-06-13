@@ -9,6 +9,14 @@ import {
   isPolityTopicId,
 } from "@/lib/polity-notes";
 import {
+  getSocietyTopicSlug,
+  isSocietyTopicId,
+} from "@/lib/society-notes";
+import {
+  getSecurityTopicSlug,
+  isSecurityTopicId,
+} from "@/lib/security-notes";
+import {
   getMedievalTopicSlug,
   isMedievalTopicId,
 } from "@/lib/medieval-notes";
@@ -47,6 +55,12 @@ export function topicPath(subjectKey: SubjectKey, chapterId: string): string {
   if (subjectKey === "polity" && isPolityTopicId(chapterId)) {
     return `${subjectHubPath("polity")}/${getPolityTopicSlug(chapterId)}`;
   }
+  if (subjectKey === "society" && isSocietyTopicId(chapterId)) {
+    return `${subjectHubPath("society")}/${getSocietyTopicSlug(chapterId)}`;
+  }
+  if (subjectKey === "security" && isSecurityTopicId(chapterId)) {
+    return `${subjectHubPath("security")}/${getSecurityTopicSlug(chapterId)}`;
+  }
   return `${subjectHubPath(subjectKey)}/${topicSlugFromChapterId(chapterId)}`;
 }
 
@@ -77,6 +91,16 @@ export function getChapterByTopicSlug(
       (ch) => isPolityTopicId(ch.id) && getPolityTopicSlug(ch.id) === slug,
     );
   }
+  if (subjectKey === "society") {
+    return subject.chapters.find(
+      (ch) => isSocietyTopicId(ch.id) && getSocietyTopicSlug(ch.id) === slug,
+    );
+  }
+  if (subjectKey === "security") {
+    return subject.chapters.find(
+      (ch) => isSecurityTopicId(ch.id) && getSecurityTopicSlug(ch.id) === slug,
+    );
+  }
   return subject.chapters.find(
     (ch) => topicSlugFromChapterId(ch.id) === slug,
   );
@@ -103,6 +127,14 @@ export function getChapterHref(
     if (!isPolityTopicId(chapter.id)) return null;
     return topicPath("polity", chapter.id);
   }
+  if (subjectKey === "society" || isSocietyTopicId(chapter.id)) {
+    if (!isSocietyTopicId(chapter.id)) return null;
+    return topicPath("society", chapter.id);
+  }
+  if (subjectKey === "security" || isSecurityTopicId(chapter.id)) {
+    if (!isSecurityTopicId(chapter.id)) return null;
+    return topicPath("security", chapter.id);
+  }
   return topicPath(subjectKey, chapter.id);
 }
 
@@ -123,11 +155,17 @@ export function getAllTopicPaths(): { subjectKey: SubjectKey; slug: string }[] {
         paths.push({ subjectKey: key, slug: getEthicsTopicSlug(ch.id) });
       } else if (key === "polity" && isPolityTopicId(ch.id)) {
         paths.push({ subjectKey: key, slug: getPolityTopicSlug(ch.id) });
+      } else if (key === "society" && isSocietyTopicId(ch.id)) {
+        paths.push({ subjectKey: key, slug: getSocietyTopicSlug(ch.id) });
+      } else if (key === "security" && isSecurityTopicId(ch.id)) {
+        paths.push({ subjectKey: key, slug: getSecurityTopicSlug(ch.id) });
       } else if (
         key !== "ancient" &&
         key !== "medieval" &&
         key !== "ethics" &&
-        key !== "polity"
+        key !== "polity" &&
+        key !== "society" &&
+        key !== "security"
       ) {
         paths.push({
           subjectKey: key,

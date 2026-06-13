@@ -14,6 +14,7 @@ export const SIDEBAR_SECTIONS: SidebarSection[] = [
       { key: "culture", icon: "🎭", name: "Art & Culture" },
       { key: "geo", icon: "🗺️", name: "Indian Geography" },
       { key: "worldgeo", icon: "🌐", name: "World Geography" },
+      { key: "society", icon: "👥", name: "Indian Society" },
     ],
   },
   {

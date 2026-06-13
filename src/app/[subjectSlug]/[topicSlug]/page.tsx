@@ -19,8 +19,14 @@ import { isAncientTopicId, type AncientTopicId } from "@/lib/ancient-notes";
 import { isEthicsTopicId, type EthicsTopicId } from "@/lib/ethics-notes";
 import { isMedievalTopicId, type MedievalTopicId } from "@/lib/medieval-notes";
 import { isPolityTopicId, type PolityTopicId } from "@/lib/polity-notes";
+import { isSocietyTopicId, type SocietyTopicId } from "@/lib/society-notes";
+import { isSecurityTopicId, type SecurityTopicId } from "@/lib/security-notes";
 import { PolityTopicFooterNav } from "@/components/notes/PolityTopicFooterNav";
 import { PolityTopicNotesBody } from "@/components/notes/PolityTopicNotesBody";
+import { SocietyTopicFooterNav } from "@/components/notes/SocietyTopicFooterNav";
+import { SocietyTopicNotesBody } from "@/components/notes/SocietyTopicNotesBody";
+import { SecurityTopicFooterNav } from "@/components/notes/SecurityTopicFooterNav";
+import { SecurityTopicNotesBody } from "@/components/notes/SecurityTopicNotesBody";
 
 export const revalidate = 86400;
 
@@ -69,6 +75,8 @@ export default async function TopicPage({ params }: PageProps) {
     subjectKey === "medieval" && isMedievalTopicId(chapter.id);
   const isEthics = subjectKey === "ethics" && isEthicsTopicId(chapter.id);
   const isPolity = subjectKey === "polity" && isPolityTopicId(chapter.id);
+  const isSociety = subjectKey === "society" && isSocietyTopicId(chapter.id);
+  const isSecurity = subjectKey === "security" && isSecurityTopicId(chapter.id);
 
   if (isAncient) {
     const topicId = chapter.id as AncientTopicId;
@@ -109,6 +117,28 @@ export default async function TopicPage({ params }: PageProps) {
       <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
         <PolityTopicNotesBody topicId={topicId} />
         <PolityTopicFooterNav topicId={topicId} />
+        <TopicNotesEnhancements />
+      </TopicPageLayout>
+    );
+  }
+
+  if (isSociety) {
+    const topicId = chapter.id as SocietyTopicId;
+    return (
+      <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
+        <SocietyTopicNotesBody topicId={topicId} />
+        <SocietyTopicFooterNav topicId={topicId} />
+        <TopicNotesEnhancements />
+      </TopicPageLayout>
+    );
+  }
+
+  if (isSecurity) {
+    const topicId = chapter.id as SecurityTopicId;
+    return (
+      <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
+        <SecurityTopicNotesBody topicId={topicId} />
+        <SecurityTopicFooterNav topicId={topicId} />
         <TopicNotesEnhancements />
       </TopicPageLayout>
     );

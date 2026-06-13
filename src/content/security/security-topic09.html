@@ -1,0 +1,541 @@
+<!-- security-topic09 — auto-imported from security-topic09-cyber-security-upsc-notes.html -->
+<style data-topic-notes>
+:root{--brand-blue:#1a3d5c;--brand-orange:#c47820;--green:#1a7a5a;--bg:#f5f7fa;--card:#fff;--border:#e2e8f0;--text-dark:#1a202c;--text-light:#718096;--radius:12px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--text-dark);line-height:1.7}
+header{background:linear-gradient(135deg,var(--brand-blue) 0%,#2d6a9f 100%);color:#fff;padding:20px 24px}
+.breadcrumb{font-size:13px;opacity:.8;margin-bottom:8px}
+.breadcrumb a{color:#fff;text-decoration:none}
+h1{font-size:clamp(1.4rem,3vw,2rem);font-weight:700;margin-bottom:6px}
+.hero-sub{font-size:14px;opacity:.85;max-width:700px}
+.hero-meta{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;font-size:13px}
+.hero-meta span{background:rgba(255,255,255,.15);padding:3px 10px;border-radius:20px}
+.layout{display:grid;grid-template-columns:1fr 320px;gap:24px;max-width:1200px;margin:24px auto;padding:0 16px}
+@media(max-width:900px){.layout{grid-template-columns:1fr}}
+.notes{background:var(--card);border-radius:var(--radius);padding:28px 32px;margin-bottom:24px;border:1px solid var(--border)}
+h2{font-size:1.3rem;color:var(--brand-blue);margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--brand-orange)}
+h3{font-size:1.1rem;color:var(--brand-blue);margin:20px 0 10px}
+h4{font-size:1rem;color:var(--green);margin:16px 0 8px}
+p{margin-bottom:12px}
+ul,ol{padding-left:20px;margin-bottom:12px}
+li{margin-bottom:6px}
+.callout{background:#fffbf0;border-left:4px solid var(--brand-orange);padding:14px 18px;border-radius:0 8px 8px 0;margin:16px 0;font-size:14px}
+.callout.blue{background:#f0f7ff;border-left-color:var(--brand-blue)}
+.callout.green{background:#f0fff8;border-left-color:var(--green)}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+th{background:var(--brand-blue);color:#fff;padding:10px 12px;text-align:left}
+td{padding:9px 12px;border-bottom:1px solid var(--border)}
+tr:nth-child(even) td{background:#f8fafc}
+.svg-wrap{background:#f8fafc;border:1px solid var(--border);border-radius:10px;padding:20px;margin:20px 0;text-align:center;overflow-x:auto}
+.svg-caption{font-size:13px;color:var(--text-light);margin-top:8px;font-style:italic}
+.aside-sticky{position:sticky;top:80px}
+.aside-card{background:var(--card);border-radius:var(--radius);padding:20px;margin-bottom:16px;border:1px solid var(--border)}
+.aside-card h4{color:var(--brand-blue);margin-bottom:12px;font-size:15px}
+.aside-card ul{padding-left:16px}
+.aside-card li{font-size:13px;margin-bottom:5px}
+.pyq-item{background:#fff;border:1px solid var(--border);border-radius:10px;padding:20px 24px;margin-bottom:20px}
+.pyq-meta{font-size:13px;color:var(--text-light);margin-bottom:8px}
+.pyq-year{background:var(--brand-blue);color:#fff;padding:2px 10px;border-radius:4px;font-size:12px;font-weight:700;margin-right:8px}
+.pyq-q{font-weight:600;margin-bottom:12px;color:var(--text-dark)}
+.model-answer h5{color:var(--green);margin-bottom:8px;font-size:14px}
+.model-answer ol li{margin-bottom:8px;font-size:14px}
+.tag{display:inline-block;padding:2px 8px;border-radius:4px;font-size:11px;font-weight:600;margin:2px}
+.mains-tag{background:#1a7a5a;color:#fff}
+.prelims-tag{background:#c47820;color:#fff}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<header>
+  <div class="breadcrumb"><a href="/internal-security">Home</a> › <a href="/internal-security">Internal Security</a> › Topic 09</div>
+  <h1>Cyber Security</h1>
+  <div class="hero-sub">Cyberspace &amp; the CIA Triad · Types of Cyber Attacks · Critical Information Infrastructure &amp; NCIIPC · CERT-In, NCCC, I4C · IT Act 2000, DPDP Act 2023 · 5G &amp; AI</div>
+  <div class="hero-meta">
+    <span>📄 GS Paper 3</span><span>🎯 Mains Focus</span><span>⏱ 18 min read</span><span>📅 Updated June 2026</span>
+  </div>
+</header>
+<div class="layout">
+<div>
+
+<section class="notes">
+<h2>Understanding Cyberspace and Cyber Security</h2>
+<p>Cyberspace is the borderless, man-made domain of interconnected digital networks — computers, servers, the internet, telecommunications, IoT devices and the data flowing through them. It is now recognised as the <strong>"fifth domain" of warfare</strong> alongside land, sea, air and space. As India digitises its economy and governance, cyberspace has become both an engine of growth and a vast attack surface. <strong>Cyber security</strong> is the practice of protecting systems, networks, data and programs from digital attacks aimed at accessing, altering, destroying or extorting information, or disrupting normal operations.</p>
+<p>The foundational goal of cyber security is captured in the <strong>CIA triad</strong> — <em>Confidentiality</em> (only authorised access), <em>Integrity</em> (data is accurate and untampered) and <em>Availability</em> (systems and data are accessible when needed). Every cyber attack is, at heart, an assault on one or more of these three pillars.</p>
+
+<h3>Key Terms You Must Know</h3>
+<ul>
+<li><strong>Cyberspace:</strong> the global digital environment of interconnected IT infrastructure and data.</li>
+<li><strong>Cyber security:</strong> protection of cyberspace assets and the CIA triad against threats.</li>
+<li><strong>Malware:</strong> "malicious software" — viruses, worms, trojans, spyware designed to damage or infiltrate systems.</li>
+<li><strong>Ransomware:</strong> malware that encrypts a victim's data and demands payment (often in cryptocurrency) for the decryption key.</li>
+<li><strong>Phishing:</strong> fraudulent emails/messages impersonating trusted entities to steal credentials or money; <em>spear-phishing</em> targets specific individuals.</li>
+<li><strong>DDoS:</strong> Distributed Denial of Service — flooding a server with traffic from many sources to make it unavailable.</li>
+<li><strong>APT:</strong> Advanced Persistent Threat — a stealthy, prolonged, often state-sponsored intrusion to exfiltrate data.</li>
+<li><strong>Zero-day:</strong> an exploit of a software vulnerability unknown to the vendor, for which no patch yet exists.</li>
+<li><strong>Botnet:</strong> a network of compromised "zombie" devices controlled remotely to launch attacks (e.g., DDoS).</li>
+<li><strong>Dark web:</strong> encrypted, unindexed part of the internet (accessed via Tor) used for anonymous, often illicit, trade in data, malware and weapons.</li>
+<li><strong>CIA triad:</strong> Confidentiality, Integrity, Availability — the three core objectives of information security.</li>
+</ul>
+<div class="callout blue"><strong>Key distinction:</strong> Cyber <em>crime</em> (financially or personally motivated, e.g., online fraud) differs from cyber <em>warfare</em> (state-on-state attacks on infrastructure) and cyber <em>terrorism</em> (politically motivated attacks to cause fear or harm). UPSC answers should locate each threat on this spectrum.</p></div>
+</section>
+
+<section class="notes">
+<h2>Importance of Cyberspace &amp; Cyber Security in India</h2>
+<p>India is one of the world's largest and fastest-growing digital ecosystems, with over 900 million internet users by 2026. Cyberspace underpins the digital economy, public service delivery and national security alike, making its protection a strategic imperative.</p>
+<ul>
+<li><strong>Digital economy:</strong> e-commerce, fintech and the IT/ITeS sector contribute a rising share of GDP; a single breach can cascade across markets.</li>
+<li><strong>UPI &amp; digital payments:</strong> India processes the world's largest volume of real-time payments through UPI — a high-value target for fraud and disruption.</li>
+<li><strong>Aadhaar &amp; digital identity:</strong> the world's largest biometric database powers authentication and welfare delivery; its security is paramount to privacy and trust.</li>
+<li><strong>Digital India &amp; e-governance:</strong> DigiLocker, e-services, CoWIN-style platforms and digitised land records expand convenience but also the attack surface.</li>
+<li><strong>Critical infrastructure:</strong> power grids, banking, telecom, railways, defence and health systems are increasingly networked and remotely controllable.</li>
+</ul>
+<div class="callout"><strong>Exam angle:</strong> Always frame cyber security as the flip side of Digital India — digital empowerment without digital resilience is a strategic liability. Link UPI/Aadhaar scale → larger attack surface → need for robust CII protection and a data-protection law.</div>
+</section>
+
+<div class="svg-wrap">
+<svg width="640" height="430" viewBox="0 0 640 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Classification of types of cyber attacks">
+  <defs>
+    <linearGradient id="sec09-gradHead" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a3d5c"/><stop offset="100%" stop-color="#2d6a9f"/>
+    </linearGradient>
+  </defs>
+  <text x="320" y="28" text-anchor="middle" font-size="17" font-weight="700" fill="#1a3d5c">Types of Cyber Attacks</text>
+  <rect x="220" y="46" width="200" height="40" rx="8" fill="url(#sec09-gradHead)"/>
+  <text x="320" y="71" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">ATTACK VECTORS</text>
+  <g font-size="12.5" fill="#1a202c">
+    <rect x="30" y="110" width="280" height="34" rx="6" fill="#e8f0fb"/><text x="44" y="132">Malware — virus, worm, trojan, spyware</text>
+    <rect x="30" y="152" width="280" height="34" rx="6" fill="#e8f0fb"/><text x="44" y="174">Ransomware — encrypt &amp; extort</text>
+    <rect x="30" y="194" width="280" height="34" rx="6" fill="#e8f0fb"/><text x="44" y="216">Phishing / spear-phishing</text>
+    <rect x="30" y="236" width="280" height="34" rx="6" fill="#e8f0fb"/><text x="44" y="258">Man-in-the-Middle (MITM)</text>
+    <rect x="330" y="110" width="280" height="34" rx="6" fill="#fff4ee"/><text x="344" y="132">SQL injection — database attacks</text>
+    <rect x="330" y="152" width="280" height="34" rx="6" fill="#fff4ee"/><text x="344" y="174">DDoS — flood &amp; deny service</text>
+    <rect x="330" y="194" width="280" height="34" rx="6" fill="#fff4ee"/><text x="344" y="216">Social engineering — human hacking</text>
+    <rect x="330" y="236" width="280" height="34" rx="6" fill="#fff4ee"/><text x="344" y="258">Supply-chain attacks</text>
+  </g>
+  <rect x="120" y="300" width="400" height="44" rx="10" fill="#1a7a5a"/>
+  <text x="320" y="320" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">TARGET: Confidentiality · Integrity · Availability</text>
+  <text x="320" y="338" text-anchor="middle" font-size="11" fill="#d7f0e6">every attack breaches one or more CIA pillars</text>
+  <rect x="120" y="360" width="400" height="44" rx="10" fill="#c47820"/>
+  <text x="320" y="380" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">ADVANCED: APT · Zero-day · Botnet · Dark web</text>
+  <text x="320" y="398" text-anchor="middle" font-size="11" fill="#ffe6cc">stealthy, persistent, often state-sponsored</text>
+</svg>
+<div class="svg-caption">Figure 1: Classification of cyber attacks — common vectors converge on breaching the CIA triad, with advanced threats adding stealth and persistence.</div>
+</div>
+
+<section class="notes">
+<h2>Motives Behind Cyber Attacks</h2>
+<p>Understanding the "why" helps anticipate the "how." Cyber attacks are driven by a range of overlapping motives:</p>
+<ul>
+<li><strong>Espionage:</strong> stealing state secrets, defence data or intellectual property — typically by state-sponsored APT groups.</li>
+<li><strong>Financial gain:</strong> the largest category — ransomware, banking fraud, UPI scams, cryptojacking and data theft for sale.</li>
+<li><strong>Hacktivism:</strong> ideologically or politically motivated defacements, leaks and DDoS by groups seeking publicity.</li>
+<li><strong>Cyber warfare:</strong> state-on-state attacks to degrade an adversary's critical infrastructure or command systems.</li>
+<li><strong>Cyber terrorism:</strong> politically motivated attacks intended to cause fear, casualties or disruption of essential services.</li>
+</ul>
+</section>
+
+<section class="notes">
+<h2>Types of Cyber Attacks — In Detail</h2>
+<table>
+<tr><th>Attack</th><th>How it works</th><th>Impact</th></tr>
+<tr><td>Malware</td><td>Malicious code (viruses, worms, trojans, spyware) installed covertly</td><td>Data theft, system corruption, surveillance</td></tr>
+<tr><td>Ransomware</td><td>Encrypts files, demands crypto-ransom for the key</td><td>Service shutdown, financial loss (e.g., AIIMS Delhi 2022)</td></tr>
+<tr><td>Phishing</td><td>Spoofed emails/SMS lure users to reveal credentials</td><td>Account takeover, fraud, malware delivery</td></tr>
+<tr><td>MITM</td><td>Attacker intercepts communication between two parties</td><td>Eavesdropping, data &amp; credential theft</td></tr>
+<tr><td>SQL injection</td><td>Malicious queries exploit input fields to access databases</td><td>Data breach, record manipulation</td></tr>
+<tr><td>DDoS</td><td>Botnets flood a server with traffic</td><td>Website/service outage, availability loss</td></tr>
+<tr><td>Social engineering</td><td>Manipulating people (not systems) into giving access</td><td>Bypasses technical controls; insider risk</td></tr>
+<tr><td>Supply-chain</td><td>Compromising a trusted vendor/software to reach targets</td><td>Wide, stealthy compromise (e.g., SolarWinds-type)</td></tr>
+</table>
+<div class="callout"><strong>Note:</strong> The "human layer" is the weakest link — social engineering and phishing remain the most common entry points, which is why end-user awareness is a core component of cyber security.</div>
+</section>
+
+<section class="notes">
+<h2>Components of Cyber Security</h2>
+<p>Cyber security is layered ("defence-in-depth"). The 2022 UPSC Mains question explicitly asked for the "different elements of cyber security," so these components must be memorised:</p>
+<ul>
+<li><strong>Network security:</strong> protecting the integrity and usability of networks via firewalls, intrusion-detection systems and segmentation.</li>
+<li><strong>Application security:</strong> securing software through secure coding, patching and testing against exploits like SQL injection.</li>
+<li><strong>Information / data security:</strong> protecting data at rest and in transit using encryption, access controls and the CIA triad.</li>
+<li><strong>Operational security:</strong> processes and decisions for handling and protecting data assets — permissions, procedures, disaster recovery.</li>
+<li><strong>End-user education:</strong> training people to recognise phishing, use strong passwords and avoid risky behaviour — the human firewall.</li>
+</ul>
+</section>
+
+<div class="svg-wrap">
+<svg width="640" height="360" viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="India's cyber security institutional architecture">
+  <defs>
+    <marker id="sec09-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#718096"/>
+    </marker>
+  </defs>
+  <text x="320" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#1a3d5c">India's Cyber Security Institutional Architecture</text>
+  <rect x="220" y="48" width="200" height="46" rx="10" fill="#1a3d5c"/>
+  <text x="320" y="69" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">NSCS / PMO</text>
+  <text x="320" y="86" text-anchor="middle" font-size="10.5" fill="#cfe0f0">National Cyber Security Coordinator</text>
+  <rect x="30" y="135" width="160" height="62" rx="10" fill="#2d6a9f"/>
+  <text x="110" y="158" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">CERT-In</text>
+  <text x="110" y="175" text-anchor="middle" font-size="10" fill="#cfe0f0">national incident</text>
+  <text x="110" y="188" text-anchor="middle" font-size="10" fill="#cfe0f0">response (MeitY)</text>
+  <rect x="240" y="135" width="160" height="62" rx="10" fill="#c47820"/>
+  <text x="320" y="158" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">NCIIPC</text>
+  <text x="320" y="175" text-anchor="middle" font-size="10" fill="#ffe6cc">protects CII</text>
+  <text x="320" y="188" text-anchor="middle" font-size="10" fill="#ffe6cc">(under NTRO)</text>
+  <rect x="450" y="135" width="160" height="62" rx="10" fill="#2d6a9f"/>
+  <text x="530" y="158" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">NCCC</text>
+  <text x="530" y="175" text-anchor="middle" font-size="10" fill="#cfe0f0">threat awareness</text>
+  <text x="530" y="188" text-anchor="middle" font-size="10" fill="#cfe0f0">&amp; coordination</text>
+  <rect x="60" y="240" width="160" height="62" rx="10" fill="#1a7a5a"/>
+  <text x="140" y="263" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">I4C</text>
+  <text x="140" y="280" text-anchor="middle" font-size="10" fill="#d7f0e6">cyber crime (MHA)</text>
+  <text x="140" y="293" text-anchor="middle" font-size="10" fill="#d7f0e6">helpline 1930</text>
+  <rect x="240" y="240" width="160" height="62" rx="10" fill="#1a7a5a"/>
+  <text x="320" y="263" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">Cyber Swachhta</text>
+  <text x="320" y="280" text-anchor="middle" font-size="10" fill="#d7f0e6">Kendra — botnet</text>
+  <text x="320" y="293" text-anchor="middle" font-size="10" fill="#d7f0e6">cleaning</text>
+  <rect x="420" y="240" width="160" height="62" rx="10" fill="#1a3d5c"/>
+  <text x="500" y="263" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">Defence Cyber</text>
+  <text x="500" y="280" text-anchor="middle" font-size="10" fill="#cfe0f0">Agency — military</text>
+  <text x="500" y="293" text-anchor="middle" font-size="10" fill="#cfe0f0">cyber ops</text>
+  <g stroke="#718096" stroke-width="1.5">
+    <line x1="320" y1="94" x2="110" y2="135" marker-end="url(#sec09-arrow)"/>
+    <line x1="320" y1="94" x2="320" y2="135" marker-end="url(#sec09-arrow)"/>
+    <line x1="320" y1="94" x2="530" y2="135" marker-end="url(#sec09-arrow)"/>
+  </g>
+  <text x="320" y="338" text-anchor="middle" font-size="11" fill="#718096" font-style="italic">MeitY · NTRO · MHA · MoD — multi-ministry framework</text>
+</svg>
+<div class="svg-caption">Figure 2: India's layered cyber security architecture — strategic coordination at the top, operational agencies for incident response, CII protection and cyber crime below.</div>
+</div>
+
+<section class="notes">
+<h2>Need for Cyber Security &amp; Critical Information Infrastructure (CII)</h2>
+<p>As essential services migrate online, a successful cyber attack can paralyse a nation without firing a shot. This makes <strong>Critical Information Infrastructure (CII)</strong> the highest-priority asset to defend.</p>
+<p>Under <strong>Section 70 of the IT Act 2000</strong>, CII is defined as a computer resource whose incapacitation or destruction would have a <em>debilitating impact on national security, economy, public health or safety</em>. The <strong>National Critical Information Infrastructure Protection Centre (NCIIPC)</strong>, operating under the <strong>NTRO</strong>, is the nodal agency for CII protection.</p>
+<h4>Critical Sectors Identified by NCIIPC</h4>
+<ul>
+<li><strong>Power &amp; energy</strong> — grids, generation, distribution (e.g., probing of Mumbai grid, 2020).</li>
+<li><strong>Banking, financial services &amp; insurance (BFSI)</strong> — payment systems, stock exchanges.</li>
+<li><strong>Telecom</strong> — networks, data centres, undersea cables.</li>
+<li><strong>Transport</strong> — railways, aviation, ports, traffic systems.</li>
+<li><strong>Government</strong> — strategic and public enterprise systems.</li>
+<li><strong>Health</strong> — hospitals and medical records (e.g., AIIMS Delhi ransomware, 2022).</li>
+</ul>
+<div class="callout green"><strong>Why it matters:</strong> Attacks on CII blur the line between cyber crime and cyber warfare. A grid blackout or a banking-system freeze can have strategic, cascading effects — making CII protection central to national security, not merely IT hygiene.</div>
+</section>
+
+<section class="notes">
+<h2>Cyber Terrorism</h2>
+<p>Cyber terrorism is the use of cyberspace by terrorist groups or their sponsors to conduct politically or ideologically motivated attacks that cause death, large-scale disruption or widespread fear. It also includes the use of the internet for <strong>recruitment, radicalisation, propaganda, financing and coordination</strong>.</p>
+<h4>Threats to CII from Cyber Terrorism</h4>
+<ul>
+<li>Disabling power grids or water systems to cause mass disruption.</li>
+<li>Attacking financial systems to fund operations or destabilise the economy.</li>
+<li>Targeting transport/aviation control systems to endanger lives.</li>
+<li>Hacking communication networks to spread panic or coordinate physical attacks.</li>
+<li>Defacing or hijacking government platforms for propaganda.</li>
+</ul>
+<div class="callout"><strong>Convergence threat:</strong> Cyber terrorism amplifies physical terrorism — a coordinated cyber-physical attack (e.g., disabling emergency response during a bombing) is the worst-case scenario for security planners.</div>
+</section>
+
+<section class="notes">
+<h2>Government's Initiatives — Institutional Framework</h2>
+<table>
+<tr><th>Body</th><th>Role</th></tr>
+<tr><td><strong>CERT-In</strong> (Indian Computer Emergency Response Team)</td><td>National nodal agency for cyber incident response, alerts, forecasts and coordination; under MeitY. 2022 directions mandate 6-hour breach reporting.</td></tr>
+<tr><td><strong>NCIIPC</strong> (National Critical Information Infrastructure Protection Centre)</td><td>Nodal agency to protect Critical Information Infrastructure; operates under NTRO; designates &amp; secures critical sectors.</td></tr>
+<tr><td><strong>NCCC</strong> (National Cyber Coordination Centre)</td><td>Generates real-time situational awareness of cyber threats; screens metadata and coordinates among agencies.</td></tr>
+<tr><td><strong>Cyber Swachhta Kendra</strong> (Botnet Cleaning &amp; Malware Analysis Centre)</td><td>Detects botnet infections and provides free tools to clean infected devices; operated by CERT-In.</td></tr>
+<tr><td><strong>I4C</strong> (Indian Cyber Crime Coordination Centre)</td><td>MHA's framework to tackle cyber crime; runs the National Cyber Crime Reporting Portal and the <strong>1930</strong> financial-fraud helpline.</td></tr>
+<tr><td><strong>Defence Cyber Agency (DCyA)</strong></td><td>Tri-services agency under the Integrated Defence Staff for military cyber operations and defence of armed-forces networks.</td></tr>
+</table>
+</section>
+
+<section class="notes">
+<h2>Government's Initiatives — Legislative &amp; Policy Framework</h2>
+<table>
+<tr><th>Law / Policy</th><th>Year</th><th>Purpose</th></tr>
+<tr><td>Information Technology (IT) Act</td><td>2000 (amended 2008)</td><td>Primary cyber law; legal recognition of e-records &amp; e-signatures; offences (Sec 66, 70 CII, 72 privacy); 2008 amendment added cyber-terrorism &amp; data-protection provisions.</td></tr>
+<tr><td>National Cyber Security Policy</td><td>2013</td><td>First national framework to build a secure cyber ecosystem; aimed to create a workforce of 5 lakh cyber professionals; now largely outdated.</td></tr>
+<tr><td>National Cyber Security Strategy</td><td>2020 draft (pending)</td><td>Proposed updated strategy by Data Security Council; awaiting formal release as of 2026 — a recurring exam &amp; policy gap.</td></tr>
+<tr><td>IT (Intermediary Guidelines) Rules</td><td>2021 (amended 2022/23)</td><td>Due-diligence and grievance-redressal obligations for intermediaries; traceability, content takedown timelines, Grievance Appellate Committees.</td></tr>
+<tr><td>Digital Personal Data Protection (DPDP) Act</td><td>2023</td><td>India's first dedicated data-protection law; governs processing of digital personal data; rights of "Data Principals," duties of "Data Fiduciaries," Data Protection Board.</td></tr>
+</table>
+<div class="callout"><strong>Privacy journey:</strong> Justice K.S. Puttaswamy v. Union of India (2017) declared privacy a fundamental right → Justice B.N. Srikrishna Committee (2018) → PDP Bill 2019 (withdrawn 2022) → Digital Personal Data Protection Act, 2023. Trace this chain in answers on data protection.</div>
+</section>
+
+<div class="svg-wrap">
+<svg width="640" height="380" viewBox="0 0 640 380" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CIA triad and layered defence-in-depth model">
+  <defs>
+    <linearGradient id="sec09-core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a7a5a"/><stop offset="100%" stop-color="#2eaa7d"/>
+    </linearGradient>
+  </defs>
+  <text x="320" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#1a3d5c">CIA Triad &amp; Layered Defence-in-Depth</text>
+  <polygon points="320,60 250,180 390,180" fill="none" stroke="#1a3d5c" stroke-width="2"/>
+  <circle cx="320" cy="78" r="20" fill="#1a3d5c"/><text x="320" y="83" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">C</text>
+  <circle cx="255" cy="172" r="20" fill="#c47820"/><text x="255" y="177" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">I</text>
+  <circle cx="385" cy="172" r="20" fill="#1a7a5a"/><text x="385" y="177" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">A</text>
+  <text x="320" y="112" text-anchor="middle" font-size="10.5" fill="#1a202c">Confidentiality</text>
+  <text x="230" y="205" text-anchor="middle" font-size="10.5" fill="#1a202c">Integrity</text>
+  <text x="410" y="205" text-anchor="middle" font-size="10.5" fill="#1a202c">Availability</text>
+  <text x="320" y="148" text-anchor="middle" font-size="11" font-weight="700" fill="#1a3d5c">CIA</text>
+  <text x="500" y="60" text-anchor="middle" font-size="13" font-weight="700" fill="#1a3d5c">Defence Layers</text>
+  <g font-size="11" fill="#1a202c">
+    <rect x="430" y="74" width="180" height="26" rx="5" fill="#e8f0fb"/><text x="440" y="91">1. End-user awareness</text>
+    <rect x="430" y="106" width="180" height="26" rx="5" fill="#e8f0fb"/><text x="440" y="123">2. Application security</text>
+    <rect x="430" y="138" width="180" height="26" rx="5" fill="#e8f0fb"/><text x="440" y="155">3. Network security</text>
+    <rect x="430" y="170" width="180" height="26" rx="5" fill="#e8f0fb"/><text x="440" y="187">4. Data / information</text>
+    <rect x="430" y="202" width="180" height="26" rx="5" fill="#e8f0fb"/><text x="440" y="219">5. Operational security</text>
+  </g>
+  <rect x="30" y="250" width="580" height="100" rx="10" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="320" y="274" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1a3d5c">Defence-in-Depth Principle</text>
+  <text x="320" y="298" text-anchor="middle" font-size="11.5" fill="#1a202c">Multiple, overlapping layers — if one fails, others contain the breach.</text>
+  <text x="320" y="320" text-anchor="middle" font-size="11.5" fill="#1a202c">No single control is sufficient; the human layer is the weakest link.</text>
+  <text x="320" y="342" text-anchor="middle" font-size="11.5" fill="#718096" font-style="italic">Prevent → Detect → Respond → Recover</text>
+</svg>
+<div class="svg-caption">Figure 3: The CIA triad sits at the core; defence-in-depth wraps it in overlapping layers so that the failure of one control does not compromise the whole system.</div>
+</div>
+
+<section class="notes">
+<h2>International Initiatives &amp; Governance</h2>
+<p>Cyberspace is borderless, so no nation can secure it alone. Several global bodies and instruments shape cyber norms:</p>
+<ul>
+<li><strong>Budapest Convention on Cybercrime (2001):</strong> the first international treaty on cyber crime, framed by the Council of Europe, enabling cross-border investigation and evidence sharing. <strong>India is not a signatory</strong> — it objects that (a) it was drafted without participation of non-European/developing states, and (b) provisions allowing foreign agencies to access data stored in India (trans-border access without consent) infringe national sovereignty. India favours a new treaty under the UN umbrella.</li>
+<li><strong>ITU (International Telecommunication Union):</strong> UN agency setting telecom/ICT standards and the Global Cybersecurity Index.</li>
+<li><strong>ICANN:</strong> manages the internet's domain name system (DNS) and IP address allocation — central to internet governance.</li>
+<li><strong>Internet Governance Forum (IGF):</strong> UN multi-stakeholder platform for policy dialogue on internet governance.</li>
+<li><strong>UN GGE &amp; OEWG:</strong> the Group of Governmental Experts and the Open-Ended Working Group develop norms for responsible state behaviour in cyberspace; India participates actively and backs a UN Convention on Cybercrime (adopted 2024).</li>
+</ul>
+<div class="callout blue"><strong>Exam tip:</strong> The "India is not a signatory to the Budapest Convention" point is high-yield — always pair it with India's sovereignty and data-access objections and its preference for a UN-led framework.</div>
+</section>
+
+<section class="notes">
+<h2>Challenges in Cyber Security</h2>
+<ul>
+<li><strong>Shortage of skilled manpower:</strong> a large deficit of trained cyber-security professionals against a vast and growing attack surface.</li>
+<li><strong>Attribution problem:</strong> attackers spoof identities, route through botnets/proxies and use the dark web — making it hard to prove who is responsible, especially for state-sponsored APTs.</li>
+<li><strong>Jurisdiction:</strong> attacks cross borders instantly, but laws and enforcement stop at national boundaries; mutual legal assistance is slow.</li>
+<li><strong>Rapidly evolving threats:</strong> zero-days, AI-driven malware and ransomware-as-a-service outpace static defences and outdated laws.</li>
+<li><strong>Low public awareness:</strong> weak password hygiene, susceptibility to phishing and the human layer remain the easiest entry points.</li>
+<li><strong>Imported hardware/software dependency:</strong> reliance on foreign tech and telecom equipment raises supply-chain and trust concerns.</li>
+<li><strong>Policy lag:</strong> the National Cyber Security Strategy is still pending; the 2013 policy is outdated.</li>
+</ul>
+</section>
+
+<section class="notes">
+<h2>Data Protection — DPDP Act 2023 &amp; Data Localisation</h2>
+<p>Data is the "new oil," and protecting personal data is now inseparable from cyber security. The <strong>Digital Personal Data Protection (DPDP) Act, 2023</strong> is India's first comprehensive data-protection statute, operationalised through draft DPDP Rules (2025).</p>
+<h4>Key Features of the DPDP Act 2023</h4>
+<ul>
+<li><strong>Data Principal &amp; Data Fiduciary:</strong> the individual whose data is processed vs. the entity deciding the purpose/means of processing.</li>
+<li><strong>Consent-based processing:</strong> personal data may be processed only with free, informed consent (or for certain "legitimate uses").</li>
+<li><strong>Rights of individuals:</strong> right to access, correction, erasure and grievance redressal; right to nominate.</li>
+<li><strong>Significant Data Fiduciaries:</strong> additional obligations (Data Protection Officer, audits, impact assessments) for high-volume/high-risk processors.</li>
+<li><strong>Data Protection Board of India:</strong> adjudicates breaches and imposes penalties (up to ₹250 crore).</li>
+<li><strong>Cross-border transfer:</strong> allowed except to countries restricted by the government ("blacklist" model) — a relaxation from earlier localisation-heavy drafts.</li>
+<li><strong>Children's data:</strong> verifiable parental consent required; bar on targeted advertising to children.</li>
+</ul>
+<h4>The Data Localisation Debate</h4>
+<p><strong>For localisation:</strong> easier law-enforcement access, protection from foreign surveillance, data sovereignty and domestic data-centre growth. <strong>Against:</strong> higher compliance costs, fragmentation of the global internet, possible trade friction, and limited security benefit if cyber hygiene is poor. The DPDP Act adopted a lighter "negative list" approach rather than mandatory localisation.</p>
+</section>
+
+<section class="notes">
+<h2>5G, AI and the Future of Cyber Security (to 2026)</h2>
+<h3>5G and Cyber Security</h3>
+<ul>
+<li>5G's massive device density (IoT) and software-defined, virtualised networks vastly expand the attack surface.</li>
+<li>Supply-chain and trust concerns over network equipment drove India's "trusted source/trusted product" telecom security directive.</li>
+<li>Critical sectors riding on 5G (autonomous transport, smart grids, telemedicine) raise the stakes of any breach.</li>
+</ul>
+<h3>AI and Cyber Security — A Double-Edged Sword</h3>
+<ul>
+<li><strong>Offence:</strong> AI enables sophisticated, automated phishing, deepfakes, polymorphic malware and faster vulnerability discovery.</li>
+<li><strong>Defence:</strong> AI/ML powers anomaly detection, real-time threat hunting, automated response and predictive security.</li>
+<li><strong>Deepfakes:</strong> AI-generated fake audio/video pose threats to elections, identity verification and financial fraud — a top 2026 concern.</li>
+</ul>
+<div class="callout"><strong>Way forward:</strong> Operationalise a National Cyber Security Strategy, scale the cyber-skilled workforce, fully implement the DPDP Act, harden CII, deepen public-private and international cooperation, and build "security-by-design" and AI-resilience into critical systems.</div>
+</section>
+
+<section class="notes">
+<h2>Current Affairs Snapshot (up to June 2026)</h2>
+<ul>
+<li><strong>AIIMS Delhi ransomware attack (Nov–Dec 2022):</strong> crippled hospital systems for days, exposing CII vulnerability in the health sector — a flagship case study for answers.</li>
+<li><strong>DPDP Act 2023 &amp; Draft Rules (2025):</strong> India's data-protection regime moving toward implementation; Data Protection Board being operationalised.</li>
+<li><strong>I4C &amp; the 1930 helpline:</strong> the citizen financial-cyber-fraud helpline and the National Cyber Crime Reporting Portal have enabled large-scale freezing of defrauded funds; I4C declared a national agency.</li>
+<li><strong>Deepfake threat:</strong> rising AI-generated impersonation prompted advisories and proposed labelling rules for synthetic content.</li>
+<li><strong>AI in cyber:</strong> both attackers and defenders rapidly adopting AI; focus on AI safety and security guidelines.</li>
+<li><strong>National Cyber Security Strategy:</strong> still awaited as of 2026 — a persistent policy gap repeatedly flagged.</li>
+<li><strong>Rising ransomware &amp; cyber fraud:</strong> India among the most targeted nations; "digital arrest" scams a major fraud trend addressed by I4C.</li>
+</ul>
+</section>
+
+<!-- MAINS PYQ -->
+<section class="notes" id="mains-pyq">
+<h2>Previous Year Questions — Mains with Model Answer Structures <span class="mains-tag">MAINS</span></h2>
+<div class="callout"><strong>Mains-only — PYQs up to UPSC Mains 2025.</strong> Each model answer is a structured outline. Flesh out each point into 2–3 sentences in the exam. Attribute year/paper accurately.</div>
+
+<div class="pyq-item">
+  <div class="pyq-meta"><span class="pyq-year">UPSC GS3 2022</span> 15 marks · 250 words</div>
+  <p class="pyq-q">Q. "What are the different elements of cyber security? Keeping in view the challenges in cyber security, examine the extent to which India has successfully developed a comprehensive National Cyber Security Strategy."</p>
+  <div class="model-answer">
+    <h5>Model Answer Structure</h5>
+    <ol>
+      <li><strong>Intro:</strong> Define cyber security and the CIA triad; note its centrality to Digital India.</li>
+      <li><strong>Elements:</strong> network, application, information/data, operational and end-user security (defence-in-depth).</li>
+      <li><strong>Challenges:</strong> skilled-manpower shortage, attribution, jurisdiction, evolving threats (ransomware, zero-days), low awareness, hardware dependence.</li>
+      <li><strong>India's efforts:</strong> National Cyber Security Policy 2013, CERT-In, NCIIPC, NCCC, I4C, IT Act 2000, DPDP Act 2023.</li>
+      <li><strong>Critical gap:</strong> the National Cyber Security Strategy (2020 draft) remains unreleased — fragmentation across ministries, no unified strategy.</li>
+      <li><strong>Way forward:</strong> finalise the Strategy, scale workforce, harden CII, implement DPDP, security-by-design, international cooperation.</li>
+      <li><strong>Conclusion:</strong> India has built institutions but lacks a single, comprehensive strategy — the framework is robust in parts yet incomplete.</li>
+    </ol>
+  </div>
+</div>
+
+<div class="pyq-item">
+  <div class="pyq-meta"><span class="pyq-year">UPSC GS3 2021</span> 15 marks · 250 words</div>
+  <p class="pyq-q">Q. "Keeping in view India's internal security, analyse the impact of cross-border cyber attacks. Also discuss defensive measures against these sophisticated attacks."</p>
+  <div class="model-answer">
+    <h5>Model Answer Structure</h5>
+    <ol>
+      <li><strong>Intro:</strong> Cyberspace as the fifth domain of warfare; cross-border attacks blur cyber crime and cyber warfare.</li>
+      <li><strong>Nature:</strong> state-sponsored APTs, espionage, attacks on CII (power, banking, defence), disinformation.</li>
+      <li><strong>Impact on internal security:</strong> CII disruption (grid, health — AIIMS 2022), data theft, financial destabilisation, radicalisation, attribution difficulty.</li>
+      <li><strong>Why sophisticated:</strong> zero-days, supply-chain attacks, deniability, anonymity via dark web/botnets.</li>
+      <li><strong>Defensive measures — institutional:</strong> CERT-In, NCIIPC, NCCC, I4C, Defence Cyber Agency.</li>
+      <li><strong>Defensive measures — technical &amp; legal:</strong> CII hardening, threat intelligence, IT Act, DPDP Act, trusted-source telecom, capacity building.</li>
+      <li><strong>Conclusion:</strong> need a comprehensive strategy, deterrence, resilience and international cooperation.</li>
+    </ol>
+  </div>
+</div>
+
+<div class="pyq-item">
+  <div class="pyq-meta"><span class="pyq-year">UPSC GS3 2017</span> 15 marks · 250 words</div>
+  <p class="pyq-q">Q. "Discuss the potential threats of Cyber attack and the security framework to prevent it."</p>
+  <div class="model-answer">
+    <h5>Model Answer Structure</h5>
+    <ol>
+      <li><strong>Intro:</strong> Define cyber attack and the rising digital attack surface in India.</li>
+      <li><strong>Potential threats:</strong> malware, ransomware, phishing, DDoS, attacks on CII, espionage, cyber terrorism, data theft.</li>
+      <li><strong>Consequences:</strong> economic loss, CII paralysis, national-security risk, privacy breach, loss of trust.</li>
+      <li><strong>Security framework — institutional:</strong> CERT-In, NCIIPC, NCCC, Cyber Swachhta Kendra.</li>
+      <li><strong>Security framework — legal/policy:</strong> IT Act 2000, National Cyber Security Policy 2013, IT Rules.</li>
+      <li><strong>Framework — preventive:</strong> defence-in-depth, audits, awareness, encryption, international cooperation.</li>
+      <li><strong>Conclusion:</strong> a multi-layered, whole-of-nation framework balancing security with digital growth.</li>
+    </ol>
+  </div>
+</div>
+
+<div class="pyq-item">
+  <div class="pyq-meta"><span class="pyq-year">UPSC GS3 2013</span> 10 marks · 200 words</div>
+  <p class="pyq-q">Q. "What is digital signature? What does its authentication mean? Give various salient built-in features of a digital signature."</p>
+  <div class="model-answer">
+    <h5>Model Answer Structure</h5>
+    <ol>
+      <li><strong>Intro:</strong> Define digital signature — a cryptographic technique (public-key/PKI) to authenticate the origin and integrity of an electronic document; legally recognised under the IT Act 2000.</li>
+      <li><strong>Authentication meaning:</strong> verifies the signer's identity and that the message has not been altered (non-repudiation + integrity).</li>
+      <li><strong>How it works:</strong> private key signs, public key verifies; uses hash functions and digital certificates issued by a Certifying Authority.</li>
+      <li><strong>Salient features:</strong> authentication, integrity, non-repudiation, confidentiality (with encryption), time-stamping, tamper-evidence.</li>
+      <li><strong>Relevance:</strong> underpins e-governance, e-commerce, secure transactions and the CIA triad.</li>
+      <li><strong>Conclusion:</strong> digital signatures are foundational to trust in cyberspace and India's digital economy.</li>
+    </ol>
+  </div>
+</div>
+
+</section>
+
+</div>
+<aside>
+<div class="aside-sticky">
+
+<div class="aside-card">
+<h4>⚡ Quick Revision</h4>
+<ul>
+<li><strong>CIA triad:</strong> Confidentiality · Integrity · Availability</li>
+<li><strong>Attacks:</strong> malware, ransomware, phishing, MITM, SQLi, DDoS, social engineering, supply-chain</li>
+<li><strong>Components:</strong> network · application · information · operational · end-user</li>
+<li><strong>CII nodal agency:</strong> NCIIPC (under NTRO)</li>
+<li><strong>Incident response:</strong> CERT-In (under MeitY)</li>
+<li><strong>Cyber crime:</strong> I4C + helpline 1930 (MHA)</li>
+</ul>
+</div>
+
+<div class="aside-card">
+<h4>📌 Must-Know Facts</h4>
+<ul>
+<li><strong>CERT-In:</strong> national nodal incident-response agency; 6-hr breach reporting (2022)</li>
+<li><strong>DPDP Act 2023:</strong> India's first data-protection law; penalties up to ₹250 cr</li>
+<li><strong>I4C &amp; 1930:</strong> cyber-crime portal &amp; financial-fraud helpline</li>
+<li><strong>Budapest Convention:</strong> India is NOT a signatory (sovereignty / data-access objections)</li>
+<li><strong>AIIMS Delhi:</strong> ransomware attack, 2022</li>
+<li><strong>Privacy:</strong> fundamental right — Puttaswamy (2017)</li>
+</ul>
+</div>
+
+<div class="aside-card">
+<h4>🏛️ Key Bodies</h4>
+<ul>
+<li><strong>CERT-In</strong> — incident response</li>
+<li><strong>NCIIPC</strong> — CII protection</li>
+<li><strong>NCCC</strong> — threat awareness</li>
+<li><strong>I4C</strong> — cyber crime (MHA)</li>
+<li><strong>Cyber Swachhta Kendra</strong> — botnet cleaning</li>
+<li><strong>Defence Cyber Agency</strong> — military cyber ops</li>
+</ul>
+</div>
+
+<div class="aside-card">
+<h4>✍️ Answer Keywords</h4>
+<ul>
+<li>Fifth domain of warfare</li>
+<li>CIA triad / defence-in-depth</li>
+<li>Critical Information Infrastructure (CII)</li>
+<li>Attribution &amp; jurisdiction problem</li>
+<li>Security-by-design</li>
+<li>Whole-of-nation cyber resilience</li>
+</ul>
+</div>
+
+</div>
+</aside>
+</div>
+</div>

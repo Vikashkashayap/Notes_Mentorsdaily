@@ -9,6 +9,7 @@ export const SUBJECT_SLUG: Record<SubjectKey, string> = {
   culture: "art-culture",
   geo: "geography",
   worldgeo: "world-geography",
+  society: "society",
   economy: "economy",
   environment: "environment",
   science: "science-technology",
