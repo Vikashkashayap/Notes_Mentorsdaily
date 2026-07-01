@@ -9,6 +9,8 @@ const nextConfig: NextConfig = {
       { source: "/upsc-notes/ancient", destination: "/ancient-history", permanent: true },
       { source: "/upsc-notes/medieval", destination: "/medieval-history", permanent: true },
       { source: "/upsc-notes/history", destination: "/modern-history", permanent: true },
+      { source: "/upsc-notes/worldhistory", destination: "/world-history", permanent: true },
+      { source: "/upsc-notes/world", destination: "/world-history", permanent: true },
       { source: "/upsc-notes/culture", destination: "/art-culture", permanent: true },
       { source: "/upsc-notes/geo", destination: "/geography", permanent: true },
       { source: "/upsc-notes/worldgeo", destination: "/world-geography", permanent: true },

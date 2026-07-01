@@ -1,0 +1,867 @@
+<!-- modern-topic03 — auto-imported from modern-topic03-new-states-18th-century-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#8b1a2a;
+  --brand-blue-dark:#5a0e1a;
+  --brand-blue-light:#fdf0f2;
+  --brand-orange:#c9940a;
+  --brand-orange-light:#fff8e8;
+  --green:#2e7a47;
+  --green-light:#eaf5ef;
+  --text-dark:#1a1a2e;
+  --text-mid:#444;
+  --text-light:#888;
+  --border:#e2e8f0;
+  --bg:#fafaf8;
+  --card:#ffffff;
+  --accent:#fdf5f6;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Inter','Segoe UI',-apple-system,sans-serif;color:var(--text-dark);background:var(--bg);line-height:1.65;font-size:16px}
+.topnav{background:var(--brand-blue-dark);color:#fff;padding:14px 28px;position:sticky;top:0;z-index:50;box-shadow:0 2px 6px rgba(0,0,0,0.22);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.nav-logo{font-size:20px;font-weight:800;color:#fff;text-decoration:none;letter-spacing:-0.5px}
+.nav-logo span{color:var(--brand-orange)}
+.nav-pills{display:flex;flex-wrap:wrap;gap:7px}
+.pill{background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.22);color:#fff;padding:5px 12px;border-radius:99px;font-size:12px;font-weight:500}
+.hero{background:linear-gradient(135deg,#8b1a2a 0%,#5a0e1a 55%,#3a0810 100%);color:#fff;padding:54px 28px 44px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(201,148,10,0.22),transparent 55%);pointer-events:none}
+.hero-inner{max-width:1240px;margin:0 auto;position:relative;z-index:2}
+.breadcrumb{font-size:13px;color:rgba(255,255,255,0.65);margin-bottom:14px}
+.hero h1{font-size:38px;margin:0 0 14px;font-weight:800;letter-spacing:-0.5px;line-height:1.18}
+.hero-sub{font-size:17px;color:rgba(255,255,255,0.80);max-width:880px;margin:0 0 20px;line-height:1.6}
+.hero-pills{display:flex;flex-wrap:wrap;gap:8px}
+.hero-pills span{background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.22);color:#fff;padding:6px 13px;border-radius:99px;font-size:12.5px;font-weight:500}
+.layout{display:grid;grid-template-columns:1fr 320px;gap:28px;max-width:1240px;margin:28px auto;padding:0 28px}
+@media(max-width:1024px){.layout{grid-template-columns:1fr;padding:0 18px}}
+main{min-width:0}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 22px;margin-bottom:22px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--brand-blue);font-weight:700}
+.toc ol{margin:0;padding-left:22px;font-size:14.5px;column-count:2;column-gap:24px}
+@media(max-width:680px){.toc ol{column-count:1}}
+.toc li{margin:4px 0;break-inside:avoid}
+.toc a{color:var(--text-dark);text-decoration:none}
+.toc a:hover{color:var(--brand-blue);text-decoration:underline}
+.concept-box{background:linear-gradient(135deg,#fdf5f6 0%,#fde8ec 100%);border-left:5px solid var(--brand-orange);border-radius:10px;padding:22px 26px;margin-bottom:26px;box-shadow:0 2px 6px rgba(201,148,10,0.10)}
+.concept-box h3{margin:0 0 10px;font-size:18px;color:var(--brand-blue-dark);font-weight:700}
+.concept-box p{margin:0 0 10px;font-size:15px;color:#2a1010}
+.concept-box ul{margin:8px 0 0;padding-left:22px}
+.concept-box li{margin:5px 0;font-size:14.5px;color:#2a1010}
+.notes{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:26px 30px;margin-bottom:22px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.notes h2{font-size:24px;color:var(--brand-blue-dark);margin:0 0 14px;padding-bottom:10px;border-bottom:2px solid var(--accent);font-weight:700}
+.notes h3{font-size:18px;color:var(--brand-blue);margin:22px 0 10px;font-weight:700}
+.notes h4{font-size:15.5px;color:var(--brand-blue-dark);margin:16px 0 8px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px}
+.notes p{margin:0 0 12px}
+.notes ul,.notes ol{margin:8px 0 14px;padding-left:24px}
+.notes li{margin:5px 0}
+.notes strong{color:var(--brand-blue-dark)}
+.notes em{color:#7a4d0a;font-style:italic}
+.callout{background:var(--brand-blue-light);border-left:4px solid var(--brand-blue);padding:14px 18px;border-radius:6px;margin:14px 0;font-size:14.5px}
+.callout.gold{background:var(--brand-orange-light);border-left-color:var(--brand-orange)}
+.callout.green{background:var(--green-light);border-left-color:var(--green)}
+.callout.warn{background:#fef0e6;border-left-color:#c25e1c}
+.tbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+.tbl th,.tbl td{border:1px solid var(--border);padding:8px 11px;text-align:left;vertical-align:top}
+.tbl th{background:var(--brand-blue);color:#fff;font-weight:600}
+.tbl tr:nth-child(even) td{background:#fdf5f6}
+.pyq{background:#fff;border:1px solid var(--border);border-left:4px solid var(--brand-orange);border-radius:6px;padding:12px 16px;margin:10px 0;font-size:14.5px}
+.pyq .year{display:inline-block;background:var(--brand-orange);color:#fff;padding:2px 9px;border-radius:99px;font-size:12px;font-weight:600;margin-bottom:6px}
+.revision{background:linear-gradient(135deg,#5a0e1a 0%,#8b1a2a 100%);color:#fff;border-radius:12px;padding:26px 30px;margin-bottom:22px}
+.revision h3{color:var(--brand-orange);margin:0 0 14px;font-size:20px}
+.revision ol{padding-left:22px;margin:0}
+.revision li{margin:6px 0;font-size:14.5px;color:#f5d0d5}
+aside{min-width:0}
+.widget{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:18px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.widget h4{margin:0 0 10px;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--brand-blue);font-weight:700;border-bottom:1px solid var(--border);padding-bottom:7px}
+.widget .miniref{font-size:13px;list-style:none;padding:0;margin:0}
+.widget .miniref li{margin:5px 0}
+.bar{display:flex;align-items:center;gap:8px;margin:6px 0;font-size:13px}
+.bar .lbl{width:96px;color:var(--text-mid)}
+.bar .track{flex:1;height:7px;background:#eee;border-radius:99px;overflow:hidden}
+.bar .fill{height:100%;background:linear-gradient(90deg,var(--brand-orange),#9a7008);border-radius:99px}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tags span{background:var(--brand-blue-light);color:var(--brand-blue);padding:3px 9px;border-radius:99px;font-size:11.5px;font-weight:500}
+.related{list-style:none;padding:0;margin:0;font-size:13.5px}
+.related li{margin:6px 0}
+.related a{color:var(--brand-blue);text-decoration:none;font-weight:500}
+.related a:hover{text-decoration:underline}
+.quiz{font-size:13.5px}
+.quiz details{margin:7px 0;border-bottom:1px dashed var(--border);padding-bottom:7px}
+.quiz summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark)}
+.quiz p{margin:6px 0 0;color:var(--text-mid);font-size:13px}
+footer{background:var(--brand-blue-dark);color:#f5d0d5;padding:24px 28px;text-align:center;font-size:13px;margin-top:34px}
+footer strong{color:#fff}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="hero">
+  <div class="hero-inner">
+    <div class="breadcrumb">Home &rsaquo; UPSC Notes &rsaquo; Modern History &rsaquo; Topic 03</div>
+    <h1>Emergence of New States in the 18th Century — Complete UPSC Notes</h1>
+    <p class="hero-sub">Bengal &middot; Awadh &middot; Hyderabad &middot; Mysore &middot; Marathas &middot; Sikhs &middot; Jats &middot; Rajputs &middot; Travancore &middot; Rohillas &middot; 1707–1800</p>
+    <div class="hero-pills">
+      <span>Successor States</span>
+      <span>Rebel States</span>
+      <span>Independent Kingdoms</span>
+      <span>Hyder Ali &amp; Tipu</span>
+      <span>Maratha Confederacy</span>
+      <span>Ranjit Singh</span>
+    </div>
+  </div>
+</div>
+<div class="layout">
+<main>
+
+<div class="toc">
+<h3>On this page</h3>
+<ol>
+<li><a href="#concept">Conceptual Clarity</a></li>
+<li><a href="#s1">Three Categories of New States</a></li>
+<li><a href="#s2">Bengal — Murshid Quli to Siraj-ud-Daulah</a></li>
+<li><a href="#s3">Awadh — Saadat Khan to Asaf-ud-Daulah</a></li>
+<li><a href="#s4">Hyderabad — The Asaf Jahis</a></li>
+<li><a href="#s5">Mysore under the Wadiyars</a></li>
+<li><a href="#s6">Hyder Ali (1761–82)</a></li>
+<li><a href="#s7">Tipu Sultan (1782–99)</a></li>
+<li><a href="#s8">Travancore — Marthanda Varma</a></li>
+<li><a href="#s9">Rajput States in the 18th Century</a></li>
+<li><a href="#s10">The Maratha State after Shivaji</a></li>
+<li><a href="#s11">The Peshwa Era (1713–61)</a></li>
+<li><a href="#s12">The Maratha Confederacy</a></li>
+<li><a href="#s13">Mahadji Scindia &amp; Nana Phadnavis</a></li>
+<li><a href="#s14">Sikh Rise — Banda to the Misls</a></li>
+<li><a href="#s15">Ranjit Singh's Lahore Kingdom</a></li>
+<li><a href="#s16">Jats of Bharatpur — Suraj Mal</a></li>
+<li><a href="#s17">Rohillas &amp; the Afghan Belt</a></li>
+<li><a href="#s18">Common Features of 18th Century States</a></li>
+<li><a href="#s19">Why They Could Not Unite</a></li>
+<li><a href="#s20">Historiography &amp; Bridge to British Conquest</a></li>
+<li><a href="#pyq">Previous Year Questions</a></li>
+<li><a href="#revision">15 Must-Know Facts</a></li>
+</ol>
+</div>
+
+<div class="concept-box" id="concept">
+<h3>Why this topic matters for UPSC</h3>
+<p>The 18th century in India was not a "dark age" but a period of <strong>creative political re-formation</strong>. As Mughal authority retreated, more than a dozen polities — some inheriting Mughal forms, some born in revolt, some entirely new — rose to fill the vacuum. UPSC tests this topic on three axes:</p>
+<ul>
+<li><strong>Prelims (factual):</strong> Founders, capitals, key reforms, and battles. Murshid Quli Khan (1717), Saadat Khan (1722), Nizam-ul-Mulk (1724), Hyder Ali (Mysore, 1761), Marthanda Varma (Travancore, 1741), Ranjit Singh (Lahore, 1799).</li>
+<li><strong>Mains GS-I (analytical):</strong> "Discuss the common features of the 18th-century successor states" and "Why did they fail to unite against the British?" — perennial 15-mark prompts.</li>
+<li><strong>Historiographical:</strong> The shift from the "dark century" view (W.W. Hunter; older Bipan Chandra) to the "regional restructuring" view (Muzaffar Alam, C.A. Bayly, Christopher Bayly's <em>portfolio capitalists</em>) — the modern consensus is that the 18th century was a dynamic, not stagnant, period.</li>
+</ul>
+</div>
+
+<section class="notes" id="s1">
+<h2>1. Three Categories of New States</h2>
+<p>Indian historians (after Bipan Chandra and Satish Chandra) classify 18th-century Indian states into <strong>three categories</strong> by origin. This typology is the single most useful organising framework for the chapter — and an excellent opening line for Mains.</p>
+
+<table class="tbl">
+<tr><th>Category</th><th>Origin</th><th>Examples</th></tr>
+<tr><td><strong>Successor States</strong></td><td>Mughal provinces that broke away under their Mughal-appointed governors; retained Mughal administrative forms and nominal loyalty.</td><td>Bengal (Murshid Quli Khan, 1717), Awadh (Saadat Khan, 1722), Hyderabad (Nizam-ul-Mulk, 1724)</td></tr>
+<tr><td><strong>Rebel / "New" States</strong></td><td>Polities that rose against Mughal authority, often led by zamindars or peasant communities; defined themselves <em>against</em> the empire.</td><td>Marathas, Sikhs (misls and later Ranjit Singh), Jats (Bharatpur), Afghans (Rohilkhand)</td></tr>
+<tr><td><strong>Independent Kingdoms</strong></td><td>Regions that had never been deeply integrated into the Mughal system, or where local dynasties asserted full sovereignty in the 18th-century vacuum.</td><td>Mysore (under Hyder Ali / Tipu Sultan), Travancore (Marthanda Varma), Rajput states</td></tr>
+</table>
+
+<div class="callout"><strong>Opening line for Mains:</strong> "The 18th century witnessed the rise of three kinds of states — successor (Bengal, Awadh, Hyderabad), rebel (Marathas, Sikhs, Jats), and independent (Mysore, Travancore) — each emerging from a different relationship with the declining Mughal authority."</div>
+</section>
+
+<section class="notes" id="s2">
+<h2>2. Bengal — Murshid Quli Khan to Siraj-ud-Daulah</h2>
+<p>Bengal was the wealthiest of the Mughal provinces and the most cleanly converted into an effectively independent successor state.</p>
+
+<h3>2.1 Murshid Quli Khan (1717–27)</h3>
+<ul>
+<li>Appointed <em>diwan</em> of Bengal in 1700; later <em>nazim</em> (governor) of Bengal, Bihar, Orissa from 1717.</li>
+<li>Shifted the capital from Dhaka to <strong>Murshidabad</strong> (named after him).</li>
+<li>Revenue reforms: introduced <em>ijaradari</em> (revenue farming) and the <em>mal-jasmani</em> system; reduced the number of jagirs by transferring most of Bengal's land to <em>khalisa</em> (crown land).</li>
+<li>Surplus revenue to Delhi was sent regularly — a rare instance of fiscal punctuality.</li>
+<li>Patronised the indigenous banking house of <strong>Jagat Seths</strong> at Murshidabad — who became the financial pillar of Bengal politics until Plassey.</li>
+</ul>
+
+<h3>2.2 Shuja-ud-Din (1727–39) &amp; Sarfaraz Khan (1739–40)</h3>
+<p>Smooth succession through Shuja-ud-Din (Murshid Quli's son-in-law). Sarfaraz Khan, who succeeded in 1739, was killed by Alivardi Khan at the Battle of Giria (1740).</p>
+
+<h3>2.3 Alivardi Khan (1740–56)</h3>
+<ul>
+<li>An able administrator who consolidated central control and defended Bengal from repeated Maratha incursions (1741–51) — the so-called <strong>"Bargi raids"</strong> by Raghuji Bhonsle of Nagpur. Maratha exactions extended into Bengal and Bihar.</li>
+<li>1751 treaty with the Marathas — Orissa ceded to Bhonsle in return for cessation of raids.</li>
+<li>Cautious toward European companies: warned his successor that "the English are like bees — you may have honey but not without their sting".</li>
+</ul>
+
+<h3>2.4 Siraj-ud-Daulah (1756–57)</h3>
+<ul>
+<li>Alivardi's grandson; succeeded at age 23.</li>
+<li>Conflict with English EIC over <em>dastak</em> abuse and fortifications at Calcutta; captured Calcutta (June 1756); the <em>"Black Hole of Calcutta"</em> episode (the figure of 123 deaths in J.Z. Holwell's narrative is now considered exaggerated).</li>
+<li>Defeated at the <strong>Battle of Plassey (23 June 1757)</strong> through the conspiracy of Mir Jafar, Jagat Seths, Rai Durlabh, and Omichand — engineered by Robert Clive.</li>
+<li>Captured and killed; Mir Jafar installed as puppet Nawab.</li>
+</ul>
+
+<div class="callout warn"><strong>Significance:</strong> Bengal is the only successor state that was destroyed by the EIC at the very moment of its consolidation. The Mughal mechanism (revenue surplus, banker support, jagirdari) had been replicated successfully — but the EIC's commercial penetration, combined with banker betrayal, ended the experiment in 1757–65.</div>
+</section>
+
+<section class="notes" id="s3">
+<h2>3. Awadh — Saadat Khan to Asaf-ud-Daulah</h2>
+<p>Awadh, sometimes called Oudh, was the second great successor state of the upper Gangetic plain.</p>
+
+<h3>3.1 Saadat Khan Burhan-ul-Mulk (1722–39)</h3>
+<ul>
+<li>Persian (Irani) noble; appointed governor of Awadh in 1722.</li>
+<li>Crushed local zamindar resistance; reorganised the revenue system; reduced influence of hereditary zamindars by introducing fresh revenue settlements.</li>
+<li>Committed suicide after Nadir Shah's invasion (1739) — sometimes attributed to humiliation after his role in the Karnal disaster.</li>
+</ul>
+
+<h3>3.2 Safdar Jung (1739–54)</h3>
+<ul>
+<li>Saadat Khan's nephew and son-in-law.</li>
+<li>Also served as <em>wazir</em> of the Mughal Empire under Muhammad Shah and Ahmad Shah Bahadur (1748–53).</li>
+<li>Allied with the Marathas and Jats against the Rohillas (First Rohilla War, 1751–52).</li>
+<li>Dismissed from the wazirate in 1753 by Ahmad Shah Bahadur; retreated to Awadh.</li>
+</ul>
+
+<h3>3.3 Shuja-ud-Daulah (1754–75)</h3>
+<ul>
+<li>Maintained Awadh's autonomy through the high tide of Mughal collapse.</li>
+<li>Hosted the fugitive emperor Shah Alam II.</li>
+<li>Defeated at <strong>Battle of Buxar (22 October 1764)</strong> — with Mir Qasim and Shah Alam II — by Hector Munro of the EIC.</li>
+<li><strong>Treaty of Allahabad (1765):</strong> Awadh retained, paid Rs 50 lakh war indemnity; ceded Allahabad and Kara to the emperor; became a "buffer state" for the EIC against Marathas and Afghans.</li>
+</ul>
+
+<h3>3.4 Asaf-ud-Daulah (1775–97)</h3>
+<ul>
+<li>Shifted the capital from Faizabad to <strong>Lucknow</strong> (1775) — beginning the Lucknow nawabi cultural florescence.</li>
+<li><strong>Treaty of Faizabad (1775)</strong> with the EIC — ceded Banaras to the Company; pension to the Bahu Begum.</li>
+<li>Famous for the Bara Imambara (built 1784 during the great famine as a relief work).</li>
+<li>Awadh became a model of <em>"composite culture"</em> — Hindu-Muslim, Persian-Urdu, Mughal-Indo-Persian syntheses.</li>
+</ul>
+
+<div class="callout"><strong>Awadh in UPSC:</strong> Awadh is the test case for the "subsidiary alliance" doctrine. Annexed under Lord Dalhousie in 1856 on charges of misgovernment — a key proximate cause of the 1857 Revolt.</div>
+</section>
+
+<section class="notes" id="s4">
+<h2>4. Hyderabad — The Asaf Jahi Dynasty</h2>
+<p>The largest and longest-surviving Mughal successor state — lasting from 1724 until 1948.</p>
+
+<h3>4.1 Nizam-ul-Mulk Asaf Jah I (1724–48)</h3>
+<ul>
+<li>Mir Qamaruddin Chin Qilich Khan — Turani noble; served briefly as Mughal wazir (1722–24).</li>
+<li>Returned to the Deccan as governor (1724) and effectively founded the independent Hyderabad state; nominal Mughal allegiance retained.</li>
+<li>Capital initially at Aurangabad, later transferred to Hyderabad.</li>
+<li>Fought the Marathas at <strong>Palkhed (1728)</strong> — defeated by Bajirao I; forced to recognise Maratha <em>chauth</em> claims in Deccan.</li>
+<li>Personally led the surrender to Nadir Shah at Karnal (1739).</li>
+</ul>
+
+<h3>4.2 Successors &amp; the Carnatic Connection</h3>
+<ul>
+<li>Nasir Jung (1748–50) and Muzaffar Jung (1750–51) — disputed succession; both killed in the Second Carnatic War, in which the French (Dupleix) and English supported rival claimants.</li>
+<li>Salabat Jung (1751–62) installed by the French (Bussy); later removed.</li>
+<li>Nizam Ali Khan (1762–1803) signed the first major <strong>Subsidiary Alliance (1798)</strong> with Lord Wellesley — Hyderabad became the model client state.</li>
+</ul>
+
+<h3>4.3 Character of the State</h3>
+<ul>
+<li>Combined Indo-Persian Mughal administrative forms with Deccani (Bahmani, Bijapur, Golconda) traditions.</li>
+<li>Significant Hindu nobility (Maharashtrian Brahmins and Marathas of the Deccan); the prime ministers (<em>diwans</em>) were often Hindu.</li>
+<li>Highly stratified society with Persian and Telugu-Urdu syntheses.</li>
+</ul>
+</section>
+
+<section class="notes" id="s5">
+<h2>5. Mysore — The Wadiyars before Hyder Ali</h2>
+<p>Mysore had been under the <strong>Wadiyar dynasty</strong> since the late 14th century. After the fall of Vijayanagar (1565), the Wadiyars expanded under <strong>Raja Wadiyar (1578–1617)</strong> and <strong>Chikka Devaraja Wadiyar (1672–1704)</strong>, who created a centralised state.</p>
+
+<h3>5.1 The Pre-Hyder Mysore</h3>
+<ul>
+<li>Capital at Srirangapatna.</li>
+<li>By the early 18th century, royal authority had weakened. Real power passed to the <em>dalavais</em> (commanders-in-chief), notably the brothers Devaraja and Nanjaraja in the 1740s–50s.</li>
+<li>The Wadiyar king Chikka Krishnaraja II (1734–66) was a figurehead.</li>
+</ul>
+
+<h3>5.2 The Rise of Hyder Ali</h3>
+<p>Hyder Ali, of Punjabi-Afghan ancestry but raised in Karnataka, entered Mysore service as a soldier under Dalavai Nanjaraja. He distinguished himself during the Second Carnatic War (1749–54), particularly at the siege of Devanahalli. By 1761 he had displaced the dalavais and become effective ruler — though he retained the Wadiyar puppet on the throne until his death.</p>
+</section>
+
+<section class="notes" id="s6">
+<h2>6. Hyder Ali (1761–82) — The Soldier-Statesman</h2>
+<p>Hyder Ali ruled Mysore from 1761 to 1782, transforming a peripheral kingdom into the most modern, militarily formidable Indian power of the late 18th century.</p>
+
+<h3>6.1 Reforms</h3>
+<ul>
+<li><strong>Military:</strong> Recruited French officers (under the influence of his alliance with Dupleix's successors); modern infantry on European lines; disciplined cavalry; the first systematic Indian use of <strong>iron-cased rockets</strong> in warfare.</li>
+<li><strong>Administrative:</strong> Centralised revenue collection; reduced power of poligars (local chieftains).</li>
+<li><strong>Diplomatic:</strong> Maintained the fiction of Wadiyar sovereignty; used the title <em>"Sarvadhikari"</em>.</li>
+</ul>
+
+<h3>6.2 The Anglo-Mysore Wars (Hyder's Phase)</h3>
+<table class="tbl">
+<tr><th>War</th><th>Years</th><th>Outcome</th></tr>
+<tr><td>First Anglo-Mysore War</td><td>1767–69</td><td>Hyder reached the gates of Madras; forced the EIC to sign the <strong>Treaty of Madras (1769)</strong> — mutual restitution and defensive alliance (which the EIC later refused to honour).</td></tr>
+<tr><td>Second Anglo-Mysore War</td><td>1780–84</td><td>Hyder invaded the Carnatic in alliance with the Nizam and the Marathas; major British defeat at <strong>Pollilur (1780)</strong>; Hyder died in 1782 mid-war; concluded by his son Tipu under the <strong>Treaty of Mangalore (1784)</strong> — status quo ante.</td></tr>
+</table>
+</section>
+
+<section class="notes" id="s7">
+<h2>7. Tipu Sultan (1782–99) — The Tiger of Mysore</h2>
+<p>Tipu Sultan, Hyder Ali's son, is arguably the most studied non-Mughal Indian ruler of the 18th century. His reign combined military innovation, diplomatic ambition, modernisation efforts, and a complex religious profile.</p>
+
+<h3>7.1 Reforms</h3>
+<ul>
+<li><strong>Land revenue:</strong> Tipu reduced the power of hereditary <em>poligars</em>; brought peasants under direct revenue assessment; mostly cash-based.</li>
+<li><strong>Trade:</strong> State monopoly over many commodities; established commercial agencies (<em>kothis</em>) in Pegu, Muscat, Constantinople, even Versailles.</li>
+<li><strong>Modernisation:</strong> Mint reform; new coinage; modern calendar; sent embassies to France (1787) and Ottoman Turkey.</li>
+<li><strong>Military:</strong> Continued and expanded Hyder's iron-cased rockets — captured British rockets are preserved at the Royal Artillery Museum, Woolwich; Congreve's later British rocket programme drew on them.</li>
+<li><strong>Religious policy:</strong> Complex. Patronised Sringeri Math (correspondence with the Shankaracharya survives); but campaigns in Malabar and Coorg involved forced conversions. Use this nuance for Mains.</li>
+</ul>
+
+<h3>7.2 Diplomacy</h3>
+<ul>
+<li>Sent embassies to <strong>Louis XVI of France (1787)</strong> seeking alliance.</li>
+<li>Joined the short-lived <em>Jacobin Club</em> of Srirangapatna (1797) — planted a "Tree of Liberty" and styled himself "Citizen Tipu".</li>
+<li>Sought Ottoman recognition and titles (1786–87).</li>
+</ul>
+
+<h3>7.3 The Last Wars</h3>
+<table class="tbl">
+<tr><th>War</th><th>Years</th><th>Outcome</th></tr>
+<tr><td>Third Anglo-Mysore War</td><td>1790–92</td><td>British (Cornwallis) + Nizam + Marathas vs Tipu. <strong>Treaty of Seringapatam (1792)</strong> — Tipu ceded half his kingdom (Malabar, Coorg, Dindigul, Baramahal), paid Rs 3.3 crore indemnity, sent two sons as hostages.</td></tr>
+<tr><td>Fourth Anglo-Mysore War</td><td>1799</td><td>Wellesley's pre-emptive war. Tipu killed defending Srirangapatna on <strong>4 May 1799</strong>. Mysore restored to the Wadiyars under EIC subsidiary alliance; Hyderabad and Marathas given share of territory.</td></tr>
+</table>
+
+<div class="callout gold"><strong>Tipu in historiography:</strong> Long contested. Imperial British accounts demonised him; Indian nationalist historians (Mohibbul Hasan, B. Sheik Ali) rehabilitated him as a moderniser. Contemporary scholarship (Kate Brittlebank, Susan Bayly) treats him as a complex ruler — innovative, ambitious, and at moments harsh — within the larger 18th-century context.</div>
+</section>
+
+<section class="notes" id="s8">
+<h2>8. Travancore — Marthanda Varma</h2>
+<p>The southernmost Indian kingdom that emerged as a centralised state in this period.</p>
+
+<h3>8.1 Marthanda Varma (1729–58)</h3>
+<ul>
+<li>Inherited a fragmented kingdom dominated by the <em>Ettara Yogam</em> (eight feudal chiefs) and the <em>pillamars</em>.</li>
+<li>Crushed the feudal opposition through systematic military campaigns.</li>
+<li>Defeated the Dutch East India Company at the <strong>Battle of Colachel (10 August 1741)</strong> — the first decisive defeat of a European naval/colonial power by an Indian ruler. The Dutch commander Eustachius de Lannoy was captured and entered Travancore service, modernising its army.</li>
+<li>Expanded Travancore territory to include most of Kerala south of Cochin.</li>
+<li>Dedicated the kingdom to Padmanabhaswamy (1750) — ruling thereafter as <em>"Padmanabha Dasa"</em>, servant of the deity.</li>
+</ul>
+
+<h3>8.2 Rama Varma "Dharma Raja" (1758–98)</h3>
+<ul>
+<li>Continued modernisation; resisted Tipu Sultan's invasion (1789–90) — built the famous <strong>Nedumkotta</strong> defensive lines.</li>
+<li>Allied with the EIC against Tipu — partial Subsidiary Alliance signed 1788, formalised 1805.</li>
+</ul>
+</section>
+
+<section class="notes" id="s9">
+<h2>9. Rajput States in the 18th Century</h2>
+<p>The 18th century was a period of internal weakness for the Rajputs despite their <em>de facto</em> independence from Delhi.</p>
+
+<ul>
+<li><strong>Amber (Jaipur):</strong> Sawai Jai Singh II (1700–43) — astronomer-king who built the Jantar Mantar observatories at Delhi, Jaipur, Mathura, Ujjain, and Varanasi. Founded <strong>Jaipur</strong> (1727); his court was a centre of mathematical and astronomical learning.</li>
+<li><strong>Marwar (Jodhpur):</strong> Maharaja Ajit Singh re-established Rajput independence post-Aurangzeb; killed by his son Bakht Singh (1724); subsequent succession disputes weakened the state.</li>
+<li><strong>Mewar (Udaipur):</strong> Reduced to relative weakness; Maratha and Pindari raids in the late 18th century forced reliance on the EIC.</li>
+<li><strong>Bundelkhand:</strong> Maharaja Chhatrasal Bundela; ceded part of his kingdom (Jhansi area) to the Marathas as gratitude for Bajirao I's help against Muhammad Khan Bangash.</li>
+</ul>
+
+<div class="callout warn"><strong>Why Rajputs declined:</strong> Persistent internecine succession wars; failure to modernise armies; victims of repeated Maratha and Pindari exactions; absence of pan-Rajput coordination. By 1818 most Rajput states had accepted the EIC's Subsidiary Alliance.</div>
+</section>
+
+<section class="notes" id="s10">
+<h2>10. The Maratha State after Shivaji</h2>
+<p>The Marathas were the most successful 18th-century rebel state, briefly the closest thing to an Indian successor to the Mughals.</p>
+
+<h3>10.1 Shivaji's Legacy (1627–80)</h3>
+<ul>
+<li>Crowned at Raigad in 1674; created an autonomous Maratha kingdom.</li>
+<li>Established the <em>Ashta Pradhan</em> council; revenue system based on <em>chauth</em> (1/4 of revenue) and <em>sardeshmukhi</em> (1/10).</li>
+<li>Naval establishment; coastal fortifications.</li>
+</ul>
+
+<h3>10.2 The 27-Year Mughal War (1681–1707)</h3>
+<ul>
+<li>Sambhaji captured and executed by Aurangzeb (1689).</li>
+<li>Rajaram and Tarabai continued the resistance from Jinji and the Western Ghats.</li>
+<li>The very campaign that was meant to crush the Marathas drained the Mughal Empire (the "Deccan ulcer").</li>
+</ul>
+
+<h3>10.3 Shahu's Release &amp; Civil War (1707–14)</h3>
+<ul>
+<li>Bahadur Shah I released Shahu (Sambhaji's son, captive since 1689) in 1707.</li>
+<li>Civil war between Shahu (based at Satara) and Tarabai (representing Rajaram's line, based at Kolhapur).</li>
+<li>Shahu prevailed with the help of <strong>Balaji Vishwanath</strong> (a Chitpavan Brahmin) — who was appointed Peshwa in 1713.</li>
+</ul>
+</section>
+
+<section class="notes" id="s11">
+<h2>11. The Peshwa Era (1713–61)</h2>
+<p>From 1713, real power within the Maratha state shifted from the Chhatrapati to the Peshwa. The Peshwaship became hereditary in the Bhat family of Chitpavan Brahmins from Shrivardhan.</p>
+
+<table class="tbl">
+<tr><th>Peshwa</th><th>Reign</th><th>Highlights</th></tr>
+<tr><td>Balaji Vishwanath</td><td>1713–20</td><td>Got Mughal recognition (1719) of Maratha <em>chauth</em> and <em>sardeshmukhi</em> over the six Deccan subahs. Helped the Sayyids depose Farrukhsiyar.</td></tr>
+<tr><td>Bajirao I</td><td>1720–40</td><td>The "Napoleon of India". Lightning northward campaigns. Defeated Nizam at <strong>Palkhed (1728)</strong>. Reached Delhi (1737); defeated Muhammad Khan Bangash; recovered Malwa and Bundelkhand. Distributed the realm among lieutenants — origin of the Maratha Confederacy.</td></tr>
+<tr><td>Balaji Bajirao (Nanasaheb)</td><td>1740–61</td><td>Maximum territorial extent. Marathas reached <strong>Attock (1758)</strong>. Annexed Malwa (1741). Tribute from Rajput states. Catastrophic defeat at <strong>Third Panipat (1761)</strong>; died of shock soon after.</td></tr>
+</table>
+
+<h3>11.1 Bajirao's Five Lieutenants — Origin of the Confederacy</h3>
+<p>Bajirao's strategy of devolving northward conquests to his trusted commanders created the five chief Maratha houses:</p>
+<ul>
+<li><strong>Peshwa</strong> at Pune — overall leadership.</li>
+<li><strong>Holkar</strong> at Indore — Malhar Rao Holkar (founder, d. 1766); later the regent Ahilyabai Holkar (1767–95) is celebrated for her temple-rebuilding programme across India.</li>
+<li><strong>Scindia (Shinde)</strong> at Gwalior — Ranoji Shinde (d. 1745); later Mahadji Scindia (d. 1794), the most powerful Maratha of the late 18th century.</li>
+<li><strong>Bhonsle</strong> at Nagpur — Raghuji Bhonsle (Bargi raids on Bengal, 1741–51).</li>
+<li><strong>Gaekwad</strong> at Baroda — Pilaji Gaekwad and successors.</li>
+</ul>
+</section>
+
+<section class="notes" id="s12">
+<h2>12. The Maratha Confederacy — After Panipat</h2>
+<p>After Panipat III (1761), the central Peshwa authority weakened; the five houses became autonomous regional powers loosely coordinated as the <em>Maratha Confederacy</em>.</p>
+
+<h3>12.1 Madhav Rao I (1761–72)</h3>
+<ul>
+<li>Restored Maratha power in north India.</li>
+<li>Defeated the Nizam in 1762 and 1763.</li>
+<li>Recovered Delhi in 1771; brought Shah Alam II back to Delhi under Maratha protection.</li>
+<li>Died young (27); his death is often called "a second Panipat" (Grant Duff).</li>
+</ul>
+
+<h3>12.2 The First Anglo-Maratha War (1775–82)</h3>
+<ul>
+<li>Triggered by the succession dispute over Madhav Rao II's regency — Raghunath Rao sought EIC support (Treaty of Surat, 1775).</li>
+<li>Bombay government's initiative led to disaster at <strong>Convention of Wadgaon (1779)</strong>.</li>
+<li>Warren Hastings intervened from Calcutta; war concluded inconclusively by the <strong>Treaty of Salbai (1782)</strong> — twenty years of Anglo-Maratha peace.</li>
+</ul>
+
+<h3>12.3 Second Anglo-Maratha War (1803–05)</h3>
+<ul>
+<li>After the <strong>Treaty of Bassein (1802)</strong> — Peshwa Baji Rao II accepted Subsidiary Alliance — the Maratha chiefs rejected it and were defeated piecemeal by Wellesley.</li>
+<li>Arthur Wellesley (later Wellington) won <strong>Assaye (Sept 1803)</strong> and <strong>Argaon (Nov 1803)</strong>; Lord Lake captured Delhi and Agra.</li>
+</ul>
+
+<h3>12.4 Third Anglo-Maratha War (1817–18)</h3>
+<ul>
+<li>Combined with the Pindari War; ended Maratha independence.</li>
+<li>Peshwaship abolished (1818); Baji Rao II pensioned to Bithur near Kanpur (his adopted son Nana Saheb later led the 1857 Revolt at Kanpur).</li>
+<li>Holkar, Scindia, Bhonsle, Gaekwad accepted Subsidiary Alliance.</li>
+</ul>
+</section>
+
+<section class="notes" id="s13">
+<h2>13. Mahadji Scindia &amp; Nana Phadnavis</h2>
+<p>The post-Panipat generation produced two outstanding Maratha figures whose names UPSC frequently tests.</p>
+
+<h3>13.1 Mahadji Scindia (1761–94)</h3>
+<ul>
+<li>Survived Panipat (escaped wounded).</li>
+<li>Reorganised his army on European lines under the French officer <strong>Comte de Boigne</strong> — disciplined infantry, modern artillery; the most formidable Indian army of the late 18th century.</li>
+<li>Restored Mughal authority in Delhi from 1771; the de facto Regent of the Mughal Empire.</li>
+<li>Awarded the title <em>Vakil-i-Mutlaq</em> ("plenipotentiary regent") by Shah Alam II (1784).</li>
+<li>Negotiated the favourable Treaty of Salbai (1782) ending the First Anglo-Maratha War.</li>
+</ul>
+
+<h3>13.2 Nana Phadnavis (1742–1800)</h3>
+<ul>
+<li>The "Maratha Machiavelli" — chief minister at Pune for nearly thirty years.</li>
+<li>Led the <em>Barabhai Council</em> (council of twelve) that effectively governed during Madhav Rao II's minority.</li>
+<li>Engineered the Maratha-Mysore-Nizam triple alliance against the British in the Second Anglo-Mysore War.</li>
+<li>His death in 1800 left a leadership vacuum that the Treaty of Bassein (1802) exploited.</li>
+</ul>
+
+<div class="callout"><strong>Famous British verdict:</strong> "With the death of Nana Phadnavis departed all the wisdom and moderation of the Maratha government." — Sir John Malcolm. UPSC favours this quotation.</div>
+</section>
+
+<section class="notes" id="s14">
+<h2>14. Sikh Rise — Banda Bahadur to the Misls</h2>
+
+<h3>14.1 Banda Singh Bahadur (1708–16)</h3>
+<ul>
+<li>Deputed by Guru Gobind Singh in 1708 from Nanded.</li>
+<li>Established the first Sikh political authority in Punjab; struck coins in the name of Guru Nanak and Guru Gobind Singh; introduced a new Nanakshahi calendar.</li>
+<li>Defeated Wazir Khan of Sirhind (1710) — the killer of Guru Gobind Singh's younger sons.</li>
+<li>Captured at Gurdas Nangal (1715) after long siege; executed at Delhi (1716) along with hundreds of Sikhs.</li>
+</ul>
+
+<h3>14.2 The Era of the Misls (c. 1716–99)</h3>
+<p>After Banda's execution, the Sikhs went underground, regrouping during the chaos of Abdali's invasions into twelve organised confederacies — the <strong>Misls</strong>:</p>
+<ul>
+<li>Bhangi, Ramgarhia, Kanhaiya, Nakai, Ahluwalia, Sukerchakia, Singh Krora, Phulkian, Faizullapuria, Dallewalia, Karor Singhia, Nishanwalia.</li>
+<li>Coordinated through the <strong>Sarbat Khalsa</strong> assembly at the Akal Takht, Amritsar — biannual meetings (Baisakhi and Diwali) that took collective decisions (<em>Gurmata</em>).</li>
+<li>The misls fought the Afghans during Abdali's invasions; after Abdali's withdrawal (1767), the misls effectively divided Punjab among themselves.</li>
+<li>The <strong>Dal Khalsa</strong> was the combined Sikh army.</li>
+</ul>
+
+<h3>14.3 Two Sikh Holocausts (Ghallugharas)</h3>
+<ul>
+<li><strong>Chhota Ghallughara (1746)</strong> — under Lakhpat Rai, governor of Lahore; about 7,000 Sikhs killed.</li>
+<li><strong>Vada Ghallughara (5 February 1762)</strong> — Abdali's massacre of Sikh families at Kup near Malerkotla; estimates run from 10,000 to 30,000 killed.</li>
+</ul>
+<p>Both massacres failed to crush the Sikhs and accelerated their political consolidation.</p>
+</section>
+
+<section class="notes" id="s15">
+<h2>15. Ranjit Singh's Lahore Kingdom (1799–1839)</h2>
+<p>Maharaja Ranjit Singh of the Sukerchakia misl is the towering Indian ruler of the early 19th century — the only one to keep the British south of the Sutlej for forty years.</p>
+
+<h3>15.1 Consolidation</h3>
+<ul>
+<li>Captured <strong>Lahore (1799)</strong> from the Bhangi misl; took the title Maharaja in 1801.</li>
+<li>Took Amritsar (1802) — controlled both the political and the religious capital.</li>
+<li>Subjugated the cis-Sutlej misls — until the <strong>Treaty of Amritsar (1809)</strong> with the EIC fixed the Sutlej as the boundary between Sikh and British territories.</li>
+<li>Conquered Multan (1818), Kashmir (1819), Peshawar (1834) — extended his realm from the Sutlej to the Khyber.</li>
+</ul>
+
+<h3>15.2 Reforms</h3>
+<ul>
+<li>Modern army (the <em>Fauj-i-Khas</em>) trained by French and Italian officers — <strong>Ventura, Allard, Avitabile, Court</strong> — modelled on Napoleonic infantry.</li>
+<li>Religious tolerance: Hindu and Muslim officials in high positions (Diwan Mokham Chand, Faqir Azizuddin, Dewan Sawan Mal).</li>
+<li>Patronised the Golden Temple (rebuilt with marble and gold plating, 1830).</li>
+<li>Possessed the <strong>Koh-i-Noor</strong> (acquired from Shah Shuja, 1813) — passed to the British after the Second Anglo-Sikh War.</li>
+</ul>
+
+<h3>15.3 After Ranjit Singh</h3>
+<ul>
+<li>Successor disputes (1839–45); two Anglo-Sikh Wars (1845–46 and 1848–49); Punjab annexed by Dalhousie in 1849.</li>
+<li>Covered in detail in Modern Topic 04.</li>
+</ul>
+
+<div class="callout green"><strong>Why Ranjit Singh stands out:</strong> He alone among 18th–19th century rulers built a modern army that could match the EIC; alone preserved Indian sovereignty in the north-west for forty years; alone died as an independent sovereign (1839) before his state succumbed.</div>
+</section>
+
+<section class="notes" id="s16">
+<h2>16. Jats of Bharatpur — Suraj Mal</h2>
+<p>The Jat peasantry of the Mathura-Agra-Delhi region rebelled repeatedly against the Mughals from the 1660s. Out of these revolts grew the Jat state of Bharatpur.</p>
+
+<ul>
+<li><strong>Founders:</strong> Gokula (1669), Rajaram (1685), Churaman (early 18th century).</li>
+<li><strong>Badan Singh (1722–55):</strong> Consolidated the Bharatpur kingdom; built the fort.</li>
+<li><strong>Suraj Mal (1755–63):</strong> The "Plato of the Jat tribe" (Sir Jadunath Sarkar). Extended Bharatpur from the Yamuna to the Chambal. Built the famous palace at Deeg (with its garden-and-water-jet architecture).</li>
+<li>Allied with the Marathas at Panipat but quit before the battle over a disagreement with Sadashivrao Bhau — saved the Jat state.</li>
+<li>After his death (1763), the kingdom declined; ultimately accepted EIC subsidiary alliance in 1818.</li>
+</ul>
+
+<div class="callout gold"><strong>Bharatpur fort:</strong> Famous for resisting four British sieges in 1805 (under Lord Lake) — the only Indian fort the British failed to capture in the early 19th century. Eventually taken in 1826 by Lord Combermere.</div>
+</section>
+
+<section class="notes" id="s17">
+<h2>17. Rohillas &amp; the Afghan Belt</h2>
+<p>The Rohillas were Afghan-origin warriors who settled in the foothills of the Himalayas (modern western Uttar Pradesh) and established the kingdom of Rohilkhand in the 18th century.</p>
+
+<ul>
+<li><strong>Ali Muhammad Khan</strong> (d. 1748) — founder of Rohilkhand; capital at Aonla.</li>
+<li><strong>Hafiz Rahmat Khan</strong> — later leader; killed in the First Rohilla War (1774).</li>
+<li><strong>First Rohilla War (1774):</strong> Awadh Nawab Shuja-ud-Daulah (with English EIC troops, against treaty obligation) invaded and crushed Rohilkhand; Hafiz Rahmat Khan killed; Rohilkhand annexed to Awadh. The episode was a key item in the impeachment proceedings against Warren Hastings (1788–95).</li>
+<li><strong>Najib-ud-Daulah</strong> — a different Rohilla leader, the kingmaker at Delhi from 1757; his grandson Ghulam Qadir Rohilla blinded Shah Alam II (1788).</li>
+</ul>
+</section>
+
+<section class="notes" id="s18">
+<h2>18. Common Features of 18th Century States</h2>
+<p>A standard Mains question. The following features cut across the successor, rebel, and independent states:</p>
+<ol>
+<li><strong>Personal rule:</strong> Authority was charismatic and personal; institutional succession was weak.</li>
+<li><strong>Reliance on Indian bankers and merchants:</strong> Jagat Seths (Bengal), Manik Chand, Vora merchants (Surat) — credit was central to state-building.</li>
+<li><strong>Persianised administrative culture:</strong> Even rebel states (Marathas, Sikhs) used Persian as a language of administration well into the 19th century.</li>
+<li><strong>Indo-Persian elite culture:</strong> Composite Hindu-Muslim cultural patronage (Awadh's Lucknow, Hyderabad, Mughal-Maratha Pune).</li>
+<li><strong>Revenue-farming (Izaradari):</strong> The standard fiscal mechanism — short-term gain, long-term agrarian damage.</li>
+<li><strong>Military modernisation attempts:</strong> Hyder, Tipu, Mahadji Scindia, Ranjit Singh all hired European officers and built disciplined infantry-artillery armies (the <em>"military fiscalism"</em> identified by Bayly).</li>
+<li><strong>Commercial dynamism:</strong> C.A. Bayly's argument — port-cities (Surat, Murshidabad, Hyderabad, Lucknow) and the new "service gentry" produced a commercially vibrant 18th century.</li>
+<li><strong>Continued cultural production:</strong> Urdu poetry (Mir, Sauda, Mir Hasan); Awadhi nautanki; Maratha bakhars; Sikh historical literature.</li>
+</ol>
+</section>
+
+<section class="notes" id="s19">
+<h2>19. Why the 18th Century States Could Not Unite Against the British</h2>
+<p>This is the classic 15-mark Mains question. A balanced answer should cover:</p>
+
+<h3>19.1 Political Causes</h3>
+<ul>
+<li>No state had a pan-Indian ideological vision; each pursued regional aggrandisement.</li>
+<li>Inter-state hostilities — Marathas vs Nizam, Marathas vs Mysore, Marathas vs Jats — were chronic.</li>
+<li>The British succeeded in playing one against another (Wellesley's brilliant exploitation of this).</li>
+<li>No diplomatic mechanism (treaty system) bound the states together.</li>
+</ul>
+
+<h3>19.2 Military Causes</h3>
+<ul>
+<li>Despite modernisation, no Indian army matched the EIC's organisational coherence — disciplined sepoy battalions, regular pay, central command, unified supply.</li>
+<li>Mercenary character of European officers in Indian service — many switched sides for higher pay.</li>
+<li>Maritime weakness — none of the Indian states could challenge British sea power.</li>
+</ul>
+
+<h3>19.3 Financial Causes</h3>
+<ul>
+<li>The Bengal Diwani (1765) gave the EIC a colossal revenue base — what Indian historians call the <em>"Plassey plunder"</em> that financed the Company's later wars.</li>
+<li>Indian bankers shifted credit to the EIC (Karen Leonard's argument).</li>
+<li>Subsidiary Alliance bankrupted client states by forcing them to pay for British troops.</li>
+</ul>
+
+<h3>19.4 Ideological Causes</h3>
+<ul>
+<li>No pan-Indian nationalism — that would only emerge in the late 19th century.</li>
+<li>The Mughal symbolic umbrella, although weak, was respected (most rulers minted coins in Shah Alam's name until 1835); but no rival pan-Indian symbol replaced it.</li>
+</ul>
+
+<div class="callout warn"><strong>Mains template:</strong> The failure to unite was not a moral failing — it was the structural condition of regional state-formation in the 18th century. The very same regionalism that made the new states vibrant (each adapted to its local economy and culture) prevented coordination. The British exploited what was, in its own context, a creative reorganisation of Indian polity.</div>
+</section>
+
+<section class="notes" id="s20">
+<h2>20. Historiography &amp; Bridge to British Conquest</h2>
+
+<h3>20.1 The Historiographical Debate</h3>
+<table class="tbl">
+<tr><th>School / Historian</th><th>Position</th></tr>
+<tr><td>W.W. Hunter, Vincent Smith (colonial)</td><td>The 18th century was a "dark age" — chaos, lawlessness, justified British conquest.</td></tr>
+<tr><td>Jadunath Sarkar (early nationalist)</td><td>Decline narrative; emphasised political fragmentation.</td></tr>
+<tr><td>Bipan Chandra (1970s)</td><td>Successor states were "decentralised feudalism"; failed to develop modern institutions.</td></tr>
+<tr><td>Muzaffar Alam (1986)</td><td><em>The Crisis of Empire in Mughal North India</em> — regional restructuring, not decay; provincial economies (Awadh, Punjab) grew.</td></tr>
+<tr><td>C.A. Bayly (1983, 1988)</td><td><em>Rulers, Townsmen and Bazaars</em>; <em>Indian Society and the Making of the British Empire</em> — "portfolio capitalists" thrived; commercial expansion continued under successor states.</td></tr>
+<tr><td>P.J. Marshall</td><td>The 18th century was a period of dynamic commercial activity; British conquest fed off, rather than rescued, India.</td></tr>
+<tr><td>Seema Alavi</td><td>Studies the EIC's military adaptation of north Indian (Awadhi/Mughal) recruitment patterns — the EIC was a hybrid Indo-British institution.</td></tr>
+</table>
+
+<h3>20.2 The Bridge to British Conquest (Modern Topic 04)</h3>
+<p>The states described above are the targets of the British conquest covered in Modern Topic 04. The standard chronology runs:</p>
+<ol>
+<li>Bengal — Plassey (1757), Buxar (1764), Diwani (1765).</li>
+<li>Mysore — Four Anglo-Mysore Wars (1767–99).</li>
+<li>Marathas — Three Anglo-Maratha Wars (1775–82, 1803–05, 1817–18).</li>
+<li>Sindh — Annexed under Lord Ellenborough (1843).</li>
+<li>Punjab — Two Anglo-Sikh Wars (1845–46, 1848–49); annexed by Dalhousie (1849).</li>
+<li>Awadh — annexed under Dalhousie (1856) on charges of misgovernment.</li>
+</ol>
+<p>By 1856, every state surveyed in this chapter had been subordinated, annexed, or pensioned. The 1857 Revolt is the dispossessed elite's last protest against this conquest — and is led by representatives of these very states (Bahadur Shah II for the Mughals; Nana Saheb for the Peshwas; Begum Hazrat Mahal for Awadh; Tatya Tope for the Marathas; Rani Lakshmibai for the Bundela Rajput-Maratha tradition of Jhansi).</p>
+</section>
+
+<section class="notes" id="pyq">
+<h2>21. Previous Year Questions — UPSC Mains &amp; Prelims</h2>
+
+<div class="callout warn">
+<strong>Honest attribution note:</strong> We do not fabricate year-tags. UPSC questions are listed below as <em>theme-aligned</em> to the standard UPSC Modern History cycle (Prelims up to 2026, Mains up to 2025). Where exact attribution is verifiable, we cite it; otherwise we mark <em>"Theme-aligned"</em>.
+</div>
+
+<h3>Prelims-style</h3>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>
+Q1. Murshid Quli Khan shifted the capital of Bengal to:
+<br>(a) Dhaka &nbsp; <strong>(b) Murshidabad</strong> &nbsp; (c) Calcutta &nbsp; (d) Patna</div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>
+Q2. The Battle of Colachel (1741) was fought between:
+<br>(a) The English and the Dutch
+<br>(b) The French and the Dutch
+<br><strong>(c) Travancore (Marthanda Varma) and the Dutch EIC</strong>
+<br>(d) Mysore and the Marathas</div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>
+Q3. Who is known as the "Plato of the Jat tribe"?
+<br>(a) Churaman &nbsp; (b) Badan Singh &nbsp; <strong>(c) Suraj Mal</strong> &nbsp; (d) Jawahar Singh</div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>
+Q4. The Battle of Palkhed (1728) was fought between:
+<br>(a) Bajirao I and the Mughals
+<br><strong>(b) Bajirao I and the Nizam of Hyderabad</strong>
+<br>(c) Balaji Vishwanath and the Sayyid Brothers
+<br>(d) Madhav Rao I and Hyder Ali</div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>
+Q5. Which one of the following was the first Indian state to sign a Subsidiary Alliance with the British?
+<br>(a) Awadh &nbsp; <strong>(b) Hyderabad</strong> &nbsp; (c) Mysore &nbsp; (d) Marathas</div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>
+Q6. The Sikh assembly that took collective decisions (<em>Gurmata</em>) at the Akal Takht was called:
+<br>(a) Dal Khalsa &nbsp; (b) Misl &nbsp; <strong>(c) Sarbat Khalsa</strong> &nbsp; (d) Sangat</div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>
+Q7. Ahilyabai Holkar is associated with:
+<br>(a) The conquest of Delhi
+<br>(b) The Battle of Panipat
+<br><strong>(c) Temple-rebuilding and the administration of Indore (1767–95)</strong>
+<br>(d) The Treaty of Salbai</div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>
+Q8. Match the following Maratha houses with their capitals:
+<br>1. Scindia &mdash; (a) Indore
+<br>2. Holkar &mdash; (b) Gwalior
+<br>3. Bhonsle &mdash; (c) Baroda
+<br>4. Gaekwad &mdash; (d) Nagpur
+<br><strong>Answer: 1-b, 2-a, 3-d, 4-c</strong></div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>
+Q9. The Vada Ghallughara (1762) refers to:
+<br>(a) Banda Bahadur's defeat
+<br><strong>(b) Ahmad Shah Abdali's massacre of Sikhs at Kup</strong>
+<br>(c) The First Anglo-Sikh War
+<br>(d) Ranjit Singh's capture of Lahore</div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>
+Q10. Sawai Jai Singh II of Jaipur is known for:
+<br>(a) Founding the Mughal Empire
+<br>(b) Building the Lal Qila
+<br><strong>(c) Building the Jantar Mantar observatories at Delhi, Jaipur, Mathura, Ujjain, and Varanasi</strong>
+<br>(d) The Treaty of Purandar</div>
+
+<h3>Mains-style (GS Paper 1)</h3>
+
+<div class="pyq"><span class="year">Theme-aligned (UPSC Mains 2014–2025 cycle)</span><br>
+Q1. <em>"The 18th century in India was a period of regional restructuring, not collapse."</em> Critically examine in the context of the rise of successor, rebel, and independent states. (15 marks)</div>
+
+<div class="pyq"><span class="year">Theme-aligned (UPSC Mains 2014–2025 cycle)</span><br>
+Q2. Examine the common features of the 18th-century successor states of the Mughal Empire. To what extent did they replicate, and to what extent transform, the Mughal model? (15 marks)</div>
+
+<div class="pyq"><span class="year">Theme-aligned (UPSC Mains 2014–2025 cycle)</span><br>
+Q3. Assess the contribution of Hyder Ali and Tipu Sultan to the modernisation of Mysore. Why did Mysore fail to resist the British despite four hard-fought wars? (15 marks)</div>
+
+<div class="pyq"><span class="year">Theme-aligned (UPSC Mains 2014–2025 cycle)</span><br>
+Q4. Discuss the rise of the Maratha Confederacy under the Peshwas. What were the structural reasons for its failure to evolve into an Indian successor empire? (15 marks)</div>
+
+<div class="pyq"><span class="year">Theme-aligned (UPSC Mains 2014–2025 cycle)</span><br>
+Q5. Trace the consolidation of the Sikh polity from Banda Bahadur to Maharaja Ranjit Singh. How modern was the kingdom of Lahore? (15 marks)</div>
+
+<div class="pyq"><span class="year">Theme-aligned (UPSC Mains 2014–2025 cycle)</span><br>
+Q6. <em>"The 18th-century states failed to unite against the British not for want of resources but for want of vision."</em> Examine. (10 marks)</div>
+
+<div class="pyq"><span class="year">Theme-aligned (UPSC Mains 2014–2025 cycle)</span><br>
+Q7. Compare the careers of Mahadji Scindia and Nana Phadnavis. To what extent did they delay British supremacy in India? (10 marks)</div>
+
+<div class="pyq"><span class="year">Theme-aligned (Expected, UPSC Mains 2026)</span><br>
+Q8. Critically evaluate the historiography of 18th-century India with reference to the "dark age" view of W.W. Hunter and the revisionist positions of Muzaffar Alam and C.A. Bayly. (15 marks)</div>
+</section>
+
+<div class="revision" id="revision">
+<h3>15 Must-Know Facts — 18th Century States Quick Revision</h3>
+<ol>
+<li><strong>Three categories:</strong> Successor (Bengal, Awadh, Hyderabad), Rebel (Marathas, Sikhs, Jats), Independent (Mysore, Travancore).</li>
+<li><strong>Bengal:</strong> Murshid Quli Khan (1717) → Shuja-ud-Din → Alivardi Khan (defended against Bargi raids) → Siraj-ud-Daulah (lost Plassey 1757).</li>
+<li><strong>Awadh:</strong> Saadat Khan (1722) → Safdar Jung → Shuja-ud-Daulah (lost Buxar 1764) → Asaf-ud-Daulah (shifted capital to Lucknow, 1775).</li>
+<li><strong>Hyderabad:</strong> Nizam-ul-Mulk Asaf Jah I (1724); defeated at Palkhed by Bajirao I (1728); first Subsidiary Alliance with Wellesley (1798).</li>
+<li><strong>Mysore:</strong> Wadiyars → Hyder Ali (1761–82, French-trained army, iron rockets) → Tipu Sultan (1782–99, embassies to France and Turkey, killed at Srirangapatna 4 May 1799).</li>
+<li><strong>Four Anglo-Mysore Wars:</strong> 1767–69 (Madras Treaty), 1780–84 (Mangalore Treaty), 1790–92 (Seringapatam Treaty), 1799 (Tipu killed).</li>
+<li><strong>Travancore:</strong> Marthanda Varma (1729–58); Battle of <strong>Colachel (1741)</strong> — first major Indian defeat of a European power (Dutch); de Lannoy entered Travancore service.</li>
+<li><strong>Marathas:</strong> Shahu (released 1707) → Balaji Vishwanath (Peshwa from 1713) → Bajirao I (Palkhed 1728, Delhi 1737) → Balaji Bajirao (Attock 1758, lost Panipat III 1761).</li>
+<li><strong>Five Maratha houses:</strong> Peshwa (Pune), Holkar (Indore), Scindia (Gwalior), Bhonsle (Nagpur), Gaekwad (Baroda).</li>
+<li><strong>Mahadji Scindia</strong> (d. 1794) — French officer Comte de Boigne; <em>Vakil-i-Mutlaq</em> of Shah Alam II (1784); negotiated Treaty of Salbai (1782).</li>
+<li><strong>Nana Phadnavis</strong> (d. 1800) — "Maratha Machiavelli"; <em>Barabhai</em> Council; engineered Triple Alliance against Tipu.</li>
+<li><strong>Three Anglo-Maratha Wars:</strong> 1775–82 (Salbai), 1803–05 (Bassein/Assaye), 1817–18 (end of Peshwaship).</li>
+<li><strong>Sikhs:</strong> Banda Bahadur (1708–16) → Twelve Misls + Sarbat Khalsa + Dal Khalsa → Two Ghallugharas (1746, 1762) → Ranjit Singh (Lahore 1799, Amritsar 1802, Multan 1818, Kashmir 1819, Peshawar 1834; Treaty of Amritsar 1809).</li>
+<li><strong>Jats:</strong> Bharatpur under Suraj Mal (1755–63); Deeg palace; quit Panipat campaign before battle.</li>
+<li><strong>Rohillas:</strong> Ali Muhammad Khan (Rohilkhand); First Rohilla War (1774) — Shuja-ud-Daulah with EIC troops killed Hafiz Rahmat Khan; raised at Hastings' impeachment.</li>
+</ol>
+</div>
+
+</main>
+
+<aside>
+
+<div class="widget">
+<h4>Quick Reference</h4>
+<ul class="miniref">
+<li><strong>Bengal Plassey:</strong> 23 Jun 1757</li>
+<li><strong>Bengal Buxar:</strong> 22 Oct 1764</li>
+<li><strong>Colachel:</strong> 10 Aug 1741</li>
+<li><strong>Palkhed:</strong> 1728</li>
+<li><strong>Panipat III:</strong> 14 Jan 1761</li>
+<li><strong>Tipu killed:</strong> 4 May 1799</li>
+<li><strong>Ranjit Singh, Lahore:</strong> 1799</li>
+<li><strong>Treaty of Amritsar:</strong> 1809</li>
+</ul>
+</div>
+
+<div class="widget">
+<h4>Three Categories</h4>
+<ul class="miniref">
+<li><strong>Successor:</strong> Bengal, Awadh, Hyderabad</li>
+<li><strong>Rebel:</strong> Marathas, Sikhs, Jats</li>
+<li><strong>Independent:</strong> Mysore, Travancore, Rajputs</li>
+</ul>
+</div>
+
+<div class="widget">
+<h4>Maratha Confederacy</h4>
+<ul class="miniref">
+<li><strong>Peshwa</strong> &mdash; Pune</li>
+<li><strong>Holkar</strong> &mdash; Indore</li>
+<li><strong>Scindia</strong> &mdash; Gwalior</li>
+<li><strong>Bhonsle</strong> &mdash; Nagpur</li>
+<li><strong>Gaekwad</strong> &mdash; Baroda</li>
+</ul>
+</div>
+
+<div class="widget">
+<h4>UPSC Importance</h4>
+<div class="bar"><span class="lbl">Prelims</span><span class="track"><span class="fill" style="width:92%"></span></span></div>
+<div class="bar"><span class="lbl">Mains GS-I</span><span class="track"><span class="fill" style="width:95%"></span></span></div>
+<div class="bar"><span class="lbl">Essay</span><span class="track"><span class="fill" style="width:50%"></span></span></div>
+<div class="bar"><span class="lbl">Optional</span><span class="track"><span class="fill" style="width:88%"></span></span></div>
+</div>
+
+<div class="widget">
+<h4>Tags</h4>
+<div class="tags">
+<span>Bengal Nawabs</span><span>Awadh</span><span>Hyderabad</span><span>Hyder Ali</span><span>Tipu Sultan</span><span>Marthanda Varma</span><span>Peshwas</span><span>Maratha Confederacy</span><span>Sikh Misls</span><span>Ranjit Singh</span><span>Suraj Mal</span>
+</div>
+</div>
+
+<div class="widget">
+<h4>Quick Quiz</h4>
+<div class="quiz">
+<details><summary>Founder of Hyderabad state?</summary><p>Nizam-ul-Mulk Asaf Jah I, in 1724.</p></details>
+<details><summary>Who founded Jaipur city?</summary><p>Sawai Jai Singh II, in 1727.</p></details>
+<details><summary>First Subsidiary Alliance signed by which state?</summary><p>Hyderabad (Nizam Ali Khan), 1798, with Lord Wellesley.</p></details>
+<details><summary>Who defeated the Dutch at Colachel?</summary><p>Marthanda Varma of Travancore, 10 August 1741.</p></details>
+<details><summary>How many Sikh Misls were there?</summary><p>Twelve, coordinated through the Sarbat Khalsa at the Akal Takht.</p></details>
+<details><summary>Where was Tipu Sultan killed?</summary><p>Defending Srirangapatna, 4 May 1799.</p></details>
+</div>
+</div>
+
+<div class="widget">
+<h4>Related Notes</h4>
+<ul class="related">
+<li><a href="/modern-history/arrival-of-european-companies-in-india">&rsaquo; Modern 01 — Arrival of European Companies</a></li>
+<li><a href="/modern-history/decline-of-the-mughal-empire">&rsaquo; Modern 02 — Decline of the Mughal Empire</a></li>
+<li><a href="/modern-history/consolidation-and-expansion-of-british-power-in-india">&rsaquo; Modern 04 — Consolidation of British Power</a></li>
+<li><a href="/medieval-history">&rsaquo; Medieval 06 — Mughal Empire</a></li>
+</ul>
+</div>
+
+</aside>
+</div>
+</div>

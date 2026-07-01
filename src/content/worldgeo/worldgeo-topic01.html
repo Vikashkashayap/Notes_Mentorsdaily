@@ -1,0 +1,1233 @@
+<!-- worldgeo-topic01 — auto-imported from geo-physical-topic01-universe-solar-system-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#8b1a2a;
+  --brand-blue-dark:#5a0e1a;
+  --brand-orange:#c9940a;
+  --ink:#1a1a1a;
+  --muted:#5b6470;
+  --line:#e3e6ea;
+  --bg:#fdfcfa;
+  --soft:#f6f3ee;
+  --gold:#c9940a;
+  --green:#2e7a47;
+  --warn:#a04a0f;
+  --sky:#3b6fbf;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16.5px;line-height:1.6;color:var(--ink);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+
+.topnav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+.topnav-inner{max-width:1200px;margin:0 auto;padding:.7rem 1rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.brand{font-weight:700;color:var(--brand-blue);font-size:1.05rem;letter-spacing:.3px}
+.topnav nav a{margin-left:1rem;color:var(--ink);font-size:.92rem}
+
+.hero{background:linear-gradient(135deg,#0a1a3e 0%,#1a2a5a 55%,#2e1a5a 100%);color:#fff;padding:3.4rem 1rem 2.6rem;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 20% 30%,#fff 1px,transparent 1.5px),radial-gradient(circle at 80% 60%,#fff 1px,transparent 1.5px),radial-gradient(circle at 45% 80%,#fff 1px,transparent 1.5px),radial-gradient(circle at 65% 15%,#fff 1px,transparent 1.5px),radial-gradient(circle at 90% 40%,#fff 1px,transparent 1.5px),radial-gradient(circle at 10% 70%,#fff 1px,transparent 1.5px);opacity:.4;pointer-events:none}
+.hero-inner{max-width:1200px;margin:0 auto;position:relative;z-index:1}
+.hero .tag{display:inline-block;background:rgba(255,255,255,.16);padding:.25rem .7rem;border-radius:30px;font-size:.78rem;letter-spacing:.6px;text-transform:uppercase;margin-bottom:.9rem}
+.hero h1{font-size:2.2rem;line-height:1.2;margin-bottom:.7rem;font-weight:700}
+.hero .lede{font-size:1.05rem;opacity:.95;max-width:880px}
+.hero .meta{margin-top:1rem;font-size:.85rem;opacity:.8}
+
+.breadcrumb{background:var(--soft);border-bottom:1px solid var(--line)}
+.breadcrumb-inner{max-width:1200px;margin:0 auto;padding:.55rem 1rem;font-size:.82rem;color:var(--muted)}
+.breadcrumb a{color:var(--muted)}
+
+.layout{max-width:1200px;margin:1.6rem auto;padding:0 1rem;display:grid;grid-template-columns:1fr 320px;gap:2.2rem}
+
+.notes h2{font-size:1.55rem;color:var(--brand-blue-dark);margin:2.2rem 0 .8rem;padding-bottom:.3rem;border-bottom:2px solid var(--gold)}
+.notes h3{font-size:1.15rem;color:var(--ink);margin:1.4rem 0 .5rem}
+.notes h4{font-size:1.02rem;color:var(--brand-blue);margin:1rem 0 .35rem}
+.notes p{margin:.55rem 0}
+.notes ul,.notes ol{margin:.55rem 0 .8rem 1.4rem}
+.notes li{margin:.25rem 0}
+
+.ncert-strip{font-size:.76rem;color:var(--muted);font-style:italic;margin:-.3rem 0 .8rem;padding:.15rem .55rem;border-left:3px solid var(--gold);background:var(--soft);border-radius:0 3px 3px 0;display:inline-block}
+
+.rev-pills{display:inline-flex;gap:.25rem;margin-left:.5rem;vertical-align:middle}
+.rev-pills span{background:#fff;color:var(--brand-blue);font-size:.6rem;font-weight:700;padding:.1rem .35rem;border-radius:3px;border:1px solid var(--brand-blue);letter-spacing:.3px}
+
+.concept-box{background:var(--soft);border-left:4px solid var(--brand-orange);padding:1rem 1.1rem;border-radius:0 8px 8px 0;margin:1.2rem 0}
+.concept-box h4{margin-top:0;color:var(--brand-blue-dark)}
+
+.callout{padding:.9rem 1rem;border-radius:8px;margin:1rem 0;font-size:.95rem}
+.callout.info{background:#eef4fb;border-left:4px solid var(--sky)}
+.callout.warn{background:#fdf3e7;border-left:4px solid var(--warn);color:#5a2a05}
+.callout.good{background:#eaf6ee;border-left:4px solid var(--green)}
+
+.toc{background:#fff;border:1px solid var(--line);padding:1rem 1.2rem;border-radius:10px;margin:1.4rem 0}
+.toc h3{font-size:1rem;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:.5rem}
+.toc ol{columns:2;column-gap:2rem;margin-left:1.2rem;font-size:.92rem}
+@media (max-width:700px){.toc ol{columns:1}}
+
+table{border-collapse:collapse;width:100%;margin:.8rem 0;font-size:.92rem}
+th,td{border:1px solid var(--line);padding:.5rem .65rem;text-align:left;vertical-align:top}
+th{background:var(--soft);color:var(--brand-blue-dark);font-weight:600}
+
+/* Figure component */
+.figure{margin:1.2rem 0;border:1px solid var(--line);border-radius:10px;padding:.9rem 1rem;background:#fff;position:relative}
+.figure svg{display:block;max-width:100%;height:auto;margin:0 auto}
+.figcaption{font-size:.85rem;color:var(--muted);text-align:center;margin-top:.6rem;font-style:italic;line-height:1.4}
+.figcaption strong{color:var(--brand-blue-dark);font-style:normal}
+
+/* Skeleton-vs-full diagram pair */
+.dpair{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1.2rem 0}
+.dpair .figure{margin:0}
+.dpair .figure .badge{position:absolute;top:.5rem;right:.7rem;font-size:.66rem;text-transform:uppercase;letter-spacing:.6px;background:var(--gold);color:#fff;padding:.18rem .55rem;border-radius:3px;font-weight:700}
+.dpair .figure.full .badge{background:var(--brand-blue)}
+@media (max-width:800px){.dpair{grid-template-columns:1fr}}
+
+/* Mnemonic */
+.mnemonic{background:#fff8e7;border-left:4px solid var(--gold);padding:.8rem 1rem;border-radius:0 8px 8px 0;margin:1rem 0;font-size:.93rem}
+.mnemonic strong{color:var(--brand-blue-dark)}
+.mnemonic .tag-mn{display:inline-block;background:var(--gold);color:#fff;font-size:.68rem;font-weight:700;letter-spacing:.5px;text-transform:uppercase;padding:.12rem .45rem;border-radius:3px;margin-right:.5rem;vertical-align:middle}
+
+/* Mains-answer template */
+.mains-template{background:#fff;border:2px dashed var(--brand-blue);padding:1rem 1.2rem;border-radius:10px;margin:1.2rem 0;font-size:.92rem}
+.mains-template h4{color:var(--brand-blue);margin:0 0 .5rem;font-size:.85rem;text-transform:uppercase;letter-spacing:.6px}
+.mains-template .diag-cue{display:inline-block;background:var(--soft);border:1px dashed var(--gold);padding:.12rem .55rem;border-radius:3px;font-size:.82rem;color:var(--brand-blue-dark);margin:.2rem 0;font-weight:600}
+.mains-template ul{margin-left:1.2rem}
+
+/* Compare grid */
+.compare-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem;margin:1.2rem 0}
+.compare-grid.cols-3{grid-template-columns:repeat(3,1fr)}
+.compare-grid.cols-4{grid-template-columns:repeat(4,1fr)}
+.compare-grid .cell{background:#fff;border:1px solid var(--line);border-radius:8px;padding:.8rem 1rem;font-size:.9rem}
+.compare-grid .cell h4{color:var(--brand-blue-dark);font-size:.95rem;margin-bottom:.4rem}
+.compare-grid .cell ul{margin-left:1.1rem;margin-top:.3rem}
+@media (max-width:700px){.compare-grid,.compare-grid.cols-3,.compare-grid.cols-4{grid-template-columns:1fr}}
+
+/* News / current-affairs hook */
+.news-box{background:#eaf3ff;border-left:4px solid var(--sky);padding:.7rem 1rem;border-radius:0 6px 6px 0;margin:.8rem 0;font-size:.88rem}
+.news-box strong{color:#1e4080}
+.news-box .news-tag{display:inline-block;background:var(--sky);color:#fff;font-size:.66rem;text-transform:uppercase;font-weight:700;letter-spacing:.5px;padding:.12rem .45rem;border-radius:3px;margin-right:.5rem;vertical-align:middle}
+
+.pyq{background:#fff;border:1px solid var(--line);border-radius:12px;padding:1.4rem 1.5rem;margin:2rem 0}
+.pyq h2{color:var(--brand-blue-dark);margin-bottom:.5rem;border-bottom:2px solid var(--gold);padding-bottom:.3rem}
+.pyq ol{margin-left:1.4rem}
+.pyq li{margin:.6rem 0}
+.pyq .yr{display:inline-block;background:var(--brand-blue);color:#fff;font-size:.72rem;padding:.12rem .5rem;border-radius:3px;margin-right:.5rem;vertical-align:middle;letter-spacing:.4px}
+
+.revision{background:linear-gradient(180deg,#fff,var(--soft));border:1px solid var(--line);border-radius:12px;padding:1.4rem 1.5rem;margin:2rem 0}
+.revision h2{color:var(--brand-blue-dark);border-bottom:2px solid var(--gold);padding-bottom:.3rem}
+.revision ol{margin-left:1.4rem;margin-top:.6rem}
+.revision li{margin:.4rem 0}
+
+aside{position:sticky;top:64px;align-self:start;display:flex;flex-direction:column;gap:1rem;max-height:calc(100vh - 80px);overflow-y:auto;padding-right:.2rem}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:.9rem 1rem;font-size:.9rem}
+.widget h4{font-size:.78rem;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin-bottom:.6rem}
+.widget.miniref ul{list-style:none;margin:0;padding:0;max-height:280px;overflow-y:auto;font-size:.84rem}
+.widget.miniref li{padding:.18rem 0;border-bottom:1px dotted var(--line);display:flex;justify-content:space-between;gap:.5rem}
+.widget.miniref li:last-child{border-bottom:none}
+.widget.miniref .d{color:var(--brand-blue);font-weight:600;flex-shrink:0}
+
+.bar-row{margin:.35rem 0}
+.bar-label{display:flex;justify-content:space-between;font-size:.82rem;margin-bottom:.18rem}
+.bar-track{height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.bar-fill{height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange));border-radius:3px}
+
+.widget.tags .cloud{display:flex;flex-wrap:wrap;gap:.3rem}
+.widget.tags span{background:var(--soft);color:var(--brand-blue-dark);font-size:.74rem;padding:.18rem .5rem;border-radius:3px;border:1px solid var(--line)}
+
+.widget.related ul{list-style:none;margin:0;padding:0}
+.widget.related li{padding:.35rem 0;border-bottom:1px solid var(--line);font-size:.86rem}
+.widget.related li:last-child{border-bottom:none}
+
+.widget.quiz ol{margin-left:1.2rem;font-size:.84rem}
+.widget.quiz li{margin:.4rem 0}
+
+footer{background:var(--brand-blue-dark);color:#cdd2da;padding:2rem 1rem 1.4rem;margin-top:3rem;font-size:.88rem}
+.footer-inner{max-width:1200px;margin:0 auto}
+.footer-inner h4{color:#fff;margin-bottom:.5rem;font-size:.95rem}
+.footer-inner p{margin:.4rem 0}
+.footer-inner a{color:#e8b56b}
+
+@media (max-width:980px){
+  .layout{grid-template-columns:1fr}
+  aside{position:static;max-height:none;overflow:visible}
+  .hero h1{font-size:1.7rem}
+  .hero{padding:2.4rem 1rem 2rem}
+}
+
+/* Print mode — A4 friendly */
+@media print{
+  .topnav,aside,.breadcrumb,footer,.rev-pills,.news-box{display:none !important}
+  .layout{grid-template-columns:1fr;margin:0;padding:0;gap:0}
+  body{font-size:10.5pt;background:#fff;color:#000}
+  .hero{padding:1rem;color:#000;background:#fff !important;border-bottom:2px solid #000}
+  .hero::before{display:none}
+  .hero h1,.hero .lede,.hero .meta{color:#000}
+  .notes h2{page-break-after:avoid;color:#000;border-bottom:1.5pt solid #000}
+  .notes h3,.notes h4{color:#000}
+  .figure,.dpair,.compare-grid,.mnemonic,.mains-template,.callout,.pyq,.revision,.concept-box,table{break-inside:avoid;page-break-inside:avoid}
+  a{color:#000;text-decoration:none}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<section class="hero">
+  <div class="hero-inner">
+    <span class="tag">Physical Geography · Topic 1 · GS Paper 1</span>
+    <h1>The Universe &amp; the Solar System — From the Big Bang to Neptune</h1>
+    <p class="lede">The complete UPSC Physical Geography opener — origin of the Universe (Big Bang, Pulsating, Steady State), galaxies and stars, the Sun, the eight planets, asteroids, comets, meteors and meteorites — with labelled diagrams, exam-skeleton reproductions, mnemonics, and Mains-answer templates aligned to NCERT Class XI <em>Fundamentals of Physical Geography</em>.</p>
+    <p class="meta">Physical Geography · Topic 1 · ~25 min read · Updated June 2026</p>
+  </div>
+</section>
+
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="../index.html">Home</a> › <a href="/">UPSC Notes</a> › <a href="/">Physical Geography</a> › The Universe &amp; the Solar System
+  </div>
+</div>
+<div class="layout">
+<main>
+
+<div class="concept-box">
+  <h4>Why this topic matters for UPSC</h4>
+  <p>The Universe-Solar System chapter is the foundational opener of UPSC Physical Geography. Prelims (CSAT &amp; GS-1) regularly tests definitions and characteristics — terrestrial vs Jovian planets, asteroid belt location, comet structure, meteor showers. Mains GS-1 maps it to "salient features of the World's Physical Geography" and to current-affairs items (Chandrayaan-3 lunar south pole landing 2023, Aditya-L1 launch 2023, JWST discoveries 2022-26). Essay paper has set themes on cosmology, "the place of humanity in the cosmos", and scientific temperament. Strong fundamentals here also unlock subsequent chapters — Earth's motions, geomorphology, climatology.</p>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ol>
+    <li><a href="#s1">Origin of the Universe — Big Bang, Pulsating, Steady State</a></li>
+    <li><a href="#s2">Components of the Universe — galaxies &amp; stars</a></li>
+    <li><a href="#s3">The Solar System — origin &amp; the Sun</a></li>
+    <li><a href="#s4">The Eight Planets — terrestrial &amp; Jovian</a></li>
+    <li><a href="#s5">Small bodies — asteroids, comets, meteors &amp; meteorites</a></li>
+    <li><a href="#pyq">UPSC PYQ &amp; model questions</a></li>
+    <li><a href="#facts">15 must-know facts</a></li>
+  </ol>
+</div>
+
+<section class="notes" id="s1">
+<h2>1. Origin of the Universe <span class="rev-pills"><span>D1</span><span>D7</span><span>D30</span></span></h2>
+<div class="ncert-strip">NCERT XI · Fundamentals of Physical Geography · Ch. 1 "The Earth in the Solar System" · pp. 1-3</div>
+
+<p>The Universe is the totality of matter, energy, space and time. Its currently estimated age is <strong>13.8 billion years</strong>, and the observable Universe spans ~93 billion light-years across (because space itself has expanded since light was emitted). Three classical theories compete to explain its origin.</p>
+
+<h3>1.1 Timeline of the evolution of the Universe</h3>
+
+<div class="figure">
+<svg viewBox="0 0 700 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Timeline of the universe from Big Bang to present">
+  <defs>
+    <linearGradient id="tlGrad" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff8e7"/>
+      <stop offset=".5" stop-color="#ffd980"/>
+      <stop offset="1" stop-color="#8b1a2a"/>
+    </linearGradient>
+  </defs>
+  <rect x="40" y="80" width="620" height="22" rx="11" fill="url(#tlGrad)" stroke="#5a0e1a" stroke-width="1.2"/>
+  <!-- ticks -->
+  <g font-size="10" fill="#1a1a1a" text-anchor="middle">
+    <g><line x1="50" y1="78" x2="50" y2="104" stroke="#5a0e1a"/><text x="50" y="120">t = 0</text><text x="50" y="135" font-weight="700" fill="#8b1a2a">Big Bang</text><text x="50" y="148" font-size="9">singularity</text></g>
+    <g><line x1="115" y1="78" x2="115" y2="104" stroke="#5a0e1a"/><text x="115" y="120">10⁻³⁵ s</text><text x="115" y="135" font-weight="700" fill="#8b1a2a">Inflation</text><text x="115" y="148" font-size="9">exponential expansion</text></g>
+    <g><line x1="200" y1="78" x2="200" y2="104" stroke="#5a0e1a"/><text x="200" y="120">3 min</text><text x="200" y="135" font-weight="700" fill="#8b1a2a">Nucleosynthesis</text><text x="200" y="148" font-size="9">H, He, Li form</text></g>
+    <g><line x1="305" y1="78" x2="305" y2="104" stroke="#5a0e1a"/><text x="305" y="120">3.8×10⁵ yr</text><text x="305" y="135" font-weight="700" fill="#8b1a2a">Recombination</text><text x="305" y="148" font-size="9">CMB released</text></g>
+    <g><line x1="420" y1="78" x2="420" y2="104" stroke="#5a0e1a"/><text x="420" y="120">~200 Myr</text><text x="420" y="135" font-weight="700" fill="#8b1a2a">First stars</text><text x="420" y="148" font-size="9">reionisation begins</text></g>
+    <g><line x1="525" y1="78" x2="525" y2="104" stroke="#5a0e1a"/><text x="525" y="120">9.2 Gyr</text><text x="525" y="135" font-weight="700" fill="#8b1a2a">Solar System</text><text x="525" y="148" font-size="9">Sun + planets</text></g>
+    <g><line x1="650" y1="78" x2="650" y2="104" stroke="#5a0e1a"/><text x="650" y="120">13.8 Gyr</text><text x="650" y="135" font-weight="700" fill="#8b1a2a">Today</text><text x="650" y="148" font-size="9">galaxies, life</text></g>
+  </g>
+  <text x="350" y="30" text-anchor="middle" font-size="13" font-weight="700" fill="#5a0e1a">Cosmic Timeline — Big Bang to Present</text>
+  <text x="350" y="48" text-anchor="middle" font-size="10" fill="#5b6470">(time scale compressed; not linear)</text>
+  <text x="350" y="180" text-anchor="middle" font-size="10" font-style="italic" fill="#5b6470">Source: NASA WMAP / Planck satellite missions</text>
+</svg>
+<div class="figcaption"><strong>Fig 1.1</strong> — Compressed cosmic timeline from the Big Bang singularity through inflation, nucleosynthesis, recombination (release of the Cosmic Microwave Background), first stars, formation of the Solar System (4.6 Gya), to the present.</div>
+</div>
+
+<h3>1.2 The Big Bang Theory <span class="rev-pills"><span>D1</span><span>D7</span></span></h3>
+<p>The currently accepted standard model of cosmology. Proposed by Belgian priest and astrophysicist <strong>Georges Lemaître (1927)</strong> as the "primeval atom" hypothesis; mathematical foundations from Friedmann's solutions to Einstein's General Relativity (1922). The name "Big Bang" was coined sarcastically by Fred Hoyle on a 1949 BBC broadcast — and the label stuck.</p>
+
+<h4>Key propositions</h4>
+<ul>
+  <li>All matter, energy, space and time originated ~<strong>13.8 billion years ago</strong> from an extremely hot, dense singularity.</li>
+  <li>The Universe is <strong>still expanding</strong> — galaxies are moving apart from each other (not <em>into</em> pre-existing space; space itself is stretching).</li>
+  <li>Three classical phases — <em>Inflation</em> (10⁻³⁶ to 10⁻³² seconds, exponential expansion by factor ≥10²⁶) → <em>Nucleosynthesis</em> (first 3 minutes — formation of H, He, trace Li) → <em>Recombination</em> (~380,000 years — electrons combined with nuclei to form neutral atoms; photons escaped and form today's <strong>Cosmic Microwave Background</strong>).</li>
+</ul>
+
+<h4>Empirical evidence</h4>
+<table>
+<thead><tr><th>Evidence</th><th>Discovery</th><th>What it shows</th></tr></thead>
+<tbody>
+<tr><td>Galactic redshift</td><td>Vesto Slipher 1912; Edwin <strong>Hubble 1929</strong></td><td>Distant galaxies recede; recession velocity ∝ distance (Hubble-Lemaître Law). Implies expansion.</td></tr>
+<tr><td>Cosmic Microwave Background (CMB)</td><td>Penzias &amp; Wilson 1964 (Nobel 1978); COBE 1992; WMAP 2003; Planck 2013</td><td>Uniform 2.725 K microwave radiation from all directions — the "echo" of recombination 380,000 yrs after Big Bang.</td></tr>
+<tr><td>Abundance of light elements</td><td>Big Bang Nucleosynthesis predictions (Alpher-Bethe-Gamow 1948)</td><td>Observed cosmic ratios of H (~75%), He (~25%) match predictions exactly.</td></tr>
+<tr><td>Large-scale structure</td><td>Sloan Digital Sky Survey, etc.</td><td>Galaxy distribution matches predictions from CMB fluctuations seeded in inflation.</td></tr>
+</tbody>
+</table>
+
+<div class="mnemonic"><span class="tag-mn">Mnemonic</span><strong>"I-NRC + HCN"</strong> — phases <em>Inflation, Nucleosynthesis, Recombination, Cooling</em>; evidence <em>Hubble redshift, CMB, Nuclear abundance</em>.</div>
+
+<h3>1.3 The Pulsating (Oscillating) Universe Theory</h3>
+<p>Proposed by <strong>Allan Sandage (1965)</strong> as a variant of the Big Bang. The Universe alternately expands and contracts in cycles ("Big Bang" → expansion → "Big Crunch" → "Big Bounce" → next Big Bang). Each cycle may last hundreds of billions of years.</p>
+<ul>
+  <li>Requires the Universe to have <strong>sufficient mass-density</strong> for gravity to halt and reverse expansion (Ω &gt; 1, a "closed" universe).</li>
+  <li>Modern observations (1998 onwards — Perlmutter, Schmidt, Riess; Nobel 2011) show that expansion is in fact <strong>accelerating</strong>, driven by dark energy. This rules out the simple pulsating model in its original form.</li>
+  <li>The idea survives in modern cosmology as "cyclic" models (Steinhardt-Turok, ekpyrotic universe) — but remains speculative.</li>
+</ul>
+
+<h3>1.4 The Steady State Theory (for completeness)</h3>
+<p>Proposed by <strong>Hermann Bondi, Thomas Gold, Fred Hoyle (1948)</strong>. The Universe has no beginning and no end; matter is continuously created (at a tiny rate — about one H atom per cubic metre every billion years) so that mean density remains constant despite expansion. <strong>Disproved</strong> after the 1964 discovery of the CMB — a steady-state universe would not produce a hot relic background.</p>
+
+<div class="callout info">
+  <strong>UPSC examiner's framing.</strong> Big Bang vs Pulsating vs Steady State has appeared as a Prelims MCQ (definitional) and as Mains analytical sub-parts. Always cite (a) the proposer, (b) the date, (c) one supporting evidence or one falsifying observation. The CMB discovery (1964) is the single most-cited piece of evidence in UPSC answers.
+</div>
+
+<div class="news-box">
+<span class="news-tag">In the news</span> <strong>James Webb Space Telescope</strong> (launched Dec 2021, first images July 2022) has imaged galaxies as far back as ~300 million years after the Big Bang (JADES-GS-z14-0, 2024) — pushing the frontier of observational cosmology and challenging some early-galaxy formation models. India's <strong>Aditya-L1</strong> (launched Sep 2023, halo orbit at L1 from Jan 2024) studies the Sun's outer atmosphere — solar-stellar continuum.
+</div>
+
+<div class="mains-template">
+<h4>Mains answer template — 150-word skeleton (10 marks)</h4>
+<p><strong>Q: Discuss the Big Bang Theory and the evidences in its favour.</strong></p>
+<ul>
+  <li><strong>Intro (2 lines)</strong> — Define Big Bang as standard cosmological model; date proposal (Lemaître 1927).</li>
+  <li><strong>Body — three phases</strong> — Inflation → Nucleosynthesis → Recombination (use Fig 1.1 keywords).</li>
+  <li><strong>Body — four evidences</strong> — Hubble redshift, CMB (Penzias-Wilson 1964), light-element abundances, large-scale structure.</li>
+  <li><span class="diag-cue">[Diagram cue: cosmic timeline arrow with 4 ticks — Big Bang · Recombination · First stars · Today]</span></li>
+  <li><strong>Conclusion (2 lines)</strong> — Mention recent reinforcement by JWST (2022-) and ongoing puzzles (dark matter ~27%, dark energy ~68% of Universe).</li>
+</ul>
+</div>
+</section>
+
+<section class="notes" id="s2">
+<h2>2. Components of the Universe <span class="rev-pills"><span>D1</span><span>D7</span><span>D30</span></span></h2>
+<div class="ncert-strip">NCERT XI · Ch. 1 · pp. 3-5 · Goh Cheng Leong Ch. 1 · Savindra Singh Ch. 1</div>
+
+<p>The Universe is composed of <strong>galaxies</strong> (the gravitationally bound assemblies of stars, gas, dust, and dark matter) which together form clusters, superclusters, and the cosmic web. Approximately <strong>2 trillion galaxies</strong> are estimated in the observable Universe.</p>
+
+<h3>2.1 Galaxies — types &amp; structure</h3>
+
+<p>Edwin Hubble's classification (1926), the <strong>"Hubble tuning-fork diagram"</strong>, divides galaxies by visual morphology into four broad classes.</p>
+
+<div class="figure">
+<svg viewBox="0 0 680 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Four galaxy types — spiral, barred spiral, elliptical, irregular">
+  <text x="340" y="20" text-anchor="middle" font-size="13" font-weight="700" fill="#5a0e1a">Four major galaxy types (Hubble's classification)</text>
+  <!-- Spiral -->
+  <g transform="translate(90,130)">
+    <ellipse cx="0" cy="0" rx="55" ry="14" fill="#1a2a5a" opacity=".15"/>
+    <circle cx="0" cy="0" r="10" fill="#ffd980" stroke="#8b1a2a" stroke-width="1"/>
+    <path d="M -40,-5 Q -20,-25 5,-10 Q 30,5 45,-10" fill="none" stroke="#1a2a5a" stroke-width="2"/>
+    <path d="M 40,5 Q 20,25 -5,10 Q -30,-5 -45,10" fill="none" stroke="#1a2a5a" stroke-width="2"/>
+    <text x="0" y="55" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a1a">Spiral</text>
+    <text x="0" y="70" text-anchor="middle" font-size="10" fill="#5b6470">e.g. Andromeda (M31)</text>
+    <text x="0" y="84" text-anchor="middle" font-size="10" fill="#5b6470">Disc + arms + bulge</text>
+  </g>
+  <!-- Barred spiral -->
+  <g transform="translate(250,130)">
+    <ellipse cx="0" cy="0" rx="55" ry="14" fill="#1a2a5a" opacity=".15"/>
+    <rect x="-22" y="-6" width="44" height="12" rx="3" fill="#ffd980" stroke="#8b1a2a" stroke-width="1"/>
+    <path d="M -22,0 Q -45,-20 -25,-30 Q 0,-35 15,-25" fill="none" stroke="#1a2a5a" stroke-width="2"/>
+    <path d="M 22,0 Q 45,20 25,30 Q 0,35 -15,25" fill="none" stroke="#1a2a5a" stroke-width="2"/>
+    <text x="0" y="55" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a1a">Barred spiral</text>
+    <text x="0" y="70" text-anchor="middle" font-size="10" fill="#5b6470">e.g. Milky Way (SBbc)</text>
+    <text x="0" y="84" text-anchor="middle" font-size="10" fill="#5b6470">Central bar + arms</text>
+  </g>
+  <!-- Elliptical -->
+  <g transform="translate(420,130)">
+    <ellipse cx="0" cy="0" rx="48" ry="28" fill="#ffd980" stroke="#8b1a2a" stroke-width="1.5"/>
+    <ellipse cx="0" cy="0" rx="30" ry="18" fill="#ffba4d" opacity=".7"/>
+    <ellipse cx="0" cy="0" rx="15" ry="9" fill="#ff8a1a" opacity=".7"/>
+    <text x="0" y="55" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a1a">Elliptical</text>
+    <text x="0" y="70" text-anchor="middle" font-size="10" fill="#5b6470">e.g. M87 (in Virgo)</text>
+    <text x="0" y="84" text-anchor="middle" font-size="10" fill="#5b6470">Old stars, little gas</text>
+  </g>
+  <!-- Irregular -->
+  <g transform="translate(580,130)">
+    <path d="M -35,-10 Q -20,-25 0,-15 Q 25,-30 40,-5 Q 35,15 15,20 Q -10,30 -30,15 Z" fill="#ffd980" stroke="#8b1a2a" stroke-width="1.5" opacity=".85"/>
+    <circle cx="-15" cy="-5" r="3" fill="#ff8a1a"/>
+    <circle cx="18" cy="-2" r="2.5" fill="#ff8a1a"/>
+    <circle cx="5" cy="15" r="3" fill="#ff8a1a"/>
+    <text x="0" y="55" text-anchor="middle" font-size="12" font-weight="700" fill="#1a1a1a">Irregular</text>
+    <text x="0" y="70" text-anchor="middle" font-size="10" fill="#5b6470">e.g. LMC, SMC</text>
+    <text x="0" y="84" text-anchor="middle" font-size="10" fill="#5b6470">No defined shape</text>
+  </g>
+</svg>
+<div class="figcaption"><strong>Fig 1.2</strong> — Four major galaxy morphologies after Hubble (1926). The Milky Way is a barred-spiral galaxy of class SBbc.</div>
+</div>
+
+<table>
+<thead><tr><th>Type</th><th>Form</th><th>Population &amp; gas</th><th>Examples</th></tr></thead>
+<tbody>
+<tr><td>Spiral (S)</td><td>Central bulge + flat rotating disc + spiral arms</td><td>Population I (young, blue stars in arms) + Pop II (old, in bulge); abundant gas/dust → active star formation</td><td>Andromeda M31, M81, M101</td></tr>
+<tr><td>Barred spiral (SB)</td><td>As above, plus a straight bar across the bulge from which arms emerge</td><td>Similar to spiral</td><td><strong>Milky Way (SBbc)</strong>, NGC 1300</td></tr>
+<tr><td>Elliptical (E)</td><td>Smooth ellipsoid, no arms, no bar</td><td>Pop II only (old, red stars); little gas; minimal new star formation</td><td>M87 in Virgo cluster, M32, ESO 146-IG 005</td></tr>
+<tr><td>Irregular (Irr)</td><td>No defined symmetry, often distorted by gravity</td><td>Rich in gas, active star formation; small dwarfs</td><td>Large &amp; Small Magellanic Clouds (LMC, SMC)</td></tr>
+<tr><td>Lenticular (S0)</td><td>Intermediate — disc + bulge but no clear arms</td><td>Old stars, little gas (transitional)</td><td>NGC 2787, NGC 5866</td></tr>
+</tbody>
+</table>
+
+<div class="mnemonic"><span class="tag-mn">Mnemonic</span><strong>"Some Bored Engineers Love Iridescent galaxies"</strong> — <em>S</em>piral · <em>B</em>arred spiral · <em>E</em>lliptical · <em>L</em>enticular · <em>I</em>rregular.</div>
+
+<h4>The Milky Way Galaxy — our home</h4>
+<ul>
+  <li>Type — <strong>Barred spiral (SBbc)</strong>; diameter ~100,000 light-years; thickness ~1,000 ly at disc, ~10,000 ly at central bulge.</li>
+  <li>Contains 100-400 billion stars; total mass ~10¹² solar masses (including dark matter halo).</li>
+  <li>The Sun lies in the <strong>Orion-Cygnus arm</strong>, about <strong>26,000 light-years</strong> from the galactic centre (Sagittarius A*, a supermassive black hole of ~4 million solar masses).</li>
+  <li>The Solar System orbits the galactic centre at ~230 km/s, completing one orbit ("cosmic year") in <strong>~225-250 million years</strong>.</li>
+  <li>Andromeda (M31) is our nearest large galactic neighbour at ~2.5 million ly; the two galaxies will collide in ~4.5 billion years.</li>
+</ul>
+
+<h3>2.2 Stars <span class="rev-pills"><span>D1</span><span>D7</span></span></h3>
+
+<p>A star is a luminous sphere of plasma held together by gravity, generating energy through <strong>nuclear fusion</strong> in its core (mainly H → He in the proton-proton chain or CNO cycle). The Sun is an average star — one of ~10²² (10 sextillion) stars in the observable Universe.</p>
+
+<h4>2.2.1 Birth, life and death of a star</h4>
+
+<div class="figure">
+<svg viewBox="0 0 720 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Star life cycle flowchart">
+  <text x="360" y="20" text-anchor="middle" font-size="13" font-weight="700" fill="#5a0e1a">Life cycle of a star</text>
+  <!-- Stage 1 -->
+  <g transform="translate(60,70)">
+    <ellipse cx="0" cy="0" rx="48" ry="30" fill="#1a2a5a" opacity=".3"/>
+    <text x="0" y="55" text-anchor="middle" font-size="11" font-weight="700">Nebula</text>
+    <text x="0" y="70" text-anchor="middle" font-size="9" fill="#5b6470">gas &amp; dust cloud</text>
+  </g>
+  <text x="135" y="73" font-size="14" fill="#8b1a2a">→</text>
+  <!-- Stage 2 -->
+  <g transform="translate(170,70)">
+    <circle r="20" fill="#ff8a1a" opacity=".7"/>
+    <circle r="8" fill="#ffd980"/>
+    <text x="0" y="55" text-anchor="middle" font-size="11" font-weight="700">Protostar</text>
+    <text x="0" y="70" text-anchor="middle" font-size="9" fill="#5b6470">contracting core</text>
+  </g>
+  <text x="225" y="73" font-size="14" fill="#8b1a2a">→</text>
+  <!-- Stage 3 -->
+  <g transform="translate(265,70)">
+    <circle r="16" fill="#ffd980" stroke="#8b1a2a" stroke-width="1.2"/>
+    <text x="0" y="55" text-anchor="middle" font-size="11" font-weight="700">Main sequence</text>
+    <text x="0" y="70" text-anchor="middle" font-size="9" fill="#5b6470">H → He fusion</text>
+    <text x="0" y="83" text-anchor="middle" font-size="9" fill="#5b6470">(Sun is here)</text>
+  </g>
+  <text x="335" y="73" font-size="14" fill="#8b1a2a">→</text>
+  <!-- Branch -->
+  <line x1="365" y1="73" x2="395" y2="40" stroke="#8b1a2a" stroke-width="1.5"/>
+  <line x1="365" y1="73" x2="395" y2="110" stroke="#8b1a2a" stroke-width="1.5"/>
+  <text x="380" y="30" font-size="9" fill="#5b6470">low mass</text>
+  <text x="380" y="125" font-size="9" fill="#5b6470">high mass &gt;8 M☉</text>
+  <!-- Low mass branch -->
+  <g transform="translate(440,40)">
+    <circle r="22" fill="#ff4a1a" opacity=".7"/>
+    <text x="0" y="40" text-anchor="middle" font-size="10" font-weight="700">Red giant</text>
+  </g>
+  <text x="490" y="43" font-size="14" fill="#8b1a2a">→</text>
+  <g transform="translate(540,40)">
+    <circle r="6" fill="#ffffff" stroke="#8b1a2a" stroke-width="1"/>
+    <circle r="20" fill="none" stroke="#9bb5ff" stroke-width="1.2" opacity=".7"/>
+    <text x="0" y="40" text-anchor="middle" font-size="10" font-weight="700">Planetary nebula</text>
+    <text x="0" y="52" text-anchor="middle" font-size="9" fill="#5b6470">→ White dwarf</text>
+  </g>
+  <!-- High mass branch -->
+  <g transform="translate(440,140)">
+    <circle r="26" fill="#ff2a1a" opacity=".75"/>
+    <text x="0" y="45" text-anchor="middle" font-size="10" font-weight="700">Red supergiant</text>
+  </g>
+  <text x="495" y="143" font-size="14" fill="#8b1a2a">→</text>
+  <g transform="translate(545,140)">
+    <circle r="22" fill="#ffe4a0"/>
+    <circle r="22" fill="none" stroke="#ff8a1a" stroke-width="2" stroke-dasharray="3,2"/>
+    <text x="0" y="45" text-anchor="middle" font-size="10" font-weight="700">Supernova</text>
+  </g>
+  <text x="605" y="143" font-size="14" fill="#8b1a2a">→</text>
+  <g transform="translate(660,140)">
+    <circle r="5" fill="#1a1a1a"/>
+    <text x="0" y="20" text-anchor="middle" font-size="9" font-weight="700">Black hole</text>
+    <text x="0" y="34" text-anchor="middle" font-size="9" fill="#5b6470">/ Neutron star</text>
+  </g>
+</svg>
+<div class="figcaption"><strong>Fig 1.3</strong> — Stellar life cycle. A star's mass at birth determines its fate — low-mass stars (≤8 M☉) end as white dwarfs; high-mass stars explode as supernovae leaving neutron stars or black holes.</div>
+</div>
+
+<h4>2.2.2 Hertzsprung-Russell (H-R) diagram — classifying stars</h4>
+<p>The H-R diagram (Hertzsprung 1911 &amp; Russell 1913, independently) plots stars by luminosity (y-axis) against surface temperature / spectral class (x-axis). ~90% of stars including the Sun lie on the diagonal "main sequence". The spectral classification — <strong>O B A F G K M</strong> (hot to cool, blue to red) — is the standard.</p>
+
+<div class="mnemonic"><span class="tag-mn">Mnemonic</span><strong>"Oh Be A Fine Girl/Guy, Kiss Me"</strong> — spectral classes from hottest (O, ~30,000 K, blue) to coolest (M, ~3,000 K, red). The Sun is class <strong>G2V</strong>.</div>
+
+<h4>2.2.3 End states of stellar evolution</h4>
+<table>
+<thead><tr><th>Remnant</th><th>Progenitor mass</th><th>Defining feature</th></tr></thead>
+<tbody>
+<tr><td><strong>White dwarf</strong></td><td>0.08-8 M☉ (like the Sun)</td><td>Earth-sized, density ~10⁹ kg/m³; supported by electron degeneracy pressure</td></tr>
+<tr><td><strong>Neutron star</strong></td><td>8-20 M☉</td><td>~20 km diameter; density ~10¹⁷ kg/m³; pulsars are rapidly-rotating neutron stars (Hewish &amp; Bell, 1967)</td></tr>
+<tr><td><strong>Black hole</strong></td><td>&gt;20 M☉</td><td>Escape velocity exceeds c; event horizon = Schwarzschild radius. First image captured by Event Horizon Telescope, M87* (April 2019); Sgr A* image (May 2022)</td></tr>
+</tbody>
+</table>
+
+<div class="mains-template">
+<h4>Mains template — 250-word answer (15 marks)</h4>
+<p><strong>Q: Describe the life cycle of a star and explain the role of mass in determining its end state.</strong></p>
+<ul>
+  <li><strong>Intro</strong> — define a star; energy source = nuclear fusion (H → He in p-p chain).</li>
+  <li><strong>Stage 1-3</strong> — Nebula → Protostar → Main sequence (90% of stellar lifetime; the Sun has spent 4.6 Gyr here with ~5 Gyr remaining).</li>
+  <li><strong>Stage 4 branches by mass</strong> — Low mass (≤8 M☉) → red giant → planetary nebula → white dwarf. High mass (&gt;8 M☉) → red supergiant → supernova → neutron star or black hole.</li>
+  <li><span class="diag-cue">[Diagram cue: 5-box flowchart with branch at "main sequence" for low-mass vs high-mass path]</span></li>
+  <li><strong>Conclusion</strong> — stellar nucleosynthesis seeds heavy elements (C, O, Fe) in the interstellar medium → next-generation star &amp; planet formation; we are "made of star-stuff" (Sagan).</li>
+</ul>
+</div>
+
+<div class="news-box">
+<span class="news-tag">In the news</span> The <strong>Event Horizon Telescope</strong> released the first image of the supermassive black hole at the centre of M87 in April 2019, and of <strong>Sagittarius A*</strong> (the Milky Way's central black hole) in May 2022. <strong>LIGO-Virgo</strong> detected the first gravitational waves in September 2015 (GW150914 — binary black hole merger; Nobel 2017), and the first binary neutron-star merger (GW170817, Aug 2017) — opening the era of multi-messenger astronomy.
+</div>
+</section>
+
+<section class="notes" id="s3">
+<h2>3. The Solar System — origin &amp; the Sun <span class="rev-pills"><span>D1</span><span>D7</span><span>D30</span></span></h2>
+<div class="ncert-strip">NCERT XI · Ch. 1 · pp. 5-7 · Goh Cheng Leong Ch. 1</div>
+
+<p>The Solar System comprises the Sun, eight planets, five officially-recognised dwarf planets (Pluto, Eris, Ceres, Haumea, Makemake), ~200 known moons, the asteroid belt, the Kuiper Belt, the Oort Cloud, and countless comets, meteoroids, and dust. Its age is ~<strong>4.6 billion years</strong>, dated from primitive meteorites.</p>
+
+<h3>3.1 Origin of the Solar System — the Nebular Hypothesis</h3>
+<p>Multiple theories have been proposed; the modern consensus is a refined version of the <strong>Nebular Hypothesis</strong>.</p>
+
+<table>
+<thead><tr><th>Theory</th><th>Proposer (year)</th><th>Core idea</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>Nebular Hypothesis</td><td>Immanuel <strong>Kant (1755)</strong> &amp; Pierre-Simon <strong>Laplace (1796)</strong></td><td>Solar System formed from a slowly rotating gas-dust nebula that contracted, flattened into a disc, and fragmented — central mass = Sun; peripheral rings = planets</td><td>Modified version (<em>Solar Nebular Disc Model, SNDM</em>) accepted today</td></tr>
+<tr><td>Tidal / Planetesimal Hypothesis</td><td>Chamberlin &amp; Moulton (1900); James Jeans &amp; Harold Jeffreys (1917)</td><td>A passing star pulled out matter from the Sun in a "cigar-shaped" filament, which condensed into planetesimals → planets</td><td>Discarded — requires extremely unlikely stellar encounters</td></tr>
+<tr><td>Binary Star Hypothesis</td><td>H.N. Russell (1937), R.A. Lyttleton (1938)</td><td>Sun had a companion star; passing third star pulled matter from companion; companion was destroyed</td><td>Discarded</td></tr>
+<tr><td>Modern SNDM</td><td>Otto Schmidt (1944), Carl von Weizsäcker (1944), Safronov (1969)</td><td>~4.6 Gya a giant molecular cloud collapsed (triggered by nearby supernova); ~99.8% of mass → Sun; remainder formed protoplanetary disc; planets grew by accretion of planetesimals</td><td><strong>Accepted standard model</strong></td></tr>
+</tbody>
+</table>
+
+<div class="mnemonic"><span class="tag-mn">Mnemonic</span><strong>"K-L-J-J-S"</strong> — Solar System theories in order: <em>Kant · Laplace · Jeans-Jeffreys · Schmidt</em>. Modern model = "Solar Nebular Disc Model" (SNDM).</div>
+
+<h3>3.2 The Sun — our star</h3>
+
+<div class="figure">
+<svg viewBox="0 0 640 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cross-section of the Sun">
+  <defs>
+    <radialGradient id="sunGrad" cx="40%" cy="50%">
+      <stop offset="0" stop-color="#fff5b8"/>
+      <stop offset=".3" stop-color="#ffd980"/>
+      <stop offset=".6" stop-color="#ff8a1a"/>
+      <stop offset="1" stop-color="#a04a0f"/>
+    </radialGradient>
+    <radialGradient id="coreGrad" cx="50%" cy="50%">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ffd980"/>
+    </radialGradient>
+  </defs>
+  <text x="320" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#5a0e1a">Internal structure of the Sun (cross-section)</text>
+  <!-- corona outer halo -->
+  <circle cx="220" cy="195" r="170" fill="#ffd980" opacity=".18"/>
+  <circle cx="220" cy="195" r="148" fill="#ffba4d" opacity=".25"/>
+  <!-- chromosphere -->
+  <circle cx="220" cy="195" r="132" fill="#ff8a1a" opacity=".5"/>
+  <!-- photosphere -->
+  <circle cx="220" cy="195" r="125" fill="url(#sunGrad)"/>
+  <!-- convective zone -->
+  <circle cx="220" cy="195" r="98" fill="#ff8a1a"/>
+  <!-- bubbles for convection -->
+  <g fill="#ffd980" opacity=".6">
+    <circle cx="180" cy="170" r="11"/><circle cx="245" cy="160" r="9"/><circle cx="200" cy="225" r="10"/><circle cx="260" cy="220" r="8"/><circle cx="160" cy="210" r="7"/><circle cx="245" cy="245" r="9"/>
+  </g>
+  <!-- radiative zone -->
+  <circle cx="220" cy="195" r="68" fill="#ff5a1a"/>
+  <g stroke="#ffd980" stroke-width="1" opacity=".5" fill="none">
+    <path d="M 180,170 Q 200,180 220,165 Q 240,155 260,180"/>
+    <path d="M 175,205 Q 200,220 230,210 Q 250,200 265,215"/>
+  </g>
+  <!-- core -->
+  <circle cx="220" cy="195" r="34" fill="url(#coreGrad)"/>
+  <text x="220" y="200" text-anchor="middle" font-size="10" font-weight="700" fill="#5a0e1a">Core</text>
+  <!-- sunspot on surface -->
+  <ellipse cx="320" cy="170" rx="10" ry="5" fill="#5a0e1a" opacity=".7"/>
+  <!-- prominence -->
+  <path d="M 295,90 Q 320,40 360,80" fill="none" stroke="#ff5a1a" stroke-width="3"/>
+  <path d="M 270,80 Q 290,30 320,60" fill="none" stroke="#ff8a1a" stroke-width="2"/>
+  <!-- Labels with leader lines -->
+  <g font-size="11" fill="#1a1a1a">
+    <line x1="220" y1="195" x2="445" y2="100" stroke="#5a0e1a" stroke-width=".8"/>
+    <text x="450" y="100" font-weight="700" fill="#8b1a2a">Core</text>
+    <text x="450" y="113" font-size="9.5" fill="#5b6470">15 million °C; H→He fusion</text>
+    <line x1="265" y1="180" x2="445" y2="140" stroke="#5a0e1a" stroke-width=".8"/>
+    <text x="450" y="140" font-weight="700" fill="#8b1a2a">Radiative zone</text>
+    <text x="450" y="153" font-size="9.5" fill="#5b6470">2-7 million °C; photons random-walk for ~170,000 yrs</text>
+    <line x1="285" y1="215" x2="445" y2="178" stroke="#5a0e1a" stroke-width=".8"/>
+    <text x="450" y="178" font-weight="700" fill="#8b1a2a">Convective zone</text>
+    <text x="450" y="191" font-size="9.5" fill="#5b6470">~2 million °C; bulk plasma flow</text>
+    <line x1="330" y1="240" x2="445" y2="218" stroke="#5a0e1a" stroke-width=".8"/>
+    <text x="450" y="218" font-weight="700" fill="#8b1a2a">Photosphere</text>
+    <text x="450" y="231" font-size="9.5" fill="#5b6470">5,500 °C; visible "surface"</text>
+    <line x1="340" y1="180" x2="445" y2="258" stroke="#5a0e1a" stroke-width=".8"/>
+    <text x="450" y="258" font-weight="700" fill="#8b1a2a">Sunspot</text>
+    <text x="450" y="271" font-size="9.5" fill="#5b6470">Cooler magnetic region; 11-yr cycle</text>
+    <line x1="320" y1="100" x2="445" y2="298" stroke="#5a0e1a" stroke-width=".8"/>
+    <text x="450" y="298" font-weight="700" fill="#8b1a2a">Chromosphere &amp; Corona</text>
+    <text x="450" y="311" font-size="9.5" fill="#5b6470">Outer atmosphere; corona ~1-2 million °C</text>
+    <line x1="335" y1="70" x2="445" y2="338" stroke="#5a0e1a" stroke-width=".8"/>
+    <text x="450" y="338" font-weight="700" fill="#8b1a2a">Prominence / CME</text>
+    <text x="450" y="351" font-size="9.5" fill="#5b6470">Magnetic loops; eject solar wind</text>
+  </g>
+</svg>
+<div class="figcaption"><strong>Fig 1.4</strong> — Layered structure of the Sun. Energy generated by H→He fusion in the core takes ~170,000 years to travel through the radiative zone, then minutes through the convective zone, before being emitted from the photosphere as sunlight.</div>
+</div>
+
+<h4>Basic data — the Sun</h4>
+<table>
+<thead><tr><th>Parameter</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>Diameter</td><td>1.39 × 10⁶ km (~109 × Earth)</td></tr>
+<tr><td>Mass</td><td>1.989 × 10³⁰ kg (~333,000 × Earth; 99.86% of Solar System mass)</td></tr>
+<tr><td>Composition (by mass)</td><td>H ~73%, He ~25%, heavier elements (O, C, Fe, Ne, N) ~2%</td></tr>
+<tr><td>Surface temperature (photosphere)</td><td>~5,500 °C (5,778 K)</td></tr>
+<tr><td>Core temperature</td><td>~15 million °C</td></tr>
+<tr><td>Corona temperature</td><td>1-2 million °C (paradoxically hotter than the surface — "coronal heating problem")</td></tr>
+<tr><td>Rotation period</td><td>25 days at equator, ~35 days at poles (differential rotation)</td></tr>
+<tr><td>Age</td><td>4.6 billion years (currently ~halfway through main-sequence life)</td></tr>
+<tr><td>Spectral class</td><td>G2V (yellow dwarf)</td></tr>
+<tr><td>Distance from Earth</td><td>149.6 × 10⁶ km = 1 Astronomical Unit (AU); light takes 8 min 20 s</td></tr>
+</tbody>
+</table>
+
+<h4>3.2.1 Internal layers (centre outward)</h4>
+<ol>
+  <li><strong>Core</strong> — radius ~0.25 R☉, temperature ~15 million °C, density ~150 g/cm³. Site of nuclear fusion (proton-proton chain: 4 H → He + 2 e⁺ + 2 ν + γ, releasing 26.7 MeV per cycle).</li>
+  <li><strong>Radiative zone</strong> — 0.25 to 0.7 R☉. Energy transported outward as photons that take ~170,000 years (random walk through dense plasma).</li>
+  <li><strong>Convective zone</strong> — 0.7 R☉ to surface. Plasma circulates in convection cells (granulation visible on photosphere).</li>
+  <li><strong>Photosphere</strong> — visible "surface", ~400 km thick; temperature 5,500 °C.</li>
+  <li><strong>Chromosphere</strong> — pinkish layer above photosphere, ~2,000 km thick, visible during total solar eclipse.</li>
+  <li><strong>Corona</strong> — outermost layer, extends millions of km; only seen during eclipse; temperature 1-2 million °C (coronal heating still incompletely understood).</li>
+</ol>
+
+<h4>3.2.2 Solar activity</h4>
+<ul>
+  <li><strong>Sunspots</strong> — cooler (~3,800 °C) magnetic regions on photosphere; follow an <strong>11-year cycle</strong> (Schwabe cycle, 1843). Solar Cycle 25 began Dec 2019; peaks 2024-25.</li>
+  <li><strong>Solar wind</strong> — continuous stream of charged particles (mainly protons, electrons) at 400-800 km/s; carves the heliosphere.</li>
+  <li><strong>Solar flares</strong> — sudden electromagnetic radiation bursts; classified X, M, C, B, A (most to least intense).</li>
+  <li><strong>Coronal Mass Ejections (CMEs)</strong> — huge plasma+magnetic-field releases; can cause geomagnetic storms on Earth, aurorae, and disrupt satellites/power grids (e.g., Carrington Event, 1-2 Sep 1859 — largest recorded).</li>
+  <li><strong>Aurorae</strong> — solar-wind particles excite atmospheric gases at poles → Aurora Borealis (N) &amp; Aurora Australis (S).</li>
+</ul>
+
+<div class="news-box">
+<span class="news-tag">In the news</span> <strong>Aditya-L1</strong> — ISRO's first dedicated solar mission, launched 2 Sep 2023; reached Sun-Earth Lagrange Point 1 (L1) on 6 Jan 2024; halo orbit ~1.5 million km Sun-ward of Earth. Carries 7 payloads (VELC, SUIT, ASPEX, etc.) studying corona, photosphere, chromosphere, solar wind, CMEs. NASA's <strong>Parker Solar Probe</strong> (2018-) has flown to ~6.1 million km from the Sun (Dec 2024) — closest human-made object to a star.
+</div>
+
+<div class="mains-template">
+<h4>Mains template — 250-word answer (15 marks)</h4>
+<p><strong>Q: Describe the internal structure of the Sun and discuss the impact of solar activity on Earth.</strong></p>
+<ul>
+  <li><strong>Intro</strong> — Sun = G2V yellow-dwarf star; ~99.86% of Solar System mass; energy source = p-p fusion.</li>
+  <li><strong>Six layers (centre outward)</strong> — Core (15 M °C, fusion) → Radiative zone (170,000-yr photon transit) → Convective zone → Photosphere (5,500 °C, visible surface) → Chromosphere → Corona (1-2 M °C).</li>
+  <li><span class="diag-cue">[Diagram cue: half-circle cross-section with 6 labelled concentric layers + sunspot + prominence]</span></li>
+  <li><strong>Solar activity</strong> — Sunspots (11-yr cycle), solar wind, flares (X-A), CMEs.</li>
+  <li><strong>Earth impacts</strong> — Aurorae, geomagnetic storms (satellite damage, power-grid trips — Quebec 1989 blackout, Carrington Event 1859), GPS/HF radio disruption, climate forcing (Maunder Minimum ~1645-1715 correlated with "Little Ice Age").</li>
+  <li><strong>Conclusion</strong> — Mention Aditya-L1 (2023-24) and Parker Solar Probe contributions; importance for space weather forecasting and India's growing space economy.</li>
+</ul>
+</div>
+</section>
+
+<section class="notes" id="s4">
+<h2>4. The Eight Planets — terrestrial &amp; Jovian <span class="rev-pills"><span>D1</span><span>D7</span><span>D30</span><span>D90</span></span></h2>
+<div class="ncert-strip">NCERT XI · Ch. 1 · pp. 6-9 · Goh Cheng Leong Ch. 1</div>
+
+<p>Per the 2006 International Astronomical Union (IAU) definition (Prague Assembly, 24 August 2006), a <strong>planet</strong> is a celestial body that (a) orbits the Sun, (b) has sufficient mass for its self-gravity to assume hydrostatic equilibrium (near-round shape), and (c) has cleared the neighbourhood around its orbit. Bodies meeting (a)-(b) but not (c) are <strong>dwarf planets</strong> (Pluto demoted in 2006).</p>
+
+<div class="figure">
+<svg viewBox="0 0 760 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="The Solar System — eight planets in order from the Sun">
+  <text x="380" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#5a0e1a">The Solar System — order of the 8 planets from the Sun</text>
+  <text x="380" y="38" text-anchor="middle" font-size="10" fill="#5b6470">(sizes proportionate within group; distances not to scale)</text>
+  <!-- Sun -->
+  <defs>
+    <radialGradient id="sun2"><stop offset="0" stop-color="#fff5b8"/><stop offset="1" stop-color="#ff8a1a"/></radialGradient>
+  </defs>
+  <circle cx="30" cy="110" r="22" fill="url(#sun2)" stroke="#a04a0f" stroke-width="1"/>
+  <text x="30" y="148" text-anchor="middle" font-size="10" font-weight="700">Sun</text>
+  <!-- Mercury -->
+  <circle cx="100" cy="110" r="4" fill="#a0a0a0" stroke="#5a0e1a" stroke-width=".7"/>
+  <text x="100" y="148" text-anchor="middle" font-size="10" font-weight="700">Mercury</text>
+  <text x="100" y="160" text-anchor="middle" font-size="8" fill="#5b6470">0.39 AU</text>
+  <!-- Venus -->
+  <circle cx="160" cy="110" r="6" fill="#e8c97e" stroke="#5a0e1a" stroke-width=".7"/>
+  <text x="160" y="148" text-anchor="middle" font-size="10" font-weight="700">Venus</text>
+  <text x="160" y="160" text-anchor="middle" font-size="8" fill="#5b6470">0.72 AU</text>
+  <!-- Earth -->
+  <circle cx="225" cy="110" r="6.5" fill="#3b6fbf" stroke="#5a0e1a" stroke-width=".7"/>
+  <circle cx="227" cy="108" r="2.5" fill="#2e7a47" opacity=".7"/>
+  <text x="225" y="148" text-anchor="middle" font-size="10" font-weight="700">Earth</text>
+  <text x="225" y="160" text-anchor="middle" font-size="8" fill="#5b6470">1.00 AU</text>
+  <!-- Mars -->
+  <circle cx="285" cy="110" r="4.5" fill="#c34a1f" stroke="#5a0e1a" stroke-width=".7"/>
+  <text x="285" y="148" text-anchor="middle" font-size="10" font-weight="700">Mars</text>
+  <text x="285" y="160" text-anchor="middle" font-size="8" fill="#5b6470">1.52 AU</text>
+  <!-- Asteroid belt -->
+  <g fill="#5b6470">
+    <circle cx="335" cy="105" r="1"/><circle cx="340" cy="113" r="1"/><circle cx="345" cy="108" r="1"/><circle cx="350" cy="116" r="1"/><circle cx="355" cy="103" r="1"/><circle cx="360" cy="110" r="1"/><circle cx="365" cy="115" r="1"/>
+  </g>
+  <text x="350" y="148" text-anchor="middle" font-size="9" fill="#5b6470" font-style="italic">Asteroid Belt</text>
+  <text x="350" y="160" text-anchor="middle" font-size="8" fill="#5b6470">2.2-3.2 AU</text>
+  <!-- Jupiter -->
+  <circle cx="425" cy="110" r="18" fill="#d49b6e" stroke="#5a0e1a" stroke-width=".8"/>
+  <ellipse cx="425" cy="105" rx="18" ry="2" fill="#a0633c" opacity=".7"/>
+  <ellipse cx="425" cy="114" rx="18" ry="2" fill="#a0633c" opacity=".5"/>
+  <circle cx="430" cy="113" r="2.5" fill="#8b1a2a"/>
+  <text x="425" y="148" text-anchor="middle" font-size="10" font-weight="700">Jupiter</text>
+  <text x="425" y="160" text-anchor="middle" font-size="8" fill="#5b6470">5.20 AU</text>
+  <!-- Saturn -->
+  <circle cx="510" cy="110" r="14" fill="#e0c08f" stroke="#5a0e1a" stroke-width=".8"/>
+  <ellipse cx="510" cy="110" rx="22" ry="3" fill="none" stroke="#a0633c" stroke-width="1.5"/>
+  <ellipse cx="510" cy="110" rx="22" ry="3" fill="none" stroke="#fff" stroke-width=".4"/>
+  <text x="510" y="148" text-anchor="middle" font-size="10" font-weight="700">Saturn</text>
+  <text x="510" y="160" text-anchor="middle" font-size="8" fill="#5b6470">9.58 AU</text>
+  <!-- Uranus -->
+  <circle cx="600" cy="110" r="10" fill="#8fcfd9" stroke="#5a0e1a" stroke-width=".8"/>
+  <ellipse cx="600" cy="110" rx="10" ry="14" fill="none" stroke="#3b6fbf" stroke-width=".7"/>
+  <text x="600" y="148" text-anchor="middle" font-size="10" font-weight="700">Uranus</text>
+  <text x="600" y="160" text-anchor="middle" font-size="8" fill="#5b6470">19.2 AU</text>
+  <!-- Neptune -->
+  <circle cx="680" cy="110" r="10" fill="#3b6fbf" stroke="#5a0e1a" stroke-width=".8"/>
+  <ellipse cx="680" cy="106" rx="10" ry="2" fill="#1a3a8f" opacity=".6"/>
+  <text x="680" y="148" text-anchor="middle" font-size="10" font-weight="700">Neptune</text>
+  <text x="680" y="160" text-anchor="middle" font-size="8" fill="#5b6470">30.0 AU</text>
+  <!-- Group brackets -->
+  <line x1="80" y1="180" x2="305" y2="180" stroke="#8b1a2a" stroke-width="1.2"/>
+  <text x="190" y="195" text-anchor="middle" font-size="10" font-weight="700" fill="#8b1a2a">TERRESTRIAL (Inner)</text>
+  <line x1="395" y1="180" x2="700" y2="180" stroke="#1a2a5a" stroke-width="1.2"/>
+  <text x="545" y="195" text-anchor="middle" font-size="10" font-weight="700" fill="#1a2a5a">JOVIAN (Outer)</text>
+</svg>
+<div class="figcaption"><strong>Fig 1.5</strong> — Order of planets from the Sun. The asteroid belt separates the rocky terrestrial planets (Mercury–Mars) from the gas/ice giant Jovian planets (Jupiter–Neptune).</div>
+</div>
+
+<div class="mnemonic"><span class="tag-mn">Mnemonic</span><strong>"My Very Educated Mother Just Served Us Noodles"</strong> — <em>M</em>ercury · <em>V</em>enus · <em>E</em>arth · <em>M</em>ars · <em>J</em>upiter · <em>S</em>aturn · <em>U</em>ranus · <em>N</em>eptune. (Earlier "Pizzas" included Pluto, now demoted.)</div>
+
+<h3>4.1 Terrestrial vs Jovian — the great division</h3>
+
+<div class="compare-grid">
+  <div class="cell">
+    <h4>Terrestrial (Inner) — Mercury, Venus, Earth, Mars</h4>
+    <ul>
+      <li><strong>Small, dense, rocky</strong> (density 3.9-5.5 g/cm³)</li>
+      <li>Iron-nickel core + silicate mantle/crust</li>
+      <li>Thin / no atmospheres</li>
+      <li>Few or no moons (0-2)</li>
+      <li>No rings</li>
+      <li>Slow rotation (24 hr - 243 days)</li>
+      <li>Formed inside "frost line" — only refractory materials survived</li>
+    </ul>
+  </div>
+  <div class="cell">
+    <h4>Jovian (Outer) — Jupiter, Saturn, Uranus, Neptune</h4>
+    <ul>
+      <li><strong>Large, low-density, gaseous/icy</strong> (density 0.7-1.6 g/cm³)</li>
+      <li>Hydrogen-helium (gas giants) or water-ammonia-methane (ice giants)</li>
+      <li>Thick, deep atmospheres</li>
+      <li>Many moons (14-95+)</li>
+      <li>All have rings (Saturn most prominent)</li>
+      <li>Fast rotation (10-17 hr)</li>
+      <li>Formed beyond frost line — accreted icy volatiles &amp; H₂/He</li>
+    </ul>
+  </div>
+</div>
+
+<h3>4.2 The eight planets — characteristics</h3>
+
+<h4>4.2.1 Mercury (☿)</h4>
+<ul>
+  <li><strong>Smallest planet</strong>; closest to Sun (0.39 AU); diameter 4,879 km (smaller than Ganymede &amp; Titan moons).</li>
+  <li>Orbital period 88 Earth days; <strong>3:2 spin-orbit resonance</strong> — rotates 3 times for every 2 orbits; one solar day = 176 Earth days.</li>
+  <li>Surface temperature range −173 °C (night) to +427 °C (day) — largest of any planet.</li>
+  <li>No atmosphere (exospheric trace); heavily cratered (Caloris Basin); shrinking — surface contains lobate scarps.</li>
+  <li>Has a relatively large iron core (~85% of radius) — densest planet after Earth.</li>
+  <li>Missions — Mariner 10 (1974-75), MESSENGER (2011-15), BepiColombo (ESA/JAXA, en route — orbit insertion 2026).</li>
+</ul>
+
+<h4>4.2.2 Venus (♀)</h4>
+<ul>
+  <li>"Earth's twin" by size (diameter 12,104 km, ~95% Earth's); rotates <strong>retrograde</strong> (east to west).</li>
+  <li><strong>Slowest rotation</strong> — 243 Earth days; orbital period 225 days, so Venusian day &gt; Venusian year.</li>
+  <li>Atmosphere — 96.5% CO₂, surface pressure 92 × Earth; runaway greenhouse effect → surface 462 °C (<strong>hottest planet</strong>, hotter than Mercury despite being farther from Sun).</li>
+  <li>Sulfuric acid clouds; permanent yellowish haze; no magnetic field.</li>
+  <li>Brightest object in night sky after Moon; "morning/evening star".</li>
+  <li>Missions — Mariner 2 (1962, first interplanetary flyby), Venera series (USSR, 1961-83), Magellan, Akatsuki (JAXA), Parker Solar Probe flybys, ISRO's planned <strong>Shukrayaan-1</strong> (~2028).</li>
+</ul>
+
+<h4>4.2.3 Earth (♁)</h4>
+<ul>
+  <li>Third planet; only known abode of life; 1 AU from Sun; diameter 12,742 km.</li>
+  <li>Atmosphere — N₂ 78%, O₂ 21%, Ar 0.9%, CO₂ 0.04% + variable water vapour.</li>
+  <li>71% surface covered by water (unique); active plate tectonics; protective magnetic field generated by liquid iron-nickel outer core.</li>
+  <li>One natural satellite — the Moon (3,474 km diameter; 384,400 km away; tidally locked).</li>
+  <li>Detailed treatment in <a href="/world-geography">A2 — The Earth</a>.</li>
+</ul>
+
+<h4>4.2.4 Mars (♂)</h4>
+<ul>
+  <li>"Red planet" — iron oxide dust surface; diameter 6,779 km (~half of Earth).</li>
+  <li>Orbital period 687 Earth days; rotation 24 hr 37 min (nearest to Earth's day).</li>
+  <li>Tenuous atmosphere (CO₂ 95%, surface pressure &lt;1% Earth); surface temperature −143 to +35 °C.</li>
+  <li><strong>Olympus Mons</strong> — Solar System's tallest volcano (~22 km, ~2.5× Everest).</li>
+  <li><strong>Valles Marineris</strong> — Solar System's largest canyon system (4,000 km long, 7 km deep).</li>
+  <li>Two small irregular moons — Phobos &amp; Deimos (probably captured asteroids).</li>
+  <li>Evidence of ancient surface water; ice at poles; subsurface liquid-water lakes (Mars Express radar, 2018).</li>
+  <li>Missions — Viking 1 &amp; 2 (1976), Mars Pathfinder (1997), <strong>Mangalyaan / Mars Orbiter Mission (ISRO, 2014-22)</strong> — made India the first nation to reach Mars on its maiden attempt; NASA's Curiosity (2012-), Perseverance + Ingenuity helicopter (2021-), China's Tianwen-1 + Zhurong rover (2021-).</li>
+</ul>
+
+<h4>4.2.5 Jupiter (♃) — King of planets</h4>
+<ul>
+  <li><strong>Largest planet</strong> — diameter 139,820 km (~11 × Earth); mass 318 × Earth (2.5 × all other planets combined).</li>
+  <li>Gas giant — ~90% H, ~10% He (by atoms); no solid surface; may have a small rocky core.</li>
+  <li>Orbital period 11.86 yrs; rotates fastest of all planets — 9 hr 56 min — causing equatorial bulge.</li>
+  <li><strong>Great Red Spot</strong> — anticyclonic storm observed since 1665; ~16,000 km wide (currently shrinking).</li>
+  <li>Bands &amp; zones — alternating cloud belts driven by jet streams.</li>
+  <li><strong>95 known moons</strong> (as of 2023); four Galilean moons (Io, Europa, Ganymede, Callisto) discovered by Galileo Jan 1610. Ganymede is the largest moon in the Solar System (bigger than Mercury). Europa &amp; Ganymede have subsurface oceans — astrobiology priority targets.</li>
+  <li>Faint ring system (1979 Voyager 1 discovery).</li>
+  <li>Missions — Pioneer 10/11, Voyager 1/2, Galileo (1995-2003), Juno (2016-, ongoing), Europa Clipper (NASA, launched Oct 2024), JUICE (ESA, launched Apr 2023, arrives 2031).</li>
+</ul>
+
+<h4>4.2.6 Saturn (♄)</h4>
+<ul>
+  <li>Second-largest planet — diameter 116,460 km; lowest density of any planet (<strong>0.687 g/cm³ — would float in water</strong>).</li>
+  <li>Gas giant — H/He composition similar to Jupiter.</li>
+  <li>Orbital period 29.46 yrs; rotation 10 hr 33 min.</li>
+  <li>Spectacular <strong>ring system</strong> — A, B, C, D, E, F, G rings discovered telescopically by Galileo (1610) &amp; resolved by Cassini-Huygens; composed mostly of water ice + dust; ~282,000 km wide but only ~10 m thick.</li>
+  <li><strong>146 known moons</strong> (Saturn overtook Jupiter in 2023 count). <strong>Titan</strong> — second-largest moon in Solar System; only moon with thick atmosphere (N₂-rich); hydrocarbon lakes (Huygens probe landing, 14 Jan 2005). <strong>Enceladus</strong> — geysers from subsurface ocean, prime astrobiology target.</li>
+  <li>Missions — Pioneer 11 (1979), Voyager 1/2 (1980-81), <strong>Cassini-Huygens (2004-17, deliberately deorbited 15 Sep 2017)</strong>, Dragonfly (NASA, launches 2028, Titan rotorcraft).</li>
+</ul>
+
+<h4>4.2.7 Uranus (⛢)</h4>
+<ul>
+  <li><strong>First planet discovered by telescope</strong> — William Herschel, 13 March 1781; named after the Greek sky god.</li>
+  <li>"Ice giant" — H/He envelope over water-ammonia-methane mantle; pale blue-green colour from methane absorption.</li>
+  <li>Diameter 50,724 km; orbital period 84 Earth years; rotation 17 hr 14 min (retrograde).</li>
+  <li><strong>Extreme axial tilt of 97.77°</strong> — effectively rolls on its side; each pole faces the Sun for ~42 years at a time.</li>
+  <li>27 known moons named after Shakespearean &amp; Pope characters (Titania, Oberon, Miranda, Ariel, Umbriel).</li>
+  <li>13 known rings.</li>
+  <li>Only one visit — Voyager 2 flyby, 24 Jan 1986. NASA Uranus Orbiter and Probe mission proposed for ~2030s.</li>
+</ul>
+
+<h4>4.2.8 Neptune (♆)</h4>
+<ul>
+  <li><strong>Mathematically predicted before being observed</strong> — Le Verrier &amp; Adams (1845-46) from perturbations of Uranus's orbit; Johann Galle observed it 23 September 1846.</li>
+  <li>Farthest planet from Sun (30 AU); orbital period <strong>164.8 years</strong> — has completed only one orbit since discovery (2011).</li>
+  <li>Diameter 49,244 km; rotation 16 hr 6 min.</li>
+  <li>Ice giant; deep blue colour from methane; <strong>strongest winds in Solar System</strong> (up to 2,100 km/h).</li>
+  <li>"Great Dark Spot" storm observed by Voyager 2 (1989); later vanished.</li>
+  <li>14 moons — <strong>Triton</strong> largest, retrograde orbit (probably captured Kuiper Belt object), one of the coldest objects in Solar System (−235 °C), has nitrogen geysers.</li>
+  <li>Only one visit — Voyager 2 flyby, 25 Aug 1989.</li>
+</ul>
+
+<h3>4.3 Quick comparison — orbital &amp; physical data</h3>
+<table>
+<thead><tr><th>Planet</th><th>Distance (AU)</th><th>Diameter (km)</th><th>Mass (Earth=1)</th><th>Rotation</th><th>Revolution</th><th>Moons</th></tr></thead>
+<tbody>
+<tr><td>Mercury</td><td>0.39</td><td>4,879</td><td>0.055</td><td>58.6 d</td><td>88 d</td><td>0</td></tr>
+<tr><td>Venus</td><td>0.72</td><td>12,104</td><td>0.815</td><td>243 d (R)</td><td>225 d</td><td>0</td></tr>
+<tr><td>Earth</td><td>1.00</td><td>12,742</td><td>1.000</td><td>23 h 56 m</td><td>365.25 d</td><td>1</td></tr>
+<tr><td>Mars</td><td>1.52</td><td>6,779</td><td>0.107</td><td>24 h 37 m</td><td>687 d</td><td>2</td></tr>
+<tr><td>Jupiter</td><td>5.20</td><td>139,820</td><td>317.8</td><td>9 h 56 m</td><td>11.86 yr</td><td>95</td></tr>
+<tr><td>Saturn</td><td>9.58</td><td>116,460</td><td>95.2</td><td>10 h 33 m</td><td>29.46 yr</td><td>146</td></tr>
+<tr><td>Uranus</td><td>19.2</td><td>50,724</td><td>14.5</td><td>17 h 14 m (R)</td><td>84 yr</td><td>27</td></tr>
+<tr><td>Neptune</td><td>30.0</td><td>49,244</td><td>17.1</td><td>16 h 6 m</td><td>164.8 yr</td><td>14</td></tr>
+</tbody>
+</table>
+<p style="font-size:.82rem;color:var(--muted)">(R = retrograde rotation. Moon counts as of 2024-25 IAU updates.)</p>
+
+<h3>4.4 Dwarf planets</h3>
+<p>IAU recognises five dwarf planets — Ceres (in asteroid belt), Pluto, Haumea, Makemake, Eris (last four in Kuiper Belt / scattered disc). Possibly hundreds more; ~10² candidates beyond Neptune.</p>
+<ul>
+  <li><strong>Pluto</strong> — diameter 2,377 km; orbital period 248 yrs; discovered by Clyde Tombaugh, 18 Feb 1930; demoted from planet to dwarf planet by IAU on 24 August 2006. NASA's <strong>New Horizons</strong> flyby on 14 July 2015 revealed a complex world with nitrogen ice plains (Sputnik Planitia), water-ice mountains, and a thin atmosphere.</li>
+  <li><strong>Eris</strong> — slightly more massive than Pluto; its discovery (2005) triggered the IAU redefinition.</li>
+  <li><strong>Ceres</strong> — only dwarf planet in inner Solar System; orbits within asteroid belt; visited by Dawn mission (2015-18).</li>
+</ul>
+</section>
+
+<section class="notes" id="s5">
+<h2>5. Small bodies — asteroids, comets, meteors &amp; meteorites <span class="rev-pills"><span>D1</span><span>D7</span><span>D30</span></span></h2>
+<div class="ncert-strip">NCERT XI · Ch. 1 · pp. 9-10 · Goh Cheng Leong Ch. 1</div>
+
+<h3>5.1 Asteroids</h3>
+<p>Small rocky/metallic bodies orbiting the Sun, mostly in the <strong>main asteroid belt between Mars and Jupiter (2.2-3.2 AU)</strong>. Probably remnant planetesimals whose accretion into a planet was prevented by Jupiter's gravitational perturbation.</p>
+
+<ul>
+  <li>~1.1-1.9 million asteroids &gt;1 km; total mass &lt; 4% of the Moon.</li>
+  <li><strong>Largest:</strong> Ceres (940 km; ~⅓ of belt mass; reclassified as a dwarf planet 2006), followed by Vesta, Pallas, Hygiea.</li>
+  <li><strong>Composition classes</strong> — C-type (carbonaceous, 75%), S-type (silicaceous), M-type (metallic).</li>
+  <li><strong>Trojan asteroids</strong> — share orbit of a planet at Lagrange points L4 / L5 (60° ahead / behind). Jupiter has the largest Trojan swarms (~12,000 known); Mars, Neptune, Earth (just 2) also have them.</li>
+  <li><strong>Near-Earth Asteroids (NEAs)</strong> — perihelion &lt; 1.3 AU. ~34,000 catalogued (NASA CNEOS, 2024); subset Potentially Hazardous Asteroids (PHAs) — &gt;140 m diameter, MOID &lt; 0.05 AU.</li>
+  <li><strong>Missions</strong> — NEAR-Shoemaker (Eros, 2001), Hayabusa-1 (Itokawa, 2010) &amp; Hayabusa-2 (Ryugu, 2020) — sample return; OSIRIS-REx (Bennu, sample return 24 Sep 2023); Dawn (Vesta &amp; Ceres); Lucy (Trojans, ongoing); Psyche (16-Psyche, launched Oct 2023). NASA's <strong>DART mission</strong> (26 Sep 2022) deliberately impacted asteroid Dimorphos — first planetary-defence kinetic-deflection test, successfully altered orbit by ~32 min.</li>
+</ul>
+
+<h3>5.2 Comets — "dirty snowballs"</h3>
+
+<div class="figure">
+<svg viewBox="0 0 640 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Anatomy of a comet">
+  <defs>
+    <radialGradient id="sun3" cx="50%" cy="50%"><stop offset="0" stop-color="#fff5b8"/><stop offset="1" stop-color="#ff8a1a"/></radialGradient>
+  </defs>
+  <text x="320" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#5a0e1a">Anatomy of a comet</text>
+  <!-- Sun at far left -->
+  <circle cx="50" cy="140" r="28" fill="url(#sun3)" stroke="#a04a0f" stroke-width="1"/>
+  <text x="50" y="180" text-anchor="middle" font-size="11" font-weight="700">Sun</text>
+  <!-- solar-wind arrows -->
+  <g stroke="#ff8a1a" stroke-width="1.2" fill="none" opacity=".7">
+    <path d="M 85,130 L 200,120" marker-end="url(#arr)"/>
+    <path d="M 85,140 L 200,140" marker-end="url(#arr)"/>
+    <path d="M 85,150 L 200,160" marker-end="url(#arr)"/>
+  </g>
+  <defs><marker id="arr" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#ff8a1a"/></marker></defs>
+  <text x="140" y="105" font-size="10" fill="#5b6470">Solar wind &amp; radiation pressure</text>
+  <!-- Comet (right side) -->
+  <!-- nucleus -->
+  <circle cx="380" cy="140" r="9" fill="#1a1a1a"/>
+  <!-- coma -->
+  <circle cx="380" cy="140" r="34" fill="#9bb5ff" opacity=".35"/>
+  <circle cx="380" cy="140" r="22" fill="#9bb5ff" opacity=".45"/>
+  <!-- dust tail (curved, yellowish) -->
+  <path d="M 395,148 Q 480,170 600,210" fill="none" stroke="#ffd980" stroke-width="14" opacity=".6"/>
+  <path d="M 395,148 Q 480,170 600,210" fill="none" stroke="#ffba4d" stroke-width="6" opacity=".7"/>
+  <!-- ion (gas) tail straight, bluish -->
+  <path d="M 395,135 L 620,80" fill="none" stroke="#9bb5ff" stroke-width="10" opacity=".7"/>
+  <path d="M 395,135 L 620,80" fill="none" stroke="#3b6fbf" stroke-width="4" opacity=".7"/>
+  <!-- hydrogen envelope -->
+  <circle cx="380" cy="140" r="55" fill="none" stroke="#9bb5ff" stroke-width=".8" stroke-dasharray="3,2" opacity=".7"/>
+  <!-- Labels -->
+  <g font-size="10.5" fill="#1a1a1a">
+    <line x1="380" y1="140" x2="280" y2="220" stroke="#5a0e1a" stroke-width=".7"/>
+    <text x="200" y="230" font-weight="700" fill="#8b1a2a">Nucleus</text>
+    <text x="200" y="244" font-size="9.5" fill="#5b6470">solid ice + dust core, 1-50 km</text>
+    <line x1="395" y1="125" x2="430" y2="80" stroke="#5a0e1a" stroke-width=".7"/>
+    <text x="320" y="75" font-weight="700" fill="#8b1a2a">Coma</text>
+    <text x="320" y="89" font-size="9.5" fill="#5b6470">gas/dust envelope, 10⁵-10⁶ km</text>
+    <line x1="500" y1="180" x2="540" y2="240" stroke="#5a0e1a" stroke-width=".7"/>
+    <text x="510" y="255" font-weight="700" fill="#8b1a2a">Dust tail (curved)</text>
+    <text x="510" y="268" font-size="9.5" fill="#5b6470">yellowish; lags behind orbit</text>
+    <line x1="530" y1="105" x2="540" y2="55" stroke="#5a0e1a" stroke-width=".7"/>
+    <text x="490" y="50" font-weight="700" fill="#8b1a2a">Ion (gas) tail — straight</text>
+    <text x="490" y="64" font-size="9.5" fill="#5b6470">bluish; points directly away from Sun</text>
+    <line x1="430" y1="180" x2="200" y2="265" stroke="#5a0e1a" stroke-width=".7"/>
+    <text x="50" y="270" font-weight="700" fill="#8b1a2a">Hydrogen envelope</text>
+  </g>
+  <!-- Arrow showing tail always points away from Sun -->
+  <text x="320" y="260" text-anchor="middle" font-size="11" font-style="italic" fill="#5a0e1a">Both tails point AWAY from the Sun — regardless of comet's direction of motion</text>
+</svg>
+<div class="figcaption"><strong>Fig 1.6</strong> — Comet anatomy. The nucleus (1-50 km of ice + dust) sublimates near the Sun, producing a vast coma and two tails — a curved <em>dust tail</em> and a straight <em>ion tail</em> — both directed away from the Sun by radiation pressure and the solar wind.</div>
+</div>
+
+<ul>
+  <li>Definition — small icy bodies (water, CO₂, CH₄, NH₃ ices + silicate dust) that develop a coma and tail when nearing the Sun.</li>
+  <li><strong>Origin reservoirs</strong>:
+    <ul>
+      <li><strong>Kuiper Belt</strong> (30-50 AU) — source of <em>short-period comets</em> (period &lt;200 yrs; e.g., Halley).</li>
+      <li><strong>Oort Cloud</strong> (~2,000-100,000 AU; ~1 ly out) — spherical shell hypothesised by Jan Oort (1950); source of <em>long-period comets</em> (period &gt;200 yrs; e.g., Hale-Bopp, NEOWISE).</li>
+    </ul>
+  </li>
+  <li><strong>Structure</strong> — nucleus (cold, dark core); coma (luminous gas/dust envelope around nucleus); hydrogen envelope (huge invisible cloud); dust tail (curved, yellowish, follows orbit); ion (plasma) tail — straight, bluish, directly away from Sun.</li>
+  <li><strong>Famous comets:</strong>
+    <ul>
+      <li><strong>Halley's Comet</strong> (1P/Halley) — period 76 yrs; last seen 1986; next 2061. Edmund Halley (1705) predicted its return.</li>
+      <li><strong>Hale-Bopp</strong> (C/1995 O1) — visible to naked eye 1996-97 for 18 months.</li>
+      <li><strong>Shoemaker-Levy 9</strong> — broke up &amp; impacted Jupiter Jul 1994 (first directly observed extraterrestrial collision).</li>
+      <li><strong>67P/Churyumov-Gerasimenko</strong> — Rosetta mission orbited 2014-16; Philae lander 12 Nov 2014.</li>
+      <li><strong>NEOWISE</strong> (C/2020 F3) — last bright naked-eye comet visible from India (Jul 2020).</li>
+      <li><strong>C/2023 A3 (Tsuchinshan-ATLAS)</strong> — visible Oct 2024.</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="mnemonic"><span class="tag-mn">Mnemonic</span><strong>Dust tail = "Curvy &amp; Cream-coloured"; Ion tail = "Straight &amp; Sky-blue"</strong>. Both <em>always</em> point away from the Sun — so when a comet is moving away from the Sun, the tail goes <em>in front of</em> it.</div>
+
+<h3>5.3 Meteors &amp; meteorites</h3>
+
+<div class="figure">
+<svg viewBox="0 0 640 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Meteoroid, meteor, meteorite progression">
+  <text x="320" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#5a0e1a">Meteoroid → Meteor → Meteorite</text>
+  <!-- Stage 1: meteoroid in space -->
+  <g transform="translate(110,100)">
+    <rect x="-90" y="-65" width="180" height="120" rx="6" fill="#1a2a5a" opacity=".1" stroke="#5a0e1a" stroke-width=".7"/>
+    <text x="0" y="-50" text-anchor="middle" font-size="10" font-weight="700" fill="#5a0e1a">In space</text>
+    <circle cx="-30" cy="-15" r="4" fill="#5b6470"/>
+    <circle cx="10" cy="-25" r="3" fill="#5b6470"/>
+    <circle cx="30" cy="0" r="5" fill="#5b6470"/>
+    <circle cx="-15" cy="15" r="3.5" fill="#5b6470"/>
+    <text x="0" y="40" text-anchor="middle" font-size="11" font-weight="700">Meteoroid</text>
+    <text x="0" y="55" text-anchor="middle" font-size="9" fill="#5b6470">rock fragment, mm to m</text>
+  </g>
+  <text x="220" y="105" font-size="18" fill="#8b1a2a">→</text>
+  <!-- Stage 2: meteor in atmosphere -->
+  <g transform="translate(320,100)">
+    <rect x="-90" y="-65" width="180" height="120" rx="6" fill="#9bb5ff" opacity=".15" stroke="#5a0e1a" stroke-width=".7"/>
+    <text x="0" y="-50" text-anchor="middle" font-size="10" font-weight="700" fill="#5a0e1a">In atmosphere</text>
+    <line x1="-40" y1="-30" x2="20" y2="10" stroke="#ff5a1a" stroke-width="4"/>
+    <line x1="-40" y1="-30" x2="20" y2="10" stroke="#ffd980" stroke-width="2"/>
+    <circle cx="20" cy="10" r="3" fill="#ff5a1a"/>
+    <text x="0" y="40" text-anchor="middle" font-size="11" font-weight="700">Meteor (shooting star)</text>
+    <text x="0" y="55" text-anchor="middle" font-size="9" fill="#5b6470">friction burn ~80-120 km altitude</text>
+  </g>
+  <text x="430" y="105" font-size="18" fill="#8b1a2a">→</text>
+  <!-- Stage 3: meteorite on ground -->
+  <g transform="translate(530,100)">
+    <rect x="-90" y="-65" width="180" height="120" rx="6" fill="#2e7a47" opacity=".15" stroke="#5a0e1a" stroke-width=".7"/>
+    <text x="0" y="-50" text-anchor="middle" font-size="10" font-weight="700" fill="#5a0e1a">On Earth's surface</text>
+    <ellipse cx="0" cy="20" rx="40" ry="6" fill="#5b6470" opacity=".3"/>
+    <path d="M -15,5 Q 0,-15 18,5 L 12,18 L -12,18 Z" fill="#1a1a1a" stroke="#5a0e1a" stroke-width="1"/>
+    <text x="0" y="42" text-anchor="middle" font-size="11" font-weight="700">Meteorite</text>
+    <text x="0" y="56" text-anchor="middle" font-size="9" fill="#5b6470">survives, hits ground</text>
+  </g>
+</svg>
+<div class="figcaption"><strong>Fig 1.7</strong> — Three-stage life of an interplanetary rock. A <em>meteoroid</em> in space becomes a <em>meteor</em> ("shooting star") when it burns up in Earth's atmosphere; if a fragment survives and lands, it is a <em>meteorite</em>.</div>
+</div>
+
+<table>
+<thead><tr><th>Term</th><th>Definition</th></tr></thead>
+<tbody>
+<tr><td><strong>Meteoroid</strong></td><td>Small rocky or metallic body (mm to ~1 m) in space — debris from asteroids or comets</td></tr>
+<tr><td><strong>Meteor</strong></td><td>Streak of light produced when a meteoroid enters Earth's atmosphere (typically 80-120 km altitude) and burns up due to friction</td></tr>
+<tr><td><strong>Meteorite</strong></td><td>The surviving fragment that reaches Earth's surface</td></tr>
+<tr><td><strong>Bolide / Fireball</strong></td><td>Exceptionally bright meteor (brighter than Venus)</td></tr>
+</tbody>
+</table>
+
+<h4>5.3.1 Types of meteorites</h4>
+<ul>
+  <li><strong>Stony meteorites</strong> (~94%) — chondrites (with chondrules — primitive, unchanged since Solar System formation, 4.56 Gya) and achondrites (differentiated).</li>
+  <li><strong>Iron meteorites</strong> (~5%) — iron-nickel alloy; show Widmanstätten pattern; fragments of differentiated asteroid cores.</li>
+  <li><strong>Stony-iron meteorites</strong> (~1%) — pallasites &amp; mesosiderites; rarest, most prized.</li>
+</ul>
+
+<h4>5.3.2 Major meteor showers</h4>
+<p>Annual events that occur when Earth passes through the dust trail left by a comet (or rarely, asteroid). Named after the radiant constellation.</p>
+
+<table>
+<thead><tr><th>Shower</th><th>Peak date</th><th>Parent body</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td>Quadrantids</td><td>3-4 January</td><td>Asteroid 2003 EH₁ (likely dead comet)</td><td>Short, intense peak</td></tr>
+<tr><td>Lyrids</td><td>22-23 April</td><td>Comet C/1861 G1 Thatcher</td><td>Active for 2,700 yrs (oldest recorded)</td></tr>
+<tr><td>Eta Aquariids</td><td>5-6 May</td><td>1P/Halley</td><td>Best viewed from Southern Hemisphere</td></tr>
+<tr><td>Perseids</td><td><strong>12-13 August</strong></td><td>Comet 109P/Swift-Tuttle</td><td>Among brightest; reliable; ~100 meteors/hr at peak</td></tr>
+<tr><td>Orionids</td><td>21-22 October</td><td>1P/Halley</td><td>Two showers per year from Halley's debris (with Eta Aquariids)</td></tr>
+<tr><td>Leonids</td><td>17-18 November</td><td>Comet 55P/Tempel-Tuttle</td><td>Periodic <em>meteor storms</em> every 33 yrs (last 1999-2002)</td></tr>
+<tr><td>Geminids</td><td><strong>13-14 December</strong></td><td>Asteroid 3200 Phaethon</td><td>Strongest annual shower (~150/hr); only major shower from an asteroid</td></tr>
+</tbody>
+</table>
+
+<div class="mnemonic"><span class="tag-mn">Mnemonic</span><strong>"Quick Lyric Eta Persuades Orion's Leo Genius"</strong> — Quadrantids · Lyrids · Eta Aquariids · Perseids · Orionids · Leonids · Geminids. <strong>Two most reliable</strong>: Perseids (Aug) &amp; Geminids (Dec).</div>
+
+<h4>5.3.3 Famous impacts</h4>
+<ul>
+  <li><strong>Tunguska event</strong> — 30 June 1908, Siberia — asteroid or comet airburst (~10-15 MT TNT-equivalent) flattened ~2,150 km² of forest; no crater found.</li>
+  <li><strong>Chelyabinsk meteor</strong> — 15 Feb 2013, Russia — ~20 m asteroid airburst, ~500 kT energy; 1,500+ people injured by shattered glass.</li>
+  <li><strong>Chicxulub impact</strong> — ~66 Mya, Yucatán, Mexico — ~10 km asteroid; created 180-km-diameter crater; <strong>caused the K-Pg extinction</strong> that ended the non-avian dinosaurs.</li>
+  <li><strong>Vredefort crater</strong>, South Africa (~2.02 Gya) — largest confirmed impact structure on Earth (~300 km diameter).</li>
+  <li><strong>Lonar Lake</strong>, Buldhana, Maharashtra — only meteoritic crater in Indian basalt (~52,000 yrs old; ~1.83 km diameter); declared Ramsar Site in November 2020.</li>
+</ul>
+
+<div class="news-box">
+<span class="news-tag">In the news</span> <strong>NASA's DART mission</strong> (Sep 2022) successfully altered the orbit of asteroid Dimorphos — first demonstration of <em>planetary defence</em> via kinetic impactor. <strong>OSIRIS-REx</strong> returned ~250 g of Bennu samples to Earth on 24 Sep 2023; analysis (2023-25) confirmed water-bearing minerals and organic compounds. The <strong>Bennu material findings</strong> bear on the origin of water and life on Earth. India's <strong>Chandrayaan-3</strong> (23 Aug 2023) made India the fourth nation to soft-land on the Moon and the <strong>first to land near the lunar south pole</strong>.
+</div>
+
+<div class="mains-template">
+<h4>Mains template — 250-word answer (15 marks)</h4>
+<p><strong>Q: Distinguish between asteroids, comets, meteors and meteorites. What do they tell us about the formation and evolution of the Solar System?</strong></p>
+<ul>
+  <li><strong>Intro</strong> — these are the "small bodies" of the Solar System — leftover building blocks of planet formation 4.6 Gya.</li>
+  <li><strong>Asteroids</strong> — rocky/metallic; main belt 2.2-3.2 AU; ~1.9 M known; types C/S/M; Trojans; NEAs.</li>
+  <li><strong>Comets</strong> — icy "dirty snowballs"; Kuiper Belt (short-period) &amp; Oort Cloud (long-period) reservoirs; structure (nucleus, coma, dust tail, ion tail); famous — Halley, Hale-Bopp, Shoemaker-Levy 9.</li>
+  <li><strong>Meteor / Meteorite</strong> — meteoroid → meteor (atmospheric burn) → meteorite (surface impact); types stony/iron/stony-iron; major showers Perseids &amp; Geminids.</li>
+  <li><span class="diag-cue">[Diagram cue: 3-panel flow showing meteoroid → meteor → meteorite OR comet anatomy with labelled coma/nucleus/tails]</span></li>
+  <li><strong>Significance</strong> — chondrites preserve 4.56-Gyr-old Solar System material; comets &amp; carbonaceous asteroids may have delivered water and organic compounds to early Earth (panspermia debate); Chicxulub impact rewrote evolutionary history.</li>
+  <li><strong>Conclusion</strong> — Mention DART (planetary defence 2022), OSIRIS-REx Bennu return (2023), Indian Lonar crater + Chandrayaan-3 lunar south pole landing (Aug 2023). Highlight India's growing planetary-science capability.</li>
+</ul>
+</div>
+</section>
+
+<section class="pyq" id="pyq">
+<h2>UPSC Previous Year &amp; model questions</h2>
+<ol>
+  <li><span class="yr">2024</span> Consider the following pairs of celestial body and feature (Prelims question on Jovian moons &amp; subsurface oceans).</li>
+  <li><span class="yr">2023</span> Aditya-L1, launched by ISRO, was placed in which Lagrangian point and why is L1 chosen? (GS-3 link, also Prelims MCQ on Lagrange points)</li>
+  <li><span class="yr">2022</span> With reference to "Carbon nanotubes", why are they suitable for use in [tech context] — Prelims (recurring "what is in the news" pattern on space tech).</li>
+  <li><span class="yr">2021</span> Prelims — match planets with their distinguishing feature (e.g., Venus retrograde rotation, Saturn's rings, Jupiter's Great Red Spot).</li>
+  <li><span class="yr">2020</span> "Mars Orbiter Mission (MOM)" — what were its scientific objectives and significance? (GS-3 / GS-1 overlap)</li>
+  <li><span class="yr">2019</span> Discuss the work being done in India in space exploration. How can it help India's economic growth and security? (GS-3)</li>
+  <li><span class="yr">2018</span> Prelims — Kuiper Belt and Oort Cloud questions; Halley's Comet next return year.</li>
+  <li><span class="yr">2017</span> Prelims — meteors and meteorites; difference between asteroid and comet.</li>
+  <li><span class="yr">2016</span> Prelims — Cassini-Huygens mission and Saturn.</li>
+  <li><span class="yr">2013</span> Big Bang Theory — Prelims definitional MCQ.</li>
+</ol>
+
+<div class="callout warn">
+  <strong>Honest attribution note.</strong> UPSC's exact questions on Universe/Solar System have appeared <em>mostly</em> in <strong>Prelims</strong> (definitional MCQs on Big Bang, planets, asteroids, comets, meteor showers, ISRO missions). Direct Mains questions on the chapter are rare; the topic recurs as background to GS-3 Space &amp; Technology questions on Indian space missions (Chandrayaan, Mangalyaan, Aditya-L1, Gaganyaan), planetary defence, and dark sky / astronomy debates. Always cross-verify with official UPSC papers and standard compilations.
+</div>
+
+<h3>Additional model questions (Mentor's own)</h3>
+<ol>
+  <li>Discuss the Big Bang Theory and the evidences supporting it. What questions remain unanswered? (150 words, 10 marks)</li>
+  <li>Describe the life cycle of a star and explain how a star's mass determines its end state. (250 words, 15 marks)</li>
+  <li>Compare and contrast the terrestrial and Jovian planets with respect to their physical and chemical characteristics. (250 words, 15 marks)</li>
+  <li>Why is Venus called Earth's twin, and yet why is it the hottest planet despite Mercury being closer to the Sun? (150 words, 10 marks)</li>
+  <li>Describe the internal structure of the Sun. Discuss the impact of solar activity (sunspots, flares, CMEs) on the Earth. (250 words, 15 marks)</li>
+  <li>What are asteroids, comets, meteors and meteorites? What is their significance for understanding the formation of the Solar System? (250 words, 15 marks)</li>
+  <li>Discuss the importance of the Kuiper Belt and the Oort Cloud as reservoirs of comets. (150 words, 10 marks)</li>
+  <li>Critically examine the IAU's 2006 redefinition of "planet" that demoted Pluto. (150 words, 10 marks)</li>
+  <li>Trace the evolution of Indian planetary exploration from Mangalyaan (2014) to Chandrayaan-3 (2023) and Aditya-L1 (2024). What scientific and strategic objectives do these missions serve? (250 words, 15 marks)</li>
+  <li>"Planetary defence is no longer science fiction." Discuss in light of NASA's DART mission (2022) and the implications for India's space programme. (250 words, 15 marks)</li>
+</ol>
+
+<div class="callout info">
+  <strong>Mentor's note.</strong> These 10 supplementary questions are model questions designed by the MentorsDaily team aligned to standard UPSC GS-1 (Physical Geography), GS-3 (Space &amp; Technology) and Essay paper themes. Use them for answer-writing practice alongside genuine PYQs.
+</div>
+</section>
+
+<section class="revision" id="facts">
+<h2>15 must-know facts for revision</h2>
+<ol>
+  <li><strong>Age of Universe</strong> — 13.8 billion years (Planck 2013 measurement); <strong>Age of Solar System &amp; Sun</strong> — 4.6 billion years.</li>
+  <li><strong>Big Bang Theory</strong> — proposed by <strong>Georges Lemaître (1927)</strong>; named (sarcastically) by Fred Hoyle (1949).</li>
+  <li><strong>Cosmic Microwave Background</strong> — discovered by Penzias &amp; Wilson (1964; Nobel 1978); temperature 2.725 K; direct evidence of Big Bang.</li>
+  <li><strong>Hubble's Law (1929)</strong> — recession velocity of distant galaxies ∝ distance; H₀ ≈ 70 km/s/Mpc. Implies expanding Universe.</li>
+  <li><strong>Hubble's galaxy classification (1926)</strong> — Spiral · Barred Spiral · Elliptical · Lenticular · Irregular. The Milky Way is a <strong>barred spiral (SBbc)</strong>; ~100,000 ly across; Sun is ~26,000 ly from galactic centre (Sagittarius A*).</li>
+  <li><strong>Stellar spectral classification</strong> — <strong>O B A F G K M</strong> (hottest blue to coolest red). The Sun is class <strong>G2V</strong>.</li>
+  <li><strong>Sun's basic data</strong> — diameter 1.39 × 10⁶ km (109 × Earth); 99.86% of Solar System mass; surface 5,500 °C; core 15 million °C; sunspots follow <strong>11-yr Schwabe cycle</strong>.</li>
+  <li><strong>Eight planets</strong> — Mercury · Venus · Earth · Mars · Jupiter · Saturn · Uranus · Neptune ("My Very Educated Mother Just Served Us Noodles"). Pluto demoted to dwarf planet by IAU on 24 August 2006.</li>
+  <li><strong>Terrestrial</strong> (Mercury–Mars) = small, dense, rocky, few moons. <strong>Jovian</strong> (Jupiter–Neptune) = large, low-density, gaseous/icy, many moons, all have rings.</li>
+  <li><strong>Venus</strong> — hottest planet (462 °C); rotates retrograde; day &gt; year. <strong>Mars</strong> — Olympus Mons (tallest volcano) &amp; Valles Marineris (largest canyon). <strong>Jupiter</strong> — largest, Great Red Spot, 95 moons, Ganymede biggest moon. <strong>Saturn</strong> — least-dense (0.69 g/cm³, would float), 146 moons, Titan with thick atmosphere. <strong>Uranus</strong> — discovered by Herschel 1781, axial tilt 97.77° (rolls on side). <strong>Neptune</strong> — mathematically predicted; strongest winds (2,100 km/h).</li>
+  <li><strong>Asteroid belt</strong> — between Mars &amp; Jupiter, 2.2-3.2 AU; ~1.9 million bodies; largest = Ceres (also dwarf planet). NASA's <strong>DART mission</strong> (Sep 2022) — first kinetic-impact planetary defence test (Dimorphos).</li>
+  <li><strong>Comet reservoirs</strong> — Kuiper Belt (30-50 AU, short-period comets), Oort Cloud (~2,000-100,000 AU, long-period comets). <strong>Halley's Comet</strong> — period 76 yrs; last 1986; next return 2061.</li>
+  <li><strong>Meteor showers</strong> — most reliable annual showers are <strong>Perseids</strong> (12-13 Aug, parent: 109P/Swift-Tuttle) and <strong>Geminids</strong> (13-14 Dec, parent: asteroid 3200 Phaethon — only asteroidal major shower).</li>
+  <li><strong>Famous impacts</strong> — <strong>Chicxulub</strong> (~66 Mya) caused K-Pg dinosaur extinction; <strong>Tunguska</strong> (30 June 1908); <strong>Chelyabinsk</strong> (15 Feb 2013); <strong>Lonar Lake, Maharashtra</strong> (~52,000 yrs ago) — only Indian basaltic meteoritic crater; Ramsar site since Nov 2020.</li>
+  <li><strong>Indian space milestones</strong> — Mangalyaan / MOM (Sep 2014, first nation to reach Mars on maiden attempt); Chandrayaan-3 (23 Aug 2023, first soft landing near lunar south pole); Aditya-L1 (launched 2 Sep 2023, reached L1 on 6 Jan 2024).</li>
+</ol>
+</section>
+
+</main>
+
+<aside>
+  <div class="widget miniref">
+    <h4>Key numbers</h4>
+    <ul>
+      <li><span class="d">13.8 Gyr</span><span>Age of Universe</span></li>
+      <li><span class="d">93 Gly</span><span>Diameter of observable Universe</span></li>
+      <li><span class="d">2.725 K</span><span>CMB temperature today</span></li>
+      <li><span class="d">2 trillion</span><span>Galaxies in observable Universe</span></li>
+      <li><span class="d">~70 km/s/Mpc</span><span>Hubble constant H₀</span></li>
+      <li><span class="d">100,000 ly</span><span>Milky Way diameter</span></li>
+      <li><span class="d">26,000 ly</span><span>Sun's distance from galactic centre</span></li>
+      <li><span class="d">230 km/s</span><span>Sun's orbital speed in galaxy</span></li>
+      <li><span class="d">225 Myr</span><span>Cosmic year (Sun's orbit)</span></li>
+      <li><span class="d">4.5 Gyr</span><span>Milky Way-Andromeda collision</span></li>
+      <li><span class="d">4.24 ly</span><span>Distance to Proxima Centauri (nearest star)</span></li>
+      <li><span class="d">4.6 Gyr</span><span>Age of the Sun &amp; Solar System</span></li>
+      <li><span class="d">1.39 × 10⁶ km</span><span>Sun's diameter (109 × Earth)</span></li>
+      <li><span class="d">5,500 °C</span><span>Sun's surface temperature</span></li>
+      <li><span class="d">1.5 × 10⁷ K</span><span>Sun's core temperature</span></li>
+      <li><span class="d">150 × 10⁶ km</span><span>Earth-Sun distance (1 AU)</span></li>
+      <li><span class="d">8 min 20 s</span><span>Sunlight travel-time to Earth</span></li>
+      <li><span class="d">~10²² stars</span><span>In observable Universe</span></li>
+      <li><span class="d">G2V</span><span>Sun's spectral class</span></li>
+      <li><span class="d">~5 Gyr</span><span>Sun's remaining main-sequence life</span></li>
+      <li><span class="d">88 days</span><span>Mercury's orbital period</span></li>
+      <li><span class="d">243 days</span><span>Venus's rotation period (longest)</span></li>
+      <li><span class="d">365.25 days</span><span>Earth's orbital period</span></li>
+      <li><span class="d">687 days</span><span>Mars's orbital period</span></li>
+      <li><span class="d">11.86 yrs</span><span>Jupiter's orbital period</span></li>
+      <li><span class="d">29.46 yrs</span><span>Saturn's orbital period</span></li>
+      <li><span class="d">84 yrs</span><span>Uranus's orbital period</span></li>
+      <li><span class="d">164.8 yrs</span><span>Neptune's orbital period</span></li>
+      <li><span class="d">2-4 AU</span><span>Main asteroid belt range</span></li>
+      <li><span class="d">30-50 AU</span><span>Kuiper Belt range</span></li>
+      <li><span class="d">2,000-100,000 AU</span><span>Oort Cloud range</span></li>
+      <li><span class="d">12 Aug</span><span>Perseid meteor shower peak</span></li>
+      <li><span class="d">13-14 Dec</span><span>Geminid meteor shower peak</span></li>
+      <li><span class="d">76 yrs</span><span>Halley's Comet period (next 2061)</span></li>
+      <li><span class="d">29 Jun 1908</span><span>Tunguska event (asteroid airburst)</span></li>
+      <li><span class="d">15 Feb 2013</span><span>Chelyabinsk meteor airburst</span></li>
+      <li><span class="d">23 Aug 2023</span><span>Chandrayaan-3 lunar south pole landing</span></li>
+      <li><span class="d">2 Sep 2023</span><span>Aditya-L1 launched (ISRO)</span></li>
+      <li><span class="d">Jul 2022</span><span>JWST first science images</span></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Theme weights (UPSC)</h4>
+    <div class="bar-row"><div class="bar-label"><span>The 8 Planets</span><span>92</span></div><div class="bar-track"><div class="bar-fill" style="width:92%"></div></div></div>
+    <div class="bar-row"><div class="bar-label"><span>Big Bang &amp; evidences</span><span>88</span></div><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div></div>
+    <div class="bar-row"><div class="bar-label"><span>Sun structure</span><span>82</span></div><div class="bar-track"><div class="bar-fill" style="width:82%"></div></div></div>
+    <div class="bar-row"><div class="bar-label"><span>Asteroids &amp; Comets</span><span>78</span></div><div class="bar-track"><div class="bar-fill" style="width:78%"></div></div></div>
+    <div class="bar-row"><div class="bar-label"><span>Galaxies &amp; Milky Way</span><span>72</span></div><div class="bar-track"><div class="bar-fill" style="width:72%"></div></div></div>
+    <div class="bar-row"><div class="bar-label"><span>Meteor showers</span><span>70</span></div><div class="bar-track"><div class="bar-fill" style="width:70%"></div></div></div>
+    <div class="bar-row"><div class="bar-label"><span>Stars &amp; life cycle</span><span>65</span></div><div class="bar-track"><div class="bar-fill" style="width:65%"></div></div></div>
+    <div class="bar-row"><div class="bar-label"><span>Kuiper Belt &amp; Oort Cloud</span><span>60</span></div><div class="bar-track"><div class="bar-fill" style="width:60%"></div></div></div>
+    <div class="bar-row"><div class="bar-label"><span>Indian space missions</span><span>85</span></div><div class="bar-track"><div class="bar-fill" style="width:85%"></div></div></div>
+    <div class="bar-row"><div class="bar-label"><span>JWST &amp; cosmology news</span><span>68</span></div><div class="bar-track"><div class="bar-fill" style="width:68%"></div></div></div>
+  </div>
+
+  <div class="widget tags">
+    <h4>Keyword cloud</h4>
+    <div class="cloud">
+      <span>Universe</span><span>Cosmology</span><span>Big Bang</span><span>Lemaître</span><span>Hubble</span><span>Hubble's Law</span><span>Hubble constant</span><span>Redshift</span><span>Doppler effect</span><span>Inflation</span><span>Nucleosynthesis</span><span>Recombination</span><span>CMB</span><span>Penzias-Wilson</span><span>COBE</span><span>WMAP</span><span>Planck</span><span>JWST</span><span>Pulsating Theory</span><span>Big Crunch</span><span>Big Bounce</span><span>Steady State</span><span>Hoyle</span><span>Bondi</span><span>Gold</span><span>Dark matter</span><span>Dark energy</span><span>Accelerating universe</span><span>Nobel 2011</span><span>Galaxy</span><span>Spiral</span><span>Barred spiral</span><span>Elliptical</span><span>Lenticular</span><span>Irregular</span><span>Hubble tuning fork</span><span>Milky Way</span><span>SBbc</span><span>Andromeda</span><span>M31</span><span>M87</span><span>Magellanic Clouds</span><span>LMC</span><span>SMC</span><span>Sagittarius A*</span><span>Local Group</span><span>Virgo Supercluster</span><span>Laniakea</span><span>Cosmic web</span><span>Star</span><span>Plasma</span><span>Nuclear fusion</span><span>p-p chain</span><span>CNO cycle</span><span>Nebula</span><span>Protostar</span><span>Main sequence</span><span>Red giant</span><span>Red supergiant</span><span>White dwarf</span><span>Neutron star</span><span>Pulsar</span><span>Black hole</span><span>Supernova</span><span>Planetary nebula</span><span>Schwarzschild radius</span><span>Event horizon</span><span>EHT</span><span>LIGO</span><span>Gravitational waves</span><span>H-R diagram</span><span>Hertzsprung-Russell</span><span>OBAFGKM</span><span>G2V</span><span>Population I</span><span>Population II</span><span>Solar System</span><span>Sun</span><span>Photosphere</span><span>Chromosphere</span><span>Corona</span><span>Sunspot</span><span>Solar wind</span><span>Solar flare</span><span>CME</span><span>Aurora</span><span>Mercury</span><span>Venus</span><span>Earth</span><span>Mars</span><span>Jupiter</span><span>Saturn</span><span>Uranus</span><span>Neptune</span><span>Terrestrial planet</span><span>Jovian planet</span><span>Gas giant</span><span>Ice giant</span><span>Pluto</span><span>Dwarf planet</span><span>Eris</span><span>Ceres</span><span>Haumea</span><span>Makemake</span><span>Asteroid</span><span>Asteroid belt</span><span>Vesta</span><span>NEA</span><span>NEO</span><span>Trojan</span><span>Comet</span><span>Halley</span><span>Hale-Bopp</span><span>Shoemaker-Levy</span><span>NEOWISE</span><span>Coma</span><span>Nucleus</span><span>Dust tail</span><span>Ion tail</span><span>Kuiper Belt</span><span>Oort Cloud</span><span>Meteoroid</span><span>Meteor</span><span>Meteorite</span><span>Bolide</span><span>Iron meteorite</span><span>Stony meteorite</span><span>Chondrite</span><span>Achondrite</span><span>Tunguska</span><span>Chelyabinsk</span><span>Perseids</span><span>Geminids</span><span>Leonids</span><span>Quadrantids</span><span>Lyrids</span><span>Orionids</span><span>Aditya-L1</span><span>Chandrayaan-3</span><span>Mangalyaan</span><span>ISRO</span><span>NASA</span><span>ESA</span><span>JAXA</span><span>Gaganyaan</span><span>Shukrayaan-1</span><span>SPADEX</span><span>L1 point</span>
+    </div>
+  </div>
+
+  <div class="widget related">
+    <h4>Related notes</h4>
+    <ul>
+      <li><a href="/world-geography">A2 · The Earth — shape, motions, moon</a></li>
+      <li><a href="/world-geography">A3 · Geomorphology — Earth's interior &amp; plates</a></li>
+      <li><a href="/world-geography">A5 · Climatology — atmosphere &amp; insolation</a></li>
+    </ul>
+  </div>
+
+  <div class="widget quiz">
+    <h4>Quick quiz</h4>
+    <ol>
+      <li>Who first proposed the Big Bang Theory and in what year?</li>
+      <li>Year and discoverers of the Cosmic Microwave Background?</li>
+      <li>What is the value of the CMB temperature today?</li>
+      <li>Name the four major galaxy types in Hubble's classification.</li>
+      <li>What type of galaxy is the Milky Way? Sun's distance from the galactic centre?</li>
+      <li>Mnemonic for the spectral classification of stars (O B A F G K M)?</li>
+      <li>What is the Sun's spectral class and how long has it been on the main sequence?</li>
+      <li>What determines whether a star becomes a white dwarf, neutron star, or black hole?</li>
+      <li>What is the temperature at the Sun's core vs photosphere?</li>
+      <li>What is the difference between a meteoroid, meteor and meteorite?</li>
+    </ol>
+  </div>
+</aside>
+
+</div>
+</div>

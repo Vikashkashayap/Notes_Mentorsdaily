@@ -1,0 +1,863 @@
+<!-- modern-topic04 — auto-imported from modern-topic04-british-expansion-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#8b1a2a;
+  --brand-blue-dark:#5a0e1a;
+  --brand-blue-light:#fdf0f2;
+  --brand-orange:#c9940a;
+  --brand-orange-light:#fff8e8;
+  --green:#2e7a47;
+  --green-light:#eaf5ef;
+  --text-dark:#1a1a2e;
+  --text-mid:#444;
+  --text-light:#888;
+  --border:#e2e8f0;
+  --bg:#fafaf8;
+  --card:#ffffff;
+  --accent:#fdf5f6;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Inter','Segoe UI',-apple-system,sans-serif;color:var(--text-dark);background:var(--bg);line-height:1.65;font-size:16px}
+.topnav{background:var(--brand-blue-dark);color:#fff;padding:14px 28px;position:sticky;top:0;z-index:50;box-shadow:0 2px 6px rgba(0,0,0,0.22);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.nav-logo{font-size:20px;font-weight:800;color:#fff;text-decoration:none;letter-spacing:-0.5px}
+.nav-logo span{color:var(--brand-orange)}
+.nav-pills{display:flex;flex-wrap:wrap;gap:7px}
+.pill{background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.22);color:#fff;padding:5px 12px;border-radius:99px;font-size:12px;font-weight:500}
+.hero{background:linear-gradient(135deg,#8b1a2a 0%,#5a0e1a 55%,#3a0810 100%);color:#fff;padding:54px 28px 44px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(201,148,10,0.22),transparent 55%);pointer-events:none}
+.hero-inner{max-width:1240px;margin:0 auto;position:relative;z-index:2}
+.breadcrumb{font-size:13px;color:rgba(255,255,255,0.65);margin-bottom:14px}
+.hero h1{font-size:38px;margin:0 0 14px;font-weight:800;letter-spacing:-0.5px;line-height:1.18}
+.hero-sub{font-size:17px;color:rgba(255,255,255,0.80);max-width:880px;margin:0 0 20px;line-height:1.6}
+.hero-pills{display:flex;flex-wrap:wrap;gap:8px}
+.hero-pills span{background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.22);color:#fff;padding:6px 13px;border-radius:99px;font-size:12.5px;font-weight:500}
+.layout{display:grid;grid-template-columns:1fr 320px;gap:28px;max-width:1240px;margin:28px auto;padding:0 28px}
+@media(max-width:1024px){.layout{grid-template-columns:1fr;padding:0 18px}}
+main{min-width:0}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 22px;margin-bottom:22px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--brand-blue);font-weight:700}
+.toc ol{margin:0;padding-left:22px;font-size:14.5px;column-count:2;column-gap:24px}
+@media(max-width:680px){.toc ol{column-count:1}}
+.toc li{margin:4px 0;break-inside:avoid}
+.toc a{color:var(--text-dark);text-decoration:none}
+.toc a:hover{color:var(--brand-blue);text-decoration:underline}
+.concept-box{background:linear-gradient(135deg,#fdf5f6 0%,#fde8ec 100%);border-left:5px solid var(--brand-orange);border-radius:10px;padding:22px 26px;margin-bottom:26px;box-shadow:0 2px 6px rgba(201,148,10,0.10)}
+.concept-box h3{margin:0 0 10px;font-size:18px;color:var(--brand-blue-dark);font-weight:700}
+.concept-box p{margin:0 0 10px;font-size:15px;color:#2a1010}
+.concept-box ul{margin:8px 0 0;padding-left:22px}
+.concept-box li{margin:5px 0;font-size:14.5px;color:#2a1010}
+.notes{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:26px 30px;margin-bottom:22px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.notes h2{font-size:24px;color:var(--brand-blue-dark);margin:0 0 14px;padding-bottom:10px;border-bottom:2px solid var(--accent);font-weight:700}
+.notes h3{font-size:18px;color:var(--brand-blue);margin:22px 0 10px;font-weight:700}
+.notes h4{font-size:15.5px;color:var(--brand-blue-dark);margin:16px 0 8px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px}
+.notes p{margin:0 0 12px}
+.notes ul,.notes ol{margin:8px 0 14px;padding-left:24px}
+.notes li{margin:5px 0}
+.notes strong{color:var(--brand-blue-dark)}
+.notes em{color:#7a4d0a;font-style:italic}
+.callout{background:var(--brand-blue-light);border-left:4px solid var(--brand-blue);padding:14px 18px;border-radius:6px;margin:14px 0;font-size:14.5px}
+.callout.gold{background:var(--brand-orange-light);border-left-color:var(--brand-orange)}
+.callout.green{background:var(--green-light);border-left-color:var(--green)}
+.callout.warn{background:#fef0e6;border-left-color:#c25e1c}
+.tbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+.tbl th,.tbl td{border:1px solid var(--border);padding:8px 11px;text-align:left;vertical-align:top}
+.tbl th{background:var(--brand-blue);color:#fff;font-weight:600}
+.tbl tr:nth-child(even) td{background:#fdf5f6}
+.pyq{background:#fff;border:1px solid var(--border);border-left:4px solid var(--brand-orange);border-radius:6px;padding:12px 16px;margin:10px 0;font-size:14.5px}
+.pyq .year{display:inline-block;background:var(--brand-orange);color:#fff;padding:2px 9px;border-radius:99px;font-size:12px;font-weight:600;margin-bottom:6px}
+.revision{background:linear-gradient(135deg,#5a0e1a 0%,#8b1a2a 100%);color:#fff;border-radius:12px;padding:26px 30px;margin-bottom:22px}
+.revision h3{color:var(--brand-orange);margin:0 0 14px;font-size:20px}
+.revision ol{padding-left:22px;margin:0}
+.revision li{margin:6px 0;font-size:14.5px;color:#f5d0d5}
+aside{min-width:0}
+.widget{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:18px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.widget h4{margin:0 0 10px;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--brand-blue);font-weight:700;border-bottom:1px solid var(--border);padding-bottom:7px}
+.widget .miniref{font-size:13px;list-style:none;padding:0;margin:0}
+.widget .miniref li{margin:5px 0}
+.bar{display:flex;align-items:center;gap:8px;margin:6px 0;font-size:13px}
+.bar .lbl{width:96px;color:var(--text-mid)}
+.bar .track{flex:1;height:7px;background:#eee;border-radius:99px;overflow:hidden}
+.bar .fill{height:100%;background:linear-gradient(90deg,var(--brand-orange),#9a7008);border-radius:99px}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tags span{background:var(--brand-blue-light);color:var(--brand-blue);padding:3px 9px;border-radius:99px;font-size:11.5px;font-weight:500}
+.related{list-style:none;padding:0;margin:0;font-size:13.5px}
+.related li{margin:6px 0}
+.related a{color:var(--brand-blue);text-decoration:none;font-weight:500}
+.related a:hover{text-decoration:underline}
+.quiz{font-size:13.5px}
+.quiz details{margin:7px 0;border-bottom:1px dashed var(--border);padding-bottom:7px}
+.quiz summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark)}
+.quiz p{margin:6px 0 0;color:var(--text-mid);font-size:13px}
+footer{background:var(--brand-blue-dark);color:#f5d0d5;padding:24px 28px;text-align:center;font-size:13px;margin-top:34px}
+footer strong{color:#fff}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="hero">
+  <div class="hero-inner">
+    <div class="breadcrumb">Home &rsaquo; UPSC Notes &rsaquo; Modern History &rsaquo; Topic 04</div>
+    <h1>Consolidation &amp; Expansion of British Power in India — Complete UPSC Notes</h1>
+    <p class="hero-sub">Plassey to the Annexation of Awadh &middot; 1757–1856 &middot; Anglo-Mysore, Anglo-Maratha, Anglo-Sikh Wars &middot; Subsidiary Alliance &middot; Doctrine of Lapse</p>
+    <div class="hero-pills">
+      <span>Plassey 1757</span>
+      <span>Buxar 1764</span>
+      <span>Diwani 1765</span>
+      <span>Subsidiary Alliance 1798</span>
+      <span>Doctrine of Lapse 1848</span>
+      <span>Punjab Annexed 1849</span>
+      <span>Awadh Annexed 1856</span>
+    </div>
+  </div>
+</div>
+<div class="layout">
+<main>
+
+<div class="toc">
+<h3>On this page</h3>
+<ol>
+<li><a href="#concept">Conceptual Clarity</a></li>
+<li><a href="#s1">Why the British &amp; Not Others</a></li>
+<li><a href="#s2">Bengal — Road to Plassey</a></li>
+<li><a href="#s3">Battle of Plassey 1757</a></li>
+<li><a href="#s4">Mir Jafar to Mir Qasim (1757–63)</a></li>
+<li><a href="#s5">Battle of Buxar 1764</a></li>
+<li><a href="#s6">Treaty of Allahabad &amp; Diwani 1765</a></li>
+<li><a href="#s7">Dual Government in Bengal (1765–72)</a></li>
+<li><a href="#s8">Warren Hastings &amp; Ring-Fence Policy</a></li>
+<li><a href="#s9">Cornwallis — Permanent Settlement</a></li>
+<li><a href="#s10">Anglo-Mysore Wars (1767–99)</a></li>
+<li><a href="#s11">Anglo-Maratha Wars (1775–1818)</a></li>
+<li><a href="#s12">Wellesley &amp; the Subsidiary Alliance</a></li>
+<li><a href="#s13">Pindari War 1817–18</a></li>
+<li><a href="#s14">Burma Wars 1824–85</a></li>
+<li><a href="#s15">Conquest of Sindh 1843</a></li>
+<li><a href="#s16">Anglo-Sikh Wars &amp; Punjab Annexation</a></li>
+<li><a href="#s17">North-West Frontier &amp; Anglo-Afghan Wars</a></li>
+<li><a href="#s18">Dalhousie &amp; the Doctrine of Lapse</a></li>
+<li><a href="#s19">Annexation of Awadh 1856</a></li>
+<li><a href="#s20">Causes of British Success</a></li>
+<li><a href="#pyq">Previous Year Questions</a></li>
+<li><a href="#revision">15 Must-Know Facts</a></li>
+</ol>
+</div>
+
+<div class="concept-box" id="concept">
+<h3>Why this topic matters for UPSC</h3>
+<p>The century from <strong>Plassey (1757) to the Annexation of Awadh (1856)</strong> transformed a trading company into the paramount power of the subcontinent. UPSC tests this topic on three axes:</p>
+<ul>
+<li><strong>Prelims (factual):</strong> Battles (Plassey, Buxar, Wandiwash, Assaye, Sobraon), treaties (Allahabad, Salbai, Bassein, Amritsar, Sugauli, Yandabo), Governors-General (Clive, Hastings, Cornwallis, Wellesley, Dalhousie), and policies (Ring-Fence, Subsidiary Alliance, Doctrine of Lapse).</li>
+<li><strong>Mains GS-I (analytical):</strong> "Causes of British success", "Was the Subsidiary Alliance a benevolent or exploitative system?", "Evaluate Dalhousie's annexations as a cause of 1857" — perennial questions.</li>
+<li><strong>Cause-and-effect bridge:</strong> This chapter is the direct setup to Modern Topic 05 (People's Resistance) and Modern Topic 07 (Revolt of 1857) — the annexations covered here are the immediate causes of the 1857 uprising.</li>
+</ul>
+</div>
+
+<section class="notes" id="s1">
+<h2>1. Why the British — Not the French or the Dutch</h2>
+<p>By 1763 the Treaty of Paris had ended European competition in India; only the British were left as a serious contender. Mughal collapse (Topic 02) opened the field; the rise of regional states (Topic 03) gave the British targets; the question is <em>why the EIC succeeded</em>. The headline answers (developed in §20):</p>
+<ul>
+<li>Naval supremacy after the Seven Years' War (1756–63).</li>
+<li>Financial backing of the City of London + Bengal revenue post-1765.</li>
+<li>Disciplined sepoy battalions and integrated artillery.</li>
+<li>Stable political base at home — no equivalent succession war.</li>
+<li>Exploitation of Indian political disunity through diplomacy.</li>
+<li>Indian banker support (Jagat Seths, Bombay Parsis, Madras Chettis).</li>
+</ul>
+</section>
+
+<section class="notes" id="s2">
+<h2>2. Bengal — Road to Plassey</h2>
+<p>Bengal in 1756 was the wealthiest province of the subcontinent — yielding about one-third of all-India revenue. The EIC's commercial profits from Bengal were already enormous; political control would multiply them. The collision came under <strong>Siraj-ud-Daulah</strong>, the 23-year-old nawab who succeeded Alivardi Khan in April 1756.</p>
+
+<h3>2.1 The Triggers</h3>
+<ul>
+<li><strong>Dastak abuse:</strong> The English used (and sold to Indian merchants) the duty-free dastak permits from Farrukhsiyar's 1717 firman for private trade — depriving Bengal of customs revenue.</li>
+<li><strong>Calcutta fortifications:</strong> Both English and French strengthened their settlements without the Nawab's permission, in anticipation of the Seven Years' War.</li>
+<li><strong>Asylum to fugitives:</strong> The English sheltered Krishna Das (son of Raja Rajballabh, an enemy of Siraj).</li>
+</ul>
+
+<h3>2.2 Siraj's Capture of Calcutta (June 1756)</h3>
+<p>Siraj-ud-Daulah marched on Calcutta and captured it on 20 June 1756. Fort William was renamed Alinagar. The <strong>"Black Hole of Calcutta"</strong> incident (the figure of 123 Europeans suffocating in an 18×14 ft cell, as narrated by J.Z. Holwell) is now considered exaggerated — modern historians put deaths between 40 and 60 — but it served as a propaganda rallying point for the EIC.</p>
+
+<h3>2.3 The Conspiracy</h3>
+<p>While Robert Clive and Admiral Watson recaptured Calcutta (January 1757) and signed the Treaty of Alinagar (Feb 1757), the EIC quietly built a conspiracy with the Nawab's enemies inside the court:</p>
+<ul>
+<li><strong>Mir Jafar</strong> — Siraj's <em>mir bakhshi</em> (paymaster), promised the nawabi.</li>
+<li><strong>Jagat Seth Mahtab Chand</strong> &amp; <strong>Maharaj Swarup Chand</strong> — the Murshidabad bankers, alienated by Siraj's threats.</li>
+<li><strong>Rai Durlabh</strong> — a senior minister; <strong>Amir Chand (Omichand)</strong> — a banker-mediator.</li>
+<li><strong>Manik Chand</strong> — the killadar of Calcutta.</li>
+</ul>
+</section>
+
+<section class="notes" id="s3">
+<h2>3. Battle of Plassey — 23 June 1757</h2>
+<p>Fought at <strong>Palashi</strong> (Plassey), on the banks of the Bhagirathi, north of Calcutta. The "battle" was, in modern terms, more conspiracy than combat.</p>
+
+<h3>3.1 The Forces</h3>
+<table class="tbl">
+<tr><th>Side</th><th>Numbers</th><th>Commander</th></tr>
+<tr><td>EIC</td><td>~3,000 (950 Europeans + 2,100 sepoys), 9 field guns</td><td>Robert Clive</td></tr>
+<tr><td>Nawab</td><td>~50,000 (35,000 infantry + 15,000 cavalry), 53 cannon, a French artillery detachment under M. Sinfray</td><td>Siraj-ud-Daulah; with Mir Jafar, Yar Lutuf Khan, Rai Durlabh, Mir Madan, Mohan Lal</td></tr>
+</table>
+
+<h3>3.2 The Engagement</h3>
+<ul>
+<li>Battle opened with an artillery duel; rain damaged the Nawab's powder but not the British (whose powder was covered).</li>
+<li>Mir Madan and Mohan Lal — the only loyal commanders — attacked but were killed/wounded in the British counter-battery fire.</li>
+<li>Mir Jafar, Rai Durlabh, and Yar Lutuf Khan held back their contingents — the pre-arranged betrayal.</li>
+<li>Siraj fled the field; was captured at Murshidabad and murdered (2 July 1757) by Miran (Mir Jafar's son).</li>
+</ul>
+
+<h3>3.3 Consequences</h3>
+<ul>
+<li><strong>Mir Jafar</strong> installed as Nawab; paid the EIC and individuals about £2.3 million (Rs 17.7 million in 1757 values); ceded 24-Parganas to the EIC.</li>
+<li>Clive alone collected approximately £234,000 in gifts.</li>
+<li>Bengal became a de facto British protectorate.</li>
+<li>The "Plassey plunder" funded the EIC's wars over the next forty years — the financial spring of British expansion.</li>
+</ul>
+
+<div class="callout gold"><strong>Famous verdict (K.M. Panikkar):</strong> "Plassey was less a battle than a transaction." UPSC examiners reward this analytical framing — Plassey was political (won by conspiracy), economic (loot of Bengal), and naval (the EIC's command of the Bhagirathi) more than military.</div>
+</section>
+
+<section class="notes" id="s4">
+<h2>4. Mir Jafar to Mir Qasim — 1757–63</h2>
+
+<h3>4.1 Mir Jafar (1757–60)</h3>
+<ul>
+<li>Could not meet the EIC's escalating demands; alienated the Jagat Seths.</li>
+<li>Deposed in 1760 in favour of his son-in-law <strong>Mir Qasim</strong>, who paid the Calcutta Council Rs 29 lakh in private gifts and ceded the districts of Burdwan, Midnapur, and Chittagong.</li>
+</ul>
+
+<h3>4.2 Mir Qasim (1760–63) — The Patriot Nawab</h3>
+<ul>
+<li>The ablest of the post-Plassey Nawabs.</li>
+<li>Shifted the capital from Murshidabad to <strong>Monghyr (Munger)</strong> — beyond easy English reach.</li>
+<li>Reorganised the army on European lines under Armenian and Mughal officers; established a gun factory at Monghyr.</li>
+<li><strong>1762:</strong> Abolished all internal duties — putting Indian merchants on equal footing with the English, who had been abusing dastak. This destroyed the EIC's commercial monopoly within Bengal.</li>
+<li>The English protested; Mir Qasim resisted; war broke out (1763).</li>
+<li>Defeated in three battles (Katwa, Murshidabad, Udaynala); fled to Awadh.</li>
+</ul>
+</section>
+
+<section class="notes" id="s5">
+<h2>5. Battle of Buxar — 22 October 1764</h2>
+<p>The single most decisive battle of the EIC's conquest of India. Where Plassey was a transaction, Buxar was a military victory.</p>
+
+<h3>5.1 The Triple Alliance vs the EIC</h3>
+<ul>
+<li><strong>Mir Qasim</strong> — fugitive Nawab of Bengal.</li>
+<li><strong>Shuja-ud-Daulah</strong> — Nawab of Awadh, wazir of the Mughal Empire.</li>
+<li><strong>Shah Alam II</strong> — Mughal Emperor.</li>
+<li>Combined force: about 40,000.</li>
+<li>British: 7,000 under <strong>Hector Munro</strong>.</li>
+</ul>
+
+<h3>5.2 The Battle</h3>
+<p>Fought at Buxar (Bihar) on 22 October 1764. Munro's disciplined sepoy infantry defeated the larger but disorganised allied army. Mir Qasim fled; Shuja-ud-Daulah surrendered subsequently; Shah Alam II joined the British camp.</p>
+
+<h3>5.3 Why Buxar Mattered More Than Plassey</h3>
+<ul>
+<li>Buxar was a <strong>military</strong> victory, not a conspiratorial one — it proved that British arms could defeat a combined Indian field army.</li>
+<li>It brought the <strong>Mughal Emperor himself</strong> into the EIC's hands.</li>
+<li>It made Bengal de jure as well as de facto British territory (via the Diwani that followed).</li>
+<li>It set the stage for British penetration of Awadh — the gateway to north India.</li>
+</ul>
+</section>
+
+<section class="notes" id="s6">
+<h2>6. Treaty of Allahabad &amp; the Diwani — August 1765</h2>
+<p>Robert Clive, returned for his second governorship of Bengal (1765–67), negotiated two treaties at Allahabad in August 1765.</p>
+
+<h3>6.1 Treaty with Shah Alam II</h3>
+<ul>
+<li>The Emperor granted the EIC the <strong>Diwani (revenue-collection rights)</strong> of Bengal, Bihar, and Orissa — in perpetuity, in return for an annual tribute of Rs 26 lakh.</li>
+<li>The Emperor was to reside at Allahabad (a district to be reserved for him).</li>
+<li>The EIC retained the right to <em>nizamat</em> (criminal justice + civil administration) through the Nawab.</li>
+</ul>
+
+<h3>6.2 Treaty with Shuja-ud-Daulah</h3>
+<ul>
+<li>Awadh restored to Shuja-ud-Daulah on payment of Rs 50 lakh war indemnity.</li>
+<li>Allahabad and Kara ceded to the Emperor.</li>
+<li>Mutual defence pact — Awadh became a <em>buffer state</em> against Marathas and Afghans.</li>
+</ul>
+
+<div class="callout"><strong>Constitutional significance:</strong> The Diwani converted the EIC into the de jure revenue authority of Bengal — within the Mughal constitutional framework. This is the moment the EIC became a sovereign power: it commanded the largest revenue base in India and could now finance war on the strength of Indian taxes. Bengal financed the conquest of the rest of India.</div>
+</section>
+
+<section class="notes" id="s7">
+<h2>7. Dual Government in Bengal — 1765–72</h2>
+<p>Clive's settlement of 1765 created the famous (and infamous) <strong>Dual System (Dyarchy)</strong> in Bengal.</p>
+
+<table class="tbl">
+<tr><th>Function</th><th>Held By</th><th>Effective Control</th></tr>
+<tr><td><em>Diwani</em> (revenue + civil)</td><td>EIC (by imperial grant)</td><td>Direct EIC officials</td></tr>
+<tr><td><em>Nizamat</em> (criminal justice, police, defence)</td><td>Nawab of Bengal</td><td>Nominally Nawab; effectively EIC nominees (Muhammad Reza Khan in Bengal, Raja Shitab Rai in Bihar)</td></tr>
+</table>
+
+<h3>7.1 Consequences</h3>
+<ul>
+<li>EIC enjoyed power without responsibility; Nawab carried responsibility without power.</li>
+<li>Revenue collection became extortionate — collected by Indian intermediaries (the <em>amils</em>) for the EIC under terror.</li>
+<li>The <strong>Great Bengal Famine of 1770</strong> killed an estimated 10 million people (one-third of Bengal's population). The famine was a natural calamity, but the EIC's failure to reduce revenue demand — indeed, revenue collection rose during the famine — turned it into a catastrophe.</li>
+<li>Public outcry in Britain led to the <strong>Regulating Act 1773</strong> and the appointment of <strong>Warren Hastings</strong> as the first Governor-General of Bengal.</li>
+</ul>
+</section>
+
+<section class="notes" id="s8">
+<h2>8. Warren Hastings &amp; the Ring-Fence Policy (1772–85)</h2>
+
+<h3>8.1 Reforms</h3>
+<ul>
+<li><strong>End of Dual Government (1772):</strong> The EIC took direct charge of Bengal's revenue and administration; the Nawab's nizamat was reduced to ceremonial.</li>
+<li>Treasury shifted from Murshidabad to Calcutta (1772).</li>
+<li>Revenue settlement: brief experiments with five-yearly farming (1772) and one-year farming (1777).</li>
+<li>Reorganised judicial system: Diwani Adalats (civil) at district level, Nizamat Adalats (criminal); Sadar Diwani Adalat and Sadar Nizamat Adalat at Calcutta as appellate courts.</li>
+<li>Patronised Asiatic Society (Sir William Jones, 1784); Sanskrit and Persian studies — the foundation of British Orientalism.</li>
+</ul>
+
+<h3>8.2 Ring-Fence Policy</h3>
+<p>Hastings' strategic doctrine: <em>defend Company territory by creating a buffer ring around it</em>. Awadh, in particular, was the buffer against Marathas and Afghans — to be subsidised militarily by Awadh's own revenues.</p>
+<ul>
+<li><strong>Treaty of Banaras (1773)</strong> with Shuja-ud-Daulah — for Rs 50 lakh, EIC troops to help Awadh annex Rohilkhand.</li>
+<li><strong>First Rohilla War (1774)</strong> — Awadh + EIC sepoys defeated Rohillas; Hafiz Rahmat Khan killed; Rohilkhand annexed to Awadh. Used against Hastings at his impeachment.</li>
+<li>Treaty of Faizabad (1775) with Asaf-ud-Daulah — Benares ceded to EIC.</li>
+</ul>
+
+<h3>8.3 The Wars Under Hastings</h3>
+<ul>
+<li><strong>First Anglo-Maratha War (1775–82):</strong> Bombay government's adventurism (Treaty of Surat 1775, Convention of Wadgaon 1779); Hastings rescued the situation through Goddard's overland march from Calcutta and Popham's capture of Gwalior; <strong>Treaty of Salbai (1782)</strong> — twenty years of Anglo-Maratha peace.</li>
+<li><strong>Second Anglo-Mysore War (1780–84):</strong> Hyder Ali invaded the Carnatic; defeated at Porto Novo (1781); Hyder died 1782; <strong>Treaty of Mangalore (1784)</strong> on status-quo terms.</li>
+</ul>
+
+<h3>8.4 Impeachment</h3>
+<p>Hastings was impeached in the British Parliament (1788–95) on charges including the Rohilla War, the Chait Singh case (Banaras), and the Begums of Awadh case. Edmund Burke led the prosecution. After a seven-year trial, Hastings was acquitted (1795) — but the trial established the principle that the EIC was accountable to Parliament.</p>
+</section>
+
+<section class="notes" id="s9">
+<h2>9. Cornwallis (1786–93) — Reform &amp; Third Mysore War</h2>
+<ul>
+<li><strong>Permanent Settlement of Bengal (1793):</strong> Zamindars made hereditary proprietors of land in return for a fixed perpetual revenue payment. Covered in detail in Modern Topic 09 (Economic Impact).</li>
+<li><strong>Cornwallis Code (1793):</strong> Separation of revenue and judicial functions; Europeanisation of higher posts (no Indian above subordinate rank).</li>
+<li><strong>Third Anglo-Mysore War (1790–92):</strong> Cornwallis + Nizam + Marathas vs Tipu. <strong>Treaty of Seringapatam (1792)</strong> — Tipu ceded half his kingdom (Malabar, Coorg, Dindigul, Baramahal), paid Rs 3.3 crore indemnity, sent two sons as hostages.</li>
+<li>Policy of <strong>Non-Intervention</strong> in Indian affairs (continued under John Shore, 1793–98) — partly because the EIC had over-extended itself.</li>
+</ul>
+</section>
+
+<section class="notes" id="s10">
+<h2>10. Anglo-Mysore Wars — Full Summary (1767–99)</h2>
+<table class="tbl">
+<tr><th>War</th><th>Years</th><th>Governor-General</th><th>Treaty</th><th>Result</th></tr>
+<tr><td>First</td><td>1767–69</td><td>Verelst</td><td>Madras (1769)</td><td>Status quo + defensive alliance; Hyder reached gates of Madras.</td></tr>
+<tr><td>Second</td><td>1780–84</td><td>Hastings</td><td>Mangalore (1784)</td><td>Hyder + Triple Alliance (Marathas + Nizam) vs EIC; Pollilur defeat (1780); Hyder died 1782; status quo ante.</td></tr>
+<tr><td>Third</td><td>1790–92</td><td>Cornwallis</td><td>Seringapatam (1792)</td><td>Tipu ceded half his kingdom; Rs 3.3 cr indemnity; two sons hostage.</td></tr>
+<tr><td>Fourth</td><td>1799</td><td>Wellesley</td><td>(No treaty — Tipu killed)</td><td>Tipu killed 4 May 1799 at Srirangapatna; Mysore restored to Wadiyars under Subsidiary Alliance.</td></tr>
+</table>
+</section>
+
+<section class="notes" id="s11">
+<h2>11. Anglo-Maratha Wars — Full Summary (1775–1818)</h2>
+<table class="tbl">
+<tr><th>War</th><th>Years</th><th>Governor-General</th><th>Treaty / End</th><th>Result</th></tr>
+<tr><td>First</td><td>1775–82</td><td>Hastings</td><td>Salbai (1782)</td><td>Triggered by Raghunath Rao's succession claim (Treaty of Surat 1775); disaster at Wadgaon (1779); concluded inconclusively.</td></tr>
+<tr><td>Second</td><td>1803–05</td><td>Wellesley</td><td>Treaties of Deogaon (1803), Surji-Arjungaon (1803), Rajghat (1805)</td><td>Triggered by Peshwa's Treaty of Bassein (1802). Arthur Wellesley won Assaye (Sept 1803) &amp; Argaon (Nov 1803); Lake captured Delhi &amp; Agra. Scindia and Bhonsle accepted Subsidiary Alliance; Holkar held out longer.</td></tr>
+<tr><td>Third</td><td>1817–18</td><td>Hastings (Francis Rawdon)</td><td>Various treaties; Peshwaship abolished</td><td>Combined with the Pindari War. Peshwa Baji Rao II surrendered (1818); pensioned to Bithur. Holkar, Scindia, Bhonsle, Gaekwad accepted Subsidiary Alliance. Maratha Confederacy ended.</td></tr>
+</table>
+
+<div class="callout warn"><strong>Note:</strong> Two Governors-General named "Hastings" — Warren Hastings (1772–85) and the Marquess of Hastings, Francis Rawdon (1813–23). UPSC frequently uses this confusion to trip candidates.</div>
+</section>
+
+<section class="notes" id="s12">
+<h2>12. Wellesley (1798–1805) &amp; the Subsidiary Alliance</h2>
+<p>Lord Wellesley (Richard Colley Wellesley, brother of the future Duke of Wellington) was the most aggressive Governor-General of the early 19th century. He abandoned Non-Intervention; declared that "the security of the Company's possessions depends on the supremacy of the British arms in India".</p>
+
+<h3>12.1 The Subsidiary Alliance — Five Standard Terms</h3>
+<ol>
+<li>The Indian ruler had to <strong>maintain a British force</strong> within his territory at his own expense.</li>
+<li>He had to <strong>cede territory or pay an annual subsidy</strong> for the upkeep of these troops.</li>
+<li>He could not <strong>employ any European</strong> (especially French) in his service without British consent.</li>
+<li>He could not enter into <strong>diplomatic relations or wars</strong> with other Indian rulers without British consent — losing sovereign foreign policy.</li>
+<li>A <strong>British Resident</strong> was to be stationed at his court.</li>
+</ol>
+
+<h3>12.2 States that Signed</h3>
+<table class="tbl">
+<tr><th>State</th><th>Year</th><th>Ruler</th></tr>
+<tr><td>Hyderabad</td><td>1798</td><td>Nizam Ali Khan</td></tr>
+<tr><td>Mysore (post-Tipu)</td><td>1799</td><td>Restored Wadiyar (Krishnaraja III)</td></tr>
+<tr><td>Tanjore</td><td>1799</td><td>Sarfoji II</td></tr>
+<tr><td>Awadh</td><td>1801</td><td>Saadat Ali Khan II (ceded half Awadh in lieu of subsidy)</td></tr>
+<tr><td>Peshwa (Marathas)</td><td>1802</td><td>Baji Rao II (Treaty of Bassein)</td></tr>
+<tr><td>Scindia &amp; Bhonsle</td><td>1803</td><td>Post-Assaye/Argaon</td></tr>
+<tr><td>Holkar</td><td>1818</td><td>Malhar Rao Holkar III (post-Third Anglo-Maratha War)</td></tr>
+<tr><td>Rajput states</td><td>1817–18</td><td>Mostly after Pindari War</td></tr>
+</table>
+
+<h3>12.3 The Mechanism of Indirect Conquest</h3>
+<ul>
+<li>The subsidy was always set higher than the state could sustainably pay.</li>
+<li>Default led to cession of territory — Awadh ceded half its land in 1801, Hyderabad ceded the Berars in 1853 on similar grounds.</li>
+<li>Indian rulers became <em>pensioners on their own thrones</em>, hated by their subjects for the British troops imposed on them.</li>
+<li>The Resident effectively controlled the court; succession decisions, ministerial appointments, financial decisions — all subject to British approval.</li>
+</ul>
+
+<div class="callout gold"><strong>Henry Lawrence summed it up:</strong> "The Subsidiary Alliance was the cheapest, most efficient, and most morally indefensible system of conquest ever devised." For Mains: it was conquest without battle, and it kept the cost of expansion on the conquered.</div>
+</section>
+
+<section class="notes" id="s13">
+<h2>13. Pindari War 1817–18</h2>
+<p>The <strong>Pindaris</strong> were irregular plunderers — initially Maratha auxiliaries; after the breakdown of Maratha discipline post-Panipat, they became autonomous raiding bands based in Malwa under leaders like <strong>Amir Khan</strong>, <strong>Chitu</strong>, and <strong>Wasil Muhammad</strong>. Their raids into British and allied territory in Madras and Hyderabad gave the EIC its casus belli.</p>
+
+<ul>
+<li>Lord Hastings (Marquess) launched a coordinated campaign in 1817 — perhaps the largest British military operation in India before 1857.</li>
+<li>The Pindari operation merged with the <strong>Third Anglo-Maratha War</strong> — the Marathas had been sheltering Pindari leaders.</li>
+<li>Amir Khan accepted the throne of Tonk (a new princely state created for him) in return for surrender.</li>
+<li>Chitu fled into the jungles and was reportedly killed by a tiger; Wasil Muhammad poisoned himself in captivity.</li>
+<li>Result: Maratha Confederacy ended (1818); Rajput states signed Subsidiary Alliance; British paramountcy effectively established over the entire subcontinent (excluding Sindh, Punjab, North-East).</li>
+</ul>
+</section>
+
+<section class="notes" id="s14">
+<h2>14. The Burma Wars — 1824–85</h2>
+<p>The EIC fought three wars against the Konbaung dynasty of Burma to secure its eastern frontier and Bengal's tea/teak supplies.</p>
+
+<table class="tbl">
+<tr><th>War</th><th>Years</th><th>Governor-General</th><th>Treaty</th><th>Outcome</th></tr>
+<tr><td>First</td><td>1824–26</td><td>Amherst</td><td><strong>Treaty of Yandabo (24 Feb 1826)</strong></td><td>Burma ceded Arakan, Tenasserim, Assam, Manipur; paid Rs 1 crore indemnity; renounced claims to Cachar and Jaintia.</td></tr>
+<tr><td>Second</td><td>1852</td><td>Dalhousie</td><td>No formal treaty</td><td>British annexed Pegu (Lower Burma); Burma reduced to the Irrawaddy interior.</td></tr>
+<tr><td>Third</td><td>1885</td><td>Dufferin</td><td>Annexation</td><td>Upper Burma annexed; Burma made a province of British India (1886); King Thibaw exiled.</td></tr>
+</table>
+
+<div class="callout"><strong>1826 Yandabo:</strong> Marks the EIC's eastward expansion across the Brahmaputra. Assam (until then a Tai-Ahom kingdom) was incorporated into British India — leading to the rise of the Assam tea industry from the 1830s onwards.</div>
+</section>
+
+<section class="notes" id="s15">
+<h2>15. Conquest of Sindh — 1843</h2>
+<p>One of the more cynical episodes of British expansion. Lord Ellenborough's officers — chiefly <strong>Sir Charles Napier</strong> — provoked the Amirs of Sindh (Talpur Mirs) into war and annexed their territory.</p>
+
+<h3>15.1 Background</h3>
+<ul>
+<li>Sindh's strategic value: control of the Indus river — important after the First Afghan War (1839–42) debacle.</li>
+<li>Treaties of 1832 (Bentinck), 1838, and 1839 had progressively reduced Sindhi sovereignty.</li>
+</ul>
+
+<h3>15.2 The Annexation</h3>
+<ul>
+<li>Napier imposed humiliating new terms; the Mirs resisted.</li>
+<li>Battles of <strong>Miani (17 Feb 1843)</strong> and <strong>Dabo / Hyderabad (24 March 1843)</strong> — Napier's small force defeated much larger Mir armies.</li>
+<li>Sindh annexed; Napier made first governor of Sindh.</li>
+</ul>
+
+<div class="callout gold"><strong>"Peccavi":</strong> Napier is supposed to have sent the Latin telegram <em>"Peccavi"</em> ("I have sinned") to announce that he had taken Sindh. The story is apocryphal — it appeared as a joke in <em>Punch</em> magazine (1844) — but UPSC sometimes asks the literal meaning of <em>"peccavi"</em>.</div>
+</section>
+
+<section class="notes" id="s16">
+<h2>16. Anglo-Sikh Wars &amp; Annexation of Punjab</h2>
+<p>Punjab under <strong>Maharaja Ranjit Singh</strong> (d. 27 June 1839) had been the only Indian kingdom strong enough to deter British expansion. After his death, succession disputes weakened the state and gave the British their opportunity.</p>
+
+<h3>16.1 Background — Lahore Court Politics</h3>
+<table class="tbl">
+<tr><th>Ruler</th><th>Reign</th><th>Note</th></tr>
+<tr><td>Kharak Singh</td><td>1839–40</td><td>Murdered.</td></tr>
+<tr><td>Nau Nihal Singh</td><td>1840</td><td>Killed in a gate-fall accident on his father's funeral day — many believe murder.</td></tr>
+<tr><td>Sher Singh</td><td>1841–43</td><td>Assassinated by the Sandhanwalia chiefs.</td></tr>
+<tr><td>Duleep Singh</td><td>1843–49</td><td>Child king; regency under his mother Maharani Jindan.</td></tr>
+</table>
+<p>The Khalsa army, increasingly unpaid and politically autonomous, became the de facto power-broker in Lahore.</p>
+
+<h3>16.2 First Anglo-Sikh War (1845–46)</h3>
+<ul>
+<li>Triggered by the Sikh army crossing the Sutlej (December 1845) into British territory — both sides had reasons to provoke.</li>
+<li>Four battles: <strong>Mudki (18 Dec 1845)</strong>, <strong>Ferozeshah (21–22 Dec 1845)</strong>, <strong>Aliwal (28 Jan 1846)</strong>, <strong>Sobraon (10 Feb 1846)</strong>.</li>
+<li>Sikh army repeatedly betrayed by its own commanders (Lal Singh and Tej Singh).</li>
+<li><strong>Treaty of Lahore (9 March 1846):</strong> Jullundur Doab ceded; war indemnity of Rs 1.5 crore (only Rs 50 lakh paid in cash; Kashmir transferred to Gulab Singh of Jammu under the separate <strong>Treaty of Amritsar, 16 March 1846</strong> for Rs 75 lakh).</li>
+<li><strong>Treaty of Bhairowal (Dec 1846):</strong> British Resident installed at Lahore with full executive control during Duleep Singh's minority.</li>
+</ul>
+
+<h3>16.3 Second Anglo-Sikh War (1848–49)</h3>
+<ul>
+<li>Triggered by the Multan revolt of Mulraj (April 1848) — the murder of two British officers, Patrick Vans Agnew and W.A. Anderson, sparked it.</li>
+<li>Major battles: <strong>Ramnagar (Nov 1848)</strong>, <strong>Chillianwala (13 Jan 1849)</strong> — a tactical Sikh victory that shocked Britain — and <strong>Gujrat (21 Feb 1849)</strong> — decisive British victory under Lord Gough.</li>
+<li><strong>Annexation of Punjab</strong> proclaimed by Dalhousie on <strong>29 March 1849</strong>.</li>
+<li>Duleep Singh deposed and pensioned; sent to England; converted to Christianity; the <strong>Koh-i-Noor</strong> presented to Queen Victoria.</li>
+<li>Punjab placed under a three-man Board of Administration (John Lawrence, Henry Lawrence, Charles Mansel) — replaced 1853 by John Lawrence as Chief Commissioner.</li>
+</ul>
+</section>
+
+<section class="notes" id="s17">
+<h2>17. North-West Frontier &amp; the Anglo-Afghan Wars</h2>
+<p>The British rationale for the Afghan wars was the so-called <em>"Great Game"</em> — strategic competition with Tsarist Russia over Central Asia. The fear: a Russian advance through Afghanistan to India.</p>
+
+<h3>17.1 First Anglo-Afghan War (1839–42)</h3>
+<ul>
+<li>Governor-General Auckland; Tripartite Treaty (1838) — Britain, Shah Shuja, Ranjit Singh — to depose Dost Muhammad and restore Shah Shuja.</li>
+<li>British "Army of the Indus" entered Kabul (1839); installed Shah Shuja.</li>
+<li>Anti-Shuja revolt (Nov 1841) — Sir William Macnaghten murdered (Dec 1841).</li>
+<li>Catastrophic retreat from Kabul (Jan 1842): of 16,000 British and Indian troops + camp followers, only <strong>Dr William Brydon</strong> reached Jalalabad alive.</li>
+<li>"Army of Retribution" (1842) recaptured Kabul briefly; Shah Shuja killed.</li>
+<li>Dost Muhammad restored; British policy reversed to "masterly inactivity".</li>
+</ul>
+
+<h3>17.2 Second Anglo-Afghan War (1878–80)</h3>
+<ul>
+<li>Governor-General Lytton; Treaty of Gandamak (1879) — Afghan foreign policy under British control; Khyber and other passes ceded.</li>
+<li>Cavagnari (British envoy) murdered at Kabul (1879); war resumed.</li>
+<li>Roberts' march from Kabul to Kandahar (1880); Abdur Rahman recognised as Amir.</li>
+</ul>
+
+<h3>17.3 Durand Line (1893)</h3>
+<p>Sir Mortimer Durand and Amir Abdur Rahman demarcated the British–Afghan boundary (the Durand Line) — still the de facto border between Pakistan and Afghanistan.</p>
+</section>
+
+<section class="notes" id="s18">
+<h2>18. Dalhousie (1848–56) &amp; the Doctrine of Lapse</h2>
+<p>Lord Dalhousie was the most aggressive annexationist Governor-General. His policy was guided by two principles: (i) modernisation through railways, telegraph, postal reform; and (ii) territorial consolidation through annexation.</p>
+
+<h3>18.1 The Doctrine of Lapse</h3>
+<p>Under the Doctrine, a dependent princely state would <strong>lapse to the EIC</strong> if its ruler died without a natural heir. Adopted heirs would not be recognised for succession purposes — overturning a long-standing Hindu legal practice. The Doctrine applied to states whose existence the EIC had created or recognised — i.e. <em>dependent</em> states, not sovereign ones.</p>
+
+<table class="tbl">
+<tr><th>State</th><th>Year Annexed</th><th>Reason / Ruler</th></tr>
+<tr><td>Satara</td><td>1848</td><td>Appa Sahib died without natural heir; the first application of Lapse.</td></tr>
+<tr><td>Jaitpur (Bundelkhand)</td><td>1849</td><td>Lapse</td></tr>
+<tr><td>Sambalpur</td><td>1849</td><td>Lapse</td></tr>
+<tr><td>Bhagat (Punjab hill state)</td><td>1850</td><td>Lapse</td></tr>
+<tr><td>Udaipur (Chhattisgarh)</td><td>1852</td><td>Lapse</td></tr>
+<tr><td>Jhansi</td><td>1853</td><td>Gangadhar Rao died; adopted son not recognised; Rani Lakshmibai's grievance was a major spark of 1857.</td></tr>
+<tr><td>Nagpur</td><td>1854</td><td>Raghoji III died without natural heir.</td></tr>
+<tr><td>Tanjore &amp; Carnatic</td><td>1853–55</td><td>Titular successions disallowed.</td></tr>
+</table>
+
+<h3>18.2 Other Annexations (Not under Lapse)</h3>
+<ul>
+<li><strong>Punjab</strong> (1849) — by right of conquest after Second Anglo-Sikh War.</li>
+<li><strong>Sikkim</strong> (1850) — limited annexation after British officers were detained.</li>
+<li><strong>Lower Burma / Pegu</strong> (1852) — Second Burma War.</li>
+<li><strong>Berar</strong> (1853) — from the Nizam of Hyderabad in lieu of subsidy arrears.</li>
+<li><strong>Awadh</strong> (1856) — on charges of misgovernment (see §19).</li>
+</ul>
+
+<h3>18.3 Modernisation Under Dalhousie</h3>
+<ul>
+<li>First passenger railway: <strong>Bombay–Thane, 16 April 1853</strong> (34 km).</li>
+<li>Calcutta–Pandua line (1854); Madras lines from 1856.</li>
+<li>First telegraph line: Calcutta–Agra (1853–54); a network of 4,000 miles by 1856.</li>
+<li><strong>Post Office Act 1854</strong> — half-anna stamp introduced; uniform postage rates.</li>
+<li><strong>Wood's Despatch 1854</strong> — the "Magna Carta of English Education in India".</li>
+<li>Public Works Department (1854); Ganges Canal (1854); Grand Trunk Road work continued.</li>
+</ul>
+</section>
+
+<section class="notes" id="s19">
+<h2>19. Annexation of Awadh — 13 February 1856</h2>
+<p>The most consequential and most controversial of Dalhousie's annexations. Awadh was a loyal Subsidiary Alliance state, not subject to the Doctrine of Lapse — Wajid Ali Shah was the legitimate ruler with heirs.</p>
+
+<h3>19.1 The Pretext</h3>
+<ul>
+<li>British Residents (W.H. Sleeman, James Outram) had been reporting "misgovernment" for years.</li>
+<li>Outram's report (1855) provided the formal basis for annexation.</li>
+<li>Dalhousie ordered annexation on grounds of <em>misgovernment</em> — a novel principle, since the Subsidiary Alliance had no provision for it.</li>
+</ul>
+
+<h3>19.2 The Annexation</h3>
+<ul>
+<li>13 February 1856 — Awadh annexed.</li>
+<li>Wajid Ali Shah (the artistically gifted last Nawab) refused to sign a treaty of accession; was pensioned to Garden Reach, Calcutta; lived there until his death (1887).</li>
+<li>His wife <strong>Begum Hazrat Mahal</strong> led the 1857 Revolt at Lucknow.</li>
+<li>Awadh's annexation alienated the talukdars (whose estates were resumed) and disbanded the Awadhi army — both major groups in the 1857 Revolt.</li>
+</ul>
+
+<div class="callout warn"><strong>Causal link to 1857:</strong> Awadh was the recruitment ground for the Bengal Army (about 75,000 sepoys came from Awadh). The annexation alienated these sepoys and their families. This is a structural cause of the 1857 Revolt — covered in detail in Modern Topic 07.</div>
+</section>
+
+<section class="notes" id="s20">
+<h2>20. Causes of British Success — Comprehensive Analysis</h2>
+
+<h3>20.1 Military Causes</h3>
+<ul>
+<li>Disciplined sepoy infantry on European lines; regular pay; standardised drill and arms.</li>
+<li>Integrated artillery — the EIC's gun-park was unmatched.</li>
+<li>Logistical superiority — the bullock-train commissariat that kept armies fed in long campaigns.</li>
+<li>Command of the sea after 1763 — neither French nor any Indian power could disrupt British coastal supply lines.</li>
+</ul>
+
+<h3>20.2 Financial Causes</h3>
+<ul>
+<li>Bengal Diwani (1765) gave the EIC the largest revenue base in India.</li>
+<li>City of London credit + Bank of England backing.</li>
+<li>Indian banker support — Jagat Seths (Bengal), Bombay Parsis, Madras Chettiars.</li>
+<li>Subsidiary Alliance: enemies paid for their own conquest.</li>
+</ul>
+
+<h3>20.3 Political &amp; Diplomatic Causes</h3>
+<ul>
+<li>Indian political disunity — successor states fought each other rather than the British.</li>
+<li>British use of <em>divide-and-rule</em> in every theatre: Bengal (Mir Jafar), Mysore (Marathas + Nizam), Marathas (one chief at a time), Punjab (Sikh court factions).</li>
+<li>Stable home government — no equivalent of the Mughal succession wars.</li>
+</ul>
+
+<h3>20.4 Administrative Causes</h3>
+<ul>
+<li>Civil-military separation; rule-bound bureaucracy; rapid promotion of able officers.</li>
+<li>Reports and intelligence — the EIC's information network was unparalleled (C.A. Bayly's <em>Empire and Information</em>).</li>
+<li>Codified law (Hastings, Cornwallis) — predictability that Indian states often lacked.</li>
+</ul>
+
+<h3>20.5 Economic Causes</h3>
+<ul>
+<li>Industrial Revolution (after 1780) generated cheap British textiles that destroyed Indian handloom and gave Britain a growing economic lead.</li>
+<li>Bengal revenue financed the destruction of Bengal's own industries.</li>
+</ul>
+
+<h3>20.6 Ideological &amp; Personal Factors</h3>
+<ul>
+<li>British nationalism + sense of mission (especially after Wellesley).</li>
+<li>Quality of leadership — Clive, Hastings, Wellesley, Dalhousie — all capable expansionists.</li>
+<li>The 18th-century Indian states had no comparable pan-Indian ideological vision.</li>
+</ul>
+
+<div class="callout gold"><strong>The standard Mains conclusion:</strong> British success was not a single cause but a <em>combination of factors</em> — military discipline + financial depth + political opportunism + Indian disunity + post-Plassey access to Bengal revenue. No single Indian state could match this combination because no Indian state had a comparable financial base, naval capability, or pan-Indian political project.</div>
+</section>
+
+<section class="notes" id="pyq">
+<h2>21. Previous Year Questions — UPSC Mains &amp; Prelims</h2>
+
+<div class="callout warn">
+<strong>Honest attribution note:</strong> We do not fabricate year-tags. UPSC questions are listed below as <em>theme-aligned</em> to the standard UPSC Modern History cycle (Prelims up to 2026, Mains up to 2025). Where exact attribution is verifiable, we cite it; otherwise we mark <em>"Theme-aligned"</em>.
+</div>
+
+<h3>Prelims-style</h3>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>
+Q1. The Battle of Plassey was fought on:
+<br>(a) 22 October 1764 &nbsp; <strong>(b) 23 June 1757</strong> &nbsp; (c) 14 January 1761 &nbsp; (d) 4 May 1799</div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>
+Q2. The Treaty of Allahabad (1765) granted the EIC:
+<br>1. The Diwani of Bengal, Bihar, and Orissa.
+<br>2. The Nizamat of Bengal.
+<br>3. A perpetual tribute obligation to the Mughal Emperor.
+<br>Which are correct?
+<br>(a) 1 only &nbsp; <strong>(b) 1 and 3 only</strong> &nbsp; (c) 2 and 3 only &nbsp; (d) 1, 2, 3</div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>
+Q3. The Subsidiary Alliance was first signed by:
+<br>(a) Awadh &nbsp; <strong>(b) Hyderabad</strong> &nbsp; (c) Mysore &nbsp; (d) the Peshwa</div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>
+Q4. The Treaty of Bassein (1802) was signed by the British with:
+<br>(a) Tipu Sultan &nbsp; (b) Holkar &nbsp; <strong>(c) Peshwa Baji Rao II</strong> &nbsp; (d) Shah Alam II</div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>
+Q5. Match the following:
+<br>1. Treaty of Yandabo &mdash; (a) End of First Burma War
+<br>2. Treaty of Lahore &mdash; (b) End of First Sikh War
+<br>3. Treaty of Salbai &mdash; (c) End of First Maratha War
+<br>4. Treaty of Mangalore &mdash; (d) End of Second Mysore War
+<br><strong>Answer: 1-a, 2-b, 3-c, 4-d</strong></div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>
+Q6. The first state to be annexed under the Doctrine of Lapse was:
+<br>(a) Jhansi &nbsp; (b) Nagpur &nbsp; <strong>(c) Satara</strong> &nbsp; (d) Awadh</div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>
+Q7. Awadh was annexed by the British in 1856 on the grounds of:
+<br>(a) Doctrine of Lapse
+<br><strong>(b) Misgovernment</strong>
+<br>(c) Right of conquest
+<br>(d) Refusal to pay subsidy</div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>
+Q8. The first passenger railway in India ran from:
+<br>(a) Calcutta to Howrah &nbsp; (b) Madras to Arcot &nbsp; <strong>(c) Bombay to Thane</strong> &nbsp; (d) Calcutta to Pandua</div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>
+Q9. The Battle of Gujrat (1849) was decisive in:
+<br>(a) The First Anglo-Maratha War
+<br>(b) The First Anglo-Sikh War
+<br><strong>(c) The Second Anglo-Sikh War</strong>
+<br>(d) The Pindari War</div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>
+Q10. The Treaty of Amritsar (16 March 1846) transferred Kashmir to:
+<br>(a) Gulab Singh of Jammu — for Rs 75 lakh
+<br>The above statement is:
+<br><strong>(a) Correct</strong> &nbsp; (b) Partially correct &nbsp; (c) Incorrect</div>
+
+<h3>Mains-style (GS Paper 1)</h3>
+
+<div class="pyq"><span class="year">Theme-aligned (UPSC Mains 2014–2025 cycle)</span><br>
+Q1. <em>"Plassey was less a battle than a transaction; Buxar was less a transaction than a battle."</em> Examine the comparative significance of the two battles in the founding of British rule in India. (15 marks)</div>
+
+<div class="pyq"><span class="year">Theme-aligned (UPSC Mains 2014–2025 cycle)</span><br>
+Q2. Critically evaluate the Subsidiary Alliance system of Lord Wellesley. Was it a benevolent system of indirect rule or a moral indefensible mechanism of conquest? (15 marks)</div>
+
+<div class="pyq"><span class="year">Theme-aligned (UPSC Mains 2014–2025 cycle)</span><br>
+Q3. Examine the Doctrine of Lapse as instrumented by Lord Dalhousie. To what extent did it contribute to the Revolt of 1857? (15 marks)</div>
+
+<div class="pyq"><span class="year">Theme-aligned (UPSC Mains 2014–2025 cycle)</span><br>
+Q4. The annexation of Awadh in 1856 has been called "the most controversial single act of British policy in India". Examine the grounds, methods, and consequences of this annexation. (15 marks)</div>
+
+<div class="pyq"><span class="year">Theme-aligned (UPSC Mains 2014–2025 cycle)</span><br>
+Q5. Analyse the causes of British success against Indian rulers in the 18th century. To what extent was their success due to Indian weakness rather than British strength? (15 marks)</div>
+
+<div class="pyq"><span class="year">Theme-aligned (UPSC Mains 2014–2025 cycle)</span><br>
+Q6. Trace the role of Warren Hastings in consolidating British power in Bengal. Why was he impeached, and what does the trial signify? (10 marks)</div>
+
+<div class="pyq"><span class="year">Theme-aligned (UPSC Mains 2014–2025 cycle)</span><br>
+Q7. Examine the strategic significance of the Anglo-Afghan Wars and the annexation of Sindh and Punjab in the construction of British India's north-western frontier. (15 marks)</div>
+
+<div class="pyq"><span class="year">Theme-aligned (Expected, UPSC Mains 2026)</span><br>
+Q8. <em>"Dalhousie was the architect of modern British India — both its territorial consolidation and the conditions of its 1857 collapse."</em> Critically examine. (15 marks)</div>
+</section>
+
+<div class="revision" id="revision">
+<h3>15 Must-Know Facts — British Expansion Quick Revision</h3>
+<ol>
+<li><strong>Plassey:</strong> 23 June 1757; Clive vs Siraj-ud-Daulah; conspiracy of Mir Jafar, Jagat Seths, Rai Durlabh, Omichand.</li>
+<li><strong>Buxar:</strong> 22 Oct 1764; Hector Munro vs Mir Qasim + Shuja-ud-Daulah + Shah Alam II — military victory that secured Bengal.</li>
+<li><strong>Treaty of Allahabad 1765:</strong> Diwani of Bengal/Bihar/Orissa to EIC for Rs 26 lakh/year tribute; Awadh restored on Rs 50 lakh indemnity.</li>
+<li><strong>Dual Government 1765–72:</strong> EIC = Diwani; Nawab = Nizamat (in name); Great Bengal Famine 1770 killed ~10 million.</li>
+<li><strong>Regulating Act 1773 + Warren Hastings (1772–85):</strong> first Governor-General of Bengal; ended Dual Govt; Ring-Fence; impeached 1788–95, acquitted.</li>
+<li><strong>Cornwallis (1786–93):</strong> Permanent Settlement 1793; Cornwallis Code; Third Mysore War &amp; Treaty of Seringapatam (1792).</li>
+<li><strong>Four Anglo-Mysore Wars:</strong> 1767–69 (Madras), 1780–84 (Mangalore), 1790–92 (Seringapatam), 1799 (Tipu killed 4 May).</li>
+<li><strong>Three Anglo-Maratha Wars:</strong> 1775–82 (Salbai), 1803–05 (Bassein/Assaye), 1817–18 (end of Peshwaship; Baji Rao II to Bithur).</li>
+<li><strong>Wellesley (1798–1805) + Subsidiary Alliance:</strong> Hyderabad 1798 (first), Mysore 1799, Awadh 1801, Peshwa 1802 (Bassein), Scindia/Bhonsle 1803, Holkar 1818.</li>
+<li><strong>Pindari War 1817–18:</strong> Marquess of Hastings; ended Maratha Confederacy; established British paramountcy.</li>
+<li><strong>Three Burma Wars:</strong> 1824–26 (Yandabo: Arakan, Tenasserim, Assam, Manipur), 1852 (Pegu annexed), 1885 (Upper Burma annexed by Dufferin).</li>
+<li><strong>Sindh 1843:</strong> Sir Charles Napier; Battles of Miani &amp; Hyderabad; "Peccavi" (apocryphal joke).</li>
+<li><strong>First Anglo-Sikh War 1845–46:</strong> Mudki, Ferozeshah, Aliwal, Sobraon; Treaty of Lahore (1846); Kashmir to Gulab Singh for Rs 75 lakh (Treaty of Amritsar, 16 Mar 1846).</li>
+<li><strong>Second Anglo-Sikh War 1848–49:</strong> Mulraj's Multan revolt; Chillianwala (13 Jan 1849); Gujrat (21 Feb 1849); Punjab annexed 29 Mar 1849 by Dalhousie; Koh-i-Noor to Victoria.</li>
+<li><strong>Dalhousie (1848–56):</strong> Doctrine of Lapse — Satara 1848, Jhansi 1853, Nagpur 1854; Awadh annexed (misgovernment) 13 Feb 1856; Bombay–Thane railway 16 Apr 1853; Wood's Despatch 1854.</li>
+</ol>
+</div>
+
+</main>
+
+<aside>
+
+<div class="widget">
+<h4>Quick Reference</h4>
+<ul class="miniref">
+<li><strong>Plassey:</strong> 23 Jun 1757</li>
+<li><strong>Buxar:</strong> 22 Oct 1764</li>
+<li><strong>Diwani:</strong> 12 Aug 1765</li>
+<li><strong>Subsidiary Alliance (1st):</strong> 1798</li>
+<li><strong>Bassein:</strong> 1802</li>
+<li><strong>Yandabo:</strong> 24 Feb 1826</li>
+<li><strong>Sindh annexed:</strong> 1843</li>
+<li><strong>Punjab annexed:</strong> 29 Mar 1849</li>
+<li><strong>Awadh annexed:</strong> 13 Feb 1856</li>
+</ul>
+</div>
+
+<div class="widget">
+<h4>Governors-General</h4>
+<ul class="miniref">
+<li>Warren Hastings (1772–85)</li>
+<li>Cornwallis (1786–93)</li>
+<li>John Shore (1793–98)</li>
+<li>Wellesley (1798–1805)</li>
+<li>Minto I (1807–13)</li>
+<li>Marquess of Hastings (1813–23)</li>
+<li>Amherst (1823–28)</li>
+<li>Bentinck (1828–35)</li>
+<li>Auckland (1836–42)</li>
+<li>Ellenborough (1842–44)</li>
+<li>Hardinge (1844–48)</li>
+<li>Dalhousie (1848–56)</li>
+<li>Canning (1856–62)</li>
+</ul>
+</div>
+
+<div class="widget">
+<h4>Subsidiary Alliance — 5 Terms</h4>
+<ul class="miniref">
+<li>British troops in territory</li>
+<li>Pay subsidy / cede land</li>
+<li>No Europeans without consent</li>
+<li>No diplomatic relations alone</li>
+<li>British Resident at court</li>
+</ul>
+</div>
+
+<div class="widget">
+<h4>UPSC Importance</h4>
+<div class="bar"><span class="lbl">Prelims</span><span class="track"><span class="fill" style="width:95%"></span></span></div>
+<div class="bar"><span class="lbl">Mains GS-I</span><span class="track"><span class="fill" style="width:96%"></span></span></div>
+<div class="bar"><span class="lbl">Essay</span><span class="track"><span class="fill" style="width:60%"></span></span></div>
+<div class="bar"><span class="lbl">Optional</span><span class="track"><span class="fill" style="width:90%"></span></span></div>
+</div>
+
+<div class="widget">
+<h4>Tags</h4>
+<div class="tags">
+<span>Plassey</span><span>Buxar</span><span>Diwani</span><span>Clive</span><span>Warren Hastings</span><span>Cornwallis</span><span>Wellesley</span><span>Subsidiary Alliance</span><span>Doctrine of Lapse</span><span>Dalhousie</span><span>Awadh</span><span>Punjab</span><span>Sindh</span>
+</div>
+</div>
+
+<div class="widget">
+<h4>Quick Quiz</h4>
+<div class="quiz">
+<details><summary>Who was the EIC commander at Buxar?</summary><p>Hector Munro, 22 October 1764.</p></details>
+<details><summary>Which state signed the first Subsidiary Alliance?</summary><p>Hyderabad (Nizam Ali Khan), 1798, under Lord Wellesley.</p></details>
+<details><summary>Which state was first annexed under the Doctrine of Lapse?</summary><p>Satara, 1848.</p></details>
+<details><summary>Who was the British Commander-in-Chief at Sobraon?</summary><p>Sir Hugh Gough; the battle (10 Feb 1846) ended the First Anglo-Sikh War.</p></details>
+<details><summary>When was the first Indian passenger railway?</summary><p>16 April 1853, Bombay to Thane, 34 km, under Dalhousie.</p></details>
+<details><summary>Who annexed Awadh, and on what grounds?</summary><p>Dalhousie, on 13 February 1856, on grounds of "misgovernment".</p></details>
+</div>
+</div>
+
+<div class="widget">
+<h4>Related Notes</h4>
+<ul class="related">
+<li><a href="/modern-history/arrival-of-european-companies-in-india">&rsaquo; Modern 01 — Arrival of European Companies</a></li>
+<li><a href="/modern-history/decline-of-the-mughal-empire">&rsaquo; Modern 02 — Decline of the Mughal Empire</a></li>
+<li><a href="/modern-history/emergence-of-new-states-in-the-18th-century">&rsaquo; Modern 03 — Emergence of New States (18th Century)</a></li>
+</ul>
+</div>
+
+</aside>
+</div>
+</div>

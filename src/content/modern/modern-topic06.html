@@ -1,0 +1,702 @@
+<!-- modern-topic06 — auto-imported from modern-topic06-revolt-1857-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#8b1a2a;
+  --brand-blue-dark:#5a0e1a;
+  --brand-blue-light:#fdf0f2;
+  --brand-orange:#c9940a;
+  --brand-orange-light:#fff8e8;
+  --green:#2e7a47;
+  --green-light:#eaf5ef;
+  --text-dark:#1a1a2e;
+  --text-mid:#444;
+  --text-light:#888;
+  --border:#e2e8f0;
+  --bg:#fafaf8;
+  --card:#ffffff;
+  --accent:#fdf5f6;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Inter','Segoe UI',-apple-system,sans-serif;color:var(--text-dark);background:var(--bg);line-height:1.65;font-size:16px}
+.topnav{background:var(--brand-blue-dark);color:#fff;padding:14px 28px;position:sticky;top:0;z-index:50;box-shadow:0 2px 6px rgba(0,0,0,0.22);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.nav-logo{font-size:20px;font-weight:800;color:#fff;text-decoration:none;letter-spacing:-0.5px}
+.nav-logo span{color:var(--brand-orange)}
+.nav-pills{display:flex;flex-wrap:wrap;gap:7px}
+.pill{background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.22);color:#fff;padding:5px 12px;border-radius:99px;font-size:12px;font-weight:500}
+.hero{background:linear-gradient(135deg,#8b1a2a 0%,#5a0e1a 55%,#3a0810 100%);color:#fff;padding:54px 28px 44px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(201,148,10,0.22),transparent 55%);pointer-events:none}
+.hero-inner{max-width:1240px;margin:0 auto;position:relative;z-index:2}
+.breadcrumb{font-size:13px;color:rgba(255,255,255,0.65);margin-bottom:14px}
+.hero h1{font-size:38px;margin:0 0 14px;font-weight:800;letter-spacing:-0.5px;line-height:1.18}
+.hero-sub{font-size:17px;color:rgba(255,255,255,0.80);max-width:880px;margin:0 0 20px;line-height:1.6}
+.hero-pills{display:flex;flex-wrap:wrap;gap:8px}
+.hero-pills span{background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.22);color:#fff;padding:6px 13px;border-radius:99px;font-size:12.5px;font-weight:500}
+.layout{display:grid;grid-template-columns:1fr 320px;gap:28px;max-width:1240px;margin:28px auto;padding:0 28px}
+@media(max-width:1024px){.layout{grid-template-columns:1fr;padding:0 18px}}
+main{min-width:0}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 22px;margin-bottom:22px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--brand-blue);font-weight:700}
+.toc ol{margin:0;padding-left:22px;font-size:14.5px;column-count:2;column-gap:24px}
+@media(max-width:680px){.toc ol{column-count:1}}
+.toc li{margin:4px 0;break-inside:avoid}
+.toc a{color:var(--text-dark);text-decoration:none}
+.toc a:hover{color:var(--brand-blue);text-decoration:underline}
+.concept-box{background:linear-gradient(135deg,#fdf5f6 0%,#fde8ec 100%);border-left:5px solid var(--brand-orange);border-radius:10px;padding:22px 26px;margin-bottom:26px;box-shadow:0 2px 6px rgba(201,148,10,0.10)}
+.concept-box h3{margin:0 0 10px;font-size:18px;color:var(--brand-blue-dark);font-weight:700}
+.concept-box p{margin:0 0 10px;font-size:15px;color:#2a1010}
+.concept-box ul{margin:8px 0 0;padding-left:22px}
+.concept-box li{margin:5px 0;font-size:14.5px;color:#2a1010}
+.notes{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:26px 30px;margin-bottom:22px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.notes h2{font-size:24px;color:var(--brand-blue-dark);margin:0 0 14px;padding-bottom:10px;border-bottom:2px solid var(--accent);font-weight:700}
+.notes h3{font-size:18px;color:var(--brand-blue);margin:22px 0 10px;font-weight:700}
+.notes h4{font-size:15.5px;color:var(--brand-blue-dark);margin:16px 0 8px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px}
+.notes p{margin:0 0 12px}
+.notes ul,.notes ol{margin:8px 0 14px;padding-left:24px}
+.notes li{margin:5px 0}
+.notes strong{color:var(--brand-blue-dark)}
+.notes em{color:#7a4d0a;font-style:italic}
+.callout{background:var(--brand-blue-light);border-left:4px solid var(--brand-blue);padding:14px 18px;border-radius:6px;margin:14px 0;font-size:14.5px}
+.callout.gold{background:var(--brand-orange-light);border-left-color:var(--brand-orange)}
+.callout.green{background:var(--green-light);border-left-color:var(--green)}
+.callout.warn{background:#fef0e6;border-left-color:#c25e1c}
+.tbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+.tbl th,.tbl td{border:1px solid var(--border);padding:8px 11px;text-align:left;vertical-align:top}
+.tbl th{background:var(--brand-blue);color:#fff;font-weight:600}
+.tbl tr:nth-child(even) td{background:#fdf5f6}
+.pyq{background:#fff;border:1px solid var(--border);border-left:4px solid var(--brand-orange);border-radius:6px;padding:12px 16px;margin:10px 0;font-size:14.5px}
+.pyq .year{display:inline-block;background:var(--brand-orange);color:#fff;padding:2px 9px;border-radius:99px;font-size:12px;font-weight:600;margin-bottom:6px}
+.revision{background:linear-gradient(135deg,#5a0e1a 0%,#8b1a2a 100%);color:#fff;border-radius:12px;padding:26px 30px;margin-bottom:22px}
+.revision h3{color:var(--brand-orange);margin:0 0 14px;font-size:20px}
+.revision ol{padding-left:22px;margin:0}
+.revision li{margin:6px 0;font-size:14.5px;color:#f5d0d5}
+aside{min-width:0}
+.widget{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:18px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.widget h4{margin:0 0 10px;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--brand-blue);font-weight:700;border-bottom:1px solid var(--border);padding-bottom:7px}
+.widget .miniref{font-size:13px;list-style:none;padding:0;margin:0}
+.widget .miniref li{margin:5px 0}
+.bar{display:flex;align-items:center;gap:8px;margin:6px 0;font-size:13px}
+.bar .lbl{width:96px;color:var(--text-mid)}
+.bar .track{flex:1;height:7px;background:#eee;border-radius:99px;overflow:hidden}
+.bar .fill{height:100%;background:linear-gradient(90deg,var(--brand-orange),#9a7008);border-radius:99px}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tags span{background:var(--brand-blue-light);color:var(--brand-blue);padding:3px 9px;border-radius:99px;font-size:11.5px;font-weight:500}
+.related{list-style:none;padding:0;margin:0;font-size:13.5px}
+.related li{margin:6px 0}
+.related a{color:var(--brand-blue);text-decoration:none;font-weight:500}
+.related a:hover{text-decoration:underline}
+.quiz{font-size:13.5px}
+.quiz details{margin:7px 0;border-bottom:1px dashed var(--border);padding-bottom:7px}
+.quiz summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark)}
+.quiz p{margin:6px 0 0;color:var(--text-mid);font-size:13px}
+footer{background:var(--brand-blue-dark);color:#f5d0d5;padding:24px 28px;text-align:center;font-size:13px;margin-top:34px}
+footer strong{color:#fff}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="hero">
+  <div class="hero-inner">
+    <div class="breadcrumb">Home &rsaquo; UPSC Notes &rsaquo; Modern History &rsaquo; Topic 07</div>
+    <h1>Revolt of 1857 — Complete UPSC Notes</h1>
+    <p class="hero-sub">Causes &middot; Meerut spark 10 May 1857 &middot; Delhi, Kanpur, Lucknow, Jhansi, Bareilly, Arrah, Faizabad &middot; Suppression &middot; Government of India Act 1858 &middot; Queen's Proclamation &middot; Historiography</p>
+    <div class="hero-pills">
+      <span>Mangal Pandey</span>
+      <span>Bahadur Shah Zafar</span>
+      <span>Nana Sahib</span>
+      <span>Tatya Tope</span>
+      <span>Rani Lakshmi Bai</span>
+      <span>Kunwar Singh</span>
+      <span>Begum Hazrat Mahal</span>
+      <span>Maulvi Ahmadullah</span>
+    </div>
+  </div>
+</div>
+<div class="layout">
+<main>
+
+<div class="toc">
+<h3>On this page</h3>
+<ol>
+<li><a href="#concept">Conceptual Clarity</a></li>
+<li><a href="#s1">Background — India in 1856</a></li>
+<li><a href="#s2">Political Causes</a></li>
+<li><a href="#s3">Economic Causes</a></li>
+<li><a href="#s4">Social &amp; Religious Causes</a></li>
+<li><a href="#s5">Military Grievances</a></li>
+<li><a href="#s6">Immediate Cause — Greased Cartridge</a></li>
+<li><a href="#s7">Mangal Pandey &amp; the Prelude</a></li>
+<li><a href="#s8">Meerut Outbreak — 10 May 1857</a></li>
+<li><a href="#s9">Delhi &amp; Bahadur Shah Zafar</a></li>
+<li><a href="#s10">Kanpur — Nana Sahib &amp; Tatya Tope</a></li>
+<li><a href="#s11">Lucknow — Begum Hazrat Mahal</a></li>
+<li><a href="#s12">Jhansi &amp; Gwalior — Rani Lakshmi Bai</a></li>
+<li><a href="#s13">Bihar — Kunwar Singh</a></li>
+<li><a href="#s14">Other Centres — Bareilly, Faizabad, Allahabad</a></li>
+<li><a href="#s15">Suppression — British Commanders &amp; Recapture</a></li>
+<li><a href="#s16">Non-Participants &amp; Loyalists</a></li>
+<li><a href="#s17">Why the Revolt Failed</a></li>
+<li><a href="#s18">Consequences — Act of 1858 &amp; Reorganisation</a></li>
+<li><a href="#s19">Queen Victoria's Proclamation</a></li>
+<li><a href="#s20">Nature of the Revolt — Historiography</a></li>
+<li><a href="#pyq">Previous Year Questions</a></li>
+<li><a href="#revision">15 Must-Know Facts</a></li>
+</ol>
+</div>
+
+<div class="concept-box" id="concept">
+<h3>Why this topic matters for UPSC</h3>
+<p>The Revolt of 1857 — variously called the Sepoy Mutiny, the Great Rebellion, the First War of Independence — was the largest armed challenge the British faced in nineteenth-century India. Within a year it consumed Awadh, Rohilkhand, the Doab, Bundelkhand and Bihar, and ended with the transfer of power from the East India Company to the British Crown. For UPSC it is examined on four axes:</p>
+<ul>
+<li><strong>Prelims (factual):</strong> Dates (29 Mar Mangal Pandey; 10 May Meerut; 1 Nov 1858 Queen's Proclamation), commanders, treaties, Acts (Government of India Act 1858, Peel Commission 1859), centres and their leaders.</li>
+<li><strong>Mains GS-I (analytical):</strong> Causes (political/economic/military/religious), why it failed, why the Indian middle class and southern/western India stayed away, and the long-term consequences for British rule and Indian nationalism.</li>
+<li><strong>Historiographical:</strong> The "nature" debate — sepoy mutiny (J.W. Kaye, R.C. Majumdar) vs first war of independence (V.D. Savarkar 1909) vs sepoy revolt that became a civilian rebellion (S.B. Chaudhuri) vs feudal/restorationist (Sumit Sarkar) vs popular uprising with subaltern agency (Eric Stokes, Ranajit Guha, Rudrangshu Mukherjee).</li>
+<li><strong>Essay &amp; ethics:</strong> 1857 as a moment of cross-community solidarity (Hindu &amp; Muslim sepoys, Bahadur Shah as symbol), the moral question of British reprisals (cannonading, indiscriminate hangings), and the birth of an anti-colonial memory tradition.</li>
+</ul>
+</div>
+
+<section class="notes" id="s1">
+<h2>1. Background — India on the Eve of 1857</h2>
+
+<p>By 1856 the British East India Company controlled, directly or indirectly, almost the entire Indian subcontinent. The previous fifty years had seen the elimination of every major Indian military rival — Mysore (1799), the Marathas (1818), the Sikhs (1849) — and the absorption of state after state through war, subsidiary alliance, doctrine of lapse, and direct annexation. The annexation of Awadh on <strong>13 February 1856</strong> was the last great act of expansion before the storm.</p>
+
+<p>This was also the period of "improving" Governors-General — Bentinck (1828–35), Dalhousie (1848–56) — whose social legislation (abolition of sati 1829, the Hindu Widows' Remarriage Act 1856), educational measures (Macaulay's Minute 1835, Wood's Despatch 1854) and infrastructure projects (first railway Bombay–Thane 16 April 1853; the telegraph; the Ganges Canal 1854) were seen by traditional society as a coordinated assault on indigenous culture.</p>
+
+<p>The Company's army had also changed character. The Bengal Army by 1857 numbered ~150,000 sepoys, drawn disproportionately from Brahmin and Rajput peasant families of Awadh and Bihar. The annexation of Awadh meant that these sepoys' homeland was now under direct British rule, with talukdars dispossessed and revenue assessments tightened. The sepoy was no longer a soldier of a friendly foreign power — he was an occupied subject in uniform.</p>
+
+<div class="callout gold"><strong>Strategic snapshot (1856):</strong> Total British army in India ≈ 2,32,000 — of which ~2,00,000 were Indian sepoys and only ~40,000 were Europeans. The numerical imbalance is the single most important fact for understanding why a sepoy mutiny could so quickly become a civil rebellion.</div>
+</section>
+
+<section class="notes" id="s2">
+<h2>2. Political Causes</h2>
+
+<h3>2.1 Doctrine of Lapse (Dalhousie, 1848–56)</h3>
+<p>Dalhousie's interpretation that the adopted heir of a Hindu prince could not succeed to a state held under "dependent" tenure produced a cascade of annexations: <strong>Satara 1848, Jaitpur and Sambalpur 1849, Baghat 1850, Udaipur 1852, Jhansi 1853, Nagpur 1854</strong>. Each act dispossessed a dynasty and its dependent nobility, court servants, and soldiers, creating an entire class with grievances against the Company.</p>
+
+<h3>2.2 Annexation of Awadh, 13 February 1856</h3>
+<p>Awadh had been a loyal subsidiary ally since 1801. Dalhousie's annexation, on the pretext of misgovernment (the Outram Report), and the pensioning-off of Nawab Wajid Ali Shah to Calcutta (Matiya Burj), was deeply resented for three reasons:</p>
+<ul>
+<li>It violated a long-standing treaty relationship — exposing the Company's word as worthless.</li>
+<li>It dispossessed thousands of <em>talukdars</em>, whose estates were summarily resumed under the new revenue settlement.</li>
+<li>It alienated the Bengal Army — about one-third of whose sepoys were from Awadh and whose families now lived under hated British administration without the privileged status that "subjects of a friendly power" had enjoyed.</li>
+</ul>
+
+<h3>2.3 The Mughal Question</h3>
+<p>Bahadur Shah II had been formally informed in 1849 that his successors would not be permitted to live in the Red Fort, and in 1856 Dalhousie declared that the title "King of Delhi" would lapse on the death of the current emperor. The symbolic centre of north Indian sovereignty was being deliberately erased — a humiliation that turned the aged emperor into a rallying point in May 1857.</p>
+
+<h3>2.4 Treatment of the Nawab of Carnatic and the Raja of Tanjore</h3>
+<p>Their titles too had been extinguished — a smaller but parallel grievance among southern Indian elites.</p>
+
+<h3>2.5 Nana Sahib's Pension</h3>
+<p>The Peshwa Baji Rao II had been pensioned at Bithur (near Kanpur) on a payment of Rs 8 lakh per year. After his death in 1851 the Company refused to continue the pension to his adopted son <strong>Nana Sahib (Dhondu Pant)</strong>. Nana sent his envoy <strong>Azimullah Khan</strong> to London (1853–55) to plead the case unsuccessfully — a personal grievance with continental consequences.</p>
+</section>
+
+<section class="notes" id="s3">
+<h2>3. Economic Causes</h2>
+
+<h3>3.1 Deindustrialisation</h3>
+<p>The destruction of Indian handicrafts by machine-made British manufactures — accelerated by the abolition of the Company's trade monopoly in 1813 — had thrown weavers, spinners, dyers and metalworkers out of work. With no industrial alternative they fell back on agriculture, increasing pressure on land. William Bentinck's famous phrase that "the bones of the cotton-weavers are bleaching the plains of India" captured this collapse.</p>
+
+<h3>3.2 Revenue Settlements &amp; Peasant Distress</h3>
+<ul>
+<li><strong>Permanent Settlement (1793)</strong> in Bengal/Bihar had transferred power to absentee zamindars and ruined the older intermediate gentry.</li>
+<li><strong>Ryotwari (Madras, Bombay)</strong> imposed crushing direct revenue assessments on peasants.</li>
+<li><strong>Mahalwari (North-Western Provinces, Awadh)</strong> destroyed communal village institutions and produced cycles of dispossession through forced sales for arrears.</li>
+<li>The <strong>"Inam Commission" in Bombay (1852)</strong> resumed thousands of revenue-free grants — alienating a key conservative constituency.</li>
+</ul>
+
+<h3>3.3 Drain of Wealth</h3>
+<p>The phrase comes later (Naoroji, Dutt) but the phenomenon was already operating in the 1850s — home charges, military pensions remitted to Britain, and one-sided trade depleted India of bullion. The famine of 1837–38 in the North-Western Provinces had killed nearly 800,000 and exposed Company indifference.</p>
+
+<h3>3.4 Resumption of Rent-Free Tenures</h3>
+<p>The systematic enquiry into and resumption of religious and charitable land grants (jagirs, inams, madad-i-maash) under regulations from the 1820s alienated the traditional learned classes — pandits, maulvis, mahants — who became carriers of anti-British sentiment in countryside society.</p>
+</section>
+
+<section class="notes" id="s4">
+<h2>4. Social &amp; Religious Causes</h2>
+
+<h3>4.1 Missionary Activity</h3>
+<p>The Charter Act of 1813 had opened India to missionaries; from the 1830s aggressive proselytising, mission schools, and conversion of orphans (especially after famines) created a widespread fear that the British intended a mass conversion. Officers like <strong>Colonel Wheler</strong> openly preached Christianity to their sepoys; <strong>Edmund Frere</strong> at Sindh distributed Bibles to soldiers.</p>
+
+<h3>4.2 Social Legislation</h3>
+<ul>
+<li><strong>Abolition of Sati (Regulation XVII of 1829)</strong> — Bentinck.</li>
+<li><strong>Suppression of Thuggee (1830s)</strong> — Sleeman.</li>
+<li><strong>Abolition of female infanticide (1795, 1804, 1870 regulations).</strong></li>
+<li><strong>Religious Disabilities Act 1850</strong> — allowed Hindu converts to Christianity to inherit ancestral property, removing the traditional disability of caste-loss.</li>
+<li><strong>Hindu Widows' Remarriage Act 1856</strong> (Lord Canning).</li>
+</ul>
+<p>Each measure, however justified by humanitarian principles, was perceived by orthodox society as state interference in personal/religious law — and as a prelude to forced conversion.</p>
+
+<h3>4.3 Western Education &amp; Cultural Anxieties</h3>
+<p>Macaulay's Minute (1835) had committed the state to English-medium education in higher classes. Wood's Despatch (1854) systematised it. Conservative society saw schools as instruments of conversion; many parents kept their children away.</p>
+
+<h3>4.4 Racial Arrogance</h3>
+<p>From the 1830s onwards the British community in India adopted increasingly racist attitudes — clubs, residences, even railway carriages segregated; Indians excluded from senior positions; everyday humiliations in courts, cantonments, and bazaars. The pre-1820s sociability of Orientalist British India had given way to the colour-line of high colonialism.</p>
+</section>
+
+<section class="notes" id="s5">
+<h2>5. Military Grievances</h2>
+
+<h3>5.1 Pay, Allowances, and Status</h3>
+<ul>
+<li>The Indian sepoy was paid less than a British private; promotion above the rank of subedar was closed to him.</li>
+<li><strong>Foreign service "bhatta"</strong> (additional allowance for service outside Company territories) was steadily curtailed — and abolished altogether after Awadh became British territory in 1856, since service there was no longer "foreign".</li>
+<li>The post-office privilege that had allowed sepoys to send mail home free of charge was abolished under <strong>Lord Canning's Post Office Act 1854</strong> — a small but bitter financial pinch.</li>
+</ul>
+
+<h3>5.2 General Service Enlistment Act, 1856</h3>
+<p>Passed by Lord Canning, this Act required all new recruits to the Bengal Army to undertake to serve <em>anywhere</em>, including across the seas. For high-caste Hindu sepoys this violated the prohibition on <em>kala pani</em> (crossing the black water entailed loss of caste). Existing sepoys feared the rule would be extended to them.</p>
+
+<h3>5.3 Numerical Imbalance &amp; Indianisation of the Officer Corps that Never Happened</h3>
+<p>Sepoys watched as the European-Indian ratio in the Bengal Army widened: only ~14% of the rank-and-file was European in 1856. They knew their numerical strength — and that the officer class remained exclusively white.</p>
+
+<h3>5.4 Earlier Mutinies — Pattern of Discontent</h3>
+<ul>
+<li><strong>Vellore 10 July 1806</strong> — new dress regulations.</li>
+<li><strong>Barrackpore November 1824</strong> — refusal to march to Burma; cannonading.</li>
+<li><strong>Bolarum (Hyderabad) 1855</strong> — 3rd Cavalry mutiny.</li>
+<li><strong>34th Native Infantry — Berhampore Feb 1857 &amp; 19th NI</strong> refused cartridges.</li>
+</ul>
+<p>Each was suppressed, but the pattern of grievance — religion, pay, distant service — was identical and cumulative.</p>
+</section>
+
+<section class="notes" id="s6">
+<h2>6. The Immediate Cause — The Greased Cartridge</h2>
+
+<p>In late 1856 the British introduced the new <strong>Enfield Pattern 1853 rifle</strong>, which required the soldier to bite off the end of a paper cartridge before ramming it down the muzzle. The cartridges were greased — and a rumour spread, with some factual basis, that the grease was a mixture of cow fat (offensive to Hindus) and pig fat (offensive to Muslims). The Company hastily ordered that sepoys be allowed to grease the cartridges themselves with vegetable oil, and that they tear (not bite) the paper — but the damage was done. Sepoys took the cartridge as proof that the British <em>intended</em> to defile them and force conversion.</p>
+
+<div class="callout"><strong>Note:</strong> The historian Sir John Kaye in <em>The History of the Sepoy War in India</em> (1864) concluded that the grease did, in some early lots manufactured at the Dum Dum and Ishapur arsenals, contain animal tallow — so the rumour was not pure fantasy. The deeper point: in an army already steeped in religious anxiety, even the suspicion was enough.</div>
+
+<h3>6.1 The Chapati Movement</h3>
+<p>From January 1857 unexplained chapatis began to be passed from village to village across the North-Western Provinces — chowkidars handing the next chowkidar four or five chapatis with the instruction to make more and pass them on. No leader, no message, no explicit purpose was ever identified. The movement remains a historical mystery, but it was contemporaneously seen by both British and Indians as a coded signal of coming insurrection — a tradition picked up later in vernacular accounts.</p>
+</section>
+
+<section class="notes" id="s7">
+<h2>7. Mangal Pandey &amp; the Prelude</h2>
+
+<p><strong>Mangal Pandey</strong>, a sepoy of the <strong>34th Native Infantry stationed at Barrackpore</strong> (near Calcutta), attacked his European officers — Lieutenant Baugh and Sergeant-Major Hewson — on the parade ground on <strong>29 March 1857</strong>. Other sepoys watched without intervening on the British side; one — Sheikh Paltu — restrained Pandey from killing the officers but no one helped seize him. Pandey shot himself but only wounded himself; he was court-martialled and <strong>hanged on 8 April 1857</strong>. Jemadar Ishwari Prasad, who had refused to order the guard to arrest Pandey, was hanged on 21 April. The 34th NI was disbanded on 6 May.</p>
+
+<p>Earlier, on 26 February 1857, the <strong>19th NI at Berhampore</strong> had refused to use the new cartridges; it too was disbanded (29 March 1857). The disbanded sepoys — stripped of pay, uniform, and pension, and now scattered across the countryside — became the seedbed of the larger revolt.</p>
+
+<div class="callout gold"><strong>From Barrackpore to Meerut:</strong> The line runs straight. Disbanded sepoys carried the news; cantonments across northern India were already on edge. The cartridge issue was the single fuse linking otherwise local grievances into a single explosion.</div>
+</section>
+
+<section class="notes" id="s8">
+<h2>8. Meerut Outbreak — 10 May 1857</h2>
+
+<p>At Meerut cantonment, on <strong>24 April 1857</strong>, 85 of 90 troopers of the <strong>3rd Light Cavalry</strong> refused to accept the new cartridges on parade. They were court-martialled, sentenced to ten years' rigorous imprisonment, and on <strong>9 May 1857</strong> publicly shackled in irons before the entire Meerut garrison — a deliberate humiliation.</p>
+
+<p>The next day was Sunday, <strong>10 May 1857</strong>. While British officers were preparing for evening church service, the three native regiments at Meerut — the <strong>3rd Light Cavalry, the 11th Native Infantry, and the 20th Native Infantry</strong> — broke into open revolt, released their comrades from jail, killed European officers, and rode the 60 miles to Delhi through the night.</p>
+
+<div class="callout warn"><strong>Why Meerut, why so easily?</strong> Meerut had the <em>largest</em> European garrison of any cantonment in northern India — ~2,000 European troops alongside ~2,300 Indians. The British commander <strong>General Hewitt</strong> failed to pursue the rebels or to telegraph Delhi. The 36-hour window before Delhi was alerted is one of the great "what-ifs" of Indian history.</div>
+</section>
+
+<section class="notes" id="s9">
+<h2>9. Delhi &amp; the Proclamation of Bahadur Shah Zafar</h2>
+
+<p>The Meerut sepoys reached Delhi on the morning of <strong>11 May 1857</strong>. They entered the Red Fort and asked the 82-year-old Mughal emperor <strong>Bahadur Shah II "Zafar"</strong> to assume leadership. Zafar — a poet, mystic, and reluctant figurehead — initially hesitated; under pressure from the sepoys and his own son <strong>Mirza Mughal</strong>, he allowed himself to be proclaimed <em>Shahenshah-i-Hindustan</em>. The Mughal flag flew over the Red Fort again.</p>
+
+<p>Delhi gave the rebellion three vital things:</p>
+<ol>
+<li>A <strong>symbolic centre</strong> — the Mughal throne, the only pan-Indian sovereign symbol available.</li>
+<li>A <strong>magazine</strong> — the Delhi arsenal (which the British engineer Lieutenant Willoughby blew up on 11 May to deny the rebels its full contents, but much was salvaged).</li>
+<li>A <strong>nodal communications hub</strong> from which orders, proclamations, and seals could be issued in the emperor's name.</li>
+</ol>
+
+<h3>9.1 The Real Military Command — Bakht Khan</h3>
+<p><strong>General Bakht Khan</strong>, a former subedar of the Bareilly brigade, arrived in Delhi on <strong>2 July 1857</strong> with reinforcements and was made Commander-in-Chief. Bakht Khan tried to establish discipline, a regular pay-chest, and a Court of Administration to subordinate the emperor's princes to a military council — but the structure never functioned smoothly.</p>
+
+<h3>9.2 British Recapture of Delhi</h3>
+<p>The British "Delhi Field Force" under <strong>Sir Henry Barnard</strong> (then Wilson) sat on the Ridge from June. <strong>John Nicholson</strong> arrived with the Movable Column from Punjab on 14 August; the final assault began on <strong>14 September 1857</strong>. Nicholson was killed on 15 September leading the Kashmiri Gate breach. After six days of street fighting, Delhi fell on <strong>20 September 1857</strong>.</p>
+
+<p>Bahadur Shah took refuge at Humayun's Tomb. Captain <strong>William Hodson</strong> persuaded him to surrender on 21 September with a guarantee of his life, then shot his sons — <strong>Mirza Mughal, Mirza Khizr Sultan, and Mirza Abu Bakr</strong> — in cold blood at the <strong>Khooni Darwaza</strong> on 22 September 1857. Bahadur Shah Zafar was tried in 1858, exiled to <strong>Rangoon</strong>, and died there on <strong>7 November 1862</strong> — the last Mughal emperor.</p>
+
+<div class="callout"><strong>His own verse:</strong> "Kitna hai badnaseeb Zafar, dafn ke liye / Do gaz zameen bhi na mili koo-e-yaar mein."</div>
+</section>
+
+<section class="notes" id="s10">
+<h2>10. Kanpur — Nana Sahib, Tatya Tope &amp; Azimullah Khan</h2>
+
+<p>The revolt at Kanpur began on <strong>5 June 1857</strong> when the four sepoy regiments mutinied. They marched out of Kanpur but were persuaded by <strong>Nana Sahib (Dhondu Pant)</strong>, the adopted son of the last Peshwa, to return and assume command. Nana proclaimed himself Peshwa.</p>
+
+<p>The British garrison under <strong>Sir Hugh Wheeler</strong> — about 900 Europeans and Eurasians, including women and children — was besieged in a hastily entrenched compound for 22 days. On <strong>25 June</strong> Nana offered safe passage to Allahabad by boats from <strong>Satichaura Ghat</strong>. On the morning of <strong>27 June 1857</strong>, as the British embarked, firing broke out (responsibility is still disputed). Most European men were killed; about 120 women and children were taken prisoner.</p>
+
+<p>On <strong>15 July 1857</strong>, as the British relief force under <strong>General Havelock</strong> approached, the surviving women and children were killed and thrown into a well at the <strong>Bibighar</strong>. This act — whoever ordered it — became the central moral weapon of British propaganda and the justification for the indiscriminate reprisals that followed.</p>
+
+<p>Havelock entered Kanpur on <strong>17 July 1857</strong>. Nana Sahib escaped to Nepal and was never captured. His chief lieutenant <strong>Tatya Tope (Ramachandra Pandurang Tope)</strong> continued guerrilla resistance across Central India for nearly two years — joining Rani Lakshmi Bai at Jhansi and Kalpi, capturing Gwalior, raiding across Rajasthan and Bundelkhand. He was finally betrayed by the Raja of Narwar, captured on <strong>7 April 1859</strong>, court-martialled, and <strong>hanged at Shivpuri on 18 April 1859</strong>. <strong>Azimullah Khan</strong>, Nana's diplomat-envoy, is believed to have died in the jungles of the Terai.</p>
+</section>
+
+<section class="notes" id="s11">
+<h2>11. Lucknow — Begum Hazrat Mahal &amp; Birjis Qadr</h2>
+
+<p>The annexed kingdom of Awadh rose almost as one. The mutiny at Lucknow began on <strong>30 May 1857</strong>. <strong>Chief Commissioner Sir Henry Lawrence</strong> fortified the Residency; he was killed by a shell on <strong>4 July 1857</strong>. The siege of the Lucknow Residency lasted from 1 July to 17 November 1857 — one of the longest sieges in British military history.</p>
+
+<p>In the city, <strong>Begum Hazrat Mahal</strong>, a junior wife of the exiled Wajid Ali Shah, proclaimed her ten-year-old son <strong>Birjis Qadr</strong> as Nawab and ruled in his name. She presided over a court at the Bara Imambara, maintained a regular army, and led from the front in the field.</p>
+
+<p>British relief came in three stages:</p>
+<ol>
+<li><strong>Havelock and Outram</strong> fought their way into the Residency on <strong>25 September 1857</strong> — but were then themselves besieged.</li>
+<li><strong>Sir Colin Campbell</strong> (Commander-in-Chief) broke through on <strong>17 November 1857</strong> and evacuated the women, children, and wounded.</li>
+<li>Campbell returned with a far larger force and <strong>finally retook Lucknow on 21 March 1858</strong>.</li>
+</ol>
+
+<p>Begum Hazrat Mahal refused the amnesty terms offered after the Queen's Proclamation, fled to Nepal with Birjis Qadr, and lived in exile under the protection of Jung Bahadur Rana. She died at Kathmandu in 1879 and is buried in the Jama Masjid graveyard there.</p>
+</section>
+
+<section class="notes" id="s12">
+<h2>12. Jhansi &amp; Gwalior — Rani Lakshmi Bai</h2>
+
+<p>Born <strong>Manikarnika Tambe</strong> at Varanasi (commonly cited 19 November 1828; some sources 1835), she was married to <strong>Raja Gangadhar Rao Newalkar</strong> of Jhansi in 1842 and renamed Lakshmi Bai. Her infant son died in 1851; her husband died on <strong>21 November 1853</strong>. The couple had adopted <strong>Damodar Rao</strong> on the day before Gangadhar's death — but Dalhousie invoked the Doctrine of Lapse and annexed Jhansi in March 1854. Her famous protest before the Political Agent — "<em>Mein meri Jhansi nahi doongi</em>" — is the line every UPSC student knows.</p>
+
+<p>The Jhansi garrison mutinied on <strong>5 June 1857</strong>; British residents were killed at the Jokhan Bagh on 8 June (the Rani's responsibility for this remains disputed). She was reluctantly accepted by the British as ruler of Jhansi for a time, then attacked by <strong>Sir Hugh Rose</strong> and the Central India Field Force in March 1858. Jhansi fell on <strong>3 April 1858</strong> after fierce fighting; the Rani escaped on horseback with her adopted son strapped to her back.</p>
+
+<p>She joined Tatya Tope at <strong>Kalpi</strong>, which fell on 24 May 1858. The two then made a brilliant tactical strike on <strong>Gwalior</strong> (1 June 1858), capturing the fort from the loyalist Scindia. There the Rani was finally killed in cavalry combat at <strong>Kotah-ki-Serai</strong> on <strong>17 June 1858</strong>, aged about 29. Sir Hugh Rose famously called her "the bravest and best military leader of the rebels".</p>
+
+<p>Damodar Rao survived in obscurity, was granted a small pension after years of petitioning, and died at Indore in 1906.</p>
+</section>
+
+<section class="notes" id="s13">
+<h2>13. Bihar — Kunwar Singh of Jagdishpur</h2>
+
+<p><strong>Babu Kunwar Singh</strong>, the zamindar of <strong>Jagdishpur</strong> in Shahabad district (Bihar), was nearly 80 years old when he took command of the revolt in Bihar. The Danapur cantonment mutinied on <strong>25 July 1857</strong>; the sepoys marched to Jagdishpur and accepted Kunwar Singh as their leader. He defeated the British force under <strong>Captain Dunbar at Arrah</strong> on 27 July, briefly took Arrah, and then began an extraordinary year-long campaign across Mirzapur, Rewa, Banda, Kalpi, Kanpur, Lucknow, and Azamgarh.</p>
+
+<p>On his return to Bihar he won the <strong>Battle of Jagdishpur on 23 April 1858</strong> against Captain Le Grand, recovering his ancestral estate — but he was severely wounded during the river crossing of the Ganga the day before (a famous incident — his arm wounded by a bullet, he is said to have severed it himself to prevent gangrene). He died at Jagdishpur on <strong>26 April 1858</strong>, three days after his last victory. His brother <strong>Amar Singh</strong> continued resistance until late 1859.</p>
+</section>
+
+<section class="notes" id="s14">
+<h2>14. Other Centres — Bareilly, Faizabad, Allahabad, Mandsaur</h2>
+
+<h3>14.1 Bareilly — Khan Bahadur Khan</h3>
+<p><strong>Khan Bahadur Khan</strong>, grandson of <strong>Hafiz Rahmat Khan</strong> (the Rohilla chief killed at Miran-pur Katra in 1774), led the revolt in Rohilkhand. He proclaimed an independent nawabate at Bareilly on 31 May 1857, struck his own coin, and held the district for almost a year. Bareilly was retaken by Campbell on <strong>7 May 1858</strong>. Khan Bahadur was captured, tried, and hanged on <strong>24 March 1860</strong>.</p>
+
+<h3>14.2 Faizabad — Maulvi Ahmadullah Shah</h3>
+<p><strong>Maulvi Ahmadullah Shah of Faizabad</strong> — sometimes called the "Danka Shah" because of the drum that announced his processions — was perhaps the most original military mind of 1857. A Sufi preacher with formal military training (some accounts say he had served in the army of Hyder Ali's successors), he led the rebel forces at the <strong>Battle of Chinhat (30 June 1857)</strong> where the British force under Lawrence was defeated. He was later betrayed and shot by the loyalist Raja Jagannath Singh of Powayan on <strong>5 June 1858</strong>; his severed head was displayed for a reward of Rs 50,000.</p>
+
+<h3>14.3 Allahabad — Liaquat Ali</h3>
+<p><strong>Maulvi Liaquat Ali</strong>, a school-master, led the rising at Allahabad from 6 June 1857. The city was retaken by <strong>Colonel Neill</strong> with horrific reprisals — entire villages along the Grand Trunk Road were burned and their inhabitants hanged from roadside trees. Liaquat Ali escaped, lived in hiding for fourteen years, and was finally captured at Bombay in 1871 and transported to the Andamans, where he died.</p>
+
+<h3>14.4 Mandsaur (Malwa) — Firoz Shah</h3>
+<p><strong>Mirza Firoz Shah</strong>, a Mughal prince of the Timurid line, raised the standard at Mandsaur in central India, fought across Malwa, and finally escaped to Mecca, where he died in exile in 1877.</p>
+
+<div class="callout gold"><strong>Geographic spread of the revolt:</strong> Heart of revolt = Awadh + Rohilkhand + Doab + Bundelkhand + Bihar (modern UP + parts of MP + western Bihar). Untouched: Punjab (loyal Sikhs), Bengal proper (zamindars satisfied by Permanent Settlement), Madras Presidency, Bombay Presidency south of Mhow, and almost all of Rajputana and central India's princely states.</div>
+</section>
+
+<section class="notes" id="s15">
+<h2>15. Suppression — British Commanders, Centres, and Recapture</h2>
+
+<table class="tbl">
+<tr><th>Centre</th><th>British Commander</th><th>Date Recaptured</th><th>Notes</th></tr>
+<tr><td>Delhi</td><td>Barnard → Wilson; Nicholson</td><td>20 Sep 1857</td><td>Six days of street fighting; Nicholson killed 15 Sep at Kashmiri Gate</td></tr>
+<tr><td>Kanpur</td><td>Henry Havelock</td><td>17 Jul 1857 (first); held with difficulty</td><td>Followed Bibighar massacre; Neill's reprisals</td></tr>
+<tr><td>Lucknow Residency relief</td><td>Havelock &amp; Outram</td><td>25 Sep 1857 (first relief)</td><td>Themselves then besieged</td></tr>
+<tr><td>Lucknow second relief</td><td>Colin Campbell</td><td>17 Nov 1857</td><td>Evacuation of women, children, wounded</td></tr>
+<tr><td>Lucknow final recapture</td><td>Colin Campbell</td><td>21 Mar 1858</td><td>End of major resistance in Awadh</td></tr>
+<tr><td>Jhansi</td><td>Sir Hugh Rose</td><td>3 Apr 1858</td><td>Central India Field Force</td></tr>
+<tr><td>Kalpi</td><td>Sir Hugh Rose</td><td>24 May 1858</td><td>Rebel arms depot</td></tr>
+<tr><td>Gwalior</td><td>Sir Hugh Rose</td><td>19 Jun 1858</td><td>Rani Lakshmi Bai killed 17 Jun at Kotah-ki-Serai</td></tr>
+<tr><td>Bareilly</td><td>Colin Campbell</td><td>7 May 1858</td><td>Khan Bahadur Khan captured later</td></tr>
+<tr><td>Jagdishpur (Bihar)</td><td>Lord Mark Kerr</td><td>Oct 1858 onward</td><td>Kunwar Singh died 26 Apr 1858</td></tr>
+</table>
+
+<h3>15.1 The Punjab "Movable Column" &amp; the Sikh Factor</h3>
+<p><strong>John Lawrence</strong> (Chief Commissioner, Punjab) and his lieutenants <strong>Herbert Edwardes, John Nicholson, Neville Chamberlain</strong> disarmed the Bengal Army units in Punjab early, raised fresh Sikh and Punjabi regiments, and dispatched the <strong>Movable Column</strong> to Delhi. Without Punjab's loyalty — itself a function of the Sikhs' recent (1849) bitter experience with Bengal Army sepoys during the Anglo-Sikh wars — the recapture of Delhi would have been impossible.</p>
+
+<h3>15.2 The Final Pacification</h3>
+<p>By <strong>July 1858</strong> organised resistance was effectively over. <strong>Tatya Tope's guerrilla campaign</strong> continued into 1859. The official Proclamation of Peace was issued by Lord Canning on <strong>8 July 1859</strong>.</p>
+
+<div class="callout warn"><strong>Reprisals:</strong> British vengeance was extreme. Colonel Neill executed prisoners by forcing high-caste rebels to lick blood from the Bibighar floor before hanging them. Cannonading of rebels (blowing from a gun) was widely practised. Entire villages were burned along the Grand Trunk Road. The Hindu and Urdu word <em>"angrezi raj"</em> acquired in 1857–58 a meaning of pitiless cruelty that survived for generations.</div>
+</section>
+
+<section class="notes" id="s16">
+<h2>16. Non-Participants &amp; Loyalists</h2>
+
+<h3>16.1 Princely States</h3>
+<p>Of the 562 princely states, the overwhelming majority remained loyal or neutral. Active military assistance to the British came from:</p>
+<ul>
+<li><strong>Sindhia of Gwalior</strong> (Jayajirao Scindia) — though his own army went over to the rebels at Gwalior in June 1858.</li>
+<li><strong>Holkar of Indore</strong> (Tukoji Rao II).</li>
+<li><strong>Nizam of Hyderabad</strong> (Afzal-ud-Daula) — Salar Jung as Diwan.</li>
+<li><strong>Sikh chiefs of Patiala, Nabha, Jind, and Kapurthala</strong>.</li>
+<li><strong>Rajput rulers of Jodhpur, Bikaner, Jaipur, Udaipur</strong> and most of Rajputana.</li>
+<li>The <strong>Begum of Bhopal</strong> (Sikandar Begum).</li>
+<li><strong>Travancore, Mysore, Kashmir (Gulab Singh's successor)</strong>.</li>
+</ul>
+<p>Canning famously called these princes the "<strong>breakwaters in the storm</strong>" — and after 1858 they were systematically rehabilitated as pillars of the new Crown Raj.</p>
+
+<h3>16.2 Madras &amp; Bombay Armies</h3>
+<p>The Madras Army (largely south Indian peasant castes) and the Bombay Army (Marathas, Konkanis) did not mutiny. The Bengal Army composition — heavy concentration of high-caste north Indian sepoys with deep regional and religious links to Awadh — was a structural vulnerability that the other two presidencies' armies did not share.</p>
+
+<h3>16.3 The English-Educated Middle Class</h3>
+<p>The new English-educated professional class in Calcutta, Bombay, and Madras — lawyers, journalists, doctors, government clerks — were largely <em>hostile</em> to the revolt. Many had imbibed liberal reformist ideas; they saw the rebellion as a backward-looking attempt to restore feudal, Mughal, and Brahminical authority. Bengal's leading intellectual journals condemned the rising.</p>
+
+<h3>16.4 The Bengal Zamindars</h3>
+<p>The settled zamindars of Permanent Settlement Bengal had nothing to gain from rebellion — and they stayed out. The contrast with Awadh's talukdars, who had everything to lose from the new revenue system and so rose, is instructive.</p>
+</section>
+
+<section class="notes" id="s17">
+<h2>17. Why the Revolt Failed</h2>
+
+<ol>
+<li><strong>Limited geographical spread.</strong> Punjab, Bengal, Sindh, Rajputana, the south, and most of the west remained quiet. The British could draw on the resources of two-thirds of India to crush the heartland of one-third.</li>
+<li><strong>Lack of unified leadership.</strong> Bahadur Shah was a symbolic figurehead; Nana Sahib, Lakshmi Bai, Begum Hazrat Mahal, Kunwar Singh — each fought in his/her own theatre with little strategic coordination.</li>
+<li><strong>Absence of a positive programme.</strong> The rebels were united in what they were against (the Company, the cartridge, the Doctrine of Lapse) but not in what they were for. Restoration of Mughal, Peshwa, Nawabi, talukdari authority pulled in different directions.</li>
+<li><strong>Loyalty of the princes and parts of the army.</strong> See section 16.</li>
+<li><strong>Communications &amp; technology.</strong> The new telegraph (introduced 1851; deployed across the subcontinent by 1856) gave the British a decisive intelligence and coordination edge. Charles Aitchison: "<em>The telegraph saved India</em>". The Bombay–Thane railway (1853) and the embryonic East India Railway also helped move troops.</li>
+<li><strong>Resources of empire.</strong> Britain could and did pour in reinforcements — including troops diverted from the Crimean War and from China (Lord Elgin's expedition was redirected).</li>
+<li><strong>Military superiority.</strong> Enfield rifles, professional officers, modern artillery, naval supremacy — the rebels mostly fought with smoothbore muskets and old field guns. Numbers alone could not compensate.</li>
+<li><strong>Hostility of the new middle class.</strong> The revolt's reactionary social vision alienated the very modernising class that nationalism would later need.</li>
+</ol>
+</section>
+
+<section class="notes" id="s18">
+<h2>18. Consequences — Government of India Act 1858 &amp; the Reorganisation of Empire</h2>
+
+<h3>18.1 Government of India Act, 1858 ("Act for the Better Government of India")</h3>
+<ul>
+<li><strong>Transfer of power</strong> from the East India Company to the British Crown. The Company was wound up — though its formal dissolution was completed in 1874.</li>
+<li>The <strong>Court of Directors</strong> and the <strong>Board of Control</strong> were both abolished.</li>
+<li>A new <strong>Secretary of State for India</strong> was created — a Cabinet minister in London — assisted by a <strong>15-member Council of India</strong> (majority with Indian experience).</li>
+<li>The Governor-General was henceforth styled <strong>Viceroy</strong> (Lord Canning being the first).</li>
+<li>An <strong>Indian Civil Service</strong> on competitive examination was confirmed (open examinations had begun in 1855 under the Charter Act of 1853).</li>
+</ul>
+
+<h3>18.2 Reorganisation of the Army — Peel Commission, 1859</h3>
+<p>The <strong>Peel Commission (1859)</strong>, chaired by Major-General Jonathan Peel, recommended:</p>
+<ul>
+<li>A <strong>fixed ratio of European to Indian soldiers</strong> — broadly 1:2 in the Bengal Army and 2:5 in the Madras and Bombay armies.</li>
+<li>The <strong>artillery to be manned exclusively by European troops</strong> — a critical decision that lasted until 1936.</li>
+<li>Recruitment to be shifted from the high-caste populations of Awadh and Bihar to the so-called "<strong>martial races</strong>" — Sikhs, Punjabi Muslims, Pathans, Gurkhas, Dogras. The "Punjabisation" of the army began.</li>
+<li><strong>Regimental composition</strong> mixed castes and communities within each unit — explicitly to prevent the kind of regional/caste solidarity that had united the Bengal Army.</li>
+</ul>
+
+<h3>18.3 Princely States — From Subordinate Allies to Pillars of Empire</h3>
+<p>The <strong>Doctrine of Lapse was renounced</strong>. The principle that princes could adopt heirs and that their dynasties would be recognised was re-established. The Crown adopted a policy of <em>paramountcy</em> rather than annexation — princes were tied tightly to imperial authority but their territories were preserved as buffer-zones of conservatism.</p>
+
+<h3>18.4 Race Relations &amp; the "White Mutiny"</h3>
+<p>1857 hardened racial attitudes on both sides. Indians in British employment saw careers blocked above a low ceiling; informal segregation in clubs, railways, hotels and public spaces became universal. The "<strong>Ilbert Bill</strong>" controversy of 1883 — over whether Indian magistrates could try Europeans — was the direct legacy of 1857-era racial fear.</p>
+
+<h3>18.5 Financial &amp; Administrative</h3>
+<p>The vast cost of suppression was charged to Indian revenues. <strong>James Wilson</strong> was sent out as the first Finance Member in 1859 and introduced the <strong>income tax (1860), the license tax, and a paper-currency system</strong>. The Indian Penal Code (drafted by Macaulay's Law Commission, finally enacted 1860), the Code of Criminal Procedure (1861), and the Indian High Courts Act (1861) regularised the post-Mutiny legal order.</p>
+
+<h3>18.6 End of the Mughal Dynasty</h3>
+<p>Bahadur Shah's exile to Rangoon and his death in 1862 ended seven centuries of Mughal rule in India — symbolically and constitutionally.</p>
+</section>
+
+<section class="notes" id="s19">
+<h2>19. Queen Victoria's Proclamation — 1 November 1858, Allahabad</h2>
+
+<p>Read out by Viceroy Lord Canning at Allahabad on <strong>1 November 1858</strong>, the Queen's Proclamation has been called the "<strong>Magna Carta of British India</strong>". Its principal promises:</p>
+<ul>
+<li><strong>Religious neutrality.</strong> The Crown disclaimed both the right and the desire to impose its religious convictions on its Indian subjects.</li>
+<li><strong>No further annexation</strong> of princely states; the principle of <em>paramountcy</em> with respect for existing rights of princes.</li>
+<li><strong>Equal treatment under the law</strong>, regardless of race or creed — and access to government service "<em>so far as may be</em>" without discrimination (the qualification quietly preserved the racial ceiling in practice).</li>
+<li><strong>General amnesty</strong> to all who had taken part in the revolt, except those who had directly murdered British subjects or sheltered such murderers.</li>
+<li>Recognition of the <strong>customs, usages, and ancient rights</strong> of India.</li>
+<li>Confirmation of <strong>treaties and engagements</strong> entered into by the Company with Indian princes.</li>
+</ul>
+
+<div class="callout green"><strong>Long historical significance:</strong> Indian nationalists from Naoroji to Gokhale would cite the Queen's Proclamation again and again as the formal pledge against which British practice could be measured — and found wanting. It became the rhetorical baseline for moderate constitutional demands until 1905.</div>
+</section>
+
+<section class="notes" id="s20">
+<h2>20. Nature of the Revolt — The Historiographical Debate</h2>
+
+<table class="tbl">
+<tr><th>School / Historian</th><th>Characterisation</th><th>Core argument</th></tr>
+<tr><td><strong>J.W. Kaye &amp; T.R. Holmes</strong> (contemporary British)</td><td>Sepoy Mutiny</td><td>A military uprising driven by religious paranoia over the cartridge; restricted to soldiery and feudal opportunists</td></tr>
+<tr><td><strong>Sir John Lawrence, Lord Roberts</strong></td><td>Sepoy Mutiny</td><td>Same — denied any "national" character; called it a "tempest" of military discontent</td></tr>
+<tr><td><strong>V.D. Savarkar</strong> (<em>The Indian War of Independence 1857</em>, 1909)</td><td>First War of Indian Independence</td><td>Planned, coordinated, national in scope, with Hindu-Muslim unity. Banned by the British; foundational text of nationalist memory</td></tr>
+<tr><td><strong>R.C. Majumdar</strong> (<em>The Sepoy Mutiny and the Revolt of 1857</em>, 1957)</td><td>Neither a war of independence nor merely a mutiny</td><td>"No common cause, no common aim, no common leader" — a series of localised feudal reactions, not a national movement</td></tr>
+<tr><td><strong>S.B. Chaudhuri</strong> (<em>Civil Rebellion in the Indian Mutinies</em>, 1957)</td><td>Sepoy revolt that became a civilian uprising</td><td>Showed how rural Awadh, Bihar, Bundelkhand peasant and zamindar revolts followed and outlasted the military mutiny</td></tr>
+<tr><td><strong>Bipan Chandra</strong> &amp; the Marxist-nationalist school</td><td>Popular anti-colonial uprising — proto-national but not yet "national"</td><td>1857 expressed a real anti-imperial consciousness but lacked the modern political vocabulary and class base of later nationalism</td></tr>
+<tr><td><strong>Eric Stokes</strong> (<em>The Peasant Armed</em>, posthumous 1986)</td><td>Many local revolts with diverse agrarian motives</td><td>Detailed regional studies of revenue grievances; "the rebel was a peasant in uniform"</td></tr>
+<tr><td><strong>Ranajit Guha</strong> &amp; Subaltern Studies</td><td>Peasant insurgency with autonomous subaltern consciousness</td><td><em>Elementary Aspects of Peasant Insurgency in Colonial India</em> (1983) recovered the agency of the rural rebel from both colonial and nationalist erasures</td></tr>
+<tr><td><strong>Rudrangshu Mukherjee</strong> (<em>Awadh in Revolt</em>, 1984)</td><td>Popular rebellion rooted in Awadh's specific agrarian crisis</td><td>The talukdari restoration that followed 1858 confirms the depth of the agrarian roots</td></tr>
+<tr><td><strong>Sumit Sarkar</strong></td><td>Composite; multiple registers (sepoy, peasant, talukdari, royalist)</td><td>Cautions against both the "mutiny only" and the "first war of independence" framings — the revolt was structurally heterogeneous</td></tr>
+<tr><td><strong>William Dalrymple</strong> (<em>The Last Mughal</em>, 2006)</td><td>Multi-stranded urban-religious-courtly revolt centred on Delhi</td><td>Restores the role of religious idiom (jihad, dharma yudh) and the Mughal court's micro-politics</td></tr>
+</table>
+
+<h3>20.1 The Verdict for UPSC</h3>
+<p>For a Mains answer the safe formulation is: <em>1857 was neither a mere mutiny nor a fully formed national movement. It was the first large-scale, multi-class, multi-region armed challenge to British rule, in which sepoy grievances ignited a wider rebellion of dispossessed rulers, talukdars, peasants, and artisans. It lacked a unified ideology or leadership and so failed — but it forced the reorganisation of empire and bequeathed to later nationalism a powerful memory of resistance.</em></p>
+</section>
+
+<section class="notes" id="pyq">
+<h2>Previous Year Questions (Theme-aligned)</h2>
+
+<div class="callout warn"><strong>Honest attribution note:</strong> MentorsDaily does not fabricate year-tags on PYQs. The questions below reflect the actual <em>themes</em> tested in UPSC Mains 2014–2025 on the Revolt of 1857 — but we do not claim a specific year for each unless the year is independently verifiable in the official UPSC question papers archive. Treat these as high-quality model questions in the UPSC mould.</div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>"Examine the causes of the Revolt of 1857. To what extent was the religious dimension decisive?" <em>(GS-I, ~250 words, 15 marks)</em></div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>"The Revolt of 1857 was neither the first war of independence nor a mere mutiny — discuss." <em>(GS-I, ~150 words, 10 marks)</em></div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>"Why did large parts of India — Punjab, Bengal, the Madras Presidency — remain aloof from the Revolt of 1857? What does this reveal about the nature of the rebellion?" <em>(GS-I, 15 marks)</em></div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>"Analyse the role of women leaders — Rani Lakshmi Bai, Begum Hazrat Mahal — in the Revolt of 1857. To what extent did they shape the course of the rebellion?" <em>(GS-I, 10 marks)</em></div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>"Assess the consequences of the Revolt of 1857 for the structure of British rule in India." <em>(GS-I, 15 marks)</em></div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>"How did the Queen's Proclamation of 1858 attempt to address the underlying causes of the Revolt of 1857? Did it succeed?" <em>(GS-I, 10 marks)</em></div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>"The Revolt of 1857 was a watershed in the racial relations between the British and the Indians. Comment." <em>(GS-I, 10 marks)</em></div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>"Compare the leadership and the social base of the rebellion at Kanpur, Lucknow, and Jhansi." <em>(GS-I, 15 marks)</em></div>
+</section>
+
+<section class="revision" id="revision">
+<h3>15 Must-Know Facts — Last-Minute Revision</h3>
+<ol>
+<li><strong>Annexation of Awadh:</strong> 13 February 1856, Dalhousie (Outram Report on misgovernment); Nawab Wajid Ali Shah pensioned to Matiya Burj, Calcutta.</li>
+<li><strong>Doctrine of Lapse annexations:</strong> Satara 1848, Jaitpur/Sambalpur 1849, Baghat 1850, Udaipur 1852, Jhansi 1853, Nagpur 1854.</li>
+<li><strong>Enfield Pattern 1853 rifle:</strong> Greased cartridges rumour — cow fat + pig fat — early 1857; spark of the revolt.</li>
+<li><strong>General Service Enlistment Act:</strong> 1856 (Canning) — kala pani fears.</li>
+<li><strong>Mangal Pandey:</strong> 34th NI, Barrackpore; attack 29 March 1857; hanged 8 April 1857. Jemadar Ishwari Prasad hanged 21 April.</li>
+<li><strong>Meerut outbreak:</strong> 10 May 1857 — 3rd Light Cavalry + 11th &amp; 20th Native Infantry. Sepoys reached Delhi 11 May.</li>
+<li><strong>Bahadur Shah II "Zafar":</strong> proclaimed Shahenshah-i-Hindustan 11 May 1857; surrendered 21 September 1857; exiled to Rangoon; died 7 November 1862. <strong>Bakht Khan</strong> = real military commander at Delhi.</li>
+<li><strong>Delhi recaptured:</strong> 20 September 1857 (Nicholson killed 15 Sep at Kashmiri Gate). Hodson shot the three Mughal princes at <strong>Khooni Darwaza</strong> 22 September 1857.</li>
+<li><strong>Kanpur:</strong> Nana Sahib (Dhondu Pant) + Tatya Tope + Azimullah Khan; Satichaura Ghat 27 June 1857; Bibighar massacre 15 July 1857; Havelock recaptured 17 July 1857. Tatya Tope hanged at Shivpuri 18 April 1859.</li>
+<li><strong>Lucknow:</strong> Begum Hazrat Mahal + minor son Birjis Qadr; Henry Lawrence killed 4 July 1857; first relief Havelock-Outram 25 Sep 1857; second relief Campbell 17 Nov 1857; final recapture Campbell 21 March 1858.</li>
+<li><strong>Rani Lakshmi Bai of Jhansi:</strong> b. Manikarnika at Varanasi (commonly 19 Nov 1828); Jhansi annexed under Doctrine of Lapse 1854; husband Gangadhar Rao d. 1853; adopted son Damodar Rao. Jhansi fell to Hugh Rose 3 April 1858. Killed at <strong>Kotah-ki-Serai</strong> (Gwalior) 17 June 1858. Hugh Rose: "the bravest and best military leader of the rebels".</li>
+<li><strong>Kunwar Singh of Jagdishpur (Bihar):</strong> ~80 yrs; Battle of Jagdishpur 23 April 1858; died 26 April 1858. Brother Amar Singh continued fighting.</li>
+<li><strong>Maulvi Ahmadullah Shah of Faizabad:</strong> Battle of Chinhat 30 June 1857; killed 5 June 1858 by Raja of Powayan. <strong>Khan Bahadur Khan</strong> at Bareilly. <strong>Firoz Shah</strong> at Mandsaur.</li>
+<li><strong>Government of India Act 1858:</strong> Crown rule; Secretary of State for India + 15-member Council; Viceroy (Canning first). <strong>Peel Commission 1859</strong>: European-Indian ratio, artillery to Europeans only, shift to "martial races", mixed-caste regiments. <strong>Doctrine of Lapse abandoned.</strong></li>
+<li><strong>Queen Victoria's Proclamation:</strong> 1 November 1858, Allahabad — religious neutrality, no further annexation, equal treatment, general amnesty (except murderers of Europeans). Tatya Tope hanged 18 April 1859. Official Peace Proclamation: Canning, 8 July 1859.</li>
+</ol>
+</section>
+
+</main>
+
+<aside>
+
+<div class="widget">
+<h4>Quick Reference</h4>
+<ul class="miniref">
+<li><strong>Awadh annexed:</strong> 13 Feb 1856</li>
+<li><strong>General Service Act:</strong> 1856</li>
+<li><strong>Mangal Pandey hanged:</strong> 8 Apr 1857</li>
+<li><strong>Meerut outbreak:</strong> 10 May 1857</li>
+<li><strong>Delhi seized:</strong> 11 May 1857</li>
+<li><strong>Bibighar massacre:</strong> 15 Jul 1857</li>
+<li><strong>Delhi recaptured:</strong> 20 Sep 1857</li>
+<li><strong>Lucknow recaptured:</strong> 21 Mar 1858</li>
+<li><strong>Jhansi fell:</strong> 3 Apr 1858</li>
+<li><strong>Kunwar Singh d.:</strong> 26 Apr 1858</li>
+<li><strong>Lakshmi Bai killed:</strong> 17 Jun 1858</li>
+<li><strong>GoI Act:</strong> 2 Aug 1858</li>
+<li><strong>Queen's Proclamation:</strong> 1 Nov 1858</li>
+<li><strong>Tatya Tope hanged:</strong> 18 Apr 1859</li>
+<li><strong>Peace Proclamation:</strong> 8 Jul 1859</li>
+<li><strong>Zafar died Rangoon:</strong> 7 Nov 1862</li>
+</ul>
+</div>
+
+<div class="widget">
+<h4>Rebel Leaders</h4>
+<ul class="miniref">
+<li>Delhi &mdash; Bahadur Shah Zafar / Bakht Khan</li>
+<li>Kanpur &mdash; Nana Sahib / Tatya Tope</li>
+<li>Lucknow &mdash; Begum Hazrat Mahal / Birjis Qadr</li>
+<li>Jhansi &mdash; Rani Lakshmi Bai</li>
+<li>Bihar &mdash; Kunwar Singh</li>
+<li>Faizabad &mdash; Maulvi Ahmadullah</li>
+<li>Bareilly &mdash; Khan Bahadur Khan</li>
+<li>Allahabad &mdash; Liaquat Ali</li>
+<li>Mandsaur &mdash; Firoz Shah</li>
+</ul>
+</div>
+
+<div class="widget">
+<h4>British Commanders</h4>
+<ul class="miniref">
+<li>Delhi &mdash; Nicholson / Wilson</li>
+<li>Kanpur &mdash; Havelock / Neill</li>
+<li>Lucknow &mdash; Outram / Campbell</li>
+<li>Central India &mdash; Hugh Rose</li>
+<li>Bareilly &mdash; Colin Campbell</li>
+<li>Punjab &mdash; John Lawrence</li>
+<li>Captured Zafar &mdash; Hodson</li>
+<li>C-in-C &mdash; Sir Colin Campbell</li>
+</ul>
+</div>
+
+<div class="widget">
+<h4>UPSC Importance</h4>
+<div class="bar"><span class="lbl">Prelims</span><span class="track"><span class="fill" style="width:98%"></span></span></div>
+<div class="bar"><span class="lbl">Mains GS-I</span><span class="track"><span class="fill" style="width:98%"></span></span></div>
+<div class="bar"><span class="lbl">Essay</span><span class="track"><span class="fill" style="width:80%"></span></span></div>
+<div class="bar"><span class="lbl">Optional</span><span class="track"><span class="fill" style="width:96%"></span></span></div>
+</div>
+
+<div class="widget">
+<h4>Tags</h4>
+<div class="tags">
+<span>1857</span><span>Sepoy Mutiny</span><span>First War of Independence</span><span>Mangal Pandey</span><span>Meerut</span><span>Bahadur Shah Zafar</span><span>Nana Sahib</span><span>Tatya Tope</span><span>Rani Lakshmi Bai</span><span>Kunwar Singh</span><span>Hazrat Mahal</span><span>Queen's Proclamation</span><span>GoI Act 1858</span><span>Peel Commission</span>
+</div>
+</div>
+
+<div class="widget">
+<h4>Quick Quiz</h4>
+<div class="quiz">
+<details><summary>When did Mangal Pandey attack his officers?</summary><p>29 March 1857 at Barrackpore (34th NI). Hanged 8 April 1857.</p></details>
+<details><summary>Who was the real military commander at Delhi in 1857?</summary><p>General Bakht Khan (arrived from Bareilly on 2 July 1857). Bahadur Shah Zafar was the symbolic head.</p></details>
+<details><summary>Where was Rani Lakshmi Bai killed?</summary><p>Kotah-ki-Serai near Gwalior on 17 June 1858, fighting Sir Hugh Rose's Central India Field Force.</p></details>
+<details><summary>Who was the Maulvi of Faizabad?</summary><p>Maulvi Ahmadullah Shah — Sufi preacher with military skill; led the Battle of Chinhat (30 June 1857); killed 5 June 1858.</p></details>
+<details><summary>Where and when was the Queen's Proclamation read?</summary><p>Allahabad, 1 November 1858, by Viceroy Canning — promised religious neutrality, no annexation, equal treatment, amnesty.</p></details>
+<details><summary>What did the Peel Commission (1859) decide about artillery?</summary><p>Indian artillery was abolished; artillery was henceforth to be manned exclusively by European troops — a policy that lasted until 1936.</p></details>
+<details><summary>When did Bahadur Shah Zafar die?</summary><p>7 November 1862 at Rangoon (exile). End of the Mughal dynasty.</p></details>
+</div>
+</div>
+
+<div class="widget">
+<h4>Related Notes</h4>
+<ul class="related">
+<li><a href="/modern-history/religious-and-social-reform-movements-in-19th-century-india">&rsaquo; Modern 06 — Religious &amp; Social Reform</a></li>
+<li><a href="/modern-history/people-s-resistance-against-british-before-1857">&rsaquo; Modern 05 — People's Resistance Before 1857</a></li>
+<li><a href="/modern-history/consolidation-and-expansion-of-british-power-in-india">&rsaquo; Modern 04 — British Expansion</a></li>
+<li><a href="/modern-history/rise-of-indian-nationalism-and-early-inc-1858-1905">&rsaquo; Modern 08 — Rise of Nationalism</a></li>
+</ul>
+</div>
+
+</aside>
+</div>
+</div>

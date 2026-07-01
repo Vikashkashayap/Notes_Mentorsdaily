@@ -8,6 +8,12 @@ import { EthicsTopicFooterNav } from "@/components/notes/EthicsTopicFooterNav";
 import { EthicsTopicNotesBody } from "@/components/notes/EthicsTopicNotesBody";
 import { MedievalTopicFooterNav } from "@/components/notes/MedievalTopicFooterNav";
 import { MedievalTopicNotesBody } from "@/components/notes/MedievalTopicNotesBody";
+import { ModernTopicFooterNav } from "@/components/notes/ModernTopicFooterNav";
+import { ModernTopicNotesBody } from "@/components/notes/ModernTopicNotesBody";
+import { WorldTopicFooterNav } from "@/components/notes/WorldTopicFooterNav";
+import { WorldTopicNotesBody } from "@/components/notes/WorldTopicNotesBody";
+import { WorldGeoTopicFooterNav } from "@/components/notes/WorldGeoTopicFooterNav";
+import { WorldGeoTopicNotesBody } from "@/components/notes/WorldGeoTopicNotesBody";
 import { buildTopicMetadata, publisherMetadata } from "@/lib/seo/metadata";
 import { getChapterByTopicSlug } from "@/lib/seo/routes";
 import {
@@ -18,6 +24,9 @@ import { SUBJECT_SLUG } from "@/lib/seo/slugs";
 import { isAncientTopicId, type AncientTopicId } from "@/lib/ancient-notes";
 import { isEthicsTopicId, type EthicsTopicId } from "@/lib/ethics-notes";
 import { isMedievalTopicId, type MedievalTopicId } from "@/lib/medieval-notes";
+import { isModernTopicId, type ModernTopicId } from "@/lib/modern-notes";
+import { isWorldTopicId, type WorldTopicId } from "@/lib/world-notes";
+import { isWorldGeoTopicId, type WorldGeoTopicId } from "@/lib/worldgeo-notes";
 import { isPolityTopicId, type PolityTopicId } from "@/lib/polity-notes";
 import { isSocietyTopicId, type SocietyTopicId } from "@/lib/society-notes";
 import { isSecurityTopicId, type SecurityTopicId } from "@/lib/security-notes";
@@ -73,6 +82,12 @@ export default async function TopicPage({ params }: PageProps) {
     subjectKey === "ancient" && isAncientTopicId(chapter.id);
   const isMedieval =
     subjectKey === "medieval" && isMedievalTopicId(chapter.id);
+  const isModern =
+    subjectKey === "history" && isModernTopicId(chapter.id);
+  const isWorld =
+    subjectKey === "worldhistory" && isWorldTopicId(chapter.id);
+  const isWorldGeo =
+    subjectKey === "worldgeo" && isWorldGeoTopicId(chapter.id);
   const isEthics = subjectKey === "ethics" && isEthicsTopicId(chapter.id);
   const isPolity = subjectKey === "polity" && isPolityTopicId(chapter.id);
   const isSociety = subjectKey === "society" && isSocietyTopicId(chapter.id);
@@ -95,6 +110,39 @@ export default async function TopicPage({ params }: PageProps) {
       <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
         <MedievalTopicNotesBody topicId={topicId} />
         <MedievalTopicFooterNav topicId={topicId} />
+        <TopicNotesEnhancements />
+      </TopicPageLayout>
+    );
+  }
+
+  if (isModern) {
+    const topicId = chapter.id as ModernTopicId;
+    return (
+      <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
+        <ModernTopicNotesBody topicId={topicId} />
+        <ModernTopicFooterNav topicId={topicId} />
+        <TopicNotesEnhancements />
+      </TopicPageLayout>
+    );
+  }
+
+  if (isWorld) {
+    const topicId = chapter.id as WorldTopicId;
+    return (
+      <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
+        <WorldTopicNotesBody topicId={topicId} />
+        <WorldTopicFooterNav topicId={topicId} />
+        <TopicNotesEnhancements />
+      </TopicPageLayout>
+    );
+  }
+
+  if (isWorldGeo) {
+    const topicId = chapter.id as WorldGeoTopicId;
+    return (
+      <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
+        <WorldGeoTopicNotesBody topicId={topicId} />
+        <WorldGeoTopicFooterNav topicId={topicId} />
         <TopicNotesEnhancements />
       </TopicPageLayout>
     );

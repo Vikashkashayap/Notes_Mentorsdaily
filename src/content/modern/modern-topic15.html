@@ -1,0 +1,1151 @@
+<!-- modern-topic15 — auto-imported from modern-topic15-gandhian-era-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#8b1a2a;
+  --brand-blue-dark:#5a0e1a;
+  --brand-blue-light:#fdf0f2;
+  --brand-orange:#c9940a;
+  --brand-orange-light:#fff8e8;
+  --green:#2e7a47;
+  --green-light:#eaf5ef;
+  --text-dark:#1a1a2e;
+  --text-mid:#444;
+  --text-light:#888;
+  --border:#e2e8f0;
+  --bg:#fafaf8;
+  --card:#ffffff;
+  --accent:#fdf5f6;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Inter','Segoe UI',-apple-system,sans-serif;color:var(--text-dark);background:var(--bg);line-height:1.65;font-size:16px}
+.topnav{background:var(--brand-blue-dark);color:#fff;padding:14px 28px;position:sticky;top:0;z-index:50;box-shadow:0 2px 6px rgba(0,0,0,0.22);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.nav-logo{font-size:20px;font-weight:800;color:#fff;text-decoration:none;letter-spacing:-0.5px}
+.nav-logo span{color:var(--brand-orange)}
+.nav-pills{display:flex;flex-wrap:wrap;gap:7px}
+.pill{background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.22);color:#fff;padding:5px 12px;border-radius:99px;font-size:12px;font-weight:500}
+.hero{background:linear-gradient(135deg,#8b1a2a 0%,#5a0e1a 55%,#3a0810 100%);color:#fff;padding:54px 28px 44px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(201,148,10,0.22),transparent 55%);pointer-events:none}
+.hero-inner{max-width:1240px;margin:0 auto;position:relative;z-index:2}
+.breadcrumb{font-size:13px;color:rgba(255,255,255,0.65);margin-bottom:14px}
+.hero h1{font-size:38px;margin:0 0 14px;font-weight:800;letter-spacing:-0.5px;line-height:1.18}
+.hero-sub{font-size:17px;color:rgba(255,255,255,0.80);max-width:880px;margin:0 0 20px;line-height:1.6}
+.hero-pills{display:flex;flex-wrap:wrap;gap:8px}
+.hero-pills span{background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.22);color:#fff;padding:6px 13px;border-radius:99px;font-size:12.5px;font-weight:500}
+.layout{display:grid;grid-template-columns:1fr 320px;gap:28px;max-width:1240px;margin:28px auto;padding:0 28px}
+@media(max-width:1024px){.layout{grid-template-columns:1fr;padding:0 18px}}
+main{min-width:0}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 22px;margin-bottom:22px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--brand-blue);font-weight:700}
+.toc ol{margin:0;padding-left:22px;font-size:14.5px;column-count:2;column-gap:24px}
+@media(max-width:680px){.toc ol{column-count:1}}
+.toc li{margin:4px 0;break-inside:avoid}
+.toc a{color:var(--text-dark);text-decoration:none}
+.toc a:hover{color:var(--brand-blue);text-decoration:underline}
+.concept-box{background:linear-gradient(135deg,#fdf5f6 0%,#fde8ec 100%);border-left:5px solid var(--brand-orange);border-radius:10px;padding:22px 26px;margin-bottom:26px;box-shadow:0 2px 6px rgba(201,148,10,0.10)}
+.concept-box h3{margin:0 0 10px;font-size:18px;color:var(--brand-blue-dark);font-weight:700}
+.concept-box p{margin:0 0 10px;font-size:15px;color:#2a1010}
+.concept-box ul{margin:8px 0 0;padding-left:22px}
+.concept-box li{margin:5px 0;font-size:14.5px;color:#2a1010}
+.notes{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:26px 30px;margin-bottom:22px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.notes h2{font-size:24px;color:var(--brand-blue-dark);margin:0 0 14px;padding-bottom:10px;border-bottom:2px solid var(--accent);font-weight:700}
+.notes h3{font-size:18px;color:var(--brand-blue);margin:22px 0 10px;font-weight:700}
+.notes h4{font-size:15.5px;color:var(--brand-blue-dark);margin:16px 0 8px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px}
+.notes p{margin:0 0 12px}
+.notes ul,.notes ol{margin:8px 0 14px;padding-left:24px}
+.notes li{margin:5px 0}
+.notes strong{color:var(--brand-blue-dark)}
+.notes em{color:#7a4d0a;font-style:italic}
+.callout{background:var(--brand-blue-light);border-left:4px solid var(--brand-blue);padding:14px 18px;border-radius:6px;margin:14px 0;font-size:14.5px}
+.callout.gold{background:var(--brand-orange-light);border-left-color:var(--brand-orange)}
+.callout.green{background:var(--green-light);border-left-color:var(--green)}
+.callout.warn{background:#fef0e6;border-left-color:#c25e1c}
+.tbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+.tbl th,.tbl td{border:1px solid var(--border);padding:8px 11px;text-align:left;vertical-align:top}
+.tbl th{background:var(--brand-blue);color:#fff;font-weight:600}
+.tbl tr:nth-child(even) td{background:#fdf5f6}
+.pyq{background:#fff;border:1px solid var(--border);border-left:4px solid var(--brand-orange);border-radius:6px;padding:12px 16px;margin:10px 0;font-size:14.5px}
+.pyq .year{display:inline-block;background:var(--brand-orange);color:#fff;padding:2px 9px;border-radius:99px;font-size:12px;font-weight:600;margin-bottom:6px}
+.revision{background:linear-gradient(135deg,#5a0e1a 0%,#8b1a2a 100%);color:#fff;border-radius:12px;padding:26px 30px;margin-bottom:22px}
+.revision h3{color:var(--brand-orange);margin:0 0 14px;font-size:20px}
+.revision ol{padding-left:22px;margin:0}
+.revision li{margin:6px 0;font-size:14.5px;color:#f5d0d5}
+aside{min-width:0}
+.widget{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:18px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.widget h4{margin:0 0 10px;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--brand-blue);font-weight:700;border-bottom:1px solid var(--border);padding-bottom:7px}
+.widget .miniref{font-size:13px;list-style:none;padding:0;margin:0}
+.widget .miniref li{margin:5px 0}
+.bar{display:flex;align-items:center;gap:8px;margin:6px 0;font-size:13px}
+.bar .lbl{width:96px;color:var(--text-mid)}
+.bar .track{flex:1;height:7px;background:#eee;border-radius:99px;overflow:hidden}
+.bar .fill{height:100%;background:linear-gradient(90deg,var(--brand-orange),#9a7008);border-radius:99px}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tags span{background:var(--brand-blue-light);color:var(--brand-blue);padding:3px 9px;border-radius:99px;font-size:11.5px;font-weight:500}
+.related{list-style:none;padding:0;margin:0;font-size:13.5px}
+.related li{margin:6px 0}
+.related a{color:var(--brand-blue);text-decoration:none;font-weight:500}
+.related a:hover{text-decoration:underline}
+.quiz{font-size:13.5px}
+.quiz details{margin:7px 0;border-bottom:1px dashed var(--border);padding-bottom:7px}
+.quiz summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark)}
+.quiz p{margin:6px 0 0;color:var(--text-mid);font-size:13px}
+footer{background:var(--brand-blue-dark);color:#f5d0d5;padding:24px 28px;text-align:center;font-size:13px;margin-top:34px}
+footer strong{color:#fff}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="hero">
+  <div class="hero-inner">
+    <div class="breadcrumb">Home &rsaquo; UPSC Notes &rsaquo; Modern History &rsaquo; Topic 09</div>
+    <h1>Gandhian Era — Freedom Struggle 1915–1939 — Complete UPSC Notes</h1>
+    <p class="hero-sub">Gandhi's return &middot; Champaran &middot; Rowlatt &amp; Jallianwala &middot; Khilafat-Non-Cooperation &middot; Chauri Chaura &middot; Swaraj Party &middot; HSRA &amp; Bhagat Singh &middot; Simon &middot; Nehru Report &middot; Purna Swaraj &middot; Dandi &middot; RTCs &middot; Gandhi-Irwin &middot; Poona Pact &middot; GoI Act 1935</p>
+    <div class="hero-pills">
+      <span>Mahatma Gandhi</span>
+      <span>Motilal Nehru</span>
+      <span>C.R. Das</span>
+      <span>Jawaharlal Nehru</span>
+      <span>Subhas Bose</span>
+      <span>Bhagat Singh</span>
+      <span>Ambedkar</span>
+      <span>Sardar Patel</span>
+    </div>
+  </div>
+</div>
+<div class="layout">
+<main>
+
+<div class="toc">
+<h3>On this page</h3>
+<ol>
+<li><a href="#concept">Conceptual Clarity</a></li>
+<li><a href="#s1">Gandhi's South African Years &amp; Ideology</a></li>
+<li><a href="#s2">Return to India — Early Satyagrahas (Champaran, Ahmedabad, Kheda)</a></li>
+<li><a href="#s3">Home Rule Leagues (1916)</a></li>
+<li><a href="#s4">Lucknow Pact &amp; Montagu Declaration (1916–17)</a></li>
+<li><a href="#s5">Government of India Act 1919 — Mont-Ford Reforms</a></li>
+<li><a href="#s6">Rowlatt Act &amp; the Satyagraha (1919)</a></li>
+<li><a href="#s7">Jallianwala Bagh — 13 April 1919</a></li>
+<li><a href="#s8">Khilafat Movement (1919–24)</a></li>
+<li><a href="#s9">Non-Cooperation Movement (1920–22)</a></li>
+<li><a href="#s10">Chauri Chaura &amp; the Swaraj Party</a></li>
+<li><a href="#s11">Revolutionary Nationalism — Phase II (HRA → HSRA)</a></li>
+<li><a href="#s12">Simon Commission, Nehru Report, Jinnah's 14 Points</a></li>
+<li><a href="#s13">Lahore Session 1929 — Purna Swaraj</a></li>
+<li><a href="#s14">Dandi March &amp; Civil Disobedience (1930)</a></li>
+<li><a href="#s15">First RTC, Gandhi-Irwin Pact, Second RTC</a></li>
+<li><a href="#s16">Communal Award &amp; Poona Pact (1932)</a></li>
+<li><a href="#s17">Third RTC &amp; Suspension of CDM</a></li>
+<li><a href="#s18">Government of India Act 1935</a></li>
+<li><a href="#s19">Congress Ministries 1937–39</a></li>
+<li><a href="#s20">Historiography of the Gandhian Movement</a></li>
+<li><a href="#pyq">Previous Year Questions</a></li>
+<li><a href="#revision">15 Must-Know Facts</a></li>
+</ol>
+</div>
+
+<div class="concept-box" id="concept">
+<h3>Why this topic matters for UPSC</h3>
+<p>The years 1915–1939 are the spine of UPSC Modern History. Gandhi's return to India in January 1915, his three big mass movements (Non-Cooperation 1920–22, Civil Disobedience 1930–34, Quit India 1942 — covered next chapter), the Lahore Resolution for Purna Swaraj, the Government of India Act 1935, and the Congress ministries of 1937–39 dominate the syllabus. UPSC tests this on four axes:</p>
+<ul>
+<li><strong>Prelims (factual):</strong> Dates (Champaran 1917, Rowlatt 18 Mar 1919, Jallianwala 13 Apr 1919, Nagpur 26 Dec 1920, Chauri Chaura 5 Feb 1922, Lahore 19 Dec 1929, Dandi 12 Mar–6 Apr 1930, Poona Pact 24 Sep 1932), participants, Acts, court cases.</li>
+<li><strong>Mains GS-I (analytical):</strong> Significance of each movement, why Gandhi withdrew NCM, success/failure of Swaraj Party, Communal Award &amp; Ambedkar-Gandhi divergence.</li>
+<li><strong>Personalities:</strong> Gandhi, Motilal Nehru, C.R. Das, Jawaharlal Nehru, Bose, Bhagat Singh, Ambedkar, Patel, Jinnah, Maulana Azad — all examined as personalities and as carriers of ideas.</li>
+<li><strong>Constitutional history:</strong> 1919 Act (dyarchy), 1935 Act (provincial autonomy, federation) — the legal armature on which 1947 was built.</li>
+</ul>
+</div>
+
+<section class="notes" id="s1">
+<h2>1. Gandhi's South African Years &amp; the Making of Satyagraha</h2>
+
+<h3>1.1 Biography in Brief (1869–1915)</h3>
+<ul>
+<li><strong>Born</strong> 2 October 1869 at Porbandar, Gujarat; father Karamchand Diwan of Porbandar/Rajkot; mother Putlibai (Pranami sect).</li>
+<li>Married Kasturba at 13 (1883).</li>
+<li>Sailed for London 4 September 1888; called to the Bar at Inner Temple, 10 June 1891.</li>
+<li>Sailed for Durban, South Africa, April 1893 — to work on a case for Dada Abdullah &amp; Co.</li>
+<li>The <strong>Pietermaritzburg incident, 7 June 1893</strong> — thrown off a first-class compartment despite a valid ticket — was, in his own words, "the most creative experience of my life".</li>
+<li>Spent 21 years in South Africa (1893–1914); returned to India on 9 January 1915 (commemorated as <strong>Pravasi Bharatiya Divas</strong>).</li>
+</ul>
+
+<h3>1.2 South African Campaigns</h3>
+<ul>
+<li><strong>1894:</strong> Founded the <strong>Natal Indian Congress</strong> against the disenfranchisement bill.</li>
+<li><strong>1903:</strong> Launched <em>Indian Opinion</em> from Phoenix Settlement.</li>
+<li><strong>1906:</strong> First mass satyagraha — against the <strong>Asiatic Registration ("Black") Act</strong> in the Transvaal, requiring Indians to register and be fingerprinted. The word <em>satyagraha</em> ("truth-force") was coined here, replacing "passive resistance".</li>
+<li><strong>1908:</strong> Bonfire of registration certificates at Johannesburg.</li>
+<li><strong>1910:</strong> <strong>Tolstoy Farm</strong> founded near Johannesburg with Hermann Kallenbach.</li>
+<li><strong>1913:</strong> Great March from Newcastle to Transvaal (with women, including Kasturba), against the £3 tax on indentured labourers and the invalidation of Hindu/Muslim/Parsi marriages.</li>
+<li><strong>30 June 1914:</strong> Smuts-Gandhi Agreement — recognition of Indian marriages, abolition of £3 tax.</li>
+</ul>
+
+<h3>1.3 Sources of Gandhian Thought</h3>
+<table class="tbl">
+<tr><th>Source</th><th>Contribution</th></tr>
+<tr><td><strong>Bhagavad Gita</strong></td><td>Selfless action (<em>nishkama karma</em>); the spiritual warrior</td></tr>
+<tr><td><strong>Jainism</strong> (childhood Gujarat influence)</td><td><em>Ahimsa</em>, <em>anekantavada</em> (many-sidedness of truth), <em>aparigraha</em> (non-possession)</td></tr>
+<tr><td><strong>Sermon on the Mount</strong></td><td>"Turn the other cheek"; love of enemies</td></tr>
+<tr><td><strong>Leo Tolstoy</strong> — <em>The Kingdom of God is Within You</em></td><td>Non-violent resistance; voluntary poverty</td></tr>
+<tr><td><strong>John Ruskin</strong> — <em>Unto This Last</em></td><td>Read on a train in 1904; led to the founding of Phoenix Settlement; dignity of manual labour</td></tr>
+<tr><td><strong>H.D. Thoreau</strong> — <em>On the Duty of Civil Disobedience</em></td><td>The phrase "civil disobedience"; the moral duty to resist unjust law</td></tr>
+<tr><td><strong>G.K. Gokhale</strong> (Gandhi's "political guru")</td><td>Constitutional method; tour of India before agitation; Servants of India ethos</td></tr>
+</table>
+
+<h3>1.4 The Concept of Satyagraha</h3>
+<ul>
+<li><strong>Etymology:</strong> <em>Satya</em> (truth) + <em>agraha</em> (firmness, holding). Coined in Indian Opinion 1906 via a competition; Maganlal Gandhi suggested <em>sadagraha</em>, Gandhi modified it to satyagraha.</li>
+<li><strong>Distinguished from passive resistance:</strong> Satyagraha is active — it seeks to <em>convert</em> the opponent through suffering, not to defeat him through pressure.</li>
+<li><strong>Core elements:</strong> Ahimsa (non-violence), truth, suffering accepted by the satyagrahi (not inflicted on the opponent), purity of means matched to purity of ends, faith in the opponent's capacity for moral response.</li>
+<li><strong>Methods:</strong> Hartal, picketing, fasting, boycott, civil disobedience of specific laws, refusal of taxes, non-cooperation with institutions.</li>
+</ul>
+</section>
+
+<section class="notes" id="s2">
+<h2>2. Return to India — Early Satyagrahas (1917–18)</h2>
+
+<p>On Gokhale's advice, Gandhi spent his first year (1915) touring India without political engagement to "understand the country". He founded the <strong>Satyagraha Ashram</strong> at Kochrab (Ahmedabad) on 25 May 1915, moved it to <strong>Sabarmati</strong> in 1917.</p>
+
+<h3>2.1 Champaran Satyagraha (1917) — First Indian Satyagraha</h3>
+<ul>
+<li><strong>Issue:</strong> The <em>tinkathia</em> system — peasants in Champaran district, Bihar, were forced to grow indigo on 3/20 (15%) of their land for European planters. Synthetic German indigo had collapsed the market price, but planters demanded compensation for releasing the obligation, ruining peasants.</li>
+<li><strong>Invitation:</strong> Rajkumar Shukla, a Champaran peasant, persistently followed Gandhi at the Lucknow Congress 1916 and finally persuaded him to come.</li>
+<li><strong>Gandhi arrived</strong> at Motihari on 15 April 1917; the District Magistrate ordered him to leave; he refused and offered to be arrested — the case was withdrawn on Viceroy Chelmsford's intervention.</li>
+<li><strong>Result:</strong> Champaran Agrarian Committee included Gandhi as a member; the <strong>Champaran Agrarian Act of 1918</strong> abolished the tinkathia system.</li>
+<li><strong>Significance:</strong> First successful satyagraha in India; first use of the technique in the rural-agrarian context; recruited <strong>Rajendra Prasad, Brajkishore Prasad, J.B. Kripalani, Mahadev Desai, Mazharul Haq</strong> as lifelong associates.</li>
+</ul>
+
+<h3>2.2 Ahmedabad Mill Strike (February–March 1918)</h3>
+<ul>
+<li><strong>Issue:</strong> Ahmedabad mill workers demanded a 50% wage hike (the "plague bonus" instituted in 1917 was being withdrawn after the epidemic subsided); mill owners offered 20%.</li>
+<li><strong>Gandhi</strong> was invited by his friend <strong>Anusuya Sarabhai</strong> (sister of mill-owner Ambalal Sarabhai); he proposed arbitration; when mill-owners broke the arbitration, he advised the workers to strike for 35%.</li>
+<li><strong>15 March 1918:</strong> Gandhi went on his <strong>first fast in India</strong> ("unto death") to keep the strikers from violence; the mill owners settled within three days on the 35% formula via arbitration by Anandshankar Dhruv.</li>
+<li><strong>Significance:</strong> Demonstrated satyagraha in the urban-industrial context; <strong>Indulal Yagnik, Vallabhbhai Patel</strong> joined Gandhi here.</li>
+</ul>
+
+<h3>2.3 Kheda Satyagraha (March–June 1918)</h3>
+<ul>
+<li><strong>Issue:</strong> Crop failure in Kheda district, Gujarat (in 1917 the kharif had failed; the rabi was poor). Under revenue rules, if the yield was less than one-fourth of normal, full remission was due. Officials denied the remission.</li>
+<li><strong>Gandhi launched no-revenue satyagraha</strong> with the support of <strong>Vallabhbhai Patel, Indulal Yagnik, Mahadev Desai, Mohanlal Pandya, Shankarlal Banker</strong>.</li>
+<li><strong>June 1918:</strong> Government quietly issued orders that revenue would be recovered only from those who could pay — a face-saving compromise that satisfied Gandhi.</li>
+<li><strong>Significance:</strong> Established Patel as a major leader; first peasant satyagraha against the colonial revenue machinery.</li>
+</ul>
+
+<div class="callout gold"><strong>Why these three?</strong> Champaran (1917) = peasant indigo planters; Ahmedabad (Feb–Mar 1918) = urban industrial labour; Kheda (Mar–Jun 1918) = peasant revenue. In eighteen months Gandhi had tested satyagraha across the three main social bases — peasant, worker, taxpayer — of Indian mass politics.</div>
+
+<h3>2.4 Recruiting Sergeant for the War — Kheda 1918</h3>
+<p>Immediately after Kheda, Gandhi did something that puzzled contemporaries and historians: in the summer of 1918 he campaigned in Kheda villages to <strong>recruit Indians for the British Army</strong> in WWI. His reasoning — Indians could not claim the rights of equal citizenship if they would not share in imperial defence — was characteristic of his moral consistency, but politically unpopular. The campaign was a failure; he caught dysentery and nearly died.</p>
+</section>
+
+<section class="notes" id="s3">
+<h2>3. Home Rule Leagues (1916)</h2>
+
+<p>While Gandhi was still finding his Indian feet, two parallel Home Rule Leagues were launched in 1916 to demand <strong>self-government within the British Empire</strong> — the model being the white-settler "dominions" of Canada, Australia, and South Africa.</p>
+
+<h3>3.1 Tilak's Indian Home Rule League</h3>
+<ul>
+<li><strong>Founded:</strong> 28 April 1916 at <strong>Belgaum</strong>, Bombay Presidency, by Bal Gangadhar Tilak (who had returned from Mandalay in June 1914 and rejoined Congress at Lucknow December 1915).</li>
+<li><strong>Area:</strong> Maharashtra (excluding Bombay city), Karnataka, Central Provinces, Berar.</li>
+<li><strong>Slogan:</strong> "<em>Swaraj is my birthright and I shall have it.</em>"</li>
+<li><strong>Membership:</strong> ~32,000 by 1917.</li>
+</ul>
+
+<h3>3.2 Besant's Home Rule League</h3>
+<ul>
+<li><strong>Founded:</strong> September 1916 at <strong>Madras</strong> by <strong>Annie Besant</strong> (then Theosophical Society President; had been in India since 1893).</li>
+<li><strong>Lieutenants:</strong> George Arundale, B.P. Wadia, C.P. Ramaswamy Aiyar; Jamnadas Dwarkadas in Bombay.</li>
+<li><strong>Area:</strong> Rest of India (including Bombay city, Madras Presidency, UP, Bihar, Bengal).</li>
+<li><strong>Newspapers:</strong> <em>New India</em> (English daily), <em>Commonweal</em> (weekly).</li>
+<li>Membership: ~27,000 by 1917.</li>
+</ul>
+
+<h3>3.3 The Internment of Besant — June 1917</h3>
+<p>Madras government interned Besant, Arundale, Wadia in June 1917 — sparking a nationwide protest that doubled Home Rule League membership and forced the Government to release her in September 1917. <strong>Annie Besant became INC President at the Calcutta session, December 1917 — the first woman to hold the office.</strong> The internment also pushed the Secretary of State towards the 20 August Declaration.</p>
+
+<h3>3.4 Significance</h3>
+<ul>
+<li>Created an organisational base for mass politics that the Congress had lacked since 1907.</li>
+<li>Bridged Moderates and Extremists in joint work — the Lucknow Pact (Dec 1916) reunited the two wings of the Congress.</li>
+<li>Brought a new generation into politics — <strong>Jawaharlal Nehru</strong> joined Besant's League in 1916; <strong>Jamnadas Dwarkadas, S. Subramania Iyer, Indulal Yagnik, B. Chakravarti</strong> all began here.</li>
+<li>Both leagues merged with Congress by 1920 when Gandhi launched Non-Cooperation; the dominion-status demand of 1916 would yield to <em>Purna Swaraj</em> by 1929.</li>
+</ul>
+</section>
+
+<section class="notes" id="s4">
+<h2>4. Lucknow Pact &amp; the Montagu Declaration (1916–17)</h2>
+
+<h3>4.1 Lucknow Session — December 1916</h3>
+<p>The 31st INC session at Lucknow, presided by <strong>Ambika Charan Mazumdar</strong>, achieved two historic results:</p>
+<ul>
+<li><strong>Reunion of Moderates and Extremists</strong> after the Surat split of 1907. Tilak attended; the four Calcutta resolutions of 1906 (Swaraj, Boycott, Swadeshi, National Education) were reaffirmed.</li>
+<li><strong>Lucknow Pact</strong> between the INC and the All-India Muslim League — drafted by Tilak and Jinnah (then a Congressman and the "ambassador of Hindu-Muslim unity", per Gokhale).</li>
+</ul>
+
+<h3>4.2 Terms of the Lucknow Pact</h3>
+<ol>
+<li><strong>Both INC and ML demanded</strong> self-government, Indian majority in central legislature, expansion of provincial councils, separation of judicial and executive, expansion of military &amp; naval colleges in India.</li>
+<li><strong>Congress accepted separate electorates for Muslims</strong> — the most consequential concession; abandoned the principle of joint electorates.</li>
+<li><strong>Weightage</strong> — Muslims to be given representation in excess of their population in provinces where they were a minority, in exchange for representation below their population in provinces where they were a majority (Punjab, Bengal). The exact percentages (Bengal 40%, Punjab 50%, Madras 15%, UP 30%, Bombay 33⅓%, Bihar 25%, CP 15%) were agreed.</li>
+<li><strong>No bill or resolution affecting a community</strong> would be passed in any council if 3/4 of the community's representatives in that council opposed it (the "communal veto").</li>
+</ol>
+
+<div class="callout warn"><strong>The poisoned victory:</strong> Hindu-Muslim unity was achieved at the price of constitutionalising communal representation. Tilak and Jinnah saw it as a tactical bridge; from 1937 onward — when the League found that joint electorates would have given it almost no seats — the separate-electorate principle would harden into the demand for a separate state. Sumit Sarkar: "The Lucknow Pact was a triumph of nationalism in form and of communalism in substance."</div>
+
+<h3>4.3 Montagu Declaration — 20 August 1917</h3>
+<p>In the wake of WWI Indian contributions (more than 1.4 million Indian troops served; ~74,000 dead) and the Home Rule agitation, the Secretary of State <strong>Edwin Montagu</strong> made the historic <strong>declaration in the House of Commons on 20 August 1917</strong>:</p>
+<blockquote><em>"The policy of His Majesty's Government… is that of increasing association of Indians in every branch of the administration and the gradual development of self-governing institutions with a view to the progressive realisation of responsible government in India as an integral part of the British Empire."</em></blockquote>
+<p><strong>Significance:</strong> For the first time the British government formally committed itself to "responsible government" (i.e., the executive accountable to the elected legislature) as the <em>goal</em> of Indian constitutional development — though the timing was left vague. This was the constitutional charter on which the 1919 and 1935 Acts were built.</p>
+</section>
+
+<section class="notes" id="s5">
+<h2>5. Government of India Act 1919 — Montagu-Chelmsford Reforms</h2>
+
+<p>Following Montagu's tour of India (winter 1917–18 — he visited Delhi, Calcutta, Madras, Bombay) and the Montagu-Chelmsford Report (July 1918), Parliament passed the <strong>Government of India Act 1919</strong> on 23 December 1919. The reforms came into force on <strong>1 January 1921</strong>.</p>
+
+<h3>5.1 At the Centre</h3>
+<ul>
+<li><strong>Bicameral legislature</strong> for the first time:
+  <ul>
+  <li><strong>Council of State</strong> (upper) — 60 members (33 elected, 27 nominated), 5-year term.</li>
+  <li><strong>Legislative Assembly</strong> (lower) — 144 members (104 elected, 40 nominated), 3-year term.</li>
+  </ul>
+</li>
+<li><strong>Direct election introduced</strong> for the first time — on a property/income/education franchise.</li>
+<li><strong>Viceroy's Executive Council</strong> — 8 members of whom 3 were to be Indian.</li>
+<li><strong>Governor-General retained extensive powers</strong> — could certify any rejected bill as essential; could prorogue, dissolve, veto.</li>
+<li><strong>No fiscal autonomy</strong> — defence, foreign affairs, communications, public debt remained reserved central subjects.</li>
+</ul>
+
+<h3>5.2 In the Provinces — Dyarchy ("Double Rule")</h3>
+<p>The defining feature: provincial subjects were divided into two lists:</p>
+<table class="tbl">
+<tr><th>Reserved Subjects (Governor + Executive Council)</th><th>Transferred Subjects (Indian Ministers responsible to Legislative Council)</th></tr>
+<tr><td>Law &amp; Order, Police, Justice, Finance, Land Revenue, Irrigation, Labour</td><td>Education, Public Health, Local Self-Government, Agriculture, Industries, Excise, Public Works, Forests, Cooperatives</td></tr>
+</table>
+<ul>
+<li><strong>Governor</strong> chose Indian ministers from elected members of the Legislative Council to administer transferred subjects.</li>
+<li>"Reserved" subjects remained under the Governor and his Executive Council, not responsible to the legislature.</li>
+<li><strong>Governor</strong> could override the ministers on transferred subjects "in the public interest".</li>
+<li><strong>Provincial Legislative Council</strong> — single chamber, 70% elected, 30% nominated/officials.</li>
+</ul>
+
+<h3>5.3 Other Features</h3>
+<ul>
+<li><strong>Separate electorates</strong> extended — to Sikhs, Christians, Anglo-Indians, Europeans, in addition to Muslims.</li>
+<li><strong>Franchise broadened</strong> — about 5.5 million eligible voters (~10% of adult males); still a tiny electorate.</li>
+<li><strong>High Commissioner for India</strong> in London (1920) — replacing some functions of the Secretary of State; Indian responsibility for purchases formerly handled through the India Office.</li>
+<li><strong>Statutory Public Service Commission</strong> recommended (set up 1926 — chaired by Sir Ross Barker).</li>
+<li><strong>Statutory Commission</strong> to review the working of the Act after ten years — this was the Simon Commission (appointed Nov 1927; reported May 1930).</li>
+</ul>
+
+<h3>5.4 Indian Reaction</h3>
+<ul>
+<li><strong>Special Bombay Session of Congress (August–September 1918)</strong>, President Hasan Imam, condemned the Mont-Ford proposals as "disappointing and unsatisfactory".</li>
+<li><strong>Annie Besant</strong> called the reforms "unworthy of England to offer and India to accept".</li>
+<li>The Surendranath Banerjee group split off as the <strong>Indian Liberal Federation</strong> (1919, Bombay) to support the Act.</li>
+<li>Within months the Rowlatt Act &amp; Jallianwala destroyed any goodwill the reforms might have generated.</li>
+</ul>
+
+<div class="callout warn"><strong>The verdict on dyarchy:</strong> Almost universally condemned as a failure — the Governor's overriding powers, the artificial division of subjects, the financial control retained over even "transferred" departments by the Reserved-subject Finance Member, all combined to make ministerial responsibility a constitutional fiction. By 1927 even British officials accepted dyarchy had failed; the Simon Commission was sent to wind it up.</div>
+</section>
+
+<section class="notes" id="s6">
+<h2>6. The Rowlatt Act &amp; the Satyagraha (1919)</h2>
+
+<h3>6.1 The Rowlatt Committee</h3>
+<p>Appointed in December 1917 under Sir <strong>Sidney Rowlatt</strong>, a King's Bench judge, to advise on legislation to deal with the "revolutionary movement" after the wartime Defence of India Act 1915 lapsed. The committee's report (April 1918) recommended emergency powers in peacetime.</p>
+
+<h3>6.2 The Rowlatt Acts — 18 March 1919</h3>
+<p>Two laws were passed by the Imperial Legislative Council over the unanimous opposition of all 22 Indian elected members — Jinnah, Malaviya, Mazharul Haq resigned in protest:</p>
+<ul>
+<li><strong>Anarchical and Revolutionary Crimes Act, 1919</strong> ("Black Act") — the principal Rowlatt Act.</li>
+<li><strong>Imprisonment without trial</strong> for up to two years for those suspected of seditious activity.</li>
+<li><strong>Trial by a special tribunal of three High Court judges</strong>, with no right of appeal.</li>
+<li><strong>Press freedom</strong> further curtailed; restrictions on possession of "seditious" literature.</li>
+<li><strong>"No vakil, no daleel, no appeal"</strong> — the popular slogan that captured the Act's denial of basic legal rights.</li>
+</ul>
+
+<h3>6.3 Gandhi's Satyagraha</h3>
+<ul>
+<li><strong>24 February 1919:</strong> Gandhi formed the <strong>Satyagraha Sabha</strong> at his Sabarmati Ashram with the Satyagraha Pledge — to refuse obedience to the Rowlatt Act and to such other laws as the committee might select.</li>
+<li><strong>6 April 1919</strong> declared as the day of <strong>nationwide hartal</strong> — Gandhi's first all-India political call.</li>
+<li>The hartal was a striking success — Delhi observed it on 30 March (advance date); Bombay, Ahmedabad, Calcutta, Madras, Lahore all closed down on 6 April.</li>
+<li>In Punjab — already simmering from heavy wartime recruitment and revenue collection — the agitation turned militant. <strong>Saifuddin Kitchlew and Dr Satyapal</strong> (Amritsar leaders) were arrested and deported on 10 April. Crowds protesting their arrest were fired on; in retaliation crowds attacked banks, killed five Europeans, and burned buildings. The town hall was set on fire. <strong>Marcella Sherwood</strong>, a missionary, was assaulted in a lane.</li>
+<li>Gandhi himself was prevented from entering Punjab; arrested at Palwal (10 April) and sent back to Bombay.</li>
+</ul>
+</section>
+
+<section class="notes" id="s7">
+<h2>7. Jallianwala Bagh — 13 April 1919</h2>
+
+<h3>7.1 The Massacre</h3>
+<p>On <strong>Sunday, 13 April 1919 (Baisakhi)</strong>, a meeting was called at the <strong>Jallianwala Bagh</strong> — a walled garden with a single narrow entrance — to protest the deportation of Kitchlew and Satyapal and the Rowlatt Acts. The crowd numbered around 15,000–20,000, including many pilgrims who had come to Amritsar for Baisakhi and were unaware that <strong>Brigadier-General Reginald Edward Harry Dyer</strong> had proclaimed an order banning all assemblies that morning.</p>
+
+<p>Dyer arrived with 90 soldiers (50 of them rifle-armed Gurkhas and Baluchis, 40 with kukris). Without warning, he ordered his troops to open fire — for 10–15 minutes, until the ammunition was almost exhausted. <strong>1,650 rounds</strong> fired.</p>
+<ul>
+<li><strong>British official figure:</strong> 379 dead, ~1,200 wounded.</li>
+<li><strong>INC enquiry committee (Madan Mohan Malaviya, Motilal Nehru, C.R. Das, Fazlul Haq, Abbas Tyabji, Gandhi):</strong> over 1,000 dead.</li>
+<li><strong>Wells filled with bodies</strong>; many died trying to climb the walls or jumping into the well in the bagh (which still survives as a memorial).</li>
+</ul>
+
+<h3>7.2 Martial Law &amp; the "Crawling Order"</h3>
+<p><strong>Martial law was declared in Punjab on 15 April 1919</strong> by Lieutenant-Governor <strong>Sir Michael O'Dwyer</strong>. Dyer's notorious order in the lane where Marcella Sherwood had been assaulted required all Indians passing through to <strong>crawl on their hands and knees</strong>; public floggings, summary trials, aerial bombing of Gujranwala — collective punishment on a scale that shocked even sections of British opinion.</p>
+
+<h3>7.3 The Hunter Commission</h3>
+<p>Appointed October 1919 under <strong>Lord William Hunter</strong>; report March 1920. The majority of the commission (the British members) censured Dyer for an "error of judgement" — he had used excessive force — but stopped short of finding him guilty of any criminal offence. The Indian members (Setalvad, Jagat Narayan, Sultan Ahmed) wrote a dissenting minority report finding the action "inhuman and un-British".</p>
+
+<ul>
+<li><strong>Dyer was relieved of command</strong> by the Army Council in March 1920 and sent into early retirement on half-pay; the House of Lords commended him; the British public (through the <em>Morning Post</em>) raised a "<strong>Dyer Fund</strong>" of ~£26,000 for him.</li>
+<li><strong>Tagore renounced his knighthood</strong> on 31 May 1919 in a letter to Viceroy Chelmsford.</li>
+<li><strong>Gandhi returned his Kaisar-i-Hind medal</strong> (awarded for his South African ambulance work) and his Boer War medal in 1920.</li>
+<li><strong>Shankaran Nair resigned</strong> from the Viceroy's Executive Council in protest.</li>
+<li><strong>O'Dwyer was assassinated</strong> by <strong>Udham Singh</strong> at Caxton Hall, London, on <strong>13 March 1940</strong> — 21 years after Jallianwala. Udham Singh was hanged at Pentonville on 31 July 1940.</li>
+</ul>
+
+<div class="callout warn"><strong>The political consequence:</strong> Jallianwala destroyed whatever remained of the moderate hope that the British could be reasoned with. As Nehru wrote in his <em>Autobiography</em>: "The Punjab tragedy made me a complete convert to non-violent non-co-operation." Within a year Gandhi would lead the Congress into its first mass movement.</div>
+</section>
+
+<section class="notes" id="s8">
+<h2>8. The Khilafat Movement (1919–24)</h2>
+
+<h3>8.1 Background</h3>
+<p>Indian Muslims regarded the Ottoman Sultan (in Constantinople) as the <strong>Khalifa</strong> — the temporal head of the worldwide Islamic community and the guardian of the holy places of Mecca and Medina. During WWI, Turkey had fought on the side of Germany and Austria-Hungary against Britain. As the war ended (Armistice November 1918), Indian Muslims feared the Allies would dismember the Ottoman Empire and depose the Khalifa — and were proved right by the <strong>Treaty of Sèvres (10 August 1920)</strong>.</p>
+
+<h3>8.2 Formation of the Khilafat Committee</h3>
+<ul>
+<li><strong>March 1919:</strong> All-India Khilafat Committee formed at Bombay; led by the <strong>Ali Brothers</strong> (Muhammad Ali, Shaukat Ali), <strong>Maulana Abul Kalam Azad, Hakim Ajmal Khan, Hasrat Mohani, Dr M.A. Ansari</strong>.</li>
+<li><strong>17 October 1919:</strong> First All-India Khilafat Day — Hindus joined in solidarity (Gandhi presided at the Delhi Khilafat Conference, 23–24 November 1919).</li>
+<li><strong>1 August 1920:</strong> Khilafat Non-Cooperation launched (Gandhi formally inaugurated it on the day Tilak died).</li>
+</ul>
+
+<h3>8.3 Demands</h3>
+<ul>
+<li>Khalifa must retain control over Muslim holy places (Mecca, Medina, Jerusalem).</li>
+<li>The Khalifa must be left with sufficient territory to enable him to defend the Islamic faith.</li>
+<li>The <em>Jaziratul-Arab</em> (Arabian peninsula, Mesopotamia, Syria, Palestine) must remain under Muslim sovereignty.</li>
+</ul>
+
+<h3>8.4 Gandhi's Strategic Calculation</h3>
+<p>Gandhi saw the Khilafat agitation as a "<strong>once in a lifetime opportunity</strong>" to forge Hindu-Muslim unity around a concrete cause. He argued — against many Hindu leaders and against critics like Ambedkar — that supporting Muslim religious feeling on Khilafat would consolidate the bond. Most contemporary observers and most modern historians (Bipan Chandra qualified; Sumit Sarkar more critical) judge this miscalculation: it tied Hindu-Muslim unity to a backward-looking pan-Islamic cause that the rise of Kemal Atatürk would soon make obsolete.</p>
+
+<h3>8.5 End of Khilafat</h3>
+<ul>
+<li><strong>1 November 1922:</strong> <strong>Mustafa Kemal Atatürk</strong> abolished the Ottoman Sultanate (deposed Mehmed VI).</li>
+<li><strong>3 March 1924:</strong> Atatürk abolished the Khalifa institution itself — pulling the rug from under the Indian Khilafat movement.</li>
+<li>The Khilafat Committee dissolved; some of its leaders (Ali brothers) drifted to communal politics in the late 1920s.</li>
+<li><strong>Hijrat Movement (1920):</strong> ~18,000 Indian Muslims migrated to Afghanistan believing India had become <em>Dar-ul-Harb</em> (abode of war); turned back at the Afghan border, many died on the way home — a tragic episode.</li>
+<li><strong>Moplah Rebellion (Aug–Dec 1921)</strong> in Malabar (Kerala) — Mappila Muslim peasants rose against Hindu landlords and British rule under Khilafat-Non-Cooperation enthusiasm; widely portrayed in subsequent Hindu-nationalist literature as communal violence, complicating the unity narrative.</li>
+</ul>
+</section>
+
+<section class="notes" id="s9">
+<h2>9. Non-Cooperation Movement (1920–22)</h2>
+
+<h3>9.1 The Decision</h3>
+<ul>
+<li><strong>1 August 1920:</strong> Gandhi formally launched Non-Cooperation — a date he had calculated to maximise the Khilafat sentiment. By unfortunate symbolism, this was also the day <strong>Bal Gangadhar Tilak died</strong> in Bombay.</li>
+<li><strong>Calcutta Special Session, 4–9 September 1920</strong> (President: Lala Lajpat Rai) — Gandhi's resolution for Non-Cooperation was passed against the opposition of Bipin Chandra Pal, Annie Besant, M.A. Jinnah, Madan Mohan Malaviya. C.R. Das opposed initially.</li>
+<li><strong>Nagpur Session, 26–31 December 1920</strong> (President: C. Vijayaraghavachariar) — Non-Cooperation endorsed by the regular annual Congress; C.R. Das now moved the resolution in support; Jinnah walked out (his political break with the Congress dates from Nagpur).</li>
+</ul>
+
+<h3>9.2 The Nagpur Congress Reorganisation</h3>
+<p>The Nagpur session was also a structural revolution in the Congress:</p>
+<ul>
+<li><strong>Provincial Congress Committees</strong> reorganised on a <strong>linguistic basis</strong> (anticipating the 1956 States Reorganisation by 36 years).</li>
+<li><strong>15-member Working Committee</strong> created — the day-to-day executive body.</li>
+<li>Membership opened on payment of <strong>four annas</strong> per year — opening the Congress to peasants and the poor.</li>
+<li>Hindi/Hindustani adopted as the language of Congress proceedings.</li>
+<li><strong>Goal of the Congress</strong> redefined as "<em>attainment of Swarajya by the people of India by all legitimate and peaceful means</em>".</li>
+</ul>
+
+<h3>9.3 Programme of Non-Cooperation</h3>
+<table class="tbl">
+<tr><th>Negative (Boycott)</th><th>Constructive (Swadeshi &amp; Reform)</th></tr>
+<tr><td>Boycott of government schools and colleges</td><td>National schools (Jamia Millia Islamia, Kashi Vidyapith, Gujarat Vidyapith, Bihar Vidyapith)</td></tr>
+<tr><td>Boycott of law courts</td><td>Arbitration tribunals</td></tr>
+<tr><td>Boycott of legislative councils &amp; elections</td><td>Promotion of <em>charkha</em>, khadi, and swadeshi industries</td></tr>
+<tr><td>Boycott of foreign cloth — bonfires</td><td>Hindu-Muslim unity</td></tr>
+<tr><td>Renunciation of titles and government honours</td><td>Removal of untouchability</td></tr>
+<tr><td>Refusal to serve in the army, police, civil service</td><td>Temperance &amp; prohibition; spinning &amp; weaving</td></tr>
+<tr><td>(Eventually) Refusal to pay taxes</td><td>Tilak Swaraj Fund — Rs 1 crore raised in six months</td></tr>
+</table>
+
+<h3>9.4 Mass Response</h3>
+<ul>
+<li><strong>Students:</strong> Tens of thousands left government institutions. <strong>Subhas Chandra Bose</strong> resigned from the ICS in 1921 (he had stood fourth in the 1920 ICS examination).</li>
+<li><strong>Lawyers:</strong> Motilal Nehru, C.R. Das, Vallabhbhai Patel, Rajendra Prasad, Asaf Ali, Saifuddin Kitchlew, T. Prakasam, K.M. Munshi all gave up lucrative practices.</li>
+<li><strong>Foreign cloth boycott</strong> — imports fell sharply; massive bonfires of Manchester cloth.</li>
+<li><strong>Peasants:</strong> Awadh Kisan Sabha under <strong>Baba Ramchandra</strong>; Eka Movement in Hardoi-Sitapur under <strong>Madari Pasi</strong>.</li>
+<li><strong>Workers:</strong> Strike wave 1921–22 (jute mills Bengal, Assam tea plantations, Bombay textile mills).</li>
+<li><strong>Tribals:</strong> <strong>Alluri Sitarama Raju's Rampa Rebellion</strong> (Andhra hills, 1922–24) under Non-Cooperation inspiration — though Raju used force; killed by police 7 May 1924.</li>
+<li><strong>Royal visit boycott:</strong> Prince of Wales' visit (17 November 1921, Bombay) met with empty streets and a hartal. ~30,000 arrested across India in the following weeks.</li>
+</ul>
+
+<h3>9.5 The Ahmedabad Congress, December 1921</h3>
+<p>(President in absentia: C.R. Das, who was in jail; acting: Hakim Ajmal Khan.) Gandhi was given executive authority for a <strong>"sole executive authority of the Congress"</strong>. The plan: launch full <strong>civil disobedience</strong> (no-revenue) in Bardoli taluka of Surat district as a "model satyagraha" from 1 February 1922.</p>
+</section>
+
+<section class="notes" id="s10">
+<h2>10. Chauri Chaura &amp; the Swaraj Party</h2>
+
+<h3>10.1 Chauri Chaura — 5 February 1922</h3>
+<p>On <strong>5 February 1922</strong>, in the small town of <strong>Chauri Chaura, Gorakhpur district, UP</strong>, a procession of Non-Cooperation volunteers was taunted and beaten by the police at the bazaar. The volunteers regrouped and returned in larger numbers; when the police fired into the crowd and exhausted their ammunition, the crowd attacked the <strong>thana (police station)</strong>, set it on fire, and killed <strong>22 policemen</strong> (most sources say 22; some say 23) in the flames.</p>
+
+<h3>10.2 Gandhi's Withdrawal — Bardoli Resolution, 12 February 1922</h3>
+<p>Within a week, on <strong>11–12 February 1922</strong>, the Congress Working Committee met at Bardoli (where civil disobedience was about to be launched) and, on Gandhi's insistence, passed the <strong>Bardoli Resolution</strong> suspending the entire Non-Cooperation Movement. Gandhi believed the country was not yet ready for non-violent mass action; the violence at Chauri Chaura proved the discipline was inadequate.</p>
+
+<h3>10.3 Reactions</h3>
+<ul>
+<li><strong>Disappointment and anger</strong> from younger leaders. Motilal Nehru, C.R. Das, Subhas Bose, Lajpat Rai all opposed withdrawal — Motilal wrote a sharp protest from prison.</li>
+<li><strong>The mass movement subsided</strong> within months; the constructive programme (khadi, Hindu-Muslim unity, removal of untouchability) continued but without political momentum.</li>
+<li><strong>Gandhi arrested 10 March 1922</strong> at Ahmedabad, tried by Justice C.N. Broomfield, pleaded guilty, sentenced to 6 years' simple imprisonment on 18 March 1922. (Released early on health grounds, February 1924, after appendicitis surgery in Yeravda jail.)</li>
+<li><strong>172 of the Chauri Chaura accused were sentenced to death</strong> by the Sessions Court (Jan 1923); the Allahabad High Court reduced this to 19 hangings + 110 transportations for life — still one of the largest mass-execution episodes of the British Raj.</li>
+</ul>
+
+<h3>10.4 The Swaraj Party</h3>
+<p>The post-NCM Congress split into two camps:</p>
+<ul>
+<li><strong>Pro-Changers (Swarajists):</strong> Wanted to <strong>enter the new councils</strong> set up under the 1919 Act, in order to wreck them from within ("council-entry"). Led by <strong>C.R. Das</strong> and <strong>Motilal Nehru</strong>.</li>
+<li><strong>No-Changers:</strong> Wanted to stick to Gandhi's constructive programme — khadi, Hindu-Muslim unity, removal of untouchability — and stay out of the councils. Led by <strong>Rajendra Prasad, C. Rajagopalachari, Vallabhbhai Patel, M.A. Ansari, Vinoba Bhave</strong>.</li>
+</ul>
+
+<h3>10.5 Formation of the Swaraj Party</h3>
+<ul>
+<li><strong>Gaya Congress, December 1922</strong> (President: C.R. Das) — Council-entry resolution defeated. Das and Motilal resigned from their Congress posts.</li>
+<li><strong>1 January 1923:</strong> <strong>Congress-Khilafat Swaraj Party</strong> formed at Allahabad — C.R. Das President, Motilal Nehru Secretary.</li>
+<li><strong>September 1923, Delhi Congress</strong> (President: M.A. Ansari) — a compromise: Swarajists allowed to contest elections "without prejudice to the basic Non-Cooperation programme".</li>
+</ul>
+
+<h3>10.6 Swaraj Party Performance — 1923 Elections</h3>
+<ul>
+<li><strong>Central Legislative Assembly:</strong> 42 of 101 elected seats; with allies, controlled ~45.</li>
+<li><strong>Central Provinces:</strong> Absolute majority; formed government refusing to take office, blocking all government bills.</li>
+<li><strong>Bengal:</strong> Largest single party; Das became leader.</li>
+<li><strong>Bombay, UP:</strong> Substantial blocs.</li>
+<li><strong>Madras, Punjab:</strong> Limited success (where Justice Party and Unionists dominated).</li>
+</ul>
+
+<h3>10.7 Achievements &amp; Decline</h3>
+<ul>
+<li><strong>Achievements:</strong> Defeated several government bills; passed the <strong>Vithalbhai Patel Resolution (8 Feb 1924)</strong> demanding a constituent assembly; embarrassed the government on Rowlatt's continuance, the Public Safety Bill, the Lee Commission's pro-British recommendations on services.</li>
+<li><strong>C.R. Das died 16 June 1925</strong> at Darjeeling — a body blow.</li>
+<li><strong>Communalisation:</strong> The 1923–24 split in Bengal between Hindu Mahasabha-leaning Swarajists (Lala Lajpat Rai, Madan Mohan Malaviya formed the <strong>Independent Congress / Responsivist Party 1926</strong>) and the secular Swarajists damaged the party.</li>
+<li><strong>1926 elections</strong> — Swaraj Party still won 40 of 101 central seats but lost ground in the provinces.</li>
+<li><strong>1929:</strong> Motilal Nehru withdrew from the Assembly in response to the Lahore Purna Swaraj resolution; the Swaraj Party effectively dissolved.</li>
+</ul>
+
+<div class="callout green"><strong>Verdict on the Swaraj Party:</strong> The Swarajists demonstrated that constitutional obstruction could be effective even in a rigged legislature; they kept the political pot boiling between 1922 and 1929; and they trained a generation (Vithalbhai Patel as Speaker of Central Assembly 1925–30, Motilal as Leader of Opposition) in parliamentary technique. But they could not unite Hindu-Muslim politics in the legislatures, and the communal compromise they sought drove away both nationalist Muslims and Hindu Mahasabha.</div>
+</section>
+
+<section class="notes" id="s11">
+<h2>11. Revolutionary Nationalism — Phase II (1923–1931)</h2>
+
+<p>The suspension of Non-Cooperation in February 1922 disillusioned the younger militants who had given up education and careers for it. From 1923 onwards a second wave of revolutionary activity, more socialist and more secular in orientation than the 1905–17 phase, swept across the Hindi-speaking belt and Punjab.</p>
+
+<h3>11.1 Hindustan Republican Association (HRA), October 1924</h3>
+<ul>
+<li><strong>Founded</strong> at Kanpur in October 1924 by <strong>Sachindranath Sanyal</strong> (author of <em>Bandi Jeevan</em>), <strong>Ramprasad Bismil, Jogesh Chandra Chatterji, Ashfaqullah Khan, Chandrashekhar Azad</strong>.</li>
+<li><strong>Manifesto</strong> "The Revolutionary" (1 January 1925) — armed revolution to establish a "Federal Republic of the United States of India".</li>
+<li><strong>Kakori Train Robbery, 9 August 1925</strong> — HRA members held up the 8-down train at Kakori (near Lucknow) and looted the government treasury chest (Rs ~8,000); a passenger was accidentally killed. Mass arrests followed.</li>
+<li><strong>Kakori Conspiracy Case (1925–27):</strong> <strong>Ramprasad Bismil hanged at Gorakhpur</strong>, <strong>Ashfaqullah Khan hanged at Faizabad</strong>, <strong>Roshan Singh hanged at Allahabad, Rajendra Lahiri hanged at Gonda</strong> on <strong>19 December 1927</strong> (Ashfaq on 19 Dec; the others on adjacent days). Chandrashekhar Azad evaded arrest.</li>
+</ul>
+
+<h3>11.2 Hindustan Socialist Republican Association (HSRA), 8–9 September 1928</h3>
+<ul>
+<li><strong>Founded at Feroz Shah Kotla, Delhi</strong> on 8–9 September 1928 — the HRA reorganised by <strong>Bhagat Singh, Sukhdev Thapar, Shivaram Rajguru, Bhagwati Charan Vohra, Yashpal, Jaidev Kapoor</strong>, with <strong>Chandrashekhar Azad</strong> as Commander-in-Chief.</li>
+<li><strong>Addition of "Socialist"</strong> in the name was deliberate — Bhagat Singh and Bhagwati Charan had been reading Marx, Lenin, Bakunin, Trotsky.</li>
+<li><strong>Goal:</strong> Socialist republic of India through armed revolution.</li>
+</ul>
+
+<h3>11.3 The Saunders Murder, 17 December 1928</h3>
+<p>To avenge Lala Lajpat Rai's death (from injuries received in the Simon Commission protest at Lahore on 30 October 1928 — he died 17 November), the HSRA planned to assassinate <strong>James A. Scott</strong>, the Superintendent of Police who had ordered the lathi-charge. By mistake they shot <strong>Assistant Superintendent J.P. Saunders</strong> outside the Lahore District Police Office on <strong>17 December 1928</strong>. Bhagat Singh, Rajguru, and Chandrashekhar Azad escaped (Bhagat Singh in disguise as a sahib with Durga Bhabhi posing as his wife).</p>
+
+<h3>11.4 The Central Assembly Bomb, 8 April 1929</h3>
+<ul>
+<li><strong>Bhagat Singh and Batukeshwar Dutt</strong> threw two low-intensity bombs into the empty benches of the Central Legislative Assembly in Delhi, during the debate on the Public Safety Bill and the Trade Disputes Bill, on <strong>8 April 1929</strong>. No one was killed (deliberately — the bombs were designed to make noise, not casualties).</li>
+<li>They threw leaflets — "<strong>It takes a loud voice to make the deaf hear</strong>" — quoting French anarchist Auguste Vaillant (1893).</li>
+<li>They surrendered, refused legal defence, and used the trial as a political platform.</li>
+</ul>
+
+<h3>11.5 The Lahore Conspiracy Case &amp; the Hangings</h3>
+<ul>
+<li><strong>Combined Lahore Conspiracy Case</strong> tried Bhagat Singh, Rajguru, Sukhdev, Jatindra Nath Das (and others) on Saunders murder + earlier HSRA conspiracies.</li>
+<li><strong>Jatindra Nath Das</strong>: hunger strike of <strong>63 days</strong> for political-prisoner status; died 13 September 1929 — the first political-prisoner martyr in India.</li>
+<li><strong>Bhagat Singh's writings</strong> in prison: <em>Why I Am An Atheist</em> (1930); the <em>Letter to Young Political Workers</em> (2 February 1931) which argued for socialism, scientific outlook, and a long preparatory phase of organisation rather than spectacular acts.</li>
+<li><strong>Bhagat Singh, Rajguru, Sukhdev hanged at Lahore Central Jail on 23 March 1931</strong> — a day before they were scheduled (to forestall demonstrations). Bodies cremated at Hussainiwala (now in Indian Punjab on the Pakistan border).</li>
+</ul>
+
+<h3>11.6 The End of Phase II</h3>
+<ul>
+<li><strong>Chandrashekhar Azad</strong> killed at <strong>Alfred Park, Allahabad</strong> on <strong>27 February 1931</strong> in a shootout with police — shot himself with his last bullet to honour his vow never to be taken alive.</li>
+<li><strong>Surya Sen</strong>: <strong>Chittagong Armoury Raid, 18 April 1930</strong> — captured the police and auxiliary armouries of Chittagong with ~64 revolutionaries (including women — Pritilata Waddedar, Kalpana Datta). Surya Sen hanged 12 January 1934; Pritilata Waddedar consumed cyanide after the Pahartali European Club raid 24 September 1932.</li>
+<li><strong>Bhagwati Charan Vohra</strong> killed in a bomb accident on the banks of the Ravi, 28 May 1930.</li>
+<li>The wave of repression following CDM and Bhagat Singh's hanging broke the HSRA. The revolutionary tradition would re-emerge only with Bose's INA (1942–45) and a handful of Bengali groups during the war.</li>
+</ul>
+
+<div class="callout gold"><strong>Bhagat Singh's significance:</strong> Unlike the Phase I revolutionaries, Bhagat Singh combined armed action with a sustained socialist-secular ideological project. His writings made him a hero across the political spectrum; the CWC at Karachi (March 1931) — held just five days after his hanging — was forced to pass a resolution dissociating from revolutionary violence while paying tribute to his "personal bravery and sacrifice".</div>
+</section>
+
+<section class="notes" id="s12">
+<h2>12. Simon Commission, Nehru Report, Jinnah's 14 Points</h2>
+
+<h3>12.1 Simon Commission</h3>
+<ul>
+<li><strong>Appointed 8 November 1927</strong> under the GoI Act 1919's mandatory 10-year review clause. Chaired by <strong>Sir John Simon</strong>; seven all-British members (including a young Major Clement Attlee, future PM).</li>
+<li><strong>The all-white composition</strong> — no Indian member — was an enormous insult; the British justification was that the future of India should be decided by Parliament, not by a partisan Indian. The reception was uniformly hostile.</li>
+<li><strong>Madras Congress (December 1927)</strong>, President M.A. Ansari, resolved to boycott the Commission "at every stage and in every form".</li>
+<li><strong>3 February 1928:</strong> Commission landed at Bombay. Met everywhere with black flags, "Simon Go Back" placards, hartal. Boycotted by INC, Muslim League (Jinnah faction), Hindu Mahasabha, Liberal Federation. (The Justice Party in Madras and the Unionists in Punjab cooperated.)</li>
+<li><strong>30 October 1928:</strong> Simon's second tour. Demonstration at <strong>Lahore Railway Station</strong> led by <strong>Lala Lajpat Rai</strong> attacked by police under Superintendent <strong>J.A. Scott</strong>; Lajpat Rai lathi-charged on the chest. He died on <strong>17 November 1928</strong> at Lahore.</li>
+<li><strong>Report:</strong> Two volumes, May 1930. Recommended abolition of provincial dyarchy, expansion of franchise, federation in the future, continuance of separate electorates. Already overtaken by events.</li>
+</ul>
+
+<h3>12.2 Birkenhead's Challenge &amp; the Nehru Report</h3>
+<p>Secretary of State <strong>Lord Birkenhead</strong> had taunted Indians that they could not produce an agreed constitutional scheme. The All Parties Conference accepted the challenge:</p>
+<ul>
+<li><strong>All Parties Conference</strong> met at Delhi (Feb 1928), Bombay (May 1928), Lucknow (Aug 1928).</li>
+<li>A drafting committee under <strong>Motilal Nehru</strong> (with Tej Bahadur Sapru, Subhas Bose, M.S. Aney, Ali Imam, M.R. Jayakar, Shoaib Qureshi, Pradhan, G.R. Pradhan, and Jawaharlal Nehru as secretary) produced the <strong>Nehru Report</strong>, submitted <strong>10 August 1928</strong>.</li>
+</ul>
+
+<h4>Principal Recommendations</h4>
+<ul>
+<li><strong>Dominion Status</strong> on the model of self-governing dominions (Canada, Australia) — <em>not</em> Purna Swaraj (Subhas Bose and Jawaharlal opposed; lost the vote).</li>
+<li><strong>Federal form of government</strong> with residual powers vested in the Centre.</li>
+<li><strong>Joint electorates</strong> with seat reservations for Muslims (where they were in minority — i.e., not in Punjab and Bengal — for ten years).</li>
+<li><strong>Fundamental rights</strong> including freedom of speech, religion, equality, language, association.</li>
+<li><strong>Separation of state and religion</strong> (secularism).</li>
+<li><strong>Universal adult suffrage</strong>.</li>
+<li><strong>Linguistic provinces</strong> — Sindh to be separated from Bombay, Karnataka and Andhra to be created.</li>
+<li><strong>Bicameral legislature</strong>; cabinet government; supreme court.</li>
+</ul>
+
+<h3>12.3 Jinnah's 14 Points (March 1929)</h3>
+<p>The Calcutta All Parties Convention (December 1928) failed to reach agreement on the Nehru Report's communal provisions — Jinnah's three amendments (1/3 Muslim seats in Central Assembly; reservation in Punjab/Bengal; residual powers to provinces) were rejected. Jinnah famously called it "the parting of the ways". In <strong>March 1929 at the Muslim League Delhi session</strong>, Jinnah formulated his <strong>14 Points</strong>:</p>
+<ol>
+<li>Federal constitution with residual powers vested in the provinces.</li>
+<li>Uniform provincial autonomy.</li>
+<li>All legislatures and elective bodies to be constituted on the principle of adequate Muslim representation.</li>
+<li>In the Central Legislature, Muslim representation not less than 1/3.</li>
+<li>Separate electorates to continue.</li>
+<li>No territorial redistribution to affect Muslim majority in Punjab, Bengal, NWFP.</li>
+<li>Full religious liberty.</li>
+<li>No bill or resolution to be passed in any legislature if 3/4 of any community oppose it (the communal veto from Lucknow 1916).</li>
+<li>Sindh to be separated from Bombay.</li>
+<li>Reforms to be introduced in NWFP and Baluchistan on the same footing as other provinces.</li>
+<li>Muslims to have adequate share in services.</li>
+<li>Constitution to protect Muslim culture, education, language, religion, personal law, and charitable institutions.</li>
+<li>No cabinet — central or provincial — to be formed without at least 1/3 Muslim ministers.</li>
+<li>No constitutional change in the federal system without the consent of all the constituent units.</li>
+</ol>
+
+<div class="callout warn"><strong>The historiographical importance:</strong> The Nehru Report and Jinnah's 14 Points together mark the moment at which the constitutional gap between the Congress (joint electorates, strong centre, secular nationalism) and the Muslim League (separate electorates, weak centre, communal veto) became formal and durable. From 1929 onwards, every constitutional negotiation — RTC, 1935 Act, Cripps, Cabinet Mission — would be conducted across this gap.</div>
+</section>
+
+<section class="notes" id="s13">
+<h2>13. Lahore Session 1929 — Purna Swaraj</h2>
+
+<h3>13.1 The Calcutta Ultimatum, December 1928</h3>
+<p>At the <strong>Calcutta Congress (December 1928)</strong>, presided over by Motilal Nehru, Gandhi moved a resolution accepting the Nehru Report and demanding Dominion Status — with a one-year ultimatum: if the British did not concede Dominion Status by 31 December 1929, the Congress would commit itself to Purna Swaraj and launch a movement for complete independence.</p>
+
+<h3>13.2 Irwin Declaration, 31 October 1929</h3>
+<p>Viceroy <strong>Lord Irwin (Edward Wood)</strong>, on instructions from the Labour Secretary of State <strong>Wedgwood Benn</strong>, issued the <strong>Irwin Declaration (31 October 1929)</strong> stating that Dominion Status was the "natural issue" of India's constitutional progress, and promising a Round Table Conference. The declaration was diluted in the British Parliament under Conservative pressure; the <strong>Delhi Manifesto</strong> (2 November 1929, signed by Gandhi, Motilal, Sapru, Annie Besant, Jinnah, Patel) sought clarification — when Irwin in a meeting on 23 December refused to promise Dominion Status as the <em>guaranteed</em> outcome of the RTC, the path was cleared for Purna Swaraj.</p>
+
+<h3>13.3 Lahore Session — 29 December 1929</h3>
+<ul>
+<li><strong>President: Jawaharlal Nehru</strong> (just 40 — Gandhi had bypassed Patel, who had more committee votes, in favour of the younger leader; Patel accepted gracefully). The session was held on the bank of the Ravi.</li>
+<li><strong>Purna Swaraj Resolution</strong> passed on <strong>19 December 1929</strong> (some sources 31 Dec): "<em>The British Government in India has not only deprived the Indian people of their freedom but has based itself on the exploitation of the masses, and has ruined India economically, politically, culturally and spiritually. We believe therefore that India must sever the British connection and attain Purna Swaraj or Complete Independence.</em>"</li>
+<li><strong>Tricolour flag</strong> unfurled by Jawaharlal Nehru at midnight on <strong>31 December 1929</strong> on the bank of the Ravi.</li>
+<li><strong>26 January 1930</strong> declared <strong>"Independence Day"</strong> — to be celebrated annually with the Independence Pledge (drafted by Gandhi). Celebrated continuously until 1947; on 26 January 1950 the date was chosen for the Republic Day in homage to this.</li>
+<li>Programme of <strong>Civil Disobedience</strong> to be framed by Gandhi and the Working Committee.</li>
+</ul>
+</section>
+
+<section class="notes" id="s14">
+<h2>14. Dandi March &amp; Civil Disobedience (1930)</h2>
+
+<h3>14.1 Gandhi's Eleven-Point Ultimatum, 30 January 1930</h3>
+<p>In <em>Young India</em> (30 January 1930) Gandhi published an <strong>Eleven-Point Ultimatum</strong> to Viceroy Irwin — issues whose redress would still allow him to call off the planned movement. The points combined the political (50% cut in military expenditure and civil service salaries; release of political prisoners; reform of CID), the economic (total prohibition; abolition of salt tax; reduction of land revenue by 50%; protective tariffs on textiles; reservation of coastal shipping for Indians), and the social (currency reform; issue of firearms licences). Irwin's reply (18 February 1930) was a flat refusal.</p>
+
+<h3>14.2 Why Salt?</h3>
+<p>The choice of the <strong>Salt Tax</strong> — a 25-paise per maund (~4% per ton) excise on a basic necessity that even the poorest household could not avoid — was inspired:</p>
+<ul>
+<li>Salt was a universal necessity that hit every Indian regardless of class, region, or religion.</li>
+<li>Salt could be made simply by evaporating seawater — accessible technology of mass civil disobedience.</li>
+<li>The government's monopoly was both economically absurd (salt was abundant on every coast) and morally indefensible.</li>
+<li>The salt tax produced only ~Rs 2.5 crore (3% of the central revenue) — its loss would not bankrupt the government, but its defiance would symbolise total rejection.</li>
+</ul>
+<p>Most of the Working Committee (Patel, Rajendra Prasad, Jawaharlal) initially thought salt a trivial issue — Gandhi's choice was contested. It would prove the masterstroke of his political career.</p>
+
+<h3>14.3 The Dandi March — 12 March to 6 April 1930</h3>
+<ul>
+<li>Gandhi wrote to Viceroy Irwin on <strong>2 March 1930</strong> announcing the march; received no substantive reply.</li>
+<li>Left Sabarmati Ashram on <strong>12 March 1930</strong> with <strong>78 chosen satyagrahis</strong> (a deliberately small core; Sarojini Naidu was added later).</li>
+<li>The march was <strong>240 miles (~387 km)</strong>, travelled in 24 days through 4 districts of Gujarat (Ahmedabad, Kheda, Anand, Borsad, Bharuch, Surat, Navsari).</li>
+<li>Gandhi addressed huge meetings at every halt; village panchayats joined; the international press (including Webb Miller of UPI) accompanied.</li>
+<li><strong>Reached Dandi on 5 April 1930.</strong> At dawn on <strong>6 April 1930</strong>, Gandhi picked up a handful of natural salt from the seashore — formally breaking the Salt Law.</li>
+</ul>
+
+<h3>14.4 Spread of Civil Disobedience</h3>
+<ul>
+<li><strong>Salt satyagraha</strong> spread along every coast: Sarojini Naidu &amp; Manilal Gandhi led the raid on the <strong>Dharasana Salt Works (21 May 1930)</strong> — Webb Miller's report of the unresisting satyagrahis being beaten became a defining image worldwide.</li>
+<li><strong>C. Rajagopalachari</strong> led a march from Tiruchirapalli to <strong>Vedaranyam</strong> (Tamil Nadu coast).</li>
+<li><strong>K. Kelappan</strong> led the <strong>Payyannur</strong> salt march in Malabar.</li>
+<li><strong>Boycott of foreign cloth, liquor shops, government schools, courts</strong> resumed.</li>
+<li><strong>No-revenue campaigns</strong>: Bardoli (again), Kheda, eastern UP (Mewar), Gujarat, Karnataka.</li>
+<li><strong>No-chaukidara tax</strong>: Bihar, Orissa, Bengal.</li>
+<li><strong>NWFP — Khudai Khidmatgars (Red Shirts)</strong> under <strong>Khan Abdul Ghaffar Khan</strong> ("Frontier Gandhi"): Peshawar 23 April 1930 — Garhwal Rifles refused to fire on unarmed Pathan protesters — a stunning moment of cross-community non-violence in a region stereotyped as warlike.</li>
+<li><strong>Chittagong Armoury Raid (18 April 1930)</strong> under Surya Sen — armed action in parallel to the Gandhian movement.</li>
+<li><strong>Sholapur</strong>: textile workers seized control of the town for several days after the police killed protesters; martial law imposed.</li>
+<li><strong>Tribal movements</strong>: Manipur — Rani Gaidinliu's <em>Heraka</em> movement (1929–32, jailed at 16); Bastar tribal unrest 1930.</li>
+<li><strong>Women's participation</strong> on an unprecedented scale: Kasturba, Sarojini Naidu, Kamala Nehru, Lakshmi Pandit, Hansa Mehta, Avantikabai Gokhale, Kamaladevi Chattopadhyay, Mira Behn. Government had never expected women in such numbers; jails became overcrowded.</li>
+</ul>
+
+<h3>14.5 Government Response</h3>
+<ul>
+<li><strong>Mass arrests</strong> — <strong>over 90,000 imprisoned</strong> in the first year.</li>
+<li><strong>Gandhi arrested 5 May 1930</strong>; Nehru, Patel, Rajendra Prasad and the entire Working Committee in jail.</li>
+<li><strong>Ordinances</strong>: Press Ordinance, Unlawful Instigation Ordinance, Unlawful Association Ordinance — emergency rule by executive decree.</li>
+<li><strong>Congress declared illegal</strong> (June 1930).</li>
+<li><strong>Confiscation</strong> of property; cattle and household goods seized for unpaid taxes; lands forfeited.</li>
+<li><strong>Lathi charges, firings</strong>: 100+ deaths in police firings during 1930.</li>
+</ul>
+</section>
+
+<section class="notes" id="s15">
+<h2>15. First RTC, Gandhi-Irwin Pact, Second RTC</h2>
+
+<h3>15.1 First Round Table Conference, London — 12 November 1930 – 19 January 1931</h3>
+<ul>
+<li>Convened by Labour PM <strong>Ramsay MacDonald</strong> in pursuance of the Irwin Declaration.</li>
+<li><strong>89 delegates</strong> — 16 from British political parties, 16 from Indian princely states, 57 from British India.</li>
+<li><strong>Boycotted by the Congress</strong> (its leaders in jail).</li>
+<li>Attended by Muslim League (Aga Khan, Jinnah, Muhammad Iqbal, Maulana Muhammad Ali — who died in London during the session, January 1931 — buried in Jerusalem); Hindu Mahasabha (Moonje, Jayakar); Liberals (Sapru, C.Y. Chintamani, Srinivasa Sastri); Sikhs (Sardar Sampuran Singh); Depressed Classes (<strong>Dr B.R. Ambedkar</strong>, Rao Bahadur Srinivasan); Princes (Bikaner, Patiala, Bhopal, Hyderabad — represented by Sir Akbar Hydari).</li>
+<li><strong>Achievement:</strong> Princes' acceptance of an all-India federation; agreement that British India would be a federation; provincial autonomy and responsible government in provinces accepted. No conclusions on the communal issue or on safeguards.</li>
+<li><strong>Without Congress, no real progress was possible.</strong></li>
+</ul>
+
+<h3>15.2 Gandhi-Irwin Pact — 5 March 1931</h3>
+<p>Returning from the First RTC, Viceroy Irwin authorised conversations with Gandhi. Through <strong>Tej Bahadur Sapru and M.R. Jayakar</strong> as intermediaries, eight meetings between Gandhi (released 26 January 1931) and Irwin produced the <strong>Gandhi-Irwin Pact (Delhi Pact) signed on 5 March 1931</strong>.</p>
+
+<h4>Government's Concessions</h4>
+<ul>
+<li>Withdrawal of all ordinances and prosecutions for non-violent offences.</li>
+<li>Release of all political prisoners not convicted of violence.</li>
+<li>Restoration of confiscated property where not yet sold to third parties.</li>
+<li>Removal of salt tax for coastal villagers making salt for personal use.</li>
+<li>Right of peaceful picketing of liquor and foreign-cloth shops.</li>
+</ul>
+
+<h4>Congress Concessions</h4>
+<ul>
+<li>Suspension of Civil Disobedience Movement.</li>
+<li>Participation in the Second RTC.</li>
+<li>No enquiry into police excesses (the most controversial concession).</li>
+</ul>
+
+<h3>15.3 Karachi Congress — 29 March 1931</h3>
+<ul>
+<li><strong>President: Vallabhbhai Patel.</strong></li>
+<li>Endorsed the Gandhi-Irwin Pact — but in the shadow of the <strong>hanging of Bhagat Singh, Rajguru, Sukhdev five days earlier (23 March 1931)</strong>. Gandhi was booed by Bhagat Singh sympathisers at Karachi.</li>
+<li><strong>Resolution on Fundamental Rights and Economic and Social Programme</strong> — drafted by Jawaharlal Nehru — was the Congress's first explicit charter of social-economic rights: freedom of speech, religion, equality before law; protection of culture/language/script of minorities; universal adult franchise; free primary education; nationalisation of key industries; substantial reduction in agricultural rent and revenue; protection of women's rights; abolition of untouchability.</li>
+</ul>
+
+<h3>15.4 Second Round Table Conference — 7 September – 1 December 1931</h3>
+<ul>
+<li><strong>Gandhi was the sole Congress representative</strong> — sailed on the SS <em>Rajputana</em>.</li>
+<li>Stayed at Kingsley Hall (East End, with Muriel Lester); met King George V at Buckingham Palace ("loincloth and sandals" controversy); met Charlie Chaplin, Romain Rolland, Mussolini (briefly).</li>
+<li><strong>Communal question was the central obstacle.</strong> Muslims (Aga Khan, Muhammad Iqbal, Sir Muhammad Shafi), Depressed Classes (Ambedkar), Sikhs, Anglo-Indians, Christians all demanded separate electorates. Gandhi opposed separate electorates for Depressed Classes (the central issue).</li>
+<li><strong>Conservatives had returned to power in the National Government</strong> (October 1931 election); Lord Willingdon, the new Viceroy, was hostile.</li>
+<li>The session ended without an agreement on the communal issue or on the federal scheme. Gandhi sailed home in December 1931 empty-handed.</li>
+</ul>
+
+<h3>15.5 Resumption of Civil Disobedience &amp; Repression (January 1932)</h3>
+<ul>
+<li>Gandhi landed at Bombay 28 December 1931; demanded urgent talks with the new Viceroy <strong>Lord Willingdon</strong>, who refused.</li>
+<li><strong>4 January 1932:</strong> Gandhi arrested again; Civil Disobedience resumed.</li>
+<li>Government response far harsher than 1930 — <strong>fresh ordinances within hours of Gandhi's arrest</strong>, Congress declared unlawful, all leaders interned, 80,000+ arrested in three months, women lathi-charged for the first time in some districts.</li>
+<li>By summer 1932 the movement was clearly losing momentum; <strong>Gandhi turned to the question of untouchability</strong> from his Yeravda cell.</li>
+</ul>
+</section>
+
+<section class="notes" id="s16">
+<h2>16. Communal Award &amp; Poona Pact (1932)</h2>
+
+<h3>16.1 Communal Award — 16 August 1932</h3>
+<p>British PM <strong>Ramsay MacDonald</strong>, having failed to broker a communal settlement at the Second RTC, announced his own award on <strong>16 August 1932</strong>:</p>
+<ul>
+<li><strong>Separate electorates</strong> retained for Muslims, Sikhs, Indian Christians, Anglo-Indians, and Europeans.</li>
+<li><strong>Separate electorates also for the Depressed Classes</strong> — a new and politically explosive provision. Depressed Class voters would vote in both a separate electorate (for reserved seats) and the general electorate (for the general seats).</li>
+<li><strong>Weightage for minorities</strong> in provincial legislatures.</li>
+<li><strong>Bengal and Punjab</strong> — Muslim-majority provinces — given Muslim majorities of representation (Bengal 47.8% Muslims, Punjab 49% Muslims).</li>
+</ul>
+
+<h3>16.2 Gandhi's Fast Unto Death — 20 September 1932</h3>
+<p>Gandhi, in <strong>Yeravda Jail (Pune)</strong>, was opposed to separate electorates for the Depressed Classes on the ground that this would split Hindu society for ever and weaken the campaign against untouchability. He announced a <strong>fast unto death from 20 September 1932</strong> in protest.</p>
+
+<h3>16.3 Ambedkar's Position</h3>
+<p><strong>Dr B.R. Ambedkar</strong>, the foremost leader of the Depressed Classes, argued that without separate electorates, Depressed Class candidates would always need upper-caste Hindu votes to win and would therefore become tools of the caste Hindus — defeating the very purpose of representation. Ambedkar had won this argument at the Second RTC.</p>
+
+<h3>16.4 The Poona Pact — 24 September 1932</h3>
+<p>With Gandhi's life at stake, intense negotiations took place between Ambedkar, Madan Mohan Malaviya, M.C. Rajah, Tej Bahadur Sapru, Rajagopalachari, and Gandhi (through emissaries). After four days the <strong>Poona Pact</strong> was signed at the Yeravda Jail Office on <strong>24 September 1932</strong>:</p>
+<ul>
+<li><strong>Separate electorates for Depressed Classes abolished.</strong></li>
+<li><strong>Joint electorates</strong> with <strong>reserved seats</strong> for Depressed Classes — to be elected through a <strong>primary election</strong> in which only Depressed Class voters could vote to nominate the four most popular candidates; these four would then contest in the general (joint) electorate.</li>
+<li><strong>Reserved seats greatly increased</strong> over the Communal Award figure: <strong>148 (out of 1,585) in the provincial legislatures</strong> — Bombay 15, Bengal 30, UP 20, Bihar &amp; Orissa 18, CP 20, Madras 30, Punjab 8, Assam 7. (Communal Award had 71.)</li>
+<li>Central legislature reserved seats: 18% of the British India general seats for Depressed Classes.</li>
+<li><strong>Educational grants</strong> and adequate representation in public services for Depressed Classes.</li>
+<li>Reserved seats arrangement to last 20 years (extended thereafter; survives in modified form as SC reservation under the Constitution).</li>
+</ul>
+
+<h3>16.5 Gandhi Broke His Fast on 26 September 1932</h3>
+<p>Ambedkar later (<em>What Congress and Gandhi Have Done to the Untouchables</em>, 1945) called the Poona Pact a coerced agreement — Gandhi had used his own life as moral blackmail. The substantive judgement: Depressed Classes got far more reserved seats than under the Communal Award, but lost the independent political voice that separate electorates would have given them. <strong>Both achievements and resentments of the Poona Pact survive into contemporary Indian politics.</strong></p>
+
+<h3>16.6 The Harijan Sevak Sangh &amp; Gandhi's Anti-Untouchability Campaign</h3>
+<ul>
+<li><strong>All-India Anti-Untouchability League</strong> founded 30 September 1932; renamed <strong>Harijan Sevak Sangh</strong> in early 1933 — President Ghanshyam Das Birla, Secretary A.V. Thakkar.</li>
+<li>Gandhi began his weekly <em>Harijan</em> newspaper on 11 February 1933 (in English; Hindi/Gujarati editions followed).</li>
+<li><strong>Harijan Yatra (Harijan Tour)</strong> — Gandhi toured India for ten months (Nov 1933 – Aug 1934) covering ~12,500 miles, addressing meetings, collecting funds, opening temples and wells to "Harijans".</li>
+<li>Term <em>Harijan</em> ("people of Hari", i.e. God) was Gandhi's coinage — Ambedkar and many Dalit activists rejected the patronising religious framing.</li>
+</ul>
+
+<div class="callout warn"><strong>UPSC frame:</strong> The Communal Award + Poona Pact is the foundational episode in the constitutional history of caste representation. It established the principle of <em>joint electorates + reserved seats + primary election</em> which is the basis of all reservations after 1950. It also produced the Gandhi-Ambedkar divergence — over the means and the meaning of Dalit emancipation — that has structured Indian politics ever since.</div>
+</section>
+
+<section class="notes" id="s17">
+<h2>17. Third RTC &amp; Suspension of Civil Disobedience</h2>
+
+<h3>17.1 Third Round Table Conference, 17 November – 24 December 1932</h3>
+<ul>
+<li>A small, working-level conference. The Congress was not represented (Gandhi still in jail). The British government had its own draft ready — the White Paper was published in March 1933 and led directly to the Joint Select Committee (chaired by Lord Linlithgow, 1933–34) whose report became the GoI Act 1935.</li>
+</ul>
+
+<h3>17.2 The Final Phase of CDM</h3>
+<ul>
+<li><strong>April 1934:</strong> Gandhi formally suspended Civil Disobedience as a mass programme — to be confined to individual satyagraha by selected representatives.</li>
+<li><strong>October 1934:</strong> Gandhi formally retired from the Congress (no longer even a "four anna" member) to devote himself to constructive work — though he remained the supreme political authority informally.</li>
+<li><strong>Total CDM cost:</strong> ~120,000 imprisoned (1930–34); 1,500+ killed in police firings; thousands beaten and tortured.</li>
+</ul>
+
+<h3>17.3 Why CDM Did Not "Succeed" Like NCM</h3>
+<ul>
+<li>The British government was now psychologically prepared and used the lessons of 1920–22 — quick mass arrests, ordinances, communal counter-offers.</li>
+<li>The communal divisions hardened — Muslim League stayed aloof; the Communal Award completed the separation.</li>
+<li>Indian capitalists were ambivalent — supported the political goals but feared prolonged strikes.</li>
+<li>The princes' resistance to federation prevented constitutional progress.</li>
+<li>The movement could not be sustained in the face of brutal repression — by 1933 the leadership was in jail, the foot soldiers exhausted, and the country in the grip of the Depression.</li>
+</ul>
+
+<h3>17.4 The Congress Socialist Party (1934)</h3>
+<ul>
+<li>Founded at Patna in <strong>May 1934</strong> by <strong>Acharya Narendra Dev, Jayaprakash Narayan (JP), Achyut Patwardhan, Yusuf Meherally, Ashok Mehta, Minoo Masani, Ram Manohar Lohia, Sampurnanand</strong>.</li>
+<li>Within Congress as a left bloc; first conference Bombay October 1934.</li>
+<li>Pushed Congress towards socialist programme — culminated in the Faizpur (1936) and Haripura (1938) sessions' agrarian programme and the National Planning Committee (1938, chaired by Nehru).</li>
+<li>Subhas Bose's twin presidencies (Haripura 1938, Tripuri 1939) were the high water mark; after Bose's resignation and the war, the CSP split (some to CPI in the People's War line, JP and others to underground resistance during Quit India).</li>
+</ul>
+</section>
+
+<section class="notes" id="s18">
+<h2>18. Government of India Act 1935</h2>
+
+<p>The longest Act ever passed by Parliament (321 sections, 10 schedules), enacted <strong>2 August 1935</strong>. Drafted by the Joint Select Committee on the basis of the White Paper of March 1933; principal authors: Sir Samuel Hoare (Secretary of State), Lord Linlithgow (Joint Select Committee chair), Sir Reginald Coupland.</p>
+
+<h3>18.1 Principal Features — All-India Federation</h3>
+<ul>
+<li><strong>Federation of British Indian provinces and Indian princely states</strong> — provinces compulsorily included; princes' accession <em>voluntary</em>.</li>
+<li><strong>Three lists</strong> dividing legislative powers — <strong>Federal (59 items), Provincial (54), Concurrent (36)</strong>. (The 1950 Constitution preserved this three-list structure with modifications.)</li>
+<li><strong>Residual powers</strong> with the Governor-General.</li>
+<li><strong>Federal Court</strong> set up (1937, Sir Maurice Gwyer first Chief Justice) — predecessor of the Supreme Court.</li>
+<li><strong>Federation never came into effect</strong> — princes refused to accede in sufficient numbers (a federation required princes representing half the population of princely India to accede; ultimatum after ultimatum was extended; the Second World War froze the question on 3 September 1939; federation provisions never operationalised).</li>
+</ul>
+
+<h3>18.2 Provincial Autonomy — The Part That Worked</h3>
+<ul>
+<li><strong>Dyarchy abolished at the provincial level</strong> (it was paradoxically re-introduced at the centre).</li>
+<li><strong>Provincial subjects fully under Indian ministers</strong> responsible to the legislature.</li>
+<li><strong>Bicameral legislatures</strong> in Madras, Bombay, Bengal, UP, Bihar, Assam (the other five provinces — Punjab, NWFP, CP, Orissa, Sind — unicameral).</li>
+<li><strong>Eleven provinces</strong> (NWFP separated 1932; <strong>Sind separated from Bombay 1936</strong>; <strong>Orissa separated from Bihar 1936</strong>).</li>
+<li><strong>Governor's "special responsibilities"</strong> and discretionary powers — internal security, minority safeguards, financial stability, services. A real residual veto.</li>
+<li><strong>Franchise</strong> expanded to ~14% of population (~35 million voters) — including women (on property/income qualifications).</li>
+<li><strong>Separate electorates extended</strong> further — to Scheduled Castes (via primary + reservation per Poona Pact), women, labour, commerce, landlords.</li>
+</ul>
+
+<h3>18.3 At the Centre</h3>
+<ul>
+<li><strong>Dyarchy at the Centre</strong> — defence, external affairs, ecclesiastical affairs, tribal areas were "reserved" to the Governor-General; others were "transferred" to ministers responsible to the federal legislature. But since federation never came into effect, the central government continued under the GoI Act 1919 with modifications until 1947.</li>
+<li><strong>Federal Legislature</strong>: Council of State (260) + Federal Assembly (375) — never elected.</li>
+<li><strong>Reserve Bank of India</strong> established <strong>1 April 1935</strong> (Reserve Bank of India Act 1934).</li>
+<li><strong>Federal Public Service Commission, Provincial Public Service Commissions</strong> created.</li>
+</ul>
+
+<h3>18.4 Reception</h3>
+<ul>
+<li><strong>Jawaharlal Nehru:</strong> "A new charter of slavery". "A car with all brakes and no engine."</li>
+<li><strong>Jinnah:</strong> "Thoroughly rotten, fundamentally bad, and totally unacceptable."</li>
+<li>The Congress decided (after long debate at Lucknow 1936 and Faizpur 1936) to <strong>contest the 1937 elections</strong> in order to capture provincial power and demonstrate the Act's deficiencies from within.</li>
+</ul>
+
+<h3>18.5 Lasting Significance</h3>
+<p>Despite contemporary condemnation, the GoI Act 1935 became the <strong>structural template of the 1950 Constitution of India</strong> — federal architecture, three lists, Federal Court, public service commissions, governor's role, much of the language of Part XI &amp; Part XII. As Granville Austin observed, "the 1935 Act was the major source of the Constitution of 1950 — about 250 of its sections were taken almost verbatim."</p>
+</section>
+
+<section class="notes" id="s19">
+<h2>19. Congress Ministries 1937–39</h2>
+
+<h3>19.1 1937 Provincial Elections</h3>
+<ul>
+<li><strong>Held Jan–Feb 1937</strong>.</li>
+<li>Congress contested 1,161 of the 1,585 general seats; <strong>won 716</strong> — absolute majority in <strong>Madras, UP, CP, Bihar, Orissa, Bombay</strong>; largest party in <strong>Bengal, Assam, NWFP</strong>; minority in Punjab and Sind (where Unionists and regional parties dominated).</li>
+<li><strong>Muslim League</strong> won only <strong>108 of 482</strong> reserved Muslim seats — under 25% of the Muslim vote. A catastrophic showing that radically altered Jinnah's strategy after 1937.</li>
+</ul>
+
+<h3>19.2 Initial Refusal of Office</h3>
+<p>After the elections, the Congress hesitated for two months. Its objection: the Governor's special powers/discretionary functions under the 1935 Act gave him a residual veto that would make ministers accountable both to the legislature and (in extremis) to the Governor. After negotiations and a clarifying statement by Viceroy <strong>Lord Linlithgow (21 June 1937)</strong> that Governors would use their discretion "with restraint", the Congress accepted office in seven provinces in <strong>July 1937</strong>.</p>
+
+<h3>19.3 The Congress Premiers</h3>
+<table class="tbl">
+<tr><th>Province</th><th>Premier</th></tr>
+<tr><td>Madras</td><td>C. Rajagopalachari</td></tr>
+<tr><td>Bombay</td><td>B.G. Kher</td></tr>
+<tr><td>UP</td><td>G.B. Pant</td></tr>
+<tr><td>Bihar</td><td>Sri Krishna Sinha</td></tr>
+<tr><td>CP &amp; Berar</td><td>N.B. Khare → R.S. Shukla</td></tr>
+<tr><td>Orissa</td><td>Biswanath Das</td></tr>
+<tr><td>NWFP</td><td>Dr Khan Sahib (Ghaffar Khan's brother)</td></tr>
+<tr><td>Assam</td><td>Coalition with Gopinath Bordoloi (Sep 1938)</td></tr>
+</table>
+
+<h3>19.4 Achievements</h3>
+<ul>
+<li><strong>Civil liberties:</strong> Press restrictions relaxed; political prisoners released; ban on Congress organisations lifted.</li>
+<li><strong>Agrarian reform:</strong> Bihar &amp; UP tenancy laws (Bakasht in Bihar); abolition of forced labour (Begar) in some provinces.</li>
+<li><strong>Labour reform:</strong> Bombay Industrial Disputes Act 1938; Trade Disputes Act amendments.</li>
+<li><strong>Education:</strong> The <strong>Wardha Scheme</strong> (Basic Education, 1937) under Dr Zakir Husain — manual labour as the centre of pedagogy.</li>
+<li><strong>Prohibition</strong> in parts of Madras, Bombay.</li>
+<li><strong>Reduction of ministerial salaries</strong> to Rs 500/month (a fraction of British ICS levels).</li>
+</ul>
+
+<h3>19.5 Limitations &amp; Criticisms</h3>
+<ul>
+<li><strong>Police excesses</strong> continued — Congress ministries fired on tribal protesters in Orissa, on textile workers in Cawnpore, on Muslims in some communal riots.</li>
+<li><strong>Communalisation</strong> — Muslim League charged that the UP Congress ministry (Pant) had refused coalition; that Vande Mataram, Hindi, the Wardha Scheme, Bande Mataram as a national song were all Hindu impositions on Muslims. Jinnah commissioned the <strong>Pirpur Report (Nov 1938)</strong>, the <strong>Sharif Report (Bihar, 1939)</strong>, and the <strong>Fazlul Haq's "Muslim Sufferings under Congress Rule" (Dec 1939)</strong> — sweeping (and exaggerated) catalogues of grievance.</li>
+<li><strong>Bose-Gandhi split</strong> — Subhas Bose was elected Congress President at Haripura (1938); re-elected at Tripuri (1939) defeating Gandhi's candidate Pattabhi Sitaramayya. Gandhi withdrew co-operation; Bose resigned April 1939; founded the <strong>Forward Bloc</strong> 22 June 1939.</li>
+</ul>
+
+<h3>19.6 Resignation — October–November 1939</h3>
+<ul>
+<li><strong>3 September 1939:</strong> Britain declared war on Germany; <strong>Viceroy Linlithgow declared India a belligerent without consulting any Indian leader or the Central Assembly</strong>.</li>
+<li><strong>14 September 1939:</strong> CWC at Wardha demanded a clear declaration of British war aims as they applied to India — would the principle of self-determination apply to India after the war?</li>
+<li><strong>Linlithgow's reply (17 October 1939)</strong> was evasive — vague promises of "consultative committee" and reference to post-war "modifications" of the 1935 Act.</li>
+<li><strong>22–23 October 1939:</strong> CWC asked the Congress ministries to resign.</li>
+<li>By 15 November 1939 all eight Congress ministries had resigned.</li>
+<li><strong>Jinnah declared 22 December 1939 as "Deliverance Day"</strong> from Congress rule — celebrated by the Muslim League. The path was now open to the Lahore Resolution of 23 March 1940 demanding a separate Muslim state.</li>
+</ul>
+</section>
+
+<section class="notes" id="s20">
+<h2>20. Historiography of the Gandhian Movement</h2>
+
+<table class="tbl">
+<tr><th>School</th><th>Argument</th></tr>
+<tr><td><strong>Imperialist</strong> (Valentine Chirol, V.A. Smith, more recently Anthony Read &amp; David Fisher)</td><td>Gandhi was a clever opportunist; the movement was sustained by middle-class self-interest and Hindu religious revivalism dressed as universalism; British rule could have been gradually liberalised without the disorder of mass movements</td></tr>
+<tr><td><strong>Nationalist</strong> (Tara Chand, Bipan Chandra, Sumit Sarkar)</td><td>The Gandhian movement was the genuine, mass-democratic anti-colonial movement which integrated peasants, workers, women, and minorities into the nation. Its limitations (Hindu idiom, conservative on class, gradualist on caste) were real but were the conditions of its breadth</td></tr>
+<tr><td><strong>Cambridge School</strong> (Judith Brown, Anil Seal, D.A. Low, Gordon Johnson)</td><td>The Congress was a fragile coalition of regional and factional interests; Gandhi's role was to translate local elite agendas into a national idiom; mass mobilisation was always managed/contained by elites. Brown's <em>Gandhi's Rise to Power</em> (1972) is the locus classicus</td></tr>
+<tr><td><strong>Marxist</strong> (R.P. Dutt, A.R. Desai, Hamza Alavi)</td><td>The Gandhian movement was a bourgeois-led movement that mobilised peasants and workers within limits acceptable to Indian capital. Gandhi's role: keep the militant edge of the movement under control — Chauri Chaura and Bardoli withdrawals are textbook</td></tr>
+<tr><td><strong>Subaltern Studies</strong> (Ranajit Guha, Shahid Amin, Partha Chatterjee, Gyan Pandey, David Hardiman)</td><td>Peasants, tribals, and workers participated in the Gandhian movements with their own understandings of "Gandhi Baba" — often millenarian, often violent, often outside Congress discipline. Shahid Amin's <em>Event, Metaphor, Memory: Chauri Chaura 1922–1992</em> is the classic study showing how peasants experienced and remembered Chauri Chaura quite differently from the nationalist establishment</td></tr>
+<tr><td><strong>Feminist</strong> (Geraldine Forbes, Tanika Sarkar, Aparna Basu)</td><td>The Gandhian movement opened space for women's mass participation while simultaneously constraining women within domesticity, "purity", and self-sacrifice; the women's agency was real but the patriarchal frame was preserved</td></tr>
+<tr><td><strong>Communalism</strong> (Mushirul Hasan, Ayesha Jalal, Francis Robinson, David Page)</td><td>The Congress's failure to accommodate Muslim political concerns from Lucknow (1916) through the rejection of Jinnah's 14 Points (1929) and the Congress ministries' approach in UP (1937) was a structural failure with catastrophic consequences in 1947</td></tr>
+<tr><td><strong>Liberal-Constitutionalist</strong> (Granville Austin)</td><td>The constitutional and democratic forms developed within the nationalist movement (the 1931 Karachi Resolution on Fundamental Rights, the National Planning Committee 1938, the experience of Congress ministries 1937–39) provided the institutional capacity that made the 1950 Constitution possible</td></tr>
+</table>
+
+<h3>20.1 The Verdict for UPSC</h3>
+<p>For a Mains answer: <em>The Gandhian movement was the first sustained mass-democratic anti-colonial movement in modern world history. Its great achievement was to mobilise tens of millions of Indians across class, region, and (partially) community in disciplined non-violent struggle, building the political and institutional infrastructure of independent India. Its limitations — on the communal question, on caste, on class — were real and consequential, but it remains the central episode of twentieth-century Indian political history.</em></p>
+</section>
+
+<section class="notes" id="pyq">
+<h2>Previous Year Questions (Theme-aligned)</h2>
+
+<div class="callout warn"><strong>Honest attribution note:</strong> MentorsDaily does not fabricate year-tags on PYQs. The questions below reflect the actual <em>themes</em> tested in UPSC Mains 2014–2025 on the Gandhian era — but we do not claim a specific year for each unless the year is independently verifiable in the official UPSC question papers archive. Treat these as high-quality model questions in the UPSC mould.</div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>"Examine the contribution of the Champaran, Ahmedabad and Kheda satyagrahas to the evolution of Gandhi's political methods." <em>(GS-I, 15 marks)</em></div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>"Discuss the significance of the Khilafat-Non-Cooperation alliance. Was it a tactical masterstroke or a strategic miscalculation?" <em>(GS-I, 15 marks)</em></div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>"Why did Gandhi withdraw the Non-Cooperation Movement after Chauri Chaura? Was the decision justified?" <em>(GS-I, 10 marks)</em></div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>"Assess the achievements and limitations of the Swaraj Party." <em>(GS-I, 10 marks)</em></div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>"How did the Salt March transform the character and reach of the Indian national movement?" <em>(GS-I, 15 marks)</em></div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>"Discuss the ideas and contribution of Bhagat Singh to the Indian freedom movement. To what extent did he go beyond earlier revolutionary nationalism?" <em>(GS-I, 15 marks)</em></div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>"Analyse the Communal Award and the Poona Pact. What are their long-term implications for Indian politics?" <em>(GS-I, 15 marks)</em></div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>"To what extent did the Government of India Act 1935 anticipate the structure of the Indian Constitution of 1950?" <em>(GS-I, 15 marks)</em></div>
+
+<div class="pyq"><span class="year">Theme-aligned</span><br>"Assess the experience of the Congress ministries of 1937–39. Why did they resign in October–November 1939?" <em>(GS-I, 10 marks)</em></div>
+</section>
+
+<section class="revision" id="revision">
+<h3>15 Must-Know Facts — Last-Minute Revision</h3>
+<ol>
+<li><strong>Gandhi returns:</strong> 9 January 1915 (Pravasi Bharatiya Divas). Satyagraha Ashram at Kochrab (May 1915) → Sabarmati (1917). Three early satyagrahas: <strong>Champaran (1917) — tinkathia (Rajkumar Shukla, Champaran Agrarian Act 1918); Ahmedabad Mill Strike (Feb–Mar 1918) — plague bonus, Anusuya Sarabhai, first fast in India; Kheda (Mar–Jun 1918) — no-revenue, Patel emerges.</strong></li>
+<li><strong>Home Rule Leagues:</strong> Tilak — 28 April 1916 Belgaum (Maharashtra/Karnataka/CP/Berar); Annie Besant — September 1916 Madras (rest of India). Besant interned June 1917; became INC President at Calcutta 1917 (first woman). Lucknow Pact December 1916: INC + ML, drafted by Tilak &amp; Jinnah; Congress accepted separate electorates + weightage.</li>
+<li><strong>Montagu Declaration 20 August 1917:</strong> "Progressive realisation of responsible government". <strong>Government of India Act 1919</strong> (Montagu-Chelmsford): Dyarchy in provinces (Reserved vs Transferred); bicameral central legislature; effective 1 Jan 1921.</li>
+<li><strong>Rowlatt Acts 18 March 1919</strong> ("no vakil, no daleel, no appeal"); Gandhi's Satyagraha Sabha 24 Feb 1919; nationwide hartal 6 April 1919. <strong>Jallianwala Bagh 13 April 1919</strong> (Baisakhi): General Dyer; 1,650 rounds; British figure 379 dead; Hunter Commission (1920) censured "error of judgement"; Tagore renounced knighthood 31 May 1919; Dyer fund £26,000; Udham Singh killed O'Dwyer at Caxton Hall 13 March 1940.</li>
+<li><strong>Khilafat:</strong> March 1919 Bombay; Ali Brothers, Azad, Ajmal Khan, Hasrat Mohani. Treaty of Sèvres 10 Aug 1920. Atatürk abolished Sultanate 1 Nov 1922; Khilafa institution 3 March 1924. <strong>Moplah Rebellion Aug–Dec 1921</strong>; Hijrat Movement 1920 (~18,000 to Afghanistan).</li>
+<li><strong>Non-Cooperation launched 1 August 1920</strong> (day Tilak died). Calcutta Special 4–9 Sep 1920 (Lala Lajpat Rai); Nagpur 26–31 Dec 1920 (Vijayaraghavachariar) — Congress reorganised on linguistic basis, four-anna membership, 15-member Working Committee, Hindi as proceedings language. National universities: Jamia Millia, Kashi Vidyapith, Gujarat Vidyapith, Bihar Vidyapith. Tilak Swaraj Fund: Rs 1 crore in 6 months.</li>
+<li><strong>Chauri Chaura 5 February 1922</strong> (Gorakhpur UP): 22 policemen killed in thana fire. <strong>Bardoli Resolution 12 February 1922</strong>: Gandhi suspended NCM. Gandhi arrested 10 March 1922, tried 18 March 1922, sentenced 6 years by Justice C.N. Broomfield; released February 1924. <strong>Swaraj Party formed 1 January 1923</strong> — President C.R. Das, Secretary Motilal Nehru; 1923 elections: 42/101 central seats. C.R. Das d. 16 June 1925.</li>
+<li><strong>Revolutionary Phase II:</strong> HRA at Kanpur Oct 1924 (Sachindranath Sanyal, Ramprasad Bismil); Kakori Train Robbery 9 August 1925; Bismil/Ashfaq/Roshan Singh/Lahiri hanged 19 December 1927. <strong>HSRA at Feroz Shah Kotla 8–9 September 1928</strong> (Bhagat Singh, Sukhdev, Rajguru; Chandrashekhar Azad C-in-C). Saunders murder 17 Dec 1928; Central Assembly bomb 8 April 1929 ("It takes a loud voice to make the deaf hear"). Jatindra Nath Das fast 63 days, d. 13 September 1929. <strong>Bhagat Singh, Rajguru, Sukhdev hanged 23 March 1931 Lahore Central Jail</strong> (cremated Hussainiwala). Chandrashekhar Azad d. Alfred Park Allahabad 27 February 1931. <strong>Chittagong Armoury Raid 18 April 1930</strong> (Surya Sen — hanged 12 Jan 1934).</li>
+<li><strong>Simon Commission:</strong> appointed 8 Nov 1927 (all-white, Sir John Simon, Attlee a member); landed Bombay 3 Feb 1928; Lala Lajpat Rai lathi-charged at Lahore 30 October 1928, d. 17 November 1928. Report May 1930. <strong>Nehru Report 10 August 1928</strong> (Motilal Nehru chair) — Dominion Status, federal, joint electorates with reservation, fundamental rights, adult suffrage, linguistic provinces. <strong>Jinnah's 14 Points March 1929</strong> — federal with weak centre, separate electorates, 1/3 Muslim representation in central legislature, communal veto.</li>
+<li><strong>Calcutta Congress Dec 1928</strong> (Motilal): one-year ultimatum for Dominion Status. Irwin Declaration 31 Oct 1929. <strong>Lahore Session 29 Dec 1929</strong> (Jawaharlal Nehru) — <strong>Purna Swaraj Resolution 19 Dec 1929</strong>; tricolour by Ravi 31 Dec 1929; <strong>26 January 1930 = Independence Day</strong> (Republic Day in homage 1950).</li>
+<li><strong>Dandi March 12 March – 6 April 1930</strong> (Sabarmati → Dandi, ~240 miles, 78 satyagrahis, 24 days). Salt broken 6 April 1930 dawn. <strong>Dharasana Salt Works raid 21 May 1930</strong> (Sarojini Naidu &amp; Manilal Gandhi; Webb Miller). <strong>Peshawar 23 April 1930</strong> — Garhwal Rifles refused to fire (Khan Abdul Ghaffar Khan, Khudai Khidmatgars). Vedaranyam — C. Rajagopalachari. Gandhi arrested 5 May 1930. Over 90,000 imprisoned first year.</li>
+<li><strong>First RTC 12 Nov 1930 – 19 Jan 1931</strong>: boycotted by Congress. <strong>Gandhi-Irwin Pact 5 March 1931</strong> (Delhi Pact) — Sapru &amp; Jayakar intermediaries. <strong>Karachi Congress 29 March 1931</strong> (Patel) — six days after Bhagat Singh hanging; Fundamental Rights &amp; Economic Programme Resolution (Nehru). <strong>Second RTC 7 Sep – 1 Dec 1931</strong>: Gandhi sole Congress representative; communal question stalemated. Gandhi arrested again 4 Jan 1932; CDM resumed.</li>
+<li><strong>Communal Award 16 August 1932</strong> (Ramsay MacDonald): separate electorates for Depressed Classes. <strong>Gandhi's fast unto death from 20 September 1932</strong> at Yeravda. <strong>Poona Pact 24 September 1932</strong>: joint electorates + reserved seats (148 in provincial legislatures) + primary election method. Gandhi broke fast 26 Sep 1932. <strong>Harijan Sevak Sangh 30 Sep 1932</strong> (G.D. Birla pres, A.V. Thakkar sec); <em>Harijan</em> newspaper 11 Feb 1933; Harijan Tour Nov 1933 – Aug 1934. <strong>Congress Socialist Party May 1934 Patna</strong> (Narendra Dev, JP).</li>
+<li><strong>Third RTC 17 Nov – 24 Dec 1932</strong>; CDM formally suspended April 1934; Gandhi resigned from Congress Oct 1934. <strong>Government of India Act 1935 (2 August 1935)</strong>: All-India Federation (never operative — princes refused), provincial autonomy (worked), three lists (Federal 59 / Provincial 54 / Concurrent 36), Federal Court 1937 (Sir Maurice Gwyer first CJ), Sind &amp; Orissa separated 1936, RBI 1 Apr 1935. Nehru: "a new charter of slavery". Granville Austin: ~250 sections taken almost verbatim into the 1950 Constitution.</li>
+<li><strong>1937 elections:</strong> Congress 716/1,161 contested seats; ministries in <strong>Madras (Rajaji), Bombay (Kher), UP (Pant), Bihar (Sri Krishna Sinha), CP (Khare/Shukla), Orissa (Biswanath Das), NWFP (Dr Khan Sahib), Assam (Bordoloi coalition)</strong>; Muslim League 108/482 reserved Muslim seats. Wardha Basic Education Scheme 1937 (Zakir Husain). Bose-Gandhi split — Bose resigned April 1939, founded <strong>Forward Bloc 22 June 1939</strong>. Linlithgow declared war without consultation 3 September 1939; <strong>Congress ministries resigned Oct–Nov 1939</strong>; Muslim League celebrated 22 December 1939 as "Deliverance Day".</li>
+</ol>
+</section>
+
+
+
+</main>
+
+<aside>
+
+<div class="widget">
+<h4>Quick Reference</h4>
+<ul class="miniref">
+<li><strong>Gandhi returns:</strong> 9 Jan 1915</li>
+<li><strong>Champaran:</strong> 1917</li>
+<li><strong>Ahmedabad &amp; Kheda:</strong> 1918</li>
+<li><strong>Tilak Home Rule:</strong> Apr 1916</li>
+<li><strong>Besant Home Rule:</strong> Sep 1916</li>
+<li><strong>Lucknow Pact:</strong> Dec 1916</li>
+<li><strong>Montagu Decl.:</strong> 20 Aug 1917</li>
+<li><strong>Rowlatt Act:</strong> 18 Mar 1919</li>
+<li><strong>Jallianwala:</strong> 13 Apr 1919</li>
+<li><strong>GoI Act 1919:</strong> 23 Dec 1919</li>
+<li><strong>NCM launched:</strong> 1 Aug 1920</li>
+<li><strong>Nagpur Congress:</strong> Dec 1920</li>
+<li><strong>Chauri Chaura:</strong> 5 Feb 1922</li>
+<li><strong>Bardoli Resolution:</strong> 12 Feb 1922</li>
+<li><strong>Swaraj Party:</strong> 1 Jan 1923</li>
+<li><strong>Khilafat ended:</strong> 3 Mar 1924</li>
+<li><strong>Lahore Purna Swaraj:</strong> 19 Dec 1929</li>
+<li><strong>Dandi:</strong> 12 Mar – 6 Apr 1930</li>
+<li><strong>Gandhi-Irwin:</strong> 5 Mar 1931</li>
+<li><strong>Poona Pact:</strong> 24 Sep 1932</li>
+<li><strong>GoI Act 1935:</strong> 2 Aug 1935</li>
+</ul>
+</div>
+
+<div class="widget">
+<h4>Gandhian Texts</h4>
+<ul class="miniref">
+<li><em>Hind Swaraj</em> (1909)</li>
+<li><em>Indian Opinion</em> (1903)</li>
+<li><em>Young India</em> (1919, English)</li>
+<li><em>Navjivan</em> (1919, Gujarati)</li>
+<li><em>Harijan</em> (1933)</li>
+<li><em>My Experiments with Truth</em> (1927)</li>
+</ul>
+</div>
+
+<div class="widget">
+<h4>Key Sessions</h4>
+<ul class="miniref">
+<li>Lucknow 1916 &mdash; Mazumdar (reunion)</li>
+<li>Calcutta 1917 &mdash; Besant (first woman)</li>
+<li>Amritsar 1919 &mdash; Motilal Nehru</li>
+<li>Calcutta Special 1920 &mdash; Lala Lajpat Rai</li>
+<li>Nagpur 1920 &mdash; Vijayaraghavachariar</li>
+<li>Ahmedabad 1921 &mdash; Ajmal Khan (acting)</li>
+<li>Gaya 1922 &mdash; C.R. Das</li>
+<li>Belgaum 1924 &mdash; Gandhi (only time)</li>
+<li>Madras 1927 &mdash; Ansari</li>
+<li>Calcutta 1928 &mdash; Motilal</li>
+<li>Lahore 1929 &mdash; Jawaharlal</li>
+<li>Karachi 1931 &mdash; Patel</li>
+<li>Faizpur 1936 &mdash; Jawaharlal (rural)</li>
+<li>Tripuri 1939 &mdash; Bose (resigned)</li>
+</ul>
+</div>
+
+<div class="widget">
+<h4>UPSC Importance</h4>
+<div class="bar"><span class="lbl">Prelims</span><span class="track"><span class="fill" style="width:99%"></span></span></div>
+<div class="bar"><span class="lbl">Mains GS-I</span><span class="track"><span class="fill" style="width:99%"></span></span></div>
+<div class="bar"><span class="lbl">Essay</span><span class="track"><span class="fill" style="width:88%"></span></span></div>
+<div class="bar"><span class="lbl">Optional</span><span class="track"><span class="fill" style="width:98%"></span></span></div>
+</div>
+
+<div class="widget">
+<h4>Tags</h4>
+<div class="tags">
+<span>Gandhi</span><span>Satyagraha</span><span>Champaran</span><span>Rowlatt</span><span>Jallianwala</span><span>Khilafat</span><span>NCM</span><span>Chauri Chaura</span><span>Swaraj Party</span><span>HSRA</span><span>Bhagat Singh</span><span>Simon</span><span>Nehru Report</span><span>Purna Swaraj</span><span>Dandi</span><span>Gandhi-Irwin</span><span>Poona Pact</span><span>GoI 1935</span>
+</div>
+</div>
+
+<div class="widget">
+<h4>Quick Quiz</h4>
+<div class="quiz">
+<details><summary>What was the immediate trigger of Champaran satyagraha?</summary><p>The tinkathia system — peasants forced to cultivate indigo on 3/20 (15%) of their land for European planters in Champaran, Bihar. Rajkumar Shukla brought Gandhi in April 1917.</p></details>
+<details><summary>When was the Lucknow Pact signed?</summary><p>December 1916 — INC-Muslim League pact drafted by Tilak and Jinnah; Congress accepted separate electorates and weightage.</p></details>
+<details><summary>What did Montagu declare on 20 August 1917?</summary><p>"Increasing association of Indians… progressive realisation of responsible government in India as an integral part of the British Empire." First formal British commitment to responsible government.</p></details>
+<details><summary>What were the principal features of dyarchy?</summary><p>Provincial subjects split into Reserved (Governor + Executive Council — police, finance, revenue) and Transferred (Indian ministers — education, health, agriculture). 1919 Act, effective 1 Jan 1921.</p></details>
+<details><summary>Why did Gandhi suspend Non-Cooperation?</summary><p>Chauri Chaura, 5 Feb 1922 — mob killed 22 policemen at the thana. Bardoli Resolution, 12 Feb 1922, suspended NCM nationwide.</p></details>
+<details><summary>Who founded the Swaraj Party and when?</summary><p>1 January 1923, Allahabad. President C.R. Das, Secretary Motilal Nehru. Council-entry policy.</p></details>
+<details><summary>When did the Khilafat institution end?</summary><p>3 March 1924 — Mustafa Kemal Atatürk abolished the Khilafa institution itself, ending the Indian Khilafat movement.</p></details>
+</div>
+</div>
+
+<div class="widget">
+<h4>Related Notes</h4>
+<ul class="related">
+<li><a href="/modern-history/rise-of-indian-nationalism-and-early-inc-1858-1905">&rsaquo; Modern 08 — Rise of Nationalism</a></li>
+<li><a href="/modern-history/revolt-of-1857">&rsaquo; Modern 07 — Revolt of 1857</a></li>
+<li><a href="/modern-history/towards-independence-quit-india-to-partition-1939-1947">&rsaquo; Modern 10 — Towards Independence (Quit India to 1947)</a></li>
+</ul>
+</div>
+
+</aside>
+</div>
+</div>

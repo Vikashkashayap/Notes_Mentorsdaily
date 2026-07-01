@@ -11,6 +11,7 @@ export const SIDEBAR_SECTIONS: SidebarSection[] = [
       { key: "ancient", icon: "🏺", name: "Ancient History" },
       { key: "medieval", icon: "🕌", name: "Medieval History" },
       { key: "history", icon: "📜", name: "Modern History" },
+      { key: "worldhistory", icon: "🌍", name: "World History" },
       { key: "culture", icon: "🎭", name: "Art & Culture" },
       { key: "geo", icon: "🗺️", name: "Indian Geography" },
       { key: "worldgeo", icon: "🌐", name: "World Geography" },

@@ -20,6 +20,18 @@ import {
   getMedievalTopicSlug,
   isMedievalTopicId,
 } from "@/lib/medieval-notes";
+import {
+  getModernTopicSlug,
+  isModernTopicId,
+} from "@/lib/modern-notes";
+import {
+  getWorldTopicSlug,
+  isWorldTopicId,
+} from "@/lib/world-notes";
+import {
+  getWorldGeoTopicSlug,
+  isWorldGeoTopicId,
+} from "@/lib/worldgeo-notes";
 import { SYLLABUS_DATA } from "@/lib/upsc-syllabus/data";
 import type { Chapter } from "@/lib/upsc-syllabus/types";
 import type { SubjectKey } from "@/lib/upsc-syllabus/types";
@@ -48,6 +60,15 @@ export function topicPath(subjectKey: SubjectKey, chapterId: string): string {
   }
   if (subjectKey === "medieval" && isMedievalTopicId(chapterId)) {
     return `${subjectHubPath("medieval")}/${getMedievalTopicSlug(chapterId)}`;
+  }
+  if (subjectKey === "history" && isModernTopicId(chapterId)) {
+    return `${subjectHubPath("history")}/${getModernTopicSlug(chapterId)}`;
+  }
+  if (subjectKey === "worldhistory" && isWorldTopicId(chapterId)) {
+    return `${subjectHubPath("worldhistory")}/${getWorldTopicSlug(chapterId)}`;
+  }
+  if (subjectKey === "worldgeo" && isWorldGeoTopicId(chapterId)) {
+    return `${subjectHubPath("worldgeo")}/${getWorldGeoTopicSlug(chapterId)}`;
   }
   if (subjectKey === "ethics" && isEthicsTopicId(chapterId)) {
     return `${subjectHubPath("ethics")}/${getEthicsTopicSlug(chapterId)}`;
@@ -79,6 +100,24 @@ export function getChapterByTopicSlug(
     return subject.chapters.find(
       (ch) =>
         isMedievalTopicId(ch.id) && getMedievalTopicSlug(ch.id) === slug,
+    );
+  }
+  if (subjectKey === "history") {
+    return subject.chapters.find(
+      (ch) =>
+        isModernTopicId(ch.id) && getModernTopicSlug(ch.id) === slug,
+    );
+  }
+  if (subjectKey === "worldhistory") {
+    return subject.chapters.find(
+      (ch) =>
+        isWorldTopicId(ch.id) && getWorldTopicSlug(ch.id) === slug,
+    );
+  }
+  if (subjectKey === "worldgeo") {
+    return subject.chapters.find(
+      (ch) =>
+        isWorldGeoTopicId(ch.id) && getWorldGeoTopicSlug(ch.id) === slug,
     );
   }
   if (subjectKey === "ethics") {
@@ -119,6 +158,18 @@ export function getChapterHref(
     if (!isMedievalTopicId(chapter.id)) return null;
     return topicPath("medieval", chapter.id);
   }
+  if (subjectKey === "history" || isModernTopicId(chapter.id)) {
+    if (!isModernTopicId(chapter.id)) return null;
+    return topicPath("history", chapter.id);
+  }
+  if (subjectKey === "worldhistory" || isWorldTopicId(chapter.id)) {
+    if (!isWorldTopicId(chapter.id)) return null;
+    return topicPath("worldhistory", chapter.id);
+  }
+  if (subjectKey === "worldgeo" || isWorldGeoTopicId(chapter.id)) {
+    if (!isWorldGeoTopicId(chapter.id)) return null;
+    return topicPath("worldgeo", chapter.id);
+  }
   if (subjectKey === "ethics" || isEthicsTopicId(chapter.id)) {
     if (!isEthicsTopicId(chapter.id)) return null;
     return topicPath("ethics", chapter.id);
@@ -151,6 +202,12 @@ export function getAllTopicPaths(): { subjectKey: SubjectKey; slug: string }[] {
         paths.push({ subjectKey: key, slug: getAncientTopicSlug(ch.id) });
       } else if (key === "medieval" && isMedievalTopicId(ch.id)) {
         paths.push({ subjectKey: key, slug: getMedievalTopicSlug(ch.id) });
+      } else if (key === "history" && isModernTopicId(ch.id)) {
+        paths.push({ subjectKey: key, slug: getModernTopicSlug(ch.id) });
+      } else if (key === "worldhistory" && isWorldTopicId(ch.id)) {
+        paths.push({ subjectKey: key, slug: getWorldTopicSlug(ch.id) });
+      } else if (key === "worldgeo" && isWorldGeoTopicId(ch.id)) {
+        paths.push({ subjectKey: key, slug: getWorldGeoTopicSlug(ch.id) });
       } else if (key === "ethics" && isEthicsTopicId(ch.id)) {
         paths.push({ subjectKey: key, slug: getEthicsTopicSlug(ch.id) });
       } else if (key === "polity" && isPolityTopicId(ch.id)) {
@@ -162,6 +219,9 @@ export function getAllTopicPaths(): { subjectKey: SubjectKey; slug: string }[] {
       } else if (
         key !== "ancient" &&
         key !== "medieval" &&
+        key !== "history" &&
+        key !== "worldhistory" &&
+        key !== "worldgeo" &&
         key !== "ethics" &&
         key !== "polity" &&
         key !== "society" &&

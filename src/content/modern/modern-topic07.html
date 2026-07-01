@@ -1,0 +1,961 @@
+<!-- modern-topic07 — auto-imported from modern-topic07-admin-changes-after-1858-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#8b1a2a;
+  --brand-blue-dark:#5a0e1a;
+  --brand-blue-light:#fdf0f2;
+  --brand-orange:#c9940a;
+  --brand-orange-light:#fff8e8;
+  --green:#2e7a47;
+  --green-light:#eaf5ef;
+  --text-dark:#1a1a2e;
+  --text-mid:#444;
+  --text-light:#888;
+  --border:#e2e8f0;
+  --bg:#fafaf8;
+  --card:#ffffff;
+  --accent:#fdf5f6;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Inter','Segoe UI',-apple-system,sans-serif;color:var(--text-dark);background:var(--bg);line-height:1.65;font-size:16px}
+.topnav{background:var(--brand-blue-dark);color:#fff;padding:14px 28px;position:sticky;top:0;z-index:50;box-shadow:0 2px 6px rgba(0,0,0,0.22);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.nav-logo{font-size:20px;font-weight:800;color:#fff;text-decoration:none;letter-spacing:-0.5px}
+.nav-logo span{color:var(--brand-orange)}
+.nav-pills{display:flex;flex-wrap:wrap;gap:7px}
+.pill{background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.22);color:#fff;padding:5px 12px;border-radius:99px;font-size:12px;font-weight:500}
+.hero{background:linear-gradient(135deg,#8b1a2a 0%,#5a0e1a 55%,#3a0810 100%);color:#fff;padding:54px 28px 44px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(201,148,10,0.22),transparent 55%);pointer-events:none}
+.hero-inner{max-width:1240px;margin:0 auto;position:relative;z-index:2}
+.breadcrumb{font-size:13px;color:rgba(255,255,255,0.65);margin-bottom:14px}
+.hero h1{font-size:38px;margin:0 0 14px;font-weight:800;letter-spacing:-0.5px;line-height:1.18}
+.hero-sub{font-size:17px;color:rgba(255,255,255,0.80);max-width:880px;margin:0 0 20px;line-height:1.6}
+.hero-pills{display:flex;flex-wrap:wrap;gap:8px}
+.hero-pills span{background:rgba(255,255,255,0.13);border:1px solid rgba(255,255,255,0.22);color:#fff;padding:6px 13px;border-radius:99px;font-size:12.5px;font-weight:500}
+.layout{display:grid;grid-template-columns:1fr 320px;gap:28px;max-width:1240px;margin:28px auto;padding:0 28px}
+@media(max-width:1024px){.layout{grid-template-columns:1fr;padding:0 18px}}
+main{min-width:0}
+.toc{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 22px;margin-bottom:22px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--brand-blue);font-weight:700}
+.toc ol{margin:0;padding-left:22px;font-size:14.5px;column-count:2;column-gap:24px}
+@media(max-width:680px){.toc ol{column-count:1}}
+.toc li{margin:4px 0;break-inside:avoid}
+.toc a{color:var(--text-dark);text-decoration:none}
+.toc a:hover{color:var(--brand-blue);text-decoration:underline}
+.concept-box{background:linear-gradient(135deg,#fdf5f6 0%,#fde8ec 100%);border-left:5px solid var(--brand-orange);border-radius:10px;padding:22px 26px;margin-bottom:26px;box-shadow:0 2px 6px rgba(201,148,10,0.10)}
+.concept-box h3{margin:0 0 10px;font-size:18px;color:var(--brand-blue-dark);font-weight:700}
+.concept-box p{margin:0 0 10px;font-size:15px;color:#2a1010}
+.concept-box ul{margin:8px 0 0;padding-left:22px}
+.concept-box li{margin:5px 0;font-size:14.5px;color:#2a1010}
+.notes{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:26px 30px;margin-bottom:22px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.notes h2{font-size:24px;color:var(--brand-blue-dark);margin:0 0 14px;padding-bottom:10px;border-bottom:2px solid var(--accent);font-weight:700}
+.notes h3{font-size:18px;color:var(--brand-blue);margin:22px 0 10px;font-weight:700}
+.notes h4{font-size:15.5px;color:var(--brand-blue-dark);margin:16px 0 8px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px}
+.notes p{margin:0 0 12px}
+.notes ul,.notes ol{margin:8px 0 14px;padding-left:24px}
+.notes li{margin:5px 0}
+.notes strong{color:var(--brand-blue-dark)}
+.notes em{color:#7a4d0a;font-style:italic}
+.callout{background:var(--brand-blue-light);border-left:4px solid var(--brand-blue);padding:14px 18px;border-radius:6px;margin:14px 0;font-size:14.5px}
+.callout.gold{background:var(--brand-orange-light);border-left-color:var(--brand-orange)}
+.callout.green{background:var(--green-light);border-left-color:var(--green)}
+.callout.warn{background:#fef0e6;border-left-color:#c25e1c}
+.tbl{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+.tbl th,.tbl td{border:1px solid var(--border);padding:8px 11px;text-align:left;vertical-align:top}
+.tbl th{background:var(--brand-blue);color:#fff;font-weight:600}
+.tbl tr:nth-child(even) td{background:#fdf5f6}
+.pyq{background:#fff;border:1px solid var(--border);border-left:4px solid var(--brand-orange);border-radius:6px;padding:12px 16px;margin:10px 0;font-size:14.5px}
+.pyq .year{display:inline-block;background:var(--brand-orange);color:#fff;padding:2px 9px;border-radius:99px;font-size:12px;font-weight:600;margin-bottom:6px}
+.revision{background:linear-gradient(135deg,#5a0e1a 0%,#8b1a2a 100%);color:#fff;border-radius:12px;padding:26px 30px;margin-bottom:22px}
+.revision h3{color:var(--brand-orange);margin:0 0 14px;font-size:20px}
+.revision ol{padding-left:22px;margin:0}
+.revision li{margin:6px 0;font-size:14.5px;color:#f5d0d5}
+aside{min-width:0}
+.widget{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:16px 18px;margin-bottom:18px;box-shadow:0 1px 3px rgba(0,0,0,0.04)}
+.widget h4{margin:0 0 10px;font-size:13px;text-transform:uppercase;letter-spacing:1px;color:var(--brand-blue);font-weight:700;border-bottom:1px solid var(--border);padding-bottom:7px}
+.widget .miniref{font-size:13px;list-style:none;padding:0;margin:0}
+.widget .miniref li{margin:5px 0}
+.bar{display:flex;align-items:center;gap:8px;margin:6px 0;font-size:13px}
+.bar .lbl{width:96px;color:var(--text-mid)}
+.bar .track{flex:1;height:7px;background:#eee;border-radius:99px;overflow:hidden}
+.bar .fill{height:100%;background:linear-gradient(90deg,var(--brand-orange),#9a7008);border-radius:99px}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tags span{background:var(--brand-blue-light);color:var(--brand-blue);padding:3px 9px;border-radius:99px;font-size:11.5px;font-weight:500}
+.related{list-style:none;padding:0;margin:0;font-size:13.5px}
+.related li{margin:6px 0}
+.related a{color:var(--brand-blue);text-decoration:none;font-weight:500}
+.related a:hover{text-decoration:underline}
+.quiz{font-size:13.5px}
+.quiz details{margin:7px 0;border-bottom:1px dashed var(--border);padding-bottom:7px}
+.quiz summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark)}
+.quiz p{margin:6px 0 0;color:var(--text-mid);font-size:13px}
+footer{background:var(--brand-blue-dark);color:#f5d0d5;padding:24px 28px;text-align:center;font-size:13px;margin-top:34px}
+footer strong{color:#fff}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="hero">
+  <div class="hero-inner">
+    <div class="breadcrumb">Home &rsaquo; UPSC Notes &rsaquo; Modern History &rsaquo; Topic 07</div>
+    <h1>Administrative Changes in British India after 1858 &mdash; Complete UPSC Notes</h1>
+    <p class="hero-sub">From Crown takeover to Indian Independence &middot; GoI Act 1858 &middot; Indian Councils Acts 1861/1892/1909 &middot; Montagu-Chelmsford 1919 &middot; GoI Act 1935 &middot; The constitutional spine of British Raj 1858&ndash;1947</p>
+    <div class="hero-pills">
+      <span>GoI Act 1858</span>
+      <span>Queen's Proclamation 1 Nov 1858</span>
+      <span>Indian Councils Act 1861</span>
+      <span>Morley-Minto 1909</span>
+      <span>Montagu-Chelmsford 1919</span>
+      <span>GoI Act 1935</span>
+      <span>Indian Independence Act 1947</span>
+    </div>
+  </div>
+</div>
+<div class="layout">
+<main>
+
+<div class="toc">
+<h3>On this page</h3>
+<ol>
+<li><a href="#concept">Conceptual Clarity</a></li>
+<li><a href="#s1">1858 &mdash; Why a Watershed</a></li>
+<li><a href="#s2">Government of India Act 1858 &mdash; Crown Takeover</a></li>
+<li><a href="#s3">Secretary of State for India &amp; Council of India</a></li>
+<li><a href="#s4">Viceroy &amp; the Executive Council</a></li>
+<li><a href="#s5">Queen Victoria's Proclamation, 1 Nov 1858</a></li>
+<li><a href="#s6">Indian Councils Act 1861</a></li>
+<li><a href="#s7">Indian High Courts Act 1861 &mdash; Unified Judiciary</a></li>
+<li><a href="#s8">Codification Finalised &mdash; IPC, CrPC, CPC, Evidence Act</a></li>
+<li><a href="#s9">Indian Police Act 1861 &amp; Police Commission 1902</a></li>
+<li><a href="#s10">Local Self-Government &mdash; Mayo 1870, Ripon 1882</a></li>
+<li><a href="#s11">Indian Councils Act 1892 (Lansdowne Reforms)</a></li>
+<li><a href="#s12">Morley-Minto Reforms &mdash; Indian Councils Act 1909</a></li>
+<li><a href="#s13">Montagu-Chelmsford Reforms &mdash; GoI Act 1919</a></li>
+<li><a href="#s14">Simon, Round Tables &amp; Communal Award</a></li>
+<li><a href="#s15">Government of India Act 1935</a></li>
+<li><a href="#s16">Federal Court 1937 &amp; the Judicial Apex</a></li>
+<li><a href="#s17">Civil Service Post-1858 &mdash; Aitchison, Islington, Lee</a></li>
+<li><a href="#s18">Army &amp; Police Restructuring 1858&ndash;1947</a></li>
+<li><a href="#s19">Cripps, Cabinet Mission &amp; Indian Independence Act 1947</a></li>
+<li><a href="#s20">Continuity to the Constitution of India 1950</a></li>
+<li><a href="#pyq">Previous Year Questions</a></li>
+<li><a href="#revision">15 Must-Know Facts</a></li>
+</ol>
+</div>
+
+<div class="concept-box" id="concept">
+<h3>Why this topic matters for UPSC</h3>
+<p>The 89-year span from <strong>Crown takeover (2 August 1858)</strong> to the <strong>Indian Independence Act (18 July 1947)</strong> contains every Act, commission, and reform that built the modern Indian state. The Constitution of India 1950 borrowed entire chapters from the Government of India Act 1935; the civil services, the police, the judiciary, the army, the federal architecture &mdash; all were shaped here.</p>
+<ul>
+<li><strong>Prelims:</strong> Year-by-year provisions of every constitutional Act (1858, 1861, 1892, 1909, 1919, 1935, 1947); names of Viceroys, Secretaries of State, commissions (Aitchison, Hunter, Hartog, Sapru, Simon).</li>
+<li><strong>Mains GS-I:</strong> "Trace the evolution of representative institutions in British India"; "Examine the constitutional development from 1861 to 1935"; "Assess the impact of the GoI Act 1935 on the Indian Constitution".</li>
+<li><strong>Mains GS-II (Polity):</strong> Laxmikanth Chapter 1 (Historical Background) tests these Acts directly &mdash; Indian Councils Act 1909 (communal electorates), GoI Act 1935 (federal scheme).</li>
+<li><strong>Cause-and-effect:</strong> Each reform was a response to a national-movement pressure point &mdash; INC formation 1885, partition of Bengal 1905, Lucknow Pact 1916, Non-Cooperation 1920&ndash;22, Civil Disobedience 1930&ndash;34, Quit India 1942. This chapter is the British administrative side of the story whose political side is told in Topics 12&ndash;17.</li>
+</ul>
+</div>
+
+<section class="notes" id="s1">
+<h2>1. 1858 &mdash; Why a Watershed</h2>
+<p>The Sepoy Mutiny &mdash; or Revolt of 1857 (Topic 06) &mdash; lasted from 10 May 1857 to mid-1859. Even before the last embers were extinguished, the British Parliament concluded that the East India Company's rule had become indefensible. On <strong>2 August 1858</strong>, Lord Derby's Conservative government passed the <em>Government of India Act 1858</em> &mdash; "An Act for the Better Government of India" &mdash; transferring the government, territories, and revenues of India from the EIC to the British Crown.</p>
+
+<h3>1.1 Why the Crown Had to Step In</h3>
+<ul>
+<li><strong>Financial collapse:</strong> The Revolt cost the EIC approximately &pound;40 million; the Company was effectively bankrupt and could not raise loans without Crown guarantees.</li>
+<li><strong>Political indefensibility:</strong> Parliament had been embarrassed before the world that a trading company governed 150 million Indians; the Mutiny made dual control untenable.</li>
+<li><strong>Strategic considerations:</strong> India was now critical to British global strategy &mdash; Russia in Central Asia, China trade, Suez (the canal would open in 1869). The Crown wanted direct control of military and foreign policy.</li>
+<li><strong>The Mutiny's lessons:</strong> The British concluded that aggressive reform (annexations, Christian missionary penetration, social reform like the Hindu Widow Remarriage Act 1856) had alienated the Indian elite. The post-1858 settlement was self-consciously cautious &mdash; "no innovation in religion, no annexation of princely states, no interference with custom".</li>
+</ul>
+
+<h3>1.2 Four Continuities and Four Discontinuities</h3>
+<table class="tbl">
+<tr><th>Continuities (1857 &rarr; 1858 &rarr; 1947)</th><th>Discontinuities (created in 1858)</th></tr>
+<tr><td>Civil service structure (ICS)</td><td>EIC abolished; Crown government direct</td></tr>
+<tr><td>District administration (Collector-Magistrate)</td><td>Court of Directors + Board of Control replaced by Secretary of State for India + Council</td></tr>
+<tr><td>Adalat / district court structure (unified into High Courts 1861)</td><td>GG of India &rarr; Governor-General and Viceroy of India</td></tr>
+<tr><td>Land revenue systems (Permanent / Ryotwari / Mahalwari)</td><td>Princely states &mdash; Doctrine of Lapse abandoned; paramountcy frozen at 1858 boundaries</td></tr>
+</table>
+</section>
+
+<section class="notes" id="s2">
+<h2>2. Government of India Act 1858 &mdash; Crown Takeover</h2>
+<p>Passed by Parliament on <strong>2 August 1858</strong>; came into force on <strong>1 November 1858</strong> by Queen Victoria's Proclamation at Allahabad (read by Lord Canning). Also known as the "Act for the Good Government of India".</p>
+
+<h3>2.1 Key Provisions</h3>
+<ul>
+<li><strong>Abolition of the East India Company:</strong> The Company was dissolved as a governing body; all its territories, troops, debts, treaties, and liabilities transferred to the Crown.</li>
+<li><strong>Abolition of the Court of Directors and Board of Control:</strong> The "double government" in London established in 1784 (Topic 05) was ended.</li>
+<li><strong>Secretary of State for India:</strong> A new office in the British Cabinet &mdash; a member of the British government, accountable to Parliament &mdash; who would exercise the powers previously held by the Directors and the Board of Control. <strong>Lord Stanley</strong> became the first Secretary of State for India (effective 2 September 1858).</li>
+<li><strong>Council of India:</strong> A 15-member advisory council to the Secretary of State, sitting in London; at least nine members had to have served in India for at least 10 years. Eight members initially nominated by the Crown; seven elected by the Court of Directors (for the first time only).</li>
+<li><strong>Governor-General and Viceroy:</strong> The GG of India was now also styled the <strong>Viceroy</strong> &mdash; the personal representative of the Sovereign. <strong>Lord Canning</strong> became the first Viceroy (effective 1 November 1858).</li>
+<li><strong>Indian Civil Service:</strong> The Covenanted Civil Service was formally renamed the <em>Indian Civil Service</em>; recruitment continued by open competitive examination (introduced by the Charter Act 1853).</li>
+<li><strong>Crown control of armed forces:</strong> All EIC troops transferred to Crown service; the British forces in India henceforth a part of the regular British Army (the actual amalgamation of Company &amp; Royal forces was completed by the Army Acts of 1860).</li>
+</ul>
+
+<h3>2.2 What Did <em>Not</em> Change</h3>
+<ul>
+<li>The Indian Council Act 1861 (next year) was still needed to restore legislative powers to the Presidencies.</li>
+<li>The High Courts Act 1861 was still needed to unify the dual judicial system.</li>
+<li>The Police Act 1861 was still needed to create a modern police force.</li>
+<li>There was no Indian on the Viceroy's Council until 1909.</li>
+<li>No elections to any legislative body till the Indian Councils Act 1892.</li>
+</ul>
+
+<div class="callout"><strong>Significance:</strong> The 1858 Act was constitutional surgery, not political reform. It changed <em>who</em> ruled India (Crown, not Company) but not <em>how</em> India was ruled. The substantive political reforms &mdash; representative institutions, election principle, Indianisation &mdash; would come decades later in response to the national movement.</div>
+</section>
+
+<section class="notes" id="s3">
+<h2>3. Secretary of State for India &amp; the Council of India</h2>
+<p>The post-1858 London end of the Indian administration consisted of two new offices: the <strong>Secretary of State for India</strong> (SoS) &mdash; a Cabinet minister &mdash; and the <strong>Council of India</strong> &mdash; an advisory body to assist him. Together they replaced the EIC's Court of Directors and the Crown's Board of Control.</p>
+
+<h3>3.1 Secretary of State for India</h3>
+<ul>
+<li>A member of the British Cabinet &mdash; usually held simultaneously by a senior politician.</li>
+<li>Held the powers of the former Board of Control and Court of Directors combined &mdash; "to superintend, direct, and control all acts, operations and concerns" relating to the government of India.</li>
+<li>Answerable to Parliament; Parliament could (and did) question the Secretary of State on Indian affairs.</li>
+<li>Salary and expenses of the India Office and Council of India were paid from <strong>Indian revenues</strong> &mdash; a deeply controversial practice critiqued by Naoroji and the early Congress (charged in the "drain" account).</li>
+<li>Notable holders &mdash; with the dates they took office:
+<ul>
+<li>Lord Stanley (1858; first holder)</li>
+<li>Sir Charles Wood (1859&ndash;66) &mdash; author of Wood's Despatch 1854</li>
+<li>Marquess of Salisbury (1866&ndash;67, 1874&ndash;78)</li>
+<li>Lord John Morley (1905&ndash;10) &mdash; co-author Morley-Minto Reforms 1909</li>
+<li>Edwin Samuel Montagu (1917&ndash;22) &mdash; co-author Montagu-Chelmsford Reforms 1919</li>
+<li>Sir Samuel Hoare (1931&ndash;35) &mdash; co-author GoI Act 1935</li>
+<li>Lord Pethick-Lawrence (1945&ndash;47) &mdash; led Cabinet Mission March 1946</li>
+<li>Lord Listowel (Apr&ndash;Aug 1947) &mdash; last Secretary of State; the office was abolished on 15 August 1947</li>
+</ul></li>
+</ul>
+
+<h3>3.2 Council of India</h3>
+<ul>
+<li>15 members originally (1858); reduced to 10 by the Government of India Act 1869, restored to 15.</li>
+<li>Nine members must have served in India at least 10 years.</li>
+<li>Initially &mdash; 8 nominated by Crown, 7 by Court of Directors (transition only); from 1869 onwards all 15 by Crown.</li>
+<li>Tenure 10 years initially, later 5 (Indian Councils Act 1907).</li>
+<li>The SoS was bound to consult the Council in some matters (e.g. revenue, civil service) but could overrule it in others (war, peace, secret instructions through the Secret Committee).</li>
+<li>Council of India abolished by the Government of India Act 1935 (effective 1 April 1937) &mdash; replaced by a smaller advisory body.</li>
+</ul>
+
+<h3>3.3 The Secret Committee</h3>
+<p>For matters of war, peace, and high diplomacy, the Secretary of State could bypass the full Council of India and consult only the <strong>Secret Committee</strong> &mdash; a sub-committee of the Council. Despatches transmitted via the Secret Committee were not laid before Parliament. This procedure was used for the most sensitive imperial communications &mdash; e.g. the Younghusband Expedition to Tibet 1903&ndash;04, the Afghan policy of the 1880s.</p>
+
+<h3>3.4 The India Office</h3>
+<ul>
+<li>Located at Whitehall, London (the building on King Charles Street still exists as the Foreign &amp; Commonwealth Office's India Office Wing).</li>
+<li>Housed the SoS, the Council of India, and the entire London staff &mdash; about 1,000 officials by 1900.</li>
+<li>India Office Library (now part of the British Library, since 1982) holds an enormous archive &mdash; primary source for most modern Indian history.</li>
+<li>The India Office was abolished on 15 August 1947 and merged into the new Commonwealth Relations Office (later, in 1968, into the Foreign &amp; Commonwealth Office).</li>
+</ul>
+</section>
+
+<section class="notes" id="s4">
+<h2>4. Viceroy and Governor-General &amp; the Executive Council</h2>
+<p>The 1858 Act renamed the Governor-General of India as <strong>Viceroy and Governor-General of India</strong>. The two titles served distinct functions: "Viceroy" was the personal representative of the Sovereign and held diplomatic functions (especially with princely states); "Governor-General" was the head of the executive government and the chief legislative authority. In practice, both titles were always held by the same person.</p>
+
+<h3>4.1 The First Eight Viceroys</h3>
+<table class="tbl">
+<tr><th>Viceroy</th><th>Tenure</th><th>Key Events</th></tr>
+<tr><td>Lord Canning</td><td>1858&ndash;62</td><td>First Viceroy; Queen's Proclamation 1 Nov 1858; Indian Councils Act 1861; High Courts Act 1861; IPC 1860, CrPC 1861, Police Act 1861</td></tr>
+<tr><td>Lord Elgin I</td><td>1862&ndash;63</td><td>Wahabi movement; died in office at Dharamsala</td></tr>
+<tr><td>Sir John Lawrence</td><td>1864&ndash;69</td><td>Bhutan War 1864&ndash;65; Orissa famine 1866; "Masterly Inactivity" on Afghan frontier; Simla as summer capital from 1864</td></tr>
+<tr><td>Lord Mayo</td><td>1869&ndash;72</td><td>Financial decentralisation (Mayo Resolution 14 December 1870); first Census 1872; assassinated at Port Blair 8 Feb 1872</td></tr>
+<tr><td>Lord Northbrook</td><td>1872&ndash;76</td><td>Reduction in salt tax; resigned over Disraeli's Afghan policy</td></tr>
+<tr><td>Lord Lytton</td><td>1876&ndash;80</td><td>Royal Titles Act &mdash; Queen Victoria "Empress of India" 1 Jan 1877 (Delhi Durbar); Vernacular Press Act 1878; Indian Arms Act 1878; Second Anglo-Afghan War 1878&ndash;80</td></tr>
+<tr><td>Lord Ripon</td><td>1880&ndash;84</td><td>Repeal of Vernacular Press Act 1882; Resolution on Local Self-Government 18 May 1882 ("father of local self-government"); Hunter Education Commission 1882; First Factories Act 1881; Ilbert Bill controversy 1883</td></tr>
+<tr><td>Lord Dufferin</td><td>1884&ndash;88</td><td>Third Anglo-Burmese War 1885; Bengal Tenancy Act 1885; Indian National Congress formed 28 Dec 1885 (during his tenure)</td></tr>
+</table>
+
+<h3>4.2 The Executive Council</h3>
+<ul>
+<li>By the GoI Act 1858, the Viceroy's Executive Council retained the structure of the late EIC period &mdash; GG + 3 (later 4) members + Law Member + Finance Member.</li>
+<li><strong>Portfolio system:</strong> Introduced by Lord Canning informally in 1861 &mdash; each Council member was assigned a "portfolio" of departments (Home, Foreign, Finance, Military, Law). This is the origin of the modern Cabinet system in India.</li>
+<li>Members of the Viceroy's Executive Council were exclusively British until <strong>Sir S. P. Sinha</strong> became the first Indian (Law Member) in 1909, appointed under the Indian Councils Act 1909.</li>
+<li>Sinha was followed by <strong>Sir Krishna Govind Gupta</strong>, <strong>Sir Tej Bahadur Sapru</strong>, <strong>Sir Sankaran Nair</strong> and others.</li>
+<li>By the GoI Act 1919 (in force 1921) the Viceroy's Executive Council had to include at least 3 Indians out of 6 members &mdash; the first major Indianisation at the central level.</li>
+</ul>
+
+<h3>4.3 The Viceroy's Powers</h3>
+<ul>
+<li>Executive: Supreme civil and military authority in India; appointed Governors of Provinces; conducted diplomacy with princely states.</li>
+<li>Legislative: Could veto any Bill passed by the legislature; could promulgate Ordinances; reserved subjects for the SoS.</li>
+<li>Judicial: Highest authority for clemency, pardon, commutation of death sentences.</li>
+<li>Financial: Approved the annual budget; could overrule the Finance Member in cases of imperial interest.</li>
+</ul>
+</section>
+
+<section class="notes" id="s5">
+<h2>5. Queen Victoria's Proclamation &mdash; 1 November 1858</h2>
+<p>The first formal document of the new regime was the Proclamation issued by Queen Victoria on <strong>1 November 1858</strong> and read out simultaneously at Allahabad (by Lord Canning), Lahore, Calcutta, Bombay, Madras and other Presidency capitals. It is sometimes called the "Magna Carta of India" &mdash; though, as later events showed, its promises were honoured chiefly in the breach.</p>
+
+<h3>5.1 Key Pledges</h3>
+<ul>
+<li><strong>Princely states:</strong> The Doctrine of Lapse was abandoned. The Crown undertook to "respect the rights, dignity and honour of native Princes as our own" and would not annex states. (Implemented &mdash; no further annexations till 1947.)</li>
+<li><strong>Religious neutrality:</strong> "We disclaim alike the right and the desire to impose Our Convictions on any of Our Subjects." The state would not patronise missionary activity nor interfere with religious customs.</li>
+<li><strong>Civil employment:</strong> Indians would be "admitted to offices in Our Service, the duties of which they may be qualified, by their education, ability and integrity, duly to discharge". (Honoured chiefly in the breach &mdash; ICS remained 95% European till 1920s; only progressive Indianisation after the Lee Commission 1924.)</li>
+<li><strong>Land tenures:</strong> Existing rights of zamindars, taluqdars and others to be respected; no agrarian disturbance.</li>
+<li><strong>Amnesty:</strong> Amnesty for all sepoys and rebels except those who had committed murder. (Selective in practice; key leaders like Tantia Tope hanged 18 April 1859, Rani Lakshmibai killed in battle 18 June 1858, Nana Sahib fled to Nepal.)</li>
+<li><strong>Religious laws:</strong> Pre-existing religious and customary laws of India to be respected by the courts.</li>
+</ul>
+
+<h3>5.2 What the Proclamation Did <em>Not</em> Promise</h3>
+<ul>
+<li>Self-government, representative institutions, dominion status, or any form of Indian voice in central government &mdash; the Proclamation was a paternalist document of dynastic loyalty, not a constitutional bill of rights.</li>
+<li>Equal civil rights with Europeans &mdash; the Ilbert Bill controversy of 1883 showed how thinly the equality before the law actually went.</li>
+<li>Any time-frame for the development of Indian self-rule.</li>
+</ul>
+
+<div class="callout gold"><strong>UPSC anchor &mdash; the four "abandoned" doctrines:</strong> The Queen's Proclamation effectively abandoned (i) the Doctrine of Lapse, (ii) annexation policy, (iii) social reform via legislation (no repeat of the 1856 Widow Remarriage Act till the 1870s), and (iv) overt missionary patronage. These four policy reversals defined the post-1858 conservatism that lasted till the agitations of the early 20th century forced fresh changes.</div>
+</section>
+
+<section class="notes" id="s6">
+<h2>6. Indian Councils Act 1861</h2>
+<p>The first major reform after the Crown takeover. Passed by Parliament; came into force on <strong>1 August 1861</strong>. Its central purpose was to restore the legislative powers that the Charter Act 1833 had centralised in the GG-in-Council, by giving back limited legislative authority to the Presidencies (and to allow non-official Indian voices to be heard in the legislatures, however informally).</p>
+
+<h3>6.1 Key Provisions</h3>
+<ul>
+<li><strong>Expansion of the Viceroy's Executive Council:</strong> The Council was expanded for legislative purposes by 6 to 12 additional members nominated by the GG (the "Legislative Council") &mdash; at least half had to be non-official.</li>
+<li><strong>Non-official Indians:</strong> For the first time, Indians could be nominated as non-official members of the Legislative Council. Three Indians were nominated in 1862: the Raja of Banaras, the Maharaja of Patiala, and Sir Dinkar Rao (Diwan of Gwalior).</li>
+<li><strong>Restoration of legislative powers to Presidencies:</strong> Madras and Bombay had Legislative Councils restored (4&ndash;8 members, similarly with non-official Indians). Other provinces could be granted Legislative Councils by the GG &mdash; Bengal 1862, NWP 1886, Punjab and Burma 1897, Bihar/Orissa 1912.</li>
+<li><strong>Portfolio system formalised:</strong> Each member of the Executive Council was responsible for one or more "portfolios" of departments. This Cabinet-style allocation was Canning's innovation, now given statutory recognition.</li>
+<li><strong>Ordinances:</strong> The Viceroy could issue Ordinances during the recess of the Legislative Council; valid for six months. (The constitutional ancestor of Article 123 of the Indian Constitution.)</li>
+<li><strong>Three subjects reserved for the GG-in-Council:</strong> Foreign relations, religion, customs of land revenue &mdash; the Provincial Councils could not legislate on these without the GG's prior sanction.</li>
+</ul>
+
+<h3>6.2 What the 1861 Act Did <em>Not</em> Do</h3>
+<ul>
+<li>No principle of election &mdash; all Indians on the Council were nominated by the Viceroy.</li>
+<li>The "Council" had no real legislative initiative &mdash; it merely advised on Bills brought forward by the official side; the official majority always carried the vote.</li>
+<li>No questions could be asked on government policy; no resolutions could be moved; no discussion of the budget.</li>
+<li>The Indian members were ornamental "loyalists" &mdash; rajas, taluqdars, diwans &mdash; not yet representatives of the educated middle class.</li>
+</ul>
+
+<div class="callout"><strong>Significance:</strong> Despite its limitations, the 1861 Act has three important constitutional firsts &mdash; (i) the first time Indians were associated with the Government of India at the central level (however nominally); (ii) the first restoration of provincial legislative powers since 1833; (iii) the first formal recognition of the portfolio (Cabinet) system. Each of these threads grew into a full institution by the time of independence.</div>
+</section>
+
+<section class="notes" id="s7">
+<h2>7. Indian High Courts Act 1861 &mdash; Unified Judiciary</h2>
+<p>The dual judicial structure inherited from the Company era &mdash; Crown's Supreme Courts at the Presidency towns and Company's Sadar Adalats in the mofussil (Topic 05) &mdash; was finally unified by the Indian High Courts Act 1861.</p>
+
+<h3>7.1 Key Provisions</h3>
+<ul>
+<li>Authorised the Crown to establish, by Letters Patent, one High Court of Judicature in each of the three Presidencies (Calcutta, Madras, Bombay).</li>
+<li>The High Court would replace and inherit the jurisdiction of the existing Supreme Court (Presidency town) and Sadar Adalats (mofussil) &mdash; consolidating the two systems.</li>
+<li>Each High Court to consist of a Chief Justice and not more than 15 other judges. At least one-third had to be barristers of at least 5 years' standing; at least one-third had to be members of the Covenanted Civil Service of at least 10 years' standing; the rest could be drawn from pleaders or sub-judges with experience.</li>
+<li>Jurisdiction: original (in the Presidency town), appellate (over the entire province), supervisory (over subordinate courts), criminal (with original and appellate jurisdiction).</li>
+<li>Direct appeal to the Judicial Committee of the Privy Council (London) in all civil matters above a specified valuation; in criminal matters, certified questions of law.</li>
+</ul>
+
+<h3>7.2 The Three Original High Courts</h3>
+<table class="tbl">
+<tr><th>High Court</th><th>Established</th><th>First Chief Justice</th></tr>
+<tr><td>Calcutta High Court</td><td>1 July 1862 (Letters Patent 14 May 1862)</td><td>Sir Barnes Peacock</td></tr>
+<tr><td>Bombay High Court</td><td>14 August 1862 (Letters Patent 26 June 1862)</td><td>Sir Matthew Sausse</td></tr>
+<tr><td>Madras High Court</td><td>15 August 1862</td><td>Sir Colley Harman Scotland</td></tr>
+</table>
+
+<h3>7.3 Subsequent High Courts</h3>
+<ul>
+<li><strong>Allahabad High Court</strong> &mdash; 17 March 1866 (for NWP/Agra; under the Indian High Courts Act 1861, extended by Letters Patent).</li>
+<li><strong>Patna High Court</strong> &mdash; 2 March 1916 (for Bihar and Orissa, carved off Calcutta).</li>
+<li><strong>Lahore High Court</strong> &mdash; 21 March 1919 (for Punjab; from 1947, became Pakistan's Lahore HC; today's High Court of Punjab &amp; Haryana inherited part of its jurisdiction in 1947).</li>
+<li>By 1947 there were 17 High Courts in undivided India; today the Indian Union has 25 High Courts.</li>
+</ul>
+
+<h3>7.4 The Judicial Committee of the Privy Council</h3>
+<ul>
+<li>Continued as the apex court of appeal from Indian High Courts (and Federal Court after 1937) till 1949.</li>
+<li>Famous Indian appeals to JCPC: <em>Empress v. Burah</em> (1878 &mdash; on the doctrine of delegated legislation), <em>Queen Empress v. Bal Gangadhar Tilak</em> (1898; appeal dismissed; sedition under §124-A IPC), <em>Mohori Bibi v. Dharmodas Ghose</em> (1903 &mdash; minor's contract).</li>
+<li>Final abolition: Federal Court (Enlargement of Jurisdiction) Act 1947 extended Federal Court's appellate jurisdiction; Abolition of Privy Council Jurisdiction Act 1949 ended JCPC's role; on 28 January 1950 the Supreme Court of India inherited its place.</li>
+</ul>
+
+<div class="callout green"><strong>Continuity to today:</strong> The High Courts established under the 1861 Act &mdash; with their hybrid composition of barristers, ICS judges and Indian pleaders &mdash; are the direct constitutional ancestors of today's High Courts under Articles 214&ndash;231 of the Constitution. The Letters Patent of 1862 still govern certain procedural matters in Calcutta, Bombay and Madras High Courts.</div>
+</section>
+
+<section class="notes" id="s8">
+<h2>8. Codification Finalised &mdash; IPC, CrPC, CPC, Evidence Act</h2>
+<p>The codification project launched by Macaulay's First Law Commission of 1834 (Topic 05) reached its fulfilment in the years immediately after the Mutiny, with a cluster of foundational statutes that defined the Indian legal system for the next 160+ years.</p>
+
+<h3>8.1 The Foundational Codes</h3>
+<table class="tbl">
+<tr><th>Code</th><th>Enacted</th><th>In Force</th><th>Drafted By</th><th>Status in 2026</th></tr>
+<tr><td>Code of Civil Procedure (CPC)</td><td>1859</td><td>1859</td><td>Second Law Commission</td><td>Replaced 1877 &amp; 1882; current CPC 1908 (Act V of 1908) &mdash; in force</td></tr>
+<tr><td>Indian Penal Code (IPC)</td><td>6 Oct 1860 (Act XLV of 1860)</td><td>1 Jan 1862</td><td>Macaulay (1837 draft)</td><td>Replaced by <strong>Bharatiya Nyaya Sanhita (BNS) 2023</strong> from 1 July 2024</td></tr>
+<tr><td>Code of Criminal Procedure (CrPC)</td><td>1861 (Act XXV of 1861)</td><td>1862</td><td>Second Law Commission</td><td>Recast 1872, 1898, 1973; replaced by <strong>Bharatiya Nagarik Suraksha Sanhita (BNSS) 2023</strong> from 1 July 2024</td></tr>
+<tr><td>Indian Evidence Act</td><td>1872 (Act I of 1872)</td><td>1 Sep 1872</td><td>Sir James Fitzjames Stephen (Law Member 1869&ndash;72)</td><td>Replaced by <strong>Bharatiya Sakshya Adhiniyam (BSA) 2023</strong> from 1 July 2024</td></tr>
+<tr><td>Indian Contract Act</td><td>1872 (Act IX of 1872)</td><td>1 Sep 1872</td><td>Third Law Commission (1861&ndash;70)</td><td>In force; sections 76&ndash;123 (relating to sale of goods) repealed by Sale of Goods Act 1930</td></tr>
+<tr><td>Indian Succession Act</td><td>1865; recast 1925</td><td>1865 / 1925</td><td>Henry Maine</td><td>In force as Indian Succession Act 1925</td></tr>
+<tr><td>Specific Relief Act</td><td>1877</td><td>1877</td><td>Whitley Stokes</td><td>Recast 1963; amended 2018; in force</td></tr>
+<tr><td>Limitation Act</td><td>1859; recast 1908 &amp; 1963</td><td>Various</td><td>First &amp; subsequent Commissions</td><td>In force as Limitation Act 1963</td></tr>
+<tr><td>Transfer of Property Act</td><td>1882</td><td>1 Jul 1882</td><td>Fourth Law Commission (Whitley Stokes)</td><td>In force</td></tr>
+<tr><td>Negotiable Instruments Act</td><td>1881</td><td>1 Mar 1882</td><td>Third Law Commission</td><td>In force</td></tr>
+</table>
+
+<h3>8.2 The Law Commissions of British India</h3>
+<ul>
+<li><strong>First Law Commission 1834</strong> &mdash; Chair: Macaulay; sat in Calcutta. Output: IPC draft (1837); Lex Loci Report.</li>
+<li><strong>Second Law Commission 1853</strong> &mdash; Chair: Sir John Romilly; sat in London. Output: CPC 1859, CrPC 1861, Indian Succession Act 1865.</li>
+<li><strong>Third Law Commission 1861&ndash;70</strong> &mdash; Chair: Romilly, then Lord Justice James. Output: Indian Contract Act 1872, Indian Evidence Act 1872 (drafted later by Stephen as Law Member), Negotiable Instruments Act 1881.</li>
+<li><strong>Fourth Law Commission 1879</strong> &mdash; Whitley Stokes in India. Output: revised CPC 1882, Transfer of Property Act 1882, Specific Relief Act 1877, Easements Act 1882.</li>
+</ul>
+
+<h3>8.3 The BNS-BNSS-BSA Replacement of 2023&ndash;24</h3>
+<ul>
+<li>After 163 years of the IPC, 162 years of the CrPC, and 151 years of the Indian Evidence Act, the Government of India passed three replacement laws &mdash; <strong>Bharatiya Nyaya Sanhita</strong> (BNS), <strong>Bharatiya Nagarik Suraksha Sanhita</strong> (BNSS), and <strong>Bharatiya Sakshya Adhiniyam</strong> (BSA) &mdash; in December 2023; enforced from <strong>1 July 2024</strong>.</li>
+<li>The BNS retains most of Macaulay's structure (511 sections &rarr; 358 sections) but renumbers, simplifies and modernises &mdash; recognising offences against women and children more explicitly; replacing &sect;124-A sedition with &sect;152 (acts endangering sovereignty); introducing community service as a punishment.</li>
+<li>The CPC 1908 and Indian Contract Act 1872 remain unaltered in 2026 &mdash; these were not part of the 2023 replacement.</li>
+</ul>
+</section>
+
+<section class="notes" id="s9">
+<h2>9. Indian Police Act 1861 &amp; Police Commission 1902</h2>
+
+<h3>9.1 Indian Police Act 1861 (Act V of 1861)</h3>
+<p>The Daroga system of Cornwallis (Topic 05) was hopelessly inadequate. After the Mutiny, the British Indian Police Commission of 1860 (Sir H. M. Stokes) recommended a new structure modelled on the Royal Irish Constabulary; this became the Police Act 1861, drafted by Sir H. M. Stokes and enacted on 22 March 1861.</p>
+
+<ul>
+<li><strong>Hierarchy:</strong>
+<ul>
+<li>Inspector-General of Police (province-level head)</li>
+<li>Deputy Inspector-General (range level)</li>
+<li>District Superintendent of Police (DSP / SP &mdash; district head)</li>
+<li>Assistant Superintendent / Deputy Superintendent</li>
+<li>Inspector (Circle Inspector / CI)</li>
+<li>Sub-Inspector (SI &mdash; thana in-charge in larger thanas)</li>
+<li>Head Constable, Constable</li>
+</ul></li>
+<li><strong>Separation of police from magistracy &mdash; partially:</strong> The District Magistrate remained the supervisory authority over the SP at the district level (subordination of police to executive); but the police now had its own hierarchy up to the IGP.</li>
+<li><strong>Investigation:</strong> Police given statutory powers of investigation (registration of FIR, arrest, search, seizure, charge-sheet) &mdash; the FIR system created here survives in the BNSS today.</li>
+<li><strong>Village chowkidars:</strong> Retained as the village-level police, paid by villagers, controlled by panchayat or village headman.</li>
+</ul>
+
+<h3>9.2 Indian (Fraser) Police Commission &mdash; 1902&ndash;03</h3>
+<ul>
+<li>Appointed under Lord Curzon (Viceroy 1899&ndash;1905); chaired by <strong>Sir Andrew Fraser</strong>.</li>
+<li>Found the 1861-vintage police corrupt, inefficient and oppressive.</li>
+<li>Recommended: training schools for police constables (Phillaur Police Training School in Punjab as model); creation of CID (Criminal Investigation Department) at provincial level; expansion of police strength; better pay; recruitment of Indian Provincial Police Service officers.</li>
+<li>CID established in Bengal 1906 (Bengal CID), other Presidencies followed.</li>
+<li>Imperial Police Service constituted 1905 &mdash; Indianised gradually; the first Indian to join was Hridya Nath Kunzru's nominee in 1905.</li>
+</ul>
+
+<h3>9.3 Indian Police Service after Independence</h3>
+<ul>
+<li>The Imperial Police became the <strong>Indian Police Service (IPS)</strong> &mdash; one of the All-India Services under Article 312 of the Constitution.</li>
+<li>The 1861 Act remained the basic police statute in independent India for 145 more years.</li>
+<li><strong>Prakash Singh v. Union of India</strong> (Supreme Court, 22 September 2006) directed sweeping reforms; led to the Model Police Act 2006 (drafted by Soli Sorabjee Committee). Most states have enacted their own Police Acts; the 1861 Act survives in pockets.</li>
+</ul>
+</section>
+
+<section class="notes" id="s10">
+<h2>10. Local Self-Government &mdash; Mayo (1870) &amp; Ripon (1882)</h2>
+
+<h3>10.1 Mayo Resolution &mdash; 14 December 1870</h3>
+<ul>
+<li>Issued by Lord Mayo (Viceroy 1869&ndash;72) to deal with the chronic deficit of the Government of India.</li>
+<li><strong>Financial decentralisation:</strong> Made certain heads of expenditure (police, jails, education, medical services, roads, civil works, printing) the responsibility of the Provinces. The provinces received fixed grants from the Centre and had to find additional resources from local taxation.</li>
+<li>The Mayo Resolution thus laid the foundation of provincial finance &mdash; the constitutional ancestor of the later Finance Commission system. (Lytton 1877 and Ripon 1882 expanded the scheme.)</li>
+<li>Mayo was assassinated at Port Blair (Andaman Islands) by an Afghan convict, Sher Ali, on 8 February 1872 &mdash; the only Viceroy ever assassinated in office.</li>
+</ul>
+
+<h3>10.2 Ripon's Resolution on Local Self-Government &mdash; 18 May 1882</h3>
+<p>Lord Ripon (Viceroy 1880&ndash;84) is rightly called the "<strong>Father of Local Self-Government</strong> in India". His Resolution of 18 May 1882 laid down the foundations of urban municipalities and rural local boards.</p>
+
+<ul>
+<li><strong>Principle:</strong> "Political education is, with the spread of education, becoming more and more an object that ought to influence the government" &mdash; local self-government was to be a "school" for self-government.</li>
+<li><strong>Structure:</strong>
+<ul>
+<li>Urban areas: Municipalities and Municipal Boards.</li>
+<li>Rural areas: District Boards and below them, Local Boards (at tehsil level) and (later) Union Boards (at village/cluster level).</li>
+</ul></li>
+<li><strong>Composition:</strong> Non-official majority recommended; two-thirds of members to be elected &mdash; though restricted franchise (tax-payers and educated). At least half the members to be non-official.</li>
+<li><strong>Chairmanship:</strong> Non-official elected chairman preferred over the District Collector or Commissioner.</li>
+<li><strong>Functions:</strong> Sanitation, water supply, primary education, roads, dispensaries, markets &mdash; the core of municipal government.</li>
+<li><strong>Finance:</strong> Power to levy local taxes &mdash; octroi (later abolished), house tax, water tax, license fees.</li>
+</ul>
+
+<h3>10.3 Implementation 1882&ndash;1919</h3>
+<ul>
+<li>Provincial Acts followed Ripon's framework: Bengal Local Self-Government Act 1885; Madras Local Boards Act 1884; Bombay District Municipal Act 1884; United Provinces Municipalities Act 1916.</li>
+<li>Royal Commission on Decentralisation 1907 (Charles Hobhouse) reviewed progress &mdash; found that the Collectors had captured the elected bodies in practice; recommended more autonomy.</li>
+<li>Montagu-Chelmsford Reforms (1919) made local self-government a "transferred" subject under provincial dyarchy &mdash; held by elected Indian ministers from 1921 onwards.</li>
+</ul>
+
+<h3>10.4 The Long Road to the 73rd &amp; 74th Amendments</h3>
+<p>Despite Ripon's vision, local self-government remained the weakest tier of Indian government till the <strong>73rd Constitutional Amendment Act 1992</strong> (in force 24 April 1993) constitutionalised Panchayati Raj, and the <strong>74th Constitutional Amendment Act 1992</strong> (in force 1 June 1993) constitutionalised Urban Local Bodies. These two amendments &mdash; the most important post-independence reform of local government &mdash; trace their lineage directly to Ripon's 1882 Resolution.</p>
+
+<div class="callout green"><strong>Why Ripon matters even today:</strong> India celebrates National Panchayati Raj Day on <strong>24 April</strong> each year &mdash; the anniversary of the 73rd Amendment's commencement. The conceptual frame &mdash; that local self-government is the school of democracy &mdash; was Ripon's, adopted by Gandhi (Hind Swaraj 1909), enshrined in the Directive Principle Article 40 (Gram Panchayats), and finally constitutionalised in 1992&ndash;93. A line drawn from Ripon 1882 to Article 243 traces the inheritance.</div>
+</section>
+
+<section class="notes" id="s11">
+  <h2>11. Indian Councils Act 1892 — The Lansdowne Reforms</h2>
+  <p>Drafted under Viceroy <strong>Lord Lansdowne</strong> (1888–1894) and passed by the British Parliament in <strong>1892</strong>, this Act was a grudging response to the agitation of the early Indian National Congress (founded 1885). It was the first statute that made room — however indirect — for an Indian elective principle.</p>
+
+  <h3>11.1 Key provisions</h3>
+  <ul>
+    <li><strong>Enlarged councils:</strong> additional non-official members raised in the Centre (10–16) and in the provinces (Bombay/Madras 8–20, Bengal 20, NWP 15).</li>
+    <li><strong>Indirect election:</strong> the word "election" was avoided. Local bodies, universities, chambers of commerce, zamindar associations could <em>recommend</em> names; the Governor-General/Governor would <em>nominate</em>. Convention treated recommendation as binding.</li>
+    <li><strong>Functions widened:</strong> members could discuss the Budget (no vote) and ask supplementary questions (no follow-up).</li>
+    <li><strong>Communal representation absent</strong> — that came in 1909.</li>
+  </ul>
+
+  <div class="callout"><strong>Critique (Gokhale, Surendranath Banerjea):</strong> the Act gave "shadow not substance" — no real legislative power, no executive answerability, no Indian on the executive council. It legitimised the demand for further reform.</div>
+</section>
+
+<section class="notes" id="s12">
+  <h2>12. Morley–Minto Reforms — Indian Councils Act 1909</h2>
+  <p>Authored by Secretary of State <strong>John Morley</strong> (Liberal, London) and Viceroy <strong>Lord Minto II</strong> (Calcutta/Simla), enacted <strong>25 May 1909</strong>. The Act responded to (a) Swadeshi agitation after the 1905 Partition of Bengal, (b) the rise of the Extremists, and (c) the Muslim League deputation to Minto at Simla on <strong>1 October 1906</strong>.</p>
+
+  <h3>12.1 Council expansion</h3>
+  <table class="tbl">
+    <thead><tr><th>Council</th><th>Total additional members</th><th>Elected (indirectly)</th></tr></thead>
+    <tbody>
+      <tr><td>Imperial Legislative Council</td><td>60</td><td>27</td></tr>
+      <tr><td>Bengal / Bombay / Madras</td><td>50 each</td><td>About half</td></tr>
+      <tr><td>UP, Punjab, Burma, Eastern Bengal &amp; Assam</td><td>30 each</td><td>Mixed nominated/elected</td></tr>
+    </tbody>
+  </table>
+
+  <h3>12.2 What was new</h3>
+  <ul>
+    <li><strong>Separate electorates for Muslims</strong> — Muslims voted only for Muslim candidates from Muslim-only constituencies, with a weightage greater than population. This is the legal origin of communal representation in India.</li>
+    <li><strong>First Indian in the Viceroy's Executive Council:</strong> <strong>Satyendra Prasanna Sinha</strong>, appointed Law Member on <strong>24 March 1909</strong>.</li>
+    <li><strong>First Indians in the Secretary of State's Council:</strong> K.G. Gupta and Syed Husain Bilgrami, 1907.</li>
+    <li>Members could now <strong>move resolutions on the budget</strong> and ask supplementary questions; the budget was still not votable.</li>
+  </ul>
+
+  <div class="callout warn"><strong>Long shadow:</strong> Minto is called the "father of communal electorate" in Indian historiography. The principle of religious electorates, once granted, was extended in 1919 and 1935 and finally crystallised in the Partition of 1947.</div>
+</section>
+
+<section class="notes" id="s13">
+  <h2>13. Montagu–Chelmsford Reforms — Government of India Act 1919</h2>
+  <p>Secretary of State <strong>Edwin Montagu</strong> issued the historic <strong>August Declaration on 20 August 1917</strong> in the House of Commons, promising "the gradual development of self-governing institutions with a view to the progressive realisation of responsible government in India as an integral part of the British Empire." Montagu toured India (Nov 1917–May 1918) with Viceroy <strong>Lord Chelmsford</strong>; their joint Report (July 1918) became the basis of the Act of <strong>23 December 1919</strong>.</p>
+
+  <h3>13.1 Bicameral Central Legislature</h3>
+  <table class="tbl">
+    <thead><tr><th>House</th><th>Members</th><th>Composition</th></tr></thead>
+    <tbody>
+      <tr><td>Council of State (Upper)</td><td>60</td><td>33 elected, 27 nominated; tenure 5 years</td></tr>
+      <tr><td>Legislative Assembly (Lower)</td><td>145</td><td>104 elected, 41 nominated; tenure 3 years</td></tr>
+    </tbody>
+  </table>
+  <p>Members could vote on a part of the budget (about one-third was "non-votable"). The Governor-General could "certify" a rejected demand and pass it himself — a key non-democratic safeguard.</p>
+
+  <h3>13.2 Dyarchy in the Provinces</h3>
+  <p>This was the central novelty. Provincial subjects were split:</p>
+  <ul>
+    <li><strong>Reserved subjects</strong> (Finance, Law &amp; Order, Police, Land Revenue, Irrigation) — administered by the Governor with his Executive Council, NOT responsible to the legislature.</li>
+    <li><strong>Transferred subjects</strong> (Education, Public Health, Agriculture, Local Self-Government, PWD) — administered by Ministers chosen from the elected legislature, responsible to it.</li>
+  </ul>
+  <p>Dyarchy operated 1921–1937 and was uniformly condemned as unworkable — ministers controlled "nation-building" departments without any control over finance.</p>
+
+  <h3>13.3 Other landmarks</h3>
+  <ul>
+    <li><strong>Extension of separate electorates</strong> to Sikhs, Christians, Anglo-Indians, Europeans.</li>
+    <li><strong>Franchise widened</strong> on property, tax-paying and educational qualifications — about 5.5 million voters (still under 3% of population).</li>
+    <li><strong>High Commissioner for India in London</strong> appointed (1920) to take over commercial/agency functions from the Secretary of State.</li>
+    <li><strong>Public Service Commission</strong> recommended — established 1 October 1926 under Sir Ross Barker.</li>
+    <li><strong>Statutory Commission after 10 years</strong> — the clause that triggered the Simon Commission of 1927.</li>
+  </ul>
+
+  <div class="callout"><strong>Reception:</strong> Congress at the special Bombay session (August 1918) under Hasan Imam condemned the Report as "disappointing and unsatisfactory." Tilak called it a "sunless dawn." The Act came into force in 1921 against the backdrop of Jallianwala Bagh (13 April 1919), the Rowlatt Act (March 1919) and the Non-Cooperation Movement.</div>
+</section>
+
+<section class="notes" id="s14">
+  <h2>14. Simon Commission, Round Tables &amp; the Communal Award</h2>
+
+  <h3>14.1 Simon Commission (1927–1930)</h3>
+  <p>The Indian Statutory Commission was constituted on <strong>8 November 1927</strong> under <strong>Sir John Simon</strong>. All seven members were British MPs — no Indian was included. The Commission landed at Bombay on <strong>3 February 1928</strong> and was met with black flags and the slogan "Simon Go Back." During a Lahore demonstration on <strong>30 October 1928</strong>, Lala Lajpat Rai was lathi-charged; he died on <strong>17 November 1928</strong>.</p>
+  <p>The two-volume Simon Report was published in May 1930. It recommended abolition of dyarchy, extension of responsible government in provinces, retention of separate electorates, and a federal Centre — but offered no Dominion Status.</p>
+
+  <h3>14.2 Nehru Report (10 August 1928)</h3>
+  <p>India's response — drafted by a committee chaired by <strong>Motilal Nehru</strong> with members including Tej Bahadur Sapru, Subhas Bose, M.S. Aney, M.R. Jayakar, Ali Imam, Shuaib Qureshi and G.R. Pradhan. It is the first Indian-drafted constitutional blueprint, demanding Dominion Status, joint electorates with reservation, a federal structure with residuary powers at the Centre, and a justiciable bill of rights.</p>
+
+  <h3>14.3 Round Table Conferences (London)</h3>
+  <table class="tbl">
+    <thead><tr><th>RTC</th><th>Dates</th><th>Congress attendance</th><th>Outcome</th></tr></thead>
+    <tbody>
+      <tr><td>First</td><td>12 Nov 1930 – 19 Jan 1931</td><td>Boycotted</td><td>Federation accepted in principle</td></tr>
+      <tr><td>Second</td><td>7 Sep 1931 – 1 Dec 1931</td><td>Gandhi as sole Congress representative (Gandhi–Irwin Pact 5 Mar 1931)</td><td>Deadlock on minorities</td></tr>
+      <tr><td>Third</td><td>17 Nov 1932 – 24 Dec 1932</td><td>Boycotted</td><td>Drafted the 1935 Act framework</td></tr>
+    </tbody>
+  </table>
+
+  <h3>14.4 Communal Award (16 August 1932)</h3>
+  <p>Prime Minister <strong>Ramsay MacDonald</strong> announced separate electorates for Muslims, Sikhs, Indian Christians, Anglo-Indians, Europeans <em>and</em> the Depressed Classes. Gandhi began a fast-unto-death in Yerwada Jail on <strong>20 September 1932</strong>; the <strong>Poona Pact (24 September 1932)</strong> with B.R. Ambedkar substituted reserved seats within the general (Hindu) electorate for the Depressed Classes, raising their share from 71 to 147 seats.</p>
+</section>
+
+<section class="notes" id="s15">
+  <h2>15. Government of India Act 1935</h2>
+  <p>Royal assent <strong>2 August 1935</strong>. With 321 sections and 10 schedules, it is the longest single statute the British Parliament ever passed for India and is the direct skeleton of the Constitution of 1950 — Granville Austin estimated that "between 200 and 250 articles" of the Constitution were taken almost verbatim from this Act.</p>
+
+  <h3>15.1 All-India Federation (Part II) — never inaugurated</h3>
+  <ul>
+    <li>Federation to comprise British India + Princely States; states accession by Instrument of Accession.</li>
+    <li>Required princes accounting for 50% of states' population to accede — the princes never came in, and this part was inoperative until 1947.</li>
+  </ul>
+
+  <h3>15.2 Provincial Autonomy (Part III) — operative from 1 April 1937</h3>
+  <ul>
+    <li><strong>Dyarchy abolished in provinces</strong>; all provincial subjects transferred to ministers responsible to the elected legislature.</li>
+    <li><strong>11 Governor's Provinces</strong> (with Sind and Orissa created in 1936). Bicameral legislatures in Bombay, Madras, Bengal, UP, Bihar, Assam.</li>
+    <li>Governor retained "special responsibilities" and discretionary powers — minority protection, financial stability, peace and tranquility.</li>
+    <li><strong>Three Lists</strong>: Federal (59), Provincial (54), Concurrent (36) — the direct ancestor of the Seventh Schedule.</li>
+  </ul>
+
+  <h3>15.3 Dyarchy shifted to the Centre</h3>
+  <p>Federal subjects split into <em>Reserved</em> (Defence, External Affairs, Ecclesiastical, Tribal Areas — administered by the Governor-General with three Counsellors) and <em>Transferred</em> (rest — administered by a Council of Ministers responsible to the federal legislature). Never came into force.</p>
+
+  <h3>15.4 Other landmarks</h3>
+  <ul>
+    <li><strong>Separate electorates extended</strong> to Depressed Classes (modified by Poona Pact), women and labour.</li>
+    <li><strong>Franchise widened</strong> to ~35 million (about 10% of adults).</li>
+    <li><strong>Federal Court</strong> at Delhi (s. 200) — established 1 October 1937.</li>
+    <li><strong>Reserve Bank of India</strong> established 1 April 1935 under a parallel RBI Act.</li>
+    <li><strong>Federal Public Service Commission</strong> + Provincial PSCs (predecessors of UPSC and SPSCs).</li>
+    <li><strong>Burma separated</strong> from India (1 April 1937) under the Government of Burma Act 1935.</li>
+    <li><strong>Office of Secretary of State's Council abolished</strong>; replaced by advisers.</li>
+  </ul>
+
+  <div class="callout gold"><strong>Congress reaction:</strong> Nehru called it a "charter of slavery" and a "machine with strong brakes but no engine." Jinnah called it "thoroughly rotten, fundamentally bad and totally unacceptable." Yet Congress contested the 1937 provincial elections, swept 7 of 11 provinces, and ran ministries until October 1939 when it resigned over India's unilateral entry into World War II.</div>
+</section>
+
+<section class="notes" id="s16">
+  <h2>16. Federal Court 1937 — the Judicial Apex Before the Supreme Court</h2>
+  <ul>
+    <li><strong>Established</strong> 1 October 1937 at Delhi under s. 200 of the GoI Act 1935.</li>
+    <li><strong>First Chief Justice:</strong> Sir Maurice Gwyer (1937–1943). Followed by Sir Patrick Spens (1943–1947) and Sir Harilal Kania (1947–1950, who became the first CJI of independent India's Supreme Court on 26 January 1950).</li>
+    <li><strong>Jurisdiction:</strong> (i) Original — federal disputes between the Centre and provinces/states; (ii) Appellate — from High Courts on constitutional questions; (iii) Advisory — opinion on Governor-General's reference.</li>
+    <li><strong>Final appeal still lay to the Privy Council in London</strong> until the Federal Court (Enlargement of Jurisdiction) Act 1947 and final abolition by the Abolition of Privy Council Jurisdiction Act 1949.</li>
+  </ul>
+</section>
+
+<section class="notes" id="s17">
+  <h2>17. Civil Service after 1858 — Aitchison, Islington &amp; Lee</h2>
+
+  <h3>17.1 Statutory Civil Service (1879) — Lytton's experiment</h3>
+  <p>Viceroy <strong>Lord Lytton</strong> created a separate "Statutory Civil Service" to nominate Indians of good family to one-sixth of covenanted posts. Salaries were two-thirds of European counterparts. The scheme was unpopular and abolished on the recommendation of the Aitchison Commission.</p>
+
+  <h3>17.2 Aitchison Commission (1886–87)</h3>
+  <p>Headed by <strong>Sir Charles Aitchison</strong>; appointed by Viceroy Dufferin. Recommended a three-fold classification — Imperial, Provincial and Subordinate Services. The "covenanted/uncovenanted" distinction was abolished and replaced with the Indian Civil Service (Imperial), Provincial Civil Service and Subordinate Service. Maximum age for ICS examination raised from 19 to 23; the exam continued to be held only in London.</p>
+
+  <h3>17.3 Islington Commission (1912)</h3>
+  <p>The Royal Commission on the Public Services in India under <strong>Lord Islington</strong>. Report submitted 1917 (delayed by WWI). Recommended 25% of higher posts be filled by Indians — implemented only partially.</p>
+
+  <h3>17.4 Lee Commission (1923–24)</h3>
+  <p>Royal Commission on the Superior Civil Services in India under <strong>Lord Lee of Fareham</strong>. Landmark recommendations:</p>
+  <ul>
+    <li><strong>50:50 parity</strong> for direct recruits between Europeans and Indians in the ICS within 15 years.</li>
+    <li><strong>Establishment of a Public Service Commission</strong> in India, as already provided in s. 96-C of the GoI Act 1919.</li>
+    <li>The <strong>Federal Public Service Commission</strong> was constituted on <strong>1 October 1926</strong> under Sir Ross Barker. Renamed Federal PSC in 1937 and <strong>Union Public Service Commission</strong> on 26 January 1950 under Article 315 of the Constitution.</li>
+    <li>Indianisation of the ICS rose from 5% in 1913 to about 48% by 1947.</li>
+  </ul>
+</section>
+
+<section class="notes" id="s18">
+  <h2>18. Army &amp; Police after 1858</h2>
+
+  <h3>18.1 Army reorganisation</h3>
+  <ul>
+    <li><strong>Peel Commission (1859)</strong> — chaired by Major-General <strong>Jonathan Peel</strong>; recommended a higher ratio of European to Indian troops (1:2 in Bengal; 2:5 in Madras and Bombay) and that artillery be exclusively European.</li>
+    <li><strong>Three Presidency Armies merged</strong> into a unified Indian Army in 1895 (effective 1 April 1895) with four Commands — Punjab (incl. NWFP), Bengal, Madras (incl. Burma), Bombay (incl. Sind, Quetta and Aden).</li>
+    <li><strong>Kitchener reforms (1903)</strong> — Commander-in-Chief Lord Kitchener (1902–09) reorganised the army into two Commands (Northern and Southern) and triggered the Kitchener–Curzon dispute over the abolition of the Military Member's seat on the Viceroy's Council. Curzon resigned in August 1905.</li>
+    <li><strong>Indian Sandhurst Committee (Skeen Committee, 1925)</strong> — recommended an Indian military college; led to the Indian Military Academy at Dehradun, opened 1 October 1932.</li>
+    <li><strong>King's Commissions</strong> opened to Indians from 1917; the "8-unit scheme" of Indianisation in 1923.</li>
+  </ul>
+
+  <h3>18.2 Police</h3>
+  <ul>
+    <li>The <strong>Indian Police Act 1861</strong> remained the governing statute through 1947 (and survives today).</li>
+    <li>The <strong>Fraser Commission (1902–03)</strong>, under <strong>Sir Andrew Fraser</strong>, recommended creation of the <strong>Indian Police</strong> (later IPS), CIDs in every province and the Criminal Investigation Department at the Centre — leading to the establishment of the <strong>Central Intelligence Department</strong> in 1903 (predecessor of the IB) and provincial CIDs by 1906.</li>
+    <li>The Indian Police, as the imperial cadre, was reconstituted as the <strong>Indian Police Service</strong> under the All-India Services Act 1951.</li>
+  </ul>
+</section>
+
+<section class="notes" id="s19">
+  <h2>19. Cripps, Cabinet Mission &amp; the Indian Independence Act 1947</h2>
+
+  <h3>19.1 August Offer (8 August 1940) &amp; Cripps Mission (March 1942)</h3>
+  <p>Viceroy <strong>Linlithgow's August Offer</strong> promised Dominion Status after the war and a representative body to frame a new constitution. Rejected by Congress and the League.</p>
+  <p>Sir <strong>Stafford Cripps</strong> arrived 22 March 1942 offering a post-war Constituent Assembly, an Indian Union with the right to secede, and provincial accession. Gandhi called it "a post-dated cheque on a crashing bank." Failed by 11 April 1942; triggered the Quit India Resolution of 8 August 1942.</p>
+
+  <h3>19.2 Cabinet Mission Plan (16 May 1946)</h3>
+  <p>Sent by PM <strong>Clement Attlee</strong>; members <strong>Pethick-Lawrence</strong> (SoS), <strong>Stafford Cripps</strong> (Pres. Board of Trade), <strong>A.V. Alexander</strong> (First Lord of the Admiralty). Plan:</p>
+  <ul>
+    <li>A loose three-tier <strong>Union of India</strong> — Centre with Defence, Foreign Affairs and Communications only.</li>
+    <li>Provinces grouped into A (Hindu-majority), B (Punjab, NWFP, Sind — Muslim-majority west), C (Bengal &amp; Assam — Muslim-majority east).</li>
+    <li>A <strong>Constituent Assembly</strong> of 389 members (292 from British India provinces + 4 from Chief Commissioner provinces + 93 from Princely States). Indirectly elected by provincial assemblies on a 1:10,00,000 ratio.</li>
+    <li>An Interim Government — formed on 2 September 1946 under Nehru as Vice-President of the Viceroy's Executive Council.</li>
+  </ul>
+  <p>The Constituent Assembly first met on <strong>9 December 1946</strong>. Rajendra Prasad was elected permanent Chairman on 11 December 1946.</p>
+
+  <h3>19.3 Mountbatten Plan (3 June 1947)</h3>
+  <p>Viceroy <strong>Lord Mountbatten</strong> announced partition along religious lines, with two Dominions (India and Pakistan) and a boundary commission under Sir Cyril Radcliffe. Sind, Baluchistan, NWFP and the Muslim-majority districts of Punjab and Bengal would go to Pakistan; princely states free to accede.</p>
+
+  <h3>19.4 Indian Independence Act 1947 (18 July 1947)</h3>
+  <ul>
+    <li>Created the two Dominions of <strong>India and Pakistan</strong> effective <strong>15 August 1947</strong>.</li>
+    <li>Each Dominion's Constituent Assembly became a sovereign legislature; the GoI Act 1935 (with adaptations) remained the working constitution until 26 January 1950.</li>
+    <li>Office of the <strong>Secretary of State for India abolished</strong>; functions transferred to the Commonwealth Relations Office.</li>
+    <li>Paramountcy over princely states <strong>lapsed</strong> — they could accede to either Dominion or remain independent (562 states ultimately acceded; Hyderabad, Junagadh and Jammu &amp; Kashmir followed special paths).</li>
+    <li>Title of "Emperor of India" dropped from the British monarch's style (followed by formal proclamation 22 June 1948).</li>
+  </ul>
+</section>
+
+<section class="notes" id="s20">
+  <h2>20. Continuity to the Constitution of India 1950</h2>
+  <p>The constitutional skeleton of 1858–1947 did not die with independence. It was inherited, adapted and rebadged:</p>
+  <ul>
+    <li><strong>Federal structure &amp; Three Lists</strong> (GoI Act 1935 → Seventh Schedule of the Constitution).</li>
+    <li><strong>Office of Governor</strong> (Crown's representative in the province → President's representative under Articles 153–162).</li>
+    <li><strong>Federal Court 1937 → Supreme Court of India</strong> (Article 124), inaugurated 28 January 1950. Sir H.J. Kania carried over as first CJI.</li>
+    <li><strong>Federal Public Service Commission 1926 → Union Public Service Commission</strong> (Article 315), 26 January 1950.</li>
+    <li><strong>Indian Civil Service → Indian Administrative Service</strong>; Indian Police → IPS (All-India Services Act 1951).</li>
+    <li><strong>Comptroller and Auditor-General</strong>, Indian Audit and Accounts Department — carried over and constitutionalised under Article 148.</li>
+    <li><strong>High Courts</strong> established 1862–1919 retained as constitutional courts under Article 214; their judges' service conditions protected under Articles 216–231.</li>
+    <li><strong>Indian Penal Code 1860, CrPC 1973 (replacing 1898/1861), CPC 1908, Evidence Act 1872</strong> — operative until the 2024 trio (BNS, BNSS, BSA effective 1 July 2024).</li>
+    <li><strong>Indian Police Act 1861</strong> — still in force in most States despite Model Police Bills (2006, 2015).</li>
+  </ul>
+
+  <div class="callout green"><strong>Continuity is the central UPSC insight:</strong> The Republic of India is not a constitutional rupture from the colonial state. The Constitution of 1950 inherited an entire administrative skeleton — services, codes, courts, audit, finance — and renovated it within a republican, federal, fundamental-rights frame. This is why questions on "the Constitution of India is mostly an evolutionary document" recur in Mains and answers must reach back to the Acts of 1858, 1909, 1919 and 1935.</div>
+</section>
+
+<section class="notes" id="pyq">
+  <h2>Previous Year Questions (PYQ) — Theme-Aligned Bank</h2>
+
+  <div class="pyq">
+    <h3>Real UPSC Questions on this Theme</h3>
+    <ol>
+      <li><strong>UPSC 2014 (GS-I):</strong> "Examine critically the various facets of economic policies of the British in India from the mid-eighteenth century till independence."</li>
+      <li><strong>UPSC 2016 (GS-I):</strong> "Discuss the role of women in the freedom struggle especially during the Gandhian phase." <em>(touches GoI 1919/1935 franchise extension to women)</em></li>
+      <li><strong>UPSC 2019 (GS-II):</strong> "From the resolution of contentious issues regarding distribution of legislative powers by the courts, 'Principle of Federal Supremacy' and 'Harmonious Construction' have emerged. Explain." <em>(roots in s. 100 GoI 1935 → Article 246)</em></li>
+      <li><strong>UPSC 2020 (GS-I):</strong> "Since the decade of the 1920s, the national movement acquired various ideological strands and thereby expanded its social base. Discuss." <em>(intersects with Mont-Ford franchise widening + Communal Award)</em></li>
+      <li><strong>UPSC 2023 (GS-I):</strong> "Why did the armies of the British East India Company — mostly comprising Indian soldiers — win consistently against the more numerous and better equipped armies of the Indian rulers? Give reasons." <em>(post-Mutiny restructuring of these armies is the natural sequel)</em></li>
+      <li><strong>History Optional Paper II (various years):</strong> repeated questions on (a) Charter Acts and the evolution of British paramountcy; (b) Indian Councils Acts 1892, 1909, 1919; (c) Government of India Act 1935 — extent of its impact on the Constitution of India.</li>
+    </ol>
+  </div>
+
+  <div class="callout warn"><strong>Disclaimer:</strong> UPSC has not framed a single GS Prelims/Mains question that asks only about the 1858–1947 administrative architecture in isolation. The Acts of 1909/1919/1935 typically surface inside Polity questions on the evolution of the Constitution, federal structure, electorates and franchise. The questions below are <em>theme-aligned model questions</em> in the official UPSC style — useful for Mains practice but not lifted from any specific past paper.</div>
+
+  <div class="pyq">
+    <h3>Theme-Aligned Model Questions (Mains practice)</h3>
+    <ol>
+      <li>"The Government of India Act 1858 was less a transfer of power than a change of signature." Critically examine.</li>
+      <li>Trace the evolution of the Secretary of State for India between 1858 and 1947. How did the office shape Indian administration?</li>
+      <li>The Indian Councils Act 1909 sowed the seed of partition. Comment.</li>
+      <li>Dyarchy in the provinces (1921–1937) was "a wooden bridge that nobody wanted to cross." Discuss with reference to the Montagu–Chelmsford Reforms.</li>
+      <li>"The Government of India Act 1935 is the longest single statute the British Parliament ever passed and the largest single source of the Constitution of India." Substantiate.</li>
+      <li>Examine the role of the Lee Commission (1924) in the Indianisation of the Civil Service.</li>
+      <li>The Federal Court of India (1937–1950) was a constitutional rehearsal for the Supreme Court of India. Analyse.</li>
+      <li>The Cabinet Mission Plan (1946) was the last realistic chance for a united India. Do you agree?</li>
+      <li>"Indian Independence was not a transfer of power but a partition of sovereignty." Critically examine in the light of the Indian Independence Act 1947.</li>
+      <li>Trace the constitutional continuity from the Charter Act of 1833 to the Constitution of India 1950 with reference to the office of the Governor-General/President.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="notes" id="revision">
+  <h2>15 Must-Know Facts — Last-Minute Revision</h2>
+  <div class="revision">
+    <ol>
+      <li><strong>Government of India Act 1858</strong> — Crown takeover; Court of Directors and Board of Control abolished; Secretary of State (15-member Council) replaces them; title of Viceroy created; <strong>Lord Stanley</strong> first SoS; <strong>Lord Canning</strong> first Viceroy.</li>
+      <li><strong>Queen Victoria's Proclamation</strong> — 1 November 1858, Allahabad — promised non-interference in religion, equal opportunity, respect for treaties with princes; called the "Magna Carta of Indian liberty" by Indian leaders.</li>
+      <li><strong>Indian Councils Act 1861</strong> — restored legislative powers to Bombay and Madras; introduced the <strong>portfolio system</strong> (Canning); first Indians (Banaras Maharaja, Patiala Maharaja, Sir Dinkar Rao) nominated to the legislative council.</li>
+      <li><strong>Indian High Courts Act 1861</strong> — abolished Sadar and Supreme Courts; created High Courts at Calcutta (1 July 1862), Bombay (14 August 1862), Madras (15 August 1862); later Allahabad 1866, Patna 1916, Lahore 1919.</li>
+      <li><strong>Codification</strong> — IPC 1860 (Macaulay), CrPC 1861, Evidence Act 1872, CPC 1908; replaced 1 July 2024 by BNS, BNSS, BSA.</li>
+      <li><strong>Indian Police Act 1861</strong> — still in force; supplemented by the Fraser Commission 1902 → CID 1903 → Indian Police (later IPS).</li>
+      <li><strong>Local Self-Government</strong> — Mayo Resolution 14 December 1870 (financial decentralisation); Ripon's Resolution 18 May 1882 (Ripon as the "father of local self-government in India").</li>
+      <li><strong>Indian Councils Act 1892</strong> — Lansdowne; indirect election principle; budget discussion (no vote).</li>
+      <li><strong>Morley–Minto Reforms 1909</strong> — separate electorates for Muslims; first Indian in Viceroy's Executive Council (<strong>S.P. Sinha</strong>, 1909); Imperial Legislative Council expanded to 60.</li>
+      <li><strong>August Declaration 1917</strong> — Edwin Montagu — "progressive realisation of responsible government in India."</li>
+      <li><strong>Government of India Act 1919</strong> (Montagu–Chelmsford) — bicameral Centre (Council of State + Legislative Assembly); <strong>dyarchy in provinces</strong> (Reserved/Transferred); franchise ~5.5 million; Statutory Commission clause → Simon Commission.</li>
+      <li><strong>Communal Award 1932 → Poona Pact 24 September 1932</strong> — Gandhi–Ambedkar agreement on reserved seats within general electorate for Depressed Classes (71 → 147).</li>
+      <li><strong>Government of India Act 1935</strong> — All-India Federation (never inaugurated); provincial autonomy from 1 April 1937; dyarchy at Centre (never operative); Three Lists (Federal 59, Provincial 54, Concurrent 36); Federal Court (1 October 1937); RBI 1 April 1935; Burma separated 1 April 1937.</li>
+      <li><strong>Lee Commission 1924</strong> — 50:50 parity in ICS within 15 years; recommended PSC → established 1 October 1926 under Sir Ross Barker.</li>
+      <li><strong>Indian Independence Act 1947</strong> (18 July 1947) — two Dominions; 15 August 1947; Secretary of State abolished; paramountcy lapsed; Federal Court continued; full constitutional rupture only on 26 January 1950 with the Constitution of India.</li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<aside>
+
+<div class="widget">
+<h4>Quick Reference &mdash; Dates</h4>
+<ul class="miniref">
+<li><strong>2 Aug 1858:</strong> GoI Act 1858 (Crown takeover)</li>
+<li><strong>1 Nov 1858:</strong> Queen's Proclamation, Allahabad</li>
+<li><strong>2 Sep 1858:</strong> Lord Stanley &mdash; first SoS for India</li>
+<li><strong>1 Nov 1858:</strong> Lord Canning &mdash; first Viceroy</li>
+<li><strong>6 Oct 1860:</strong> IPC enacted (in force 1 Jan 1862)</li>
+<li><strong>1 Aug 1861:</strong> Indian Councils Act 1861</li>
+<li><strong>22 Mar 1861:</strong> Police Act 1861</li>
+<li><strong>1 Jul / 14 Aug / 15 Aug 1862:</strong> Calcutta, Bombay, Madras HCs</li>
+<li><strong>14 Dec 1870:</strong> Mayo Resolution (financial decentralisation)</li>
+<li><strong>1 Jan 1877:</strong> Queen Victoria proclaimed Empress (Delhi Durbar)</li>
+<li><strong>14 Mar 1878:</strong> Vernacular Press Act (Lytton)</li>
+<li><strong>18 May 1882:</strong> Ripon Local Self-Government Resolution</li>
+<li><strong>28 Dec 1885:</strong> INC founded</li>
+<li><strong>23 Aug 1886:</strong> Aitchison Public Service Commission</li>
+<li><strong>4 May 1892:</strong> Indian Councils Act 1892</li>
+<li><strong>16 Oct 1905:</strong> Partition of Bengal effective</li>
+<li><strong>1 Oct 1906:</strong> All-India Muslim League formed (Dhaka)</li>
+<li><strong>25 May 1909:</strong> Indian Councils Act 1909 (Morley-Minto)</li>
+<li><strong>12 Dec 1911:</strong> Delhi Durbar; capital shifts; Bengal partition revoked</li>
+<li><strong>23 Dec 1912:</strong> Capital shifts to Delhi from Calcutta</li>
+<li><strong>20 Aug 1917:</strong> Montagu Declaration (responsible government)</li>
+<li><strong>23 Dec 1919:</strong> GoI Act 1919 (Montagu-Chelmsford)</li>
+<li><strong>3 Feb 1928:</strong> Simon Commission arrives India</li>
+<li><strong>12 Nov 1930:</strong> First Round Table Conference</li>
+<li><strong>4 Aug 1932:</strong> Communal Award (Ramsay MacDonald)</li>
+<li><strong>24 Sep 1932:</strong> Poona Pact</li>
+<li><strong>2 Aug 1935:</strong> GoI Act 1935</li>
+<li><strong>1 Apr 1937:</strong> Provincial Autonomy commences</li>
+<li><strong>1 Oct 1937:</strong> Federal Court inaugurated</li>
+<li><strong>22 Mar 1942:</strong> Cripps Mission arrives</li>
+<li><strong>24 Mar 1946:</strong> Cabinet Mission arrives</li>
+<li><strong>2 Sep 1946:</strong> Interim Government (Nehru)</li>
+<li><strong>3 Jun 1947:</strong> Mountbatten Plan announced</li>
+<li><strong>18 Jul 1947:</strong> Indian Independence Act receives Royal Assent</li>
+<li><strong>15 Aug 1947:</strong> Independence; SoS for India abolished</li>
+<li><strong>26 Jan 1950:</strong> Constitution of India enters into force</li>
+</ul>
+</div>
+
+<div class="widget">
+<h4>Constitutional Acts &mdash; One-Liner Each</h4>
+<ul class="miniref">
+<li><strong>GoI Act 1858:</strong> Crown takes over; SoS + Council of India; Viceroy</li>
+<li><strong>Indian Councils Act 1861:</strong> Legislative councils restored; portfolio system; Indians (nominated) for first time</li>
+<li><strong>Indian Councils Act 1892:</strong> Indirect election introduced; budget discussion; questions allowed</li>
+<li><strong>Morley-Minto 1909:</strong> Communal electorates (Muslims); enlarged councils; Indian on Viceroy's Council (Sinha)</li>
+<li><strong>GoI Act 1919:</strong> Dyarchy in provinces (Reserved &amp; Transferred); bicameral central legislature; direct elections; women's franchise</li>
+<li><strong>GoI Act 1935:</strong> All-India Federation (never realised); Provincial Autonomy (in force 1937); Federal Court; communal electorates expanded</li>
+<li><strong>Indian Independence Act 1947:</strong> Dominions of India &amp; Pakistan; lapse of paramountcy; right of accession to princely states</li>
+</ul>
+</div>
+
+<div class="widget">
+<h4>Viceroys &mdash; Reform Era 1858&ndash;1947</h4>
+<ul class="miniref">
+<li>Canning (1858&ndash;62) &mdash; Crown takeover</li>
+<li>Mayo (1869&ndash;72) &mdash; financial decentralisation</li>
+<li>Lytton (1876&ndash;80) &mdash; Empress title</li>
+<li>Ripon (1880&ndash;84) &mdash; LSG; press repeal</li>
+<li>Dufferin (1884&ndash;88) &mdash; INC born</li>
+<li>Lansdowne (1888&ndash;94) &mdash; ICA 1892</li>
+<li>Curzon (1899&ndash;1905) &mdash; partition of Bengal; Fraser commissions</li>
+<li>Minto II (1905&ndash;10) &mdash; Morley-Minto</li>
+<li>Hardinge II (1910&ndash;16) &mdash; Delhi capital; partition revoked</li>
+<li>Chelmsford (1916&ndash;21) &mdash; Mont-Ford reforms</li>
+<li>Reading (1921&ndash;26) &mdash; first to consult Indian ministers</li>
+<li>Irwin (1926&ndash;31) &mdash; Simon, Gandhi-Irwin</li>
+<li>Willingdon (1931&ndash;36) &mdash; Communal Award; CD repressed</li>
+<li>Linlithgow (1936&ndash;43) &mdash; GoI Act 1935; WW-II; Quit India</li>
+<li>Wavell (1943&ndash;47) &mdash; Cabinet Mission</li>
+<li>Mountbatten (1947) &mdash; Partition</li>
+<li>Mountbatten as Governor-General of Dominion of India (15 Aug 1947 &mdash; 21 Jun 1948)</li>
+<li>C. Rajagopalachari (21 Jun 1948 &mdash; 26 Jan 1950) &mdash; last and only Indian GG</li>
+</ul>
+</div>
+
+<div class="widget">
+<h4>Secretaries of State &mdash; Key Holders</h4>
+<ul class="miniref">
+<li>Lord Stanley (1858; first)</li>
+<li>Sir Charles Wood (1859&ndash;66)</li>
+<li>Lord Salisbury (1874&ndash;78)</li>
+<li>John Morley (1905&ndash;10)</li>
+<li>Edwin Montagu (1917&ndash;22)</li>
+<li>Lord Birkenhead (1924&ndash;28)</li>
+<li>Sir Samuel Hoare (1931&ndash;35)</li>
+<li>Lord Pethick-Lawrence (1945&ndash;47)</li>
+<li>Lord Listowel (Apr&ndash;Aug 1947; last)</li>
+</ul>
+</div>
+
+<div class="widget">
+<h4>UPSC Importance</h4>
+<div class="bar"><span class="lbl">Prelims</span><span class="track"><span class="fill" style="width:97%"></span></span></div>
+<div class="bar"><span class="lbl">Mains GS-I</span><span class="track"><span class="fill" style="width:90%"></span></span></div>
+<div class="bar"><span class="lbl">Polity GS-II</span><span class="track"><span class="fill" style="width:96%"></span></span></div>
+<div class="bar"><span class="lbl">Essay</span><span class="track"><span class="fill" style="width:40%"></span></span></div>
+<div class="bar"><span class="lbl">Optional Hist</span><span class="track"><span class="fill" style="width:95%"></span></span></div>
+</div>
+
+<div class="widget">
+<h4>Tags</h4>
+<div class="tags">
+<span>GoI Act 1858</span><span>Queen's Proclamation</span><span>Crown takeover</span><span>Lord Canning</span><span>Viceroy</span><span>Secretary of State</span><span>Council of India</span><span>India Office</span><span>Indian Councils Act 1861</span><span>Portfolio system</span><span>High Courts Act 1861</span><span>Calcutta HC</span><span>Bombay HC</span><span>Madras HC</span><span>Allahabad HC</span><span>Privy Council JCPC</span><span>IPC 1860</span><span>CrPC 1861</span><span>CPC 1859 / 1908</span><span>Evidence Act 1872</span><span>Contract Act 1872</span><span>Police Act 1861</span><span>Fraser Commission 1902</span><span>Mayo Resolution 1870</span><span>Ripon Resolution 1882</span><span>Hunter Commission</span><span>Local Self-Government</span><span>Aitchison Commission</span><span>Islington Commission</span><span>Lee Commission</span><span>Hartog Committee</span><span>Indian Councils Act 1892</span><span>Lansdowne</span><span>Morley-Minto 1909</span><span>Communal Electorates</span><span>Lucknow Pact 1916</span><span>Montagu Declaration 1917</span><span>Mont-Ford 1919</span><span>Dyarchy</span><span>Simon Commission</span><span>Round Table Conference</span><span>Communal Award</span><span>Poona Pact</span><span>GoI Act 1935</span><span>Provincial Autonomy</span><span>Federal Court 1937</span><span>Cripps Mission 1942</span><span>Cabinet Mission 1946</span><span>Mountbatten Plan</span><span>Indian Independence Act 1947</span><span>73rd Amendment</span><span>74th Amendment</span><span>BNS 2023</span><span>BNSS 2023</span><span>BSA 2023</span>
+</div>
+</div>
+
+<div class="widget">
+<h4>Quick Quiz</h4>
+<div class="quiz">
+<details><summary>First Viceroy of India?</summary><p>Lord Canning &mdash; on 1 November 1858, under the Government of India Act 1858. He had been GG of India since 1856.</p></details>
+<details><summary>First Indian on the Viceroy's Executive Council?</summary><p>Sir Satyendra Prasanno Sinha (S. P. Sinha) &mdash; appointed Law Member in 1909 under the Indian Councils Act 1909.</p></details>
+<details><summary>Which Act introduced the principle of indirect election for the first time?</summary><p>Indian Councils Act 1892 (Lansdowne Reforms) &mdash; though the term "election" was carefully avoided; the language used was "recommendation".</p></details>
+<details><summary>Which Act introduced communal electorates?</summary><p>Indian Councils Act 1909 (Morley-Minto Reforms) &mdash; for Muslims at the central and provincial levels.</p></details>
+<details><summary>Year of Provincial Autonomy commencement?</summary><p>1 April 1937 &mdash; under the Government of India Act 1935.</p></details>
+<details><summary>Which Viceroy is called the "Father of Local Self-Government"?</summary><p>Lord Ripon &mdash; for his Resolution of 18 May 1882.</p></details>
+<details><summary>When did Delhi become the capital of British India?</summary><p>Announced at the Delhi Durbar on 12 December 1911; formally transferred from Calcutta on 23 December 1912 (the same day the Hardinge bomb attack took place on the Viceroy's procession).</p></details>
+<details><summary>Which Act first introduced the federal scheme for India?</summary><p>Government of India Act 1935 &mdash; though the All-India Federation provisions were never brought into force; only Provincial Autonomy commenced (1 April 1937).</p></details>
+<details><summary>When was the Federal Court of India inaugurated?</summary><p>1 October 1937 &mdash; under the GoI Act 1935. First Chief Justice: Sir Maurice Gwyer. The Federal Court was the predecessor of the Supreme Court of India (28 January 1950).</p></details>
+<details><summary>When was the Indian Independence Act passed?</summary><p>Received Royal Assent on 18 July 1947; gave effect to partition on 15 August 1947 (India) and 14 August 1947 (Pakistan).</p></details>
+</div>
+</div>
+
+<div class="widget">
+<h4>Related Notes</h4>
+<ul class="related">
+<li><a href="/modern-history/british-administrative-organization-in-india-till-1857">&rsaquo; Modern 05 &mdash; British Administration till 1857</a></li>
+<li><a href="/modern-history/revolt-of-1857">&rsaquo; Modern 06 &mdash; The Revolt of 1857</a></li>
+<li><a href="/modern-history/rise-of-indian-nationalism-and-early-inc-1858-1905">&rsaquo; Modern 13 &mdash; Moderate Phase of Nationalism</a></li>
+<li><a href="/modern-history/gandhian-era-freedom-struggle-1915-1939">&rsaquo; Modern 15 &mdash; The Gandhian Era</a></li>
+<li><a href="/modern-history/towards-independence-quit-india-to-partition-1939-1947">&rsaquo; Modern 17 &mdash; Towards Independence 1940&ndash;47</a></li>
+</ul>
+</div>
+
+</aside>
+</div>
+</div>
