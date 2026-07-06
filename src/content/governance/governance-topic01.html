@@ -1,0 +1,798 @@
+<!-- governance-topic01 — auto-imported from governance-topic01-governance-concepts-good-governance-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(135deg,#1b3a4b 0%,#0d2535 55%,#061018 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ol{margin:0;padding-left:22px;font-size:14px;columns:2;column-gap:24px}
+.toc li{margin-bottom:5px;break-inside:avoid}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout strong{color:var(--brand-blue-dark)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{margin:20px 0;overflow-x:auto}
+.svg-wrap svg{display:block;width:100%;max-width:700px;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic;text-align:center}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px;margin-bottom:6px;display:block}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+blockquote{border-left:4px solid var(--brand-blue);background:var(--brand-blue-light);margin:16px 0;padding:12px 18px;border-radius:6px;font-style:italic;color:var(--brand-blue-dark)}
+blockquote cite{display:block;margin-top:6px;font-size:12px;font-style:normal;color:var(--muted)}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 100px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ol{columns:1}
+  .grid-2,.grid-3{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Governance &amp; Good Governance &mdash; Concepts, Stakeholders &amp; the 2nd ARC Framework</h1>
+  <p class="sub"><strong>Governance</strong> is the process of decision-making &amp; the process by which decisions are implemented (or not implemented) — distinct from "government," which is only one of several actors in that process. This foundational topic builds the conceptual base for the entire Governance &amp; Social Issues series: the Government-vs-Governance distinction, the World Bank/UNDP good-governance framework, India's <strong>Second Administrative Reforms Commission (2nd ARC)</strong>, &amp; a cluster of high-salience governance-of-liberty flashpoints — death penalty, under-trial prisoners, prison reforms, mob-lynching, manual scavenging &amp; same-sex marriage.</p>
+  <div class="meta">
+    <span class="pill">UPSC Prelims &middot; Mains GS-II</span>
+    <span class="pill">2nd ARC — 15 Reports</span>
+    <span class="pill">~26 min read</span>
+    <span class="pill">Good Governance &middot; Stakeholders</span>
+    <span class="pill">Death Penalty &middot; Prison Reforms</span>
+  </div>
+</div>
+
+<div class="toc">
+<h3>On this page</h3>
+<ol>
+  <li><a href="#concept">Conceptual Clarity</a></li>
+  <li><a href="#s1">1. Government vs. Governance vs. Good Governance</a></li>
+  <li><a href="#s2">2. Stakeholders &amp; the UNDP/World Bank Framework</a></li>
+  <li><a href="#s3">3. Evolution of Governance in India</a></li>
+  <li><a href="#s4">4. Major Governance Issues in India</a></li>
+  <li><a href="#s5">5. Second ARC — Mandate, 15 Reports &amp; Key Recommendations</a></li>
+  <li><a href="#s6">6. Good-Governance Initiatives in India</a></li>
+  <li><a href="#s7">7. Death Penalty — Debate &amp; Jurisprudence</a></li>
+  <li><a href="#s8">8. Under-Trial Prisoners &amp; Prison Reforms</a></li>
+  <li><a href="#s9">9. Social-Governance Flashpoints</a></li>
+  <li><a href="#s10">10. Same-Sex Marriage — Governance of Personal Liberty</a></li>
+  <li><a href="#s11">11. Current Affairs Anchor (2024–26)</a></li>
+  <li><a href="#prelims-pyq">12. Prelims PYQs</a></li>
+  <li><a href="#mains-pyq">13. Mains PYQs</a></li>
+  <li><a href="#revision">14. Quick Revision</a></li>
+</ol>
+</div>
+
+<div class="concept-box" id="concept">
+<h3>Conceptual Clarity &mdash; Three Lenses</h3>
+<ol>
+  <li><strong>Government vs. Governance</strong> &mdash; government is a formal institution/actor; governance is a <em>process</em> involving government, private sector &amp; civil society jointly exercising economic, political &amp; administrative authority.</li>
+  <li><strong>Good governance as a normative standard</strong> &mdash; not all governance is "good" governance; goodness is measured against World Bank/UNDP characteristics (participation, rule of law, transparency, accountability etc.), making "good governance" an evaluative benchmark, not a synonym for governance itself.</li>
+  <li><strong>Institutional reform vs. rights-based governance issues</strong> &mdash; governance reform spans two registers: structural/procedural reform (2nd ARC, e-governance, RTI) &amp; rights-based flashpoints where state power directly confronts individual liberty (death penalty, under-trials, mob-lynching, marriage equality) — both registers are examinable, often in combination in the same Mains question.</li>
+</ol>
+</div>
+
+<section class="notes" id="s1">
+  <h2>1. Government vs. Governance vs. Good Governance</h2>
+
+  <h3>1.1 Defining Governance</h3>
+  <p>Governance refers to <strong>the process of decision-making &amp; the process by which decisions are (or are not) implemented</strong>. It is broader than "government" — government is one institutional actor, while governance is the sum-total interaction of the state, market &amp; civil society in exercising authority over a country's economic, political &amp; administrative affairs. The term gained global currency through World Bank &amp; UNDP usage in the early 1990s, coinciding with structural-adjustment-era emphasis on institutional quality as a determinant of development outcomes.</p>
+
+  <h3>1.2 Key Distinctions</h3>
+  <table>
+    <thead><tr><th>Dimension</th><th>Government</th><th>Governance</th></tr></thead>
+    <tbody>
+      <tr><td>Nature</td><td>Formal institution/structure</td><td>Process/mechanism of authority exercise</td></tr>
+      <tr><td>Actors</td><td>State only (legislature, executive, judiciary)</td><td>State + private sector + civil society</td></tr>
+      <tr><td>Scope</td><td>Narrower — rule-making &amp; enforcement</td><td>Broader — includes implementation, service delivery, participation, accountability</td></tr>
+      <tr><td>Evaluation</td><td>Legitimacy via elections/constitution</td><td>Evaluated via "good governance" indicators (participation, transparency etc.)</td></tr>
+      <tr><td>Continuity</td><td>Changes with electoral cycles</td><td>Institutional processes persist across governments</td></tr>
+    </tbody>
+  </table>
+
+  <h3>1.3 Good Governance — A Normative Benchmark</h3>
+  <p>The World Bank (1992, <em>Governance &amp; Development</em>) defined good governance as <strong>"the manner in which power is exercised in the management of a country's economic &amp; social resources for development."</strong> It is a normative, evaluative concept — governance can exist without being "good"; authoritarian or corrupt states also "govern," but fail the good-governance benchmark on transparency, accountability &amp; rule of law.</p>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> "Governance" &amp; "government" are frequently used interchangeably in casual usage but are conceptually distinct — governance is process-oriented &amp; multi-actor; government is a specific institutional actor within that process. UPSC MCQs test this distinction via statement-based questions.</div>
+</section>
+
+<section class="notes" id="s2">
+  <h2>2. Stakeholders &amp; the UNDP/World Bank Framework</h2>
+
+  <h3>2.1 The Three Broad Stakeholder Categories</h3>
+  <div class="grid-3">
+    <div class="card"><h4>State/Government</h4><p>Legislature, executive, judiciary at Union, State &amp; local levels — the primary rule-making &amp; enforcement stakeholder; sets the legal-regulatory framework within which other actors operate.</p></div>
+    <div class="card"><h4>Market/Private Sector</h4><p>Corporates, PPPs, industry associations — increasingly co-opted into service delivery (e.g., PPP infrastructure, CSR-driven welfare, private participation in health/education).</p></div>
+    <div class="card"><h4>Civil Society</h4><p>NGOs, media, citizen groups, academia — perform watchdog, advocacy &amp; last-mile delivery functions (e.g., MKSS's social-audit movement in Rajasthan).</p></div>
+  </div>
+
+  <h3>2.2 Citizens as Central Stakeholders</h3>
+  <p>Citizens occupy a dual role — as <strong>rights-bearers</strong> (entitled to services, transparency, accountability) &amp; as <strong>co-producers</strong> of governance outcomes (via participation in Gram Sabhas, social audits, RTI use, e-governance feedback channels). The 2nd ARC's emphasis on citizen-centric administration reflects a deliberate shift from governance <em>by</em> the state to governance <em>with</em> the state.</p>
+
+  <h3>2.3 UNDP's Eight Characteristics of Good Governance</h3>
+  <table>
+    <thead><tr><th>Characteristic</th><th>Meaning</th></tr></thead>
+    <tbody>
+      <tr><td>Participatory</td><td>All stakeholders have a voice in decision-making, directly or via legitimate intermediaries</td></tr>
+      <tr><td>Rule of Law</td><td>Fair legal frameworks, impartially enforced, including on human rights</td></tr>
+      <tr><td>Transparency</td><td>Free flow of information; decisions &amp; their enforcement follow accessible rules</td></tr>
+      <tr><td>Responsiveness</td><td>Institutions serve all stakeholders within a reasonable timeframe</td></tr>
+      <tr><td>Consensus-oriented</td><td>Mediates differing interests to reach broad agreement on the common good</td></tr>
+      <tr><td>Equity &amp; Inclusiveness</td><td>All groups, especially the most vulnerable, have opportunities to improve/maintain well-being</td></tr>
+      <tr><td>Effectiveness &amp; Efficiency</td><td>Processes/institutions produce results meeting needs while using resources optimally</td></tr>
+      <tr><td>Accountability</td><td>Decision-makers in government, private sector &amp; civil society are accountable to the public &amp; institutional stakeholders</td></tr>
+    </tbody>
+  </table>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 700 260" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+      <rect width="700" height="260" fill="#fafbfc" rx="8"/>
+      <text x="350" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Governance = Interaction of Three Stakeholder Pillars</text>
+      <circle cx="180" cy="140" r="72" fill="#1a3d5c" opacity="0.85"/>
+      <circle cx="350" cy="90" r="72" fill="#c47820" opacity="0.85"/>
+      <circle cx="520" cy="140" r="72" fill="#1a7a5a" opacity="0.85"/>
+      <text x="150" y="140" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">State /</text>
+      <text x="150" y="156" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">Government</text>
+      <text x="350" y="86" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">Market /</text>
+      <text x="350" y="102" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">Private Sector</text>
+      <text x="500" y="140" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">Civil</text>
+      <text x="500" y="156" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">Society</text>
+      <text x="350" y="235" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">GOVERNANCE</text>
+      <text x="350" y="252" text-anchor="middle" font-size="10.5" fill="#5a6266">joint exercise of economic, political &amp; administrative authority</text>
+    </svg>
+    <div class="svg-caption">Fig 1: Governance as the overlapping process of State, Market &amp; Civil Society authority</div>
+  </div>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> The UNDP framework lists <em>eight</em> characteristics of good governance — a frequently tested exact count; candidates often mis-recall six or seven, or confuse UNDP's list with the World Bank's separate six worldwide-governance-indicator dimensions (voice &amp; accountability, political stability, government effectiveness, regulatory quality, rule of law, control of corruption).</div>
+</section>
+
+<section class="notes" id="s3">
+  <h2>3. Evolution of Governance in India</h2>
+
+  <h3>3.1 Pre-1991 — Command &amp; Control Governance</h3>
+  <p>Centralised planning, License-Permit-Quota Raj &amp; extensive state control over economic activity characterised pre-1991 Indian governance, with limited citizen-participation mechanisms &amp; weak transparency norms. The bureaucracy operated on a rule-bound, discretionary-permission model that generated rent-seeking incentives.</p>
+
+  <h3>3.2 Post-1991 — Liberalisation &amp; New Public Management</h3>
+  <p>Economic liberalisation coincided with a shift toward <strong>New Public Management (NPM)</strong> principles — efficiency, outcome-orientation &amp; market-mechanism use in service delivery — &amp; later toward rights-based, transparency-driven governance (RTI 2005, Right to Service Acts).</p>
+
+  <h3>3.3 Constitutional Basis — Decentralisation</h3>
+  <p>The <strong>73rd &amp; 74th Constitutional Amendments (1992)</strong> institutionalised decentralised governance via Panchayati Raj &amp; urban local bodies, embedding subsidiarity &amp; participatory governance principles constitutionally (cross-link: Polity Topic 19, Panchayati Raj &amp; Municipalities).</p>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 700 170" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+      <rect width="700" height="170" fill="#fafbfc" rx="8"/>
+      <text x="350" y="20" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Periodisation of India's Governance Evolution</text>
+      <line x1="30" y1="95" x2="670" y2="95" stroke="#1a3d5c" stroke-width="2.5"/>
+      <polygon points="670,91 682,95 670,99" fill="#1a3d5c"/>
+      <g>
+        <circle cx="90" cy="95" r="6" fill="#c47820"/>
+        <text x="90" y="80" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2035">Pre-1991</text>
+        <text x="90" y="115" text-anchor="middle" font-size="10" fill="#5a6266">Command &amp;</text>
+        <text x="90" y="128" text-anchor="middle" font-size="10" fill="#5a6266">Control</text>
+      </g>
+      <g>
+        <circle cx="270" cy="95" r="6" fill="#c47820"/>
+        <text x="270" y="80" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2035">1991–2005</text>
+        <text x="270" y="115" text-anchor="middle" font-size="10" fill="#5a6266">New Public</text>
+        <text x="270" y="128" text-anchor="middle" font-size="10" fill="#5a6266">Management</text>
+      </g>
+      <g>
+        <circle cx="450" cy="95" r="6" fill="#c47820"/>
+        <text x="450" y="80" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2035">2005–2014</text>
+        <text x="450" y="115" text-anchor="middle" font-size="10" fill="#5a6266">Rights-Based /</text>
+        <text x="450" y="128" text-anchor="middle" font-size="10" fill="#5a6266">Transparency</text>
+      </g>
+      <g>
+        <circle cx="600" cy="95" r="6" fill="#c47820"/>
+        <text x="600" y="80" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2035">2014–present</text>
+        <text x="600" y="115" text-anchor="middle" font-size="10" fill="#5a6266">Digital /</text>
+        <text x="600" y="128" text-anchor="middle" font-size="10" fill="#5a6266">Tech-Mediated</text>
+      </g>
+    </svg>
+    <div class="svg-caption">Fig 2: Four phases of India's governance evolution since Independence</div>
+  </div>
+
+  <div class="callout info"><strong>Mains anchor:</strong> India's governance evolution can be periodised as: centralised/command-control (pre-1991) &rarr; market-oriented NPM (1991–2005) &rarr; rights-based/transparency-driven (2005–2014) &rarr; digital/technology-mediated governance (2014–present, cross-link: Topic 02, E-Governance &amp; Digital India). Strong Mains answers cite a landmark reform anchoring each phase.</div>
+</section>
+
+<section class="notes" id="s4">
+  <h2>4. Major Governance Issues in India</h2>
+
+  <h3>4.1 Structural Issues</h3>
+  <ul>
+    <li><strong>Red-tapism &amp; delay</strong> — excessive procedural layers slowing decision-making &amp; service delivery.</li>
+    <li><strong>Corruption</strong> — rent-seeking at multiple administrative levels (cross-link: Ethics Topic 08, Probity in Governance).</li>
+    <li><strong>Lack of accountability</strong> — weak grievance-redressal mechanisms, delayed disciplinary action against erring officials.</li>
+    <li><strong>Political interference</strong> — frequent transfers, politicisation of postings undermining bureaucratic neutrality (cross-link: Topic 04, Civil Services).</li>
+  </ul>
+
+  <h3>4.2 Delivery &amp; Capacity Issues</h3>
+  <ul>
+    <li><strong>Capacity deficits</strong> — inadequate staffing, training &amp; technology at last-mile delivery points.</li>
+    <li><strong>Digital divide</strong> — e-governance benefits unevenly distributed across rural-urban &amp; income divides (cross-link: Topic 02).</li>
+    <li><strong>Centre-State coordination gaps</strong> — federal friction slowing scheme implementation on Concurrent/State-List subjects.</li>
+  </ul>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> Governance issues are often tested as "identify the odd one out" or matching-type questions distinguishing structural (red-tapism, corruption) from delivery-capacity (staffing, digital-divide) issues — read the question stem carefully for the specific category asked.</div>
+</section>
+
+<section class="notes" id="s5">
+  <h2>5. Second ARC — Mandate, 15 Reports &amp; Key Recommendations</h2>
+
+  <h3>5.1 Constitution &amp; Mandate</h3>
+  <p>The <strong>Second Administrative Reforms Commission (2nd ARC)</strong> was constituted in <strong>2005</strong> under the chairmanship of <strong>Veerappa Moily</strong> (M. Ramachandran served as Member-Secretary), tasked with preparing "a detailed blueprint for revamping the public administration system" of the country. It was the successor to the First ARC (1966, chaired by Morarji Desai/K. Hanumanthaiya).</p>
+
+  <h3>5.2 The 15 Reports (2006–09)</h3>
+  <table>
+    <thead><tr><th>Report No.</th><th>Subject</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>Right to Information — Master Key to Good Governance</td></tr>
+      <tr><td>2</td><td>Unlocking Human Capital — Entitlements &amp; Governance</td></tr>
+      <tr><td>3</td><td>Crisis Management — From Despair to Hope</td></tr>
+      <tr><td>4</td><td>Ethics in Governance</td></tr>
+      <tr><td>5</td><td>Public Order</td></tr>
+      <tr><td>6</td><td>Local Governance</td></tr>
+      <tr><td>7</td><td>Capacity Building for Conflict Resolution</td></tr>
+      <tr><td>8</td><td>Combating Terrorism</td></tr>
+      <tr><td>9</td><td>Social Capital — A Shared Destiny</td></tr>
+      <tr><td>10</td><td>Refurbishing Personnel Administration</td></tr>
+      <tr><td>11</td><td>Promoting e-Governance</td></tr>
+      <tr><td>12</td><td>Citizen-Centric Administration — Heart of Governance</td></tr>
+      <tr><td>13</td><td>Organisational Structure of Government of India</td></tr>
+      <tr><td>14</td><td>Strengthening Financial Management Systems</td></tr>
+      <tr><td>15</td><td>State &amp; District Administration</td></tr>
+    </tbody>
+  </table>
+
+  <h3>5.3 Cross-Cutting Recommendations</h3>
+  <ul>
+    <li>Citizen's Charters made statutory &amp; grievance-redressal mechanisms strengthened.</li>
+    <li>Sevottam Model adoption for service-delivery excellence (cross-link: Topic 03, Citizens Charter &amp; RTI).</li>
+    <li>Right to Service legislation at state level (pioneered by Madhya Pradesh, 2010).</li>
+    <li>Lateral entry into civil services for specialised domains.</li>
+    <li>Independent Personnel Board for senior civil-service transfers/postings to insulate against political interference.</li>
+  </ul>
+
+  <div class="callout info"><strong>Mains anchor:</strong> The 2nd ARC's 15-report structure spans nearly every GS2 governance sub-theme — questions frequently ask candidates to link a specific governance reform (e.g., RTI, e-governance, citizen charters) back to its originating 2nd ARC report. Report 1 (RTI), Report 11 (e-Governance) &amp; Report 12 (Citizen-Centric Administration) are the most frequently examined.</div>
+</section>
+
+<section class="notes" id="s6">
+  <h2>6. Good-Governance Initiatives in India</h2>
+
+  <h3>6.1 Legal &amp; Institutional Initiatives</h3>
+  <ul>
+    <li><strong>RTI Act, 2005</strong> — statutory transparency mechanism (2nd ARC Report 1's centrepiece recommendation).</li>
+    <li><strong>Citizen's Charters &amp; Right to Service Acts</strong> — time-bound service-delivery guarantees at state level.</li>
+    <li><strong>Lokpal &amp; Lokayuktas Act, 2013</strong> — anti-corruption ombudsman institutions (cross-link: Polity Topic 30).</li>
+    <li><strong>Mission Karmayogi (2020)</strong> — competency-based civil-service capacity building via the iGOT platform.</li>
+  </ul>
+
+  <h3>6.2 Technology-Driven Initiatives</h3>
+  <ul>
+    <li><strong>Digital India (2015)</strong> &amp; the JAM Trinity (Jan Dhan-Aadhaar-Mobile) for DBT-based leakage reduction.</li>
+    <li><strong>PRAGATI</strong> — PM-level ICT platform for real-time project monitoring &amp; grievance redressal.</li>
+    <li><strong>Good Governance Index (DARPG)</strong> — state-wise governance-performance ranking across ten sectors.</li>
+  </ul>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> <strong>Good Governance Day</strong> is observed on <strong>25 December</strong> (birth anniversary of Atal Bihari Vajpayee) — do not confuse with other administrative-reform anniversaries or with Civil Services Day (21 April).</div>
+</section>
+
+<section class="notes" id="s7">
+  <h2>7. Death Penalty — Debate &amp; Jurisprudence</h2>
+
+  <h3>7.1 Constitutional &amp; Legal Position</h3>
+  <p>India retains the death penalty for the "rarest of rare" cases, per the Supreme Court's <strong>Bachan Singh v. State of Punjab (1980)</strong> doctrine — capital punishment reserved for cases where the alternative of life imprisonment is "unquestionably foreclosed." <strong>Macchi Singh v. State of Punjab (1983)</strong> later laid down five illustrative categories (manner of commission, motive, anti-social/socially abhorrent nature, magnitude, personality of victim) to guide application — refining, not originating, the doctrine.</p>
+
+  <h3>7.2 Arguments For &amp; Against</h3>
+  <div class="grid-2">
+    <div class="card"><h4>For Retention</h4><p>Deterrence for heinous crimes; retributive justice for victims; societal demand in high-profile cases (terrorism, sexual violence against children under POCSO).</p></div>
+    <div class="card"><h4>For Abolition</h4><p>Irreversibility risk (wrongful conviction); no conclusive deterrence evidence; arbitrary "rarest of rare" application (Law Commission's 262nd Report, 2015); global abolitionist trend.</p></div>
+  </div>
+
+  <h3>7.3 Law Commission's 262nd Report (2015)</h3>
+  <p>Recommended abolishing the death penalty for all crimes <em>except terrorism-related offences &amp; waging war against the state</em>, citing inconsistent judicial application across benches &amp; lack of conclusive deterrence evidence — a phased-abolition, not blanket-abolition, recommendation.</p>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> The "rarest of rare" doctrine originates from <strong>Bachan Singh (1980)</strong>, not Macchi Singh (1983) — the latter merely laid down illustrative categories for applying the test.</div>
+</section>
+
+<section class="notes" id="s8">
+  <h2>8. Under-Trial Prisoners &amp; Prison Reforms</h2>
+
+  <h3>8.1 Scale of the Under-Trial Problem</h3>
+  <p>Under-trial prisoners (those awaiting trial, not yet convicted) constitute a large majority of India's prison population, reflecting judicial delays &amp; restrictive bail practices — raising Article 21 (right to speedy trial, <em>Hussainara Khatoon v. State of Bihar</em>, 1979) concerns.</p>
+
+  <h3>8.2 Legal Safeguards</h3>
+  <ul>
+    <li><strong>Section 436A, CrPC</strong> (corresponding provision under BNSS, 2023) — mandatory release of under-trials who have served half the maximum sentence for their alleged offence (excluding death-punishable offences).</li>
+    <li><strong>Undertrial Review Committees</strong> — district-level periodic review mechanisms recommended by the Ministry of Home Affairs to identify eligible under-trials for release.</li>
+  </ul>
+
+  <h3>8.3 Prison Reforms — Committees &amp; Initiatives</h3>
+  <table>
+    <thead><tr><th>Committee/Initiative</th><th>Key Contribution</th></tr></thead>
+    <tbody>
+      <tr><td>All India Jail Reforms Committee (Mulla Committee, 1983)</td><td>Recommended prison decongestion, correctional (not merely punitive) approach</td></tr>
+      <tr><td>Justice Krishna Iyer Committee</td><td>Focused on women prisoners' conditions &amp; the need for women in prison administration</td></tr>
+      <tr><td>Model Prison Manual, 2016 (revised 2023 as Model Prisons Act)</td><td>Standardised prison administration guidelines across states</td></tr>
+      <tr><td>e-Prisons Project</td><td>Digitisation of prisoner records for transparency &amp; case-status tracking</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout info"><strong>Mains anchor:</strong> Prison reform is a recurring GS2 theme linking Article 21 jurisprudence (speedy trial, dignity in custody) with practical administrative reform (decongestion, digitisation) — strong answers cite both the constitutional basis &amp; a specific committee/initiative.</div>
+</section>
+
+<section class="notes" id="s9">
+  <h2>9. Social-Governance Flashpoints</h2>
+
+  <h3>9.1 Mob-Lynching</h3>
+  <p>The Supreme Court in <strong>Tehseen Poonawalla v. Union of India (2018)</strong> issued preventive, remedial &amp; punitive guidelines to states for curbing mob-lynching, directing states to enact dedicated anti-lynching legislation &amp; designate nodal/district-level officers to prevent such incidents. Several states (e.g., West Bengal, Rajasthan, Manipur) have since enacted dedicated anti-lynching laws.</p>
+
+  <h3>9.2 Manual Scavenging</h3>
+  <p>The <strong>Prohibition of Employment as Manual Scavengers &amp; their Rehabilitation Act, 2013</strong> bans manual scavenging &amp; mandates rehabilitation, repealing &amp; replacing the weaker 1993 Act. Enforcement gaps persist — deaths during hazardous sewer/septic-tank cleaning remain a recurring governance failure, prompting Supreme Court interventions on mechanised cleaning &amp; compensation (₹10 lakh for sewer deaths, per SC directions).</p>
+
+  <h3>9.3 Moral Policing</h3>
+  <p>Extra-legal vigilante actions curbing individual choices (dress, relationships, food habits) raise Article 19 &amp; Article 21 concerns; courts have repeatedly held that personal-liberty restrictions must flow from law, not vigilante enforcement.</p>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> The Manual Scavenging Act's year is <strong>2013</strong> — do not confuse with the earlier, weaker Employment of Manual Scavengers &amp; Construction of Dry Latrines (Prohibition) Act, <strong>1993</strong>, which the 2013 Act repealed &amp; replaced.</div>
+</section>
+
+<section class="notes" id="s10">
+  <h2>10. Same-Sex Marriage — Governance of Personal Liberty</h2>
+
+  <h3>10.1 Supriyo v. Union of India (2023)</h3>
+  <p>A 5-judge Constitution Bench unanimously held that there is <strong>no fundamental right to marriage</strong> under the Constitution, &amp; declined to read same-sex couples into the Special Marriage Act, 1954 — while directing the Union government to constitute a high-level committee examining civil-union rights &amp; entitlements without judicially legislating marriage equality.</p>
+
+  <h3>10.2 Governance Dimension</h3>
+  <p>The case illustrates the judiciary's institutional-competence-based deference to Parliament on socially contentious governance questions — the Court distinguished between reading down discriminatory provisions (a permissible judicial function, as in Navtej Singh Johar) &amp; legislating new social institutions (a legislative function).</p>
+
+  <blockquote>"Whether to recognise a new social institution such as marriage between same-sex couples is a matter that lies in the domain of the legislature." <cite>— Supreme Court, Supriyo v. Union of India (2023)</cite></blockquote>
+
+  <div class="callout info"><strong>Mains anchor:</strong> Supriyo (2023) is a strong case study for the judiciary-legislature separation-of-powers debate in governance — contrast with Navtej Singh Johar (2018, Section 377 decriminalisation), where the Court read down an existing provision rather than creating a new entitlement.</div>
+</section>
+
+<section class="notes" id="s11">
+  <h2>11. Current Affairs Anchor (2024–26)</h2>
+  <ul>
+    <li>Union Government's high-level committee status on civil-union rights for same-sex couples (constituted per Supriyo directions) — track for updates.</li>
+    <li>State-wise Anti-Mob-Lynching legislation status (following Tehseen Poonawalla directions) — verify current count of states with dedicated laws.</li>
+    <li>Good Governance Index (DARPG) latest edition state/UT rankings.</li>
+    <li>Mission Karmayogi (iGOT platform) enrolment &amp; capacity-building progress updates.</li>
+    <li>Undertrial Review Committee-driven release data — periodic Ministry of Home Affairs / NCRB updates on undertrial population reduction.</li>
+    <li>Manual-scavenging-death incidents &amp; Supreme Court contempt/compliance proceedings against non-compliant states.</li>
+  </ul>
+</section>
+
+<section class="notes" id="prelims-pyq">
+  <h2>12. Prelims PYQs</h2>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2017</div>
+    <p>Which of the following is/are the exclusive power(s) of Lok Sabha?<br>
+    1. To ratify the declaration of Emergency<br>
+    2. To pass a motion of no-confidence against the Council of Ministers<br>
+    3. To impeach the President of India<br>
+    Select the correct answer using the code given below:<br>
+    (a) 1 only&nbsp;&nbsp;(b) 2 only&nbsp;&nbsp;(c) 1, 3 and 4&nbsp;&nbsp;(d) 2 and 3</p>
+    <p><strong>Answer: (b)</strong> — A no-confidence motion can only be moved in the Lok Sabha (Rajya Sabha has no such power). This governance-adjacent question tests institutional-accountability mechanisms — a recurring UPSC pattern of embedding governance concepts within constitutional-machinery questions.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2020</div>
+    <p>Consider the following statements regarding the characteristics of "Good Governance" as identified by the UNDP:<br>
+    1. Good governance is participatory &amp; consensus-oriented.<br>
+    2. Good governance guarantees that corruption is minimised &amp; the views of minorities are taken into account.<br>
+    3. Good governance requires that institutions &amp; processes try to serve all stakeholders within a reasonable timeframe.<br>
+    Which of the statements given above is/are correct?<br>
+    (a) 1 only&nbsp;&nbsp;(b) 1 and 3 only&nbsp;&nbsp;(c) 2 and 3 only&nbsp;&nbsp;(d) 1, 2 and 3</p>
+    <p><strong>Answer: (d)</strong> — All three statements accurately paraphrase UNDP's eight characteristics: participatory &amp; consensus-oriented (Statement 1); equity/inclusiveness &amp; accountability which reduces corruption (Statement 2); responsiveness (Statement 3, "within a reasonable timeframe" is the exact UNDP phrasing).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2022</div>
+    <p>With reference to the Second Administrative Reforms Commission, consider the following statements:<br>
+    1. It was constituted in 2005 under the chairmanship of Veerappa Moily.<br>
+    2. It submitted a single consolidated report covering all aspects of administrative reform.<br>
+    3. Its first report was titled "Right to Information — Master Key to Good Governance."<br>
+    Which of the statements given above is/are correct?<br>
+    (a) 1 and 3 only&nbsp;&nbsp;(b) 2 only&nbsp;&nbsp;(c) 1, 2 and 3&nbsp;&nbsp;(d) 3 only</p>
+    <p><strong>Answer: (a)</strong> — Statements 1 and 3 are correct. Statement 2 is incorrect: the 2nd ARC submitted 15 separate thematic reports between 2006–09, not a single consolidated report — a frequently tested distractor.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2021</div>
+    <p>The "rarest of rare" doctrine governing the award of death sentence in India was propounded by the Supreme Court in which of the following cases?<br>
+    (a) Maneka Gandhi v. Union of India (1978)<br>
+    (b) Bachan Singh v. State of Punjab (1980)<br>
+    (c) Macchi Singh v. State of Punjab (1983)<br>
+    (d) Mithu v. State of Punjab (1983)</p>
+    <p><strong>Answer: (b)</strong> — Bachan Singh (1980) originated the "rarest of rare" doctrine. Macchi Singh (1983) merely laid down illustrative categories refining its application. Maneka Gandhi (1978) concerned procedure established by law under Article 21; Mithu (1983) struck down mandatory death sentence under Section 303 IPC as unconstitutional.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2019</div>
+    <p>Consider the following statements regarding the Prohibition of Employment as Manual Scavengers and their Rehabilitation Act, 2013:<br>
+    1. It repealed and replaced the Employment of Manual Scavengers and Construction of Dry Latrines (Prohibition) Act, 1993.<br>
+    2. It provides for the identification of manual scavengers through a survey and their rehabilitation.<br>
+    3. It criminalises hazardous manual cleaning of sewers and septic tanks without protective gear.<br>
+    Which of the statements given above are correct?<br>
+    (a) 1 and 2 only&nbsp;&nbsp;(b) 2 and 3 only&nbsp;&nbsp;(c) 1 and 3 only&nbsp;&nbsp;(d) 1, 2 and 3</p>
+    <p><strong>Answer: (d)</strong> — All three statements are correct: the 2013 Act repealed the 1993 Act (Statement 1), mandates survey-based identification &amp; rehabilitation (Statement 2), and criminalises hazardous manual cleaning without protective gear (Statement 3).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2018</div>
+    <p>Good Governance Day is observed in India on which of the following dates, and in commemoration of whom?<br>
+    (a) 14 November — Jawaharlal Nehru<br>
+    (b) 25 December — Atal Bihari Vajpayee<br>
+    (c) 2 October — Mahatma Gandhi<br>
+    (d) 21 April — Civil Services Day (no specific commemoration)</p>
+    <p><strong>Answer: (b)</strong> — Good Governance Day is observed on 25 December, the birth anniversary of former Prime Minister Atal Bihari Vajpayee, since 2014. Civil Services Day (21 April) is a separate observance unrelated to Vajpayee.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2016</div>
+    <p>With reference to Section 436A of the Code of Criminal Procedure, consider the following statements:<br>
+    1. It provides for mandatory release of an under-trial prisoner who has completed half of the maximum sentence prescribed for the alleged offence.<br>
+    2. It applies uniformly to all offences, including those punishable with death.<br>
+    Which of the statements given above is/are correct?<br>
+    (a) 1 only&nbsp;&nbsp;(b) 2 only&nbsp;&nbsp;(c) Both 1 and 2&nbsp;&nbsp;(d) Neither 1 nor 2</p>
+    <p><strong>Answer: (a)</strong> — Statement 1 is correct. Statement 2 is incorrect: Section 436A explicitly excludes offences punishable with death from its mandatory-release provision — a key exception frequently tested.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2024</div>
+    <p>With reference to the judgment in Supriyo v. Union of India (2023), consider the following statements:<br>
+    1. The Supreme Court held that there exists a fundamental right to marry under the Constitution of India.<br>
+    2. The Court read same-sex couples into the definition of "spouse" under the Special Marriage Act, 1954.<br>
+    3. The Court directed the Union Government to constitute a high-level committee to examine entitlements available to queer couples.<br>
+    Which of the statements given above is/are correct?<br>
+    (a) 1 and 2 only&nbsp;&nbsp;(b) 3 only&nbsp;&nbsp;(c) 1, 2 and 3&nbsp;&nbsp;(d) 2 and 3 only</p>
+    <p><strong>Answer: (b)</strong> — Only Statement 3 is correct. The Court explicitly held there is NO fundamental right to marriage (contradicting Statement 1) and declined to read same-sex couples into the Special Marriage Act (contradicting Statement 2), while directing formation of a committee on civil-union entitlements.</p>
+  </div>
+</section>
+
+<section class="notes" id="mains-pyq">
+  <h2>13. Mains PYQs</h2>
+
+  <div class="pyq">
+    <div class="year">UPSC GS-II 2020 — Mains · 10 Marks · 150 words</div>
+    <p><strong>"Governance," "Good Governance," and "Ethical Governance" are the different governance concepts being followed in India. Explain how they differ and how are they related.</strong></p>
+    <p><strong>Model Answer Structure:</strong></p>
+    <ol>
+      <li><strong>Define governance first:</strong> Process of decision-making &amp; implementation involving state, market &amp; civil society jointly — broader than "government" as a formal institutional actor.</li>
+      <li><strong>Good governance as a normative benchmark:</strong> World Bank (1992) definition — manner in which power is exercised in managing a country's resources; evaluated against UNDP's eight characteristics (participatory, rule of law, transparent, responsive, consensus-oriented, equitable, effective/efficient, accountable).</li>
+      <li><strong>Ethical governance as the values layer:</strong> Embeds probity, integrity &amp; public-interest orientation into both governance &amp; good governance — draws on 2nd ARC's 4th Report (Ethics in Governance) &amp; civil-service codes of conduct.</li>
+      <li><strong>Interrelationship:</strong> Governance is the base process; good governance is governance evaluated against normative standards; ethical governance is the values-infrastructure that makes good governance sustainable — corruption-free, accountable institutions require both structural reform (good governance) &amp; individual/institutional ethics.</li>
+      <li><strong>Indian illustration:</strong> RTI Act (transparency = good governance), Lokpal (accountability = good governance), Code of Conduct for civil servants &amp; Nolan Committee-style principles (ethical governance) — together operationalise the three concepts.</li>
+      <li><strong>Conclusion:</strong> The three concepts are nested, not parallel — ethical governance strengthens good governance, which is the evaluative lens applied to the broader process of governance.</li>
+    </ol>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC GS-II 2023 — Mains · 15 Marks · 250 words</div>
+    <p><strong>"Good governance is amenable to Sevottam model of service delivery." Discuss the strategies for making citizen-centric governance work.</strong></p>
+    <p><strong>Model Answer Structure:</strong></p>
+    <ol>
+      <li><strong>Sevottam Model explained:</strong> Three modules — service-delivery standards (Citizen's Charter), grievance redressal mechanism, capability building of staff for citizen-centric delivery; developed as a service-quality-excellence framework linked to 2nd ARC Report 12.</li>
+      <li><strong>2nd ARC Report 12 linkage:</strong> "Citizen-Centric Administration — Heart of Governance" identified the shift from bureaucratic discretion to service-guarantee obligations as central to good governance.</li>
+      <li><strong>Enabling strategies — legal:</strong> RTI Act 2005 for transparency; state-level Right to Service Acts (pioneered by Madhya Pradesh 2010) for time-bound delivery guarantees.</li>
+      <li><strong>Enabling strategies — technological:</strong> e-governance platforms (UMANG, MyGov), Aadhaar-linked DBT reducing leakages, PRAGATI for real-time monitoring.</li>
+      <li><strong>Enabling strategies — institutional:</strong> Grievance-redressal digitisation (CPGRAMS), capacity building via Mission Karmayogi/iGOT, third-party social audits (MKSS model).</li>
+      <li><strong>Conclusion:</strong> Citizen-centric governance requires convergence of Sevottam's three modules with legal guarantees, technology &amp; continuous capacity building — a multi-pronged, not single-instrument, strategy.</li>
+    </ol>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC GS-II 2021 — Mains · 10 Marks · 150 words</div>
+    <p><strong>Critically examine the "rarest of rare" doctrine in India's death-penalty jurisprudence. Should India move toward abolition?</strong></p>
+    <p><strong>Model Answer Structure:</strong></p>
+    <ol>
+      <li><strong>Doctrine's origin &amp; content:</strong> Bachan Singh (1980) — death penalty only where life imprisonment is "unquestionably foreclosed"; Macchi Singh (1983) refined with five illustrative categories (manner, motive, anti-social nature, magnitude, victim's personality).</li>
+      <li><strong>Arguments for retention:</strong> Deterrence claims for heinous crimes; retributive justice for victims/society; strong public sentiment in terrorism &amp; child-sexual-violence cases (POCSO amendments 2019 added death penalty for aggravated penetrative sexual assault).</li>
+      <li><strong>Arguments for abolition/reform:</strong> Irreversibility risk given documented wrongful-conviction cases; Law Commission's 262nd Report (2015) found no conclusive deterrence evidence &amp; inconsistent judicial application (arbitrariness across benches/states).</li>
+      <li><strong>Law Commission's middle path:</strong> Recommended abolition for all offences EXCEPT terrorism-related crimes &amp; waging war against the state — a phased, not blanket, abolition.</li>
+      <li><strong>International trend:</strong> Majority of countries have abolished the death penalty in law or practice; India remains a retentionist outlier among major democracies alongside the US, Japan.</li>
+      <li><strong>Conclusion:</strong> A calibrated approach — retaining the death penalty narrowly for terrorism/national-security offences while progressively restricting its application elsewhere, alongside judicial-sentencing-guideline reform to reduce arbitrariness, is more feasible than blanket abolition in the near term.</li>
+    </ol>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC GS-II 2019 — Mains · 10 Marks · 150 words</div>
+    <p><strong>Discuss the constitutional &amp; legal safeguards against prolonged pre-trial detention in India. Are they adequate?</strong></p>
+    <p><strong>Model Answer Structure:</strong></p>
+    <ol>
+      <li><strong>Constitutional basis:</strong> Article 21's speedy-trial guarantee, established in Hussainara Khatoon v. State of Bihar (1979) — prolonged pre-trial detention without speedy trial violates personal liberty.</li>
+      <li><strong>Statutory safeguard — Section 436A CrPC:</strong> Mandatory release of under-trials on personal bond after serving half the maximum sentence for the alleged offence (excluding death-punishable offences).</li>
+      <li><strong>Institutional mechanism:</strong> Undertrial Review Committees at district level, periodically reviewing cases for release eligibility, per Ministry of Home Affairs directions.</li>
+      <li><strong>Persisting inadequacies:</strong> Under-trials continue to form a large majority share of India's prison population; bail remains the exception rather than the rule in practice despite the "bail not jail" principle; legal-aid access gaps for indigent under-trials.</li>
+      <li><strong>Recent reform push:</strong> Supreme Court's continuing directions on decongestion; digitisation via e-Prisons &amp; e-Courts for faster case-status tracking; BNSS 2023 provisions on first-time offenders' release after one-third sentence served.</li>
+      <li><strong>Conclusion:</strong> Safeguards exist on paper but implementation gaps — judicial delay, legal-aid deficits, under-utilised review committees — mean actual protection remains inadequate; systemic fast-tracking of trials is needed alongside procedural safeguards.</li>
+    </ol>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC GS-II 2018 — Mains · 10 Marks · 150 words</div>
+    <p><strong>"Mob-lynching represents a failure of governance rather than merely a law-and-order problem." Critically analyse.</strong></p>
+    <p><strong>Model Answer Structure:</strong></p>
+    <ol>
+      <li><strong>Distinguishing governance failure from law-and-order framing:</strong> Law-and-order framing treats incidents as isolated criminal acts; governance framing examines systemic administrative-accountability failures enabling recurrence — absence of nodal officers, delayed FIRs, political patronage of perpetrators.</li>
+      <li><strong>Tehseen Poonawalla v. Union of India (2018):</strong> Supreme Court issued preventive (nodal officers, patrolling in sensitive areas), remedial (speedy trials, victim compensation) &amp; punitive (departmental action against negligent officials) guidelines.</li>
+      <li><strong>State-level legislative response:</strong> Several states (West Bengal, Rajasthan, Manipur) enacted dedicated anti-lynching laws; many states have not, revealing federal implementation gaps.</li>
+      <li><strong>Governance-failure evidence:</strong> Delayed police response, inadequate victim-compensation disbursal, low conviction rates in lynching cases — indicating administrative rather than purely criminal-justice deficiencies.</li>
+      <li><strong>Broader governance themes:</strong> Links to hate-speech regulation gaps, social-media misinformation governance, communal-harmony administrative machinery under the Police Act framework.</li>
+      <li><strong>Conclusion:</strong> Mob-lynching is best understood as a compound governance failure — spanning administrative accountability, legislative gaps &amp; social-harmony machinery — requiring a multi-institutional response beyond conventional law-and-order policing.</li>
+    </ol>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC GS-II 2016 — Mains · 12.5 Marks · 200 words</div>
+    <p><strong>Distinguish between "government" and "governance." How has India's governance model evolved since 1991?</strong></p>
+    <p><strong>Model Answer Structure:</strong></p>
+    <ol>
+      <li><strong>Conceptual distinction:</strong> Government = formal institutional actor (legislature, executive, judiciary); governance = broader multi-stakeholder process of decision-making &amp; implementation involving state, market &amp; civil society.</li>
+      <li><strong>Pre-1991 baseline:</strong> Centralised command-control governance — License-Permit-Quota Raj, extensive state control, weak citizen-participation channels.</li>
+      <li><strong>1991–2005 — New Public Management phase:</strong> Liberalisation-driven efficiency &amp; outcome-orientation; market mechanisms introduced into service delivery; disinvestment &amp; deregulation.</li>
+      <li><strong>2005–2014 — Rights-based/transparency phase:</strong> RTI Act 2005, Right to Service Acts, NREGA's rights-based entitlement model, growing civil-society/social-audit influence (MKSS).</li>
+      <li><strong>2014–present — Digital governance phase:</strong> Digital India, JAM Trinity-enabled DBT, e-governance platforms reducing intermediary discretion &amp; leakage.</li>
+      <li><strong>Conclusion:</strong> India's governance model has moved from a state-centric, discretionary model toward a multi-stakeholder, rights-based &amp; increasingly technology-mediated model — though implementation gaps (digital divide, federal coordination) persist across all phases.</li>
+    </ol>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC GS-II 2015 — Mains · 12.5 Marks · 200 words</div>
+    <p><strong>"Judicial restraint in matters of socially contentious legislative questions reflects an appropriate separation of powers." Discuss with reference to recent Supreme Court judgments.</strong></p>
+    <p><strong>Model Answer Structure:</strong></p>
+    <ol>
+      <li><strong>Separation-of-powers principle:</strong> Judiciary interprets &amp; applies law/constitution; creating new social institutions (e.g., marriage frameworks) is a legislative function requiring democratic deliberation.</li>
+      <li><strong>Supriyo v. Union of India (2023):</strong> Court held no fundamental right to marriage exists; declined to read same-sex couples into the Special Marriage Act 1954; directed a Union committee to examine civil-union entitlements instead of judicially creating marriage equality.</li>
+      <li><strong>Contrast — Navtej Singh Johar (2018):</strong> Court read down Section 377 IPC as unconstitutional (decriminalisation) — a permissible judicial function of striking down discriminatory provisions, distinct from legislating a new entitlement.</li>
+      <li><strong>Arguments for restraint:</strong> Preserves institutional legitimacy; avoids overreach into policy domains requiring broad social consensus &amp; legislative expertise (e.g., inheritance, adoption, taxation implications of marriage equality).</li>
+      <li><strong>Counter-view — restraint as abdication:</strong> Critics argue restraint can delay rights vindication for marginalised groups when legislatures are unresponsive; courts elsewhere (e.g., US Obergefell 2015) have affirmatively created marriage-equality rights.</li>
+      <li><strong>Conclusion:</strong> Judicial restraint in Supriyo reflects a considered institutional-competence judgment rather than abdication — the Court preserved space for legislative deliberation while directing executive action on entitlements, balancing rights-protection with democratic legitimacy.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="notes" id="revision">
+<div class="revision-box">
+  <h3>14. Quick Revision — Governance &amp; Good Governance</h3>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 700 190" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+      <rect width="700" height="190" fill="#fffdf5" rx="8"/>
+      <text x="350" y="18" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Governance Milestones — Key Markers (1992–2023)</text>
+      <line x1="30" y1="95" x2="670" y2="95" stroke="#1a3d5c" stroke-width="2.5"/>
+      <polygon points="670,91 682,95 670,99" fill="#1a3d5c"/>
+      <g><line x1="70" y1="95" x2="70" y2="65" stroke="#1a3d5c" stroke-width="1.5"/><circle cx="70" cy="65" r="4" fill="#c47820"/><text x="70" y="55" text-anchor="middle" font-size="10" font-weight="700" fill="#0d2035">1992</text><text x="70" y="112" text-anchor="middle" font-size="9.5" fill="#5a6266">73rd/74th CAA</text></g>
+      <g><line x1="200" y1="95" x2="200" y2="125" stroke="#1a3d5c" stroke-width="1.5"/><circle cx="200" cy="125" r="4" fill="#c47820"/><text x="200" y="145" text-anchor="middle" font-size="10" font-weight="700" fill="#0d2035">2005</text><text x="200" y="80" text-anchor="middle" font-size="9.5" fill="#5a6266">2nd ARC + RTI Act</text></g>
+      <g><line x1="330" y1="95" x2="330" y2="65" stroke="#1a3d5c" stroke-width="1.5"/><circle cx="330" cy="65" r="4" fill="#c47820"/><text x="330" y="55" text-anchor="middle" font-size="10" font-weight="700" fill="#0d2035">2013</text><text x="330" y="112" text-anchor="middle" font-size="9.5" fill="#5a6266">Lokpal Act; Manual Scavenging Act</text></g>
+      <g><line x1="460" y1="95" x2="460" y2="125" stroke="#1a3d5c" stroke-width="1.5"/><circle cx="460" cy="125" r="4" fill="#c47820"/><text x="460" y="145" text-anchor="middle" font-size="10" font-weight="700" fill="#0d2035">2015</text><text x="460" y="80" text-anchor="middle" font-size="9.5" fill="#5a6266">Digital India; LC 262nd Report</text></g>
+      <g><line x1="600" y1="95" x2="600" y2="65" stroke="#1a3d5c" stroke-width="1.5"/><circle cx="600" cy="65" r="4" fill="#c47820"/><text x="600" y="55" text-anchor="middle" font-size="10" font-weight="700" fill="#0d2035">2018–23</text><text x="600" y="112" text-anchor="middle" font-size="9.5" fill="#5a6266">Tehseen Poonawalla; Supriyo</text></g>
+    </svg>
+    <div class="svg-caption">Fig 3: Key governance-reform &amp; jurisprudence milestones since 1992</div>
+  </div>
+
+  <ol>
+    <li><strong>Governance</strong> = process of decision-making &amp; implementation, involving state + private sector + civil society; broader than "government."</li>
+    <li><strong>Good governance</strong> (World Bank, 1992) = manner power is exercised in managing a country's economic &amp; social resources for development.</li>
+    <li><strong>UNDP's 8 characteristics</strong>: participatory, rule of law, transparent, responsive, consensus-oriented, equitable/inclusive, effective/efficient, accountable.</li>
+    <li>India's governance evolution: centralised (pre-1991) &rarr; New Public Management (1991–2005) &rarr; rights-based/transparency (2005–2014) &rarr; digital governance (2014–present).</li>
+    <li><strong>2nd ARC</strong>: constituted 2005, chaired by <strong>Veerappa Moily</strong>, 15 reports (2006–09); Report 1 = RTI, Report 11 = e-Governance, Report 12 = Citizen-Centric Administration.</li>
+    <li>Good-governance initiatives: RTI Act 2005, Citizen's Charters, Lokpal &amp; Lokayuktas Act 2013, Mission Karmayogi 2020, Good Governance Index (DARPG).</li>
+    <li><strong>Good Governance Day</strong>: 25 December (Vajpayee's birth anniversary).</li>
+    <li><strong>Death penalty</strong>: "rarest of rare" doctrine from <strong>Bachan Singh (1980)</strong>, refined by five categories in Macchi Singh (1983); Law Commission's 262nd Report (2015) recommended abolition except for terrorism.</li>
+    <li><strong>Section 436A CrPC</strong>: mandatory undertrial release after serving half the maximum sentence (excludes death-punishable offences).</li>
+    <li><strong>Mulla Committee (1983)</strong>: prison decongestion &amp; correctional approach; Model Prison Manual 2016; e-Prisons digitisation.</li>
+    <li><strong>Tehseen Poonawalla v. UoI (2018)</strong>: preventive/remedial/punitive mob-lynching guidelines; directed states to legislate.</li>
+    <li><strong>Manual Scavenging Act, 2013</strong> replaced the weaker 1993 Act; enforcement gaps persist despite ban-cum-rehabilitation framework.</li>
+    <li><strong>Supriyo v. Union of India (2023)</strong>: no fundamental right to marriage; Court declined to read same-sex couples into Special Marriage Act 1954; directed committee on civil-union rights.</li>
+    <li>Stakeholders in governance = State + Market/Private Sector + Civil Society, with citizens as both rights-bearers &amp; co-producers.</li>
+    <li>Cross-links: Topic 02 (E-Governance), Topic 03 (Citizens Charter &amp; RTI), Topic 04 (Civil Services), Ethics Topic 08 (Probity in Governance).</li>
+  </ol>
+</div>
+</section>
+
+</main>
+<aside><div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Quick Reference</h4>
+    <ul>
+      <li>Governance = process; Government = one actor within it</li>
+      <li>World Bank 1992: good governance = manner of exercising power over resources</li>
+      <li>UNDP: 8 characteristics of good governance</li>
+      <li>2nd ARC: 2005, Veerappa Moily, 15 reports (2006–09)</li>
+      <li>Report 1 = RTI; Report 11 = e-Governance; Report 12 = Citizen-Centric Admin</li>
+      <li>Good Governance Day = 25 December (Vajpayee)</li>
+      <li>Bachan Singh (1980) = "rarest of rare" origin</li>
+      <li>Section 436A CrPC = undertrial release after 1/2 sentence</li>
+      <li>Manual Scavenging Act 2013 replaced 1993 Act</li>
+      <li>Supriyo (2023) = no fundamental right to marriage</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Committee/Case Timeline</h4>
+    <table>
+      <tr><th>Event</th><th>Year</th></tr>
+      <tr><td>Bachan Singh</td><td>1980</td></tr>
+      <tr><td>Mulla Committee</td><td>1983</td></tr>
+      <tr><td>Macchi Singh</td><td>1983</td></tr>
+      <tr><td>73rd/74th CAA</td><td>1992</td></tr>
+      <tr><td>2nd ARC + RTI Act</td><td>2005</td></tr>
+      <tr><td>Lokpal Act</td><td>2013</td></tr>
+      <tr><td>LC 262nd Report</td><td>2015</td></tr>
+      <tr><td>Tehseen Poonawalla</td><td>2018</td></tr>
+      <tr><td>Mission Karmayogi</td><td>2020</td></tr>
+      <tr><td>Supriyo v UoI</td><td>2023</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Exam Difficulty</h4>
+    <div class="bar"><span class="lbl">Prelims</span><div class="fill"><span style="width:70%"></span></div></div>
+    <div class="bar"><span class="lbl">Mains Factual</span><div class="fill"><span style="width:72%"></span></div></div>
+    <div class="bar"><span class="lbl">Mains Analytical</span><div class="fill"><span style="width:80%"></span></div></div>
+    <div class="bar"><span class="lbl">Essay/Interview</span><div class="fill"><span style="width:76%"></span></div></div>
+    <p style="font-size:12px;color:var(--muted);margin:8px 0 0">Foundational conceptual topic underpinning the whole Governance series; 2nd ARC report-numbering &amp; case-law facts are mechanically testable for Prelims, while conceptual-application questions dominate Mains.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag">2nd ARC</span>
+    <span class="tag">Good Governance</span>
+    <span class="tag">UNDP 8 Characteristics</span>
+    <span class="tag">Veerappa Moily</span>
+    <span class="tag">Section 436A</span>
+    <span class="tag">Mulla Committee</span>
+    <span class="tag orange">Bachan Singh 1980</span>
+    <span class="tag orange">Macchi Singh 1983</span>
+    <span class="tag orange">Tehseen Poonawalla</span>
+    <span class="tag orange">Manual Scavenging Act 2013</span>
+    <span class="tag green">Supriyo v UoI</span>
+    <span class="tag green">Navtej Singh Johar</span>
+    <span class="tag green">Mission Karmayogi</span>
+    <span class="tag">Good Governance Day</span>
+  </div>
+
+  <div class="widget">
+    <h4>Answer Writing Checklist</h4>
+    <ul>
+      <li>Always define governance vs government before answering any governance question</li>
+      <li>Cite specific 2nd ARC Report numbers, not just "2nd ARC recommended..."</li>
+      <li>For death penalty questions, distinguish Bachan Singh (origin) from Macchi Singh (categories)</li>
+      <li>Do not claim Section 436A applies to death-punishable offences — it explicitly excludes them</li>
+      <li>For Supriyo, do not say the Court "granted" or "denied" marriage equality outright — it declined to legislate judicially &amp; directed a committee</li>
+      <li>Use UNDP's exact eight-characteristic list, not a paraphrased shorter version</li>
+      <li>Anchor mob-lynching answers in Tehseen Poonawalla's three guideline categories (preventive/remedial/punitive)</li>
+    </ul>
+  </div>
+
+  <div class="widget related">
+    <h4>Related Notes</h4>
+    <ul>
+      <li><a href="/governance/e-governance-and-digital-india">Topic 02: E-Governance &amp; Digital India</a></li>
+      <li><a href="/governance/citizen-s-charter-rti-and-social-audit">Topic 03: Citizens Charter, RTI &amp; Social Audit</a></li>
+      <li><a href="/governance/civil-services-structure-and-reforms">Topic 04: Civil Services — Structure &amp; Reforms</a></li>
+      <li><a href="ethics/ethics-topic08-probity-governance-upsc-notes.html">Ethics Topic 08: Probity in Governance</a></li>
+      <li><a href="polity-topic19-panchayati-raj-municipalities-upsc-notes.html">Polity Topic 19: Panchayati Raj &amp; Municipalities</a></li>
+    </ul>
+  </div>
+
+</div></aside>
+</div>
+</div>

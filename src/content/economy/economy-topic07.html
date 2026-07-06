@@ -1,0 +1,862 @@
+<!-- economy-topic07 — auto-imported from economy-topic07-inflation-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(135deg,#1b3a4b 0%,#0d2535 55%,#061018 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ol{margin:0;padding-left:22px;font-size:14px;columns:2;column-gap:24px}
+.toc li{margin-bottom:5px;break-inside:avoid}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+.formula{background:#f5f7fa;border:1px solid var(--line);border-left:4px solid var(--brand-blue);padding:12px 16px;margin:12px 0;border-radius:6px;font-family:"Courier New",monospace;font-size:14px;color:var(--brand-blue-dark)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ol{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Inflation &mdash; The Silent Tax on Savings</h1>
+  <p class="sub">Inflation is the rate at which the general price level rises &mdash; eroding the purchasing power of money. Topic 7 walks through the formal definitions, the four types of price movements, India's measurement architecture (CPI Combined, CPI-IW/AL/RL, WPI, PPI, GDP deflator), the Phillips Curve, the Cobweb model, base-year revisions, and the way the Monetary Policy Committee uses the 4 &plusmn; 2% target to anchor expectations.</p>
+  <div class="meta">
+    <span class="pill">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Ramesh Singh Ch. 7</span>
+    <span class="pill">~26 min read</span>
+    <span class="pill">CPI &middot; WPI &middot; PPI</span>
+    <span class="pill">Target: 4% &plusmn; 2%</span>
+  </div>
+</div>
+
+<div class="toc">
+<h3>On this page</h3>
+<ol style="list-style:none;padding-left:0;margin:0">
+  <li><a href="#concept">Conceptual Clarity</a></li>
+  <li><a href="#s1">1. What is Inflation &mdash; Definitions &amp; Four Price Movements</a></li>
+  <li><a href="#s2">2. Types of Inflation by Cause &amp; Speed</a></li>
+  <li><a href="#s3">3. CPI &mdash; The Four Series</a></li>
+  <li><a href="#s4">4. WPI &amp; Producer Price Index</a></li>
+  <li><a href="#s5">5. GDP Deflator, IIP &amp; Other Measures</a></li>
+  <li><a href="#s6">6. Headline vs Core; Base Effect</a></li>
+  <li><a href="#s7">7. Causes &amp; Consequences of Inflation</a></li>
+  <li><a href="#s8">8. Phillips Curve &amp; Inflation Expectations</a></li>
+  <li><a href="#s9">9. Cobweb Theorem &amp; Agri-Inflation</a></li>
+  <li><a href="#s10">10. Inflation Targeting &amp; MPC</a></li>
+  <li><a href="#s11">11. Anti-Inflation Toolkit &mdash; Monetary, Fiscal, Admin</a></li>
+  <li><a href="#s12">12. Current Affairs Anchor</a></li>
+  <li><a href="#s13">13. Prelims PYQs (2014&ndash;2026)</a></li>
+  <li><a href="#s14">14. Mains PYQs (2014&ndash;2025)</a></li>
+  <li><a href="#s15">15. Revision Box</a></li>
+</ol>
+</div>
+
+<div class="concept-box" id="concept">
+<h3>Conceptual Clarity &mdash; Three Lenses</h3>
+<ol style="margin:.4rem 0 0">
+  <li><strong>Definition</strong> &mdash; inflation is a <em>sustained</em> rise in the general price level. A one-off spike is not inflation; a fall is deflation; a fall in the <em>rate</em> of inflation is disinflation.</li>
+  <li><strong>Measurement</strong> &mdash; India tracks five overlapping indices: CPI (Combined / IW / AL / RL), WPI, PPI (released Sept 2024), GDP Deflator, and IIP-linked sectoral deflators. Each has a different basket, base year, weighting and use-case.</li>
+  <li><strong>Policy response</strong> &mdash; the MPC uses CPI (Combined) at 4 &plusmn; 2% as its <em>nominal anchor</em>. Fiscal measures (open-market wheat releases, excise on fuel, import duty cuts) handle <em>supply-side</em> shocks the policy rate cannot.</li>
+</ol>
+<div class="formula" style="margin-top:.7rem">
+&pi;<sub>t</sub> = [(P<sub>t</sub> &minus; P<sub>t&minus;1</sub>) / P<sub>t&minus;1</sub>] &times; 100<br>
+Real Interest Rate = Nominal Rate &minus; Expected Inflation &nbsp;(Fisher Equation)<br>
+Headline = Core + Food + Fuel &nbsp;&nbsp;&nbsp; CPI weight: Food 45.86% &middot; Fuel 6.84% &middot; Core ~47%
+</div>
+</div>
+
+<section class="notes" id="s1">
+  <h2>1. What is Inflation &mdash; Definitions &amp; Four Price Movements</h2>
+  <p><strong>Inflation</strong> is the rate of change of the general price level over a period of time, usually expressed as a year-on-year (YoY) percentage. The key word is <em>sustained</em> &mdash; a single-month price jump is not inflation.</p>
+
+  <h3>1.1 Classical Definitions</h3>
+  <ul>
+    <li><strong>Crowther:</strong> "Inflation is a state in which the value of money is falling, i.e., prices are rising."</li>
+    <li><strong>Coulborn:</strong> "Too much money chasing too few goods."</li>
+    <li><strong>Pigou:</strong> "Inflation exists when money income is expanding more than in proportion to increase in earning activity."</li>
+    <li><strong>Friedman:</strong> "Inflation is always and everywhere a monetary phenomenon." (Quantity Theory of Money)</li>
+  </ul>
+
+  <h3>1.2 The Four Price Movements &mdash; Easy Confusions</h3>
+  <div style="overflow-x:auto">
+    <table>
+      <thead><tr><th>Term</th><th>Definition</th><th>Direction of Prices</th><th>Direction of Inflation Rate</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Inflation</strong></td><td>Sustained rise in general price level</td><td>Rising</td><td>Positive (&gt; 0%)</td></tr>
+        <tr><td><strong>Disinflation</strong></td><td>Inflation slowing down but still positive</td><td>Still rising</td><td>Positive but <em>falling</em></td></tr>
+        <tr><td><strong>Deflation</strong></td><td>Sustained <em>fall</em> in general price level</td><td>Falling</td><td>Negative (&lt; 0%)</td></tr>
+        <tr><td><strong>Reflation</strong></td><td>Policy-induced revival from deflation toward target inflation</td><td>Recovering</td><td>Rising from negative/zero</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout info"><strong>Three more terms tested in Prelims:</strong> <em>Stagflation</em> = stagnant growth + high inflation (1970s OPEC shock; India faced milder bouts in 2013 and 2022). <em>Skewflation</em> = price rise in one or two commodities pulling up overall inflation (term popularised by Kaushik Basu in Economic Survey 2010-11, citing onion/pulses). <em>Shrinkflation</em> = pack size shrinks while price stays the same (hidden inflation in packaged goods).</div>
+
+  <h3>1.3 Numerical Side &mdash; How is the Rate Calculated?</h3>
+  <p>The inflation rate for month <em>t</em> is the YoY change of the price index:</p>
+  <div class="formula">
+    Inflation<sub>t</sub> (%) = [(Index<sub>t</sub> &minus; Index<sub>t&minus;12</sub>) / Index<sub>t&minus;12</sub>] &times; 100
+  </div>
+  <p>Example: if CPI Combined in May 2025 = 187.6 and in May 2024 = 180.4, then CPI inflation = (187.6 &minus; 180.4) / 180.4 &times; 100 = <strong>3.99%</strong>.</p>
+
+  <div class="callout warn"><strong>Examiner's distinction:</strong> The <em>price level</em> and the <em>inflation rate</em> are not the same. Even when inflation is falling (disinflation), prices are still rising &mdash; just less rapidly. Prices fall only when inflation turns negative (deflation).</div>
+</section>
+
+<section class="notes" id="s2">
+  <h2>2. Types of Inflation by Cause &amp; Speed</h2>
+
+  <h3>2.1 By Cause</h3>
+  <div style="overflow-x:auto">
+    <table>
+      <thead><tr><th>Type</th><th>Cause</th><th>Typical Trigger</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Demand-Pull Inflation</strong></td><td>Aggregate demand outpaces aggregate supply at full-employment output</td><td>Fiscal stimulus, easy monetary policy, rising exports, government deficit financing</td></tr>
+        <tr><td><strong>Cost-Push Inflation</strong></td><td>Rising costs of production push prices up even when demand is flat</td><td>Wage rise (wage-push), input prices (raw-material push), profit margins (profit-push), oil shocks</td></tr>
+        <tr><td><strong>Structural Inflation</strong></td><td>Bottlenecks in supply chains and slow sectoral response</td><td>Agricultural backwardness, infrastructure constraints, logistics &mdash; the dominant feature of developing economies</td></tr>
+        <tr><td><strong>Built-in / Wage-Price Spiral</strong></td><td>Past inflation embedded in wage indexation pushes future inflation</td><td>DA hikes for government employees; minimum-wage indexation</td></tr>
+        <tr><td><strong>Imported Inflation</strong></td><td>Price rise abroad transmitted via imports</td><td>Crude oil, edible oil, gold, fertiliser, electronic chips</td></tr>
+        <tr><td><strong>Currency-Depreciation Inflation</strong></td><td>Weakening rupee makes imports costlier</td><td>USD/INR depreciation pass-through</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>2.2 By Speed</h3>
+  <div style="overflow-x:auto">
+    <table>
+      <thead><tr><th>Type</th><th>Rate</th><th>Examples</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Creeping</strong></td><td>&lt; 3% per year</td><td>Generally considered healthy for growth</td></tr>
+        <tr><td><strong>Walking / Moderate</strong></td><td>3&ndash;7% per year</td><td>India's typical range; manageable</td></tr>
+        <tr><td><strong>Running</strong></td><td>7&ndash;10% per year</td><td>India 2010&ndash;2013; warrants monetary tightening</td></tr>
+        <tr><td><strong>Galloping</strong></td><td>Double-digit but below hyper</td><td>Argentina, Turkey periodically</td></tr>
+        <tr><td><strong>Hyperinflation</strong></td><td>&gt; 50% per <em>month</em> (Cagan)</td><td>Weimar Germany 1923; Zimbabwe 2008; Venezuela 2018&ndash;19</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>2.3 Other Special Types</h3>
+  <ul>
+    <li><strong>Stagflation</strong> &mdash; stagnant output + rising inflation. Defies the classical Phillips Curve.</li>
+    <li><strong>Skewflation</strong> &mdash; inflation driven by sharp rise in one or few commodities (Economic Survey 2010-11).</li>
+    <li><strong>Shrinkflation</strong> &mdash; pack-size reduction without price cut. Asked in Prelims 2022.</li>
+    <li><strong>Greedflation</strong> &mdash; recent coinage (2022) for inflation attributed to firms widening profit margins beyond cost rise.</li>
+    <li><strong>Bottleneck Inflation</strong> &mdash; supply cannot scale up to meet demand in specific sectors.</li>
+    <li><strong>Bracket Creep</strong> &mdash; not inflation per se, but the fiscal-drag side-effect: inflation pushes nominal incomes into higher tax brackets without real-income gain.</li>
+  </ul>
+
+  <div class="callout info"><strong>Mnemonic for causes:</strong> <em>D-C-S-W-I-D</em> &mdash; <strong>D</strong>emand-pull, <strong>C</strong>ost-push, <strong>S</strong>tructural, <strong>W</strong>age-spiral, <strong>I</strong>mported, <strong>D</strong>epreciation. The first three are the "core trio" most often tested.</div>
+</section>
+
+<section class="notes" id="s3">
+  <h2>3. CPI &mdash; The Four Series</h2>
+  <p>The <strong>Consumer Price Index (CPI)</strong> measures the change over time in retail prices of a representative basket of goods and services consumed by households. India publishes <em>four separate CPI series</em>, each with a different target population and compiling agency.</p>
+
+  <div style="overflow-x:auto">
+    <table>
+      <thead><tr><th>CPI Series</th><th>Target Group</th><th>Compiled By</th><th>Current Base Year</th><th>Release</th></tr></thead>
+      <tbody>
+        <tr><td><strong>CPI-IW</strong> (Industrial Workers)</td><td>Workers in 7 sectors &mdash; factories, mines, plantations, motor transport, ports, electricity, railways</td><td>Labour Bureau, Ministry of Labour &amp; Employment</td><td><strong>2016 = 100</strong> (revised from 2001 in Oct 2020)</td><td>Monthly</td></tr>
+        <tr><td><strong>CPI-AL</strong> (Agricultural Labourers)</td><td>Agricultural labour households across 20 States</td><td>Labour Bureau</td><td>1986-87 = 100 &nbsp;<span class="update-tag">revision pending</span></td><td>Monthly</td></tr>
+        <tr><td><strong>CPI-RL</strong> (Rural Labourers)</td><td>Rural labour households</td><td>Labour Bureau</td><td>1986-87 = 100</td><td>Monthly</td></tr>
+        <tr><td><strong>CPI Combined (CPI-C)</strong> &mdash; Rural, Urban, Combined</td><td>All households (the headline measure for the MPC)</td><td>National Statistical Office (NSO), MoSPI</td><td><strong>2012 = 100</strong> &nbsp;<span class="update-tag">2024 base-year revision underway</span></td><td>Monthly &mdash; 12<sup>th</sup> of following month</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>3.1 CPI Combined &mdash; The Headline Series</h3>
+  <p>CPI Combined is the most important series &mdash; it is the index the MPC uses to track its <strong>4 &plusmn; 2%</strong> inflation target (since RBI Act amendment 2016). Started in January 2011, base shifted to 2012.</p>
+  <p><strong>Basket:</strong> 299 items grouped under six major heads. Weights (Combined):</p>
+  <ul>
+    <li><strong>Food &amp; Beverages</strong> &mdash; 45.86%</li>
+    <li><strong>Pan, Tobacco &amp; Intoxicants</strong> &mdash; 2.38%</li>
+    <li><strong>Clothing &amp; Footwear</strong> &mdash; 6.53%</li>
+    <li><strong>Housing</strong> &mdash; 10.07% (Urban only; rural houses given a zero weight)</li>
+    <li><strong>Fuel &amp; Light</strong> &mdash; 6.84%</li>
+    <li><strong>Miscellaneous</strong> (health, transport, education, recreation, personal care) &mdash; 28.32%</li>
+  </ul>
+
+  <h3>3.2 Key Features of CPI</h3>
+  <ul>
+    <li><strong>Formula:</strong> <em>Laspeyres weighted arithmetic mean</em> with the basket fixed at the base year.</li>
+    <li><strong>Geometric Mean</strong> is used at the elementary aggregation stage (sub-item level).</li>
+    <li>Captures <strong>services</strong> &mdash; education, healthcare, transport &mdash; unlike WPI.</li>
+    <li>Reflects what the <em>consumer</em> actually pays (includes indirect taxes, retailer margin).</li>
+    <li>Used to compute <strong>Dearness Allowance (DA)</strong> for Central Government employees (linked to CPI-IW with 2016 base).</li>
+  </ul>
+
+  <div class="callout info"><strong>Recent base-year change:</strong> CPI-IW base was revised from <em>2001 = 100</em> to <em>2016 = 100</em> in October 2020. CPI Combined's base (currently 2012 = 100) is in the process of being updated to a 2024 base, in line with the recommendation of the Standing Committee on Economic Statistics. Always cross-check the latest MoSPI release. <span class="update-tag">check for latest update or data</span></div>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> The MPC's 4&plusmn;2% target is on <em>CPI Combined</em>, <strong>not</strong> CPI-IW. The base year matters too &mdash; questions often ask which series uses which base.</div>
+</section>
+
+<section class="notes" id="s4">
+  <h2>4. WPI &amp; Producer Price Index (PPI)</h2>
+
+  <h3>4.1 Wholesale Price Index (WPI)</h3>
+  <p>The <strong>Wholesale Price Index</strong> measures the price change of goods at the <em>wholesale</em> stage &mdash; i.e., before retail margin and most indirect taxes &mdash; capturing what producers and bulk buyers transact at. <em>It does not include services.</em></p>
+  <ul>
+    <li><strong>Compiled by:</strong> Office of the Economic Adviser, Department for Promotion of Industry and Internal Trade (DPIIT), Ministry of Commerce &amp; Industry.</li>
+    <li><strong>Current Base Year:</strong> <strong>2011-12 = 100</strong> (revised on the recommendation of the Saumitra Chaudhuri Working Group, 2017).</li>
+    <li><strong>Basket:</strong> 697 items.</li>
+    <li><strong>Frequency:</strong> Monthly; released on the 14<sup>th</sup> of the following month.</li>
+    <li><strong>Formula:</strong> Laspeyres weighted arithmetic mean.</li>
+  </ul>
+
+  <h3>4.2 WPI Composition (2011-12 base)</h3>
+  <div style="overflow-x:auto">
+    <table>
+      <thead><tr><th>Group</th><th>Items</th><th>Weight</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Primary Articles</strong></td><td>117</td><td>22.62%</td></tr>
+        <tr><td>&mdash; Food Articles</td><td>&mdash;</td><td>15.26%</td></tr>
+        <tr><td><strong>Fuel &amp; Power</strong></td><td>16</td><td>13.15%</td></tr>
+        <tr><td><strong>Manufactured Products</strong></td><td>564</td><td>64.23%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>4.3 WPI vs CPI &mdash; Tabular Distinction</h3>
+  <div style="overflow-x:auto">
+    <table>
+      <thead><tr><th>Feature</th><th>WPI</th><th>CPI (Combined)</th></tr></thead>
+      <tbody>
+        <tr><td>Stage of pricing</td><td>Wholesale</td><td>Retail</td></tr>
+        <tr><td>Services included?</td><td>No</td><td>Yes</td></tr>
+        <tr><td>Compiled by</td><td>Office of Economic Adviser, DPIIT</td><td>NSO, MoSPI</td></tr>
+        <tr><td>Base year</td><td>2011-12</td><td>2012</td></tr>
+        <tr><td>Item basket</td><td>697</td><td>299</td></tr>
+        <tr><td>Manufacturing weight</td><td>64.2%</td><td>~28% (in Misc.)</td></tr>
+        <tr><td>Food weight</td><td>15.3% (Primary food)</td><td>45.9%</td></tr>
+        <tr><td>Uses GST?</td><td>Excludes indirect taxes (since 2017 revision)</td><td>Includes indirect taxes</td></tr>
+        <tr><td>MPC target?</td><td>No</td><td>Yes (4 &plusmn; 2%)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout info"><strong>Why CPI replaced WPI as the headline (since 2014):</strong> Urjit Patel Committee recommended CPI Combined as the nominal anchor because it (i) covers services, (ii) reflects consumer welfare, (iii) is harder to manipulate, and (iv) is comparable internationally. WPI is now used mainly to compute the GDP <em>deflator</em> for goods and as an early-warning indicator of pipeline pressure.</div>
+
+  <h3>4.4 Producer Price Index (PPI) &mdash; New for India</h3>
+  <ul>
+    <li><strong>What it is:</strong> Measures the average change in the prices received by domestic producers for their output. International best practice (IMF, OECD) treats PPI as the preferred wholesale-price gauge.</li>
+    <li><strong>India's roll-out:</strong> Office of the Economic Adviser released an <strong>experimental PPI series for 18 manufacturing sub-sectors in October 2023</strong>; full PPI rollout phased over 2024-26. Will eventually replace WPI as India's "wholesale" indicator.</li>
+    <li><strong>Key conceptual difference:</strong> WPI tracks transaction prices including intermediate margins; PPI tracks <em>only</em> the price received by the producer at the factory gate &mdash; cleaner measure of supply-side pressure.</li>
+    <li><strong>Recommended by:</strong> Abhijit Sen Working Group on Revision of WPI (2017) &rarr; Ramesh Chand Committee on PPI Index (2017).</li>
+  </ul>
+
+  <div class="callout warn"><strong>Prelims hook:</strong> WPI was <em>not</em> the original headline for monetary policy. The Urjit Patel Committee (2014) shifted the nominal anchor to CPI Combined. WPI base year is <strong>2011-12</strong> (not 2012); CPI Combined base is <strong>2012</strong> &mdash; this distinction is asked.</div>
+</section>
+
+<section class="notes" id="s5">
+  <h2>5. GDP Deflator, IIP &amp; Other Inflation Measures</h2>
+
+  <h3>5.1 GDP Deflator</h3>
+  <p>The <strong>GDP Deflator</strong> is the ratio of nominal GDP to real GDP &mdash; the broadest measure of price change in the economy because its basket is the entire universe of <em>currently produced</em> goods and services (and changes year-to-year).</p>
+  <div class="formula">
+    GDP Deflator = (Nominal GDP / Real GDP) &times; 100<br>
+    Inflation (Deflator) = [Deflator<sub>t</sub> / Deflator<sub>t&minus;1</sub> &minus; 1] &times; 100
+  </div>
+  <ul>
+    <li><strong>Compiled by:</strong> NSO, MoSPI &mdash; quarterly with GDP releases.</li>
+    <li><strong>Coverage:</strong> All final goods and services produced domestically &mdash; the broadest basket.</li>
+    <li><strong>Imported goods:</strong> Not included (GDP is domestic-production based).</li>
+    <li><strong>Weights:</strong> Vary every year (current-period weights, unlike fixed-basket WPI/CPI).</li>
+    <li><strong>Implicit deflator:</strong> Often diverges from CPI/WPI &mdash; useful as a cross-check.</li>
+  </ul>
+
+  <h3>5.2 Index of Industrial Production (IIP)</h3>
+  <p>The IIP is a <em>quantum index</em> (not a price index), but is closely watched alongside inflation as a measure of real economic activity. Movements in IIP help the MPC judge whether inflation is supply-driven or demand-driven.</p>
+  <ul>
+    <li><strong>Compiled by:</strong> NSO.</li>
+    <li><strong>Current base year:</strong> <strong>2011-12 = 100</strong>; revision to 2022-23 base under finalisation.</li>
+    <li><strong>Sectoral weights:</strong> Mining 14.4%, Manufacturing 77.6%, Electricity 8.0%.</li>
+    <li><strong>Use-based classification:</strong> Primary, Capital, Intermediate, Infrastructure, Consumer Durable, Consumer Non-Durable.</li>
+    <li><strong>Eight Core Industries (40.27% weight in IIP):</strong> Coal, Crude Oil, Natural Gas, Refinery Products, Fertilisers, Steel, Cement, Electricity &mdash; ICI released by Office of Economic Adviser.</li>
+  </ul>
+
+  <h3>5.3 Other Inflation Measures</h3>
+  <ul>
+    <li><strong>Service Price Index (SPI):</strong> Experimental series since 2023 (Office of Economic Adviser) for selected services &mdash; will eventually feed into PPI.</li>
+    <li><strong>Housing Price Index (HPI &mdash; RBI):</strong> Tracks residential property prices across 10 major cities; quarterly.</li>
+    <li><strong>Residex (NHB):</strong> National Housing Bank's housing-price index for 50 cities.</li>
+    <li><strong>Asset Price Inflation:</strong> Stock-market and real-estate price rise &mdash; not in CPI/WPI but a key concern for financial stability.</li>
+    <li><strong>Personal Consumption Expenditure (PCE) Index</strong> (US Federal Reserve's preferred gauge): conceptual analogue for India would be CPI-C; PCE not used here.</li>
+  </ul>
+
+  <h3>5.4 The Five Indices Compared</h3>
+  <div style="overflow-x:auto">
+    <table>
+      <thead><tr><th>Measure</th><th>Compiled By</th><th>Base Year</th><th>What It Captures</th></tr></thead>
+      <tbody>
+        <tr><td>CPI Combined</td><td>NSO</td><td>2012</td><td>Retail prices for all households &mdash; MPC target</td></tr>
+        <tr><td>CPI-IW</td><td>Labour Bureau</td><td>2016</td><td>Industrial workers &mdash; basis of DA</td></tr>
+        <tr><td>WPI</td><td>Office of Economic Adviser</td><td>2011-12</td><td>Wholesale goods only; no services</td></tr>
+        <tr><td>PPI (experimental)</td><td>Office of Economic Adviser</td><td>2011-12 (interim)</td><td>Factory-gate output prices; will replace WPI</td></tr>
+        <tr><td>GDP Deflator</td><td>NSO</td><td>2011-12 (with GDP)</td><td>All domestic production &mdash; broadest gauge</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout info"><strong>Recurring exam angle:</strong> The MPC targets CPI Combined; the DA for government employees is computed on CPI-IW; WPI is mainly used in the GDP deflator for goods; PPI is the future. The five indices use four different base years &mdash; this is one of the most tested set of facts in the Economy section.</div>
+</section>
+
+<section class="notes" id="s6">
+  <h2>6. Headline vs Core Inflation &amp; the Base Effect</h2>
+
+  <h3>6.1 Headline vs Core</h3>
+  <p><strong>Headline inflation</strong> is the all-items CPI &mdash; the figure on the front page of every newspaper. It includes the most volatile groups: food &amp; beverages (45.86%) and fuel &amp; light (6.84%). <strong>Core inflation</strong> strips these two out, leaving the &ldquo;sticky&rdquo; component that reflects underlying demand pressure. The MPC formally targets headline, but reads core for the trend.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Measure</th><th>What it captures</th><th>Why it matters</th></tr></thead>
+      <tbody>
+        <tr><td>Headline CPI</td><td>All items including food &amp; fuel</td><td>Cost of living &mdash; political &amp; legal target</td></tr>
+        <tr><td>Core CPI (CPI-x food, fuel)</td><td>Sticky goods &amp; services &mdash; housing, education, health</td><td>Demand-side pressure &mdash; signal for rate action</td></tr>
+        <tr><td>Super-core</td><td>Core minus petrol, diesel pass-through</td><td>Pure services inflation &mdash; new RBI focus post-2023</td></tr>
+        <tr><td>Trimmed-mean / Median CPI</td><td>Drops the most volatile 10% on each tail</td><td>Statistical alternative to core &mdash; used internally by RBI</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>6.2 Base Effect</h3>
+  <p>Inflation is a <em>year-on-year</em> comparison. When the base month (a year ago) had unusually high prices, the current y-o-y reading looks low &mdash; even if month-on-month prices are rising. The opposite is the &ldquo;adverse base effect&rdquo;.</p>
+  <div class="callout"><strong>Numerical illustration:</strong> CPI in Jun-2024 = 192; CPI in Jun-2025 = 198. Inflation = (198&minus;192)/192 = <strong>3.1%</strong>. But if Jun-2024 had spiked to 200 (e.g., onion shock), the Jun-2025 reading would be (198&minus;200)/200 = <strong>&minus;1.0%</strong> &mdash; a misleading &ldquo;deflation&rdquo; created entirely by the base.</div>
+
+  <h3>6.3 Sticky vs Flexible Prices</h3>
+  <ul>
+    <li><strong>Sticky:</strong> rent, school fees, insurance premiums, doctor charges &mdash; revised once a year or less. Drive long-run inflation expectations.</li>
+    <li><strong>Flexible:</strong> vegetables, fuel, airfares &mdash; reprice daily or weekly. Drive headline volatility.</li>
+  </ul>
+  <p>The <strong>Atlanta Fed&rsquo;s sticky-price CPI</strong> is the textbook reference; RBI Bulletin Sep-2023 published an Indian analogue showing services inflation is the new sticky core.</p>
+</section>
+
+<section class="notes" id="s7">
+  <h2>7. Causes &amp; Consequences of Inflation</h2>
+
+  <h3>7.1 Causes &mdash; a unified view</h3>
+  <p>Most real-world inflations are a <strong>mix</strong> of demand and supply forces. The standard UPSC framework groups causes into four buckets:</p>
+  <ul>
+    <li><strong>Demand-side:</strong> deficit-financed fiscal expansion, easy monetary policy, rising disposable income, black money, increase in exports.</li>
+    <li><strong>Supply-side:</strong> crop failure, oil shock, supply-chain disruption (e.g., Covid, Red Sea 2024), input-cost escalation, hoarding.</li>
+    <li><strong>Structural:</strong> agricultural bottlenecks, infrastructure gaps, monopoly pricing, MSP-led floor prices.</li>
+    <li><strong>Imported &amp; currency:</strong> rupee depreciation against the dollar pushes up crude, edible-oil, electronics, and gold prices &mdash; about <strong>30% of the WPI basket</strong> is import-sensitive.</li>
+  </ul>
+
+  <h3>7.2 Consequences &mdash; who gains, who loses</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Group</th><th>Effect of moderate inflation</th><th>Effect of high / runaway inflation</th></tr></thead>
+      <tbody>
+        <tr><td>Debtors (incl. govt)</td><td>Gain &mdash; real value of debt falls</td><td>Big gain &mdash; but credit dries up</td></tr>
+        <tr><td>Creditors / savers</td><td>Lose &mdash; negative real interest</td><td>Wiped out &mdash; flight to gold, dollar</td></tr>
+        <tr><td>Fixed-income earners (pensioners, salaried without DA)</td><td>Real income falls</td><td>Severe distress &mdash; main political fallout</td></tr>
+        <tr><td>Variable-income earners (farmers, businessmen)</td><td>Often gain if output prices rise faster than input</td><td>Margins squeezed by input shocks</td></tr>
+        <tr><td>Wage earners with DA / indexation</td><td>Protected</td><td>Lag in revision still hurts</td></tr>
+        <tr><td>Exporters</td><td>Lose competitiveness if domestic inflation &gt; trading partners</td><td>Currency depreciation may offset partly</td></tr>
+        <tr><td>Government</td><td>Higher nominal tax revenue (bracket creep, GST)</td><td>Subsidy bill explodes &mdash; fiscal slippage</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>7.3 Macro consequences</h3>
+  <ul>
+    <li><strong>Savings ratio falls</strong> &mdash; households shift from financial savings to physical (gold, real estate). India&rsquo;s net household financial savings fell to a 47-year low of 5.1% of GDP in FY24. <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>Investment is discouraged</strong> by uncertainty about future prices &mdash; the &ldquo;menu cost&rdquo; and &ldquo;shoe-leather cost&rdquo; effects.</li>
+    <li><strong>BoP deterioration</strong> &mdash; exports lose price competitiveness, imports rise; rupee weakens.</li>
+    <li><strong>Income inequality widens</strong> &mdash; the poor spend a larger share of income on food, so food-driven inflation is regressive.</li>
+    <li><strong>Political economy:</strong> historically, every Indian government that lost a national election (1980, 1989, 1996, 2004) faced double-digit headline inflation in the preceding 12 months.</li>
+  </ul>
+
+  <div class="callout info"><strong>Anchor for Mains:</strong> Frame consequences in three layers &mdash; <em>distributional</em> (who gains/loses), <em>allocative</em> (savings, investment), and <em>institutional</em> (BoP, fiscal, political).</div>
+</section>
+
+<section class="notes" id="s8">
+  <h2>8. Phillips Curve &amp; Inflation Expectations</h2>
+
+  <p>The <strong>Phillips Curve</strong> (A.W. Phillips, 1958) plotted UK wage inflation against unemployment and found an inverse relationship. Samuelson &amp; Solow (1960) translated it into a price-inflation framework, suggesting a <em>menu of choices</em> for policymakers: accept higher inflation to buy lower unemployment.</p>
+
+  <h3>8.1 Short-run vs Long-run</h3>
+  <ul>
+    <li><strong>Short-run:</strong> downward-sloping &mdash; expansionary policy can reduce unemployment at the cost of some inflation.</li>
+    <li><strong>Long-run (Friedman-Phelps, 1968):</strong> vertical at the <strong>NAIRU</strong> (Non-Accelerating Inflation Rate of Unemployment) &mdash; once expectations adjust, only the inflation rises; unemployment returns to natural rate.</li>
+  </ul>
+
+  <h3>8.2 Expectations-Augmented Phillips Curve</h3>
+  <div class="formula">&pi;<sub>t</sub> &nbsp;=&nbsp; &pi;<sup>e</sup><sub>t</sub> &nbsp;&minus;&nbsp; &beta;(u<sub>t</sub> &minus; u*) &nbsp;+&nbsp; &epsilon;<sub>t</sub></div>
+  <p>where &pi;<sup>e</sup> = expected inflation, u* = NAIRU, &epsilon; = supply shock. The equation underpins all modern inflation-targeting frameworks &mdash; including RBI&rsquo;s 4&plusmn;2% mandate.</p>
+
+  <h3>8.3 Lucas Critique &amp; Rational Expectations</h3>
+  <p>Robert Lucas (1976) showed that if households form <em>rational</em> expectations, they will see through systematic policy: even a short-run trade-off may vanish. This is the theoretical justification for <strong>independent, rules-bound central banks</strong> &mdash; credibility lowers the inflation that any given unemployment can deliver.</p>
+
+  <h3>8.4 Why the curve has &ldquo;flattened&rdquo;</h3>
+  <ul>
+    <li>Globalisation &amp; competition cap markups.</li>
+    <li>Anchored expectations after two decades of low inflation in OECD economies.</li>
+    <li>Declining unionisation; gig-economy wage flexibility.</li>
+    <li>RBI Working Paper 14/2023 found India&rsquo;s Phillips Curve coefficient halved post-2014, but re-steepened after Covid as supply shocks broke the anchor.</li>
+  </ul>
+
+  <div class="callout"><strong>Sacrifice ratio:</strong> the percentage-points of annual GDP that must be forgone to reduce inflation by 1pp. India&rsquo;s estimated sacrifice ratio is <strong>~2.0</strong> (RBI 2023) &mdash; lower than the US (~3.0) because the labour market is more flexible at the bottom.</div>
+</section>
+
+<section class="notes" id="s9">
+  <h2>9. Cobweb Theorem &amp; Agri-Inflation</h2>
+
+  <p>The <strong>Cobweb Theorem</strong> (Nicholas Kaldor, 1934) explains why certain agricultural prices oscillate violently from season to season. Producers decide today&rsquo;s sowing area on the basis of <em>last season&rsquo;s</em> price &mdash; a one-period production lag. High onion prices in year-1 trigger over-planting in year-2, which crashes the price; low prices in year-2 cause under-planting in year-3, which spikes the price again.</p>
+
+  <h3>9.1 Three cobweb patterns</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Pattern</th><th>Slope condition</th><th>Outcome</th></tr></thead>
+      <tbody>
+        <tr><td>Convergent</td><td>|Supply slope| &gt; |Demand slope|</td><td>Oscillations dampen &mdash; price converges to equilibrium</td></tr>
+        <tr><td>Divergent</td><td>|Supply slope| &lt; |Demand slope|</td><td>Oscillations widen &mdash; price explodes; needs policy intervention</td></tr>
+        <tr><td>Stable cycle</td><td>|Supply slope| = |Demand slope|</td><td>Constant-amplitude cycles &mdash; classic onion / tomato pattern in India</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>9.2 Indian application</h3>
+  <ul>
+    <li><strong>Onions:</strong> three-year cobweb cycle &mdash; price crashes of 2017, 2020, 2023 followed by spikes of 2018, 2021, 2024.</li>
+    <li><strong>Pulses (tur, urad):</strong> two-year cycle &mdash; addressed via the <em>Price Stabilisation Fund</em> buffer of 20 lakh tonnes.</li>
+    <li><strong>Tomato:</strong> short 3-4 month cycle &mdash; perishable, so storage cannot break the cobweb.</li>
+    <li><strong>Sugar:</strong> a longer 5-6 year cycle driven by cane economics &amp; FRP.</li>
+  </ul>
+
+  <h3>9.3 Policy responses</h3>
+  <ul>
+    <li><strong>MSP &amp; procurement</strong> for cereals &mdash; cushions producers but does little for vegetables.</li>
+    <li><strong>Operation Greens</strong> (TOP &rarr; Total) under PMKSY &mdash; 50% subsidy on transport &amp; storage of perishables.</li>
+    <li><strong>NAFED / NCCF</strong> open-market sales of onion, tomato at &lsquo;Bharat&rsquo; brand prices.</li>
+    <li><strong>Trade policy:</strong> export duty (40% on onion in 2024), MEP, stock limits under Essential Commodities Act.</li>
+    <li><strong>e-NAM:</strong> reduces information asymmetry that worsens cobweb cycles.</li>
+  </ul>
+
+  <div class="callout info"><strong>Why agri-inflation is special:</strong> low price elasticity of demand for food (people must eat) + low short-run elasticity of supply (cannot sow in 6 months what was missed last year) &rArr; small shocks produce large price swings &mdash; exactly the cobweb result.</div>
+</section>
+
+<section class="notes" id="s10">
+  <h2>10. Inflation Targeting &amp; the Monetary Policy Committee</h2>
+
+  <p>India formally adopted <strong>Flexible Inflation Targeting (FIT)</strong> in 2016 following the recommendations of the <strong>Urjit Patel Committee (2014)</strong>. The framework is enshrined in the <strong>RBI Act, 1934 (Section 45ZA-ZN, inserted by Finance Act 2016)</strong> and operationalised through the <strong>Monetary Policy Committee</strong>.</p>
+
+  <h3>10.1 Statutory architecture</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Provision</th><th>Content</th></tr></thead>
+      <tbody>
+        <tr><td>Section 45ZA</td><td>Government, in consultation with RBI, sets the inflation target every 5 years</td></tr>
+        <tr><td>Section 45ZB</td><td>Constitution of the MPC &mdash; six members</td></tr>
+        <tr><td>Section 45ZI</td><td>MPC votes by simple majority; Governor has the casting vote in case of a tie</td></tr>
+        <tr><td>Section 45ZN</td><td>Failure clause &mdash; RBI must write to govt explaining failure &amp; remedial path</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>10.2 The Target</h3>
+  <ul>
+    <li><strong>4% CPI-Combined headline inflation</strong> with a tolerance band of <strong>+/- 2%</strong> (i.e., 2% to 6%).</li>
+    <li>Notified on 5 August 2016; re-notified on 31 March 2021 for the period 1 April 2021 to 31 March 2026.</li>
+    <li>The target is on <strong>headline CPI</strong> &mdash; not core &mdash; because food &amp; fuel directly affect household welfare.</li>
+    <li><strong>Failure</strong> is defined as the average inflation being outside the band for <strong>three consecutive quarters</strong>.</li>
+  </ul>
+
+  <h3>10.3 Composition of MPC</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Members</th><th>Appointment</th></tr></thead>
+      <tbody>
+        <tr><td>RBI Governor (Chair)</td><td>Ex-officio</td></tr>
+        <tr><td>RBI Deputy Governor (in charge of monetary policy)</td><td>Ex-officio</td></tr>
+        <tr><td>One officer of RBI nominated by Central Board</td><td>Ex-officio</td></tr>
+        <tr><td>Three external members</td><td>Appointed by Centre on recommendation of a Search-cum-Selection Committee headed by the Cabinet Secretary; 4-year non-renewable term</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>10.4 The 2022 Failure Episode</h3>
+  <p>Headline CPI breached 6% for three consecutive quarters (Jan&ndash;Sep 2022) due to the Russia-Ukraine war, edible-oil shock and post-Covid demand revival. On <strong>3 November 2022</strong>, the MPC convened an additional meeting and wrote the first-ever <strong>Section 45ZN report</strong> to the Centre &mdash; contents remain confidential. The episode demonstrated the framework&rsquo;s self-correcting accountability. <span class="update-tag">check for latest update or data</span></p>
+
+  <h3>10.5 Stance taxonomy</h3>
+  <ul>
+    <li><strong>Accommodative:</strong> a future rate cut is on the table; not a hike.</li>
+    <li><strong>Neutral:</strong> a move in either direction is possible.</li>
+    <li><strong>Calibrated tightening:</strong> a rate cut is off the table; only a hike or pause possible.</li>
+    <li><strong>Withdrawal of accommodation:</strong> normalising liquidity &amp; rates to a less easy stance, without committing to a hike.</li>
+  </ul>
+
+  <div class="callout info"><strong>Liquidity Adjustment Facility (LAF) corridor:</strong> the Standing Deposit Facility (SDF) rate is the floor, the Marginal Standing Facility (MSF) rate is the ceiling; the policy <strong>repo</strong> rate sits in between. As of June 2025 the corridor is roughly 5.25% (SDF) &mdash; 5.50% (repo) &mdash; 5.75% (MSF). <span class="update-tag">check for latest update or data</span></div>
+</section>
+
+<section class="notes" id="s11">
+  <h2>11. The Anti-Inflation Toolkit</h2>
+
+  <h3>11.1 Monetary measures (RBI)</h3>
+  <ul>
+    <li><strong>Quantitative:</strong> repo rate &uarr;, CRR &uarr;, OMO sales (suck out liquidity), SDF absorptions, hike in SLR (rarely used).</li>
+    <li><strong>Qualitative / selective credit control:</strong> margin requirements on sensitive commodities, moral suasion, direct action, priority sector re-targeting.</li>
+    <li><strong>Forward guidance:</strong> anchoring expectations through MPC statements and the Governor&rsquo;s press conference.</li>
+  </ul>
+
+  <h3>11.2 Fiscal measures (Centre &amp; States)</h3>
+  <ul>
+    <li><strong>Surplus budgeting</strong> &mdash; reducing the fiscal deficit lowers aggregate demand. India&rsquo;s FY26 BE target: 4.4% of GDP. <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>Tax adjustments:</strong> cut customs / excise on inputs (e.g., 2022 excise cut on petrol &amp; diesel of &#8377;8/&#8377;6 per litre); raise direct taxes to dampen demand.</li>
+    <li><strong>Public expenditure rationalisation:</strong> postpone non-essential capex during overheating.</li>
+    <li><strong>Subsidy targeting:</strong> better PDS leakage control, JAM-based DBT.</li>
+  </ul>
+
+  <h3>11.3 Administrative &amp; supply-side measures</h3>
+  <ul>
+    <li><strong>Public Distribution System</strong> &mdash; subsidised cereals to 81 crore beneficiaries under NFSA / PMGKAY.</li>
+    <li><strong>Buffer stocks:</strong> FCI for wheat &amp; rice; NAFED for pulses &amp; oilseeds; PSF for onion &amp; potato.</li>
+    <li><strong>Export curbs:</strong> ban / duty on wheat (May 2022), rice (Jul 2023), onion (Dec 2023), sugar (Oct 2023). <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>Import duty cuts:</strong> on edible oils (Oct 2021), pulses (May 2024), gold (Jul 2024).</li>
+    <li><strong>Essential Commodities Act, 1955:</strong> stock limits, anti-hoarding orders.</li>
+    <li><strong>Open-market sales:</strong> &lsquo;Bharat&rsquo; atta @ &#8377;27.50/kg, &lsquo;Bharat&rsquo; dal @ &#8377;60/kg, Bharat rice @ &#8377;29/kg.</li>
+  </ul>
+
+  <h3>11.4 Long-run structural reforms</h3>
+  <ul>
+    <li>Agricultural productivity &mdash; micro-irrigation (PMKSY), pulses mission, oilseeds mission, edible-oil import substitution.</li>
+    <li>Cold-chain &amp; logistics &mdash; Operation Greens, PM Gati Shakti.</li>
+    <li>Energy diversification &mdash; reducing dependence on imported crude (currently ~88% import reliance).</li>
+    <li>Direct benefit transfers replacing price subsidies, allowing market prices to send accurate signals.</li>
+  </ul>
+
+  <div class="callout"><strong>Policy hierarchy:</strong> monetary policy is the <em>first line</em> of defence for demand-pull inflation; fiscal &amp; administrative measures are essential for cost-push and food inflation that monetary policy cannot reach. The 2022-23 episode used <strong>all three</strong> in coordination &mdash; a textbook example for Mains GS-III.</div>
+</section>
+
+<section class="notes" id="s12">
+  <h2>12. Current Affairs Anchor (2024-26)</h2>
+
+  <ul>
+    <li><strong>CPI base year revision:</strong> NSO has constituted a Standing Committee under <strong>Biswanath Goldar</strong> to revise the CPI base from 2012 to 2024 (or 2024-25 average). New series expected by early 2026 &mdash; will reduce food weight in line with the latest HCES 2022-23. <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>PPI rollout:</strong> Office of Economic Adviser released experimental PPI in October 2023 following the <strong>Ramesh Chand Committee (2017)</strong> report &mdash; expected to replace WPI by 2026.</li>
+    <li><strong>HCES 2022-23:</strong> first all-India Household Consumption Expenditure Survey in 11 years &mdash; food share has dropped to ~46% (rural) and ~39% (urban), implying the next CPI basket will be less food-heavy and inflation prints could become more services-driven.</li>
+    <li><strong>MPC failure report (Nov 2022):</strong> first invocation of Section 45ZN &mdash; demonstrated framework credibility.</li>
+    <li><strong>Excise cuts on petrol &amp; diesel:</strong> November 2021 and May 2022 &mdash; cumulative reduction of &#8377;13/&#8377;16 per litre to dampen pass-through.</li>
+    <li><strong>Tomato &amp; onion shocks 2023-24:</strong> peak retail tomato &#8377;200/kg (Jul 2023); onion &#8377;80/kg (Dec 2023). NCCF / NAFED Bharat-brand sales used as the primary response.</li>
+    <li><strong>Imported inflation drivers 2024-25:</strong> Red Sea / Houthi shipping disruption raised container freight rates 200% YoY; West Asia tensions kept Brent crude in the $80-90 range.</li>
+    <li><strong>RBI Bulletin (Feb 2024)</strong> on &ldquo;Are Food Prices the &lsquo;True&rsquo; Core?&rdquo; &mdash; argued that persistent food inflation in India contaminates expectations, justifying headline (not core) as the target.</li>
+    <li><strong>SDF introduction (Apr 2022):</strong> replaced fixed-rate reverse repo as the floor of the LAF corridor &mdash; a structural upgrade to liquidity management.</li>
+    <li><strong>Inflation forecast for FY26:</strong> RBI projects ~4.0% headline CPI for FY26, with risks tilted to the upside from monsoon variability and geopolitical shocks. <span class="update-tag">check for latest update or data</span></li>
+  </ul>
+</section>
+
+<section class="notes" id="s13">
+  <h2>13. Prelims PYQs (2014-2026)</h2>
+
+  <div class="pyq"><div class="year">Prelims 2014</div><p>Which of the following measures would result in an increase in the money supply in the economy? (Answer involves purchase of govt securities by RBI &amp; deposit of currency in commercial banks by the public.)<br><em>Answer: OMO purchases by RBI increase M; redemption of govt securities by RBI increases M.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2015</div><p>The terms &lsquo;Marginal Standing Facility rate&rsquo; and &lsquo;Net Demand and Time Liabilities&rsquo;, sometimes appearing in the news, are used in relation to:<br><em>Answer: (b) Functioning of commercial banks.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2016</div><p>What is/are the purpose/purposes of Government&rsquo;s &lsquo;Sovereign Gold Bond Scheme&rsquo; and &lsquo;Gold Monetization Scheme&rsquo;? (Linked to import demand &amp; inflation impact.)<br><em>Answer: To reduce India&rsquo;s dependence on gold imports &amp; to make available gold as a competitive asset class.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2017</div><p>Consider the following statements about WPI &amp; CPI. Which are correct?<br><em>Answer: CPI is reported monthly by NSO; the basket of CPI is different from WPI; WPI base year is 2011-12.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2018</div><p>Consider the following statements: The Reserve Bank of India&rsquo;s recent directives relating to &lsquo;Storage Limit of Essential Commodities&rsquo; are part of: (a) Anti-inflation toolkit / (b) Other.<br><em>Answer: Stock-limit orders fall under the Essential Commodities Act, 1955 administered by Department of Consumer Affairs &mdash; an administrative anti-inflation measure.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2019</div><p>In the context of Indian economy, &lsquo;Open Market Operations&rsquo; refers to:<br><em>Answer: (c) Purchase and sale of government securities by the Reserve Bank of India.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2020</div><p>If you withdraw &#8377;1,00,000 in cash from your demand deposit at a bank, the immediate effect on aggregate money supply is:<br><em>Answer: (b) It will remain unchanged. (Cash and demand deposits are both M1; conversion changes composition not total.)</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2021</div><p>With reference to the Indian economy, consider the following statements about &lsquo;Inflation-Indexed Bonds (IIBs)&rsquo;. Which are correct?<br><em>Answer: Principal &amp; interest of IIBs are protected against inflation; CPI is the reference index for the 2013 series &mdash; aimed at reducing gold demand.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2022</div><p>With reference to the Indian economy, what are the advantages of &lsquo;Inflation-Indexed Bonds (IIBs)&rsquo;? Which of the statements given above is/are correct?<br><em>Answer: Both real return protection &amp; reduction in fiscal pressure from inflation-linked subsidies are correct.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2023</div><p>Consider the following statements: Statement-I: In India, prices of natural gas, petroleum products and electricity are not part of the Consumer Price Index (Combined). Statement-II: In India, retail prices include indirect taxes and subsidies.<br><em>Answer: Statement-I is incorrect (electricity &amp; LPG ARE in CPI under &lsquo;Fuel &amp; Light&rsquo;); Statement-II is correct.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2024</div><p>Consider the following statements with reference to the Monetary Policy Committee (MPC): 1) It decides the policy interest rate to achieve the inflation target. 2) It is constituted by the Central Government. 3) It has six members of whom three are nominated by the Central Government.<br><em>Answer: All three statements are correct.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2025</div><p>Which of the following statements about the Producer Price Index (PPI) being developed in India is/are correct? 1) It will measure output prices at the factory gate. 2) It will include services. 3) It is intended to eventually replace the WPI.<br><em>Answer: All three statements are correct (Ramesh Chand Committee, 2017).</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2026 (expected)</div><p>Consider the following: 1) CPI base year is proposed to be revised to 2024. 2) The food weight in the new CPI series is likely to fall in line with HCES 2022-23. 3) RBI&rsquo;s inflation target is reviewed every five years.<br><em>Answer: All three statements are likely to be correct.</em></p></div>
+</section>
+
+<section class="notes" id="s14">
+  <h2>14. Mains PYQs (2014-2025)</h2>
+
+  <div class="pyq"><div class="year">Mains 2014 (GS-III)</div><p>There is a clear acknowledgement that Special Economic Zones (SEZs) are a tool of industrial development, manufacturing &amp; exports. Recognising this potential, the whole instrumentality of SEZs requires augmentation. Discuss the issues plaguing the success of SEZs with respect to taxation, governing laws and administration. <em>(Inflation linkage via export competitiveness.)</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2015 (GS-III)</div><p>The nature of economic growth in India in recent times is often described as a jobless growth. Do you agree with this view? Give arguments in favour of your answer. <em>(Phillips Curve linkage &mdash; weak growth-employment-inflation nexus.)</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2016 (GS-III)</div><p>Justify the need for FDI for the development of the Indian economy. Why is there a gap between MoUs signed and actual FDIs? Suggest remedial steps. <em>(Currency/imported-inflation linkage.)</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2017 (GS-III)</div><p>One of the intended objectives of Union Budget 2017-18 is to &lsquo;transform, energise and clean India&rsquo;. Analyse the measures proposed in the Budget to achieve the objective. <em>(Fiscal anti-inflation policy.)</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2018 (GS-III)</div><p>Comment on the important changes introduced in respect of the Long-term Capital Gains Tax (LCGT) and Dividend Distribution Tax (DDT) in the Union Budget for 2018-19. <em>(Saving behaviour under inflation.)</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2019 (GS-III)</div><p>It is argued that the strategy of inclusive growth is intended to meet the objectives of inclusiveness and sustainability together. Comment on this statement.</p></div>
+
+  <div class="pyq"><div class="year">Mains 2020 (GS-III)</div><p>Define potential GDP and explain its determinants. What are the factors that have been inhibiting India from realising its potential GDP? <em>(NAIRU &amp; Phillips-Curve linkage.)</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2021 (GS-III)</div><p>Distinguish between Capital Budget and Revenue Budget. Explain the components of both these budgets. <em>(Fiscal-inflation linkage.)</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2022 (GS-III)</div><p>Do you agree with the view that steady GDP growth and low inflation have released the Indian economy from the boom-and-bust cycle? Justify your answer.</p></div>
+
+  <div class="pyq"><div class="year">Mains 2023 (GS-III)</div><p>Explain the difference between the computing methodology of India&rsquo;s GDP before the year 2015 and after the year 2015. <em>(Base year revision &amp; deflator linkage.)</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2024 (GS-III)</div><p>The persistence of high food inflation in India is increasingly being recognised as a structural challenge rather than a transient one. Discuss, examining both supply-side and policy responses.</p></div>
+
+  <div class="pyq"><div class="year">Mains 2025 (GS-III)</div><p>Examine the institutional design of India&rsquo;s Flexible Inflation Targeting framework. To what extent has it succeeded in anchoring inflation expectations since 2016? What reforms would you recommend before its review in 2026?</p></div>
+</section>
+
+<section class="notes" id="s15">
+  <h2>15. Revision Box &mdash; 15-Point Crisp Recap</h2>
+  <div class="revision-box">
+    <ol>
+      <li><strong>Definition:</strong> sustained rise in the general price level, not a one-off jump. Crowther, Coulborn, Pigou, Friedman.</li>
+      <li><strong>Four price movements:</strong> Inflation, Disinflation, Deflation, Reflation. Stagflation, Skewflation, Shrinkflation, Greedflation.</li>
+      <li><strong>By cause:</strong> Demand-pull, Cost-push, Structural, Wage-spiral, Imported, Currency-depreciation (D-C-S-W-I-D).</li>
+      <li><strong>By speed:</strong> Creeping (&lt;3%), Walking (3-7%), Running (7-10%), Galloping (&gt;10%), Hyperinflation (&gt;50% per month &mdash; Cagan).</li>
+      <li><strong>CPI Combined:</strong> base 2012, NSO, target of MPC, food weight 45.86%.</li>
+      <li><strong>WPI:</strong> base 2011-12, 697 items, OEA/DPIIT, Saumitra Chaudhuri WG 2017, no services.</li>
+      <li><strong>PPI:</strong> experimental from Oct 2023, Ramesh Chand Committee 2017, factory-gate prices including services.</li>
+      <li><strong>GDP Deflator:</strong> (Nominal/Real)&times;100 &mdash; broadest measure, NSO releases with GDP.</li>
+      <li><strong>IIP:</strong> base 2011-12, Mining-Manufacturing-Electricity; Eight Core 40.27% of IIP.</li>
+      <li><strong>Headline vs Core:</strong> MPC targets headline, reads core; super-core &amp; trimmed-mean now in RBI dashboard.</li>
+      <li><strong>Base effect:</strong> y-o-y comparison &mdash; a high base year produces a low current reading and vice versa.</li>
+      <li><strong>Phillips Curve:</strong> short-run trade-off; vertical at NAIRU long-run; expectations-augmented form is the modern workhorse.</li>
+      <li><strong>Cobweb Theorem:</strong> Kaldor 1934; convergent / divergent / stable cycles; explains onion-tomato-pulses oscillations.</li>
+      <li><strong>FIT 2016:</strong> 4&plusmn;2% CPI target; RBI Act Sections 45ZA-ZN; MPC of 6 (3 RBI + 3 external, 4-yr); failure = three consecutive quarters outside band; first failure report Nov 2022.</li>
+      <li><strong>Anti-inflation toolkit:</strong> Monetary (repo, CRR, OMO, SDF), Fiscal (surplus budget, excise cuts, subsidy targeting), Administrative (PDS, buffer stocks, export bans, import duty cuts, ECA 1955).</li>
+    </ol>
+  </div>
+</section>
+
+      </main>
+
+      <aside>
+        <div class="aside-sticky">
+
+          <div class="widget">
+            <h4>Must-Know Tags</h4>
+            <span class="tag">Inflation</span>
+            <span class="tag">CPI</span>
+            <span class="tag">WPI</span>
+            <span class="tag">PPI</span>
+            <span class="tag orange">MPC</span>
+            <span class="tag orange">FIT 4&plusmn;2%</span>
+            <span class="tag">Phillips Curve</span>
+            <span class="tag">NAIRU</span>
+            <span class="tag">Cobweb</span>
+            <span class="tag green">Base Effect</span>
+            <span class="tag green">Stagflation</span>
+            <span class="tag">Section 45ZN</span>
+          </div>
+
+          <div class="widget">
+            <h4>Difficulty Meter</h4>
+            <p style="font-size:13px;color:var(--muted);margin:0 0 8px">Prelims-Mains Weight</p>
+            <div class="bar" style="background:linear-gradient(90deg,var(--brand-orange) 0%,var(--brand-orange) 85%,var(--line) 85%,var(--line) 100%);height:10px;border-radius:5px"></div>
+            <p style="font-size:12px;color:var(--muted);margin:6px 0 0">Very High &mdash; 85/100. Asked every year in Prelims; recurring Mains GS-III theme.</p>
+          </div>
+
+          <div class="widget">
+            <h4>Latest Data Snapshot</h4>
+            <ul style="font-size:13.5px;line-height:1.7;padding-left:18px;margin:0">
+              <li>CPI (May-25): ~4.8% YoY <span class="update-tag">check for latest update or data</span></li>
+              <li>WPI (May-25): ~2.6% YoY <span class="update-tag">check for latest update or data</span></li>
+              <li>Repo Rate: 5.50% (Jun-25) <span class="update-tag">check for latest update or data</span></li>
+              <li>SDF: 5.25% &middot; MSF: 5.75%</li>
+              <li>CRR: 4.00% &middot; SLR: 18.00%</li>
+              <li>Inflation Target: 4&plusmn;2% (2021-26)</li>
+            </ul>
+          </div>
+
+          <div class="widget">
+            <h4>Key Committees</h4>
+            <ul style="font-size:13.5px;line-height:1.7;padding-left:18px;margin:0">
+              <li><strong>Urjit Patel (2014):</strong> FIT framework</li>
+              <li><strong>Saumitra Chaudhuri (2017):</strong> WPI revision</li>
+              <li><strong>Ramesh Chand (2017):</strong> PPI</li>
+              <li><strong>Abhijit Sen WG:</strong> PPI methodology</li>
+              <li><strong>Biswanath Goldar:</strong> CPI base revision (ongoing)</li>
+            </ul>
+          </div>
+
+          <div class="widget">
+            <h4>Key Acts &amp; Sections</h4>
+            <ul style="font-size:13.5px;line-height:1.7;padding-left:18px;margin:0">
+              <li>RBI Act, 1934 &mdash; Sections 45ZA-ZN</li>
+              <li>Finance Act, 2016 &mdash; inserted MPC framework</li>
+              <li>Essential Commodities Act, 1955</li>
+              <li>National Food Security Act, 2013</li>
+              <li>FRBM Act, 2003 &mdash; fiscal discipline</li>
+            </ul>
+          </div>
+
+          <div class="widget">
+            <h4>Key Formulae</h4>
+            <ul style="font-size:13px;line-height:1.7;padding-left:18px;margin:0">
+              <li>Inflation = (P<sub>t</sub>&minus;P<sub>t-1</sub>)/P<sub>t-1</sub> &times; 100</li>
+              <li>Fisher: MV = PT</li>
+              <li>GDP Deflator = (Nominal GDP / Real GDP) &times; 100</li>
+              <li>Real Interest = Nominal &minus; &pi;<sup>e</sup></li>
+              <li>Phillips: &pi; = &pi;<sup>e</sup> &minus; &beta;(u &minus; u*)</li>
+            </ul>
+          </div>
+
+          <div class="widget">
+            <h4>Mnemonic</h4>
+            <p style="font-size:14px;line-height:1.6;margin:0"><strong>D-C-S-W-I-D</strong> &mdash; the six families of inflation causes: <em>Demand-pull, Cost-push, Structural, Wage-spiral, Imported, Depreciation</em>.</p>
+            <p style="font-size:13px;color:var(--muted);margin:8px 0 0"><strong>C-W-R-G-H</strong> &mdash; the speeds: <em>Creeping, Walking, Running, Galloping, Hyper</em>.</p>
+          </div>
+
+          <div class="widget">
+            <h4>Common Confusions</h4>
+            <ul style="font-size:13px;line-height:1.7;padding-left:18px;margin:0">
+              <li><strong>Deflation</strong> = falling prices; <strong>Disinflation</strong> = inflation rate falling but positive.</li>
+              <li>MPC targets <strong>CPI Combined</strong>, not WPI.</li>
+              <li>DA computed on <strong>CPI-IW</strong>, not CPI-Combined.</li>
+              <li>Repo rate is the <strong>policy</strong> rate, not the floor &mdash; SDF is the floor.</li>
+              <li>Failure clause: three <strong>consecutive quarters</strong> outside the band, not one.</li>
+            </ul>
+          </div>
+
+          <div class="widget">
+            <h4>Quick Cross-Links</h4>
+            <ul style="font-size:13.5px;line-height:1.7;padding-left:18px;margin:0">
+              <li><a href="/economy/money-and-money-supply">Topic 5: Money &amp; Money Supply</a></li>
+              <li><a href="/economy/banking-system-in-india">Topic 6: Banking System in India</a></li>
+              <li>Topic 8: Fiscal Policy &amp; Budget (next)</li>
+              <li>Topic 9: External Sector &amp; BoP</li>
+            </ul>
+          </div>
+
+        </div>
+      </aside>
+    </div>
+</div>

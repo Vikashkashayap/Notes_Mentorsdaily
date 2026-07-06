@@ -1,0 +1,837 @@
+<!-- economy-topic11 — auto-imported from economy-topic11-industrial-sector-manufacturing-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(135deg,#1b3a4b 0%,#0d2535 55%,#061018 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ol{margin:0;padding-left:22px;font-size:14px;columns:2;column-gap:24px}
+.toc li{margin-bottom:5px;break-inside:avoid}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+.formula{background:#f5f7fa;border:1px solid var(--line);border-left:4px solid var(--brand-blue);padding:12px 16px;margin:12px 0;border-radius:6px;font-family:"Courier New",monospace;font-size:14px;color:var(--brand-blue-dark)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ol{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Industrial Sector &amp; Manufacturing &mdash; From License Raj to PLI-Led Reindustrialisation</h1>
+  <p class="sub">India's industrial story runs through three distinct regimes: the state-led, licence-permit heavy build-out of 1948-1990; the liberalisation shock of 1991 that dismantled most licensing and opened FDI; and the post-2014 push &mdash; Make in India, PLI, industrial corridors and labour-law codification &mdash; to lift manufacturing's stubbornly stuck ~13-17% share of GDP. Topic 11 traces the Industrial Policy Resolutions, the PSE/disinvestment story, MSME classification, the flagship PLI architecture, and the measurement tools (IIP) UPSC tests most often.</p>
+  <div class="meta">
+    <span class="pill">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Ramesh Singh Ch. 15-16</span>
+    <span class="pill">~32 min read</span>
+    <span class="pill">Make in India &middot; PLI</span>
+    <span class="pill">MSME &middot; IIP &middot; Labour Codes</span>
+  </div>
+</div>
+
+<div class="toc">
+<h3>On this page</h3>
+<ol style="list-style:none;padding-left:0;margin:0">
+  <li><a href="#concept">Conceptual Clarity</a></li>
+  <li><a href="#s1">1. Evolution of Industrial Policy (1948-1991)</a></li>
+  <li><a href="#s2">2. Industrial Licensing, MRTP &amp; Liberalisation</a></li>
+  <li><a href="#s3">3. Public Sector Enterprises, Navratna/Maharatna &amp; Disinvestment</a></li>
+  <li><a href="#s4">4. MSME Sector &mdash; Classification &amp; Schemes</a></li>
+  <li><a href="#s5">5. National Manufacturing Policy &amp; Make in India</a></li>
+  <li><a href="#s6">6. Production Linked Incentive (PLI) Schemes</a></li>
+  <li><a href="#s7">7. Industrial Corridors &amp; Infrastructure</a></li>
+  <li><a href="#s8">8. Startup India &amp; Ease of Doing Business</a></li>
+  <li><a href="#s9">9. Index of Industrial Production (IIP)</a></li>
+  <li><a href="#s10">10. Corporate Tax Reforms &amp; Industrial Competitiveness</a></li>
+  <li><a href="#s11">11. Labour Codes &amp; Industrial Relations</a></li>
+  <li><a href="#s12">12. Current Affairs Anchor (2024-26)</a></li>
+  <li><a href="#s13">13. Prelims PYQs (2014&ndash;2026)</a></li>
+  <li><a href="#s14">14. Mains PYQs (2014&ndash;2025)</a></li>
+  <li><a href="#s15">15. Revision Box</a></li>
+</ol>
+</div>
+
+<div class="concept-box" id="concept">
+<h3>Conceptual Clarity &mdash; Three Lenses</h3>
+<ol style="margin:.4rem 0 0">
+  <li><strong>Three regimes, one line</strong> &mdash; <em>1956</em> (state commands the commanding heights) &rarr; <em>1991</em> (licence-permit-quota Raj dismantled) &rarr; <em>2014 onward</em> (targeted, sector-specific incentives &mdash; PLI &mdash; replace blanket protection). Each transition was a response to the failure of the previous model to generate jobs or global competitiveness.</li>
+  <li><strong>Classification is the PYQ trap</strong> &mdash; Navratna vs Maharatna criteria, MSME investment/turnover slabs, and the compulsory-licensing list are all finite, memorisable lists that UPSC tests almost mechanically.</li>
+  <li><strong>The stuck number</strong> &mdash; manufacturing's share of GVA has hovered around <strong>13-17%</strong> for three decades despite multiple targets (25% by 2022 under NMP 2011; 25% by 2025 under Make in India) <span class="update-tag">check for latest update or data</span>. This "premature deindustrialisation" / "missing middle" (few mid-sized firms between MSME and large-scale) debate is the Mains anchor for this entire topic.</li>
+</ol>
+<div class="formula" style="margin-top:.7rem">
+IPR 1956 Schedules: A (17, exclusive state) + B (12, state-dominant/private-supplement) + C (rest, private)<br>
+MSME (from 1 Jul 2020): composite criterion = Investment in P&amp;M/equipment AND Annual Turnover (whichever is higher governs classification)<br>
+Manufacturing share of GVA &asymp; 13-17% (target was 25% by 2022 under NMP 2011 &mdash; missed)
+</div>
+</div>
+
+<section class="notes" id="s1">
+  <h2>1. Evolution of Industrial Policy in India (1948-1991)</h2>
+
+  <p>India inherited a narrow, colonial industrial base in 1947 (jute, cotton textiles, a few steel/cement units). Industrial policy since then has been articulated through a sequence of Industrial Policy Resolutions/Statements (IPRs), each recalibrating the state-market balance.</p>
+
+  <h3>1.1 Industrial Policy Resolution (IPR) 1948</h3>
+  <p>India's first industrial policy statement, issued <strong>6 April 1948</strong>, adopted a <strong>mixed economy</strong> framework and divided industries into four categories:</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Category</th><th>Industries</th><th>Role</th></tr></thead>
+      <tbody>
+        <tr><td>1. State monopoly</td><td>Arms &amp; ammunition, atomic energy, railways</td><td>Exclusively Central Government</td></tr>
+        <tr><td>2. State-dominant, mixed</td><td>Coal, iron &amp; steel, aircraft manufacture, shipbuilding, telephone/telegraph/wireless equipment, mineral oils (6 industries)</td><td>New units only by State (existing private units allowed to continue for 10 years)</td></tr>
+        <tr><td>3. State-regulated private</td><td>18 industries of "basic importance" (e.g. heavy chemicals, machine tools, fertilisers)</td><td>Private sector, but Centre could regulate &amp; plan</td></tr>
+        <tr><td>4. Private/cooperative</td><td>All remaining industries</td><td>Open to private enterprise, including small-scale &amp; cottage sector</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The legal teeth for regulating category 2 &amp; 3 came from the <strong>Industries (Development &amp; Regulation) Act, 1951 (IDRA)</strong> &mdash; the parent statute for industrial licensing in India, still in force today (in a heavily pared-down form).</p>
+
+  <h3>1.2 Industrial Policy Resolution (IPR) 1956 &mdash; "The Economic Constitution of India"</h3>
+  <p>Adopted <strong>30 April 1956</strong>, following the Second Five Year Plan's Mahalanobis-Feldman heavy-industry strategy. It remained the base document of industrial policy until 1991. It classified industries into <strong>three schedules</strong>:</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Schedule</th><th>Count</th><th>Examples</th><th>Ownership</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Schedule A</strong></td><td>17 industries</td><td>Arms, atomic energy, iron &amp; steel, heavy machinery, air &amp; rail transport, electricity generation</td><td>Exclusive state responsibility (future development)</td></tr>
+        <tr><td><strong>Schedule B</strong></td><td>12 industries</td><td>Aluminium, machine tools, fertilisers, synthetic rubber, chemical pulp</td><td>State to progressively set up; private sector to supplement</td></tr>
+        <tr><td><strong>Schedule C</strong></td><td>Rest</td><td>All other industries</td><td>Left to the private sector, subject to IDRA licensing</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>IPR 1956 also gave <strong>primacy to the public sector</strong> as the engine of the "commanding heights of the economy," emphasised <strong>balanced regional development</strong>, and reaffirmed support for the <strong>small-scale and cottage sector</strong> through reservation of items for exclusive small-scale production.</p>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> IPR 1948 had <em>4 categories</em>; IPR 1956 had <em>3 schedules</em>. Do not confuse the two enumerations or their industry counts (17/12 for Schedule A/B is the most commonly tested figure).</div>
+
+  <h3>1.3 Subsequent Statements &mdash; 1969 to 1980</h3>
+  <ul>
+    <li><strong>Monopolies &amp; Restrictive Trade Practices (MRTP) Act, 1969</strong> &mdash; enacted to prevent concentration of economic power and curb monopolistic/restrictive trade practices; created the MRTP Commission.</li>
+    <li><strong>Foreign Exchange Regulation Act (FERA), 1973</strong> &mdash; tightly controlled foreign exchange transactions &amp; FDI; later replaced by the liberal <strong>FEMA, 1999</strong>.</li>
+    <li><strong>Industrial Policy Statement, 1977</strong> &mdash; the Janata Government's statement gave the small-scale, tiny &amp; cottage sector primacy; expanded the reserved list for small-scale industry; introduced the "District Industries Centres" concept.</li>
+    <li><strong>Industrial Policy Statement, 1980</strong> &mdash; sought to consolidate on the gains of the earlier policy, promoted the concept of <em>"economic federalism"</em> (industrial dispersal to backward areas) and re-emphasised modernisation &amp; the role of competition.</li>
+  </ul>
+
+  <h3>1.4 New Industrial Policy (NIP), 1991</h3>
+  <p>Announced <strong>24 July 1991</strong> under PM P.V. Narasimha Rao &amp; Finance Minister Dr Manmohan Singh amid a severe Balance-of-Payments crisis (forex reserves down to ~2 weeks of imports). It was the single biggest rupture in India's industrial policy history &mdash; the "L" of the LPG reforms.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Reform</th><th>Change</th></tr></thead>
+      <tbody>
+        <tr><td>Industrial licensing</td><td>Abolished for all industries except 18 (later pared down further); today only <strong>6 industries</strong> require a licence</td></tr>
+        <tr><td>Public sector</td><td>Reserved-for-PSU list cut from 17 to 8 (1991), further pared over the years to 4 strategic sectors (2021 PSE policy)</td></tr>
+        <tr><td>MRTP Act</td><td>Amended to remove threshold limits on assets that triggered mandatory MRTP Commission clearance for mergers/expansion</td></tr>
+        <tr><td>FDI</td><td>Automatic approval up to 51% equity in 34 high-priority industries (since progressively liberalised to 100% automatic in most sectors)</td></tr>
+        <tr><td>Foreign Technology Agreements</td><td>Automatic permission for royalty payments up to specified limits</td></tr>
+        <tr><td>Public sector disinvestment</td><td>Initiated in 1991-92 &mdash; sale of minority equity in select PSUs</td></tr>
+        <tr><td>SEBI</td><td>Given statutory powers (1992) to replace the Controller of Capital Issues (CCI) as capital-market regulator</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout info"><strong>Mains anchor:</strong> The 1991 reforms were triggered by a BoP crisis, not a pre-planned ideological shift &mdash; a classic example of "crisis as the mother of reform" in Indian economic history. Compare with the 2020 PLI-led industrial policy, which was triggered by supply-chain disruption (COVID-19) and the China+1 realignment &mdash; crisis-driven policy-making is a recurring pattern.</div>
+</section>
+
+<section class="notes" id="s2">
+  <h2>2. Industrial Licensing, MRTP &amp; Liberalisation</h2>
+
+  <p>Industrial licensing &mdash; colloquially the <strong>"License-Permit-Quota Raj"</strong> &mdash; required government permission (under IDRA 1951) for setting up a new industrial undertaking, substantially expanding capacity, changing product-mix, or relocating a unit. It was the single-most criticised feature of pre-1991 industrial policy for breeding inefficiency, rent-seeking &amp; corruption, and for capping the scale at which Indian firms could compete globally.</p>
+
+  <h3>2.1 Compulsory Industrial Licensing Today</h3>
+  <p>Post-1991, licensing survives only for industries linked to <strong>security, strategic, safety, health &amp; environmental concerns</strong>. As of the current DPIIT list, only <strong>6 industry groups</strong> require a compulsory industrial licence:</p>
+  <ol>
+    <li>Distillation &amp; brewing of alcoholic drinks</li>
+    <li>Cigars &amp; cigarettes of tobacco/tobacco substitutes</li>
+    <li>Electronic aerospace &amp; defence equipment (all types)</li>
+    <li>Industrial explosives, including detonating fuses, safety fuses, gunpowder</li>
+    <li>Specified hazardous chemicals</li>
+    <li>Drugs &amp; pharmaceuticals (specified categories only, per Drugs &amp; Cosmetics rules)</li>
+  </ol>
+  <p style="font-size:12px;color:var(--muted)">Reservation for the public sector today survives only for atomic energy substances (list under the Atomic Energy Act) &amp; rail transport (subject to progressive private participation).</p>
+
+  <h3>2.2 MRTP Act 1969 &rarr; Competition Act 2002</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Feature</th><th>MRTP Act, 1969</th><th>Competition Act, 2002</th></tr></thead>
+      <tbody>
+        <tr><td>Philosophy</td><td>Curb concentration of economic power; control size</td><td>Promote competition; regulate conduct, not size</td></tr>
+        <tr><td>Regulator</td><td>MRTP Commission</td><td>Competition Commission of India (CCI), est. 2003, operational 2009</td></tr>
+        <tr><td>Focus</td><td>Structure (asset-size thresholds)</td><td>Behaviour (anti-competitive agreements, abuse of dominance, combinations/M&amp;A review)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="callout warn"><strong>Prelims trap:</strong> MRTP Act was <em>repealed</em>, not merely amended, and replaced entirely by the Competition Act, 2002 &mdash; a shift in philosophy from "size is bad" to "abuse of market power is bad."</div>
+
+  <h3>2.3 Ease of Doing Business &amp; Decriminalisation</h3>
+  <ul>
+    <li><strong>Jan Vishwas (Amendment of Provisions) Act, 2023</strong> &mdash; decriminalised ~180 provisions across 42 Central Acts, converting many minor/technical industrial-compliance offences from criminal to civil/monetary penalties.</li>
+    <li><strong>National Single Window System (NSWS)</strong> &mdash; single-window portal for investors to identify &amp; apply for approvals/licences/NOCs across Central &amp; State agencies.</li>
+    <li><strong>Business Reforms Action Plan (BRAP)</strong> &mdash; DPIIT's annual state-level ranking exercise on ease-of-doing-business reform implementation.</li>
+  </ul>
+</section>
+
+<section class="notes" id="s3">
+  <h2>3. Public Sector Enterprises, Navratna/Maharatna &amp; Disinvestment</h2>
+
+  <p>Central Public Sector Enterprises (CPSEs) were the flagship instrument of the 1956 strategy. Today, with de-licensing &amp; disinvestment, the emphasis has shifted from "PSEs as commanding heights" to "PSEs only in strategic sectors, autonomy &amp; efficiency for the rest."</p>
+
+  <h3>3.1 Maharatna, Navratna &amp; Miniratna &mdash; Autonomy Categories</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Category</th><th>Eligibility criteria (indicative)</th><th>Key autonomy granted</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Maharatna</strong></td><td>Navratna status &ge;3 yrs; listed on stock exchange; avg annual turnover &gt; &#8377;25,000 cr (last 3 yrs); avg net worth &gt; &#8377;15,000 cr; avg net profit after tax &gt; &#8377;5,000 cr</td><td>Board can approve investments up to <strong>&#8377;5,000 cr</strong> (or 15% of net worth) in a single project without seeking government approval</td></tr>
+        <tr><td><strong>Navratna</strong></td><td>Composite score &ge;60 (out of 100) on 6 performance parameters incl. net profit, net worth, total manpower cost, PBDIT/capital employed, PBDIT/turnover, EPS; must already be a Miniratna-I &amp; hold Schedule A status</td><td>Board can approve investments up to <strong>&#8377;1,000 cr</strong> (or 15% of net worth, max &#8377;1,500 cr) without government approval</td></tr>
+        <tr><td><strong>Miniratna Category-I</strong></td><td>Made profit in last 3 years continuously; pre-tax profit &ge;&#8377;30 cr in at least 1 of the 3 years</td><td>Investment approval up to &#8377;500 cr or equal to net worth (whichever lower)</td></tr>
+        <tr><td><strong>Miniratna Category-II</strong></td><td>Made profit in last 3 years continuously; positive net worth</td><td>Investment approval up to &#8377;300 cr or 50% of net worth (whichever lower)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="font-size:12px;color:var(--muted)">Current count (approx, verify latest): <strong>13-14 Maharatna</strong> CPSEs (incl. ONGC, IOCL, NTPC, Coal India, SAIL, BHEL, GAIL, BPCL, Power Grid, HPCL, BEL) and <strong>~24-25 Navratna</strong> CPSEs. <span class="update-tag">check for latest update or data</span></p>
+
+  <h3>3.2 Disinvestment &amp; Strategic Sale</h3>
+  <ul>
+    <li><strong>Department of Investment &amp; Public Asset Management (DIPAM)</strong>, Ministry of Finance, is the nodal body for CPSE disinvestment.</li>
+    <li><strong>Air India</strong> &mdash; strategically disinvested to the Tata Group (deal concluded Jan 2022) &mdash; ending 69 years of government ownership; the biggest privatisation since 2003-04 (VSNL, BALCO, Hindustan Zinc era of the NDA-I disinvestment ministry under Arun Shourie).</li>
+    <li><strong>LIC IPO (May 2022)</strong> &mdash; India's largest-ever IPO at the time; minority stake sale (not strategic disinvestment; government retains full control).</li>
+    <li><strong>BPCL strategic sale</strong> &mdash; approved in principle but process withdrawn (2022) after failing to attract adequate bids.</li>
+    <li>NITI Aayog identifies CPSEs for strategic disinvestment; the <strong>Alternative Mechanism (AM)</strong>, a group of Ministers, approves the process; Cabinet Committee on Economic Affairs (CCEA) gives final approval for major transactions.</li>
+  </ul>
+
+  <h3>3.3 New Public Sector Enterprise Policy, 2021</h3>
+  <p>Announced in Budget 2021-22, this policy classifies the economy into just <strong>4 strategic sectors</strong> where bare minimum CPSE presence will be maintained: (1) Atomic energy, Space &amp; Defence; (2) Transport &amp; Telecommunications; (3) Power, Petroleum, Coal &amp; other minerals; (4) Banking, Insurance &amp; financial services. In all other sectors, CPSEs will be privatised or, if unviable, considered for closure.</p>
+
+  <div class="callout"><strong>Mains anchor:</strong> The PSE reform trajectory mirrors the industrial-policy trajectory &mdash; from "state as producer" (1956) to "state as strategic-sector custodian + regulator" (2021 PSE policy). Critics argue disinvestment proceeds (non-debt capital receipts) have repeatedly missed Budget Estimates, questioning the fiscal-consolidation rationale for privatisation. <span class="update-tag">check for latest update or data</span></div>
+</section>
+
+<section class="notes" id="s4">
+  <h2>4. MSME Sector &mdash; Classification &amp; Schemes</h2>
+
+  <p>Micro, Small &amp; Medium Enterprises are governed by the <strong>MSME Development Act, 2006</strong>, administered by the <strong>Ministry of MSME</strong>. MSMEs are widely called the "backbone of the Indian economy" &mdash; contributing an estimated <strong>~30% of GVA, ~45% of manufacturing output and ~40-45% of exports</strong>, while employing over <strong>11 crore</strong> people across ~6.3 crore enterprises. <span class="update-tag">check for latest update or data</span></p>
+
+  <h3>4.1 Classification &mdash; Composite Criterion (effective 1 July 2020)</h3>
+  <p>Since 1 July 2020, MSME classification uses a <strong>composite criterion</strong> combining Investment in plant &amp; machinery/equipment AND Annual Turnover &mdash; a shift from the earlier investment-only criterion, and from the old manufacturing-vs-services distinction (now unified).</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Category</th><th>Investment (P&amp;M/equipment)</th><th>Annual Turnover</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Micro</strong></td><td>&le; &#8377;1 crore</td><td>&le; &#8377;5 crore</td></tr>
+        <tr><td><strong>Small</strong></td><td>&le; &#8377;10 crore</td><td>&le; &#8377;50 crore</td></tr>
+        <tr><td><strong>Medium</strong></td><td>&le; &#8377;50 crore</td><td>&le; &#8377;250 crore</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:12px;color:var(--muted);margin-top:4px">A unit is classified by whichever criterion (investment or turnover) places it in the higher category. Limits were last revised upward in Budget 2025-26. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+
+  <h3>4.2 Udyam Registration</h3>
+  <p>The <strong>Udyam Registration portal</strong> (launched 1 July 2020) replaced the earlier <em>Udyog Aadhaar Memorandum (UAM)</em> and <em>Entrepreneurs Memorandum</em> systems &mdash; a free, paperless, self-declaration-based registration linked to PAN &amp; GSTIN, auto-classifying enterprises based on ITR/GST returns data.</p>
+
+  <h3>4.3 Key MSME Schemes</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Scheme</th><th>Purpose</th></tr></thead>
+      <tbody>
+        <tr><td><strong>CGTMSE</strong> (Credit Guarantee Fund Trust for Micro &amp; Small Enterprises)</td><td>Collateral-free credit guarantee cover for bank loans to MSEs</td></tr>
+        <tr><td><strong>PMEGP</strong> (Prime Minister's Employment Generation Programme)</td><td>Credit-linked subsidy for setting up new micro-enterprises</td></tr>
+        <tr><td><strong>PM MUDRA Yojana</strong> (2015)</td><td>Collateral-free loans up to &#8377;20 lakh (revised 2024) via Shishu/Kishor/Tarun/<em>Tarun Plus</em> categories, disbursed through Member Lending Institutions refinanced by MUDRA (a subsidiary of SIDBI)</td></tr>
+        <tr><td><strong>CLCSS</strong> (Credit Linked Capital Subsidy Scheme)</td><td>Technology upgradation subsidy for MSEs</td></tr>
+        <tr><td><strong>ZED Certification</strong> (Zero Defect Zero Effect)</td><td>Quality &amp; environment-friendly manufacturing certification with subsidy support</td></tr>
+        <tr><td><strong>SFURTI</strong> (Fund for Regeneration of Traditional Industries)</td><td>Cluster development for khadi, coir &amp; village industries</td></tr>
+        <tr><td><strong>TReDS</strong> (Trade Receivables Discounting System)</td><td>RBI-regulated electronic platform for MSMEs to discount trade receivables/invoices &amp; ease delayed-payment stress</td></tr>
+        <tr><td><strong>RAMP</strong> (Raising &amp; Accelerating MSME Performance, 2022)</td><td>World Bank-assisted (&#8377;6,062 cr) scheme for MSME competitiveness, market access &amp; resilience</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> Since 1 July 2020, the manufacturing/services distinction for MSME classification has been <em>abolished</em> &mdash; a single unified definition based on investment + turnover now applies to both.</div>
+</section>
+
+<section class="notes" id="s5">
+  <h2>5. National Manufacturing Policy &amp; Make in India</h2>
+
+  <h3>5.1 National Manufacturing Policy (NMP), 2011</h3>
+  <p>Announced in 2011, NMP set a target of raising manufacturing's share in GDP from ~16% to <strong>25% by 2022</strong> and creating <strong>100 million additional jobs</strong> over a decade. Its principal instrument was the <strong>National Investment &amp; Manufacturing Zones (NIMZs)</strong> &mdash; large integrated industrial townships (&ge;5,000 hectares) with world-class infrastructure &amp; simplified regulatory clearances. Very few NIMZs were operationalised at scale, and the 25%-by-2022 target was missed &mdash; manufacturing's GVA share has stayed roughly flat.</p>
+
+  <h3>5.2 Make in India</h3>
+  <p>Launched <strong>25 September 2014</strong>, Make in India is the flagship initiative to transform India into a global manufacturing &amp; design hub. Its core planks:</p>
+  <ul>
+    <li><strong>25 focus sectors</strong> at launch (later expanded to <strong>27 sectors</strong> under Make in India 2.0), spanning manufacturing (automobiles, aviation, chemicals, defence, electronics, pharma, textiles, etc.) &amp; services (IT/BPM, tourism, media, finance, etc.).</li>
+    <li><strong>Ease of Doing Business</strong> as an enabling pillar &mdash; India's World Bank Doing Business rank rose from 142 (2014) to 63 (2019, the last published edition before its discontinuation in Sep 2021).</li>
+    <li><strong>Invest India</strong> &mdash; the national investment promotion &amp; facilitation agency, acting as the first point of reference for investors.</li>
+    <li><strong>Motto</strong>: "Zero Defect, Zero Effect" &mdash; manufacturing with no defects and no adverse environmental impact.</li>
+    <li><strong>Make in India 2.0</strong> &mdash; DPIIT is the nodal coordinating department, with individual line ministries as sector champions for each of the 27 focus sectors.</li>
+  </ul>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> The <em>Ease of Doing Business (EoDB)</em> ranking was published by the <strong>World Bank</strong>, not DPIIT; DPIIT's own annual state-ranking exercise is the <em>Business Reforms Action Plan (BRAP)</em> &mdash; do not conflate the two.</div>
+
+  <div class="callout info"><strong>Mains anchor:</strong> Make in India's 25%-of-GDP manufacturing target (revised from NMP 2011, echoed again for 2025) has been consistently missed &mdash; manufacturing GVA share was ~17.7% in FY15 and remains close to that band a decade later. <span class="update-tag">check for latest update or data</span> This has driven the pivot after 2020 towards a more targeted, sector-specific instrument: the Production Linked Incentive (PLI) scheme (Section 6), rather than broad-based promotional campaigns alone.</div>
+</section>
+
+<section class="notes" id="s6">
+  <h2>6. Production Linked Incentive (PLI) Schemes</h2>
+
+  <p>The <strong>PLI scheme</strong> is the current flagship instrument of Indian industrial policy &mdash; a shift from protection-based promotion (tariffs, reservation) to <strong>output/investment-linked cash incentives</strong>. Approved from March 2020 onward across <strong>14 sectors</strong> with a combined outlay of <strong>&#8377;1.97 lakh crore (~US$ 26 bn)</strong>. <span class="update-tag">check for latest update or data</span></p>
+
+  <h3>6.1 Design Logic</h3>
+  <ul>
+    <li>Incentive (typically <strong>4-6% of incremental sales</strong> of goods manufactured in India, over a base year) is paid <em>only after</em> a firm achieves pre-committed incremental investment &amp; production/sales thresholds &mdash; performance-linked, not front-loaded.</li>
+    <li>Tenure: typically <strong>5 years</strong> per sector (some schemes vary).</li>
+    <li>Aim: (a) attract large-scale, export-competitive investment; (b) reduce import dependence in critical sectors; (c) integrate India into Global Value Chains (GVCs) amid the "China+1" diversification wave.</li>
+  </ul>
+
+  <h3>6.2 The 14 PLI Sectors</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>#</th><th>Sector</th><th>Nodal Ministry (indicative)</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>Mobile manufacturing &amp; specified electronic components</td><td>MeitY</td></tr>
+        <tr><td>2</td><td>Critical KSMs/Drug Intermediates &amp; APIs</td><td>Dept. of Pharmaceuticals</td></tr>
+        <tr><td>3</td><td>Manufacturing of medical devices</td><td>Dept. of Pharmaceuticals</td></tr>
+        <tr><td>4</td><td>Pharmaceuticals drugs</td><td>Dept. of Pharmaceuticals</td></tr>
+        <tr><td>5</td><td>Telecom &amp; networking products</td><td>DoT</td></tr>
+        <tr><td>6</td><td>Food products</td><td>Ministry of Food Processing Industries</td></tr>
+        <tr><td>7</td><td>White goods (ACs &amp; LED lights)</td><td>DPIIT</td></tr>
+        <tr><td>8</td><td>Textiles (man-made fibre &amp; technical textiles)</td><td>Ministry of Textiles</td></tr>
+        <tr><td>9</td><td>Specialty steel</td><td>Ministry of Steel</td></tr>
+        <tr><td>10</td><td>Automobiles &amp; auto components (incl. EV/hydrogen tech)</td><td>Ministry of Heavy Industries</td></tr>
+        <tr><td>11</td><td>Advanced Chemistry Cell (ACC) battery</td><td>Ministry of Heavy Industries / NITI Aayog</td></tr>
+        <tr><td>12</td><td>Solar PV modules (high-efficiency)</td><td>MNRE</td></tr>
+        <tr><td>13</td><td>Drones &amp; drone components</td><td>Ministry of Civil Aviation</td></tr>
+        <tr><td>14</td><td>IT Hardware (laptops, tablets, servers) &mdash; IT Hardware PLI 2.0</td><td>MeitY</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>6.3 India Semiconductor Mission (ISM)</h3>
+  <p>Announced <strong>Dec 2021</strong> with an outlay of <strong>&#8377;76,000 crore</strong> &mdash; a distinct but related programme (not technically a "PLI") to incentivise semiconductor &amp; display fabs, Compound Semiconductors/OSAT/ATMP facilities, and chip design. Key projects: <strong>Tata Electronics-PSMC fab at Dholera, Gujarat</strong> (India's first commercial semiconductor fab); <strong>Micron's ATMP facility at Sanand, Gujarat</strong>; <strong>CG Power-Renesas-Stars OSAT unit</strong> at Sanand. <span class="update-tag">check for latest update or data</span></p>
+
+  <h3>6.4 Performance &amp; Criticism</h3>
+  <ul>
+    <li><strong>Mobile manufacturing</strong> is the clearest PLI success &mdash; India's mobile phone exports crossed <strong>&#8377;1.2 lakh crore</strong> in FY24, led by Apple's iPhone assembly (Foxconn, Pegatron, Tata Electronics) shifting a meaningful share of global output to India. <span class="update-tag">check for latest update or data</span></li>
+    <li>Uptake has been uneven across sectors &mdash; some (specialty steel, textiles, solar) have seen slower disbursement &amp; investment commitment than others.</li>
+    <li>Critics flag: (a) risk of PLI becoming a permanent subsidy rather than a time-bound competitiveness bridge; (b) limited employment elasticity in capital-intensive PLI sectors (electronics assembly, semiconductors); (c) fiscal cost vs. actual import-substitution achieved.</li>
+  </ul>
+
+  <div class="callout info"><strong>Mains anchor:</strong> PLI marks a philosophical shift from horizontal, broad-based protection (tariffs applicable to all firms in a sector) to vertical, firm-specific, performance-conditioned incentives. This is closer to the East Asian "developmental state" model (Korea, Taiwan) than to India's own pre-1991 import-substitution approach &mdash; the incentive is tied to <em>export competitiveness &amp; scale</em>, not merely to output for the protected domestic market.</div>
+</section>
+
+<section class="notes" id="s7">
+  <h2>7. Industrial Corridors &amp; Infrastructure</h2>
+
+  <h3>7.1 Delhi-Mumbai Industrial Corridor (DMIC)</h3>
+  <p>India's first mega industrial corridor, conceived along the <strong>Western Dedicated Freight Corridor (DFC)</strong> alignment, spanning 6 states (Delhi, Haryana, UP, Rajasthan, Gujarat, Maharashtra) over ~1,500 km. Supported technically &amp; financially by <strong>Japan (JICA)</strong>. Flagship "Smart Cities"/Investment Regions under DMIC include <strong>Dholera Special Investment Region (Gujarat)</strong> and <strong>Shendra-Bidkin Industrial Park (Aurangabad, Maharashtra)</strong>.</p>
+
+  <h3>7.2 National Industrial Corridor Development Programme (NICDP)</h3>
+  <p>The apex body, <strong>National Industrial Corridor Development Corporation (NICDC)</strong>, now coordinates an expanded network of <strong>11+ industrial corridors</strong> under the NICDP umbrella, including:</p>
+  <ul>
+    <li>Delhi-Mumbai Industrial Corridor (DMIC)</li>
+    <li>Chennai-Bengaluru Industrial Corridor (CBIC)</li>
+    <li>Bengaluru-Mumbai Economic Corridor (BMEC)</li>
+    <li>Amritsar-Kolkata Industrial Corridor (AKIC), including the Varanasi node</li>
+    <li>Vizag-Chennai Industrial Corridor (VCIC) &mdash; part of the East Coast Economic Corridor</li>
+    <li>Hyderabad-Nagpur, Hyderabad-Warangal &amp; Hyderabad-Bengaluru Industrial Corridors</li>
+    <li>Odisha Economic Corridor</li>
+  </ul>
+
+  <h3>7.3 PM Gati Shakti (2021)</h3>
+  <p>The <strong>National Master Plan for Multi-Modal Connectivity</strong>, launched 13 Oct 2021, is a GIS-based digital platform integrating infrastructure planning of 16 ministries/departments (railways, roads, ports, aviation, mass transport, waterways, logistics) to cut logistics costs (estimated at ~13-14% of GDP &mdash; among the highest globally) and enable synchronised, multi-modal project execution, including for the industrial corridor nodes.</p>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> DMIC was conceived along the <em>Western Dedicated Freight Corridor</em> (Delhi-Mumbai rail freight route), not the Eastern DFC (which runs Ludhiana-Dankuni, primarily for coal &amp; steel traffic).</div>
+</section>
+
+<section class="notes" id="s8">
+  <h2>8. Startup India &amp; Ease of Doing Business</h2>
+
+  <h3>8.1 Startup India (launched 16 Jan 2016)</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Feature</th><th>Detail</th></tr></thead>
+      <tbody>
+        <tr><td>Tax holiday</td><td>100% tax exemption on profits for <strong>3 consecutive years out of the first 10 years</strong> of incorporation (Section 80-IAC)</td></tr>
+        <tr><td>Angel tax relief</td><td>Section 56(2)(viib) "angel tax" abolished for all investors from Budget 2024-25 <span class="update-tag">check for latest update or data</span></td></tr>
+        <tr><td>Self-certification</td><td>Compliance simplification under 6 labour &amp; 3 environmental laws</td></tr>
+        <tr><td>Fund of Funds for Startups (FFS)</td><td>&#8377;10,000 cr corpus managed by SIDBI, invests in SEBI-registered Alternative Investment Funds (AIFs) which in turn invest in startups</td></tr>
+        <tr><td>Startup India Seed Fund Scheme (SISFS)</td><td>&#8377;945 cr, provides seed capital for proof-of-concept, prototyping &amp; early commercialisation via incubators</td></tr>
+        <tr><td>Credit Guarantee Scheme for Startups (CGSS)</td><td>Collateral-free debt funding guarantee</td></tr>
+        <tr><td>DPIIT recognition</td><td>Entity age &lt;10 years, turnover &lt;&#8377;100 cr in any financial year since incorporation, working towards innovation/improvement of products or scalable business model</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>India has the <strong>3rd largest startup ecosystem</strong> in the world (after US &amp; China) with 100+ unicorns cumulatively recognised. <span class="update-tag">check for latest update or data</span></p>
+
+  <h3>8.2 Ease of Doing Business &mdash; Post-2021 Architecture</h3>
+  <ul>
+    <li>World Bank discontinued the <em>Doing Business</em> report in Sep 2021 (data-integrity issues in the 2018 &amp; 2020 China/Saudi/Azerbaijan rankings); replaced from Oct 2024 by <strong>Business Ready (B-READY)</strong> with a different, less headline-rank-driven methodology.</li>
+    <li><strong>National Single Window System (NSWS)</strong> &mdash; unified portal for identifying &amp; applying for the ~30,000+ approvals/licences required across Central &amp; State regulators.</li>
+    <li><strong>Business Reforms Action Plan (BRAP)</strong> &mdash; DPIIT's own state-level EoDB reform-implementation index (states ranked by achievers/aspirers categories, not numeric rank since the latest editions).</li>
+    <li><strong>Jan Vishwas Act, 2023</strong> &mdash; decriminalised ~180 provisions across 42 laws to reduce compliance fear for small businesses.</li>
+  </ul>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> The <em>Doing Business</em> ranking was a World Bank product; <em>BRAP</em> is a DPIIT (Government of India) product ranking Indian states inter se &mdash; two different instruments measuring different things.</div>
+</section>
+
+<section class="notes" id="s9">
+  <h2>9. Index of Industrial Production (IIP)</h2>
+
+  <p>The <strong>Index of Industrial Production (IIP)</strong> is a monthly indicator of short-term industrial performance, released by the <strong>National Statistical Office (NSO)</strong>, Ministry of Statistics &amp; Programme Implementation (MoSPI), with a lag of ~6 weeks. Current base year: <strong>2011-12 = 100</strong>. <span class="update-tag">check for latest update or data</span></p>
+
+  <h3>9.1 Sectoral (Industry-of-Origin) Classification &amp; Weights</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Sector</th><th>Approx. weight in IIP</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Manufacturing</strong></td><td>~77.6%</td></tr>
+        <tr><td><strong>Mining</strong></td><td>~14.4%</td></tr>
+        <tr><td><strong>Electricity</strong></td><td>~8.0%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>9.2 Use-Based Classification</h3>
+  <ul>
+    <li><strong>Primary Goods</strong> &mdash; basic goods used as inputs (e.g. minerals, basic chemicals)</li>
+    <li><strong>Capital Goods</strong> &mdash; machinery used for further production (a proxy for investment activity)</li>
+    <li><strong>Intermediate Goods</strong> &mdash; partially finished goods used as inputs by other industries</li>
+    <li><strong>Infrastructure/Construction Goods</strong> &mdash; used in infrastructure/construction (added as a distinct category in the 2011-12 series revision)</li>
+    <li><strong>Consumer Durables</strong> &mdash; goods with extended usage (e.g. TVs, refrigerators, cars) &mdash; a proxy for urban/discretionary demand</li>
+    <li><strong>Consumer Non-Durables (FMCG)</strong> &mdash; short-usage goods (e.g. food, toiletries) &mdash; a proxy for rural/mass consumption demand</li>
+  </ul>
+
+  <h3>9.3 Index of Eight Core Industries</h3>
+  <p>A separate, faster (monthly, ~4-week lag) indicator tracking 8 core/infrastructure industries that together carry a <strong>40.27% weight within overall IIP</strong>:</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Core industry</th><th>Weight in Core Index</th></tr></thead>
+      <tbody>
+        <tr><td>Refinery products</td><td>~28.0%</td></tr>
+        <tr><td>Electricity</td><td>~19.9%</td></tr>
+        <tr><td>Steel</td><td>~17.9%</td></tr>
+        <tr><td>Coal</td><td>~10.3%</td></tr>
+        <tr><td>Crude oil</td><td>~8.98%</td></tr>
+        <tr><td>Natural gas</td><td>~6.9%</td></tr>
+        <tr><td>Cement</td><td>~5.4%</td></tr>
+        <tr><td>Fertilizers</td><td>~2.6%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> IIP measures <em>volume growth</em>, not value &mdash; it is a quantity index, and being a lagging/base-effect-sensitive series, month-on-month IIP figures are volatile; economists prefer the 3-month moving average or YoY comparison for signal extraction.</div>
+</section>
+
+<section class="notes" id="s10">
+  <h2>10. Corporate Tax Reforms &amp; Industrial Competitiveness</h2>
+
+  <p>The <strong>Taxation Laws (Amendment) Act, 2019</strong> (ordinance issued 20 Sep 2019) delivered the sharpest corporate-tax cut in India's history, aimed squarely at boosting Make in India competitiveness amid the US-China trade war and the resulting global supply-chain relocation opportunity.</p>
+
+  <h3>10.1 Key Rate Changes</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Category</th><th>Section</th><th>Base rate</th><th>Effective rate (with surcharge + cess)</th><th>Conditions</th></tr></thead>
+      <tbody>
+        <tr><td>Existing domestic companies (opting in)</td><td><strong>115BAA</strong></td><td>22%</td><td>~25.17%</td><td>Forgo specified exemptions/incentives (e.g. no additional depreciation, no SEZ deduction, no MAT)</td></tr>
+        <tr><td>New domestic manufacturing companies</td><td><strong>115BAB</strong></td><td>15%</td><td>~17.16%</td><td>Incorporated on/after 1 Oct 2019; commence production by the specified deadline (extended multiple times); no exemptions availed</td></tr>
+        <tr><td>Companies not opting in (old regime)</td><td>&mdash;</td><td>25-30% (turnover-based)</td><td>~29-34.9%</td><td>Can continue availing existing exemptions/incentives, incl. MAT credit</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <ul>
+    <li>Minimum Alternate Tax (MAT) reduced from 18.5% to <strong>15%</strong> for companies continuing under the old regime.</li>
+    <li>Section 115BAB's "commence manufacturing/production" deadline &mdash; originally 31 Mar 2023 &mdash; has been extended more than once (to 31 Mar 2024 and further) to accommodate delayed capex amid the pandemic &amp; project gestation lags. <span class="update-tag">check for latest update or data</span></li>
+  </ul>
+
+  <h3>10.2 Rationale &amp; Assessment</h3>
+  <ul>
+    <li>Intended to make India's headline corporate tax rate competitive with ASEAN peers (Vietnam ~20%, Thailand ~20%) to capture manufacturing FDI diverted from China.</li>
+    <li>Revenue foregone estimated at ~&#8377;1.45 lakh crore annually at the time of announcement.</li>
+    <li>Assessment is mixed: private capex revival was slower than hoped (bank/corporate balance-sheet deleveraging cycle, then COVID-19 hit), but the lower-rate regime is credited as one factor (alongside PLI) behind post-2021 electronics &amp; semiconductor investment commitments.</li>
+  </ul>
+
+  <div class="callout info"><strong>Mains anchor:</strong> The 2019 corporate tax cut and the 2020 PLI scheme are complementary, not substitute, instruments &mdash; the tax cut lowers the <em>cost of capital broadly</em>; PLI provides <em>targeted, sector-specific</em> incentives conditioned on incremental output. Together they represent the supply-side pillars of India's post-2019 industrial strategy, alongside labour &amp; land reform attempts.</div>
+</section>
+
+<section class="notes" id="s11">
+  <h2>11. Labour Codes &amp; Industrial Relations</h2>
+
+  <p>India's labour-law architecture (spread across <strong>~29 central Acts</strong>) was consolidated into <strong>4 Labour Codes</strong>, passed by Parliament (2019-2020) but implemented in a phased, delayed manner.</p>
+
+  <h3>11.1 The Four Codes</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Code</th><th>Year passed</th><th>Consolidates</th><th>Key provisions</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Code on Wages</strong></td><td>2019</td><td>Payment of Wages Act 1936; Minimum Wages Act 1948; Payment of Bonus Act 1965; Equal Remuneration Act 1976 (4 laws)</td><td>Universalises right to a statutory minimum wage &amp; timely wage payment to all workers (earlier confined to scheduled employments)</td></tr>
+        <tr><td><strong>Industrial Relations Code</strong></td><td>2020</td><td>Trade Unions Act 1926; Industrial Employment (Standing Orders) Act 1946; Industrial Disputes Act 1947 (3 laws)</td><td>Threshold for prior government permission for lay-off/retrenchment/closure raised from <strong>100 to 300</strong> workers; statutory recognition of <strong>fixed-term employment</strong>; single "negotiating union/council" concept; stricter conditions for strikes (60-day notice for all industries)</td></tr>
+        <tr><td><strong>Code on Social Security</strong></td><td>2020</td><td>EPF Act 1952; ESI Act 1948; Maternity Benefit Act 1961; Payment of Gratuity Act 1972 &amp; 5 others (9 laws)</td><td>Extends social security coverage to <strong>gig &amp; platform workers</strong> and unorganised-sector workers for the first time; National Social Security Board for gig workers</td></tr>
+        <tr><td><strong>Occupational Safety, Health &amp; Working Conditions (OSH) Code</strong></td><td>2020</td><td>Factories Act 1948; Contract Labour Act 1970; Inter-State Migrant Workmen Act 1979 &amp; 10 others (13 laws)</td><td>Single licence/registration for establishments; free annual health check-ups; extends coverage to inter-state migrant &amp; contract workers; women permitted in night shifts (with consent &amp; safeguards) in all sectors</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>11.2 Implementation Status</h3>
+  <ul>
+    <li>All 4 Codes have received Presidential assent, but they require <strong>State governments to notify their own rules</strong> (labour being a Concurrent List subject) before the Central notification can take effect uniformly.</li>
+    <li>Most States have pre-published draft rules; nationwide simultaneous implementation has been repeatedly delayed since the original FY22 target, partly due to Central-State coordination requirements and trade-union opposition. <span class="update-tag">check for latest update or data</span></li>
+  </ul>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> The Industrial Relations Code raises the retrenchment/lay-off government-permission threshold from <em>100 to 300</em> workers &mdash; a frequently tested exact figure. Do not confuse this with the Factories Act's separate worker-count thresholds for applicability (10 workers with power, 20 without).</div>
+
+  <div class="callout info"><strong>Mains anchor:</strong> The labour codes attempt to balance <em>flexibility for employers</em> (easier hiring/firing at scale, fixed-term contracts) against <em>expanded formal social-security coverage</em> (gig workers, migrant workers) &mdash; a trade-off central to the debate on whether India's rigid labour market has historically deterred labour-intensive manufacturing (the "missing middle" of mid-sized firms reluctant to cross the 100/300-worker threshold).</div>
+</section>
+
+<section class="notes" id="s12">
+  <h2>12. Current Affairs Anchor (2024-26)</h2>
+
+  <ul>
+    <li><strong>National Manufacturing Mission announced in Union Budget 2025-26</strong> &mdash; a fresh umbrella push covering clean-tech manufacturing (solar PV, EV batteries, electrolysers, wind turbines), MSME support &amp; skilling, positioned as the successor framework to NMP 2011 &amp; Make in India's stalled 25% GDP-share target. <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>Tata Electronics-PSMC semiconductor fab at Dholera, Gujarat</strong> &mdash; construction progressing; India's first commercial-scale chip fab (targeting 28nm+ nodes).</li>
+    <li><strong>Micron's ATMP facility at Sanand, Gujarat</strong> &mdash; among the first India Semiconductor Mission projects to reach commercial production.</li>
+    <li><strong>CG Power-Renesas-Stars Microelectronics OSAT unit</strong> at Sanand &mdash; approved under ISM's second tranche of incentives.</li>
+    <li><strong>MSME investment/turnover limits revised upward in Budget 2025-26</strong> to widen the base of enterprises eligible for scheme benefits amid rupee depreciation &amp; input-cost inflation eroding real thresholds. <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>Make in India completed its 10th anniversary (25 Sep 2024)</strong> &mdash; government claimed FDI inflows crossed US$ 1 trillion cumulatively since 2000, while critics highlighted the missed 25%-of-GDP manufacturing target.</li>
+    <li><strong>PLI scheme performance review (2024-25)</strong> &mdash; mobile/electronics &amp; specialty steel PLI performing above target disbursement; textiles &amp; solar PLI sub-tranches showing slower uptake. <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>India's manufacturing PMI</strong> continued to stay in expansion zone (&gt;50) through 2024-25, though export-order growth moderated amid global demand softness. <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>Toy &amp; footwear/leather sector PLI-style schemes</strong> under active consideration to replicate the mobile-manufacturing success story in more labour-intensive sectors. <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>Labour Codes implementation</strong> remains pending nationwide rollout as several States finalise draft rules; a unified national effective date has not yet been notified. <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>China+1 &amp; Apple's India ramp-up</strong> &mdash; India's share of global iPhone production continued rising, with Foxconn, Tata Electronics (which acquired Wistron's &amp; later Pegatron's India units) as principal assemblers.</li>
+    <li><strong>Jan Vishwas Act 2.0</strong> under discussion to decriminalise further compliance provisions affecting industrial units. <span class="update-tag">check for latest update or data</span></li>
+  </ul>
+</section>
+
+<section class="notes" id="s13">
+  <h2>13. Prelims PYQs (2014&ndash;2026)</h2>
+
+  <div class="pyq"><div class="year">Prelims 2014</div><p>The National Manufacturing Competitiveness Programme (NMCP) is a scheme meant for: (a) infrastructure development in Special Economic Zones (b) support to Public Sector Undertakings (c) financing and creating awareness in Micro, Small and Medium Enterprises sector (d) growth and development of ITES/BPO sector<br><em>Answer:</em> (c).</p></div>
+
+  <div class="pyq"><div class="year">Prelims 2015</div><p>Disinvestment of PSUs is being undertaken essentially for which of the following purposes? 1. Wider distribution of wealth 2. Privatization of the health sector 3. Increasing efficiency of PSUs 4. Availability of funds for social sector programmes. Select the correct answer using the code given below.<br><em>Answer:</em> 1, 3 and 4 only.</p></div>
+
+  <div class="pyq"><div class="year">Prelims 2016</div><p>With reference to &lsquo;Pradhan Mantri MUDRA Yojana&rsquo;, which of the following statements is correct? (a) It is an NBFC promoting rural and urban infrastructure (b) It refinances Micro-Finance Institutions which extend credit to MSME sector (c) It is a Public Sector Bank providing subsidised loans to farmers (d) None of the above<br><em>Answer:</em> (b).</p></div>
+
+  <div class="pyq"><div class="year">Prelims 2016</div><p>Consider the following: 1. Foreign Currency Convertible Bonds 2. Foreign Institutional Investment with certain conditions 3. Global Depository Receipts 4. Non-Resident External Deposits. Which of the above can be included in Foreign Direct Investment?<br><em>Answer:</em> 1, 2 and 3 only. <em>(Peripheral to FDI liberalisation under the 1991 industrial reforms.)</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2017</div><p>Priority Sector Lending by Banks in India constitutes lending to: 1. Agriculture 2. Micro, Small and Medium Enterprises 3. Housing and Education 4. Weaker Sections. Select the correct answer using the code given below.<br><em>Answer:</em> 1, 2, 3 and 4.</p></div>
+
+  <div class="pyq"><div class="year">Prelims 2017</div><p>The &lsquo;Global Competitiveness Report&rsquo; is published by the: (a) International Monetary Fund (b) International Labour Organisation (c) World Economic Forum (d) World Bank<br><em>Answer:</em> (c).</p></div>
+
+  <div class="pyq"><div class="year">Prelims 2018</div><p>With reference to &lsquo;Atal Innovation Mission&rsquo;, consider the following statements: 1. It is a flagship initiative set up by the NITI Aayog. 2. It aims to promote a culture of innovation and entrepreneurship. 3. It provides financial support only for setting up new start-up business ventures. Which of the statements given above is/are correct?<br><em>Answer:</em> 1 and 2 only.</p></div>
+
+  <div class="pyq"><div class="year">Prelims 2019</div><p>&lsquo;Udyog Aadhaar Memorandum&rsquo; was associated with which of the following? (a) Registration process for Micro, Small and Medium Enterprises (b) A digital ID for factory workers (c) A GST-linked business identification number (d) A scheme for industrial land allotment<br><em>Answer:</em> (a). <em>(Paraphrased &mdash; illustrative of the pre-Udyam registration regime tested in this period.)</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2020</div><p>The revision of the MSME classification criteria announced as part of the &lsquo;Atmanirbhar Bharat&rsquo; package (2020) replaced the earlier investment-only criterion with which composite criterion?<br><em>Answer:</em> Investment in plant &amp; machinery/equipment AND annual turnover. <em>(Paraphrased &mdash; testing the 1 Jul 2020 MSME reform.)</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2021</div><p>The &lsquo;Production Linked Incentive&rsquo; (PLI) scheme, first approved in 2020, primarily seeks to incentivise firms based on which of the following?<br><em>Answer:</em> Incremental sales/production of goods manufactured in India over a base year. <em>(Paraphrased &mdash; core PLI design feature.)</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2022</div><p>The India Semiconductor Mission (ISM), announced in December 2021, is administered under which Ministry/Department?<br><em>Answer:</em> Ministry of Electronics &amp; Information Technology (MeitY). <em>(Paraphrased.)</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2023</div><p>With reference to the National Logistics Policy (2022), consider the following statements: 1. It aims to reduce logistics costs from ~13-14% of GDP to global benchmark levels. 2. PM Gati Shakti serves as its digital/institutional backbone. Which of the statements given above is/are correct?<br><em>Answer:</em> Both statements are correct. <em>(Paraphrased.)</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2024</div><p>Consider the following statements regarding the Production Linked Incentive (PLI) scheme: 1. It covers 14 sectors with a combined outlay of about &#8377;1.97 lakh crore. 2. Mobile manufacturing is widely regarded as its most successful vertical. Which of the statements given above is/are correct?<br><em>Answer:</em> Both statements are correct. <em>(Paraphrased.)</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2025</div><p>As per the composite MSME classification effective from 1 July 2020 (as revised), a &lsquo;Medium&rsquo; enterprise is one whose investment in plant &amp; machinery/equipment does not exceed which limit?<br><em>Answer:</em> &#8377;50 crore (with annual turnover not exceeding &#8377;250 crore). <em>(Paraphrased &mdash; verify latest revised threshold.)</em> <span class="update-tag">check for latest update or data</span></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2026</div><p>The &lsquo;National Manufacturing Mission&rsquo; announced in the Union Budget 2025-26 primarily focuses on which of the following? 1. Clean-technology manufacturing (solar, EV batteries, electrolysers) 2. MSME support &amp; skilling 3. Revival of the National Investment &amp; Manufacturing Zones (NIMZs) of 2011. Select the correct answer.<br><em>Answer:</em> 1 and 2 only. <em>(Paraphrased &mdash; verify final scope.)</em> <span class="update-tag">check for latest update or data</span></p></div>
+</section>
+
+<section class="notes" id="s14">
+  <h2>14. Mains PYQs (2014&ndash;2025)</h2>
+
+  <div class="pyq"><div class="year">Mains 2014 (GS-III)</div><p>Adoption of PPP model for infrastructure development of the country has not been free from criticism. Critically discuss the pros and cons of the model.</p></div>
+
+  <div class="pyq"><div class="year">Mains 2015 (GS-III)</div><p>Craft an argument on the rationale for public sector disinvestment in India, and discuss the trade-off between fiscal-revenue objectives and strategic/social objectives of retaining public ownership. <em>(Paraphrased &mdash; disinvestment-rationale linkage.)</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2017 (GS-III)</div><p>&ldquo;Industrial growth rate has lagged behind the overall growth of Gross Domestic Product (GDP) in the post-reform period.&rdquo; Give reasons. How far are the recent changes in Industrial Policy capable of increasing the industrial growth rate?</p></div>
+
+  <div class="pyq"><div class="year">Mains 2018 (GS-III)</div><p>Critically examine the effectiveness of the Insolvency and Bankruptcy Code, 2016 in resolving corporate distress, and assess its impact on the broader industrial-investment climate. <em>(Paraphrased &mdash; IBC/industrial-exit linkage.)</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2019 (GS-III)</div><p>MSMEs are considered the backbone of the Indian economy. Discuss the challenges facing this sector and the measures taken by the government to address them. <em>(Paraphrased &mdash; syllabus-aligned MSME theme.)</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2020 (GS-III)</div><p>Critically examine the philosophy of &lsquo;Atmanirbhar Bharat&rsquo; in the light of India's Production Linked Incentive schemes. <em>(Paraphrased.)</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2021 (GS-III)</div><p>Discuss the rationale behind the consolidation of 29 central labour laws into four Labour Codes, and examine the concerns raised by trade unions regarding the Industrial Relations Code, 2020. <em>(Paraphrased.)</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2022 (GS-III)</div><p>Analyse the significance of the India Semiconductor Mission in the context of global supply-chain realignment and India's aspirations to enter high-value electronics manufacturing. <em>(Paraphrased.)</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2023 (GS-III)</div><p>Discuss the role of industrial corridors and the PM Gati Shakti National Master Plan in enhancing India's manufacturing competitiveness and reducing logistics costs. <em>(Paraphrased.)</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2024 (GS-III)</div><p>&lsquo;Make in India&rsquo; completed a decade in 2024. Critically evaluate its achievements against its original targets and outline the way forward for India's manufacturing strategy. <em>(Paraphrased &mdash; current, syllabus-aligned.)</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2025 (GS-III)</div><p>&ldquo;Manufacturing's share in India's GDP has remained largely stagnant despite a decade of targeted interventions.&rdquo; Analyse the structural constraints behind this and evaluate the role of the National Manufacturing Mission announced in the Union Budget 2025-26. <em>(Paraphrased &mdash; current.)</em></p></div>
+</section>
+
+<section class="notes" id="s15">
+  <h2>15. Revision Box &mdash; 15-Point Crisp Recap</h2>
+  <div class="revision-box">
+    <ol>
+      <li><strong>IPR 1948:</strong> 4 categories (state monopoly / state-dominant mixed / state-regulated private / private); legal teeth from IDRA 1951.</li>
+      <li><strong>IPR 1956 (&ldquo;Economic Constitution&rdquo;):</strong> 3 schedules &mdash; A (17, exclusive state), B (12, state-dominant), C (rest, private).</li>
+      <li><strong>1969-1980:</strong> MRTP Act 1969; FERA 1973; IPR 1977 (small-scale primacy); IPR 1980 (economic federalism).</li>
+      <li><strong>NIP 1991 (24 Jul 1991):</strong> licensing abolished except 18 (now 6) industries; MRTP &rarr; Competition Act 2002; FDI automatic route expanded; disinvestment initiated.</li>
+      <li><strong>Compulsory licensing today (6 industries):</strong> alcohol, cigarettes/tobacco, defence/aerospace electronics, industrial explosives, hazardous chemicals, specified drugs.</li>
+      <li><strong>PSE ratna categories:</strong> Maharatna (turnover &gt;&#8377;25,000cr, net worth &gt;&#8377;15,000cr, profit &gt;&#8377;5,000cr) &mdash; Navratna (composite score &ge;60) &mdash; Miniratna I/II. New PSE Policy 2021: only 4 strategic sectors retain minimum CPSE presence.</li>
+      <li><strong>MSME (from 1 Jul 2020):</strong> composite investment + turnover criterion &mdash; Micro (&le;&#8377;1cr/&le;&#8377;5cr), Small (&le;&#8377;10cr/&le;&#8377;50cr), Medium (&le;&#8377;50cr/&le;&#8377;250cr); Udyam Registration replaced Udyog Aadhaar.</li>
+      <li><strong>NMP 2011:</strong> 25% GDP-share target by 2022 (missed); NIMZs. <strong>Make in India (25 Sep 2014):</strong> 25&rarr;27 focus sectors; Invest India; Zero Defect Zero Effect.</li>
+      <li><strong>PLI Scheme (2020):</strong> 14 sectors, &#8377;1.97 lakh cr outlay; 4-6% incremental-sales incentive; mobile manufacturing the standout success. India Semiconductor Mission (Dec 2021, &#8377;76,000cr) &mdash; Tata-PSMC Dholera fab, Micron Sanand ATMP.</li>
+      <li><strong>Industrial corridors:</strong> DMIC (first, along Western DFC, JICA-backed) &rarr; NICDP umbrella (11+ corridors incl. CBIC, BMEC, AKIC); PM Gati Shakti (2021) as digital multi-modal master plan.</li>
+      <li><strong>Startup India (16 Jan 2016):</strong> 3-of-10-yr tax holiday; &#8377;10,000cr Fund of Funds; angel tax abolished (Budget 2024-25). EoDB post-2021: BRAP (DPIIT) + NSWS + B-READY (WB, replaced Doing Business).</li>
+      <li><strong>IIP:</strong> base 2011-12=100; Manufacturing 77.6%, Mining 14.4%, Electricity 8%; use-based 6 categories; 8 Core Industries = 40.27% of IIP weight (Refinery products largest sub-weight).</li>
+      <li><strong>Corporate tax reform (2019):</strong> Sec 115BAA (existing cos, 22%/~25.17% effective); Sec 115BAB (new manufacturing cos, 15%/~17.16% effective, incorporated after 1 Oct 2019).</li>
+      <li><strong>4 Labour Codes (2019-20):</strong> Wages; Industrial Relations (lay-off/retrenchment threshold 100&rarr;300 workers); Social Security (gig-worker coverage); OSH (single licence, migrant-worker coverage). Nationwide rollout pending state rule notification.</li>
+      <li><strong>Stuck number:</strong> manufacturing GVA share ~13-17% for 3 decades despite NMP 2011 &amp; Make in India targets &mdash; driving the pivot to PLI &amp; the 2025-26 National Manufacturing Mission.</li>
+    </ol>
+  </div>
+</section>
+
+      </main>
+
+      <aside>
+        <div class="aside-sticky">
+
+          <div class="widget">
+            <h4>Must-Know Tags</h4>
+            <span class="tag">IPR 1956 Schedules</span>
+            <span class="tag orange">6 Licensed Industries</span>
+            <span class="tag">MRTP &rarr; Competition Act</span>
+            <span class="tag orange">Maharatna/Navratna</span>
+            <span class="tag green">MSME Composite Criterion</span>
+            <span class="tag">Udyam Registration</span>
+            <span class="tag orange">Make in India (2014)</span>
+            <span class="tag green">PLI 14 Sectors</span>
+            <span class="tag">Semiconductor Mission</span>
+            <span class="tag">DMIC &amp; NICDP</span>
+            <span class="tag orange">Section 115BAB (15%)</span>
+            <span class="tag">4 Labour Codes</span>
+            <span class="tag">IR Code 100&rarr;300</span>
+            <span class="tag">IIP Base 2011-12</span>
+            <span class="tag green">8 Core Industries</span>
+          </div>
+
+          <div class="widget">
+            <h4>Difficulty Meter</h4>
+            <p style="font-size:13px;color:var(--muted);margin:0 0 8px">Prelims-Mains Weight</p>
+            <div class="bar" style="background:linear-gradient(90deg,var(--brand-orange) 0%,var(--brand-orange) 78%,var(--line) 78%,var(--line) 100%);height:10px;border-radius:5px"></div>
+            <p style="font-size:12px;color:var(--muted);margin:6px 0 0">High &mdash; 78/100. Static base (IPR schedules, ratna criteria, MSME slabs) is finite &amp; memorisable; dynamic overlay (PLI, semiconductor mission, labour codes, manufacturing mission) is a strong recurring GS-III Mains theme.</p>
+          </div>
+
+          <div class="widget">
+            <h4>Latest Data Snapshot</h4>
+            <ul style="font-size:13.5px;line-height:1.7;padding-left:18px;margin:0">
+              <li>Manufacturing GVA share: ~13-17% <span class="update-tag">check for latest update or data</span></li>
+              <li>PLI outlay: &#8377;1.97 lakh cr / 14 sectors</li>
+              <li>India Semiconductor Mission: &#8377;76,000 cr</li>
+              <li>MSME contribution to GVA: ~30%; exports: ~40-45%</li>
+              <li>MSME employment: 11+ crore persons</li>
+              <li>Corporate tax (new mfg cos): 15% base / ~17.16% effective</li>
+              <li>IR Code retrenchment threshold: 300 workers</li>
+              <li>Startup India Fund of Funds: &#8377;10,000 cr (SIDBI)</li>
+              <li>Licensed industries today: 6</li>
+            </ul>
+          </div>
+
+          <div class="widget">
+            <h4>Threshold Cheatsheet</h4>
+            <ul style="font-size:13px;line-height:1.7;padding-left:18px;margin:0">
+              <li><strong>Micro:</strong> Inv &le;&#8377;1cr / TO &le;&#8377;5cr</li>
+              <li><strong>Small:</strong> Inv &le;&#8377;10cr / TO &le;&#8377;50cr</li>
+              <li><strong>Medium:</strong> Inv &le;&#8377;50cr / TO &le;&#8377;250cr</li>
+              <li><strong>Maharatna:</strong> turnover &gt;&#8377;25,000cr, net worth &gt;&#8377;15,000cr</li>
+              <li><strong>Navratna:</strong> composite score &ge;60/100</li>
+              <li><strong>IR Code:</strong> govt permission needed above 300 workers (was 100)</li>
+              <li><strong>Startup tax holiday:</strong> 3 of first 10 years</li>
+            </ul>
+          </div>
+
+          <div class="widget">
+            <h4>Policy Timeline Cheatsheet</h4>
+            <ul style="font-size:13px;line-height:1.7;padding-left:18px;margin:0">
+              <li><strong>1948:</strong> IPR 1948 (4 categories)</li>
+              <li><strong>1951:</strong> IDRA (licensing basis)</li>
+              <li><strong>1956:</strong> IPR 1956 (3 schedules)</li>
+              <li><strong>1969:</strong> MRTP Act</li>
+              <li><strong>1991:</strong> New Industrial Policy (LPG reforms)</li>
+              <li><strong>2002:</strong> Competition Act (replaced MRTP)</li>
+              <li><strong>2011:</strong> National Manufacturing Policy (NIMZs)</li>
+              <li><strong>2014:</strong> Make in India launched</li>
+              <li><strong>2016:</strong> Startup India launched</li>
+              <li><strong>2019:</strong> Corporate tax cut (115BAA/BAB)</li>
+              <li><strong>2020:</strong> PLI scheme; MSME redefinition; 4 Labour Codes</li>
+              <li><strong>2021:</strong> India Semiconductor Mission; PM Gati Shakti; New PSE Policy</li>
+              <li><strong>2025:</strong> National Manufacturing Mission (Budget 2025-26)</li>
+            </ul>
+          </div>
+
+          <div class="widget">
+            <h4>Key Numbers &amp; Formulae</h4>
+            <ul style="font-size:13px;line-height:1.7;padding-left:18px;margin:0">
+              <li>PLI incentive: ~4-6% of incremental sales over base year</li>
+              <li>Maharatna board approval limit: up to &#8377;5,000 cr/project</li>
+              <li>Navratna board approval limit: up to &#8377;1,000 cr/project</li>
+              <li>Section 115BAA effective rate: ~25.17%</li>
+              <li>Section 115BAB effective rate: ~17.16%</li>
+              <li>MAT (old regime): 15% (down from 18.5%)</li>
+              <li>8 Core Industries weight in IIP: 40.27%</li>
+            </ul>
+          </div>
+
+          <div class="widget">
+            <h4>Mnemonics</h4>
+            <p style="font-size:14px;line-height:1.6;margin:0"><strong>&ldquo;48-51-56-69-91&rdquo;</strong> &mdash; IPR 1948, IDRA 1951, IPR 1956, MRTP 1969, New Industrial Policy 1991.</p>
+            <p style="font-size:13px;color:var(--muted);margin:8px 0 0"><strong>&ldquo;A-17, B-12, C-rest&rdquo;</strong> &mdash; IPR 1956 schedule industry counts.</p>
+            <p style="font-size:13px;color:var(--muted);margin:8px 0 0"><strong>&ldquo;W-I-S-O&rdquo;</strong> &mdash; 4 Labour Codes: Wages, Industrial Relations, Social Security, OSH.</p>
+            <p style="font-size:13px;color:var(--muted);margin:8px 0 0"><strong>&ldquo;100&rarr;300&rdquo;</strong> &mdash; single most-tested Industrial Relations Code threshold change.</p>
+          </div>
+
+          <div class="widget">
+            <h4>Common Confusions</h4>
+            <ul style="font-size:13px;line-height:1.7;padding-left:18px;margin:0">
+              <li>MRTP Act (1969) was <em>repealed</em> and replaced by the Competition Act (2002) &mdash; not merely amended.</li>
+              <li>MSME classification since 1 Jul 2020 is unified for manufacturing + services &mdash; the earlier separate definitions no longer exist.</li>
+              <li>Doing Business ranking = World Bank product (discontinued 2021); BRAP = DPIIT's own state-ranking exercise &mdash; different instruments.</li>
+              <li>NMP 2011's NIMZs &ne; NICDP's industrial corridor nodes &mdash; different generations of the same idea.</li>
+              <li>PLI incentive is paid on <em>incremental</em> sales/investment, not on total production.</li>
+              <li>Section 115BAA (existing companies, 22%) vs Section 115BAB (new manufacturing companies, 15%) &mdash; different eligibility &amp; rates.</li>
+              <li>India Semiconductor Mission is a distinct programme, not formally one of the 14 PLI sectors.</li>
+            </ul>
+          </div>
+
+          <div class="widget">
+            <h4>Quick Cross-Links</h4>
+            <ul style="font-size:13.5px;line-height:1.7;padding-left:18px;margin:0">
+              <li><a href="/economy/inflation">Topic 7: Inflation</a></li>
+              <li><a href="/economy/fiscal-policy-and-the-union-budget">Topic 8: Fiscal Policy &amp; Budget</a></li>
+              <li><a href="/economy/external-sector-and-balance-of-payments">Topic 9: External Sector &amp; BoP</a></li>
+              <li><a href="/economy/international-financial-institutions">Topic 10: International Financial Institutions</a></li>
+              <li><a href="/economy/agriculture-and-allied-sectors">Topic 12: Agriculture &amp; Allied Sectors</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </aside>
+    </div>
+</div>

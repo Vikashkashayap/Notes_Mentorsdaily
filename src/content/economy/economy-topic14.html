@@ -1,0 +1,640 @@
+<!-- economy-topic14 — auto-imported from economy-topic14-infrastructure-investment-models-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(135deg,#1b3a4b 0%,#0d2535 55%,#061018 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ol{margin:0;padding-left:22px;font-size:14px;columns:2;column-gap:24px}
+.toc li{margin-bottom:5px;break-inside:avoid}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+.formula{background:#f5f7fa;border:1px solid var(--line);border-left:4px solid var(--brand-blue);padding:12px 16px;margin:12px 0;border-radius:6px;font-family:"Courier New",monospace;font-size:14px;color:var(--brand-blue-dark)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ol{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Infrastructure &amp; Investment Models &mdash; Financing India's Growth Backbone</h1>
+  <p class="sub">Infrastructure is the single largest constraint &amp; the single largest opportunity in Indian economic policy &mdash; the &#8377;100+ lakh crore National Infrastructure Pipeline is India's answer to a decades-old financing &amp; execution gap. Topic 14 covers how PPP models (BOT/BOOT/HAM/EPC) evolved to de-risk private capital, how PM Gati Shakti integrates planning across ministries, and the sector-specific architecture &mdash; roads (Bharatmala), railways (DFCs), ports (Sagarmala), aviation (UDAN), power &amp; urban infrastructure &mdash; alongside the financing innovations (NIIF, InvITs, REITs) built to mobilise long-term capital.</p>
+  <div class="meta">
+    <span class="pill">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Ramesh Singh Ch. 21</span>
+    <span class="pill">~34 min read</span>
+    <span class="pill">PPP &middot; Gati Shakti &middot; InvITs</span>
+    <span class="pill">Bharatmala &middot; Sagarmala</span>
+  </div>
+</div>
+
+<div class="toc">
+<h3>On this page</h3>
+<ol style="list-style:none;padding-left:0;margin:0">
+  <li><a href="#concept">Conceptual Clarity</a></li>
+  <li><a href="#s1">1. Infrastructure &mdash; Significance &amp; Financing Challenges</a></li>
+  <li><a href="#s2">2. Public-Private Partnership (PPP) Models</a></li>
+  <li><a href="#s3">3. National Infrastructure Pipeline &amp; PM Gati Shakti</a></li>
+  <li><a href="#s4">4. Roads &amp; Highways &mdash; NHAI, Bharatmala</a></li>
+  <li><a href="#s5">5. Railways &mdash; Modernisation &amp; Freight Corridors</a></li>
+  <li><a href="#s6">6. Ports, Shipping &amp; Waterways &mdash; Sagarmala</a></li>
+  <li><a href="#s7">7. Civil Aviation &mdash; UDAN &amp; Airport Modernisation</a></li>
+  <li><a href="#s8">8. Power Sector &mdash; Generation, T&amp;D Reforms</a></li>
+  <li><a href="#s9">9. Urban Infrastructure &mdash; Smart Cities, AMRUT</a></li>
+  <li><a href="#s10">10. Infrastructure Financing &mdash; NIIF, InvITs, REITs</a></li>
+  <li><a href="#s11">11. Digital Public Infrastructure (DPI)</a></li>
+  <li><a href="#s12">12. Current Affairs Anchor (2024-26)</a></li>
+  <li><a href="#s13">13. Prelims PYQs (2014&ndash;2026)</a></li>
+  <li><a href="#s14">14. Mains PYQs (2014&ndash;2025)</a></li>
+  <li><a href="#s15">15. Revision Box</a></li>
+</ol>
+</div>
+
+<div class="concept-box" id="concept">
+<h3>Conceptual Clarity &mdash; Three Lenses</h3>
+<ol style="margin:.4rem 0 0">
+  <li><strong>Risk allocation is the core of PPP design</strong> &mdash; every PPP model (BOT/BOOT/HAM/Swiss Challenge) differs mainly in <em>who bears construction, revenue &amp; funding risk</em>. UPSC tests whether you can map a model to its risk-sharing logic, not just its acronym.</li>
+  <li><strong>From project-by-project to integrated planning</strong> &mdash; PM Gati Shakti (2021) marks a shift from siloed, ministry-wise infrastructure planning to a <em>single GIS-based digital platform</em> integrating 16+ ministries &mdash; aimed at cutting logistics cost &amp; multi-modal planning gaps.</li>
+  <li><strong>Financing the long gestation gap</strong> &mdash; infrastructure projects have long payback periods that don't match the short-tenure liabilities of Indian banks; instruments like InvITs/REITs &amp; NIIF exist specifically to channel long-term (pension/insurance/sovereign) capital into infrastructure.</li>
+</ol>
+<div class="formula" style="margin-top:.7rem">
+National Infrastructure Pipeline (NIP): ~&#8377;111 lakh crore (2019-2025) <span class="update-tag">check for latest update or data</span><br>
+India's Logistics Cost: ~13-14% of GDP (target: bring closer to ~8% global benchmark) <span class="update-tag">check for latest update or data</span><br>
+PPP models on the risk-transfer spectrum: EPC (least risk to pvt.) &lt; HAM &lt; BOT-Toll &lt; BOOT (most risk to pvt.)
+</div>
+</div>
+
+<section class="notes" id="s1">
+  <h2>1. Infrastructure &mdash; Significance &amp; Financing Challenges</h2>
+
+  <h3>1.1 Why Infrastructure Matters</h3>
+  <p>Infrastructure has strong <strong>forward &amp; backward linkages</strong> &mdash; it raises productivity across all sectors (cheaper logistics, reliable power, connectivity), and infrastructure construction itself is highly employment-intensive (cement, steel, construction labour). India's <strong>logistics cost</strong> as a share of GDP (~13-14%) is significantly higher than developed-economy benchmarks (~8-9%), directly eroding export competitiveness.</p>
+
+  <h3>1.2 The Financing Gap</h3>
+  <ul>
+    <li><strong>Long gestation, long payback</strong> &mdash; infrastructure projects take years to complete &amp; decades to recover investment, mismatched with the short-term deposit base of Indian commercial banks.</li>
+    <li><strong>Bank exposure limits &amp; stressed assets</strong> &mdash; banks (especially PSBs) accumulated large infrastructure-sector NPAs post-2011-12 (power, roads), constraining fresh lending appetite.</li>
+    <li><strong>Land acquisition &amp; environmental clearance delays</strong> &mdash; among the most cited reasons for project time/cost overruns in India.</li>
+    <li><strong>Need for long-term patient capital</strong> &mdash; pension funds, insurance funds, sovereign wealth funds are natural infrastructure investors (long liability horizon) but need de-risked, liquid instruments to enter.</li>
+  </ul>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> "Infrastructure sub-sectors" is a formally notified list (Harmonised Master List of Infrastructure Sub-sectors, updated periodically by DEA) covering transport, energy, water/sanitation, communication &amp; social/commercial infra &mdash; useful for identifying which sectors get infrastructure-status benefits (like access to long-term infra bonds).</div>
+</section>
+
+<section class="notes" id="s2">
+  <h2>2. Public-Private Partnership (PPP) Models</h2>
+
+  <h3>2.1 Core PPP Models</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Model</th><th>Full Form</th><th>Risk/Revenue Logic</th></tr></thead>
+      <tbody>
+        <tr><td><strong>BOT-Toll</strong></td><td>Build-Operate-Transfer (Toll)</td><td>Private party builds &amp; operates, recovers investment via user tolls; transfers to govt. after concession period; private party bears <em>traffic/revenue risk</em></td></tr>
+        <tr><td><strong>BOT-Annuity</strong></td><td>Build-Operate-Transfer (Annuity)</td><td>Govt. pays fixed annuity payments regardless of traffic; private party bears construction risk only, not revenue risk</td></tr>
+        <tr><td><strong>BOOT</strong></td><td>Build-Own-Operate-Transfer</td><td>Private party owns asset during concession before transferring; typically higher private risk/control</td></tr>
+        <tr><td><strong>HAM</strong></td><td>Hybrid Annuity Model</td><td>Govt. funds <strong>40%</strong> of project cost upfront during construction; remaining 60% recovered by developer via annuity payments post-completion &mdash; balances risk between BOT-Toll &amp; EPC</td></tr>
+        <tr><td><strong>EPC</strong></td><td>Engineering, Procurement &amp; Construction</td><td>Govt. fully funds &amp; owns; contractor only builds for a fee &mdash; contractor bears minimal risk, not strictly a PPP model</td></tr>
+        <tr><td><strong>Swiss Challenge</strong></td><td>&mdash;</td><td>An originator submits an unsolicited project proposal; government invites competing bids; original proponent gets right to match the best bid &mdash; a procurement method, not a standalone financing model</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>2.2 Why HAM Emerged</h3>
+  <p>HAM was introduced (2016, primarily for highways under NHAI) after pure BOT-Toll projects stalled due to over-optimistic traffic projections leaving developers with unviable revenue &mdash; HAM's govt.-funded 40% upfront reduces the developer's funding burden &amp; risk, reviving private participation in road projects.</p>
+
+  <div class="callout info"><strong>Mains anchor:</strong> The evolution BOT-Toll &rarr; HAM &rarr; renewed EPC reliance in certain phases reflects a pragmatic recalibration of risk-sharing based on observed developer stress &mdash; a useful case study for "PPP is not one-size-fits-all" essay answers.</div>
+</section>
+
+<section class="notes" id="s3">
+  <h2>3. National Infrastructure Pipeline &amp; PM Gati Shakti</h2>
+
+  <h3>3.1 National Infrastructure Pipeline (NIP)</h3>
+  <p>Launched <strong>2019</strong> by the Department of Economic Affairs; envisages <strong>~&#8377;111 lakh crore</strong> investment across FY 2020-2025 in energy, roads, railways, urban infrastructure &amp; other sectors, with financing split roughly across Centre, States &amp; the private sector. <span class="update-tag">check for latest update or data</span></p>
+
+  <h3>3.2 PM Gati Shakti National Master Plan (2021)</h3>
+  <p>A <strong>digital platform integrating GIS data from 16+ central ministries/departments</strong> &amp; state governments, enabling integrated, multi-modal infrastructure planning (avoiding fragmented, poorly-coordinated project execution). Institutional structure:</p>
+  <ul>
+    <li><strong>Empowered Group of Secretaries (EGoS)</strong> &mdash; apex coordination body</li>
+    <li><strong>Network Planning Group (NPG)</strong> &mdash; evaluates infrastructure connectivity projects</li>
+    <li><strong>Technical Support Unit</strong> &mdash; provides analytical/technical support</li>
+  </ul>
+
+  <h3>3.3 National Monetisation Pipeline (NMP)</h3>
+  <p>Complementary to NIP &mdash; identifies <strong>brownfield (already-built) public infrastructure assets</strong> (roads, railways, power transmission, gas pipelines) for monetisation via structures like <strong>InvITs &amp; TOT (Toll-Operate-Transfer)</strong>, recycling capital for fresh infrastructure investment without asset ownership transfer.</p>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> NIP = pipeline of <em>new</em> infrastructure investment projects; NMP = monetisation of <em>existing/brownfield</em> assets to raise fresh capital &mdash; NMP does not involve privatisation/sale of the underlying asset, only its right to operate/collect revenue for a fixed period.</div>
+</section>
+
+<section class="notes" id="s4">
+  <h2>4. Roads &amp; Highways &mdash; NHAI, Bharatmala</h2>
+
+  <h3>4.1 Institutional Framework</h3>
+  <p><strong>National Highways Authority of India (NHAI, 1988)</strong> &mdash; nodal agency for National Highway development, maintenance &amp; management, functioning under the Ministry of Road Transport &amp; Highways (MoRTH).</p>
+
+  <h3>4.2 Bharatmala Pariyojana</h3>
+  <p>Launched <strong>2017</strong>, an umbrella highway development programme superseding earlier phase-wise NHDP; key components include Economic Corridors, Inter-Corridor &amp; Feeder Routes, National Corridor Efficiency Improvement, Border/International Connectivity Roads &amp; Coastal/Port Connectivity Roads. <strong>Bharatmala Phase 1</strong> targets ~&#8377;5.35 lakh crore for ~34,800 km. <span class="update-tag">check for latest update or data</span></p>
+
+  <h3>4.3 Key Related Initiatives</h3>
+  <ul>
+    <li><strong>FASTag</strong> &mdash; mandatory RFID-based electronic toll collection, reducing toll-plaza congestion &amp; leakage.</li>
+    <li><strong>Green highways / Green Corridors</strong> &mdash; afforestation &amp; eco-friendly highway development mandate.</li>
+  </ul>
+
+  <div class="callout"><strong>Key data point:</strong> India's National Highway network has expanded from ~91,000 km (2014) to well over 1,45,000 km <span class="update-tag">check for latest update or data</span>, with a significant rise in daily highway construction pace under Bharatmala.</div>
+</section>
+
+<section class="notes" id="s5">
+  <h2>5. Railways &mdash; Modernisation &amp; Freight Corridors</h2>
+
+  <h3>5.1 Dedicated Freight Corridors (DFCs)</h3>
+  <p>Built by <strong>Dedicated Freight Corridor Corporation of India (DFCCIL)</strong> to segregate freight traffic from passenger traffic, raising average freight speed &amp; capacity:</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Corridor</th><th>Route</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Eastern DFC</strong></td><td>Ludhiana (Punjab) to Dankuni (West Bengal)</td></tr>
+        <tr><td><strong>Western DFC</strong></td><td>Dadri (UP/NCR) to Jawaharlal Nehru Port (Mumbai)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>5.2 Other Key Railway Modernisation Initiatives</h3>
+  <ul>
+    <li><strong>Mission Raftaar</strong> &mdash; aims to raise average speed of freight &amp; mail/express trains.</li>
+    <li><strong>100% Electrification</strong> &mdash; broad-gauge route electrification target, sharply reducing diesel dependence &amp; emissions.</li>
+    <li><strong>Vande Bharat &amp; Amrit Bharat trains</strong> &mdash; indigenous semi-high-speed &amp; modernised passenger rolling stock.</li>
+    <li><strong>Station redevelopment</strong> &mdash; major stations upgraded via PPP/EPC models under Indian Railway Stations Development Corporation (IRSDC)/Railway Land Development Authority (RLDA).</li>
+  </ul>
+
+  <div class="callout info"><strong>Mains anchor:</strong> DFCs are a textbook example of how segregating traffic types (freight vs. passenger) rather than merely adding capacity can structurally raise system throughput &mdash; a useful comparative point when discussing congestion solutions across transport modes.</div>
+</section>
+
+<section class="notes" id="s6">
+  <h2>6. Ports, Shipping &amp; Waterways &mdash; Sagarmala</h2>
+
+  <h3>6.1 Sagarmala Programme (2015)</h3>
+  <p>Flagship port-led development initiative with four pillars: <strong>Port Modernisation &amp; New Port Development</strong>, <strong>Port Connectivity Enhancement</strong>, <strong>Port-Led Industrialisation</strong> &amp; <strong>Coastal Community Development</strong>. Aims to reduce logistics cost for EXIM &amp; domestic trade by leveraging India's ~7,500 km coastline.</p>
+
+  <h3>6.2 Institutional &amp; Legal Framework</h3>
+  <ul>
+    <li><strong>Major Ports</strong> (13, e.g. JNPT/Nhava Sheva, Chennai, Kolkata, Cochin) &mdash; under central government; being corporatised (e.g. renamed as Port Authorities under the Major Port Authorities Act, 2021, replacing the Port Trusts model for greater autonomy).</li>
+    <li><strong>Non-Major/Minor Ports</strong> &mdash; under state governments, though many handle significant traffic (notably Gujarat's private ports like Mundra).</li>
+    <li><strong>Inland Waterways Authority of India (IWAI)</strong> &mdash; develops National Waterways (e.g. NW-1 Ganga, NW-2 Brahmaputra) for cargo &amp; passenger movement; <strong>Jal Marg Vikas Project</strong> is the flagship NW-1 capacity-augmentation project.</li>
+  </ul>
+
+  <h3>6.3 Key Related Schemes</h3>
+  <ul>
+    <li><strong>Coastal Shipping &amp; Cabotage relaxation</strong> &mdash; easing restrictions on foreign vessels operating on Indian coastal routes, boosting cost-efficient coastal cargo movement.</li>
+    <li><strong>Har Ghar Tak &mdash; Sagar (Green Tug Transition Programme)</strong> &mdash; example of ongoing port-sector modernisation &amp; decarbonisation push. <span class="update-tag">check for latest update or data</span></li>
+  </ul>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> "Major Port" status is a <em>central government classification</em> (currently 13 major ports) unrelated to actual cargo volume &mdash; some non-major/state ports (like Mundra, Gujarat) handle traffic comparable to or exceeding several major ports.</div>
+</section>
+
+<section class="notes" id="s7">
+  <h2>7. Civil Aviation &mdash; UDAN &amp; Airport Modernisation</h2>
+
+  <h3>7.1 UDAN (Ude Desh ka Aam Naagrik, 2017)</h3>
+  <p>Regional Connectivity Scheme aiming to make air travel affordable &amp; connect underserved/unserved airports; airlines are given <strong>Viability Gap Funding (VGF)</strong> subsidy (jointly by Centre &amp; concerned State) to operate capped-fare seats on regional routes, funded partly via a levy on trunk routes.</p>
+
+  <h3>7.2 Airport Infrastructure Expansion</h3>
+  <ul>
+    <li>Number of operational airports has expanded significantly since 2014 under UDAN &amp; broader capacity-augmentation push. <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>Airport privatisation/PPP</strong> &mdash; Airports Authority of India (AAI) has leased out multiple major airports (Delhi, Mumbai, Bengaluru earlier; more recently a batch including Jaipur, Guwahati, Thiruvananthapuram etc.) to private operators via PPP concession.</li>
+  </ul>
+
+  <div class="callout info"><strong>Mains anchor:</strong> UDAN's VGF-subsidy model &amp; the airport-leasing PPP wave together illustrate two distinct policy tools &mdash; demand-side subsidy to create routes vs. supply-side private capital/efficiency infusion into existing assets &mdash; both aimed at expanding aviation's role in regional economic integration.</div>
+</section>
+
+<section class="notes" id="s8">
+  <h2>8. Power Sector &mdash; Generation, T&amp;D Reforms</h2>
+
+  <h3>8.1 Structural Overview</h3>
+  <p>Power sector value chain: <strong>Generation &rarr; Transmission &rarr; Distribution</strong>. India has achieved near-universal village electrification (Saubhagya) but <strong>Discom (distribution company) financial health</strong> remains the sector's weakest link &mdash; AT&amp;C (Aggregate Technical &amp; Commercial) losses remain high in several states.</p>
+
+  <h3>8.2 Key Reform Initiatives</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Scheme</th><th>Focus</th></tr></thead>
+      <tbody>
+        <tr><td><strong>UDAY (Ujwal Discom Assurance Yojana, 2015)</strong></td><td>Discom debt restructuring &mdash; states took over discom debt in exchange for reform commitments; success partial, discom losses resurfaced</td></tr>
+        <tr><td><strong>Saubhagya (2017)</strong></td><td>Last-mile household electrification, especially rural/BPL households</td></tr>
+        <tr><td><strong>Revamped Distribution Sector Scheme (RDSS, 2021)</strong></td><td>Reduce AT&amp;C losses, smart metering rollout, prepaid consumer metering</td></tr>
+        <tr><td><strong>One Nation, One Grid</strong></td><td>Integrated national power grid enabling inter-regional power transfer &amp; efficient resource pooling</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>8.3 Renewable Energy Integration</h3>
+  <p>Rapid renewable capacity addition (solar, wind) is straining grid balancing due to intermittency &mdash; driving investment in <strong>battery storage, Green Energy Corridors &amp; grid-scale flexibility</strong> mechanisms.</p>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> AT&amp;C losses = Aggregate <em>Technical &amp; Commercial</em> losses (technical losses in transmission/distribution + commercial losses like theft/billing inefficiency) &mdash; distinct from pure "transmission &amp; distribution (T&amp;D) losses," which capture only the technical component.</div>
+</section>
+
+<section class="notes" id="s9">
+  <h2>9. Urban Infrastructure &mdash; Smart Cities, AMRUT</h2>
+
+  <h3>9.1 Smart Cities Mission (2015)</h3>
+  <p>Aims to develop <strong>100 cities</strong> with core infrastructure, clean/sustainable environment &amp; quality of life via technology-enabled solutions; implemented through <strong>Special Purpose Vehicles (SPVs)</strong> at the city level, with a mix of <strong>Area-Based Development (ABD)</strong> &amp; <strong>Pan-City</strong> smart solutions (e.g. integrated command &amp; control centres, smart mobility).</p>
+
+  <h3>9.2 AMRUT (Atal Mission for Rejuvenation &amp; Urban Transformation, 2015)</h3>
+  <p>Focuses on basic urban infrastructure &mdash; water supply, sewerage/septage management, stormwater drainage, urban transport &amp; green spaces &mdash; across a wider set of statutory towns than Smart Cities; <strong>AMRUT 2.0</strong> (2021) extends focus to universal water supply &amp; circular-economy-based wastewater management.</p>
+
+  <h3>9.3 Other Urban Initiatives</h3>
+  <ul>
+    <li><strong>Swachh Bharat Mission &ndash; Urban</strong> &mdash; sanitation, open-defecation-free status, solid waste management.</li>
+    <li><strong>Pradhan Mantri Awas Yojana &ndash; Urban (PMAY-U)</strong> &mdash; "Housing for All" affordable urban housing, via credit-linked subsidy &amp; direct construction models.</li>
+    <li><strong>National Urban Digital Mission (NUDM)</strong> &mdash; shared digital infrastructure/platforms across urban local bodies.</li>
+  </ul>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> Smart Cities Mission = 100 selected cities, competitive-selection based, SPV-implemented; AMRUT = broader set of statutory towns, implemented directly by State/ULB (no separate SPV mandated) &mdash; the two schemes have different implementation architectures despite overlapping urban-infra goals.</div>
+</section>
+
+<section class="notes" id="s10">
+  <h2>10. Infrastructure Financing &mdash; NIIF, InvITs, REITs</h2>
+
+  <h3>10.1 National Investment &amp; Infrastructure Fund (NIIF, 2015)</h3>
+  <p>India's quasi-sovereign wealth fund; structured as a fund-of-funds with the Government of India as an anchor investor (typically holding up to 49% in specific NIIF funds) alongside domestic &amp; international institutional investors (sovereign wealth funds, pension funds); invests across infrastructure, growth equity &amp; strategic sectors.</p>
+
+  <h3>10.2 Infrastructure Investment Trusts (InvITs) &amp; Real Estate Investment Trusts (REITs)</h3>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Instrument</th><th>What it holds</th><th>Purpose</th></tr></thead>
+      <tbody>
+        <tr><td><strong>InvIT</strong></td><td>Revenue-generating infrastructure assets (roads, power transmission lines, gas pipelines)</td><td>Lets developers monetise completed ("brownfield") assets, recycling capital into new projects; retail/institutional investors get steady yield</td></tr>
+        <tr><td><strong>REIT</strong></td><td>Income-generating real estate (commercial office space primarily in India)</td><td>Similar capital-recycling logic applied to real estate; regulated by SEBI</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Both are regulated by <strong>SEBI</strong> (InvIT Regulations 2014, REIT Regulations 2014) and mandated to distribute a high proportion (at least 90%) of net distributable cash flows to unit-holders, making them attractive as steady-yield instruments.</p>
+
+  <h3>10.3 Other Financing Instruments</h3>
+  <ul>
+    <li><strong>Municipal Bonds</strong> &mdash; enable creditworthy Urban Local Bodies to raise capital market debt directly for urban infrastructure (e.g. Pune, Ahmedabad, Indore have issued municipal bonds).</li>
+    <li><strong>Credit Enhancement / Partial Risk Guarantees</strong> &mdash; instruments (via institutions like India Infrastructure Finance Company Ltd., IIFCL) improving credit ratings of infrastructure debt to attract institutional investors.</li>
+    <li><strong>Long-term Infrastructure Bonds</strong> &mdash; tax-incentivised bonds issued by specified infra-financing institutions to mobilise retail/institutional long-term savings.</li>
+  </ul>
+
+  <div class="callout info"><strong>Mains anchor:</strong> InvITs/REITs represent a structural solution to the "long-gestation, short-liability" mismatch discussed in Section 1 &mdash; by separating the <em>construction</em> phase (developer-financed, high risk) from the <em>operational</em> phase (monetised via InvIT to yield-seeking investors), capital is recycled faster &amp; risk is matched to appropriate investor classes.</div>
+</section>
+
+<section class="notes" id="s11">
+  <h2>11. Digital Public Infrastructure (DPI)</h2>
+
+  <h3>11.1 The India Stack Concept</h3>
+  <p><strong>Digital Public Infrastructure</strong> refers to foundational, interoperable digital systems built as public utilities (analogous to physical infrastructure) enabling both government &amp; private innovation. India's "<strong>India Stack</strong>" is globally cited as a DPI model, built on three layers:</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Layer</th><th>Component</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Identity</strong></td><td>Aadhaar &mdash; biometric-based unique digital identity</td></tr>
+        <tr><td><strong>Payments</strong></td><td>Unified Payments Interface (UPI) &mdash; real-time interoperable payments infrastructure, developed by NPCI</td></tr>
+        <tr><td><strong>Data-sharing (with consent)</strong></td><td>Account Aggregator framework, DigiLocker &mdash; consent-based data-sharing rails</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>11.2 Applications &amp; Significance</h3>
+  <ul>
+    <li><strong>Direct Benefit Transfer (DBT)</strong> &mdash; Aadhaar+bank-account (JAM Trinity: Jan Dhan-Aadhaar-Mobile) enabled leakage-reduced subsidy delivery at scale.</li>
+    <li><strong>UPI</strong> has become the world's largest real-time payments system by transaction volume, cited internationally as a DPI success story. <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>ONDC (Open Network for Digital Commerce)</strong> &mdash; open, interoperable e-commerce protocol aiming to prevent platform-monopoly lock-in.</li>
+    <li>India actively promotes DPI exports/technical assistance to other developing countries (via G20 presidency outcomes &amp; bilateral tech partnerships). <span class="update-tag">check for latest update or data</span></li>
+  </ul>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> UPI is operated by <strong>NPCI (National Payments Corporation of India)</strong>, a not-for-profit entity promoted by RBI &amp; banks &mdash; not directly by RBI itself; distinguish NPCI's role from RBI's regulatory/oversight role over the payments ecosystem.</div>
+</section>
+
+<section class="notes" id="s12">
+  <h2>12. Current Affairs Anchor (2024-26)</h2>
+  <ul>
+    <li>Updated National Infrastructure Pipeline outlay &amp; sector-wise progress review <span class="update-tag">check for latest update or data</span></li>
+    <li>PM Gati Shakti &mdash; latest Network Planning Group project approvals &amp; logistics-cost reduction progress <span class="update-tag">check for latest update or data</span></li>
+    <li>National Monetisation Pipeline &mdash; latest asset-monetisation targets/achievements <span class="update-tag">check for latest update or data</span></li>
+    <li>Bharatmala Phase 2 &amp; new expressway/corridor announcements <span class="update-tag">check for latest update or data</span></li>
+    <li>New InvIT/REIT listings &amp; SEBI regulatory updates <span class="update-tag">check for latest update or data</span></li>
+    <li>UDAN scheme &mdash; new routes/airports added &amp; scheme extension status <span class="update-tag">check for latest update or data</span></li>
+    <li>DPI diplomacy &mdash; India's DPI-sharing initiatives with partner countries (G20 legacy) <span class="update-tag">check for latest update or data</span></li>
+  </ul>
+  <div class="callout update"><strong>Note:</strong> Infrastructure statistics (NIP outlay, highway/rail km, discom losses) update with Union Budget &amp; ministry annual reports &mdash; always cross-check the latest official release before the exam.</div>
+</section>
+
+<section class="notes" id="s13">
+  <h2>13. Prelims PYQs (2014&ndash;2026)</h2>
+
+  <div class="pyq"><div class="year">UPSC CSE 2023</div><p>Consider the following statements regarding "Infrastructure Investment Trusts (InvITs)": 1. They are regulated by SEBI. 2. They must distribute at least 90% of net distributable cash flows.<br><em>Answer:</em> Both statements correct.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2022</div><p>With reference to India's road sector, the Hybrid Annuity Model (HAM) involves which of the following?<br><em>Answer:</em> Government funds ~40% of project cost during construction; remaining 60% recovered by developer via annuity payments post-completion.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2021</div><p>Consider the statements about PM Gati Shakti National Master Plan.<br><em>Answer:</em> A digital, GIS-based platform integrating planning across multiple central ministries &amp; state governments for multi-modal connectivity.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2020</div><p>With reference to "Dedicated Freight Corridors," consider the statements about the Eastern &amp; Western DFC routes.<br><em>Answer:</em> Eastern DFC: Ludhiana to Dankuni; Western DFC: Dadri to JNPT (Jawaharlal Nehru Port), built by DFCCIL.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2019</div><p>Consider the statements regarding Sagarmala Programme.<br><em>Answer:</em> Port-led development initiative with four pillars: port modernisation, port connectivity, port-led industrialisation &amp; coastal community development.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2019</div><p>With reference to UDAN scheme, consider the statements about Viability Gap Funding.<br><em>Answer:</em> VGF is jointly provided by Centre &amp; concerned State to airlines to make regional-route fares affordable/capped.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2018</div><p>What do you understand by AT&amp;C losses in the power sector?<br><em>Answer:</em> Aggregate Technical &amp; Commercial losses &mdash; combining technical transmission/distribution losses with commercial losses (theft, billing inefficiency).</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2017</div><p>Consider the statements about UDAY (Ujwal Discom Assurance Yojana).<br><em>Answer:</em> A scheme for financial &amp; operational turnaround of state power distribution companies through debt restructuring &amp; reform commitments.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2016</div><p>With reference to National Investment &amp; Infrastructure Fund (NIIF), which of the following is/are correct?<br><em>Answer:</em> Government of India is an anchor investor; structured to attract domestic &amp; international institutional investors into infrastructure.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2016</div><p>Consider the statements about Smart Cities Mission.<br><em>Answer:</em> Implemented through city-level Special Purpose Vehicles (SPVs); combines Area-Based Development &amp; Pan-City smart solutions.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2015</div><p>What is Unified Payments Interface (UPI)?<br><em>Answer:</em> Real-time interoperable payments infrastructure developed &amp; operated by NPCI, enabling instant bank-to-bank fund transfer via mobile.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2015</div><p>Consider the statements about India's Major Ports.<br><em>Answer:</em> Major Ports are classified/governed by the central government; currently a fixed list, distinct from state-governed non-major/minor ports.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2014</div><p>With reference to Public-Private Partnership models, which involves the government funding a share of project cost upfront?<br><em>Answer:</em> Hybrid Annuity Model (HAM) &mdash; government funds ~40% upfront during construction phase.</p></div>
+</section>
+
+<section class="notes" id="s14">
+  <h2>14. Mains PYQs (2014&ndash;2025)</h2>
+
+  <div class="pyq"><div class="year">GS-III 2023</div><p>Enumerate the impact of Industrial Revolution 4.0 on the create of employment and economic growth of India.<br><em>Answer:</em> Link to digital infrastructure (India Stack/DPI) enabling new digital-economy job categories, alongside automation-driven displacement in traditional manufacturing; role of Gati Shakti in enabling logistics-tech convergence.</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2022</div><p>Whether National Investment and Infrastructure Fund (NIIF) will be a game-changer for India's infrastructure financing? Explain.<br><em>Answer:</em> Discuss NIIF's anchor-investor model attracting long-term (pension/sovereign) capital, complementing bank financing constrained by NPAs; note scale limitations relative to the full NIP requirement.</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2021</div><p>How would the recent phenomena of protectionism and volatile input costs affect the infrastructure sector? Suggest measures.<br><em>Answer:</em> Link commodity price volatility (steel/cement) to project cost overruns; suggest indexed-contract clauses, domestic manufacturing incentives (PLI) &amp; diversified sourcing.</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2020</div><p>How is efficient and affordable urban mass transport key to the rapid economic development in India? Discuss.<br><em>Answer:</em> Link metro-rail expansion, AMRUT urban transport component &amp; last-mile connectivity to labour-market efficiency in cities; note financing challenges of low-farebox-recovery metro systems.</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2019</div><p>Discuss the various social problems that originated out of the speedy process of urbanisation in India, particularly regarding infrastructure gaps.<br><em>Answer:</em> Link inadequate water/sewerage/housing infrastructure to informal settlement growth; connect to AMRUT/Smart Cities/PMAY-U as policy responses.</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2018</div><p>Comment on the important changes introduced in respect of the Long-Term Capital Gains Tax (LTCG) provisions concerning infrastructure investments.<br><em>Answer:</em> Discuss tax treatment implications for InvIT/REIT unit-holders &amp; long-term infrastructure bond investors, and effect on investor appetite.</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2017</div><p>Explain various types of revolutions namely Green, White, Blue and Silver, and how they have influenced socio-economic development in India. (contextual: infra-linked allied sector logistics)<br><em>Answer:</em> Primarily agriculture-linked, but connects to cold-chain/port/rail infrastructure requirements for perishables (Sagarmala, Bharatmala feeder roads).</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2016</div><p>What are the salient features of "Make in India" and its role in employment generation, considering infrastructure bottlenecks?<br><em>Answer:</em> Link manufacturing competitiveness to power reliability, logistics cost &amp; industrial corridor development as pre-conditions for Make in India success.</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2015</div><p>Normally countries revise their currencies for domestic economic reasons. Discuss impact of demonetisation on infrastructure sector cash-flows.<br><em>Answer:</em> Note short-term disruption to construction-sector daily-wage cash payments &amp; land transactions; push towards formalised, digital contractor payments.</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2015</div><p>What are the reasons for the poor acceptance of PPP models in certain infrastructure sub-sectors in India? Suggest remedial measures.<br><em>Answer:</em> Over-optimistic traffic/demand forecasts, land acquisition delays, regulatory uncertainty; remedies: HAM-style risk-sharing, faster dispute resolution, credible regulatory institutions.</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2014</div><p>Discuss the various types of Public-Private Partnership models used in India's infrastructure sector, with special reference to the road sector.<br><em>Answer:</em> Cover BOT-Toll, BOT-Annuity, HAM, EPC; explain risk-allocation logic &amp; reasons for HAM's introduction post-BOT-Toll stress.</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2014</div><p>How the Digital India initiative would help in reducing corruption in Indian society? (contextual: DPI/DBT)<br><em>Answer:</em> Link Aadhaar-DBT-UPI (JAM Trinity/India Stack) to leakage reduction &amp; direct, targeted delivery of subsidies/services.</p></div>
+</section>
+
+<section class="notes" id="s15">
+<div class="revision-box">
+  <h3>15. Revision Box &mdash; 15-Point Crisp Recap</h3>
+  <ol style="margin:.4rem 0 0;padding-left:20px">
+    <li>PPP risk-transfer spectrum: <strong>EPC &lt; HAM &lt; BOT-Toll &lt; BOOT</strong> (increasing private risk).</li>
+    <li><strong>HAM (2016)</strong> &mdash; govt. funds 40% upfront, developer recovers remaining 60% via annuity.</li>
+    <li><strong>NIP (2019)</strong> &mdash; ~&#8377;111 lakh crore infrastructure investment pipeline, FY2020-25.</li>
+    <li><strong>PM Gati Shakti (2021)</strong> &mdash; GIS-based digital platform integrating 16+ ministries; EGoS + NPG structure.</li>
+    <li><strong>NMP</strong> &mdash; monetises brownfield assets (via InvITs/TOT), does not transfer ownership.</li>
+    <li><strong>Bharatmala (2017)</strong> &mdash; umbrella highway programme, superseded NHDP phases; NHAI is nodal agency.</li>
+    <li><strong>DFCs</strong>: Eastern (Ludhiana&ndash;Dankuni), Western (Dadri&ndash;JNPT), built by DFCCIL.</li>
+    <li><strong>Sagarmala (2015)</strong> &mdash; 4 pillars: port modernisation, connectivity, port-led industrialisation, coastal community development.</li>
+    <li><strong>UDAN (2017)</strong> &mdash; VGF-subsidised regional air connectivity, Centre+State funded.</li>
+    <li><strong>AT&amp;C losses</strong> = technical + commercial losses; UDAY (2015) tackled discom debt, RDSS (2021) tackles AT&amp;C losses/smart metering.</li>
+    <li><strong>Smart Cities</strong> = 100 cities, SPV-implemented; <strong>AMRUT</strong> = broader statutory towns, State/ULB implemented.</li>
+    <li><strong>NIIF (2015)</strong> &mdash; quasi-sovereign fund-of-funds, GoI anchor investor.</li>
+    <li><strong>InvITs</strong> (infra assets) &amp; <strong>REITs</strong> (real estate) &mdash; SEBI-regulated, &ge;90% cash-flow distribution mandate.</li>
+    <li><strong>India Stack/DPI</strong>: Identity (Aadhaar) + Payments (UPI, via NPCI) + Data (Account Aggregator/DigiLocker).</li>
+    <li><strong>JAM Trinity</strong> (Jan Dhan-Aadhaar-Mobile) underpins DBT; ONDC is India's open e-commerce protocol.</li>
+  </ol>
+</div>
+</section>
+
+</main>
+<aside><div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag">HAM</span>
+    <span class="tag">PM Gati Shakti</span>
+    <span class="tag orange">Bharatmala</span>
+    <span class="tag">Sagarmala</span>
+    <span class="tag green">UDAN</span>
+    <span class="tag">InvITs</span>
+    <span class="tag orange">REITs</span>
+    <span class="tag">NIIF</span>
+    <span class="tag green">DPI</span>
+    <span class="tag">UPI</span>
+    <span class="tag">Smart Cities</span>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty Meter</h4>
+    <div class="bar"><span class="lbl">Prelims</span><div class="fill"><span style="width:80%"></span></div></div>
+    <div class="bar"><span class="lbl">Mains</span><div class="fill"><span style="width:76%"></span></div></div>
+    <div class="bar"><span class="lbl">Overall</span><div class="fill"><span style="width:78%"></span></div></div>
+    <p style="font-size:11px;color:var(--muted);margin:6px 0 0">Score: <strong>78/100</strong> &mdash; PPP model definitions &amp; scheme-acronym mapping are high-yield &amp; mechanically testable.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Latest Data Snapshot</h4>
+    <ul>
+      <li>NIP outlay: <strong>~&#8377;111 lakh crore</strong> <span class="update-tag">check</span></li>
+      <li>Logistics cost: <strong>~13-14% of GDP</strong> <span class="update-tag">check</span></li>
+      <li>National Highway network: <strong>&gt;1,45,000 km</strong> <span class="update-tag">check</span></li>
+      <li>HAM govt. upfront funding: <strong>40%</strong> of project cost</li>
+      <li>InvIT/REIT distribution mandate: <strong>&ge;90%</strong> of cash flows</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>PPP Models Cheatsheet</h4>
+    <table>
+      <thead><tr><th>Model</th><th>Risk to Pvt.</th></tr></thead>
+      <tbody>
+        <tr><td>EPC</td><td>Lowest</td></tr>
+        <tr><td>HAM</td><td>Low-Medium</td></tr>
+        <tr><td>BOT-Annuity</td><td>Medium</td></tr>
+        <tr><td>BOT-Toll</td><td>High</td></tr>
+        <tr><td>BOOT</td><td>Highest</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Scheme Timeline Cheatsheet</h4>
+    <table>
+      <thead><tr><th>Scheme</th><th>Year</th></tr></thead>
+      <tbody>
+        <tr><td>NHAI</td><td>1988</td></tr>
+        <tr><td>Sagarmala</td><td>2015</td></tr>
+        <tr><td>NIIF</td><td>2015</td></tr>
+        <tr><td>Smart Cities/AMRUT</td><td>2015</td></tr>
+        <tr><td>UDAY</td><td>2015</td></tr>
+        <tr><td>HAM</td><td>2016</td></tr>
+        <tr><td>Bharatmala/UDAN</td><td>2017</td></tr>
+        <tr><td>NIP</td><td>2019</td></tr>
+        <tr><td>Gati Shakti/RDSS</td><td>2021</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Key Numbers &amp; Formulae</h4>
+    <div class="formula" style="font-size:12px;padding:8px 10px">
+      HAM: Govt. 40% upfront + Dev. 60% via annuity<br>
+      InvIT/REIT: &ge;90% cash-flow distribution<br>
+      NIP: ~&#8377;111 lakh cr, FY20-25<br>
+      NH network: &gt;1,45,000 km
+    </div>
+  </div>
+
+  <div class="widget">
+    <h4>Mnemonics</h4>
+    <p style="font-size:12px"><strong>"4 Pillars of Sagarmala"</strong>: <strong>M</strong>odernisation, <strong>C</strong>onnectivity, <strong>I</strong>ndustrialisation, <strong>C</strong>ommunity (coastal) &mdash; "MCIC."</p>
+    <p style="font-size:12px"><strong>India Stack = "IPD"</strong>: <strong>I</strong>dentity (Aadhaar), <strong>P</strong>ayments (UPI), <strong>D</strong>ata (Account Aggregator).</p>
+  </div>
+
+  <div class="widget">
+    <h4>Common Confusions</h4>
+    <details><summary>NIP vs. NMP</summary><p>NIP = pipeline of new investment projects; NMP = monetisation of existing/brownfield assets, no ownership transfer.</p></details>
+    <details><summary>Smart Cities vs. AMRUT</summary><p>Smart Cities = 100 cities, SPV-implemented; AMRUT = broader statutory towns, State/ULB-implemented directly.</p></details>
+    <details><summary>AT&amp;C losses vs. T&amp;D losses</summary><p>AT&amp;C = technical + commercial (theft/billing) losses; T&amp;D = only technical transmission/distribution losses.</p></details>
+  </div>
+
+  <div class="widget related">
+    <h4>Quick Cross-Links</h4>
+    <ul style="font-size:13.5px;line-height:1.7;padding-left:18px;margin:0">
+      <li><a href="/economy/international-financial-institutions">Topic 10: International Financial Institutions</a></li>
+      <li><a href="/economy/industrial-sector-and-manufacturing">Topic 11: Industrial Sector &amp; Manufacturing</a></li>
+      <li><a href="/economy/agriculture-and-allied-sectors">Topic 12: Agriculture &amp; Allied Sectors</a></li>
+      <li><a href="/economy/poverty-employment-and-human-development">Topic 13: Poverty, Employment &amp; Human Development</a></li>
+      <li><a href="/economy/sustainable-development-and-environment-economics">Topic 15: Sustainable Development &amp; Environment Economics</a></li>
+    </ul>
+  </div>
+
+</div></aside>
+</div>
+</div>

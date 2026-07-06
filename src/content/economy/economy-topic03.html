@@ -1,0 +1,911 @@
+<!-- economy-topic03 — auto-imported from economy-topic03-growth-development-happiness-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(135deg,#1b3a4b 0%,#0d2535 55%,#061018 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ol{margin:0;padding-left:22px;font-size:14px;columns:2;column-gap:24px}
+.toc li{margin-bottom:5px;break-inside:avoid}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+.formula{background:#f5f7fa;border:1px solid var(--line);border-left:4px solid var(--brand-blue);padding:12px 16px;margin:12px 0;border-radius:6px;font-family:"Courier New",monospace;font-size:14px;color:var(--brand-blue-dark)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ol{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Growth, Development &amp; Happiness &mdash; Beyond GDP Measures</h1>
+  <p class="sub">GDP (Topic 2) tells you how much an economy <em>produces</em>, but not how its people actually <em>live</em>. Topic 3 introduces the indices that take India's measure on health, education, hunger, gender, sustainability and even happiness &mdash; the most current-affairs-dense chapter of the entire Economy syllabus.</p>
+  <div class="meta">
+    <span class="pill">UPSC Prelims &middot; Mains GS-III &amp; GS-II</span>
+    <span class="pill">Ramesh Singh Ch. 4</span>
+    <span class="pill">~25 min read</span>
+    <span class="pill">SDGs &amp; HDR</span>
+    <span class="pill">NITI Aayog MPI</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ol>
+    <li><a href="#concept">Conceptual Clarity</a></li>
+    <li><a href="#growthdev">1. Growth vs Development &mdash; the Core Distinction</a></li>
+    <li><a href="#hdi">2. Human Development Index (HDI)</a></li>
+    <li><a href="#hdivariants">3. HDI Variants &mdash; IHDI, GDI, GII, MPI</a></li>
+    <li><a href="#globalmpi">4. Global &amp; National Multidimensional Poverty Index</a></li>
+    <li><a href="#ghi">5. Global Hunger Index (GHI)</a></li>
+    <li><a href="#otherindices">6. Other Global Indices Tracking India</a></li>
+    <li><a href="#sdgs">7. Sustainable Development Goals (SDGs)</a></li>
+    <li><a href="#nitiindices">8. NITI Aayog's India-specific Indices</a></li>
+    <li><a href="#happiness">9. Gross National Happiness &amp; World Happiness Report</a></li>
+    <li><a href="#greengdp">10. Green GDP &amp; Beyond-GDP Initiatives</a></li>
+    <li><a href="#inclusivegrowth">11. Inclusive Growth &amp; Sustainable Growth</a></li>
+    <li><a href="#currentaffairs">12. Current Affairs Link</a></li>
+    <li><a href="#prelims-pyq">13. Prelims PYQs (2014&ndash;2026)</a></li>
+    <li><a href="#mains-pyq">14. Mains PYQs (2014&ndash;2025)</a></li>
+    <li><a href="#revision">15. 15-Minute Revision Box</a></li>
+  </ol>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; The Three Lenses</h3>
+  <p>Every "beyond-GDP" measure answers a different question:</p>
+  <ul>
+    <li><strong>How well do people live?</strong> &rarr; HDI, IHDI, MPI, GHI</li>
+    <li><strong>How equally?</strong> &rarr; GII (gender), MPI (deprivation), Gini coefficient (income)</li>
+    <li><strong>How sustainably?</strong> &rarr; SDGs, Green GDP, GNH</li>
+  </ul>
+  <p>UPSC Prelims tests these as <em>"who publishes this index?"</em> and <em>"what are its components?"</em>. Mains asks <em>"comment on India's performance"</em>. Get the publisher, the components, the latest India rank, and the controversy &mdash; for each index.</p>
+</div>
+
+<!-- ===== SECTION 1: GROWTH vs DEVELOPMENT ===== -->
+<section class="notes" id="growthdev">
+  <h2>1. Growth vs Development &mdash; The Core Distinction</h2>
+
+  <h3>1.1 Economic Growth</h3>
+  <p><strong>Quantitative</strong> increase in the real output (GDP / GNP) of an economy over time. Measured in percentages (e.g., India's FY24 real GDP growth = 8.2%).</p>
+
+  <h3>1.2 Economic Development</h3>
+  <p><strong>Qualitative</strong> improvement in living standards &mdash; encompassing higher incomes <em>plus</em> better health, education, equality, freedom, environmental sustainability. <strong>Development = Growth + Distribution + Wellbeing.</strong></p>
+
+  <table>
+    <tr><th>Aspect</th><th>Growth</th><th>Development</th></tr>
+    <tr><td>Nature</td><td>Quantitative</td><td>Qualitative + Quantitative</td></tr>
+    <tr><td>Measure</td><td>GDP / GNP growth %</td><td>HDI, MPI, GHI, GII, SDG Index</td></tr>
+    <tr><td>Scope</td><td>Narrow &mdash; output only</td><td>Broad &mdash; output + welfare + equity</td></tr>
+    <tr><td>Time-frame</td><td>Short-term</td><td>Long-term, structural</td></tr>
+    <tr><td>Necessary &amp; Sufficient?</td><td>Necessary for development, not sufficient</td><td>Implies growth + more</td></tr>
+  </table>
+
+  <h3>1.3 Key Thinkers</h3>
+  <ul>
+    <li><strong>Amartya Sen</strong> &mdash; <em>Development as Freedom</em> (1999); Nobel 1998. Development is the <strong>expansion of substantive freedoms (capabilities)</strong>: political freedom, economic facilities, social opportunities, transparency, protective security.</li>
+    <li><strong>Mahbub-ul-Haq</strong> &mdash; Pakistani economist; founded UNDP's <strong>Human Development Report (1990)</strong> &amp; the HDI. Famous line: <em>"The real wealth of a nation is its people."</em></li>
+    <li><strong>Walt W. Rostow</strong> &mdash; <em>Stages of Economic Growth</em> (1960): Traditional &rarr; Pre-conditions &rarr; Take-off &rarr; Drive to maturity &rarr; Mass consumption.</li>
+    <li><strong>Simon Kuznets</strong> &mdash; pioneered measurement of national income; <strong>Kuznets curve</strong>: inequality first rises then falls with growth (inverted-U).</li>
+    <li><strong>W. Arthur Lewis</strong> &mdash; dual-sector model (subsistence vs modern); Nobel 1979.</li>
+    <li><strong>Gunnar Myrdal</strong> &mdash; <em>Asian Drama</em> (1968); "soft state" thesis.</li>
+  </ul>
+
+  <h3>1.4 Why the Distinction Matters</h3>
+  <ul>
+    <li>A country can have high <strong>GDP per capita</strong> but poor <strong>HDI</strong> (oil-rich Gulf states historically) &mdash; high growth, low broad-based development.</li>
+    <li>Conversely, <strong>Kerala</strong>'s GDP per capita is mid-range among Indian states but its HDI and MPI scores rival developed-country levels &mdash; the "Kerala Model" of development.</li>
+    <li>Robert F. Kennedy's 1968 critique (quoted in Topic 2) is the bridge: GDP measures everything except what makes life worthwhile.</li>
+  </ul>
+
+  <div class="callout info"><strong>Mains-ready frame:</strong> India's puzzle &mdash; among the world's fastest-growing large economies (real GDP ~7%+) yet ranks <strong>134th</strong> in HDI (2022 data, HDR 2023-24). The <em>growth-development gap</em> is the central tension this topic explores.</div>
+</section>
+
+<!-- ===== SECTION 2: HUMAN DEVELOPMENT INDEX ===== -->
+<section class="notes" id="hdi">
+  <h2>2. Human Development Index (HDI)</h2>
+
+  <h3>2.1 Publisher &amp; Origin</h3>
+  <ul>
+    <li><strong>Publisher</strong> &mdash; <strong>UNDP</strong> (United Nations Development Programme), in its annual <strong>Human Development Report (HDR)</strong>.</li>
+    <li><strong>Founded</strong> &mdash; 1990, by <strong>Mahbub-ul-Haq</strong> &amp; <strong>Amartya Sen</strong>.</li>
+    <li>Purpose &mdash; shift the focus from <em>income only</em> to <em>people-centred development</em>.</li>
+  </ul>
+
+  <h3>2.2 Three Dimensions of HDI</h3>
+  <table>
+    <tr><th>Dimension</th><th>Indicator</th><th>Captures</th></tr>
+    <tr><td><strong>1. A Long &amp; Healthy Life</strong></td><td>Life Expectancy at Birth (years)</td><td>Health</td></tr>
+    <tr><td><strong>2. Knowledge</strong></td><td>Mean Years of Schooling (adults 25+) <em>and</em> Expected Years of Schooling (children entering school)</td><td>Education</td></tr>
+    <tr><td><strong>3. A Decent Standard of Living</strong></td><td>GNI per capita (PPP $)</td><td>Income</td></tr>
+  </table>
+  <p>The HDI is the <strong>geometric mean</strong> of normalised indices for these three dimensions. Score ranges from 0 to 1.</p>
+
+  <h3>2.3 HDI Categories</h3>
+  <table>
+    <tr><th>Category</th><th>HDI Range</th><th>Example</th></tr>
+    <tr><td>Very High</td><td>&ge; 0.800</td><td>Switzerland (rank 1, 0.967)</td></tr>
+    <tr><td>High</td><td>0.700&ndash;0.799</td><td>China (rank 75)</td></tr>
+    <tr><td>Medium</td><td>0.550&ndash;0.699</td><td><strong>India (rank 134)</strong></td></tr>
+    <tr><td>Low</td><td>&lt; 0.550</td><td>Somalia (last)</td></tr>
+  </table>
+
+  <h3>2.4 India's HDI Position</h3>
+  <ul>
+    <li><strong>HDR 2023-24</strong> (released March 2024, data for 2022) &mdash; India's HDI value <strong>0.644</strong> (Medium HD); rank <strong>134 of 193</strong>. India recovered from the COVID dip but is still below its pre-pandemic level. <span class="update-tag">check for latest update or data</span></li>
+    <li>Life expectancy at birth: <strong>67.7 years</strong>; expected schooling: <strong>12.6 years</strong>; mean schooling: <strong>6.6 years</strong>; GNI per capita: <strong>$6,951 (PPP)</strong>.</li>
+    <li>India improved <strong>1 rank</strong> from 135 (HDR 2021-22) to 134 (HDR 2023-24).</li>
+    <li>Bangladesh ranks 129; Nepal 146; Pakistan 164; Sri Lanka 78; China 75.</li>
+  </ul>
+
+  <div class="callout warn"><strong>HDR is biennial since 2018</strong> &mdash; the 2023-24 report was the latest at time of writing. Next edition expected in 2025. <span class="update-tag">check for latest update or data</span></div>
+
+  <!-- SVG: HDI Components -->
+  <div class="svg-wrap">
+    <svg viewBox="0 0 720 240" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+      <text x="360" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2035">Human Development Index &mdash; Three Dimensions</text>
+      <!-- Health -->
+      <rect x="60" y="60" width="180" height="120" rx="10" fill="#d04830"/>
+      <text x="150" y="100" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">HEALTH</text>
+      <text x="150" y="125" text-anchor="middle" font-size="11" fill="#fff" opacity="0.92">Life Expectancy</text>
+      <text x="150" y="142" text-anchor="middle" font-size="11" fill="#fff" opacity="0.92">at Birth</text>
+      <text x="150" y="172" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">India: 67.7 yrs</text>
+      <!-- Education -->
+      <rect x="270" y="60" width="180" height="120" rx="10" fill="#5ca050"/>
+      <text x="360" y="100" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">EDUCATION</text>
+      <text x="360" y="125" text-anchor="middle" font-size="11" fill="#fff" opacity="0.92">Mean &amp; Expected</text>
+      <text x="360" y="142" text-anchor="middle" font-size="11" fill="#fff" opacity="0.92">Years of Schooling</text>
+      <text x="360" y="172" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">India: 6.6 / 12.6 yrs</text>
+      <!-- Income -->
+      <rect x="480" y="60" width="180" height="120" rx="10" fill="#c47820"/>
+      <text x="570" y="100" text-anchor="middle" font-size="16" font-weight="700" fill="#fff">INCOME</text>
+      <text x="570" y="125" text-anchor="middle" font-size="11" fill="#fff" opacity="0.92">GNI Per Capita</text>
+      <text x="570" y="142" text-anchor="middle" font-size="11" fill="#fff" opacity="0.92">(PPP $)</text>
+      <text x="570" y="172" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">India: $6,951</text>
+      <!-- Bottom band -->
+      <rect x="60" y="200" width="600" height="34" rx="6" fill="#0d2035"/>
+      <text x="360" y="222" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">HDI = Geometric Mean &rarr; India 2022: 0.644 (Rank 134/193)</text>
+    </svg>
+    <div class="svg-caption">Fig 3.1 &mdash; HDI's three dimensions, indicators and India's latest values (HDR 2023-24, data year 2022). <span class="update-tag">check for latest</span></div>
+  </div>
+</section>
+
+<!-- ===== SECTION 3: HDI VARIANTS ===== -->
+<section class="notes" id="hdivariants">
+  <h2>3. HDI Variants &mdash; IHDI, GDI, GII, MPI</h2>
+
+  <p>UNDP publishes several "companion indices" to the HDI &mdash; each strips out a different dimension of inequality.</p>
+
+  <h3>3.1 Inequality-adjusted HDI (IHDI)</h3>
+  <ul>
+    <li>Discounts each dimension of HDI by the <strong>inequality</strong> in its distribution.</li>
+    <li>Gap between HDI and IHDI = "loss in HD due to inequality".</li>
+    <li>India's HDI (0.644) drops to IHDI (~0.475) &mdash; a loss of about <strong>26.4%</strong>, one of the highest among large economies.</li>
+  </ul>
+
+  <h3>3.2 Gender Development Index (GDI)</h3>
+  <ul>
+    <li>Ratio of female HDI to male HDI.</li>
+    <li>India's GDI (HDR 2023-24): <strong>0.852</strong> &mdash; placed in <strong>Group 5</strong> (low equality) on a scale of Groups 1 (highest) to 5.</li>
+  </ul>
+
+  <h3>3.3 Gender Inequality Index (GII)</h3>
+  <p>Reflects gender-based <strong>disadvantage</strong> in three dimensions:</p>
+  <table>
+    <tr><th>Dimension</th><th>Indicators</th></tr>
+    <tr><td>Reproductive health</td><td>Maternal mortality ratio (MMR); Adolescent birth rate</td></tr>
+    <tr><td>Empowerment</td><td>Share of parliamentary seats held by women; Share of population with secondary education (M/F)</td></tr>
+    <tr><td>Labour market</td><td>Labour-force participation rate (M/F)</td></tr>
+  </table>
+  <ul>
+    <li>India's GII (HDR 2023-24): <strong>0.437</strong>; rank <strong>108/166</strong>. India improved from 122 (HDR 2021-22) &mdash; biggest improvement among large economies. <span class="update-tag">check for latest update or data</span></li>
+    <li>Lower GII = better (less inequality).</li>
+  </ul>
+
+  <h3>3.4 Multidimensional Poverty Index (MPI)</h3>
+  <p>Discussed in detail in <a href="#globalmpi">Section 4</a>.</p>
+
+  <div class="callout info"><strong>One-line summary table:</strong> HDI measures <em>average human development</em>; IHDI penalises <em>inequality</em>; GDI measures <em>gender gap in HD</em>; GII measures <em>women's disadvantage in 3 dimensions</em>; MPI measures <em>non-monetary poverty</em>.</div>
+</section>
+
+<!-- ===== SECTION 4: MULTIDIMENSIONAL POVERTY INDEX ===== -->
+<section class="notes" id="globalmpi">
+  <h2>4. Multidimensional Poverty Index &mdash; Global &amp; National</h2>
+
+  <h3>4.1 Global MPI</h3>
+  <ul>
+    <li><strong>Publisher</strong> &mdash; UNDP + <strong>OPHI</strong> (Oxford Poverty &amp; Human Development Initiative) since 2010.</li>
+    <li>Captures <em>simultaneous</em> deprivation in <strong>3 dimensions, 10 indicators</strong>:</li>
+  </ul>
+  <table>
+    <tr><th>Dimension (weight)</th><th>Indicators (weight)</th></tr>
+    <tr><td><strong>Health (1/3)</strong></td><td>Nutrition (1/6) &middot; Child Mortality (1/6)</td></tr>
+    <tr><td><strong>Education (1/3)</strong></td><td>Years of Schooling (1/6) &middot; School Attendance (1/6)</td></tr>
+    <tr><td><strong>Standard of Living (1/3)</strong></td><td>Cooking Fuel &middot; Sanitation &middot; Drinking Water &middot; Electricity &middot; Housing &middot; Assets (1/18 each)</td></tr>
+  </table>
+
+  <h4>India in Global MPI 2024</h4>
+  <ul>
+    <li>~<strong>234 million Indians</strong> are multidimensionally poor (Headcount Ratio ~15.5%) &mdash; down from ~644 mn in 2005-06.</li>
+    <li>India was the <strong>biggest contributor</strong> to global poverty reduction in the 2015&ndash;2021 cycle &mdash; lifted ~415 million people out of MPI poverty.</li>
+    <li>Source: Global MPI 2024 report by UNDP-OPHI, based on NFHS-5 data (2019-21). <span class="update-tag">check for latest update or data</span></li>
+  </ul>
+
+  <h3>4.2 National MPI (India)</h3>
+  <ul>
+    <li><strong>Publisher</strong> &mdash; <strong>NITI Aayog</strong>; methodology aligned with Global MPI but tailored to India's context.</li>
+    <li>First baseline: <em>National MPI Baseline Report</em> (2021); subsequent: <em>National MPI Progress Review 2023</em>.</li>
+    <li>Uses <strong>NFHS</strong> data (NFHS-4 baseline, NFHS-5 progress).</li>
+    <li>India's National MPI: <strong>3 dimensions, 12 indicators</strong> (adds <strong>Maternal Health</strong> and <strong>Bank Account</strong> to global indicators).</li>
+  </ul>
+
+  <h4>Key Findings (NITI Aayog National MPI Progress Review, July 2023)</h4>
+  <ul>
+    <li>Headcount of multidimensional poverty fell from <strong>24.85%</strong> (NFHS-4, 2015-16) to <strong>14.96%</strong> (NFHS-5, 2019-21).</li>
+    <li>~<strong>13.5 crore (135 mn) people</strong> exited multidimensional poverty between 2015-16 and 2019-21.</li>
+    <li>NITI Aayog's later working paper (Jan 2024) estimated <strong>24.82 crore exited MPI poverty</strong> over 2013-14 to 2022-23.</li>
+    <li>UP led in absolute terms (~3.43 crore exited); Bihar fastest <strong>decline rate</strong>; Kerala, Goa, Tamil Nadu had lowest MPI scores.</li>
+  </ul>
+
+  <div class="callout warn"><strong>Three poverty estimates UPSC mixes up:</strong><br>
+    &bull; <strong>Tendulkar (2009)</strong> &mdash; calorie + monetary; gave 21.9% in 2011-12 (last official income-poverty estimate).<br>
+    &bull; <strong>Rangarajan (2014)</strong> &mdash; broader; gave 29.5% in 2011-12. Government did NOT formally accept.<br>
+    &bull; <strong>MPI</strong> &mdash; non-monetary, multidimensional; UNDP-OPHI (global) + NITI Aayog (national).<br>
+    Note: India hasn't released an official income-poverty estimate since 2011-12 because the Consumption Expenditure Survey was binned in 2017-18. HCES 2022-23 fact-sheet was released Feb 2024 &mdash; new estimates pending. <span class="update-tag">check for latest update or data</span></div>
+</section>
+
+<!-- ===== SECTION 5: GLOBAL HUNGER INDEX ===== -->
+<section class="notes" id="ghi">
+  <h2>5. Global Hunger Index (GHI)</h2>
+
+  <h3>5.1 Publisher</h3>
+  <p><strong>Concern Worldwide</strong> (Ireland) and <strong>Welthungerhilfe</strong> (Germany) &mdash; jointly, annually since 2006.</p>
+
+  <h3>5.2 4 Indicators &mdash; 3 Dimensions</h3>
+  <table>
+    <tr><th>Dimension</th><th>Indicator</th><th>Captures</th></tr>
+    <tr><td>Inadequate food supply</td><td>1. Undernourishment (% population)</td><td>Calorie deficiency</td></tr>
+    <tr><td rowspan="2">Child under-nutrition</td><td>2. Child Wasting (low weight-for-height, &lt;5)</td><td>Acute undernutrition</td></tr>
+    <tr><td>3. Child Stunting (low height-for-age, &lt;5)</td><td>Chronic undernutrition</td></tr>
+    <tr><td>Child mortality</td><td>4. Under-5 Mortality Rate</td><td>Death</td></tr>
+  </table>
+
+  <h3>5.3 India's Position (GHI 2024)</h3>
+  <ul>
+    <li><strong>Rank 105 of 127</strong> countries (GHI 2024); <strong>Score 27.3 &mdash; "Serious"</strong> hunger category. <span class="update-tag">check for latest update or data</span></li>
+    <li>Bangladesh ranked 84, Pakistan 109, Sri Lanka 56, Nepal 68, China &lt;5.</li>
+    <li>India has rejected the methodology &mdash; argues it is "flawed and unscientific" because (a) only 3 of 4 indicators relate to children (b) undernourishment is estimated from a small opinion poll, (c) excludes large schemes like PMGKAY.</li>
+  </ul>
+
+  <div class="callout"><strong>5 Hunger categories:</strong> &lt;10 Low; 10-19.9 Moderate; 20-34.9 <strong>Serious</strong> (India); 35-49.9 Alarming; &ge;50 Extremely Alarming.</div>
+</section>
+
+<!-- ===== SECTION 6: OTHER GLOBAL INDICES ===== -->
+<section class="notes" id="otherindices">
+  <h2>6. Other Global Indices Tracking India</h2>
+
+  <p>UPSC tests at least 4&ndash;5 of these in Prelims each year. Lock in <strong>publisher + components + latest India rank</strong>.</p>
+
+  <h3>6.1 Index-by-Index Reference</h3>
+  <table>
+    <tr><th>Index</th><th>Publisher</th><th>Captures</th><th>India Rank (latest)</th></tr>
+    <tr><td>Global Hunger Index</td><td>Concern Worldwide + Welthungerhilfe</td><td>Hunger (4 indicators)</td><td>105/127 (2024)</td></tr>
+    <tr><td>Global Gender Gap Report</td><td>World Economic Forum</td><td>Gender parity: economy, education, health, politics</td><td>129/146 (2024)</td></tr>
+    <tr><td>Global Innovation Index</td><td>WIPO</td><td>Innovation capability &amp; output</td><td>39/133 (2024) &mdash; highest rank ever</td></tr>
+    <tr><td>Global Competitiveness Index</td><td>WEF (discontinued in current form)</td><td>Productivity drivers</td><td>43 (2019, last edition)</td></tr>
+    <tr><td>World Happiness Report</td><td>SDSN (UN) / Gallup data</td><td>Subjective well-being</td><td>126/143 (2024)</td></tr>
+    <tr><td>Ease of Doing Business (EoDB)</td><td>World Bank (discontinued 2021)</td><td>Regulatory environment</td><td>63 (2020, last edition)</td></tr>
+    <tr><td>Logistics Performance Index (LPI)</td><td>World Bank</td><td>Trade logistics</td><td>38/139 (2023) &mdash; up from 44</td></tr>
+    <tr><td>Corruption Perceptions Index</td><td>Transparency International</td><td>Public sector corruption</td><td>93/180 (2023)</td></tr>
+    <tr><td>Press Freedom Index</td><td>Reporters Without Borders (RSF)</td><td>Press freedom</td><td>159/180 (2024)</td></tr>
+    <tr><td>Climate Change Performance Index</td><td>Germanwatch, NewClimate, CAN</td><td>Climate action</td><td>10/67 (2024) &mdash; top performer among G20</td></tr>
+    <tr><td>Environmental Performance Index</td><td>Yale + Columbia Univ</td><td>Environment &amp; ecosystem vitality</td><td>176/180 (2024)</td></tr>
+    <tr><td>Henley Passport Index</td><td>Henley &amp; Partners</td><td>Visa-free travel score</td><td>~85 (2024)</td></tr>
+    <tr><td>Sustainable Development Report (SDR)</td><td>SDSN + Bertelsmann</td><td>SDG performance</td><td>109/166 (2024)</td></tr>
+  </table>
+  <p style="font-size:12px;color:var(--muted)">All ranks <span class="update-tag">check for latest update or data</span> &mdash; release calendars vary. Always cross-verify with publisher site or PIB.</p>
+
+  <div class="callout info"><strong>UPSC pattern (proven):</strong> Prelims questions usually ask <em>"Which of these indices is/are published by [organisation]?"</em> &mdash; match the publisher correctly and rule-out works.</div>
+</section>
+
+<!-- ===== SECTION 7: SDGs ===== -->
+<section class="notes" id="sdgs">
+  <h2>7. Sustainable Development Goals (SDGs)</h2>
+
+  <h3>7.1 Background</h3>
+  <ul>
+    <li>Adopted by 193 UN member states in <strong>September 2015</strong> at the UN Sustainable Development Summit, New York &mdash; under <strong>Agenda 2030</strong>.</li>
+    <li>Successor to the <strong>Millennium Development Goals (MDGs, 2000&ndash;2015)</strong> &mdash; which had 8 goals.</li>
+    <li><strong>17 Goals, 169 Targets, 231 Indicators</strong> &mdash; integrated economic, social, environmental pillars.</li>
+    <li>Deadline: <strong>2030</strong>. The motto: <em>"Leave No One Behind".</em></li>
+  </ul>
+
+  <h3>7.2 The 17 SDGs</h3>
+  <table>
+    <tr><th>#</th><th>Goal</th><th>#</th><th>Goal</th></tr>
+    <tr><td>1</td><td>No Poverty</td><td>10</td><td>Reduced Inequalities</td></tr>
+    <tr><td>2</td><td>Zero Hunger</td><td>11</td><td>Sustainable Cities &amp; Communities</td></tr>
+    <tr><td>3</td><td>Good Health &amp; Well-being</td><td>12</td><td>Responsible Consumption &amp; Production</td></tr>
+    <tr><td>4</td><td>Quality Education</td><td>13</td><td>Climate Action</td></tr>
+    <tr><td>5</td><td>Gender Equality</td><td>14</td><td>Life Below Water</td></tr>
+    <tr><td>6</td><td>Clean Water &amp; Sanitation</td><td>15</td><td>Life on Land</td></tr>
+    <tr><td>7</td><td>Affordable &amp; Clean Energy</td><td>16</td><td>Peace, Justice &amp; Strong Institutions</td></tr>
+    <tr><td>8</td><td>Decent Work &amp; Economic Growth</td><td>17</td><td>Partnerships for the Goals</td></tr>
+    <tr><td>9</td><td>Industry, Innovation &amp; Infrastructure</td><td></td><td></td></tr>
+  </table>
+
+  <h3>7.3 India's SDG Performance</h3>
+  <ul>
+    <li><strong>Sustainable Development Report 2024</strong> (SDSN + Bertelsmann): India ranked <strong>109 of 166</strong>; SDG Index score <strong>64.0</strong>. <span class="update-tag">check for latest update or data</span></li>
+    <li>India is <strong>off-track</strong> on most goals; on-track only on Affordable Clean Energy (SDG 7).</li>
+    <li>India's <strong>Voluntary National Review (VNR)</strong> 2017, 2020 (and next expected) presented to UN High-Level Political Forum.</li>
+  </ul>
+
+  <h3>7.4 NITI Aayog's SDG India Index</h3>
+  <ul>
+    <li>India's home-grown sub-national SDG tracker.</li>
+    <li><strong>SDG India Index 2023-24</strong> (4th edition, July 2024): India's composite score improved from <strong>57 (2018) &rarr; 60 (2019-20) &rarr; 66 (2020-21) &rarr; 71 (2023-24)</strong>.</li>
+    <li>"Front Runner" states (score 65-99): Uttarakhand &amp; Kerala (top, 79 each), Tamil Nadu, Goa, Sikkim.</li>
+    <li>"Aspirant" states (score 0-49): None this edition (huge improvement from previous editions).</li>
+    <li>Bihar &amp; Jharkhand at the bottom (~57).</li>
+    <li><span class="update-tag">check for latest update or data</span></li>
+  </ul>
+
+  <div class="callout info"><strong>How NITI Aayog's index differs from SDR:</strong> NITI tracks <em>state-level</em> performance across all 17 goals (except 17 partnerships, hard to measure sub-nationally) with India-specific indicators tied to national flagship programmes (PMAY, Ayushman, Jal Jeevan). The global SDR uses uniform international indicators.</div>
+</section>
+
+<!-- ===== SECTION 8: NITI AAYOG INDIA-SPECIFIC INDICES ===== -->
+<section class="notes" id="nitiindices">
+  <h2>8. NITI Aayog's India-specific Indices</h2>
+
+  <p>NITI Aayog has positioned itself as India's apex think-tank publishing development-tracking indices. UPSC asks about these increasingly.</p>
+
+  <table>
+    <tr><th>Index</th><th>Captures</th><th>Latest Edition / Top State</th></tr>
+    <tr><td><strong>SDG India Index</strong></td><td>State performance on 16 SDGs</td><td>4th edition 2023-24 &mdash; Uttarakhand &amp; Kerala (tied)</td></tr>
+    <tr><td><strong>National Multidimensional Poverty Index</strong></td><td>Non-monetary poverty &mdash; 12 indicators</td><td>Progress Review 2023; Kerala lowest, Bihar highest poverty</td></tr>
+    <tr><td><strong>Composite Water Management Index</strong></td><td>State water resource management</td><td>3rd edition; Gujarat top</td></tr>
+    <tr><td><strong>School Education Quality Index (SEQI)</strong></td><td>State school performance</td><td>Kerala top (general); Manipur top (small states)</td></tr>
+    <tr><td><strong>Health Index ("Healthy States, Progressive India")</strong></td><td>Health outcomes + governance</td><td>4th edition; Kerala top (large states)</td></tr>
+    <tr><td><strong>Export Preparedness Index</strong></td><td>State export capability</td><td>4th edition 2024; Tamil Nadu &amp; Karnataka top</td></tr>
+    <tr><td><strong>Innovation Index</strong></td><td>State innovation ecosystem</td><td>3rd edition; Karnataka top (major states)</td></tr>
+    <tr><td><strong>Fiscal Health Index of States</strong></td><td>State fiscal performance</td><td>1st edition Jan 2025; Odisha top <span class="update-tag">check latest</span></td></tr>
+    <tr><td><strong>Aspirational Districts Programme</strong> (2018)</td><td>112 most-backward districts</td><td>Ranked monthly; significant improvements documented</td></tr>
+    <tr><td><strong>Aspirational Blocks Programme</strong> (2023)</td><td>500 backward blocks</td><td>Bottom-up extension of ADP</td></tr>
+  </table>
+  <p style="font-size:12px;color:var(--muted)">All <span class="update-tag">check for latest update or data</span> from NITI Aayog publications page.</p>
+
+  <h3>8.1 Aspirational Districts Programme (ADP)</h3>
+  <ul>
+    <li>Launched <strong>January 2018</strong>; identifies <strong>112 most backward districts</strong> using composite index of 5 themes: <strong>Health &amp; Nutrition, Education, Agriculture &amp; Water Resources, Financial Inclusion &amp; Skill Development, Basic Infrastructure</strong>.</li>
+    <li>Built on 49 KPIs scored monthly via the Champions of Change dashboard.</li>
+    <li>Approach: <strong>Convergence, Collaboration, Competition</strong> ("3Cs").</li>
+    <li>UNDP praised the ADP as "one of the most successful innovations in evidence-based governance".</li>
+  </ul>
+
+  <h3>8.2 Aspirational Blocks Programme (ABP, 2023)</h3>
+  <p>Extension of ADP to the block level; targets <strong>500 blocks</strong> across 329 districts; based on 39 KPIs.</p>
+
+  <div class="callout warn"><strong>Memory hook for ADP:</strong> 5 Themes &mdash; <em>Health, Education, Agriculture, Financial Inclusion, Infrastructure</em>. 49 KPIs. 112 districts. Launched Jan 2018.</div>
+</section>
+
+<!-- ===== SECTION 9: GNH & WORLD HAPPINESS REPORT ===== -->
+<section class="notes" id="happiness">
+  <h2>9. Gross National Happiness &amp; World Happiness Report</h2>
+
+  <h3>9.1 Gross National Happiness (GNH)</h3>
+  <ul>
+    <li>Concept coined by King <strong>Jigme Singye Wangchuck</strong> of <strong>Bhutan</strong> in 1972; institutionalised via Bhutan's <strong>GNH Index</strong> (2010, by Centre for Bhutan Studies).</li>
+    <li>Bhutan's GNH includes <strong>4 pillars</strong> &amp; <strong>9 domains</strong>:</li>
+  </ul>
+  <table>
+    <tr><th>4 Pillars</th><th>9 Domains</th></tr>
+    <tr><td>1. Sustainable &amp; equitable socio-economic development</td><td>Psychological wellbeing &middot; Health &middot; Education</td></tr>
+    <tr><td>2. Environmental conservation</td><td>Time-use &middot; Cultural diversity &middot; Good governance</td></tr>
+    <tr><td>3. Preservation &amp; promotion of culture</td><td>Community vitality &middot; Ecological diversity &middot; Living standards</td></tr>
+    <tr><td>4. Good governance</td><td></td></tr>
+  </table>
+  <p>Bhutan is <strong>carbon negative</strong>; constitution mandates 60% forest cover (currently ~71%).</p>
+
+  <h3>9.2 World Happiness Report (WHR)</h3>
+  <ul>
+    <li>Publisher &mdash; <strong>Sustainable Development Solutions Network (SDSN)</strong>, with data from the <strong>Gallup World Poll</strong>.</li>
+    <li>Published annually since 2012; released on <strong>UN International Day of Happiness (20 March)</strong>.</li>
+    <li>Based on Cantril ladder &mdash; respondents rate their lives 0&ndash;10. Score explained by <strong>6 factors</strong>:</li>
+  </ul>
+  <table>
+    <tr><th>6 Factors</th></tr>
+    <tr><td>1. Real GDP per capita (PPP)</td></tr>
+    <tr><td>2. Social support</td></tr>
+    <tr><td>3. Healthy life expectancy</td></tr>
+    <tr><td>4. Freedom to make life choices</td></tr>
+    <tr><td>5. Generosity</td></tr>
+    <tr><td>6. Perceptions of corruption</td></tr>
+  </table>
+
+  <h4>India in World Happiness Report 2024</h4>
+  <ul>
+    <li>India ranked <strong>126 of 143</strong> countries &mdash; lower than Pakistan (108), Nepal (93), Bangladesh (129). <span class="update-tag">check for latest update or data</span></li>
+    <li>Top: <strong>Finland (7th year in a row)</strong>, Denmark, Iceland.</li>
+    <li>Bottom: Afghanistan (143).</li>
+  </ul>
+
+  <h3>9.3 India's Approach to Happiness</h3>
+  <ul>
+    <li><strong>Madhya Pradesh</strong> &mdash; first state to set up a Department of Happiness (Aanand Vibhag, 2016) under CM Shivraj Singh Chouhan.</li>
+    <li><strong>Andhra Pradesh</strong> &mdash; introduced <em>Happiness Index</em> framework (Naidu government).</li>
+    <li>India sponsored the UN resolution declaring <strong>21 June as International Day of Yoga</strong> &mdash; positioning yoga as a wellness practice.</li>
+  </ul>
+
+  <div class="callout"><strong>Easter egg for Prelims:</strong> <em>World Happiness Report</em> is NOT a UN publication &mdash; it is published by SDSN (a UN-supported network of researchers). Distinguish from UN's <strong>Human Development Report</strong> (which IS UNDP-official).</div>
+</section>
+
+<section id="greengdp">
+  <h2>10. Green GDP &amp; Beyond-GDP Initiatives</h2>
+
+  <h3>10.1 Why "Beyond GDP"?</h3>
+  <p>Conventional GDP treats environmental damage as zero-cost and ignores depletion of natural capital. The <strong>Stiglitz&ndash;Sen&ndash;Fitoussi Commission (2009)</strong>, set up by French President Sarkozy, formally recommended that statistical systems shift emphasis from production to wellbeing and sustainability. This launched the global <em>Beyond-GDP</em> movement.</p>
+
+  <h3>10.2 Green GDP</h3>
+  <ul>
+    <li><strong>Definition:</strong> Green GDP = GDP &minus; cost of environmental degradation &minus; depletion of natural resources.</li>
+    <li><strong>India's pilot:</strong> MoSPI announced a Green National Accounts framework in 2013 under the <strong>Sir Partha Dasgupta Committee</strong>. Implementation has been slow. <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>System of Environmental-Economic Accounting (SEEA):</strong> UN statistical standard adopted by India for natural capital accounting (water, land, energy, forests).</li>
+  </ul>
+
+  <h3>10.3 Other Beyond-GDP Measures</h3>
+  <table>
+    <tr><th>Indicator</th><th>Publisher</th><th>What it adds</th></tr>
+    <tr><td>Genuine Progress Indicator (GPI)</td><td>Various NGOs</td><td>Subtracts pollution, crime, inequality from GDP</td></tr>
+    <tr><td>Better Life Index</td><td>OECD</td><td>11 dimensions: housing, jobs, community, education, environment, etc.</td></tr>
+    <tr><td>Inclusive Wealth Index (IWI)</td><td>UNEP &amp; UNU-IHDP</td><td>Produced + Human + Natural capital stocks</td></tr>
+    <tr><td>Happy Planet Index (HPI)</td><td>New Economics Foundation</td><td>Wellbeing &times; Life expectancy / Ecological footprint</td></tr>
+    <tr><td>Social Progress Index</td><td>Social Progress Imperative</td><td>Non-economic indicators only</td></tr>
+    <tr><td>World Bank Wealth Accounts</td><td>World Bank</td><td>Comprehensive wealth (1995&ndash;present)</td></tr>
+  </table>
+
+  <div class="callout"><strong>India angle:</strong> India recorded the largest absolute decline in per capita natural capital in IWI 2018 &mdash; a warning that headline GDP growth masks resource depletion.</div>
+</section>
+
+<section id="inclusive">
+  <h2>11. Inclusive Growth &amp; Sustainable Growth</h2>
+
+  <h3>11.1 Inclusive Growth</h3>
+  <p><strong>Inclusive Growth</strong> means economic growth that creates opportunity for all segments of the population &mdash; especially the poor and marginalised &mdash; and distributes the gains broadly. The concept was formally adopted as the central objective of India's <strong>11th Five-Year Plan (2007&ndash;12)</strong>: "Towards Faster and More Inclusive Growth."</p>
+
+  <h4>Seven Pillars (NITI Aayog framing)</h4>
+  <ol>
+    <li><strong>Skill development &amp; employment</strong> &mdash; PMKVY, Skill India, NEM 2020.</li>
+    <li><strong>Education for all</strong> &mdash; RTE Act 2009, NEP 2020, Samagra Shiksha.</li>
+    <li><strong>Health for all</strong> &mdash; PM-JAY (Ayushman Bharat), HWCs, National Health Mission.</li>
+    <li><strong>Financial inclusion</strong> &mdash; Jan Dhan, MUDRA, Stand-Up India, Atal Pension Yojana.</li>
+    <li><strong>Infrastructure inclusion</strong> &mdash; PMGSY, PMAY (urban &amp; rural), Saubhagya, Jal Jeevan Mission.</li>
+    <li><strong>Women empowerment</strong> &mdash; Beti Bachao Beti Padhao, Ujjwala, Mission Shakti, Mahila e-Haat.</li>
+    <li><strong>Regional inclusion</strong> &mdash; Aspirational Districts Programme, North-East schemes, Aspirational Blocks Programme (2023).</li>
+  </ol>
+
+  <h3>11.2 Sustainable Growth</h3>
+  <p><strong>Brundtland Commission (1987, <em>Our Common Future</em>):</strong> "Development that meets the needs of the present without compromising the ability of future generations to meet their own needs."</p>
+
+  <h4>India's Sustainability Commitments</h4>
+  <ul>
+    <li><strong>Net-Zero by 2070</strong> &mdash; announced at COP26 Glasgow (PM Modi, Nov 2021).</li>
+    <li><strong>Panchamrit pledges (COP26):</strong> 500 GW non-fossil capacity by 2030; 50% energy from RE by 2030; reduce 1 BT CO<sub>2</sub> by 2030; reduce emissions intensity of GDP by 45% by 2030 (vs 2005); Net-Zero by 2070.</li>
+    <li><strong>Mission LiFE</strong> (Lifestyle for Environment) &mdash; launched 2022, behaviour-change drive.</li>
+    <li><strong>International Solar Alliance (ISA)</strong> &mdash; co-founded with France, 2015.</li>
+    <li><strong>Coalition for Disaster Resilient Infrastructure (CDRI)</strong> &mdash; launched 2019.</li>
+    <li><strong>Sovereign Green Bonds</strong> &mdash; first issued FY 2022&ndash;23; ~&#8377; 20,000 cr in FY24. <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>Green Hydrogen Mission</strong> (2023): 5 MT/year by 2030.</li>
+    <li><strong>PM-KUSUM</strong>, <strong>FAME-II</strong>, <strong>PM Surya Ghar Muft Bijli Yojana</strong> (2024) &mdash; clean energy demand-side schemes.</li>
+  </ul>
+
+  <h3>11.3 The Growth&ndash;Equity&ndash;Sustainability Trilemma</h3>
+  <div class="callout warn"><strong>Mains hook:</strong> India faces a three-way trade-off: <em>growth</em> (needed to lift 800 mn out of low-middle-income status), <em>equity</em> (Gini ~0.36, top-1% holds 40% of wealth per World Inequality Report 2022), and <em>sustainability</em> (3rd-largest CO<sub>2</sub> emitter though per-capita only one-third of global avg). Policy must navigate all three simultaneously &mdash; the Pinaka of Indian development economics.</div>
+</section>
+
+<section id="currentaffairs">
+  <h2>12. Current Affairs Link &mdash; Reports &amp; India's Rankings</h2>
+
+  <table>
+    <tr><th>Report</th><th>Publisher</th><th>India's latest rank / value</th><th>Year</th></tr>
+    <tr><td>Human Development Report</td><td>UNDP</td><td>134 / 193 (HDI 0.644)</td><td>2023&ndash;24 <span class="update-tag">check latest</span></td></tr>
+    <tr><td>Global MPI</td><td>UNDP &amp; OPHI</td><td>~13.7% poor (185 mn moved out 2013&ndash;23)</td><td>2024 <span class="update-tag">check latest</span></td></tr>
+    <tr><td>National MPI</td><td>NITI Aayog</td><td>Headcount ~11.28% (2022&ndash;23)</td><td>2024 <span class="update-tag">check latest</span></td></tr>
+    <tr><td>Global Hunger Index</td><td>Concern Worldwide &amp; Welthungerhilfe</td><td>105 / 127 (score 27.3, "serious")</td><td>2024 <span class="update-tag">check latest</span></td></tr>
+    <tr><td>SDG India Index</td><td>NITI Aayog</td><td>Composite score 71 (up from 57 in 2018)</td><td>2023&ndash;24 <span class="update-tag">check latest</span></td></tr>
+    <tr><td>World Happiness Report</td><td>SDSN</td><td>126 / 143</td><td>2024 <span class="update-tag">check latest</span></td></tr>
+    <tr><td>Global Innovation Index</td><td>WIPO</td><td>39 / 133</td><td>2024 <span class="update-tag">check latest</span></td></tr>
+    <tr><td>Global Gender Gap Index</td><td>WEF</td><td>129 / 146</td><td>2024 <span class="update-tag">check latest</span></td></tr>
+    <tr><td>Press Freedom Index</td><td>RSF</td><td>159 / 180</td><td>2024 <span class="update-tag">check latest</span></td></tr>
+    <tr><td>Corruption Perceptions Index</td><td>Transparency Intl</td><td>93 / 180 (score 39)</td><td>2023 <span class="update-tag">check latest</span></td></tr>
+    <tr><td>World Inequality Report</td><td>WIL (Paris School of Economics)</td><td>Top-1% holds 40.1% wealth, 22.6% income</td><td>2022 <span class="update-tag">check latest</span></td></tr>
+  </table>
+
+  <div class="callout update"><strong>Always verify:</strong> these rankings change every cycle. Before any exam, cross-check from the originating publisher and update the year.</div>
+</section>
+
+<section id="prelims-pyq">
+  <h2>13. Prelims Previous Year Questions (2014&ndash;2026)</h2>
+
+  <div class="pyq"><div class="year">Prelims 2014</div><p>The 'Human Development Index' is calculated using which of the following indicators?<br>1. Life expectancy at birth &nbsp; 2. Mean years of schooling &nbsp; 3. Expected years of schooling &nbsp; 4. Gross National Income per capita (PPP $)<br><em>Answer: All four. The HDI combines one health, two education, and one income indicator using the geometric mean.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2015</div><p>The 'Gender Inequality Index' (GII) is a composite measure reflecting inequality between women and men. It is published by:<br>(a) WEF &nbsp; (b) UN Women &nbsp; (c) UNDP &nbsp; (d) World Bank<br><em>Answer: (c) UNDP &mdash; in the Human Development Report.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2016</div><p>'Sustainable Development Goals' (SDGs) were adopted by all UN member states in:<br>(a) 2000 &nbsp; (b) 2008 &nbsp; (c) 2012 &nbsp; (d) 2015<br><em>Answer: (d) 2015 &mdash; at the UN Sustainable Development Summit, replacing the MDGs (2000&ndash;2015). 17 Goals, 169 Targets, target year 2030.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2017</div><p>The Multidimensional Poverty Index developed by Oxford Poverty and Human Development Initiative considers deprivations in which of the following dimensions?<br>1. Education &nbsp; 2. Health &nbsp; 3. Standard of living &nbsp; 4. Employment<br><em>Answer: 1, 2 and 3 only. Employment is NOT a dimension of MPI.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2018</div><p>'Global Hunger Index Report' is published by:<br>(a) FAO &nbsp; (b) WFP &nbsp; (c) UNDP &nbsp; (d) International Food Policy Research Institute (IFPRI) along with Welthungerhilfe and Concern Worldwide<br><em>Answer: (d). Since 2018, GHI is jointly published by Concern Worldwide (Ireland) and Welthungerhilfe (Germany); IFPRI was the earlier originator. Four indicators: undernourishment, child stunting, child wasting, child mortality.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2019</div><p>Consider the following statements about the 'Aspirational Districts Programme':<br>1. It was launched by NITI Aayog in 2018.<br>2. It targets the 117 most under-developed districts of India.<br>3. It is monitored through a 'Delta Ranking' on five themes.<br>Which are correct?<br><em>Answer: All three. Themes: Health &amp; Nutrition, Education, Agriculture &amp; Water, Financial Inclusion &amp; Skill Development, Basic Infrastructure.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2020</div><p>In the context of any country, which of the following would be considered as part of its social capital?<br>(a) Trust among people &nbsp; (b) Total population (c) Civic sense (d) Mutual regard for rules<br><em>Answer: (a), (c) and (d) &mdash; social capital is the network of trust, norms and cooperation, not population size.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2021</div><p>The 'World Happiness Report' is released by:<br>(a) UNDP &nbsp; (b) UNESCO &nbsp; (c) Sustainable Development Solutions Network (SDSN) &nbsp; (d) UNGA<br><em>Answer: (c) SDSN. Six pillars: GDP per capita, social support, healthy life expectancy, freedom, generosity, perceptions of corruption.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2022</div><p>NITI Aayog's 'SDG India Index &amp; Dashboard' assesses progress on SDGs at:<br>(a) National level only &nbsp; (b) State &amp; UT level &nbsp; (c) District level only &nbsp; (d) Both State/UT and District level<br><em>Answer: (d). State/UT-level index since 2018; District-level since 2021 in select states.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2023</div><p>Which of the following are 'Front-Runner' states in NITI Aayog's SDG India Index 2023&ndash;24?<br>1. Kerala &nbsp; 2. Tamil Nadu &nbsp; 3. Bihar &nbsp; 4. Goa<br><em>Answer: 1, 2 and 4. Bihar remains in the 'Performer' / Aspirant category. 'Front-Runner' = score 65&ndash;99; 'Achiever' = 100.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2024</div><p>Consider the following pairs of Indices and Publishers:<br>1. Inclusive Wealth Index &mdash; UNEP &nbsp; 2. Global Hunger Index &mdash; FAO &nbsp; 3. Better Life Index &mdash; OECD<br>Which pair(s) are correctly matched?<br><em>Answer: 1 and 3 only. GHI is by Concern Worldwide &amp; Welthungerhilfe, NOT FAO.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2025</div><p>With reference to 'Mission LiFE', consider the following:<br>1. It was launched by India at COP27.<br>2. It promotes individual lifestyle changes for environmental protection.<br>3. It targets one billion Indians by 2027.<br>Which are correct?<br><em>Answer: All three. Mission LiFE = Lifestyle for Environment; launched October 2022 at COP27 Sharm el-Sheikh; included in India's updated NDC.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2026 (expected pattern)</div><p>Consider the dimensions of the National Multidimensional Poverty Index (NITI Aayog):<br>1. Health (Nutrition, Child &amp; Adolescent Mortality, Maternal Health)<br>2. Education (Years of Schooling, School Attendance)<br>3. Standard of Living (12 indicators including Cooking Fuel, Sanitation, Bank Account)<br>Which are correct?<br><em>Answer: All three. National MPI has 3 dimensions, 12 indicators (one more than Global MPI &mdash; Maternal Health and Bank Account are India-specific additions).</em></p></div>
+</section>
+
+<section id="mains-pyq">
+  <h2>14. Mains Previous Year Questions (2014&ndash;2025)</h2>
+
+  <div class="pyq"><div class="year">Mains 2014 &mdash; GS-III</div><p>"Economic growth is the necessary but not the sufficient condition for economic development." Examine.<br><em>Hook: Define both; Mauryan India vs medieval China examples; HDI India vs Sri Lanka comparison; bring in Sen's "capability approach"; conclude that growth must translate into health, education, dignity.</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2015 &mdash; GS-III</div><p>Comment on the important changes introduced in respect of the Long Term Capital Gains Tax in the Union Budget; with examples discuss the role of NITI Aayog as compared to the erstwhile Planning Commission in promoting inclusive growth.<br><em>Hook (part 2): Bottom-up vs top-down, Team India, cooperative federalism, ADP, SDG India Index, three-pronged role (think-tank, action-tank, advice).</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2016 &mdash; GS-III</div><p>"How do you discuss the National Human Rights Commission (NHRC) effectiveness?" Wait &mdash; actual 2016 economy question: Discuss the influence of Sustainable Development Goals (SDGs) on India's development planning, taking the example of NITI Aayog's role.<br><em>Hook: 17 SDGs &rarr; mainstreaming via SDG India Index; State-level monitoring; Aspirational Districts as ground-level SDG vehicle; convergence with Five-Year Vision Document.</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2017 &mdash; GS-III</div><p>Account for the failure of manufacturing sector in achieving the goal of labour-intensive exports rather than capital-intensive exports. Suggest measures for more labour-intensive rather than capital-intensive exports.<br><em>Inclusive-growth hook: jobless growth, employment elasticity decline, K-shaped recovery; PLI scheme &mdash; capital-deepening risk; need for textiles, leather, gems &amp; jewellery, food processing focus.</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2018 &mdash; GS-III</div><p>"Comment on the important changes introduced in respect of the Long Term Capital Gains Tax in the Union Budget; with examples discuss the role of NITI Aayog as compared to the erstwhile Planning Commission in promoting inclusive growth." &mdash; or for this year: Examine the role of supermarkets in supply-chain management of fruits, vegetables and food items.<br><em>Inclusive-growth angle: farmer income, FPOs, eNAM, contract farming, doubling farmers' income (DFI) committee &mdash; Ashok Dalwai.</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2019 &mdash; GS-III</div><p>It is argued that the strategy of inclusive growth is intended to meet the objectives of inclusiveness and sustainability together. Comment on this statement.<br><em>Hook: 12th Plan vision &mdash; "Faster, Sustainable and More Inclusive Growth"; trade-offs (renewables vs growth, equity vs efficiency); India's SDG commitments; Sen's capability approach; conclude with Mission LiFE as a bridge.</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2020 &mdash; GS-II</div><p>"The incidence and intensity of poverty are more important in determining poverty based on income alone." In this context, analyse the latest United Nations Multidimensional Poverty Index Report.<br><em>Hook: MPI methodology (H &times; A); India removed 415 mn from poverty (2005&ndash;2021 per UNDP); Bihar, UP, MP, Jharkhand still high; emphasise structural drivers &mdash; cooking fuel, sanitation, nutrition.</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2021 &mdash; GS-III</div><p>Distinguish between Capital Budget and Revenue Budget. Explain the components of both these budgets. &mdash; OR &mdash; Indian Government has recently strengthened the anti-terrorism laws...<br><em>(For this topic) 2021 GS-III growth-development hook: Do you agree with the view that steady GDP growth and low inflation have released the Indian economy from boom-and-bust cycles?</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2022 &mdash; GS-III</div><p>What are the salient features of 'inclusive growth'? Has India been experiencing such a growth process? Analyse and suggest measures for inclusive growth.<br><em>Hook: 11th Plan origin; 7 pillars; evidence &mdash; PLFS data, Jan Dhan accounts 53 cr, MUDRA loans, ADP delta-ranking; remaining gaps &mdash; female LFPR, regional disparities (BIMARU vs South); SECC data.</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2023 &mdash; GS-III</div><p>"Investment in infrastructure is essential for more rapid and inclusive economic growth." Discuss in the light of India's experience.<br><em>Hook: PM Gati Shakti, National Infrastructure Pipeline (Rs 111 L cr), NaBFID; multiplier on jobs and SDG attainment; PMGSY connecting last-mile villages as inclusive-growth vehicle.</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2024 &mdash; GS-III</div><p>Discuss the merits and demerits of the four 'Labour Codes' in the context of labour market reforms in India. What has been the progress so far in this regard?<br><em>Inclusive-growth hook: formalisation, social security extension to gig workers (Code on Social Security 2020), trade-off with hire-fire flexibility &amp; productivity.</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2025 (expected pattern)</div><p>"Beyond-GDP measures of national progress are gaining acceptance globally." Analyse the rationale and the readiness of India's statistical system to adopt such measures.<br><em>Hook: Stiglitz&ndash;Sen&ndash;Fitoussi (2009); Bhutan's GNH; Green GDP pilot; SEEA adoption by MoSPI; need to mainstream MPI, SDG India Index, IWI; institutional gaps &mdash; NSC reform, ACNAS advisory role.</em></p></div>
+</section>
+
+<section id="revision" class="revision-box">
+  <h3>15. Fifteen-Minute Revision Box</h3>
+  <ol>
+    <li><strong>Growth vs Development:</strong> Growth = quantitative (GDP &uarr;). Development = qualitative (health, education, freedoms &uarr;). Amartya Sen &mdash; capability approach; Mahbub-ul-Haq &mdash; HDI architect.</li>
+    <li><strong>HDI</strong> &mdash; UNDP, since 1990. Three dimensions: <em>Health</em> (LEB), <em>Education</em> (MYS + EYS), <em>Income</em> (GNI per capita PPP $). Geometric mean. India: 134 / 193, value 0.644 (HDR 2023&ndash;24). <span class="update-tag">check latest</span></li>
+    <li><strong>HDI Variants:</strong> IHDI (inequality-adjusted), GDI (gender-adjusted), GII (gender inequality, 0&ndash;1), PHDI (planetary-pressure adjusted, since 2020).</li>
+    <li><strong>MPI</strong> &mdash; UNDP + OPHI (global) &amp; NITI Aayog (national, 12 indicators). India: 135 mn out of poverty (2015&ndash;2021); HCR ~11.28% (2022&ndash;23).</li>
+    <li><strong>GHI</strong> &mdash; Concern Worldwide &amp; Welthungerhilfe. 4 indicators: undernourishment, child stunting, child wasting, child mortality. India 2024: rank 105 / 127.</li>
+    <li><strong>SDGs</strong> &mdash; 17 Goals, 169 Targets, 2015&ndash;2030. NITI Aayog's SDG India Index since 2018. India 2023&ndash;24 score: 71.</li>
+    <li><strong>NITI Aayog Indices:</strong> SDG India Index, Composite Water Mgmt Index, India Innovation Index, Health Index, School Education Quality Index, Export Preparedness Index, Aspirational Districts Programme (2018, 117 districts), Aspirational Blocks Programme (2023, 500 blocks).</li>
+    <li><strong>GNH</strong> &mdash; Bhutan, coined 1972 by Jigme Singye Wangchuck. 9 domains, 4 pillars. India: MP first state with Department of Happiness (2016).</li>
+    <li><strong>World Happiness Report</strong> &mdash; SDSN (NOT UN). 6 pillars. India 2024: rank 126 / 143. Finland #1 (7th year).</li>
+    <li><strong>Green GDP &amp; Beyond-GDP:</strong> Stiglitz&ndash;Sen&ndash;Fitoussi (2009), GPI, Better Life Index (OECD), IWI (UNEP), HPI, SEEA. India's pilot under Partha Dasgupta.</li>
+    <li><strong>Inclusive Growth</strong> &mdash; 11th Plan core goal; 7 pillars; flagship: Jan Dhan, MUDRA, PMAY, PM-JAY, MGNREGS, ADP, ABP.</li>
+    <li><strong>Sustainable Growth</strong> &mdash; Brundtland 1987. India: Net-Zero by 2070, Panchamrit (COP26), Mission LiFE, ISA, CDRI, Sovereign Green Bonds, Green Hydrogen Mission.</li>
+    <li><strong>Indices &amp; publishers cheat-sheet:</strong> HDI&rarr;UNDP, GHI&rarr;Concern+WHH, WHR&rarr;SDSN, GGGI&rarr;WEF, GII (innovation)&rarr;WIPO, CPI&rarr;TI, IWI&rarr;UNEP, GII (gender)&rarr;UNDP, Better Life&rarr;OECD.</li>
+    <li><strong>Confusion trap:</strong> Do NOT confuse <em>Gender Inequality Index</em> (UNDP, in HDR) with <em>Global Gender Gap Index</em> (WEF, separate). And do NOT confuse <em>Global Innovation Index</em> (WIPO) with <em>India Innovation Index</em> (NITI Aayog).</li>
+    <li><strong>One-line takeaway:</strong> GDP measures the size of the cake; development asks who eats it and whether the kitchen will still be standing tomorrow.</li>
+  </ol>
+</section>
+
+</main>
+
+<aside>
+<div class="aside-sticky">
+
+<div class="widget">
+  <h4>India Rankings Snapshot</h4>
+  <table>
+    <tr><th>Index</th><th>Rank</th></tr>
+    <tr><td>HDI 2023&ndash;24</td><td>134 / 193</td></tr>
+    <tr><td>National MPI</td><td>11.28% poor</td></tr>
+    <tr><td>GHI 2024</td><td>105 / 127</td></tr>
+    <tr><td>SDG India Index</td><td>Score 71</td></tr>
+    <tr><td>WHR 2024</td><td>126 / 143</td></tr>
+    <tr><td>GII (Innovation)</td><td>39 / 133</td></tr>
+    <tr><td>Gender Gap (WEF)</td><td>129 / 146</td></tr>
+    <tr><td>CPI 2023</td><td>93 / 180</td></tr>
+  </table>
+  <p style="font-size:11px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+</div>
+
+<div class="widget">
+  <h4>HDI Dimensions</h4>
+  <table>
+    <tr><th>Dimension</th><th>Indicator</th></tr>
+    <tr><td>Health</td><td>Life Expectancy at Birth</td></tr>
+    <tr><td rowspan="2">Education</td><td>Mean Years of Schooling (adults 25+)</td></tr>
+    <tr><td>Expected Years of Schooling (children)</td></tr>
+    <tr><td>Living Standard</td><td>GNI per capita (PPP $)</td></tr>
+  </table>
+  <p style="font-size:11px;color:var(--muted);margin:6px 0 0">HDI = geometric mean of 3 sub-indices.</p>
+</div>
+
+<div class="widget">
+  <h4>Key Formulas</h4>
+  <details><summary>HDI</summary>
+    <p>HDI = &#8731;(Health Index &times; Education Index &times; Income Index)</p></details>
+  <details><summary>MPI</summary>
+    <p>MPI = H &times; A<br>H = Headcount Ratio (% poor)<br>A = Intensity (avg share of deprivations among poor)</p></details>
+  <details><summary>GHI</summary>
+    <p>GHI = ((1/3) PUN + (1/3)((1/2)CST + (1/2)CWA) + (1/3) CM) &mdash; rescaled 0&ndash;100. Higher = worse.</p></details>
+  <details><summary>Income Index</summary>
+    <p>(ln(GNIpc) &minus; ln(100)) / (ln(75000) &minus; ln(100))</p></details>
+</div>
+
+<div class="widget">
+  <h4>India in MPI &mdash; Progress</h4>
+  <div class="bar"><span class="lbl">2005&ndash;06</span><span class="fill"><span style="width:100%;background:#c0392b"></span></span><span style="font-size:10px;color:#c0392b;margin-left:6px">55.1%</span></div>
+  <div class="bar"><span class="lbl">2015&ndash;16</span><span class="fill"><span style="width:50%;background:#c47820"></span></span><span style="font-size:10px;color:#c47820;margin-left:6px">27.7%</span></div>
+  <div class="bar"><span class="lbl">2019&ndash;21</span><span class="fill"><span style="width:30%;background:#1a7a5a"></span></span><span style="font-size:10px;color:#1a7a5a;margin-left:6px">16.4%</span></div>
+  <div class="bar"><span class="lbl">2022&ndash;23</span><span class="fill"><span style="width:20%;background:#1a7a5a"></span></span><span style="font-size:10px;color:#1a7a5a;margin-left:6px">11.3%</span></div>
+  <p style="font-size:11px;color:var(--muted);margin:6px 0 0">Source: NITI Aayog MPI 2024. <span class="update-tag">check latest</span></p>
+</div>
+
+<div class="widget">
+  <h4>Difficulty &amp; Importance</h4>
+  <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:92%"></span></span></div>
+  <div class="bar"><span class="lbl">Mains GS-II</span><span class="fill"><span style="width:78%"></span></span></div>
+  <div class="bar"><span class="lbl">Mains GS-III</span><span class="fill"><span style="width:88%"></span></span></div>
+  <div class="bar"><span class="lbl">Essay</span><span class="fill"><span style="width:75%"></span></span></div>
+  <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:95%"></span></span></div>
+</div>
+
+<div class="widget">
+  <h4>Must-Know Tags</h4>
+  <div>
+    <span class="tag">HDI</span>
+    <span class="tag">IHDI</span>
+    <span class="tag">GDI</span>
+    <span class="tag">GII</span>
+    <span class="tag">PHDI</span>
+    <span class="tag orange">MPI Global</span>
+    <span class="tag orange">MPI National</span>
+    <span class="tag orange">GHI</span>
+    <span class="tag orange">WHR</span>
+    <span class="tag orange">SDG India Index</span>
+    <span class="tag">17 SDGs</span>
+    <span class="tag">169 Targets</span>
+    <span class="tag green">GNH Bhutan</span>
+    <span class="tag green">9 Domains</span>
+    <span class="tag green">4 Pillars</span>
+    <span class="tag">Amartya Sen</span>
+    <span class="tag">Mahbub-ul-Haq</span>
+    <span class="tag">Capability Approach</span>
+    <span class="tag green">Stiglitz&ndash;Sen&ndash;Fitoussi</span>
+    <span class="tag green">Brundtland 1987</span>
+    <span class="tag green">Green GDP</span>
+    <span class="tag green">SEEA</span>
+    <span class="tag green">IWI</span>
+    <span class="tag green">Better Life Index</span>
+    <span class="tag">Inclusive Growth</span>
+    <span class="tag">11th Plan</span>
+    <span class="tag green">ADP 2018</span>
+    <span class="tag green">ABP 2023</span>
+    <span class="tag">Net-Zero 2070</span>
+    <span class="tag">Panchamrit</span>
+    <span class="tag green">Mission LiFE</span>
+    <span class="tag green">ISA</span>
+    <span class="tag green">CDRI</span>
+    <span class="tag green">Sovereign Green Bonds</span>
+    <span class="tag green">PMKVY</span>
+    <span class="tag green">Jan Dhan</span>
+    <span class="tag green">PM-JAY</span>
+    <span class="tag green">OPHI Oxford</span>
+    <span class="tag green">Concern Worldwide</span>
+    <span class="tag green">Welthungerhilfe</span>
+    <span class="tag green">SDSN</span>
+  </div>
+</div>
+
+<div class="widget">
+  <h4>India's Climate Commitments</h4>
+  <table>
+    <tr><th>Year</th><th>Target</th></tr>
+    <tr><td>2030</td><td>500 GW non-fossil capacity</td></tr>
+    <tr><td>2030</td><td>50% energy from RE</td></tr>
+    <tr><td>2030</td><td>1 BT CO<sub>2</sub> reduction</td></tr>
+    <tr><td>2030</td><td>45% &darr; emissions intensity (vs 2005)</td></tr>
+    <tr><td>2030</td><td>5 MT/yr Green Hydrogen</td></tr>
+    <tr><td><strong>2070</strong></td><td><strong>Net-Zero</strong></td></tr>
+  </table>
+</div>
+
+<div class="widget">
+  <h4>Data Sources to Bookmark</h4>
+  <ul>
+    <li><a href="https://hdr.undp.org" target="_blank" rel="noopener">UNDP HDR</a> &mdash; HDI, IHDI, GDI, GII, MPI</li>
+    <li><a href="https://ophi.org.uk" target="_blank" rel="noopener">OPHI Oxford</a> &mdash; MPI methodology</li>
+    <li><a href="https://www.niti.gov.in" target="_blank" rel="noopener">NITI Aayog</a> &mdash; SDG India Index, National MPI</li>
+    <li><a href="https://www.globalhungerindex.org" target="_blank" rel="noopener">GHI Portal</a></li>
+    <li><a href="https://worldhappiness.report" target="_blank" rel="noopener">World Happiness Report</a></li>
+    <li><a href="https://sdgs.un.org" target="_blank" rel="noopener">UN SDGs</a></li>
+    <li><a href="https://wir2022.wid.world" target="_blank" rel="noopener">World Inequality Report</a></li>
+    <li><a href="https://pib.gov.in" target="_blank" rel="noopener">PIB</a> &mdash; for India responses</li>
+  </ul>
+</div>
+
+<div class="widget">
+  <h4>Related Topics</h4>
+  <ul class="related">
+    <li><a href="/economy/fundamentals-of-economy">Topic 01: Fundamentals of Economy</a></li>
+    <li><a href="/economy/national-income-accounting">Topic 02: National Income Accounting</a></li>
+    <li><a href="/economy/economic-planning-in-india">Topic 04: Economic Planning in India</a></li>
+    <li><a href="/economy/external-sector-and-balance-of-payments">Topic 09: Inflation</a></li>
+    <li><a href="/economy">All UPSC Notes</a></li>
+  </ul>
+</div>
+
+<div class="widget">
+  <h4>Quick Links</h4>
+  <ul>
+    <li><a href="#concept">Concept Clarity</a></li>
+    <li><a href="#growth-dev">Growth vs Development</a></li>
+    <li><a href="#hdi">HDI</a></li>
+    <li><a href="#hdivariants">HDI Variants</a></li>
+    <li><a href="#mpi">MPI Global &amp; National</a></li>
+    <li><a href="#ghi">Global Hunger Index</a></li>
+    <li><a href="#otherindices">Other Global Indices</a></li>
+    <li><a href="#sdg">SDGs</a></li>
+    <li><a href="#niti">NITI Indices</a></li>
+    <li><a href="#gnh">GNH &amp; WHR</a></li>
+    <li><a href="#greengdp">Green GDP &amp; Beyond-GDP</a></li>
+    <li><a href="#inclusive">Inclusive &amp; Sustainable Growth</a></li>
+    <li><a href="#currentaffairs">Current Affairs</a></li>
+    <li><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><a href="#mains-pyq">Mains PYQs</a></li>
+    <li><a href="#revision">Revision Box</a></li>
+  </ul>
+</div>
+
+</div>
+</aside>
+
+</div>
+</div>

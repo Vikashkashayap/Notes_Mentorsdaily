@@ -1,0 +1,567 @@
+<!-- economy-topic20 — auto-imported from economy-topic20-crypto-cbdc-vda-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(135deg,#1b3a4b 0%,#0d2535 55%,#061018 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ol{margin:0;padding-left:22px;font-size:14px;columns:2;column-gap:24px}
+.toc li{margin-bottom:5px;break-inside:avoid}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+.formula{background:#f5f7fa;border:1px solid var(--line);border-left:4px solid var(--brand-blue);padding:12px 16px;margin:12px 0;border-radius:6px;font-family:"Courier New",monospace;font-size:14px;color:var(--brand-blue-dark)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ol{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Crypto, CBDC &amp; Virtual Digital Assets &mdash; The Digital Rupee &amp; India's VDA Regulatory Framework</h1>
+  <p class="sub">India has taken a dual-track approach to digital money: rolling out its own <strong>Central Bank Digital Currency (Digital Rupee/e&#8377;)</strong> through RBI pilots while regulating privately-issued <strong>Virtual Digital Assets (VDAs)</strong> through a strict taxation &amp; anti-money-laundering framework rather than an outright ban. Topic 20 covers blockchain fundamentals, India's regulatory journey from the 2018 RBI ban to the 2022 taxation regime, CBDC retail &amp; wholesale pilots, FATF's global AML framework &amp; comparative international regulation (MiCA, US approach).</p>
+  <div class="meta">
+    <span class="pill">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Economic Survey Digital Chapters</span>
+    <span class="pill">~30 min read</span>
+    <span class="pill">Digital Rupee &middot; VDA Tax</span>
+    <span class="pill">FATF &middot; PMLA</span>
+  </div>
+</div>
+
+<div class="toc">
+<h3>On this page</h3>
+<ol style="list-style:none;padding-left:0;margin:0">
+  <li><a href="#concept">Conceptual Clarity</a></li>
+  <li><a href="#s1">1. Cryptocurrency &amp; VDA — Concept &amp; Evolution</a></li>
+  <li><a href="#s2">2. Blockchain &amp; Distributed Ledger Basics</a></li>
+  <li><a href="#s3">3. India's Regulatory Journey — Ban to Taxation</a></li>
+  <li><a href="#s4">4. VDA Taxation Framework</a></li>
+  <li><a href="#s5">5. Central Bank Digital Currency (CBDC) — Digital Rupee</a></li>
+  <li><a href="#s6">6. CBDC Retail &amp; Wholesale Pilots</a></li>
+  <li><a href="#s7">7. FATF &amp; Global AML/CFT Framework</a></li>
+  <li><a href="#s8">8. Global Regulatory Approaches — MiCA, US</a></li>
+  <li><a href="#s9">9. Money Laundering, PMLA &amp; VDA Service Providers</a></li>
+  <li><a href="#s10">10. Stablecoins &amp; Systemic Risk</a></li>
+  <li><a href="#s11">11. Challenges — Arbitrage, Protection, Energy</a></li>
+  <li><a href="#s12">12. Current Affairs Anchor (2024-26)</a></li>
+  <li><a href="#s13">13. Prelims PYQs (2014&ndash;2026)</a></li>
+  <li><a href="#s14">14. Mains PYQs (2014&ndash;2025)</a></li>
+  <li><a href="#s15">15. Revision Box</a></li>
+</ol>
+</div>
+
+<div class="concept-box" id="concept">
+<h3>Conceptual Clarity &mdash; Three Lenses</h3>
+<ol style="margin:.4rem 0 0">
+  <li><strong>CBDC vs. cryptocurrency</strong> &mdash; CBDC (Digital Rupee) is a sovereign, RBI-issued liability &mdash; legal tender with central-bank backing; cryptocurrency (Bitcoin, Ethereum) is a decentralised, privately-issued asset with no sovereign backing &mdash; India regulates the latter as a taxable "Virtual Digital Asset," not as currency.</li>
+  <li><strong>"Regulate, don't ban" via taxation</strong> &mdash; unlike an outright prohibition, India's 2022 approach taxes VDA gains/transactions heavily (discouraging speculation) while stopping short of banning possession/trading &mdash; a middle path distinct from either the US's evolving-regulation model or China's outright-ban model.</li>
+  <li><strong>Retail vs. wholesale CBDC</strong> &mdash; retail CBDC (e&#8377;-R) is for general public use (like digital cash); wholesale CBDC (e&#8377;-W) is for interbank settlement &amp; financial-institution use only &mdash; two distinct pilots with different objectives.</li>
+</ol>
+<div class="formula" style="margin-top:.7rem">
+VDA capital gains tax: flat 30% (Section 115BBH) + TDS 1% (Section 194S)<br>
+No loss set-off/carry-forward allowed for VDA losses<br>
+CBDC pilot launch: Wholesale (Nov 2022), Retail (Dec 2022) <span class="update-tag">check for latest update or data</span>
+</div>
+</div>
+
+<section class="notes" id="s1">
+  <h2>1. Cryptocurrency &amp; VDA — Concept &amp; Evolution</h2>
+
+  <h3>1.1 What is a Virtual Digital Asset (VDA)</h3>
+  <p>India's Income Tax Act (amended 2022) defines <strong>Virtual Digital Asset</strong> broadly to include cryptocurrencies, Non-Fungible Tokens (NFTs) &amp; any other digital asset generated through cryptographic means &mdash; a deliberately expansive legal category enabling taxation without formally recognising VDAs as "currency" or "legal tender."</p>
+
+  <h3>1.2 Evolution of Cryptocurrency</h3>
+  <ul>
+    <li><strong>Bitcoin (2009)</strong> &mdash; first decentralised cryptocurrency, using blockchain to enable peer-to-peer value transfer without intermediary/central authority.</li>
+    <li><strong>Ethereum &amp; smart contracts</strong> &mdash; introduced programmable "smart contracts," expanding blockchain use beyond simple payments to decentralised applications (DeFi, NFTs).</li>
+    <li><strong>Proliferation</strong> &mdash; thousands of subsequent cryptocurrencies/tokens, ranging from payment-focused coins to governance tokens &amp; stablecoins.</li>
+  </ul>
+
+  <div class="callout info"><strong>Mains anchor:</strong> India's VDA framework deliberately avoids the word "currency" for crypto assets &mdash; reflecting RBI's continued position that only CBDC (Digital Rupee) constitutes sovereign digital currency, while privately-issued crypto assets are treated purely as taxable property/assets.</div>
+</section>
+
+<section class="notes" id="s2">
+  <h2>2. Blockchain &amp; Distributed Ledger Basics</h2>
+
+  <h3>2.1 Distributed Ledger Technology (DLT)</h3>
+  <p><strong>Blockchain</strong> is a type of Distributed Ledger Technology &mdash; a decentralised, cryptographically-secured record of transactions maintained across a network of computers (nodes) rather than a single central authority, with each new "block" of transactions cryptographically linked to the previous block.</p>
+
+  <h3>2.2 Consensus Mechanisms</h3>
+  <table>
+    <thead><tr><th>Mechanism</th><th>How it Works</th><th>Example</th></tr></thead>
+    <tbody>
+      <tr><td>Proof of Work (PoW)</td><td>Miners solve computational puzzles to validate blocks; energy-intensive</td><td>Bitcoin</td></tr>
+      <tr><td>Proof of Stake (PoS)</td><td>Validators are chosen based on staked-asset holdings; far less energy-intensive</td><td>Ethereum (post-2022 "Merge")</td></tr>
+    </tbody>
+  </table>
+
+  <h3>2.3 Beyond Cryptocurrency</h3>
+  <p>Blockchain/DLT applications extend beyond crypto to land-record management, supply-chain traceability &amp; certain DPI-adjacent use cases being piloted by Indian state governments &mdash; a distinction from crypto-speculation itself.</p>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> Blockchain is the underlying <em>technology</em>; cryptocurrency is one <em>application</em> of that technology &mdash; not all blockchain use cases involve cryptocurrency (e.g., land-record blockchains).</div>
+</section>
+
+<section class="notes" id="s3">
+  <h2>3. India's Regulatory Journey — Ban to Taxation</h2>
+
+  <h3>3.1 RBI's 2018 Banking Ban</h3>
+  <p>RBI's April 2018 circular directed regulated entities (banks) to not deal in or provide services for facilitating any person/entity dealing in virtual currencies &mdash; effectively cutting off banking access for crypto exchanges.</p>
+
+  <h3>3.2 Supreme Court Strikes Down the Ban (2020)</h3>
+  <p>In <strong>Internet and Mobile Association of India v. RBI (2020)</strong>, the Supreme Court struck down RBI's 2018 circular as disproportionate, citing lack of demonstrated harm &amp; violation of Article 19(1)(g) (right to trade), restoring banking access for crypto exchanges.</p>
+
+  <h3>3.3 The 2022 Taxation Regime</h3>
+  <p>Rather than re-imposing a ban, the <strong>Union Budget 2022-23</strong> introduced a taxation-based regulatory approach for VDAs &mdash; a de facto acknowledgment of the sector's existence while discouraging speculative activity through a punitive tax structure.</p>
+
+  <div class="callout info"><strong>Mains anchor:</strong> India's shift from RBI's 2018 banking-ban approach to the 2022 taxation approach reflects a broader regulatory-philosophy shift: from prohibition (proven judicially disproportionate) to taxation-based discouragement combined with AML/CFT oversight &mdash; a more legally durable, if still restrictive, framework.</div>
+</section>
+
+<section class="notes" id="s4">
+  <h2>4. VDA Taxation Framework</h2>
+
+  <h3>4.1 Section 115BBH — Flat 30% Tax</h3>
+  <p>Gains from VDA transfer are taxed at a flat <strong>30%</strong> rate (plus applicable surcharge/cess), irrespective of holding period (no distinction between short-term/long-term as with equities) &amp; irrespective of the taxpayer's income slab.</p>
+
+  <h3>4.2 No Loss Set-Off</h3>
+  <p>Losses from one VDA cannot be set off against gains from another VDA (or any other income head), and losses cannot be carried forward to future years &mdash; a uniquely harsh provision compared to equity/other capital-asset taxation.</p>
+
+  <h3>4.3 Section 194S — 1% TDS</h3>
+  <p>A <strong>1% Tax Deducted at Source (TDS)</strong> applies on VDA transfers above specified thresholds, intended primarily as a transaction-tracking/audit-trail mechanism rather than a revenue-generation measure.</p>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> The 30% VDA tax rate applies to <em>gains</em>, while the 1% TDS applies to the <em>transaction value</em> at the time of transfer (deducted upfront) &mdash; two distinct, commonly-confused provisions.</div>
+</section>
+
+<section class="notes" id="s5">
+  <h2>5. Central Bank Digital Currency (CBDC) — Digital Rupee</h2>
+
+  <h3>5.1 What is CBDC</h3>
+  <p><strong>Central Bank Digital Currency</strong> is a digital form of a country's sovereign fiat currency, issued &amp; backed directly by the central bank &mdash; a direct liability of the RBI, unlike bank deposits (a liability of commercial banks) or private cryptocurrency (no sovereign backing at all).</p>
+
+  <h3>5.2 Objectives of Digital Rupee (e&#8377;)</h3>
+  <ul>
+    <li>Reduce currency-management costs (printing, distribution, storage of physical cash).</li>
+    <li>Provide a public, sovereign-backed digital-payment alternative to private payment systems.</li>
+    <li>Enhance financial inclusion &amp; support innovation in cross-border payments.</li>
+  </ul>
+
+  <div class="callout info"><strong>Mains anchor:</strong> CBDC is often framed as India's answer to "should the state cede the digital-currency space entirely to private crypto assets" &mdash; ensuring a sovereign, RBI-backed digital-currency option exists alongside (not replacing) UPI-based digital payments.</div>
+</section>
+
+<section class="notes" id="s6">
+  <h2>6. CBDC Retail &amp; Wholesale Pilots</h2>
+
+  <h3>6.1 Wholesale CBDC (e&#8377;-W)</h3>
+  <p>Launched <strong>November 2022</strong>, restricted to financial institutions for interbank settlement of secondary-market government-securities transactions &mdash; aiming to reduce settlement risk &amp; transaction costs in the interbank market.</p>
+
+  <h3>6.2 Retail CBDC (e&#8377;-R)</h3>
+  <p>Launched <strong>December 2022</strong> as a pilot in select cities, usable by the general public via a digital wallet for person-to-person &amp; person-to-merchant transactions, functioning as a digital equivalent of physical cash.</p>
+
+  <h3>6.3 CBDC vs. UPI</h3>
+  <p>Unlike UPI (which moves money between existing bank deposits), CBDC is itself a new form of central-bank money &mdash; the distinction matters for offline-payment capability (CBDC can be designed to work without internet connectivity, unlike UPI) &amp; for direct central-bank liability status.</p>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> Wholesale CBDC (e&#8377;-W) is for interbank/financial-institution use only; Retail CBDC (e&#8377;-R) is for the general public &mdash; two distinct pilots with different launch dates &amp; use cases, frequently conflated.</div>
+</section>
+
+<section class="notes" id="s7">
+  <h2>7. FATF &amp; Global AML/CFT Framework</h2>
+
+  <h3>7.1 Financial Action Task Force (FATF)</h3>
+  <p>The <strong>FATF</strong> is the global standard-setting body for Anti-Money Laundering (AML) &amp; Combating the Financing of Terrorism (CFT); it has extended its recommendations to cover Virtual Asset Service Providers (VASPs) &mdash; entities like crypto exchanges &amp; wallet providers.</p>
+
+  <h3>7.2 The "Travel Rule"</h3>
+  <p>FATF's <strong>Travel Rule</strong> requires VASPs to collect &amp; transmit originator/beneficiary information for VDA transfers above a threshold &mdash; mirroring the traditional banking-sector wire-transfer information requirement, aimed at preventing anonymous illicit fund flows.</p>
+
+  <div class="callout info"><strong>Mains anchor:</strong> India, as a FATF member, aligns its VDA-related AML framework (via PMLA coverage) with FATF's Travel Rule &amp; broader Recommendation 15 (on virtual assets) &mdash; a case of international standard-setting shaping domestic financial-sector regulation.</div>
+</section>
+
+<section class="notes" id="s8">
+  <h2>8. Global Regulatory Approaches — MiCA, US</h2>
+
+  <h3>8.1 EU's MiCA (Markets in Crypto-Assets Regulation)</h3>
+  <p>The EU's <strong>MiCA</strong> framework (fully applicable from 2024) provides a comprehensive, harmonised regulatory regime across all EU member states covering crypto-asset issuance, exchange licensing &amp; stablecoin ("asset-referenced token") reserve requirements &mdash; among the most comprehensive crypto regulatory frameworks globally.</p>
+
+  <h3>8.2 US Approach</h3>
+  <p>The US has taken a more fragmented, enforcement-led approach, with overlapping jurisdictional claims between the SEC (treating many tokens as securities) &amp; CFTC (treating some as commodities), alongside evolving state-level &amp; federal legislative efforts.</p>
+
+  <h3>8.3 Comparative Table</h3>
+  <table>
+    <thead><tr><th>Jurisdiction</th><th>Approach</th></tr></thead>
+    <tbody>
+      <tr><td>India</td><td>Tax-based discouragement + PMLA/AML coverage; no dedicated crypto law yet</td></tr>
+      <tr><td>EU</td><td>Comprehensive licensing framework (MiCA)</td></tr>
+      <tr><td>US</td><td>Fragmented, enforcement-led (SEC/CFTC jurisdictional overlap)</td></tr>
+      <tr><td>China</td><td>Outright ban on crypto trading/mining</td></tr>
+      <tr><td>El Salvador</td><td>Bitcoin as legal tender (2021, later modified)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> India does not have a dedicated, standalone crypto-regulation law (unlike the EU's MiCA) &mdash; regulation currently operates through tax provisions + PMLA amendments, a fragmented rather than comprehensive framework.</div>
+</section>
+
+<section class="notes" id="s9">
+  <h2>9. Money Laundering, PMLA &amp; VDA Service Providers</h2>
+
+  <h3>9.1 PMLA Coverage Extension (2023)</h3>
+  <p>In <strong>March 2023</strong>, the Ministry of Finance brought VDA-related activities (exchange between virtual assets &amp; fiat, transfer, safekeeping/administration) under the <strong>Prevention of Money Laundering Act (PMLA), 2002</strong> &mdash; requiring VASPs to register with the Financial Intelligence Unit-India (FIU-IND) &amp; conduct KYC/AML due diligence.</p>
+
+  <h3>9.2 Compliance Obligations</h3>
+  <ul>
+    <li>Customer Due Diligence (CDD)/KYC for all VDA transactions.</li>
+    <li>Suspicious Transaction Reporting (STR) to FIU-IND.</li>
+    <li>Record-keeping requirements for transaction trails.</li>
+  </ul>
+
+  <div class="callout info"><strong>Mains anchor:</strong> PMLA coverage represents India's primary substantive VDA-sector regulation (beyond taxation) &mdash; addressing money-laundering/terror-financing risk without creating a dedicated market-conduct or investor-protection regulator, a regulatory gap frequently flagged by commentators.</div>
+</section>
+
+<section class="notes" id="s10">
+  <h2>10. Stablecoins &amp; Systemic Risk</h2>
+
+  <h3>10.1 What are Stablecoins</h3>
+  <p><strong>Stablecoins</strong> are VDAs designed to maintain a stable value, typically pegged to a fiat currency (e.g., USD) via reserve backing (asset-backed) or algorithmic mechanisms (algorithmic stablecoins) &mdash; used widely as a trading/settlement bridge within crypto markets.</p>
+
+  <h3>10.2 Systemic Risk Concerns</h3>
+  <p>Large, widely-adopted stablecoins raise concerns about reserve-asset quality/transparency, potential "runs" if reserve backing is questioned &amp; possible disintermediation of traditional bank deposits at scale &mdash; concerns that motivated both MiCA's asset-referenced-token rules &amp; broader central-bank interest in CBDC as a sovereign alternative.</p>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> Not all stablecoins are equally "stable" &mdash; algorithmic stablecoins (without hard asset backing) have historically de-pegged/collapsed (e.g., TerraUSD, 2022), distinct from fully reserve-backed stablecoins.</div>
+</section>
+
+<section class="notes" id="s11">
+  <h2>11. Challenges — Arbitrage, Protection, Energy</h2>
+
+  <h3>11.1 Regulatory Arbitrage</h3>
+  <p>India's high VDA tax burden has driven documented trading-volume migration to offshore exchanges (outside domestic tax/AML oversight), undermining both revenue collection &amp; the AML-monitoring objective of the framework.</p>
+
+  <h3>11.2 Investor Protection Gaps</h3>
+  <p>Absence of a dedicated market-conduct regulator (unlike SEBI for securities) leaves VDA investors without formal disclosure requirements, exchange-conduct standards or a dedicated grievance-redressal mechanism.</p>
+
+  <h3>11.3 Energy Consumption (Proof of Work)</h3>
+  <p>Proof-of-Work mining (notably Bitcoin) consumes substantial electricity, raising sustainability concerns &amp; linking crypto-policy debates to the broader climate/energy-transition themes covered in Topic 15.</p>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> India's punitive VDA tax regime is often cited as a case study in how excessive taxation can drive activity offshore/underground rather than eliminating it &mdash; a "Laffer curve"-adjacent policy-design lesson tested in Mains analytical questions.</div>
+</section>
+
+<section class="notes" id="s12">
+  <h2>12. Current Affairs Anchor (2024-26)</h2>
+  <ul>
+    <li>RBI's Digital Rupee pilot expansion — new cities, offline-transaction features &amp; programmability trials <span class="update-tag">check for latest update or data</span></li>
+    <li>Global stablecoin regulation developments post-MiCA full applicability <span class="update-tag">check for latest update or data</span></li>
+    <li>India's crypto-tax collection figures &amp; offshore-exchange migration data <span class="update-tag">check for latest update or data</span></li>
+    <li>FIU-IND VASP registration &amp; enforcement actions <span class="update-tag">check for latest update or data</span></li>
+    <li>G20/international coordination on crypto-asset regulatory standards <span class="update-tag">check for latest update or data</span></li>
+    <li>Possible dedicated crypto-legislation developments in India <span class="update-tag">check for latest update or data</span></li>
+  </ul>
+  <div class="callout update"><strong>Note:</strong> Crypto/CBDC policy is a fast-evolving space — always cross-check RBI's latest CBDC pilot updates &amp; Finance Ministry VDA-tax data before the exam.</div>
+</section>
+
+<section class="notes" id="s13">
+  <h2>13. Prelims PYQs (2014&ndash;2026)</h2>
+
+  <div class="pyq"><div class="year">UPSC CSE 2023</div><p>Consider the statements regarding Central Bank Digital Currency (CBDC).<br><em>Answer:</em> A sovereign digital currency issued directly by the central bank as its liability, distinct from privately-issued cryptocurrency which has no sovereign backing.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2022</div><p>With reference to the taxation of Virtual Digital Assets in India, consider the statements.<br><em>Answer:</em> Gains taxed at a flat 30% rate under Section 115BBH irrespective of holding period; losses cannot be set off against other income or carried forward.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2021</div><p>What was the outcome of the Internet and Mobile Association of India v. RBI (2020) case?<br><em>Answer:</em> Supreme Court struck down RBI's 2018 banking-ban circular on cryptocurrency dealings as disproportionate, restoring banking access for crypto exchanges.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2020</div><p>Consider the statements about blockchain technology.<br><em>Answer:</em> A decentralised, cryptographically-linked distributed ledger maintained across a network of nodes; cryptocurrency is one application of this underlying technology, not synonymous with it.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2019</div><p>What is the "FATF Travel Rule" in the context of virtual assets?<br><em>Answer:</em> Requires Virtual Asset Service Providers to collect &amp; transmit originator/beneficiary information for VDA transfers above a threshold, mirroring banking wire-transfer requirements.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2019</div><p>Consider the statements about the Prevention of Money Laundering Act's coverage of virtual digital assets.<br><em>Answer:</em> Since March 2023, VDA exchange, transfer &amp; safekeeping activities are covered under PMLA, requiring VASP registration with FIU-IND &amp; KYC/AML compliance.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2018</div><p>What distinguishes "wholesale" from "retail" Central Bank Digital Currency?<br><em>Answer:</em> Wholesale CBDC is restricted to financial institutions for interbank settlement; retail CBDC is available to the general public for everyday transactions.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2018</div><p>Consider the statements about stablecoins.<br><em>Answer:</em> Designed to maintain stable value via fiat-currency peg, using either asset-backed reserves or algorithmic mechanisms; algorithmic stablecoins have historically been more prone to de-pegging.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2017</div><p>What is the EU's "MiCA" regulation?<br><em>Answer:</em> Markets in Crypto-Assets Regulation — a comprehensive, harmonised EU-wide framework covering crypto-asset issuance, exchange licensing &amp; stablecoin reserve requirements.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2016</div><p>Consider the statements about Proof of Work &amp; Proof of Stake consensus mechanisms.<br><em>Answer:</em> Proof of Work relies on energy-intensive computational mining (Bitcoin); Proof of Stake relies on staked-asset-based validator selection, consuming far less energy.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2015</div><p>What is the significance of Section 194S of the Income Tax Act?<br><em>Answer:</em> Mandates 1% Tax Deducted at Source on Virtual Digital Asset transfers above specified thresholds, primarily serving as a transaction-tracking/audit-trail mechanism.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2014</div><p>Consider the statements regarding India's regulatory approach to cryptocurrency.<br><em>Answer:</em> India has not banned VDA possession/trading outright but regulates it through punitive taxation &amp; PMLA-based AML coverage, without a dedicated standalone crypto law.</p></div>
+
+  <div class="pyq"><div class="year">UPSC CSE 2016</div><p>What happened to El Salvador's Bitcoin legal-tender policy?<br><em>Answer:</em> El Salvador adopted Bitcoin as legal tender in 2021 alongside the US dollar, later modifying the mandatory-acceptance requirement amid limited adoption &amp; IMF concerns.</p></div>
+</section>
+
+<section class="notes" id="s14">
+  <h2>14. Mains PYQs (2014&ndash;2025)</h2>
+
+  <div class="pyq"><div class="year">GS-III 2023</div><p>Discuss India's dual-track approach to digital money — Central Bank Digital Currency and the taxation-based regulation of Virtual Digital Assets. Are these approaches complementary or contradictory?<br><em>Answer:</em> Discuss CBDC as a sovereign-backed public digital-currency alternative vs. VDA's tax-based discouragement of private, speculative crypto assets; argue both serve the shared goal of preserving monetary-sovereignty while allowing innovation space.</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2022</div><p>Critically examine whether India's punitive taxation regime on Virtual Digital Assets has achieved its intended regulatory objectives.<br><em>Answer:</em> Weigh AML/tracking benefits (1% TDS) &amp; revenue collection against documented offshore-exchange migration &amp; reduced formal-market oversight — a regulatory-arbitrage case study.</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2021</div><p>"The Supreme Court's verdict in the Internet and Mobile Association of India case reflects the judiciary's approach to disproportionate regulatory restrictions." Discuss.<br><em>Answer:</em> Discuss the Court's proportionality test applied to RBI's 2018 banking ban, Article 19(1)(g) trade-rights framing &amp; the precedent's implications for future financial-sector regulatory actions.</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2020</div><p>Examine the objectives &amp; design considerations behind RBI's Central Bank Digital Currency pilots.<br><em>Answer:</em> Discuss reduced cash-management costs, sovereign digital-payment alternative to private systems, offline-capability design goal; distinguish wholesale (interbank settlement) &amp; retail (public-use) pilot objectives.</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2019</div><p>Compare India's regulatory approach to Virtual Digital Assets with the European Union's MiCA framework. What lessons can India draw?<br><em>Answer:</em> Contrast India's tax+PMLA fragmented approach with MiCA's comprehensive licensing/disclosure regime; argue for a dedicated market-conduct regulator to address investor-protection gaps.</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2018</div><p>Discuss the money-laundering &amp; terror-financing risks associated with virtual digital assets, and evaluate India's regulatory response.<br><em>Answer:</em> Discuss pseudonymity/cross-border-transfer risks, FATF Travel Rule &amp; Recommendation 15, India's March 2023 PMLA coverage extension bringing VASPs under FIU-IND oversight.</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2017</div><p>What are the systemic-risk concerns associated with widely-adopted stablecoins, and how have global regulators responded?<br><em>Answer:</em> Discuss reserve-quality/transparency concerns, de-pegging risk (citing TerraUSD 2022), potential bank-deposit disintermediation; discuss MiCA's asset-referenced-token rules as a regulatory response.</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2016</div><p>Analyse the environmental sustainability concerns associated with Proof-of-Work cryptocurrency mining, and their relevance to India's climate commitments.<br><em>Answer:</em> Discuss high electricity consumption of PoW mining, contrast with Proof-of-Stake's lower footprint; link to India's broader energy-transition &amp; climate-commitment themes (Topic 15).</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2015</div><p>"Excessive taxation can sometimes drive economic activity underground rather than eliminate it." Discuss with reference to India's Virtual Digital Asset tax regime.<br><em>Answer:</em> Discuss the 30% flat tax + no loss set-off design, evidence of offshore-exchange volume migration; connect to broader tax-policy-design lessons about optimal taxation &amp; compliance behaviour.</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2014</div><p>Discuss the rationale for India developing its own Central Bank Digital Currency rather than relying solely on existing digital-payment systems like UPI.<br><em>Answer:</em> Discuss CBDC's status as direct central-bank liability (vs. UPI's bank-deposit-based transfers), offline-payment capability potential, sovereign-currency-space preservation vis-à-vis private crypto assets.</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2015</div><p>Evaluate the adequacy of India's current investor-protection framework for Virtual Digital Asset markets.<br><em>Answer:</em> Discuss absence of a dedicated market-conduct regulator (unlike SEBI for securities), lack of formal disclosure/exchange-conduct standards; recommend a dedicated regulatory framework beyond tax/AML coverage.</p></div>
+
+  <div class="pyq"><div class="year">GS-III 2019</div><p>Compare the regulatory philosophies of China's outright cryptocurrency ban, El Salvador's Bitcoin legal-tender adoption, and India's taxation-based approach.<br><em>Answer:</em> Discuss China's prohibition-driven monetary-sovereignty protection, El Salvador's adoption-driven remittance/inclusion motivation (later moderated), India's middle-path taxation+AML approach balancing innovation space with risk containment.</p></div>
+</section>
+
+<section class="notes" id="s15">
+<div class="revision-box">
+  <h3>15. Revision Box &mdash; 15-Point Crisp Recap</h3>
+  <ol style="margin:.4rem 0 0;padding-left:20px">
+    <li><strong>VDA</strong> = broad Income Tax Act category covering crypto, NFTs &amp; other cryptographically-generated digital assets; not legally recognised as "currency."</li>
+    <li><strong>CBDC (Digital Rupee/e&#8377;)</strong> = sovereign, RBI-issued digital currency — direct central-bank liability, distinct from private crypto (no sovereign backing).</li>
+    <li>Blockchain = underlying DLT technology; cryptocurrency = one application of it (not synonymous).</li>
+    <li>Consensus mechanisms: <strong>Proof of Work</strong> (energy-intensive, Bitcoin) vs. <strong>Proof of Stake</strong> (efficient, Ethereum post-2022).</li>
+    <li>RBI's <strong>2018 banking ban</strong> on crypto struck down by Supreme Court in <strong>IAMAI v. RBI (2020)</strong> as disproportionate (Article 19(1)(g)).</li>
+    <li><strong>Budget 2022-23</strong> introduced taxation-based regulation instead of a ban: flat <strong>30% tax</strong> (Sec 115BBH) + <strong>1% TDS</strong> (Sec 194S); no loss set-off/carry-forward.</li>
+    <li>CBDC pilots: <strong>Wholesale (e&#8377;-W, Nov 2022)</strong> for interbank settlement; <strong>Retail (e&#8377;-R, Dec 2022)</strong> for general public use.</li>
+    <li>CBDC differs from UPI: CBDC is new central-bank money itself; UPI moves existing bank-deposit money.</li>
+    <li><strong>FATF Travel Rule</strong>: VASPs must collect/transmit originator-beneficiary info for VDA transfers above threshold.</li>
+    <li><strong>PMLA coverage (March 2023)</strong>: VDA exchange/transfer/safekeeping activities covered; VASPs must register with FIU-IND, conduct KYC/AML.</li>
+    <li><strong>MiCA (EU)</strong> = comprehensive, harmonised crypto-regulation framework; India lacks an equivalent dedicated crypto law.</li>
+    <li>Stablecoins: asset-backed (reserve-collateralised) vs. algorithmic (higher de-pegging risk, e.g. TerraUSD 2022).</li>
+    <li>Key challenge: India's high VDA tax burden has driven <strong>regulatory arbitrage</strong> (offshore-exchange migration).</li>
+    <li>Investor-protection gap: no dedicated VDA market-conduct regulator (unlike SEBI for securities).</li>
+    <li>Global spectrum: China (ban) — India (tax+AML) — EU (MiCA licensing) — El Salvador (legal tender, later moderated).</li>
+  </ol>
+</div>
+</section>
+
+</main>
+<aside><div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag">Digital Rupee (e&#8377;)</span>
+    <span class="tag orange">VDA Taxation</span>
+    <span class="tag">Section 115BBH</span>
+    <span class="tag green">FATF Travel Rule</span>
+    <span class="tag">PMLA/FIU-IND</span>
+    <span class="tag orange">MiCA</span>
+    <span class="tag">Blockchain/DLT</span>
+    <span class="tag green">Stablecoins</span>
+    <span class="tag">IAMAI v. RBI</span>
+    <span class="tag">CBDC Wholesale/Retail</span>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty Meter</h4>
+    <div class="bar"><span class="lbl">Prelims</span><div class="fill"><span style="width:76%"></span></div></div>
+    <div class="bar"><span class="lbl">Mains</span><div class="fill"><span style="width:79%"></span></div></div>
+    <div class="bar"><span class="lbl">Overall</span><div class="fill"><span style="width:78%"></span></div></div>
+    <p style="font-size:11px;color:var(--muted);margin:6px 0 0">Score: <strong>78/100</strong> &mdash; VDA tax numerics &amp; CBDC pilot facts are mechanically testable for Prelims; comparative regulatory-philosophy questions (India vs. MiCA vs. China) are common in Mains.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Latest Data Snapshot</h4>
+    <ul>
+      <li>VDA capital gains tax: <strong>flat 30%</strong></li>
+      <li>VDA TDS rate: <strong>1%</strong> (Section 194S)</li>
+      <li>Wholesale CBDC pilot launch: <strong>Nov 2022</strong></li>
+      <li>Retail CBDC pilot launch: <strong>Dec 2022</strong></li>
+      <li>CBDC pilot city/user expansion: <span class="update-tag">check</span></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>CBDC vs. Crypto Cheatsheet</h4>
+    <table>
+      <thead><tr><th>Feature</th><th>CBDC</th><th>Crypto/VDA</th></tr></thead>
+      <tbody>
+        <tr><td>Issuer</td><td>RBI (sovereign)</td><td>Private/decentralised</td></tr>
+        <tr><td>Legal tender</td><td>Yes</td><td>No</td></tr>
+        <tr><td>Backing</td><td>Central bank liability</td><td>None/market-based</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Regulatory Timeline Cheatsheet</h4>
+    <table>
+      <thead><tr><th>Event</th><th>Year</th></tr></thead>
+      <tbody>
+        <tr><td>RBI banking-ban circular</td><td>2018</td></tr>
+        <tr><td>IAMAI v. RBI (SC strikes ban)</td><td>2020</td></tr>
+        <tr><td>VDA taxation regime (Budget)</td><td>2022</td></tr>
+        <tr><td>CBDC Wholesale/Retail pilots</td><td>2022</td></tr>
+        <tr><td>PMLA coverage extended to VDAs</td><td>2023</td></tr>
+        <tr><td>EU MiCA full applicability</td><td>2024</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Key Numbers &amp; Formulae</h4>
+    <div class="formula" style="font-size:12px;padding:8px 10px">
+      VDA tax: 30% flat (Sec 115BBH)<br>
+      VDA TDS: 1% (Sec 194S)<br>
+      No loss set-off/carry-forward for VDA losses
+    </div>
+  </div>
+
+  <div class="widget">
+    <h4>Mnemonics</h4>
+    <p style="font-size:12px"><strong>India's VDA policy = "Tax, Track, don't Trade-ban"</strong> &mdash; heavy taxation + AML tracking (PMLA), without an outright trading ban.</p>
+    <p style="font-size:12px"><strong>CBDC types = "W before R"</strong>: Wholesale pilot (Nov 2022) launched before Retail (Dec 2022).</p>
+  </div>
+
+  <div class="widget">
+    <h4>Common Confusions</h4>
+    <details><summary>CBDC vs. cryptocurrency</summary><p>CBDC = sovereign RBI liability, legal tender; cryptocurrency = private, decentralised, no sovereign backing, taxed as a VDA not recognised as currency.</p></details>
+    <details><summary>Wholesale vs. Retail CBDC</summary><p>Wholesale = interbank/financial-institution settlement use; Retail = general public digital-cash-equivalent use — distinct pilots, distinct objectives.</p></details>
+    <details><summary>30% tax vs. 1% TDS</summary><p>30% (Sec 115BBH) applies to capital gains on VDA transfer; 1% TDS (Sec 194S) applies to transaction value, deducted upfront as a tracking mechanism.</p></details>
+  </div>
+
+  <div class="widget related">
+    <h4>Quick Cross-Links</h4>
+    <ul style="font-size:13.5px;line-height:1.7;padding-left:18px;margin:0">
+      <li><a href="/economy/banking-financial-sector-and-capital-markets">Topic 16: Banking, Financial Sector &amp; Capital Markets</a></li>
+      <li><a href="/economy/foreign-trade-policy-and-wto">Topic 17: Foreign Trade Policy &amp; WTO</a></li>
+      <li><a href="/economy/digital-public-infrastructure-dpi">Topic 19: Digital Public Infrastructure (DPI)</a></li>
+      <li><a href="/economy/gift-city-and-ifsc">Topic 21: GIFT City &amp; IFSC</a></li>
+    </ul>
+  </div>
+
+</div></aside>
+</div>
+</div>

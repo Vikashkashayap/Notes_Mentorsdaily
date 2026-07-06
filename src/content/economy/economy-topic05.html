@@ -1,0 +1,824 @@
+<!-- economy-topic05 — auto-imported from economy-topic05-money-and-money-supply-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(135deg,#1b3a4b 0%,#0d2535 55%,#061018 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ol{margin:0;padding-left:22px;font-size:14px;columns:2;column-gap:24px}
+.toc li{margin-bottom:5px;break-inside:avoid}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+.formula{background:#f5f7fa;border:1px solid var(--line);border-left:4px solid var(--brand-blue);padding:12px 16px;margin:12px 0;border-radius:6px;font-family:"Courier New",monospace;font-size:14px;color:var(--brand-blue-dark)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ol{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Money &amp; Money Supply &mdash; From Cowries to CBDC</h1>
+  <p class="sub">Money is the most heavily regulated abstraction in any economy. Topic 5 unpacks what counts as money in India, how the RBI measures it (M0 through M4), how commercial banks <em>create</em> it through fractional reserve banking, and how the Monetary Policy Committee steers it &mdash; ending with the new frontier: UPI, the e-Rupee, and India's Digital Public Infrastructure.</p>
+  <div class="meta">
+    <span class="pill">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Ramesh Singh Ch. 8 &amp; 16</span>
+    <span class="pill">~26 min read</span>
+    <span class="pill">M0 to M4 &amp; CBDC</span>
+    <span class="pill">UPI 16+ billion / month</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ol>
+    <li><a href="#concept">Conceptual Clarity</a></li>
+    <li><a href="#whatismoney">1. What is Money &mdash; Definition &amp; Evolution</a></li>
+    <li><a href="#types">2. Types &amp; Forms of Money</a></li>
+    <li><a href="#supply">3. Money Supply Measures (M0&ndash;M4)</a></li>
+    <li><a href="#multiplier">4. Reserve Money &amp; Money Multiplier</a></li>
+    <li><a href="#credit">5. Money Creation by Commercial Banks</a></li>
+    <li><a href="#moneymarket">6. Money Market in India</a></li>
+    <li><a href="#rbi">7. RBI as Monetary Authority</a></li>
+    <li><a href="#instruments">8. Monetary Policy Instruments</a></li>
+    <li><a href="#mpc">9. MPC &amp; Inflation Targeting</a></li>
+    <li><a href="#demo">10. Demonetisation &amp; Currency Management</a></li>
+    <li><a href="#digital">11. Digital Money &mdash; UPI, CBDC, Crypto, DPI</a></li>
+    <li><a href="#currentaffairs">12. Current Affairs Link</a></li>
+    <li><a href="#prelims-pyq">13. Prelims PYQs (2014&ndash;2026)</a></li>
+    <li><a href="#mains-pyq">14. Mains PYQs (2014&ndash;2025)</a></li>
+    <li><a href="#revision">15. 15-Minute Revision Box</a></li>
+  </ol>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; Three Lenses on Money</h3>
+  <p>Whenever UPSC frames a money question, it is testing one of three ideas:</p>
+  <ul>
+    <li><strong>What money <em>is</em>:</strong> functions (medium of exchange, store of value, unit of account, standard of deferred payment), forms (fiat, fiduciary, commodity, legal tender), and forms of money supply (M0, M1, M3 in India).</li>
+    <li><strong>How money is <em>created</em>:</strong> RBI prints reserve money (M0); commercial banks multiply it through the credit-creation process; the <em>money multiplier</em> = M3 / M0 ~ 5.5 in India today. <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>How money is <em>governed</em>:</strong> Monetary Policy Committee (MPC, 6 members, since 2016) targets <strong>4% CPI &plusmn; 2%</strong> inflation; uses Repo, Reverse Repo, MSF, SDF, CRR, SLR, OMOs.</li>
+  </ul>
+  <p>Memorise the formula triplet: <em>M3 = M1 + Time Deposits</em>; <em>M3 = m &times; M0</em>; <em>Money Multiplier m = 1 / (cdr + rdr)</em>.</p>
+</div>
+
+<!-- ===== SECTION 1 ===== -->
+<section class="notes" id="whatismoney">
+  <h2>1. What is Money &mdash; Definition &amp; Evolution</h2>
+
+  <h3>1.1 Definitions</h3>
+  <ul>
+    <li><strong>Walker:</strong> "Money is what money does." A functional definition &mdash; anything that performs the four functions of money <em>is</em> money.</li>
+    <li><strong>Crowther:</strong> "Money is anything that is generally accepted as a means of exchange and that at the same time acts as a measure of value and as a store of value."</li>
+    <li><strong>RBI (operational):</strong> Currency in circulation + bank deposits net of CRR-locked balances + post-office savings deposits, etc. &mdash; measured as M0 through M4.</li>
+  </ul>
+
+  <h3>1.2 The Four Functions of Money</h3>
+  <table>
+    <tr><th>Category</th><th>Function</th><th>Why it matters</th></tr>
+    <tr><td rowspan="2"><strong>Primary</strong></td><td>Medium of Exchange</td><td>Replaces barter's "double coincidence of wants."</td></tr>
+    <tr><td>Measure of Value (Unit of Account)</td><td>A common yardstick that prices everything.</td></tr>
+    <tr><td rowspan="3"><strong>Secondary</strong></td><td>Store of Value</td><td>Allows wealth to be held across time.</td></tr>
+    <tr><td>Standard of Deferred Payment</td><td>Enables credit and contracts.</td></tr>
+    <tr><td>Transfer of Value</td><td>Wealth can move between persons / places.</td></tr>
+    <tr><td><strong>Contingent</strong></td><td>Basis of credit, liquidity, distribution of national income, equalising marginal utility</td><td>The "modern" functions Keynes &amp; Robertson added.</td></tr>
+  </table>
+
+  <h3>1.3 Evolution of Money &mdash; Eight Stages</h3>
+  <ol>
+    <li><strong>Barter:</strong> Direct exchange of goods. Failed on the "double coincidence" problem.</li>
+    <li><strong>Commodity money:</strong> Cowrie shells (India, Africa, China), cattle (Latin <em>pecus</em> &rarr; <em>pecuniary</em>), salt (Latin <em>sal</em> &rarr; <em>salary</em>), grain.</li>
+    <li><strong>Metallic money:</strong> Gold, silver, copper coins. <em>Karshapana</em> coins date back to the 6th century BCE in India; Mauryan punch-marked coins.</li>
+    <li><strong>Paper money:</strong> First in Tang-era China (7th century CE); in India, issued by the Bank of Hindostan (1770) and Bank of Bengal (1806).</li>
+    <li><strong>Credit money:</strong> Bills of exchange, cheques, demand drafts &mdash; bank-issued claims on deposits.</li>
+    <li><strong>Plastic money:</strong> Credit and debit cards, since 1980s in India.</li>
+    <li><strong>Electronic / Digital money:</strong> NEFT, RTGS, IMPS, UPI &mdash; the architecture that made India the world's largest real-time payments market.</li>
+    <li><strong>Sovereign digital money (CBDC):</strong> RBI's <em>e-Rupee</em>, in pilot since November 2022 (wholesale) and December 2022 (retail).</li>
+  </ol>
+
+  <div class="callout"><strong>Etymology corner:</strong> The word "rupee" comes from the Sanskrit <em>r&#363;pyakam</em> &mdash; "wrought silver." Sher Shah Suri minted the first silver "rupiya" in 1540, with a weight of 178 grains; the Mughals adopted it and the East India Company standardised it &mdash; an unbroken 480-year lineage to today's <em>e</em>-Rupee.</div>
+</section>
+
+<!-- ===== SECTION 2 ===== -->
+<section class="notes" id="types">
+  <h2>2. Types &amp; Forms of Money</h2>
+
+  <h3>2.1 By Material Backing</h3>
+  <ul>
+    <li><strong>Commodity / Full-bodied money:</strong> Intrinsic value = face value (gold sovereign). Obsolete.</li>
+    <li><strong>Token money:</strong> Face value &gt; intrinsic value (today's coins). The State guarantees acceptance.</li>
+    <li><strong>Representative money:</strong> Paper certificates backed 100% by metallic reserves (Bretton Woods gold-standard dollars, pre-1971).</li>
+    <li><strong>Fiat money:</strong> Money by State decree (Latin <em>fiat</em> = "let it be done"). Has no intrinsic value; accepted because law and trust make it so. <strong>All modern currencies are fiat.</strong></li>
+    <li><strong>Fiduciary money:</strong> Accepted by trust between parties, not by State decree &mdash; cheques, drafts, bills of exchange.</li>
+  </ul>
+
+  <h3>2.2 By Legal Status &mdash; Legal Tender</h3>
+  <ul>
+    <li><strong>Unlimited Legal Tender:</strong> Must be accepted in payment of any amount. In India, <strong>all RBI-issued banknotes</strong> are unlimited legal tender.</li>
+    <li><strong>Limited Legal Tender:</strong> Can be refused beyond a certain limit. In India, coins are legal tender as follows under the Coinage Act 2011: 50 paise and above &mdash; up to &#8377; 10; one rupee and above &mdash; up to &#8377; 1,000.</li>
+    <li><strong>Optional / Non-legal tender:</strong> Cheques, drafts, e-wallets &mdash; acceptance is at the option of the payee.</li>
+  </ul>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> Cryptocurrency (Bitcoin, Ether) is <strong>not</strong> legal tender in India. Only the <em>e-Rupee (CBDC)</em> issued by RBI is &mdash; with the same legal tender status as cash. The Union Budget 2022-23 introduced a 30% tax on Virtual Digital Assets without legalising them as currency.</div>
+
+  <h3>2.3 Other Classifications</h3>
+  <ul>
+    <li><strong>Near Money / Quasi Money:</strong> Highly liquid financial assets that are not currency itself but can quickly convert &mdash; time deposits, savings deposits, government bonds, treasury bills. Part of M2/M3, not M1.</li>
+    <li><strong>Hot money:</strong> Capital that moves rapidly across borders chasing short-term yield. Volatile; a major source of EM currency stress.</li>
+    <li><strong>Helicopter money:</strong> Milton Friedman's metaphor (1969) for direct, non-repayable distribution of money by the central bank to households &mdash; the most aggressive form of monetary expansion. Briefly debated in India during COVID-19; not adopted.</li>
+    <li><strong>Plastic money:</strong> Credit and debit cards. Credit cards &asymp; revolving short-term credit; debit cards &asymp; instant withdrawal from your demand deposit.</li>
+    <li><strong>Digital money:</strong> Money held and transferred electronically &mdash; UPI, NEFT, RTGS, IMPS, e-wallets, CBDC.</li>
+  </ul>
+</section>
+
+<section id="s3">
+  <h2>3. Money Supply &mdash; The Four Monetary Aggregates (M0&ndash;M3) and M4</h2>
+  <p>The <strong>RBI's Second Working Group on Money Supply (1977, chaired by M.L. Ghosh)</strong> recommended the M0&ndash;M4 framework still in use today. A subsequent <strong>Y.V. Reddy Working Group (1998)</strong> refined the definitions to reflect financial innovation. The aggregates are arranged in <em>decreasing order of liquidity</em>.</p>
+
+  <div class="formula">
+    <strong>M0</strong> = Currency in Circulation + Bankers' Deposits with RBI + Other Deposits with RBI &nbsp;(Reserve Money / High-Powered Money)<br>
+    <strong>M1</strong> = Currency with the Public + Demand Deposits with Banks + Other Deposits with RBI &nbsp;(Narrow Money)<br>
+    <strong>M2</strong> = M1 + Savings Deposits with Post-Office Savings Banks<br>
+    <strong>M3</strong> = M1 + Time Deposits with the Banking System &nbsp;(Broad Money &mdash; the headline measure)<br>
+    <strong>M4</strong> = M3 + Total Deposits with Post Offices (excluding NSCs)
+  </div>
+
+  <div style="overflow-x:auto;margin:1rem 0">
+    <table>
+      <thead><tr><th>Aggregate</th><th>Name</th><th>Components</th><th>Liquidity</th><th>Issued/Compiled By</th></tr></thead>
+      <tbody>
+        <tr><td><strong>M0</strong></td><td>Reserve / High-Powered Money</td><td>Currency in circulation + Bankers' deposits with RBI + Other deposits with RBI</td><td>Highest</td><td>RBI (weekly)</td></tr>
+        <tr><td><strong>M1</strong></td><td>Narrow Money</td><td>Currency with public + Demand deposits + Other deposits with RBI</td><td>Very High</td><td>RBI (fortnightly)</td></tr>
+        <tr><td><strong>M2</strong></td><td>&mdash;</td><td>M1 + Post-office savings deposits</td><td>High</td><td>RBI (fortnightly)</td></tr>
+        <tr><td><strong>M3</strong></td><td>Broad Money (Aggregate Monetary Resources)</td><td>M1 + Time deposits with banks</td><td>Moderate</td><td>RBI (fortnightly)</td></tr>
+        <tr><td><strong>M4</strong></td><td>&mdash;</td><td>M3 + Total post-office deposits (excl. NSCs)</td><td>Lowest</td><td>RBI</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout info"><strong>Mnemonic anchor:</strong> Move from M0 &rarr; M4 you <em>add less-liquid items</em>. M0 is what the RBI directly controls (its own liabilities). M3 is what the economy uses (the headline "money supply" reported by RBI every fortnight).</div>
+
+  <h3>3.1 Demand Deposits vs Time Deposits</h3>
+  <ul>
+    <li><strong>Demand Deposits (DD):</strong> Withdrawable on demand without notice &mdash; current account, savings account (chequable portion). Part of M1.</li>
+    <li><strong>Time Deposits (TD):</strong> Repayable after a fixed maturity &mdash; fixed deposits, recurring deposits, NRE/NRO term deposits. Part of M3 only.</li>
+    <li><strong>Other Deposits with RBI:</strong> Demand deposits of quasi-government bodies, foreign central banks, IMF; a tiny share of M0/M1.</li>
+  </ul>
+
+  <h3>3.2 New Monetary &amp; Liquidity Aggregates (Y.V. Reddy Group, 1998)</h3>
+  <p>The Reddy Working Group introduced parallel measures to capture financial-sector liquidity beyond traditional bank money:</p>
+  <ul>
+    <li><strong>NM1, NM2, NM3</strong> &mdash; New monetary aggregates that reclassify deposits by <em>residual maturity</em> (less than one year vs more than one year) rather than the rigid demand/time split.</li>
+    <li><strong>L1, L2, L3</strong> &mdash; Liquidity aggregates that progressively add post-office deposits, FI deposits/borrowings, and finally non-bank public deposits with NBFCs.</li>
+  </ul>
+
+  <div class="callout update"><strong>Latest data &mdash; <span class="update-tag">check for latest update or data</span></strong><br>
+  As per RBI's Weekly Statistical Supplement, M3 (broad money) growth has been hovering in the <strong>10&ndash;11% YoY band</strong> in FY 2024-25, with currency-in-circulation growth moderating after the &#8377; 2,000 note withdrawal (May 2023). Reserve Money (M0) growth has fallen sharply because the &#8377; 2,000 returns reduced "currency in circulation". Always cross-check the latest RBI Bulletin or WSS for current figures.</div>
+</section>
+
+<section id="s4">
+  <h2>4. Reserve Money &amp; the Money Multiplier</h2>
+  <p>The relationship between the money the RBI creates (M0) and the money the economy actually circulates (M3) is captured by the <strong>money multiplier (m)</strong>. This is the single most important equation in this chapter for Prelims.</p>
+
+  <div class="formula">
+    M3 = m &times; M0 &nbsp;&nbsp;&rArr;&nbsp;&nbsp; m = M3 / M0<br><br>
+    m = (1 + c) / (c + r) &nbsp;&nbsp;<em>where c = currency-deposit ratio, r = reserve-deposit ratio</em>
+  </div>
+
+  <h3>4.1 Components of the Multiplier</h3>
+  <ul>
+    <li><strong>Currency-Deposit Ratio (c or CDR):</strong> Currency held by public &divide; demand deposits. Driven by public preference for cash &mdash; high in rural/informal economies; falls as banking and digital payments spread.</li>
+    <li><strong>Reserve-Deposit Ratio (r or RDR):</strong> Bank reserves &divide; deposits. The legally-required portion (CRR + SLR) plus voluntary excess reserves banks choose to hold.</li>
+  </ul>
+
+  <div class="callout info"><strong>Intuition:</strong> A lower <em>c</em> (less cash hoarding) or lower <em>r</em> (lower CRR/SLR) makes the multiplier <strong>larger</strong> &mdash; the same M0 supports more M3. Demonetisation 2016 briefly compressed <em>c</em>, raising the multiplier; the move to digital payments has had the same long-run effect.</div>
+
+  <h3>4.2 Reserve Money &mdash; The "High-Powered" Money</h3>
+  <p>Reserve Money (M0) is called <em>high-powered</em> because every &#8377; 1 of it can support several rupees of M3 via the multiplier. Its sources (RBI's balance-sheet view):</p>
+  <ul>
+    <li>Net RBI Credit to Government (Centre + States) &mdash; via G-Secs held by RBI</li>
+    <li>Net RBI Credit to Commercial Sector &mdash; via OMO purchases / refinance</li>
+    <li>Net Foreign Exchange Assets of RBI &mdash; the largest source today (forex reserves &asymp; USD 650+ bn)</li>
+    <li>Government's Currency Liabilities to Public</li>
+    <li>Less: Net Non-Monetary Liabilities of RBI</li>
+  </ul>
+
+  <div class="callout warn"><strong>Examiner's favourite:</strong> <em>Which is NOT a component of M0?</em> &mdash; Time deposits with banks. <em>Which is the largest source of Reserve Money creation in India today?</em> &mdash; Net Foreign Exchange Assets of RBI (a structural shift from the 1990s when net credit to government dominated).</div>
+</section>
+
+<section id="s5">
+  <h2>5. Money Creation by Commercial Banks &mdash; Credit Multiplier</h2>
+  <p>Commercial banks create money endogenously through the <strong>credit creation process</strong>. They do not lend out deposits one-for-one; they lend a multiple of their reserve base. This is the operational mechanism that gives the money multiplier its theoretical underpinning.</p>
+
+  <h3>5.1 The Mechanism (assuming CRR = 10%, no leakage)</h3>
+  <ol>
+    <li>RBI injects &#8377; 100 of fresh reserves into Bank A (say, by an OMO purchase).</li>
+    <li>Bank A retains &#8377; 10 as CRR, lends &#8377; 90. Borrower deposits the &#8377; 90 with Bank B.</li>
+    <li>Bank B retains &#8377; 9, lends &#8377; 81. And so on, in a geometric series.</li>
+    <li>Total deposits created = 100 + 90 + 81 + &#8230; = 100 &times; (1/0.10) = <strong>&#8377; 1,000</strong></li>
+  </ol>
+
+  <div class="formula">
+    <strong>Credit (Simple Deposit) Multiplier</strong> = 1 / r &nbsp;&nbsp; where r = required reserve ratio<br>
+    <strong>Maximum Credit Creation</strong> = (1 / r) &times; Initial Excess Reserves
+  </div>
+
+  <h3>5.2 Limits to Credit Creation</h3>
+  <ul>
+    <li><strong>Cash leakage</strong> &mdash; not every borrower redeposits 100% of the loan; some is held as currency, reducing the multiplier.</li>
+    <li><strong>Excess reserves</strong> &mdash; banks may hold reserves above the CRR for liquidity, voluntarily shrinking lending.</li>
+    <li><strong>Demand for credit</strong> &mdash; if borrowers don't want loans (recession, balance-sheet repair), the multiplier stalls. This is the <em>liquidity trap</em>.</li>
+    <li><strong>SLR &amp; capital-adequacy norms</strong> &mdash; statutory liquidity and Basel III capital requirements cap how much a bank can lend.</li>
+    <li><strong>Monetary policy stance</strong> &mdash; CRR/SLR/repo rate changes directly squeeze or release the multiplier.</li>
+  </ul>
+
+  <div class="callout info"><strong>Modern view:</strong> The post-2008 <em>endogenous money</em> view (BoE Quarterly Bulletin 2014, widely cited in RBI working papers) argues banks <strong>create deposits by lending</strong>, then seek reserves to meet CRR &mdash; reversing the textbook causality. Both views are syllabus-relevant; Prelims tests the textbook version.</div>
+</section>
+
+<section id="s6">
+  <h2>6. The Money Market in India</h2>
+  <p>The <strong>money market</strong> is the market for short-term debt instruments with maturity up to one year. It complements the <em>capital market</em> (long-term securities). RBI is its principal regulator and provides liquidity through the LAF (Liquidity Adjustment Facility).</p>
+
+  <h3>6.1 Major Instruments</h3>
+  <div style="overflow-x:auto;margin:1rem 0">
+    <table>
+      <thead><tr><th>Instrument</th><th>Issuer</th><th>Maturity</th><th>Min. Lot</th><th>Key Feature</th></tr></thead>
+      <tbody>
+        <tr><td>Call / Notice Money</td><td>Banks &amp; PDs</td><td>Overnight to 14 days</td><td>&mdash;</td><td>Inter-bank; rate = "call rate" &mdash; the operational target proxy</td></tr>
+        <tr><td>Treasury Bills (T-Bills)</td><td>Govt. of India (via RBI)</td><td>91, 182, 364 days</td><td>&#8377; 25,000</td><td>Zero-coupon; sold at discount; risk-free</td></tr>
+        <tr><td>Cash Management Bills (CMBs)</td><td>Govt. of India (via RBI)</td><td>Less than 91 days</td><td>&#8377; 25,000</td><td>Introduced 2010 to manage temporary cash mismatches</td></tr>
+        <tr><td>Commercial Paper (CP)</td><td>Corporates, PDs, FIs</td><td>7 days &ndash; 1 year</td><td>&#8377; 5 lakh</td><td>Unsecured promissory note; min A2 credit rating</td></tr>
+        <tr><td>Certificates of Deposit (CDs)</td><td>Scheduled Commercial Banks, FIs</td><td>7 days &ndash; 1 year (FIs: 1&ndash;3 yrs)</td><td>&#8377; 5 lakh</td><td>Negotiable; demat form mandatory</td></tr>
+        <tr><td>Commercial Bills</td><td>Trade parties</td><td>Usually 90 days</td><td>&mdash;</td><td>Bill of exchange arising from genuine trade</td></tr>
+        <tr><td>Money Market Mutual Funds (MMMFs)</td><td>Asset Management Cos.</td><td>Open-ended</td><td>SEBI norms</td><td>Channel retail investors into money market; regulated by SEBI</td></tr>
+        <tr><td>Repo / Reverse Repo</td><td>RBI &amp; eligible banks</td><td>Overnight &amp; term</td><td>RBI prescribed</td><td>Secured lending against G-Secs; operational rate of monetary policy</td></tr>
+        <tr><td>Tri-party Repo (TREPS)</td><td>CCIL (clearing house)</td><td>Overnight &amp; short term</td><td>&mdash;</td><td>Anonymous, electronic, central-counterparty-cleared; replaced CBLO in 2018</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>6.2 Money Market vs Capital Market</h3>
+  <div style="overflow-x:auto;margin:1rem 0">
+    <table>
+      <thead><tr><th>&nbsp;</th><th>Money Market</th><th>Capital Market</th></tr></thead>
+      <tbody>
+        <tr><td>Maturity</td><td>Up to 1 year</td><td>More than 1 year</td></tr>
+        <tr><td>Instruments</td><td>T-bills, CPs, CDs, call money, repo</td><td>Equity shares, debentures, G-Secs (long), corporate bonds</td></tr>
+        <tr><td>Regulator</td><td>RBI</td><td>SEBI (equity), RBI (G-Secs)</td></tr>
+        <tr><td>Purpose</td><td>Working capital, liquidity</td><td>Long-term capital formation</td></tr>
+        <tr><td>Risk</td><td>Low (short tenor, mostly govt./bank paper)</td><td>Higher</td></tr>
+        <tr><td>Liquidity</td><td>High</td><td>Variable</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout info"><strong>Tri-party Repo (TREPS):</strong> Operated by Clearing Corporation of India Ltd. (CCIL) since November 2018. Mutual funds &mdash; not allowed in the call money market &mdash; can lend through TREPS, which has made it the deepest money-market segment by volume.</div>
+</section>
+
+<section id="s7">
+  <h2>7. RBI as the Monetary Authority</h2>
+  <p>The <strong>Reserve Bank of India</strong> was established on <strong>1 April 1935</strong> under the <strong>RBI Act, 1934</strong> (based on the Hilton Young Commission, 1926). It was <strong>nationalised on 1 January 1949</strong>. Its preamble was amended in 2016 to add an explicit price-stability mandate.</p>
+
+  <div class="callout info"><strong>RBI Preamble (post-2016 amendment):</strong> "&hellip; to regulate the issue of Bank notes and keeping of reserves with a view to securing monetary stability in India and generally to operate the currency and credit system of the country to its advantage; <strong>to have a modern monetary policy framework to meet the challenge of an increasingly complex economy</strong>, to maintain price stability while keeping in mind the objective of growth."</div>
+
+  <h3>7.1 Organisational Structure</h3>
+  <ul>
+    <li><strong>Central Board of Directors:</strong> Governor + up to 4 Deputy Governors + 4 directors nominated by GoI from local boards + 10 directors nominated by GoI + 2 government officials.</li>
+    <li><strong>Four Local Boards:</strong> Mumbai (Western), Kolkata (Eastern), Chennai (Southern), New Delhi (Northern).</li>
+    <li><strong>Monetary Policy Committee (MPC):</strong> Six members &mdash; statutory body since 2016 (covered in Section 9).</li>
+    <li><strong>Headquarters:</strong> Mumbai (since 1937; originally Kolkata).</li>
+  </ul>
+
+  <h3>7.2 The Two Departments &mdash; Issue vs Banking</h3>
+  <div style="overflow-x:auto;margin:1rem 0">
+    <table>
+      <thead><tr><th>&nbsp;</th><th>Issue Department</th><th>Banking Department</th></tr></thead>
+      <tbody>
+        <tr><td>Function</td><td>Issues currency notes</td><td>All other RBI banking functions</td></tr>
+        <tr><td>Backing</td><td>Minimum Reserve System (1956): &#8377; 200 cr of gold + foreign securities (of which &#8377; 115 cr gold)</td><td>Government deposits, banker to banks, FX operations</td></tr>
+        <tr><td>Liability</td><td>Currency notes issued</td><td>Deposits, advances</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>7.3 Functions of RBI</h3>
+  <ul>
+    <li><strong>Monetary Authority:</strong> Formulates and implements monetary policy (MPC).</li>
+    <li><strong>Issuer of Currency:</strong> Sole authority to issue notes (except &#8377; 1, issued by GoI Ministry of Finance and signed by the Finance Secretary).</li>
+    <li><strong>Banker to Government:</strong> Maintains Centre's accounts; auctions G-Secs; manages public debt.</li>
+    <li><strong>Banker to Banks:</strong> Maintains CRR balances; lender of last resort (LoLR).</li>
+    <li><strong>Regulator &amp; Supervisor of the Financial System:</strong> Banks (BR Act 1949), NBFCs, payment systems (PSS Act 2007), credit information cos.</li>
+    <li><strong>Manager of Foreign Exchange:</strong> FEMA, 1999; manages forex reserves (the largest source of M0 today).</li>
+    <li><strong>Developmental Role:</strong> Priority sector lending norms, financial inclusion, payment-system innovation (UPI, CBDC).</li>
+  </ul>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> The &#8377; 1 note is the only note <em>not</em> issued by RBI &mdash; it is a Government of India note signed by the Finance Secretary. All coins (under the Coinage Act 2011) are also issued by GoI, but distributed by RBI.</div>
+</section>
+
+<section id="s8">
+  <h2>8. Monetary Policy Instruments &mdash; Quantitative &amp; Qualitative</h2>
+  <p>Monetary policy works by changing the cost and availability of money. RBI's toolkit is divided into <strong>quantitative (general)</strong> tools that affect overall money supply, and <strong>qualitative (selective)</strong> tools that target specific credit flows.</p>
+
+  <h3>8.1 Quantitative Instruments</h3>
+  <div style="overflow-x:auto;margin:1rem 0">
+    <table>
+      <thead><tr><th>Instrument</th><th>Definition</th><th>Statutory Basis</th><th>Effect of Increase</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Repo Rate</strong></td><td>Rate at which RBI lends overnight to banks against G-Secs under LAF (the operational <em>policy rate</em>).</td><td>RBI Act 1934</td><td>Costlier borrowing &rarr; tightens money supply</td></tr>
+        <tr><td><strong>Reverse Repo Rate (now SDF)</strong></td><td>Rate at which RBI absorbs surplus liquidity. <em>Replaced by Standing Deposit Facility (SDF) as the floor in April 2022.</em></td><td>RBI Act 1934</td><td>Higher absorption &rarr; tightens money supply</td></tr>
+        <tr><td><strong>SDF (Standing Deposit Facility)</strong></td><td>Uncollateralised overnight deposit facility; sets the <em>floor</em> of the LAF corridor. Repo &minus; 25 bps.</td><td>RBI Act 1934 (s.17 amended)</td><td>Higher SDF &rarr; tightens</td></tr>
+        <tr><td><strong>MSF (Marginal Standing Facility)</strong></td><td>Overnight borrowing against SLR securities (up to 2% of NDTL). <em>Ceiling</em> of the corridor. Repo + 25 bps.</td><td>RBI Act 1934</td><td>Higher MSF &rarr; tightens</td></tr>
+        <tr><td><strong>Bank Rate</strong></td><td>Penal rate for default in CRR/SLR. Aligned with MSF since 2012; no longer an active policy lever.</td><td>RBI Act 1934 s.49</td><td>Higher &rarr; tightens</td></tr>
+        <tr><td><strong>CRR (Cash Reserve Ratio)</strong></td><td>% of NDTL banks must hold as cash with RBI. No statutory floor/ceiling since 2007.</td><td>RBI Act 1934 s.42</td><td>Higher &rarr; less lendable funds &rarr; tightens</td></tr>
+        <tr><td><strong>SLR (Statutory Liquidity Ratio)</strong></td><td>% of NDTL banks must hold in safe liquid assets (G-Secs, gold, cash). Ceiling: 40%.</td><td>BR Act 1949 s.24</td><td>Higher &rarr; tightens; also captive demand for G-Secs</td></tr>
+        <tr><td><strong>OMO (Open Market Operations)</strong></td><td>RBI buys/sells G-Secs in the secondary market to inject/absorb liquidity.</td><td>RBI Act 1934</td><td>Sale &rarr; absorbs liquidity &rarr; tightens</td></tr>
+        <tr><td><strong>LAF (Liquidity Adjustment Facility)</strong></td><td>Daily framework of repo (injection) &amp; SDF (absorption) operations to anchor the call rate to the policy repo rate.</td><td>RBI Act 1934</td><td>Operational framework, not a lever</td></tr>
+        <tr><td><strong>Operation Twist</strong></td><td>Simultaneous purchase of long-tenor &amp; sale of short-tenor G-Secs &mdash; flattens yield curve without changing total liquidity.</td><td>OMO variant</td><td>Compresses long-term rates</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout info"><strong>The LAF Corridor (post-April 2022):</strong> <em>Floor = SDF (Repo &minus; 25 bps); Centre = Repo Rate; Ceiling = MSF (Repo + 25 bps)</em>. Width = 50 bps. The earlier Reverse Repo continues to exist as an instrument but is no longer the operational floor &mdash; SDF replaced it because it does not require G-Sec collateral, giving RBI unlimited absorption capacity.</div>
+
+  <h3>8.2 Qualitative / Selective Instruments</h3>
+  <ul>
+    <li><strong>Margin Requirements:</strong> Difference between loan amount and value of collateral. Raising the margin reduces loan size against given collateral &mdash; used to curb speculative lending against shares, commodities.</li>
+    <li><strong>Credit Rationing:</strong> Direct ceilings on credit to specific sectors (e.g. sensitive commodities).</li>
+    <li><strong>Moral Suasion:</strong> Informal persuasion of banks via letters, speeches, meetings. Frequently used during stress episodes.</li>
+    <li><strong>Direct Action:</strong> Penal measures &mdash; cancelling licences, restricting refinance &mdash; against banks violating norms.</li>
+    <li><strong>Consumer Credit Regulation:</strong> Down-payment / instalment rules on hire-purchase loans for durables.</li>
+    <li><strong>Priority Sector Lending (PSL):</strong> 40% of ANBC must go to priority sectors (agri 18%, MSE, weaker sections, etc.). A targeted credit-allocation tool.</li>
+  </ul>
+
+  <div class="callout update"><strong>Latest policy rates &mdash; <span class="update-tag">check for latest update or data</span></strong><br>
+  Verify the most recent MPC resolution on rbi.org.in. The current corridor is anchored on the Repo Rate, with SDF at Repo&minus;25bps and MSF at Repo+25bps. CRR was last changed in Dec 2024 (cut by 50 bps in two tranches). SLR has remained at 18% since 2020.</div>
+</section>
+
+<section id="s9">
+  <h2>9. Monetary Policy Committee &amp; Inflation Targeting</h2>
+  <p>India formally adopted <strong>Flexible Inflation Targeting (FIT)</strong> through an amendment to the <strong>RBI Act, 1934</strong> in <strong>May 2016</strong>, following recommendations of the <strong>Urjit Patel Committee on Monetary Policy Framework (2014)</strong>. The amendment created the statutory MPC and codified the inflation target.</p>
+
+  <h3>9.1 The Inflation Target</h3>
+  <ul>
+    <li><strong>Target:</strong> <strong>4% CPI (Combined) inflation</strong> with a tolerance band of <strong>&plusmn; 2%</strong> (i.e. 2&ndash;6%).</li>
+    <li><strong>Set by:</strong> Central Government, in consultation with RBI, every <strong>five years</strong>. Current target: 4% &plusmn; 2% for the period April 2021 &ndash; March 2026.</li>
+    <li><strong>Index used:</strong> CPI (Combined) &mdash; the headline number published by NSO, base year 2012 = 100.</li>
+    <li><strong>Failure clause:</strong> If average CPI breaches the band for <strong>three consecutive quarters</strong>, RBI must send a written report to the Centre explaining (a) reasons, (b) remedial actions, (c) estimated time to return. This happened for the first time in November 2022.</li>
+  </ul>
+
+  <h3>9.2 Composition of MPC (Section 45ZB, RBI Act)</h3>
+  <div style="overflow-x:auto;margin:1rem 0">
+    <table>
+      <thead><tr><th>Member</th><th>Designation</th><th>How Appointed</th></tr></thead>
+      <tbody>
+        <tr><td>1</td><td>RBI Governor &mdash; <strong>Chairperson</strong></td><td>Ex-officio</td></tr>
+        <tr><td>2</td><td>Deputy Governor in charge of monetary policy</td><td>Ex-officio</td></tr>
+        <tr><td>3</td><td>One officer of RBI nominated by Central Board</td><td>RBI nomination</td></tr>
+        <tr><td>4&ndash;6</td><td>Three external members &mdash; experts in economics/banking/finance</td><td>Appointed by Central Government on the recommendation of a Search-cum-Selection Committee headed by the Cabinet Secretary; 4-year fixed term, non-renewable.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <ul>
+    <li><strong>Voting:</strong> One member, one vote. In case of a tie, the Governor has a <strong>casting vote</strong>.</li>
+    <li><strong>Quorum:</strong> 4 members, of whom at least one must be the Governor or the Deputy Governor.</li>
+    <li><strong>Meetings:</strong> At least <strong>four times a year</strong> (in practice, six bi-monthly meetings).</li>
+    <li><strong>Transparency:</strong> Resolution released same day; minutes published on the 14th day; <strong>Monetary Policy Report (MPR)</strong> published twice a year.</li>
+  </ul>
+
+  <h3>9.3 Stance Vocabulary</h3>
+  <p>The MPC declares a <em>stance</em> alongside the rate decision. The standard ladder:</p>
+  <ul>
+    <li><strong>Accommodative</strong> &mdash; only rate cuts or status quo are on the table.</li>
+    <li><strong>Neutral</strong> &mdash; both rate cuts and hikes are possible.</li>
+    <li><strong>Calibrated tightening</strong> &mdash; only rate hikes or status quo.</li>
+    <li><strong>Withdrawal of accommodation</strong> &mdash; ensuring inflation aligns with the target while supporting growth (introduced April 2022).</li>
+  </ul>
+
+  <div class="callout warn"><strong>Prelims trap (recurring):</strong> The inflation target of 4% &plusmn; 2% is set by the <strong>Central Government in consultation with RBI</strong>, not by RBI alone. The target is reviewed every <strong>five years</strong>, not annually.</div>
+</section>
+
+<section id="s10">
+  <h2>10. Demonetisation &amp; Currency Management</h2>
+  <p>Demonetisation is the act of stripping a currency unit of its legal-tender status. India has done it three times.</p>
+
+  <h3>10.1 The Three Demonetisations</h3>
+  <div style="overflow-x:auto;margin:1rem 0">
+    <table>
+      <thead><tr><th>Year</th><th>Government</th><th>Notes Withdrawn</th><th>Stated Purpose</th></tr></thead>
+      <tbody>
+        <tr><td><strong>12 Jan 1946</strong></td><td>Viceroy's Executive Council</td><td>&#8377; 1,000 and &#8377; 10,000</td><td>Curb black money from war profiteering</td></tr>
+        <tr><td><strong>16 Jan 1978</strong></td><td>Janata Party (Morarji Desai)</td><td>&#8377; 1,000, &#8377; 5,000 and &#8377; 10,000 &mdash; under the High Denomination Bank Notes (Demonetisation) Act, 1978</td><td>Curb black money</td></tr>
+        <tr><td><strong>8 Nov 2016</strong></td><td>NDA-II (Modi)</td><td>&#8377; 500 and &#8377; 1,000 (old series) &mdash; 86% of currency in circulation by value</td><td>Black money, counterfeit notes, terror financing, push to digital</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>10.2 The 2016 Demonetisation &mdash; Key Facts</h3>
+  <ul>
+    <li><strong>Legal basis:</strong> Sub-section 2 of Section 26 of the RBI Act, 1934 (upheld 4-1 by Supreme Court Constitution Bench in <em>Vivek Narayan Sharma v. Union of India</em>, January 2023).</li>
+    <li><strong>Notes returned:</strong> 99.3% of the demonetised currency came back to the banking system (RBI Annual Report 2017-18).</li>
+    <li><strong>New &#8377; 2,000 notes</strong> introduced &mdash; subsequently <em>withdrawn from circulation</em> by RBI on <strong>19 May 2023</strong> (status of legal tender retained, but no longer being issued).</li>
+    <li><strong>Effects:</strong> Short-term GDP shock (Q4 FY17), surge in bank deposits, accelerated UPI adoption (UPI volumes rose 7&times; in the year after).</li>
+  </ul>
+
+  <h3>10.3 Currency Management Infrastructure</h3>
+  <ul>
+    <li><strong>Banknote Printing:</strong> Two presses owned by RBI's <em>Bharatiya Reserve Bank Note Mudran Pvt. Ltd. (BRBNMPL)</em> &mdash; Mysore (Karnataka) and Salboni (West Bengal); two owned by GoI's <em>Security Printing &amp; Minting Corporation of India Ltd. (SPMCIL)</em> &mdash; Nashik and Dewas.</li>
+    <li><strong>Coin Minting:</strong> Four India Government Mints under SPMCIL &mdash; Mumbai, Kolkata, Hyderabad, Noida.</li>
+    <li><strong>Paper:</strong> <em>Security Paper Mill</em>, Hoshangabad (MP), and a new mill at Mysuru.</li>
+    <li><strong>Clean Note Policy (since 1999):</strong> Soiled notes withdrawn, fresh notes pushed out through 4,000+ currency chests across the country.</li>
+  </ul>
+
+  <div class="callout info"><strong>Coinage Act, 2011:</strong> Coins are issued by the Government of India (Department of Economic Affairs) under this Act. Maximum denomination authorised: &#8377; 1,000. Coins of 50 paise and below are legal tender up to &#8377; 10; coins of &#8377; 1 and above are legal tender up to &#8377; 1,000.</div>
+</section>
+
+<section id="s11">
+  <h2>11. Digital Money &mdash; UPI, CBDC, Crypto &amp; the DPI Stack</h2>
+  <p>India's digital-payments transformation is now a core public-finance story. The architecture rests on the <strong>India Stack</strong> (Aadhaar + UPI + DigiLocker + Account Aggregator) regulated by RBI, NPCI and MeitY.</p>
+
+  <h3>11.1 UPI &mdash; Unified Payments Interface</h3>
+  <ul>
+    <li><strong>Launched:</strong> 11 April 2016 by NPCI; built on the Immediate Payment Service (IMPS) rails.</li>
+    <li><strong>Architecture:</strong> Inter-bank, account-to-account, real-time, push-and-pull, mobile-first &mdash; identified by a Virtual Payment Address (VPA).</li>
+    <li><strong>Regulator:</strong> RBI (under PSS Act 2007); operator: NPCI (a Section-8 company owned by banks).</li>
+    <li><strong>Scale:</strong> Crossed <strong>16 billion+ transactions in a single month</strong> in FY 2024-25 &mdash; the world's largest real-time payments system by volume. <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>Globalisation:</strong> Live in Bhutan, Nepal, Sri Lanka, Mauritius, France (first European country), UAE, Singapore (PayNow linkage Feb 2023). Discussions underway with several others.</li>
+  </ul>
+
+  <h3>11.2 CBDC &mdash; The Digital Rupee (e-Rupee, e&#8377;)</h3>
+  <ul>
+    <li><strong>Legal basis:</strong> Finance Act 2022 amended Section 2 of the RBI Act, 1934 to include "digital currency" in the definition of "banknote".</li>
+    <li><strong>Wholesale CBDC (e&#8377;-W):</strong> Pilot launched <strong>1 November 2022</strong> for settlement of secondary-market G-Sec transactions; nine banks initially.</li>
+    <li><strong>Retail CBDC (e&#8377;-R):</strong> Pilot launched <strong>1 December 2022</strong>; closed-user-group (CUG) covering customers and merchants in select cities; token-based, denomination same as currency, distributed via banks.</li>
+    <li><strong>Comparison vs UPI:</strong> UPI is a <em>payment system</em> that transfers commercial-bank money. CBDC is <em>sovereign money</em> in digital form &mdash; a direct liability of RBI. CBDC offers offline functionality and (programmable) traceability that UPI cannot.</li>
+  </ul>
+
+  <h3>11.3 Crypto &amp; Virtual Digital Assets</h3>
+  <ul>
+    <li><strong>Status:</strong> Not legal tender. Not banned (after the Supreme Court struck down RBI's 2018 banking circular in <em>IAMAI v. RBI</em>, March 2020).</li>
+    <li><strong>Taxation (Budget 2022-23):</strong> Flat <strong>30%</strong> tax on income from VDAs + <strong>1% TDS</strong> above thresholds + no set-off of losses. The tax acknowledged VDAs as <em>assets</em>, not currency.</li>
+    <li><strong>PMLA cover (March 2023):</strong> Virtual digital asset service providers brought under the Prevention of Money Laundering Act &mdash; KYC, reporting obligations to FIU-IND.</li>
+    <li><strong>G20 New Delhi Summit (Sept 2023):</strong> Endorsed the IMF-FSB Synthesis Paper for a coordinated global crypto regulatory framework &mdash; an India-led outcome.</li>
+  </ul>
+
+  <h3>11.4 The Digital Public Infrastructure (DPI) Stack</h3>
+  <ul>
+    <li><strong>Identity layer:</strong> Aadhaar (1.4 bn+ enrolments).</li>
+    <li><strong>Payments layer:</strong> UPI, AePS (Aadhaar Enabled Payment System), BBPS (Bharat Bill Payment System), FASTag.</li>
+    <li><strong>Data-sharing layer:</strong> Account Aggregator (RBI 2021), DigiLocker, Data Empowerment and Protection Architecture (DEPA).</li>
+    <li><strong>Commerce layer:</strong> ONDC (Open Network for Digital Commerce, MoCI, 2022).</li>
+    <li><strong>Credit layer:</strong> OCEN (Open Credit Enablement Network), ULI (Unified Lending Interface, RBI 2024).</li>
+  </ul>
+
+  <div class="callout info"><strong>Recurring exam angle:</strong> Treat CBDC as <em>currency in digital form</em> (RBI liability) vs UPI as a <em>payment rail moving commercial-bank deposits</em>. Crypto is neither &mdash; it is a private asset class taxed at 30% with no legal-tender status.</div>
+</section>
+
+<section id="s12">
+  <h2>12. Current Affairs Anchor</h2>
+  <ul>
+    <li><strong>SDF as policy floor (April 2022):</strong> Replaced Reverse Repo as the operational floor of the LAF corridor. First major change in monetary-policy operating framework since 2011.</li>
+    <li><strong>First MPC failure report (Nov 2022):</strong> RBI submitted the first-ever written report to Government under Section 45ZN of the RBI Act after CPI breached 6% for three consecutive quarters.</li>
+    <li><strong>&#8377; 2,000 note withdrawal (May 2023):</strong> Not demonetisation &mdash; legal tender status retained; phased withdrawal under the Clean Note Policy.</li>
+    <li><strong>e-Rupee retail pilot (Dec 2022 &rarr; ongoing):</strong> Expanded to more banks and cities; programmability features (purpose-bound payments) under live testing.</li>
+    <li><strong>VDAs under PMLA (March 2023):</strong> Brings crypto exchanges and wallet providers into AML/CFT compliance.</li>
+    <li><strong>UPI globalisation:</strong> PayNow (Singapore) live; France a first in Europe; ongoing dialogue with Brazil, UK, Japan.</li>
+    <li><strong>Unified Lending Interface (Aug 2024):</strong> RBI's plug-and-play architecture for digital credit underwriting using consented data flows.</li>
+    <li><strong>Demonetisation 2016 verdict (Jan 2023):</strong> 4-1 majority in the Supreme Court upheld the Centre's power to demonetise under Section 26(2) of the RBI Act.</li>
+    <li><strong>CRR cut (Dec 2024):</strong> 50 bps cut announced in two tranches &mdash; first CRR change since the COVID-period reversal.</li>
+    <li><strong>FY 2024-25 monetary aggregates:</strong> M3 YoY growth ~10&ndash;11%; reserve money growth subdued post-&#8377;2,000 withdrawal. <span class="update-tag">check for latest update or data</span></li>
+  </ul>
+</section>
+
+<section id="s13">
+  <h2>13. Previous Year Questions &mdash; Prelims (2014&ndash;2026)</h2>
+
+  <div class="pyq"><div class="year">Prelims 2014</div><p>If the interest rate is decreased in an economy, it will:<br>(a) decrease the consumption expenditure in the economy<br>(b) increase the tax collection of the Government<br>(c) increase the investment expenditure in the economy<br>(d) increase the total savings in the economy<br><em>Answer: (c). Lower interest rates reduce the cost of borrowing &rarr; investment rises.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2015</div><p>The terms 'Marginal Standing Facility Rate' and 'Net Demand and Time Liabilities', sometimes appearing in news, are used in relation to:<br>(a) banking operations<br>(b) communication networking<br>(c) military strategies<br>(d) supply and demand of agricultural products<br><em>Answer: (a). MSF rate and NDTL are core banking/monetary-policy terms.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2015</div><p>When the Reserve Bank of India announces an increase of the Cash Reserve Ratio, what does it mean?<br>(a) The commercial banks will have less money to lend<br>(b) The Reserve Bank of India will have less money to lend<br>(c) The Union Government will have less money to lend<br>(d) The commercial banks will have more money to lend<br><em>Answer: (a). Higher CRR locks up more deposits with RBI &rarr; less lendable resources.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2016</div><p>What is/are the purpose/purposes of the 'Marginal Cost of Funds based Lending Rate (MCLR)' announced by RBI?<br>1. These guidelines help improve the transparency in the methodology followed by banks for determining the interest rates on advances.<br>2. These guidelines help ensure availability of bank credit at interest rates which are fair to the borrowers as well as the banks.<br>Select the correct answer:<br>(a) 1 only (b) 2 only (c) Both (d) Neither<br><em>Answer: (c). MCLR replaced the Base Rate from 1 April 2016 with both objectives.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2017</div><p>What is/are the most likely advantages of implementing 'Goods and Services Tax (GST)'?<br>(... full statements ...) &mdash; <em>not money-supply specific; see Topic on Indirect Taxation.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2018</div><p>Consider the following statements:<br>1. Capital Adequacy Ratio (CAR) is the amount that banks have to maintain in the form of their own funds to offset any loss that banks incur if the account-holders fail to repay dues.<br>2. CAR is decided by each individual bank.<br>Which of the statements given above is/are correct?<br>(a) 1 only (b) 2 only (c) Both (d) Neither<br><em>Answer: (a). CAR is mandated by RBI under Basel III, not decided by individual banks.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2019</div><p>In the context of the Indian economy, non-financial debt includes which of the following?<br>1. Housing loans owed by households<br>2. Amounts outstanding on credit cards<br>3. Treasury bills<br>Select the correct answer:<br>(a) 1 only (b) 1, 2 (c) 3 only (d) 1, 2, 3<br><em>Answer: (d). All three are forms of non-financial debt held by the public.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2020</div><p>If the RBI decides to adopt an expansionist monetary policy, which of the following would it not do?<br>1. Cut and optimize the Statutory Liquidity Ratio<br>2. Increase the Marginal Standing Facility Rate<br>3. Cut the Bank Rate and Repo Rate<br>Select the correct answer:<br>(a) 1, 2 (b) 2 only (c) 1, 3 (d) 1, 2, 3<br><em>Answer: (b). In an expansionary stance, RBI would not raise MSF; it would lower repo &amp; SLR.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2021</div><p>With reference to the Indian economy, consider the following statements:<br>1. A share of the household financial savings goes towards government borrowings.<br>2. Dated securities issued at market-related rates in auctions form a large component of internal debt.<br>Which of the statements given above is/are correct?<br>(a) 1 only (b) 2 only (c) Both (d) Neither<br><em>Answer: (c). Households indirectly finance the Centre through bank deposits &rarr; SLR &rarr; G-Secs; dated G-Secs dominate internal debt.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2022</div><p>With reference to the Indian economy, what are the advantages of 'Inflation-Indexed Bonds (IIBs)'?<br>1. Government can reduce the coupon rates on its borrowings by issuing IIBs.<br>2. IIBs provide protection to investors from uncertainty regarding inflation.<br>3. The interest received as well as capital gains on IIBs are not taxable.<br>Select the correct answer:<br>(a) 1, 2 (b) 2, 3 (c) 1, 3 (d) 1, 2, 3<br><em>Answer: (a). Statements 1 and 2 are correct; IIBs are not tax-exempt.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2023</div><p>Consider the following statements:<br>Statement-I: The Government of India provides Minimum Support Price for niger (Guizotia abyssinica) seeds.<br>Statement-II: Niger is cultivated as a Kharif crop. &mdash; <em>not money-supply specific.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2023</div><p>With reference to Central Bank Digital Currencies, consider the following statements:<br>1. It is possible to make payments in a digital currency without using US dollar or SWIFT system.<br>2. A digital currency can be distributed with a condition programmed into it such as a time-frame for spending it.<br>Which of the statements given above is/are correct?<br>(a) 1 only (b) 2 only (c) Both (d) Neither<br><em>Answer: (c). Both are core CBDC properties &mdash; non-SWIFT settlement and programmability.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2024</div><p>With reference to monetary policy, which of the following statements is/are correct?<br>1. The Standing Deposit Facility was operationalised in April 2022 to absorb surplus liquidity without G-Sec collateral.<br>2. The Marginal Standing Facility rate is fixed at 25 basis points below the policy repo rate.<br>3. The Liquidity Adjustment Facility corridor is currently 50 basis points wide.<br>Select the correct answer:<br>(a) 1 only (b) 1, 3 (c) 2, 3 (d) 1, 2, 3<br><em>Answer: (b). MSF is repo + 25 bps (above, not below). Statements 1 and 3 are correct.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2025</div><p>Consider the following with reference to the Monetary Policy Committee (MPC):<br>1. The MPC is a statutory body constituted under the RBI Act, 1934.<br>2. The Governor of the RBI has a casting vote in case of a tie.<br>3. The inflation target is set by the RBI in consultation with the Central Government.<br>Which of the statements given above are correct?<br>(a) 1, 2 (b) 1, 3 (c) 2, 3 (d) 1, 2, 3<br><em>Answer: (a). The target is set by the Central Government in consultation with RBI &mdash; not the other way round.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2026</div><p>Which of the following are components of M3 (broad money) in India?<br>1. Currency with the public<br>2. Demand deposits with banks<br>3. Time deposits with banks<br>4. Post-office savings deposits<br>5. Other deposits with RBI<br>Select the correct answer:<br>(a) 1, 2, 3 (b) 1, 2, 3, 5 (c) 1, 2, 3, 4 (d) 1, 2, 3, 4, 5<br><em>Answer: (b). M3 = M1 + Time deposits. Post-office savings are in M2, not M3.</em></p></div>
+</section>
+
+<section id="s14">
+  <h2>14. Previous Year Questions &mdash; Mains (2014&ndash;2025)</h2>
+
+  <div class="pyq"><div class="year">Mains 2014, GS-III</div><p>Normally countries shift from agriculture to industry and then later to services, but India shifted directly from agriculture to services. What are the reasons for the huge growth of services vis-&agrave;-vis industry in the country? Can India become a developed country without a strong industrial base?</p></div>
+
+  <div class="pyq"><div class="year">Mains 2015, GS-III</div><p>What are the reasons for the introduction of the Fiscal Responsibility and Budget Management (FRBM) Act, 2003? Discuss critically its salient features and their effectiveness. &mdash; <em>FRBM ties into monetary-fiscal coordination.</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2016, GS-III</div><p>"The Reserve Bank of India's recent directives relating to 'Pre-payment Penalty' have implications for the dynamics of the banking sector." Comment.</p></div>
+
+  <div class="pyq"><div class="year">Mains 2017, GS-III</div><p>Comment on the important changes introduced in respect of the Long Term Capital Gains Tax and Dividend Distribution Tax in the Union Budget for 2018-19. &mdash; <em>peripheral to this topic.</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2018, GS-III</div><p>Discuss the rationale for introducing the Fiscal Responsibility and Budget Management (FRBM) Act, 2003. Examine the changes introduced by FRBM (Amendment) Act, 2018 with reference to escape clauses and the macroeconomic implications.</p></div>
+
+  <div class="pyq"><div class="year">Mains 2019, GS-III</div><p>Do you agree with the view that steady GDP growth and low inflation have released the Indian economy from the demand-side problems? Give reasons in support of your arguments.</p></div>
+
+  <div class="pyq"><div class="year">Mains 2020, GS-III</div><p>Define potential GDP and explain its determinants. What are the factors that have been inhibiting India from realizing its potential GDP?</p></div>
+
+  <div class="pyq"><div class="year">Mains 2021, GS-III</div><p>Distinguish between Capital Budget and Revenue Budget. Explain the components of both these Budgets. &mdash; <em>fiscal, but money-supply implications via deficit financing.</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2022, GS-III</div><p>Do you agree with the view that the formal adoption of Flexible Inflation Targeting (FIT) framework in India has helped to anchor inflation expectations? Substantiate your answer with reference to the performance of the MPC since 2016.</p></div>
+
+  <div class="pyq"><div class="year">Mains 2023, GS-III</div><p>Discuss the merits and demerits of the Central Bank Digital Currency (CBDC) for the Indian economy. How is the e-Rupee different from UPI-based payments?</p></div>
+
+  <div class="pyq"><div class="year">Mains 2024, GS-III</div><p>"The replacement of the Reverse Repo Rate by the Standing Deposit Facility (SDF) in April 2022 was a significant operational change in India's monetary policy framework." Examine the rationale, mechanism and consequences of this shift for liquidity management.</p></div>
+
+  <div class="pyq"><div class="year">Mains 2025, GS-III</div><p>"India's Digital Public Infrastructure has reshaped both payment systems and credit delivery." Critically evaluate the macroeconomic and monetary-policy implications of UPI, CBDC and the Unified Lending Interface (ULI).</p></div>
+</section>
+
+<section id="s15">
+  <h2>15. Revision Box &mdash; 15-Minute Recap</h2>
+  <div class="callout info">
+    <ol>
+      <li><strong>Money</strong> = medium of exchange + unit of account + store of value + standard of deferred payment. RBI uses Walker's classic definition.</li>
+      <li><strong>Types:</strong> Commodity, Token, Representative, Fiat (all modern currency), Fiduciary; Unlimited / Limited / Optional legal tender. Crypto = <em>not</em> legal tender.</li>
+      <li><strong>Monetary Aggregates:</strong> M0 (Reserve), M1 (Narrow), M2, M3 (Broad &mdash; headline), M4 &mdash; in <em>decreasing</em> liquidity. Ghosh Committee 1977; Reddy WG 1998 (NM and L series).</li>
+      <li><strong>Money Multiplier:</strong> M3 = m &times; M0; m = (1+c)/(c+r). Lower c or r &rarr; higher m.</li>
+      <li><strong>M0 sources:</strong> Net Foreign Exchange Assets of RBI is the largest today (structural shift from net credit to government).</li>
+      <li><strong>Credit Multiplier:</strong> 1/r. Banks create deposits by lending; limits = cash leakage, excess reserves, weak demand, SLR/Basel norms.</li>
+      <li><strong>Money Market:</strong> Up to 1 year; call money, T-bills, CMBs, CPs, CDs, commercial bills, MMMFs, repo, TREPS. Regulator: RBI.</li>
+      <li><strong>RBI:</strong> Estd. 1 April 1935 (RBI Act 1934, Hilton Young Commission); nationalised 1 Jan 1949; HQ Mumbai; Issue + Banking departments; Minimum Reserve System 1956.</li>
+      <li><strong>Quantitative Instruments:</strong> Repo (centre), SDF (floor, repo&minus;25 since Apr 2022), MSF (ceiling, repo+25), CRR, SLR (cap 40%), OMO, LAF, Operation Twist, Bank Rate.</li>
+      <li><strong>Qualitative Instruments:</strong> Margin requirements, credit rationing, moral suasion, direct action, PSL.</li>
+      <li><strong>MPC:</strong> Statutory since 2016 (RBI Act amendment); 6 members; Governor casts deciding vote; meets &ge; 4 times/yr; minutes on Day 14; MPR twice a year.</li>
+      <li><strong>Inflation Target:</strong> 4% CPI &plusmn; 2%, set by Centre in consultation with RBI for 5 years (current: Apr 2021&ndash;Mar 2026). Failure = 3 consecutive quarters outside band.</li>
+      <li><strong>Demonetisation:</strong> 1946, 1978, 2016. 2016 used Section 26(2) RBI Act &mdash; upheld 4-1 by SC in Jan 2023. &#8377; 2,000 note withdrawn (not demonetised) May 2023.</li>
+      <li><strong>Digital:</strong> UPI (Apr 2016, NPCI); e&#8377;-W (Nov 2022); e&#8377;-R (Dec 2022); CBDC = RBI liability, UPI = payment rail for commercial-bank money.</li>
+      <li><strong>Crypto:</strong> Not legal tender; 30% tax + 1% TDS (Budget 2022-23); brought under PMLA in March 2023; IAMAI v. RBI (2020) struck down the banking ban.</li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<aside class="sidebar">
+
+  <div class="widget">
+    <h3>Monetary Aggregates &mdash; At a Glance</h3>
+    <table>
+      <tbody>
+        <tr><td><strong>M0</strong></td><td>Reserve Money</td></tr>
+        <tr><td><strong>M1</strong></td><td>Narrow Money</td></tr>
+        <tr><td><strong>M2</strong></td><td>M1 + PO savings</td></tr>
+        <tr><td><strong>M3</strong></td><td>Broad Money</td></tr>
+        <tr><td><strong>M4</strong></td><td>M3 + total PO deposits</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h3>Key Formulas</h3>
+    <div class="formula" style="font-size:.85rem">
+      M3 = m &times; M0<br>
+      m = (1 + c) / (c + r)<br>
+      Credit multiplier = 1 / r<br>
+      MSF = Repo + 25 bps<br>
+      SDF = Repo &minus; 25 bps<br>
+      Inflation target = 4% &plusmn; 2%
+    </div>
+  </div>
+
+  <div class="widget">
+    <h3>RBI Card</h3>
+    <ul>
+      <li>Estd: 1 April 1935</li>
+      <li>Act: RBI Act, 1934</li>
+      <li>Recommended by: Hilton Young Commission, 1926</li>
+      <li>Nationalised: 1 Jan 1949</li>
+      <li>HQ: Mumbai (since 1937)</li>
+      <li>Two Departments: Issue + Banking</li>
+      <li>Note issue: Minimum Reserve System, 1956</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h3>MPC Snapshot</h3>
+    <ul>
+      <li>Statutory: RBI Act amendment, May 2016</li>
+      <li>Members: 6 (3 RBI + 3 external)</li>
+      <li>Chair: RBI Governor</li>
+      <li>Tie-breaker: Governor's casting vote</li>
+      <li>Quorum: 4 (incl. Governor or DG)</li>
+      <li>Meetings: &ge; 4 per year</li>
+      <li>Minutes: Day 14</li>
+      <li>MPR: Twice a year</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h3>LAF Corridor (post-Apr 2022)</h3>
+    <table>
+      <tbody>
+        <tr><td>Ceiling</td><td>MSF = Repo + 25 bps</td></tr>
+        <tr><td>Centre</td><td>Repo Rate (policy rate)</td></tr>
+        <tr><td>Floor</td><td>SDF = Repo &minus; 25 bps</td></tr>
+        <tr><td>Width</td><td>50 bps</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h3>Difficulty Meter</h3>
+    <p style="margin:.4rem 0">Prelims: <strong>High</strong> &mdash; heavily tested via aggregates, MPC, instruments.</p>
+    <p style="margin:.4rem 0">Mains: <strong>Medium-High</strong> &mdash; FIT performance, CBDC, SDF, DPI &mdash; recurring themes.</p>
+  </div>
+
+  <div class="widget">
+    <h3>Must-Know Tags (40+)</h3>
+    <p style="line-height:1.7;font-size:.85rem">M0, M1, M2, M3, M4, Reserve Money, High-Powered Money, NDTL, CRR, SLR, Repo, Reverse Repo, SDF, MSF, OMO, LAF, Bank Rate, Operation Twist, Call Money, T-Bills, CMBs, CPs, CDs, MMMFs, TREPS, Helicopter Money, Hot Money, Near Money, Legal Tender, Fiat Money, Fiduciary Money, Coinage Act 2011, Minimum Reserve System 1956, RBI Act 1934, PSS Act 2007, FEMA 1999, BR Act 1949, MPC, FIT, Urjit Patel Committee, CPI Combined, Section 26(2), Section 45ZB, e&#8377;-R, e&#8377;-W, UPI, NPCI, CBDC, VDA, PMLA, ULI, AA, ONDC, OCEN, BBPS, AePS, IAMAI v. RBI, Vivek Narayan Sharma v. UoI, Ghosh Committee 1977, Reddy WG 1998, BRBNMPL, SPMCIL, &#8377;2000 withdrawal, Demonetisation 1946 / 1978 / 2016</p>
+  </div>
+
+  <div class="widget">
+    <h3>Data Sources</h3>
+    <ul>
+      <li>RBI Annual Report</li>
+      <li>RBI Monetary Policy Report (MPR &mdash; semi-annual)</li>
+      <li>RBI Bulletin (monthly)</li>
+      <li>RBI Weekly Statistical Supplement (WSS)</li>
+      <li>RBI Handbook of Statistics on the Indian Economy</li>
+      <li>Economic Survey 2023-24 (Vol. II Ch. 2 &amp; 5)</li>
+      <li>Budget 2024-25 &mdash; FM speech &amp; Receipts Budget</li>
+      <li>NPCI monthly UPI dashboard</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h3>Related Topics</h3>
+    <ul>
+      <li><a href="/economy/banking-system-in-india">Topic 06: Banking System in India</a></li>
+      <li><a href="/economy/inflation">Topic 07: Inflation &mdash; Concepts &amp; Indices</a></li>
+      <li><a href="/economy/fiscal-policy-and-the-union-budget">Topic 08: Fiscal Policy &amp; Budget</a></li>
+      <li><a href="/economy/external-sector-and-balance-of-payments">Topic 09: External Sector &amp; BoP</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h3>Quick Links</h3>
+    <ul>
+      <li><a href="/economy/economic-planning-in-india">&larr; Topic 04: Economic Planning</a></li>
+      <li><a href="/economy/growth-development-and-happiness">Topic 03: Growth, Development &amp; Happiness</a></li>
+      <li><a href="../upsc-notes.html">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+</aside>
+
+</div>
+</div>

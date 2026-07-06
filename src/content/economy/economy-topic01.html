@@ -1,0 +1,985 @@
+<!-- economy-topic01 — auto-imported from economy-topic01-fundamentals-of-economy-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(135deg,#1b3a4b 0%,#0d2535 55%,#061018 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ol{margin:0;padding-left:22px;font-size:14px;columns:2;column-gap:24px}
+.toc li{margin-bottom:5px;break-inside:avoid}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ol{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Fundamentals of Economy &mdash; Sectors, Factors of Production &amp; Types of Economies</h1>
+  <p class="sub">Every Economics question on the UPSC paper rests on a small set of foundational ideas: how the economy is divided into sectors, what factors drive production, and how societies organise scarce resources. Get these right and the rest of the syllabus &mdash; from inflation to banking to budget &mdash; falls into place.</p>
+  <div class="meta">
+    <span class="pill">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Ramesh Singh Ch. 1&ndash;2</span>
+    <span class="pill">~20 min read</span>
+    <span class="pill">Eco Survey 2023&ndash;24</span>
+    <span class="pill">Budget 2024&ndash;25</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ol>
+    <li><a href="#concept">Conceptual Clarity</a></li>
+    <li><a href="#whatis">1. What is Economics &amp; an Economy</a></li>
+    <li><a href="#sectors">2. Sectors of the Economy</a></li>
+    <li><a href="#factors">3. Factors of Production</a></li>
+    <li><a href="#types">4. Types of Economies</a></li>
+    <li><a href="#micromacro">5. Micro vs Macroeconomics</a></li>
+    <li><a href="#basicterms">6. Basic Terms &amp; Concepts</a></li>
+    <li><a href="#india">7. Structural Transformation of Indian Economy</a></li>
+    <li><a href="#currentaffairs">8. Current Affairs Link</a></li>
+    <li><a href="#prelims-pyq">9. Prelims PYQs (2014&ndash;2026)</a></li>
+    <li><a href="#mains-pyq">10. Mains PYQs (2014&ndash;2025)</a></li>
+    <li><a href="#revision">11. 15-Minute Revision Box</a></li>
+  </ol>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; Why this Chapter Matters</h3>
+  <p>UPSC asks two kinds of questions on the fundamentals:</p>
+  <ul>
+    <li><strong>Definitional/static</strong> &mdash; e.g., "Which of the following falls under the tertiary sector?" or "Which is NOT a factor of production?"</li>
+    <li><strong>Applied/current</strong> &mdash; e.g., "India's structural transformation has skipped the manufacturing stage." Discuss. These need both theory and the latest sectoral GVA data.</li>
+  </ul>
+  <p>Master the vocabulary once; reuse across the next 37 topics. Pay special attention to the <strong>quaternary &amp; quinary sectors</strong> (newer additions that have entered UPSC since 2020) and to <strong>India's services-led growth</strong> &mdash; the single most-tested theme of the last decade.</p>
+</div>
+
+<!-- ===== SECTION 1: WHAT IS ECONOMICS ===== -->
+<section class="notes" id="whatis">
+  <h2>1. What is Economics &amp; an Economy?</h2>
+
+  <h3>1.1 Economics &mdash; The Definitions</h3>
+  <p>Economics studies how individuals and societies allocate <strong>scarce resources</strong> with <strong>alternative uses</strong> to satisfy <strong>unlimited wants</strong>. Four classical definitions trace the evolution of the subject:</p>
+  <table>
+    <tr><th>Thinker</th><th>School</th><th>Definition (essence)</th></tr>
+    <tr><td>Adam Smith (1776, <em>Wealth of Nations</em>)</td><td>Classical</td><td>Science of <strong>wealth</strong> &mdash; production, distribution, consumption</td></tr>
+    <tr><td>Alfred Marshall (1890)</td><td>Neo-classical</td><td>Study of mankind in the ordinary business of life &mdash; a <strong>welfare</strong> definition</td></tr>
+    <tr><td>Lionel Robbins (1932)</td><td>Modern</td><td>Science of <strong>scarcity</strong> &mdash; allocating scarce means among competing ends</td></tr>
+    <tr><td>Paul Samuelson</td><td>Contemporary</td><td>How societies use scarce resources to produce goods &amp; distribute them &mdash; a <strong>growth-oriented</strong> definition</td></tr>
+  </table>
+
+  <h3>1.2 Economy</h3>
+  <p>An <strong>economy</strong> is the real-world system through which the people of a region produce, exchange, distribute and consume goods and services. Every economy must answer <strong>three central questions</strong>:</p>
+  <ol>
+    <li><strong>What</strong> to produce &mdash; bread or guns?</li>
+    <li><strong>How</strong> to produce &mdash; labour-intensive or capital-intensive technique?</li>
+    <li><strong>For whom</strong> to produce &mdash; rich, poor, or evenly distributed?</li>
+  </ol>
+  <p>The answer mechanism (market, state, or both) defines the <strong>type of economy</strong> (Section 4).</p>
+
+  <div class="callout info"><strong>UPSC Angle:</strong> Robbins' scarcity definition is the most-tested in Prelims. Remember the phrase &mdash; "ends are many, means are scarce and have alternative uses."</div>
+</section>
+
+<!-- ===== SECTION 2: SECTORS OF THE ECONOMY ===== -->
+<section class="notes" id="sectors">
+  <h2>2. Sectors of the Economy</h2>
+
+  <h3>2.1 The Five-Sector Classification</h3>
+  <p>Modern economics divides economic activity into <strong>five sectors</strong> by the kind of work performed. UPSC has tested all five &mdash; especially quaternary &amp; quinary, which were added to the syllabus discourse post-2015.</p>
+
+  <table>
+    <tr><th>Sector</th><th>Nature of Activity</th><th>Examples</th></tr>
+    <tr><td><strong>Primary</strong></td><td>Direct use of natural resources &mdash; extraction &amp; cultivation</td><td>Agriculture, forestry, fishing, mining, quarrying, animal husbandry</td></tr>
+    <tr><td><strong>Secondary</strong></td><td>Transformation of raw material into finished goods &mdash; <em>manufacturing</em></td><td>Factories, construction, electricity, gas, water supply</td></tr>
+    <tr><td><strong>Tertiary</strong></td><td>Production of <em>services</em> that support primary &amp; secondary sectors</td><td>Trade, transport, banking, insurance, hotels, communication, retail</td></tr>
+    <tr><td><strong>Quaternary</strong></td><td>Knowledge-based services &mdash; intellectual activities</td><td>R&amp;D, education, IT services, consulting, library, financial analysts</td></tr>
+    <tr><td><strong>Quinary</strong></td><td>Highest-level decision-making &mdash; "gold-collar" professions</td><td>Top corporate executives, senior scientists, government officials, judges, top media &amp; cultural figures</td></tr>
+  </table>
+
+  <div class="callout warn"><strong>Important distinction:</strong> Tertiary &amp; Quaternary sectors both produce <em>services</em>, but <strong>quaternary is knowledge-intensive</strong> (a software engineer, a researcher) while tertiary is general services (a shop assistant, a bus driver). Quinary is a sub-set of quaternary &mdash; the <em>top decision-makers</em>.</div>
+
+  <h3>2.2 Sectors by Other Lenses</h3>
+  <table>
+    <tr><th>Basis</th><th>Sectors</th><th>Example</th></tr>
+    <tr><td>Ownership</td><td>Public &middot; Private &middot; Joint &middot; Co-operative</td><td>SBI (public) vs HDFC (private) vs Maruti-Suzuki erstwhile (joint) vs Amul (co-op)</td></tr>
+    <tr><td>Organisation</td><td>Organised &middot; Unorganised</td><td>Registered factories under Factories Act 1948 vs street vendors</td></tr>
+    <tr><td>Geography</td><td>Rural &middot; Urban</td><td>Census 2011 definitions; Census 2027 pending <span class="update-tag">check for latest</span></td></tr>
+  </table>
+
+  <h3>2.3 India's Sectoral Composition (latest GVA data)</h3>
+  <p>The <strong>share of each sector in Gross Value Added (GVA) at current prices, FY24 (PE) &mdash; MoSPI / Economic Survey 2023-24</strong>:</p>
+  <table>
+    <tr><th>Sector</th><th>Share in GVA (FY24)</th><th>Share in Employment (PLFS 2022-23)</th></tr>
+    <tr><td>Agriculture &amp; Allied (Primary)</td><td>~17.7%</td><td>~45.8% (rising again post-COVID)</td></tr>
+    <tr><td>Industry (Secondary)</td><td>~27.6%</td><td>~25.7%</td></tr>
+    <tr><td>Services (Tertiary + Quaternary + Quinary)</td><td>~54.7%</td><td>~28.5%</td></tr>
+  </table>
+  <div class="callout update"><strong>Data freshness:</strong> Update each year from <em>National Accounts Statistics</em> (NAS), MoSPI &amp; PLFS Annual Report. <span class="update-tag">check for latest update or data</span></div>
+
+  <!-- SVG: Sectoral Pie -->
+  <div class="svg-wrap">
+    <svg viewBox="0 0 720 280" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+      <!-- Title -->
+      <text x="360" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2035">India: GVA vs Employment Share by Sector (FY24)</text>
+      <!-- GVA pie -->
+      <g transform="translate(170,150)">
+        <circle r="90" fill="#fff" stroke="#dde3e8"/>
+        <!-- Agriculture 17.7% -->
+        <path d="M0,0 L0,-90 A90,90 0 0,1 78.9,43.3 Z" fill="#5ca050"/>
+        <!-- Industry 27.6% -->
+        <path d="M0,0 L78.9,43.3 A90,90 0 0,1 -47.8,76.4 Z" fill="#c47820"/>
+        <!-- Services 54.7% -->
+        <path d="M0,0 L-47.8,76.4 A90,90 0 1,1 0,-90 Z" fill="#1a3d5c"/>
+        <text y="-115" text-anchor="middle" font-size="12" font-weight="700" fill="#0d2035">Share in GVA</text>
+        <text y="105" text-anchor="middle" font-size="10" fill="#666">(at current prices)</text>
+      </g>
+      <!-- Employment pie -->
+      <g transform="translate(450,150)">
+        <circle r="90" fill="#fff" stroke="#dde3e8"/>
+        <!-- Agri 45.8% -->
+        <path d="M0,0 L0,-90 A90,90 0 0,1 22.6,87.1 Z" fill="#5ca050"/>
+        <!-- Industry 25.7% -->
+        <path d="M0,0 L22.6,87.1 A90,90 0 0,1 -77.0,46.4 Z" fill="#c47820"/>
+        <!-- Services 28.5% -->
+        <path d="M0,0 L-77.0,46.4 A90,90 0 0,1 0,-90 Z" fill="#1a3d5c"/>
+        <text y="-115" text-anchor="middle" font-size="12" font-weight="700" fill="#0d2035">Share in Employment</text>
+        <text y="105" text-anchor="middle" font-size="10" fill="#666">(PLFS 2022-23)</text>
+      </g>
+      <!-- Legend -->
+      <g transform="translate(580,120)">
+        <rect width="14" height="14" fill="#5ca050"/><text x="20" y="11" font-size="11" fill="#1a1a1a">Agriculture</text>
+        <rect y="22" width="14" height="14" fill="#c47820"/><text x="20" y="33" font-size="11" fill="#1a1a1a">Industry</text>
+        <rect y="44" width="14" height="14" fill="#1a3d5c"/><text x="20" y="55" font-size="11" fill="#1a1a1a">Services</text>
+      </g>
+    </svg>
+    <div class="svg-caption">Fig 1.1 &mdash; Sectoral share in GVA vs Employment, India FY24. Note the <strong>dual mismatch</strong>: agriculture contributes 17.7% to output but employs 45.8% of the workforce &mdash; the core of India's productivity gap.</div>
+  </div>
+
+  <div class="callout"><strong>Key insight (Mains):</strong> India's services sector contributes more than half of GVA but only ~28% of jobs &mdash; a <em>"jobless growth"</em> pattern. The classic Lewis/Kuznets development path (labour moving from agriculture &rarr; manufacturing &rarr; services) has been <strong>skipped</strong> in India: workers moved directly from agriculture to low-end services or are still stuck in agriculture.</div>
+</section>
+
+<!-- ===== SECTION 3: FACTORS OF PRODUCTION ===== -->
+<section class="notes" id="factors">
+  <h2>3. Factors of Production</h2>
+
+  <p>Inputs used to produce goods and services are called <strong>factors of production</strong>. Classical economics identified <strong>four</strong>; modern economics adds a <strong>fifth</strong>.</p>
+
+  <h3>3.1 The Four Classical Factors</h3>
+  <table>
+    <tr><th>Factor</th><th>Definition</th><th>Reward</th></tr>
+    <tr><td><strong>Land</strong></td><td>All free gifts of nature &mdash; soil, water, minerals, forests, climate. Fixed in supply.</td><td><strong>Rent</strong></td></tr>
+    <tr><td><strong>Labour</strong></td><td>Any human effort &mdash; physical or mental &mdash; with a price. Excludes work done out of love/duty.</td><td><strong>Wages</strong></td></tr>
+    <tr><td><strong>Capital</strong></td><td><em>Man-made</em> resources used in further production (machinery, tools, buildings, raw material stock). NOT money &mdash; money is a medium to acquire capital.</td><td><strong>Interest</strong></td></tr>
+    <tr><td><strong>Entrepreneur</strong></td><td>The risk-taking organiser who combines the other three factors &amp; innovates.</td><td><strong>Profit</strong></td></tr>
+  </table>
+
+  <div class="callout warn"><strong>Common UPSC trap:</strong> Money is NOT capital. Only physical assets that aid further production are capital. "<em>Money is the means by which capital is acquired, but it is not itself capital.</em>"</div>
+
+  <h3>3.2 The Fifth Factor &mdash; Knowledge / Human Capital</h3>
+  <p>In the knowledge economy, <strong>human capital</strong> (education, skills, health) is treated as a distinct factor. Theodore Schultz and Gary Becker formalised this. India's <strong>Skill India Mission, PMKVY, NEP 2020</strong> all target human capital formation.</p>
+
+  <h3>3.3 Capital &mdash; Types</h3>
+  <ul>
+    <li><strong>Fixed Capital</strong> &mdash; durable goods used repeatedly: machinery, buildings.</li>
+    <li><strong>Working / Circulating Capital</strong> &mdash; used up in one cycle: raw material, fuel.</li>
+    <li><strong>Physical Capital</strong> &mdash; tangible: machines, plants.</li>
+    <li><strong>Human Capital</strong> &mdash; intangible: skills, education, health.</li>
+    <li><strong>Social Capital</strong> &mdash; norms, networks, trust in society (Putnam).</li>
+    <li><strong>Financial Capital</strong> &mdash; money &amp; financial instruments.</li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 4: TYPES OF ECONOMIES ===== -->
+<section class="notes" id="types">
+  <h2>4. Types of Economies</h2>
+
+  <p>Economies are classified by <strong>who owns the means of production</strong> and <strong>who answers the three central questions</strong>.</p>
+
+  <h3>4.1 Capitalist (Free-Market) Economy</h3>
+  <ul>
+    <li>Means of production owned by <strong>private individuals/firms</strong>.</li>
+    <li>The three central questions answered by the <strong>price mechanism</strong> (Adam Smith's "invisible hand").</li>
+    <li>Profit motive &amp; competition drive allocation.</li>
+    <li>Examples: USA, UK, Japan, Australia (with regulation).</li>
+    <li><strong>Strengths</strong> &mdash; efficiency, innovation, consumer choice. <strong>Weaknesses</strong> &mdash; inequality, market failures (externalities, public goods), business-cycle volatility.</li>
+  </ul>
+
+  <h3>4.2 Socialist (Centrally Planned) Economy</h3>
+  <ul>
+    <li>Means of production owned by the <strong>state</strong> on behalf of society.</li>
+    <li>Central planning authority answers the three questions &mdash; no price mechanism for resource allocation.</li>
+    <li>Examples (historic): USSR (1917&ndash;1991), Maoist China (pre-1978); (current): North Korea, Cuba (largely).</li>
+    <li><strong>Strengths</strong> &mdash; equity, full employment, no business cycle. <strong>Weaknesses</strong> &mdash; no innovation incentive, shortages, bureaucratic inefficiency (the "calculation problem" &mdash; Mises &amp; Hayek).</li>
+  </ul>
+
+  <h3>4.3 Mixed Economy</h3>
+  <ul>
+    <li><strong>Co-existence of public &amp; private sectors</strong>; market for most goods, state for strategic sectors, public goods &amp; welfare.</li>
+    <li>India, France, Sweden, Germany &mdash; all mixed economies of varying flavours.</li>
+    <li>India adopted a mixed economy through the <strong>Industrial Policy Resolution 1948 &amp; 1956</strong>; reaffirmed by Article 39(b) &amp; (c) of the Constitution (DPSP).</li>
+  </ul>
+
+  <div class="callout"><strong>India's tilt has changed:</strong> Pre-1991 &mdash; state-dominant ("commanding heights"). Post-1991 LPG reforms &mdash; private-dominant with state regulator. Post-2014 &mdash; minimum government, maximum governance + strategic disinvestment + PSU privatisation drive (Air India 2022, IDBI ongoing).</div>
+
+  <h3>4.4 Other Classifications</h3>
+  <table>
+    <tr><th>Basis</th><th>Types</th></tr>
+    <tr><td>By stage of development</td><td>Developed (high HDI, services-led) &middot; Developing (lower-middle income, structurally transforming) &middot; Least Developed (LDC)</td></tr>
+    <tr><td>By openness</td><td>Open (engages in trade &amp; capital flows) &middot; Closed (autarky &mdash; rare)</td></tr>
+    <tr><td>By role of state</td><td>Laissez-faire &middot; Welfare State &middot; Developmental State</td></tr>
+    <tr><td>By technology adoption</td><td>Agrarian &middot; Industrial &middot; Post-industrial / Knowledge</td></tr>
+  </table>
+
+  <div class="callout info"><strong>World Bank income classification (FY24-25):</strong> Low income &lt; $1,145 &middot; Lower-middle $1,146&ndash;$4,515 &middot; Upper-middle $4,516&ndash;$14,005 &middot; High income &gt; $14,005 (GNI per capita, Atlas method). <strong>India</strong> = Lower-middle income (GNI per capita ~$2,540 in FY24). <span class="update-tag">check for latest update or data</span></div>
+
+  <!-- SVG: Three Types comparison -->
+  <div class="svg-wrap">
+    <svg viewBox="0 0 720 200" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+      <text x="360" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2035">Three Types of Economies &mdash; Spectrum of State Role</text>
+      <!-- Spectrum line -->
+      <line x1="60" y1="100" x2="660" y2="100" stroke="#1a3d5c" stroke-width="2"/>
+      <!-- Capitalist -->
+      <circle cx="120" cy="100" r="40" fill="#fff" stroke="#c47820" stroke-width="3"/>
+      <text x="120" y="98" text-anchor="middle" font-size="12" font-weight="700" fill="#c47820">Capitalist</text>
+      <text x="120" y="114" text-anchor="middle" font-size="10" fill="#666">Pure market</text>
+      <text x="120" y="160" text-anchor="middle" font-size="10" fill="#444">USA, UK</text>
+      <text x="120" y="174" text-anchor="middle" font-size="9" fill="#666">Min. state</text>
+      <!-- Mixed -->
+      <circle cx="360" cy="100" r="50" fill="#fff" stroke="#1a7a5a" stroke-width="3"/>
+      <text x="360" y="96" text-anchor="middle" font-size="13" font-weight="700" fill="#1a7a5a">Mixed</text>
+      <text x="360" y="112" text-anchor="middle" font-size="10" fill="#666">Market + State</text>
+      <text x="360" y="166" text-anchor="middle" font-size="10" fill="#444">India, France</text>
+      <text x="360" y="180" text-anchor="middle" font-size="9" fill="#666">Strategic state</text>
+      <!-- Socialist -->
+      <circle cx="600" cy="100" r="40" fill="#fff" stroke="#1a3d5c" stroke-width="3"/>
+      <text x="600" y="98" text-anchor="middle" font-size="12" font-weight="700" fill="#1a3d5c">Socialist</text>
+      <text x="600" y="114" text-anchor="middle" font-size="10" fill="#666">Central plan</text>
+      <text x="600" y="160" text-anchor="middle" font-size="10" fill="#444">N. Korea, Cuba</text>
+      <text x="600" y="174" text-anchor="middle" font-size="9" fill="#666">Max. state</text>
+    </svg>
+    <div class="svg-caption">Fig 1.2 &mdash; The economic spectrum: from pure-market capitalism to pure central planning. Most real-world economies are somewhere on this continuum.</div>
+  </div>
+</section>
+
+<!-- ===== SECTION 5: MICRO vs MACRO ===== -->
+<section class="notes" id="micromacro">
+  <h2>5. Micro vs Macroeconomics</h2>
+
+  <table>
+    <tr><th>Aspect</th><th>Microeconomics</th><th>Macroeconomics</th></tr>
+    <tr><td>Unit of study</td><td>Individual firm, household, consumer, single market</td><td>Whole economy &mdash; aggregates</td></tr>
+    <tr><td>Coined by</td><td>Ragnar Frisch (1933)</td><td>Ragnar Frisch (1933)</td></tr>
+    <tr><td>Father of subject</td><td>Alfred Marshall</td><td>John Maynard Keynes (<em>General Theory</em>, 1936)</td></tr>
+    <tr><td>Topics covered</td><td>Demand &amp; supply, consumer behaviour, theory of firm, market structures, factor pricing</td><td>National income, inflation, unemployment, monetary &amp; fiscal policy, BoP, growth</td></tr>
+    <tr><td>Key prices</td><td>Relative prices of goods</td><td>General price level (CPI, WPI)</td></tr>
+    <tr><td>Origin of word</td><td><em>Mikros</em> = small (Greek)</td><td><em>Makros</em> = large (Greek)</td></tr>
+  </table>
+
+  <p><strong>Why both matter for UPSC:</strong> Topics 2&ndash;7 (National Income, Money, Inflation, Public Finance, External Sector) are all <em>macro</em>. Topics on Banking, Markets, Insurance touch <em>micro</em> as well.</p>
+</section>
+
+<!-- ===== SECTION 6: BASIC TERMS ===== -->
+<section class="notes" id="basicterms">
+  <h2>6. Basic Terms &amp; Concepts</h2>
+
+  <h3>6.1 Goods &amp; Services</h3>
+  <ul>
+    <li><strong>Goods</strong> &mdash; tangible items (rice, car). <strong>Services</strong> &mdash; intangible (haircut, banking).</li>
+    <li><strong>Consumer goods</strong> &mdash; final goods bought by households (food, clothes).</li>
+    <li><strong>Capital goods</strong> &mdash; used to produce other goods (machinery).</li>
+    <li><strong>Intermediate goods</strong> &mdash; used up in the production of other goods within the same year (raw cotton for textile mills) &mdash; excluded from GDP to avoid double counting.</li>
+    <li><strong>Final goods</strong> &mdash; sold to ultimate consumers &mdash; counted in GDP.</li>
+    <li><strong>Durable</strong> (refrigerator) vs <strong>Non-durable</strong> (milk) consumer goods.</li>
+  </ul>
+
+  <h3>6.2 Public, Private &amp; Merit Goods</h3>
+  <table>
+    <tr><th>Type</th><th>Properties</th><th>Examples</th></tr>
+    <tr><td>Private good</td><td>Excludable + Rival</td><td>Bread, car</td></tr>
+    <tr><td><strong>Public good</strong></td><td>Non-excludable + Non-rival</td><td>National defence, street lighting, lighthouses</td></tr>
+    <tr><td>Common pool resource</td><td>Non-excludable + Rival</td><td>Open-access fisheries, groundwater &mdash; "tragedy of the commons" (Garrett Hardin)</td></tr>
+    <tr><td>Club good / Toll good</td><td>Excludable + Non-rival</td><td>Cable TV, private parks, toll roads</td></tr>
+    <tr><td>Merit goods</td><td>Society values more than market &mdash; under-consumed if left to market</td><td>Education, healthcare, vaccines</td></tr>
+    <tr><td>Demerit goods</td><td>Over-consumed without state intervention</td><td>Tobacco, alcohol &mdash; taxed via sin tax</td></tr>
+  </table>
+
+  <h3>6.3 Utility, Demand, Supply &mdash; The Building Blocks</h3>
+  <ul>
+    <li><strong>Utility</strong> &mdash; the satisfaction a consumer gets from a good. Measured cardinally (Marshall) or ordinally (Hicks, Allen).</li>
+    <li><strong>Law of Diminishing Marginal Utility</strong> &mdash; each additional unit gives less satisfaction. Basis for the downward-sloping demand curve.</li>
+    <li><strong>Demand</strong> &mdash; quantity buyers are willing &amp; able to buy at various prices, ceteris paribus.</li>
+    <li><strong>Law of Demand</strong> &mdash; price &uarr; &rArr; quantity demanded &darr; (with exceptions: Giffen goods, Veblen goods).</li>
+    <li><strong>Supply</strong> &mdash; quantity sellers are willing to sell at various prices.</li>
+    <li><strong>Equilibrium</strong> &mdash; price where Qd = Qs (market clears).</li>
+    <li><strong>Elasticity</strong> &mdash; responsiveness of demand/supply to price (or income). Inelastic for necessities; elastic for luxuries.</li>
+  </ul>
+
+  <h3>6.4 Marginal, Average &amp; Total &mdash; the trio you must distinguish</h3>
+  <ul>
+    <li><strong>Total</strong> = sum of all units (Total Cost, Total Revenue).</li>
+    <li><strong>Average</strong> = Total &divide; Quantity (Average Cost = TC/Q).</li>
+    <li><strong>Marginal</strong> = change from one additional unit (Marginal Cost = &Delta;TC/&Delta;Q).</li>
+    <li>Rule: Average is rising when Marginal &gt; Average; falling when Marginal &lt; Average; constant when Marginal = Average.</li>
+  </ul>
+
+  <h3>6.5 Production Possibility Frontier (PPF)</h3>
+  <p>A curve showing the maximum combinations of two goods an economy can produce with given resources &amp; technology, when all resources are fully &amp; efficiently used.</p>
+  <ul>
+    <li>Points <strong>on</strong> the PPF &rarr; efficient.</li>
+    <li>Points <strong>inside</strong> &rarr; inefficient or unemployment.</li>
+    <li>Points <strong>outside</strong> &rarr; unattainable with current resources.</li>
+    <li>Outward shift &rarr; economic growth (more resources or better technology).</li>
+    <li>Slope = <strong>Opportunity cost</strong> &mdash; what you give up to get more of the other good.</li>
+  </ul>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 480 280" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+      <text x="240" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Production Possibility Frontier</text>
+      <!-- Axes -->
+      <line x1="60" y1="240" x2="440" y2="240" stroke="#1a3d5c" stroke-width="1.5"/>
+      <line x1="60" y1="240" x2="60" y2="50" stroke="#1a3d5c" stroke-width="1.5"/>
+      <!-- Axis labels -->
+      <text x="450" y="244" font-size="11" fill="#1a1a1a">Guns &rarr;</text>
+      <text x="40" y="40" font-size="11" fill="#1a1a1a">Butter</text>
+      <!-- PPF curve (concave) -->
+      <path d="M 60 60 Q 100 230 410 240" fill="none" stroke="#c47820" stroke-width="2.5"/>
+      <!-- Points -->
+      <circle cx="160" cy="160" r="4" fill="#1a7a5a"/>
+      <text x="170" y="156" font-size="11" fill="#1a7a5a">A (efficient)</text>
+      <circle cx="180" cy="220" r="4" fill="#c0392b"/>
+      <text x="190" y="220" font-size="11" fill="#c0392b">B (inefficient)</text>
+      <circle cx="320" cy="80" r="4" fill="#1a3d5c"/>
+      <text x="330" y="80" font-size="11" fill="#1a3d5c">C (unattainable)</text>
+      <!-- Arrow growth -->
+      <path d="M 410 240 Q 100 240 60 60" fill="none" stroke="#1a7a5a" stroke-width="1" stroke-dasharray="3,3"/>
+      <text x="280" y="270" text-anchor="middle" font-size="10" fill="#666" font-style="italic">Outward shift &rarr; growth</text>
+    </svg>
+    <div class="svg-caption">Fig 1.3 &mdash; PPF for a classic two-good economy (guns vs butter). Bowed-outward shape reflects increasing opportunity cost as resources are reallocated.</div>
+  </div>
+
+  <h3>6.6 Other Must-Know Terms</h3>
+  <table>
+    <tr><th>Term</th><th>Meaning</th></tr>
+    <tr><td>Opportunity Cost</td><td>The next-best alternative foregone</td></tr>
+    <tr><td>Scarcity</td><td>Limited resources vs unlimited wants</td></tr>
+    <tr><td>Ceteris paribus</td><td>"Other things being equal"</td></tr>
+    <tr><td>Positive economics</td><td>What <em>is</em> &mdash; descriptive, fact-based</td></tr>
+    <tr><td>Normative economics</td><td>What <em>ought to be</em> &mdash; value-based</td></tr>
+    <tr><td>Inflation / Deflation</td><td>Sustained rise / fall in general price level</td></tr>
+    <tr><td>Recession</td><td>Two consecutive quarters of negative GDP growth</td></tr>
+    <tr><td>Depression</td><td>Prolonged, deep recession (e.g., Great Depression 1929)</td></tr>
+  </table>
+</section>
+
+<!-- ===== SECTION 7: STRUCTURAL TRANSFORMATION OF INDIA ===== -->
+<section class="notes" id="india">
+  <h2>7. Structural Transformation of the Indian Economy</h2>
+
+  <h3>7.1 What is Structural Transformation?</h3>
+  <p>The process by which the <strong>relative contribution</strong> of agriculture, industry &amp; services to GDP &amp; employment changes as an economy develops. The classical pathway (<strong>Colin Clark, Simon Kuznets, Arthur Lewis, Walt Rostow</strong>):</p>
+  <p style="text-align:center;font-weight:600;color:var(--brand-blue-dark);font-size:15px;background:var(--brand-blue-light);padding:10px;border-radius:6px">Agriculture &rarr; Manufacturing &rarr; Services</p>
+  <p>Labour and capital flow from low-productivity agriculture to higher-productivity manufacturing, then to even higher-value services.</p>
+
+  <h3>7.2 India's Atypical Path &mdash; the "Services Leapfrog"</h3>
+  <p>Unlike the East-Asian tigers (Japan, South Korea, China) that followed the classical sequence, India <strong>skipped the manufacturing stage</strong>:</p>
+  <ul>
+    <li>Agriculture share in GVA: ~55% (1950-51) &rarr; ~17.7% (FY24).</li>
+    <li>Industry share: ~15% (1950-51) &rarr; ~27.6% (FY24) &mdash; <strong>stagnant since the 1990s</strong>.</li>
+    <li>Services share: ~30% (1950-51) &rarr; ~54.7% (FY24) &mdash; the big mover.</li>
+  </ul>
+  <p>But the <strong>employment structure has not transformed in tandem</strong>: agriculture still employs ~46% (PLFS 2022-23), having actually <em>risen again post-COVID</em> (reverse migration). Result &mdash; a <strong>productivity gap</strong> that is among the world's widest.</p>
+
+  <div class="callout warn"><strong>Mains-ready frame:</strong> India's growth story has been led by <em>capital-intensive, skill-intensive services</em> (IT, finance, telecom) that don't absorb the country's vast pool of low-skilled labour. The result is "<strong>jobless growth</strong>" &mdash; the central challenge that Make in India, PLI schemes &amp; Skill India seek to address.</div>
+
+  <h3>7.3 Reasons for India's Atypical Path</h3>
+  <ul>
+    <li><strong>Licence-Permit Raj (1951&ndash;1991)</strong> stifled manufacturing.</li>
+    <li><strong>Labour laws</strong> &mdash; firms with &gt;100 workers couldn't retrench without state permission (Industrial Disputes Act 1947); new Labour Codes (2019&ndash;20) aim to fix this. <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>Infrastructure deficit</strong> &mdash; power, roads, ports historically weak; addressed now via PM Gati Shakti, NIP.</li>
+    <li><strong>Land &amp; capital market frictions</strong>.</li>
+    <li><strong>English-speaking, IT-trained workforce</strong> &mdash; comparative advantage in services exports.</li>
+    <li><strong>Global liberalisation of services trade</strong> from the 1990s coincided with India's reforms.</li>
+  </ul>
+
+  <h3>7.4 Indian Economy Today &mdash; Headline Numbers</h3>
+  <table>
+    <tr><th>Indicator</th><th>Latest Value</th><th>Source</th></tr>
+    <tr><td>GDP size (nominal)</td><td>~$3.9 trillion (FY24); 5th largest globally <span class="update-tag">check for latest update or data</span></td><td>IMF WEO / MoSPI</td></tr>
+    <tr><td>GDP growth (real)</td><td>8.2% (FY24, PE); 6.5&ndash;7% projected FY25 <span class="update-tag">check for latest update or data</span></td><td>NSO, RBI MPC</td></tr>
+    <tr><td>Per capita income (nominal)</td><td>~&#8377;1.85 lakh / ~$2,540 (FY24) <span class="update-tag">check for latest update or data</span></td><td>MoSPI</td></tr>
+    <tr><td>CPI inflation</td><td>~5.1% (FY24 avg); target band 2&ndash;6% <span class="update-tag">check for latest update or data</span></td><td>RBI / NSO</td></tr>
+    <tr><td>Fiscal deficit (Centre)</td><td>5.6% of GDP (FY24); 4.9% target FY25 <span class="update-tag">check for latest update or data</span></td><td>Budget 2024-25</td></tr>
+    <tr><td>Current account deficit</td><td>0.7% of GDP (FY24) <span class="update-tag">check for latest update or data</span></td><td>RBI BoP data</td></tr>
+    <tr><td>Forex reserves</td><td>~$650 bn (Jun 2024); 4th largest globally <span class="update-tag">check for latest update or data</span></td><td>RBI Weekly Statistical Supplement</td></tr>
+  </table>
+  <div class="callout update"><strong>Always update these from:</strong> RBI Monthly Bulletin &middot; MoSPI Press Releases &middot; PIB &middot; Budget &amp; Economic Survey documents. <span class="update-tag">check for latest update or data</span></div>
+
+  <h3>7.5 Aspirations &amp; Targets</h3>
+  <ul>
+    <li><strong>$5 trillion economy</strong> &mdash; PM Modi's target announced 2019; achievement now expected by FY27&ndash;28 (delayed by COVID). <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>Viksit Bharat @2047</strong> &mdash; aim of becoming a developed nation by India's centenary of independence; NITI Aayog drafting Vision Document. <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>3rd largest economy</strong> &mdash; projected to overtake Germany &amp; Japan by 2027 (Goldman Sachs, S&amp;P). <span class="update-tag">check for latest update or data</span></li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 8: CURRENT AFFAIRS ===== -->
+<section class="notes" id="currentaffairs">
+  <h2>8. Current Affairs Link</h2>
+
+  <h3>8.1 Economic Survey 2023-24 &mdash; Key Themes</h3>
+  <ul>
+    <li>Real GDP growth FY24: 8.2% (revised 1st AE). <span class="update-tag">check for latest update or data</span></li>
+    <li>Emphasised <strong>private sector capex</strong> as the next growth engine.</li>
+    <li>Identified <strong>AI &amp; geopolitical fragmentation</strong> as twin global risks.</li>
+    <li>Cautioned against high stock-market valuations &amp; F&amp;O retail trading bubble.</li>
+  </ul>
+
+  <h3>8.2 Union Budget 2024-25 &mdash; Fundamentals Link</h3>
+  <ul>
+    <li>9 priorities: Productivity &amp; resilience in agriculture; Employment &amp; skilling; Inclusive HRD &amp; social justice; Manufacturing &amp; services; Urban development; Energy security; Infrastructure; Innovation, R&amp;D; Next-gen reforms.</li>
+    <li>Capex budgeted at <strong>&#8377;11.11 lakh crore</strong> (3.4% of GDP). <span class="update-tag">check for latest update or data</span></li>
+    <li>Fiscal deficit target: <strong>4.9% of GDP</strong> in FY25; glide path to &le;4.5% by FY26.</li>
+  </ul>
+
+  <h3>8.3 Recent Sector-related Developments</h3>
+  <ul>
+    <li><strong>PLI Schemes</strong> &mdash; 14 sectors, &#8377;1.97 lakh crore outlay; targets boost to secondary sector share.</li>
+    <li><strong>Agri-Stack &amp; Digital Agriculture Mission</strong> (approved 2024) &mdash; brings quaternary-sector layer to primary sector.</li>
+    <li><strong>Services exports</strong> crossed <strong>$340 bn</strong> in FY24 &mdash; cushioned the merchandise trade deficit. <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>GCC boom</strong> &mdash; India now hosts 1,700+ Global Capability Centres employing ~1.9 million; clear quaternary/quinary expansion. <span class="update-tag">check for latest update or data</span></li>
+  </ul>
+
+  <div class="pyq">
+    <div class="year">Current Affairs 2024&ndash;25</div>
+    <p>The <strong>Economic Survey 2023-24</strong> noted that India needs to create ~78.5 lakh jobs per year in the non-farm sector till 2030 to absorb its growing workforce &mdash; a direct call-out of the "jobless growth in services" pattern discussed in Section 7.2.</p>
+  </div>
+</section>
+
+<!-- ===== SECTION 9: PRELIMS PYQs ===== -->
+<section class="notes" id="prelims-pyq">
+  <h2>9. Prelims PYQs (2014&ndash;2026)</h2>
+  <p style="font-size:13px;color:var(--muted);font-style:italic">PYQs relating to sectors, factors of production, types of economies, and structural-transformation concepts. Many Economy-fundamentals questions are bundled with allied topics (National Income, GDP) which appear in Topic 2 PYQs.</p>
+
+  <div class="pyq">
+    <div class="year">Prelims 2025</div>
+    <p>With reference to the Indian economy, consider the following statements:<br>
+    1. The share of services sector in India's GVA is more than the combined share of agriculture and industry.<br>
+    2. India's services sector is the largest employer in the country.<br>
+    Which of the statements given above is/are correct?<br>
+    (a) 1 only &nbsp; (b) 2 only &nbsp; (c) Both 1 and 2 &nbsp; (d) Neither<br>
+    <em>Answer: (a) 1 only &mdash; Services contributes ~54.7% of GVA (more than agri 17.7% + industry 27.6%). But the largest employer is agriculture (~46% per PLFS 2022-23), NOT services.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2024</div>
+    <p>Consider the following:<br>
+    1. Reducing the share of agriculture in GDP<br>
+    2. Rising share of services in employment<br>
+    3. Rising share of manufacturing in GDP<br>
+    Which of the above are features of structural transformation typical of a developing economy?<br>
+    <em>Answer: All three are textbook features of structural transformation; in India, however, Item 3 (rising manufacturing share) is muted and Item 2 (rising services employment) is slow &mdash; the "atypical path" discussed in Section 7.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2023</div>
+    <p>With reference to the Indian economy, consider the following statements:<br>
+    1. A "closed economy" is an economy in which neither export nor import takes place.<br>
+    2. In a "mixed economy" both private and public sectors produce goods and services.<br>
+    Which of the statements given above is/are correct?<br>
+    <em>Answer: Both 1 and 2.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2022</div>
+    <p>Which one of the following is NOT a sector of the Indian economy as per the standard classification?<br>
+    (a) Primary &nbsp; (b) Secondary &nbsp; (c) Tertiary &nbsp; (d) Septenary<br>
+    <em>Answer: (d) Septenary &mdash; the recognised classification is Primary, Secondary, Tertiary, Quaternary &amp; Quinary.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2021</div>
+    <p>With reference to "Economic Capital Framework", which of the following best describes it?<br>
+    <em>Answer: It is the framework for the assessment of the risk and capital of the Reserve Bank of India &mdash; recommended by the Bimal Jalan Committee (2019).</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2020</div>
+    <p>With reference to the Indian economy after the 1991 economic liberalisation, consider the following statements:<br>
+    1. Worker productivity (&#8377;/worker at 2004-05 prices) increased in urban areas while it decreased in rural areas.<br>
+    2. The percentage share of rural areas in the workforce steadily increased.<br>
+    Which of the statements is/are correct?<br>
+    <em>Answer: Neither 1 nor 2. Worker productivity rose in BOTH urban &amp; rural areas; share of rural areas in workforce DECREASED.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2019</div>
+    <p>Among the agricultural commodities imported by India, which one of the following accounts for the highest imports in terms of value in the last five years?<br>
+    <em>Answer: Edible oils (vegetable oils) &mdash; India imports ~60% of its edible oil needs. (Establishes India as a net importer in primary sector &mdash; relevant to structural transformation discussion.)</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2018</div>
+    <p>Increase in absolute and per capita real GNP do NOT connote a higher level of economic development if:<br>
+    (a) industrial output fails to keep pace with agricultural output<br>
+    (b) agricultural output fails to keep pace with industrial output<br>
+    (c) poverty and unemployment increase<br>
+    (d) imports grow faster than exports<br>
+    <em>Answer: (c) &mdash; Growth without poverty &amp; unemployment reduction is not development (Amartya Sen, Mahbub-ul-Haq's HDI framework).</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2017</div>
+    <p>Which of the following is/are included in the capital budget of the Government of India?<br>
+    1. Expenditure on acquisition of assets like land, buildings, machinery, equipment<br>
+    2. Loans received from foreign governments<br>
+    3. Loans &amp; advances granted to the State and UT governments<br>
+    <em>Answer: 1, 2 and 3 &mdash; Capital budget covers all capital receipts &amp; capital expenditure.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2016</div>
+    <p>"Economic Survey of India" is published every year by the:<br>
+    <em>Answer: Department of Economic Affairs, Ministry of Finance &mdash; presented in Parliament a day before the Budget.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2015</div>
+    <p>A decrease in tax-to-GDP ratio of a country indicates which of the following?<br>
+    1. Slowing economic growth rate<br>
+    2. Less equitable distribution of national income<br>
+    <em>Answer: Only 1 &mdash; A falling T/GDP ratio reflects sluggish formal economic activity / slower growth.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2014</div>
+    <p>Consider the following liquid assets:<br>
+    1. Demand deposits with banks<br>
+    2. Time deposits with banks<br>
+    3. Savings deposits with banks<br>
+    4. Currency<br>
+    The correct sequence of these assets in <strong>decreasing order of liquidity</strong> is:<br>
+    (a) 1-4-3-2 &nbsp; (b) 4-3-2-1 &nbsp; (c) 2-3-1-4 &nbsp; (d) 4-1-3-2<br>
+    <em>Answer: (d) Currency &gt; Demand deposits &gt; Savings deposits &gt; Time deposits. (Liquidity ladder &mdash; foundational concept.)</em></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 10: MAINS PYQs ===== -->
+<section class="notes" id="mains-pyq">
+  <h2>10. Mains PYQs (2014&ndash;2025)</h2>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2024</div>
+    <p>"India's pursuit of becoming a $5-trillion economy by 2025 has been disrupted by global headwinds and pandemic-era distortions." Examine the structural challenges facing the Indian economy in achieving this target and suggest the way forward. (250 words)</p>
+    <p><em>Hint: Discuss services-led growth pattern, jobless growth, manufacturing stagnation at ~17% GVA, low labour-force participation (esp. female ~25%), education-skills mismatch, fiscal constraints, geopolitical headwinds. Suggest PLI, Gati Shakti, Skill India, Labour Codes, Viksit Bharat @2047 vision.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2023</div>
+    <p>Explain the changes in the cropping pattern in India in the context of changes in the consumption pattern and marketing conditions. (250 words)</p>
+    <p><em>Hint: Primary-sector linkage with tertiary-sector demand changes; shift from coarse grains to wheat/rice; rise of horticulture, dairy, fisheries; impact of e-NAM, contract farming, agri-export policy.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2022</div>
+    <p>"Economic growth in the recent past has been led by increase in labour productivity." Explain this statement. Suggest the growth pattern that will lead to creation of more jobs without compromising labour productivity. (250 words)</p>
+    <p><em>Hint: Directly tests jobless-growth issue. Discuss capital-deepening trend, K-shaped recovery; advocate labour-intensive manufacturing (textiles, leather, food processing), MSME finance, formalisation via GST &amp; e-Shram, female labour-force participation.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2021</div>
+    <p>What are the salient features of "inclusive growth"? Has India been experiencing such a growth process? Analyse and suggest measures for inclusive growth. (250 words)</p>
+    <p><em>Hint: Define inclusive growth (Pillars: opportunity, capability, access, security). Mixed scorecard &mdash; rising GDP but rising inequality (top 10% holds ~57% income share &mdash; World Inequality Report 2022). Measures: MGNREGA, PM-KISAN, Ayushman Bharat, JAM trinity, Skill India.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2020</div>
+    <p>Define potential GDP and explain its determinants. What are the factors that have been inhibiting India from realising its potential GDP? (250 words)</p>
+    <p><em>Hint: Potential GDP = max sustainable output with full employment of resources &amp; stable inflation. Determinants: labour force size + productivity + capital stock + total factor productivity. Inhibitors: low FLFP, low manufacturing share, infra deficit, NPAs, low R&amp;D spending (~0.65% of GDP), regulatory bottlenecks.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2019</div>
+    <p>Define potential GDP and explain its determinants. What are the factors that have been inhibiting India from realising its potential GDP? (Repeated theme; tested 2019 as well)</p>
+    <p><em>Hint: Same frame as 2020.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2018</div>
+    <p>Comment on the important changes introduced in respect of the Long-term Capital Gains Tax (LCGT) and Dividend Distribution Tax (DDT) in the Union Budget for 2018-19. (150 words)</p>
+    <p><em>Hint: Tests basic-terms knowledge &mdash; capital gains, dividend taxation; foundational understanding of how the budget affects markets &amp; investors.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2017</div>
+    <p>Account for the failure of manufacturing sector in achieving the goal of labour-intensive exports. Suggest measures for more labour-intensive rather than capital-intensive exports. (200 words)</p>
+    <p><em>Hint: Central question of structural transformation. Discuss missing-middle MSME problem, rigid labour laws (pre-2020 codes), high logistics costs, fragmented land, inverted duty structure. Suggest: labour codes implementation, PLI for labour-intensive sectors (textiles, leather, footwear, food processing), MITRA mega textile parks, free-trade agreements.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2016</div>
+    <p>"Industrial growth rate has lagged behind in the overall growth of Gross Domestic Product (GDP) in the post-reform period." Give reasons. How far the recent changes in the Industrial Policy are capable of increasing the industrial growth rate? (200 words)</p>
+    <p><em>Hint: Directly tests stagnant manufacturing share. Reasons &mdash; infra/power deficit, NPAs &amp; bank credit crunch, regulatory cholesterol, import dependence for capital goods, premature deindustrialisation. Recent measures &mdash; Make in India, PLI, Ease of Doing Business reforms, GST.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2015</div>
+    <p>Discuss the rationale for introducing the Goods and Services Tax (GST) in India. Bring out critically the reasons for the delay in roll out for its regime. (200 words)</p>
+    <p><em>Hint: Tests indirect-tax fundamentals; impact on secondary &amp; tertiary sectors; "One Nation, One Market" rationale.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2014</div>
+    <p>Foreign Direct Investment (FDI) in the defence sector is now set to be liberalised. What influence this is expected to have on Indian defence and economy in the short and long run? (200 words)</p>
+    <p><em>Hint: Connects "open economy" classification with strategic-sector policy; opportunities for secondary sector (defence manufacturing); foundational test of FDI as a factor flow.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2025 (anticipated themes)</div>
+    <p><strong>Likely themes for Mains 2025:</strong> Viksit Bharat @2047 roadmap; jobless growth &amp; female labour-force participation; manufacturing revival via PLI; demographic dividend window; India as 3rd largest economy &mdash; opportunities &amp; risks. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 11: REVISION BOX ===== -->
+<section class="notes" id="revision">
+  <h2>11. 15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; Fundamentals of Economy</h3>
+    <div class="grid-2">
+      <div>
+        <strong>Definitions &amp; Thinkers:</strong>
+        <ul>
+          <li>Wealth definition &mdash; <strong>Adam Smith</strong> (1776)</li>
+          <li>Welfare definition &mdash; <strong>Alfred Marshall</strong></li>
+          <li>Scarcity definition &mdash; <strong>Lionel Robbins</strong> (1932)</li>
+          <li>Growth definition &mdash; <strong>Paul Samuelson</strong></li>
+          <li>Father of Economics &mdash; <strong>Adam Smith</strong></li>
+          <li>Father of Macroeconomics &mdash; <strong>J.M. Keynes</strong> (1936)</li>
+          <li>Father of Microeconomics &mdash; <strong>Alfred Marshall</strong></li>
+          <li>Coined Micro/Macro &mdash; <strong>Ragnar Frisch</strong> (1933)</li>
+        </ul>
+        <strong>5 Sectors:</strong>
+        <ul>
+          <li>Primary &mdash; <strong>extraction</strong> (agri, mining)</li>
+          <li>Secondary &mdash; <strong>manufacturing</strong></li>
+          <li>Tertiary &mdash; <strong>services</strong> (general)</li>
+          <li>Quaternary &mdash; <strong>knowledge services</strong> (R&amp;D, IT)</li>
+          <li>Quinary &mdash; <strong>top decision-makers</strong> (CEOs, judges)</li>
+        </ul>
+        <strong>Factors of Production &amp; Rewards:</strong>
+        <ul>
+          <li>Land &rarr; <strong>Rent</strong></li>
+          <li>Labour &rarr; <strong>Wages</strong></li>
+          <li>Capital &rarr; <strong>Interest</strong></li>
+          <li>Entrepreneur &rarr; <strong>Profit</strong></li>
+          <li>Knowledge &rarr; Human capital returns</li>
+        </ul>
+      </div>
+      <div>
+        <strong>India's Sectoral Numbers (FY24):</strong>
+        <ul>
+          <li>Agriculture: <strong>17.7%</strong> GVA, <strong>45.8%</strong> jobs</li>
+          <li>Industry: <strong>27.6%</strong> GVA, <strong>25.7%</strong> jobs</li>
+          <li>Services: <strong>54.7%</strong> GVA, <strong>28.5%</strong> jobs</li>
+          <li>(All data <span class="update-tag">check for latest update or data</span>)</li>
+        </ul>
+        <strong>India's Economy Snapshot:</strong>
+        <ul>
+          <li>GDP size: <strong>~$3.9 tn</strong> (5th largest)</li>
+          <li>GDP growth FY24: <strong>8.2%</strong> (real)</li>
+          <li>Per capita: <strong>~$2,540</strong></li>
+          <li>Fiscal deficit FY25: <strong>4.9%</strong> target</li>
+          <li>CAD FY24: <strong>0.7%</strong> of GDP</li>
+          <li>Forex reserves: <strong>~$650 bn</strong></li>
+          <li>World Bank category: <strong>Lower-middle income</strong></li>
+        </ul>
+        <strong>Three Types of Economies:</strong>
+        <ul>
+          <li>Capitalist &mdash; private + market (USA, UK)</li>
+          <li>Socialist &mdash; state + planning (N. Korea)</li>
+          <li>Mixed &mdash; both (India, France)</li>
+        </ul>
+        <strong>Public vs Private Goods:</strong>
+        <ul>
+          <li>Public &mdash; non-rival + non-excludable</li>
+          <li>Private &mdash; rival + excludable</li>
+          <li>Common pool &mdash; rival + non-excludable</li>
+          <li>Club good &mdash; non-rival + excludable</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>The single most-asked theme since 2014:</strong> India's <em>services-led, jobless growth</em> pattern &mdash; high services share in GVA + agriculture still the largest employer + stagnant manufacturing. Master this and you can attempt 60% of Economy Mains questions.</div>
+    <div class="callout info" style="margin-top:10px"><strong>Three central questions every economy answers:</strong> WHAT to produce &middot; HOW to produce &middot; FOR WHOM to produce.</div>
+  </div>
+</section>
+
+</main>
+
+<aside>
+<div class="aside-sticky">
+
+<div class="widget">
+  <h4>Quick Reference &mdash; 5 Sectors</h4>
+  <table>
+    <tr><th>Sector</th><th>Activity</th></tr>
+    <tr><td>Primary</td><td>Extract from nature</td></tr>
+    <tr><td>Secondary</td><td>Manufacture goods</td></tr>
+    <tr><td>Tertiary</td><td>General services</td></tr>
+    <tr><td>Quaternary</td><td>Knowledge services</td></tr>
+    <tr><td>Quinary</td><td>Top decision-makers</td></tr>
+  </table>
+</div>
+
+<div class="widget">
+  <h4>India's GVA Share FY24</h4>
+  <div class="bar"><span class="lbl">Services</span><span class="fill"><span style="width:54.7%"></span></span></div>
+  <div class="bar"><span class="lbl">Industry</span><span class="fill"><span style="width:27.6%"></span></span></div>
+  <div class="bar"><span class="lbl">Agriculture</span><span class="fill"><span style="width:17.7%"></span></span></div>
+  <p style="font-size:11px;color:var(--muted);margin:6px 0 0">Source: MoSPI / Eco Survey 2023-24. <span class="update-tag">check latest</span></p>
+</div>
+
+<div class="widget">
+  <h4>India's Economy Headline (FY24)</h4>
+  <table>
+    <tr><td>GDP size</td><td>~$3.9 tn</td></tr>
+    <tr><td>Rank</td><td>5th largest</td></tr>
+    <tr><td>Real growth</td><td>8.2%</td></tr>
+    <tr><td>Per capita</td><td>~$2,540</td></tr>
+    <tr><td>CPI infl.</td><td>~5.1%</td></tr>
+    <tr><td>Fiscal def.</td><td>5.6% (FY24)</td></tr>
+    <tr><td>CAD</td><td>0.7%</td></tr>
+    <tr><td>Forex</td><td>~$650 bn</td></tr>
+  </table>
+  <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+</div>
+
+<div class="widget">
+  <h4>Factors &amp; Rewards</h4>
+  <table>
+    <tr><th>Factor</th><th>Reward</th></tr>
+    <tr><td>Land</td><td>Rent</td></tr>
+    <tr><td>Labour</td><td>Wages</td></tr>
+    <tr><td>Capital</td><td>Interest</td></tr>
+    <tr><td>Entrepreneur</td><td>Profit</td></tr>
+  </table>
+</div>
+
+<div class="widget">
+  <h4>Difficulty &amp; Importance</h4>
+  <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:75%"></span></span></div>
+  <div class="bar"><span class="lbl">Mains GS-III</span><span class="fill"><span style="width:90%"></span></span></div>
+  <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:80%"></span></span></div>
+  <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:85%"></span></span></div>
+</div>
+
+<div class="widget">
+  <h4>Must-Know Tags</h4>
+  <div>
+    <span class="tag">Primary Sector</span>
+    <span class="tag">Secondary Sector</span>
+    <span class="tag">Tertiary Sector</span>
+    <span class="tag orange">Quaternary Sector</span>
+    <span class="tag orange">Quinary Sector</span>
+    <span class="tag">Adam Smith</span>
+    <span class="tag">Lionel Robbins</span>
+    <span class="tag">Alfred Marshall</span>
+    <span class="tag orange">J.M. Keynes</span>
+    <span class="tag">Ragnar Frisch</span>
+    <span class="tag">Land</span>
+    <span class="tag">Labour</span>
+    <span class="tag">Capital</span>
+    <span class="tag">Entrepreneur</span>
+    <span class="tag orange">Human Capital</span>
+    <span class="tag">Capitalism</span>
+    <span class="tag">Socialism</span>
+    <span class="tag green">Mixed Economy</span>
+    <span class="tag green">Structural Transformation</span>
+    <span class="tag green">Services-led Growth</span>
+    <span class="tag green">Jobless Growth</span>
+    <span class="tag green">PPF</span>
+    <span class="tag green">Opportunity Cost</span>
+    <span class="tag green">Public Goods</span>
+    <span class="tag green">Merit Goods</span>
+    <span class="tag green">$5 Trillion</span>
+    <span class="tag green">Viksit Bharat @2047</span>
+  </div>
+</div>
+
+<div class="widget">
+  <h4>Data Sources to Bookmark</h4>
+  <ul>
+    <li><a href="https://www.mospi.gov.in" target="_blank" rel="noopener">MoSPI</a> &mdash; NAS, PLFS, IIP</li>
+    <li><a href="https://www.rbi.org.in" target="_blank" rel="noopener">RBI</a> &mdash; Monthly Bulletin, BoP</li>
+    <li><a href="https://www.indiabudget.gov.in" target="_blank" rel="noopener">Union Budget</a></li>
+    <li><a href="https://www.indiabudget.gov.in/economicsurvey" target="_blank" rel="noopener">Economic Survey</a></li>
+    <li><a href="https://pib.gov.in" target="_blank" rel="noopener">PIB</a> &mdash; press releases</li>
+    <li><a href="https://prsindia.org" target="_blank" rel="noopener">PRS Legislative Research</a></li>
+    <li><a href="https://niti.gov.in" target="_blank" rel="noopener">NITI Aayog</a></li>
+    <li><a href="https://dea.gov.in" target="_blank" rel="noopener">Dept of Economic Affairs</a></li>
+  </ul>
+</div>
+
+<div class="widget">
+  <h4>Related Topics</h4>
+  <ul class="related">
+    <li><a href="/economy/national-income-accounting">Topic 02: National Income Accounting</a></li>
+    <li><a href="/economy/growth-development-and-happiness">Topic 03: Growth, Development &amp; Happiness</a></li>
+    <li><a href="/economy/economic-planning-in-india">Topic 04: Economic Planning</a></li>
+    <li><a href="/economy">All UPSC Notes</a></li>
+  </ul>
+</div>
+
+<div class="widget">
+  <h4>Quick Links</h4>
+  <ul>
+    <li><a href="#concept">Conceptual Clarity</a></li>
+    <li><a href="#whatis">What is Economics</a></li>
+    <li><a href="#sectors">Sectors</a></li>
+    <li><a href="#factors">Factors of Production</a></li>
+    <li><a href="#types">Types of Economies</a></li>
+    <li><a href="#micromacro">Micro vs Macro</a></li>
+    <li><a href="#basicterms">Basic Terms</a></li>
+    <li><a href="#india">India's Transformation</a></li>
+    <li><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><a href="#mains-pyq">Mains PYQs</a></li>
+    <li><a href="#revision">Revision Box</a></li>
+  </ul>
+</div>
+
+</div>
+</aside>
+
+</div>
+</div>

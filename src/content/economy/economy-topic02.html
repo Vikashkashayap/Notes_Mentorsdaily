@@ -1,0 +1,1103 @@
+<!-- economy-topic02 — auto-imported from economy-topic02-national-income-accounting-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(135deg,#1b3a4b 0%,#0d2535 55%,#061018 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ol{margin:0;padding-left:22px;font-size:14px;columns:2;column-gap:24px}
+.toc li{margin-bottom:5px;break-inside:avoid}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+.formula{background:#f5f7fa;border:1px solid var(--line);border-left:4px solid var(--brand-blue);padding:12px 16px;margin:12px 0;border-radius:6px;font-family:"Courier New",monospace;font-size:14px;color:var(--brand-blue-dark)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ol{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>National Income Accounting &mdash; GDP, GNP, GVA &amp; Methods of Estimation</h1>
+  <p class="sub">If Topic 1 gave you the vocabulary of an economy, Topic 2 gives you the scoreboard. National Income aggregates &mdash; GDP, GNP, NDP, NNP, GVA &mdash; are how economists measure what a country produces, who earns it and how to compare across years and countries. UPSC asks about these every single year.</p>
+  <div class="meta">
+    <span class="pill">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Ramesh Singh Ch. 3</span>
+    <span class="pill">~22 min read</span>
+    <span class="pill">Base year 2011-12</span>
+    <span class="pill">Eco Survey 2023&ndash;24</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ol>
+    <li><a href="#concept">Conceptual Clarity</a></li>
+    <li><a href="#whatis">1. What is National Income?</a></li>
+    <li><a href="#aggregates">2. The Macro Aggregates &mdash; GDP, GNP, NDP, NNP</a></li>
+    <li><a href="#gva">3. GVA &amp; NVA &mdash; Production-Side Measures</a></li>
+    <li><a href="#mpfc">4. Market Price vs Factor Cost vs Basic Price</a></li>
+    <li><a href="#nominalreal">5. Nominal vs Real &amp; the GDP Deflator</a></li>
+    <li><a href="#baseyear">6. Base Year &mdash; Current 2011-12 &amp; Pending Revision</a></li>
+    <li><a href="#methods">7. Three Methods of Estimating National Income</a></li>
+    <li><a href="#circular">8. Circular Flow of Income</a></li>
+    <li><a href="#percapita">9. Per Capita Income</a></li>
+    <li><a href="#difficulty">10. Difficulties in Measurement</a></li>
+    <li><a href="#indianseries">11. Indian National Accounts &mdash; History &amp; Series</a></li>
+    <li><a href="#currentaffairs">12. Current Affairs Link</a></li>
+    <li><a href="#prelims-pyq">13. Prelims PYQs (2014&ndash;2026)</a></li>
+    <li><a href="#mains-pyq">14. Mains PYQs (2014&ndash;2025)</a></li>
+    <li><a href="#revision">15. 15-Minute Revision Box</a></li>
+  </ol>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; The Six-Step Mental Model</h3>
+  <ol>
+    <li><strong>GDP</strong> &mdash; what is produced inside India's borders (domestic concept)</li>
+    <li><strong>GNP</strong> = GDP + Net Factor Income from Abroad (national concept)</li>
+    <li><strong>NDP</strong> = GDP &minus; Depreciation (consumption of fixed capital)</li>
+    <li><strong>NNP</strong> = GNP &minus; Depreciation = <strong>National Income</strong></li>
+    <li><strong>At Factor Cost</strong> = At Market Price &minus; Indirect Taxes + Subsidies</li>
+    <li><strong>Real</strong> = Nominal &divide; Deflator &times; 100 (price-effect removed)</li>
+  </ol>
+  <p>Master these six rules and you can derive any aggregate from any other in two seconds &mdash; the trick that defeats 80% of Prelims options.</p>
+</div>
+
+<!-- ===== SECTION 1: WHAT IS NATIONAL INCOME ===== -->
+<section class="notes" id="whatis">
+  <h2>1. What is National Income?</h2>
+
+  <p><strong>National Income</strong> is the total monetary value of all final goods and services produced by the residents of a country during a given accounting year (after subtracting depreciation and indirect taxes, net of subsidies). Technically: <strong>Net National Product at Factor Cost (NNP<sub>FC</sub>)</strong>.</p>
+
+  <h3>1.1 Why Measure It?</h3>
+  <ul>
+    <li>Gauge the size &amp; growth of the economy.</li>
+    <li>Compare living standards across countries (per capita).</li>
+    <li>Design fiscal &amp; monetary policy.</li>
+    <li>Identify sectoral imbalances (Topic 1, Section 7).</li>
+    <li>Track structural transformation over time.</li>
+  </ul>
+
+  <h3>1.2 A Brief History &mdash; In India</h3>
+  <ul>
+    <li><strong>Dadabhai Naoroji</strong> (1868) &mdash; first attempt: <em>"Poverty and Un-British Rule in India"</em> &mdash; estimated per capita income at &#8377;20.</li>
+    <li><strong>National Income Committee (1949)</strong> &mdash; first scientific estimate; chaired by <strong>P.C. Mahalanobis</strong>, members D.R. Gadgil &amp; V.K.R.V. Rao.</li>
+    <li><strong>Central Statistical Organisation (CSO)</strong>, since 1955 &mdash; today the <strong>National Statistical Office (NSO)</strong> under MoSPI publishes the official series.</li>
+    <li>India follows the <strong>UN System of National Accounts (SNA 2008)</strong> framework.</li>
+  </ul>
+
+  <div class="callout info"><strong>UPSC favourite:</strong> First scientific national income estimate &rarr; <strong>National Income Committee 1949</strong>, chairman <strong>P.C. Mahalanobis</strong>. <strong>V.K.R.V. Rao</strong> is called the "father of national income estimation in India".</div>
+</section>
+
+<!-- ===== SECTION 2: MACRO AGGREGATES ===== -->
+<section class="notes" id="aggregates">
+  <h2>2. The Macro Aggregates &mdash; GDP, GNP, NDP, NNP</h2>
+
+  <h3>2.1 Gross Domestic Product (GDP)</h3>
+  <p><strong>Money value of all final goods and services produced within the geographical boundary of a country in a given year</strong>, irrespective of who owns the factors of production (resident or foreigner).</p>
+  <div class="formula">GDP = C + I + G + (X &minus; M)<br>where C = private consumption, I = investment, G = govt expenditure, X = exports, M = imports</div>
+
+  <h3>2.2 Gross National Product (GNP)</h3>
+  <p>GDP plus the <strong>Net Factor Income from Abroad (NFIA)</strong> earned by Indian residents abroad minus what foreigners earned in India.</p>
+  <div class="formula">GNP = GDP + NFIA<br>NFIA = (Factor income earned by Indians abroad) &minus; (Factor income earned by foreigners in India)</div>
+  <ul>
+    <li>For India, NFIA is usually <strong>negative</strong> (foreigners earn more here than Indians earn abroad), so <strong>GNP &lt; GDP</strong>.</li>
+    <li>For remittance-heavy economies (Bangladesh, Philippines), NFIA is positive &rarr; GNP &gt; GDP.</li>
+  </ul>
+
+  <h3>2.3 Net Domestic Product (NDP)</h3>
+  <p>GDP minus depreciation (consumption of fixed capital &mdash; the wear-and-tear of plant &amp; machinery).</p>
+  <div class="formula">NDP = GDP &minus; Depreciation</div>
+
+  <h3>2.4 Net National Product (NNP)</h3>
+  <p>GNP minus depreciation. <strong>NNP at Factor Cost = National Income</strong>.</p>
+  <div class="formula">NNP = GNP &minus; Depreciation<br>National Income = NNP<sub>FC</sub> = NNP<sub>MP</sub> &minus; Indirect Taxes + Subsidies</div>
+
+  <h3>2.5 Quick Comparison Table</h3>
+  <table>
+    <tr><th>Aggregate</th><th>Boundary</th><th>Depreciation</th><th>Formula</th></tr>
+    <tr><td><strong>GDP</strong></td><td>Domestic (within India)</td><td>Included</td><td>C+I+G+(X-M)</td></tr>
+    <tr><td><strong>GNP</strong></td><td>National (Indian residents)</td><td>Included</td><td>GDP + NFIA</td></tr>
+    <tr><td><strong>NDP</strong></td><td>Domestic</td><td>Excluded</td><td>GDP &minus; D</td></tr>
+    <tr><td><strong>NNP</strong></td><td>National</td><td>Excluded</td><td>GNP &minus; D</td></tr>
+  </table>
+
+  <div class="callout warn"><strong>The 4-cell memory grid:</strong> The matrix of (Domestic vs National) &times; (Gross vs Net) gives you GDP / GNP / NDP / NNP in one shot. Then layer (Market Price vs Factor Cost) on top &mdash; 8 final aggregates.</div>
+
+  <!-- SVG: Aggregates relationships -->
+  <div class="svg-wrap">
+    <svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+      <text x="360" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2035">From GDP to National Income &mdash; The Conversion Map</text>
+      <!-- GDP box (top center) -->
+      <rect x="280" y="50" width="160" height="44" rx="6" fill="#1a3d5c"/>
+      <text x="360" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">GDP at MP</text>
+      <text x="360" y="90" text-anchor="middle" font-size="10" fill="#fff" opacity="0.85">(Domestic, Gross, Market Price)</text>
+      <!-- +NFIA arrow to GNP -->
+      <text x="160" y="74" text-anchor="middle" font-size="11" fill="#1a7a5a" font-weight="700">+ NFIA</text>
+      <path d="M 270 72 L 200 72" stroke="#1a7a5a" stroke-width="1.5" marker-end="url(#aMark)"/>
+      <rect x="50" y="50" width="140" height="44" rx="6" fill="#1a7a5a"/>
+      <text x="120" y="74" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">GNP at MP</text>
+      <text x="120" y="90" text-anchor="middle" font-size="10" fill="#fff" opacity="0.85">(National, Gross)</text>
+      <!-- -Depreciation downward arrows -->
+      <text x="240" y="146" text-anchor="middle" font-size="11" fill="#c0392b" font-weight="700">&minus; Depreciation</text>
+      <path d="M 360 96 L 360 158" stroke="#c0392b" stroke-width="1.5" marker-end="url(#aMark)"/>
+      <path d="M 120 96 L 120 158" stroke="#c0392b" stroke-width="1.5" marker-end="url(#aMark)"/>
+      <!-- NDP & NNP at MP -->
+      <rect x="280" y="160" width="160" height="44" rx="6" fill="#c47820"/>
+      <text x="360" y="184" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">NDP at MP</text>
+      <text x="360" y="200" text-anchor="middle" font-size="10" fill="#fff" opacity="0.85">(Domestic, Net)</text>
+      <rect x="50" y="160" width="140" height="44" rx="6" fill="#c47820"/>
+      <text x="120" y="184" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">NNP at MP</text>
+      <text x="120" y="200" text-anchor="middle" font-size="10" fill="#fff" opacity="0.85">(National, Net)</text>
+      <!-- -Indirect Taxes +Subsidies arrows to FC -->
+      <text x="240" y="246" text-anchor="middle" font-size="11" fill="#666" font-weight="700">&minus; Indirect Taxes + Subsidies</text>
+      <path d="M 360 206 L 360 268" stroke="#666" stroke-width="1.5" marker-end="url(#aMark)"/>
+      <path d="M 120 206 L 120 268" stroke="#666" stroke-width="1.5" marker-end="url(#aMark)"/>
+      <!-- NDP and NNP at FC -->
+      <rect x="280" y="270" width="160" height="44" rx="6" fill="#0d2035"/>
+      <text x="360" y="294" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">NDP at FC</text>
+      <text x="360" y="308" text-anchor="middle" font-size="10" fill="#fff" opacity="0.85">(Net Domestic Income)</text>
+      <rect x="50" y="270" width="140" height="44" rx="6" fill="#0d2035"/>
+      <text x="120" y="290" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">NNP at FC</text>
+      <text x="120" y="305" text-anchor="middle" font-size="10" fill="#fff" opacity="0.85">= NATIONAL INCOME</text>
+      <!-- Right side note -->
+      <text x="560" y="100" font-size="11" fill="#444">Right-side adjustments:</text>
+      <text x="560" y="118" font-size="10" fill="#666">&bull; NFIA shifts domestic &harr; national</text>
+      <text x="560" y="134" font-size="10" fill="#666">&bull; Depreciation shifts Gross &harr; Net</text>
+      <text x="560" y="150" font-size="10" fill="#666">&bull; Indirect taxes/subs shift MP &harr; FC</text>
+      <text x="560" y="178" font-size="10" fill="#666">Result: 8 aggregates from 1 GDP figure.</text>
+      <defs>
+        <marker id="aMark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+        </marker>
+      </defs>
+    </svg>
+    <div class="svg-caption">Fig 2.1 &mdash; The conversion map: how GDP at MP transforms into all eight macro aggregates via three adjustments.</div>
+  </div>
+</section>
+
+<!-- ===== SECTION 3: GVA & NVA ===== -->
+<section class="notes" id="gva">
+  <h2>3. GVA &amp; NVA &mdash; The Production-Side Measures</h2>
+
+  <h3>3.1 Gross Value Added (GVA)</h3>
+  <p><strong>GVA = Value of output &minus; Value of intermediate consumption</strong>. It captures the value <em>added</em> at each stage of production, avoiding the double-counting trap.</p>
+  <div class="formula">GVA = Output &minus; Intermediate Consumption</div>
+  <p>India's NSO publishes sectoral data primarily in <strong>GVA at basic prices</strong> &mdash; the new headline production-side measure since the <strong>2015 base-year revision</strong>.</p>
+
+  <h3>3.2 Net Value Added (NVA)</h3>
+  <div class="formula">NVA = GVA &minus; Depreciation</div>
+
+  <h3>3.3 GVA &harr; GDP Relationship</h3>
+  <div class="formula">GDP at MP = GVA at Basic Prices + (Product Taxes &minus; Product Subsidies)</div>
+  <p>where <strong>Product Taxes</strong> are taxes payable per unit of output (GST, excise on petrol) and <strong>Product Subsidies</strong> are subsidies per unit (fertiliser, food subsidy).</p>
+
+  <div class="callout"><strong>Why both GVA &amp; GDP are reported:</strong> GVA is best for measuring <em>production-side</em> performance of each sector (because it strips out the distortion of taxes &amp; subsidies). GDP at MP is best for measuring <em>expenditure-side</em> (because consumers pay market prices). NSO releases both alongside each other.</p>
+</section>
+
+<!-- ===== SECTION 4: MARKET PRICE vs FACTOR COST vs BASIC PRICE ===== -->
+<section class="notes" id="mpfc">
+  <h2>4. Market Price vs Factor Cost vs Basic Price</h2>
+
+  <h3>4.1 Definitions</h3>
+  <table>
+    <tr><th>Concept</th><th>Includes</th><th>Excludes</th></tr>
+    <tr><td><strong>Market Price (MP)</strong></td><td>Price actually paid by buyer &mdash; includes ALL indirect taxes, net of subsidies</td><td>&mdash;</td></tr>
+    <tr><td><strong>Basic Price (BP)</strong></td><td>Price received by producer &mdash; includes <em>production taxes</em>, net of <em>production subsidies</em></td><td>Product taxes (GST, excise); Product subsidies (food, fertiliser)</td></tr>
+    <tr><td><strong>Factor Cost (FC)</strong></td><td>Cost of factors of production only (rent + wages + interest + profit)</td><td>ALL indirect taxes (product + production); net of ALL subsidies</td></tr>
+  </table>
+
+  <h3>4.2 The Conversion Chain</h3>
+  <div class="formula">
+    Factor Cost<br>
+    &plus; Production Taxes &minus; Production Subsidies<br>
+    = Basic Price<br>
+    &plus; Product Taxes &minus; Product Subsidies<br>
+    = Market Price
+  </div>
+
+  <h3>4.3 The Two Sets of Taxes &amp; Subsidies</h3>
+  <ul>
+    <li><strong>Production taxes/subsidies</strong> &mdash; on the <em>process of producing</em>, irrespective of output volume. Examples of production taxes: stamp duty, land revenue, registration fee, professional tax. Examples of production subsidies: interest subvention to farmers, electricity subsidy to industry.</li>
+    <li><strong>Product taxes/subsidies</strong> &mdash; on the <em>output unit</em>. Examples of product taxes: GST, excise, customs. Examples of product subsidies: food subsidy via FCI, fertiliser subsidy, LPG subsidy.</li>
+  </ul>
+
+  <div class="callout info"><strong>Why CSO switched from "Factor Cost" to "Basic Price" headlines in 2015:</strong> Globally (SNA 2008), basic price is preferred because it reflects the price the producer actually pockets after production taxes/subsidies &mdash; the truest measure of value addition. Factor Cost is now a derived figure, not the headline.</div>
+</section>
+
+<!-- ===== SECTION 5: NOMINAL vs REAL & GDP DEFLATOR ===== -->
+<section class="notes" id="nominalreal">
+  <h2>5. Nominal vs Real GDP &amp; the GDP Deflator</h2>
+
+  <h3>5.1 Nominal GDP (at current prices)</h3>
+  <p>GDP measured at the <strong>prices of the year of calculation</strong>. Rises both due to actual production growth AND inflation &mdash; hence misleading for comparing real performance across years.</p>
+
+  <h3>5.2 Real GDP (at constant prices)</h3>
+  <p>GDP measured at the prices of a fixed <strong>base year</strong> &mdash; strips out the inflation effect. The true measure of real production growth.</p>
+  <div class="formula">Real GDP = (Nominal GDP &divide; GDP Deflator) &times; 100</div>
+
+  <h3>5.3 GDP Deflator</h3>
+  <p>The most comprehensive measure of inflation in the economy &mdash; covers all goods and services produced, not just a fixed basket like CPI/WPI.</p>
+  <div class="formula">GDP Deflator = (Nominal GDP &divide; Real GDP) &times; 100</div>
+
+  <h3>5.4 Worked Example</h3>
+  <table>
+    <tr><th>Year</th><th>Nominal GDP (&#8377; lakh cr)</th><th>Real GDP (at 2011-12 prices)</th><th>Deflator</th></tr>
+    <tr><td>FY22</td><td>236</td><td>148</td><td>~159</td></tr>
+    <tr><td>FY23</td><td>272</td><td>161</td><td>~169</td></tr>
+    <tr><td>FY24 (PE)</td><td>295</td><td>173</td><td>~170</td></tr>
+  </table>
+  <p style="font-size:12px;color:var(--muted)">Indicative figures &mdash; <span class="update-tag">check for latest update or data</span> from MoSPI Press Notes.</p>
+
+  <div class="callout warn"><strong>Three inflation measures &mdash; UPSC trap:</strong><br>
+    &bull; <strong>CPI</strong> &mdash; fixed basket of <em>consumer</em> goods &amp; services (Laspeyres index) &mdash; published by NSO.<br>
+    &bull; <strong>WPI</strong> &mdash; wholesale price basket (no services) &mdash; published by Office of Economic Adviser, DPIIT.<br>
+    &bull; <strong>GDP Deflator</strong> &mdash; <em>implicit</em> &mdash; ratio of Nominal/Real GDP &times; 100 &mdash; covers entire economy.<br>
+    The MPC's inflation target uses <strong>CPI (Combined)</strong> &mdash; not the deflator.</div>
+
+  <h3>5.5 Growth Rate &mdash; Nominal vs Real</h3>
+  <ul>
+    <li>If FY24 real GDP grew 8.2% and inflation (deflator) was ~1.4%, nominal growth &asymp; 9.6%.</li>
+    <li>For Budget projections, <strong>nominal GDP</strong> is what matters (because tax/fiscal-deficit ratios are nominal). Budget 2024-25 assumed nominal GDP growth of 10.5%. <span class="update-tag">check for latest update or data</span></li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 6: BASE YEAR ===== -->
+<section class="notes" id="baseyear">
+  <h2>6. Base Year &mdash; Current 2011-12 &amp; Pending Revision</h2>
+
+  <h3>6.1 What is the Base Year?</h3>
+  <p>The reference year against which real-GDP comparisons are made. Periodically updated to reflect:</p>
+  <ul>
+    <li>Structural changes in the economy (e.g., rise of services, fintech, gig economy).</li>
+    <li>Newer data sources &amp; improved coverage (e.g., MCA-21 corporate database).</li>
+    <li>Updated UN SNA methodology.</li>
+  </ul>
+
+  <h3>6.2 History of Base-Year Revisions in India</h3>
+  <table>
+    <tr><th>Base Year</th><th>Adopted in</th><th>Key Change</th></tr>
+    <tr><td>1948-49</td><td>1956</td><td>First series</td></tr>
+    <tr><td>1960-61, 1970-71, 1980-81, 1993-94, 1999-2000</td><td>periodic</td><td>Routine revisions</td></tr>
+    <tr><td>2004-05</td><td>2010</td><td>Pre-2011 series</td></tr>
+    <tr><td><strong>2011-12</strong></td><td>Jan 2015</td><td><strong>Current series</strong>: shifted to GVA at basic prices; SNA 2008; introduced MCA-21 corporate data</td></tr>
+    <tr><td>2017-18 / 2020-21 (proposed)</td><td>was delayed; new <strong>2022-23 base year</strong> series expected Feb 2026 &mdash; based on Advisory Committee on National Accounts Statistics (ACNAS) recommendations <span class="update-tag">check for latest update or data</span></td><td>Expected to incorporate digital economy, gig workers, formalisation gains</td></tr>
+  </table>
+
+  <h3>6.3 The 2015 Methodology Change &mdash; Important Mains Point</h3>
+  <ul>
+    <li>Headline shifted from <strong>GDP at Factor Cost</strong> to <strong>GDP at Market Price</strong> (matches IMF/WEO global standard).</li>
+    <li>Sectoral data shifted from "Factor Cost" to "Basic Price" (GVA at basic prices).</li>
+    <li>Methodology aligned with <strong>UN SNA 2008</strong>.</li>
+    <li>Production approach incorporated newer data: <strong>MCA-21 corporate database</strong> (5 lakh+ companies), NSS Enterprise surveys, IIP-Mining, etc.</li>
+    <li><strong>Result</strong>: Back-series showed higher growth for many years; new series controversy &mdash; opposition alleged inflation of growth rates. NITI Aayog &amp; MoSPI defended on methodology grounds.</li>
+  </ul>
+
+  <div class="callout update"><strong>Base-year revision &mdash; check date:</strong> The MoSPI committee chaired by <strong>Bibek Debroy</strong> recommended <strong>2022-23 as the new base year</strong>; switchover expected around the FY26 first revised estimates release. <span class="update-tag">check for latest update or data</span></div>
+</section>
+
+<!-- ===== SECTION 7: THREE METHODS OF ESTIMATION ===== -->
+<section class="notes" id="methods">
+  <h2>7. Three Methods of Estimating National Income</h2>
+
+  <p>Any economy can be measured from three angles that, in theory, must give the same result (national income identity):</p>
+  <div class="formula">Production = Income = Expenditure</div>
+
+  <h3>7.1 Production / Output / Value-Added Method</h3>
+  <ul>
+    <li>Aggregate the <strong>value added (GVA)</strong> by each productive sector.</li>
+    <li>Avoids double-counting by subtracting intermediate consumption.</li>
+    <li>Used heavily for <strong>primary &amp; secondary sectors</strong> in India.</li>
+    <li>Data sources: IIP, ASI (Annual Survey of Industries), Agricultural Statistics, MCA-21.</li>
+  </ul>
+
+  <h3>7.2 Income Method</h3>
+  <ul>
+    <li>Sum of <strong>factor incomes</strong> earned during the year: <em>wages + rent + interest + profit + mixed income</em>.</li>
+    <li>Gives <strong>National Income = NNP at Factor Cost</strong> directly.</li>
+    <li>Used for sectors where output is hard to measure but incomes are recorded (e.g., govt admin, banking, real estate).</li>
+    <li>Data sources: Income tax data, employer surveys, RBI corporate accounts.</li>
+  </ul>
+
+  <h3>7.3 Expenditure Method</h3>
+  <ul>
+    <li>Sum of <strong>final expenditures</strong>: <em>Private Consumption (PFCE) + Government Consumption (GFCE) + Gross Capital Formation (GCF) + Net Exports (X-M)</em>.</li>
+    <li>Gives <strong>GDP at Market Price</strong>.</li>
+    <li>Data sources: NSS Consumer Expenditure Survey (HCES), Budget documents, DGCI&amp;S trade data, RBI BoP.</li>
+  </ul>
+  <div class="formula">GDP<sub>MP</sub> = PFCE + GFCE + GFCF + CIS + Valuables + (X &minus; M)<br>
+  PFCE = private final consumption; GFCE = govt final consumption; GFCF = gross fixed capital formation; CIS = change in stocks</div>
+
+  <h3>7.4 India's Combination Approach</h3>
+  <p>India uses <strong>all three methods in combination</strong> (no single method covers every sector). NSO publishes:</p>
+  <ul>
+    <li><strong>Production-side</strong> data &rarr; sectoral GVA (agriculture, industry, services).</li>
+    <li><strong>Expenditure-side</strong> data &rarr; PFCE, GFCE, GFCF, exports/imports.</li>
+    <li>Income-side data is incomplete (only for organised sector) &mdash; not headlined.</li>
+  </ul>
+
+  <h3>7.5 Release Calendar &mdash; NSO Estimates</h3>
+  <table>
+    <tr><th>Estimate</th><th>Released in</th><th>Basis</th></tr>
+    <tr><td><strong>1st Advance Estimate (AE)</strong></td><td>Early January</td><td>~7-8 months of data; budget input</td></tr>
+    <tr><td><strong>2nd Advance Estimate</strong></td><td>Late February</td><td>Q3 GDP data included</td></tr>
+    <tr><td><strong>Provisional Estimate (PE)</strong></td><td>End May</td><td>Full year &mdash; final published for the FY</td></tr>
+    <tr><td><strong>1st Revised Estimate (1st RE)</strong></td><td>January (next year)</td><td>More complete data; ASI, MCA-21</td></tr>
+    <tr><td><strong>2nd RE, 3rd RE, Final</strong></td><td>over 3 years</td><td>Successively refined</td></tr>
+    <tr><td><strong>Quarterly Estimates</strong></td><td>End of next quarter (Feb/May/Aug/Nov)</td><td>Quarterly GDP &amp; GVA</td></tr>
+  </table>
+
+  <div class="callout"><strong>UPSC trap:</strong> "Quarterly GDP estimates" are published with a <strong>2-month lag</strong> (e.g., Q1 April-June &rarr; released end-August). <strong>Annual</strong> Provisional Estimate is released in <strong>end-May</strong>; Advance Estimate in <strong>January</strong>.</div>
+</section>
+
+<!-- ===== SECTION 8: CIRCULAR FLOW OF INCOME ===== -->
+<section class="notes" id="circular">
+  <h2>8. Circular Flow of Income</h2>
+
+  <p>An economy is a <strong>continuous loop</strong> of factor flows and money flows between households and firms. Understanding this loop explains why <strong>Production = Income = Expenditure</strong>.</p>
+
+  <h3>8.1 Two-Sector Model (households + firms)</h3>
+  <ul>
+    <li><strong>Real flow</strong>: Households supply factor services (labour, capital, land) &rarr; firms. Firms supply goods &amp; services &rarr; households.</li>
+    <li><strong>Money flow</strong>: Firms pay wages/rent/interest/profit &rarr; households. Households spend on consumer goods &rarr; firms.</li>
+    <li>The two flows are equal and opposite &mdash; this is the basis of <strong>Y = C + S</strong> and <strong>Y = C + I</strong> at equilibrium.</li>
+  </ul>
+
+  <h3>8.2 Three-Sector Model &mdash; adds Government</h3>
+  <ul>
+    <li>Government collects <strong>taxes (T)</strong> from households &amp; firms (leakage).</li>
+    <li>Government spends on goods &amp; services and transfers (injection: G).</li>
+  </ul>
+
+  <h3>8.3 Four-Sector Model &mdash; adds External Sector</h3>
+  <ul>
+    <li><strong>Imports (M)</strong> &mdash; leakage; <strong>Exports (X)</strong> &mdash; injection.</li>
+    <li>Equilibrium identity: <strong>S + T + M = I + G + X</strong> (leakages = injections).</li>
+  </ul>
+
+  <!-- SVG: Circular Flow Diagram -->
+  <div class="svg-wrap">
+    <svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+      <text x="360" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2035">Circular Flow of Income &mdash; Two-Sector Model</text>
+      <!-- Households box -->
+      <rect x="60" y="80" width="200" height="160" rx="12" fill="#1a3d5c"/>
+      <text x="160" y="160" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">HOUSEHOLDS</text>
+      <text x="160" y="180" text-anchor="middle" font-size="11" fill="#fff" opacity="0.85">supply factors &amp;</text>
+      <text x="160" y="196" text-anchor="middle" font-size="11" fill="#fff" opacity="0.85">demand goods</text>
+      <!-- Firms box -->
+      <rect x="460" y="80" width="200" height="160" rx="12" fill="#c47820"/>
+      <text x="560" y="160" text-anchor="middle" font-size="18" font-weight="700" fill="#fff">FIRMS</text>
+      <text x="560" y="180" text-anchor="middle" font-size="11" fill="#fff" opacity="0.85">demand factors &amp;</text>
+      <text x="560" y="196" text-anchor="middle" font-size="11" fill="#fff" opacity="0.85">supply goods</text>
+      <!-- Top arrow: Factor services HH->Firms -->
+      <path d="M 260 110 Q 360 60 460 110" fill="none" stroke="#1a7a5a" stroke-width="2" marker-end="url(#aa)"/>
+      <text x="360" y="56" text-anchor="middle" font-size="12" fill="#1a7a5a" font-weight="700">Factor Services (Real Flow)</text>
+      <!-- Top inner arrow: Wages/Rent/Interest/Profit Firms->HH -->
+      <path d="M 460 130 Q 360 80 260 130" fill="none" stroke="#c0392b" stroke-width="2" marker-end="url(#aa)"/>
+      <text x="360" y="76" text-anchor="middle" font-size="11" fill="#c0392b">Wages/Rent/Interest/Profit (Money Flow)</text>
+      <!-- Bottom arrow: Goods&Services Firms->HH -->
+      <path d="M 460 220 Q 360 270 260 220" fill="none" stroke="#1a7a5a" stroke-width="2" marker-end="url(#aa)"/>
+      <text x="360" y="290" text-anchor="middle" font-size="12" fill="#1a7a5a" font-weight="700">Goods &amp; Services (Real Flow)</text>
+      <!-- Bottom inner arrow: Consumption Expenditure HH->Firms -->
+      <path d="M 260 210 Q 360 260 460 210" fill="none" stroke="#c0392b" stroke-width="2" marker-end="url(#aa)"/>
+      <text x="360" y="266" text-anchor="middle" font-size="11" fill="#c0392b">Consumption Expenditure (Money Flow)</text>
+      <defs>
+        <marker id="aa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M0,0 L10,5 L0,10 z" fill="currentColor"/>
+        </marker>
+      </defs>
+    </svg>
+    <div class="svg-caption">Fig 2.2 &mdash; Two-sector circular flow: real flows (goods &amp; factor services) and counterbalancing money flows. The closed loop guarantees Production = Income = Expenditure.</div>
+  </div>
+</section>
+
+<!-- ===== SECTION 9: PER CAPITA INCOME ===== -->
+<section class="notes" id="percapita">
+  <h2>9. Per Capita Income (PCI)</h2>
+
+  <h3>9.1 Definition</h3>
+  <div class="formula">Per Capita Income = National Income (NNP<sub>FC</sub>) &divide; Population</div>
+
+  <h3>9.2 India's PCI &mdash; Latest</h3>
+  <table>
+    <tr><th>Measure</th><th>FY24 (PE)</th></tr>
+    <tr><td>Per Capita Net National Income (nominal)</td><td>~&#8377;1,85,000 (~$2,540)</td></tr>
+    <tr><td>Per Capita NNI (constant 2011-12 prices)</td><td>~&#8377;1,06,000</td></tr>
+    <tr><td>World Bank GNI per capita (Atlas method)</td><td>~$2,540 &mdash; <strong>Lower-middle income</strong></td></tr>
+    <tr><td>PPP-adjusted GDP per capita (IMF)</td><td>~$9,180 &mdash; 124th in world</td></tr>
+  </table>
+  <p style="font-size:12px;color:var(--muted)"><span class="update-tag">check for latest update or data</span> from MoSPI, World Bank Atlas, IMF WEO databases.</p>
+
+  <h3>9.3 PCI vs Median Income &mdash; Why the Distinction Matters</h3>
+  <ul>
+    <li>PCI is a <strong>mean</strong> &mdash; distorted by outliers (a few billionaires lift the average).</li>
+    <li><strong>Median income</strong> (income of the middle person) is closer to "typical household experience". India's median is far below the mean &mdash; consistent with high inequality (top 10% holds ~57% of national income per World Inequality Report 2022).</li>
+  </ul>
+
+  <h3>9.4 PCI Comparisons &mdash; Exchange Rate vs PPP</h3>
+  <ul>
+    <li><strong>Atlas / Exchange-rate method</strong> &mdash; uses USD market rates &mdash; understates poor countries because non-tradables (haircuts, rickshaws) are cheap.</li>
+    <li><strong>PPP (Purchasing Power Parity) method</strong> &mdash; equalises cost of a common basket &mdash; closer to real living standards. India ranks far better on PPP than on Atlas.</li>
+    <li>Source for PPP: <strong>International Comparison Programme (ICP)</strong> by World Bank.</li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 10: DIFFICULTIES IN MEASUREMENT ===== -->
+<section class="notes" id="difficulty">
+  <h2>10. Difficulties in Measuring National Income</h2>
+
+  <h3>10.1 Conceptual Difficulties</h3>
+  <ul>
+    <li><strong>What to include</strong> &mdash; only final goods, but distinguishing intermediate from final is hard (a bag of cement: intermediate if for a building, final if for a household).</li>
+    <li><strong>Imputed values</strong> &mdash; owner-occupied housing rent, self-consumption by farmers must be imputed.</li>
+    <li><strong>Non-monetised sector</strong> &mdash; barter, household work, voluntary services excluded &mdash; under-counts women's contribution.</li>
+    <li><strong>Transfer payments</strong> &mdash; pensions, subsidies excluded (no production).</li>
+    <li><strong>Treatment of capital gains</strong> &mdash; excluded (not production of new goods).</li>
+  </ul>
+
+  <h3>10.2 Practical Difficulties</h3>
+  <ul>
+    <li><strong>Unorganised sector</strong> &mdash; ~50% of GVA, data sparse, estimated via periodic NSS surveys.</li>
+    <li><strong>Illiteracy &amp; poor record-keeping</strong> by small enterprises.</li>
+    <li><strong>Black economy</strong> &mdash; estimated 20-50% of GDP unaccounted (no consensus estimate).</li>
+    <li><strong>Double counting</strong> risk if value-added method not used carefully.</li>
+    <li><strong>Multiple sources</strong> with different reference periods &mdash; need to harmonise.</li>
+  </ul>
+
+  <h3>10.3 What GDP Does NOT Capture</h3>
+  <ul>
+    <li><strong>Income distribution</strong> &mdash; GDP can grow even as inequality worsens.</li>
+    <li><strong>Quality of life</strong> &mdash; health, education, leisure, environment.</li>
+    <li><strong>Environmental degradation</strong> &mdash; deforestation &amp; pollution actually <em>raise</em> GDP (cleanup adds output).</li>
+    <li><strong>Non-market work</strong> &mdash; women's unpaid care work; volunteer work.</li>
+    <li><strong>Subjective well-being</strong> &mdash; Bhutan's Gross National Happiness; OECD Better Life Index (covered in Topic 3).</li>
+  </ul>
+
+  <div class="callout warn"><strong>Robert F. Kennedy's famous critique (1968):</strong> "<em>GDP measures everything &hellip; except that which makes life worthwhile.</em>" This sets up the discussion of <strong>Green GDP, HDI, MPI, GNH</strong> in Topic 3.</div>
+</section>
+
+<!-- ===== SECTION 11: INDIAN NATIONAL ACCOUNTS ===== -->
+<section class="notes" id="indianseries">
+  <h2>11. Indian National Accounts &mdash; Institutions &amp; Series</h2>
+
+  <h3>11.1 Key Institutions</h3>
+  <table>
+    <tr><th>Body</th><th>Role</th></tr>
+    <tr><td><strong>Ministry of Statistics &amp; Programme Implementation (MoSPI)</strong></td><td>Apex ministry; oversees NSO</td></tr>
+    <tr><td><strong>National Statistical Office (NSO)</strong></td><td>Formed in 2019 by merging CSO + NSSO; releases all national income data</td></tr>
+    <tr><td><strong>Central Statistical Office (CSO)</strong> [erstwhile, now part of NSO]</td><td>Computed national income, IIP, CPI</td></tr>
+    <tr><td><strong>National Sample Survey Office (NSSO)</strong> [now part of NSO]</td><td>Conducts large-scale surveys (PLFS, HCES, NSS Rounds)</td></tr>
+    <tr><td><strong>National Statistical Commission (NSC)</strong></td><td>Autonomous body; advises on stats system &mdash; chaired currently by Rajeev Laxman Karandikar <span class="update-tag">check for latest</span></td></tr>
+    <tr><td><strong>Advisory Committee on National Accounts Statistics (ACNAS)</strong></td><td>Recommends methodology &amp; base-year revisions</td></tr>
+  </table>
+
+  <h3>11.2 Key Publications</h3>
+  <ul>
+    <li><strong>National Accounts Statistics (NAS)</strong> &mdash; annual flagship volume with detailed data.</li>
+    <li><strong>Quarterly GDP Estimates</strong> &mdash; released end of 2nd month after the quarter.</li>
+    <li><strong>Provisional/Advance Estimates</strong> &mdash; budget-window releases.</li>
+    <li><strong>Statistical Year Book India</strong> &mdash; compendium volume.</li>
+  </ul>
+
+  <h3>11.3 GDP vs GVA Headline &mdash; What India Reports</h3>
+  <ul>
+    <li><strong>Headline growth</strong> rate reported by media is usually <strong>GDP at constant 2011-12 market prices</strong>.</li>
+    <li>Sectoral contributions are reported in <strong>GVA at basic prices</strong>.</li>
+    <li>GDP growth &gt; GVA growth when net product taxes grow faster (typical pattern); GDP growth &lt; GVA growth when subsidies rise sharply (e.g., COVID year).</li>
+  </ul>
+
+  <div class="callout info"><strong>NSO formation:</strong> Created in May 2019 by merging CSO + NSSO under MoSPI. The aim was to unify statistical functions &mdash; ending the long-debated CSO-NSSO duality.</div>
+</section>
+
+<!-- ===== SECTION 12: CURRENT AFFAIRS ===== -->
+<section class="notes" id="currentaffairs">
+  <h2>12. Current Affairs Link</h2>
+
+  <h3>12.1 Latest GDP &amp; Growth Numbers</h3>
+  <table>
+    <tr><th>Period</th><th>Real GDP Growth</th><th>Real GVA Growth</th></tr>
+    <tr><td>FY22</td><td>9.7%</td><td>9.4%</td></tr>
+    <tr><td>FY23</td><td>7.0%</td><td>6.7%</td></tr>
+    <tr><td>FY24 (PE, May 2024)</td><td><strong>8.2%</strong></td><td>7.2%</td></tr>
+    <tr><td>FY25 (RBI estimate)</td><td>~7.2% projected <span class="update-tag">check latest</span></td><td>&mdash;</td></tr>
+  </table>
+  <p style="font-size:12px;color:var(--muted)">Source: MoSPI Provisional Estimates / RBI MPC statements. <span class="update-tag">check for latest update or data</span></p>
+
+  <h3>12.2 Eco Survey 2023-24 Highlights (re. National Income)</h3>
+  <ul>
+    <li>India's nominal GDP crossed <strong>&#8377;295 lakh crore</strong> (~$3.9 trillion) in FY24.</li>
+    <li>Identified <strong>private capex revival</strong> as the next growth engine.</li>
+    <li>Cautioned about <strong>K-shaped recovery</strong> &mdash; formal sector booming, informal lagging.</li>
+    <li>Suggested India can sustain <strong>6.5&ndash;7% real growth</strong> in the medium term.</li>
+  </ul>
+
+  <h3>12.3 Base-Year Revision Update</h3>
+  <p>The 26-member Advisory Committee on National Accounts Statistics under <strong>Dr Biswanath Goldar</strong> recommended <strong>2022-23</strong> as the next base year. The new series is expected to incorporate:</p>
+  <ul>
+    <li>Digital economy (e-commerce, gig workers).</li>
+    <li>Updated PLFS-based labour data.</li>
+    <li>GST data for unorganised sector estimation.</li>
+    <li>MCA-21 corporate database (v3).</li>
+  </ul>
+  <p><span class="update-tag">check for latest update or data</span> &mdash; release timeline keeps shifting.</p>
+
+  <h3>12.4 GST as a Statistical Game-Changer</h3>
+  <p>Since 2017, the GST returns database has dramatically improved the granular tracking of services-sector value-addition. Likely to feature prominently in the upcoming base-year series.</p>
+
+  <div class="pyq">
+    <div class="year">Current Affairs 2024&ndash;25</div>
+    <p>India became the <strong>5th largest economy</strong> in nominal GDP in 2022 (overtaking UK); IMF projects India to become the <strong>3rd largest</strong> by 2027 (overtaking Germany and Japan). <span class="update-tag">check latest IMF WEO</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 13: PRELIMS PYQs ===== -->
+<section class="notes" id="prelims-pyq">
+  <h2>13. Prelims PYQs (2014&ndash;2026)</h2>
+
+  <div class="pyq">
+    <div class="year">Prelims 2025</div>
+    <p>With reference to the Indian economy, consider the following:<br>
+    1. GDP at factor cost is no longer the headline measure published by the NSO.<br>
+    2. GVA at basic prices became the standard sectoral measure since 2015.<br>
+    3. The current base year for India's National Accounts is 2011-12.<br>
+    How many of the above statements are correct?<br>
+    <em>Answer: All three are correct.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2024</div>
+    <p>Consider the following statements:<br>
+    1. The Gross Domestic Product (GDP) in India is calculated on the basis of the base year 2011-12.<br>
+    2. GDP at factor cost is the sum of Gross Value Added (GVA) at basic prices and product taxes net of subsidies.<br>
+    Which of the statements is/are correct?<br>
+    <em>Answer: Only 1. Statement 2 is wrong: GVA + (Product Taxes &minus; Product Subsidies) = GDP at MARKET PRICE (not factor cost).</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2023</div>
+    <p>Consider the following statements:<br>
+    Statement-I: India accounts for 3.2% of global export of goods.<br>
+    Statement-II: Many local companies and some foreign companies operating in India have taken advantage of India's PLI scheme.<br>
+    Which one of the following is correct?<br>
+    <em>Answer: Tests external sector + GDP linkage; correct option indicates explanation linkage.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2022</div>
+    <p>With reference to the Indian economy, consider the following statements:<br>
+    1. An increase in nominal effective exchange rate (NEER) indicates appreciation of rupee.<br>
+    2. An increase in real effective exchange rate (REER) indicates an improvement in trade competitiveness.<br>
+    Which of the statements is/are correct?<br>
+    <em>Answer: Only 1. An increase in REER indicates LOSS of competitiveness (exports become costlier). [Tests nominal-vs-real concept.]</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2021</div>
+    <p>With reference to the Indian economy, demand-pull inflation can be caused/increased by which of the following?<br>
+    1. Expansionary policies<br>
+    2. Fiscal stimulus<br>
+    3. Inflow of foreign capital<br>
+    4. Reduction of taxes<br>
+    5. Weak monsoon<br>
+    <em>Answer: 1, 2, 3 and 4 only. [Tests expenditure-side of GDP &mdash; how AD shifts cause inflation.]</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2020</div>
+    <p>If another global financial crisis happens in the near future, which of the following actions/policies are most likely to give some immunity to India?<br>
+    1. Not depending on short-term foreign borrowings<br>
+    2. Opening up to more foreign banks<br>
+    3. Maintaining full capital account convertibility<br>
+    <em>Answer: 1 only. [Tests open-economy macroeconomics &mdash; foundational for understanding GDP composition.]</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2019</div>
+    <p>In a given year in India, official poverty lines are higher in some States than in others because:<br>
+    (a) poverty rates vary across States<br>
+    (b) price levels vary across States<br>
+    (c) gross State product varies across States<br>
+    (d) quality of public distribution system varies across States<br>
+    <em>Answer: (b) &mdash; State-wise PPP / cost-of-living adjustments. [Reinforces the real-vs-nominal concept regionally.]</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2018</div>
+    <p>Increase in absolute and per capita real GNP do NOT connote a higher level of economic development, if:<br>
+    (a) industrial output fails to keep pace with agricultural output<br>
+    (b) agricultural output fails to keep pace with industrial output<br>
+    (c) poverty and unemployment increase<br>
+    (d) imports grow faster than exports<br>
+    <em>Answer: (c).</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2017</div>
+    <p>In the context of governance, consider the following:<br>
+    1. Bilateral Investment Treaties<br>
+    2. Quantitative Easing<br>
+    Which of the above are tools of central banks for managing aggregate demand?<br>
+    <em>Answer: Only 2. [Tests aggregate demand &mdash; expenditure component of GDP.]</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2016</div>
+    <p>What is/are the most likely advantages of implementing 'Goods and Services Tax (GST)'?<br>
+    1. It will replace multiple taxes on goods and services with a single tax.<br>
+    2. It will drastically reduce the 'Current Account Deficit' of India and enable it to increase its foreign exchange reserves.<br>
+    3. It will enormously increase the growth and size of the economy of India and enable it to overtake China in the near future.<br>
+    <em>Answer: Only 1. [Tests how indirect-tax reform affects GDP measurement &mdash; the shift from "Factor Cost" to "Market Price" headlines.]</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2015</div>
+    <p>The terms "Marginal Standing Facility Rate" and "Net Demand and Time Liabilities", sometimes appearing in news, are used in relation to:<br>
+    (a) banking operations &nbsp; (b) communication networking &nbsp; (c) military strategies &nbsp; (d) supply &amp; demand in the economy<br>
+    <em>Answer: (a) banking operations. [Tests basic macro terminology.]</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2015</div>
+    <p>"In the Index of Eight Core Industries", which one of the following is given the highest weight?<br>
+    (a) Coal production &nbsp; (b) Electricity generation &nbsp; (c) Fertiliser production &nbsp; (d) Steel production<br>
+    <em>Answer: (b) Electricity. [IIP weighting &mdash; key to measuring industrial GVA.]</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2014</div>
+    <p>The national income of a country for a given period is equal to:<br>
+    (a) total value of goods and services produced by the nationals<br>
+    (b) sum of total consumption and investment expenditure<br>
+    (c) sum of personal income of all individuals<br>
+    (d) money value of final goods and services produced<br>
+    <em>Answer: (d) Money value of final goods and services produced &mdash; the standard definition of national income.</em></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 14: MAINS PYQs ===== -->
+<section class="notes" id="mains-pyq">
+  <h2>14. Mains PYQs (2014&ndash;2025)</h2>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2024</div>
+    <p>Discuss the merits and demerits of the methodology adopted by the National Statistical Office (NSO) for the estimation of India's Gross Domestic Product. Suggest improvements that could be incorporated in the upcoming base-year revision. (250 words)</p>
+    <p><em>Hint: Discuss the 2011-12 series &mdash; shift to GVA at basic prices, MCA-21 data, IIP backbone. Merits: SNA-2008 compliant, wider coverage. Demerits: heavy reliance on MCA-21 corporate filings of dubious quality; informal-sector estimation gaps; lack of high-frequency data on services. Suggestions: integrate GST data, e-Shram, PLFS quarterly bulletins, satellite-based agriculture data.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2023</div>
+    <p>What are the salient features of Atmanirbhar Bharat package announced by the Government of India? How will it boost the GDP growth and aggregate demand in the economy? (150 words)</p>
+    <p><em>Hint: Connect the Rs.20-lakh crore stimulus to the expenditure-side of GDP (G + I + X). Mention liquidity boost (RBI measures), MSME credit, PLI for manufacturing, agri-marketing reforms. Use the AD = C+I+G+(X-M) framework.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2022</div>
+    <p>Do you agree with the view that steady GDP growth and low inflation have rendered the Indian economy immune to the COVID-19 induced recession? (150 words)</p>
+    <p><em>Hint: No &mdash; India's GDP contracted 5.8% in FY21. Discuss K-shaped recovery, services sector hit, informal sector pain. Use real-vs-nominal distinction.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2021</div>
+    <p>Comparing the Indian and Chinese economies, discuss the salient differences in their economic structures and growth trajectories over the last three decades. (250 words)</p>
+    <p><em>Hint: Compare structural transformation paths &mdash; China's manufacturing-led, India's services-led. Use GDP composition data (industry ~40% China vs ~28% India). Discuss demographic dividend, export orientation, capex GDP shares.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2020</div>
+    <p>Define potential GDP and explain its determinants. What are the factors that have been inhibiting India from realizing its potential GDP? (250 words)</p>
+    <p><em>Hint: Potential GDP = max sustainable output without inflation. Determinants: capital + labour + TFP (Solow framework). Inhibitors: low FLFP, manufacturing share, infra, NPAs, low R&amp;D.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2019</div>
+    <p>Do you agree that the Indian economy has recently experienced V-shaped recovery? Give reasons in support of your answer. (150 words)</p>
+    <p><em>Hint: Define V-shape (sharp fall, sharp recovery). Discuss FY21 contraction (-5.8%) followed by 9.7% in FY22 &mdash; partial V-shape, but K-shape critique.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2018</div>
+    <p>How are the principles followed by the NITI Aayog different from those followed by the erstwhile Planning Commission in India? (150 words)</p>
+    <p><em>Hint: Cooperative federalism, bottom-up vs top-down, no Five-Year Plans. Linkage: how planning shaped GDP composition pre-1991 vs post.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2017</div>
+    <p>Account for the failure of manufacturing sector in achieving the goal of labour-intensive exports. Suggest measures for more labour-intensive rather than capital-intensive exports. (200 words)</p>
+    <p><em>Hint: Same as Topic 1. Use industrial GVA share data.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2016</div>
+    <p>"Investment in infrastructure is essential for more rapid and inclusive economic growth." Discuss in the light of India's experience. (150 words)</p>
+    <p><em>Hint: Use GFCF (Gross Fixed Capital Formation) component of GDP &mdash; expenditure method. India's GFCF/GDP ratio peaked at ~36% in 2007, fell to ~28% post-2014, recovering to ~30%+ now via Centre's capex push.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2015</div>
+    <p>"Success of 'Make in India' programme depends on the success of 'Skill India' programme and radical labour reforms." Discuss with logical arguments. (200 words)</p>
+    <p><em>Hint: Both feed into manufacturing-sector GVA. Discuss productivity, formal-sector employment, demographic dividend.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2014</div>
+    <p>With a consideration towards the strategy of inclusive growth, the new Companies Act 2013 has made Corporate Social Responsibility (CSR) mandatory. Discuss the challenges expected in its implementation. (200 words)</p>
+    <p><em>Hint: CSR adds to social-sector spending &mdash; quasi-public goods. Connect to "for whom" question of national income.</em></p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III 2025 (anticipated themes)</div>
+    <p><strong>Likely:</strong> Implications of new base-year (2022-23) GDP series; sustainability of 7%+ real growth; GFCF revival; India as 3rd largest economy &mdash; risks. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 15: REVISION BOX ===== -->
+<section class="notes" id="revision">
+  <h2>15. 15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; National Income Accounting</h3>
+    <div class="grid-2">
+      <div>
+        <strong>Core Identities:</strong>
+        <ul>
+          <li>GNP = GDP + NFIA</li>
+          <li>NDP = GDP &minus; Depreciation</li>
+          <li>NNP = GNP &minus; Depreciation</li>
+          <li>National Income = NNP at Factor Cost</li>
+          <li>FC = MP &minus; Indirect Taxes + Subsidies</li>
+          <li>Basic Price = FC + Production T &minus; Production S</li>
+          <li>Market Price = Basic Price + Product T &minus; Product S</li>
+          <li>Real GDP = Nominal &divide; Deflator &times; 100</li>
+          <li>Deflator = Nominal / Real &times; 100</li>
+        </ul>
+        <strong>Methods of Estimation (3):</strong>
+        <ul>
+          <li>Production / Value Added &rarr; sectoral GVA</li>
+          <li>Income &rarr; W+R+I+P+Mixed</li>
+          <li>Expenditure &rarr; C+I+G+(X-M)</li>
+        </ul>
+        <strong>Historical Firsts:</strong>
+        <ul>
+          <li>First est (1868): <strong>Dadabhai Naoroji</strong></li>
+          <li>First scientific (1949): <strong>NI Committee, P.C. Mahalanobis</strong></li>
+          <li>Father of NI in India: <strong>V.K.R.V. Rao</strong></li>
+          <li>Current base year: <strong>2011-12</strong> (since Jan 2015)</li>
+          <li>Next base year (proposed): <strong>2022-23</strong> <span class="update-tag">check</span></li>
+        </ul>
+      </div>
+      <div>
+        <strong>India's Latest Numbers:</strong>
+        <ul>
+          <li>Nominal GDP FY24: <strong>~&#8377;295 lakh cr</strong> (~$3.9 tn)</li>
+          <li>Real growth FY24: <strong>8.2%</strong></li>
+          <li>Per capita NNI: <strong>~&#8377;1.85 lakh</strong></li>
+          <li>5th largest economy (nominal); 3rd by PPP</li>
+          <li>WB classification: <strong>Lower-middle income</strong></li>
+          <li>(All <span class="update-tag">check for latest update or data</span>)</li>
+        </ul>
+        <strong>Institutions:</strong>
+        <ul>
+          <li><strong>MoSPI</strong> &mdash; apex ministry</li>
+          <li><strong>NSO</strong> (2019) &mdash; CSO + NSSO merged</li>
+          <li><strong>National Statistical Commission</strong> &mdash; advisory</li>
+          <li><strong>ACNAS</strong> &mdash; advisory on NAS</li>
+        </ul>
+        <strong>Release Calendar:</strong>
+        <ul>
+          <li>Quarterly &rarr; ~60 days lag</li>
+          <li>Annual 1st AE &rarr; January</li>
+          <li>Annual 2nd AE &rarr; February</li>
+          <li>Provisional Est &rarr; May 31</li>
+          <li>1st RE &rarr; January next year</li>
+          <li>Successive REs &rarr; over 3 years</li>
+        </ul>
+        <strong>GDP Doesn't Capture:</strong>
+        <ul>
+          <li>Inequality &middot; non-market work &middot; environment</li>
+          <li>Black economy &middot; quality of life</li>
+          <li>(Hence Topic 3 &mdash; HDI, GNH, MPI)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>The 8-aggregate matrix:</strong> (Domestic vs National) &times; (Gross vs Net) &times; (Market Price vs Factor Cost) = 8 aggregates. UPSC's favourite trick &mdash; learn the conversion map (Fig 2.1) and you can solve any combination in 10 seconds.</div>
+  </div>
+</section>
+
+</main>
+
+<aside>
+<div class="aside-sticky">
+
+<div class="widget">
+  <h4>The 8 Aggregates</h4>
+  <table>
+    <tr><th>Code</th><th>Meaning</th></tr>
+    <tr><td>GDP<sub>MP</sub></td><td>Headline GDP</td></tr>
+    <tr><td>GDP<sub>FC</sub></td><td>= GDP<sub>MP</sub> &minus; IT + S</td></tr>
+    <tr><td>NDP<sub>MP</sub></td><td>= GDP<sub>MP</sub> &minus; D</td></tr>
+    <tr><td>NDP<sub>FC</sub></td><td>Net Domestic Income</td></tr>
+    <tr><td>GNP<sub>MP</sub></td><td>= GDP<sub>MP</sub> + NFIA</td></tr>
+    <tr><td>GNP<sub>FC</sub></td><td>= GNP<sub>MP</sub> &minus; IT + S</td></tr>
+    <tr><td>NNP<sub>MP</sub></td><td>= GNP<sub>MP</sub> &minus; D</td></tr>
+    <tr><td><strong>NNP<sub>FC</sub></strong></td><td><strong>National Income</strong></td></tr>
+  </table>
+</div>
+
+<div class="widget">
+  <h4>India GDP Growth (Real)</h4>
+  <div class="bar"><span class="lbl">FY21</span><span class="fill"><span style="width:0%;background:#c0392b"></span></span><span style="font-size:10px;color:#c0392b;margin-left:6px">&minus;5.8%</span></div>
+  <div class="bar"><span class="lbl">FY22</span><span class="fill"><span style="width:97%"></span></span></div>
+  <div class="bar"><span class="lbl">FY23</span><span class="fill"><span style="width:70%"></span></span></div>
+  <div class="bar"><span class="lbl">FY24</span><span class="fill"><span style="width:82%"></span></span></div>
+  <div class="bar"><span class="lbl">FY25 (P)</span><span class="fill"><span style="width:72%"></span></span></div>
+  <p style="font-size:11px;color:var(--muted);margin:6px 0 0">Source: MoSPI / RBI. <span class="update-tag">check latest</span></p>
+</div>
+
+<div class="widget">
+  <h4>Key Formulas</h4>
+  <details><summary>Real GDP</summary>
+    <p>Real GDP = (Nominal GDP / Deflator) &times; 100</p></details>
+  <details><summary>GDP from Expenditure</summary>
+    <p>GDP<sub>MP</sub> = C + I + G + (X-M)</p></details>
+  <details><summary>GVA &rarr; GDP</summary>
+    <p>GDP<sub>MP</sub> = GVA<sub>BP</sub> + Product Taxes &minus; Product Subsidies</p></details>
+  <details><summary>Per Capita Income</summary>
+    <p>PCI = NNP<sub>FC</sub> / Population</p></details>
+</div>
+
+<div class="widget">
+  <h4>Base Year Timeline</h4>
+  <table>
+    <tr><td>1948-49</td><td>First</td></tr>
+    <tr><td>1960-61</td></tr>
+    <tr><td>1970-71</td></tr>
+    <tr><td>1980-81</td></tr>
+    <tr><td>1993-94</td></tr>
+    <tr><td>1999-2000</td></tr>
+    <tr><td>2004-05</td></tr>
+    <tr><td><strong>2011-12</strong></td><td>Current</td></tr>
+    <tr><td>2022-23?</td><td>Next <span class="update-tag">check</span></td></tr>
+  </table>
+</div>
+
+<div class="widget">
+  <h4>Difficulty &amp; Importance</h4>
+  <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:90%"></span></span></div>
+  <div class="bar"><span class="lbl">Mains GS-III</span><span class="fill"><span style="width:85%"></span></span></div>
+  <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:80%"></span></span></div>
+  <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:90%"></span></span></div>
+</div>
+
+<div class="widget">
+  <h4>Must-Know Tags</h4>
+  <div>
+    <span class="tag">GDP</span>
+    <span class="tag">GNP</span>
+    <span class="tag">NDP</span>
+    <span class="tag">NNP</span>
+    <span class="tag orange">GVA</span>
+    <span class="tag orange">NVA</span>
+    <span class="tag">Market Price</span>
+    <span class="tag">Factor Cost</span>
+    <span class="tag orange">Basic Price</span>
+    <span class="tag">Nominal GDP</span>
+    <span class="tag">Real GDP</span>
+    <span class="tag orange">GDP Deflator</span>
+    <span class="tag">CPI</span>
+    <span class="tag">WPI</span>
+    <span class="tag green">Base Year 2011-12</span>
+    <span class="tag green">SNA 2008</span>
+    <span class="tag green">MCA-21</span>
+    <span class="tag green">MoSPI</span>
+    <span class="tag green">NSO</span>
+    <span class="tag green">CSO</span>
+    <span class="tag green">NSSO</span>
+    <span class="tag green">NSC</span>
+    <span class="tag green">ACNAS</span>
+    <span class="tag green">Mahalanobis</span>
+    <span class="tag green">V.K.R.V. Rao</span>
+    <span class="tag green">Dadabhai Naoroji</span>
+    <span class="tag green">NFIA</span>
+    <span class="tag green">Per Capita Income</span>
+    <span class="tag green">PPP</span>
+    <span class="tag green">PFCE/GFCE/GFCF</span>
+  </div>
+</div>
+
+<div class="widget">
+  <h4>Data Sources to Bookmark</h4>
+  <ul>
+    <li><a href="https://www.mospi.gov.in" target="_blank" rel="noopener">MoSPI</a> &mdash; NAS, PE/AE releases</li>
+    <li><a href="https://mospi.gov.in/national-account-statistics" target="_blank" rel="noopener">NAS Press Notes</a></li>
+    <li><a href="https://www.rbi.org.in" target="_blank" rel="noopener">RBI</a> &mdash; MPC, Quarterly Bulletins</li>
+    <li><a href="https://www.indiabudget.gov.in/economicsurvey" target="_blank" rel="noopener">Economic Survey</a></li>
+    <li><a href="https://www.imf.org/en/Publications/WEO" target="_blank" rel="noopener">IMF WEO</a> &mdash; intl comparisons</li>
+    <li><a href="https://data.worldbank.org" target="_blank" rel="noopener">World Bank Open Data</a></li>
+    <li><a href="https://pib.gov.in" target="_blank" rel="noopener">PIB</a></li>
+  </ul>
+</div>
+
+<div class="widget">
+  <h4>Related Topics</h4>
+  <ul class="related">
+    <li><a href="/economy/fundamentals-of-economy">Topic 01: Fundamentals of Economy</a></li>
+    <li><a href="/economy/growth-development-and-happiness">Topic 03: Growth, Development &amp; Happiness</a></li>
+    <li><a href="/economy/external-sector-and-balance-of-payments">Topic 09: Inflation</a></li>
+    <li><a href="/economy">All UPSC Notes</a></li>
+  </ul>
+</div>
+
+<div class="widget">
+  <h4>Quick Links</h4>
+  <ul>
+    <li><a href="#concept">Conceptual Clarity</a></li>
+    <li><a href="#aggregates">Macro Aggregates</a></li>
+    <li><a href="#gva">GVA &amp; NVA</a></li>
+    <li><a href="#mpfc">MP / BP / FC</a></li>
+    <li><a href="#nominalreal">Nominal vs Real</a></li>
+    <li><a href="#baseyear">Base Year</a></li>
+    <li><a href="#methods">3 Methods</a></li>
+    <li><a href="#circular">Circular Flow</a></li>
+    <li><a href="#percapita">Per Capita</a></li>
+    <li><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><a href="#mains-pyq">Mains PYQs</a></li>
+    <li><a href="#revision">Revision Box</a></li>
+  </ul>
+</div>
+
+</div>
+</aside>
+
+</div>
+</div>

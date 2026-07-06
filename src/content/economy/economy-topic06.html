@@ -1,0 +1,930 @@
+<!-- economy-topic06 — auto-imported from economy-topic06-banking-system-india-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(135deg,#1b3a4b 0%,#0d2535 55%,#061018 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ol{margin:0;padding-left:22px;font-size:14px;columns:2;column-gap:24px}
+.toc li{margin-bottom:5px;break-inside:avoid}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+.formula{background:#f5f7fa;border:1px solid var(--line);border-left:4px solid var(--brand-blue);padding:12px 16px;margin:12px 0;border-radius:6px;font-family:"Courier New",monospace;font-size:14px;color:var(--brand-blue-dark)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ol{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Banking System in India &mdash; Architecture, Reform &amp; Stress</h1>
+  <p class="sub">From the Bank of Hindustan (1770) to the Unified Lending Interface (2024) &mdash; Topic 6 walks through how India intermediates savings into investment: the RBI at the apex, the Scheduled vs Non-Scheduled hierarchy, two waves of nationalisation, the mega-merger of 2020, NBFCs and differentiated banks, Basel III prudential norms, NPAs, the IBC, and the financial-inclusion agenda from PMJDY to ULI.</p>
+  <div class="meta">
+    <span class="pill">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Ramesh Singh Ch. 9</span>
+    <span class="pill">~28 min read</span>
+    <span class="pill">RBI &middot; PSB &middot; NBFC</span>
+    <span class="pill">IBC 2016 &middot; Basel III</span>
+  </div>
+</div>
+
+<div class="toc">
+<h3>On this page</h3>
+<ol>
+  <li><a href="#concept">Conceptual Clarity</a></li>
+  <li><a href="#s1">1. Evolution of Indian Banking</a></li>
+  <li><a href="#s2">2. Structure of the Banking System</a></li>
+  <li><a href="#s3">3. Commercial Banks &mdash; SCBs, PSBs, Private, Foreign</a></li>
+  <li><a href="#s4">4. Cooperative Banks &amp; RRBs</a></li>
+  <li><a href="#s5">5. Differentiated Banks &mdash; PBs, SFBs, LABs</a></li>
+  <li><a href="#s6">6. NBFCs &amp; the Shadow Banking Layer</a></li>
+  <li><a href="#s7">7. Nationalisation &amp; Mergers</a></li>
+  <li><a href="#s8">8. Key Banking Legislations</a></li>
+  <li><a href="#s9">9. NPAs &amp; Basel III</a></li>
+  <li><a href="#s10">10. PCA, IBC &amp; Resolution</a></li>
+  <li><a href="#s11">11. PSL &amp; Financial Inclusion</a></li>
+  <li><a href="#s12">12. Current Affairs Anchor</a></li>
+  <li><a href="#s13">13. Prelims PYQs (2014&ndash;2026)</a></li>
+  <li><a href="#s14">14. Mains PYQs (2014&ndash;2025)</a></li>
+  <li><a href="#s15">15. Revision Box</a></li>
+</ol>
+</div>
+
+<div class="concept-box" id="concept">
+<h3>Conceptual Clarity &mdash; Three Lenses</h3>
+<ol style="margin:.4rem 0 0">
+  <li><strong>Architecture</strong> &mdash; the hierarchy: RBI &rarr; Scheduled (SCBs, RRBs, Cooperatives) and Non-scheduled banks &rarr; NBFCs and differentiated banks at the periphery.</li>
+  <li><strong>Reform cycles</strong> &mdash; Nationalisation (1969, 1980) &rarr; Narasimham I (1991) and II (1998) &rarr; Basel III adoption &rarr; IBC 2016 &rarr; PSB mergers (2017&ndash;2020).</li>
+  <li><strong>Stress &amp; resolution</strong> &mdash; the twin balance-sheet problem, AQR 2015, PCA, IBC, and the move from <em>account-wise</em> restructuring to <em>entity-wise</em> insolvency.</li>
+</ol>
+<div class="formula" style="margin-top:.7rem">
+CRAR = (Tier 1 + Tier 2 capital) / Risk-Weighted Assets &nbsp;&ge;&nbsp; 9% (RBI) / 8% (Basel III) &nbsp;+&nbsp; 2.5% CCB &nbsp;+&nbsp; 1&ndash;2.5% D-SIB surcharge
+</div>
+</div>
+
+<section class="notes" id="s1">
+  <h2>1. Evolution of Indian Banking &mdash; A Timeline</h2>
+  <p>Modern Indian banking begins in the late 18<sup>th</sup> century with Agency Houses of the East India Company and graduates, in stages, into a fully State-supervised, Basel-compliant system.</p>
+
+  <h3>1.1 The Pre-Independence Phase</h3>
+  <ul>
+    <li><strong>1770:</strong> <em>Bank of Hindustan</em> &mdash; first modern bank in India (Alexander &amp; Co., Calcutta). Failed 1832.</li>
+    <li><strong>1786:</strong> <em>General Bank of India</em>.</li>
+    <li><strong>1806, 1840, 1843:</strong> Three Presidency Banks &mdash; Bank of Bengal, Bank of Bombay, Bank of Madras &mdash; chartered by the East India Company. Issued currency until the Paper Currency Act, 1861 ended their note-issuing power.</li>
+    <li><strong>1865:</strong> <em>Allahabad Bank</em> &mdash; oldest joint-stock bank that survived until its 2020 merger with Indian Bank.</li>
+    <li><strong>1881:</strong> <em>Oudh Commercial Bank</em> &mdash; first limited liability bank managed by Indians.</li>
+    <li><strong>1894:</strong> <em>Punjab National Bank (PNB)</em> &mdash; first wholly Indian-managed and Indian-capital bank (Lahore). Lala Lajpat Rai a founder-shareholder.</li>
+    <li><strong>1921:</strong> Three Presidency Banks merged into the <strong>Imperial Bank of India</strong> (Hilton Young Commission later asked it to surrender central-banking functions).</li>
+    <li><strong>1 April 1935:</strong> <strong>Reserve Bank of India</strong> established under the RBI Act 1934 (Hilton Young Commission 1926).</li>
+  </ul>
+
+  <h3>1.2 The Post-Independence Phase &mdash; Six Reform Waves</h3>
+  <div style="overflow-x:auto;margin:1rem 0">
+    <table>
+      <thead><tr><th>Wave</th><th>Year(s)</th><th>Key Event</th><th>Significance</th></tr></thead>
+      <tbody>
+        <tr><td>1. Nationalisation of RBI</td><td>1 Jan 1949</td><td>RBI fully State-owned</td><td>Foundation of public-sector central banking</td></tr>
+        <tr><td>2. SBI emerges</td><td>1 Jul 1955</td><td>Imperial Bank &rarr; State Bank of India (SBI Act 1955)</td><td>First public-sector commercial bank; rural credit push</td></tr>
+        <tr><td>3. SBI subsidiaries</td><td>1959</td><td>Seven associate banks brought under SBI</td><td>SBI Group created (merged back into SBI 2017)</td></tr>
+        <tr><td>4. First nationalisation</td><td>19 Jul 1969</td><td>14 banks &gt; &#8377;50 cr deposits nationalised (Indira Gandhi)</td><td>91% of bank deposits now in PSU control</td></tr>
+        <tr><td>5. Second nationalisation</td><td>15 Apr 1980</td><td>6 more banks &gt; &#8377;200 cr nationalised</td><td>PSU share rises to ~92%</td></tr>
+        <tr><td>6. LPG &amp; Narasimham reforms</td><td>1991, 1998</td><td>Narasimham Committee I &amp; II; new-generation private banks licensed; Basel norms</td><td>Competition, prudential supervision, capital adequacy</td></tr>
+        <tr><td>7. IBC + Mergers + Differentiated Banks</td><td>2014&ndash;2024</td><td>IBC 2016, Payments &amp; Small Finance Banks, 10 PSB &rarr; 4 mega-mergers (Apr 2020)</td><td>Resolution, inclusion, consolidation</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout info"><strong>Etymology corner:</strong> The word "bank" derives from the Italian <em>banca</em> (bench) &mdash; medieval Lombard money-changers in Florence transacted on wooden benches in the marketplace. A failed banker's bench was literally broken, giving us <em>banca rotta</em> &rarr; "bankrupt".</div>
+</section>
+
+<section class="notes" id="s2">
+  <h2>2. Structure of the Indian Banking System</h2>
+  <p>Indian banking is a <strong>two-tier</strong> system &mdash; the Reserve Bank of India at the apex, and a layered set of <em>scheduled</em> and <em>non-scheduled</em> banks below. A parallel non-bank ecosystem (NBFCs, AIFIs) feeds into the same capital markets.</p>
+
+  <h3>2.1 The Apex: RBI</h3>
+  <p>RBI sits at the top under the RBI Act 1934 and the Banking Regulation Act 1949 (see Topic 05, Section 7 for its monetary-authority role). For banking-supervision purposes, the relevant powers come from <strong>BR Act 1949</strong> &mdash; licensing, branch authorisation, capital, prudential norms, inspection, and (since 1994) the Board for Financial Supervision (BFS).</p>
+
+  <h3>2.2 Scheduled vs Non-Scheduled Banks</h3>
+  <ul>
+    <li><strong>Scheduled Banks:</strong> Banks listed in the <em>Second Schedule</em> of the RBI Act, 1934. To qualify, a bank must have paid-up capital + reserves of at least <strong>&#8377; 5 lakh</strong> and satisfy RBI that its affairs are not conducted in a manner detrimental to depositors. Benefits: refinance from RBI, clearing-house membership, eligibility to be a primary dealer.</li>
+    <li><strong>Non-Scheduled Banks:</strong> Not in the Second Schedule. Few in number; mostly small Local Area Banks.</li>
+  </ul>
+
+  <h3>2.3 The Full Architecture</h3>
+  <div style="overflow-x:auto;margin:1rem 0">
+    <table>
+      <thead><tr><th>Tier</th><th>Category</th><th>Sub-categories (examples)</th></tr></thead>
+      <tbody>
+        <tr><td>Apex</td><td>Central Bank</td><td>Reserve Bank of India</td></tr>
+        <tr><td rowspan="5">Scheduled Commercial Banks (SCBs)</td><td>Public Sector Banks (PSBs)</td><td>SBI + 11 nationalised (post-2020 mergers)</td></tr>
+        <tr><td>Private Sector Banks</td><td>Old (Federal, Karur Vysya, J&amp;K Bank, etc.) + New (HDFC, ICICI, Axis, Kotak, IndusInd, Yes, IDFC First, Bandhan, etc.)</td></tr>
+        <tr><td>Foreign Banks</td><td>~45 foreign banks operating in India (Citi exited retail 2023, sold to Axis)</td></tr>
+        <tr><td>Regional Rural Banks (RRBs)</td><td>43 RRBs after consolidation; sponsored by PSBs</td></tr>
+        <tr><td>Small Finance Banks &amp; Payments Banks</td><td>11 SFBs + 6 PBs (operationally licensed)</td></tr>
+        <tr><td>Scheduled Cooperative Banks</td><td>Urban Cooperative Banks (UCBs)</td><td>Scheduled UCBs (~50)</td></tr>
+        <tr><td>Scheduled Cooperative Banks</td><td>State Cooperative Banks</td><td>StCBs (top tier of rural cooperative pyramid)</td></tr>
+        <tr><td>Non-Scheduled Banks</td><td>Local Area Banks (LABs)</td><td>Capital Local Area Bank (the survivor; converted to SFB)</td></tr>
+        <tr><td>All-India Financial Institutions (AIFIs)</td><td>Specialised lenders</td><td>NABARD, SIDBI, EXIM Bank, NHB, NaBFID (2021)</td></tr>
+        <tr><td>Non-Bank Layer</td><td>NBFCs</td><td>Investment &amp; Credit Cos, Infra Finance, Micro Finance, HFCs, AIFC, Core Investment Cos (CICs)</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout info"><strong>Two anchors to memorise:</strong> (i) <em>Second Schedule of RBI Act 1934</em> &mdash; defines a Scheduled Bank. (ii) <em>BR Act 1949</em> &mdash; substantive law for banking regulation. Cooperative banks were brought under full RBI banking supervision only by the <em>Banking Regulation (Amendment) Act, 2020</em>.</div>
+</section>
+
+<section class="notes" id="s3">
+  <h2>3. Commercial Banks &mdash; SCBs, PSBs, Private &amp; Foreign</h2>
+  <p>Commercial banks account for ~95% of total banking-system assets. They mobilise deposits from the public and lend for working capital, retail and infrastructure. They are profit-oriented and joint-stock in form, but regulated under the BR Act, 1949.</p>
+
+  <h3>3.1 Public Sector Banks (PSBs)</h3>
+  <ul>
+    <li><strong>Definition:</strong> Banks where the Government of India (alone or with RBI) holds &gt; 50% of paid-up capital.</li>
+    <li><strong>Constituents:</strong> State Bank of India + 11 nationalised banks (post-2020 mergers). Pre-2017, there were 27 PSBs.</li>
+    <li><strong>Mega-merger (1 April 2020):</strong> 10 PSBs &rarr; 4 anchor banks.</li>
+  </ul>
+
+  <div style="overflow-x:auto;margin:1rem 0">
+    <table>
+      <thead><tr><th>Anchor Bank</th><th>Merged with (effective 1 Apr 2020)</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Punjab National Bank (PNB)</strong></td><td>Oriental Bank of Commerce + United Bank of India</td></tr>
+        <tr><td><strong>Canara Bank</strong></td><td>Syndicate Bank</td></tr>
+        <tr><td><strong>Union Bank of India</strong></td><td>Andhra Bank + Corporation Bank</td></tr>
+        <tr><td><strong>Indian Bank</strong></td><td>Allahabad Bank</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p><strong>Earlier consolidations:</strong> SBI absorbed 5 associate banks + Bharatiya Mahila Bank (Apr 2017); Bank of Baroda + Vijaya Bank + Dena Bank (Apr 2019); IDBI Bank reclassified as a private bank in Jan 2019 after LIC took 51%.</p>
+
+  <h3>3.2 The 12 PSBs Today</h3>
+  <p>SBI &middot; PNB &middot; Bank of Baroda &middot; Canara Bank &middot; Union Bank of India &middot; Indian Bank &middot; Bank of India &middot; Central Bank of India &middot; Indian Overseas Bank &middot; UCO Bank &middot; Bank of Maharashtra &middot; Punjab &amp; Sind Bank.</p>
+
+  <h3>3.3 Private Sector Banks</h3>
+  <ul>
+    <li><strong>Old Private Banks (pre-1991):</strong> Federal Bank, Karur Vysya, J&amp;K Bank, South Indian Bank, Karnataka Bank, City Union Bank, etc. &mdash; regionally concentrated, typically Southern.</li>
+    <li><strong>New Private Banks (post-Narasimham I):</strong> HDFC Bank, ICICI Bank, Axis Bank (UTI Bank), IndusInd, Kotak Mahindra, Yes Bank, IDFC First, Bandhan, DCB.</li>
+    <li><strong>On-tap licensing (Aug 2016):</strong> RBI shifted from periodic licence windows to a continuous "on-tap" application route for universal banks.</li>
+  </ul>
+
+  <h3>3.4 Foreign Banks</h3>
+  <p>~45 foreign banks operate in India through the <em>branch</em> mode or the <em>wholly-owned subsidiary (WOS)</em> route introduced by RBI in November 2013. SBM Bank (India), DBS Bank India and Standard Chartered are major operators. <strong>Citi exited its India consumer business in 2023</strong>, selling it to Axis Bank.</p>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> <em>IDBI Bank is now classified as a Private Sector Bank</em> (since Jan 2019, after LIC took 51%). It is no longer a PSB. The government has approved further strategic disinvestment.</div>
+</section>
+
+<section class="notes" id="s4">
+  <h2>4. Cooperative Banks &amp; Regional Rural Banks (RRBs)</h2>
+  <p>The cooperative-credit movement in India predates modern commercial banking and is rooted in the <strong>Cooperative Credit Societies Act, 1904</strong> and the <strong>Cooperative Societies Act, 1912</strong>. It is the institutional response to rural moneylender exploitation.</p>
+
+  <h3>4.1 The Cooperative Credit Pyramid</h3>
+  <p>Two parallel structures &mdash; rural (three-tier) and urban (single-tier).</p>
+  <div style="overflow-x:auto;margin:1rem 0">
+    <table>
+      <thead><tr><th>Rural Cooperative Credit</th><th>Tier</th><th>Function</th></tr></thead>
+      <tbody>
+        <tr><td><strong>State Cooperative Bank (StCB)</strong></td><td>Apex (State level)</td><td>Refinance to DCCBs; member of the cooperative settlement system</td></tr>
+        <tr><td><strong>District Central Cooperative Bank (DCCB)</strong></td><td>District level</td><td>Refinance to PACS; banking services to district members</td></tr>
+        <tr><td><strong>Primary Agricultural Credit Society (PACS)</strong></td><td>Village level</td><td>Direct short-term crop loan to farmers</td></tr>
+        <tr><td colspan="3"><em>Parallel long-term wing:</em> State Cooperative Agriculture &amp; Rural Development Bank (SCARDB) at State level &rarr; Primary CARDBs at district/taluka.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <ul>
+    <li><strong>Urban Cooperative Banks (UCBs):</strong> Single-tier; serve middle/lower-income urban customers. ~1,500 UCBs (scheduled + non-scheduled).</li>
+    <li><strong>Apex for long-term credit:</strong> NABARD (estd. 12 July 1982, Sivaraman Committee 1979).</li>
+  </ul>
+
+  <h3>4.2 The Dual Control Problem &amp; the 2020 Fix</h3>
+  <p>Until 2020, cooperative banks were under <em>dual control</em>: the Registrar of Cooperative Societies (State Government) for incorporation/management/audit, and RBI only for "banking" functions. This created supervisory gaps &mdash; visible in the <strong>PMC Bank crisis (Sept 2019)</strong>.</p>
+  <p>The <strong>Banking Regulation (Amendment) Act, 2020</strong> brought all UCBs and multi-state cooperative banks under <em>full RBI supervisory powers</em>: capital, voluntary amalgamation, supersession of boards, audit. State cooperative law continues to govern non-banking aspects.</p>
+
+  <h3>4.3 Regional Rural Banks (RRBs)</h3>
+  <ul>
+    <li><strong>Estd:</strong> 2 October 1975 on the recommendation of the <strong>M. Narasimham Working Group (1975)</strong>; statutory basis &mdash; RRB Act, 1976.</li>
+    <li><strong>Sponsorship model:</strong> Capital &mdash; <strong>50% Centre + 35% Sponsor Bank + 15% State Government</strong>.</li>
+    <li><strong>Mandate:</strong> Credit to small/marginal farmers, agricultural labourers, artisans and small entrepreneurs in their notified area of operation.</li>
+    <li><strong>Consolidation:</strong> From 196 RRBs in 1990 down to <strong>43 RRBs as of 2024</strong> (Phase IV of amalgamation), targeted to fall to ~28 under "One State One RRB" (Nov 2020 roadmap).</li>
+    <li><strong>Regulator/Supervisor:</strong> RBI; refinance &amp; inspection assistance &mdash; NABARD.</li>
+  </ul>
+
+  <div class="callout info"><strong>Prelims hook:</strong> RRBs were created on the recommendation of <em>Narasimham Working Group 1975</em>, not the Narasimham Committee on Banking Sector Reforms (1991/1998) &mdash; same chairman, different report.</div>
+</section>
+
+<section class="notes" id="s5">
+  <h2>5. Differentiated Banks &mdash; Payments, Small Finance, Local Area</h2>
+  <p>The traditional "universal banking" model was complemented in 2014&ndash;2015 by RBI's introduction of <strong>differentiated banking licences</strong>, following the recommendations of the <strong>Nachiket Mor Committee on Comprehensive Financial Services for Small Businesses and Low Income Households (2014)</strong>. The aim: target financial inclusion through specialised, smaller institutions.</p>
+
+  <h3>5.1 Payments Banks (PBs)</h3>
+  <ul>
+    <li><strong>Guidelines:</strong> 27 November 2014; first licences granted in 2015.</li>
+    <li><strong>Min. paid-up capital:</strong> &#8377; 100 crore.</li>
+    <li><strong>Can do:</strong> Accept demand deposits up to <strong>&#8377; 2 lakh per customer</strong> (raised from &#8377; 1 lakh in April 2021); issue debit/ATM cards; remittances; payments; distribution of mutual funds, insurance, pension; act as BCs for other banks.</li>
+    <li><strong>Cannot do:</strong> Issue credit cards; lend; accept NRI deposits.</li>
+    <li><strong>Operational PBs:</strong> Airtel Payments Bank, India Post Payments Bank, Fino Payments Bank, Jio Payments Bank, Paytm Payments Bank (under restrictions since Mar 2024), NSDL Payments Bank.</li>
+  </ul>
+
+  <h3>5.2 Small Finance Banks (SFBs)</h3>
+  <ul>
+    <li><strong>Guidelines:</strong> 27 November 2014; first licences 2015; on-tap licensing since 5 December 2019.</li>
+    <li><strong>Min. paid-up capital:</strong> &#8377; 200 crore (on-tap).</li>
+    <li><strong>Can do:</strong> Full banking &mdash; deposits and lending. <strong>75% of ANBC must go to priority sector</strong> (vs 40% for SCBs); <strong>50% of loan portfolio</strong> must be loans up to &#8377; 25 lakh.</li>
+    <li><strong>Listed SFBs:</strong> AU SFB, Equitas, Ujjivan, Suryoday, Jana, ESAF, Capital, Fincare (merged with AU 2024), Utkarsh, Unity, Shivalik.</li>
+    <li><strong>Transition pathway:</strong> SFBs can apply to convert to <em>universal banks</em> after 5 years of operation if they meet eligibility criteria (RBI framework, April 2024). <strong>AU Small Finance Bank</strong> applied in September 2024.</li>
+  </ul>
+
+  <h3>5.3 Local Area Banks (LABs)</h3>
+  <p>Introduced in 1996 with a narrow geographic focus (max 3 contiguous districts). Of six original LABs, only <em>Capital Local Area Bank</em> survived &mdash; and it converted into an SFB in April 2016. The model has effectively been superseded by SFBs.</p>
+
+  <h3>5.4 New Specialised Institutions</h3>
+  <ul>
+    <li><strong>National Bank for Financing Infrastructure and Development (NaBFID):</strong> Established under the <em>NaBFID Act, 2021</em>; classified as an AIFI. Mandate: long-tenor infrastructure financing &mdash; the post-IDFC institutional gap-filler.</li>
+    <li><strong>Account Aggregators (AA):</strong> A new class of NBFCs (Sept 2021 go-live) that act as consent managers for data sharing across financial institutions. Not banks, but core to the lending stack.</li>
+  </ul>
+
+  <div class="callout warn"><strong>Prelims trap:</strong> Payments Banks <em>cannot</em> lend or issue credit cards. They <em>can</em> issue debit cards and distribute insurance/MF/pension as third-party agents. The deposit cap was <strong>raised to &#8377; 2 lakh in April 2021</strong> (often tested).</div>
+</section>
+
+<section class="notes" id="s6">
+  <h2>6. NBFCs &amp; the Shadow Banking Layer</h2>
+  <p>A <strong>Non-Banking Financial Company (NBFC)</strong> is a company registered under the Companies Act engaged in the business of loans, investments, leasing, hire-purchase, insurance, chit business or similar &mdash; <em>but it does not accept demand deposits and cannot issue cheques drawn on itself</em>. NBFCs supplement banks; they are not banks.</p>
+
+  <h3>6.1 Legal Definition &amp; Registration</h3>
+  <p>Section <strong>45-I(c) of the RBI Act, 1934</strong> defines an NBFC. To be classified as an NBFC, a company must satisfy the <strong>50-50 test</strong>: financial assets &gt; 50% of total assets <em>and</em> income from financial assets &gt; 50% of gross income. Registration with RBI is mandatory under Section 45-IA (since 1997 amendment).</p>
+
+  <h3>6.2 Scale-Based Regulation (SBR) Framework &mdash; October 2021</h3>
+  <p>RBI's new four-layered prudential framework (effective 1 October 2022) replaces the older "deposit-taking / non-deposit-taking systemically important" classification:</p>
+  <div style="overflow-x:auto;margin:1rem 0">
+    <table>
+      <thead><tr><th>Layer</th><th>Threshold</th><th>Examples</th><th>Regulation Intensity</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Base Layer (NBFC-BL)</strong></td><td>Non-deposit-taking, asset size &lt; &#8377; 1,000 cr</td><td>Smaller ICCs, NBFC-P2P, NBFC-AA, NOFHCs</td><td>Lightest touch</td></tr>
+        <tr><td><strong>Middle Layer (NBFC-ML)</strong></td><td>All deposit-taking + non-deposit-taking with assets &ge; &#8377; 1,000 cr</td><td>HFCs, IFCs, IDFs, CICs, SPDs</td><td>Banks-lite norms</td></tr>
+        <tr><td><strong>Upper Layer (NBFC-UL)</strong></td><td>Top 10&ndash;25 NBFCs by scoring methodology</td><td>Bajaj Finance, Shriram Finance, L&amp;T Finance, Cholamandalam, M&amp;M Financial, Tata Capital, etc.</td><td>Near-bank prudential rigour (CET-1, LCR, large-exposure)</td></tr>
+        <tr><td><strong>Top Layer (NBFC-TL)</strong></td><td>Currently empty; populated only if RBI deems supervisory concern from UL</td><td>&mdash;</td><td>Most intensive</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>6.3 Major NBFC Categories</h3>
+  <ul>
+    <li><strong>Investment &amp; Credit Company (ICC)</strong> &mdash; the residual workhorse category (merger of erstwhile AFC, LC, IC in Feb 2019).</li>
+    <li><strong>Infrastructure Finance Company (IFC)</strong> &mdash; 75% of assets in infra loans (e.g., Power Finance Corp, REC).</li>
+    <li><strong>Infrastructure Debt Fund (IDF-NBFC)</strong> &mdash; long-tenor infrastructure refinance.</li>
+    <li><strong>Core Investment Company (CIC)</strong> &mdash; holding company structure (Tata Sons, Bajaj Holdings).</li>
+    <li><strong>Microfinance Institution (NBFC-MFI)</strong> &mdash; small-ticket unsecured loans to low-income borrowers.</li>
+    <li><strong>NBFC-Factor</strong> &mdash; receivables financing (Factoring Regulation Act 2011, amended 2021 to widen eligibility).</li>
+    <li><strong>NBFC-P2P</strong> &mdash; peer-to-peer lending platforms (RBI directions, October 2017).</li>
+    <li><strong>NBFC-AA (Account Aggregator)</strong> &mdash; consent manager (Sept 2021).</li>
+    <li><strong>Housing Finance Company (HFC)</strong> &mdash; brought under RBI supervision in <strong>August 2019</strong>, transferred from National Housing Bank.</li>
+    <li><strong>Mortgage Guarantee Company (MGC)</strong>.</li>
+    <li><strong>NBFC-AFC (Asset Finance Company), LC, IC</strong> &mdash; merged into ICC in Feb 2019.</li>
+  </ul>
+
+  <h3>6.4 Why the "Shadow Banking" Worry?</h3>
+  <p>NBFCs perform credit intermediation outside the prudential perimeter of full bank supervision. The <strong>IL&amp;FS collapse (September 2018)</strong> &mdash; followed by stress at DHFL, Reliance Capital and Srei &mdash; revealed system-wide ALM mismatches and triggered the Scale-Based Regulation overhaul. NBFCs do not have CRR/SLR obligations but face capital adequacy (CRAR &ge; 15% for NBFC-D and ICC; 10% Tier-I), large exposure limits and (for UL) LCR.</p>
+
+  <div class="callout info"><strong>Bank vs NBFC &mdash; one-line distinctions:</strong> NBFCs cannot accept <em>demand</em> deposits, cannot issue cheques drawn on themselves, are not part of the payment-and-settlement system, and depositors are <strong>not covered</strong> by DICGC insurance.</div>
+</section>
+
+<section class="notes" id="s7">
+  <h2>7. Bank Nationalisation &amp; Mergers &mdash; The Full Story</h2>
+  <p>Two waves of nationalisation transferred Indian commercial banking decisively into State hands; three decades later, two waves of mergers consolidated that base into a smaller set of stronger anchors.</p>
+
+  <h3>7.1 Pre-Nationalisation Stocktake (1947&ndash;1969)</h3>
+  <ul>
+    <li>566 commercial banks at Independence; widespread failures and concentration of credit in industrial business houses.</li>
+    <li><strong>Banking Companies Act 1949</strong> (renamed Banking Regulation Act in 1966) gave RBI statutory powers.</li>
+    <li><strong>SBI Act 1955</strong> nationalised the Imperial Bank (effective 1 July 1955); SBI (Subsidiary Banks) Act 1959 brought the seven associate banks under SBI.</li>
+    <li><strong>Social Control of Banks (Dec 1967):</strong> Morarji Desai's reformulation requiring credit to priority sectors &mdash; widely viewed as a precursor to nationalisation.</li>
+  </ul>
+
+  <h3>7.2 First Nationalisation &mdash; 19 July 1969</h3>
+  <ul>
+    <li><strong>Government:</strong> Indira Gandhi.</li>
+    <li><strong>Instrument:</strong> Banking Companies (Acquisition and Transfer of Undertakings) Ordinance, 1969 &rarr; Act, 1970 (after the SC struck down the Ordinance in <em>R.C. Cooper v. Union of India</em>, Feb 1970, on a compensation-and-fundamental-rights ground).</li>
+    <li><strong>Coverage:</strong> 14 private banks with deposits &gt; &#8377; 50 crore as on the last Friday of June 1969.</li>
+    <li><strong>The 14 banks:</strong> Allahabad Bank, Bank of Baroda, Bank of India, Bank of Maharashtra, Canara Bank, Central Bank of India, Dena Bank, Indian Bank, Indian Overseas Bank, Punjab National Bank, Syndicate Bank, UCO Bank, Union Bank of India, United Bank of India.</li>
+    <li><strong>Effect:</strong> Public-sector share of total bank deposits jumped to ~85%.</li>
+  </ul>
+
+  <h3>7.3 Second Nationalisation &mdash; 15 April 1980</h3>
+  <ul>
+    <li><strong>Coverage:</strong> 6 more banks with deposits &gt; &#8377; 200 crore.</li>
+    <li><strong>The 6 banks:</strong> Andhra Bank, Corporation Bank, New Bank of India, Oriental Bank of Commerce, Punjab and Sind Bank, Vijaya Bank.</li>
+    <li><strong>Subsequent merger:</strong> New Bank of India merged with PNB in <strong>September 1993</strong> &mdash; the only PSB merger before the 2017 wave.</li>
+    <li><strong>Outcome:</strong> 20 nationalised banks + SBI group; PSU share of deposits ~92%.</li>
+  </ul>
+
+  <h3>7.4 Rationale and Critique</h3>
+  <div style="overflow-x:auto;margin:1rem 0">
+    <table>
+      <thead><tr><th>Stated Rationale</th><th>Counter / Critique</th></tr></thead>
+      <tbody>
+        <tr><td>Mobilise rural savings &amp; spread branches</td><td>Achieved &mdash; branch network rose from ~8,200 (1969) to over 60,000 (1991)</td></tr>
+        <tr><td>Direct credit to agriculture, SSI, exports (priority sectors)</td><td>Achieved through PSL; but also created "directed lending" inefficiencies</td></tr>
+        <tr><td>End concentration of bank credit with industrial houses</td><td>Achieved short-term; long-term created a different concentration in PSU lending to big corporates &mdash; root of the 2014 twin balance-sheet problem</td></tr>
+        <tr><td>Use bank credit as a developmental tool</td><td>Came at cost of asset quality &mdash; pre-Narasimham NPAs were chronic</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>7.5 The Merger Wave (2017&ndash;2020)</h3>
+  <ul>
+    <li><strong>April 2017:</strong> SBI absorbed 5 associate banks (State Bank of Hyderabad, Mysore, Travancore, Patiala, Bikaner &amp; Jaipur) + Bharatiya Mahila Bank &mdash; SBI Group merged into SBI.</li>
+    <li><strong>January 2019:</strong> IDBI Bank reclassified as a private bank after LIC acquired 51%.</li>
+    <li><strong>April 2019:</strong> Bank of Baroda + Vijaya Bank + Dena Bank (BoB-anchored).</li>
+    <li><strong>1 April 2020:</strong> 10 PSBs &rarr; 4 anchors (PNB, Canara, Union, Indian) &mdash; the mega-merger.</li>
+    <li><strong>Result:</strong> PSB count dropped from 27 (2017) to <strong>12 today</strong>.</li>
+  </ul>
+
+  <div class="callout info"><strong>SC verdict to remember:</strong> <em>R.C. Cooper v. Union of India</em> (1970) struck down the 1969 nationalisation Ordinance on the grounds that the compensation provided was illusory and that fundamental rights overlapped &mdash; reversing the <em>A.K. Gopalan</em> "exclusive rights" doctrine. Parliament responded with a fresh Act that cured the defect.</div>
+</section>
+
+<section class="notes" id="s8">
+  <h2>8. Key Banking Legislations</h2>
+  <p>Indian banking is regulated by a thicket of statutes. The big six to know &mdash; and a clutch of newer ones.</p>
+
+  <div style="overflow-x:auto;margin:1rem 0">
+    <table>
+      <thead><tr><th>Year</th><th>Statute</th><th>What it does</th></tr></thead>
+      <tbody>
+        <tr><td>1934</td><td><strong>RBI Act</strong></td><td>Constitutes RBI; lists scheduled banks in Second Schedule; gives RBI monetary-policy powers; 2016 amendment created statutory MPC</td></tr>
+        <tr><td>1949</td><td><strong>Banking Regulation Act</strong> (renamed from Banking Companies Act 1949 in 1966)</td><td>Substantive bank-regulation law &mdash; licensing, CRR/SLR, branch expansion, capital, audit, inspection</td></tr>
+        <tr><td>1955</td><td>SBI Act</td><td>Created State Bank of India out of Imperial Bank</td></tr>
+        <tr><td>1959</td><td>SBI (Subsidiary Banks) Act</td><td>Brought 7 associate banks into SBI Group (since merged into SBI 2017)</td></tr>
+        <tr><td>1961</td><td><strong>Deposit Insurance Act</strong></td><td>Created DICGC (1961 + 1971 amendment); insures bank deposits</td></tr>
+        <tr><td>1969 / 1980</td><td>Banking Companies (Acquisition &amp; Transfer of Undertakings) Acts</td><td>Nationalised 14 + 6 private banks</td></tr>
+        <tr><td>1976</td><td>RRB Act</td><td>Created Regional Rural Banks</td></tr>
+        <tr><td>1981</td><td>NABARD Act</td><td>Created NABARD (operational July 1982)</td></tr>
+        <tr><td>1993</td><td>RDB Act (DRT Act)</td><td>Created Debt Recovery Tribunals to expedite recovery</td></tr>
+        <tr><td>2002</td><td><strong>SARFAESI Act</strong></td><td>Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest &mdash; allows banks to attach and sell secured assets without court intervention; created Asset Reconstruction Companies (ARCs)</td></tr>
+        <tr><td>2007</td><td>Payment &amp; Settlement Systems (PSS) Act</td><td>Statutory cover for RBI to authorise &amp; regulate payment systems (UPI, NEFT, RTGS, CCIL)</td></tr>
+        <tr><td>2016</td><td><strong>Insolvency and Bankruptcy Code (IBC)</strong></td><td>Unified, time-bound resolution framework for stressed corporate, partnership and individual debt</td></tr>
+        <tr><td>2020</td><td>BR (Amendment) Act</td><td>Brought UCBs &amp; multi-state cooperative banks under full RBI supervision</td></tr>
+        <tr><td>2021</td><td>NaBFID Act</td><td>Created National Bank for Financing Infrastructure and Development</td></tr>
+        <tr><td>2021</td><td>DICGC (Amendment) Act</td><td>Insured depositors get up to &#8377; 5 lakh within <strong>90 days</strong> of a bank being put under moratorium &mdash; without waiting for liquidation</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>8.1 DICGC &mdash; Deposit Insurance Cover</h3>
+  <ul>
+    <li><strong>Statute:</strong> DICGC Act, 1961.</li>
+    <li><strong>Coverage limit:</strong> Raised to <strong>&#8377; 5 lakh per depositor per bank</strong> (principal + interest) on 4 February 2020 (from &#8377; 1 lakh earlier).</li>
+    <li><strong>Speed of payout:</strong> Under the 2021 amendment, depositors of a stressed bank under RBI moratorium get up to &#8377; 5 lakh within <strong>90 days</strong>.</li>
+    <li><strong>Premium:</strong> Paid by the bank, not the depositor (currently 12 paise per &#8377; 100 of assessable deposits per year).</li>
+    <li><strong>Covered:</strong> All scheduled commercial banks, RRBs, local area banks, payments banks, small finance banks, cooperative banks. <em>Not covered:</em> Primary cooperative societies, deposits of foreign governments, inter-bank deposits.</li>
+  </ul>
+
+  <h3>8.2 SARFAESI Act, 2002 &mdash; The Banks' Recovery Hammer</h3>
+  <p>Empowers banks and FIs to enforce security interests <strong>without court intervention</strong> for NPAs &gt; &#8377; 1 lakh (or 20% of principal + interest). Three modes:</p>
+  <ol>
+    <li>Take possession of security;</li>
+    <li>Sell or lease the security;</li>
+    <li>Appoint a manager to run it.</li>
+  </ol>
+  <p>The Act also created the <em>Asset Reconstruction Company (ARC)</em> framework. Eligible filers must give 60 days' notice to the borrower; appeals lie with DRT &rarr; DRAT.</p>
+
+  <div class="callout info"><strong>Quick fact:</strong> SARFAESI does <em>not</em> apply to agricultural land &mdash; an explicit statutory carve-out. This is a recurring Prelims question.</div>
+</section>
+
+<section class="notes" id="s9">
+  <h2>9. NPAs, Asset Quality &amp; Basel III</h2>
+  <p>A loan turns into a <strong>Non-Performing Asset (NPA)</strong> when the borrower stops paying interest or principal for a specified period. Asset quality is the single most-discussed health metric of Indian banking.</p>
+
+  <h3>9.1 NPA Definition &amp; Classification (RBI Master Circular)</h3>
+  <ul>
+    <li><strong>NPA trigger:</strong> Interest and/or principal remains overdue for more than <strong>90 days</strong> (for a term loan). For agricultural loans &mdash; two crop seasons (short-duration) or one crop season (long-duration).</li>
+  </ul>
+  <div style="overflow-x:auto;margin:1rem 0">
+    <table>
+      <thead><tr><th>Category</th><th>Definition</th><th>Provisioning (secured)</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Standard</strong></td><td>Not an NPA; performing</td><td>0.25%&ndash;1% (general)</td></tr>
+        <tr><td><strong>Sub-Standard</strong></td><td>NPA for less than 12 months</td><td>15% (secured) / 25% (unsecured)</td></tr>
+        <tr><td><strong>Doubtful</strong></td><td>NPA for &gt; 12 months</td><td>25&ndash;100% by sub-tranche (D1, D2, D3)</td></tr>
+        <tr><td><strong>Loss</strong></td><td>Identified as loss but not yet written off</td><td>100%</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>9.2 Key Ratios</h3>
+  <div class="formula">
+    Gross NPA Ratio = Gross NPAs / Gross Advances<br>
+    Net NPA Ratio = (Gross NPAs &minus; Provisions) / (Gross Advances &minus; Provisions)<br>
+    Provision Coverage Ratio (PCR) = Total Provisions / Gross NPAs<br>
+    Slippage Ratio = Fresh NPAs in the period / Standard Assets at start
+  </div>
+
+  <h3>9.3 The Twin Balance-Sheet Problem (TBS)</h3>
+  <p>Coined by then-CEA Arvind Subramanian (Economic Survey 2016-17): <em>stressed corporate balance-sheets</em> (over-levered infra and metals firms post-2008 stimulus) feeding into <em>stressed bank balance-sheets</em> (rising NPAs). The Asset Quality Review (AQR) ordered by Governor Raghuram Rajan in <strong>July 2015</strong> forced banks to recognise hidden stress, exposing gross NPAs that peaked at <strong>11.5%</strong> (March 2018) for the system, and ~14.6% for PSBs.</p>
+
+  <h3>9.4 Recovery and Resolution Toolkit Pre-IBC</h3>
+  <ul>
+    <li><strong>Lok Adalats</strong> &mdash; small-ticket settlements.</li>
+    <li><strong>Debt Recovery Tribunals (DRT, 1993)</strong> &mdash; for claims &ge; &#8377; 20 lakh.</li>
+    <li><strong>SARFAESI 2002</strong> &mdash; out-of-court secured-asset enforcement (see Section 8.2).</li>
+    <li><strong>CDR &rarr; SDR &rarr; S4A &rarr; 5/25 Scheme</strong> &mdash; sequential RBI restructuring schemes, all withdrawn by the <strong>RBI 12 Feb 2018 circular</strong> in favour of IBC referral.</li>
+    <li><strong>NCLT/IBC</strong> &mdash; current default route (Section 10).</li>
+  </ul>
+
+  <h3>9.5 Basel III &mdash; Capital, Liquidity, Leverage</h3>
+  <p>Basel III (BCBS, December 2010, post-Lehman) brought three pillars together. India implemented it phased from <strong>1 April 2013</strong>, fully effective <strong>1 October 2021</strong>.</p>
+  <div style="overflow-x:auto;margin:1rem 0">
+    <table>
+      <thead><tr><th>Component</th><th>Basel III</th><th>RBI (India)</th></tr></thead>
+      <tbody>
+        <tr><td>Min. CET-1 (Common Equity Tier 1)</td><td>4.5%</td><td>5.5%</td></tr>
+        <tr><td>Min. Tier-1 capital</td><td>6%</td><td>7%</td></tr>
+        <tr><td>Min. Total Capital (CRAR)</td><td>8%</td><td>9%</td></tr>
+        <tr><td>Capital Conservation Buffer (CCB)</td><td>2.5%</td><td>2.5%</td></tr>
+        <tr><td>Counter-cyclical Capital Buffer (CCyB)</td><td>0&ndash;2.5%</td><td>Currently 0% (framework activated 2015)</td></tr>
+        <tr><td>D-SIB Surcharge</td><td>1&ndash;2.5%</td><td>0.20% (Bank of Baroda), 0.40% (ICICI), 0.60% (HDFC), 0.80% (SBI)</td></tr>
+        <tr><td>Leverage Ratio</td><td>3% (4% for G-SIBs)</td><td>3.5% (D-SIBs) / 4% (others)</td></tr>
+        <tr><td>Liquidity Coverage Ratio (LCR)</td><td>100% (since 2019)</td><td>100% &mdash; HQLA over 30-day stressed outflow</td></tr>
+        <tr><td>Net Stable Funding Ratio (NSFR)</td><td>100%</td><td>100% (from Oct 2021)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p><strong>India's D-SIBs (2024 list):</strong> SBI, HDFC Bank, ICICI Bank, Bank of Baroda. There are <em>no G-SIBs</em> from India.</p>
+
+  <div class="callout warn"><strong>Examiner's favourite numbers:</strong> Minimum CRAR for an Indian bank under Basel III = <strong>9%</strong> (vs Basel global 8%); CCB = 2.5%; total <em>effective</em> floor = <strong>11.5%</strong>. NPA trigger = <strong>90 days overdue</strong>. SMA-0/1/2 stages = 1&ndash;30 / 31&ndash;60 / 61&ndash;90 days overdue (the early-warning ladder).</div>
+</section>
+
+<section class="notes" id="s10">
+  <h2>10. PCA, IBC &amp; Resolution Mechanisms</h2>
+
+  <h3>10.1 Prompt Corrective Action (PCA) Framework</h3>
+  <p>RBI's PCA framework imposes <strong>graduated restrictions</strong> on banks that breach prudential thresholds, preventing further deterioration. The latest revised framework (effective 1 January 2022 for SCBs; extended to NBFC-D/ML in October 2022; to Govt-owned NBFCs in October 2024) tracks three parameters:</p>
+  <ul>
+    <li>Capital (CRAR / CET-1)</li>
+    <li>Asset Quality (Net NPA Ratio)</li>
+    <li>Leverage (Tier-1 Leverage Ratio)</li>
+  </ul>
+  <p>(The earlier "profitability" trigger &mdash; negative RoA for two consecutive years &mdash; was dropped in the 2021 revision.)</p>
+  <p>Restrictions escalate by <strong>risk threshold (1, 2, 3)</strong>: branch expansion freeze &rarr; dividend curbs &rarr; capital raising &rarr; promoter restructuring &rarr; eventual resolution/amalgamation. PCA can lead to a <em>merger</em> as the terminal action.</p>
+
+  <h3>10.2 Insolvency &amp; Bankruptcy Code (IBC), 2016</h3>
+  <p>The IBC unified eleven previous laws (SICA 1985, RDDBFI 1993, SARFAESI 2002, parts of the Companies Act, the Provincial Insolvency Act 1920, etc.) into a single, <em>time-bound, creditor-in-control</em> regime. It is administered by the <strong>Insolvency and Bankruptcy Board of India (IBBI)</strong>.</p>
+
+  <h3>10.3 IBC Architecture</h3>
+  <div style="overflow-x:auto;margin:1rem 0">
+    <table>
+      <thead><tr><th>Pillar</th><th>Body / Mechanism</th></tr></thead>
+      <tbody>
+        <tr><td>Regulator</td><td>Insolvency and Bankruptcy Board of India (IBBI)</td></tr>
+        <tr><td>Adjudicating Authority &mdash; Corporates</td><td>National Company Law Tribunal (NCLT) &rarr; NCLAT &rarr; SC</td></tr>
+        <tr><td>Adjudicating Authority &mdash; Individuals &amp; Partnerships</td><td>Debt Recovery Tribunal (DRT) &rarr; DRAT &rarr; SC</td></tr>
+        <tr><td>Resolution Professional (RP)</td><td>Licensed by IBBI; takes control during CIRP</td></tr>
+        <tr><td>Information Utility (IU)</td><td>NeSL &mdash; single source of truth on debt and default</td></tr>
+        <tr><td>Committee of Creditors (CoC)</td><td>Financial creditors; decisions by 66% (key) / 51% vote</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>10.4 The CIRP Timeline</h3>
+  <ul>
+    <li><strong>Trigger:</strong> Minimum default threshold &mdash; <strong>&#8377; 1 crore</strong> (raised from &#8377; 1 lakh in March 2020 to shield MSMEs during COVID).</li>
+    <li><strong>Statutory window:</strong> 180 days, extendable by 90 days &mdash; total outer limit <strong>330 days</strong> (Section 12).</li>
+    <li><strong>Moratorium:</strong> Section 14 &mdash; all suits/recovery actions stayed during CIRP.</li>
+    <li><strong>Outcomes:</strong> Resolution plan approved by CoC (66%) &rarr; NCLT approval &rarr; binding on all stakeholders. If no plan, liquidation under Section 33.</li>
+    <li><strong>Cross-Border Insolvency:</strong> Draft framework under consultation, based on UNCITRAL Model Law.</li>
+  </ul>
+
+  <h3>10.5 Key IBC Amendments</h3>
+  <ul>
+    <li><strong>2018:</strong> Sec 29A &mdash; barred wilful defaulters and connected persons from bidding.</li>
+    <li><strong>2019:</strong> 330-day hard limit; voting threshold harmonised at 66%.</li>
+    <li><strong>2020:</strong> Pre-Packaged Insolvency Resolution Process (PIRP) for MSMEs (April 2021); default threshold raised to &#8377; 1 crore.</li>
+    <li><strong>2021:</strong> PPIRP enacted formally.</li>
+    <li><strong>2023&ndash;24:</strong> Group-insolvency and real-estate project-wise resolution under consultation.</li>
+  </ul>
+
+  <h3>10.6 IBC Performance (latest IBBI data)</h3>
+  <ul>
+    <li>Of cases admitted to CIRP, ~<strong>16% have ended in resolution</strong>; ~46% in liquidation; rest pending or withdrawn.</li>
+    <li>Average <strong>haircut</strong> for financial creditors: ~68% (varies wildly by sector).</li>
+    <li>Behavioural impact: the credible threat of IBC has driven <em>pre-admission</em> settlements (~26,000+ cases withdrawn under Sec 12A before admission).</li>
+    <li><span class="update-tag">check for latest update or data</span> for the latest IBBI Quarterly Newsletter for current case status, realisation, and average resolution time.</li>
+  </ul>
+
+  <h3>10.7 National Asset Reconstruction Company Ltd. (NARCL &mdash; the "Bad Bank")</h3>
+  <ul>
+    <li><strong>Announced:</strong> Union Budget 2021-22; incorporated July 2021.</li>
+    <li><strong>Structure:</strong> NARCL (acquires NPAs from banks under the 15:85 model &mdash; 15% cash + 85% Security Receipts) + India Debt Resolution Company Ltd. (IDRCL) (manages and resolves them).</li>
+    <li><strong>Government guarantee:</strong> Up to &#8377; 30,600 crore on Security Receipts &mdash; valid for 5 years.</li>
+    <li><strong>Target:</strong> Acquire ~&#8377; 2 lakh crore of legacy stressed assets, in two phases.</li>
+  </ul>
+
+  <div class="callout info"><strong>One line on IBC's intent:</strong> The IBC shifted Indian insolvency law from <em>debtor-in-possession</em> to <strong>creditor-in-control</strong>. The CoC drives the resolution plan; the promoter is sidelined.</div>
+</section>
+
+<section class="notes" id="s11">
+  <h2>11. Priority Sector Lending &amp; Financial Inclusion</h2>
+
+  <h3>11.1 Priority Sector Lending (PSL) &mdash; The Allocation</h3>
+  <p>The PSL framework, traceable to the <strong>Krishnaswamy Committee (1972)</strong>, mandates that a fixed share of bank credit go to identified sectors.</p>
+  <div style="overflow-x:auto;margin:1rem 0">
+    <table>
+      <thead><tr><th>Category</th><th>Target (as % of ANBC or CEOBE, whichever higher)</th></tr></thead>
+      <tbody>
+        <tr><td>Total Priority Sector</td><td><strong>40%</strong> &mdash; SCBs (incl. foreign banks with &ge; 20 branches)</td></tr>
+        <tr><td>Agriculture</td><td>18% (within which <strong>10% to small &amp; marginal farmers</strong>)</td></tr>
+        <tr><td>Micro Enterprises</td><td>7.5%</td></tr>
+        <tr><td>Weaker Sections</td><td>12%</td></tr>
+        <tr><td>SFBs &mdash; Total PSL</td><td><strong>75%</strong></td></tr>
+        <tr><td>RRBs &mdash; Total PSL</td><td>75%</td></tr>
+        <tr><td>Foreign banks (&lt; 20 branches)</td><td>40% (with sub-targets phased in)</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p><strong>Eligible categories (revised 2020 Master Directions):</strong> Agriculture, MSME, Export Credit, Education, Housing (up to &#8377; 35 lakh in metro / &#8377; 25 lakh elsewhere), Social Infrastructure, Renewable Energy, "Others" (incl. SHGs, JLGs, weaker sections).</p>
+  <p><strong>PSLC (Priority Sector Lending Certificates):</strong> Tradeable certificates introduced in April 2016 &mdash; banks with surplus PSL achievement can sell PSLCs to banks running a shortfall, deepening the PSL market without physical loan transfer.</p>
+
+  <h3>11.2 Financial Inclusion &mdash; The Architecture</h3>
+  <p><strong>Definition (Rangarajan Committee 2008):</strong> "The process of ensuring access to financial services and timely and adequate credit where needed by vulnerable groups such as weaker sections and low-income groups at an affordable cost."</p>
+  <ul>
+    <li><strong>PMJDY (Pradhan Mantri Jan Dhan Yojana):</strong> Launched 28 August 2014; 53+ crore accounts opened, deposit base over &#8377; 2.3 lakh crore. Includes free RuPay debit card, accident insurance, overdraft.</li>
+    <li><strong>JAM Trinity:</strong> Jan Dhan + Aadhaar + Mobile &mdash; the plumbing for India's DBT system (over &#8377; 36 lakh crore transferred to date).</li>
+    <li><strong>BC (Business Correspondent) Model:</strong> Banking outlets through agents in unbanked areas (RBI 2006 guidelines).</li>
+    <li><strong>RBI's Financial Inclusion Index (FI-Index):</strong> Published annually since Aug 2021 (base FY 2017 = 43.4); composite of Access, Usage and Quality. Latest reading ~ 64.2 (March 2024). <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY):</strong> Life cover &#8377; 2 lakh.</li>
+    <li><strong>Pradhan Mantri Suraksha Bima Yojana (PMSBY):</strong> Accident cover &#8377; 2 lakh.</li>
+    <li><strong>Atal Pension Yojana (APY):</strong> Guaranteed pension &#8377; 1,000&ndash;&#8377; 5,000 from age 60.</li>
+    <li><strong>Stand-Up India (Apr 2016):</strong> &#8377; 10 lakh&ndash;&#8377; 1 cr loans to SC/ST and women entrepreneurs.</li>
+    <li><strong>MUDRA &mdash; Pradhan Mantri Mudra Yojana (Apr 2015):</strong> Loans up to &#8377; 20 lakh (Shishu/Kishor/Tarun/Tarun Plus); MUDRA Ltd. operates as a refinance arm under SIDBI.</li>
+  </ul>
+
+  <h3>11.3 Doorstep Banking &amp; Digital Inclusion</h3>
+  <ul>
+    <li><strong>India Post Payments Bank (IPPB):</strong> Launched 1 September 2018; leverages 1.55+ lakh post offices and 3+ lakh postmen as banking touchpoints.</li>
+    <li><strong>Account Aggregator (AA) framework:</strong> Operational September 2021 &mdash; consent-based, encrypted data flows that enable cash-flow-based lending to thin-file borrowers.</li>
+    <li><strong>Unified Lending Interface (ULI):</strong> Announced by Governor Das in August 2024 &mdash; the "UPI moment for credit". Plug-and-play digital credit underwriting using consented data flows.</li>
+    <li><strong>e-RUPI (Aug 2021):</strong> Purpose-bound, prepaid digital voucher &mdash; precursor to programmable CBDC.</li>
+  </ul>
+
+  <div class="callout info"><strong>Recurring exam theme:</strong> The progression has been <em>physical access</em> (branches, BCs) &rarr; <em>account ownership</em> (PMJDY) &rarr; <em>identity-linked transfers</em> (JAM, DBT) &rarr; <em>credit access</em> (AA + ULI). India is now considered a textbook case of <em>state-led Digital Public Infrastructure</em> driving inclusion.</div>
+</section>
+
+<section class="notes" id="s12">
+  <h2>12. Current Affairs Anchor</h2>
+  <ul>
+    <li><strong>Unified Lending Interface (ULI):</strong> Governor Das announced (Aug 2024) ULI as the "UPI moment for credit" &mdash; plug-and-play digital credit underwriting using consented data flows.</li>
+    <li><strong>SFB &rarr; Universal Bank pathway (April 2024):</strong> RBI framework allowing SFBs with 5+ years' track record, listed status, minimum &#8377; 1,000 cr net worth and Gross NPA &le; 3% to apply. <em>AU SFB</em> filed first in Sept 2024.</li>
+    <li><strong>NaBFID operations:</strong> Sanctioned over &#8377; 1 lakh crore of infrastructure credit cumulatively by FY 2024-25. <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>Paytm Payments Bank restrictions (Mar 2024):</strong> RBI barred fresh deposits/credit transactions over KYC violations &mdash; the highest-profile PB enforcement so far.</li>
+    <li><strong>Citi exit:</strong> Sold its Indian consumer business to Axis Bank in 2023 &mdash; signalling structural shift in foreign-bank retail strategy in India.</li>
+    <li><strong>DICGC payout speed:</strong> Under the 2021 amendment, depositors of stressed UCBs (PMC, Punjab &amp; Maharashtra, Sangli Sahakari etc.) have received &#8377; 5 lakh payouts within 90-day windows.</li>
+    <li><strong>NPA recovery:</strong> Gross NPA ratio of SCBs has fallen sharply from the FY18 peak of 11.5% to under <strong>3%</strong> by FY 2024-25 &mdash; the lowest in over a decade (RBI FSR Dec 2024). <span class="update-tag">check for latest update or data</span></li>
+    <li><strong>One State One RRB (Phase IV):</strong> Roadmap announced Nov 2020 progressing &mdash; target ~28 RRBs from 43.</li>
+    <li><strong>HDFC Ltd. &mdash; HDFC Bank merger (1 July 2023):</strong> India's largest-ever corporate merger; HDFC (NBFC-HFC) absorbed into HDFC Bank &mdash; reshaping the housing-finance market.</li>
+    <li><strong>RBI Scale-Based Regulation (SBR):</strong> The Upper Layer of NBFCs (15&ndash;16 firms) now under near-bank prudential rigour.</li>
+    <li><strong>FI-Index FY24:</strong> ~64.2 &mdash; consistent improvement across access, usage and quality.</li>
+  </ul>
+</section>
+
+<section class="notes" id="s13">
+  <h2>13. Previous Year Questions &mdash; Prelims (2014&ndash;2026)</h2>
+
+  <div class="pyq"><div class="year">Prelims 2014</div><p>The terms 'Basel II' and 'Basel III' are associated with:<br>(a) Functioning of the IMF (b) Reform of the WTO (c) Reform of the international banking system (d) Reform of the international monetary system<br><em>Answer: (c). Basel Accords reform banking-system capital, liquidity, leverage norms.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2015</div><p>In the context of Indian economy, 'Open Market Operations' refer to:<br>(a) borrowing by SCBs from the RBI (b) lending by SCBs to industry &amp; trade (c) purchase and sale of government securities by the RBI (d) None<br><em>Answer: (c). OMO is the buy/sell of G-Secs by RBI.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2016</div><p>What is/are the purpose/purposes of Government's 'Sovereign Gold Bond Scheme' and 'Gold Monetisation Scheme'?<br>1. To bring the idle gold lying with households into the economy<br>2. To reduce India's dependence on import of gold<br>3. To curtail the current account deficit<br>(a) 1 only (b) 2,3 (c) 1,3 (d) 1,2,3<br><em>Answer: (d). All three apply.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2017</div><p>What is/are the most likely advantages of implementing the 'Goods and Services Tax (GST)'? &mdash; <em>not banking-specific.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2018</div><p>Consider the following statements about Capital Adequacy Ratio (CAR):<br>1. CAR is the amount that banks have to maintain in the form of their own funds to offset any loss that banks incur if the account-holders fail to repay dues.<br>2. CAR is decided by each individual bank.<br>(a) 1 only (b) 2 only (c) Both (d) Neither<br><em>Answer: (a). CAR is mandated by RBI per Basel III, not by individual banks.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2019</div><p>In India, which of the following review the independent regulators in sectors like telecommunications, insurance, electricity, etc.?<br>1. Ad Hoc Committees set up by Parliament<br>2. Parliamentary Department Related Standing Committees<br>3. Finance Commission<br>4. Financial Sector Legislative Reforms Commission<br>5. NITI Aayog<br>(a) 1,2 (b) 1,3,4 (c) 3,4,5 (d) 2,4,5<br><em>Answer: (a). Only Parliamentary committees actively review regulators.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2020</div><p>With reference to the Indian banking system, consider the following statements regarding Non-Banking Financial Companies (NBFCs):<br>1. They cannot engage in the acquisition of securities issued by the government.<br>2. They cannot accept demand deposits like Savings Account.<br>(a) 1 only (b) 2 only (c) Both (d) Neither<br><em>Answer: (b). NBFCs can hold G-Secs (in fact, statutory liquid investments); they cannot accept demand deposits.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2021</div><p>With reference to 'Urban Cooperative Banks' in India, consider the following statements:<br>1. They are supervised and regulated by local boards set up by the State Governments.<br>2. They can issue equity shares and preference shares.<br>3. They were brought under the purview of the Banking Regulation Act, 1949 through an Amendment in 1966.<br>(a) 1 only (b) 2,3 (c) 1,3 (d) 1,2,3<br><em>Answer: (b). Post BR (Amendment) Act 2020, UCBs are fully under RBI; Statement 1 is wrong. UCBs were brought under BR Act in 1966.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2022</div><p>With reference to Non-Fungible Tokens (NFTs), consider the following statements: &mdash; <em>not banking-specific.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2023</div><p>With reference to Central Bank Digital Currencies (CBDCs), consider the following statements:<br>1. It is possible to make payments in a digital currency without using US dollar or SWIFT system.<br>2. A digital currency can be distributed with a condition programmed into it such as a time-frame for spending it.<br>(a) 1 only (b) 2 only (c) Both (d) Neither<br><em>Answer: (c). Both are correct &mdash; key CBDC properties.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2023</div><p>In India, which one of the following compiles information on industrial disputes, closures, retrenchments and lay-offs in factories employing workers? &mdash; <em>not banking.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2024</div><p>With reference to the Insolvency and Bankruptcy Code (IBC), consider the following:<br>1. The Corporate Insolvency Resolution Process must be completed within 330 days from the insolvency commencement date including any extension.<br>2. The Committee of Creditors approves a resolution plan with at least 66% voting share.<br>3. The default threshold for initiating CIRP against a corporate debtor was raised from &#8377; 1 lakh to &#8377; 1 crore in 2020.<br>(a) 1,2 (b) 2,3 (c) 1,3 (d) 1,2,3<br><em>Answer: (d). All three are correct.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2025</div><p>Which of the following is/are correct regarding Payments Banks in India?<br>1. They can accept demand deposits up to &#8377; 2 lakh per individual customer.<br>2. They can issue credit cards.<br>3. They can distribute mutual funds, insurance and pension products as a third party.<br>(a) 1,2 (b) 1,3 (c) 2,3 (d) 1,2,3<br><em>Answer: (b). Payments Banks cannot issue credit cards; the deposit cap was raised to &#8377; 2 lakh in April 2021.</em></p></div>
+
+  <div class="pyq"><div class="year">Prelims 2026</div><p>With reference to Indian banking, which of the following statements is/are correct?<br>1. Under DICGC cover, bank deposits are insured up to &#8377; 5 lakh per depositor per bank.<br>2. The minimum CRAR (including Capital Conservation Buffer) for an Indian commercial bank is 11.5%.<br>3. Domestic Systemically Important Banks (D-SIBs) in India currently include SBI, HDFC Bank, ICICI Bank and Bank of Baroda.<br>(a) 1,2 (b) 2,3 (c) 1,3 (d) 1,2,3<br><em>Answer: (d). All three are correct as of FY 2024-25.</em></p></div>
+</section>
+
+<section class="notes" id="s14">
+  <h2>14. Previous Year Questions &mdash; Mains (2014&ndash;2025)</h2>
+
+  <div class="pyq"><div class="year">Mains 2014, GS-III</div><p>Discuss the rationale and impact of the policy of disinvestment in the public-sector banks of India.</p></div>
+
+  <div class="pyq"><div class="year">Mains 2015, GS-III</div><p>"In the villages itself no form of credit organisation will be suitable except the cooperative society." &mdash; All India Rural Credit Survey. Discuss this statement in the background of rural finance in India.</p></div>
+
+  <div class="pyq"><div class="year">Mains 2016, GS-III</div><p>"The Reserve Bank of India's recent directives relating to 'Pre-payment Penalty' have implications for the dynamics of the banking sector." Comment.</p></div>
+
+  <div class="pyq"><div class="year">Mains 2017, GS-III</div><p>Examine the role of supervisory bodies in correcting the malpractices of banks in India. Have the recent regulatory reforms been adequate in checking the rise in NPAs?</p></div>
+
+  <div class="pyq"><div class="year">Mains 2018, GS-III</div><p>"What are the salient features of the Insolvency and Bankruptcy Code, 2016? How far will it be effective in tackling the menace of huge non-performing assets (NPAs) in India?"</p></div>
+
+  <div class="pyq"><div class="year">Mains 2019, GS-III</div><p>"Public-sector bank mergers will result in stronger banks with greater capital absorption capacity." Critically examine the consolidation drive in Indian public-sector banking.</p></div>
+
+  <div class="pyq"><div class="year">Mains 2020, GS-III</div><p>Define potential GDP and explain its determinants. What are the factors that have been inhibiting India from realising its potential GDP? &mdash; <em>cross-link to banking constraints (credit growth).</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2021, GS-III</div><p>Distinguish between Capital Budget and Revenue Budget. Explain the components of both. &mdash; <em>peripheral.</em></p></div>
+
+  <div class="pyq"><div class="year">Mains 2022, GS-III</div><p>Comment on the important changes introduced in respect of the Insolvency and Bankruptcy Code, 2016 in the recent past. Discuss the rationale of bringing in a Pre-Packaged Insolvency Resolution Process (PIRP) for MSMEs.</p></div>
+
+  <div class="pyq"><div class="year">Mains 2023, GS-III</div><p>"Bringing all Urban Cooperative Banks under the regulatory ambit of RBI has been a long-pending reform." Examine the rationale behind the Banking Regulation (Amendment) Act, 2020 and its likely impact on depositor protection.</p></div>
+
+  <div class="pyq"><div class="year">Mains 2024, GS-III</div><p>"India's twin-balance-sheet problem has eased considerably." Discuss the contribution of the Asset Quality Review (AQR), Insolvency and Bankruptcy Code (IBC) and Public Sector Bank mergers in restoring asset quality of Indian commercial banks.</p></div>
+
+  <div class="pyq"><div class="year">Mains 2025, GS-III</div><p>"The Unified Lending Interface (ULI) has the potential to do for credit what UPI did for payments." Critically examine this claim with reference to the Account Aggregator framework, Scale-Based Regulation of NBFCs and the future of cash-flow-based lending in India.</p></div>
+</section>
+
+<section class="notes" id="s15">
+  <h2>15. Revision Box &mdash; 15-Minute Recap</h2>
+  <div class="revision-box">
+    <h3>15-Point Recap</h3>
+    <ol>
+      <li><strong>RBI:</strong> Estd 1 April 1935 (RBI Act 1934, Hilton Young Commission); nationalised 1 Jan 1949; banking regulator under BR Act 1949.</li>
+      <li><strong>Scheduled vs Non-Scheduled:</strong> Second Schedule of RBI Act 1934; paid-up &amp; reserves &ge; &#8377; 5 lakh; brings refinance and clearing-house access.</li>
+      <li><strong>Nationalisation:</strong> 1969 (14 banks &gt; &#8377; 50 cr) and 1980 (6 banks &gt; &#8377; 200 cr) under the Banking Companies Acquisition Acts. R.C. Cooper v. UoI (1970) struck the Ordinance; Act 1970 cured it.</li>
+      <li><strong>Mega-merger 1 Apr 2020:</strong> 10 PSBs &rarr; 4 anchors (PNB, Canara, Union, Indian). Today 12 PSBs.</li>
+      <li><strong>RRBs:</strong> 2 Oct 1975 (Narasimham WG 1975); 50:35:15 capital (Centre:Sponsor Bank:State). 196 (1990) &rarr; 43 (2024).</li>
+      <li><strong>Cooperatives:</strong> Three-tier rural (StCB &rarr; DCCB &rarr; PACS) + parallel SCARDB/PCARDB for long term. UCBs brought fully under RBI by BR (Amendment) Act 2020 after PMC Bank crisis.</li>
+      <li><strong>Differentiated Banks (Nachiket Mor 2014):</strong> Payments Banks (&#8377; 100 cr; &#8377; 2 lakh deposit cap; no lending/credit cards); SFBs (&#8377; 200 cr; 75% PSL; on-tap since Dec 2019; universal-bank pathway Apr 2024).</li>
+      <li><strong>NBFCs:</strong> Sec 45-I(c) RBI Act; 50-50 test; Scale-Based Regulation (Oct 2021/2022) &mdash; Base/Middle/Upper/Top layers.</li>
+      <li><strong>Basel III in India:</strong> CRAR 9% + CCB 2.5% = effective floor 11.5%. D-SIBs: SBI, HDFC, ICICI, BoB. No G-SIB from India.</li>
+      <li><strong>NPA:</strong> 90 days overdue. Classes: Standard / Sub-Standard / Doubtful / Loss. Gross NPA peaked 11.5% (Mar 2018), now under 3% (FY24-25).</li>
+      <li><strong>Twin Balance Sheet:</strong> CEA Arvind Subramanian, Econ Survey 2016-17. Triggered AQR (Jul 2015) by Raghuram Rajan.</li>
+      <li><strong>IBC 2016:</strong> Default &ge; &#8377; 1 crore; CIRP within 330 days; CoC 66%/51%; NCLT (corp) / DRT (individual). Bad bank = NARCL + IDRCL.</li>
+      <li><strong>DICGC:</strong> Insures up to <strong>&#8377; 5 lakh</strong> per depositor per bank; 2021 Amendment &rarr; payout within 90 days during moratorium.</li>
+      <li><strong>SARFAESI 2002:</strong> Out-of-court recovery for NPAs &gt; &#8377; 1 lakh; does <em>not</em> apply to agricultural land.</li>
+      <li><strong>Financial Inclusion:</strong> PMJDY (28 Aug 2014); JAM Trinity &rarr; DBT (&#8377; 36 lakh cr+); FI-Index since Aug 2021 (~64 in FY24); ULI (Aug 2024) = next leap into credit.</li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Banking Architecture &mdash; Snapshot</h4>
+    <table>
+      <tbody>
+        <tr><td>PSBs</td><td>12</td></tr>
+        <tr><td>Private Banks (new + old)</td><td>~21</td></tr>
+        <tr><td>Foreign Banks</td><td>~45</td></tr>
+        <tr><td>RRBs</td><td>43</td></tr>
+        <tr><td>Small Finance Banks</td><td>11</td></tr>
+        <tr><td>Payments Banks</td><td>6</td></tr>
+        <tr><td>UCBs</td><td>~1,500</td></tr>
+        <tr><td>NBFCs (registered)</td><td>~9,400</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Mega-Merger 1 Apr 2020</h4>
+    <ul>
+      <li>PNB + OBC + United Bank</li>
+      <li>Canara + Syndicate</li>
+      <li>Union + Andhra + Corporation</li>
+      <li>Indian + Allahabad</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Key Formulas</h4>
+    <div class="formula" style="font-size:12px;margin:6px 0">
+      CRAR = (T1+T2) / RWA &ge; 9%<br>
+      Effective Floor = 9% + 2.5% CCB = 11.5%<br>
+      LCR = HQLA / 30-day outflow &ge; 100%<br>
+      Gross NPA % = GNPA / GA<br>
+      Net NPA % = (GNPA &minus; Prov.) / (GA &minus; Prov.)<br>
+      PCR = Provisions / GNPAs<br>
+      RRB Capital = 50:35:15
+    </div>
+  </div>
+
+  <div class="widget">
+    <h4>Nationalisation &mdash; Dates</h4>
+    <ul>
+      <li>SBI Act: 1 Jul 1955</li>
+      <li>SBI Subsidiaries Act: 1959</li>
+      <li>1st: 19 Jul 1969 (14 banks)</li>
+      <li>2nd: 15 Apr 1980 (6 banks)</li>
+      <li>NBI &rarr; PNB: 1993</li>
+      <li>SBI absorbs associates: 1 Apr 2017</li>
+      <li>BoB+Vijaya+Dena: 1 Apr 2019</li>
+      <li>Mega-merger: 1 Apr 2020</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>IBC 2016 &mdash; Quick Card</h4>
+    <ul>
+      <li>Regulator: IBBI</li>
+      <li>Adjudicator: NCLT / DRT</li>
+      <li>Default threshold: &#8377; 1 crore (Mar 2020)</li>
+      <li>CIRP outer limit: 330 days</li>
+      <li>CoC vote: 66% (key) / 51%</li>
+      <li>Sec 29A: bars wilful defaulters</li>
+      <li>PPIRP for MSMEs: 2021</li>
+      <li>Bad bank: NARCL + IDRCL (2021)</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>D-SIBs (FY24)</h4>
+    <table>
+      <tbody>
+        <tr><td>SBI</td><td>+0.80%</td></tr>
+        <tr><td>HDFC Bank</td><td>+0.60%</td></tr>
+        <tr><td>ICICI Bank</td><td>+0.40%</td></tr>
+        <tr><td>Bank of Baroda</td><td>+0.20%</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:11px;color:var(--muted);margin:4px 0 0">G-SIB from India: <em>none</em></p>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty Meter</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:95%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains</span><span class="fill"><span style="width:85%"></span></span></div>
+    <p style="font-size:11px;color:var(--muted);margin:6px 0 0">Tested heavily every year &mdash; NPAs, NBFCs, IBC, Payment Banks, Cooperatives, ULI.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <div>
+      <span class="tag">RBI</span><span class="tag">BR Act 1949</span><span class="tag">SCB</span><span class="tag">PSB</span><span class="tag">RRB</span><span class="tag">UCB</span><span class="tag">PACS</span><span class="tag">NABARD</span><span class="tag">SIDBI</span><span class="tag">NHB</span><span class="tag">NaBFID</span><span class="tag orange">Payments Bank</span><span class="tag orange">SFB</span><span class="tag orange">LAB</span><span class="tag">NBFC</span><span class="tag">ICC</span><span class="tag">IFC</span><span class="tag">CIC</span><span class="tag">MFI</span><span class="tag">HFC</span><span class="tag">AA</span><span class="tag">P2P</span><span class="tag">ARC</span><span class="tag green">NARCL</span><span class="tag green">IDRCL</span><span class="tag green">IBBI</span><span class="tag green">NCLT</span><span class="tag green">DRT</span><span class="tag green">IBC</span><span class="tag green">CIRP</span><span class="tag green">CoC</span><span class="tag green">PPIRP</span><span class="tag green">Sec 29A</span><span class="tag">SARFAESI</span><span class="tag orange">AQR</span><span class="tag orange">TBS</span><span class="tag orange">PCA</span><span class="tag">CRAR</span><span class="tag">CCB</span><span class="tag">LCR</span><span class="tag">NSFR</span><span class="tag">D-SIB</span><span class="tag">SMA-0/1/2</span><span class="tag">Basel III</span><span class="tag green">JAM</span><span class="tag green">PMJDY</span><span class="tag green">FI-Index</span><span class="tag green">ULI</span><span class="tag">PSLC</span><span class="tag">MUDRA</span><span class="tag">DICGC</span><span class="tag">R.C. Cooper</span><span class="tag">Nachiket Mor 2014</span><span class="tag">Narasimham I &amp; II</span>
+    </div>
+  </div>
+
+  <div class="widget">
+    <h4>Data Sources</h4>
+    <ul>
+      <li>RBI Annual Report</li>
+      <li>RBI Financial Stability Report (FSR)</li>
+      <li>RBI Report on Trend &amp; Progress of Banking</li>
+      <li>RBI Master Directions (IRAC, PCA, NBFC SBR)</li>
+      <li>IBBI Quarterly Newsletter</li>
+      <li>Economic Survey 2023-24, Ch. 5</li>
+      <li>NITI Aayog &mdash; Bank Privatisation Report</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/economy/money-and-money-supply">Topic 05: Money &amp; Money Supply</a></li>
+      <li><a href="/economy/inflation">Topic 07: Inflation</a></li>
+      <li><a href="/economy/fiscal-policy-and-the-union-budget">Topic 08: Fiscal Policy &amp; Budget</a></li>
+      <li><a href="/economy/economic-planning-in-india">Topic 04: Economic Planning</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>
