@@ -1,4 +1,5 @@
 import { SiteNavbar } from "@/components/SiteNavbar";
+import { DownloadNotesButton } from "@/components/notes/DownloadNotesButton";
 import { FAQ } from "@/components/seo/FAQ";
 import { PageSEO } from "@/components/seo/SEO";
 import { TopicPageSections } from "@/components/notes/TopicPageSections";
@@ -45,7 +46,13 @@ export function TopicPageLayout({
       {!children ? (
         <TopicPageSections subjectKey={subjectKey} chapter={chapter} />
       ) : (
-        children
+        <>
+          <DownloadNotesButton
+            title={chapter.title}
+            subjectName={subject.name}
+          />
+          {children}
+        </>
       )}
       <RelatedTopics subjectKey={subjectKey} chapter={chapter} />
       <div className="topic-sections">

@@ -33,6 +33,7 @@ export const SIDEBAR_SECTIONS: SidebarSection[] = [
       { key: "environment", icon: "🌿", name: "Environment & Ecology" },
       { key: "science", icon: "🔬", name: "Science & Technology" },
       { key: "security", icon: "🛡️", name: "Internal Security" },
+      { key: "disaster", icon: "🌪️", name: "Disaster Management" },
     ],
   },
   {

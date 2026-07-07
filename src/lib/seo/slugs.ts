@@ -17,6 +17,7 @@ export const SUBJECT_SLUG: Record<SubjectKey, string> = {
   ir: "international-relations",
   governance: "governance",
   security: "internal-security",
+  disaster: "disaster-management",
   ethics: "ethics",
   current: "current-affairs",
 };

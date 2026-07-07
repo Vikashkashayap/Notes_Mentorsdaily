@@ -51,6 +51,56 @@
   }
 }
 
+.notes-download-bar {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 16px 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.notes-download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #1a4f9c 0%, #2d6a9f 100%);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(26, 79, 156, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.notes-download-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(26, 79, 156, 0.32);
+}
+
+.notes-download-btn:active {
+  transform: translateY(0);
+}
+
+.notes-download-btn span {
+  font-size: 15px;
+}
+
+.notes-download-hint {
+  font-size: 12.5px;
+  color: #64748b;
+}
+
+@media (max-width: 600px) {
+  .notes-download-hint {
+    display: none;
+  }
+}
+
 .notes-topic-footer-nav {
   max-width: 1320px;
   margin: 0 auto;
@@ -81,6 +131,7 @@
 
 @media print {
   .site-navbar,
+  .notes-download-bar,
   .notes-topic-footer-nav {
     display: none !important;
   }

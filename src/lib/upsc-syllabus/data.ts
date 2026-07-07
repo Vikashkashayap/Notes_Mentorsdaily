@@ -313,6 +313,23 @@ export const SYLLABUS_DATA = {
       { id:"security-topic13", title:"Police Reforms in India", sub:"Topic 13: Police Act 1861, Prakash Singh case, Model Police Act, CCTNS", priority:"high", prelims:3, mains:3, status:"live", readTime:14, tags:["Prakash Singh","Police Act 1861","CCTNS","SMART Policing","BNS 2023"] },
     ]
   },
+  disaster: {
+    name: "Disaster Management",
+    icon: "🌪️",
+    paper: "GS Paper 3",
+    description: "Disaster types, DM cycle, India's DM framework, DRR approaches and global cooperation",
+    chapters: [
+      { id:"disaster-topic01", title:"Basics, Concepts & DM Cycle", sub:"Topic 01: Hazard, vulnerability, risk, capacity, types of disasters and the disaster management cycle", priority:"high", prelims:6, mains:5, status:"live", readTime:16, tags:["Hazard","Vulnerability","Risk","DM Cycle","Resilience"] },
+      { id:"disaster-topic02", title:"Geological Disasters", sub:"Topic 02: Earthquakes, seismic zones, landslides, avalanches, tsunami, GLOF and land subsidence", priority:"high", prelims:7, mains:5, status:"live", readTime:20, tags:["Earthquake","Seismic Zones","Landslide","Tsunami","GLOF"] },
+      { id:"disaster-topic03", title:"Hydro-Meteorological Disasters – I", sub:"Topic 03: Cyclones, floods, urban floods and flash floods — formation, IMD classification and naming", priority:"high", prelims:6, mains:5, status:"live", readTime:20, tags:["Cyclones","Floods","Urban Floods","IMD","Flash Floods"] },
+      { id:"disaster-topic04", title:"Hydro-Meteorological Disasters – II", sub:"Topic 04: Drought, heatwave and cold wave, extreme weather, wildfire, lightning and cloudburst", priority:"high", prelims:6, mains:5, status:"live", readTime:18, tags:["Drought","Heatwave","Cloudburst","Wildfire","Lightning"] },
+      { id:"disaster-topic05", title:"Man-Made Disasters", sub:"Topic 05: Chemical, nuclear, biological, oil spills, transport disasters and war/conflict", priority:"high", prelims:5, mains:5, status:"live", readTime:18, tags:["Chemical","Nuclear","Biological","Oil Spills","Bhopal"] },
+      { id:"disaster-topic06", title:"India's DM Framework: Law & Institutions", sub:"Topic 06: DM Act 2005 & 2025 Amendment, NDMA-SDMA-DDMA, NDRF, funds and NDMP 2019", priority:"high", prelims:6, mains:6, status:"live", readTime:20, tags:["DM Act 2005","NDMA","NDRF","SDMA","NDMP 2019"] },
+      { id:"disaster-topic07", title:"DRR Approaches & Special Concerns", sub:"Topic 07: CBDRM, inclusive DRR, resilient infrastructure & CDRI, women, animals and early warning", priority:"high", prelims:5, mains:6, status:"live", readTime:18, tags:["CBDRM","CDRI","Early Warning","Inclusive DRR","Resilience"] },
+      { id:"disaster-topic08", title:"International Frameworks & Cooperation", sub:"Topic 08: Yokohama, Hyogo & Sendai frameworks, UNDRR, GFDRR, CDRI and links to SDGs & Paris", priority:"high", prelims:6, mains:5, status:"live", readTime:16, tags:["Sendai Framework","UNDRR","Hyogo","CDRI","SDGs"] },
+      { id:"disaster-topic09", title:"Major Disasters — Case Studies", sub:"Topic 09: National & international case studies — Bhopal, Bhuj, 2004 Tsunami, Wayanad, Fukushima, COVID-19", priority:"high", prelims:5, mains:6, status:"live", readTime:20, tags:["Bhopal","Bhuj","2004 Tsunami","Wayanad","COVID-19"] }
+    ]
+  },
   ethics: {
     name: "Ethics GS4",
     icon: "🧭",
