@@ -1,0 +1,696 @@
+<!-- environment-topic13 — auto-imported from environment-topic13-in-situ-conservation-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border:1px solid rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:14px;columns:2;column-gap:24px}
+.toc li{margin-bottom:5px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes p{margin:0 0 14px;color:#2a2f33}
+section.notes ul,section.notes ol{margin:0 0 14px;padding-left:22px;color:#2a2f33}
+section.notes li{margin-bottom:6px}
+.callout{background:#eefaf4;border-left:4px solid var(--green);padding:14px 18px;border-radius:8px;margin:16px 0;font-size:15px}
+.callout.warn{background:#fff4e8;border-left-color:var(--brand-orange)}
+.callout.info{background:#eaf2fb;border-left-color:#2563a8}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;padding:2px 8px;border-radius:10px;margin-left:6px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafcfd}
+.svg-wrap{border:1.5px dashed var(--line);border-radius:10px;padding:16px;margin:18px 0;background:#fcfdfe;text-align:center}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-wrap .cap{font-size:13px;color:var(--muted);margin-top:8px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:16px 0}
+.grid-4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin:16px 0}
+.card{border:1px solid var(--line);border-radius:10px;padding:16px;background:#fff}
+.card h4{margin:0 0 8px;color:var(--brand-blue-dark);font-size:15.5px}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:12px;padding:3px 10px;border-radius:20px;margin:2px 4px 2px 0}
+.tag.orange{background:#fdeedc;color:#8a4d0f}
+.tag.green{background:#e2f5ed;color:#0f5c3f}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);border-radius:8px;padding:16px 18px;margin:14px 0}
+.pyq .year{display:inline-block;background:var(--brand-orange);color:#fff;font-size:12px;font-weight:700;padding:2px 10px;border-radius:12px;margin-bottom:8px}
+.pyq p{margin:0 0 8px}
+.pyq .ans{font-weight:700;color:var(--green)}
+.pyq .options{list-style:none;margin:8px 0 10px;padding:0}
+.pyq .options li{padding:6px 12px;margin:4px 0;border:1px solid var(--line);border-radius:6px;background:#fafafa}
+.pyq .options li.correct{background:#eaf6f0;border-color:var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:26px;color:var(--brand-orange);font-weight:700}
+.model-answer{background:#f7faf9;border:1px solid var(--line);border-left:4px solid var(--green);border-radius:8px;padding:16px 20px;margin:10px 0}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark)}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:8px}
+.model-answer ul{margin:6px 0 0;padding-left:18px}
+.model-answer ul li{margin-bottom:4px;font-size:14px}
+.marks{display:inline-block;background:var(--brand-blue);color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:10px;margin-top:8px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:22px 26px;margin:24px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px;margin-bottom:20px}
+.widget h4{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark)}
+.widget .bar{margin-bottom:12px}
+.widget .lbl{display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px;color:var(--muted)}
+.widget .track{background:#eef1f4;border-radius:6px;height:8px;overflow:hidden}
+.widget .fill{background:var(--brand-orange);height:100%;border-radius:6px}
+.widget a.chip{display:block;padding:8px 10px;border:1px solid var(--line);border-radius:8px;font-size:13.5px;margin-bottom:8px;color:var(--text)}
+.widget a.chip:hover{border-color:var(--brand-orange);text-decoration:none;background:#fff8ec}
+.widget a.chip.soon{opacity:0.55;pointer-events:none}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c9d4dc;padding:28px 24px;text-align:center;font-size:13px;margin-top:20px}
+@media(max-width:860px){
+  .layout{grid-template-columns:1fr}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .toc ul{columns:1}
+}
+@media print{
+  .topnav,aside,footer{display:none}
+  .layout{padding-top:0;grid-template-columns:1fr}
+  .hero{background:#1b3a4b !important;-webkit-print-color-adjust:exact}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+  <div class="hero">
+    <h1>Topic 13: In-Situ Conservation</h1>
+    <p class="sub">Protecting species within their natural habitats — biodiversity hotspots, India's Protected Area network (national parks, wildlife sanctuaries, tiger reserves, elephant reserves, MPAs), community-conserved sacred groves, World Heritage Sites, and flagship species-specific conservation projects.</p>
+    <div class="meta">
+      <span class="pill primary">GS Paper III — Environment &amp; Ecology</span>
+      <span class="pill">Reading time: 18 min</span>
+      <span class="pill">Prelims: Extremely High Yield</span>
+      <span class="pill">Mains: GS-III</span>
+    </div>
+  </div>
+
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ul>
+      <li><span class="num">1</span><a href="#s1">In-Situ vs Ex-Situ Conservation</a></li>
+      <li><span class="num">2</span><a href="#s2">Conceptual Clarity — PA Categories in India</a></li>
+      <li><span class="num">3</span><a href="#s3">Biodiversity Hotspots — World &amp; India</a></li>
+      <li><span class="num">4</span><a href="#s4">National Parks &amp; Wildlife Sanctuaries</a></li>
+      <li><span class="num">5</span><a href="#s5">Tiger Reserves &amp; Corridors</a></li>
+      <li><span class="num">6</span><a href="#s6">Elephant Reserves &amp; Corridors</a></li>
+      <li><span class="num">7</span><a href="#s7">Marine Protected Areas</a></li>
+      <li><span class="num">8</span><a href="#s8">Sacred Groves &amp; Community Conservation</a></li>
+      <li><span class="num">9</span><a href="#s9">World Heritage Sites (Natural)</a></li>
+      <li><span class="num">10</span><a href="#s10">Species-Specific Conservation Projects</a></li>
+      <li><span class="num">11</span><a href="#s11">Current Affairs</a></li>
+      <li><span class="num">12</span><a href="#s12">Prelims PYQs</a></li>
+      <li><span class="num">13</span><a href="#s13">Mains PYQs</a></li>
+      <li><span class="num">14</span><a href="#s14">Revision Box</a></li>
+    </ul>
+  </div>
+
+  <div class="concept-box" id="concept">
+    <h3>Conceptual Clarity — Why this Topic Matters</h3>
+    <p>UPSC tests in-situ conservation in three distinct ways:</p>
+    <ul>
+      <li><strong>Definitional / static:</strong> exact difference between the four PA categories (National Park / Sanctuary / Conservation Reserve / Community Reserve), biodiversity-hotspot criteria, the founding years of Project Tiger/Elephant — a very high-frequency, fact-heavy Prelims zone.</li>
+      <li><strong>Statement-elimination:</strong> multi-statement sets on hotspot criteria, PA-category rights, sacred-grove legal status, and which parks are World Heritage Sites — where one clause is deliberately reversed.</li>
+      <li><strong>Applied / current:</strong> Project Cheetah at Kuno, latest tiger-census figures, MPA/30x30 expansion — feeding Mains GS-III conservation-strategy answers (see Current Affairs section).</li>
+    </ul>
+    <p>Focus especially on the <strong>4 PA categories &amp; their rights hierarchy</strong>, <strong>India's 4 biodiversity hotspots (Nicobar not Andaman)</strong>, and <strong>the flagship species projects with launch years</strong> — the three highest-frequency themes.</p>
+  </div>
+
+  <section class="notes" id="s1">
+    <h2>1. In-Situ vs Ex-Situ Conservation</h2>
+    <p><strong>In-situ conservation</strong> ("on-site") protects species within their natural habitat and ecosystem, allowing natural evolutionary and ecological processes to continue — considered the preferred, most holistic conservation strategy since it conserves entire ecosystems and species interactions, not just the target species. <strong>Ex-situ conservation</strong> ("off-site" — zoos, gene banks, botanical gardens) is covered in Topic 14 and serves as a complementary backup, especially for critically endangered species.</p>
+  </section>
+
+  <section class="notes" id="s2">
+    <h2>2. Conceptual Clarity — Protected Area Categories in India</h2>
+    <div class="concept-box">
+      <h3>Four legal PA categories under the Wildlife (Protection) Act, 1972</h3>
+      <p><strong>National Park:</strong> Highest protection; no human activity/grazing/private rights permitted (with rare exceptions); declared for protecting an entire ecosystem. <strong>Wildlife Sanctuary:</strong> Slightly lower protection; some regulated human activity (grazing, collection of forest produce) may be permitted; primarily species/habitat focused. <strong>Conservation Reserve:</strong> Buffer/connector zones (often government land) declared after consulting local communities, with lighter restrictions — bridges protected areas and human-use landscape. <strong>Community Reserve:</strong> Declared on community/private land with consent of the community, who retain rights while agreeing to conservation — the only category allowing continued private/community ownership.</p>
+    </div>
+    <div class="svg-wrap">
+      <svg viewBox="0 0 620 240" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="620" height="240" fill="#fcfdfe"/>
+        <polygon points="310,15 400,70 220,70" fill="#1a3d5c" stroke="#0d2035" stroke-width="1.5"/>
+        <text x="310" y="48" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">National Park</text>
+        <polygon points="220,70 400,70 445,120 175,120" fill="#1a7a5a" stroke="#0d2035" stroke-width="1.5"/>
+        <text x="310" y="100" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Wildlife Sanctuary</text>
+        <polygon points="175,120 445,120 490,170 130,170" fill="#c47820" stroke="#0d2035" stroke-width="1.5"/>
+        <text x="310" y="150" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Conservation Reserve</text>
+        <polygon points="130,170 490,170 535,220 85,220" fill="#8a4d0f" stroke="#0d2035" stroke-width="1.5"/>
+        <text x="310" y="200" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Community Reserve</text>
+        <text x="60" y="45" font-size="10" fill="#5a6266" text-anchor="end">Strictest</text>
+        <text x="60" y="215" font-size="10" fill="#5a6266" text-anchor="end">Most flexible</text>
+        <text x="560" y="45" font-size="10" fill="#5a6266">No private</text>
+        <text x="560" y="58" font-size="10" fill="#5a6266">rights</text>
+        <text x="560" y="205" font-size="10" fill="#5a6266">Community</text>
+        <text x="560" y="218" font-size="10" fill="#5a6266">retains rights</text>
+      </svg>
+      <div class="cap">Fig 13.1 — Hierarchy of Protected Area categories under WPA 1972, strictest to most flexible</div>
+    </div>
+
+    <table>
+      <tr><th>PA Category</th><th>Land/rights</th><th>Human activity</th><th>Declared by</th><th>Indian example</th></tr>
+      <tr><td>National Park</td><td>No private rights; grazing generally barred</td><td>Highest protection; no activity permitted (rare exceptions)</td><td>State govt (WPA 1972)</td><td>Jim Corbett (UK), Kaziranga (Assam)</td></tr>
+      <tr><td>Wildlife Sanctuary</td><td>Certain rights may be allowed/settled</td><td>Some regulated activity (grazing, MFP collection) may be permitted</td><td>State govt (WPA 1972)</td><td>Manas WLS (Assam), Dachigam (J&amp;K)</td></tr>
+      <tr><td>Conservation Reserve</td><td>Usually govt land; acts as buffer/connector</td><td>Lighter restrictions; local community consulted</td><td>State govt after community consultation (2003 amendment)</td><td>Tiruppadaimarathur (TN), Saraswati Plains (Haryana)</td></tr>
+      <tr><td>Community Reserve</td><td>Community/private land; ownership retained</td><td>Community-agreed conservation with continued use</td><td>State govt with community consent (2003 amendment)</td><td>Kokkare Bellur (Karnataka), Keshopur-Miani (Punjab)</td></tr>
+    </table>
+    <div class="callout warn"><strong>Prelims hook:</strong> Only the <strong>Community Reserve</strong> allows continued private/community land ownership. Conservation &amp; Community Reserves were both added by the <strong>2002/2003 amendment</strong> to WPA 1972 — a frequent matching-question distractor.</div>
+
+    <h3>Biosphere Reserves &amp; UNESCO MAB — the Three-Zone Model</h3>
+    <p>A <strong>Biosphere Reserve (BR)</strong> is a large area conserving whole ecosystems + human-culture linkages under the MoEFCC scheme (since 1986) and UNESCO's <strong>Man and the Biosphere (MAB) Programme</strong>. It is NOT a WPA legal category — it is an internationally-recognised umbrella that often <em>contains</em> national parks/sanctuaries within it. Each BR has three zones:</p>
+    <table>
+      <tr><th>Zone</th><th>Function</th><th>Human activity</th></tr>
+      <tr><td><strong>Core zone</strong></td><td>Strictly protected, undisturbed ecosystem</td><td>Legally protected (usually a national park); no human interference</td></tr>
+      <tr><td><strong>Buffer zone</strong></td><td>Surrounds core; research, monitoring, education</td><td>Limited, non-destructive activities</td></tr>
+      <tr><td><strong>Transition (manipulation) zone</strong></td><td>Outermost; sustainable use with communities</td><td>Settlements, farming, forestry, tourism permitted</td></tr>
+    </table>
+    <div class="callout info"><strong>Key numbers:</strong> India has <strong>18 Biosphere Reserves</strong>, of which <strong>12 are on UNESCO's World Network of Biosphere Reserves (WNBR)</strong>. <strong>Nilgiri</strong> (1986) was India's first BR; the latest UNESCO additions include <strong>Panna</strong> (2020). Others on the WNBR include Sundarbans, Gulf of Mannar, Nanda Devi, Nokrek, Pachmarhi, Simlipal, Achanakmar-Amarkantak, Great Nicobar, Agasthyamala, Khangchendzonga.</div>
+    <div class="callout warn"><strong>Trap:</strong> A Biosphere Reserve is a MoEFCC/UNESCO designation, NOT a Wildlife (Protection) Act category — so it carries no independent legal protection except through the national parks/sanctuaries inside its core. Its core zone gets legal teeth only via WPA.</div>
+  </section>
+
+  <section class="notes" id="s3">
+    <h2>3. Biodiversity Hotspots — World & India</h2>
+    <p>A <strong>biodiversity hotspot</strong> (concept by Norman Myers, 1988; refined by Conservation International) must meet two strict criteria: (i) contain at least <strong>1,500 endemic vascular plant species</strong> (0.5% of world's total), and (ii) have lost <strong>at least 70% of its original/primary vegetation</strong>. There are <strong>36 biodiversity hotspots</strong> globally as of the current Conservation International list, covering just ~2.4% of Earth's land surface but harbouring over half of the world's endemic plant species.</p>
+    <table>
+      <tr><th>India's 4 Biodiversity Hotspots</th><th>Key features</th></tr>
+      <tr><td>Western Ghats</td><td>High endemism (amphibians, freshwater fish); UNESCO World Heritage Site (serial); shared with Sri Lanka hotspot</td></tr>
+      <tr><td>Eastern Himalaya</td><td>Part of the "Himalaya" hotspot; extremely high plant diversity; overlaps with Sikkim, Arunachal Pradesh, Darjeeling</td></tr>
+      <tr><td>Indo-Burma</td><td>Covers Northeast India states beyond Eastern Himalaya; extends into Myanmar, Thailand, Vietnam, Cambodia, Laos</td></tr>
+      <tr><td>Sundaland</td><td>Represented in India only by the Nicobar Islands (main hotspot area is Indonesia/Malaysia/Brunei)</td></tr>
+    </table>
+    <div class="callout warn">Common exam trap: the Andaman Islands are NOT part of a global biodiversity hotspot in most classifications — only the <strong>Nicobar</strong> group falls under the Sundaland hotspot.</div>
+  </section>
+
+  <section class="notes" id="s4">
+    <h2>4. National Parks & Wildlife Sanctuaries</h2>
+    <p>As of recent official figures, India's Protected Area network comprises over <strong>100+ National Parks</strong> and <strong>500+ Wildlife Sanctuaries</strong>, together with Conservation Reserves and Community Reserves, covering roughly 5%+ of the country's geographical area. Key facts frequently tested:</p>
+    <ul>
+      <li><strong>Jim Corbett National Park</strong> (Uttarakhand) — India's first national park (1936, as Hailey National Park); also India's first Tiger Reserve under Project Tiger (1973).</li>
+      <li><strong>Kaziranga National Park</strong> (Assam) — UNESCO World Heritage Site; highest density of the one-horned rhinoceros in the world.</li>
+      <li><strong>Gir National Park</strong> (Gujarat) — sole wild home of the Asiatic Lion.</li>
+      <li><strong>Keoladeo National Park</strong> (Rajasthan, Bharatpur) — major wintering ground for migratory birds; UNESCO World Heritage Site and Ramsar site.</li>
+    </ul>
+  </section>
+
+  <section class="notes" id="s5">
+    <h2>5. Tiger Reserves & Corridors</h2>
+    <p>India's tiger reserves are administered under <strong>Project Tiger</strong> (launched 1973) via the National Tiger Conservation Authority (NTCA, statutory body under the Wildlife (Protection) Amendment Act, 2006). India currently has <strong>50+ Tiger Reserves</strong> and hosts over <strong>70% of the world's wild tiger population</strong>. Each Tiger Reserve has a legally mandated <strong>Core/Critical Tiger Habitat</strong> (inviolate, no human settlement) and a <strong>Buffer Zone</strong> (regulated multiple-use).</p>
+    <div class="callout info"><strong>Tiger corridors</strong> — forested linkages connecting tiger source populations across reserves — are essential for gene flow and dispersal of young males; major corridors include the Central Indian Tiger Landscape (linking reserves across MP, Maharashtra, Chhattisgarh) and the Terai Arc Landscape (linking reserves along the Indo-Nepal border).</div>
+  </section>
+
+  <section class="notes" id="s6">
+    <h2>6. Elephant Reserves & Corridors</h2>
+    <p><strong>Project Elephant</strong> (launched 1992) supports states with wild elephant populations through habitat protection, corridor maintenance, and human-elephant conflict mitigation. India hosts over <strong>30 Elephant Reserves</strong> spread across four major elephant landscapes: North-Western (foothills of UP/Uttarakhand), North-Eastern (Assam and neighbouring states — India's largest elephant population), Central (Odisha, Jharkhand, Chhattisgarh, West Bengal), and Southern (Western Ghats — Karnataka, Kerala, Tamil Nadu).</p>
+    <p>Elephant corridors are especially critical given elephants' extensive home ranges and seasonal long-distance migration; corridor fragmentation is the leading cause of human-elephant conflict deaths in India.</p>
+  </section>
+
+  <section class="notes" id="s7">
+    <h2>7. Marine Protected Areas</h2>
+    <p><strong>Marine Protected Areas (MPAs)</strong> conserve marine and coastal ecosystems including coral reefs, mangroves, and seagrass beds. India's marine PA network includes the Gulf of Mannar Marine National Park (Tamil Nadu, also a Biosphere Reserve — Topic 07), the Gulf of Kachchh Marine National Park (Gujarat, India's first marine national park), and marine components within the Andaman & Nicobar and Lakshadweep island PAs.</p>
+    <div class="callout">Under the Kunming-Montreal Global Biodiversity Framework's "30x30" target (Topic 11), expanding MPA coverage — currently a small fraction of India's Exclusive Economic Zone — is a stated national priority through 2030.</div>
+  </section>
+
+  <section class="notes" id="s8">
+    <h2>8. Sacred Groves & Community Conservation</h2>
+    <p><strong>Sacred groves</strong> are patches of forest/vegetation traditionally protected by local communities on religious/cultural grounds, often dedicated to a local deity, with restrictions on logging/hunting enforced through social/religious sanction rather than statutory law. India has thousands of documented sacred groves (locally called <em>Devarakadu</em>/<em>Devbani</em> in Karnataka, <em>Sarna</em> in Jharkhand/Chhattisgarh tribal belts, <em>Kavu</em> in Kerala, <em>Law Kyntang</em> in Meghalaya). They represent one of the oldest forms of in-situ conservation and often preserve relict/endemic vegetation no longer found in surrounding degraded landscapes.</p>
+  </section>
+
+  <section class="notes" id="s9">
+    <h2>9. World Heritage Sites (Natural) — India</h2>
+    <table>
+      <tr><th>Natural World Heritage Site</th><th>State</th></tr>
+      <tr><td>Kaziranga National Park</td><td>Assam</td></tr>
+      <tr><td>Keoladeo National Park</td><td>Rajasthan</td></tr>
+      <tr><td>Manas Wildlife Sanctuary</td><td>Assam</td></tr>
+      <tr><td>Sundarbans National Park</td><td>West Bengal</td></tr>
+      <tr><td>Nanda Devi & Valley of Flowers National Parks</td><td>Uttarakhand</td></tr>
+      <tr><td>Western Ghats (serial site, multiple clusters)</td><td>Kerala, Karnataka, Tamil Nadu, Maharashtra</td></tr>
+      <tr><td>Great Himalayan National Park</td><td>Himachal Pradesh</td></tr>
+    </table>
+  </section>
+
+  <section class="notes" id="s10">
+    <h2>10. Species-Specific Conservation Projects</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h4>Project Tiger (1973)</h4>
+        <p>Landmark centrally sponsored scheme; now overseen by NTCA; India hosts 70%+ of global wild tiger population across 50+ reserves.</p>
+      </div>
+      <div class="card">
+        <h4>Project Elephant (1992)</h4>
+        <p>Habitat/corridor protection, human-elephant conflict management, welfare of captive elephants across 4 elephant landscapes.</p>
+      </div>
+      <div class="card">
+        <h4>Project Lion</h4>
+        <p>Focused on Asiatic Lion conservation in and around Gir (Gujarat) — including habitat improvement and a second wild population initiative to reduce single-location extinction risk.</p>
+      </div>
+      <div class="card">
+        <h4>Vulture conservation</h4>
+        <p>Species Recovery Programme targeting critically endangered Gyps vultures, decimated by diclofenac (veterinary NSAID) poisoning; includes captive breeding and diclofenac-ban enforcement.</p>
+      </div>
+      <div class="card">
+        <h4>Project Snow Leopard</h4>
+        <p>Landscape-level conservation across the high-altitude Himalayan/Trans-Himalayan range states (Jammu & Kashmir, Ladakh, Himachal Pradesh, Uttarakhand, Sikkim, Arunachal Pradesh).</p>
+      </div>
+      <div class="card">
+        <h4>Project Dolphin</h4>
+        <p>Launched to conserve the Gangetic river dolphin (India's National Aquatic Animal) and marine dolphin species, alongside river ecosystem health.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="notes" id="s11">
+    <h2>11. Current Affairs (2024–2026)</h2>
+
+    <div class="callout update">
+      <strong>Project Cheetah — Kuno &amp; Gandhi Sagar <span class="update-tag">check for latest update or data</span></strong>
+      <p>Reintroduction of African cheetahs at Kuno National Park (MP) continues since September 2022, with cubs born on Indian soil and 2024–2025 moves to open a <strong>second site at Gandhi Sagar Wildlife Sanctuary</strong> (MP) to reduce density-dependent stress. Survival outcomes remain mixed — <em>verify the current cheetah count and site status before the exam.</em></p>
+    </div>
+
+    <div class="callout update">
+      <strong>All India Tiger Estimation <span class="update-tag">check for latest update or data</span></strong>
+      <p>The 2022 cycle (report released 2023) put India's tigers at <strong>~3,682</strong>, reaffirming India hosts &gt;70% of the world's wild tigers. Continued NTCA monitoring through 2024–2026; the next four-yearly estimation is due — check the latest NTCA figure.</p>
+    </div>
+
+    <div class="callout update">
+      <strong>MPA &amp; 30x30 expansion <span class="update-tag">check for latest update or data</span></strong>
+      <p>Under the Kunming-Montreal GBF 30x30 target, India continued 2024–2026 policy work on expanding marine protected-area coverage across the Andaman &amp; Nicobar and Lakshadweep EEZ, plus new Ramsar-site and conservation-reserve notifications — a recurring Prelims fact source.</p>
+    </div>
+  </section>
+
+  <section class="notes" id="s12">
+    <h2>12. Prelims PYQs</h2>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2023</div>
+      <p><strong>Q.</strong> With reference to biodiversity hotspots in India, consider the following statements:</p>
+      <p>1. India has four biodiversity hotspots — Western Ghats, Eastern Himalaya, Indo-Burma, and Sundaland.<br>
+      2. A biodiversity hotspot must have lost at least 70% of its original vegetation.<br>
+      3. The Andaman Islands (excluding Nicobar) fall within a recognised global biodiversity hotspot.</p>
+      <p>Which of the statements given above is/are correct?</p>
+      <ul class="options">
+        <li class="correct"><span class="opt-key">(a)</span>1 and 2 only</li>
+        <li><span class="opt-key">(b)</span>2 only</li>
+        <li><span class="opt-key">(c)</span>1, 2 and 3</li>
+        <li><span class="opt-key">(d)</span>3 only</li>
+      </ul>
+      <p class="ans"><strong>Ans: (a).</strong> India's 4 hotspots and the 70% vegetation-loss criterion are correct; only the <strong>Nicobar</strong> group (Sundaland), not the Andamans, falls within a global hotspot — statement 3 false.</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2022</div>
+      <p><strong>Q.</strong> Consider the following pairs of Protected Areas and their distinguishing feature:</p>
+      <p>1. National Park — No human rights permitted, highest protection<br>
+      2. Wildlife Sanctuary — Some regulated human activity permitted<br>
+      3. Community Reserve — Declared only on government-owned forest land</p>
+      <p>Which of the pairs given above is/are correctly matched?</p>
+      <ul class="options">
+        <li class="correct"><span class="opt-key">(a)</span>1 and 2 only</li>
+        <li><span class="opt-key">(b)</span>2 and 3 only</li>
+        <li><span class="opt-key">(c)</span>1 and 3 only</li>
+        <li><span class="opt-key">(d)</span>1, 2 and 3</li>
+      </ul>
+      <p class="ans"><strong>Ans: (a).</strong> Pairs 1 and 2 are correct; a Community Reserve is declared on <strong>community/private land</strong> (not government forest land), so pair 3 is wrongly matched.</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2020</div>
+      <p><strong>Q.</strong> Consider the following National Parks:</p>
+      <p>1. Kaziranga National Park<br>
+      2. Keoladeo National Park<br>
+      3. Gir National Park</p>
+      <p>Which of the above is/are UNESCO World Heritage Sites?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>1 only</li>
+        <li class="correct"><span class="opt-key">(b)</span>1 and 2 only</li>
+        <li><span class="opt-key">(c)</span>2 and 3 only</li>
+        <li><span class="opt-key">(d)</span>1, 2 and 3</li>
+      </ul>
+      <p class="ans"><strong>Ans: (b).</strong> Kaziranga and Keoladeo are UNESCO Natural World Heritage Sites; Gir (Asiatic Lion) is not inscribed.</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2019</div>
+      <p><strong>Q.</strong> "Project Tiger" is administered/monitored by which of the following bodies?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>Ministry of Environment, Forest and Climate Change directly</li>
+        <li class="correct"><span class="opt-key">(b)</span>National Tiger Conservation Authority (NTCA)</li>
+        <li><span class="opt-key">(c)</span>Wildlife Institute of India</li>
+        <li><span class="opt-key">(d)</span>Central Zoo Authority</li>
+      </ul>
+      <p class="ans"><strong>Ans: (b).</strong> NTCA is the statutory body (under WPA amendment 2006) that administers Project Tiger; WII does research, CZA regulates zoos.</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2018</div>
+      <p><strong>Q.</strong> With reference to sacred groves in India, consider the following statements:</p>
+      <p>1. They are protected primarily through statutory legal provisions.<br>
+      2. They are found in various parts of India under different local names.<br>
+      3. They often preserve relict vegetation not found in surrounding degraded areas.</p>
+      <p>Which of the statements given above is/are correct?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>1 and 2 only</li>
+        <li class="correct"><span class="opt-key">(b)</span>2 and 3 only</li>
+        <li><span class="opt-key">(c)</span>1 and 3 only</li>
+        <li><span class="opt-key">(d)</span>1, 2 and 3</li>
+      </ul>
+      <p class="ans"><strong>Ans: (b).</strong> Sacred groves are protected by <strong>social/religious sanction</strong>, not statutory law (statement 1 false); they occur under many local names and preserve relict vegetation — statements 2 and 3 true.</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2017</div>
+      <p><strong>Q.</strong> Which is the only National Park in India where the Asiatic Lion is found in the wild?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>Kaziranga National Park</li>
+        <li class="correct"><span class="opt-key">(b)</span>Gir National Park</li>
+        <li><span class="opt-key">(c)</span>Ranthambore National Park</li>
+        <li><span class="opt-key">(d)</span>Bandipur National Park</li>
+      </ul>
+      <p class="ans"><strong>Ans: (b).</strong> Gir (Gujarat) is the sole wild home of the Asiatic Lion — hence Project Lion's second-population initiative to reduce single-site risk.</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2016</div>
+      <p><strong>Q.</strong> The Terai Arc Landscape is primarily significant as a conservation corridor for which species?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>Asiatic Lion</li>
+        <li class="correct"><span class="opt-key">(b)</span>Tiger</li>
+        <li><span class="opt-key">(c)</span>Snow Leopard</li>
+        <li><span class="opt-key">(d)</span>One-horned Rhinoceros</li>
+      </ul>
+      <p class="ans"><strong>Ans: (b).</strong> The Terai Arc Landscape links tiger reserves along the Indo-Nepal border for tiger gene flow and dispersal.</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2015</div>
+      <p><strong>Q.</strong> Which of the following is India's first National Park and also India's first Tiger Reserve?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>Kanha National Park</li>
+        <li><span class="opt-key">(b)</span>Bandhavgarh National Park</li>
+        <li class="correct"><span class="opt-key">(c)</span>Jim Corbett National Park</li>
+        <li><span class="opt-key">(d)</span>Periyar National Park</li>
+      </ul>
+      <p class="ans"><strong>Ans: (c).</strong> Jim Corbett (est. 1936 as Hailey NP) is India's first national park and the first reserve under Project Tiger (1973).</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2013</div>
+      <p><strong>Q.</strong> Which of the following criteria must be met for an area to be classified as a "biodiversity hotspot" (Myers/Conservation International criteria)?</p>
+      <p>1. At least 1,500 endemic vascular plant species<br>
+      2. Loss of at least 70% of original vegetation<br>
+      3. Presence of at least one national park</p>
+      <p>Select the correct answer using the code given below:</p>
+      <ul class="options">
+        <li class="correct"><span class="opt-key">(a)</span>1 and 2 only</li>
+        <li><span class="opt-key">(b)</span>2 and 3 only</li>
+        <li><span class="opt-key">(c)</span>1 and 3 only</li>
+        <li><span class="opt-key">(d)</span>1, 2 and 3</li>
+      </ul>
+      <p class="ans"><strong>Ans: (a).</strong> The two hotspot criteria are ≥1,500 endemic vascular plants and ≥70% original-vegetation loss; a national park is not a criterion (statement 3 false).</p>
+    </div>
+  </section>
+
+  <section class="notes" id="s13">
+    <h2>13. Mains PYQs</h2>
+    <div class="pyq">
+      <div class="year">GS-III 2023</div>
+      <p><strong>Q.</strong> Discuss the role of Protected Areas in in-situ conservation of biodiversity in India. What are the key challenges facing India's PA network today?</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> Define in-situ conservation and note India's PA network (100+ NPs, 500+ sanctuaries, conservation/community reserves) as its backbone under WPA 1972.</li>
+          <li><strong>Body — role:</strong>
+            <ul>
+              <li>Conserves whole ecosystems + species interactions (not just target species).</li>
+              <li>Core-buffer model, corridors for gene flow, flagship species anchoring (tiger, elephant, lion).</li>
+              <li>Community &amp; conservation reserves bridge people and conservation.</li>
+            </ul>
+          </li>
+          <li><strong>Body — challenges:</strong> habitat fragmentation, human-wildlife conflict, funding/staff gaps, infrastructure &amp; linear intrusions, invasive species, tourism pressure, forest-rights tension.</li>
+          <li><strong>Conclusion:</strong> Landscape-level, community-inclusive management aligned to GBF 30x30 is the way forward.</li>
+        </ol>
+        <span class="marks">250 words · 15 marks</span>
+      </div>
+    </div>
+    <div class="pyq">
+      <div class="year">GS-III 2021</div>
+      <p><strong>Q.</strong> Examine the significance of wildlife corridors in conservation planning. Discuss with reference to tiger and elephant corridors in India.</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> Define a wildlife corridor — a habitat linkage connecting isolated PA populations enabling movement, dispersal and gene flow.</li>
+          <li><strong>Body — significance:</strong>
+            <ul>
+              <li>Prevents inbreeding / sub-MVP isolation; allows seasonal migration &amp; range shifts under climate change.</li>
+              <li>Reduces human-wildlife conflict by giving animals safe passage.</li>
+            </ul>
+          </li>
+          <li><strong>Body — Indian examples:</strong> Central Indian Tiger Landscape (MP-Maharashtra-Chhattisgarh), Terai Arc Landscape (tiger); elephant corridors across NE, Central &amp; Southern landscapes (Project Elephant); eco-bridges on NH-44.</li>
+          <li><strong>Conclusion:</strong> Statutory corridor protection + eco-bridges + landscape planning are essential complements to core reserves.</li>
+        </ol>
+        <span class="marks">250 words · 15 marks</span>
+      </div>
+    </div>
+    <div class="pyq">
+      <div class="year">GS-III 2019</div>
+      <p><strong>Q.</strong> What is a biodiversity hotspot? Discuss India's biodiversity hotspots and the conservation challenges they face.</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> Define hotspot (Myers 1988; CI) — ≥1,500 endemic vascular plants + ≥70% original vegetation lost; 36 globally.</li>
+          <li><strong>Body — India's 4 hotspots:</strong>
+            <ul>
+              <li>Western Ghats (amphibian/fish endemism, UNESCO serial site), Eastern Himalaya, Indo-Burma (NE India), Sundaland (Nicobar only).</li>
+            </ul>
+          </li>
+          <li><strong>Body — challenges:</strong> plantation/agri conversion, hydro projects &amp; roads, invasive species, climate-driven range shifts, developmental pressure vs endemism.</li>
+          <li><strong>Conclusion:</strong> Hotspot-focused, connectivity-based conservation + community stewardship needed given disproportionate endemism.</li>
+        </ol>
+        <span class="marks">250 words · 15 marks</span>
+      </div>
+    </div>
+    <div class="pyq">
+      <div class="year">GS-III 2017</div>
+      <p><strong>Q.</strong> Assess the success of Project Tiger since its launch in 1973. What institutional reforms strengthened tiger conservation in India?</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> Project Tiger (1973) — flagship centrally sponsored scheme; India now hosts &gt;70% of the world's wild tigers (~3,682, 2022 census).</li>
+          <li><strong>Body — successes:</strong>
+            <ul>
+              <li>Rising tiger numbers, 50+ reserves, core-buffer inviolate habitats, robust camera-trap based estimation (M-STrIPES).</li>
+            </ul>
+          </li>
+          <li><strong>Body — institutional reforms:</strong> statutory NTCA + Tiger &amp; Other Endangered Species Crime Control Bureau (WCCB) via 2006 amendment; Critical Tiger Habitat notification; village relocation packages.</li>
+          <li><strong>Body — gaps:</strong> uneven reserve performance, conflict, corridor loss, poaching pressure.</li>
+          <li><strong>Conclusion:</strong> Model conservation success, but sustaining it needs corridor protection &amp; conflict management.</li>
+        </ol>
+        <span class="marks">250 words · 15 marks</span>
+      </div>
+    </div>
+    <div class="pyq">
+      <div class="year">GS-I 2014</div>
+      <p><strong>Q.</strong> Discuss the role of sacred groves and other community-based conservation practices in biodiversity conservation in India.</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> Define sacred groves — community-protected forest patches conserved via religious/cultural sanction; one of India's oldest in-situ practices.</li>
+          <li><strong>Body — role:</strong>
+            <ul>
+              <li>Preserve relict/endemic vegetation absent in surrounding degraded land; genetic reservoirs; watershed &amp; microclimate services.</li>
+              <li>Named traditions: Devarakadu (Karnataka), Kavu (Kerala), Sarna (Jharkhand), Law Kyntang (Meghalaya).</li>
+            </ul>
+          </li>
+          <li><strong>Body — other community practices:</strong> Community Reserves (WPA), Biodiversity Management Committees (Biological Diversity Act 2002), sacred rivers/species taboos.</li>
+          <li><strong>Conclusion:</strong> Formal recognition + benefit-sharing can strengthen these low-cost, culturally-rooted conservation models.</li>
+        </ol>
+        <span class="marks">150 words · 10 marks</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="notes" id="s14">
+    <h2>15-Minute Revision Box</h2>
+    <div class="revision-box">
+      <h3>Must-Remember Facts &mdash; In-Situ Conservation</h3>
+      <div class="grid-2">
+        <div>
+          <strong>Protected Areas &amp; Hotspots:</strong>
+          <ul>
+            <li><strong>PA categories (WPA 1972):</strong> National Park (strictest) &gt; Wildlife Sanctuary &gt; Conservation Reserve &gt; Community Reserve (community retains rights)</li>
+            <li><strong>Hotspot criteria:</strong> &ge;1,500 endemic vascular plants + &ge;70% original vegetation lost; 36 globally</li>
+            <li><strong>India's 4 hotspots:</strong> Western Ghats, Eastern Himalaya, Indo-Burma, Sundaland (only Nicobar, NOT Andaman)</li>
+            <li><strong>Biosphere Reserve:</strong> core+buffer+transition zones; 18 India / 12 on UNESCO WNBR (Nilgiri first, 1986)</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Flagship Parks &amp; Projects:</strong>
+          <ul>
+            <li><strong>Jim Corbett</strong> = India's first National Park (1936) AND first Tiger Reserve (1973)</li>
+            <li><strong>Gir</strong> = sole wild Asiatic Lion | <strong>Kaziranga</strong> = highest-density one-horned rhino</li>
+            <li><strong>Project Tiger (1973)</strong> &rarr; NTCA; 50+ reserves; India = 70%+ world's wild tigers</li>
+            <li><strong>Project Elephant (1992)</strong> &rarr; 4 landscapes: NW, NE (largest population), Central, Southern</li>
+          </ul>
+          <strong>Community &amp; Species:</strong>
+          <ul>
+            <li><strong>Sacred groves</strong> = community-conserved (social sanction, NOT statutory) &mdash; Devarakadu (KA), Sarna (JH/CG), Kavu (KL), Law Kyntang (ML)</li>
+            <li><strong>Key projects:</strong> Tiger, Elephant, Lion, Snow Leopard, Gangetic Dolphin, Cheetah (Kuno), Vulture Recovery (diclofenac ban)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<aside>
+  <div class="aside-sticky">
+    <div class="widget">
+      <h4>Difficulty &amp; Importance</h4>
+      <div class="bar"><div class="lbl"><span>Prelims Relevance</span><span>Extremely High</span></div><div class="track"><div class="fill" style="width:96%"></div></div></div>
+      <div class="bar"><div class="lbl"><span>Mains Relevance</span><span>High</span></div><div class="track"><div class="fill" style="width:70%"></div></div></div>
+      <div class="bar"><div class="lbl"><span>Conceptual Difficulty</span><span>Low (fact-heavy)</span></div><div class="track"><div class="fill" style="width:40%"></div></div></div>
+    </div>
+    <div class="widget">
+      <h4>Key Numbers &amp; Facts</h4>
+      <ul>
+        <li><strong>4</strong> PA categories (WPA 1972)</li>
+        <li><strong>4</strong> hotspots in India; <strong>36</strong> globally</li>
+        <li><strong>1,500</strong> endemic plants + <strong>70%</strong> loss = hotspot</li>
+        <li><strong>50+</strong> tiger reserves; India = <strong>&gt;70%</strong> of wild tigers</li>
+        <li><strong>~3,682</strong> tigers (2022 census)</li>
+        <li><strong>30+</strong> elephant reserves across 4 landscapes</li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h4>Conservation Projects at a Glance</h4>
+      <ul>
+        <li><strong>Project Tiger</strong> — 1973 (NTCA)</li>
+        <li><strong>Project Elephant</strong> — 1992</li>
+        <li><strong>Project Snow Leopard</strong> — 2009</li>
+        <li><strong>Project Dolphin</strong> — 2020</li>
+        <li><strong>Project Cheetah</strong> — 2022 (Kuno)</li>
+        <li><strong>Project Lion</strong> — Gir, second-population plan</li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h4>Related Topics</h4>
+      <a class="chip" href="/environment/biosphere-and-biosphere-reserves">Topic 07: Biosphere Reserves</a>
+      <a class="chip" href="/environment/biodiversity-loss-and-threats">Topic 12: Biodiversity Loss &amp; Threats</a>
+      <a class="chip" href="/environment/ex-situ-conservation-and-forest-governance">Topic 14: Ex-Situ Conservation</a>
+    </div>
+    <div class="widget">
+      <h4>Must-Know Tags</h4>
+      <span class="tag orange">Biodiversity Hotspots</span>
+      <span class="tag">Project Tiger</span>
+      <span class="tag green">Sacred Groves</span>
+      <span class="tag">MPAs</span>
+      <span class="tag orange">Elephant Corridors</span>
+      <span class="tag green">PA Categories</span>
+    </div>
+    <div class="widget">
+      <h4>Quick Reference &mdash; PA Categories</h4>
+      <ul>
+        <li><strong>National Park</strong> — highest protection; no grazing/rights allowed</li>
+        <li><strong>Wildlife Sanctuary</strong> — some regulated rights permitted; can be upgraded to NP</li>
+        <li><strong>Conservation Reserve</strong> — govt-owned buffer land; managed with local community</li>
+        <li><strong>Community Reserve</strong> — private/community land; voluntary conservation</li>
+        <li>All 4 under <strong>WPA 1972</strong>; declared by State Govt</li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h4>Key Concepts to Remember</h4>
+      <ul>
+        <li><strong>In-situ</strong> = protect in natural habitat; <strong>Ex-situ</strong> = zoo/gene bank (Topic 14)</li>
+        <li><strong>Sacred groves</strong> = in-situ community conservation (common trap — NOT ex-situ)</li>
+        <li><strong>Tiger reserve</strong> = core (NP/WLS, inviolate) + buffer (multiple-use)</li>
+        <li><strong>Biosphere reserve</strong> zonation: core → buffer → transition</li>
+        <li><strong>Eco-Sensitive Zone (ESZ)</strong> — regulated belt around PA (default 10 km guideline)</li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h4>Data Sources to Bookmark</h4>
+      <a class="chip" href="https://ntca.gov.in" target="_blank" rel="noopener">NTCA (ntca.gov.in)</a>
+      <a class="chip" href="https://wii.gov.in" target="_blank" rel="noopener">Wildlife Institute of India</a>
+      <a class="chip" href="https://moef.gov.in" target="_blank" rel="noopener">MoEFCC</a>
+      <a class="chip" href="https://whc.unesco.org" target="_blank" rel="noopener">UNESCO WHC</a>
+    </div>
+    <div class="widget">
+      <h4>Quick Navigation</h4>
+      <a class="chip" href="#concept">Conceptual Clarity</a>
+      <a class="chip" href="#s3">Biodiversity Hotspots</a>
+      <a class="chip" href="#s11">Current Affairs</a>
+      <a class="chip" href="#s12">Prelims PYQs</a>
+      <a class="chip" href="#s13">Mains PYQs</a>
+      <a class="chip" href="#s14">Revision Box</a>
+    </div>
+  </div>
+</aside>
+</div>
+</div>

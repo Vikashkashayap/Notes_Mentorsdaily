@@ -1,0 +1,616 @@
+<!-- environment-topic09 — auto-imported from environment-topic09-organism-environment-interactions-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border:1px solid rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:6px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes p{margin:0 0 14px;color:#2a2f33}
+section.notes ul,section.notes ol{margin:0 0 14px;padding-left:22px;color:#2a2f33}
+section.notes li{margin-bottom:6px}
+.callout{background:#eefaf4;border-left:4px solid var(--green);padding:14px 18px;border-radius:8px;margin:16px 0;font-size:15px}
+.callout.warn{background:#fff4e8;border-left-color:var(--brand-orange)}
+.callout.info{background:#eaf2fb;border-left-color:#2563a8}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;padding:2px 8px;border-radius:10px;margin-left:6px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafcfd}
+.svg-wrap{border:1.5px dashed var(--line);border-radius:10px;padding:16px;margin:18px 0;background:#fcfdfe;text-align:center}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-wrap .cap{font-size:13px;color:var(--muted);margin-top:8px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:16px 0}
+.grid-4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin:16px 0}
+.card{border:1px solid var(--line);border-radius:10px;padding:16px;background:#fff}
+.card h4{margin:0 0 8px;color:var(--brand-blue-dark);font-size:15.5px}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:12px;padding:3px 10px;border-radius:20px;margin:2px 4px 2px 0}
+.tag.orange{background:#fdeedc;color:#8a4d0f}
+.tag.green{background:#e2f5ed;color:#0f5c3f}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);border-radius:8px;padding:16px 18px;margin:14px 0}
+.pyq .year{display:inline-block;background:var(--brand-orange);color:#fff;font-size:12px;font-weight:700;padding:2px 10px;border-radius:12px;margin-bottom:8px}
+.pyq p{margin:0 0 8px}
+.pyq .ans{font-weight:700;color:var(--green)}
+.pyq .options{list-style:none;margin:8px 0 10px;padding:0}
+.pyq .options li{padding:6px 12px;margin:4px 0;border:1px solid var(--line);border-radius:6px;background:#fafafa}
+.pyq .options li.correct{background:#eaf6f0;border-color:var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:26px;color:var(--brand-orange);font-weight:700}
+.model-answer{background:#f7faf9;border:1px solid var(--line);border-left:4px solid var(--green);border-radius:8px;padding:16px 20px;margin:10px 0}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark)}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:8px}
+.model-answer ul{margin:6px 0 0;padding-left:18px}
+.model-answer ul li{margin-bottom:4px;font-size:14px}
+.marks{display:inline-block;background:var(--brand-blue);color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:10px;margin-top:8px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:22px 26px;margin:24px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px;margin-bottom:20px}
+.widget h4{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark)}
+.widget .bar{margin-bottom:12px}
+.widget .lbl{display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px;color:var(--muted)}
+.widget .track{background:#eef1f4;border-radius:6px;height:8px;overflow:hidden}
+.widget .fill{background:var(--brand-orange);height:100%;border-radius:6px}
+.widget a.chip{display:block;padding:8px 10px;border:1px solid var(--line);border-radius:8px;font-size:13.5px;margin-bottom:8px;color:var(--text)}
+.widget a.chip:hover{border-color:var(--brand-orange);text-decoration:none;background:#fff8ec}
+.widget a.chip.soon{opacity:0.55;pointer-events:none}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c9d4dc;padding:28px 24px;text-align:center;font-size:13px;margin-top:20px}
+@media(max-width:860px){
+  .layout{grid-template-columns:1fr}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .toc ul{columns:1}
+}
+@media print{
+  .topnav,aside,footer{display:none}
+  .layout{padding-top:0;grid-template-columns:1fr}
+  .hero{background:#1b3a4b !important;-webkit-print-color-adjust:exact}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+  <div class="hero">
+    <h1>Topic 09: Organism-Environment Interactions</h1>
+    <p class="sub">How organisms cope with environmental stress — conformers vs regulators, thermoregulation and osmoregulation strategies, major limiting factors (light, temperature, pressure, humidity, topography), and the linked concepts of ecotone and ecological niche.</p>
+    <div class="meta">
+      <span class="pill primary">Topic 09 of 37</span>
+      <span class="pill">Reading time: 13 min</span>
+      <span class="pill">Prelims: High Yield</span>
+      <span class="pill">Mains: GS-III</span>
+    </div>
+  </div>
+
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ul>
+      <li><span class="num">1</span><a href="#s1">Organism-Environment Relationship</a></li>
+      <li><span class="num">2</span><a href="#s2">Conceptual Clarity — Habitat, Niche, Ecotone</a></li>
+      <li><span class="num">3</span><a href="#s3">Conformers vs Regulators</a></li>
+      <li><span class="num">4</span><a href="#s4">Thermoregulation — Bergmann's & Allen's Rules</a></li>
+      <li><span class="num">5</span><a href="#s5">Osmoregulation Strategies</a></li>
+      <li><span class="num">6</span><a href="#s6">Major Limiting Factors</a></li>
+      <li><span class="num">7</span><a href="#s7">Ecotone & Edge Effect</a></li>
+      <li><span class="num">8</span><a href="#s8">Ecological Niche — Fundamental vs Realized</a></li>
+      <li><span class="num">9</span><a href="#s9">Current Affairs</a></li>
+      <li><span class="num">10</span><a href="#s10">Prelims PYQs</a></li>
+      <li><span class="num">11</span><a href="#s11">Mains PYQs</a></li>
+      <li><span class="num">12</span><a href="#s12">Revision Box</a></li>
+    </ul>
+  </div>
+
+  <div class="concept-box" id="concept">
+    <h3>Conceptual Clarity — Why this Topic Matters</h3>
+    <p>UPSC tests organism-environment interactions in three distinct ways:</p>
+    <ul>
+      <li><strong>Definitional / static:</strong> exact meaning of conformer/regulator, eury-/steno-, ecotone, niche, fundamental vs realized — one-liner traps (2015, 2017 asked ecotone/niche definitions directly).</li>
+      <li><strong>Statement-elimination:</strong> multi-statement sets on tolerance limits, deep-sea adaptation, Bergmann/Allen — one wrong clause flips the answer (2013, 2018).</li>
+      <li><strong>Applied / current:</strong> climate-driven niche shifts, urban heat thermoregulation stress, ecotone buffer degradation (see Current Affairs section).</li>
+    </ul>
+    <p>Focus especially on <strong>conformer vs regulator (partial regulators)</strong>, <strong>fundamental vs realized niche + competitive exclusion</strong>, and <strong>ecotone/edge effect</strong> — the three highest-frequency themes.</p>
+  </div>
+
+  <section class="notes" id="s1">
+    <h2>1. Organism-Environment Relationship</h2>
+    <p>Every organism exists within a range of environmental conditions — physical (temperature, light, pressure) and chemical (salinity, pH, oxygen) — that it must tolerate, avoid, or actively regulate against. The relationship between an organism and its environment is studied under <strong>autecology</strong> (single-species/individual level) as opposed to <strong>synecology</strong> (community level).</p>
+    <p>Two foundational principles govern how organisms respond to environmental factors:</p>
+    <ul>
+      <li><strong>Law of Tolerance (Shelford, 1913):</strong> For every environmental factor, an organism has a minimum and maximum tolerable limit, with an optimum range in between. Too little or too much of any factor is limiting.</li>
+      <li><strong>Law of the Minimum (Liebig, 1840):</strong> Growth is controlled not by the total resources available but by the scarcest resource (limiting factor).</li>
+    </ul>
+    <div class="callout info">Organisms with a <strong>wide tolerance range</strong> for a factor are termed <em>eury-</em> (e.g., eurythermal, euryhaline); those with a <strong>narrow tolerance range</strong> are termed <em>steno-</em> (e.g., stenothermal, stenohaline). Eury-species tend to have wider geographic distribution.</p></div>
+  </section>
+
+  <section class="notes" id="s2">
+    <h2>2. Conceptual Clarity — Habitat, Niche, Ecotone</h2>
+    <div class="concept-box">
+      <h3>Don't confuse these three</h3>
+      <p><strong>Habitat</strong> is the physical "address" of an organism — where it lives (e.g., a tiger's habitat is deciduous forest). <strong>Ecological Niche</strong> is the organism's "profession" — its functional role, resource use, and relationships within the habitat (what it eats, when it's active, who it competes with). <strong>Ecotone</strong> is a transitional zone between two distinct ecosystems/communities (e.g., mangrove zone between land and sea), sharing characteristics of both and typically showing higher species richness than either adjoining community.</p>
+    </div>
+  </section>
+
+  <section class="notes" id="s3">
+    <h2>3. Conformers vs Regulators</h2>
+    <p>Organisms respond to a changing external environment (e.g., ambient temperature or salinity) in one of two broad strategic ways:</p>
+    <table>
+      <tr><th>Aspect</th><th>Conformers</th><th>Regulators</th></tr>
+      <tr><td>Strategy</td><td>Internal body condition changes/"conforms" passively with the external environment</td><td>Internal body condition is actively maintained constant (homeostasis) regardless of external fluctuation</td></tr>
+      <tr><td>Energy cost</td><td>Low — no active regulation machinery needed</td><td>High — continuous energy expenditure for regulation</td></tr>
+      <tr><td>Examples</td><td>Most invertebrates, fish, amphibians, reptiles (poikilotherms/ectotherms — body temp follows ambient)</td><td>Birds and mammals (homeotherms/endotherms — constant body temp ~37°C)</td></tr>
+      <tr><td>Ecological range</td><td>Generally restricted to environments with limited fluctuation, or must become dormant/migrate during extremes</td><td>Can colonise a much wider range of habitats, including extreme cold (Arctic) and heat (desert)</td></tr>
+    </table>
+    <div class="callout warn"><strong>Partial regulators</strong> regulate one internal parameter but conform for another — e.g., many fish regulate osmotic concentration (osmoregulators) but conform to ambient temperature (thermoconformers). This mixed strategy is frequently tested — do not assume "regulator" means regulation of everything.</div>
+
+    <h3>The Four Ways Organisms Cope with Environmental Stress</h3>
+    <p>NCERT frames organism response to a stressful/unfavourable environment as four strategies. <strong>Regulate and Conform</strong> (above) are two; the other two — <strong>Migrate and Suspend</strong> — are equally examinable:</p>
+    <table>
+      <tr><th>Strategy</th><th>Mechanism</th><th>Examples</th></tr>
+      <tr><td><strong>Regulate</strong></td><td>Maintain constant internal <em>milieu</em> (homeostasis) via physiological/behavioural means</td><td>All birds &amp; mammals; some lower vertebrates/invertebrates for select traits</td></tr>
+      <tr><td><strong>Conform</strong></td><td>Internal state changes with external; ~99% of animals &amp; nearly all plants — regulation too costly</td><td>Most fish, amphibians, reptiles, invertebrates, all plants</td></tr>
+      <tr><td><strong>Migrate</strong></td><td>Temporarily move away from stressful habitat to a favourable one, returning later</td><td>Siberian crane → Keoladeo (Bharatpur); flamingoes → Rann of Kutch; alpine-to-valley altitudinal migration</td></tr>
+      <tr><td><strong>Suspend</strong></td><td>Enter reduced-metabolism dormancy until conditions improve</td><td>Bear hibernation; snail/fish aestivation; insect diapause; bacterial spores; seed dormancy</td></tr>
+    </table>
+    <div class="callout info"><strong>Dormancy types (do not confuse):</strong> <strong>Hibernation</strong> = winter/cold dormancy (bears, some rodents); <strong>Aestivation</strong> = summer/heat-and-dry dormancy (snails, lungfish); <strong>Diapause</strong> = suspended development in an insect/zooplankton life-stage during adverse conditions; <strong>Seed/spore dormancy</strong> = plants and microbes wait out stress as resistant propagules.</div>
+  </section>
+
+  <section class="notes" id="s4">
+    <h2>4. Thermoregulation — Bergmann's & Allen's Rules</h2>
+    <p>Endotherms (regulators) that live in cold climates show consistent morphological adaptations to minimise heat loss, formalised as two classic ecogeographic rules:</p>
+    <div class="grid-2">
+      <div class="card">
+        <h4>Bergmann's Rule</h4>
+        <p>Within a species (or closely related species), individuals in colder/higher-latitude climates tend to be <strong>larger in body size</strong> than those in warmer climates. A larger body has a lower surface-area-to-volume ratio, reducing heat loss per unit body mass. Example: Polar bears are larger than sun bears; Kodiak brown bears (Alaska) are larger than brown bears further south.</td>
+      </div>
+      <div class="card">
+        <h4>Allen's Rule</h4>
+        <p>Animals in colder climates tend to have <strong>shorter limbs, ears, and other extremities</strong> relative to body size, again to minimise surface area for heat loss. Warmer-climate relatives have longer extremities to aid heat dissipation. Example: Arctic fox (short ears/legs) vs Fennec fox (large ears, desert).</p>
+      </div>
+    </div>
+    <p>Other thermoregulatory adaptations: countercurrent heat exchange in extremities (Arctic mammals), hibernation/torpor (reduces metabolic demand during cold), aestivation (dormancy during extreme heat/drought, seen in lungfish, snails), and behavioural thermoregulation in ectotherms (basking in sun, seeking shade — reptiles regulate body temperature almost entirely through behaviour).</p>
+    <div class="svg-wrap">
+      <svg viewBox="0 0 640 210" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="640" height="210" fill="#fcfdfe"/>
+        <text x="320" y="26" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2035">Why bigger body = less heat loss (Bergmann's logic)</text>
+        <circle cx="150" cy="120" r="30" fill="#e0edf7" stroke="#1a3d5c" stroke-width="1.5"/>
+        <text x="150" y="124" text-anchor="middle" font-size="11" fill="#0d2035">small</text>
+        <text x="150" y="172" text-anchor="middle" font-size="12" font-weight="700" fill="#8a4d0f">High SA : Vol</text>
+        <text x="150" y="190" text-anchor="middle" font-size="11" fill="#5a6266">more heat lost → warm climate</text>
+        <circle cx="470" cy="115" r="58" fill="#dff0e0" stroke="#1a7a5a" stroke-width="1.5"/>
+        <text x="470" y="119" text-anchor="middle" font-size="12" fill="#0d2035">large</text>
+        <text x="470" y="188" text-anchor="middle" font-size="12" font-weight="700" fill="#0f5c3f">Low SA : Vol</text>
+        <text x="470" y="206" text-anchor="middle" font-size="11" fill="#5a6266">heat conserved → cold climate</text>
+        <path d="M215 120 L400 118" stroke="#c47820" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#e09ar)"/>
+        <defs><marker id="e09ar" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" fill="#c47820"/></marker></defs>
+        <text x="308" y="108" text-anchor="middle" font-size="11" fill="#8a4d0f">colder → larger</text>
+      </svg>
+      <div class="cap">Fig 9.2 — Surface-area-to-volume ratio: larger bodies lose proportionally less heat, driving Bergmann's Rule</div>
+    </div>
+  </section>
+
+  <section class="notes" id="s5">
+    <h2>5. Osmoregulation Strategies</h2>
+    <p>Osmoregulation is the active regulation of internal water and solute (ion) balance against the external environment's osmotic pressure — critical for aquatic organisms.</p>
+    <table>
+      <tr><th>Habitat</th><th>Osmotic challenge</th><th>Strategy</th></tr>
+      <tr><td>Freshwater fish</td><td>Surrounding water is hypotonic (less salty) — water constantly enters body, salts are lost</td><td>Excrete large volumes of dilute urine; actively absorb salts through gills</td></tr>
+      <tr><td>Marine (bony) fish</td><td>Surrounding water is hypertonic (saltier) — body constantly loses water, gains salt</td><td>Drink seawater; excrete small volume of concentrated urine; actively pump excess salt out through gills</td></tr>
+      <tr><td>Marine sharks/rays (elasmobranchs)</td><td>Same hypertonic challenge</td><td>Retain urea in blood to raise internal osmotic concentration close to seawater — avoids constant water loss</td></tr>
+      <tr><td>Terrestrial animals</td><td>Water loss via evaporation, respiration, excretion</td><td>Concentrated urine, dry faeces, nocturnal/burrowing behaviour, metabolic water production (desert rodents, camels)</td></tr>
+    </table>
+  </section>
+
+  <section class="notes" id="s6">
+    <h2>6. Major Limiting Factors</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h4>Light</h4>
+        <p>Governs photosynthesis (primary productivity), photoperiodism (flowering, migration, breeding cycles triggered by day length), and vertical stratification in forests/aquatic systems (photic vs aphotic zones).</p>
+      </div>
+      <div class="card">
+        <h4>Temperature</h4>
+        <p>Controls metabolic rate, enzyme activity, and species distribution limits (latitudinal and altitudinal). Governs poikilotherm activity levels directly.</p>
+      </div>
+      <div class="card">
+        <h4>Pressure (Altitude/Depth)</h4>
+        <p>High-altitude organisms adapt via increased red blood cell count/haemoglobin affinity (humans, yaks); deep-sea organisms tolerate extreme hydrostatic pressure via flexible membranes, lack of gas-filled cavities.</p>
+      </div>
+      <div class="card">
+        <h4>Humidity</h4>
+        <p>Determines desiccation risk, especially for amphibians (moist skin respiration) and terrestrial invertebrates; drives xerophytic adaptations in dry regions.</p>
+      </div>
+      <div class="card">
+        <h4>Topography (Edaphic/Physiographic)</h4>
+        <p>Slope, aspect (sun-facing vs shade-facing), and soil type (edaphic factors) influence microclimate, drainage, and vegetation zonation on hillsides — e.g., south-facing slopes in the Himalaya are warmer/drier than north-facing.</p>
+      </div>
+      <div class="card">
+        <h4>Salinity</h4>
+        <p>A key limiting factor in aquatic/estuarine systems, driving zonation of mangrove and estuarine species along the freshwater-to-marine gradient.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="notes" id="s7">
+    <h2>7. Ecotone & Edge Effect</h2>
+    <p>An <strong>ecotone</strong> is a zone of transition between two adjacent but different ecological communities/ecosystems (e.g., grassland-forest boundary, riverbank, mangrove belt between land and sea, estuary between river and ocean).</p>
+    <h3>Characteristics of an Ecotone</h3>
+    <ul>
+      <li>May be narrow (sharp boundary) or wide (gradual gradient).</li>
+      <li>Contains species from both adjoining communities, plus species exclusive to the ecotone itself.</li>
+      <li>Often exhibits a greater number/density of species and greater population density of some species than either adjacent community — this phenomenon is called the <strong>Edge Effect</strong>.</li>
+      <li>Organisms found predominantly in an ecotone (found at higher density than in adjoining communities) are termed <strong>edge species</strong>.</li>
+    </ul>
+    <div class="svg-wrap">
+      <svg viewBox="0 0 640 220" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="640" height="220" fill="#fcfdfe"/>
+        <rect x="20" y="40" width="240" height="140" fill="#dff0e0" stroke="#1a7a5a" stroke-width="1.5"/>
+        <text x="140" y="35" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Community A (Grassland)</text>
+        <rect x="380" y="40" width="240" height="140" fill="#e0edf7" stroke="#1a3d5c" stroke-width="1.5"/>
+        <text x="500" y="35" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Community B (Forest)</text>
+        <rect x="260" y="40" width="120" height="140" fill="#fdeedc" stroke="#c47820" stroke-width="2" stroke-dasharray="4,3"/>
+        <text x="320" y="200" text-anchor="middle" font-size="13" font-weight="700" fill="#8a4d0f">Ecotone (Edge Effect Zone)</text>
+        <text x="320" y="110" text-anchor="middle" font-size="11" fill="#5a6266">Species from</text>
+        <text x="320" y="126" text-anchor="middle" font-size="11" fill="#5a6266">A + B + exclusive</text>
+        <text x="320" y="142" text-anchor="middle" font-size="11" fill="#5a6266">edge species</text>
+        <circle cx="150" cy="100" r="3" fill="#1a7a5a"/><circle cx="180" cy="130" r="3" fill="#1a7a5a"/><circle cx="120" cy="140" r="3" fill="#1a7a5a"/>
+        <circle cx="480" cy="100" r="3" fill="#1a3d5c"/><circle cx="450" cy="130" r="3" fill="#1a3d5c"/><circle cx="510" cy="140" r="3" fill="#1a3d5c"/>
+        <circle cx="290" cy="90" r="3" fill="#c47820"/><circle cx="350" cy="110" r="3" fill="#1a7a5a"/><circle cx="300" cy="150" r="3" fill="#1a3d5c"/><circle cx="360" cy="70" r="3" fill="#c47820"/>
+      </svg>
+      <div class="cap">Fig 9.1 — Ecotone as a transition zone showing edge effect (higher species density than adjoining communities)</div>
+    </div>
+  </section>
+
+  <section class="notes" id="s8">
+    <h2>8. Ecological Niche — Fundamental vs Realized</h2>
+    <p>The <strong>ecological niche</strong> (G.E. Hutchinson's multidimensional concept, 1957) describes the complete set of biotic and abiotic conditions and resources needed for a species to practice its "way of life" — including habitat, diet, activity timing, breeding requirements, and interactions with other species. Hutchinson visualised niche as an n-dimensional hypervolume defined by all relevant environmental variables.</p>
+    <table>
+      <tr><th>Type</th><th>Definition</th></tr>
+      <tr><td><strong>Fundamental Niche</strong></td><td>The full range of conditions and resources a species could theoretically use/occupy in the total absence of competition or predation — the potential niche.</td></tr>
+      <tr><td><strong>Realized Niche</strong></td><td>The actual, narrower range of conditions and resources a species occupies in practice, after accounting for competition, predation, and other biotic interactions that restrict it.</td></tr>
+    </table>
+    <div class="callout">Gause's <strong>Competitive Exclusion Principle</strong> follows directly from niche theory: no two species can indefinitely occupy the exact same realized niche in the same habitat — competition will eventually eliminate one, force niche differentiation (resource partitioning), or drive one to a different geographic range.</div>
+    <p><strong>Niche width</strong> (broad generalist vs narrow specialist) and <strong>niche overlap</strong> (degree of resource-use similarity between species) are key determinants of interspecific competition intensity.</p>
+  </section>
+
+  <section class="notes" id="s9">
+    <h2>9. Current Affairs Link (2024–2026)</h2>
+    <div class="callout update">
+      <strong>Climate-driven niche shifts<span class="update-tag">check for latest update or data</span></strong>
+      <p>Global research (IPBES assessments, IPCC AR6 follow-up) increasingly documents species undergoing poleward and upslope range shifts as their realized niches track shifting temperature bands. Mountain and coastal <strong>ecotone communities</strong> are flagged as most vulnerable to "niche compression" — squeezed against physical limits (mountain-top, coastline) with nowhere further to move. Directly links the realized-niche concept to climate-adaptation policy.</p>
+    </div>
+    <div class="callout update">
+      <strong>Urban heat islands & thermoregulation stress<span class="update-tag">check for latest update or data</span></strong>
+      <p>Indian city Heat Action Plans (Delhi, Ahmedabad, Chennai — updated 2024–2025) increasingly note that urban ectotherms (reptiles, insects) and endotherms (birds, stray animals) face amplified thermoregulatory stress from urban heat islands, feeding into municipal heat-resilience planning under NDMA guidelines.</p>
+    </div>
+    <div class="callout update">
+      <strong>Wetland–agriculture ecotone buffers<span class="update-tag">check for latest update or data</span></strong>
+      <p>State wetland authorities have flagged degrading ecotone buffers around Ramsar sites (agricultural encroachment at edge zones) as a monitoring priority under the Wetlands (Conservation & Management) Rules, 2017 — a live example of edge-effect zones under anthropogenic pressure.</p>
+    </div>
+  </section>
+
+  <section class="notes" id="s10">
+    <h2>10. Prelims PYQs</h2>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2021</div>
+      <p><strong>Q.</strong> With reference to India's biodiversity, Cheetal (Spotted Deer) is the more common inhabitant of which of the following?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>Coastal areas of southern India</li>
+        <li class="correct"><span class="opt-key">(b)</span>Deciduous and moist forests of Central and Southern India</li>
+        <li><span class="opt-key">(c)</span>Himalayan foothills</li>
+        <li><span class="opt-key">(d)</span>Thorny scrub forests of Western India</li>
+      </ul>
+      <p class="ans"><strong>Ans: (b).</strong> Cheetal are habitat-specialists of deciduous/moist forest — a niche/habitat mapping question.</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2018</div>
+      <p><strong>Q.</strong> With reference to organisms inhabiting the deep sea regions of oceans, which of the statements given below is/are correct?<br>
+      1. Deep sea organisms cannot survive without sunlight.<br>
+      2. Some organisms can live even at temperatures higher than 100°C.<br>
+      3. Some organisms live at pressure over 200 times the atmospheric pressure.</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>1 and 2 only</li>
+        <li class="correct"><span class="opt-key">(b)</span>2 and 3 only</li>
+        <li><span class="opt-key">(c)</span>1 and 3 only</li>
+        <li><span class="opt-key">(d)</span>1, 2 and 3</li>
+      </ul>
+      <p class="ans"><strong>Ans: (b).</strong> Chemosynthetic communities at hydrothermal vents need no sunlight (St.1 wrong); thermophiles survive &gt;100°C and organisms tolerate &gt;200 atm (St.2, 3 correct).</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2017</div>
+      <p><strong>Q.</strong> Which of the following statements best describes the term "ecological niche"?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>The physical space occupied by an organism</li>
+        <li class="correct"><span class="opt-key">(b)</span>The functional role and position of an organism in its ecosystem</li>
+        <li><span class="opt-key">(c)</span>The number of individuals of a species in an area</li>
+        <li><span class="opt-key">(d)</span>The climatic zone in which an organism is found</li>
+      </ul>
+      <p class="ans"><strong>Ans: (b).</strong> Niche = functional role ("profession"); the physical space (a) is the habitat ("address").</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2015</div>
+      <p><strong>Q.</strong> In the context of ecosystems, which one of the following terms best describes the transition zone between two distinct ecological communities, containing species from both as well as species unique to itself?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>Biome</li>
+        <li class="correct"><span class="opt-key">(b)</span>Ecotone</li>
+        <li><span class="opt-key">(c)</span>Habitat</li>
+        <li><span class="opt-key">(d)</span>Biosphere reserve</li>
+      </ul>
+      <p class="ans"><strong>Ans: (b).</strong> Textbook ecotone definition — transition zone + edge species; note the edge effect (higher species density).</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2013</div>
+      <p><strong>Q.</strong> Consider the following statements regarding organisms and their environment:<br>
+      1. Organisms with a narrow range of tolerance to an environmental factor are called stenotypic.<br>
+      2. Organisms with a wide range of tolerance are called eurytypic.<br>
+      3. Eurytypic species tend to have a narrower geographic distribution than stenotypic species.</p>
+      <ul class="options">
+        <li class="correct"><span class="opt-key">(a)</span>1 and 2 only</li>
+        <li><span class="opt-key">(b)</span>3 only</li>
+        <li><span class="opt-key">(c)</span>1, 2 and 3</li>
+        <li><span class="opt-key">(d)</span>2 only</li>
+      </ul>
+      <p class="ans"><strong>Ans: (a).</strong> St.1 &amp; 2 correct; St.3 reversed — eurytypic (wide tolerance) species have <em>wider</em>, not narrower, geographic distribution.</p>
+    </div>
+  </section>
+
+  <section class="notes" id="s11">
+    <h2>11. Mains PYQs</h2>
+    <div class="pyq">
+      <div class="year">GS-III 2019</div>
+      <p><strong>Q.</strong> Explain the concept of ecological niche with suitable examples, and discuss how niche differentiation reduces interspecific competition among coexisting species.</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> Define niche (Hutchinson's n-dimensional hypervolume) — the functional role of a species, distinct from habitat (its physical address).</li>
+          <li><strong>Body:</strong>
+            <ul>
+              <li><strong>Fundamental vs realized niche:</strong> potential range without competition vs actual range after biotic pressure.</li>
+              <li><strong>Competitive Exclusion (Gause):</strong> two species cannot indefinitely share the same realized niche.</li>
+              <li><strong>Niche differentiation / resource partitioning:</strong> MacArthur's warblers feeding at different tree heights; temporal separation (nocturnal vs diurnal); dietary specialisation — each relaxes competition and enables coexistence.</li>
+              <li><strong>Indian examples:</strong> tiger vs leopard prey-size partitioning; sympatric herbivores (chital vs sambar) using different forest strata.</li>
+            </ul>
+          </li>
+          <li><strong>Conclusion:</strong> Niche differentiation underpins biodiversity and community stability; its erosion (habitat loss, invasive species) intensifies competition and extinction risk.</li>
+        </ol>
+        <span class="marks">200 words · 15 marks</span>
+      </div>
+    </div>
+    <div class="pyq">
+      <div class="year">GS-III 2016</div>
+      <p><strong>Q.</strong> What are the major adaptations seen in organisms living in extreme thermal environments? Discuss with reference to Bergmann's and Allen's rules.</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> Endotherms in cold climates evolve morphological/physiological traits to conserve heat; these are captured in two ecogeographic rules.</li>
+          <li><strong>Body:</strong>
+            <ul>
+              <li><strong>Bergmann's Rule:</strong> larger body in colder climates → lower surface-area-to-volume ratio → less heat loss (polar bear vs sun bear).</li>
+              <li><strong>Allen's Rule:</strong> shorter extremities (ears, limbs) in cold climates (Arctic fox vs Fennec fox).</li>
+              <li><strong>Other cold adaptations:</strong> countercurrent heat exchange, hibernation/torpor, insulating fur/blubber.</li>
+              <li><strong>Heat/desert adaptations:</strong> aestivation, nocturnality, metabolic water (camel, kangaroo rat), behavioural thermoregulation in ectotherms.</li>
+            </ul>
+          </li>
+          <li><strong>Conclusion:</strong> Thermal adaptations determine species' geographic limits; climate warming is shifting these limits, stressing cold-adapted taxa.</li>
+        </ol>
+        <span class="marks">200 words · 15 marks</span>
+      </div>
+    </div>
+    <div class="pyq">
+      <div class="year">GS-I 2014</div>
+      <p><strong>Q.</strong> Discuss the significance of ecotones in maintaining biodiversity, with suitable Indian examples.</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> Define ecotone — transition zone between two communities, holding species of both plus exclusive edge species.</li>
+          <li><strong>Body:</strong>
+            <ul>
+              <li><strong>Edge effect:</strong> higher species richness/density than either adjoining community → biodiversity hotspots.</li>
+              <li><strong>Ecological services:</strong> genetic exchange corridors, buffer against disturbance, nutrient filtering.</li>
+              <li><strong>Indian examples:</strong> Sundarbans mangrove belt (land–sea), Chilika/estuarine zones (river–ocean), Terai grassland–Himalayan forest transition, riparian buffers.</li>
+              <li><strong>Threats:</strong> agricultural encroachment, salinity change, embankments compressing edge zones.</li>
+            </ul>
+          </li>
+          <li><strong>Conclusion:</strong> Protecting ecotone buffers (Wetland Rules 2017, coastal regulation) is essential for landscape-level biodiversity conservation.</li>
+        </ol>
+        <span class="marks">150 words · 10 marks</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="notes" id="s12">
+    <h2>15-Minute Revision Box</h2>
+    <div class="revision-box">
+      <h3>Must-Remember Facts &mdash; Organism &amp; Environment Interactions</h3>
+      <div class="grid-2">
+        <div>
+          <strong>Response to Environment:</strong>
+          <ul>
+            <li><strong>Conformers:</strong> internal state follows environment (most invertebrates, ectotherms)</li>
+            <li><strong>Regulators:</strong> maintain constant internal state (birds, mammals &mdash; endotherms)</li>
+            <li><strong>Partial regulators:</strong> regulate one parameter, conform for another (fish regulate osmotic pressure, conform to temperature)</li>
+          </ul>
+          <strong>Body-Size &amp; Climate Rules:</strong>
+          <ul>
+            <li><strong>Bergmann's Rule:</strong> larger body size in colder climates</li>
+            <li><strong>Allen's Rule:</strong> shorter extremities in colder climates</li>
+            <li><strong>Osmoregulation:</strong> freshwater fish gain water/lose salt &rarr; dilute urine; marine fish lose water/gain salt &rarr; drink seawater + concentrated urine</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Tolerance &amp; Distribution:</strong>
+          <ul>
+            <li><strong>Eury-</strong> = wide tolerance (wide distribution) | <strong>Steno-</strong> = narrow tolerance (restricted)</li>
+            <li><strong>Ecotone:</strong> transition zone between communities; shows Edge Effect (higher species density)</li>
+          </ul>
+          <strong>Niche Concepts:</strong>
+          <ul>
+            <li><strong>Ecological Niche</strong> (Hutchinson): functional role, n-dimensional hypervolume</li>
+            <li><strong>Fundamental niche</strong> (potential, no competition) vs <strong>Realized niche</strong> (actual, after competition)</li>
+            <li><strong>Competitive Exclusion Principle</strong> (Gause): two species cannot indefinitely share the same realized niche</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<aside>
+  <div class="aside-sticky">
+    <div class="widget">
+      <h4>Difficulty &amp; Importance</h4>
+      <div class="bar"><div class="lbl"><span>Prelims Relevance</span><span>High</span></div><div class="track"><div class="fill" style="width:82%"></div></div></div>
+      <div class="bar"><div class="lbl"><span>Mains Relevance</span><span>Moderate</span></div><div class="track"><div class="fill" style="width:58%"></div></div></div>
+      <div class="bar"><div class="lbl"><span>Conceptual Difficulty</span><span>Moderate</span></div><div class="track"><div class="fill" style="width:55%"></div></div></div>
+    </div>
+    <div class="widget">
+      <h4>Related Topics</h4>
+      <a class="chip" href="/environment/species-interactions-and-functional-classes">Topic 02: Species Interactions</a>
+      <a class="chip" href="/environment/carrying-capacity-and-population-growth">Topic 03: Carrying Capacity</a>
+      <a class="chip" href="/environment/biogeochemical-cycles">Topic 10: Biogeochemical Cycles</a>
+    </div>
+    <div class="widget">
+      <h4>Must-Know Tags</h4>
+      <span class="tag orange">Conformers</span>
+      <span class="tag">Regulators</span>
+      <span class="tag green">Ecotone</span>
+      <span class="tag">Ecological Niche</span>
+      <span class="tag orange">Bergmann's Rule</span>
+      <span class="tag">Osmoregulation</span>
+    </div>
+    <div class="widget">
+      <h4>Key Numbers &amp; Facts</h4>
+      <ul style="margin:0;padding-left:18px;font-size:13.5px;line-height:1.6">
+        <li>Law of Tolerance — <strong>Shelford, 1913</strong></li>
+        <li>Law of the Minimum — <strong>Liebig, 1840</strong></li>
+        <li>n-dimensional niche — <strong>Hutchinson, 1957</strong></li>
+        <li>Competitive Exclusion — <strong>Gause</strong></li>
+        <li>Homeotherm body temp ≈ <strong>37°C</strong></li>
+        <li>Deep-sea life tolerates <strong>&gt;200 atm</strong> &amp; <strong>&gt;100°C</strong> (vents)</li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h4>Interactions at a Glance</h4>
+      <ul style="margin:0;padding-left:18px;font-size:13.5px;line-height:1.6">
+        <li><strong>Conformer</strong> = internal follows external (ectotherm)</li>
+        <li><strong>Regulator</strong> = constant internal state (endotherm)</li>
+        <li><strong>Eury-</strong> wide / <strong>Steno-</strong> narrow tolerance</li>
+        <li><strong>Bergmann</strong> = bigger body, cold | <strong>Allen</strong> = shorter extremities, cold</li>
+        <li><strong>Fundamental</strong> (potential) vs <strong>Realized</strong> (actual) niche</li>
+        <li><strong>Ecotone</strong> → edge effect (more species)</li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h4>Quick Reference &mdash; Adaptation Strategies</h4>
+      <ul style="margin:0;padding-left:18px;font-size:13.5px;line-height:1.6">
+        <li><strong>Regulate</strong> — keep internal state constant (mammals, birds; costly)</li>
+        <li><strong>Conform</strong> — internal state tracks external (99% of animals, all plants)</li>
+        <li><strong>Migrate</strong> — move away from stress (Siberian crane → Keoladeo)</li>
+        <li><strong>Suspend</strong> — dormancy: hibernation (cold), aestivation (heat/dry), diapause (larva), spore/seed</li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h4>Key Concepts to Remember</h4>
+      <ul style="margin:0;padding-left:18px;font-size:13.5px;line-height:1.6">
+        <li><strong>Adaptation</strong> = genetic, over generations; <strong>Acclimatisation</strong> = short-term, single lifetime (trap)</li>
+        <li><strong>Homeostasis</strong> = maintaining internal stability despite external change</li>
+        <li><strong>Partial regulators</strong> — regulate within a range, then conform beyond it</li>
+        <li><strong>Allen's rule</strong> reduces heat loss; <strong>Bergmann's rule</strong> lowers surface-to-volume ratio</li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h4>Data Sources to Bookmark</h4>
+      <a class="chip" href="https://www.ipbes.net" target="_blank" rel="noopener">IPBES — biodiversity assessments</a>
+      <a class="chip" href="https://www.ipcc.ch" target="_blank" rel="noopener">IPCC — AR6 & climate range-shift data</a>
+      <a class="chip" href="https://ndma.gov.in" target="_blank" rel="noopener">NDMA — Heat Action Plans</a>
+      <a class="chip" href="https://ncert.nic.in" target="_blank" rel="noopener">NCERT — Biology (Organisms & Populations)</a>
+    </div>
+    <div class="widget">
+      <h4>Quick Navigation</h4>
+      <a class="chip" href="#s3">Conformers vs Regulators</a>
+      <a class="chip" href="#s4">Bergmann's & Allen's Rules</a>
+      <a class="chip" href="#s7">Ecotone & Edge Effect</a>
+      <a class="chip" href="#s8">Ecological Niche</a>
+      <a class="chip" href="#s12">Revision Box</a>
+    </div>
+  </div>
+</aside>
+</div>
+</div>

@@ -1,0 +1,994 @@
+<!-- environment-topic04 — auto-imported from environment-topic04-ecosystem-structure-function-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border:1px solid rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:6px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;padding:2px 8px;border-radius:10px;margin-left:6px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .options{list-style:none;padding-left:0;margin:10px 0 8px}
+.pyq .options li{margin:5px 0;padding:7px 12px;background:#fff;border:1px solid var(--line);border-radius:6px}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin-top:8px;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;color:var(--brand-blue-dark);text-transform:uppercase;letter-spacing:0.5px;border-bottom:2px solid var(--brand-orange);padding-bottom:6px}
+.model-answer ol{padding-left:20px;margin:0}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 0;padding-left:18px}
+.model-answer ul li{margin-bottom:3px;font-size:13px;color:var(--muted)}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;font-weight:700;padding:2px 9px;border-radius:12px;margin-top:8px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Topic 04: Ecosystem Structure &amp; Function</h1>
+    <p class="sub">Abiotic and biotic components of ecosystems, energy flow and the laws of thermodynamics, Lindeman's Ten Percent Law, grazing vs detritus food chains, food webs, biomass and standing crop, all three ecological pyramids, and productivity (GPP, NPP, Secondary Productivity, Standing Crop vs Standing State).</p>
+    <div class="meta">
+      <span class="pill primary">GS Paper III — Environment &amp; Ecology</span>
+      <span class="pill">UPSC Prelims + Mains</span>
+      <span class="pill">High Importance</span>
+      <span class="pill">Read Time: 15 min</span>
+      <span class="pill">Updated: July 2026</span>
+    </div>
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ul>
+      <li><span class="num">1.</span><a href="#ecosystem-structure">Ecosystem Structure — Abiotic &amp; Biotic Components</a></li>
+      <li><span class="num">2.</span><a href="#conceptual-clarity">Conceptual Clarity — GPP vs NPP vs Secondary Productivity</a></li>
+      <li><span class="num">3.</span><a href="#energy-flow">Energy Flow &amp; the Laws of Thermodynamics</a></li>
+      <li><span class="num">4.</span><a href="#food-chain">Food Chain — Grazing vs Detritus</a></li>
+      <li><span class="num">5.</span><a href="#food-web">Food Web</a></li>
+      <li><span class="num">6.</span><a href="#biomass-standing-crop">Biomass &amp; Standing Crop</a></li>
+      <li><span class="num">7.</span><a href="#ecological-pyramids">Ecological Pyramids</a></li>
+      <li><span class="num">8.</span><a href="#productivity">Productivity — GPP, NPP, Secondary &amp; Standing State</a></li>
+      <li><span class="num">9.</span><a href="#current-affairs">Current Affairs Link</a></li>
+      <li><span class="num">10.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+      <li><span class="num">11.</span><a href="#mains-pyq">Mains PYQs</a></li>
+      <li><span class="num">12.</span><a href="#revision">15-Minute Revision Box</a></li>
+    </ul>
+  </div>
+
+  <!-- CONCEPTUAL CLARITY (top orienting box) -->
+  <div class="concept-box" id="concept">
+    <h3>Conceptual Clarity — Why this Topic Matters</h3>
+    <p>UPSC tests Ecosystem Structure &amp; Function in three distinct ways. Knowing which question-type you face decides how you study each heading below:</p>
+    <ul>
+      <li><strong>Definitional / static</strong> — "State the Ten Percent Law", "What is NPP?", "Who coined the term ecosystem?" Memorise exact definitions, formulae (GPP − R = NPP), Lindeman's 10% law, and attributions (Tansley 1935, Lindeman 1942, Odum).</li>
+      <li><strong>Statement-elimination</strong> — two/three statements distinguishing GPP vs NPP, grazing vs detritus food chains, or which ecological pyramid can be inverted, where one wrong word makes a statement false. Trains you to read boundaries precisely.</li>
+      <li><strong>Applied / current</strong> — Mains and analytical Prelims linking energy-flow inefficiency to food-security/trophic concentration of pollutants (biomagnification), and productivity to carbon-sink debates. Needs concept + latest data.</li>
+    </ul>
+    <p>Focus especially on the highest-frequency themes: the <strong>Ten Percent Law &amp; energy-flow (thermodynamics)</strong>, <strong>GPP/NPP/Secondary productivity distinction</strong>, <strong>grazing vs detritus food chains</strong>, and the <strong>three ecological pyramids (which invert)</strong>. These account for the bulk of every question set on this topic.</p>
+  </div>
+
+  <!-- SECTION 1: ECOSYSTEM STRUCTURE -->
+  <section class="notes" id="ecosystem-structure">
+    <h2>1. Ecosystem Structure — Abiotic &amp; Biotic Components</h2>
+    <p>An <strong>ecosystem</strong> is a functional unit of nature in which a biotic community interacts with its abiotic (non-living) environment as a single system, exchanging energy and matter — the term was coined by <strong>A.G. Tansley (1935)</strong>. Its structure has two components: abiotic and biotic.</p>
+
+    <h3>Abiotic Components</h3>
+    <div class="grid-3">
+      <div class="card">
+        <h4>Climatic Factors</h4>
+        <ul>
+          <li><strong>Light</strong> — intensity, quality, photoperiod; drives photosynthesis and flowering.</li>
+          <li><strong>Temperature</strong> — controls metabolic rate, enzyme activity, species range.</li>
+          <li><strong>Rainfall/Humidity</strong> — governs water availability, vegetation type.</li>
+          <li><strong>Wind</strong> — aids pollination, seed dispersal; increases transpiration.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Edaphic (Soil) Factors</h4>
+        <ul>
+          <li><strong>Soil pH</strong> — acidic/alkaline/neutral; controls nutrient solubility and uptake.</li>
+          <li><strong>Soil texture</strong> — sand-silt-clay ratio; determines water-holding capacity and aeration.</li>
+          <li><strong>Soil nutrients</strong> — N, P, K and micronutrients; determine primary productivity.</li>
+          <li><strong>Humus/organic content</strong> — improves fertility and moisture retention.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Topographic Factors</h4>
+        <ul>
+          <li><strong>Altitude</strong> — falling temperature with elevation drives vertical vegetation zonation.</li>
+          <li><strong>Slope</strong> — affects drainage, soil erosion and soil depth.</li>
+          <li><strong>Aspect</strong> — north-facing vs south-facing slopes receive different solar exposure, creating distinct microclimates.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Biotic Components</h3>
+    <h4>1. Producers (Autotrophs)</h4>
+    <div class="grid-2">
+      <div class="card">
+        <h4>Photoautotrophs <span class="tag">Photosynthesis</span></h4>
+        <p>Use sunlight to convert CO&#8322; and water into organic matter.</p>
+        <p><em>Examples:</em> Green plants, algae, cyanobacteria (blue-green algae).</p>
+      </div>
+      <div class="card">
+        <h4>Chemoautotrophs <span class="tag orange">Chemosynthesis</span></h4>
+        <p>Use energy from oxidising inorganic chemicals (not sunlight) to synthesise organic matter.</p>
+        <p><em>Examples:</em> Nitrifying bacteria in soil; sulphur bacteria at deep-sea hydrothermal vents, where no sunlight penetrates.</p>
+      </div>
+    </div>
+
+    <h4>2. Consumers (Heterotrophs) — Full Trophic Classification</h4>
+    <table>
+      <tr><th>Consumer Type</th><th>Feeds On</th><th>Trophic Level</th><th>Example</th></tr>
+      <tr><td>Primary Consumers (Herbivores)</td><td>Producers directly</td><td>2nd trophic level</td><td>Deer, grasshopper, zooplankton, cattle</td></tr>
+      <tr><td>Secondary Consumers</td><td>Primary consumers</td><td>3rd trophic level</td><td>Frog, small fish, fox</td></tr>
+      <tr><td>Tertiary Consumers</td><td>Secondary consumers</td><td>4th trophic level</td><td>Snake, larger fish, jackal</td></tr>
+      <tr><td>Quaternary Consumers (Apex/Top Predators)</td><td>Tertiary consumers; have no natural predators</td><td>5th trophic level</td><td>Tiger, eagle, killer whale, lion</td></tr>
+      <tr><td>Omnivores</td><td>Both producers and other consumers</td><td>Multiple levels simultaneously</td><td>Humans, bears, jungle crow</td></tr>
+    </table>
+
+    <h4>3. Decomposers, Detritivores &amp; Saprotrophs</h4>
+    <div class="grid-2">
+      <div class="card">
+        <h4>Decomposers (Saprotrophs) <span class="tag green">Extracellular</span></h4>
+        <p>Bacteria and fungi that secrete digestive enzymes onto dead organic matter, breaking it down externally, then absorb the simplified nutrients.</p>
+        <p><em>Examples:</em> <em>Mucor</em>, <em>Rhizopus</em>, <em>Agaricus</em> (mushroom), soil decomposer bacteria.</p>
+      </div>
+      <div class="card">
+        <h4>Detritivores <span class="tag orange">Ingestion</span></h4>
+        <p>Larger organisms that physically ingest fragments of dead organic matter (detritus) and digest it internally.</p>
+        <p><em>Examples:</em> Earthworm, millipede, dung beetle, termite, crab.</p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>Indian Ecosystem Example — Sundarbans Mangrove:</strong> Abiotic — saline tidal water, deltaic silty soil, high humidity, monsoon rainfall; Biotic — mangrove trees (producers, e.g. <em>Sundari</em>), crabs and molluscs (detritivores feeding on leaf litter), fish and prawns (primary/secondary consumers), Royal Bengal Tiger (apex/quaternary consumer), decomposer bacteria/fungi recycling the huge volume of leaf litter.
+    </div>
+    <div class="callout warn">
+      <strong>UPSC Trap:</strong> Decomposers and detritivores are NOT the same — decomposers (bacteria/fungi) digest dead matter <em>outside</em> their body and absorb nutrients; detritivores (earthworm, millipede) <em>ingest</em> detritus and digest it internally. Both recycle nutrients but by different mechanisms.
+    </div>
+  </section>
+
+  <!-- SECTION 2: CONCEPTUAL CLARITY -->
+  <section class="notes" id="conceptual-clarity">
+    <h2>2. Conceptual Clarity — GPP vs NPP vs Secondary Productivity</h2>
+    <p>These three productivity terms are among the most frequently confused in the Environment syllabus. Getting the exact formula and "who uses what" right is essential for both Prelims fact-checks and Mains answer precision.</p>
+
+    <div class="concept-box">
+      <h3>The Core Formula</h3>
+      <p><strong>NPP = GPP &minus; R</strong> &nbsp;(where R = respiratory loss by producers themselves). NPP, not GPP, is the energy actually available to herbivores/primary consumers and forms the "standing crop" addition of the ecosystem.</p>
+    </div>
+
+    <table>
+      <tr><th>Term</th><th>Definition</th><th>Who "Owns" It</th><th>Typical Unit</th></tr>
+      <tr><td>Gross Primary Productivity (GPP)</td><td>Total rate of organic matter/energy fixed by producers via photosynthesis, per unit area per unit time</td><td>Producers only</td><td>kcal/m²/yr or g/m²/yr</td></tr>
+      <tr><td>Net Primary Productivity (NPP)</td><td>GPP minus the energy producers themselves respire away</td><td>Producers; available to consumers</td><td>kcal/m²/yr or g/m²/yr</td></tr>
+      <tr><td>Secondary Productivity</td><td>Rate of formation of new biomass by heterotrophs (consumers, decomposers) through assimilation of food</td><td>Consumers/decomposers</td><td>kcal/m²/yr</td></tr>
+    </table>
+
+    <div class="callout warn">
+      <strong>UPSC Trap:</strong> A prelims statement may claim "herbivores directly use the Gross Primary Productivity of an ecosystem" — this is FALSE. Herbivores can only access <strong>NPP</strong> (GPP after the producer's own respiratory loss is subtracted), never the full GPP.
+    </div>
+  </section>
+
+  <!-- SECTION 3: ENERGY FLOW -->
+  <section class="notes" id="energy-flow">
+    <h2>3. Energy Flow &amp; the Laws of Thermodynamics</h2>
+
+    <h3>Unidirectional Flow</h3>
+    <ul>
+      <li>Energy enters an ecosystem as solar radiation, is fixed by producers, and flows one-way through successive trophic levels to consumers and finally decomposers.</li>
+      <li>Unlike nutrients (which cycle repeatedly through biogeochemical cycles — Topic 10), energy is never recycled — once dissipated as heat, it is permanently lost from the ecosystem.</li>
+      <li>This unidirectional flow is why ecosystems need a <strong>continuous input</strong> of solar energy to keep functioning.</li>
+    </ul>
+
+    <h3>Laws of Thermodynamics Applied to Ecosystems</h3>
+    <div class="grid-2">
+      <div class="card">
+        <h4>First Law — Conservation of Energy</h4>
+        <p>Energy can neither be created nor destroyed, only transformed from one form to another. Light energy is transformed into chemical energy (glucose) during photosynthesis, and further into kinetic/heat energy as it passes through trophic levels.</p>
+      </div>
+      <div class="card">
+        <h4>Second Law — Entropy</h4>
+        <p>Every energy transformation is inefficient — some usable energy is always degraded to unusable heat. This is why the pyramid of energy is always upright, and why food chains cannot be indefinitely long.</p>
+      </div>
+    </div>
+
+    <div class="svg-wrap">
+      <svg viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+        <defs>
+          <marker id="e04a-arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+            <path d="M1,1 L7,4 L1,7 Z" fill="#5a6266"/>
+          </marker>
+          <marker id="e04a-arrow-red" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+            <path d="M1,1 L7,4 L1,7 Z" fill="#cc3333"/>
+          </marker>
+        </defs>
+        <text x="360" y="18" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Energy Flow Through Trophic Levels — Lindeman's Ten Percent Law</text>
+
+        <circle cx="35" cy="120" r="26" fill="#c47820"/>
+        <text x="35" y="124" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Sun</text>
+        <line x1="61" y1="120" x2="95" y2="120" stroke="#5a6266" stroke-width="2" marker-end="url(#e04a-arrow)"/>
+
+        <rect x="95" y="85" width="130" height="70" rx="6" fill="#1a7a5a"/>
+        <text x="160" y="112" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">Producers</text>
+        <text x="160" y="128" text-anchor="middle" fill="#fff" font-size="10">10,000 kcal/m²</text>
+        <text x="160" y="142" text-anchor="middle" fill="#fff" font-size="8">(GPP fixed)</text>
+
+        <line x1="225" y1="120" x2="270" y2="120" stroke="#5a6266" stroke-width="2" marker-end="url(#e04a-arrow)"/>
+        <line x1="245" y1="118" x2="245" y2="60" stroke="#cc3333" stroke-width="1.5" marker-end="url(#e04a-arrow-red)"/>
+        <text x="245" y="52" text-anchor="middle" font-size="8" fill="#cc3333">~90% lost (heat)</text>
+
+        <rect x="270" y="93" width="115" height="54" rx="6" fill="#1a3d5c"/>
+        <text x="327" y="115" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Primary Consumers</text>
+        <text x="327" y="130" text-anchor="middle" fill="#fff" font-size="9">1,000 kcal (10%)</text>
+
+        <line x1="385" y1="120" x2="425" y2="120" stroke="#5a6266" stroke-width="2" marker-end="url(#e04a-arrow)"/>
+        <line x1="405" y1="118" x2="405" y2="65" stroke="#cc3333" stroke-width="1.5" marker-end="url(#e04a-arrow-red)"/>
+        <text x="405" y="57" text-anchor="middle" font-size="8" fill="#cc3333">~90% lost (heat)</text>
+
+        <rect x="425" y="98" width="105" height="44" rx="6" fill="#c47820"/>
+        <text x="477" y="117" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Secondary Consumers</text>
+        <text x="477" y="132" text-anchor="middle" fill="#fff" font-size="9">100 kcal (10%)</text>
+
+        <line x1="530" y1="120" x2="565" y2="120" stroke="#5a6266" stroke-width="2" marker-end="url(#e04a-arrow)"/>
+        <line x1="547" y1="118" x2="547" y2="70" stroke="#cc3333" stroke-width="1.5" marker-end="url(#e04a-arrow-red)"/>
+        <text x="547" y="62" text-anchor="middle" font-size="8" fill="#cc3333">~90% lost (heat)</text>
+
+        <rect x="565" y="103" width="95" height="34" rx="6" fill="#7a3f9a"/>
+        <text x="612" y="118" text-anchor="middle" fill="#fff" font-size="9" font-weight="700">Tertiary Consumers</text>
+        <text x="612" y="131" text-anchor="middle" fill="#fff" font-size="8">10 kcal (10%)</text>
+
+        <text x="360" y="185" text-anchor="middle" font-size="10" fill="#0d2035" font-weight="700">Only ~10% of energy at one trophic level is transferred to the next — Lindeman's Ten Percent Law (1942)</text>
+        <text x="360" y="202" text-anchor="middle" font-size="9" fill="#5a6266">Remaining ~90% lost as respiration/metabolic heat, movement, and undigested/egested waste at every step</text>
+      </svg>
+      <div class="svg-caption">Fig 4.1 — Energy Flow &amp; Progressive 90% Loss at Each Trophic Transfer (worked numeric example: 10,000 &rarr; 1,000 &rarr; 100 &rarr; 10 kcal)</div>
+    </div>
+
+    <h3>The Ten Percent Law (Lindeman's Law of Trophic Efficiency)</h3>
+    <ul>
+      <li>Proposed by <strong>Raymond Lindeman (1942)</strong> — on average, only about <strong>10%</strong> of the energy present at one trophic level is stored as biomass and passed on to the next trophic level.</li>
+      <li><strong>Where the other 90% goes:</strong> respiration/metabolic heat loss (largest share), energy spent on movement and other life activities, and energy lost as undigested/egested (faecal) matter or in organisms that die without being eaten.</li>
+      <li><strong>Worked example:</strong> If producers fix 10,000 kcal/m², primary consumers receive only ~1,000 kcal, secondary consumers ~100 kcal, tertiary consumers ~10 kcal, and a quaternary/apex predator would receive only ~1 kcal.</li>
+      <li><strong>Consequences:</strong> (1) food chains rarely exceed 4-5 trophic levels because too little energy remains beyond that; (2) apex predators are always few in number/low in biomass; (3) eating lower on the food chain (plant-based diet) is more energy-efficient than eating meat, since fewer transfer steps mean less energy loss.</li>
+    </ul>
+  </section>
+
+  <!-- SECTION 4: FOOD CHAIN -->
+  <section class="notes" id="food-chain">
+    <h2>4. Food Chain — Grazing vs Detritus</h2>
+    <p>A food chain is a linear sequence of organisms through which energy and nutrients pass as each organism is consumed by the next. Two distinct food chains operate in every ecosystem.</p>
+
+    <div class="svg-wrap">
+      <svg viewBox="0 0 720 340" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+        <defs>
+          <marker id="e04b-arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+            <path d="M1,1 L7,4 L1,7 Z" fill="#aab8c4"/>
+          </marker>
+        </defs>
+        <text x="180" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Grazing Food Chain (GFC)</text>
+        <text x="180" y="37" text-anchor="middle" font-size="9" fill="#5a6266">e.g. Kaziranga grassland ecosystem</text>
+
+        <line x1="45" y1="50" x2="45" y2="290" stroke="#dde3e8" stroke-width="2" marker-end="url(#e04b-arrow)"/>
+
+        <rect x="60" y="42" width="245" height="30" rx="5" fill="#1a7a5a"/>
+        <text x="182" y="62" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Producers — Grass, green plants</text>
+
+        <rect x="60" y="102" width="245" height="30" rx="5" fill="#1a3d5c"/>
+        <text x="182" y="122" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Primary Consumers — Grasshopper, Deer</text>
+
+        <rect x="60" y="162" width="245" height="30" rx="5" fill="#c47820"/>
+        <text x="182" y="182" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Secondary Consumers — Frog</text>
+
+        <rect x="60" y="222" width="245" height="30" rx="5" fill="#7a3f9a"/>
+        <text x="182" y="242" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Tertiary Consumers — Snake</text>
+
+        <rect x="60" y="280" width="245" height="30" rx="5" fill="#0d2035"/>
+        <text x="182" y="300" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Quaternary/Top — Hawk, Tiger</text>
+
+        <line x1="360" y1="15" x2="360" y2="330" stroke="#dde3e8" stroke-width="1"/>
+
+        <text x="545" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Detritus Food Chain (DFC)</text>
+        <text x="545" y="37" text-anchor="middle" font-size="9" fill="#5a6266">e.g. Sundarbans mangrove forest floor</text>
+
+        <line x1="410" y1="50" x2="410" y2="260" stroke="#dde3e8" stroke-width="2" marker-end="url(#e04b-arrow)"/>
+
+        <rect x="425" y="42" width="255" height="35" rx="5" fill="#5a6266"/>
+        <text x="552" y="60" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Detritus — Dead leaves, animal</text>
+        <text x="552" y="73" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">remains, faecal matter</text>
+
+        <rect x="425" y="112" width="255" height="30" rx="5" fill="#1a7a5a"/>
+        <text x="552" y="132" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Decomposers — Bacteria, Fungi</text>
+
+        <rect x="425" y="172" width="255" height="30" rx="5" fill="#1a3d5c"/>
+        <text x="552" y="192" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Detritivores — Earthworm, Crab, Termite</text>
+
+        <rect x="425" y="232" width="255" height="30" rx="5" fill="#c47820"/>
+        <text x="552" y="252" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Predators of Detritivores — Fish, Birds</text>
+
+        <path d="M305,296 C360,296 360,60 425,58" fill="none" stroke="#cc3333" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#e04b-arrow)"/>
+        <text x="360" y="300" text-anchor="middle" font-size="8" fill="#cc3333">Dead GFC organisms/litter feed the DFC</text>
+      </svg>
+      <div class="svg-caption">Fig 4.2 — Grazing Food Chain (starts with living producers) vs Detritus Food Chain (starts with dead organic matter); the two are interlinked</div>
+    </div>
+
+    <table>
+      <tr><th>Feature</th><th>Grazing Food Chain (GFC)</th><th>Detritus Food Chain (DFC)</th></tr>
+      <tr><td>Starting point</td><td>Living green plants (producers)</td><td>Dead organic matter (detritus)</td></tr>
+      <tr><td>Energy source</td><td>Directly from current solar fixation</td><td>Stored chemical energy in dead matter, ultimately traceable back to GFC</td></tr>
+      <tr><td>Key organisms</td><td>Herbivores → carnivores → top carnivores</td><td>Decomposers &amp; detritivores → their predators</td></tr>
+      <tr><td>Dominant ecosystem</td><td>Open grasslands, ponds (phytoplankton-based)</td><td>Forest floor, mangrove litter, benthic/deep-sea ecosystems</td></tr>
+      <tr><td>Indian example</td><td>Kaziranga: Grass → Deer → Tiger</td><td>Sundarbans: Mangrove leaf litter → Fungi/Bacteria → Crabs → Fish</td></tr>
+    </table>
+
+    <div class="callout info">
+      <strong>GFC and DFC are interlinked, not isolated:</strong> Dead bodies, faecal matter and shed plant parts from the grazing food chain become the input for the detritus food chain. In most terrestrial ecosystems — especially forests — the DFC actually processes a <strong>larger share</strong> of total energy than the GFC, since most plant biomass dies and decomposes rather than being eaten directly.
+    </div>
+
+    <div class="callout warn">
+      <strong>Detritivore vs Decomposer — a classic prelims distinction:</strong> <strong>Detritivores</strong> (earthworm, termite, crab, millipede, woodlouse) <em>ingest &amp; physically fragment</em> dead matter into smaller pieces — a step called <strong>catabolism/fragmentation</strong>. <strong>Decomposers</strong> (bacteria, fungi) <em>secrete enzymes externally</em> to chemically break down organic matter and absorb nutrients — <strong>saprotrophic/osmotrophic</strong> nutrition. The full humification/mineralisation sequence is: <strong>fragmentation → leaching → catabolism → humification → mineralisation.</strong>
+    </div>
+  </section>
+
+  <!-- SECTION 5: FOOD WEB -->
+  <section class="notes" id="food-web">
+    <h2>5. Food Web</h2>
+    <p>A food web is an interconnected network of multiple, interlinking food chains within an ecosystem — most real organisms feed at more than one trophic level and are preyed upon by more than one predator, so a single straight-line food chain is a simplification.</p>
+
+    <h3>Why Food Webs Are More Realistic Than Linear Food Chains</h3>
+    <ul>
+      <li><strong>Omnivory is the norm:</strong> Very few organisms eat only one type of food; most consume multiple food sources, linking many chains together.</li>
+      <li><strong>Multiple predators per prey:</strong> A single prey species is typically hunted by several predator species, and a single predator typically hunts several prey species.</li>
+      <li><strong>Isolated chains rarely exist in nature:</strong> A textbook food chain (Grass → Grasshopper → Frog → Snake → Hawk) is only one strand extracted from a much larger real web of feeding relationships.</li>
+    </ul>
+
+    <h3>Ecological Significance of Food Webs</h3>
+    <ul>
+      <li><strong>Alternative energy pathways:</strong> If one prey/food source declines, consumers can switch to other available food, buffering the disruption instead of causing chain-wide collapse.</li>
+      <li><strong>Population control:</strong> Multiple predators checking the same prey species prevent any single population from exploding unchecked.</li>
+      <li><strong>Greater stability and resilience:</strong> A more complex, densely interconnected food web generally confers greater ecosystem stability than a simple, linear food chain — simple systems (e.g., monoculture agro-ecosystems) are far more vulnerable to collapse if one key species is lost.</li>
+    </ul>
+
+    <div class="callout">
+      <strong>Indian Example — Western Ghats Forest Food Web:</strong> Tiger preys on deer, wild boar and sambar; deer in turn feeds on grasses, shrubs and tree leaves; leopards and dholes (wild dogs) also prey on some of the same herbivores as the tiger — creating a dense, overlapping web rather than one isolated chain.
+    </div>
+    <div class="callout warn">
+      <strong>UPSC Trap:</strong> Do not confuse a "food web" with a "food chain" — a food chain is one linear strand; a food web is the sum of ALL interconnected food chains in an ecosystem. UPSC frequently tests which term correctly describes ecosystem stability/resilience (answer: food web, due to alternative pathways).
+    </div>
+  </section>
+
+  <!-- SECTION 6: BIOMASS & STANDING CROP -->
+  <section class="notes" id="biomass-standing-crop">
+    <h2>6. Biomass &amp; Standing Crop</h2>
+    <p>The <strong>standing crop</strong> is the total biomass (or number of organisms) present in an ecosystem or trophic level at a given point in time. It can be expressed as fresh weight, dry weight (preferred, as it removes variable water content), energy equivalent (kcal/m²), or number of organisms per unit area.</p>
+
+    <h3>Biomass Pyramids</h3>
+    <div class="grid-2">
+      <div class="card">
+        <h4>Upright Biomass Pyramid</h4>
+        <p>Biomass decreases progressively from producers to top consumers — the typical shape in most <strong>terrestrial</strong> ecosystems.</p>
+        <p><em>Example:</em> Forest ecosystem — large tree biomass at the base &gt; herbivore biomass &gt; carnivore biomass &gt; top-carnivore biomass.</p>
+      </div>
+      <div class="card">
+        <h4>Inverted Biomass Pyramid</h4>
+        <p>Biomass <em>increases</em> at higher trophic levels — typical of many <strong>aquatic</strong> ecosystems, because base-level organisms are small but reproduce/turn over extremely fast.</p>
+        <p><em>Example:</em> Pond/ocean ecosystem — small standing biomass of phytoplankton (rapidly replaced) supports a much larger standing biomass of zooplankton, which in turn supports an even larger biomass of fish.</p>
+      </div>
+    </div>
+
+    <div class="callout info">
+      <strong>Why the inversion happens:</strong> In fast-turnover systems, the <em>rate</em> of production matters far more than the biomass present at any single instant — phytoplankton have a tiny standing crop at any moment but an extremely high productivity-to-biomass ratio, so their small standing biomass can still support much larger consumer biomass over time.
+    </div>
+  </section>
+
+  <!-- SECTION 7: ECOLOGICAL PYRAMIDS -->
+  <section class="notes" id="ecological-pyramids">
+    <h2>7. Ecological Pyramids</h2>
+    <p>The concept of ecological (trophic) pyramids was introduced by <strong>Charles Elton (1927)</strong> — a graphical representation of how a chosen parameter (numbers, biomass or energy) changes across successive trophic levels.</p>
+
+    <h3>Pyramid of Numbers</h3>
+    <ul>
+      <li><strong>Upright:</strong> Number of individuals decreases from producers to top consumers. <em>Example:</em> Grassland — numerous grass plants support fewer grasshoppers, fewer frogs, fewer snakes, and fewest hawks.</li>
+      <li><strong>Inverted (at the base):</strong> A single large producer supports numerous smaller consumers. <em>Example:</em> One large tree (producer, single individual) hosts hundreds of insects, which in turn support fewer insect-eating birds — numbers rise sharply above the producer level before tapering off.</li>
+      <li><strong>Spindle-shaped:</strong> Combines both patterns within one chain — typical of a forest ecosystem: few large trees (producers) → very many herbivorous insects → fewer insectivorous birds → still fewer top predators.</li>
+    </ul>
+
+    <h3>Pyramid of Biomass</h3>
+    <p>As detailed in Section 6 — usually upright in terrestrial ecosystems (large producer biomass base), but often inverted in aquatic ecosystems (small, fast-turnover phytoplankton base supporting larger consumer biomass above it).</p>
+
+    <h3>Pyramid of Energy — Always Upright</h3>
+    <p>Unlike numbers and biomass, the pyramid of energy is <strong>always upright, in every ecosystem type, with no known exception</strong>. This is because energy content can only decrease at each successive trophic transfer — a direct consequence of the Second Law of Thermodynamics (Section 3): every transfer loses ~90% of energy as heat, so the level above can never contain more energy than the level below it, regardless of how compact or fast-turning-over the organisms are.</p>
+
+    <div class="svg-wrap">
+      <svg viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+        <text x="125" y="22" text-anchor="middle" font-size="12" font-weight="700" fill="#0d2035">Pyramid of Numbers</text>
+        <text x="365" y="22" text-anchor="middle" font-size="12" font-weight="700" fill="#0d2035">Pyramid of Biomass</text>
+        <text x="600" y="22" text-anchor="middle" font-size="12" font-weight="700" fill="#0d2035">Pyramid of Energy</text>
+
+        <text x="125" y="42" text-anchor="middle" font-size="9" fill="#5a6266">Upright — Grassland</text>
+        <rect x="55" y="92" width="140" height="18" fill="#1a7a5a"/>
+        <rect x="75" y="72" width="100" height="18" fill="#1a3d5c"/>
+        <rect x="92" y="52" width="65" height="18" fill="#c47820"/>
+        <rect x="107" y="34" width="35" height="16" fill="#7a3f9a"/>
+        <text x="125" y="118" text-anchor="middle" font-size="7" fill="#5a6266">Grass &gt; Grasshopper &gt; Frog &gt; Snake</text>
+
+        <text x="125" y="150" text-anchor="middle" font-size="9" fill="#5a6266">Spindle-shaped — Forest</text>
+        <rect x="110" y="204" width="30" height="18" fill="#1a7a5a"/>
+        <rect x="55" y="184" width="140" height="18" fill="#1a3d5c"/>
+        <rect x="85" y="164" width="80" height="18" fill="#c47820"/>
+        <rect x="110" y="146" width="30" height="16" fill="#7a3f9a"/>
+        <text x="125" y="230" text-anchor="middle" font-size="7" fill="#5a6266">Few trees, many insects, fewer birds</text>
+
+        <line x1="245" y1="15" x2="245" y2="385" stroke="#dde3e8" stroke-width="1"/>
+
+        <text x="365" y="42" text-anchor="middle" font-size="9" fill="#5a6266">Upright — Forest biomass</text>
+        <rect x="295" y="92" width="140" height="18" fill="#1a7a5a"/>
+        <rect x="320" y="72" width="90" height="18" fill="#1a3d5c"/>
+        <rect x="337" y="52" width="55" height="18" fill="#c47820"/>
+        <rect x="352" y="34" width="25" height="16" fill="#7a3f9a"/>
+        <text x="365" y="118" text-anchor="middle" font-size="7" fill="#5a6266">Large tree biomass base</text>
+
+        <text x="365" y="150" text-anchor="middle" font-size="9" fill="#5a6266">Inverted — Pond/Ocean</text>
+        <rect x="350" y="146" width="30" height="16" fill="#1a7a5a"/>
+        <rect x="330" y="164" width="70" height="18" fill="#1a3d5c"/>
+        <rect x="315" y="184" width="100" height="18" fill="#c47820"/>
+        <rect x="295" y="204" width="140" height="18" fill="#7a3f9a"/>
+        <text x="365" y="230" text-anchor="middle" font-size="7" fill="#5a6266">Small phytoplankton biomass, fast turnover</text>
+
+        <line x1="485" y1="15" x2="485" y2="385" stroke="#dde3e8" stroke-width="1"/>
+
+        <text x="600" y="42" text-anchor="middle" font-size="9" fill="#5a6266">ALWAYS upright — no exception</text>
+        <rect x="530" y="92" width="140" height="18" fill="#1a7a5a"/>
+        <text x="600" y="105" text-anchor="middle" font-size="8" fill="#fff">10,000 kcal</text>
+        <rect x="555" y="72" width="90" height="18" fill="#1a3d5c"/>
+        <text x="600" y="85" text-anchor="middle" font-size="8" fill="#fff">1,000 kcal</text>
+        <rect x="572" y="52" width="55" height="18" fill="#c47820"/>
+        <text x="600" y="65" text-anchor="middle" font-size="8" fill="#fff">100 kcal</text>
+        <rect x="587" y="34" width="25" height="16" fill="#7a3f9a"/>
+
+        <text x="600" y="150" text-anchor="middle" font-size="9" fill="#5a6266" font-weight="700">Obeys 2nd Law of</text>
+        <text x="600" y="163" text-anchor="middle" font-size="9" fill="#5a6266" font-weight="700">Thermodynamics</text>
+        <text x="600" y="180" text-anchor="middle" font-size="8" fill="#5a6266">Energy content can never</text>
+        <text x="600" y="193" text-anchor="middle" font-size="8" fill="#5a6266">increase at a higher level —</text>
+        <text x="600" y="206" text-anchor="middle" font-size="8" fill="#5a6266">true in every ecosystem type,</text>
+        <text x="600" y="219" text-anchor="middle" font-size="8" fill="#5a6266">terrestrial or aquatic.</text>
+
+        <line x1="20" y1="255" x2="700" y2="255" stroke="#dde3e8" stroke-width="1"/>
+        <text x="360" y="275" text-anchor="middle" font-size="10" font-weight="700" fill="#0d2035">Limitations of Ecological Pyramids</text>
+        <text x="360" y="295" text-anchor="middle" font-size="8" fill="#5a6266">1. Ignore organisms feeding at multiple trophic levels (omnivores)  ·  2. Exclude decomposers/detritivores as a distinct level</text>
+        <text x="360" y="312" text-anchor="middle" font-size="8" fill="#5a6266">3. Assume simple linear food chains, not real interconnected food webs  ·  4. Numbers/Biomass pyramids can mislead due to organism size differences</text>
+        <text x="360" y="329" text-anchor="middle" font-size="8" fill="#5a6266">5. Do not capture seasonal variation in population/biomass/energy over the year</text>
+      </svg>
+      <div class="svg-caption">Fig 4.3 — All Three Ecological Pyramids Compared: Numbers (upright/spindle), Biomass (upright/inverted), Energy (always upright), with limitations</div>
+    </div>
+
+    <table>
+      <tr><th>Pyramid Type</th><th>Can Be Inverted?</th><th>Example of Inversion</th></tr>
+      <tr><td>Pyramid of Numbers</td><td>Yes</td><td>One large tree supporting numerous insects (inverted at base)</td></tr>
+      <tr><td>Pyramid of Biomass</td><td>Yes, commonly in aquatic systems</td><td>Pond/ocean — small phytoplankton biomass supporting larger fish biomass</td></tr>
+      <tr><td>Pyramid of Energy</td><td><strong>Never</strong> — always upright</td><td>No exception exists in any ecosystem</td></tr>
+    </table>
+
+    <h3>Limitations of Ecological Pyramids</h3>
+    <ul>
+      <li>They ignore organisms (omnivores) that feed at more than one trophic level simultaneously.</li>
+      <li>Decomposers and detritivores are not represented as a distinct level despite their central role in nutrient recycling.</li>
+      <li>They assume a simple, linear food chain structure and cannot represent the complexity of a real food web.</li>
+      <li>Pyramid of numbers can be visually misleading — organism size differences mean "one" large tree and "one" tiny insect are treated as equal units.</li>
+      <li>They present a static snapshot and do not capture seasonal fluctuations in population, biomass or energy across the year.</li>
+    </ul>
+
+    <div class="callout warn">
+      <strong>UPSC Trap:</strong> "Ecological pyramids are always upright" is FALSE for numbers and biomass pyramids (both can be inverted), but TRUE and universal only for the <strong>pyramid of energy</strong>.
+    </div>
+  </section>
+
+  <!-- SECTION 8: PRODUCTIVITY -->
+  <section class="notes" id="productivity">
+    <h2>8. Productivity — GPP, NPP, Secondary Productivity &amp; Standing State</h2>
+
+    <h3>Gross Primary Productivity (GPP)</h3>
+    <p>The total rate at which producers fix solar energy into organic matter through photosynthesis, per unit area per unit time — includes the energy producers will later spend on their own respiration.</p>
+
+    <h3>Net Primary Productivity (NPP)</h3>
+    <p><strong>NPP = GPP &minus; R</strong> (respiratory loss by producers). NPP represents the energy actually stored as new plant biomass and available for consumption by herbivores and, eventually, the rest of the food web.</p>
+
+    <h3>Secondary Productivity</h3>
+    <p>The rate at which consumers (herbivores, carnivores) and decomposers convert the food/energy they assimilate into new biomass of their own. Since heterotrophs do not photosynthesise, secondary productivity is a single assimilation-based rate rather than a gross/net photosynthetic split.</p>
+
+    <h3>Standing Crop vs Standing State</h3>
+    <table>
+      <tr><th>Term</th><th>What It Measures</th><th>Nature</th></tr>
+      <tr><td>Standing Crop</td><td>Total biomass (mass per unit area) of organisms present at a given trophic level/ecosystem at a given time</td><td>A biological "stock" concept</td></tr>
+      <tr><td>Standing State</td><td>Amount of mineral nutrients (N, P, K etc.) present in the soil/water nutrient pool at a given time</td><td>A nutrient/chemical "stock" concept, separate from biomass</td></tr>
+    </table>
+
+    <table>
+      <tr><th>Term</th><th>Formula/Basis</th><th>Typical Unit</th></tr>
+      <tr><td>GPP</td><td>Total photosynthetic fixation</td><td>kcal/m²/yr or g/m²/yr</td></tr>
+      <tr><td>NPP</td><td>GPP &minus; Respiration (R)</td><td>kcal/m²/yr or g/m²/yr</td></tr>
+      <tr><td>Secondary Productivity</td><td>Rate of new biomass formation by heterotrophs</td><td>kcal/m²/yr</td></tr>
+      <tr><td>Standing Crop</td><td>Biomass present at a given instant</td><td>g/m² or kg/ha</td></tr>
+      <tr><td>Standing State</td><td>Nutrient pool present at a given instant</td><td>kg/ha of N, P, K etc.</td></tr>
+    </table>
+
+    <div class="callout">
+      <strong>Factors affecting productivity:</strong> Solar radiation intensity/duration, temperature, water availability, nutrient (especially nitrogen and phosphorus) availability, and leaf area index of the vegetation. Tropical rainforests and estuaries/coral reefs have among the highest NPP of any ecosystem type; deserts and open oceans have the lowest.
+    </div>
+  </section>
+
+  <!-- SECTION 9: CURRENT AFFAIRS -->
+  <section class="notes" id="current-affairs">
+    <h2>9. Current Affairs Link (2024–2026)</h2>
+    <div class="callout update">
+      <strong>Forest Carbon Stock &amp; Global Productivity Stress<span class="update-tag">check for latest update or data</span></strong>
+      <ul style="margin:8px 0 0">
+        <li><strong>India State of Forest Report (ISFR) 2023 (released Dec 2024)</strong> — Forest Survey of India reported total forest &amp; tree cover ~<strong>25.17% of geographical area</strong> and rising carbon stock — a real-world application of the <strong>standing crop</strong> concept to India's forest biomass at national scale.</li>
+        <li><strong>2024–2026 climate assessments</strong> flagged a measurable slowdown in <strong>terrestrial Net Primary Productivity (NPP)</strong> in tropical forest belts under compounding heat and drought stress — links the GPP/NPP framework to live climate monitoring.</li>
+        <li><strong>Marine heatwaves (2024–25)</strong> disrupted phytoplankton blooms in parts of the Indian Ocean, showing how disturbance at the base of an <strong>inverted biomass pyramid</strong> cascades through fish-dependent coastal food webs and fisheries productivity.</li>
+      </ul>
+    </div>
+    <div class="callout info">
+      <strong>UPSC Relevance:</strong> Ecological pyramid types, Lindeman's 10% Law figures, and GPP/NPP definitions are near-annual Prelims fact questions; forest carbon-stock data and productivity-decline studies are recurring GS-III Mains material on ecosystem services and climate change.
+    </div>
+  </section>
+
+  <!-- SECTION 10: PRELIMS PYQs -->
+  <section class="notes" id="prelims-pyq">
+    <h2>10. Prelims PYQs</h2>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2021</div>
+      <p><strong>Q:</strong> With reference to energy flow in an ecosystem, consider the following statements:</p>
+      <ol style="margin:0 0 8px;padding-left:22px">
+        <li>The flow of energy in an ecosystem is unidirectional.</li>
+        <li>According to the Ten Percent Law, only about 10% of energy is transferred from one trophic level to the next.</li>
+        <li>Energy transfer between trophic levels violates the Second Law of Thermodynamics.</li>
+      </ol>
+      <p style="margin:0 0 4px">Which of the statements given above is/are correct?</p>
+      <ul class="options">
+        <li class="correct"><span class="opt-key">(a)</span>1 and 2 only</li>
+        <li><span class="opt-key">(b)</span>2 and 3 only</li>
+        <li><span class="opt-key">(c)</span>1 and 3 only</li>
+        <li><span class="opt-key">(d)</span>1, 2 and 3</li>
+      </ul>
+      <p class="ans"><strong>Ans: (a) 1 and 2 only.</strong> Energy flow is unidirectional and follows the Ten Percent Law; energy loss at each transfer is <em>consistent with</em>, not a violation of, the Second Law of Thermodynamics.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2019</div>
+      <p><strong>Q:</strong> Consider the following statements regarding ecological pyramids:</p>
+      <ol style="margin:0 0 8px;padding-left:22px">
+        <li>The pyramid of numbers can be inverted in certain ecosystems.</li>
+        <li>The pyramid of biomass is often inverted in aquatic ecosystems.</li>
+        <li>The pyramid of energy is always upright, never inverted.</li>
+      </ol>
+      <p style="margin:0 0 4px">Which of the statements given above is/are correct?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>1 only</li>
+        <li><span class="opt-key">(b)</span>1 and 3 only</li>
+        <li><span class="opt-key">(c)</span>2 and 3 only</li>
+        <li class="correct"><span class="opt-key">(d)</span>1, 2 and 3</li>
+      </ul>
+      <p class="ans"><strong>Ans: (d) 1, 2 and 3.</strong> All three statements are correct.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2018</div>
+      <p><strong>Q:</strong> "Detritus food chain" in an ecosystem is one which —</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>Begins with green plants that are consumed by herbivores</li>
+        <li class="correct"><span class="opt-key">(b)</span>Begins with dead organic matter and is broken down by decomposers and detritivores</li>
+        <li><span class="opt-key">(c)</span>Consists only of aquatic organisms</li>
+        <li><span class="opt-key">(d)</span>Operates only in desert ecosystems</li>
+      </ul>
+      <p class="ans"><strong>Ans: (b).</strong> The detritus food chain begins with dead organic matter broken down by decomposers and detritivores — distinct from the grazing food chain, which begins with living green plants.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2016</div>
+      <p><strong>Q:</strong> With reference to decomposers in an ecosystem, consider the following statements:</p>
+      <ol style="margin:0 0 8px;padding-left:22px">
+        <li>Decomposers include bacteria and fungi that break down dead organic matter through extracellular digestion.</li>
+        <li>Detritivores such as earthworms physically ingest detritus before digesting it internally.</li>
+        <li>Decomposers release carbon dioxide and inorganic nutrients back into the ecosystem, enabling nutrient cycling.</li>
+      </ol>
+      <p style="margin:0 0 4px">Which of the statements given above is/are correct?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>1 and 2 only</li>
+        <li><span class="opt-key">(b)</span>2 and 3 only</li>
+        <li><span class="opt-key">(c)</span>1 and 3 only</li>
+        <li class="correct"><span class="opt-key">(d)</span>1, 2 and 3</li>
+      </ul>
+      <p class="ans"><strong>Ans: (d) 1, 2 and 3.</strong> All three statements correctly describe decomposers and detritivores.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2014</div>
+      <p><strong>Q:</strong> According to Lindeman's Ten Percent Law of energy transfer in a food chain, approximately what percentage of energy available at one trophic level is transferred to the next trophic level?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>1%</li>
+        <li><span class="opt-key">(b)</span>5%</li>
+        <li class="correct"><span class="opt-key">(c)</span>10%</li>
+        <li><span class="opt-key">(d)</span>25%</li>
+      </ul>
+      <p class="ans"><strong>Ans: (c) 10%.</strong> The remaining ~90% is lost mainly as metabolic/respiratory heat, movement, and undigested/egested matter.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 11: MAINS PYQs -->
+  <section class="notes" id="mains-pyq">
+    <h2>11. Mains PYQs</h2>
+
+    <div class="pyq">
+      <div class="year">Mains GS-III 2019</div>
+      <p><strong>Q:</strong> Explain the concept of energy flow in an ecosystem. Why is the food chain in nature rarely longer than four or five trophic levels? (150 words)</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction — energy flow:</strong> Define it as the <em>unidirectional</em> transfer of energy from Sun → producers → consumers → decomposers, contrasting with the <em>cyclical</em> flow of nutrients.</li>
+          <li><strong>Body — governing laws:</strong> Anchor in thermodynamics.
+            <ul><li><strong>1st Law:</strong> energy converted, not created/destroyed. <strong>2nd Law:</strong> each transfer loses usable energy as heat.</li></ul>
+          </li>
+          <li><strong>Body — the 10% Law:</strong> Explain Lindeman's Ten Percent Law with a worked example (10,000 → 1,000 → 100 → 10 kcal); ~90% lost per level as respiration/heat/undigested waste.</li>
+          <li><strong>Body — why chains are short:</strong> After 4–5 transfers, residual energy is too small to sustain a viable population.
+            <ul><li>Apex predators are always few and low in total biomass; explains rarity of "top carnivore" abundance.</li></ul>
+          </li>
+          <li><strong>Conclusion:</strong> Energy-flow inefficiency structurally caps food-chain length and underlies pyramid shape and predator scarcity.</li>
+        </ol>
+        <span class="marks">150 words · 10 marks</span>
+      </div>
+    </div>
+
+    <div class="pyq">
+      <div class="year">Mains GS-III 2017</div>
+      <p><strong>Q:</strong> Distinguish between the Grazing Food Chain and Detritus Food Chain. Discuss their interlinkage and relative importance in terrestrial versus aquatic ecosystems. (250 words)</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> State that food chains channel energy in two parallel routes — the grazing food chain (GFC) and the detritus food chain (DFC).</li>
+          <li><strong>Body — the distinction:</strong> Contrast starting points and drivers.
+            <ul><li><strong>GFC:</strong> starts with living green producers → herbivores → carnivores; solar-driven.</li><li><strong>DFC:</strong> starts with dead organic matter → decomposers/detritivores; detritus-driven.</li></ul>
+          </li>
+          <li><strong>Body — interlinkage:</strong> Show they are not isolated — dead matter, faeces and litter from the GFC feed the DFC; recycled nutrients from the DFC return to producers, closing the loop.</li>
+          <li><strong>Body — relative importance:</strong> Contextualise by ecosystem.
+            <ul><li><strong>DFC dominant</strong> in forest floors, mangroves, deep soils (most energy flows via detritus).</li><li><strong>GFC dominant</strong> in grasslands and open ponds/oceans (phytoplankton grazing).</li></ul>
+          </li>
+          <li><strong>Conclusion:</strong> Both chains are essential and interdependent; DFC's role in nutrient recycling makes it critical for ecosystem sustainability, especially in terrestrial systems.</li>
+        </ol>
+        <span class="marks">250 words · 15 marks</span>
+      </div>
+    </div>
+
+    <div class="pyq">
+      <div class="year">Mains GS-III 2015</div>
+      <p><strong>Q:</strong> "Ecological pyramids are useful tools but have inherent limitations in representing the complexity of ecosystem structure." Discuss with reference to the pyramids of numbers, biomass and energy. (200 words)</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> Define ecological pyramids (Elton, 1927) as graphic representations of numbers, biomass or energy across trophic levels.</li>
+          <li><strong>Body — utility:</strong> Note they visualise trophic structure, energy loss and the scarcity of top predators at a glance.</li>
+          <li><strong>Body — shapes &amp; inversions:</strong> Show the key distinction.
+            <ul><li><strong>Numbers:</strong> can invert (one tree → many insects) or be spindle-shaped.</li><li><strong>Biomass:</strong> can invert in aquatic systems (small phytoplankton biomass supports larger fish biomass).</li><li><strong>Energy:</strong> ALWAYS upright — 2nd Law of Thermodynamics forbids inversion.</li></ul>
+          </li>
+          <li><strong>Body — limitations:</strong> Ignore omnivores feeding at multiple levels; exclude decomposers as a distinct level; assume linear chains not real food webs; numbers pyramid distorted by organism size; capture no seasonal variation.</li>
+          <li><strong>Conclusion:</strong> Pyramids remain useful teaching/analytical tools but must be read alongside food-web models for a realistic view of ecosystem complexity.</li>
+        </ol>
+        <span class="marks">200 words · 12.5 marks</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 12: REVISION BOX -->
+  <section class="notes" id="revision">
+    <h2>15-Minute Revision Box</h2>
+    <div class="revision-box">
+      <h3>Rapid Revision — Ecosystem Structure &amp; Function</h3>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Structure — Abiotic + Biotic</h4>
+      <ul>
+        <li><strong>Abiotic</strong> — Climatic (light, temperature, rainfall, wind) + Edaphic (soil pH, texture, nutrients) + Topographic (altitude, slope, aspect).</li>
+        <li><strong>Biotic</strong> — Producers (photo/chemo-autotrophs) → Primary → Secondary → Tertiary → Quaternary consumers → Decomposers (extracellular) + Detritivores (ingest).</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Energy Flow</h4>
+      <ul>
+        <li>Unidirectional (unlike cyclical nutrient flow); obeys 1st &amp; 2nd Laws of Thermodynamics.</li>
+        <li><strong>Lindeman's 10% Law (1942)</strong> — only ~10% energy transfers per trophic level; ~90% lost as heat/respiration/undigested waste.</li>
+        <li>Worked example: 10,000 → 1,000 → 100 → 10 kcal across four levels.</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Food Chain &amp; Food Web</h4>
+      <ul>
+        <li><strong>GFC</strong> starts with living plants; <strong>DFC</strong> starts with dead organic matter — interlinked, DFC often dominant in forests.</li>
+        <li><strong>Food web</strong> = many interconnected food chains; more realistic and stable than a linear chain due to alternative pathways.</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Biomass &amp; Pyramids</h4>
+      <ul>
+        <li>Standing crop = biomass at a given time; upright biomass pyramid (terrestrial) vs inverted (aquatic, phytoplankton-based).</li>
+        <li>Pyramid of <strong>Numbers</strong> — upright/inverted/spindle-shaped. Pyramid of <strong>Biomass</strong> — upright/inverted. Pyramid of <strong>Energy</strong> — ALWAYS upright.</li>
+        <li>Limitations: ignore omnivores, exclude decomposers, assume linear chains, size-distortion, no seasonal variation.</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Productivity</h4>
+      <ul>
+        <li><strong>NPP = GPP − R.</strong> Herbivores access NPP, not GPP. Secondary Productivity = new biomass formed by heterotrophs.</li>
+        <li><strong>Standing Crop</strong> (biomass stock) vs <strong>Standing State</strong> (nutrient pool stock) — different concepts.</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Quick Facts</h4>
+      <ul>
+        <li>Term "ecosystem" — A.G. Tansley, 1935. Ecological pyramid concept — Charles Elton, 1927. Ten Percent Law — Raymond Lindeman, 1942.</li>
+        <li>ISFR 2025 (FSI) reports India's forest carbon/standing-crop data; 2025-26 studies flag tropical NPP decline under heat/drought stress.</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- ASIDE / SIDEBAR -->
+<aside>
+  <div class="aside-sticky">
+
+    <!-- WIDGET 1: Quick Reference -->
+    <div class="widget">
+      <h4>10% Law — Quick Reference</h4>
+      <table>
+        <tr><th>Trophic Level</th><th>Energy</th></tr>
+        <tr><td>Producers (GPP)</td><td>10,000 kcal</td></tr>
+        <tr><td>Primary Consumers</td><td>1,000 kcal</td></tr>
+        <tr><td>Secondary Consumers</td><td>100 kcal</td></tr>
+        <tr><td>Tertiary Consumers</td><td>10 kcal</td></tr>
+        <tr><td>Quaternary/Apex</td><td>1 kcal</td></tr>
+      </table>
+    </div>
+
+    <!-- WIDGET 2: Key Concepts -->
+    <div class="widget">
+      <h4>Key Concepts to Remember</h4>
+      <ul>
+        <li><strong>Ten Percent Law</strong><br><span style="color:var(--muted);font-size:11px;">Lindeman, 1942 — ~90% energy lost per transfer</span></li>
+        <li><strong>GFC vs DFC</strong><br><span style="color:var(--muted);font-size:11px;">Living plants vs dead matter start-point; interlinked</span></li>
+        <li><strong>Standing Crop vs Standing State</strong><br><span style="color:var(--muted);font-size:11px;">Biomass stock vs nutrient pool stock</span></li>
+        <li><strong>Pyramid of Energy</strong><br><span style="color:var(--muted);font-size:11px;">Always upright — 2nd Law of Thermodynamics</span></li>
+        <li><strong>Food Web Resilience</strong><br><span style="color:var(--muted);font-size:11px;">Alternative pathways buffer species loss</span></li>
+      </ul>
+    </div>
+
+    <!-- WIDGET 3: Difficulty & Importance -->
+    <div class="widget">
+      <h4>Difficulty &amp; Importance</h4>
+      <div class="bar"><span class="lbl">Prelims Weight</span><span class="fill"><span style="width:90%"></span></span></div>
+      <div class="bar"><span class="lbl">Mains Relevance</span><span class="fill"><span style="width:62%"></span></span></div>
+      <div class="bar"><span class="lbl">Conceptual Depth</span><span class="fill"><span style="width:85%"></span></span></div>
+      <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:55%"></span></span></div>
+      <div class="bar"><span class="lbl">Overall Importance</span><span class="fill"><span style="width:88%"></span></span></div>
+      <p style="margin-top:8px;font-size:11px;color:var(--muted);">One of the highest-yield Prelims topics — pyramid types and the 10% Law tested almost every year.</p>
+    </div>
+
+    <!-- WIDGET 4: Must-Know Tags -->
+    <div class="widget">
+      <h4>Must-Know Tags</h4>
+      <span class="tag">Energy Flow</span>
+      <span class="tag orange">Ecological Pyramids</span>
+      <span class="tag green">Food Web</span>
+      <span class="tag">Ten Percent Law</span>
+      <span class="tag orange">GFC</span>
+      <span class="tag green">DFC</span>
+      <span class="tag">GPP/NPP</span>
+      <span class="tag orange">Standing Crop</span>
+      <span class="tag green">Trophic Levels</span>
+      <span class="tag">Decomposers</span>
+      <span class="tag orange">Biomass Pyramid</span>
+    </div>
+
+    <!-- WIDGET 5: Related Topics -->
+    <div class="widget">
+      <h4>Related Topics</h4>
+      <ul class="related">
+        <li><a href="/environment/ecology-fundamentals">T01: Ecology Fundamentals</a></li>
+        <li><a href="/environment/carrying-capacity-and-population-growth">T03: Carrying Capacity &amp; Population Growth</a></li>
+        <li><a href="/environment/terrestrial-ecosystems-and-biomes">T05: Terrestrial Ecosystems &amp; Biomes</a></li>
+        <li><a href="/environment/biogeochemical-cycles">T10: Biogeochemical Cycles</a></li>
+      </ul>
+    </div>
+
+    <!-- WIDGET 6: Key Numbers & Facts -->
+    <div class="widget">
+      <h4>Key Numbers &amp; Facts</h4>
+      <table>
+        <tr><th>Item</th><th>Value</th></tr>
+        <tr><td>Term "ecosystem"</td><td>A.G. Tansley, 1935</td></tr>
+        <tr><td>Ecological pyramid</td><td>Charles Elton, 1927</td></tr>
+        <tr><td>Ten Percent Law</td><td>R. Lindeman, 1942</td></tr>
+        <tr><td>Energy transfer/level</td><td>~10% (90% lost)</td></tr>
+        <tr><td>NPP formula</td><td>GPP − R</td></tr>
+        <tr><td>Energy pyramid</td><td>Always upright</td></tr>
+        <tr><td>Highest NPP</td><td>Rainforests, coral reefs, estuaries</td></tr>
+        <tr><td>Lowest NPP</td><td>Deserts, open oceans</td></tr>
+      </table>
+    </div>
+
+    <!-- WIDGET 7: Ecological Pyramids at a Glance -->
+    <div class="widget">
+      <h4>Pyramids at a Glance</h4>
+      <ul>
+        <li><strong>Numbers:</strong> upright / inverted / spindle — can invert (tree → insects).</li>
+        <li><strong>Biomass:</strong> upright (terrestrial) or inverted (aquatic phytoplankton).</li>
+        <li><strong>Energy:</strong> ALWAYS upright — 2nd Law of Thermodynamics.</li>
+      </ul>
+    </div>
+
+    <!-- WIDGET 8: Data Sources to Bookmark -->
+    <div class="widget">
+      <h4>Data Sources to Bookmark</h4>
+      <ul class="related">
+        <li><a href="https://fsi.nic.in/" target="_blank" rel="noopener">Forest Survey of India (ISFR)</a></li>
+        <li><a href="https://moef.gov.in/" target="_blank" rel="noopener">MoEFCC</a></li>
+        <li><a href="https://www.ipcc.ch/" target="_blank" rel="noopener">IPCC — climate &amp; carbon assessments</a></li>
+        <li><a href="https://www.fao.org/state-of-forests/en/" target="_blank" rel="noopener">FAO State of the World's Forests</a></li>
+        <li><a href="https://www.millenniumassessment.org/" target="_blank" rel="noopener">Millennium Ecosystem Assessment</a></li>
+      </ul>
+      <p style="margin-top:6px;font-size:11px;color:var(--muted);">Bookmark for latest forest carbon &amp; productivity data.</p>
+    </div>
+
+    <!-- WIDGET 9: Quick Navigation -->
+    <div class="widget">
+      <h4>Quick Navigation</h4>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="margin:4px 0;"><a href="#ecosystem-structure" style="font-size:12px;">Ecosystem Structure</a></li>
+        <li style="margin:4px 0;"><a href="#conceptual-clarity" style="font-size:12px;">Conceptual Clarity</a></li>
+        <li style="margin:4px 0;"><a href="#energy-flow" style="font-size:12px;">Energy Flow</a></li>
+        <li style="margin:4px 0;"><a href="#food-chain" style="font-size:12px;">Food Chain</a></li>
+        <li style="margin:4px 0;"><a href="#food-web" style="font-size:12px;">Food Web</a></li>
+        <li style="margin:4px 0;"><a href="#biomass-standing-crop" style="font-size:12px;">Biomass &amp; Standing Crop</a></li>
+        <li style="margin:4px 0;"><a href="#ecological-pyramids" style="font-size:12px;">Ecological Pyramids</a></li>
+        <li style="margin:4px 0;"><a href="#productivity" style="font-size:12px;">Productivity</a></li>
+        <li style="margin:4px 0;"><a href="#current-affairs" style="font-size:12px;">Current Affairs Link</a></li>
+        <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">15-Min Revision Box</a></li>
+      </ul>
+    </div>
+
+  </div>
+</aside>
+</div>
+</div>

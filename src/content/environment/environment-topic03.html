@@ -1,0 +1,910 @@
+<!-- environment-topic03 — auto-imported from environment-topic03-carrying-capacity-population-growth-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border:1px solid rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:6px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;padding:2px 8px;border-radius:10px;margin-left:6px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .options{list-style:none;padding-left:0;margin:10px 0 8px}
+.pyq .options li{margin:5px 0;padding:7px 12px;background:#fff;border:1px solid var(--line);border-radius:6px}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin-top:8px;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;color:var(--brand-blue-dark);text-transform:uppercase;letter-spacing:0.5px;border-bottom:2px solid var(--brand-orange);padding-bottom:6px}
+.model-answer ol{padding-left:20px;margin:0}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 0;padding-left:18px}
+.model-answer ul li{margin-bottom:3px;font-size:13px;color:var(--muted)}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;font-weight:700;padding:2px 9px;border-radius:12px;margin-top:8px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Topic 03: Carrying Capacity &amp; Population Growth</h1>
+    <p class="sub">Carrying capacity and its determinants, exponential vs logistic population growth curves, density-dependent vs density-independent regulation, r-selected vs K-selected species, the demographic transition model, Malthusian theory, ecological footprint vs biocapacity, and the St. Matthew Island overshoot-crash case study.</p>
+    <div class="meta">
+      <span class="pill primary">GS Paper III — Environment &amp; Ecology</span>
+      <span class="pill">UPSC Prelims + Mains</span>
+      <span class="pill">High Importance</span>
+      <span class="pill">Updated: July 2026</span>
+    </div>
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ul>
+      <li><span class="num">1.</span><a href="#carrying-capacity">Carrying Capacity — Concept, Determinants &amp; Dynamics</a></li>
+      <li><span class="num">2.</span><a href="#conceptual-clarity">Conceptual Clarity — Growth Models (Exponential vs Logistic)</a></li>
+      <li><span class="num">3.</span><a href="#density-factors">Density-Dependent vs Density-Independent Factors</a></li>
+      <li><span class="num">4.</span><a href="#r-k-selection">r-Selected vs K-Selected Species</a></li>
+      <li><span class="num">5.</span><a href="#demographic-transition">Human Population Growth — Demographic Transition Model</a></li>
+      <li><span class="num">6.</span><a href="#malthusian-debate">Malthusian Theory vs Modern Carrying-Capacity Debates</a></li>
+      <li><span class="num">7.</span><a href="#ecological-footprint">Ecological Footprint vs Biocapacity</a></li>
+      <li><span class="num">8.</span><a href="#case-studies">Case Studies — Overshoot &amp; Carrying-Capacity Debates</a></li>
+      <li><span class="num">9.</span><a href="#current-affairs">Current Affairs Link</a></li>
+      <li><span class="num">10.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+      <li><span class="num">11.</span><a href="#mains-pyq">Mains PYQs</a></li>
+      <li><span class="num">12.</span><a href="#revision">15-Minute Revision Box</a></li>
+    </ul>
+  </div>
+
+  <!-- CONCEPTUAL CLARITY (top orienting box) -->
+  <div class="concept-box" id="concept">
+    <h3>Conceptual Clarity — Why this Topic Matters</h3>
+    <p>UPSC tests Carrying Capacity &amp; Population Growth in three distinct ways. Knowing which question-type you face decides how you study each heading below:</p>
+    <ul>
+      <li><strong>Definitional / static</strong> — "What does carrying capacity (K) mean?", "Which stage of the DTM shows the fastest growth?", or the exact form of the logistic equation dN/dt = rN(1−N/K). Memorise definitions, equations, DTM stages and dates (Verhulst 1838, MacArthur &amp; Wilson 1967, Malthus 1798).</li>
+      <li><strong>Statement-elimination</strong> — two/three statements distinguishing exponential vs logistic, density-dependent vs density-independent, or r-selected vs K-selected traits, where one wrong word makes a statement false. Trains you to read boundaries precisely.</li>
+      <li><strong>Applied / current</strong> — Mains and analytical Prelims linking K to India's development planning, demographic dividend, ecological footprint vs biocapacity, and Earth Overshoot Day. Needs concept + latest population/footprint data.</li>
+    </ul>
+    <p>Focus especially on the highest-frequency themes: the <strong>exponential vs logistic distinction (and N=K/2 → MSY)</strong>, <strong>density-dependent vs density-independent factors</strong>, the <strong>r/K selection contrast</strong>, and the <strong>Demographic Transition Model + India's placement</strong>. These account for the bulk of every question set on this topic.</p>
+  </div>
+
+  <!-- SECTION 1: CARRYING CAPACITY -->
+  <section class="notes" id="carrying-capacity">
+    <h2>1. Carrying Capacity — Concept, Determinants &amp; Dynamics</h2>
+    <p>Carrying capacity (<strong>K</strong>) is the maximum population size of a species that a given environment/habitat can support <strong>indefinitely</strong>, given the food, water, space, and other resources available, without long-term degradation of the resource base. Beyond K, the environment can no longer sustain further growth.</p>
+
+    <h3>Factors Determining Carrying Capacity</h3>
+    <div class="grid-3">
+      <div class="card">
+        <h4>Resource Availability</h4>
+        <p>Food, water and nutrients set the primary ceiling — e.g., forage grass availability caps deer/reindeer numbers on an island.</p>
+      </div>
+      <div class="card">
+        <h4>Space &amp; Territory</h4>
+        <p>Nesting sites, breeding territory and shelter limit numbers even when food is adequate — e.g., seabird colonies limited by cliff-ledge space.</p>
+      </div>
+      <div class="card">
+        <h4>Predation Pressure</h4>
+        <p>Predators cap prey numbers below the resource-set ceiling — e.g., wolf predation historically kept elk populations in check in Yellowstone.</p>
+      </div>
+      <div class="card">
+        <h4>Disease &amp; Parasites</h4>
+        <p>Pathogen/parasite load spreads faster in dense populations, pulling numbers back toward K — e.g., mange outbreaks in dense fox populations.</p>
+      </div>
+      <div class="card">
+        <h4>Competition</h4>
+        <p>Intraspecific (same species) and interspecific (different species) competition for the same limited resources reduces effective K for each competitor.</p>
+      </div>
+      <div class="card">
+        <h4>Waste &amp; Self-Pollution</h4>
+        <p>Accumulation of metabolic waste/toxins in a confined habitat can itself become limiting — e.g., algal blooms poisoning their own pond.</p>
+      </div>
+    </div>
+
+    <h3>Carrying Capacity Is Dynamic, Not Fixed</h3>
+    <ul>
+      <li>K rises and falls with <strong>seasonal and climatic variation</strong> — e.g., a good monsoon raises grassland K for herbivores; drought sharply lowers it.</li>
+      <li>K can be <strong>artificially raised by technology</strong> for humans — irrigation, fertilisers and the Green Revolution raised India's food-based human carrying capacity manifold since the 1960s.</li>
+      <li>K can be <strong>degraded (lowered) by habitat loss</strong> — forest fragmentation has reduced the effective carrying capacity for tiger populations across many Indian landscapes.</li>
+      <li>K can be <strong>restored/raised by conservation</strong> — habitat restoration, corridor creation and anti-poaching enforcement can push K back up (e.g., rising tiger K in well-protected reserves like Corbett and Kanha).</li>
+    </ul>
+
+    <div class="callout info">
+      <strong>Relevance to Sustainable Development &amp; Human Population Planning:</strong> Because K is not fixed, debates on "how many people the Earth can support" hinge on assumptions about technology, consumption patterns and resource substitution — this tension underlies the entire Malthusian-vs-modern debate (Section 6) and frames India's own land, water and food-security planning.
+    </div>
+  </section>
+
+  <!-- SECTION 2: CONCEPTUAL CLARITY — GROWTH MODELS -->
+  <section class="notes" id="conceptual-clarity">
+    <h2>2. Conceptual Clarity — Population Growth Models (Exponential vs Logistic)</h2>
+    <p>How a population actually approaches (or overshoots) carrying capacity is described by two classical growth models. UPSC frequently tests confusion between the two — get the equations, shapes and assumptions exactly right.</p>
+
+    <div class="svg-wrap">
+      <svg viewBox="0 0 700 420" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+        <defs>
+          <marker id="e03-arrow1" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+            <path d="M1,1 L7,4 L1,7 Z" fill="#5a6266"/>
+          </marker>
+        </defs>
+        <text x="350" y="20" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Exponential (J-shaped) vs Logistic (S-shaped) Population Growth</text>
+
+        <line x1="70" y1="370" x2="670" y2="370" stroke="#5a6266" stroke-width="1.5" marker-end="url(#e03-arrow1)"/>
+        <line x1="70" y1="370" x2="70" y2="35" stroke="#5a6266" stroke-width="1.5" marker-end="url(#e03-arrow1)"/>
+        <text x="600" y="390" font-size="11" fill="#1a1a1a" font-weight="600">Time →</text>
+        <text x="30" y="200" font-size="11" fill="#1a1a1a" font-weight="600" transform="rotate(-90 30 200)">Population Size (N) →</text>
+
+        <line x1="70" y1="80" x2="670" y2="80" stroke="#1a7a5a" stroke-width="1.5" stroke-dasharray="6,4"/>
+        <text x="600" y="72" text-anchor="middle" font-size="11" fill="#1a7a5a" font-weight="700">K — Carrying Capacity</text>
+
+        <path d="M70,365 C160,362 230,320 290,255 C350,185 400,110 440,60 C460,35 480,20 495,8" fill="none" stroke="#c47820" stroke-width="2.5"/>
+        <text x="430" y="48" font-size="10" fill="#c47820" font-weight="700">Exponential (J-shaped)</text>
+        <text x="430" y="61" font-size="9" fill="#c47820">dN/dt = rN — unlimited resources</text>
+
+        <path d="M70,368 C160,367 200,360 230,340 C270,310 300,250 340,190 C380,130 430,95 480,85 C540,80 610,79 670,79" fill="none" stroke="#1a3d5c" stroke-width="2.5"/>
+        <text x="430" y="120" font-size="10" fill="#1a3d5c" font-weight="700">Logistic (S-shaped)</text>
+        <text x="430" y="133" font-size="9" fill="#1a3d5c">dN/dt = rN(1−N/K) — resource-limited</text>
+
+        <line x1="150" y1="370" x2="150" y2="363" stroke="#aab8c4"/>
+        <text x="150" y="405" text-anchor="middle" font-size="9" fill="#5a6266">Lag phase</text>
+        <line x1="280" y1="370" x2="280" y2="300" stroke="#aab8c4" stroke-dasharray="2,3"/>
+        <text x="280" y="405" text-anchor="middle" font-size="9" fill="#5a6266">Exponential phase</text>
+        <line x1="400" y1="370" x2="400" y2="120" stroke="#aab8c4" stroke-dasharray="2,3"/>
+        <text x="400" y="405" text-anchor="middle" font-size="9" fill="#5a6266">Deceleration phase</text>
+        <line x1="560" y1="370" x2="560" y2="80" stroke="#aab8c4" stroke-dasharray="2,3"/>
+        <text x="560" y="405" text-anchor="middle" font-size="9" fill="#5a6266">Stationary phase (≈K)</text>
+      </svg>
+      <div class="svg-caption">Fig 3.1 — J-shaped exponential curve vs S-shaped logistic curve, with the four phases of logistic growth marked (Lag → Exponential → Deceleration → Stationary).</div>
+    </div>
+
+    <h3>Exponential Growth — J-shaped Curve</h3>
+    <ul>
+      <li>Equation (in words): <strong>rate of change of population = intrinsic growth rate (r) × current population size (N)</strong>, i.e. <em>dN/dt = rN</em>.</li>
+      <li>Assumes <strong>unlimited resources</strong> and no environmental resistance — every individual reproduces at the same constant per-capita rate regardless of how crowded the population becomes.</li>
+      <li>Produces a <strong>J-shaped curve</strong> — growth accelerates continuously and, mathematically, has no ceiling.</li>
+      <li>Rare in nature and only ever short-lived — seen when a species colonises a new resource-rich habitat (invasive species establishment) or in the very early phase of a bacterial/microbial culture in fresh medium.</li>
+    </ul>
+
+    <h3>Logistic Growth — S-shaped (Sigmoid) Curve</h3>
+    <ul>
+      <li>Equation (in words): <strong>rate of change of population = intrinsic growth rate × current population × (1 − current population ÷ carrying capacity)</strong>, i.e. <em>dN/dt = rN(1 − N/K)</em>.</li>
+      <li>The term <strong>(1 − N/K)</strong> is the "environmental resistance" factor — it is close to 1 (little resistance) when N is small, and approaches 0 (maximum resistance) as N approaches K.</li>
+      <li>First formulated by <strong>Pierre-François Verhulst (1838)</strong>, later revived by Raymond Pearl — hence also called the <strong>Verhulst-Pearl logistic equation</strong>.</li>
+      <li>Produces an <strong>S-shaped (sigmoid) curve</strong> that levels off at K — the realistic model for most natural populations with finite resources.</li>
+    </ul>
+
+    <h3>Four Phases of the Logistic Curve</h3>
+    <table>
+      <tr><th>Phase</th><th>What Happens</th></tr>
+      <tr><td>Lag phase</td><td>Population is small; growth is slow as individuals establish themselves and adjust to the environment</td></tr>
+      <tr><td>Exponential (log) phase</td><td>Resources still abundant relative to population; growth accelerates, closely resembling the J-curve</td></tr>
+      <tr><td>Deceleration phase</td><td>Resources start becoming limiting as N approaches K; growth rate slows sharply</td></tr>
+      <tr><td>Stationary phase</td><td>N fluctuates around K; births ≈ deaths; net growth rate ≈ zero</td></tr>
+    </table>
+
+    <div class="concept-box">
+      <h3>Where Is Growth Rate Fastest?</h3>
+      <p>In the logistic model, the absolute number of new individuals added per unit time is greatest at <strong>N = K/2</strong> (the steepest point of the S-curve) — this is the biological basis of <strong>Maximum Sustainable Yield (MSY)</strong> in fisheries and wildlife harvest management, where the harvestable surplus is largest at roughly half of carrying capacity, not at K itself.</p>
+    </div>
+
+    <div class="callout warn">
+      <strong>UPSC Trap:</strong> "The logistic growth model assumes unlimited resources" is FALSE — that is the definition of the EXPONENTIAL model. The logistic model explicitly builds in resource limitation via the (1−N/K) term. Also, growth rate is zero AT K, not fastest at K — it is fastest at K/2.
+    </div>
+  </section>
+
+  <!-- SECTION 3: DENSITY-DEPENDENT VS DENSITY-INDEPENDENT -->
+  <section class="notes" id="density-factors">
+    <h2>3. Density-Dependent vs Density-Independent Factors</h2>
+    <p>Population regulation operates through two broad classes of limiting factors, distinguished by whether their impact scales with how crowded the population is.</p>
+
+    <div class="grid-2">
+      <div class="card">
+        <h4>Density-Dependent Factors <span class="tag green">Negative Feedback</span></h4>
+        <ul>
+          <li>Intensity of impact <strong>increases as population density rises</strong>.</li>
+          <li>Food/resource competition — scarcer per capita as numbers rise.</li>
+          <li>Predation — predators concentrate where prey is dense.</li>
+          <li>Disease &amp; parasitism — spreads faster through crowded populations.</li>
+          <li>Intraspecific competition for mates, territory and nesting sites.</li>
+          <li>Accumulation of metabolic waste/toxins in a confined space.</li>
+          <li>Acts as a stabilising negative feedback, pulling N back toward K.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Density-Independent Factors <span class="tag orange">No Feedback</span></h4>
+        <ul>
+          <li>Impact is <strong>the same proportion of the population regardless of density</strong>.</li>
+          <li>Extreme weather events — storms, frost, heatwaves.</li>
+          <li>Natural disasters — floods, wildfires, volcanic eruptions, cyclones.</li>
+          <li>Sudden pollution events or oil spills.</li>
+          <li>Large-scale human habitat destruction (e.g., clear-felling).</li>
+          <li>Can crash a population sharply whether it was sparse or dense.</li>
+        </ul>
+      </div>
+    </div>
+
+    <table>
+      <tr><th>Feature</th><th>Density-Dependent</th><th>Density-Independent</th></tr>
+      <tr><td>Effect scales with density?</td><td>Yes — stronger at high density</td><td>No — same regardless of density</td></tr>
+      <tr><td>Feedback type</td><td>Negative feedback — stabilising, regulates toward K</td><td>None — can strike randomly</td></tr>
+      <tr><td>Typical examples</td><td>Food competition, predation, disease, intraspecific competition</td><td>Storms, floods, wildfires, drought, sudden pollution</td></tr>
+      <tr><td>Role in logistic model</td><td>Underlies the (1−N/K) resistance term</td><td>Not captured by the logistic equation</td></tr>
+    </table>
+
+    <div class="callout">
+      <strong>Liebig's Law of the Minimum:</strong> A population's growth is capped not by the total resources available but by the <strong>scarcest resource relative to need</strong> — even abundant water and sunlight cannot support plant growth if soil nitrogen is critically deficient.
+    </div>
+  </section>
+
+  <!-- SECTION 4: r vs K SELECTION -->
+  <section class="notes" id="r-k-selection">
+    <h2>4. r-Selected vs K-Selected Species</h2>
+    <p><strong>r/K selection theory</strong> (Robert MacArthur &amp; E.O. Wilson, 1967) classifies species along a spectrum based on whether natural selection favours a high intrinsic growth rate (r) in unstable environments, or competitive efficiency near carrying capacity (K) in stable environments.</p>
+
+    <table>
+      <tr><th>Characteristic</th><th>r-Selected (r-Strategists)</th><th>K-Selected (K-Strategists)</th></tr>
+      <tr><td>Habitat type</td><td>Unstable, unpredictable, opportunistic</td><td>Stable, predictable, resource-limited</td></tr>
+      <tr><td>Reproductive rate</td><td>High — many offspring per event</td><td>Low — few offspring per event</td></tr>
+      <tr><td>Offspring size</td><td>Small</td><td>Large</td></tr>
+      <tr><td>Parental care</td><td>Minimal to none</td><td>Extensive, prolonged</td></tr>
+      <tr><td>Age at maturity</td><td>Early/young</td><td>Late/older</td></tr>
+      <tr><td>Body size</td><td>Typically small</td><td>Typically large</td></tr>
+      <tr><td>Lifespan</td><td>Short</td><td>Long</td></tr>
+      <tr><td>Survivorship curve</td><td>Type III (high early mortality)</td><td>Type I (survival into old age)</td></tr>
+      <tr><td>Population stability</td><td>Fluctuates widely, often near/above K, boom-bust</td><td>Stable, hovers close to K</td></tr>
+      <tr><td>Examples</td><td>Insects, rodents, bacteria, weeds, most fish</td><td>Elephants, whales, tigers, great apes, humans, oak/redwood trees</td></tr>
+    </table>
+
+    <div class="callout warn">
+      <strong>Conservation Relevance:</strong> K-strategists (elephants, whales, tigers) recover very slowly from population crashes because of low reproductive rates — this makes them disproportionately vulnerable to extinction from poaching/habitat loss. r-strategist pest and invasive species, by contrast, rebound rapidly, making eradication difficult (e.g., locust swarms, invasive weeds like <em>Lantana camara</em>).
+    </div>
+    <div class="callout warn">
+      <strong>UPSC Trap:</strong> r/K selection is a <strong>spectrum, not a strict binary</strong> — many species show intermediate traits. Do not assume ALL insects are r-strategists or ALL large mammals are K-strategists without checking the specific life-history details given in a question.
+    </div>
+  </section>
+
+  <!-- SECTION 5: DEMOGRAPHIC TRANSITION MODEL -->
+  <section class="notes" id="demographic-transition">
+    <h2>5. Human Population Growth — Demographic Transition Model</h2>
+    <p>Applying carrying-capacity thinking to humans is complicated because technology, trade and innovation can raise the effective carrying capacity over time. The <strong>Demographic Transition Model (DTM)</strong> — first outlined by <strong>Warren Thompson (1929)</strong> — describes how birth and death rates shift as a society industrialises.</p>
+
+    <div class="svg-wrap">
+      <svg viewBox="0 0 760 440" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+        <text x="380" y="20" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Demographic Transition Model (DTM) — 5 Stages</text>
+
+        <line x1="80" y1="380" x2="740" y2="380" stroke="#5a6266" stroke-width="1.5"/>
+        <line x1="80" y1="380" x2="80" y2="40" stroke="#5a6266" stroke-width="1.5"/>
+        <text x="640" y="400" font-size="11" fill="#1a1a1a" font-weight="600">Stages of Development →</text>
+        <text x="40" y="220" font-size="11" fill="#1a1a1a" font-weight="600" transform="rotate(-90 40 220)">Rate per 1000 population →</text>
+
+        <line x1="212" y1="380" x2="212" y2="40" stroke="#dde3e8" stroke-width="1" stroke-dasharray="3,3"/>
+        <line x1="344" y1="380" x2="344" y2="40" stroke="#dde3e8" stroke-width="1" stroke-dasharray="3,3"/>
+        <line x1="476" y1="380" x2="476" y2="40" stroke="#dde3e8" stroke-width="1" stroke-dasharray="3,3"/>
+        <line x1="608" y1="380" x2="608" y2="40" stroke="#dde3e8" stroke-width="1" stroke-dasharray="3,3"/>
+
+        <polygon points="80,108 212,108 344,123 476,244 608,289 608,312 476,312 344,304 212,229 80,138" fill="#1a7a5a" opacity="0.14"/>
+        <polygon points="608,289 740,304 740,297 608,312" fill="#b23b3b" opacity="0.18"/>
+
+        <polyline points="80,108 212,108 344,123 476,244 608,289 740,304" fill="none" stroke="#c47820" stroke-width="2.5"/>
+        <polyline points="80,138 212,229 344,304 476,312 608,312 740,297" fill="none" stroke="#1a3d5c" stroke-width="2.5"/>
+
+        <text x="120" y="98" font-size="9" fill="#c47820" font-weight="700">Birth Rate</text>
+        <text x="120" y="240" font-size="9" fill="#1a3d5c" font-weight="700">Death Rate</text>
+        <text x="230" y="180" font-size="9" fill="#0a6644" font-weight="700">Natural Increase</text>
+        <text x="655" y="330" font-size="8" fill="#b23b3b" font-weight="700">Decline</text>
+
+        <text x="146" y="405" text-anchor="middle" font-size="10" font-weight="700" fill="#0d2035">Stage 1</text>
+        <text x="146" y="418" text-anchor="middle" font-size="8" fill="#5a6266">High Stationary</text>
+        <text x="278" y="405" text-anchor="middle" font-size="10" font-weight="700" fill="#0d2035">Stage 2</text>
+        <text x="278" y="418" text-anchor="middle" font-size="8" fill="#5a6266">Early Expanding</text>
+        <text x="410" y="405" text-anchor="middle" font-size="10" font-weight="700" fill="#0d2035">Stage 3</text>
+        <text x="410" y="418" text-anchor="middle" font-size="8" fill="#5a6266">Late Expanding</text>
+        <text x="542" y="405" text-anchor="middle" font-size="10" font-weight="700" fill="#0d2035">Stage 4</text>
+        <text x="542" y="418" text-anchor="middle" font-size="8" fill="#5a6266">Low Stationary</text>
+        <text x="674" y="405" text-anchor="middle" font-size="10" font-weight="700" fill="#0d2035">Stage 5</text>
+        <text x="674" y="418" text-anchor="middle" font-size="8" fill="#5a6266">Declining</text>
+
+        <rect x="580" y="48" width="150" height="52" fill="#fff" stroke="#dde3e8"/>
+        <line x1="588" y1="60" x2="608" y2="60" stroke="#c47820" stroke-width="2.5"/>
+        <text x="613" y="63" font-size="8" fill="#1a1a1a">Birth Rate</text>
+        <line x1="588" y1="74" x2="608" y2="74" stroke="#1a3d5c" stroke-width="2.5"/>
+        <text x="613" y="77" font-size="8" fill="#1a1a1a">Death Rate</text>
+        <rect x="588" y="84" width="20" height="8" fill="#1a7a5a" opacity="0.3"/>
+        <text x="613" y="91" font-size="8" fill="#1a1a1a">Natural Increase</text>
+      </svg>
+      <div class="svg-caption">Fig 3.2 — Demographic Transition Model: birth rate (orange) and death rate (blue) across five stages, with the natural-increase gap (green) and the Stage-5 decline zone (red).</div>
+    </div>
+
+    <table>
+      <tr><th>Stage</th><th>Birth Rate</th><th>Death Rate</th><th>Population Growth</th><th>Typical Example</th></tr>
+      <tr><td>Stage 1 — High Stationary</td><td>High</td><td>High</td><td>Slow/stable — high births offset by high deaths</td><td>Pre-industrial societies</td></tr>
+      <tr><td>Stage 2 — Early Expanding</td><td>Stays high</td><td>Falls sharply (sanitation, medicine, food supply)</td><td>Rapid growth — widening birth-death gap</td><td>19th-century Britain; parts of Sub-Saharan Africa today</td></tr>
+      <tr><td>Stage 3 — Late Expanding</td><td>Begins falling (urbanisation, education, family planning)</td><td>Continues falling slowly</td><td>Growth slows but population still rising</td><td>India (many states, historically)</td></tr>
+      <tr><td>Stage 4 — Low Stationary</td><td>Low</td><td>Low</td><td>Near-zero growth</td><td>Most developed economies; India nationally approaching this</td></tr>
+      <tr><td>Stage 5 — Declining</td><td>Falls below death rate</td><td>Rises slightly (ageing population)</td><td>Negative — population shrinks</td><td>Japan, South Korea, several European nations</td></tr>
+    </table>
+
+    <h3>India's Population Trajectory</h3>
+    <ul>
+      <li>India's <strong>Total Fertility Rate (TFR)</strong> has fallen from ~5.2 (1971) to <strong>2.0 (NFHS-5, 2019-21)</strong> — at/below the replacement level of 2.1, signalling India is now moving from late Stage 3 toward Stage 4.</li>
+      <li>India overtook China as the <strong>world's most populous country in 2023</strong> (UN estimate), with population around <strong>1.45 billion in 2025-26</strong>.</li>
+      <li>Sharp <strong>regional heterogeneity</strong> — southern states (Kerala, Tamil Nadu, Andhra Pradesh) already show TFR below 1.8, resembling Stage 4/5; northern states (Bihar, Uttar Pradesh) still have TFR above 2.5-3, resembling Stage 2/3.</li>
+      <li>UN projections suggest India's population may <strong>peak around the mid-2060s</strong> before gradually declining, opening a limited-duration <strong>demographic dividend</strong> window (large working-age share) that policy must exploit before the population ages.</li>
+    </ul>
+  </section>
+
+  <!-- SECTION 6: MALTHUSIAN THEORY -->
+  <section class="notes" id="malthusian-debate">
+    <h2>6. Malthusian Theory vs Modern Carrying-Capacity Debates</h2>
+
+    <div class="concept-box">
+      <h3>Malthusian Theory (Thomas Malthus, 1798)</h3>
+      <ul>
+        <li>Population grows <strong>geometrically</strong> (1,2,4,8,16...) while food supply grows only <strong>arithmetically</strong> (1,2,3,4,5...).</li>
+        <li>This gap inevitably produces "checks" on population — <strong>positive checks</strong> (famine, disease, war — raising the death rate) or <strong>preventive checks</strong> (delayed marriage, moral restraint — lowering the birth rate).</li>
+        <li>Predicted recurring "Malthusian catastrophes" where population overshoots food-carrying capacity.</li>
+      </ul>
+    </div>
+
+    <h3>Why Malthus's Simple Prediction Failed to Materialise Globally</h3>
+    <ul>
+      <li><strong>Ester Boserup's counter-view (1965):</strong> Population pressure itself drives agricultural innovation — necessity pushes societies to intensify farming and adopt new technology, expanding effective carrying capacity ("necessity is the mother of invention").</li>
+      <li><strong>Green Revolution (1960s-70s):</strong> High-yielding seed varieties, irrigation and fertilisers multiplied global and Indian food output, repeatedly pushing K far beyond Malthus's arithmetic assumption.</li>
+      <li><strong>Paul Ehrlich's "The Population Bomb" (1968)</strong> revived Malthusian alarm, predicting mass famines by the 1970s-80s — largely averted by the Green Revolution, though resource-stress concerns persist in a modified form.</li>
+    </ul>
+
+    <h3>Modern Carrying-Capacity Debate</h3>
+    <ul>
+      <li>Modern ecologists agree K is <strong>not fixed</strong> but argue it is still <strong>ultimately bounded</strong> — technology can defer, but not permanently eliminate, ecological limits (soil degradation, freshwater depletion, climate change, biodiversity loss).</li>
+      <li>The <strong>Planetary Boundaries framework</strong> (Rockström et al., 2009) reframes this as nine Earth-system limits (climate change, biodiversity loss, nitrogen/phosphorus cycles, freshwater use, land-system change, etc.) that humanity should not cross — a scientific update to the carrying-capacity idea at planetary scale.</li>
+      <li>India's own planning debates (NITI Aayog river-basin and hill-state carrying-capacity studies) increasingly assess <strong>regional</strong> ecological carrying capacity for tourism, urbanisation and infrastructure, rather than relying on a single national number.</li>
+    </ul>
+
+    <div class="callout warn">
+      <strong>UPSC Trap:</strong> Do not treat Malthusian theory as either "fully proven" or "fully disproven" — UPSC expects a balanced answer: Malthus's mechanism (positive/preventive checks) was real historically, but technology repeatedly raised K faster than population grew; the debate has shifted from "food scarcity" to broader ecological/resource limits.
+    </div>
+  </section>
+
+  <!-- SECTION 7: ECOLOGICAL FOOTPRINT VS BIOCAPACITY -->
+  <section class="notes" id="ecological-footprint">
+    <h2>7. Ecological Footprint vs Biocapacity</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h4>Ecological Footprint <span class="tag orange">Demand</span></h4>
+        <p>The biologically productive land and water area (in global hectares, gha) required to produce the resources a population consumes and to absorb the waste (chiefly CO₂) it generates.</p>
+      </div>
+      <div class="card">
+        <h4>Biocapacity <span class="tag green">Supply</span></h4>
+        <p>The biologically productive area actually available within a region/the planet to generate renewable resources and absorb waste — the ecological "income."</p>
+      </div>
+    </div>
+
+    <ul>
+      <li>When <strong>Footprint &gt; Biocapacity</strong> → <strong>ecological overshoot/deficit</strong> — the population is drawing down natural capital faster than it regenerates (running an ecological "debt").</li>
+      <li>When <strong>Biocapacity &gt; Footprint</strong> → <strong>ecological surplus/reserve</strong> — the region is a net ecological "creditor" (typically low-consumption, resource-rich regions).</li>
+      <li>Concept developed by <strong>Mathis Wackernagel &amp; William Rees (1990s)</strong> and tracked annually by the <strong>Global Footprint Network (GFN)</strong>.</li>
+    </ul>
+
+    <h3>Earth Overshoot Day</h3>
+    <ul>
+      <li>The calendar date each year when humanity's cumulative demand on nature for that year <strong>exceeds</strong> what Earth's ecosystems can regenerate in that year — after this date, humanity operates in ecological deficit for the rest of the year.</li>
+      <li>Humanity's global ecological footprint has exceeded Earth's total biocapacity since roughly the <strong>early 1970s</strong> — humanity currently uses resources at a rate equivalent to more than <strong>1.7 Earths per year</strong> (GFN estimate).</li>
+      <li>As per Global Footprint Network's provisional 2025 calendar, Earth Overshoot Day fell around <strong>24 July 2025</strong> — among the earliest dates on record, signalling worsening global overshoot.</li>
+    </ul>
+
+    <div class="callout info">
+      <strong>India's Position:</strong> India's <em>per-capita</em> ecological footprint remains well below the global average and below most developed economies (lower per-capita consumption), so India's own national Overshoot Day (if India were the only country on Earth) falls much later in the calendar year. However, India's sheer population size means its <em>total/absolute</em> footprint is large, and India as a whole still runs a national biocapacity deficit.
+    </div>
+  </section>
+
+  <!-- SECTION 8: CASE STUDIES -->
+  <section class="notes" id="case-studies">
+    <h2>8. Case Studies — Overshoot &amp; Carrying-Capacity Debates</h2>
+
+    <h3>St. Matthew Island Reindeer Crash (1944-1966)</h3>
+    <ul>
+      <li>In 1944, the US Coast Guard introduced <strong>29 reindeer</strong> onto uninhabited St. Matthew Island, Alaska, which had abundant lichen (their primary food) and no predators.</li>
+      <li>With unlimited food and no predation, the population grew almost <strong>exponentially</strong> — reaching roughly <strong>1,350 by 1957</strong> and an estimated <strong>~6,000 by 1963</strong>, far exceeding the island's true long-term carrying capacity.</li>
+      <li>By the time researcher <strong>David Klein</strong> surveyed the island in 1966, the lichen pasture had been devastated by overgrazing — the population had <strong>crashed to just 42 reindeer</strong> (a ~99% die-off), and the surviving animals showed signs of starvation.</li>
+      <li>Classic textbook example of <strong>ecological overshoot</strong> — when a population exceeds K, it does not stabilise gently at K but can crash far below it after degrading the resource base itself.</li>
+    </ul>
+
+    <div class="callout warn">
+      <strong>Key Lesson:</strong> The St. Matthew Island reindeer demonstrate that when a population's growth outpaces its resource base (especially when growth is exponential due to absent predators/competitors), the "correction" is not a smooth return to K but often a catastrophic crash — a cautionary parallel invoked in debates on human population and resource overshoot.
+    </div>
+
+    <h3>India / Global Carrying-Capacity Debates</h3>
+    <ul>
+      <li><strong>Malthus vs Boserup vs Ehrlich</strong> — recurring historical debate on whether population growth outpaces resources (Section 6); India's own experience (avoiding mass famine post-Green Revolution while population nearly quadrupled since 1951) is cited as evidence for the Boserupian, technology-driven view.</li>
+      <li><strong>Regional carrying-capacity studies</strong> — NITI Aayog and state governments have commissioned carrying-capacity assessments for ecologically fragile regions (e.g., Himalayan hill states post the 2013 Uttarakhand floods, and the Char Dham pilgrimage routes) to cap tourist inflows and construction within sustainable limits.</li>
+      <li><strong>Global footprint debate</strong> — critics of a single "global carrying capacity" number argue it depends heavily on assumed consumption levels (a world at US consumption levels needs ~5 Earths; at average Indian consumption levels, far fewer) — highlighting that carrying capacity is as much about consumption patterns as raw population numbers.</li>
+    </ul>
+  </section>
+
+  <!-- SECTION 9: CURRENT AFFAIRS -->
+  <section class="notes" id="current-affairs">
+    <h2>9. Current Affairs Link (2024–2026)</h2>
+    <div class="callout update">
+      <strong>Earth Overshoot Day &amp; Global Population<span class="update-tag">check for latest update or data</span></strong>
+      <ul style="margin:8px 0 0">
+        <li><strong>UN World Population Prospects 2024 Revision (July 2024):</strong> global population ~8.2 billion; projected to <strong>peak at ~10.3 billion in the mid-2080s</strong> before gradual decline — a downward revision reflecting faster-than-expected fertility decline worldwide.</li>
+        <li><strong>Earth Overshoot Day 2024 = 1 August; 2025 ≈ 24 July</strong> (Global Footprint Network) — humanity exhausts its annual "ecological budget" nearly 5 months before year-end; current global demand ≈ <strong>1.7–1.8 Earths</strong>.</li>
+        <li><strong>India (2024–2026):</strong> retained position as <strong>world's most populous nation</strong> (~1.45 billion, overtaking China since April 2023); growth slowing as TFR fell to <strong>~2.0 (NFHS-5)</strong>, at/below replacement level.</li>
+        <li><strong>UN World Population Day (11 July, annual):</strong> 2024–25 themes stressed rights-based family planning and harnessing demographic dividend — recurring current-affairs hook.</li>
+      </ul>
+    </div>
+    <div class="callout info">
+      <strong>UPSC Relevance:</strong> Carrying capacity, ecological footprint and demographic transition concepts are staple inputs for GS-III essays on sustainable development, alongside recurring Prelims fact-based questions on population statistics, growth-curve equations, and r/K selection traits.
+    </div>
+  </section>
+
+  <!-- SECTION 10: PRELIMS PYQs -->
+  <section class="notes" id="prelims-pyq">
+    <h2>10. Prelims PYQs</h2>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2023</div>
+      <p><strong>Q:</strong> With reference to "carrying capacity" of an environment, consider the following statements:</p>
+      <ol style="margin:0 0 8px;padding-left:22px">
+        <li>It is the maximum population size that a habitat can sustain indefinitely with the resources available.</li>
+        <li>Carrying capacity is a fixed, unchanging value for any given species.</li>
+        <li>Habitat degradation can lower a species' carrying capacity.</li>
+      </ol>
+      <p style="margin:0 0 4px">Which of the statements given above are correct?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>1 and 2 only</li>
+        <li><span class="opt-key">(b)</span>2 and 3 only</li>
+        <li class="correct"><span class="opt-key">(c)</span>1 and 3 only</li>
+        <li><span class="opt-key">(d)</span>1, 2 and 3</li>
+      </ul>
+      <p class="ans"><strong>Ans: (c) 1 and 3 only.</strong> Statement 2 is incorrect — carrying capacity is dynamic, changing with resource availability, climate, technology and habitat quality, not fixed.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2022</div>
+      <p><strong>Q:</strong> The logistic growth curve of a population differs from the exponential growth curve primarily because the logistic model —</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>Assumes unlimited resources at all times</li>
+        <li class="correct"><span class="opt-key">(b)</span>Incorporates a resistance term that slows growth as the population approaches carrying capacity</li>
+        <li><span class="opt-key">(c)</span>Produces a straight-line growth pattern</li>
+        <li><span class="opt-key">(d)</span>Applies only to human populations</li>
+      </ul>
+      <p class="ans"><strong>Ans: (b).</strong> The logistic model incorporates a resistance term, expressed as (1−N/K), that slows growth as N approaches carrying capacity K.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2021</div>
+      <p><strong>Q:</strong> Which one of the following is a "density-independent" factor limiting the growth of a population?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>Competition for food among individuals</li>
+        <li><span class="opt-key">(b)</span>Predation pressure</li>
+        <li class="correct"><span class="opt-key">(c)</span>A sudden, large-scale forest fire</li>
+        <li><span class="opt-key">(d)</span>Spread of a contagious disease through the population</li>
+      </ul>
+      <p class="ans"><strong>Ans: (c).</strong> A sudden, large-scale forest fire's impact does not depend on population density, unlike food competition, predation and disease spread, which are all density-dependent.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2019</div>
+      <p><strong>Q:</strong> Consider the following characteristics:</p>
+      <ol style="margin:0 0 8px;padding-left:22px">
+        <li>Small body size</li>
+        <li>Long lifespan</li>
+        <li>Minimal parental care</li>
+        <li>Late age at sexual maturity</li>
+      </ol>
+      <p style="margin:0 0 4px">Which of the above are typically associated with "r-selected" (r-strategist) species?</p>
+      <ul class="options">
+        <li class="correct"><span class="opt-key">(a)</span>1 and 3 only</li>
+        <li><span class="opt-key">(b)</span>2 and 4 only</li>
+        <li><span class="opt-key">(c)</span>1, 2 and 3 only</li>
+        <li><span class="opt-key">(d)</span>1, 2, 3 and 4</li>
+      </ul>
+      <p class="ans"><strong>Ans: (a) 1 and 3 only.</strong> Long lifespan and late maturity (2 and 4) are characteristics of K-selected species, not r-selected species.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2017</div>
+      <p><strong>Q:</strong> With reference to the Demographic Transition Model, "Stage 2" is best characterised by —</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>High birth rate and high death rate, with slow population growth</li>
+        <li class="correct"><span class="opt-key">(b)</span>High birth rate and rapidly falling death rate, producing rapid population growth</li>
+        <li><span class="opt-key">(c)</span>Falling birth rate and low death rate, with slowing population growth</li>
+        <li><span class="opt-key">(d)</span>Low birth rate and low death rate, with near-zero population growth</li>
+      </ul>
+      <p class="ans"><strong>Ans: (b).</strong> High birth rate combined with a rapidly falling death rate (due to improved healthcare and sanitation) produces the phase of most rapid population growth ("Early Expanding" stage).</p>
+    </div>
+  </section>
+
+  <!-- SECTION 11: MAINS PYQs -->
+  <section class="notes" id="mains-pyq">
+    <h2>11. Mains PYQs</h2>
+
+    <div class="pyq">
+      <div class="year">Mains GS-III 2020</div>
+      <p><strong>Q:</strong> Explain the concept of "carrying capacity" and discuss its relevance to India's development planning and sustainable resource management. (250 words)</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction — define K:</strong> Open with a crisp definition — carrying capacity (K) is the maximum population an environment can sustain <em>indefinitely</em> given available resources, without degrading the resource base.
+            <ul><li>Note it is <strong>dynamic, not fixed</strong> — set by resources, space, predation, disease, competition and waste-assimilation limits.</li></ul>
+          </li>
+          <li><strong>Body — determinants &amp; the technology debate:</strong> Explain how K can be <em>raised</em> by technology and <em>lowered</em> by degradation.
+            <ul><li><strong>Green Revolution</strong> raised India's food carrying capacity, averting Malthusian famine despite ~4× population growth since 1951.</li><li><strong>Malthusian vs Boserupian</strong> framing — pressure either outstrips resources or drives innovation.</li></ul>
+          </li>
+          <li><strong>Body — relevance to India's planning:</strong> Anchor with concrete Indian examples.
+            <ul><li><strong>NITI Aayog / state carrying-capacity studies</strong> for fragile Himalayan hill states (post-2013 Uttarakhand floods) and <strong>Char Dham</strong> pilgrimage caps.</li><li>Urban carrying capacity, groundwater over-extraction (Punjab), and EIA thresholds.</li></ul>
+          </li>
+          <li><strong>Modern extension:</strong> Link to <strong>Planetary Boundaries (Rockström, 2009)</strong> and <strong>Ecological Footprint vs Biocapacity</strong> as scientific successors to a single K number; stress consumption patterns matter as much as headcount.</li>
+          <li><strong>Conclusion:</strong> Sustainable development = keeping resource use within a dynamic, technology-augmented carrying capacity; align with SDGs and India's LiFE (Lifestyle for Environment) mission.</li>
+        </ol>
+        <span class="marks">250 words · 15 marks</span>
+      </div>
+    </div>
+
+    <div class="pyq">
+      <div class="year">Mains GS-III 2018</div>
+      <p><strong>Q:</strong> Discuss the Demographic Transition Model. In which stage is India currently placed, and what are the implications for India's demographic dividend? (200 words)</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction — the model:</strong> Define DTM as the shift from high-birth/high-death to low-birth/low-death regimes as societies industrialise, driving predictable population change.</li>
+          <li><strong>Body — the five stages:</strong> Summarise each with birth/death trends.
+            <ul><li>Stage 1 High Stationary → 2 Early Expanding (rapid growth) → 3 Late Expanding → 4 Low Stationary → 5 Declining.</li></ul>
+          </li>
+          <li><strong>Body — India's placement:</strong> Locate India in <strong>late Stage 3 moving to Stage 4</strong> (TFR ~2.0, NFHS-5, at replacement).
+            <ul><li><strong>Regional heterogeneity:</strong> southern/western states near Stage 4–5 (Kerala, TN) vs some northern states still Stage 2–3 (Bihar, UP).</li></ul>
+          </li>
+          <li><strong>Body — demographic dividend implications:</strong> A time-bound window of a bulging working-age population.
+            <ul><li>Requires <strong>skilling, job creation, health &amp; education</strong> investment to convert into growth; else "demographic burden".</li><li>Prepare for later <strong>ageing</strong> (Stage 4–5) — pensions, healthcare.</li></ul>
+          </li>
+          <li><strong>Conclusion:</strong> India's dividend window is finite (roughly to ~2040s); realising it depends on human-capital policy now, not demography alone.</li>
+        </ol>
+        <span class="marks">200 words · 12.5 marks</span>
+      </div>
+    </div>
+
+    <div class="pyq">
+      <div class="year">Mains GS-III 2016</div>
+      <p><strong>Q:</strong> "Malthusian predictions of population outpacing food supply have repeatedly been deferred by technology, yet ecological limits remain real." Critically examine this statement with reference to the concepts of ecological footprint and biocapacity. (250 words)</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction — Malthus's thesis:</strong> State it — population grows <em>geometrically</em>, food only <em>arithmetically</em>, forcing positive/preventive checks.</li>
+          <li><strong>Body — why predictions were deferred:</strong> Argue technology repeatedly raised the food ceiling.
+            <ul><li><strong>Boserup:</strong> population pressure induces innovation; <strong>Green Revolution</strong> and synthetic fertilisers averted mass famine.</li><li><strong>Ehrlich's Population Bomb (1968)</strong> forecasts largely did not materialise.</li></ul>
+          </li>
+          <li><strong>Body — yet limits are real (footprint vs biocapacity):</strong> Reframe limits ecologically, not just in food terms.
+            <ul><li><strong>Ecological Footprint &gt; Biocapacity</strong> globally since ~1970s; humanity now uses <strong>~1.7 Earths/year</strong> (Earth Overshoot Day advancing).</li><li>Overshoot is masked by drawing down natural capital (aquifers, forests, fisheries, climate stability).</li></ul>
+          </li>
+          <li><strong>Body — critical synthesis:</strong> Technology defers <em>food</em> scarcity but not <em>ecological</em> limits; consumption patterns (rich-world footprint) matter more than raw headcount.
+            <ul><li>Link to <strong>Planetary Boundaries (Rockström, 2009)</strong> as the scientific successor to Malthusian limits.</li></ul>
+          </li>
+          <li><strong>Conclusion:</strong> Neither pure Malthusian doom nor techno-optimism holds; sustainability needs both innovation <em>and</em> demand-side restraint within biocapacity.</li>
+        </ol>
+        <span class="marks">250 words · 15 marks</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 12: REVISION BOX -->
+  <section class="notes" id="revision">
+    <h2>15-Minute Revision Box</h2>
+    <div class="revision-box">
+      <h3>Rapid Revision — Carrying Capacity &amp; Population Growth</h3>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Carrying Capacity (K)</h4>
+      <ul>
+        <li>Maximum population a habitat can sustain indefinitely; determined by resources, space, predation, disease, competition, waste accumulation.</li>
+        <li>Dynamic, not fixed — raised by technology/conservation, lowered by habitat degradation.</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Growth Models</h4>
+      <ul>
+        <li><strong>Exponential (J-curve):</strong> dN/dt = rN, unlimited resources, unrealistic long-term.</li>
+        <li><strong>Logistic (S-curve):</strong> dN/dt = rN(1−N/K), Verhulst (1838); phases: Lag → Exponential → Deceleration → Stationary; growth fastest at N=K/2 (basis of MSY).</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Regulating Factors</h4>
+      <ul>
+        <li><strong>Density-dependent</strong> — food, predation, disease, competition (negative feedback toward K).</li>
+        <li><strong>Density-independent</strong> — storms, floods, fires, drought (same impact regardless of density).</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">r vs K Strategists</h4>
+      <ul>
+        <li><strong>r-strategists:</strong> many small offspring, little care, short life, unstable habitats (insects, rodents, weeds, bacteria).</li>
+        <li><strong>K-strategists:</strong> few large offspring, extensive care, long life, stable habitats (elephants, whales, humans, tigers).</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Demographic Transition Model (5 stages)</h4>
+      <ul>
+        <li>1 High Stationary → 2 Early Expanding (rapid growth) → 3 Late Expanding → 4 Low Stationary → 5 Declining.</li>
+        <li>India: TFR ~2.0 (NFHS-5); moving from Stage 3 toward Stage 4; most populous nation since 2023 (~1.45 billion, 2025-26).</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Malthus vs Modern Debate</h4>
+      <ul>
+        <li>Malthus (1798): population geometric, food arithmetic → positive/preventive checks.</li>
+        <li>Boserup: population pressure drives innovation; Green Revolution raised K; Ehrlich's Population Bomb (1968) largely averted.</li>
+        <li>Modern view: Planetary Boundaries framework (Rockström, 2009) — technology defers but does not eliminate ecological limits.</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Quick Facts</h4>
+      <ul>
+        <li>Ecological Footprint vs Biocapacity — global overshoot since early 1970s; ~1.7 Earths/year used.</li>
+        <li>Earth Overshoot Day 2025 — around 24 July (Global Footprint Network, provisional).</li>
+        <li>St. Matthew Island reindeer: 29 (1944) → ~6,000 (1963) → 42 (1966) — classic overshoot-crash case study.</li>
+        <li>Global population ~8.2 billion (2025); UN projects peak ~10.3 billion mid-2080s.</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- ASIDE / SIDEBAR -->
+<aside>
+  <div class="aside-sticky">
+
+    <!-- WIDGET 1: Quick Reference -->
+    <div class="widget">
+      <h4>Quick Reference</h4>
+      <table>
+        <tr><th>Term</th><th>Key Fact</th></tr>
+        <tr><td>Exponential growth</td><td>dN/dt = rN, J-shaped</td></tr>
+        <tr><td>Logistic growth</td><td>dN/dt = rN(1−N/K), S-shaped</td></tr>
+        <tr><td>Fastest growth</td><td>At N = K/2 (basis of MSY)</td></tr>
+        <tr><td>DTM stages</td><td>5 — High Stationary to Declining</td></tr>
+        <tr><td>India TFR</td><td>2.0 (NFHS-5, 2019-21)</td></tr>
+        <tr><td>Overshoot Day 2025</td><td>~24 July (GFN)</td></tr>
+      </table>
+    </div>
+
+    <!-- WIDGET 2: Key Concepts -->
+    <div class="widget">
+      <h4>Key Concepts to Remember</h4>
+      <ul>
+        <li><strong>Carrying Capacity (K)</strong><br><span style="color:var(--muted);font-size:11px;">Dynamic population ceiling for a habitat</span></li>
+        <li><strong>Logistic Growth &amp; K/2</strong><br><span style="color:var(--muted);font-size:11px;">Verhulst-Pearl equation; steepest at N=K/2</span></li>
+        <li><strong>r vs K Selection</strong><br><span style="color:var(--muted);font-size:11px;">MacArthur &amp; Wilson, 1967</span></li>
+        <li><strong>Demographic Transition</strong><br><span style="color:var(--muted);font-size:11px;">5 stages; India in Stage 3→4</span></li>
+        <li><strong>Ecological Footprint vs Biocapacity</strong><br><span style="color:var(--muted);font-size:11px;">Overshoot since ~1970s</span></li>
+        <li><strong>St. Matthew Island Crash</strong><br><span style="color:var(--muted);font-size:11px;">1944-1966 reindeer overshoot</span></li>
+      </ul>
+    </div>
+
+    <!-- WIDGET 3: Difficulty & Importance -->
+    <div class="widget">
+      <h4>Difficulty &amp; Importance</h4>
+      <div class="bar"><span class="lbl">Prelims Weight</span><span class="fill"><span style="width:75%"></span></span></div>
+      <div class="bar"><span class="lbl">Mains Relevance</span><span class="fill"><span style="width:70%"></span></span></div>
+      <div class="bar"><span class="lbl">Conceptual Depth</span><span class="fill"><span style="width:78%"></span></span></div>
+      <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:65%"></span></span></div>
+      <div class="bar"><span class="lbl">Overall Importance</span><span class="fill"><span style="width:75%"></span></span></div>
+      <p style="margin-top:8px;font-size:11px;color:var(--muted);">Frequently tested via statement-based Prelims questions and GS-III essay-linked Mains questions on sustainable development.</p>
+    </div>
+
+    <!-- WIDGET 4: Must-Know Tags -->
+    <div class="widget">
+      <h4>Must-Know Tags</h4>
+      <span class="tag">Carrying Capacity</span>
+      <span class="tag orange">Population Growth</span>
+      <span class="tag green">Sustainable Development</span>
+      <span class="tag">Logistic Growth</span>
+      <span class="tag orange">Exponential Growth</span>
+      <span class="tag green">r-Selected Species</span>
+      <span class="tag">K-Selected Species</span>
+      <span class="tag orange">Demographic Transition Model</span>
+      <span class="tag green">Ecological Footprint</span>
+      <span class="tag">Earth Overshoot Day</span>
+      <span class="tag orange">St. Matthew Island</span>
+      <span class="tag green">Malthusian Theory</span>
+    </div>
+
+    <!-- WIDGET 5: Related Topics -->
+    <div class="widget">
+      <h4>Related Topics</h4>
+      <ul class="related">
+        <li><a href="/environment/ecology-fundamentals">T01: Ecology Fundamentals</a></li>
+        <li><a href="/environment/species-interactions-and-functional-classes">T02: Species Interactions &amp; Functional Classes</a></li>
+        <li><a href="/environment/ecosystem-structure-and-function">T04: Ecosystem Structure &amp; Function</a></li>
+      </ul>
+    </div>
+
+    <!-- WIDGET 6: Key Numbers & Facts -->
+    <div class="widget">
+      <h4>Key Numbers &amp; Facts</h4>
+      <table>
+        <tr><th>Metric</th><th>Value</th></tr>
+        <tr><td>World population (2025)</td><td>~8.2 billion</td></tr>
+        <tr><td>Projected peak</td><td>~10.3 bn (mid-2080s)</td></tr>
+        <tr><td>India population</td><td>~1.45 bn (most populous)</td></tr>
+        <tr><td>India TFR (NFHS-5)</td><td>2.0 (replacement)</td></tr>
+        <tr><td>Global demand</td><td>~1.7 Earths/year</td></tr>
+        <tr><td>Overshoot Day 2025</td><td>≈ 24 July</td></tr>
+        <tr><td>Logistic eqn.</td><td>Verhulst, 1838</td></tr>
+        <tr><td>r/K selection</td><td>MacArthur &amp; Wilson, 1967</td></tr>
+      </table>
+    </div>
+
+    <!-- WIDGET 7: Growth Models at a Glance -->
+    <div class="widget">
+      <h4>Growth Models at a Glance</h4>
+      <ul>
+        <li><strong>Exponential (J):</strong> dN/dt = rN — unlimited resources, no ceiling.</li>
+        <li><strong>Logistic (S):</strong> dN/dt = rN(1−N/K) — resistance term slows growth near K.</li>
+        <li><strong>Fastest growth:</strong> at N = K/2 (basis of Maximum Sustainable Yield).</li>
+        <li><strong>Phases:</strong> Lag → Exponential → Deceleration → Stationary.</li>
+      </ul>
+    </div>
+
+    <!-- WIDGET 8: Data Sources to Bookmark -->
+    <div class="widget">
+      <h4>Data Sources to Bookmark</h4>
+      <ul class="related">
+        <li><a href="https://population.un.org/wpp/" target="_blank" rel="noopener">UN World Population Prospects</a></li>
+        <li><a href="https://www.footprintnetwork.org/" target="_blank" rel="noopener">Global Footprint Network (Overshoot Day)</a></li>
+        <li><a href="https://main.mohfw.gov.in/" target="_blank" rel="noopener">MoHFW — NFHS &amp; population data</a></li>
+        <li><a href="https://censusindia.gov.in/" target="_blank" rel="noopener">Census of India</a></li>
+        <li><a href="https://www.stockholmresilience.org/research/planetary-boundaries.html" target="_blank" rel="noopener">Stockholm Resilience — Planetary Boundaries</a></li>
+        <li><a href="https://www.niti.gov.in/" target="_blank" rel="noopener">NITI Aayog — carrying-capacity studies</a></li>
+      </ul>
+      <p style="margin-top:6px;font-size:11px;color:var(--muted);">Bookmark for latest population &amp; footprint figures before the exam.</p>
+    </div>
+
+    <!-- WIDGET 9: Quick Navigation -->
+    <div class="widget">
+      <h4>Quick Navigation</h4>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="margin:4px 0;"><a href="#carrying-capacity" style="font-size:12px;">Carrying Capacity</a></li>
+        <li style="margin:4px 0;"><a href="#conceptual-clarity" style="font-size:12px;">Growth Models</a></li>
+        <li style="margin:4px 0;"><a href="#density-factors" style="font-size:12px;">Density-Dependent/Independent</a></li>
+        <li style="margin:4px 0;"><a href="#r-k-selection" style="font-size:12px;">r vs K Selection</a></li>
+        <li style="margin:4px 0;"><a href="#demographic-transition" style="font-size:12px;">Demographic Transition</a></li>
+        <li style="margin:4px 0;"><a href="#malthusian-debate" style="font-size:12px;">Malthusian Debate</a></li>
+        <li style="margin:4px 0;"><a href="#ecological-footprint" style="font-size:12px;">Ecological Footprint</a></li>
+        <li style="margin:4px 0;"><a href="#case-studies" style="font-size:12px;">Case Studies</a></li>
+        <li style="margin:4px 0;"><a href="#current-affairs" style="font-size:12px;">Current Affairs Link</a></li>
+        <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">15-Min Revision Box</a></li>
+      </ul>
+    </div>
+
+  </div>
+</aside>
+</div>
+</div>

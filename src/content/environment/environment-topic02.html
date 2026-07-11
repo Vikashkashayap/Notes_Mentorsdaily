@@ -1,0 +1,1065 @@
+<!-- environment-topic02 — auto-imported from environment-topic02-species-interactions-functional-classes-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Topic 02: Species Interactions &amp; Functional Classes</h1>
+    <p class="sub">Every type of biotic interaction between species — mutualism, commensalism, parasitism, predation, competition, amensalism, neutralism — plus the functional roles species play in ecosystems: keystone, indicator, flagship, umbrella, foundation, endemic and invasive alien species, with exhaustive India-specific examples.</p>
+    <div class="meta">
+      <span class="pill primary">UPSC Prelims &middot; Mains GS-III</span>
+      <span class="pill">Keystone &middot; Indicator &middot; Flagship &middot; Umbrella</span>
+      <span class="pill">~16 min read</span>
+      <span class="pill">Symbiosis &middot; Invasive Species &middot; Ficus</span>
+      <span class="pill">High Weight &middot; Recurring</span>
+    </div>
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <h3>On this page</h3>
+    <ul>
+      <li><span class="num">1.</span><a href="#interactions-overview">Species Interactions — Overview &amp; Matrix</a></li>
+      <li><span class="num">2.</span><a href="#conceptual-clarity">Conceptual Clarity — Keystone vs Indicator vs Flagship vs Umbrella</a></li>
+      <li><span class="num">3.</span><a href="#mutualism-symbiosis">Mutualism &amp; Symbiosis Classification</a></li>
+      <li><span class="num">4.</span><a href="#commensalism">Commensalism</a></li>
+      <li><span class="num">5.</span><a href="#parasitism">Parasitism — Ecto, Endo &amp; Brood</a></li>
+      <li><span class="num">6.</span><a href="#predation-competition">Predation &amp; Competition</a></li>
+      <li><span class="num">7.</span><a href="#amensalism-antibiosis">Amensalism, Antibiosis &amp; Neutralism</a></li>
+      <li><span class="num">8.</span><a href="#functional-classes">Functional/Ecological Classes of Species</a></li>
+      <li><span class="num">9.</span><a href="#ficus-species">Ficus Species — Keystone Resource</a></li>
+      <li><span class="num">10.</span><a href="#invasive-species">Invasive Alien Species — India Focus</a></li>
+      <li><span class="num">11.</span><a href="#current-affairs">Current Affairs Link (2024–2026)</a></li>
+      <li><span class="num">12.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+      <li><span class="num">13.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+      <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+    </ul>
+  </div>
+
+  <!-- CONCEPTUAL CLARITY (top orienting box) -->
+  <div class="concept-box" id="concept">
+    <h3>Conceptual Clarity — Why this Topic Matters</h3>
+    <p>UPSC tests Species Interactions &amp; Functional Classes in three distinct ways. Knowing which question-type you face decides how you study each heading below:</p>
+    <ul>
+      <li><strong>Definitional / static</strong> — "What is commensalism?", "Which interaction is (+/−)?", or "Define a keystone species." Memorise the exact +/0/− notation for each interaction and the precise distinction between keystone, indicator, flagship and umbrella species.</li>
+      <li><strong>Statement-elimination</strong> — two/three statements mixing mutualism vs symbiosis, parasitism sub-types, or functional-class definitions, where one wrong word makes a statement false. Trains you to read boundaries precisely.</li>
+      <li><strong>Applied / current</strong> — Mains and analytical Prelims linking keystone species to trophic cascades, invasive alien species to India's biodiversity loss, and functional classes to conservation strategy. Needs concept + latest IUCN/NBA/IPBES data.</li>
+    </ul>
+    <p>Focus especially on the highest-frequency themes: the <strong>+/0/− interaction matrix</strong>, the <strong>keystone vs indicator vs flagship vs umbrella distinction</strong>, <strong>mutualism/symbiosis sub-types</strong>, and <strong>invasive alien species in India</strong>. These account for the bulk of every question set on this topic.</p>
+  </div>
+
+  <!-- SECTION 1: OVERVIEW & NOTATION MATRIX -->
+  <section class="notes" id="interactions-overview">
+    <h2>1. Species Interactions — Overview &amp; Notation Matrix</h2>
+    <p>Within any community, populations of different species constantly interact — feeding on each other, competing for resources, or living in close physical association. Ecologists classify every such interaction by its net effect on each of the two species: <strong>positive (+)</strong>, <strong>negative (−)</strong>, or <strong>neutral (0)</strong>.</p>
+
+    <div class="svg-wrap">
+      <svg viewBox="0 0 720 400" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+        <text x="360" y="20" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Species Interaction Outcome Matrix (+ / 0 / − Notation)</text>
+        <text x="430" y="38" text-anchor="middle" font-size="10" fill="#5a6266">Effect on Species B →</text>
+        <text x="225" y="55" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2035">+</text>
+        <text x="415" y="55" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2035">0</text>
+        <text x="605" y="55" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2035">−</text>
+
+        <text x="105" y="115" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2035">+</text>
+        <text x="105" y="205" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2035">0</text>
+        <text x="105" y="295" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2035">−</text>
+        <text x="35" y="200" text-anchor="middle" font-size="10" fill="#5a6266" transform="rotate(-90 35 200)">Effect on Species A ↓</text>
+
+        <!-- Row 1: A = + -->
+        <rect x="140" y="70" width="170" height="80" rx="6" fill="#1a7a5a"/>
+        <text x="225" y="98" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">Mutualism</text>
+        <text x="225" y="113" text-anchor="middle" fill="#fff" font-size="9">(+/+) Both benefit</text>
+        <text x="225" y="127" text-anchor="middle" fill="#fff" font-size="9">e.g. Fig — Fig wasp</text>
+
+        <rect x="330" y="70" width="170" height="80" rx="6" fill="#1a3d5c"/>
+        <text x="415" y="98" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">Commensalism</text>
+        <text x="415" y="113" text-anchor="middle" fill="#fff" font-size="9">(+/0) A gains, B unaffected</text>
+        <text x="415" y="127" text-anchor="middle" fill="#fff" font-size="9">e.g. Egret — Cattle</text>
+
+        <rect x="520" y="70" width="170" height="80" rx="6" fill="#c47820"/>
+        <text x="605" y="98" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">Predation / Parasitism</text>
+        <text x="605" y="113" text-anchor="middle" fill="#fff" font-size="9">(+/−) A gains, B harmed</text>
+        <text x="605" y="127" text-anchor="middle" fill="#fff" font-size="9">e.g. Tiger — Deer</text>
+
+        <!-- Row 2: A = 0 -->
+        <rect x="140" y="160" width="170" height="80" rx="6" fill="#1a3d5c"/>
+        <text x="225" y="188" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">Commensalism</text>
+        <text x="225" y="203" text-anchor="middle" fill="#fff" font-size="9">(0/+) B gains, A unaffected</text>
+        <text x="225" y="217" text-anchor="middle" fill="#fff" font-size="9">mirror of above cell</text>
+
+        <rect x="330" y="160" width="170" height="80" rx="6" fill="#5a6266"/>
+        <text x="415" y="188" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">Neutralism</text>
+        <text x="415" y="203" text-anchor="middle" fill="#fff" font-size="9">(0/0) Neither affected</text>
+        <text x="415" y="217" text-anchor="middle" fill="#fff" font-size="9">e.g. Squirrel — Elephant</text>
+
+        <rect x="520" y="160" width="170" height="80" rx="6" fill="#7a3f9a"/>
+        <text x="605" y="188" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">Amensalism</text>
+        <text x="605" y="203" text-anchor="middle" fill="#fff" font-size="9">(0/−) B harmed, A unaffected</text>
+        <text x="605" y="217" text-anchor="middle" fill="#fff" font-size="9">e.g. Penicillium — Bacteria</text>
+
+        <!-- Row 3: A = - -->
+        <rect x="140" y="250" width="170" height="80" rx="6" fill="#c47820"/>
+        <text x="225" y="278" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">Predation / Parasitism</text>
+        <text x="225" y="293" text-anchor="middle" fill="#fff" font-size="9">(−/+) A harmed, B gains</text>
+        <text x="225" y="307" text-anchor="middle" fill="#fff" font-size="9">mirror of top-right cell</text>
+
+        <rect x="330" y="250" width="170" height="80" rx="6" fill="#7a3f9a"/>
+        <text x="415" y="278" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">Amensalism</text>
+        <text x="415" y="293" text-anchor="middle" fill="#fff" font-size="9">(−/0) A harmed, B unaffected</text>
+        <text x="415" y="307" text-anchor="middle" fill="#fff" font-size="9">mirror of middle-right cell</text>
+
+        <rect x="520" y="250" width="170" height="80" rx="6" fill="#0d2035"/>
+        <text x="605" y="278" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">Competition</text>
+        <text x="605" y="293" text-anchor="middle" fill="#fff" font-size="9">(−/−) Both harmed</text>
+        <text x="605" y="307" text-anchor="middle" fill="#fff" font-size="9">e.g. Lion — Hyena</text>
+
+        <!-- Legend -->
+        <rect x="140" y="350" width="12" height="12" fill="#1a7a5a"/><text x="158" y="360" font-size="9" fill="#5a6266">Positive-sum</text>
+        <rect x="255" y="350" width="12" height="12" fill="#1a3d5c"/><text x="273" y="360" font-size="9" fill="#5a6266">One-sided benefit</text>
+        <rect x="395" y="350" width="12" height="12" fill="#c47820"/><text x="413" y="360" font-size="9" fill="#5a6266">Antagonistic</text>
+        <rect x="510" y="350" width="12" height="12" fill="#5a6266"/><text x="528" y="360" font-size="9" fill="#5a6266">Neutral</text>
+        <rect x="590" y="350" width="12" height="12" fill="#7a3f9a"/><text x="608" y="360" font-size="9" fill="#5a6266">One-sided harm</text>
+        <rect x="140" y="375" width="12" height="12" fill="#0d2035"/><text x="158" y="385" font-size="9" fill="#5a6266">Negative-sum (competitive)</text>
+      </svg>
+      <div class="svg-caption">Fig 2.1 — Species Interaction Outcome Matrix, all 6 interaction types plotted by net effect (+/0/−) on Species A and Species B</div>
+    </div>
+
+    <table>
+      <tr><th>Interaction</th><th>Species A</th><th>Species B</th><th>One-line Nature</th></tr>
+      <tr><td>Mutualism</td><td>+</td><td>+</td><td>Both species benefit from the association</td></tr>
+      <tr><td>Commensalism</td><td>+</td><td>0</td><td>One species benefits; the other is unaffected</td></tr>
+      <tr><td>Parasitism</td><td>+</td><td>−</td><td>Parasite gains, host is harmed but usually not killed immediately</td></tr>
+      <tr><td>Predation</td><td>+</td><td>−</td><td>Predator gains by killing and consuming the prey outright</td></tr>
+      <tr><td>Competition (inter/intraspecific)</td><td>−</td><td>−</td><td>Both species/individuals harmed while sharing a limited resource</td></tr>
+      <tr><td>Amensalism</td><td>0</td><td>−</td><td>One species harmed; the other bears no cost or benefit</td></tr>
+      <tr><td>Neutralism</td><td>0</td><td>0</td><td>Co-occurring species with no measurable effect on each other</td></tr>
+    </table>
+
+    <div class="callout">
+      <strong>Memory anchor:</strong> Learn the matrix, not the list — every UPSC question about "which interaction is this" reduces to correctly reading the (+/0/−) sign pair for each species involved.
+    </div>
+  </section>
+
+  <!-- SECTION 2: CONCEPTUAL CLARITY -->
+  <section class="notes" id="conceptual-clarity">
+    <h2>2. Conceptual Clarity — Keystone vs Indicator vs Flagship vs Umbrella Species</h2>
+    <p>These four functional labels are UPSC's favourite confusion set. A single species (e.g. the tiger) can carry all four labels at once, but each label answers a <strong>different question</strong> about that species.</p>
+
+    <div class="grid-4">
+      <div class="card">
+        <h4>Keystone <span class="tag green">Ecological Function</span></h4>
+        <p>Disproportionate impact on ecosystem structure relative to its own abundance/biomass.</p>
+        <p><em>Ask:</em> "Does removing it collapse the ecosystem?"</p>
+      </div>
+      <div class="card">
+        <h4>Indicator <span class="tag">Health Signal</span></h4>
+        <p>Presence/absence/abundance reflects the health or quality of an ecosystem.</p>
+        <p><em>Ask:</em> "Does it tell us the ecosystem's condition?"</p>
+      </div>
+      <div class="card">
+        <h4>Flagship <span class="tag orange">Public Appeal</span></h4>
+        <p>Charismatic species used to raise public awareness and conservation funding.</p>
+        <p><em>Ask:</em> "Does it attract public/political support?"</p>
+      </div>
+      <div class="card">
+        <h4>Umbrella <span class="tag orange">Habitat Proxy</span></h4>
+        <p>Needs a large habitat range; protecting it automatically protects co-occurring species.</p>
+        <p><em>Ask:</em> "Does protecting it protect a whole landscape?"</p>
+      </div>
+    </div>
+
+    <div class="concept-box">
+      <h3>Why the Tiger is All Four at Once</h3>
+      <ul>
+        <li><strong>Keystone:</strong> As apex predator, the tiger regulates herbivore (chital, sambar) numbers — its loss triggers overgrazing and forest degradation.</li>
+        <li><strong>Indicator:</strong> A stable tiger population signals a healthy, well-connected, prey-rich forest ecosystem.</li>
+        <li><strong>Flagship:</strong> Project Tiger (1973) used the tiger's charisma to mobilise national conservation funding and public support.</li>
+        <li><strong>Umbrella:</strong> A tiger needs 20-100+ sq km of forest — protecting that range automatically shelters thousands of other plant and animal species living within it.</li>
+      </ul>
+    </div>
+
+    <table>
+      <tr><th>Category</th><th>Defining Criterion</th><th>Example</th><th>Distinguishing Feature</th></tr>
+      <tr><td>Keystone species</td><td>Ecological impact disproportionate to abundance</td><td>Sea otter, Ficus (fig) trees, tiger</td><td>Concept is about ecosystem function, NOT population size or public appeal</td></tr>
+      <tr><td>Indicator species</td><td>Reflects ecosystem health/quality via presence-absence</td><td>Lichens (air), frogs (wetlands), mayfly larvae (water quality)</td><td>Concept is about monitoring/diagnosis, not ecosystem control</td></tr>
+      <tr><td>Flagship species</td><td>Charismatic, publicly appealing, used for fundraising/awareness</td><td>Giant panda (WWF logo), Bengal tiger, snow leopard</td><td>Concept is about marketing/public support, may have low actual ecological impact</td></tr>
+      <tr><td>Umbrella species</td><td>Large home-range requirement; its protection shelters co-occurring species</td><td>Tiger, elephant, jaguar</td><td>Concept is about spatial/habitat protection efficiency, not food-web role</td></tr>
+      <tr><td>Foundation species</td><td>Physically creates/defines the habitat structure itself</td><td>Corals, kelp, mangroves</td><td>Concept is about habitat creation, distinct from keystone's food-web role</td></tr>
+    </table>
+
+    <div class="callout warn">
+      <strong>UPSC Trap:</strong> "Every keystone species is also a flagship species" is FALSE. A keystone species (e.g. a fungus or an unglamorous fig tree) need not be charismatic; a flagship species (e.g. a panda used mainly for logos/fundraising) need not have major ecosystem-regulating power. Match the definition to the question stem, not the species' popularity.
+    </div>
+  </section>
+
+  <!-- SECTION 3: MUTUALISM & SYMBIOSIS CLASSIFICATION -->
+  <section class="notes" id="mutualism-symbiosis">
+    <h2>3. Mutualism &amp; Symbiosis Classification</h2>
+    <p><strong>Symbiosis</strong> is the umbrella term for any close, sustained, direct-contact interaction between two different species. It includes mutualism, commensalism AND parasitism — symbiosis does NOT mean "mutual benefit only," a very common misreading.</p>
+
+    <h3>Mutualism (+/+)</h3>
+    <div class="grid-2">
+      <div class="card">
+        <h4>Obligate Mutualism</h4>
+        <ul>
+          <li>Both partners are entirely dependent on each other for survival/reproduction.</li>
+          <li><em>Fig tree — Fig wasp:</em> the wasp is the sole pollinator; its larvae develop only inside the fig's syconium.</li>
+          <li><em>Termites — Gut protozoa/bacteria:</em> microbes digest cellulose that termites cannot break down alone; termites provide shelter and food.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Facultative Mutualism</h4>
+        <ul>
+          <li>Both partners benefit but can survive independently without the other.</li>
+          <li><em>Bees — Flowering plants:</em> bees gain nectar, plants get pollinated, but neither strictly needs one specific partner species.</li>
+          <li><em>Ants — Aphids:</em> ants protect aphids from predators in exchange for honeydew; both can survive without this specific pairing.</li>
+        </ul>
+      </div>
+    </div>
+    <ul>
+      <li><strong>Mycorrhizae:</strong> Fungi associate with plant roots — fungi enhance water/phosphorus uptake, plant supplies photosynthetic sugars.</li>
+      <li><strong>Rhizobium-Legume symbiosis:</strong> Nitrogen-fixing bacteria in root nodules convert atmospheric N₂ into usable nitrogen; plant supplies carbohydrates.</li>
+      <li><strong>Cleaning symbiosis:</strong> Oxpeckers removing ticks from rhinos/buffaloes; cleaner wrasse fish removing parasites from larger reef fish.</li>
+      <li><strong>Lichens:</strong> Fungus + alga/cyanobacterium living as one composite organism — fungus provides structure/moisture retention, photosynthetic partner provides food.</li>
+    </ul>
+
+    <h3>Symbiosis Classification Table — Obligate vs Facultative</h3>
+    <table>
+      <tr><th>Interaction Type</th><th>Obligate Example</th><th>Facultative Example</th></tr>
+      <tr><td>Mutualism</td><td>Fig tree &amp; Fig wasp (neither can reproduce without the other)</td><td>Bee &amp; flowering plant (each can survive without this exact partner)</td></tr>
+      <tr><td>Commensalism</td><td>Epiphytic orchids (structurally dependent on the host tree for support)</td><td>Cattle egret &amp; grazing cattle (egret can feed elsewhere too)</td></tr>
+    </table>
+
+    <div class="callout warn">
+      <strong>UPSC Trap:</strong> "Symbiosis always benefits both species" is FALSE — parasitism is also symbiosis (close, sustained contact), yet it harms the host. Use "mutualistic symbiosis" only when the question specifically states mutual benefit.
+    </div>
+  </section>
+
+  <!-- SECTION 4: COMMENSALISM -->
+  <section class="notes" id="commensalism">
+    <h2>4. Commensalism</h2>
+    <p>Commensalism (+/0) is an interaction where one species benefits while the other is neither helped nor harmed. It is often mistaken for mutualism (both benefit) or amensalism (one is harmed) — always check whether the "unaffected" partner truly gains nothing.</p>
+    <ul>
+      <li><strong>Epiphytes:</strong> Orchids and ferns growing on tree branches use the host only for physical support, taking no nutrients — tree is unaffected.</li>
+      <li><strong>Cattle egrets &amp; grazing cattle:</strong> Egrets feed on insects flushed out by grazing cattle/buffaloes — a very common sight in Indian farmlands.</li>
+      <li><strong>Remora fish &amp; sharks:</strong> Remoras attach to sharks/rays for transport and feed on leftover food scraps without affecting the host.</li>
+      <li><strong>Barnacles on whales:</strong> Barnacles gain a mobile substrate and access to nutrient-rich water currents; the whale is largely unaffected.</li>
+      <li><strong>Phoresy:</strong> One organism (e.g. a mite) uses another purely for transport, e.g. mites hitching rides on dung beetles.</li>
+    </ul>
+    <div class="callout info">
+      <strong>Distinguishing from Mutualism:</strong> If the "host" partner is later found to gain something (even indirectly), the relationship is reclassified as mutualism, not commensalism — several classic "commensal" pairs (like gut flora in some animals) have been reclassified this way as research deepens.
+    </div>
+  </section>
+
+  <!-- SECTION 5: PARASITISM -->
+  <section class="notes" id="parasitism">
+    <h2>5. Parasitism — Ecto, Endo &amp; Brood Parasitism</h2>
+    <p>Parasitism (+/−) is an interaction where the parasite lives on or in a host, deriving nutrition at the host's expense, typically without killing it immediately (unlike predation, which kills outright).</p>
+
+    <table>
+      <tr><th>Type</th><th>Description</th><th>Examples</th></tr>
+      <tr><td>Ectoparasite</td><td>Lives on the external surface of the host</td><td>Ticks, fleas, lice, leeches on mammals</td></tr>
+      <tr><td>Endoparasite</td><td>Lives inside the host's body (gut, blood, tissue)</td><td>Tapeworm (intestine), <em>Plasmodium</em> (malaria, in blood), roundworms</td></tr>
+      <tr><td>Brood parasite</td><td>Lays eggs in another species' nest, tricking the host into raising its young</td><td>Asian koel parasitising crow nests (India); common cuckoo, brown-headed cowbird (global)</td></tr>
+      <tr><td>Social parasite</td><td>Exploits the labour/social structure of another species, mainly in insects</td><td>Slave-making ant species that raid and enslave worker ants of other colonies</td></tr>
+      <tr><td>Plant parasite (holoparasite)</td><td>Total parasitic plant with no chlorophyll, entirely dependent on host for nutrition</td><td><em>Cuscuta</em> (dodder/amarbel) — common on hedges across India</td></tr>
+      <tr><td>Plant parasite (hemiparasite)</td><td>Partial parasitic plant — photosynthesises but draws water/minerals from host</td><td>Mistletoe (<em>Viscum</em> species) growing on tree branches</td></tr>
+    </table>
+
+    <div class="callout">
+      <strong>Brood Parasitism — How It Works:</strong> The female koel lays her egg in a crow's nest, often removing a host egg to avoid detection; the koel chick hatches, is fed by the unwitting crow parents, and may outcompete host chicks for food — a striking Indian example commonly cited in Prelims and quiz questions.
+    </div>
+
+    <div class="callout info">
+      <strong>Coevolution / "Arms Race":</strong> Long-term host-parasite relationships drive coevolution — hosts evolve resistance/detection mechanisms (e.g. crows sometimes recognising and rejecting koel eggs) while parasites evolve counter-strategies (egg mimicry) to evade them.
+    </div>
+  </section>
+
+  <!-- SECTION 6: PREDATION & COMPETITION -->
+  <section class="notes" id="predation-competition">
+    <h2>6. Predation &amp; Competition</h2>
+    <h3>Predation</h3>
+    <ul>
+      <li>Predation (+/−) is where one organism (predator) kills and consumes another (prey) for energy — a "top-down" control on community structure.</li>
+      <li><strong>Classic Indian example:</strong> Tiger (predator) and spotted deer/chital (prey) in Central Indian and Terai forests.</li>
+      <li><strong>Parasitoidism:</strong> An insect parasitoid (e.g. certain wasps) lays eggs on/in a host insect; larvae consume the host from within, eventually killing it — intermediate between predation and parasitism; widely used in biological pest control.</li>
+      <li><strong>Anti-predator adaptations:</strong> Camouflage (stick insects), Batesian mimicry (harmless species mimics a dangerous one, e.g. hoverfly mimicking a wasp), Müllerian mimicry (two unpalatable species evolve similar warning colours, reinforcing predator avoidance), and aposematism (bright warning colouration signalling toxicity).</li>
+    </ul>
+
+    <h3>Competition</h3>
+    <table>
+      <tr><th>Type</th><th>Description</th><th>Example</th></tr>
+      <tr><td>Intraspecific competition</td><td>Between individuals of the SAME species</td><td>Male deer competing for mates during the rutting season</td></tr>
+      <tr><td>Interspecific competition</td><td>Between individuals of DIFFERENT species</td><td>Lions and hyenas competing over the same prey base in African savannas</td></tr>
+      <tr><td>Exploitation competition</td><td>Indirect — species deplete a shared resource, harming each other without direct contact</td><td>Two herbivore species depleting the same grassland</td></tr>
+      <tr><td>Interference competition</td><td>Direct — species actively block each other's access to a resource</td><td>Territorial aggression between birds defending nesting sites</td></tr>
+    </table>
+
+    <div class="callout">
+      <strong>Gause's Competitive Exclusion Principle (1934):</strong> Two species competing for the exact same limiting resource in the exact same niche cannot coexist indefinitely — one eventually eliminates the other, OR the species undergo <strong>niche partitioning</strong> (diverging into slightly different niches) to reduce overlap and coexist.
+    </div>
+  </section>
+
+  <!-- SECTION 7: AMENSALISM, ANTIBIOSIS & NEUTRALISM -->
+  <section class="notes" id="amensalism-antibiosis">
+    <h2>7. Amensalism, Antibiosis &amp; Neutralism</h2>
+    <h3>Amensalism (0/−)</h3>
+    <div class="grid-2">
+      <div class="card">
+        <h4>Allelopathy (chemical amensalism)</h4>
+        <p>A plant releases biochemical toxins suppressing nearby plants of other species, while it is itself unaffected.</p>
+        <p><em>Examples:</em> Black walnut releasing juglone; <em>Eucalyptus</em> and <em>Prosopis juliflora</em> in India suppressing native undergrowth.</p>
+      </div>
+      <div class="card">
+        <h4>Physical amensalism</h4>
+        <p>A large organism inadvertently harms a smaller one purely by its physical presence/activity, gaining or losing nothing itself.</p>
+        <p><em>Example:</em> Elephant herds trampling grass and saplings while foraging.</p>
+      </div>
+    </div>
+
+    <h3>Antibiosis — A Specific Biochemical Subtype of Amensalism</h3>
+    <ul>
+      <li><strong>Antibiosis</strong> is the specific case where one organism produces a chemical substance (an antibiotic/toxin) that directly inhibits or kills another, without itself being affected.</li>
+      <li>Classic example: the fungus <em>Penicillium</em> secreting penicillin, which kills nearby bacteria — the fungus gains nothing extra from the bacteria's death, it is simply defending its own space/resources.</li>
+      <li>Antibiosis is narrower than amensalism — amensalism covers ANY 0/− outcome (including purely physical harm like trampling), while antibiosis specifically means chemical/biological inhibition.</li>
+    </ul>
+    <table>
+      <tr><th>Feature</th><th>Amensalism (general)</th><th>Antibiosis (subtype)</th></tr>
+      <tr><td>Scope</td><td>Any 0/− interaction, physical or chemical</td><td>Specifically chemical/biochemical inhibition</td></tr>
+      <tr><td>Mechanism</td><td>Trampling, shading, overcrowding, or toxin release</td><td>Production of an inhibitory biochemical (antibiotic, allelochemical)</td></tr>
+      <tr><td>Example</td><td>Elephant trampling grass while foraging</td><td><em>Penicillium</em> mould inhibiting bacterial growth</td></tr>
+    </table>
+
+    <h3>Neutralism (0/0)</h3>
+    <ul>
+      <li>Two species share a habitat but neither measurably affects the other — true neutralism is rare since most co-occurring species interact indirectly via shared resources, predators, or habitat modification.</li>
+      <li><em>Example:</em> A squirrel and an elephant in the same forest rarely interact directly or measurably affect one another's survival.</li>
+    </ul>
+
+    <div class="callout warn">
+      <strong>UPSC Trap:</strong> Do not confuse Amensalism (0/−, one harmed, other unaffected) with Competition (−/−, BOTH harmed). And within amensalism, "antibiosis" specifically refers to the chemical-inhibition mechanism — not every amensal interaction is antibiosis.
+    </div>
+  </section>
+
+  <!-- SECTION 8: FUNCTIONAL/ECOLOGICAL CLASSES OF SPECIES -->
+  <section class="notes" id="functional-classes">
+    <h2>8. Functional/Ecological Classes of Species</h2>
+
+    <h3>Keystone Species</h3>
+    <p>A species whose ecological impact is disproportionately large relative to its abundance/biomass — its removal triggers a cascade collapsing community structure (a "trophic cascade").</p>
+
+    <div class="svg-wrap">
+      <svg viewBox="0 0 720 420" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+        <defs>
+          <marker id="e02-arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+            <path d="M1,1 L7,4 L1,7 Z" fill="#aab8c4"/>
+          </marker>
+        </defs>
+        <text x="360" y="20" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Keystone Species Concept — Sea Otter / Sea Urchin / Kelp Forest Cascade</text>
+
+        <!-- Panel A -->
+        <rect x="20" y="35" width="330" height="330" rx="8" fill="#f0f7f4" stroke="#1a7a5a" stroke-width="1.5"/>
+        <text x="185" y="58" text-anchor="middle" font-size="12" font-weight="700" fill="#0a6644">Scenario A — Otters Present (Balanced)</text>
+
+        <circle cx="90" cy="110" r="26" fill="#1a3d5c"/>
+        <text x="90" y="108" text-anchor="middle" fill="#fff" font-size="9" font-weight="700">Sea Otter</text>
+        <text x="90" y="120" text-anchor="middle" fill="#fff" font-size="7">(keystone predator)</text>
+
+        <path d="M120,110 L165,110" stroke="#5a6266" stroke-width="2" marker-end="url(#e02-arrow)"/>
+        <text x="142" y="102" text-anchor="middle" font-size="7" fill="#5a6266">light predation</text>
+
+        <circle cx="200" cy="100" r="12" fill="#c47820"/>
+        <circle cx="225" cy="120" r="12" fill="#c47820"/>
+        <circle cx="195" cy="130" r="12" fill="#c47820"/>
+        <text x="212" y="150" text-anchor="middle" font-size="8" fill="#5a6266">Few urchins</text>
+
+        <path d="M245,115 L280,115" stroke="#5a6266" stroke-width="2" marker-end="url(#e02-arrow)"/>
+        <text x="262" y="107" text-anchor="middle" font-size="7" fill="#5a6266">light grazing</text>
+
+        <rect x="60" y="200" width="20" height="120" fill="#1a7a5a"/>
+        <rect x="95" y="185" width="20" height="135" fill="#1a7a5a"/>
+        <rect x="130" y="195" width="20" height="125" fill="#1a7a5a"/>
+        <rect x="165" y="180" width="20" height="140" fill="#1a7a5a"/>
+        <rect x="200" y="195" width="20" height="125" fill="#1a7a5a"/>
+        <rect x="235" y="185" width="20" height="135" fill="#1a7a5a"/>
+        <rect x="270" y="200" width="20" height="120" fill="#1a7a5a"/>
+        <text x="185" y="345" text-anchor="middle" font-size="10" font-weight="700" fill="#0a6644">Dense, healthy kelp forest</text>
+        <text x="185" y="358" text-anchor="middle" font-size="8" fill="#5a6266">Supports fish, invertebrates, marine mammals</text>
+
+        <!-- Panel B -->
+        <rect x="370" y="35" width="330" height="330" rx="8" fill="#fff5e6" stroke="#c47820" stroke-width="1.5"/>
+        <text x="535" y="58" text-anchor="middle" font-size="12" font-weight="700" fill="#8a5310">Scenario B — Otters Removed (Cascade Collapse)</text>
+
+        <circle cx="440" cy="110" r="26" fill="#aab8c4"/>
+        <text x="440" y="108" text-anchor="middle" fill="#fff" font-size="9" font-weight="700">Otter</text>
+        <text x="440" y="120" text-anchor="middle" fill="#fff" font-size="7">removed</text>
+        <line x1="418" y1="88" x2="462" y2="132" stroke="#cc3333" stroke-width="3"/>
+        <line x1="462" y1="88" x2="418" y2="132" stroke="#cc3333" stroke-width="3"/>
+
+        <circle cx="530" cy="90" r="11" fill="#c47820"/>
+        <circle cx="555" cy="105" r="11" fill="#c47820"/>
+        <circle cx="520" cy="115" r="11" fill="#c47820"/>
+        <circle cx="545" cy="130" r="11" fill="#c47820"/>
+        <circle cx="570" cy="90" r="11" fill="#c47820"/>
+        <circle cx="580" cy="120" r="11" fill="#c47820"/>
+        <text x="550" y="150" text-anchor="middle" font-size="8" fill="#5a6266">Urchin population explodes</text>
+
+        <path d="M550,158 L550,180" stroke="#cc3333" stroke-width="2" marker-end="url(#e02-arrow)"/>
+        <text x="605" y="172" text-anchor="middle" font-size="7" fill="#cc3333">heavy overgrazing</text>
+
+        <rect x="410" y="290" width="20" height="30" fill="#8a6a4a"/>
+        <rect x="445" y="300" width="20" height="20" fill="#8a6a4a"/>
+        <rect x="480" y="295" width="20" height="25" fill="#8a6a4a"/>
+        <rect x="515" y="305" width="20" height="15" fill="#8a6a4a"/>
+        <rect x="550" y="298" width="20" height="22" fill="#8a6a4a"/>
+        <rect x="585" y="302" width="20" height="18" fill="#8a6a4a"/>
+        <rect x="620" y="295" width="20" height="25" fill="#8a6a4a"/>
+        <text x="535" y="345" text-anchor="middle" font-size="10" font-weight="700" fill="#cc3333">Kelp forest collapses — "urchin barren"</text>
+        <text x="535" y="358" text-anchor="middle" font-size="8" fill="#5a6266">Fish, invertebrates, marine mammals lose habitat</text>
+
+        <rect x="20" y="382" width="680" height="30" rx="6" fill="#0d2035"/>
+        <text x="360" y="401" text-anchor="middle" fill="#fff" font-size="9">Indian parallel: Tiger removed → chital/sambar overpopulate → overgrazing → forest degradation (same keystone logic)</text>
+      </svg>
+      <div class="svg-caption">Fig 2.2 — Keystone Species Concept: how removing one ecologically pivotal predator collapses an entire community (trophic cascade)</div>
+    </div>
+
+    <ul>
+      <li><strong>Indian example:</strong> The tiger, as apex predator, is a keystone species — protecting it automatically conserves the ecosystem beneath it.</li>
+      <li><strong>Ficus (fig) trees</strong> are keystone species through a different mechanism — as a year-round "keystone resource" for frugivores (detailed in Section 9).</li>
+      <li><strong>Ecosystem engineers</strong> (related but distinct): species that physically modify habitat structure rather than acting through feeding links — e.g. elephants creating waterholes and clearings, beavers building dams.</li>
+    </ul>
+
+    <h3>Indicator Species (Bioindicators)</h3>
+    <table>
+      <tr><th>Indicator Species</th><th>What It Indicates</th></tr>
+      <tr><td>Lichens</td><td>Air quality — highly sensitive to sulphur dioxide; absent in polluted urban air</td></tr>
+      <tr><td>Amphibians (frogs)</td><td>Wetland/freshwater ecosystem health — permeable skin makes them very pollutant-sensitive</td></tr>
+      <tr><td>Mayfly &amp; stonefly larvae</td><td>River/stream water quality — require high dissolved oxygen and clean water</td></tr>
+      <tr><td>Coral reefs</td><td>Ocean temperature and acidity stress — bleaching signals thermal stress</td></tr>
+      <tr><td>Earthworms</td><td>Soil quality and health — sensitive to pesticide contamination and soil compaction</td></tr>
+    </table>
+
+    <h3>Flagship Species</h3>
+    <ul>
+      <li>A charismatic, publicly appealing species chosen to represent a broader conservation cause and mobilise funding/awareness.</li>
+      <li><strong>Giant panda:</strong> WWF's global logo species, symbol of endangered-species conservation worldwide.</li>
+      <li><strong>Bengal tiger / Project Tiger:</strong> India's flagship species for forest and wildlife conservation funding since 1973.</li>
+      <li><strong>Snow leopard:</strong> Flagship for high-altitude Himalayan ecosystem conservation (Project Snow Leopard, 2009).</li>
+    </ul>
+
+    <h3>Umbrella Species</h3>
+    <ul>
+      <li>A species requiring a large habitat range, such that protecting it automatically shelters many co-occurring species within that range.</li>
+      <li><strong>Tiger:</strong> A single tiger's territory can span 20-100+ sq km, sheltering thousands of associated plant and animal species.</li>
+      <li><strong>Asian elephant:</strong> Requires vast corridors linking multiple forest patches, so elephant-corridor protection conserves many other species along the route.</li>
+    </ul>
+
+    <h3>Foundation Species</h3>
+    <ul>
+      <li>A species that physically creates or defines the basic habitat structure that other species depend on — a distinct mechanism from keystone's food-web role.</li>
+      <li><strong>Corals:</strong> Reef-building corals create the entire three-dimensional reef structure that thousands of marine species depend on.</li>
+      <li><strong>Mangroves:</strong> Form the structural, root-based habitat of coastal wetland ecosystems (e.g. the Sundarbans), supporting fish nurseries and bird life.</li>
+      <li><strong>Kelp:</strong> Forms the physical forest structure of temperate coastal ecosystems, as seen in the otter-urchin-kelp cascade above.</li>
+    </ul>
+
+    <h3>Endemic Species</h3>
+    <ul>
+      <li>A species found naturally ONLY in one specific, restricted geographic area and nowhere else — product of geographic isolation and localised evolution.</li>
+      <li><strong>Nilgiri Tahr:</strong> Endemic to the Western Ghats' shola-grassland ecosystem.</li>
+      <li><strong>Lion-tailed Macaque:</strong> Endemic to Western Ghats rainforests.</li>
+      <li><strong>Asiatic Lion:</strong> Its only wild population globally survives in Gir National Park, Gujarat.</li>
+      <li>High endemism combined with severe habitat threat is the primary criterion for designating a Biodiversity Hotspot (covered in the dedicated Biodiversity topic files).</li>
+    </ul>
+
+    <div class="callout info">
+      <strong>One species, many labels:</strong> A species can simultaneously be keystone + umbrella + flagship (tiger), or foundation + keystone (coral reefs), or endemic + indicator (many Western Ghats amphibians) — always identify WHICH criterion the question is testing.
+    </div>
+  </section>
+
+  <!-- SECTION 9: FICUS SPECIES -->
+  <section class="notes" id="ficus-species">
+    <h2>9. Ficus Species — Keystone Resource of Tropical Forests</h2>
+    <p><em>Ficus</em> (the fig genus — includes Banyan, Peepal and hundreds of species) is treated as a distinct functional category because of its outsized ecological role as a "keystone resource" in tropical forests.</p>
+    <ul>
+      <li><strong>Year-round, asynchronous fruiting:</strong> Unlike most tropical trees which fruit seasonally, fig trees produce fruit almost continuously across individuals — a critical, reliable food source during lean periods when other fruits are scarce.</li>
+      <li><strong>Obligate mutualism with fig wasps:</strong> Each fig species is typically pollinated by one specific fig-wasp species, which enters the enclosed inflorescence (syconium) to lay eggs — textbook coevolved obligate mutualism (Section 3).</li>
+      <li><strong>Supports frugivore diversity:</strong> Hornbills, civets, bats, primates and many bird species depend heavily on fig fruit, making Ficus a hub sustaining disproportionate animal biodiversity relative to its own numbers.</li>
+      <li><strong>Sacred/cultural significance in India:</strong> Banyan (<em>Ficus benghalensis</em>, India's National Tree) and Peepal (<em>Ficus religiosa</em>) are widely protected around temples and villages — an informal but effective conservation practice.</li>
+    </ul>
+    <div class="callout">
+      <strong>UPSC Angle:</strong> Ficus is cited alongside tigers as a keystone species — but through a completely different mechanism (food-web/resource keystone vs predator/top-down keystone). Distinguishing the mechanism is a common Mains discriminator.
+    </div>
+  </section>
+
+  <!-- SECTION 10: INVASIVE ALIEN SPECIES -->
+  <section class="notes" id="invasive-species">
+    <h2>10. Invasive Alien Species — India Focus</h2>
+    <p>An invasive alien species is a non-native organism introduced (deliberately or accidentally) into a new ecosystem, which spreads aggressively and causes ecological or economic harm — typically because it lacks natural predators/competitors in the new range.</p>
+
+    <h3>India-Specific Invasive Flora &amp; Fauna List</h3>
+    <table>
+      <tr><th>Invasive Species</th><th>Type</th><th>Impact in India</th></tr>
+      <tr><td><em>Lantana camara</em></td><td>Plant (shrub)</td><td>India's most widespread invasive plant; suppresses native undergrowth, alters forest fire regimes</td></tr>
+      <tr><td><em>Parthenium hysterophorus</em> (Congress grass)</td><td>Plant (herb)</td><td>Rapidly colonises wasteland/roadsides; causes allergic dermatitis and respiratory issues in humans and livestock</td></tr>
+      <tr><td><em>Prosopis juliflora</em></td><td>Plant (tree)</td><td>Invades grasslands/drylands; allelopathic, reduces native biodiversity and groundwater availability</td></tr>
+      <tr><td><em>Eichhornia crassipes</em> (Water hyacinth)</td><td>Aquatic plant</td><td>Chokes lakes/wetlands, depletes dissolved oxygen, blocks sunlight to native aquatic life</td></tr>
+      <tr><td><em>Chromolaena odorata</em></td><td>Plant (shrub)</td><td>Aggressive coloniser of forest clearings/grasslands, especially in Northeast India and Western Ghats</td></tr>
+      <tr><td><em>Mikania micrantha</em> (Mile-a-minute weed)</td><td>Climbing vine</td><td>Smothers native vegetation in Northeast India and West Bengal forests</td></tr>
+      <tr><td>African Catfish (<em>Clarias gariepinus</em>)</td><td>Fish</td><td>Banned but illegally farmed; predates aggressively on native fish species in Indian waterbodies</td></tr>
+      <tr><td>Apple Snail (<em>Pomacea</em> species)</td><td>Mollusc</td><td>Devastates paddy crops (especially in Kerala, West Bengal); outcompetes native snails</td></tr>
+      <tr><td>Nile Tilapia</td><td>Fish</td><td>Outcompetes and displaces native freshwater fish species</td></tr>
+      <tr><td>Red-eared Slider Turtle</td><td>Reptile (former pet trade)</td><td>Outcompetes native turtle species for basking sites and food</td></tr>
+    </table>
+
+    <h3>Pathways &amp; Control</h3>
+    <ul>
+      <li><strong>Pathways of introduction:</strong> Deliberate horticultural/agricultural introduction, aquarium/pet trade release, ballast water (aquatic species), accidental seed/cargo transport.</li>
+      <li><strong>Mechanical control:</strong> Manual/machine removal — used for water hyacinth and Lantana clearance drives.</li>
+      <li><strong>Biological control:</strong> Introducing a natural enemy — e.g. <em>Zygogramma bicolorata</em> beetle deployed against Parthenium; <em>Neochetina</em> weevils against water hyacinth.</li>
+      <li><strong>Chemical control:</strong> Targeted herbicide use, though risk of collateral ecological damage limits its scale-up.</li>
+    </ul>
+
+    <div class="callout warn">
+      <strong>Scale of the Problem:</strong> India hosts an estimated <strong>185 invasive alien plant species</strong> — the highest among South Asian nations — spreading across roughly <strong>266,954 sq km</strong> of India's natural areas, expanding by about <strong>15,500 sq km every year</strong>.
+    </div>
+
+    <div class="callout info">
+      <strong>Global Framework:</strong> The <strong>Kunming-Montreal Global Biodiversity Framework (KM-GBF, 2022)</strong> Target 6 commits countries to identify and manage invasive alien species pathways, and halve their negative biodiversity impact by 2030.
+    </div>
+  </section>
+
+  <!-- SECTION 11: CURRENT AFFAIRS -->
+  <section class="notes" id="current-affairs">
+    <h2>11. Current Affairs Link (2024&ndash;2026)</h2>
+    <p>Invasive-species data, keystone-species case studies, and biodiversity-framework targets recur in Prelims (fact statements) and Mains GS-III. Developments below run from 2024 to the present. <span class="update-tag">check for latest update or data</span></p>
+
+    <h3>11.1 India's Invasive Species Crisis</h3>
+    <ul>
+      <li>A <strong>2024 study (Nature Ecology &amp; Evolution / NCBS-led)</strong> estimated invasive alien plants spread across roughly <strong>15,500 sq km of India's natural areas every year</strong>, with cumulative losses of about <strong>₹8.3 lakh crore over 60 years</strong> — flagged as an underestimate. <span class="update-tag">check for latest update or data</span></li>
+      <li><strong>Apple snail</strong> (<em>Pomacea</em>) infestations continued to damage paddy in Kerala and West Bengal through 2024&ndash;2026, prompting fresh state advisories on manual removal and seed/seedling biosecurity.</li>
+      <li><em>Lantana camara</em>, <em>Parthenium</em> and <em>Prosopis juliflora</em> removal drives remain central to India's forest-fire-mitigation and grassland-restoration programmes into 2026 (dense Lantana thickets fuel more intense fires).</li>
+    </ul>
+
+    <h3>11.2 Keystone / Functional Species &amp; Global Frameworks</h3>
+    <ul>
+      <li><strong>All-India Tiger Estimation</strong> updates (NTCA) continue to be read as an indicator of forest ecosystem health &mdash; the tiger's dual keystone + indicator role. <span class="update-tag">check for latest update or data</span></li>
+      <li><strong>IPBES Invasive Alien Species Assessment (2023)</strong> remains the global baseline: 37,000+ established non-native species, 3,500+ damaging invasives, linked to 60% of recorded extinctions and US$423 bn/yr in losses.</li>
+      <li><strong>CBD COP16 (Cali, Oct&ndash;Nov 2024)</strong> reinforced <strong>KM-GBF Target 6</strong> &mdash; identify/manage invasive-species pathways and halve their impact by 2030; India's updated NBSAP carries these targets.</li>
+    </ul>
+    <div class="callout info">
+      <strong>UPSC Relevance:</strong> Invasive-species statistics, keystone/indicator case studies, and the KM-GBF Target 6 deadline (2030) recur across Prelims fact-based questions and Mains GS-III answer writing on biodiversity conservation.
+    </div>
+  </section>
+
+  <!-- SECTION 12: PRELIMS PYQs -->
+  <section class="notes" id="prelims-pyq">
+    <h2>12. Prelims PYQs</h2>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2021</div>
+      <p class="q-stem"><strong>Q:</strong> Which one of the following is an ecological description of a "keystone species"?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span> A species with the largest population in an ecosystem</li>
+        <li class="correct"><span class="opt-key">(b)</span> A species whose impact on its ecosystem is disproportionately large relative to its abundance</li>
+        <li><span class="opt-key">(c)</span> A species found only in one specific restricted geographic location</li>
+        <li><span class="opt-key">(d)</span> A non-native species that spreads aggressively in a new habitat</li>
+      </ul>
+      <p class="ans">Ans: (b) &mdash; (c) describes an endemic species, (d) describes an invasive species.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2020</div>
+      <p class="q-stem"><strong>Q:</strong> Consider the following pairs (Species interaction : Type): (1) Fig tree &amp; Fig wasp : Mutualism; (2) Cattle egret &amp; Grazing cattle : Commensalism; (3) Tapeworm &amp; Human host : Predation. Which pairs are correctly matched?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span> 1 only</li>
+        <li class="correct"><span class="opt-key">(b)</span> 1 and 2 only</li>
+        <li><span class="opt-key">(c)</span> 2 and 3 only</li>
+        <li><span class="opt-key">(d)</span> 1, 2 and 3</li>
+      </ul>
+      <p class="ans">Ans: (b) &mdash; Pair 3 is parasitism, not predation (host not killed and consumed outright).</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2018</div>
+      <p class="q-stem"><strong>Q:</strong> Lichens, widely used as bio-indicators, primarily indicate the level of which form of pollution?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span> Water pollution</li>
+        <li><span class="opt-key">(b)</span> Soil pollution</li>
+        <li class="correct"><span class="opt-key">(c)</span> Air pollution, especially Sulphur Dioxide (SO&#8322;)</li>
+        <li><span class="opt-key">(d)</span> Noise pollution</li>
+      </ul>
+      <p class="ans">Ans: (c) &mdash; lichens are highly sensitive to SO&#8322; and absent in heavily polluted urban air.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2017</div>
+      <p class="q-stem"><strong>Q:</strong> The "Invasive Species Specialist Group (ISSG)", which maintains a global database of invasive alien species, is associated with which organisation?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span> UNEP</li>
+        <li class="correct"><span class="opt-key">(b)</span> IUCN</li>
+        <li><span class="opt-key">(c)</span> UNESCO</li>
+        <li><span class="opt-key">(d)</span> CITES Secretariat</li>
+      </ul>
+      <p class="ans">Ans: (b) &mdash; ISSG functions under the IUCN Species Survival Commission.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2015</div>
+      <p class="q-stem"><strong>Q:</strong> Which plant species is reported as an invasive weed damaging the Western Ghats' forest and grassland ecosystems?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span> <em>Rhododendron arboreum</em></li>
+        <li class="correct"><span class="opt-key">(b)</span> <em>Lantana camara</em></li>
+        <li><span class="opt-key">(c)</span> <em>Shorea robusta</em></li>
+        <li><span class="opt-key">(d)</span> <em>Santalum album</em></li>
+      </ul>
+      <p class="ans">Ans: (b) &mdash; one of the most aggressive invasive shrubs across Indian forests.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2013</div>
+      <p class="q-stem"><strong>Q:</strong> Consider the statements about "brood parasitism": (1) one species lays its eggs in another species' nest; (2) the Asian koel commonly parasitises crow nests in India; (3) brood parasitism always kills the host species. Which are correct?</p>
+      <ul class="options">
+        <li class="correct"><span class="opt-key">(a)</span> 1 and 2 only</li>
+        <li><span class="opt-key">(b)</span> 2 and 3 only</li>
+        <li><span class="opt-key">(c)</span> 1 only</li>
+        <li><span class="opt-key">(d)</span> 1, 2 and 3</li>
+      </ul>
+      <p class="ans">Ans: (a) &mdash; statement 3 is wrong; it harms host reproductive success but does not kill the adult host.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 13: MAINS PYQs -->
+  <section class="notes" id="mains-pyq">
+    <h2>13. Mains PYQs + Model Answers</h2>
+
+    <div class="pyq">
+      <div class="year">Mains GS-III 2021 <span class="marks">15 marks &middot; 250 words</span></div>
+      <p class="q-stem"><strong>Q:</strong> What is the significance of "keystone species" in maintaining ecosystem stability? Discuss with suitable examples, including from India, and distinguish the concept from "flagship" and "umbrella" species.</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction &mdash; define:</strong> A keystone species has an ecological impact <em>disproportionately large</em> relative to its abundance/biomass; its removal triggers a trophic cascade collapsing community structure.</li>
+          <li><strong>Significance for ecosystem stability:</strong>
+            <ul>
+              <li>Regulates prey/competitor populations (top-down control) &rarr; prevents overgrazing/monopolisation.</li>
+              <li>Maintains biodiversity, food-web complexity and resilience.</li>
+              <li>Classic evidence &mdash; sea otter &rarr; sea urchin &rarr; kelp-forest cascade.</li>
+            </ul>
+          </li>
+          <li><strong>Indian examples:</strong>
+            <ul>
+              <li><em>Tiger</em> &mdash; apex predator regulating chital/sambar; loss &rarr; overgrazing, forest degradation.</li>
+              <li><em>Ficus (fig)</em> &mdash; a <em>resource</em>-keystone: year-round asynchronous fruiting sustains hornbills, bats, primates during lean periods (different mechanism from predator keystone).</li>
+              <li><em>Elephant</em> &mdash; ecosystem engineer creating gaps, dispersing seeds.</li>
+            </ul>
+          </li>
+          <li><strong>Distinguish the concepts:</strong>
+            <ul>
+              <li><em>Flagship</em> &mdash; charismatic, used for public appeal/fundraising (panda, tiger); may have low ecological impact.</li>
+              <li><em>Umbrella</em> &mdash; large home-range; protecting it shelters co-occurring species (tiger, elephant).</li>
+              <li>A single species (tiger) can be keystone + flagship + umbrella at once, but each label answers a different question.</li>
+            </ul>
+          </li>
+          <li><strong>Conclusion:</strong> Correctly identifying a species' functional role decides the right conservation strategy (food-web protection vs habitat-scale vs awareness/funding).</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="pyq">
+      <div class="year">Mains GS-III 2019 <span class="marks">15 marks &middot; 250 words</span></div>
+      <p class="q-stem"><strong>Q:</strong> "Invasive alien species pose one of the most under-recognised threats to India's biodiversity and economy." Discuss with examples and suggest a policy framework to manage this threat.</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> An invasive alien species is a non-native organism that spreads aggressively and causes ecological/economic harm, typically lacking natural predators in the new range.</li>
+          <li><strong>The threat &mdash; with Indian examples:</strong>
+            <ul>
+              <li><em>Flora</em>: <em>Lantana camara</em>, <em>Parthenium</em>, <em>Prosopis juliflora</em>, water hyacinth &mdash; displace natives, allelopathy, alter fire regimes.</li>
+              <li><em>Fauna</em>: apple snail (paddy damage), African catfish, Nile tilapia &mdash; outcompete native species.</li>
+            </ul>
+          </li>
+          <li><strong>Scale &amp; cost:</strong> ~185 invasive alien plants (highest in South Asia); ~266,954 sq km invaded; ~15,500 sq km/yr spread; ~&#8377;8.3 lakh crore loss over 60 years; IPBES 2023 links invasives to 60% of global extinctions. <span class="update-tag">check for latest update or data</span></li>
+          <li><strong>Policy framework suggested:</strong>
+            <ul>
+              <li>Prevention &mdash; biosecurity, ballast-water &amp; pet/aquarium-trade regulation, risk screening of imports.</li>
+              <li>Early Detection &amp; Rapid Response (EDRR) system with a national invasive-species database.</li>
+              <li>Management &mdash; mechanical + biological control (<em>Zygogramma</em> beetle vs Parthenium; <em>Neochetina</em> weevil vs water hyacinth).</li>
+              <li>Align with <strong>KM-GBF Target 6</strong> (halve impact by 2030) via the updated NBSAP; strengthen Biological Diversity Act, 2002.</li>
+            </ul>
+          </li>
+          <li><strong>Conclusion:</strong> Treat invasive species as a mainstream biosecurity and economic risk, not a peripheral ecological issue.</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="pyq">
+      <div class="year">Mains GS-III 2016 <span class="marks">10 marks &middot; 150 words</span></div>
+      <p class="q-stem"><strong>Q:</strong> Distinguish between symbiosis, antagonism and neutralism as forms of species interaction, giving one example of each, and explain the difference between amensalism and antibiosis.</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Symbiosis:</strong> Close, sustained contact between two species &mdash; an <em>umbrella</em> term covering mutualism, commensalism AND parasitism (not "mutual benefit only"). Example: fig tree &amp; fig wasp (obligate mutualism).</li>
+          <li><strong>Antagonism:</strong> One species benefits at another's direct expense &mdash; predation and parasitism. Example: tiger &amp; chital (predation).</li>
+          <li><strong>Neutralism (0/0):</strong> No measurable effect on either species; rare in nature since most co-occurring species interact indirectly. Example: squirrel &amp; elephant in the same forest.</li>
+          <li><strong>Amensalism vs Antibiosis:</strong>
+            <ul>
+              <li><em>Amensalism</em> (0/&minus;) &mdash; any interaction where one is harmed, the other unaffected, physical or chemical (e.g., elephant trampling grass).</li>
+              <li><em>Antibiosis</em> &mdash; the specific <em>chemical-inhibition</em> subtype (e.g., <em>Penicillium</em> secreting penicillin killing bacteria). Every antibiosis is amensalism, but not vice-versa.</li>
+            </ul>
+          </li>
+          <li><strong>Conclusion:</strong> Reading the (+/0/&minus;) sign-pair for each species is the reliable way to classify any interaction.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 14: REVISION BOX -->
+  <section class="notes" id="revision">
+    <h2>15-Minute Revision Box</h2>
+    <div class="revision-box">
+      <h3>Rapid Revision — Species Interactions &amp; Functional Classes</h3>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">The 7 Interaction Types (+/−/0 code)</h4>
+      <ul>
+        <li><strong>Mutualism</strong> (+/+) — both benefit. <strong>Commensalism</strong> (+/0) — one benefits, other unaffected.</li>
+        <li><strong>Predation</strong> (+/−) — predator kills prey outright. <strong>Parasitism</strong> (+/−) — parasite harms host without immediate killing.</li>
+        <li><strong>Competition</strong> (−/−) — both harmed, shared limited resource (inter- vs intraspecific).</li>
+        <li><strong>Amensalism</strong> (0/−) — one harmed, other unaffected; <strong>Antibiosis</strong> = its chemical-inhibition subtype.</li>
+        <li><strong>Neutralism</strong> (0/0) — no measurable effect on either species.</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Symbiosis Classification</h4>
+      <ul>
+        <li><strong>Symbiosis</strong> = mutualism + commensalism + parasitism (close contact, NOT only "mutual benefit").</li>
+        <li><strong>Obligate</strong> = both partners fully dependent (fig-fig wasp); <strong>Facultative</strong> = can survive independently (bee-flower).</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Parasitism Sub-types</h4>
+      <ul>
+        <li><strong>Ectoparasite</strong> (tick, flea) vs <strong>Endoparasite</strong> (tapeworm, Plasmodium).</li>
+        <li><strong>Brood parasite</strong> — Asian koel in crow nests (India); cuckoo, cowbird (global).</li>
+        <li>Plant parasites: <strong>Holoparasite</strong> (Cuscuta, no chlorophyll) vs <strong>Hemiparasite</strong> (mistletoe, partial photosynthesis).</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Functional Species Classes</h4>
+      <ul>
+        <li><strong>Keystone</strong> — disproportionate ecological impact vs abundance (tiger, sea otter, Ficus).</li>
+        <li><strong>Indicator</strong> — signals ecosystem health (lichens = air; frogs/mayflies = water).</li>
+        <li><strong>Flagship</strong> — charismatic, used for fundraising/awareness (panda, tiger, snow leopard).</li>
+        <li><strong>Umbrella</strong> — large range; protecting it protects co-occurring species (tiger, elephant).</li>
+        <li><strong>Foundation</strong> — physically builds habitat structure (corals, mangroves, kelp).</li>
+        <li><strong>Endemic</strong> — found only in one restricted area (Nilgiri Tahr, Lion-tailed Macaque, Asiatic Lion).</li>
+        <li><strong>Invasive alien</strong> — non-native, aggressive spread, harms ecosystem (Lantana camara, Parthenium, Prosopis juliflora, apple snail).</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Quick Facts</h4>
+      <ul>
+        <li>Gause's Competitive Exclusion Principle — 1934, identical-niche species cannot coexist indefinitely; resolved via niche partitioning.</li>
+        <li>IPBES 2023: 37,000+ non-native species globally; 3,500+ damaging invasive; 60% of extinctions linked; $423 bn/yr losses.</li>
+        <li>India: 185 invasive alien plant species (highest in South Asia); ~266,954 sq km invaded; ~15,500 sq km/yr spread; ₹8.3 lakh crore loss over 60 years.</li>
+        <li>KM-GBF Target 6 — halve invasive species impact by 2030.</li>
+        <li>Biological control examples: Zygogramma beetle (Parthenium), Neochetina weevil (water hyacinth).</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- ASIDE / SIDEBAR -->
+<aside>
+  <div class="aside-sticky">
+
+    <!-- WIDGET 1: Interaction Quick Reference -->
+    <div class="widget">
+      <h4>Interaction Types — Quick Reference</h4>
+      <table>
+        <tr><th>Type</th><th>Code</th></tr>
+        <tr><td>Mutualism</td><td>+ / +</td></tr>
+        <tr><td>Commensalism</td><td>+ / 0</td></tr>
+        <tr><td>Predation</td><td>+ / −</td></tr>
+        <tr><td>Parasitism</td><td>+ / −</td></tr>
+        <tr><td>Competition</td><td>− / −</td></tr>
+        <tr><td>Amensalism</td><td>0 / −</td></tr>
+        <tr><td>Neutralism</td><td>0 / 0</td></tr>
+      </table>
+    </div>
+
+    <!-- WIDGET 2: Key Concepts -->
+    <div class="widget">
+      <h4>Key Concepts to Remember</h4>
+      <ul>
+        <li><strong>Fig tree + Fig wasp</strong><br><span style="color:var(--muted);font-size:11px;">Obligate mutualism — keystone resource</span></li>
+        <li><strong>Sea Otter + Urchin + Kelp</strong><br><span style="color:var(--muted);font-size:11px;">Classic keystone trophic cascade</span></li>
+        <li><strong>Asian Koel + Crow</strong><br><span style="color:var(--muted);font-size:11px;">Brood parasitism, Indian example</span></li>
+        <li><strong>Antibiosis</strong><br><span style="color:var(--muted);font-size:11px;">Chemical subtype of amensalism (Penicillium)</span></li>
+        <li><strong>Tiger</strong><br><span style="color:var(--muted);font-size:11px;">Keystone + Indicator + Flagship + Umbrella, all at once</span></li>
+        <li><strong>Lantana camara</strong><br><span style="color:var(--muted);font-size:11px;">India's most widespread invasive plant</span></li>
+      </ul>
+    </div>
+
+    <!-- WIDGET 3: Difficulty & Importance -->
+    <div class="widget">
+      <h4>Difficulty &amp; Importance</h4>
+      <div class="bar"><span class="lbl">Prelims Weight</span><span class="fill"><span style="width:75%"></span></span></div>
+      <div class="bar"><span class="lbl">Mains Relevance</span><span class="fill"><span style="width:40%"></span></span></div>
+      <div class="bar"><span class="lbl">Conceptual Depth</span><span class="fill"><span style="width:70%"></span></span></div>
+      <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:78%"></span></span></div>
+      <div class="bar"><span class="lbl">Overall Importance</span><span class="fill"><span style="width:76%"></span></span></div>
+      <p style="margin-top:8px;font-size:11px;color:var(--muted);">Frequently tested via matching/statement-based Prelims questions; roughly one question per year on this cluster.</p>
+    </div>
+
+    <!-- WIDGET 4: Must-Know Tags -->
+    <div class="widget">
+      <h4>Must-Know Tags</h4>
+      <span class="tag orange">Keystone Species</span>
+      <span class="tag green">Indicator Species</span>
+      <span class="tag orange">Invasive Species</span>
+      <span class="tag">Symbiosis</span>
+      <span class="tag green">Flagship Species</span>
+      <span class="tag">Umbrella Species</span>
+      <span class="tag orange">Foundation Species</span>
+      <span class="tag">Endemic Species</span>
+      <span class="tag green">Brood Parasitism</span>
+      <span class="tag">Ficus Mutualism</span>
+      <span class="tag orange">Gause's Principle</span>
+      <span class="tag">Lantana camara</span>
+    </div>
+
+    <!-- WIDGET 5: Related Topics -->
+    <div class="widget">
+      <h4>Related Topics</h4>
+      <ul class="related">
+        <li><a href="/environment/ecology-fundamentals">T01: Ecology Fundamentals</a></li>
+        <li><a href="/environment/carrying-capacity-and-population-growth">T03: Carrying Capacity &amp; Population Growth</a></li>
+        <li><a href="economy-topic15-sustainable-development-environment-economics-upsc-notes.html">Economy T15: Sustainable Development &amp; Environment Economics</a></li>
+        <li><span style="color:var(--muted);">Environment T12: Biodiversity Loss &amp; Threats (deep-dive)</span></li>
+      </ul>
+    </div>
+
+    <!-- WIDGET 6: Functional Classes at a Glance -->
+    <div class="widget">
+      <h4>Functional Classes at a Glance</h4>
+      <table>
+        <tr><th>Class</th><th>Test</th></tr>
+        <tr><td>Keystone</td><td>Impact &gt;&gt; abundance</td></tr>
+        <tr><td>Indicator</td><td>Signals health</td></tr>
+        <tr><td>Flagship</td><td>Public appeal</td></tr>
+        <tr><td>Umbrella</td><td>Large range</td></tr>
+        <tr><td>Foundation</td><td>Builds habitat</td></tr>
+        <tr><td>Endemic</td><td>One place only</td></tr>
+        <tr><td>Invasive</td><td>Non-native, harmful</td></tr>
+      </table>
+    </div>
+
+    <!-- WIDGET 7: Key Numbers -->
+    <div class="widget">
+      <h4>Key Numbers &amp; Facts</h4>
+      <ul>
+        <li>Gause's Competitive Exclusion &mdash; <strong>1934</strong></li>
+        <li>India invasive plants &mdash; <strong>~185</strong> (highest in South Asia)</li>
+        <li>Area invaded &mdash; <strong>~266,954 sq km</strong>; +~15,500/yr</li>
+        <li>Economic loss &mdash; <strong>~&#8377;8.3 lakh crore</strong>/60 yrs</li>
+        <li>IPBES 2023 &mdash; invasives linked to <strong>60%</strong> of extinctions</li>
+        <li>KM-GBF Target 6 &mdash; halve impact by <strong>2030</strong></li>
+      </ul>
+      <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+    </div>
+
+    <!-- WIDGET 8: Data Sources to Bookmark -->
+    <div class="widget">
+      <h4>Data Sources to Bookmark</h4>
+      <ul>
+        <li><a href="https://www.iucnredlist.org" target="_blank" rel="noopener">IUCN Red List / ISSG</a></li>
+        <li><a href="https://www.ipbes.net" target="_blank" rel="noopener">IPBES</a> &mdash; invasive-species assessment</li>
+        <li><a href="https://moef.gov.in" target="_blank" rel="noopener">MoEFCC</a> &mdash; policy &amp; data</li>
+        <li><a href="https://ntca.gov.in" target="_blank" rel="noopener">NTCA</a> &mdash; tiger estimation</li>
+        <li><a href="https://www.cbd.int/gbf" target="_blank" rel="noopener">CBD KM-GBF</a> &mdash; targets</li>
+        <li><a href="https://pib.gov.in" target="_blank" rel="noopener">PIB</a> &mdash; press releases</li>
+      </ul>
+      <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+    </div>
+
+    <!-- WIDGET 9: Quick Navigation -->
+    <div class="widget">
+      <h4>Quick Navigation</h4>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="margin:4px 0;"><a href="#interactions-overview" style="font-size:12px;">Interactions Overview &amp; Matrix</a></li>
+        <li style="margin:4px 0;"><a href="#conceptual-clarity" style="font-size:12px;">Conceptual Clarity</a></li>
+        <li style="margin:4px 0;"><a href="#mutualism-symbiosis" style="font-size:12px;">Mutualism &amp; Symbiosis</a></li>
+        <li style="margin:4px 0;"><a href="#commensalism" style="font-size:12px;">Commensalism</a></li>
+        <li style="margin:4px 0;"><a href="#parasitism" style="font-size:12px;">Parasitism</a></li>
+        <li style="margin:4px 0;"><a href="#predation-competition" style="font-size:12px;">Predation &amp; Competition</a></li>
+        <li style="margin:4px 0;"><a href="#amensalism-antibiosis" style="font-size:12px;">Amensalism &amp; Antibiosis</a></li>
+        <li style="margin:4px 0;"><a href="#functional-classes" style="font-size:12px;">Functional Classes of Species</a></li>
+        <li style="margin:4px 0;"><a href="#ficus-species" style="font-size:12px;">Ficus Species</a></li>
+        <li style="margin:4px 0;"><a href="#invasive-species" style="font-size:12px;">Invasive Alien Species</a></li>
+        <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">15-Min Revision Box</a></li>
+      </ul>
+    </div>
+
+  </div>
+</aside>
+</div>
+</div>

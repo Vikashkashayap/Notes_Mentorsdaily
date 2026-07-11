@@ -1,0 +1,770 @@
+<!-- environment-topic39 — auto-imported from environment-topic39-miscellaneous-emerging-concepts-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(135deg,#1b3a4b 0%,#0d2535 55%,#061018 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ol{margin:0;padding-left:22px;font-size:14px;columns:2;column-gap:24px}
+.toc li{margin-bottom:5px;break-inside:avoid}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes p{margin:0 0 14px;color:#2a2f33}
+section.notes ul,section.notes ol{margin:0 0 14px;padding-left:22px;color:#2a2f33}
+section.notes li{margin-bottom:6px}
+.callout{background:#eefaf4;border-left:4px solid var(--green);padding:14px 18px;border-radius:8px;margin:16px 0;font-size:15px}
+.callout.warn{background:#fff4e8;border-left-color:var(--brand-orange)}
+.callout.info{background:#eaf2fb;border-left-color:#2563a8}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;padding:2px 7px;border-radius:4px;margin-left:6px;vertical-align:middle}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin:10px 0 4px}
+.model-answer h5{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--green)}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol li{margin-bottom:5px}
+.model-answer ul{margin:4px 0;padding-left:18px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;font-weight:700;padding:2px 8px;border-radius:10px;margin-left:6px}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafcfd}
+.svg-wrap{border:1.5px dashed var(--line);border-radius:10px;padding:16px;margin:18px 0;background:#fcfdfe;text-align:center}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-wrap .cap{font-size:13px;color:var(--muted);margin-top:8px}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:16px 0}
+.grid-4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin:16px 0}
+.card{border:1px solid var(--line);border-radius:10px;padding:16px;background:#fff}
+.card h4{margin:0 0 8px;color:var(--brand-blue-dark);font-size:15.5px}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:12px;padding:3px 10px;border-radius:20px;margin:2px 4px 2px 0}
+.tag.orange{background:#fdeedc;color:#8a4d0f}
+.tag.green{background:#e2f5ed;color:#0f5c3f}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);border-radius:8px;padding:16px 18px;margin:14px 0}
+.pyq .year{display:inline-block;background:var(--brand-orange);color:#fff;font-size:12px;font-weight:700;padding:2px 10px;border-radius:12px;margin-bottom:8px}
+.pyq p{margin:0 0 8px}
+.pyq .ans{font-weight:700;color:var(--green)}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:22px 26px;margin:24px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px;margin-bottom:20px}
+.widget h4{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark)}
+.widget .bar{margin-bottom:12px}
+.widget .lbl{display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px;color:var(--muted)}
+.widget .track{background:#eef1f4;border-radius:6px;height:8px;overflow:hidden}
+.widget .fill{background:var(--brand-orange);height:100%;border-radius:6px}
+.widget a.chip{display:block;padding:8px 10px;border:1px solid var(--line);border-radius:8px;font-size:13.5px;margin-bottom:8px;color:var(--text)}
+.widget a.chip:hover{border-color:var(--brand-orange);text-decoration:none;background:#fff8ec}
+.widget a.chip.soon{opacity:0.55;pointer-events:none}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c9d4dc;padding:28px 24px;text-align:center;font-size:13px;margin-top:20px}
+@media(max-width:860px){
+  .layout{grid-template-columns:1fr}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .toc ol{columns:1}
+}
+@media print{
+  .topnav,aside,footer{display:none}
+  .layout{padding-top:0;grid-template-columns:1fr}
+  .hero{background:#1b3a4b !important;-webkit-print-color-adjust:exact}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+  <div class="hero">
+    <h1>Miscellaneous & Emerging Environmental Concepts</h1>
+    <p class="sub">The frontier vocabulary of climate policy and energy transition — carbon budgets and carbon bombs, the EU's Carbon Border Tax, climate tipping points, the Karakoram anomaly, hydrogen colour codes, and unconventional fuels (CBM, shale gas, methanol economy).</p>
+    <div class="meta">
+      <span class="pill">Topic 39 of 39</span>
+      <span class="pill">Reading time: 14 min</span>
+      <span class="pill">Prelims: Medium Yield</span>
+      <span class="pill">Mains: GS-III</span>
+    </div>
+  </div>
+
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ol>
+      <li><a href="#s1">Carbon Budget</a></li>
+      <li><a href="#s2">Carbon Bombs</a></li>
+      <li><a href="#s3">Carbon Leakage</a></li>
+      <li><a href="#s4">Carbon Border Tax (CBAM)</a></li>
+      <li><a href="#s5">Climate Tipping Points</a></li>
+      <li><a href="#s6">Committed Warming</a></li>
+      <li><a href="#s7">Runaway Greenhouse Effect</a></li>
+      <li><a href="#s8">Karakoram Anomaly</a></li>
+      <li><a href="#s9">Hydrogen Colour Codes</a></li>
+      <li><a href="#s10">Coal Bed Methane & Shale Gas</a></li>
+      <li><a href="#s11">Methanol Economy</a></li>
+      <li><a href="#s12">Other Emerging Terms</a></li>
+      <li><a href="#s13">Current Affairs</a></li>
+      <li><a href="#prelims-pyq">Prelims PYQs</a></li>
+      <li><a href="#mains-pyq">Mains PYQs</a></li>
+      <li><a href="#revision">Revision Box</a></li>
+    </ol>
+  </div>
+
+  <section class="notes" id="s1">
+    <h2>1. Carbon Budget</h2>
+    <div class="concept-box" id="concept">
+      <h3>Carbon Budget</h3>
+      <p>The maximum cumulative amount of CO₂ that can be emitted globally while still keeping warming below a specified temperature limit (e.g., 1.5°C or 2°C) with a given probability. Once the budget is exhausted, staying within the limit requires net-zero (or net-negative) emissions.</p>
+    </div>
+    <ul>
+      <li>The <strong>remaining carbon budget</strong> for 1.5°C is shrinking rapidly — IPCC AR6 estimated only a few hundred gigatonnes of CO₂ remained.</li>
+      <li>India argues for <strong>equity in budget-sharing</strong> — that developed nations have consumed a disproportionate share historically (linked to CBDR-RC, Topic 31).</li>
+    </ul>
+  </section>
+
+  <section class="notes" id="s2">
+    <h2>2. Carbon Bombs</h2>
+    <ul>
+      <li><strong>Carbon bombs</strong> = fossil-fuel extraction projects (oil, gas, coal) each capable of emitting <strong>at least 1 gigatonne (1 billion tonnes) of CO₂</strong> over their lifetime.</li>
+      <li>The term highlights that a relatively small number of mega-projects worldwide could, by themselves, blow through the remaining carbon budget.</li>
+      <li>Popularised by investigative journalism (2022) identifying ~425 such projects globally.</li>
+    </ul>
+  </section>
+
+  <section class="notes" id="s3">
+    <h2>3. Carbon Leakage</h2>
+    <div class="concept-box">
+      <h3>Carbon Leakage</h3>
+      <p>The phenomenon where stringent climate policy in one country causes emission-intensive industry (and hence emissions) to relocate to countries with laxer regulation — so global emissions are not actually reduced, merely "leaked" elsewhere.</p>
+    </div>
+    <ul>
+      <li>Carbon leakage is the core justification the EU cites for its Carbon Border Adjustment Mechanism (below).</li>
+    </ul>
+  </section>
+
+  <section class="notes" id="s4">
+    <h2>4. Carbon Border Tax — CBAM</h2>
+    <ul>
+      <li>The EU's <strong>Carbon Border Adjustment Mechanism (CBAM)</strong> is a levy on the embedded carbon emissions of certain imports — <strong>iron & steel, aluminium, cement, fertilisers, electricity, and hydrogen</strong>.</li>
+      <li>Aim: to equalise the carbon price paid by EU producers (under the EU Emissions Trading System) and importers, preventing carbon leakage.</li>
+      <li><strong>Transitional (reporting-only) phase from October 2023</strong>; full financial levy from <strong>2026</strong>.</li>
+      <li>India strongly opposes CBAM as a <strong>trade-distorting, unilateral, "green protectionism"</strong> measure that penalises developing-country exporters and violates CBDR-RC.</li>
+    </ul>
+    <div class="callout warn">CBAM is a recurring Prelims + Mains hotspot — remember: EU mechanism, targets carbon-intensive imports, full rollout 2026, India objects on equity/WTO grounds.</div>
+    <div class="svg-wrap">
+      <svg viewBox="0 0 660 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="How the EU Carbon Border Adjustment Mechanism works">
+        <text x="330" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#0d2035">How CBAM Equalises the Carbon Price</text>
+        <defs><marker id="ar39a" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#5a6266"/></marker></defs>
+        <!-- EU producer -->
+        <rect x="30" y="56" width="180" height="70" rx="8" fill="#eaf2fb" stroke="#2563a8" stroke-width="1.3"/>
+        <text x="120" y="82" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0d2035">EU producer</text>
+        <text x="120" y="100" text-anchor="middle" font-size="10.5" fill="#5a6266">pays carbon price</text>
+        <text x="120" y="114" text-anchor="middle" font-size="10.5" fill="#5a6266">under EU ETS</text>
+        <!-- Importer -->
+        <rect x="30" y="150" width="180" height="70" rx="8" fill="#fff4e8" stroke="#c47820" stroke-width="1.3"/>
+        <text x="120" y="176" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0d2035">Non-EU importer</text>
+        <text x="120" y="194" text-anchor="middle" font-size="10.5" fill="#5a6266">pays little / no</text>
+        <text x="120" y="208" text-anchor="middle" font-size="10.5" fill="#5a6266">carbon price at home</text>
+        <!-- gap label -->
+        <text x="120" y="144" text-anchor="middle" font-size="10.5" fill="#c0392b" font-weight="700">price gap &rarr; carbon leakage risk</text>
+        <!-- arrows to CBAM -->
+        <line x1="210" y1="91" x2="300" y2="120" stroke="#5a6266" stroke-width="1.5" marker-end="url(#ar39a)"/>
+        <line x1="210" y1="185" x2="300" y2="140" stroke="#5a6266" stroke-width="1.5" marker-end="url(#ar39a)"/>
+        <!-- CBAM box -->
+        <rect x="305" y="98" width="150" height="64" rx="8" fill="#1a3d5c"/>
+        <text x="380" y="124" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">CBAM levy</text>
+        <text x="380" y="142" text-anchor="middle" font-size="10" fill="#cfe0ee">on embedded CO&#8322; of imports</text>
+        <!-- arrow to outcome -->
+        <line x1="455" y1="130" x2="510" y2="130" stroke="#5a6266" stroke-width="1.5" marker-end="url(#ar39a)"/>
+        <!-- outcome -->
+        <rect x="515" y="98" width="120" height="64" rx="8" fill="#eefaf4" stroke="#1a7a5a" stroke-width="1.3"/>
+        <text x="575" y="122" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0f5c3f">Equal carbon</text>
+        <text x="575" y="138" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0f5c3f">price</text>
+        <text x="575" y="153" text-anchor="middle" font-size="9.5" fill="#5a6266">no leakage</text>
+        <!-- covered sectors -->
+        <text x="330" y="196" text-anchor="middle" font-size="10.5" fill="#5a6266">Covered goods: iron &amp; steel &middot; aluminium &middot; cement &middot; fertilisers &middot; electricity &middot; hydrogen</text>
+        <text x="330" y="214" text-anchor="middle" font-size="10.5" fill="#8a4d0f">Reporting phase Oct 2023 &rarr; full financial levy 2026 &middot; India objects (green protectionism, CBDR-RC, WTO)</text>
+      </svg>
+      <div class="svg-caption">Fig 39.1 &mdash; CBAM taxes the carbon embedded in imports so foreign goods face the same carbon price as EU producers, closing the &lsquo;leakage&rsquo; gap; India challenges it on equity and trade grounds.</div>
+    </div>
+  </section>
+
+  <section class="notes" id="s5">
+    <h2>5. Climate Tipping Points</h2>
+    <ul>
+      <li><strong>Tipping points</strong> = critical thresholds beyond which a component of the Earth system shifts abruptly and often <strong>irreversibly</strong> to a new state, even if warming later reverses.</li>
+      <li>Key examples: <strong>collapse of the Greenland and West Antarctic ice sheets, dieback of the Amazon rainforest, slowdown/collapse of the Atlantic Meridional Overturning Circulation (AMOC), thawing of permafrost releasing methane, and coral reef die-off</strong>.</li>
+      <li>Tipping points may cascade — one triggering another — making them a defining risk in climate science.</li>
+    </ul>
+    <div class="svg-wrap">
+      <svg viewBox="0 0 660 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Climate tipping points and their cascade">
+        <text x="330" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#0d2035">Climate Tipping Points &amp; the Cascade Risk</text>
+        <defs><marker id="ar39b" markerWidth="9" markerHeight="9" refX="5" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#c0392b"/></marker></defs>
+        <!-- trigger -->
+        <rect x="250" y="40" width="160" height="40" rx="8" fill="#c47820"/>
+        <text x="330" y="60" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Warming crosses</text>
+        <text x="330" y="74" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">a threshold</text>
+        <!-- five elements -->
+        <rect x="20" y="120" width="120" height="72" rx="8" fill="#eaf2fb" stroke="#2563a8" stroke-width="1.2"/>
+        <text x="80" y="144" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0d2035">Greenland &amp;</text>
+        <text x="80" y="158" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0d2035">W. Antarctic ice</text>
+        <text x="80" y="176" text-anchor="middle" font-size="9.5" fill="#5a6266">sea-level rise</text>
+
+        <rect x="150" y="120" width="120" height="72" rx="8" fill="#eefaf4" stroke="#1a7a5a" stroke-width="1.2"/>
+        <text x="210" y="144" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0d2035">Amazon</text>
+        <text x="210" y="158" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0d2035">dieback</text>
+        <text x="210" y="176" text-anchor="middle" font-size="9.5" fill="#5a6266">forest &rarr; savanna</text>
+
+        <rect x="280" y="120" width="120" height="72" rx="8" fill="#eaf2fb" stroke="#2563a8" stroke-width="1.2"/>
+        <text x="340" y="144" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0d2035">AMOC</text>
+        <text x="340" y="158" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0d2035">slowdown</text>
+        <text x="340" y="176" text-anchor="middle" font-size="9.5" fill="#5a6266">ocean current</text>
+
+        <rect x="410" y="120" width="120" height="72" rx="8" fill="#fff4e8" stroke="#c47820" stroke-width="1.2"/>
+        <text x="470" y="144" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0d2035">Permafrost</text>
+        <text x="470" y="158" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0d2035">thaw</text>
+        <text x="470" y="176" text-anchor="middle" font-size="9.5" fill="#5a6266">releases methane</text>
+
+        <rect x="540" y="120" width="110" height="72" rx="8" fill="#eefaf4" stroke="#1a7a5a" stroke-width="1.2"/>
+        <text x="595" y="144" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0d2035">Coral reef</text>
+        <text x="595" y="158" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0d2035">die-off</text>
+        <text x="595" y="176" text-anchor="middle" font-size="9.5" fill="#5a6266">marine collapse</text>
+        <!-- arrows from trigger -->
+        <line x1="290" y1="80" x2="90" y2="118" stroke="#c0392b" stroke-width="1.3" marker-end="url(#ar39b)"/>
+        <line x1="315" y1="80" x2="215" y2="118" stroke="#c0392b" stroke-width="1.3" marker-end="url(#ar39b)"/>
+        <line x1="330" y1="80" x2="340" y2="118" stroke="#c0392b" stroke-width="1.3" marker-end="url(#ar39b)"/>
+        <line x1="345" y1="80" x2="465" y2="118" stroke="#c0392b" stroke-width="1.3" marker-end="url(#ar39b)"/>
+        <line x1="370" y1="80" x2="590" y2="118" stroke="#c0392b" stroke-width="1.3" marker-end="url(#ar39b)"/>
+        <!-- cascade -->
+        <path d="M340,192 q0,26 -130,30" fill="none" stroke="#c0392b" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#ar39b)"/>
+        <path d="M470,192 q0,26 130,30" fill="none" stroke="#c0392b" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#ar39b)"/>
+        <text x="330" y="252" text-anchor="middle" font-size="11" font-weight="700" fill="#c0392b">Cascade: one tipping point can trigger the next &mdash; often abrupt &amp; irreversible</text>
+        <text x="330" y="270" text-anchor="middle" font-size="10" fill="#5a6266">Key reference: Global Tipping Points Report</text>
+      </svg>
+      <div class="svg-caption">Fig 39.2 &mdash; Crossing a warming threshold can trip several Earth-system elements; because they interact, one tip can cascade into others, locking in abrupt, largely irreversible change.</div>
+    </div>
+  </section>
+
+  <section class="notes" id="s6">
+    <h2>6. Committed Warming</h2>
+    <ul>
+      <li><strong>Committed warming</strong> (or "warming in the pipeline") = the additional temperature rise that will still occur even if all greenhouse-gas emissions stopped today, due to the thermal inertia of the oceans and existing atmospheric GHG concentrations.</li>
+      <li>Explains why climate change cannot be halted instantly — a lag is already "locked in".</li>
+    </ul>
+  </section>
+
+  <section class="notes" id="s7">
+    <h2>7. Runaway Greenhouse Effect</h2>
+    <ul>
+      <li>A hypothetical self-reinforcing feedback where rising temperature increases atmospheric water vapour (a GHG), which traps more heat, further raising temperature — potentially boiling off all surface water.</li>
+      <li><strong>Venus</strong> is the classic example of a planet that underwent a runaway greenhouse effect; it is considered extremely unlikely on Earth under current conditions but is a useful conceptual extreme.</li>
+    </ul>
+  </section>
+
+  <section class="notes" id="s8">
+    <h2>8. Karakoram Anomaly</h2>
+    <ul>
+      <li>The observation that glaciers in the <strong>Karakoram range</strong> (and parts of the western Himalaya) have remained <strong>stable or even advanced</strong>, in contrast to the widespread glacier retreat seen elsewhere in the Himalaya and globally.</li>
+      <li>Proposed causes: unique winter precipitation patterns (Western Disturbances bringing snow), the insulating effect of thick debris cover, and localised cooling/circulation effects.</li>
+      <li>An important nuance against the assumption that all glaciers are uniformly retreating.</li>
+    </ul>
+  </section>
+
+  <section class="notes" id="s9">
+    <h2>9. Hydrogen Colour Codes</h2>
+    <p>Hydrogen is classified by "colour" according to its production method and associated emissions:</p>
+    <table>
+      <tr><th>Colour</th><th>Production method</th><th>Emissions</th></tr>
+      <tr><td>Green</td><td>Electrolysis of water using renewable electricity</td><td>Zero — the clean ideal</td></tr>
+      <tr><td>Grey</td><td>Steam methane reforming (SMR) of natural gas</td><td>High CO₂, no capture</td></tr>
+      <tr><td>Blue</td><td>SMR of natural gas with carbon capture & storage (CCS)</td><td>Reduced CO₂</td></tr>
+      <tr><td>Brown / Black</td><td>Gasification of coal (lignite = brown, bituminous = black)</td><td>Very high CO₂</td></tr>
+      <tr><td>Pink / Purple</td><td>Electrolysis using nuclear electricity</td><td>Zero carbon</td></tr>
+      <tr><td>Turquoise</td><td>Methane pyrolysis (produces solid carbon, not CO₂)</td><td>Low if solid carbon stored</td></tr>
+      <tr><td>Yellow</td><td>Electrolysis using grid/solar electricity</td><td>Depends on grid mix</td></tr>
+      <tr><td>White</td><td>Naturally occurring geological hydrogen</td><td>Zero (extraction only)</td></tr>
+    </table>
+    <div class="callout info">India's <strong>National Green Hydrogen Mission (2023)</strong> targets 5 MMT of green hydrogen annual production capacity by 2030 (cross-reference Topic 26/30).</div>
+    <div class="svg-wrap">
+      <svg viewBox="0 0 660 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hydrogen colour codes by production method and emissions">
+        <text x="330" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#0d2035">Hydrogen Colour Codes &mdash; by Feedstock &amp; Emissions</text>
+        <!-- clean band label -->
+        <text x="30" y="52" font-size="11" font-weight="700" fill="#0f5c3f">CLEAN &rarr; zero / low CO&#8322;</text>
+        <text x="630" y="52" text-anchor="end" font-size="11" font-weight="700" fill="#c0392b">DIRTY &rarr; high CO&#8322;</text>
+        <!-- row helper: each swatch -->
+        <!-- Green -->
+        <rect x="30" y="64" width="150" height="66" rx="8" fill="#1a7a5a"/>
+        <text x="105" y="88" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Green</text>
+        <text x="105" y="106" text-anchor="middle" font-size="9.5" fill="#e2f5ed">renewable electrolysis</text>
+        <text x="105" y="120" text-anchor="middle" font-size="9.5" fill="#e2f5ed">zero CO&#8322;</text>
+        <!-- Pink -->
+        <rect x="190" y="64" width="150" height="66" rx="8" fill="#c65a8f"/>
+        <text x="265" y="88" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Pink / Purple</text>
+        <text x="265" y="106" text-anchor="middle" font-size="9.5" fill="#fbe6f0">nuclear electrolysis</text>
+        <text x="265" y="120" text-anchor="middle" font-size="9.5" fill="#fbe6f0">zero carbon</text>
+        <!-- Turquoise -->
+        <rect x="350" y="64" width="150" height="66" rx="8" fill="#1c9b9b"/>
+        <text x="425" y="88" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Turquoise</text>
+        <text x="425" y="106" text-anchor="middle" font-size="9.5" fill="#d6f2f2">methane pyrolysis</text>
+        <text x="425" y="120" text-anchor="middle" font-size="9.5" fill="#d6f2f2">solid C, low CO&#8322;</text>
+        <!-- White -->
+        <rect x="510" y="64" width="120" height="66" rx="8" fill="#f4f6f8" stroke="#5a6266" stroke-width="1"/>
+        <text x="570" y="88" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">White</text>
+        <text x="570" y="106" text-anchor="middle" font-size="9.5" fill="#5a6266">natural geological</text>
+        <text x="570" y="120" text-anchor="middle" font-size="9.5" fill="#5a6266">zero (extraction)</text>
+        <!-- Row 2 -->
+        <!-- Yellow -->
+        <rect x="30" y="146" width="150" height="66" rx="8" fill="#e3b53a"/>
+        <text x="105" y="170" text-anchor="middle" font-size="13" font-weight="700" fill="#3a2e07">Yellow</text>
+        <text x="105" y="188" text-anchor="middle" font-size="9.5" fill="#463809">grid / solar electrolysis</text>
+        <text x="105" y="202" text-anchor="middle" font-size="9.5" fill="#463809">depends on grid mix</text>
+        <!-- Blue -->
+        <rect x="190" y="146" width="150" height="66" rx="8" fill="#2563a8"/>
+        <text x="265" y="170" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Blue</text>
+        <text x="265" y="188" text-anchor="middle" font-size="9.5" fill="#d6e6f7">SMR + carbon capture</text>
+        <text x="265" y="202" text-anchor="middle" font-size="9.5" fill="#d6e6f7">reduced CO&#8322;</text>
+        <!-- Grey -->
+        <rect x="350" y="146" width="150" height="66" rx="8" fill="#8a929b"/>
+        <text x="425" y="170" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Grey</text>
+        <text x="425" y="188" text-anchor="middle" font-size="9.5" fill="#eef1f4">SMR of natural gas</text>
+        <text x="425" y="202" text-anchor="middle" font-size="9.5" fill="#eef1f4">high CO&#8322;, no capture</text>
+        <!-- Brown/Black -->
+        <rect x="510" y="146" width="120" height="66" rx="8" fill="#3a2c22"/>
+        <text x="570" y="170" text-anchor="middle" font-size="12.5" font-weight="700" fill="#fff">Brown / Black</text>
+        <text x="570" y="188" text-anchor="middle" font-size="9.5" fill="#e8dfd8">coal gasification</text>
+        <text x="570" y="202" text-anchor="middle" font-size="9.5" fill="#e8dfd8">very high CO&#8322;</text>
+        <!-- gradient bar -->
+        <defs><linearGradient id="hgrad" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1a7a5a"/><stop offset="1" stop-color="#3a2c22"/></linearGradient></defs>
+        <rect x="30" y="232" width="600" height="12" rx="6" fill="url(#hgrad)"/>
+        <text x="30" y="266" font-size="10.5" fill="#5a6266">Same molecule (H&#8322;) &mdash; the &lsquo;colour&rsquo; only tells you how it was made and how much CO&#8322; that entailed.</text>
+        <text x="30" y="284" font-size="10.5" fill="#0d2035" font-weight="700">India&rsquo;s National Green Hydrogen Mission (2023) backs <tspan fill="#0f5c3f">Green</tspan> H&#8322; &mdash; 5 MMT/yr by 2030.</text>
+      </svg>
+      <div class="svg-caption">Fig 39.3 &mdash; Hydrogen&rsquo;s &lsquo;colour&rsquo; encodes its production route and emissions &mdash; from zero-carbon Green/Pink to high-emission Grey/Brown; only the feedstock differs, not the gas.</div>
+    </div>
+  </section>
+
+  <section class="notes" id="s10">
+    <h2>10. Coal Bed Methane & Shale Gas</h2>
+    <ul>
+      <li><strong>Coal Bed Methane (CBM):</strong> natural gas (methane) adsorbed onto the surface of coal seams; extracted by drilling into coal beds and lowering pressure. India has significant CBM reserves in the Damodar, Son, and Cambay basins.</li>
+      <li><strong>Shale Gas:</strong> natural gas trapped within fine-grained shale (sedimentary) rock; extracted by <strong>hydraulic fracturing ("fracking")</strong> and horizontal drilling — controversial for groundwater contamination and induced seismicity.</li>
+      <li><strong>Tight gas, gas hydrates (methane clathrates), and underground coal gasification (UCG)</strong> are other unconventional gas sources — India explores gas hydrates in the Krishna-Godavari basin.</li>
+    </ul>
+  </section>
+
+  <section class="notes" id="s11">
+    <h2>11. Methanol Economy</h2>
+    <ul>
+      <li>A concept (championed in India by NITI Aayog) of using <strong>methanol</strong> — producible from natural gas, coal, biomass, or captured CO₂ — as a clean, low-cost transport and cooking fuel, and as a hydrogen carrier.</li>
+      <li>Aims to cut oil imports and reduce emissions; India's programme explores <strong>methanol blending in petrol (M15), methanol cooking stoves, and DME (di-methyl ether) as an LPG substitute</strong>.</li>
+      <li>The idea was popularised by Nobel laureate <strong>George Olah</strong> ("Beyond Oil and Gas: The Methanol Economy").</li>
+    </ul>
+  </section>
+
+  <section class="notes" id="s12">
+    <h2>12. Other Emerging Terms</h2>
+    <div class="grid-2">
+      <div class="card"><h4>Net Zero / Carbon Neutrality</h4><p>Balancing emitted GHGs with removals; India's target is <strong>net zero by 2070</strong> (Panchamrit, COP26, Topic 33).</p></div>
+      <div class="card"><h4>Carbon Sink vs Source</h4><p>Sink absorbs more carbon than it releases (forests, oceans); source releases more than it absorbs.</p></div>
+      <div class="card"><h4>Carbon Sequestration</h4><p>Capture and long-term storage of CO₂ — biological (afforestation) or geological (CCS/CCUS).</p></div>
+      <div class="card"><h4>Global Warming Potential (GWP)</h4><p>Heat-trapping ability of a gas relative to CO₂ over a time horizon (methane ~28-80x, N₂O ~265x).</p></div>
+      <div class="card"><h4>Radiative Forcing</h4><p>Net change in energy balance of the Earth system due to a factor (positive = warming).</p></div>
+      <div class="card"><h4>Blue Carbon</h4><p>Carbon captured by coastal/marine ecosystems — mangroves, seagrasses, salt marshes.</p></div>
+      <div class="card"><h4>Geoengineering</h4><p>Deliberate large-scale intervention — Solar Radiation Management (SRM) and Carbon Dioxide Removal (CDR).</p></div>
+      <div class="card"><h4>Loss and Damage</h4><p>Unavoidable climate harms beyond adaptation; addressed by the COP28 Loss & Damage Fund (Topic 33/36).</p></div>
+    </div>
+  </section>
+
+  <section class="notes" id="s13">
+    <h2>13. Current Affairs</h2>
+    <div class="callout update"><strong>EU CBAM enters full financial phase (2026) <span class="update-tag">check for latest update or data</span></strong><p style="margin:6px 0 0">The definitive levy begins <strong>1 Jan 2026</strong> after the Oct-2023 reporting phase &mdash; a major concern for India&rsquo;s <strong>steel &amp; aluminium</strong> exports. India is rolling out its own <strong>Carbon Credit Trading Scheme (CCTS)</strong> in response. Track covered-sector expansion &amp; India&rsquo;s WTO stance.</p></div>
+    <div class="callout update"><strong>National Green Hydrogen Mission &amp; SIGHT scale-up <span class="update-tag">check for latest update or data</span></strong><p style="margin:6px 0 0">India&rsquo;s mission (2023) targets <strong>5 MMT/yr green H&#8322; by 2030</strong>; the <strong>SIGHT</strong> programme funds electrolyser manufacturing &amp; green-hydrogen production incentives. Verify latest capacity awards &amp; pilot projects (steel, shipping, mobility).</p></div>
+    <div class="callout update"><strong>Climate tipping points move up the agenda <span class="update-tag">check for latest update or data</span></strong><p style="margin:6px 0 0">New studies on <strong>AMOC slowdown</strong> and <strong>Amazon dieback</strong> intensified concern; the <strong>Global Tipping Points Report</strong> is the key reference. Watch for updated thresholds &amp; COP treatment.</p></div>
+    <div class="callout update"><strong>Ethanol &amp; methanol blending roadmap <span class="update-tag">check for latest update or data</span></strong><p style="margin:6px 0 0">India advanced its <strong>20% ethanol-blending (E20)</strong> target ahead of schedule and pushes methanol (M15, DME). Track next blending milestones &amp; feedstock policy.</p></div>
+  </section>
+
+  <section class="notes" id="prelims-pyq">
+    <h2>14. Prelims PYQs</h2>
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2023</div>
+      <p class="q-stem"><strong>Q:</strong> The &lsquo;Carbon Border Adjustment Mechanism (CBAM)&rsquo;, sometimes seen in the news, is associated with:</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span> The World Trade Organization&rsquo;s tariff schedule</li>
+        <li class="correct"><span class="opt-key">(b)</span> The European Union&rsquo;s climate policy on carbon-intensive imports</li>
+        <li><span class="opt-key">(c)</span> A UNFCCC carbon-trading platform</li>
+        <li><span class="opt-key">(d)</span> India&rsquo;s national carbon market</li>
+      </ul>
+      <p class="ans">Ans: (b) &mdash; CBAM is the EU&rsquo;s levy on embedded carbon in imports; full financial phase from 2026.</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2024</div>
+      <p class="q-stem"><strong>Q:</strong> &lsquo;Green hydrogen&rsquo; is produced by which one of the following methods?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span> Steam methane reforming of natural gas</li>
+        <li><span class="opt-key">(b)</span> Gasification of coal</li>
+        <li class="correct"><span class="opt-key">(c)</span> Electrolysis of water using renewable electricity</li>
+        <li><span class="opt-key">(d)</span> Methane pyrolysis</li>
+      </ul>
+      <p class="ans">Ans: (c) &mdash; Renewable-powered electrolysis = zero-carbon Green H&#8322;; SMR=Grey, coal=Brown/Black, pyrolysis=Turquoise.</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2019</div>
+      <p class="q-stem"><strong>Q:</strong> &lsquo;Shale gas&rsquo; is extracted by which one of the following techniques?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span> Open-cast mining</li>
+        <li class="correct"><span class="opt-key">(b)</span> Hydraulic fracturing (fracking) with horizontal drilling</li>
+        <li><span class="opt-key">(c)</span> Steam-methane reforming</li>
+        <li><span class="opt-key">(d)</span> Electrolysis</li>
+      </ul>
+      <p class="ans">Ans: (b) &mdash; Shale gas is trapped in fine-grained shale &amp; released by fracking; controversial for groundwater &amp; induced seismicity.</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2018</div>
+      <p class="q-stem"><strong>Q:</strong> The &lsquo;Karakoram Anomaly&rsquo; refers to:</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span> Unusually high seismic activity in the Karakoram</li>
+        <li class="correct"><span class="opt-key">(b)</span> The stability or advance of Karakoram glaciers against the global retreat trend</li>
+        <li><span class="opt-key">(c)</span> A magnetic anomaly in the region</li>
+        <li><span class="opt-key">(d)</span> Rapid desertification of the Karakoram foothills</li>
+      </ul>
+      <p class="ans">Ans: (b) &mdash; Karakoram glaciers are stable/advancing due to winter (Western Disturbance) snowfall &amp; debris cover, bucking the global retreat.</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2022</div>
+      <p class="q-stem"><strong>Q:</strong> &lsquo;Coal Bed Methane&rsquo; differs from conventional natural gas because it is:</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span> Found dissolved in ocean water</li>
+        <li class="correct"><span class="opt-key">(b)</span> Adsorbed onto the surface of coal seams</li>
+        <li><span class="opt-key">(c)</span> A synthetic gas made from coal gasification</li>
+        <li><span class="opt-key">(d)</span> Trapped in shale rock only</li>
+      </ul>
+      <p class="ans">Ans: (b) &mdash; CBM is methane adsorbed on coal seams (Damodar, Son, Cambay basins), released by lowering pressure.</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2021</div>
+      <p class="q-stem"><strong>Q:</strong> A &lsquo;climate tipping point&rsquo; is best described as:</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span> The year in which global emissions peak</li>
+        <li class="correct"><span class="opt-key">(b)</span> A critical threshold beyond which part of the climate system changes abruptly and often irreversibly</li>
+        <li><span class="opt-key">(c)</span> The point at which carbon markets stabilise</li>
+        <li><span class="opt-key">(d)</span> The temperature at which the Paris Agreement expires</li>
+      </ul>
+      <p class="ans">Ans: (b) &mdash; Abrupt, often irreversible shifts (ice-sheet collapse, Amazon dieback, AMOC) that may cascade.</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2016</div>
+      <p class="q-stem"><strong>Q:</strong> Consider the following statements regarding &lsquo;blue carbon&rsquo;:&nbsp; 1. It is the carbon stored by coastal ecosystems such as mangroves, seagrasses and salt marshes.&nbsp; 2. Such ecosystems can sequester carbon more efficiently per unit area than most terrestrial forests.&nbsp; Which of the statements given above is/are correct?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span> 1 only</li>
+        <li><span class="opt-key">(b)</span> 2 only</li>
+        <li class="correct"><span class="opt-key">(c)</span> Both 1 and 2</li>
+        <li><span class="opt-key">(d)</span> Neither 1 nor 2</li>
+      </ul>
+      <p class="ans">Ans: (c) &mdash; Blue carbon = carbon in coastal/marine ecosystems, which sequester very efficiently; both statements correct.</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2020</div>
+      <p class="q-stem"><strong>Q:</strong> Which one of the following pairs of hydrogen &lsquo;colour&rsquo; and its production route is correctly matched?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span> Blue hydrogen &mdash; coal gasification without capture</li>
+        <li class="correct"><span class="opt-key">(b)</span> Blue hydrogen &mdash; steam methane reforming with carbon capture &amp; storage</li>
+        <li><span class="opt-key">(c)</span> Grey hydrogen &mdash; renewable electrolysis</li>
+        <li><span class="opt-key">(d)</span> Pink hydrogen &mdash; steam methane reforming</li>
+      </ul>
+      <p class="ans">Ans: (b) &mdash; Blue = SMR + CCS; Grey = SMR (no capture); Pink = nuclear electrolysis; Green = renewable electrolysis.</p>
+    </div>
+    <div class="pyq">
+      <div class="year">Prelims 2026 &mdash; anticipated themes</div>
+      <p class="q-stem"><strong>Likely:</strong> A statement/pairs set on emerging climate-policy vocabulary &mdash; CBAM covered goods &amp; timeline, hydrogen colour&ndash;route matching, carbon budget vs carbon bomb vs carbon leakage, or India&rsquo;s Carbon Credit Trading Scheme (CCTS). <span class="update-tag">check for latest update or data</span></p>
+    </div>
+  </section>
+
+  <section class="notes" id="mains-pyq">
+    <h2>15. Mains PYQs + Model Answers</h2>
+    <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>Questions below are original, exam-style formulations built from real UPSC GS-III themes &mdash; paraphrased to be copyright-safe. Each framework = intro angle &rarr; structured body &rarr; way-forward, with examples to quote.</em></p>
+    <div class="pyq">
+      <div class="year">Mains GS-III &mdash; style 2023 <span class="marks">15 marks &middot; 250 words</span></div>
+      <p class="q-stem"><strong>Q:</strong> Examine the implications of the EU&rsquo;s Carbon Border Adjustment Mechanism (CBAM) for India&rsquo;s export-oriented industries and its position in global climate negotiations.</p>
+      <div class="model-answer"><h5>Model Answer Framework</h5><ol>
+        <li><strong>Introduction &mdash; define:</strong> CBAM is an EU levy on the embedded carbon of imports (steel, aluminium, cement, fertiliser, electricity, hydrogen); reporting from Oct 2023, full levy 2026.</li>
+        <li><strong>Rationale (EU view):</strong> prevent carbon leakage, equalise carbon price with EU ETS, protect decarbonising industry.</li>
+        <li><strong>Impact on India:</strong> hits carbon-intensive exports (steel, aluminium); raises costs, erodes competitiveness in a key market; compliance &amp; verification burden on MSMEs.</li>
+        <li><strong>India&rsquo;s objections:</strong> &lsquo;green protectionism&rsquo;, unilateral &amp; extraterritorial, violates CBDR-RC and WTO non-discrimination; ignores developing-country transition space.</li>
+        <li><strong>Responses:</strong> domestic Carbon Credit Trading Scheme (CCTS) so revenue stays in India; decarbonise steel (green hydrogen); diversify markets; coalition-building (BASIC/like-minded); dispute options at WTO.</li>
+        <li><strong>Conclusion:</strong> CBAM is both a trade threat and a decarbonisation nudge &mdash; India&rsquo;s best hedge is faster industrial decarbonisation plus principled negotiation.</li>
+      </ol></div>
+    </div>
+    <div class="pyq">
+      <div class="year">Mains GS-III &mdash; style 2022 <span class="marks">15 marks &middot; 250 words</span></div>
+      <p class="q-stem"><strong>Q:</strong> Discuss the role of green hydrogen and the methanol economy in India&rsquo;s clean-energy transition and its goal of net zero by 2070.</p>
+      <div class="model-answer"><h5>Model Answer Framework</h5><ol>
+        <li><strong>Introduction:</strong> Hard-to-abate sectors (steel, fertiliser, refining, shipping) need molecules, not just electrons &mdash; green hydrogen &amp; methanol fill that gap.</li>
+        <li><strong>Green hydrogen:</strong> National Green Hydrogen Mission (2023), 5 MMT/yr by 2030, SIGHT incentives; cuts fossil imports, decarbonises industry, enables energy storage.</li>
+        <li><strong>Methanol economy:</strong> NITI Aayog programme; methanol from gas/coal/biomass/CO&#8322;; M15 blending, DME as LPG substitute, cooking &amp; transport fuel; cuts oil import bill.</li>
+        <li><strong>Challenges:</strong> high green-H&#8322; cost, renewable &amp; water intensity, storage/transport, infrastructure, feedstock emissions for &lsquo;grey&rsquo; methanol.</li>
+        <li><strong>Way forward:</strong> scale electrolysers &amp; renewables, demand mandates, R&amp;D on CCUS-linked/blue routes, port &amp; pipeline infrastructure, standards &amp; certification.</li>
+        <li><strong>Conclusion:</strong> Green hydrogen &amp; methanol are pivotal to net zero by 2070 &mdash; success hinges on cost curves, renewable build-out and demand creation.</li>
+      </ol></div>
+    </div>
+    <div class="pyq">
+      <div class="year">Mains GS-III &mdash; style 2021 <span class="marks">15 marks &middot; 250 words</span></div>
+      <p class="q-stem"><strong>Q:</strong> What are climate tipping points? Explain why they pose a distinct and under-appreciated risk to climate policy.</p>
+      <div class="model-answer"><h5>Model Answer Framework</h5><ol>
+        <li><strong>Introduction &mdash; define:</strong> Critical thresholds beyond which an Earth-system element shifts abruptly &amp; often irreversibly, even if warming later reverses.</li>
+        <li><strong>Key elements:</strong> Greenland &amp; W. Antarctic ice sheets, Amazon dieback, AMOC slowdown, permafrost methane, coral die-off.</li>
+        <li><strong>Why distinct risk:</strong> non-linear &amp; abrupt (not gradual), irreversible on human timescales, cascading (one triggers another), poorly captured by average-warming targets.</li>
+        <li><strong>Policy implications:</strong> strengthens case for precaution &amp; staying well below 1.5&deg;C; challenges &lsquo;overshoot-and-return&rsquo; pathways; demands robust risk framing over central estimates.</li>
+        <li><strong>Way forward:</strong> early-warning monitoring, deep near-term mitigation, resilience/adaptation for locked-in change, factoring tipping risk into IPCC &amp; COP assessments.</li>
+        <li><strong>Conclusion:</strong> Tipping points convert climate change from a gradual to a potentially catastrophic, irreversible risk &mdash; a core argument for urgent, front-loaded action.</li>
+      </ol></div>
+    </div>
+    <div class="pyq">
+      <div class="year">Mains GS-III &mdash; style 2019 <span class="marks">15 marks &middot; 250 words</span></div>
+      <p class="q-stem"><strong>Q:</strong> Evaluate the potential and the environmental concerns associated with India&rsquo;s exploitation of unconventional hydrocarbons &mdash; shale gas, coal bed methane and gas hydrates.</p>
+      <div class="model-answer"><h5>Model Answer Framework</h5><ol>
+        <li><strong>Introduction:</strong> As conventional reserves plateau, unconventional gas offers energy-security &amp; transition-fuel potential; India explores CBM, shale &amp; gas hydrates.</li>
+        <li><strong>Resources:</strong> CBM in Damodar/Son/Cambay; shale in several basins; gas hydrates in the Krishna-Godavari basin; underground coal gasification, tight gas.</li>
+        <li><strong>Potential:</strong> cut oil/gas imports, bridge fuel lower than coal, industrial feedstock, employment &amp; investment.</li>
+        <li><strong>Concerns:</strong> fracking &rarr; groundwater contamination &amp; heavy water use, induced seismicity, methane leakage (potent GHG), land &amp; ecological disruption, gas-hydrate stability risks.</li>
+        <li><strong>Way forward:</strong> strict regulation &amp; monitoring, water-lean technologies, methane-leak control, EIA rigour, treat as a transition &mdash; not destination &mdash; fuel.</li>
+        <li><strong>Conclusion:</strong> Unconventional gas can aid energy security only if environmental safeguards keep pace; it must complement, not delay, the renewable transition.</li>
+      </ol></div>
+    </div>
+    <div class="pyq">
+      <div class="year">Mains GS-III &mdash; style 2018 <span class="marks">15 marks &middot; 250 words</span></div>
+      <p class="q-stem"><strong>Q:</strong> &lsquo;Equity in the remaining carbon budget is central to India&rsquo;s climate diplomacy.&rsquo; Discuss in the context of CBDR-RC and net-zero pledges.</p>
+      <div class="model-answer"><h5>Model Answer Framework</h5><ol>
+        <li><strong>Introduction &mdash; define:</strong> The carbon budget is the finite cumulative CO&#8322; compatible with a temperature limit; its allocation is a question of climate justice.</li>
+        <li><strong>Equity argument:</strong> developed nations have consumed a disproportionate historical share; per-capita &amp; historical-responsibility framing (CBDR-RC) underpins India&rsquo;s stance.</li>
+        <li><strong>India&rsquo;s position:</strong> net zero by 2070, Panchamrit (COP26), demand for climate finance &amp; technology, right to development &amp; energy access.</li>
+        <li><strong>Tensions:</strong> shrinking 1.5&deg;C budget vs development needs; pressure for earlier net-zero; carbon-bomb projects vs budget discipline.</li>
+        <li><strong>Way forward:</strong> equitable budget-sharing, finance &amp; tech transfer, LiFE &amp; efficiency, renewable scale-up, credible domestic carbon market (CCTS).</li>
+        <li><strong>Conclusion:</strong> India frames the budget as a justice issue &mdash; equitable sharing plus ambitious domestic action is its twin-track diplomacy.</li>
+      </ol></div>
+    </div>
+    <div class="pyq">
+      <div class="year">Mains GS-III &mdash; anticipated theme <span class="marks">15 marks &middot; 250 words</span></div>
+      <p class="q-stem"><strong>Likely:</strong> Geoengineering (Solar Radiation Management &amp; Carbon Dioxide Removal) &mdash; discuss its promise, governance gaps and risks as a climate-response option. <span class="update-tag">check for latest update or data</span></p>
+    </div>
+  </section>
+
+  <section class="notes" id="revision">
+    <h2>15-Minute Revision Box</h2>
+    <div class="revision-box">
+      <h3>Must-Remember Facts &mdash; Miscellaneous &amp; Emerging Concepts</h3>
+      <div class="grid-2">
+        <div>
+          <strong>Carbon vocabulary:</strong>
+          <ul>
+            <li><strong>Carbon budget</strong> = max cumulative CO&#8322; for a temp limit; <strong>carbon bomb</strong> = fossil project emitting &ge;1 Gt CO&#8322;; <strong>carbon leakage</strong> = industry flees strict policy.</li>
+          </ul>
+          <strong>CBAM:</strong>
+          <ul>
+            <li>EU levy on carbon-intensive imports (steel, aluminium, cement, fertiliser, electricity, hydrogen); reporting Oct 2023, full <strong>2026</strong>; India opposes as &lsquo;green protectionism&rsquo; (CBDR-RC/WTO); reply = <strong>CCTS</strong>.</li>
+          </ul>
+          <strong>Climate risk terms:</strong>
+          <ul>
+            <li><strong>Tipping points</strong> = abrupt, irreversible, cascading shifts (Greenland/W. Antarctic ice, Amazon dieback, AMOC, permafrost, coral).</li>
+            <li><strong>Committed warming</strong> = locked-in rise even at zero emissions; <strong>runaway greenhouse</strong> = Venus.</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Karakoram Anomaly:</strong>
+          <ul>
+            <li>Karakoram glaciers stable/advancing vs global retreat (winter WD snowfall + debris cover).</li>
+          </ul>
+          <strong>Hydrogen colours:</strong>
+          <ul>
+            <li>Green (renewable electrolysis), Grey (SMR), Blue (SMR+CCS), Brown/Black (coal), Pink (nuclear), Turquoise (pyrolysis), Yellow (grid/solar), White (geological). India NGHM: 5 MMT/yr by 2030.</li>
+          </ul>
+          <strong>Unconventional fuels:</strong>
+          <ul>
+            <li><strong>CBM</strong> = methane adsorbed on coal seams; <strong>shale gas</strong> = fracking; gas hydrates (K-G basin); <strong>methanol economy</strong> = George Olah, India M15/DME. Net zero India = <strong>2070</strong>.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes since 2014:</strong> CBAM (EU + India&rsquo;s stance); hydrogen colour&ndash;route matching; carbon budget/bomb/leakage definitions; climate tipping points; Karakoram Anomaly; CBM vs shale gas; net-zero 2070 &amp; green-hydrogen mission.</div>
+    </div>
+  </section>
+</main>
+
+<aside>
+  <div class="aside-sticky">
+    <div class="widget">
+      <h4>Quick Reference</h4>
+      <table>
+        <tr><th>CBAM full phase</th><td>2026 (EU)</td></tr>
+        <tr><th>Green H&#8322; target</th><td>5 MMT/yr by 2030</td></tr>
+        <tr><th>Carbon bomb</th><td>&ge;1 Gt CO&#8322; project</td></tr>
+        <tr><th>Net zero (India)</th><td>2070</td></tr>
+        <tr><th>Karakoram</th><td>glaciers stable/advancing</td></tr>
+        <tr><th>Runaway greenhouse</th><td>Venus</td></tr>
+      </table>
+    </div>
+    <div class="widget">
+      <h4>Hydrogen Colour &rarr; Route</h4>
+      <table>
+        <tr><th>Colour</th><th>Route</th></tr>
+        <tr><td>Green</td><td>Renewable electrolysis</td></tr>
+        <tr><td>Grey</td><td>SMR (no capture)</td></tr>
+        <tr><td>Blue</td><td>SMR + CCS</td></tr>
+        <tr><td>Brown/Black</td><td>Coal gasification</td></tr>
+        <tr><td>Pink</td><td>Nuclear electrolysis</td></tr>
+        <tr><td>Turquoise</td><td>Methane pyrolysis</td></tr>
+      </table>
+    </div>
+    <div class="widget">
+      <h4>Key Terms &amp; Anchors</h4>
+      <table>
+        <tr><td>Carbon budget</td><td>cumulative CO&#8322; cap</td></tr>
+        <tr><td>Carbon leakage</td><td>industry flees policy</td></tr>
+        <tr><td>Tipping point</td><td>abrupt, irreversible</td></tr>
+        <tr><td>Committed warming</td><td>locked-in rise</td></tr>
+        <tr><td>Blue carbon</td><td>coastal ecosystems</td></tr>
+        <tr><td>CBM vs shale</td><td>adsorbed vs fracking</td></tr>
+      </table>
+    </div>
+    <div class="widget">
+      <h4>Difficulty &amp; Importance</h4>
+      <div class="bar"><div class="lbl"><span>Prelims relevance</span><span>Medium-High</span></div><div class="track"><div class="fill" style="width:65%"></div></div></div>
+      <div class="bar"><div class="lbl"><span>Mains relevance</span><span>Medium-High</span></div><div class="track"><div class="fill" style="width:60%"></div></div></div>
+      <div class="bar"><div class="lbl"><span>Conceptual difficulty</span><span>Medium</span></div><div class="track"><div class="fill" style="width:55%"></div></div></div>
+      <div class="bar"><div class="lbl"><span>Current-affairs load</span><span>High</span></div><div class="track"><div class="fill" style="width:85%"></div></div></div>
+    </div>
+    <div class="widget">
+      <h4>Emerging Concepts at a Glance</h4>
+      <ul>
+        <li>Carbon: budget / bomb / leakage / CBAM.</li>
+        <li>Climate risk: tipping points, committed warming.</li>
+        <li>Karakoram Anomaly vs global retreat.</li>
+        <li>Hydrogen colour codes (Green &rarr; Brown).</li>
+        <li>Unconventional fuels: CBM, shale, methanol.</li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h4>Must-Know Tags</h4>
+      <span class="tag">CBAM</span>
+      <span class="tag orange">Carbon Budget</span>
+      <span class="tag green">Green Hydrogen</span>
+      <span class="tag">Tipping Points</span>
+      <span class="tag orange">Karakoram Anomaly</span>
+      <span class="tag green">Coal Bed Methane</span>
+      <span class="tag">Shale Gas</span>
+      <span class="tag orange">Methanol Economy</span>
+      <span class="tag green">Blue Carbon</span>
+      <span class="tag">Net Zero 2070</span>
+    </div>
+    <div class="widget">
+      <h4>Data Sources to Bookmark</h4>
+      <ul>
+        <li><a href="https://mnre.gov.in" target="_blank" rel="noopener">MNRE / Green Hydrogen Mission</a> <span class="update-tag">check latest</span></li>
+        <li><a href="https://taxation-customs.ec.europa.eu" target="_blank" rel="noopener">EU CBAM (official)</a></li>
+        <li><a href="https://www.ipcc.ch" target="_blank" rel="noopener">IPCC (carbon budget)</a></li>
+        <li><a href="https://global-tipping-points.org" target="_blank" rel="noopener">Global Tipping Points Report</a></li>
+        <li><a href="https://www.niti.gov.in" target="_blank" rel="noopener">NITI Aayog (methanol economy)</a></li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h4>Related Topics</h4>
+      <a class="chip" href="/environment/conference-of-parties-cop">Topic 33: Conference of Parties (COP)</a>
+      <a class="chip" href="/environment/renewable-energy">Topic 26: Renewable Energy</a>
+      <a class="chip" href="/environment/important-static-lists-and-terminology">Topic 38: Important Static Lists &amp; Terminology</a>
+      <a class="chip" href="/environment">All Environment Topics</a>
+    </div>
+    <div class="widget">
+      <h4>Quick Navigation</h4>
+      <ul style="list-style:none;padding:0;margin:0;font-size:13.5px">
+        <li><a href="#s1">1. Carbon Budget</a></li>
+        <li><a href="#s2">2. Carbon Bombs</a></li>
+        <li><a href="#s3">3. Carbon Leakage</a></li>
+        <li><a href="#s4">4. Carbon Border Tax (CBAM)</a></li>
+        <li><a href="#s5">5. Climate Tipping Points</a></li>
+        <li><a href="#s6">6. Committed Warming</a></li>
+        <li><a href="#s7">7. Runaway Greenhouse Effect</a></li>
+        <li><a href="#s8">8. Karakoram Anomaly</a></li>
+        <li><a href="#s9">9. Hydrogen Colour Codes</a></li>
+        <li><a href="#s10">10. Coal Bed Methane &amp; Shale Gas</a></li>
+        <li><a href="#s11">11. Methanol Economy</a></li>
+        <li><a href="#s12">12. Other Emerging Terms</a></li>
+        <li><a href="#s13">13. Current Affairs</a></li>
+        <li><a href="#prelims-pyq">14. Prelims PYQs</a></li>
+        <li><a href="#mains-pyq">15. Mains PYQs</a></li>
+        <li><a href="#revision">15-Minute Revision Box</a></li>
+      </ul>
+    </div>
+  </div>
+</aside>
+</div>
+</div>

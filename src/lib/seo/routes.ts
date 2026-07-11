@@ -25,6 +25,10 @@ import {
   isEconomyTopicId,
 } from "@/lib/economy-notes";
 import {
+  getEnvironmentTopicSlug,
+  isEnvironmentTopicId,
+} from "@/lib/environment-notes";
+import {
   getGovernanceTopicSlug,
   isGovernanceTopicId,
 } from "@/lib/governance-notes";
@@ -100,6 +104,9 @@ export function topicPath(subjectKey: SubjectKey, chapterId: string): string {
   if (subjectKey === "economy" && isEconomyTopicId(chapterId)) {
     return `${subjectHubPath("economy")}/${getEconomyTopicSlug(chapterId)}`;
   }
+  if (subjectKey === "environment" && isEnvironmentTopicId(chapterId)) {
+    return `${subjectHubPath("environment")}/${getEnvironmentTopicSlug(chapterId)}`;
+  }
   if (subjectKey === "governance" && isGovernanceTopicId(chapterId)) {
     return `${subjectHubPath("governance")}/${getGovernanceTopicSlug(chapterId)}`;
   }
@@ -171,6 +178,13 @@ export function getChapterByTopicSlug(
       (ch) => isEconomyTopicId(ch.id) && getEconomyTopicSlug(ch.id) === slug,
     );
   }
+  if (subjectKey === "environment") {
+    return subject.chapters.find(
+      (ch) =>
+        isEnvironmentTopicId(ch.id) &&
+        getEnvironmentTopicSlug(ch.id) === slug,
+    );
+  }
   if (subjectKey === "governance") {
     return subject.chapters.find(
       (ch) =>
@@ -231,6 +245,10 @@ export function getChapterHref(
     if (!isEconomyTopicId(chapter.id)) return null;
     return topicPath("economy", chapter.id);
   }
+  if (subjectKey === "environment" || isEnvironmentTopicId(chapter.id)) {
+    if (!isEnvironmentTopicId(chapter.id)) return null;
+    return topicPath("environment", chapter.id);
+  }
   if (subjectKey === "governance" || isGovernanceTopicId(chapter.id)) {
     if (!isGovernanceTopicId(chapter.id)) return null;
     return topicPath("governance", chapter.id);
@@ -269,6 +287,8 @@ export function getAllTopicPaths(): { subjectKey: SubjectKey; slug: string }[] {
         paths.push({ subjectKey: key, slug: getDisasterTopicSlug(ch.id) });
       } else if (key === "economy" && isEconomyTopicId(ch.id)) {
         paths.push({ subjectKey: key, slug: getEconomyTopicSlug(ch.id) });
+      } else if (key === "environment" && isEnvironmentTopicId(ch.id)) {
+        paths.push({ subjectKey: key, slug: getEnvironmentTopicSlug(ch.id) });
       } else if (key === "governance" && isGovernanceTopicId(ch.id)) {
         paths.push({ subjectKey: key, slug: getGovernanceTopicSlug(ch.id) });
       } else if (
@@ -283,6 +303,7 @@ export function getAllTopicPaths(): { subjectKey: SubjectKey; slug: string }[] {
         key !== "security" &&
         key !== "disaster" &&
         key !== "economy" &&
+        key !== "environment" &&
         key !== "governance"
       ) {
         paths.push({

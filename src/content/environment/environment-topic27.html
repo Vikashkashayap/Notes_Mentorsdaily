@@ -1,0 +1,892 @@
+<!-- environment-topic27 — auto-imported from environment-topic27-environment-exploitative-practices-issues-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+figure.diagram{margin:18px 0;background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;text-align:center;overflow-x:auto}
+figure.diagram svg{max-width:100%;height:auto}
+figure.diagram figcaption{font-size:12px;color:var(--muted);margin-top:8px;font-style:italic;text-align:left}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .q{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.mains-q{background:#f6f9fc;border-left:4px solid var(--brand-blue);padding:14px 18px;margin:14px 0;border-radius:6px}
+.mains-q .q{margin:0 0 8px}
+.lead{color:var(--muted);font-size:14px}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h2{color:var(--brand-orange);margin-top:0;border-bottom:3px solid var(--brand-orange)}
+.sec-num{color:var(--brand-orange)}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 27: Environmental Exploitative Practices &amp; Issues</h1>
+  <p class="sub">The "how humans degrade nature" chapter &mdash; the unsustainable-use problems that drive every other environment topic. Scoring core: <strong>deforestation</strong>, <strong>overgrazing &amp; desertification</strong>, <strong>mining &amp; sand mining</strong>, <strong>overfishing</strong>, <strong>groundwater over-extraction</strong>, <strong>monoculture &amp; agrochemical overuse</strong>, and <strong>illegal wildlife trade &amp; biopiracy</strong> &mdash; all framed by the <strong>tragedy of the commons</strong>. Built from concept to the latest sand-mining, groundwater and desertification current affairs.</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Tragedy of the Commons</span>
+    <span class="pill">~20 min read</span>
+    <span class="pill">Resource Over-use</span>
+    <span class="pill">High Weight &middot; Static + Current</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#concept-exp">Exploitative Practices &mdash; Concept</a></li>
+    <li><span class="num">2.</span><a href="#deforest">Deforestation &amp; Forest Degradation</a></li>
+    <li><span class="num">3.</span><a href="#overgraze">Overgrazing &amp; Desertification</a></li>
+    <li><span class="num">4.</span><a href="#mining">Mining &amp; Sand Mining</a></li>
+    <li><span class="num">5.</span><a href="#overfish">Overfishing &amp; Marine Over-use</a></li>
+    <li><span class="num">6.</span><a href="#groundwater">Groundwater Over-extraction</a></li>
+    <li><span class="num">7.</span><a href="#agri">Monoculture &amp; Agrochemicals</a></li>
+    <li><span class="num">8.</span><a href="#wildlife">Illegal Wildlife Trade &amp; Biopiracy</a></li>
+    <li><span class="num">9.</span><a href="#governance">Governance &amp; Sustainable Alternatives</a></li>
+    <li><span class="num">10.</span><a href="#current">Current Affairs Link (2024&ndash;2026)</a></li>
+    <li><span class="num">11.</span><a href="#prelims-pyq">Prelims PYQ Practice</a></li>
+    <li><span class="num">12.</span><a href="#mains-pyq">Mains PYQ Practice</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; Why this Topic Matters</h3>
+  <p>This topic is where UPSC tests whether you can link a <em>human practice</em> to <em>environmental degradation</em>. Three question patterns recur:</p>
+  <ul>
+    <li><strong>Definitional / static:</strong> "what is desertification?", define biopiracy, salinisation, eutrophication-from-agrochemicals; identify causes of soil erosion. Pure recall &mdash; a practice&harr;impact table settles it.</li>
+    <li><strong>Statement-elimination (2&ndash;4 statements):</strong> matching practice&harr;consequence&harr;region &mdash; e.g. overgrazing&rarr;desertification (Thar fringe), sand mining&rarr;riverbed/aquifer damage, overfishing&rarr;stock collapse. One wrong pairing sinks the option.</li>
+    <li><strong>Applied / current:</strong> sand-mining bans, groundwater over-exploitation (CGWB categories), UNCCD desertification data, illegal wildlife-trade seizures. Mains GS-III links these to the <strong>tragedy of the commons</strong> and sustainable-development trade-offs.</li>
+  </ul>
+  <p><strong>Highest-frequency themes:</strong> deforestation drivers &middot; desertification &amp; UNCCD &middot; sand mining &middot; groundwater over-extraction &middot; overfishing &middot; monoculture/agrochemicals &middot; illegal wildlife trade &amp; biopiracy.</p>
+</div>
+
+<section class="notes" id="concept-exp">
+  <h2>1. Exploitative Practices &mdash; Concept</h2>
+  <p>An <strong>exploitative practice</strong> is any use of a natural resource <em>faster than it can regenerate</em> &mdash; extraction beyond the sustainable yield. It is the root cause behind pollution, biodiversity loss and climate change.</p>
+
+  <h3>1.1 Sustainable vs Exploitative Use</h3>
+  <table>
+    <tr><th>Aspect</th><th>Sustainable use</th><th>Exploitative use</th><th>Example</th></tr>
+    <tr><td>Rate</td><td>Within regeneration limit</td><td>Beyond regeneration</td><td>Selective vs clear-felling</td></tr>
+    <tr><td>Time horizon</td><td>Long-term, inter-generational</td><td>Short-term profit</td><td>Rotational grazing vs overgrazing</td></tr>
+    <tr><td>Outcome</td><td>Resource persists</td><td>Depletion &amp; degradation</td><td>Sustainable vs over-fishing</td></tr>
+  </table>
+
+  <h3>1.2 The Tragedy of the Commons</h3>
+  <ul>
+    <li><strong>Idea (Garrett Hardin, 1968):</strong> when a resource is shared and open-access, each user maximises personal gain, but the collective over-use ruins the resource for all.</li>
+    <li><strong>Examples:</strong> common grazing land, ocean fisheries, groundwater aquifers, the atmosphere (GHGs).</li>
+    <li><strong>Solutions:</strong> regulation, property rights, community management (Elinor Ostrom's work on commons governance), pricing externalities.</li>
+  </ul>
+
+  <h3>1.3 Underlying Drivers</h3>
+  <ul>
+    <li><strong>Population &amp; consumption:</strong> rising demand for food, water, minerals, energy.</li>
+    <li><strong>Market failure:</strong> environmental costs not priced (externalities).</li>
+    <li><strong>Weak governance:</strong> open access, poor enforcement, corruption.</li>
+    <li><strong>Poverty &amp; livelihood pressure:</strong> dependence on forests, fisheries, grazing.</li>
+  </ul>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 720 250" role="img" aria-label="Tragedy of the commons cycle">
+      <defs>
+        <marker id="t27-arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+          <path d="M0,0 L8,3 L0,6 Z" fill="#1a3d5c"></path>
+        </marker>
+      </defs>
+      <rect x="280" y="15" width="160" height="46" rx="8" fill="#e6f4ee" stroke="#1a7a5a" stroke-width="1.5"></rect>
+      <text x="360" y="37" text-anchor="middle" font-size="12" font-weight="700" fill="#1a7a5a">Shared open-access</text>
+      <text x="360" y="53" text-anchor="middle" font-size="11" fill="#5a6266">resource (commons)</text>
+
+      <rect x="540" y="100" width="160" height="50" rx="8" fill="#fff3e0" stroke="#c47820" stroke-width="1.5"></rect>
+      <text x="620" y="122" text-anchor="middle" font-size="12" font-weight="700" fill="#c47820">Each user maximises</text>
+      <text x="620" y="138" text-anchor="middle" font-size="11" fill="#5a6266">private gain</text>
+
+      <rect x="280" y="190" width="160" height="46" rx="8" fill="#fef0f0" stroke="#c0392b" stroke-width="1.5"></rect>
+      <text x="360" y="212" text-anchor="middle" font-size="12" font-weight="700" fill="#c0392b">Over-use &amp; collapse</text>
+      <text x="360" y="228" text-anchor="middle" font-size="11" fill="#5a6266">resource ruined for all</text>
+
+      <rect x="20" y="100" width="160" height="50" rx="8" fill="#e8f0f8" stroke="#1a3d5c" stroke-width="1.5"></rect>
+      <text x="100" y="122" text-anchor="middle" font-size="12" font-weight="700" fill="#1a3d5c">Regulation / rights</text>
+      <text x="100" y="138" text-anchor="middle" font-size="11" fill="#5a6266">breaks the cycle</text>
+
+      <line x1="440" y1="45" x2="560" y2="98" stroke="#1a3d5c" stroke-width="1.5" marker-end="url(#t27-arrow)"></line>
+      <line x1="600" y1="150" x2="440" y2="205" stroke="#1a3d5c" stroke-width="1.5" marker-end="url(#t27-arrow)"></line>
+      <line x1="280" y1="205" x2="150" y2="150" stroke="#1a7a5a" stroke-width="1.5" marker-end="url(#t27-arrow)"></line>
+      <line x1="130" y1="100" x2="290" y2="55" stroke="#1a7a5a" stroke-width="1.5" marker-end="url(#t27-arrow)"></line>
+    </svg>
+    <div class="svg-caption">Fig 27.1 &mdash; The tragedy of the commons: open-access resources are over-used because each user maximises private gain, leading to collapse &mdash; broken only by regulation, property rights or community governance.</div>
+  </div>
+  <div class="callout info"><strong>Exam angle:</strong> "Tragedy of the commons" (Hardin, 1968) explains groundwater depletion, overfishing &amp; GHG emissions. Elinor Ostrom (Nobel) showed community-based governance can manage commons without privatisation or state control.</div>
+</section>
+
+<section class="notes" id="deforest">
+  <h2>2. Deforestation &amp; Forest Degradation</h2>
+  <p><strong>Deforestation</strong> is permanent removal of forest for other land use; <strong>degradation</strong> is a decline in forest quality/density without full clearance.</p>
+
+  <h3>2.1 Drivers</h3>
+  <table>
+    <tr><th>Driver</th><th>How</th><th>Example</th></tr>
+    <tr><td>Agriculture</td><td>Clearing for cropland/plantation</td><td>Shifting cultivation (jhum), palm oil</td></tr>
+    <tr><td>Infrastructure</td><td>Roads, dams, mining, urban sprawl</td><td>Linear projects in forests</td></tr>
+    <tr><td>Fuelwood &amp; timber</td><td>Logging, firewood collection</td><td>Pressure on open forests</td></tr>
+    <tr><td>Forest fires</td><td>Natural + man-made</td><td>Uttarakhand, Similipal fires</td></tr>
+  </table>
+
+  <h3>2.2 Consequences</h3>
+  <ul>
+    <li><strong>Soil erosion &amp; landslides;</strong> loss of watershed regulation &rarr; floods/droughts.</li>
+    <li><strong>Carbon loss:</strong> forests are carbon sinks; clearing releases CO&#8322;.</li>
+    <li><strong>Biodiversity &amp; habitat loss;</strong> human-wildlife conflict.</li>
+    <li><strong>Livelihood loss</strong> for forest-dependent communities.</li>
+  </ul>
+  <div class="callout"><strong>Takeaway:</strong> India tracks forest cover via the biennial FSI <em>India State of Forest Report (ISFR)</em>. Compensatory afforestation (CAMPA) and the Forest (Conservation) Act regulate diversion &mdash; but "green cover" gains often come from plantations, not dense natural forest (a key critique).</div>
+</section>
+
+<section class="notes" id="overgraze">
+  <h2>3. Overgrazing &amp; Desertification</h2>
+  <p><strong>Overgrazing</strong> is grazing livestock beyond the land's carrying capacity, stripping vegetation and compacting soil &mdash; a leading cause of <strong>desertification</strong>.</p>
+
+  <h3>3.1 Desertification</h3>
+  <ul>
+    <li><strong>Definition:</strong> land degradation in arid, semi-arid &amp; dry sub-humid areas from climatic variation &amp; human activity (UNCCD).</li>
+    <li><strong>Not the same as</strong> natural desert spread &mdash; it is degradation of productive dryland.</li>
+    <li><strong>Scale:</strong> nearly a third of India's land is degraded/undergoing desertification (ISRO Desertification Atlas).</li>
+  </ul>
+
+  <h3>3.2 Causes &amp; Effects</h3>
+  <table>
+    <tr><th>Cause</th><th>Effect</th><th>Region example</th></tr>
+    <tr><td>Overgrazing</td><td>Vegetation loss, soil compaction</td><td>Thar fringe, Deccan</td></tr>
+    <tr><td>Deforestation</td><td>Erosion, moisture loss</td><td>Himalayan foothills</td></tr>
+    <tr><td>Over-irrigation</td><td>Waterlogging &amp; salinisation</td><td>Punjab, Haryana canal belts</td></tr>
+    <tr><td>Wind/water erosion</td><td>Loss of topsoil</td><td>Western India</td></tr>
+  </table>
+  <div class="callout warn"><strong>Prelims trap:</strong> <strong>UNCCD</strong> (1994) is the desertification convention &mdash; India hosted COP14 (2019) and set a Land Degradation Neutrality (LDN) target. Do not confuse with UNFCCC (climate) or CBD (biodiversity) &mdash; the Rio trio.</div>
+</section>
+
+<section class="notes" id="mining">
+  <h2>4. Mining &amp; Sand Mining</h2>
+  <p>Mining extracts minerals but disturbs land, water and forests. <strong>Sand mining</strong> &mdash; sand is the world's second-most extracted resource after water &mdash; is an acute, under-regulated problem in India.</p>
+
+  <h3>4.1 Impacts of Mining</h3>
+  <table>
+    <tr><th>Impact</th><th>Detail</th></tr>
+    <tr><td>Land degradation</td><td>Overburden, tailings, subsidence</td></tr>
+    <tr><td>Water pollution</td><td>Acid mine drainage, heavy metals</td></tr>
+    <tr><td>Deforestation</td><td>Forest diversion (e.g. coal in central India)</td></tr>
+    <tr><td>Air &amp; dust</td><td>Respiratory disease, silicosis</td></tr>
+    <tr><td>Displacement</td><td>Tribal &amp; forest communities</td></tr>
+  </table>
+
+  <h3>4.2 Sand Mining</h3>
+  <ul>
+    <li><strong>Use:</strong> construction boom drives huge demand for river/beach sand.</li>
+    <li><strong>Harm:</strong> deepens riverbeds, lowers water table, damages aquifers, erodes banks &amp; bridges, destroys aquatic habitat &amp; turtle-nesting beaches.</li>
+    <li><strong>Regulation:</strong> Sustainable Sand Mining Guidelines (MoEFCC); requires environmental clearance; NGT has repeatedly cracked down on illegal mining.</li>
+    <li><strong>Governance gap:</strong> "sand mafia", illegal night mining, weak state enforcement.</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims trap:</strong> even <em>minor minerals</em> like sand now need <strong>environmental clearance</strong> (post-2012 Supreme Court order). Sand mining lowers the water table by exposing/deepening the aquifer &mdash; a common statement-elimination link.</div>
+</section>
+
+<section class="notes" id="overfish">
+  <h2>5. Overfishing &amp; Marine Over-use</h2>
+  <p><strong>Overfishing</strong> is harvesting fish faster than stocks can replenish, collapsing fisheries and marine ecosystems.</p>
+
+  <h3>5.1 Drivers &amp; Practices</h3>
+  <table>
+    <tr><th>Practice</th><th>Harm</th></tr>
+    <tr><td>Bottom trawling</td><td>Destroys seabed habitat, high bycatch</td></tr>
+    <tr><td>Use of fine/banned nets</td><td>Catches juveniles &amp; non-targets</td></tr>
+    <tr><td>Overcapacity of fleets</td><td>Effort exceeds sustainable yield</td></tr>
+    <tr><td>IUU fishing</td><td>Illegal, unreported, unregulated catch</td></tr>
+  </table>
+
+  <h3>5.2 Consequences &amp; Response</h3>
+  <ul>
+    <li><strong>Stock collapse</strong> &amp; loss of fisher livelihoods; disrupted food chains.</li>
+    <li><strong>Bycatch:</strong> turtles, dolphins killed incidentally &mdash; hence Turtle Excluder Devices (TEDs).</li>
+    <li><strong>Management tools:</strong> fishing bans in breeding season, mesh-size rules, Marine Protected Areas, WTO Agreement on Fisheries Subsidies (curbing harmful subsidies).</li>
+    <li><strong>Blue economy:</strong> sustainable-fisheries push (PM Matsya Sampada Yojana) balances livelihood &amp; conservation.</li>
+  </ul>
+  <div class="callout"><strong>Takeaway:</strong> ocean fisheries are the classic open-access commons &mdash; without catch limits and MPAs, individual over-fishing collapses the shared stock. TEDs and seasonal bans are the practical fixes UPSC likes.</div>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 720 250" role="img" aria-label="Deforestation consequences flowchart">
+      <rect x="270" y="15" width="180" height="46" rx="8" fill="#fef0f0" stroke="#c0392b" stroke-width="1.5"></rect>
+      <text x="360" y="43" text-anchor="middle" font-size="13" font-weight="700" fill="#c0392b">Deforestation</text>
+
+      <rect x="20" y="110" width="150" height="50" rx="7" fill="#fff3e0" stroke="#c47820" stroke-width="1.4"></rect>
+      <text x="95" y="132" text-anchor="middle" font-size="11" font-weight="700" fill="#c47820">Soil erosion</text>
+      <text x="95" y="148" text-anchor="middle" font-size="10" fill="#5a6266">&amp; landslides</text>
+
+      <rect x="195" y="110" width="150" height="50" rx="7" fill="#e8f0f8" stroke="#1a3d5c" stroke-width="1.4"></rect>
+      <text x="270" y="132" text-anchor="middle" font-size="11" font-weight="700" fill="#1a3d5c">Carbon release</text>
+      <text x="270" y="148" text-anchor="middle" font-size="10" fill="#5a6266">lost sink</text>
+
+      <rect x="370" y="110" width="150" height="50" rx="7" fill="#e6f4ee" stroke="#1a7a5a" stroke-width="1.4"></rect>
+      <text x="445" y="132" text-anchor="middle" font-size="11" font-weight="700" fill="#1a7a5a">Biodiversity loss</text>
+      <text x="445" y="148" text-anchor="middle" font-size="10" fill="#5a6266">habitat &amp; species</text>
+
+      <rect x="545" y="110" width="155" height="50" rx="7" fill="#fff3e0" stroke="#c47820" stroke-width="1.4"></rect>
+      <text x="622" y="132" text-anchor="middle" font-size="11" font-weight="700" fill="#c47820">Water cycle</text>
+      <text x="622" y="148" text-anchor="middle" font-size="10" fill="#5a6266">floods/droughts</text>
+
+      <rect x="250" y="205" width="220" height="40" rx="7" fill="#0d2035"></rect>
+      <text x="360" y="230" text-anchor="middle" font-size="12" font-weight="700" fill="#fff">Livelihood &amp; climate impact</text>
+
+      <line x1="330" y1="61" x2="120" y2="108" stroke="#1a3d5c" stroke-width="1.4" marker-end="url(#t27-arrow)"></line>
+      <line x1="350" y1="61" x2="290" y2="108" stroke="#1a3d5c" stroke-width="1.4" marker-end="url(#t27-arrow)"></line>
+      <line x1="370" y1="61" x2="430" y2="108" stroke="#1a3d5c" stroke-width="1.4" marker-end="url(#t27-arrow)"></line>
+      <line x1="390" y1="61" x2="600" y2="108" stroke="#1a3d5c" stroke-width="1.4" marker-end="url(#t27-arrow)"></line>
+      <line x1="360" y1="160" x2="360" y2="203" stroke="#c0392b" stroke-width="1.6" marker-end="url(#t27-arrow)"></line>
+    </svg>
+    <div class="svg-caption">Fig 27.2 &mdash; Deforestation cascades into soil erosion, carbon release, biodiversity loss and a disrupted water cycle &mdash; converging on livelihood and climate impacts.</div>
+  </div>
+</section>
+
+<section class="notes" id="groundwater">
+  <h2>6. Groundwater Over-extraction</h2>
+  <p>India is the world's largest groundwater user. Pumping beyond natural recharge is depleting aquifers &mdash; a slow-motion commons tragedy driven by free/subsidised power and canal-less irrigation.</p>
+
+  <h3>6.1 The Problem</h3>
+  <ul>
+    <li><strong>Drivers:</strong> Green-Revolution cropping (paddy/sugarcane), free electricity, unregulated borewells.</li>
+    <li><strong>Effects:</strong> falling water table, drying wells, land subsidence, salinity ingress in coastal aquifers, arsenic/fluoride concentration.</li>
+    <li><strong>CGWB categories:</strong> assessment units classed as <em>Safe, Semi-critical, Critical, Over-exploited</em> (extraction &gt; recharge).</li>
+  </ul>
+
+  <h3>6.2 Management</h3>
+  <table>
+    <tr><th>Measure</th><th>Detail</th></tr>
+    <tr><td>Atal Bhujal Yojana</td><td>Community-led groundwater management in stressed blocks</td></tr>
+    <tr><td>Jal Shakti Abhiyan</td><td>Rainwater harvesting, recharge, "Catch the Rain"</td></tr>
+    <tr><td>MGNREGA works</td><td>Check dams, ponds, watershed structures</td></tr>
+    <tr><td>Micro-irrigation</td><td>Drip/sprinkler (Per Drop More Crop)</td></tr>
+    <tr><td>Crop diversification</td><td>Shift from water-guzzling paddy</td></tr>
+  </table>
+  <div class="callout warn"><strong>Prelims trap:</strong> an <strong>"over-exploited"</strong> CGWB unit is one where annual groundwater extraction <em>exceeds</em> annual recharge (stage of extraction &gt;100%). Atal Bhujal Yojana targets such water-stressed blocks via community participation.</div>
+</section>
+
+<section class="notes" id="agri">
+  <h2>7. Monoculture &amp; Agrochemical Overuse</h2>
+  <p>Intensive agriculture &mdash; large single-crop fields plus heavy fertiliser/pesticide use &mdash; boosts yields but degrades soil, water and biodiversity.</p>
+
+  <h3>7.1 Monoculture</h3>
+  <ul>
+    <li><strong>What:</strong> growing one crop variety over large areas (e.g. Green-Revolution wheat-paddy).</li>
+    <li><strong>Problems:</strong> loss of agro-biodiversity, greater pest/disease vulnerability, soil-nutrient exhaustion, dependence on inputs.</li>
+    <li><strong>Alternatives:</strong> crop rotation, mixed/inter-cropping, agro-forestry, millets ("Shree Anna").</li>
+  </ul>
+
+  <h3>7.2 Agrochemical Overuse</h3>
+  <table>
+    <tr><th>Input</th><th>Harm</th><th>Example</th></tr>
+    <tr><td>Chemical fertiliser (N,P)</td><td>Soil acidification, eutrophication of water</td><td>Nitrate runoff, algal blooms</td></tr>
+    <tr><td>Pesticides</td><td>Biomagnification, pollinator loss, resistance</td><td>DDT legacy, bee decline</td></tr>
+    <tr><td>Excess irrigation</td><td>Waterlogging &amp; salinisation</td><td>Canal-command salinity</td></tr>
+  </table>
+
+  <h3>7.3 Sustainable Alternatives</h3>
+  <ul>
+    <li><strong>Organic &amp; natural farming</strong> (e.g. Zero-Budget Natural Farming / PKVY).</li>
+    <li><strong>Integrated Nutrient &amp; Pest Management (INM/IPM);</strong> balanced fertilisation, bio-pesticides.</li>
+    <li><strong>Soil Health Cards, micro-irrigation, millet promotion.</strong></li>
+  </ul>
+  <div class="callout"><strong>Takeaway:</strong> the Green Revolution solved hunger but created a soil-water-biodiversity debt. UPSC frames the fix as a shift to <em>sustainable/regenerative agriculture</em> &mdash; diversification, natural farming and precise input use.</div>
+</section>
+
+<section class="notes" id="wildlife">
+  <h2>8. Illegal Wildlife Trade &amp; Biopiracy</h2>
+  <p>Over-exploitation of species for trade drives many toward extinction; misuse of biological resources &amp; traditional knowledge is <strong>biopiracy</strong>.</p>
+
+  <h3>8.1 Illegal Wildlife Trade</h3>
+  <ul>
+    <li><strong>Products:</strong> tiger &amp; leopard parts, rhino horn, elephant ivory, pangolin scales, star tortoises, exotic birds, red sanders.</li>
+    <li><strong>Drivers:</strong> demand for traditional medicine, luxury, pets; high profit, low risk.</li>
+    <li><strong>Controls:</strong> <strong>CITES</strong> (global trade convention), Wildlife (Protection) Act 1972, <strong>WCCB</strong> (Wildlife Crime Control Bureau), TRAFFIC monitoring.</li>
+  </ul>
+
+  <h3>8.2 Biopiracy</h3>
+  <table>
+    <tr><th>Aspect</th><th>Detail</th></tr>
+    <tr><td>Definition</td><td>Unauthorised commercial use of bio-resources/traditional knowledge without benefit-sharing</td></tr>
+    <tr><td>Famous cases</td><td>Neem, turmeric, Basmati patent challenges (revoked)</td></tr>
+    <tr><td>Legal shield</td><td>Biological Diversity Act 2002, National Biodiversity Authority (NBA)</td></tr>
+    <tr><td>Global framework</td><td>Nagoya Protocol on Access &amp; Benefit-Sharing (ABS)</td></tr>
+    <tr><td>Defensive tool</td><td>Traditional Knowledge Digital Library (TKDL)</td></tr>
+  </table>
+  <div class="callout warn"><strong>Prelims trap:</strong> <strong>CITES</strong> regulates international <em>trade</em> in species (Appendices I/II/III); <strong>CBD/Nagoya</strong> governs access &amp; benefit-sharing of genetic resources. India's Biological Diversity Act + NBA operationalise the anti-biopiracy regime.</div>
+</section>
+
+<section class="notes" id="governance">
+  <h2>9. Governance &amp; Sustainable Alternatives</h2>
+  <p>Curbing exploitative practices needs a mix of law, economic incentives, community rights and sustainable technology.</p>
+
+  <h3>9.1 Governance Tools</h3>
+  <table>
+    <tr><th>Tool</th><th>Function</th></tr>
+    <tr><td>Regulation &amp; clearances</td><td>EIA, forest/wildlife clearances, mining leases</td></tr>
+    <tr><td>Economic instruments</td><td>Polluter-pays, green tax, subsidy reform</td></tr>
+    <tr><td>Property/community rights</td><td>Forest Rights Act, JFM, community fisheries</td></tr>
+    <tr><td>Institutions</td><td>NGT, CPCB/SPCBs, CGWB, WCCB, NBA</td></tr>
+    <tr><td>International</td><td>UNCCD, CBD, CITES, Ramsar, WTO fisheries</td></tr>
+  </table>
+
+  <h3>9.2 The Sustainable-Development Frame</h3>
+  <ul>
+    <li><strong>Sustainable use</strong> &mdash; within regeneration limits; inter-generational equity.</li>
+    <li><strong>Circular economy</strong> &mdash; reduce virgin-resource extraction (links to Topic 24).</li>
+    <li><strong>Community stewardship</strong> &mdash; Ostrom-style commons management; decentralised control.</li>
+    <li><strong>Aligning with SDGs</strong> &mdash; SDG 12 (responsible consumption), 15 (life on land), 14 (life below water), 6 (water).</li>
+  </ul>
+  <div class="callout"><strong>Integrated takeaway:</strong> every exploitative practice is a commons problem &mdash; the durable answer combines <em>enforceable limits</em>, <em>right pricing of externalities</em> and <em>community ownership</em>, not just bans. This is the GS-III reasoning chain UPSC rewards.</div>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 720 240" role="img" aria-label="Groundwater over-extraction consequence chain">
+      <rect x="20" y="95" width="150" height="50" rx="8" fill="#fff3e0" stroke="#c47820" stroke-width="1.5"></rect>
+      <text x="95" y="117" text-anchor="middle" font-size="11" font-weight="700" fill="#c47820">Free power +</text>
+      <text x="95" y="133" text-anchor="middle" font-size="11" font-weight="700" fill="#c47820">paddy/cane</text>
+
+      <rect x="215" y="95" width="160" height="50" rx="8" fill="#e8f0f8" stroke="#1a3d5c" stroke-width="1.5"></rect>
+      <text x="295" y="117" text-anchor="middle" font-size="11" font-weight="700" fill="#1a3d5c">Over-pumping</text>
+      <text x="295" y="133" text-anchor="middle" font-size="10" fill="#5a6266">extraction &gt; recharge</text>
+
+      <rect x="420" y="30" width="150" height="46" rx="8" fill="#fef0f0" stroke="#c0392b" stroke-width="1.4"></rect>
+      <text x="495" y="52" text-anchor="middle" font-size="11" font-weight="700" fill="#c0392b">Falling water table</text>
+      <text x="495" y="68" text-anchor="middle" font-size="10" fill="#5a6266">dry wells</text>
+
+      <rect x="420" y="160" width="150" height="46" rx="8" fill="#fef0f0" stroke="#c0392b" stroke-width="1.4"></rect>
+      <text x="495" y="182" text-anchor="middle" font-size="11" font-weight="700" fill="#c0392b">Salinity / arsenic</text>
+      <text x="495" y="198" text-anchor="middle" font-size="10" fill="#5a6266">quality decline</text>
+
+      <rect x="600" y="95" width="105" height="50" rx="8" fill="#0d2035"></rect>
+      <text x="652" y="117" text-anchor="middle" font-size="10" font-weight="700" fill="#fff">Water &amp;</text>
+      <text x="652" y="133" text-anchor="middle" font-size="10" fill="#c8d8e8">food crisis</text>
+
+      <line x1="170" y1="120" x2="213" y2="120" stroke="#1a3d5c" stroke-width="1.5" marker-end="url(#t27-arrow)"></line>
+      <line x1="375" y1="112" x2="418" y2="60" stroke="#1a3d5c" stroke-width="1.5" marker-end="url(#t27-arrow)"></line>
+      <line x1="375" y1="128" x2="418" y2="180" stroke="#1a3d5c" stroke-width="1.5" marker-end="url(#t27-arrow)"></line>
+      <line x1="570" y1="53" x2="640" y2="93" stroke="#c0392b" stroke-width="1.4" marker-end="url(#t27-arrow)"></line>
+      <line x1="570" y1="183" x2="640" y2="147" stroke="#c0392b" stroke-width="1.4" marker-end="url(#t27-arrow)"></line>
+    </svg>
+    <div class="svg-caption">Fig 27.3 &mdash; Groundwater over-extraction chain: subsidised power + water-intensive cropping &rarr; over-pumping (extraction &gt; recharge) &rarr; falling water table and quality decline &rarr; water &amp; food crisis.</div>
+  </div>
+</section>
+
+<section class="notes" id="current">
+  <h2>10. Current Affairs Link (2024&ndash;2026)</h2>
+  <p>Resource-exploitation issues surface constantly in reports, court orders and global summits. Verify the latest figures before the exam.</p>
+
+  <h3>10.1 Recent Developments</h3>
+  <table>
+    <tr><th>Development</th><th>Year</th><th>Exam relevance</th></tr>
+    <tr><td>UNCCD COP16 (Riyadh) outcomes <span class="update-tag">check latest</span></td><td>2024</td><td>Drought resilience, land-degradation finance</td></tr>
+    <tr><td>ISRO Desertification &amp; Land Degradation Atlas <span class="update-tag">check latest</span></td><td>2024&ndash;26</td><td>~30% land degraded; state-wise data</td></tr>
+    <tr><td>NGT / SC orders on illegal sand mining</td><td>2024&ndash;26</td><td>Clearance norms, riverbed protection</td></tr>
+    <tr><td>CGWB groundwater assessment</td><td>2024&ndash;26</td><td>Over-exploited blocks, Atal Bhujal progress</td></tr>
+    <tr><td>WTO Fisheries Subsidies Agreement</td><td>ongoing</td><td>Curbing harmful subsidies, IUU fishing</td></tr>
+    <tr><td>Wildlife-trade seizures (pangolin, red sanders)</td><td>2024&ndash;26</td><td>WCCB/CITES enforcement</td></tr>
+    <tr><td>Millet promotion (post-IYM 2023)</td><td>2024&ndash;26</td><td>Diversifying from water-heavy monoculture</td></tr>
+  </table>
+
+  <h3>10.2 Recurring Exam Hooks</h3>
+  <ul>
+    <li>Convention on desertification? (<strong>UNCCD, 1994</strong>)</li>
+    <li>Who coined "tragedy of the commons"? (<strong>Garrett Hardin, 1968</strong>)</li>
+    <li>Scheme for stressed-block groundwater? (<strong>Atal Bhujal Yojana</strong>)</li>
+    <li>Body for wildlife crime? (<strong>WCCB</strong>)</li>
+    <li>Anti-biopiracy law in India? (<strong>Biological Diversity Act 2002 / NBA</strong>)</li>
+    <li>Device to cut fishing bycatch? (<strong>Turtle Excluder Device</strong>)</li>
+    <li>Second-most extracted resource after water? (<strong>sand</strong>)</li>
+  </ul>
+  <div class="callout update"><strong>Freshness note:</strong> degradation percentages, over-exploited-block counts and seizure data change with each new report &mdash; cross-check UNCCD / CGWB / FSI / WCCB before the exam. <span class="update-tag">check for latest update or data</span></div>
+</section>
+
+<section class="notes" id="prelims-pyq">
+  <h2>11. Prelims PYQs</h2>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2016</div>
+    <p class="q-stem"><strong>Q:</strong> The phrase "tragedy of the commons" best explains:</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Private ownership improving resource use</li>
+      <li class="correct"><span class="opt-key">(b)</span> Over-use of a shared, open-access resource</li>
+      <li><span class="opt-key">(c)</span> Government monopoly over minerals</li>
+      <li><span class="opt-key">(d)</span> Equitable distribution of common land</li>
+    </ul>
+    <p class="ans">Ans: (b) &mdash; Hardin's idea: individually rational over-use of a shared resource ruins it for all &mdash; e.g. groundwater, fisheries.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2015</div>
+    <p class="q-stem"><strong>Q:</strong> Desertification, as defined by the UNCCD, refers to land degradation in:</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Only true deserts</li>
+      <li class="correct"><span class="opt-key">(b)</span> Arid, semi-arid &amp; dry sub-humid areas</li>
+      <li><span class="opt-key">(c)</span> Coastal wetlands</li>
+      <li><span class="opt-key">(d)</span> Tropical rainforests</li>
+    </ul>
+    <p class="ans">Ans: (b) &mdash; Desertification = degradation of drylands (arid/semi-arid/dry sub-humid), not the natural spread of deserts.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2020</div>
+    <p class="q-stem"><strong>Q:</strong> Consider illegal sand mining. Which statements are correct? 1. It can lower the local water table.&nbsp; 2. Minor minerals like sand require environmental clearance.&nbsp; 3. It damages riverbeds and aquatic habitat.</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> 1 and 2 only</li>
+      <li><span class="opt-key">(b)</span> 2 and 3 only</li>
+      <li><span class="opt-key">(c)</span> 1 and 3 only</li>
+      <li class="correct"><span class="opt-key">(d)</span> 1, 2 and 3</li>
+    </ul>
+    <p class="ans">Ans: (d) &mdash; All correct &mdash; sand mining deepens riverbeds, harms aquifers/habitat, and now needs environmental clearance.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2019</div>
+    <p class="q-stem"><strong>Q:</strong> A groundwater assessment unit classified as "over-exploited" by CGWB is one where:</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Extraction is far below recharge</li>
+      <li><span class="opt-key">(b)</span> Extraction equals half the recharge</li>
+      <li class="correct"><span class="opt-key">(c)</span> Annual extraction exceeds annual recharge</li>
+      <li><span class="opt-key">(d)</span> No extraction is permitted</li>
+    </ul>
+    <p class="ans">Ans: (c) &mdash; "Over-exploited" = stage of extraction &gt;100% (extraction exceeds recharge). Atal Bhujal Yojana targets such blocks.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2017</div>
+    <p class="q-stem"><strong>Q:</strong> The Turtle Excluder Device (TED) is associated with reducing harm from:</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Oil spills</li>
+      <li><span class="opt-key">(b)</span> Plastic pollution</li>
+      <li class="correct"><span class="opt-key">(c)</span> Bycatch in fishing (trawling)</li>
+      <li><span class="opt-key">(d)</span> Coral bleaching</li>
+    </ul>
+    <p class="ans">Ans: (c) &mdash; TEDs let sea turtles escape trawl nets, cutting bycatch mortality &mdash; a fix for over-fishing's collateral damage.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2021</div>
+    <p class="q-stem"><strong>Q:</strong> Biopiracy in India is primarily countered by:</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Wildlife (Protection) Act 1972</li>
+      <li class="correct"><span class="opt-key">(b)</span> Biological Diversity Act 2002 &amp; the NBA</li>
+      <li><span class="opt-key">(c)</span> Air (Prevention) Act 1981</li>
+      <li><span class="opt-key">(d)</span> Forest (Conservation) Act 1980</li>
+    </ul>
+    <p class="ans">Ans: (b) &mdash; The Biological Diversity Act 2002 and National Biodiversity Authority regulate access &amp; benefit-sharing of bio-resources. (TKDL is a defensive tool.)</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2014</div>
+    <p class="q-stem"><strong>Q:</strong> Which convention regulates international trade in endangered species?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> UNCCD</li>
+      <li><span class="opt-key">(b)</span> Ramsar</li>
+      <li class="correct"><span class="opt-key">(c)</span> CITES</li>
+      <li><span class="opt-key">(d)</span> UNFCCC</li>
+    </ul>
+    <p class="ans">Ans: (c) &mdash; CITES governs cross-border trade via Appendices I/II/III. UNCCD = desertification; Ramsar = wetlands; UNFCCC = climate.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2023</div>
+    <p class="q-stem"><strong>Q:</strong> "Land Degradation Neutrality (LDN)" is a target under the:</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Convention on Biological Diversity</li>
+      <li class="correct"><span class="opt-key">(b)</span> UN Convention to Combat Desertification</li>
+      <li><span class="opt-key">(c)</span> Paris Agreement</li>
+      <li><span class="opt-key">(d)</span> Montreal Protocol</li>
+    </ul>
+    <p class="ans">Ans: (b) &mdash; LDN is a UNCCD goal (SDG 15.3); India committed to it, notably at UNCCD COP14 (2019).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2026 &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> UNCCD LDN &amp; India's degraded-land restoration pledge, CGWB "over-exploited" block metrics, WTO fisheries-subsidies agreement, and Biological Diversity (Amendment) Act 2023 changes are live hooks &mdash; expect Act-to-purpose and convention-mapping items. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes" id="mains-pyq">
+  <h2>12. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>Questions below are original, exam-style formulations built from real UPSC GS-III themes &mdash; paraphrased to be copyright-safe. Each framework = intro angle &rarr; structured body &rarr; way-forward, with examples to quote.</em></p>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; style 2018 <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> "The tragedy of the commons underlies most of India's resource-degradation problems." Examine with examples and solutions.</p>
+    <div class="model-answer">
+      <h5>Model Answer Framework</h5>
+      <ol>
+        <li><strong>Introduction &mdash; define:</strong> tragedy of the commons (Hardin, 1968) &mdash; open-access over-use.</li>
+        <li><strong>Examples:</strong> groundwater depletion, overfishing, overgrazing, atmospheric GHGs.</li>
+        <li><strong>Solutions:</strong>
+          <ul><li>Regulation (limits), pricing externalities, property rights, community management (Ostrom), technology.</li></ul>
+        </li>
+        <li><strong>Conclusion:</strong> Atal Bhujal (community groundwater), MPAs, JFM &mdash; blended governance.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; style 2016 <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Discuss the causes and consequences of desertification in India and the measures to combat it.</p>
+    <div class="model-answer">
+      <h5>Model Answer Framework</h5>
+      <ol>
+        <li><strong>Introduction &mdash; define:</strong> desertification (UNCCD) &mdash; dryland degradation.</li>
+        <li><strong>Causes:</strong> overgrazing, deforestation, over-irrigation/salinisation, erosion, climate.</li>
+        <li><strong>Consequences:</strong> lost productivity, migration, food/water insecurity.</li>
+        <li><strong>Conclusion:</strong> LDN target, afforestation, watershed &amp; grazing management, UNCCD COP14 commitments.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; style 2020 <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> "Unregulated sand mining is an ecological and governance crisis." Comment.</p>
+    <div class="model-answer">
+      <h5>Model Answer Framework</h5>
+      <ol>
+        <li><strong>Introduction &mdash; context:</strong> construction boom, sand = 2nd-most extracted resource.</li>
+        <li><strong>Ecological harm:</strong> riverbed deepening, water-table fall, bank erosion, habitat loss.</li>
+        <li><strong>Governance gap:</strong> sand mafia, weak enforcement, illegal night mining.</li>
+        <li><strong>Conclusion:</strong> sustainable-mining guidelines, monitoring/GPS, alternatives (M-sand), NGT oversight.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; style 2019 <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Examine how groundwater over-extraction threatens India's water and food security, and suggest remedies.</p>
+    <div class="model-answer">
+      <h5>Model Answer Framework</h5>
+      <ol>
+        <li><strong>Introduction &mdash; scale:</strong> largest groundwater user; many over-exploited blocks (CGWB).</li>
+        <li><strong>Drivers:</strong> free power, paddy/cane monoculture, unregulated borewells.</li>
+        <li><strong>Effects:</strong> falling table, salinity, dry wells, quality decline.</li>
+        <li><strong>Conclusion:</strong> Atal Bhujal, micro-irrigation, crop diversification, power-pricing reform, recharge.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; style 2022 <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> "Illegal wildlife trade and biopiracy are twin threats to India's biological heritage." Discuss the legal and institutional response.</p>
+    <div class="model-answer">
+      <h5>Model Answer Framework</h5>
+      <ol>
+        <li><strong>Introduction &mdash; threats:</strong> trade in tiger parts, pangolin, red sanders; biopiracy of neem/turmeric knowledge.</li>
+        <li><strong>Legal shield:</strong> Wildlife (Protection) Act 1972, Biological Diversity Act 2002, CITES, Nagoya Protocol.</li>
+        <li><strong>Institutions:</strong> WCCB, NBA, TRAFFIC, TKDL (defensive).</li>
+        <li><strong>Conclusion:</strong> stronger enforcement, community incentives, demand-reduction, benefit-sharing.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; anticipated theme <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> India has pledged to restore degraded land under UNCCD's Land Degradation Neutrality goal. Examine the drivers of land degradation and the institutional roadmap to meet this target. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; Environmental Exploitative Practices</h3>
+    <div class="grid-2">
+      <div>
+        <strong>Concepts &amp; land/water</strong>
+        <ul>
+          <li><strong>Exploitative use:</strong> extraction beyond regeneration &mdash; root of pollution &amp; biodiversity loss.</li>
+          <li><strong>Tragedy of commons:</strong> Hardin 1968; open-access over-use; Ostrom &rarr; community governance.</li>
+          <li><strong>Deforestation:</strong> agriculture, infra, fire; erosion + carbon loss; FSI/ISFR, CAMPA.</li>
+          <li><strong>Desertification:</strong> dryland degradation; UNCCD (1994), LDN, COP14 India 2019; ~30% land degraded.</li>
+          <li><strong>Groundwater:</strong> over-exploited = extraction &gt; recharge (CGWB); Atal Bhujal, micro-irrigation.</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Mining, fisheries &amp; biodiversity</strong>
+        <ul>
+          <li><strong>Sand mining:</strong> 2nd-most extracted resource; lowers water table; needs env. clearance; NGT.</li>
+          <li><strong>Overfishing:</strong> bottom-trawling, bycatch; TEDs, seasonal bans, MPAs, WTO subsidies deal.</li>
+          <li><strong>Monoculture/agrochemicals:</strong> soil/water damage; fix = diversification, natural farming, IPM/INM.</li>
+          <li><strong>Wildlife trade/biopiracy:</strong> CITES + WCCB (trade); Biodiversity Act 2002 + NBA + Nagoya + TKDL (biopiracy).</li>
+          <li><strong>Frame:</strong> limits + pricing externalities + community ownership &mdash; not bans alone.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="callout warn"><strong>Highest-frequency themes since 2014:</strong> tragedy of the commons, desertification/UNCCD/LDN, CGWB over-exploited groundwater, sand-mining governance, CITES &amp; Biological Diversity Act mapping, TED/overfishing &mdash; WTO fisheries subsidies and BDA-2023 amendments are current-affairs hooks.</div>
+</section>
+</section>
+
+</main>
+
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Quick Reference</h4>
+    <table>
+      <tr><th>Term</th><th>Meaning</th></tr>
+      <tr><td>Exploitative use</td><td>Extraction beyond renewal rate</td></tr>
+      <tr><td>Tragedy of commons</td><td>Shared resource over-used by all</td></tr>
+      <tr><td>Desertification</td><td>Land degradation in dry zones</td></tr>
+      <tr><td>Biopiracy</td><td>Unauthorised use of bio-resources</td></tr>
+      <tr><td>Overfishing</td><td>Catch beyond stock regeneration</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Practice &rarr; Impact</h4>
+    <table>
+      <tr><th>Practice</th><th>Impact</th></tr>
+      <tr><td>Deforestation</td><td>Erosion, carbon loss</td></tr>
+      <tr><td>Overgrazing</td><td>Desertification</td></tr>
+      <tr><td>Sand mining</td><td>Riverbed/aquifer damage</td></tr>
+      <tr><td>Overfishing</td><td>Stock collapse</td></tr>
+      <tr><td>Over-extraction</td><td>Falling water table</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Key Bodies &amp; Terms</h4>
+    <table>
+      <tr><th>Item</th><th>Note</th></tr>
+      <tr><td>UNCCD</td><td>Desertification convention</td></tr>
+      <tr><td>CGWB</td><td>Central Ground Water Board</td></tr>
+      <tr><td>CITES</td><td>Wildlife-trade convention</td></tr>
+      <tr><td>WCCB</td><td>Wildlife Crime Control Bureau</td></tr>
+      <tr><td>NBA</td><td>National Biodiversity Authority</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims freq.</span><span class="fill"><span style="width:80%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains freq.</span><span class="fill"><span style="width:84%"></span></span></div>
+    <div class="bar"><span class="lbl">Difficulty</span><span class="fill"><span style="width:55%"></span></span></div>
+    <div class="bar"><span class="lbl">Static weight</span><span class="fill"><span style="width:72%"></span></span></div>
+    <div class="bar"><span class="lbl">Current link</span><span class="fill"><span style="width:86%"></span></span></div>
+  </div>
+
+  <div class="widget">
+    <h4>At a Glance</h4>
+    <ul>
+      <li>~30% of India's land is degraded (ISRO/UNCCD).</li>
+      <li>Overgrazing is a top driver of desertification.</li>
+      <li>Sand is the 2nd-most extracted resource after water.</li>
+      <li>~14% of blocks are over-exploited (CGWB).</li>
+      <li>Biopiracy: neem &amp; turmeric patent battles.</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag">Tragedy of Commons</span>
+    <span class="tag orange">Desertification</span>
+    <span class="tag green">UNCCD</span>
+    <span class="tag">Sand Mining</span>
+    <span class="tag orange">Overfishing</span>
+    <span class="tag green">CGWB</span>
+    <span class="tag">Monoculture</span>
+    <span class="tag orange">Biopiracy</span>
+    <span class="tag green">CITES</span>
+    <span class="tag">WCCB</span>
+  </div>
+
+  <div class="widget">
+    <h4>Data Sources to Bookmark</h4>
+    <ul>
+      <li><a href="https://www.unccd.int" target="_blank" rel="noopener">UNCCD</a> &mdash; land degradation &amp; drought <span class="update-tag">check latest</span></li>
+      <li><a href="http://cgwb.gov.in" target="_blank" rel="noopener">CGWB</a> &mdash; groundwater assessment <span class="update-tag">check latest</span></li>
+      <li><a href="https://fsi.nic.in" target="_blank" rel="noopener">FSI</a> &mdash; forest cover reports</li>
+      <li><a href="https://wccb.gov.in" target="_blank" rel="noopener">WCCB</a> &mdash; wildlife-crime data</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/environment/soil-noise-thermal-and-radioactive-pollution">23. Soil &amp; Other Pollution</a></li>
+      <li><a href="/environment/waste-management">24. Waste Management</a></li>
+      <li><a href="/environment/renewable-energy">26. Renewable Energy</a></li>
+      <li><a href="/environment">&larr; All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding-left:0">
+      <li><a href="#concept-exp">1. Concept</a></li>
+      <li><a href="#deforest">2. Deforestation</a></li>
+      <li><a href="#overgraze">3. Overgrazing &amp; Desertification</a></li>
+      <li><a href="#mining">4. Mining &amp; Sand Mining</a></li>
+      <li><a href="#overfish">5. Overfishing</a></li>
+      <li><a href="#groundwater">6. Groundwater Over-extraction</a></li>
+      <li><a href="#agri">7. Monoculture &amp; Agrochemicals</a></li>
+      <li><a href="#wildlife">8. Illegal Wildlife Trade</a></li>
+      <li><a href="#governance">9. Governance &amp; Alternatives</a></li>
+      <li><a href="#current">10. Current Affairs</a></li>
+      <li><a href="#prelims-pyq">11. Prelims PYQ</a></li>
+      <li><a href="#mains-pyq">12. Mains PYQ</a></li>
+      <li><a href="#revision">&#9733; Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

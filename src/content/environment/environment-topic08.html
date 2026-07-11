@@ -1,0 +1,707 @@
+<!-- environment-topic08 — auto-imported from environment-topic08-ecological-succession-homeostasis-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border:1px solid rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:6px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;padding:2px 8px;border-radius:10px;margin-left:6px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .options{list-style:none;margin:8px 0 10px;padding:0}
+.pyq .options li{padding:6px 12px;margin:4px 0;border:1px solid var(--line);border-radius:6px;background:#fafafa}
+.pyq .options li.correct{background:#eaf6f0;border-color:var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:26px;color:var(--brand-orange);font-weight:700}
+.pyq .ans{margin:6px 0 0;font-size:14px;color:var(--brand-blue-dark)}
+.model-answer{background:#f7faf9;border:1px solid var(--line);border-left:4px solid var(--green);border-radius:8px;padding:16px 20px;margin:10px 0}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark)}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:8px}
+.model-answer ul{margin:6px 0 0;padding-left:18px}
+.model-answer ul li{margin-bottom:4px;font-size:14px}
+.marks{display:inline-block;background:var(--brand-blue);color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:10px;margin-top:8px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Topic 08: Ecological Succession &amp; Homeostasis</h1>
+    <p class="sub">The stages of ecological succession — primary vs secondary, hydrarch vs xerarch seres — the pioneer-to-climax community sequence, and ecosystem homeostasis, resistance and resilience.</p>
+    <div class="meta">
+      <span class="pill primary">GS Paper III — Environment &amp; Ecology</span>
+      <span class="pill">UPSC Prelims + Mains</span>
+      <span class="pill">Medium Importance</span>
+      <span class="pill">Read Time: 12 min</span>
+      <span class="pill">Updated: July 2026</span>
+    </div>
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ul>
+      <li><span class="num">1</span><a href="#succession-concept">Ecological Succession — Concept</a></li>
+      <li><span class="num">2</span><a href="#conceptual-clarity">Conceptual Clarity — Succession, Zonation &amp; Homeostasis</a></li>
+      <li><span class="num">3</span><a href="#primary-secondary">Primary vs Secondary Succession</a></li>
+      <li><span class="num">4</span><a href="#hydrarch-xerarch">Hydrarch &amp; Xerarch Succession</a></li>
+      <li><span class="num">5</span><a href="#sere-climax">Sere Stages &amp; Climax Community</a></li>
+      <li><span class="num">6</span><a href="#homeostasis">Homeostasis, Resistance &amp; Resilience</a></li>
+      <li><span class="num">7</span><a href="#current-affairs">Current Affairs Link</a></li>
+      <li><span class="num">8</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+      <li><span class="num">9</span><a href="#mains-pyq">Mains PYQs</a></li>
+      <li><span class="num">10</span><a href="#revision">15-Minute Revision Box</a></li>
+    </ul>
+  </div>
+
+  <!-- TOP CONCEPTUAL CLARITY BOX -->
+  <div class="concept-box" id="concept">
+    <h3>Conceptual Clarity — Why this Topic Matters</h3>
+    <p>UPSC tests succession &amp; homeostasis in three distinct ways — spot which one before answering:</p>
+    <ul>
+      <li><strong>Definitional / static</strong> — primary vs secondary, hydrarch vs xerarch, sere/seral/climax, resistance vs resilience. Direct recall MCQs.</li>
+      <li><strong>Statement-elimination</strong> — trend statements across a sere (diversity ↑, NPP ↓), succession-vs-zonation, "which is faster" — one wrong clause flips the answer.</li>
+      <li><strong>Applied / current</strong> — post-wildfire recovery, ecosystem tipping points &amp; alternative stable states — needs the latest IPCC/IPBES framing (see Current Affairs section).</li>
+    </ul>
+    <p>Focus especially on the <strong>primary vs secondary distinction</strong>, the <strong>hydrarch/xerarch convergence principle</strong>, and the <strong>NPP-decreases-toward-climax trap</strong> — the three highest-frequency themes.</p>
+  </div>
+
+  <!-- SECTION 1: SUCCESSION CONCEPT -->
+  <section class="notes" id="succession-concept">
+    <h2>1. Ecological Succession — Concept</h2>
+    <p>Ecological succession is the gradual, directional and predictable process by which the species composition of a community changes over time in a given area, until a relatively stable end-community (climax) is reached. The concept was pioneered by <strong>Frederic Clements</strong> (who saw the community as a "super-organism" reaching a single climatic climax) and refined by <strong>Henry Gleason</strong> and later <strong>Eugene Odum</strong> (ecosystem-development view).</p>
+    <ul>
+      <li>Succession occurs because early colonising species progressively modify the local environment (soil formation, shade, moisture retention) in ways that make it MORE suitable for later, more complex species, and often LESS suitable for themselves — driving continuous species turnover.</li>
+      <li>The entire successional sequence, from bare/disturbed substrate to climax community, is called a <strong>sere</strong>; each intermediate stage is a <strong>seral stage/community</strong>.</li>
+      <li>It is <strong>directional and largely predictable</strong> for a region — distinguishing it from random, reversible fluctuation.</li>
+    </ul>
+
+    <h3>Mechanisms Driving Succession</h3>
+    <p>Three classic interaction models (Connell &amp; Slatyer) explain how one seral stage gives way to the next:</p>
+    <table>
+      <tr><th>Model</th><th>How it works</th><th>Example</th></tr>
+      <tr><td>Facilitation</td><td>Early species modify the site, making it easier for later species to establish</td><td>Lichens build soil → mosses/herbs colonise</td></tr>
+      <tr><td>Tolerance</td><td>Later species succeed regardless of earlier ones — they simply tolerate lower resources</td><td>Shade-tolerant saplings mature under existing canopy</td></tr>
+      <tr><td>Inhibition</td><td>Early species resist replacement until they die/are damaged, then later species take over</td><td>Dense grass delays tree seedlings until a disturbance opens gaps</td></tr>
+    </table>
+
+    <h3>Autogenic vs Allogenic Succession</h3>
+    <ul>
+      <li><strong>Autogenic</strong> — driven by the <em>biotic community itself</em> altering its environment (most classic succession).</li>
+      <li><strong>Allogenic</strong> — driven by <em>external abiotic factors</em> (siltation, flooding, climate shift) rather than the organisms.</li>
+      <li><strong>Autotrophic</strong> succession — dominated by green plants, energy build-up (typical). <strong>Heterotrophic</strong> — dominated by decomposers on abundant dead organic matter, energy declines (e.g., a polluted stream recovering).</li>
+    </ul>
+    <div class="callout info">
+      <strong>Prelims Hook:</strong> Keep the pairs straight — <em>autogenic</em> = "self-generated" (community-driven), <em>allogenic</em> = "other-generated" (environment-driven). Examiners swap these definitions to bait wrong answers.
+    </div>
+  </section>
+
+  <!-- SECTION 2: CONCEPTUAL CLARITY -->
+  <section class="notes" id="conceptual-clarity">
+    <h2>2. Conceptual Clarity — Succession, Zonation &amp; Homeostasis</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h4>Succession <span class="tag">Time-based Change</span></h4>
+        <p>Sequential change in species composition of a community over TIME, at essentially the same location.</p>
+      </div>
+      <div class="card">
+        <h4>Zonation <span class="tag orange">Space-based Pattern</span></h4>
+        <p>Spatial (not temporal) variation in community composition along an environmental gradient at a SINGLE point in time — e.g., distinct vegetation bands from a lake's edge to dry land, or altitude-driven vegetation banding on a mountain.</p>
+      </div>
+      <div class="card">
+        <h4>Homeostasis <span class="tag green">Self-Regulation</span></h4>
+        <p>An ecosystem's ability to maintain relative internal stability (nutrient cycling, population balance, energy flow) despite external disturbance — the self-regulating "steady state" property of a mature ecosystem.</p>
+      </div>
+    </div>
+    <div class="concept-box">
+      <h3>Common UPSC Confusion — Succession vs Zonation</h3>
+      <p>A single snapshot photo of a lake edge showing different vegetation bands at different distances from the water is ZONATION (spatial pattern, single point in time). Watching that SAME spot fill in with vegetation and change species composition over decades is SUCCESSION (temporal process). The two are often related (zonation patterns can reflect a "frozen" successional gradient) but are conceptually distinct.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 3: PRIMARY VS SECONDARY -->
+  <section class="notes" id="primary-secondary">
+    <h2>3. Primary vs Secondary Succession</h2>
+
+    <div class="svg-wrap">
+      <svg viewBox="0 0 680 230" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+        <text x="340" y="18" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Primary vs Secondary Succession — Starting Point &amp; Speed</text>
+
+        <rect x="30" y="40" width="290" height="30" fill="#8c6238"/>
+        <text x="175" y="60" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Bare Rock / Lava / New Sand Dune (no soil)</text>
+        <path d="M175,70 L175,100" stroke="#5a6266" stroke-width="2" marker-end="url(#e08-arrow)"/>
+        <text x="175" y="120" text-anchor="middle" font-size="9" fill="#0d2035" font-weight="700">PRIMARY SUCCESSION</text>
+        <text x="175" y="134" text-anchor="middle" font-size="8" fill="#5a6266">Slow — centuries; lichens/mosses as pioneers, soil built from scratch</text>
+
+        <rect x="360" y="40" width="290" height="30" fill="#c47820"/>
+        <text x="505" y="60" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Abandoned Field / Burnt Forest (soil intact)</text>
+        <path d="M505,70 L505,100" stroke="#5a6266" stroke-width="2" marker-end="url(#e08-arrow)"/>
+        <text x="505" y="120" text-anchor="middle" font-size="9" fill="#0d2035" font-weight="700">SECONDARY SUCCESSION</text>
+        <text x="505" y="134" text-anchor="middle" font-size="8" fill="#5a6266">Fast — decades; grasses/weeds as pioneers, soil already present</text>
+
+        <rect x="80" y="160" width="520" height="40" rx="6" fill="#1a7a5a"/>
+        <text x="340" y="184" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Climax Community (relatively stable end-point)</text>
+
+        <defs>
+          <marker id="e08-arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+            <path d="M1,1 L7,4 L1,7 Z" fill="#5a6266"/>
+          </marker>
+        </defs>
+      </svg>
+      <div class="svg-caption">Fig 8.1 — Primary vs Secondary Succession: Starting Substrate and Relative Speed</div>
+    </div>
+
+    <table>
+      <tr><th>Feature</th><th>Primary Succession</th><th>Secondary Succession</th></tr>
+      <tr><td>Starting point</td><td>Bare, lifeless substrate with NO pre-existing soil (rock, lava flow, glacial retreat, new sand dune)</td><td>Area where soil already exists but the existing community was disturbed/removed (abandoned farmland, burnt/logged forest)</td></tr>
+      <tr><td>Pioneer species</td><td>Lichens and mosses (can grow on bare rock, begin soil formation via weathering)</td><td>Fast-growing grasses and weeds (colonise quickly using existing soil nutrients)</td></tr>
+      <tr><td>Speed</td><td>Very slow — can take centuries to millennia to reach climax</td><td>Much faster — climax can be reached within decades</td></tr>
+      <tr><td>Soil formation</td><td>Must be built from scratch by pioneer organisms</td><td>Already present, not a limiting step</td></tr>
+    </table>
+  </section>
+
+  <!-- SECTION 4: HYDRARCH & XERARCH -->
+  <section class="notes" id="hydrarch-xerarch">
+    <h2>4. Hydrarch &amp; Xerarch Succession</h2>
+    <p>Primary succession is further classified by the starting moisture condition of the habitat.</p>
+    <div class="grid-2">
+      <div class="card">
+        <h4>Hydrarch Succession (Hydrosere)</h4>
+        <p>Begins in a water-logged/aquatic habitat (pond, lake) and proceeds TOWARD drier land conditions as sediment and organic matter accumulate over time. <em>Sequence:</em> Phytoplankton → Submerged plants → Floating plants → Reed-swamp (emergent) plants → Marsh-meadow plants → Shrubs → Forest (climax).</p>
+      </div>
+      <div class="card">
+        <h4>Xerarch Succession (Xerosere)</h4>
+        <p>Begins in a dry habitat (bare rock or sand) and proceeds TOWARD more mesic (moderate-moisture) conditions as soil and organic matter build up. <em>Sequence:</em> Lichens (crustose → foliose → fruticose) → Mosses → Herbs → Shrubs → Forest (climax).</p>
+      </div>
+    </div>
+    <div class="svg-wrap">
+      <svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+        <text x="350" y="18" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Hydrosere — Pond to Forest Sequence</text>
+        <!-- water to land gradient bar -->
+        <defs>
+          <linearGradient id="e08hyd" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#2b6ea5"/>
+            <stop offset="1" stop-color="#1a7a5a"/>
+          </linearGradient>
+          <marker id="e08a2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M1,1 L7,4 L1,7 Z" fill="#5a6266"/></marker>
+        </defs>
+        <rect x="30" y="180" width="640" height="18" rx="4" fill="url(#e08hyd)"/>
+        <text x="45" y="222" font-size="9" fill="#2b6ea5" font-weight="700">← Open water</text>
+        <text x="590" y="222" font-size="9" fill="#1a7a5a" font-weight="700">Dry land →</text>
+        <!-- stage boxes -->
+        <g font-size="8.5" text-anchor="middle" fill="#0d2035">
+          <rect x="30" y="60" width="86" height="46" rx="5" fill="#d6ecf7" stroke="#2b6ea5"/><text x="73" y="80" font-weight="700">1. Phyto-</text><text x="73" y="92">plankton</text>
+          <rect x="126" y="60" width="86" height="46" rx="5" fill="#c7e6f2" stroke="#2b6ea5"/><text x="169" y="80" font-weight="700">2. Submerged</text><text x="169" y="92">plants</text>
+          <rect x="222" y="60" width="86" height="46" rx="5" fill="#bfe0ee" stroke="#2b6ea5"/><text x="265" y="80" font-weight="700">3. Floating</text><text x="265" y="92">plants</text>
+          <rect x="318" y="60" width="86" height="46" rx="5" fill="#a9d9c4" stroke="#1a7a5a"/><text x="361" y="80" font-weight="700">4. Reed-</text><text x="361" y="92">swamp</text>
+          <rect x="414" y="60" width="86" height="46" rx="5" fill="#8fcf9a" stroke="#1a7a5a"/><text x="457" y="80" font-weight="700">5. Marsh-</text><text x="457" y="92">meadow</text>
+          <rect x="510" y="60" width="70" height="46" rx="5" fill="#7fb87a" stroke="#1a7a5a"/><text x="545" y="86" font-weight="700">6. Shrubs</text>
+          <rect x="590" y="60" width="80" height="46" rx="5" fill="#1a7a5a" stroke="#0d2035"/><text x="630" y="80" fill="#fff" font-weight="700">7. Forest</text><text x="630" y="92" fill="#fff">(climax)</text>
+        </g>
+        <path d="M116,83 L126,83" stroke="#5a6266" stroke-width="1.5" marker-end="url(#e08a2)"/>
+        <path d="M212,83 L222,83" stroke="#5a6266" stroke-width="1.5" marker-end="url(#e08a2)"/>
+        <path d="M308,83 L318,83" stroke="#5a6266" stroke-width="1.5" marker-end="url(#e08a2)"/>
+        <path d="M404,83 L414,83" stroke="#5a6266" stroke-width="1.5" marker-end="url(#e08a2)"/>
+        <path d="M500,83 L510,83" stroke="#5a6266" stroke-width="1.5" marker-end="url(#e08a2)"/>
+        <path d="M580,83 L590,83" stroke="#5a6266" stroke-width="1.5" marker-end="url(#e08a2)"/>
+      </svg>
+      <div class="svg-caption">Fig 8.2 — Hydrosere: succession from open water to a terrestrial forest climax as the basin fills in</div>
+    </div>
+    <div class="callout info">
+      <strong>Convergence Principle:</strong> Interestingly, both hydrarch (starting very wet) and xerarch (starting very dry) succession sequences tend to converge toward a broadly similar MESIC climax community type for a given regional climate — illustrating that regional climate, more than the starting substrate, ultimately determines the climax vegetation.
+    </div>
+  </section>
+
+  <!-- SECTION 5: SERE STAGES & CLIMAX -->
+  <section class="notes" id="sere-climax">
+    <h2>5. Sere Stages &amp; Climax Community</h2>
+    <ul>
+      <li><strong>Pioneer community:</strong> The first species to colonise a bare/disturbed area — hardy, fast-reproducing, tolerant of harsh abiotic conditions.</li>
+      <li><strong>Seral (intermediate) communities:</strong> Successive stages, each modifying the habitat and being progressively replaced by species better adapted to the new, modified conditions.</li>
+      <li><strong>Climax community:</strong> The final, relatively stable community that persists in equilibrium with the local climate, showing minimal further net change in species composition unless a fresh disturbance intervenes.</li>
+    </ul>
+    <table>
+      <tr><th>Trend Across a Sere</th><th>Change from Pioneer to Climax</th></tr>
+      <tr><td>Species diversity</td><td>Increases</td></tr>
+      <tr><td>Food web complexity</td><td>Increases (simple chains → complex webs)</td></tr>
+      <tr><td>Net Primary Productivity</td><td>Typically decreases as ecosystem matures</td></tr>
+      <tr><td>Total biomass/standing crop</td><td>Increases</td></tr>
+      <tr><td>Ecosystem stability</td><td>Increases</td></tr>
+    </table>
+    <div class="callout warn">
+      <strong>UPSC Trap:</strong> "Net Primary Productivity is always highest in the climax community" is FALSE — early successional stages often show HIGHER NPP (fast-growing pioneer species), while the climax stage typically shows lower NPP but much higher total standing biomass and species diversity.
+    </div>
+
+    <h3>Theories of Climax</h3>
+    <table>
+      <tr><th>Theory</th><th>Core idea</th><th>Proponent</th></tr>
+      <tr><td>Monoclimax</td><td>Only ONE climax per region, determined solely by regional climate (climatic climax)</td><td>Clements</td></tr>
+      <tr><td>Polyclimax</td><td>MANY stable climaxes possible in a region, governed by soil, water, topography, fire etc. — not just climate</td><td>Tansley</td></tr>
+      <tr><td>Climax-pattern</td><td>A continuous pattern of climax types varying with the total environment; the commonest one is the "prevailing" climax</td><td>Whittaker</td></tr>
+    </table>
+    <ul>
+      <li><strong>Sub-climax</strong> — succession arrested before the climatic climax. <strong>Disclimax</strong> (disturbance climax) — a stable community maintained by continuous disturbance/human activity (e.g., grazed grassland). <strong>Pre-climax / Post-climax</strong> — communities of drier/wetter character than the regional climatic climax.</li>
+    </ul>
+  </section>
+
+  <!-- SECTION 6: HOMEOSTASIS -->
+  <section class="notes" id="homeostasis">
+    <h2>6. Homeostasis, Resistance &amp; Resilience</h2>
+    <p>A mature ecosystem tends toward homeostasis — a dynamic steady-state maintained through internal self-regulating feedback mechanisms (e.g., predator-prey population checks, nutrient cycling balance).</p>
+    <div class="grid-2">
+      <div class="card">
+        <h4>Ecological Resistance</h4>
+        <p>An ecosystem's capacity to WITHSTAND a disturbance without significant change to its structure/function in the first place.</p>
+      </div>
+      <div class="card">
+        <h4>Ecological Resilience</h4>
+        <p>An ecosystem's capacity to RECOVER back to its original state after being disturbed/displaced from equilibrium.</p>
+      </div>
+    </div>
+    <ul>
+      <li>Higher species diversity and food-web complexity generally correlate with greater ecosystem resilience — more redundancy in ecological roles means the system can absorb the loss of individual species without total collapse.</li>
+      <li>Beyond a certain threshold of disturbance intensity/duration, an ecosystem may fail to return to its original state, instead shifting to a fundamentally different "alternative stable state" — a concept increasingly relevant to climate-change-driven ecosystem tipping points (coral reef collapse, Amazon dieback).</li>
+    </ul>
+  </section>
+
+  <!-- SECTION 7: CURRENT AFFAIRS -->
+  <section class="notes" id="current-affairs">
+    <h2>7. Current Affairs Link (2024–2026)</h2>
+    <div class="callout update">
+      <strong>Wildfire Recovery &amp; Restoration Ecology<span class="update-tag">check for latest update or data</span></strong>
+      <ul>
+        <li>Following record wildfire seasons across Canada, the Mediterranean and (in 2024–25) parts of the US and South America, <strong>post-wildfire secondary succession</strong> became an active restoration-policy area — managers use known seral sequences to speed recovery of burnt landscapes.</li>
+        <li>Debate over "assisted natural regeneration" vs active replanting hinges on whether soil and seed banks survived — i.e., whether recovery is secondary (fast) or effectively primary (slow).</li>
+      </ul>
+    </div>
+    <div class="callout update">
+      <strong>Ecosystem Tipping Points<span class="update-tag">check for latest update or data</span></strong>
+      <ul>
+        <li>"Ecosystem tipping points" — where resilience is exceeded and a system flips to an <strong>alternative stable state</strong> (coral reef → algae-dominated; Amazon rainforest → savanna "dieback") — remained a major focus in IPCC AR6 follow-ups and IPBES assessments through 2024–2026.</li>
+        <li>The 2023 <em>Global Tipping Points</em> report and its updates continued to shape climate-adaptation policy framing.</li>
+      </ul>
+    </div>
+    <div class="callout info">
+      <strong>UPSC Relevance:</strong> Sere terminology (hydrarch/xerarch), primary vs secondary succession distinctions, and homeostasis/resilience concepts are frequently tested Prelims facts; ecosystem tipping points are an emerging GS-III Mains theme linked to climate change.
+    </div>
+  </section>
+
+  <!-- SECTION 8: PRELIMS PYQs -->
+  <section class="notes" id="prelims-pyq">
+    <h2>8. Prelims PYQs</h2>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2021</div>
+      <p><strong>Q:</strong> Consider the following statements regarding ecological succession: (1) Primary succession occurs on a substrate that has never previously supported a community. (2) Lichens are typical pioneer species in xerarch succession on bare rock. (3) Secondary succession is generally slower than primary succession. Which of the statements given above is/are correct?</p>
+      <ul class="options">
+        <li class="correct"><span class="opt-key">(a)</span>1 and 2 only</li>
+        <li><span class="opt-key">(b)</span>2 and 3 only</li>
+        <li><span class="opt-key">(c)</span>1 and 3 only</li>
+        <li><span class="opt-key">(d)</span>1, 2 and 3</li>
+      </ul>
+      <p class="ans"><strong>Ans: (a).</strong> 1 and 2 only. Statement 3 is incorrect — secondary succession is generally FASTER than primary succession, since soil is already present.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2019</div>
+      <p><strong>Q:</strong> "Hydrarch succession" refers to ecological succession that:</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>Begins in a dry, bare-rock habitat and proceeds toward moist conditions</li>
+        <li class="correct"><span class="opt-key">(b)</span>Begins in a water-logged/aquatic habitat and proceeds toward drier land conditions</li>
+        <li><span class="opt-key">(c)</span>Occurs only in desert ecosystems</li>
+        <li><span class="opt-key">(d)</span>Refers to succession following a forest fire</li>
+      </ul>
+      <p class="ans"><strong>Ans: (b).</strong> Begins in a water-logged/aquatic habitat and proceeds toward drier land conditions — the opposite starting point to xerarch succession.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2017</div>
+      <p><strong>Q:</strong> Which of the following best distinguishes "zonation" from "succession" in ecology?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>Zonation is a temporal process, succession is spatial</li>
+        <li class="correct"><span class="opt-key">(b)</span>Zonation is a spatial pattern at a point in time; succession is a temporal process of community change</li>
+        <li><span class="opt-key">(c)</span>Both terms refer to exactly the same phenomenon</li>
+        <li><span class="opt-key">(d)</span>Zonation applies only to aquatic ecosystems, succession only to terrestrial</li>
+      </ul>
+      <p class="ans"><strong>Ans: (b).</strong> Zonation is a spatial pattern at a point in time; succession is a temporal process of community change.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2014</div>
+      <p><strong>Q:</strong> The final, relatively stable community that persists in near-equilibrium with the local climate at the end of an ecological succession sequence is called the:</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>Pioneer community</li>
+        <li><span class="opt-key">(b)</span>Seral community</li>
+        <li class="correct"><span class="opt-key">(c)</span>Climax community</li>
+        <li><span class="opt-key">(d)</span>Transitional community</li>
+      </ul>
+      <p class="ans"><strong>Ans: (c).</strong> Climax community — in equilibrium with the regional climate (climatic climax).</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2012</div>
+      <p><strong>Q:</strong> Which one of the following is generally observed to INCREASE as an ecosystem progresses from pioneer stage to climax stage during succession?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>Net Primary Productivity</li>
+        <li class="correct"><span class="opt-key">(b)</span>Species diversity and total biomass</li>
+        <li><span class="opt-key">(c)</span>Nutrient loss from the system</li>
+        <li><span class="opt-key">(d)</span>Simplicity of the food chain</li>
+      </ul>
+      <p class="ans"><strong>Ans: (b).</strong> Species diversity and total biomass — both typically increase toward climax, while NPP often decreases and food webs become more complex (not simpler).</p>
+    </div>
+  </section>
+
+  <!-- SECTION 9: MAINS PYQs -->
+  <section class="notes" id="mains-pyq">
+    <h2>9. Mains PYQs</h2>
+
+    <div class="pyq">
+      <div class="year">Mains GS-III 2018</div>
+      <p><strong>Q:</strong> Distinguish between primary and secondary ecological succession, giving suitable examples. Why is secondary succession generally faster? (150 words)</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> define succession as directional community change over time; note the two forms differ by starting substrate.</li>
+          <li><strong>Body — primary:</strong>
+            <ul>
+              <li>Starts on lifeless substrate with NO soil — bare rock, lava, glacial retreat, new dune.</li>
+              <li>Pioneers = lichens/mosses; soil built from scratch; slow (centuries–millennia). Example: Krakatoa after 1883 eruption.</li>
+            </ul>
+          </li>
+          <li><strong>Body — secondary:</strong>
+            <ul>
+              <li>Starts where soil survives a disturbance — abandoned farmland, burnt/logged forest.</li>
+              <li>Pioneers = grasses/weeds; fast (decades). Example: old-field succession, post-fire regrowth.</li>
+            </ul>
+          </li>
+          <li><strong>Body — why faster:</strong> pre-existing soil provides nutrients, moisture-retention, a seed/spore bank and microbes — the slow soil-building step is skipped.</li>
+          <li><strong>Conclusion:</strong> soil presence is the key rate-determining factor separating the two.</li>
+        </ol>
+        <span class="marks">150 words · 10 marks</span>
+      </div>
+    </div>
+
+    <div class="pyq">
+      <div class="year">Mains GS-III 2016</div>
+      <p><strong>Q:</strong> Explain the concepts of ecological resistance and resilience. How do these properties relate to the stability of mature ecosystems facing anthropogenic disturbance? (150 words)</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> frame stability as an ecosystem's ability to persist despite disturbance, expressed via two complementary properties.</li>
+          <li><strong>Body — define both:</strong>
+            <ul>
+              <li><strong>Resistance</strong> — capacity to WITHSTAND a disturbance with little change (inertia).</li>
+              <li><strong>Resilience</strong> — capacity to RECOVER to the original state after being displaced.</li>
+            </ul>
+          </li>
+          <li><strong>Body — drivers:</strong> higher species diversity and food-web redundancy raise resilience; keystone species and functional redundancy buffer shocks.</li>
+          <li><strong>Body — anthropogenic link:</strong> pollution, habitat loss and climate change erode both; beyond a threshold the system flips to an <strong>alternative stable state</strong> (coral → algae; forest → savanna).</li>
+          <li><strong>Conclusion:</strong> conserving diversity is effectively insurance for ecosystem stability against human pressure.</li>
+        </ol>
+        <span class="marks">150 words · 10 marks</span>
+      </div>
+    </div>
+
+    <div class="pyq">
+      <div class="year">Mains GS-III 2014</div>
+      <p><strong>Q:</strong> Describe the hydrarch and xerarch successional sequences. Why do these two contrasting starting points often converge toward a similar climax vegetation type for a given region? (150 words)</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> both are forms of primary succession classified by the starting moisture regime.</li>
+          <li><strong>Body — hydrarch (hydrosere):</strong> starts in water → dries out: phytoplankton → submerged → floating → reed-swamp → marsh-meadow → shrub → forest.</li>
+          <li><strong>Body — xerarch (xerosere):</strong> starts dry → moistens: crustose→foliose→fruticose lichens → mosses → herbs → shrubs → forest.</li>
+          <li><strong>Body — why they converge:</strong>
+            <ul>
+              <li>As succession proceeds, extreme wet/dry sites both trend toward moderate (mesic) soil-moisture.</li>
+              <li>Regional <strong>climate</strong> (rainfall, temperature) — not the initial substrate — ultimately sets the climatic climax; the "convergence principle."</li>
+            </ul>
+          </li>
+          <li><strong>Conclusion:</strong> starting conditions shape the path and speed, but climate dictates the destination.</li>
+        </ol>
+        <span class="marks">150 words · 10 marks</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 10: REVISION BOX -->
+  <section class="notes" id="revision">
+    <h2>15-Minute Revision Box</h2>
+    <div class="revision-box">
+      <h3>Rapid Revision — Ecological Succession &amp; Homeostasis</h3>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Primary vs Secondary</h4>
+      <ul>
+        <li><strong>Primary</strong> — no soil, lichens/mosses pioneers, slow (centuries). <strong>Secondary</strong> — soil present, grasses/weeds pioneers, fast (decades).</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Hydrarch vs Xerarch</h4>
+      <ul>
+        <li><strong>Hydrarch</strong> — starts aquatic → dry. <strong>Xerarch</strong> — starts dry (bare rock) → mesic. Both converge to similar climax for regional climate.</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Trends Pioneer→Climax</h4>
+      <ul>
+        <li>Species diversity ↑, food-web complexity ↑, total biomass ↑, ecosystem stability ↑; NPP typically ↓.</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Homeostasis Terms</h4>
+      <ul>
+        <li><strong>Resistance</strong> = withstand disturbance. <strong>Resilience</strong> = recover after disturbance.</li>
+        <li><strong>Succession</strong> = temporal change; <strong>Zonation</strong> = spatial pattern at one point in time.</li>
+        <li>"Alternative stable states" — ecosystem tipping points beyond resilience threshold (coral-algae, Amazon dieback risk).</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- ASIDE / SIDEBAR -->
+<aside>
+  <div class="aside-sticky">
+
+    <!-- WIDGET 1: Quick Reference -->
+    <div class="widget">
+      <h4>Succession Types — Quick Reference</h4>
+      <table>
+        <tr><th>Type</th><th>Pioneer</th></tr>
+        <tr><td>Primary</td><td>Lichens/mosses</td></tr>
+        <tr><td>Secondary</td><td>Grasses/weeds</td></tr>
+      </table>
+    </div>
+
+    <!-- WIDGET 2: Key Concepts -->
+    <div class="widget">
+      <h4>Key Concepts to Remember</h4>
+      <ul>
+        <li><strong>Sere / Seral Stage</strong><br><span style="color:var(--muted);font-size:11px;">Full sequence / intermediate stage</span></li>
+        <li><strong>Climax Community</strong><br><span style="color:var(--muted);font-size:11px;">Final stable equilibrium stage</span></li>
+        <li><strong>Resistance vs Resilience</strong><br><span style="color:var(--muted);font-size:11px;">Withstand vs recover from disturbance</span></li>
+      </ul>
+    </div>
+
+    <!-- WIDGET 3: Difficulty & Importance -->
+    <div class="widget">
+      <h4>Difficulty &amp; Importance</h4>
+      <div class="bar"><span class="lbl">Prelims Weight</span><span class="fill"><span style="width:70%"></span></span></div>
+      <div class="bar"><span class="lbl">Mains Relevance</span><span class="fill"><span style="width:50%"></span></span></div>
+      <div class="bar"><span class="lbl">Conceptual Depth</span><span class="fill"><span style="width:65%"></span></span></div>
+      <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:45%"></span></span></div>
+      <div class="bar"><span class="lbl">Overall Importance</span><span class="fill"><span style="width:60%"></span></span></div>
+      <p style="margin-top:8px;font-size:11px;color:var(--muted);">Sere terminology (hydrarch/xerarch) is a recurring Prelims fact area.</p>
+    </div>
+
+    <!-- WIDGET 4: Must-Know Tags -->
+    <div class="widget">
+      <h4>Must-Know Tags</h4>
+      <span class="tag">Ecological Succession</span>
+      <span class="tag orange">Hydrosere</span>
+      <span class="tag green">Xerosere</span>
+      <span class="tag">Climax Community</span>
+      <span class="tag orange">Homeostasis</span>
+      <span class="tag green">Resilience</span>
+    </div>
+
+    <!-- WIDGET 5: Related Topics -->
+    <div class="widget">
+      <h4>Related Topics</h4>
+      <ul class="related">
+        <li><a href="/environment/ecosystem-structure-and-function">T04: Ecosystem Structure &amp; Function</a></li>
+        <li><span style="color:var(--muted);">Environment T09: Organism-Environment Interactions (coming soon)</span></li>
+        <li><span style="color:var(--muted);">Environment T10: Biogeochemical Cycles (coming soon)</span></li>
+      </ul>
+    </div>
+
+    <!-- WIDGET 6: Key Numbers & Facts -->
+    <div class="widget">
+      <h4>Key Numbers &amp; Facts</h4>
+      <table>
+        <tr><th>Item</th><th>Detail</th></tr>
+        <tr><td>Primary pioneers</td><td>Lichens, mosses</td></tr>
+        <tr><td>Secondary pioneers</td><td>Grasses, weeds</td></tr>
+        <tr><td>Primary speed</td><td>Centuries–millennia</td></tr>
+        <tr><td>Secondary speed</td><td>Decades</td></tr>
+        <tr><td>Concept pioneer</td><td>F. Clements (climax)</td></tr>
+        <tr><td>NPP toward climax</td><td>Decreases</td></tr>
+        <tr><td>Biomass/diversity</td><td>Increase</td></tr>
+      </table>
+    </div>
+
+    <!-- WIDGET 7: Succession at a Glance -->
+    <div class="widget">
+      <h4>Succession at a Glance</h4>
+      <ul>
+        <li><strong>Hydrosere</strong><br><span style="color:var(--muted);font-size:11px;">Plankton → submerged → floating → reed → marsh → forest</span></li>
+        <li><strong>Xerosere</strong><br><span style="color:var(--muted);font-size:11px;">Lichens → mosses → herbs → shrubs → forest</span></li>
+        <li><strong>Climax theories</strong><br><span style="color:var(--muted);font-size:11px;">Mono (Clements) · Poly (Tansley) · Pattern (Whittaker)</span></li>
+        <li><strong>Auto vs allogenic</strong><br><span style="color:var(--muted);font-size:11px;">Community-driven vs environment-driven</span></li>
+        <li><strong>Resistance vs resilience</strong><br><span style="color:var(--muted);font-size:11px;">Withstand vs recover</span></li>
+      </ul>
+    </div>
+
+    <!-- WIDGET 8: Data Sources to Bookmark -->
+    <div class="widget">
+      <h4>Data Sources to Bookmark</h4>
+      <ul class="related">
+        <li><a href="https://www.ipcc.ch" target="_blank" rel="noopener">ipcc.ch</a> — tipping points &amp; ecosystem shifts</li>
+        <li><a href="https://www.ipbes.net" target="_blank" rel="noopener">ipbes.net</a> — biodiversity &amp; resilience assessments</li>
+        <li><a href="https://global-tipping-points.org" target="_blank" rel="noopener">global-tipping-points.org</a> — Global Tipping Points report</li>
+        <li><a href="https://ncert.nic.in" target="_blank" rel="noopener">ncert.nic.in</a> — Biology class-XII succession chapter</li>
+      </ul>
+    </div>
+
+    <!-- WIDGET 9: Quick Navigation -->
+    <div class="widget">
+      <h4>Quick Navigation</h4>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="margin:4px 0;"><a href="#succession-concept" style="font-size:12px;">Succession Concept</a></li>
+        <li style="margin:4px 0;"><a href="#primary-secondary" style="font-size:12px;">Primary vs Secondary</a></li>
+        <li style="margin:4px 0;"><a href="#hydrarch-xerarch" style="font-size:12px;">Hydrarch &amp; Xerarch</a></li>
+        <li style="margin:4px 0;"><a href="#sere-climax" style="font-size:12px;">Sere &amp; Climax</a></li>
+        <li style="margin:4px 0;"><a href="#homeostasis" style="font-size:12px;">Homeostasis</a></li>
+        <li style="margin:4px 0;"><a href="#current-affairs" style="font-size:12px;">Current Affairs Link</a></li>
+        <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">15-Min Revision Box</a></li>
+      </ul>
+    </div>
+
+  </div>
+</aside>
+</div>
+</div>

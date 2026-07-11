@@ -1,0 +1,646 @@
+<!-- environment-topic11 — auto-imported from environment-topic11-biodiversity-basics-measurement-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border:1px solid rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:6px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes p{margin:0 0 14px;color:#2a2f33}
+section.notes ul,section.notes ol{margin:0 0 14px;padding-left:22px;color:#2a2f33}
+section.notes li{margin-bottom:6px}
+.callout{background:#eefaf4;border-left:4px solid var(--green);padding:14px 18px;border-radius:8px;margin:16px 0;font-size:15px}
+.callout.warn{background:#fff4e8;border-left-color:var(--brand-orange)}
+.callout.info{background:#eaf2fb;border-left-color:#2563a8}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;padding:2px 8px;border-radius:10px;margin-left:6px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14.5px}
+th,td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafcfd}
+.svg-wrap{border:1.5px dashed var(--line);border-radius:10px;padding:16px;margin:18px 0;background:#fcfdfe;text-align:center}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-wrap .cap{font-size:13px;color:var(--muted);margin-top:8px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}
+.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin:16px 0}
+.grid-4{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:14px;margin:16px 0}
+.card{border:1px solid var(--line);border-radius:10px;padding:16px;background:#fff}
+.card h4{margin:0 0 8px;color:var(--brand-blue-dark);font-size:15.5px}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:12px;padding:3px 10px;border-radius:20px;margin:2px 4px 2px 0}
+.tag.orange{background:#fdeedc;color:#8a4d0f}
+.tag.green{background:#e2f5ed;color:#0f5c3f}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);border-radius:8px;padding:16px 18px;margin:14px 0}
+.pyq .year{display:inline-block;background:var(--brand-orange);color:#fff;font-size:12px;font-weight:700;padding:2px 10px;border-radius:12px;margin-bottom:8px}
+.pyq p{margin:0 0 8px}
+.pyq .ans{font-weight:700;color:var(--green)}
+.pyq .options{list-style:none;margin:8px 0 10px;padding:0}
+.pyq .options li{padding:6px 12px;margin:4px 0;border:1px solid var(--line);border-radius:6px;background:#fafafa}
+.pyq .options li.correct{background:#eaf6f0;border-color:var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:26px;color:var(--brand-orange);font-weight:700}
+.model-answer{background:#f7faf9;border:1px solid var(--line);border-left:4px solid var(--green);border-radius:8px;padding:16px 20px;margin:10px 0}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark)}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:8px}
+.model-answer ul{margin:6px 0 0;padding-left:18px}
+.model-answer ul li{margin-bottom:4px;font-size:14px}
+.marks{display:inline-block;background:var(--brand-blue);color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:10px;margin-top:8px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:22px 26px;margin:24px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px;margin-bottom:20px}
+.widget h4{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark)}
+.widget .mini{margin:0;padding-left:16px;font-size:13px;color:var(--muted)}
+.widget .mini li{margin-bottom:6px;line-height:1.45}
+.widget .mini strong{color:var(--text)}
+.widget .bar{margin-bottom:12px}
+.widget .lbl{display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px;color:var(--muted)}
+.widget .track{background:#eef1f4;border-radius:6px;height:8px;overflow:hidden}
+.widget .fill{background:var(--brand-orange);height:100%;border-radius:6px}
+.widget a.chip{display:block;padding:8px 10px;border:1px solid var(--line);border-radius:8px;font-size:13.5px;margin-bottom:8px;color:var(--text)}
+.widget a.chip:hover{border-color:var(--brand-orange);text-decoration:none;background:#fff8ec}
+.widget a.chip.soon{opacity:0.55;pointer-events:none}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c9d4dc;padding:28px 24px;text-align:center;font-size:13px;margin-top:20px}
+@media(max-width:860px){
+  .layout{grid-template-columns:1fr}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .toc ul{columns:1}
+}
+@media print{
+  .topnav,aside,footer{display:none}
+  .layout{padding-top:0;grid-template-columns:1fr}
+  .hero{background:#1b3a4b !important;-webkit-print-color-adjust:exact}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+  <div class="hero">
+    <h1>Topic 11: Biodiversity Basics & Measurement</h1>
+    <p class="sub">The three levels of biological diversity — genetic, species and ecosystem — how diversity is measured (richness, evenness, diversity indices), global distribution patterns, and why biodiversity underpins ecosystem services and human survival.</p>
+    <div class="meta">
+      <span class="pill primary">Topic 11 of 37</span>
+      <span class="pill">Reading time: 14 min</span>
+      <span class="pill">Prelims: Very High Yield</span>
+      <span class="pill">Mains: GS-III</span>
+    </div>
+  </div>
+
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ul>
+      <li><span class="num">1</span><a href="#s1">What is Biodiversity?</a></li>
+      <li><span class="num">2</span><a href="#s2">Conceptual Clarity — Richness, Evenness, Diversity</a></li>
+      <li><span class="num">3</span><a href="#s3">Genetic Diversity</a></li>
+      <li><span class="num">4</span><a href="#s4">Species Diversity</a></li>
+      <li><span class="num">5</span><a href="#s5">Ecosystem Diversity</a></li>
+      <li><span class="num">6</span><a href="#s6">Measuring Biodiversity — Indices</a></li>
+      <li><span class="num">7</span><a href="#s7">Global Patterns of Biodiversity</a></li>
+      <li><span class="num">8</span><a href="#s8">Functions & Importance of Biodiversity</a></li>
+      <li><span class="num">9</span><a href="#s9">Current Affairs</a></li>
+      <li><span class="num">10</span><a href="#s10">Prelims PYQs</a></li>
+      <li><span class="num">11</span><a href="#s11">Mains PYQs</a></li>
+      <li><span class="num">12</span><a href="#s12">Revision Box</a></li>
+    </ul>
+  </div>
+
+  <div class="concept-box" id="concept">
+    <h3>Conceptual Clarity — Why this Topic Matters</h3>
+    <p>UPSC tests biodiversity basics in three distinct ways:</p>
+    <ul>
+      <li><strong>Definitional / static:</strong> exact meaning of the 3 levels, richness vs evenness vs diversity, alpha/beta/gamma, megadiverse criteria — the single highest-frequency Prelims zone (2012, 2016, 2019, 2023).</li>
+      <li><strong>Statement-elimination:</strong> multi-statement sets on India's share of species, megadiverse criteria, index properties where one clause is reversed (2016, 2020, 2023).</li>
+      <li><strong>Applied / current:</strong> Kunming-Montreal GBF / 30x30, NBSAP, IPBES assessments, ecosystem-service valuation (see Current Affairs section).</li>
+    </ul>
+    <p>Focus especially on the <strong>3 levels + their Indian examples</strong>, <strong>alpha/beta/gamma (Whittaker) &amp; the diversity indices</strong>, and <strong>India's megadiverse profile (2.4% land, 7–8% species)</strong> — the three highest-frequency themes.</p>
+  </div>
+
+  <section class="notes" id="s1">
+    <h2>1. What is Biodiversity?</h2>
+    <p><strong>Biodiversity</strong> (biological diversity), a term popularised by E.O. Wilson (1986), refers to the variety and variability of life on Earth at every level of biological organisation — from genes within a single population, to species within a community, to ecosystems across a landscape. The Convention on Biological Diversity (CBD, 1992) defines it as "the variability among living organisms from all sources... this includes diversity within species, between species and of ecosystems."</p>
+  </section>
+
+  <section class="notes" id="s2">
+    <h2>2. Conceptual Clarity — Richness, Evenness, Diversity</h2>
+    <div class="concept-box">
+      <h3>Don't confuse these three</h3>
+      <p><strong>Species Richness</strong> is simply the number of different species in an area (a count). <strong>Species Evenness</strong> is how equally individuals are distributed among those species (relative abundance) — a community with 10 species where each has 100 individuals is "more even" than one where one species has 900 individuals and the other 9 species have just 10 each. <strong>Species Diversity</strong> combines both richness and evenness into a single measure — a community can have high richness but low diversity if evenness is poor (dominated by one species).</p>
+    </div>
+  </section>
+
+  <section class="notes" id="s3">
+    <h2>3. Genetic Diversity</h2>
+    <p>Genetic diversity refers to the variation in genes/alleles within a single species or population — the raw material for evolution and adaptation. Higher genetic diversity increases a population's resilience to disease, environmental change, and reduces risk of extinction from a single catastrophic event (cf. the Irish Potato Famine, caused by near-total genetic uniformity of the potato crop).</p>
+    <div class="callout info">India is recognised as a centre of origin/diversity for numerous crop species and their wild relatives — e.g., over 50,000 varieties of rice historically cultivated, and rich intraspecific diversity in mango, brinjal, and Zebu cattle breeds.</div>
+  </section>
+
+  <section class="notes" id="s4">
+    <h2>4. Species Diversity</h2>
+    <p>Species diversity refers to the variety of species within a given region, incorporating both richness and evenness (see Section 2). Global estimates of total described species range around 1.7-2 million, while total species (described + undescribed) is estimated at 8-10 million or more — meaning the vast majority of species remain undocumented.</p>
+    <p>India, occupying just ~2.4% of the world's land area, harbours approximately <strong>7-8% of all recorded species</strong> globally, making it one of 17 <strong>megadiverse countries</strong> (a classification by Conservation International for nations harbouring the majority of Earth's species and high endemism).</p>
+    <h3>Special Categories of Species (ecological roles)</h3>
+    <p>UPSC repeatedly tests the functional labels ecologists attach to species based on their conservation/ecological role — do not confuse them:</p>
+    <table>
+      <tr><th>Category</th><th>Definition</th><th>Example</th></tr>
+      <tr><td><strong>Keystone species</strong></td><td>Disproportionately large effect on community structure relative to its abundance; its removal collapses/transforms the ecosystem</td><td>Sea otter (controls urchins → protects kelp); fig trees; African elephant; tiger</td></tr>
+      <tr><td><strong>Flagship species</strong></td><td>Charismatic species chosen to rally public/political support and funding for conservation of an area</td><td>Bengal tiger, Asian elephant, giant panda, snow leopard</td></tr>
+      <tr><td><strong>Umbrella species</strong></td><td>Wide-ranging species whose protection automatically shelters many co-occurring species under its "umbrella" of habitat</td><td>Tiger, elephant (large home ranges)</td></tr>
+      <tr><td><strong>Indicator species</strong></td><td>Presence/absence/health signals the condition of the wider environment (early-warning)</td><td>Lichens (air quality), amphibians/frogs (water &amp; ecosystem health)</td></tr>
+      <tr><td><strong>Foundation species</strong></td><td>Dominant primary producer that physically structures the habitat</td><td>Corals (reef), kelp, mangroves, seagrass</td></tr>
+      <tr><td><strong>Endemic species</strong></td><td>Naturally found only in one geographic region and nowhere else</td><td>Lion-tailed macaque, Nilgiri tahr (Western Ghats); Sangai deer (Manipur)</td></tr>
+    </table>
+    <div class="callout info"><strong>Prelims hook:</strong> Keystone ≠ Flagship. Keystone = <em>ecological</em> (function-based, e.g., sea otter). Flagship = <em>social/marketing</em> (charisma-based, e.g., tiger). A species can be both (tiger = keystone + flagship + umbrella).</div>
+  </section>
+
+  <section class="notes" id="s5">
+    <h2>5. Ecosystem Diversity</h2>
+    <p>Ecosystem diversity refers to the variety of habitats, biotic communities, and ecological processes within a region — e.g., India spans deserts, rainforests, mangroves, alpine meadows, coral reefs, and wetlands within a single country, giving it exceptionally high ecosystem diversity relative to its land area. Ecosystem diversity is harder to quantify than genetic/species diversity since ecosystem boundaries themselves are often fuzzy (cf. ecotones, Topic 09).</p>
+  </section>
+
+  <section class="notes" id="s6">
+    <h2>6. Measuring Biodiversity — Indices</h2>
+    <p>Ecologists use mathematical indices to quantify and compare species diversity across sites objectively.</p>
+    <table>
+      <tr><th>Index</th><th>What it measures</th><th>Key feature</th></tr>
+      <tr><td><strong>Shannon-Wiener Index (H')</strong></td><td>Combines richness and evenness; higher value = higher diversity</td><td>Most widely used; sensitive to rare species</td></tr>
+      <tr><td><strong>Simpson's Index (D)</strong></td><td>Probability that two randomly selected individuals belong to different species</td><td>More weight to dominant/common species; often reported as 1-D so higher = more diverse</td></tr>
+      <tr><td><strong>Species Richness Index</strong></td><td>Simple count of species per unit area/sample</td><td>Does not account for abundance/evenness</td></tr>
+      <tr><td><strong>Alpha, Beta, Gamma Diversity</strong> (R.H. Whittaker)</td><td>Alpha = diversity within a single habitat/site; Beta = change in diversity between habitats/along a gradient; Gamma = total diversity across a landscape/region</td><td>Beta diversity is key for understanding ecotone/turnover effects</td></tr>
+    </table>
+    <div class="svg-wrap">
+      <svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="640" height="260" fill="#fcfdfe"/>
+        <rect x="30" y="30" width="580" height="200" rx="10" fill="#e0edf7" stroke="#1a3d5c" stroke-width="1.5"/>
+        <text x="320" y="20" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Gamma Diversity (γ) — total landscape diversity</text>
+        <rect x="70" y="70" width="220" height="120" rx="8" fill="#dff0e0" stroke="#1a7a5a" stroke-width="1.5"/>
+        <text x="180" y="65" text-anchor="middle" font-size="12" font-weight="700" fill="#0d2035">Habitat Site A</text>
+        <text x="180" y="130" text-anchor="middle" font-size="11" fill="#5a6266">Alpha diversity (α)</text>
+        <text x="180" y="146" text-anchor="middle" font-size="11" fill="#5a6266">within Site A</text>
+        <rect x="350" y="70" width="220" height="120" rx="8" fill="#fdeedc" stroke="#c47820" stroke-width="1.5"/>
+        <text x="460" y="65" text-anchor="middle" font-size="12" font-weight="700" fill="#0d2035">Habitat Site B</text>
+        <text x="460" y="130" text-anchor="middle" font-size="11" fill="#5a6266">Alpha diversity (α)</text>
+        <text x="460" y="146" text-anchor="middle" font-size="11" fill="#5a6266">within Site B</text>
+        <line x1="290" y1="130" x2="350" y2="130" stroke="#c0392b" stroke-width="2.5" stroke-dasharray="6,3" marker-end="url(#ah11)"/>
+        <line x1="350" y1="145" x2="290" y2="145" stroke="#c0392b" stroke-width="2.5" stroke-dasharray="6,3" marker-end="url(#ah11)"/>
+        <text x="320" y="175" text-anchor="middle" font-size="11" font-weight="700" fill="#c0392b">Beta (β) = turnover</text>
+        <text x="320" y="189" text-anchor="middle" font-size="11" font-weight="700" fill="#c0392b">between A and B</text>
+        <defs><marker id="ah11" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#c0392b"/></marker></defs>
+      </svg>
+      <div class="cap">Fig 11.1 — Whittaker's Alpha, Beta, Gamma diversity relationship</div>
+    </div>
+  </section>
+
+  <section class="notes" id="s7">
+    <h2>7. Global Patterns of Biodiversity</h2>
+    <div class="grid-2">
+      <div class="card">
+        <h4>Latitudinal Diversity Gradient</h4>
+        <p>Species diversity generally increases from the poles toward the equator — tropical regions host disproportionately higher biodiversity than temperate/polar regions, attributed to greater solar energy input, stable climate, and longer evolutionary time without glaciation disruption.</p>
+      </div>
+      <div class="card">
+        <h4>Species-Area Relationship</h4>
+        <p>Larger areas tend to contain more species than smaller areas, following the relationship <em>S = C·A^z</em> (S=species number, A=area, C and z are constants). On a log-log plot this is a straight line of slope <strong>z</strong> (typically 0.1–0.2 for small areas within a region, steeper 0.6–1.2 for large areas/continents). Underlies conservation arguments for larger protected-area sizes and habitat-fragmentation impacts (Topic 12).</p>
+      </div>
+    </div>
+    <div class="svg-wrap">
+      <svg viewBox="0 0 640 240" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="640" height="240" fill="#fcfdfe"/>
+        <text x="320" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2035">Latitudinal Diversity Gradient</text>
+        <line x1="80" y1="200" x2="560" y2="200" stroke="#333" stroke-width="1.5"/>
+        <line x1="320" y1="60" x2="320" y2="200" stroke="#c47820" stroke-width="1" stroke-dasharray="3,3"/>
+        <text x="320" y="216" text-anchor="middle" font-size="11" font-weight="700" fill="#c47820">Equator (0°)</text>
+        <text x="90" y="216" text-anchor="middle" font-size="11" fill="#5a6266">90°N (pole)</text>
+        <text x="550" y="216" text-anchor="middle" font-size="11" fill="#5a6266">90°S (pole)</text>
+        <path d="M80 190 Q200 150 320 70 Q440 150 560 190" fill="none" stroke="#1a7a5a" stroke-width="3"/>
+        <text x="330" y="58" text-anchor="middle" font-size="11" fill="#1a7a5a" font-weight="700">peak diversity in tropics</text>
+        <text x="55" y="120" text-anchor="middle" font-size="11" fill="#5a6266" transform="rotate(-90 55 120)">Species richness →</text>
+        <text x="150" y="140" font-size="10" fill="#5a6266">low (polar)</text>
+        <text x="440" y="140" font-size="10" fill="#5a6266">low (polar)</text>
+      </svg>
+      <div class="cap">Fig 11.2 — Diversity peaks at the equator and declines toward the poles (drivers: solar energy, climatic stability, evolutionary time)</div>
+    </div>
+  </section>
+
+  <section class="notes" id="s8">
+    <h2>8. Functions & Importance of Biodiversity</h2>
+    <ul>
+      <li><strong>Provisioning services:</strong> food, fibre, timber, medicine (a large share of modern pharmaceuticals are derived from wild species), genetic resources for crop/livestock breeding.</li>
+      <li><strong>Regulating services:</strong> pollination (bees, birds, bats), pest control (natural predators), climate regulation (forests as carbon sinks), water purification, flood/erosion control.</li>
+      <li><strong>Supporting services:</strong> nutrient cycling, soil formation, primary production — the foundational processes on which all other services depend.</li>
+      <li><strong>Cultural services:</strong> aesthetic, spiritual, recreational, and scientific/educational value.</li>
+      <li><strong>Insurance/resilience value:</strong> biodiversity buffers ecosystems against shocks (disease, climate extremes) — the "insurance hypothesis," closely linked to genetic diversity's role in adaptive capacity.</li>
+    </ul>
+    <p>The <strong>Millennium Ecosystem Assessment (MEA, 2005)</strong> formalised the four service categories below; the <strong>TEEB</strong> (The Economics of Ecosystems and Biodiversity, 2010) initiative put monetary value on them to mainstream biodiversity into economic decision-making:</p>
+    <table>
+      <tr><th>Service type</th><th>What it delivers</th><th>Examples</th></tr>
+      <tr><td><strong>Provisioning</strong></td><td>Tangible products harvested from ecosystems</td><td>Food, freshwater, timber, fibre, fuelwood, medicines, genetic resources</td></tr>
+      <tr><td><strong>Regulating</strong></td><td>Benefits from regulation of ecosystem processes</td><td>Pollination, pest/disease control, climate &amp; carbon regulation, water purification, flood/erosion control</td></tr>
+      <tr><td><strong>Supporting</strong></td><td>Foundational processes enabling all other services</td><td>Nutrient cycling, soil formation, primary production, photosynthesis</td></tr>
+      <tr><td><strong>Cultural</strong></td><td>Non-material benefits</td><td>Aesthetic, spiritual, recreational, ecotourism, scientific/educational value</td></tr>
+    </table>
+    <div class="callout warn"><strong>Reason to conserve — the 4 value classes:</strong> (1) <strong>Narrowly utilitarian</strong> (direct economic products), (2) <strong>Broadly utilitarian</strong> (ecosystem services + amazing-species aesthetic), (3) <strong>Ethical/intrinsic</strong> (every species has value irrespective of use — "biophilia"), (4) <strong>Insurance/future-option</strong> value. Frequently the framework demanded in Mains "why conserve biodiversity" answers.</div>
+
+    <h3>Diversity &amp; Ecosystem Stability — the Classic Hypotheses (NCERT)</h3>
+    <p>UPSC directly tests the named hypotheses linking biodiversity to ecosystem functioning — do not confuse them:</p>
+    <table>
+      <tr><th>Concept</th><th>Proponent</th><th>Core idea</th></tr>
+      <tr><td><strong>Rivet Popper Hypothesis</strong></td><td>Paul Ehrlich</td><td>Species are like rivets holding an aeroplane (ecosystem) together; losing a few may be tolerated, but each loss weakens the whole — and losing keystone "rivets" (near critical points) risks collapse.</td></tr>
+      <tr><td><strong>Diversity–Stability</strong></td><td>David Tilman (long-term plot studies)</td><td>More diverse communities show higher productivity, lower year-to-year variability, and greater resistance to invasions/drought — empirical support for the "insurance hypothesis".</td></tr>
+      <tr><td><strong>Species richness–productivity</strong></td><td>—</td><td>Community productivity generally rises with species richness (up to saturation), as complementary resource use fills more niches.</td></tr>
+    </table>
+    <div class="callout info"><strong>Prelims hook:</strong> The <em>Rivet Popper analogy</em> (Ehrlich) and <em>Tilman's stability findings</em> are lifted almost verbatim from NCERT Biology (Biodiversity &amp; Conservation) — a recurring statement-match trap.</div>
+  </section>
+
+  <section class="notes" id="s9">
+    <h2>9. Current Affairs Link (2024–2026)</h2>
+    <div class="callout update">
+      <strong>Kunming-Montreal GBF & the "30x30" target<span class="update-tag">check for latest update or data</span></strong>
+      <p>Under the 2022 Global Biodiversity Framework (23 targets, incl. protecting <strong>30% of land &amp; sea by 2030</strong>), parties are submitting updated National Biodiversity Strategy &amp; Action Plans (NBSAPs). India submitted its revised NBSAP in 2024. COP16 (Cali, 2024) advanced the Cali Fund for digital-sequence-information benefit-sharing and a permanent body for Indigenous peoples. (Verify latest COP/target-progress figures.)</p>
+    </div>
+    <div class="callout update">
+      <strong>IPBES Nexus & Transformative Change Assessments<span class="update-tag">check for latest update or data</span></strong>
+      <p>IPBES released (2024) its Nexus Assessment (biodiversity–water–food–health–climate interlinkages) and Transformative Change Assessment, urging integrated, cross-sectoral action over siloed conservation — a strong Mains framing for "why biodiversity policy must be integrated".</p>
+    </div>
+    <div class="callout update">
+      <strong>India's taxonomic discovery continues<span class="update-tag">check for latest update or data</span></strong>
+      <p>Zoological Survey of India (ZSI) &amp; Botanical Survey of India (BSI) describe hundreds of new species yearly (annual "Animal/Plant Discoveries" volumes), reaffirming India's megadiverse status and the fact that most species remain undocumented.</p>
+    </div>
+  </section>
+
+  <section class="notes" id="s10">
+    <h2>10. Prelims PYQs</h2>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2023</div>
+      <p><strong>Q.</strong> With reference to India's biodiversity, consider the following statements:<br>
+      1. India is one of the 17 megadiverse countries of the world.<br>
+      2. India accounts for about 7-8% of the world's recorded species while having only about 2.4% of world's land area.<br>
+      3. India has more than 100 biosphere reserves.</p>
+      <ul class="options">
+        <li class="correct"><span class="opt-key">(a)</span>1 and 2 only</li>
+        <li><span class="opt-key">(b)</span>2 only</li>
+        <li><span class="opt-key">(c)</span>1, 2 and 3</li>
+        <li><span class="opt-key">(d)</span>3 only</li>
+      </ul>
+      <p class="ans"><strong>Ans: (a).</strong> St.1 &amp; 2 correct; St.3 wrong — India has only 18 biosphere reserves (not 100+).</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2020</div>
+      <p><strong>Q.</strong> Consider the following statements about biodiversity indices:<br>
+      1. Species richness refers only to the number of species present in an area.<br>
+      2. Species evenness refers to how equally individuals are distributed among species.<br>
+      3. A community can have high species richness but low species diversity.</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>1 and 2 only</li>
+        <li><span class="opt-key">(b)</span>3 only</li>
+        <li class="correct"><span class="opt-key">(c)</span>1, 2 and 3</li>
+        <li><span class="opt-key">(d)</span>2 and 3 only</li>
+      </ul>
+      <p class="ans"><strong>Ans: (c).</strong> All correct — low evenness (one dominant species) drops diversity even when richness is high.</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2019</div>
+      <p><strong>Q.</strong> The term "Alpha diversity", as used in ecology, refers to:</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>The total species diversity across an entire landscape</li>
+        <li class="correct"><span class="opt-key">(b)</span>The diversity within a single habitat or community</li>
+        <li><span class="opt-key">(c)</span>The rate of species turnover between two habitats</li>
+        <li><span class="opt-key">(d)</span>The genetic diversity within a single species</li>
+      </ul>
+      <p class="ans"><strong>Ans: (b).</strong> Alpha = within-site; (c) = beta; (a) = gamma (Whittaker).</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2018</div>
+      <p><strong>Q.</strong> With reference to the "species-area relationship" in ecology, which of the following statements is correct?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>Species number decreases with an increase in area sampled</li>
+        <li class="correct"><span class="opt-key">(b)</span>Species number generally increases with an increase in area sampled, up to a certain limit</li>
+        <li><span class="opt-key">(c)</span>Species number is unrelated to area sampled</li>
+        <li><span class="opt-key">(d)</span>Species number increases indefinitely and linearly with area</li>
+      </ul>
+      <p class="ans"><strong>Ans: (b).</strong> S = C·A^z — richness rises with area but at a decelerating (power-law) rate, not linear/indefinite.</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2016</div>
+      <p><strong>Q.</strong> A country is considered "megadiverse" on the basis of which of the following criteria?</p>
+      <p>1. Number of species found within the country<br>
+      2. Degree of endemism of species<br>
+      3. Number of protected areas within the country</p>
+      <p>Select the correct answer using the code given below:</p>
+      <ul class="options">
+        <li class="correct"><span class="opt-key">(a)</span>1 and 2 only</li>
+        <li><span class="opt-key">(b)</span>2 and 3 only</li>
+        <li><span class="opt-key">(c)</span>1 and 3 only</li>
+        <li><span class="opt-key">(d)</span>1, 2 and 3</li>
+      </ul>
+      <p class="ans"><strong>Ans: (a).</strong> Megadiverse status (Conservation International) rests on high species count + high endemism (≥5,000 endemic plants, marine ecosystems). Number of protected areas is a governance metric, not a diversity criterion.</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2014</div>
+      <p><strong>Q.</strong> "Ecosystem services" include which of the following?</p>
+      <p>1. Carbon sequestration and climate regulation<br>
+      2. Pollination of crops<br>
+      3. Provision of freshwater<br>
+      4. Recycling of nutrients and formation of soils</p>
+      <p>Select the correct answer using the code given below:</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>1 and 2 only</li>
+        <li><span class="opt-key">(b)</span>2, 3 and 4 only</li>
+        <li><span class="opt-key">(c)</span>1, 3 and 4 only</li>
+        <li class="correct"><span class="opt-key">(d)</span>1, 2, 3 and 4</li>
+      </ul>
+      <p class="ans"><strong>Ans: (d).</strong> All four map to the MEA classes — regulating (carbon, pollination), provisioning (freshwater), supporting (nutrient recycling, soil formation). All are genuine ecosystem services.</p>
+    </div>
+    <div class="pyq">
+      <div class="year">UPSC CSE 2012</div>
+      <p><strong>Q.</strong> Which one of the following is the correct definition of "genetic diversity"?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>The variety of ecosystems found in a region</li>
+        <li class="correct"><span class="opt-key">(b)</span>The variability of genes/alleles within a species or population</li>
+        <li><span class="opt-key">(c)</span>The number of species found in a given habitat</li>
+        <li><span class="opt-key">(d)</span>The evenness with which individuals are distributed among species</li>
+      </ul>
+      <p class="ans"><strong>Ans: (b).</strong> Genetic diversity = variation within a species (options a/c/d describe ecosystem, species and evenness respectively — classic level-confusion distractors).</p>
+    </div>
+  </section>
+
+  <section class="notes" id="s11">
+    <h2>11. Mains PYQs</h2>
+    <div class="pyq">
+      <div class="year">GS-III 2022</div>
+      <p><strong>Q.</strong> What is biodiversity? Explain the three levels of biodiversity — genetic, species and ecosystem — with suitable examples from India.</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> Define biodiversity (variety of life at all organisational levels — genes, species, ecosystems) per the CBD, 1992. State that it is measured at three hierarchical levels.</li>
+          <li><strong>Body — the three levels with Indian examples:</strong>
+            <ul>
+              <li><strong>Genetic diversity:</strong> variation within a species. E.g. ~50,000 rice varieties &amp; ~1,000 mango cultivars in India; medicinal-plant chemotypes of <em>Rauvolfia serpentina</em>.</li>
+              <li><strong>Species diversity:</strong> variety of species in a region. E.g. Western Ghats &amp; Eastern Himalaya biodiversity hotspots; ~7-8% of world's recorded species on 2.4% of land.</li>
+              <li><strong>Ecosystem diversity:</strong> variety of habitats/communities. E.g. Sundarbans mangroves, Thar desert, Trans-Himalayan cold desert, coral reefs of Lakshadweep, Western Ghats rainforests.</li>
+            </ul>
+          </li>
+          <li><strong>Conclusion:</strong> Link the three levels — genetic diversity underpins species resilience, species diversity sustains ecosystem function; conserving all three is essential for India's ecological &amp; food security (link to NBAP / GBF targets).</li>
+        </ol>
+        <span class="marks">150 words · 10 marks</span>
+      </div>
+    </div>
+    <div class="pyq">
+      <div class="year">GS-III 2019</div>
+      <p><strong>Q.</strong> "Biodiversity forms the basis of ecosystem services on which human civilisation depends." Elaborate with examples.</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> State that ecosystem services are benefits humans derive from nature, and biodiversity (genetic + species + ecosystem) is the engine that generates and sustains them (MEA, 2005 framework).</li>
+          <li><strong>Body — the four service classes with examples:</strong>
+            <ul>
+              <li><strong>Provisioning:</strong> food, freshwater, timber, medicines — e.g. crop wild relatives, fisheries, 8,000+ medicinal plants used in AYUSH.</li>
+              <li><strong>Regulating:</strong> pollination (crop yields), climate/carbon regulation, flood control by mangroves (Sundarbans buffered cyclone Amphan).</li>
+              <li><strong>Supporting:</strong> nutrient cycling, soil formation, primary production — the base on which all other services rest.</li>
+              <li><strong>Cultural:</strong> ecotourism, spiritual (sacred groves), aesthetic &amp; recreational value.</li>
+            </ul>
+          </li>
+          <li><strong>Conclusion:</strong> Biodiversity loss erodes these services (TEEB valuation shows huge economic cost); hence conservation is not merely ethical but an economic and survival imperative for civilisation.</li>
+        </ol>
+        <span class="marks">150 words · 10 marks</span>
+      </div>
+    </div>
+    <div class="pyq">
+      <div class="year">GS-I 2017</div>
+      <p><strong>Q.</strong> India is a megadiverse country. Discuss the significance of this status and the challenges in maintaining it.</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> India is 1 of 17 megadiverse countries (Conservation International) — ~2.4% of land, ~7-8% of recorded species, 4 of 36 global hotspots (Himalaya, Western Ghats, Indo-Burma, Sundaland/Nicobar).</li>
+          <li><strong>Body — significance:</strong>
+            <ul>
+              <li>High endemism (e.g. lion-tailed macaque, Nilgiri tahr) &amp; agro-biodiversity centre (Vavilov centre of origin for rice, pulses, spices).</li>
+              <li>Ecosystem services + livelihoods (tribal/forest-dependent communities), genetic reservoir for food/medicine security.</li>
+            </ul>
+          </li>
+          <li><strong>Body — challenges:</strong>
+            <ul>
+              <li>Habitat loss &amp; fragmentation, invasive alien species (<em>Lantana</em>, water hyacinth), poaching &amp; illegal wildlife trade.</li>
+              <li>Climate change, pollution, human-wildlife conflict, weak funding &amp; enforcement, biopiracy.</li>
+            </ul>
+          </li>
+          <li><strong>Conclusion:</strong> Sustaining megadiversity needs strengthened Biological Diversity Act/NBA, protected-area expansion aligned to GBF 30x30, community stewardship &amp; ABS benefit-sharing.</li>
+        </ol>
+        <span class="marks">150 words · 10 marks</span>
+      </div>
+    </div>
+    <div class="pyq">
+      <div class="year">GS-III 2015</div>
+      <p><strong>Q.</strong> Explain the concept of the latitudinal diversity gradient and the species-area relationship in the context of global biodiversity patterns.</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> State that biodiversity is unevenly distributed across space, and two well-established ecological patterns describe this — the latitudinal gradient (over latitude) and the species-area relationship (over area).</li>
+          <li><strong>Body — latitudinal diversity gradient:</strong>
+            <ul>
+              <li>Species richness increases from the poles towards the equator (tropics richest — e.g. Amazon, Western Ghats).</li>
+              <li>Hypotheses: greater solar energy/productivity, evolutionary time (tropics undisturbed by glaciation), stable climate, higher speciation rates.</li>
+            </ul>
+          </li>
+          <li><strong>Body — species-area relationship:</strong>
+            <ul>
+              <li>Richness rises with sampled area following <strong>S = C·A<sup>z</sup></strong> (Arrhenius); on log-log axes a straight line of slope z (~0.1-0.2 within a region, ~0.6-1.2 across continents/islands).</li>
+              <li>Underpins reserve design &amp; predicts extinctions from habitat loss (SLOSS debate).</li>
+            </ul>
+          </li>
+          <li><strong>Conclusion:</strong> Both patterns explain why tropical, large, contiguous habitats (like India's hotspots) are conservation priorities — fragmenting them causes disproportionate species loss.</li>
+        </ol>
+        <span class="marks">150 words · 10 marks</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="notes" id="s12">
+    <h2>15-Minute Revision Box</h2>
+    <div class="revision-box">
+      <h3>Must-Remember Facts &mdash; Biodiversity Basics &amp; Measurement</h3>
+      <div class="grid-2">
+        <div>
+          <strong>Levels &amp; Components:</strong>
+          <ul>
+            <li><strong>3 levels:</strong> Genetic (within species) &rarr; Species (within community) &rarr; Ecosystem (within landscape)</li>
+            <li><strong>Richness</strong> = number of species | <strong>Evenness</strong> = relative abundance | <strong>Diversity</strong> = combines both</li>
+            <li><strong>Ecosystem services:</strong> provisioning, regulating, supporting, cultural (MEA framework)</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Measurement Indices:</strong>
+          <ul>
+            <li><strong>Shannon-Wiener Index:</strong> combines richness + evenness</li>
+            <li><strong>Simpson's Index:</strong> probability two random individuals are different species</li>
+            <li><strong>Alpha</strong> = within-habitat | <strong>Beta</strong> = between-habitat turnover | <strong>Gamma</strong> = total landscape (Whittaker)</li>
+          </ul>
+          <strong>Patterns &amp; India:</strong>
+          <ul>
+            <li><strong>Latitudinal gradient:</strong> diversity &uarr; pole&rarr;equator | <strong>Species-area:</strong> S = C&middot;A^z</li>
+            <li><strong>India:</strong> ~2.4% of world land, ~7-8% recorded species &mdash; 1 of 17 megadiverse countries</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<aside>
+  <div class="aside-sticky">
+    <div class="widget">
+      <h4>Difficulty &amp; Importance</h4>
+      <div class="bar"><div class="lbl"><span>Prelims Relevance</span><span>Very High</span></div><div class="track"><div class="fill" style="width:90%"></div></div></div>
+      <div class="bar"><div class="lbl"><span>Mains Relevance</span><span>High</span></div><div class="track"><div class="fill" style="width:68%"></div></div></div>
+      <div class="bar"><div class="lbl"><span>Conceptual Difficulty</span><span>Low-Moderate</span></div><div class="track"><div class="fill" style="width:45%"></div></div></div>
+    </div>
+    <div class="widget">
+      <h4>Key Numbers &amp; Facts</h4>
+      <ul class="mini">
+        <li><strong>3</strong> levels — genetic, species, ecosystem</li>
+        <li><strong>17</strong> megadiverse countries (India one)</li>
+        <li><strong>2.4%</strong> of land · <strong>7-8%</strong> of world species</li>
+        <li><strong>4</strong> of 36 global hotspots in India</li>
+        <li><strong>S = C·A<sup>z</sup></strong> species-area relation</li>
+        <li><strong>4</strong> MEA service classes: provisioning, regulating, supporting, cultural</li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h4>Biodiversity at a Glance</h4>
+      <ul class="mini">
+        <li><strong>Richness</strong> = # species | <strong>Evenness</strong> = abundance spread</li>
+        <li><strong>Shannon-Wiener</strong> — richness + evenness</li>
+        <li><strong>Simpson's</strong> — dominance/probability index</li>
+        <li><strong>α</strong> within-habitat · <strong>β</strong> turnover · <strong>γ</strong> landscape (Whittaker)</li>
+        <li>Latitudinal gradient: diversity ↑ pole → equator</li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h4>Related Topics</h4>
+      <a class="chip" href="/environment/species-interactions-and-functional-classes">Topic 02: Species Interactions</a>
+      <a class="chip" href="/environment/biodiversity-loss-and-threats">Topic 12: Biodiversity Loss &amp; Threats</a>
+      <a class="chip" href="/environment/in-situ-conservation">Topic 13: In-Situ Conservation</a>
+    </div>
+    <div class="widget">
+      <h4>Must-Know Tags</h4>
+      <span class="tag orange">Genetic Diversity</span>
+      <span class="tag">Species Diversity</span>
+      <span class="tag green">Shannon-Wiener Index</span>
+      <span class="tag">Megadiverse</span>
+      <span class="tag orange">Alpha-Beta-Gamma</span>
+    </div>
+    <div class="widget">
+      <h4>Quick Reference &mdash; Hotspot Criteria</h4>
+      <ul class="mini">
+        <li><strong>Criterion 1:</strong> &ge;1500 endemic vascular plant species</li>
+        <li><strong>Criterion 2:</strong> &ge;70% of primary habitat already lost</li>
+        <li><strong>36</strong> hotspots globally (Myers, 1988; Conservation International)</li>
+        <li><strong>India's 4:</strong> Himalaya, Indo-Burma, Western Ghats–Sri Lanka, Sundaland (Nicobar)</li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h4>Key Concepts to Remember</h4>
+      <ul class="mini">
+        <li><strong>Shannon-Wiener</strong> ↑ with richness + evenness; <strong>Simpson's</strong> = dominance</li>
+        <li><strong>Endemic</strong> = found nowhere else; <strong>Cosmopolitan</strong> = widespread</li>
+        <li><strong>Cryptic species</strong> — genetically distinct, look identical</li>
+        <li><strong>Species-area:</strong> S = C·A<sup>z</sup>; z ≈ 0.1–0.2 (regional), higher for islands</li>
+        <li><strong>Latitudinal gradient</strong> — richness rises pole → equator</li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h4>Data Sources to Bookmark</h4>
+      <a class="chip" href="https://www.cbd.int" target="_blank" rel="noopener">CBD (cbd.int)</a>
+      <a class="chip" href="https://www.ipbes.net" target="_blank" rel="noopener">IPBES (ipbes.net)</a>
+      <a class="chip" href="https://nbaindia.org" target="_blank" rel="noopener">NBA India (nbaindia.org)</a>
+      <a class="chip" href="https://zsi.gov.in" target="_blank" rel="noopener">ZSI (zsi.gov.in)</a>
+      <a class="chip" href="https://bsi.gov.in" target="_blank" rel="noopener">BSI (bsi.gov.in)</a>
+    </div>
+    <div class="widget">
+      <h4>Quick Navigation</h4>
+      <a class="chip" href="#concept">Conceptual Clarity</a>
+      <a class="chip" href="#s9">Current Affairs</a>
+      <a class="chip" href="#s10">Prelims PYQs</a>
+      <a class="chip" href="#s11">Mains PYQs</a>
+      <a class="chip" href="#s12">Revision Box</a>
+    </div>
+  </div>
+</aside>
+</div>
+</div>

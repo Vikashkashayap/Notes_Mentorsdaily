@@ -1,0 +1,828 @@
+<!-- environment-topic22 — auto-imported from environment-topic22-air-pollution-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 22: Air Pollution</h1>
+  <p class="sub">Air pollution is one of the highest-yield Prelims topics and a public-health flashpoint in Mains GS-III. Four things carry most marks: the <strong>PM2.5 vs PM10</strong> distinction, <strong>primary vs secondary</strong> pollutants (ground-level ozone), <strong>London vs Los Angeles smog</strong>, and the <strong>NAAQS&ndash;WHO</strong> standards gap. This file builds each from definition to the latest NCAP/GRAP action.</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">PM2.5 &middot; PM10 &middot; Ozone</span>
+    <span class="pill">~18 min read</span>
+    <span class="pill">Smog &middot; Acid Rain &middot; NAAQS</span>
+    <span class="pill">Very High Weight &middot; Static + Current</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#whatis">What is Air Pollution</a></li>
+    <li><span class="num">2.</span><a href="#pollutants">Major Air Pollutants</a></li>
+    <li><span class="num">3.</span><a href="#pm">Particulate Matter (PM2.5, PM10)</a></li>
+    <li><span class="num">4.</span><a href="#indoor">Indoor Air Pollution</a></li>
+    <li><span class="num">5.</span><a href="#smog">Smog &mdash; London vs LA Type</a></li>
+    <li><span class="num">6.</span><a href="#acidrain">Acid Rain</a></li>
+    <li><span class="num">7.</span><a href="#naaqs">NAAQS &mdash; Indian Standards</a></li>
+    <li><span class="num">8.</span><a href="#who">WHO Guidelines &amp; AQI</a></li>
+    <li><span class="num">9.</span><a href="#effects">Effects of Air Pollution</a></li>
+    <li><span class="num">10.</span><a href="#currentaffairs">Current Affairs Link</a></li>
+    <li><span class="num">11.</span><a href="#prelims-pyq">Prelims PYQs (2015&ndash;2026)</a></li>
+    <li><span class="num">12.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; Why this Chapter Matters</h3>
+  <p>UPSC tests Air Pollution in three distinct ways. Knowing which question-type you face decides how you study each heading below:</p>
+  <ul>
+    <li><strong>Definitional / static</strong> &mdash; "PM2.5 means&hellip;", "ground-level ozone is a secondary pollutant", "NAAQS annual PM2.5 = 40". Memorise exact definitions, sizes and numeric standards.</li>
+    <li><strong>Statement-elimination</strong> &mdash; two/three statements on primary vs secondary pollutants, or London vs LA smog, where one wrong word makes a statement false.</li>
+    <li><strong>Applied / current</strong> &mdash; Mains and analytical Prelims on NCAP effectiveness, GRAP, stubble burning or the NAAQS&ndash;WHO gap. Needs concept + latest data.</li>
+  </ul>
+  <p>Focus especially on the four highest-frequency themes since 2015: the <strong>PM2.5 vs PM10 distinction</strong>, <strong>primary vs secondary pollutants (ground-level ozone)</strong>, <strong>London vs Los Angeles smog</strong>, and the <strong>NAAQS&ndash;WHO standards gap</strong>. These four account for the bulk of every question ever set on this topic.</p>
+</div>
+
+<!-- ===== SECTION 1 ===== -->
+<section class="notes" id="whatis">
+  <h2>1. What is Air Pollution?</h2>
+
+  <h3>1.1 Definition</h3>
+  <p><strong>Air pollution</strong> is the presence of substances in the atmosphere &mdash; gases, particulates or biological molecules &mdash; in concentrations high enough to harm human health, other organisms, crops, materials or the climate.</p>
+
+  <h3>1.2 Primary vs Secondary Pollutants</h3>
+  <table>
+    <tr><th>Type</th><th>Meaning</th><th>Examples</th></tr>
+    <tr><td><strong>Primary pollutant</strong></td><td>Emitted directly from a source</td><td>CO, SO&#8322;, NO&#8339;, particulate matter, hydrocarbons/VOCs</td></tr>
+    <tr><td><strong>Secondary pollutant</strong></td><td>Formed by chemical reaction of primary pollutants in the atmosphere</td><td>Ground-level ozone (O&#8323;), PAN (peroxyacetyl nitrate), secondary PM, acid rain</td></tr>
+  </table>
+  <div class="callout info"><strong>UPSC Angle:</strong> the single most tested fact here is that <strong>ground-level ozone is a <em>secondary</em> pollutant</strong> (formed from NO&#8339; + VOCs under sunlight) &mdash; and it is <em>harmful</em>, unlike the beneficial stratospheric ozone layer (Topic 17).</div>
+
+  <h3>1.3 Legal Anchor</h3>
+  <ul>
+    <li>India's principal air-pollution law is the <strong>Air (Prevention and Control of Pollution) Act, 1981</strong> &mdash; empowers CPCB/SPCBs to set standards and declare air-pollution-control areas (Topic 29).</li>
+    <li>Ambient standards = <strong>NAAQS</strong> (CPCB); public communication = the <strong>AQI</strong> (2015); programmatic push = <strong>NCAP</strong> (2019) and, for Delhi-NCR, the statutory <strong>CAQM</strong> (2021).</li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 2 ===== -->
+<section class="notes" id="pollutants">
+  <h2>2. Major Air Pollutants</h2>
+  <p>Learn each pollutant with its <em>source</em> and its <em>signature effect</em> &mdash; UPSC asks which pollutant does what, not a bare list.</p>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 700 250" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+      <defs>
+        <marker id="t22-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L6,3 L0,6 Z" fill="#5a6266"/>
+        </marker>
+      </defs>
+      <text x="350" y="20" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Fig 22.1 &mdash; Primary Pollutants form Secondary Pollutants under Sunlight</text>
+      <!-- primary -->
+      <rect x="40" y="60" width="150" height="42" rx="6" fill="#1a3d5c"/>
+      <text x="115" y="78" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">NO&#8339; (vehicles)</text>
+      <text x="115" y="93" text-anchor="middle" fill="#fff" font-size="9">primary</text>
+      <rect x="40" y="140" width="150" height="42" rx="6" fill="#1a3d5c"/>
+      <text x="115" y="158" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">VOCs (solvents)</text>
+      <text x="115" y="173" text-anchor="middle" fill="#fff" font-size="9">primary</text>
+      <!-- sunlight -->
+      <circle cx="360" cy="120" r="34" fill="#fdeedc" stroke="#c47820" stroke-width="2"/>
+      <text x="360" y="116" text-anchor="middle" font-size="10" font-weight="700" fill="#c47820">Sunlight</text>
+      <text x="360" y="130" text-anchor="middle" font-size="9" fill="#c47820">(UV)</text>
+      <!-- secondary -->
+      <rect x="510" y="60" width="170" height="42" rx="6" fill="#1a7a5a"/>
+      <text x="595" y="78" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Ground-level O&#8323;</text>
+      <text x="595" y="93" text-anchor="middle" fill="#fff" font-size="9">secondary</text>
+      <rect x="510" y="140" width="170" height="42" rx="6" fill="#1a7a5a"/>
+      <text x="595" y="158" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">PAN + secondary PM</text>
+      <text x="595" y="173" text-anchor="middle" fill="#fff" font-size="9">secondary</text>
+      <path d="M190 81 C270 81 300 110 328 115" stroke="#5a6266" stroke-width="2" marker-end="url(#t22-arrow)"/>
+      <path d="M190 161 C270 161 300 130 328 125" stroke="#5a6266" stroke-width="2" marker-end="url(#t22-arrow)"/>
+      <path d="M394 108 C440 90 470 82 508 81" stroke="#5a6266" stroke-width="2" marker-end="url(#t22-arrow)"/>
+      <path d="M394 132 C440 150 470 158 508 161" stroke="#5a6266" stroke-width="2" marker-end="url(#t22-arrow)"/>
+    </svg>
+    <div class="svg-caption">Fig 22.1 &mdash; NO&#8339; + VOCs react under sunlight to form ground-level ozone &amp; PAN (photochemical smog).</div>
+  </div>
+
+  <table>
+    <tr><th>Pollutant</th><th>Source</th><th>Signature Effect / Example</th></tr>
+    <tr><td><strong>SO&#8322;</strong></td><td>Burning sulphur-rich coal/diesel</td><td>Respiratory irritation; acid rain precursor</td></tr>
+    <tr><td><strong>NO&#8339;</strong></td><td>Vehicles, power plants</td><td>Smog + ground-level ozone; acid rain</td></tr>
+    <tr><td><strong>CO</strong></td><td>Incomplete combustion</td><td>Binds haemoglobin &gt; oxygen &rarr; can be fatal</td></tr>
+    <tr><td><strong>Ground-level O&#8323;</strong></td><td>Secondary (NO&#8339; + VOC + sun)</td><td>Lung damage, crop-yield loss</td></tr>
+    <tr><td><strong>VOCs</strong></td><td>Solvents, paints, exhaust</td><td>Some carcinogenic (benzene); ozone precursor</td></tr>
+    <tr><td><strong>Lead (Pb)</strong></td><td>Legacy leaded petrol, battery recycling</td><td>Neurotoxic, harms child cognition (Topic 25)</td></tr>
+    <tr><td><strong>Ammonia (NH&#8323;)</strong></td><td>Fertiliser, livestock waste</td><td>Secondary particulate formation</td></tr>
+    <tr><td><strong>PM10 / PM2.5</strong></td><td>Exhaust, dust, stubble, biomass</td><td>Most health-damaging &mdash; see &sect;3</td></tr>
+  </table>
+</section>
+
+<!-- ===== SECTION 3 ===== -->
+<section class="notes" id="pm">
+  <h2>3. Particulate Matter &mdash; PM2.5, PM10</h2>
+  <p>Particulate matter is the single most health-damaging pollutant category and the most tested. UPSC checks the exact size thresholds and why smaller = deadlier.</p>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 680 230" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+      <text x="340" y="20" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Fig 22.2 &mdash; Relative Sizes of Particulate Matter</text>
+      <!-- human hair reference -->
+      <circle cx="150" cy="120" r="70" fill="#eef1f4" stroke="#5a6266"/>
+      <text x="150" y="118" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2035">Human hair</text>
+      <text x="150" y="134" text-anchor="middle" font-size="10" fill="#5a6266">~50&ndash;70 &micro;m</text>
+      <!-- PM10 -->
+      <circle cx="350" cy="120" r="30" fill="#dbe9f7" stroke="#1a3d5c"/>
+      <text x="350" y="118" text-anchor="middle" font-size="10" font-weight="700" fill="#0d2035">PM10</text>
+      <text x="350" y="132" text-anchor="middle" font-size="9" fill="#5a6266">&le;10 &micro;m</text>
+      <!-- PM2.5 -->
+      <circle cx="500" cy="120" r="12" fill="#fdeedc" stroke="#c47820"/>
+      <text x="500" y="150" text-anchor="middle" font-size="10" font-weight="700" fill="#c47820">PM2.5</text>
+      <text x="500" y="164" text-anchor="middle" font-size="9" fill="#5a6266">&le;2.5 &micro;m</text>
+      <!-- PM1 -->
+      <circle cx="600" cy="120" r="6" fill="#fbe0e0" stroke="#a83232"/>
+      <text x="600" y="150" text-anchor="middle" font-size="10" font-weight="700" fill="#a83232">PM1</text>
+      <text x="600" y="164" text-anchor="middle" font-size="9" fill="#5a6266">&le;1 &micro;m</text>
+      <text x="340" y="210" text-anchor="middle" font-size="10" fill="#5a6266">Smaller particle &rarr; deeper lung penetration &rarr; enters bloodstream &rarr; more harmful</text>
+    </svg>
+    <div class="svg-caption">Fig 22.2 &mdash; PM2.5 is ~20&times; smaller than a human hair; small size lets it reach deep lung &amp; blood.</div>
+  </div>
+
+  <div class="concept-box">
+    <h3>Don't confuse PM2.5 with PM10</h3>
+    <ul>
+      <li><strong>PM10</strong> &mdash; diameter &le;10 &micro;m; dust, pollen, mould; lodges in upper respiratory tract.</li>
+      <li><strong>PM2.5 (fine PM)</strong> &mdash; &le;2.5 &micro;m; combustion-derived (exhaust, biomass, industry); reaches deep lung &amp; bloodstream; most health-damaging per WHO/GBD.</li>
+      <li><strong>PM1 / ultrafine</strong> &mdash; &le;1 &micro;m; can cross into systemic circulation; emerging concern.</li>
+    </ul>
+  </div>
+  <table>
+    <tr><th>Feature</th><th>PM10</th><th>PM2.5</th></tr>
+    <tr><td>Size</td><td>&le;10 &micro;m</td><td>&le;2.5 &micro;m</td></tr>
+    <tr><td>Typical source</td><td>Road/construction dust, pollen</td><td>Vehicle exhaust, stubble, industry</td></tr>
+    <tr><td>Reaches</td><td>Upper airway</td><td>Deep lung + bloodstream</td></tr>
+    <tr><td>NAAQS annual</td><td>60 &micro;g/m&sup3;</td><td>40 &micro;g/m&sup3;</td></tr>
+  </table>
+</section>
+
+<!-- ===== SECTION 4 ===== -->
+<section class="notes" id="indoor">
+  <h2>4. Indoor Air Pollution</h2>
+  <p>A distinct, often under-rated hazard &mdash; and a favourite Mains angle on rural health equity.</p>
+  <ul>
+    <li><strong>Main Indian source:</strong> solid biomass fuels (firewood, dung cakes, crop residue) and kerosene burned in poorly ventilated kitchens &mdash; hits rural women and children hardest.</li>
+    <li><strong>Other sources:</strong> tobacco smoke, mould/damp, VOCs from paints/furnishings, radon seepage, trapped outdoor pollutants.</li>
+    <li><strong>Health burden:</strong> leading risk factor for child acute respiratory infection and adult COPD/cardiovascular disease (WHO).</li>
+    <li><strong>Government response:</strong> <strong>Pradhan Mantri Ujjwala Yojana (PMUY, 2016)</strong> &mdash; free LPG connections to BPL households, directly cutting indoor biomass smoke; Ujjwala 2.0 expanded reach.</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims trap:</strong> PMUY targets <em>indoor</em> (household) air pollution from cooking fuel &mdash; not vehicular or industrial pollution.</div>
+</section>
+
+<!-- ===== SECTION 5 ===== -->
+<section class="notes" id="smog">
+  <h2>5. Smog &mdash; London vs Los Angeles Type</h2>
+  <p>The two smog types are a classic statement-elimination pair. Fix which is reducing vs oxidising, and their conditions.</p>
+  <div class="grid-2">
+    <div class="card">
+      <h4>London-type <span class="tag">Reducing / Classical</span></h4>
+      <p>Sulphurous smog from high <strong>SO&#8322; + particulate matter</strong> (coal) in <strong>cold, foggy, low-sunlight</strong> winter conditions. Named after the deadly <strong>1952 London smog</strong>.</p>
+    </div>
+    <div class="card">
+      <h4>Los Angeles-type <span class="tag orange">Oxidising / Photochemical</span></h4>
+      <p>Photochemical smog from <strong>NO&#8339; + VOCs under strong sunlight</strong>, producing ground-level ozone and <strong>PAN</strong>. Occurs in <strong>warm, sunny</strong>, traffic-heavy conditions.</p>
+    </div>
+  </div>
+  <table>
+    <tr><th>Feature</th><th>London-type</th><th>Los Angeles-type</th></tr>
+    <tr><td>Chemistry</td><td>Reducing (SO&#8322; + PM)</td><td>Oxidising (O&#8323; + PAN)</td></tr>
+    <tr><td>Weather</td><td>Cold, foggy, winter</td><td>Warm, sunny</td></tr>
+    <tr><td>Trigger</td><td>Coal combustion</td><td>Vehicle NO&#8339; + VOCs + sunlight</td></tr>
+  </table>
+  <div class="callout info"><strong>India context:</strong> Delhi-NCR's winter smog blends both &mdash; vehicular/industrial NO&#8339; and VOCs plus stubble burning, trapped by low wind and <strong>temperature inversion</strong> (see &sect;10).</div>
+</section>
+
+<!-- ===== SECTION 6 ===== -->
+<section class="notes" id="acidrain">
+  <h2>6. Acid Rain</h2>
+  <p>Precipitation with pH well below the natural ~5.6 of clean rainwater, caused by SO&#8322; and NO&#8339; forming sulphuric and nitric acids in the atmosphere.</p>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 680 240" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+      <text x="340" y="20" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Fig 22.3 &mdash; Acid Rain Formation</text>
+      <rect x="30" y="55" width="150" height="46" rx="6" fill="#1a3d5c"/><text x="105" y="74" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">SO&#8322; + NO&#8339;</text><text x="105" y="90" text-anchor="middle" fill="#fff" font-size="9">from coal/vehicles</text>
+      <rect x="265" y="55" width="150" height="46" rx="6" fill="#c47820"/><text x="340" y="74" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">React with</text><text x="340" y="90" text-anchor="middle" fill="#fff" font-size="9">water vapour + O&#8322;</text>
+      <rect x="500" y="55" width="160" height="46" rx="6" fill="#a83232"/><text x="580" y="74" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">H&#8322;SO&#8324; + HNO&#8323;</text><text x="580" y="90" text-anchor="middle" fill="#fff" font-size="9">acid rain (pH &lt;5.6)</text>
+      <rect x="180" y="160" width="320" height="46" rx="6" fill="#3a3f45"/><text x="340" y="180" text-anchor="middle" fill="#fff" font-size="10" font-weight="700">Effects</text><text x="340" y="196" text-anchor="middle" fill="#fff" font-size="9">lake acidification &middot; forest &amp; soil damage &middot; marble corrosion (Taj)</text>
+      <path d="M180 78 L265 78" stroke="#5a6266" stroke-width="2" marker-end="url(#t22-arrow)"/>
+      <path d="M415 78 L500 78" stroke="#5a6266" stroke-width="2" marker-end="url(#t22-arrow)"/>
+      <path d="M580 101 L400 160" stroke="#5a6266" stroke-width="2" marker-end="url(#t22-arrow)"/>
+    </svg>
+    <div class="svg-caption">Fig 22.3 &mdash; SO&#8322;/NO&#8339; &rarr; sulphuric/nitric acid &rarr; acidified rain damaging ecosystems &amp; monuments.</div>
+  </div>
+  <ul>
+    <li><strong>Sources:</strong> coal-fired power plants, industry, vehicle emissions.</li>
+    <li><strong>Effects:</strong> acidification of lakes/rivers (aquatic-life loss), forest &amp; soil-nutrient damage, corrosion of monuments &mdash; notably <strong>Taj Mahal marble</strong>, which drove the <strong>Taj Trapezium Zone</strong> restricting polluting industry.</li>
+    <li><strong>Control:</strong> flue-gas desulphurisation (FGD), low-sulphur fuel, catalytic converters, transboundary agreements (e.g., CLRTAP in Europe).</li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 7 ===== -->
+<section class="notes" id="naaqs">
+  <h2>7. NAAQS &mdash; India's Ambient Air Quality Standards</h2>
+  <p>The <strong>National Ambient Air Quality Standards (NAAQS)</strong> are notified by CPCB under the Air Act 1981, prescribing limits for <strong>12 pollutants</strong> across industrial, residential and ecologically sensitive areas.</p>
+  <table>
+    <tr><th>Pollutant</th><th>Annual Average Standard</th><th>Note</th></tr>
+    <tr><td>PM2.5</td><td>40 &micro;g/m&sup3;</td><td>Fine PM &mdash; most health-critical</td></tr>
+    <tr><td>PM10</td><td>60 &micro;g/m&sup3;</td><td>Coarse PM</td></tr>
+    <tr><td>SO&#8322;</td><td>50 &micro;g/m&sup3;</td><td>Acid-rain precursor</td></tr>
+    <tr><td>NO&#8322;</td><td>40 &micro;g/m&sup3;</td><td>Smog/ozone precursor</td></tr>
+    <tr><td>CO</td><td>2 mg/m&sup3; (8-hr)</td><td>Different unit (mg, not &micro;g)</td></tr>
+    <tr><td>O&#8323;</td><td>100 &micro;g/m&sup3; (8-hr)</td><td>Secondary pollutant</td></tr>
+    <tr><td>Lead (Pb)</td><td>0.5 &micro;g/m&sup3;</td><td>Neurotoxic</td></tr>
+    <tr><td>NH&#8323;</td><td>100 &micro;g/m&sup3;</td><td>Secondary PM precursor</td></tr>
+  </table>
+  <p>NAAQS also cover benzene, benzo(a)pyrene, arsenic and nickel &mdash; 12 pollutants in total, revised periodically by CPCB.</p>
+</section>
+
+<!-- ===== SECTION 8 ===== -->
+<section class="notes" id="who">
+  <h2>8. WHO Guidelines &amp; Air Quality Index (AQI)</h2>
+
+  <h3>8.1 WHO Air Quality Guidelines (2021)</h3>
+  <ul>
+    <li>WHO's 2021 guidelines set <strong>far stricter</strong> thresholds than most national standards, reflecting harm even at low exposure. They are <strong>non-binding recommendations</strong>, not enforceable law.</li>
+    <li>Annual PM2.5: WHO <strong>5 &micro;g/m&sup3;</strong> vs India NAAQS <strong>40 &micro;g/m&sup3;</strong> &mdash; an <strong>8&times; gap</strong> (recurring exam comparison).</li>
+    <li>Annual PM10: WHO <strong>15 &micro;g/m&sup3;</strong> vs India <strong>60 &micro;g/m&sup3;</strong>.</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims trap:</strong> WHO guidelines are much stricter than India's NAAQS &mdash; do not swap the two figures when a question asks for a specific numeric standard.</div>
+
+  <h3>8.2 India's Air Quality Index (AQI)</h3>
+  <table>
+    <tr><th>Category</th><th>AQI Range</th><th>Note</th></tr>
+    <tr><td>Good</td><td>0&ndash;50</td><td>Launched 2015; scale 0&ndash;500</td></tr>
+    <tr><td>Satisfactory</td><td>51&ndash;100</td><td>Computed from worst of 8 pollutants</td></tr>
+    <tr><td>Moderate</td><td>101&ndash;200</td><td>PM2.5, PM10, NO&#8322;, SO&#8322;, CO, O&#8323;, NH&#8323;, Pb</td></tr>
+    <tr><td>Poor</td><td>201&ndash;300</td><td>Published via CPCB "Sameer" / SAFAR</td></tr>
+    <tr><td>Very Poor</td><td>301&ndash;400</td><td>&mdash;</td></tr>
+    <tr><td>Severe</td><td>401&ndash;500</td><td>Triggers GRAP action in Delhi-NCR</td></tr>
+  </table>
+</section>
+
+<!-- ===== SECTION 9 ===== -->
+<section class="notes" id="effects">
+  <h2>9. Effects of Air Pollution</h2>
+  <p>Structure Mains answers along four axes &mdash; health, crops, climate/visibility, materials.</p>
+  <table>
+    <tr><th>Axis</th><th>Impact</th><th>Example</th></tr>
+    <tr><td><strong>Human health</strong></td><td>Respiratory &amp; cardiovascular disease, lung cancer, reduced life expectancy; emerging neuro/pregnancy links</td><td>Asthma, COPD, low birth weight</td></tr>
+    <tr><td><strong>Crops</strong></td><td>Ground-level ozone damages photosynthetic tissue; SO&#8322;/PM affect stomata</td><td>Yield loss in wheat/rice belts</td></tr>
+    <tr><td><strong>Climate &amp; visibility</strong></td><td>Haze cuts visibility; black carbon (soot) warms region &amp; accelerates glacier melt (lowers albedo)</td><td>Himalayan snow darkening</td></tr>
+    <tr><td><strong>Materials</strong></td><td>Metal corrosion, stone-monument degradation</td><td>Taj Mahal marble (acid rain)</td></tr>
+  </table>
+</section>
+
+<!-- ===== SECTION 10: CURRENT AFFAIRS ===== -->
+<section class="notes" id="currentaffairs">
+  <h2>10. Current Affairs Link (2024&ndash;2026)</h2>
+  <p>Air-quality data, NCAP targets and GRAP action are asked in Prelims as fact statements and anchor Mains GS-III public-health answers. <strong>Always verify the latest figures before the exam.</strong> <span class="update-tag">check for latest update or data</span></p>
+
+  <h3>10.1 Programme &amp; Monitoring Updates</h3>
+  <div class="callout update"><strong>NCAP targets (2024&ndash;2026):</strong> ~<strong>131 non-attainment cities</strong> tracked; earlier 20&ndash;30% PM cut reset to <strong>40% PM10 reduction by 2025&ndash;26</strong> (base 2017); funds partly linked to 15th Finance Commission million-plus-city grants. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout update"><strong>Delhi-NCR GRAP &amp; CAQM:</strong> the statutory Commission for Air Quality Management (2021) invokes Graded Response Action Plan Stages I&ndash;IV each winter; Stage IV bans truck entry, construction and non-essential vehicles at "Severe+" AQI. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout warn"><strong>India data points:</strong> WHO's 2021 tightening of annual PM2.5 to <strong>5 &micro;g/m&sup3;</strong> leaves virtually all Indian cities in exceedance; the NAAQS&ndash;WHO gap remains a live policy &amp; exam theme. <span class="update-tag">check for latest update or data</span></div>
+
+  <h3>10.2 Key Events, 2024&ndash;2026</h3>
+  <table>
+    <tr><th>When</th><th>Event</th><th>Why it matters for UPSC</th></tr>
+    <tr><td><strong>Each winter</strong></td><td>Delhi-NCR smog + GRAP Stage escalation; temperature-inversion trapping</td><td>Ready GS-III case on airshed governance &amp; meteorology.</td></tr>
+    <tr><td><strong>2024&ndash;2025</strong></td><td>Stubble-management push &mdash; Happy Seeder, Pusa bio-decomposer, ex-situ pelletisation &amp; CBG</td><td>Sustainable alternative to crop-residue burning; recurring Mains ask. <span class="update-tag">check for latest update or data</span></td></tr>
+    <tr><td><strong>Ongoing</strong></td><td>Satellite farm-fire monitoring (ISRO/CREAMS) &amp; source-apportionment studies</td><td>Evidence base for enforcement.</td></tr>
+    <tr><td><strong>2024 onward</strong></td><td>Push toward <strong>airshed-based</strong> (not just city-based) management</td><td>Key "way forward" point for NCAP answers.</td></tr>
+  </table>
+
+  <h3>10.3 Recurring Exam Hooks</h3>
+  <ul>
+    <li><strong>NAAQS vs WHO numeric gap</strong> (PM2.5 40 vs 5) &mdash; frequent factual Prelims statement.</li>
+    <li><strong>NCAP / GRAP / CAQM design</strong> &mdash; ready-made Mains material on air governance.</li>
+    <li><strong>Stubble-burning solutions &amp; airshed approach</strong> &mdash; the direction examiners now favour. <span class="update-tag">check for latest update or data</span></li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 11: PRELIMS PYQs ===== -->
+<section class="notes" id="prelims-pyq">
+  <h2>11. Prelims PYQs (2015&ndash;2026)</h2>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2022</div>
+    <p class="q-stem"><strong>Q:</strong> Consider the following about particulate matter: (1) PM2.5 is &le;2.5 &micro;m; (2) PM2.5 is more harmful than PM10 as it penetrates deeper into lungs; (3) vehicular emissions &amp; crop-residue burning are major PM2.5 sources. Which are correct?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> 1 and 2 only</li>
+      <li><span class="opt-key">(b)</span> 2 and 3 only</li>
+      <li><span class="opt-key">(c)</span> 1 and 3 only</li>
+      <li class="correct"><span class="opt-key">(d)</span> 1, 2 and 3</li>
+    </ul>
+    <p class="ans">Ans: (d) &mdash; all three are correct.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2021</div>
+    <p class="q-stem"><strong>Q:</strong> Regarding ground-level (tropospheric) ozone: (1) it is a secondary pollutant formed from NO&#8339; + VOCs under sunlight; (2) it is beneficial as it replenishes the stratospheric ozone layer. Which is/are correct?</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> 1 only</li>
+      <li><span class="opt-key">(b)</span> 2 only</li>
+      <li><span class="opt-key">(c)</span> Both 1 and 2</li>
+      <li><span class="opt-key">(d)</span> Neither 1 nor 2</li>
+    </ul>
+    <p class="ans">Ans: (a) &mdash; ground-level ozone is harmful; it does not replenish the stratospheric layer.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2020</div>
+    <p class="q-stem"><strong>Q:</strong> Which correctly matches the smog type with its chemistry?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> London-type &mdash; oxidising (ozone + PAN)</li>
+      <li class="correct"><span class="opt-key">(b)</span> London-type &mdash; reducing (SO&#8322; + PM); LA-type &mdash; oxidising (photochemical)</li>
+      <li><span class="opt-key">(c)</span> LA-type &mdash; reducing, formed in cold foggy winter</li>
+      <li><span class="opt-key">(d)</span> Both types are reducing sulphurous smog</li>
+    </ul>
+    <p class="ans">Ans: (b) &mdash; London = reducing/sulphurous; Los Angeles = oxidising/photochemical.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2019</div>
+    <p class="q-stem"><strong>Q:</strong> "Photochemical smog" is primarily formed due to &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> high SO&#8322; + PM under foggy cold conditions</li>
+      <li class="correct"><span class="opt-key">(b)</span> reaction of NO&#8339; and VOCs in the presence of sunlight</li>
+      <li><span class="opt-key">(c)</span> volcanic sulphur aerosols</li>
+      <li><span class="opt-key">(d)</span> biomass combustion in enclosed spaces</li>
+    </ul>
+    <p class="ans">Ans: (b) &mdash; NO&#8339; + VOCs + sunlight (photochemical/LA-type).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2018</div>
+    <p class="q-stem"><strong>Q:</strong> The Taj Trapezium Zone was established primarily to protect the Taj Mahal from &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> flooding of the Yamuna</li>
+      <li class="correct"><span class="opt-key">(b)</span> deterioration due to acid rain &amp; industrial air pollution</li>
+      <li><span class="opt-key">(c)</span> unregulated tourism footfall</li>
+      <li><span class="opt-key">(d)</span> seismic activity</li>
+    </ul>
+    <p class="ans">Ans: (b) &mdash; TTZ restricts polluting industry to protect the marble.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2017</div>
+    <p class="q-stem"><strong>Q:</strong> India's National Air Quality Index (AQI) is computed &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> as a simple average of all pollutants</li>
+      <li class="correct"><span class="opt-key">(b)</span> from the worst-performing among 8 pollutants, on a 0&ndash;500 scale with 6 categories</li>
+      <li><span class="opt-key">(c)</span> only from PM2.5, on a 0&ndash;100 scale</li>
+      <li><span class="opt-key">(d)</span> by WHO, using its 2021 guideline values</li>
+    </ul>
+    <p class="ans">Ans: (b) &mdash; worst of 8 pollutants, 0&ndash;500, six categories (Good&rarr;Severe).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2016</div>
+    <p class="q-stem"><strong>Q:</strong> Why is carbon monoxide (CO) dangerous even at low concentrations?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> it directly damages lung tissue on inhalation</li>
+      <li class="correct"><span class="opt-key">(b)</span> it binds haemoglobin more strongly than oxygen, cutting the blood's oxygen-carrying capacity</li>
+      <li><span class="opt-key">(c)</span> it forms carbonic acid in the lungs</li>
+      <li><span class="opt-key">(d)</span> it is a carcinogen at any concentration</li>
+    </ul>
+    <p class="ans">Ans: (b) &mdash; CO&ndash;haemoglobin binding starves tissues of oxygen.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2015</div>
+    <p class="q-stem"><strong>Q:</strong> Pradhan Mantri Ujjwala Yojana primarily addresses which form of pollution?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> urban vehicular air pollution</li>
+      <li class="correct"><span class="opt-key">(b)</span> indoor air pollution from solid biomass cooking fuels</li>
+      <li><span class="opt-key">(c)</span> industrial water pollution</li>
+      <li><span class="opt-key">(d)</span> residential noise pollution</li>
+    </ul>
+    <p class="ans">Ans: (b) &mdash; PMUY targets household biomass-cooking smoke.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims 2026 &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> NAAQS vs WHO numeric values; primary vs secondary pollutant match; London vs LA smog statements; AQI category/pollutant count; CAQM/GRAP institutional facts. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 12: MAINS PYQs ===== -->
+<section class="notes" id="mains-pyq">
+  <h2>12. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>Questions below are original, exam-style formulations built from real UPSC GS-III air-pollution themes &mdash; paraphrased to be copyright-safe.</em></p>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; style 2023 <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Assess the effectiveness of the National Clean Air Programme (NCAP) in reducing air pollution in Indian cities, and suggest measures to strengthen it.</p>
+    <div class="model-answer">
+      <h5>Model Answer Framework</h5>
+      <ol>
+        <li><strong>Introduction &mdash; frame:</strong> NCAP (2019) is India's first national time-bound clean-air programme, ~131 non-attainment cities, target 40% PM10 cut by 2025&ndash;26.</li>
+        <li><strong>Achievements:</strong> city clean-air action plans, expanded CPCB monitoring, finance-commission-linked funding, source-apportionment studies.</li>
+        <li><strong>Shortfalls:</strong> non-binding targets, weak inter-state/airshed coordination, PM2.5 under-addressed, fund under-utilisation, dust-focus over combustion sources.</li>
+        <li><strong>Measures:</strong> legally-binding targets, airshed governance (CAQM model), align to WHO trajectory, real-time source apportionment, clean-fuel + public-transport push, stubble solutions.</li>
+        <li><strong>Conclusion:</strong> shift from monitoring to enforceable, airshed-level, health-outcome-based action.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; style 2021 <span class="marks">12.5 marks &middot; 200 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Discuss the causes of the recurring winter smog crisis in Delhi-NCR and evaluate the effectiveness of the Graded Response Action Plan (GRAP).</p>
+    <div class="model-answer">
+      <h5>Model Answer Framework</h5>
+      <ol>
+        <li><strong>Causes:</strong> stubble burning (Punjab/Haryana), vehicular + industrial emissions, construction dust, firecrackers; <strong>meteorology</strong> &mdash; winter temperature inversion, low wind, low mixing height trap pollutants.</li>
+        <li><strong>GRAP mechanism:</strong> graded Stages I&ndash;IV tied to AQI severity; escalating curbs on construction, diesel gensets, truck entry, non-essential vehicles.</li>
+        <li><strong>Effectiveness:</strong> useful emergency tool, now CAQM-enforced; but reactive not preventive, source-blind, hard to enforce, a transboundary airshed problem.</li>
+        <li><strong>Way forward:</strong> year-round airshed governance, stubble-management ecosystem, clean public transport, forecast-based pre-emptive action.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; style 2019 <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> "Air pollution in Indian cities is a major public-health emergency." Discuss the sources of urban air pollution and suggest a comprehensive policy response.</p>
+    <div class="model-answer">
+      <h5>Model Answer Framework</h5>
+      <ol>
+        <li><strong>Frame emergency:</strong> India among the most-polluted cities globally; large premature-death burden; economic loss ~1&ndash;3% GDP (cite State of Global Air).</li>
+        <li><strong>Sources:</strong> vehicles, industry/thermal power, construction &amp; road dust, waste burning, biomass cooking, secondary aerosols, seasonal stubble.</li>
+        <li><strong>Health impacts:</strong> respiratory &amp; cardiovascular disease, lung cancer, low birth weight, reduced life expectancy.</li>
+        <li><strong>Policy response:</strong> NCAP + airshed governance, BS-VI &amp; EV push, clean cooking (PMUY), public transport, dust control, industrial norms, waste-to-energy, urban greening, real-time monitoring.</li>
+        <li><strong>Conclusion:</strong> treat as a cross-sectoral public-health priority with enforceable, health-based targets.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; style 2017 <span class="marks">12.5 marks &middot; 200 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Comment on the causes of stubble burning in northern India and its role in seasonal air-quality deterioration. Suggest sustainable alternatives.</p>
+    <div class="model-answer">
+      <h5>Model Answer Framework</h5>
+      <ol>
+        <li><strong>Causes:</strong> short paddy-wheat turnaround window, combine-harvester leaving tall stubble, low residue value, labour cost, delayed sowing under the Subsoil Water Act.</li>
+        <li><strong>Contribution:</strong> Oct&ndash;Nov farm fires spike PM2.5, adding to Delhi-NCR smog (daily share varies), regional transboundary haze.</li>
+        <li><strong>Sustainable alternatives:</strong> in-situ &mdash; Happy Seeder, Super SMS, Pusa bio-decomposer, zero-till; ex-situ &mdash; baling for biomass power, compressed biogas (CBG), pelletisation; crop diversification away from paddy.</li>
+        <li><strong>Enabling:</strong> machinery subsidy + custom-hiring centres, residue incentive/MSP, behaviour change, satellite-based enforcement.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; style 2015 <span class="marks">12.5 marks &middot; 200 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Discuss the impact of indoor air pollution on rural women and children in India, and evaluate clean-cooking-fuel schemes in mitigating it.</p>
+    <div class="model-answer">
+      <h5>Model Answer Framework</h5>
+      <ol>
+        <li><strong>Problem:</strong> biomass/kerosene cooking &rarr; household PM2.5 &amp; CO; disproportionately affects women &amp; children (time near the chulha).</li>
+        <li><strong>Health impacts:</strong> acute respiratory infection, COPD, low birth weight, eye disease, burns &mdash; a major share of India's disease burden.</li>
+        <li><strong>Clean-fuel schemes:</strong> PMUY (free LPG, crores of households), Ujjwala 2.0, subsidy support.</li>
+        <li><strong>Evaluation:</strong> improved access &amp; adoption; gaps &mdash; refill affordability, sustained use (fuel-stacking), last-mile delivery.</li>
+        <li><strong>Way forward:</strong> affordable refills, improved cookstoves, LPG + electric/solar cooking, behaviour change.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> airshed vs city-based governance as the next reform; closing the NAAQS&ndash;WHO gap; black carbon's dual air-quality + climate role. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 13: REVISION BOX ===== -->
+<section class="notes" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; Air Pollution</h3>
+    <div class="grid-2">
+      <div>
+        <strong>Pollutant Types:</strong>
+        <ul>
+          <li><strong>Primary</strong> = emitted directly (CO, SO&#8322;, NO&#8339;, PM)</li>
+          <li><strong>Secondary</strong> = formed by reaction (ground-level O&#8323;, PAN, acid rain)</li>
+        </ul>
+        <strong>Particulate Matter:</strong>
+        <ul>
+          <li><strong>PM10</strong> &le;10 &micro;m; <strong>PM2.5</strong> &le;2.5 &micro;m &mdash; deep-lung, most harmful</li>
+          <li>Sources: vehicles, stubble, industry, dust</li>
+        </ul>
+        <strong>Smog (2 types):</strong>
+        <ul>
+          <li><strong>London</strong> = SO&#8322; + PM + cold/fog (reducing)</li>
+          <li><strong>Los Angeles</strong> = NO&#8339; + VOC + sun (photochemical, oxidising)</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Acid Rain:</strong>
+        <ul>
+          <li>SO&#8322;/NO&#8339; &rarr; H&#8322;SO&#8324;/HNO&#8323;; pH &lt;5.6</li>
+          <li>Damages <strong>Taj Mahal</strong> &rarr; <strong>Taj Trapezium Zone</strong></li>
+        </ul>
+        <strong>NAAQS vs WHO (annual PM2.5):</strong>
+        <ul>
+          <li>India NAAQS = <strong>40 &micro;g/m&sup3;</strong>; WHO = <strong>5 &micro;g/m&sup3;</strong> &mdash; <strong>8&times; gap</strong></li>
+          <li>NAAQS covers <strong>12 pollutants</strong></li>
+        </ul>
+        <strong>AQI &amp; Programmes:</strong>
+        <ul>
+          <li>AQI <strong>0&ndash;500</strong>, 6 categories, worst of 8 pollutants</li>
+          <li><strong>NCAP</strong> (cities), <strong>GRAP</strong>/<strong>CAQM</strong> (Delhi-NCR), <strong>PMUY</strong> (indoor)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes since 2015:</strong> PM2.5 vs PM10 &middot; primary vs secondary (ground-level ozone) &middot; London vs LA smog &middot; NAAQS&ndash;WHO gap. Nail these four for most Prelims + Mains marks on this topic.</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== SIDEBAR ===== -->
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Quick Reference &mdash; Pollutant Types</h4>
+    <table>
+      <tr><th>Type</th><th>Examples</th></tr>
+      <tr><td><strong>Primary</strong></td><td>CO, SO&#8322;, NO&#8339;, PM, VOC</td></tr>
+      <tr><td><strong>Secondary</strong></td><td>Ground-level O&#8323;, PAN, acid rain</td></tr>
+      <tr><td><strong>PM10</strong></td><td>&le;10 &micro;m</td></tr>
+      <tr><td><strong>PM2.5</strong></td><td>&le;2.5 &micro;m (deep lung)</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>NAAQS vs WHO (annual)</h4>
+    <table>
+      <tr><th>Standard</th><th>Limit</th></tr>
+      <tr><td>PM2.5 NAAQS</td><td>40 &micro;g/m&sup3;</td></tr>
+      <tr><td>PM2.5 WHO</td><td>5 &micro;g/m&sup3;</td></tr>
+      <tr><td>Gap</td><td>8&times;</td></tr>
+      <tr><td>NAAQS pollutants</td><td>12 notified</td></tr>
+      <tr><td>AQI scale</td><td>0&ndash;500, 6 cat.</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Key Programmes &amp; Years</h4>
+    <table>
+      <tr><td>Air Act</td><td>1981</td></tr>
+      <tr><td>NAAQS (revised)</td><td>2009</td></tr>
+      <tr><td>AQI launched</td><td>2015</td></tr>
+      <tr><td>PMUY (Ujjwala)</td><td>2016</td></tr>
+      <tr><td>NCAP</td><td>2019</td></tr>
+      <tr><td>CAQM</td><td>2021</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:88%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains GS-III</span><span class="fill"><span style="width:78%"></span></span></div>
+    <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:82%"></span></span></div>
+    <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:85%"></span></span></div>
+    <p style="margin-top:8px;font-size:11px;color:var(--muted);">Very high-yield &mdash; static PM/smog facts + NCAP current affairs recur yearly.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Smog at a Glance</h4>
+    <ul>
+      <li><strong>London</strong> &mdash; SO&#8322; + PM + cold/fog (reducing)</li>
+      <li><strong>LA</strong> &mdash; NO&#8339; + VOC + sun (photochemical)</li>
+      <li><strong>Ground-level O&#8323;</strong> &mdash; secondary, lung irritant</li>
+      <li><strong>PAN</strong> &mdash; peroxyacetyl nitrate, eye irritant</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">PM2.5 vs PM10</span>
+    <span class="tag">Primary vs Secondary</span>
+    <span class="tag green">Ground-level Ozone</span>
+    <span class="tag">Photochemical Smog</span>
+    <span class="tag orange">Acid Rain</span>
+    <span class="tag">Taj Trapezium Zone</span>
+    <span class="tag green">NAAQS</span>
+    <span class="tag">AQI 0&ndash;500</span>
+    <span class="tag orange">NCAP</span>
+    <span class="tag">GRAP / CAQM</span>
+    <span class="tag green">PMUY</span>
+    <span class="tag orange">Stubble Burning</span>
+  </div>
+
+  <div class="widget">
+    <h4>Data Sources to Bookmark</h4>
+    <ul>
+      <li><a href="https://cpcb.nic.in" target="_blank" rel="noopener">CPCB</a> &mdash; NAAQS &amp; AQI</li>
+      <li><a href="https://airquality.cpcb.gov.in" target="_blank" rel="noopener">Sameer / AQI portal</a></li>
+      <li><a href="https://safar.tropmet.res.in" target="_blank" rel="noopener">SAFAR</a> &mdash; city forecasts</li>
+      <li><a href="https://caqm.nic.in" target="_blank" rel="noopener">CAQM</a> &mdash; Delhi-NCR &amp; GRAP</li>
+      <li><a href="https://moef.gov.in" target="_blank" rel="noopener">MoEFCC</a> &mdash; NCAP</li>
+      <li><a href="https://pib.gov.in" target="_blank" rel="noopener">PIB</a> &mdash; press releases</li>
+    </ul>
+    <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/environment/water-pollution">Env T21: Water Pollution</a></li>
+      <li><a href="/environment/soil-noise-thermal-and-radioactive-pollution">Env T23: Thermal, Noise &amp; Radioactive Pollution</a></li>
+      <li><a href="/environment/environmental-toxicology-and-pollution-diseases">Env T25: Toxicology &amp; Pollution Diseases</a></li>
+      <li><a href="/environment/indian-environmental-acts-and-rules">Env T29: Environmental Legislation</a></li>
+      <li><a href="/environment">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding:0;margin:0;">
+      <li style="margin:4px 0;"><a href="#whatis" style="font-size:12px;">What is Air Pollution</a></li>
+      <li style="margin:4px 0;"><a href="#pollutants" style="font-size:12px;">Major Pollutants</a></li>
+      <li style="margin:4px 0;"><a href="#pm" style="font-size:12px;">PM2.5, PM10</a></li>
+      <li style="margin:4px 0;"><a href="#indoor" style="font-size:12px;">Indoor Air Pollution</a></li>
+      <li style="margin:4px 0;"><a href="#smog" style="font-size:12px;">Smog Types</a></li>
+      <li style="margin:4px 0;"><a href="#acidrain" style="font-size:12px;">Acid Rain</a></li>
+      <li style="margin:4px 0;"><a href="#naaqs" style="font-size:12px;">NAAQS</a></li>
+      <li style="margin:4px 0;"><a href="#who" style="font-size:12px;">WHO Guidelines &amp; AQI</a></li>
+      <li style="margin:4px 0;"><a href="#effects" style="font-size:12px;">Effects</a></li>
+      <li style="margin:4px 0;"><a href="#currentaffairs" style="font-size:12px;">Current Affairs</a></li>
+      <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

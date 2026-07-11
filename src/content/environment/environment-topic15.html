@@ -1,0 +1,905 @@
+<!-- environment-topic15 — auto-imported from environment-topic15-important-species-lists-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:40px 32px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.28),transparent 70%)}
+.hero h1{margin:0 0 12px;font-size:30px;line-height:1.25}
+.hero .sub{font-size:15px;opacity:0.92;margin-bottom:14px;max-width:780px}
+.hero .meta{display:flex;flex-wrap:wrap;gap:10px;font-size:12px}
+.hero .pill{background:rgba(255,255,255,0.16);padding:4px 11px;border-radius:20px;backdrop-filter:blur(6px)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border:1px solid rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:14px;columns:2;column-gap:24px}
+.toc li{margin-bottom:5px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;padding:2px 8px;border-radius:10px;margin-left:6px;vertical-align:middle}
+.callout strong{color:var(--brand-blue-dark)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .options{list-style:none;margin:8px 0 10px;padding:0}
+.pyq .options li{padding:6px 12px;margin:4px 0;border:1px solid var(--line);border-radius:6px;background:#fff}
+.pyq .options li.correct{background:#eaf6f0;border-color:var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:26px;color:var(--brand-orange);font-weight:700}
+.pyq .ans{margin-top:8px}
+.model-answer{background:#f7faf9;border:1px solid var(--line);border-left:4px solid var(--green);border-radius:8px;padding:16px 20px;margin:10px 0}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark)}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:8px}
+.model-answer ul{margin:6px 0 0;padding-left:18px}
+.model-answer ul li{margin-bottom:4px;font-size:14px}
+.marks{display:inline-block;background:var(--brand-blue);color:#fff;font-size:11px;font-weight:700;padding:3px 10px;border-radius:10px;margin-top:8px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.widget .mini{list-style:none;margin:0;padding:0;font-size:12px}
+.widget .mini li{padding:5px 0;border-bottom:1px solid var(--line);color:var(--muted)}
+.widget .mini li:last-child{border-bottom:none}
+.widget .mini strong{color:var(--text)}
+.widget a.chip{display:block;padding:7px 9px;border:1px solid var(--line);border-radius:8px;font-size:12.5px;margin-bottom:7px;color:var(--text)}
+.widget a.chip:hover{border-color:var(--brand-orange);text-decoration:none;background:#fff8ec}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+  <!-- HERO -->
+  <div class="hero">
+    <h1>Topic 15: Important Species Lists — Birds, Mammals, Aquatic &amp; Plant Species</h1>
+    <p class="sub">A consolidated, exhaustive prelims-facts reference — key bird, terrestrial mammal, aquatic, invasive and plant species for UPSC, each with IUCN Red List status, Wildlife (Protection) Act Schedule and a distinguishing fact, plus marine plankton/kelp and two fully-labelled diagrams.</p>
+    <div class="meta">
+      <span class="pill primary">GS Paper III — Environment &amp; Ecology</span>
+      <span class="pill">UPSC Prelims + Mains</span>
+      <span class="pill">Extremely High Prelims Yield</span>
+      <span class="pill">Updated: July 2026</span>
+    </div>
+  </div>
+
+  <!-- TABLE OF CONTENTS -->
+  <div class="toc">
+    <h3>Table of Contents</h3>
+    <ul>
+      <li><span class="num">1</span><a href="#key-bird-species">Key Bird Species</a></li>
+      <li><span class="num">2</span><a href="#conceptual-clarity">Conceptual Clarity — WPA Schedules &amp; Reading IUCN Codes</a></li>
+      <li><span class="num">3</span><a href="#key-mammal-species">Key Terrestrial Mammal Species</a></li>
+      <li><span class="num">4</span><a href="#key-aquatic-species">Key Aquatic Species</a></li>
+      <li><span class="num">5</span><a href="#invasive-fauna-recap">Invasive Fauna — Recap</a></li>
+      <li><span class="num">6</span><a href="#key-plant-species">Key Plant Species</a></li>
+      <li><span class="num">7</span><a href="#marine-plankton-kelp">Marine Plankton, Seagrass &amp; Kelp</a></li>
+      <li><span class="num">8</span><a href="#current-affairs">Current Affairs Link</a></li>
+      <li><span class="num">9</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+      <li><span class="num">10</span><a href="#mains-pyq">Mains PYQs</a></li>
+      <li><span class="num">11</span><a href="#revision">15-Minute Revision Box</a></li>
+    </ul>
+  </div>
+
+  <!-- TOP CONCEPT BOX -->
+  <div class="concept-box" id="concept">
+    <h3>Conceptual Clarity — Why this Topic Matters</h3>
+    <p>UPSC tests important-species lists in three distinct ways:</p>
+    <ul>
+      <li><strong>Definitional / static (factual recall):</strong> single-fact questions on a species' IUCN status, WPA Schedule, habitat, endemism, or a distinguishing feature (e.g. "state bird of Rajasthan," "India's only resident crane"). This is the single most fact-dense, memorisation-heavy prelims topic in Environment.</li>
+      <li><strong>Statement-elimination:</strong> multi-statement questions that mix one true and one subtly false claim — usually swapping IUCN status (CR vs EN vs VU), confusing range (Gir-only vs multi-state), or mismatching a plant with the wrong trapping mechanism. Reading the tables precisely is the whole game.</li>
+      <li><strong>Applied / current:</strong> latest census figures and conservation news — GIB power-line deaths, Asiatic Lion count, conservation-breeding progress — feeding both prelims data-recall and Mains GS-III single-landscape vulnerability answers (see Current Affairs section).</li>
+    </ul>
+    <p>Focus especially on <strong>IUCN status vs WPA Schedule (two separate systems)</strong>, <strong>"Threatened" = CR + EN + VU only</strong>, and <strong>insectivorous-plant trap-type matching</strong> — the three highest-frequency themes.</p>
+  </div>
+
+  <!-- SECTION 1: KEY BIRD SPECIES -->
+  <section class="notes" id="key-bird-species">
+    <h2>1. Key Bird Species</h2>
+    <p>Ten bird species dominate UPSC's species-facts questions. Each is listed below with its IUCN Red List status, Wildlife (Protection) Act, 1972 Schedule, habitat and the single distinguishing fact examiners most often quiz.</p>
+
+    <table>
+      <tr><th>Species</th><th>IUCN Status</th><th>WPA Schedule</th><th>Habitat</th><th>Distinguishing Fact</th></tr>
+      <tr><td><strong>Great Indian Bustard</strong><br><em>Ardeotis nigriceps</em></td><td>Critically Endangered</td><td>Schedule I</td><td>Thar Desert grasslands — Rajasthan (Desert National Park), Gujarat (Kutch)</td><td>State bird of Rajasthan; India's heaviest flying bird; primary threat is collision with overhead power transmission lines</td></tr>
+      <tr><td><strong>Sociable Lapwing</strong><br><em>Vanellus gregarius</em></td><td>Critically Endangered</td><td>Schedule I</td><td>Dry grasslands/agricultural fields of north-west India (winter visitor)</td><td>Breeds in the Kazakhstan steppe; one of the rarest winter migrants recorded in India</td></tr>
+      <tr><td><strong>Siberian Crane</strong><br><em>Leucogeranus leucogeranus</em></td><td>Critically Endangered</td><td>Schedule I</td><td>Historically wintered at Keoladeo Ghana NP, Bharatpur</td><td>The Central/Western population that once wintered in India is now believed functionally extinct as an Indian migrant — a textbook flyway-conservation failure</td></tr>
+      <tr><td><strong>Bengal Florican</strong><br><em>Houbaropsis bengalensis</em></td><td>Critically Endangered</td><td>Schedule I</td><td>Tall wet grasslands of the Terai — Assam (Kaziranga, Manas), UP (Dudhwa)</td><td>One of the rarest bustard species in the world; extreme grassland-specialist, highly sensitive to habitat conversion</td></tr>
+      <tr><td><strong>Sarus Crane</strong><br><em>Antigone antigone</em></td><td>Vulnerable</td><td>Schedule IV</td><td>Wetlands and agricultural fields — UP, Rajasthan, Gujarat</td><td>World's tallest flying bird; India's only resident (non-migratory) crane; state bird of Uttar Pradesh; symbol of marital fidelity (mates for life)</td></tr>
+      <tr><td><strong>White-bellied Heron</strong><br><em>Ardea insignis</em></td><td>Critically Endangered</td><td>Schedule I</td><td>Undisturbed rivers of the Eastern Himalayan foothills — Arunachal Pradesh, Assam</td><td>World's second-largest heron; among the rarest herons on Earth, with fewer than 60 individuals estimated in South/South-East Asia</td></tr>
+      <tr><td><strong>Himalayan Quail</strong><br><em>Ophrysia superciliosa</em></td><td>Critically Endangered (possibly extinct)</td><td>Schedule I</td><td>Grassy hillsides of the Western Himalaya (Uttarakhand)</td><td>Not confirmed sighted since 1876; IUCN retains it as CR rather than Extinct pending exhaustive surveys</td></tr>
+      <tr><td><strong>Jerdon's Courser</strong><br><em>Rhinoptilus bitorquatus</em></td><td>Critically Endangered</td><td>Schedule I</td><td>Scrub jungle of Andhra Pradesh — Sri Lankamalleswara Wildlife Sanctuary</td><td>Nocturnal bird presumed extinct for 86 years until its dramatic rediscovery in 1986</td></tr>
+      <tr><td><strong>Nicobar Megapode</strong><br><em>Megapodius nicobariensis</em></td><td>Vulnerable</td><td>Schedule I</td><td>Endemic to the Nicobar Islands</td><td>"Big-foot" bird that incubates eggs using heat from mounds of decaying vegetation/volcanic soil rather than body warmth</td></tr>
+      <tr><td><strong>Spoon-billed Sandpiper</strong><br><em>Calidris pygmaea</em></td><td>Critically Endangered</td><td>Schedule I</td><td>Winters on east-coast mudflats — Odisha, Andhra Pradesh</td><td>Unique spoon-shaped bill used for side-to-side filter feeding; breeds only in the Russian Far East (Chukotka)</td></tr>
+    </table>
+
+    <div class="callout warn">
+      <strong>UPSC Trap:</strong> Do not assume all critically endangered Indian birds are year-round residents — Sociable Lapwing, Siberian Crane and Spoon-billed Sandpiper are all winter migrants/passage visitors that breed entirely outside India (Central Asia/Russia), yet are fully protected under Indian law (Schedule I) while present in Indian territory.
+    </div>
+  </section>
+
+  <!-- SECTION 2: CONCEPTUAL CLARITY -->
+  <section class="notes" id="conceptual-clarity">
+    <h2>2. Conceptual Clarity — WPA Schedules &amp; Reading IUCN Codes</h2>
+    <p>Every species table in this file carries two different classification systems side by side — the <strong>IUCN Red List category</strong> (a global, scientific extinction-risk assessment) and the <strong>Wildlife (Protection) Act, 1972 Schedule</strong> (an Indian domestic legal protection level). UPSC frequently conflates or tests the two separately — never assume a species' Schedule tracks its IUCN status exactly (e.g., Sarus Crane is only "Vulnerable" but its Schedule IV status gives it lower legal penalty than Schedule I species).</p>
+
+    <div class="concept-box">
+      <h3>Wildlife (Protection) Act, 1972 — Schedule Structure</h3>
+      <p>Originally the Act had <strong>six Schedules (I–VI)</strong>, ranging from Schedule I (highest protection, harshest penalties) down to Schedule V (vermin — species that could be legally hunted, e.g. common crows, fruit bats, mice) and Schedule VI (specified plants). The <strong>Wildlife (Protection) Amendment Act, 2022</strong> restructured this into just <strong>four Schedules</strong>, removing the vermin category altogether and aligning India's plant/animal trade schedule directly with CITES Appendices.</p>
+    </div>
+
+    <table>
+      <tr><th>Old Schedule (Pre-2022)</th><th>New Schedule (Post-2022 Amendment)</th><th>Protection Level / Meaning</th></tr>
+      <tr><td>Schedule I &amp; Part II of Schedule II</td><td>Schedule I</td><td>Highest protection — absolute prohibition on hunting; harshest penalties (e.g. Tiger, Snow Leopard, Great Indian Bustard)</td></tr>
+      <tr><td>Schedule II, III &amp; IV</td><td>Schedule II</td><td>High protection, but comparatively lesser penalty than Schedule I (e.g. Sarus Crane-type species, many mammals not critically threatened)</td></tr>
+      <tr><td>Schedule VI</td><td>Schedule III</td><td>Specified plants — regulates cultivation/trade of a defined list (e.g. <em>Nepenthes khasiana</em>, orchid species)</td></tr>
+      <tr><td>Not present earlier</td><td>Schedule IV</td><td>New — species listed in CITES Appendices, regulating international trade, aligning domestic law with international commitments</td></tr>
+      <tr><td>Schedule V</td><td>Removed</td><td>Vermin category abolished entirely — no species can now be declared "vermin" for unrestricted hunting</td></tr>
+    </table>
+
+    <h3>How to Read IUCN Status Abbreviations Quickly</h3>
+    <table>
+      <tr><th>Order (Highest to Lowest Risk)</th><th>Code</th><th>Category</th></tr>
+      <tr><td>1</td><td>EX</td><td>Extinct</td></tr>
+      <tr><td>2</td><td>EW</td><td>Extinct in the Wild</td></tr>
+      <tr><td>3</td><td>CR</td><td>Critically Endangered</td></tr>
+      <tr><td>4</td><td>EN</td><td>Endangered</td></tr>
+      <tr><td>5</td><td>VU</td><td>Vulnerable</td></tr>
+      <tr><td>6</td><td>NT</td><td>Near Threatened</td></tr>
+      <tr><td>7</td><td>LC</td><td>Least Concern</td></tr>
+      <tr><td>8</td><td>DD</td><td>Data Deficient</td></tr>
+      <tr><td>9</td><td>NE</td><td>Not Evaluated</td></tr>
+    </table>
+
+    <div class="callout warn">
+      <strong>UPSC Trap:</strong> Only <strong>CR + EN + VU</strong> together are formally called "<strong>Threatened</strong>" categories. "Near Threatened" (NT) is explicitly NOT part of the Threatened bracket — a favourite prelims distractor. Also, "Data Deficient" (DD) does NOT mean a species is safe; it means there simply isn't enough data to assess risk.
+    </div>
+
+    <div class="callout info">
+      <strong>Quick mnemonic:</strong> Extinction risk descends alphabetically-ish as "Extinct family → Threatened family → Lower-risk family": EX–EW (gone) → CR–EN–VU (Threatened) → NT–LC (safer) → DD–NE (unassessed).
+    </div>
+  </section>
+
+  <!-- SECTION 3: KEY TERRESTRIAL MAMMAL SPECIES -->
+  <section class="notes" id="key-mammal-species">
+    <h2>3. Key Terrestrial Mammal Species</h2>
+    <p>Ten mammal species that repeatedly anchor UPSC statement-based questions, each tied to a specific state/landscape and a named conservation programme.</p>
+
+    <table>
+      <tr><th>Species</th><th>IUCN Status</th><th>WPA Schedule</th><th>Habitat</th><th>Conservation Programme / Key Fact</th></tr>
+      <tr><td><strong>Snow Leopard</strong><br><em>Panthera uncia</em></td><td>Vulnerable</td><td>Schedule I</td><td>High-altitude Himalaya &amp; Trans-Himalaya — Ladakh, HP, Uttarakhand, Sikkim, Arunachal</td><td>Project Snow Leopard (2009); India co-leads GSLEP (Global Snow Leopard &amp; Ecosystem Protection Program); called "ghost of the mountains"</td></tr>
+      <tr><td><strong>Red Panda</strong><br><em>Ailurus fulgens</em></td><td>Endangered</td><td>Schedule I</td><td>Temperate forests of Eastern Himalaya — Sikkim, Darjeeling, Arunachal Pradesh</td><td>State animal of Sikkim; sole living member of family Ailuridae; conservation breeding at Padmaja Naidu Himalayan Zoological Park, Darjeeling</td></tr>
+      <tr><td><strong>Asiatic Lion</strong><br><em>Panthera leo persica</em></td><td>Endangered</td><td>Schedule I</td><td>Gir National Park, Gujarat — sole wild population on Earth</td><td>Asiatic Lion Conservation Project; distinguished from African Lion by a longitudinal belly-skin fold</td></tr>
+      <tr><td><strong>One-horned Rhinoceros</strong><br><em>Rhinoceros unicornis</em></td><td>Vulnerable</td><td>Schedule I</td><td>Kaziranga NP, Assam — hosts roughly two-thirds of the world population</td><td>Indian Rhino Vision 2020; horn made of keratin (same as hair/nails), no medicinal value despite poaching demand</td></tr>
+      <tr><td><strong>Asian Elephant</strong><br><em>Elephas maximus</em></td><td>Endangered</td><td>Schedule I</td><td>Fragmented forests — Karnataka, Assam, Kerala hold the largest populations</td><td>Project Elephant (1992); India's National Heritage Animal; "Gaj Yatra" campaign protects elephant corridors</td></tr>
+      <tr><td><strong>Wild Water Buffalo</strong><br><em>Bubalus arnee</em></td><td>Endangered</td><td>Schedule I</td><td>Kaziranga &amp; Manas NP (Assam); Udanti WLS (Chhattisgarh)</td><td>State animal of Chhattisgarh; wild ancestor of the domestic buffalo; hybridisation with domestic stock is a major genetic threat</td></tr>
+      <tr><td><strong>Pygmy Hog</strong><br><em>Porcula salvania</em></td><td>Endangered</td><td>Schedule I</td><td>Tall alluvial grasslands of Manas NP, Assam</td><td>World's smallest wild pig; Pygmy Hog Conservation Programme is a global first-of-its-kind reintroduction success for a threatened suid</td></tr>
+      <tr><td><strong>Hangul (Kashmir Stag)</strong><br><em>Cervus hanglu hanglu</em></td><td>Critically Endangered</td><td>Schedule I</td><td>Dachigam National Park, Jammu &amp; Kashmir</td><td>Only surviving Asiatic subspecies of Red Deer in India; protected under Project Hangul</td></tr>
+      <tr><td><strong>Nilgiri Tahr</strong><br><em>Nilgiritragus hylocrius</em></td><td>Endangered</td><td>Schedule I</td><td>Shola-grassland ecosystem of the Western Ghats — Eravikulam NP (Kerala/Tamil Nadu)</td><td>State animal of Tamil Nadu; only mountain ungulate endemic to the southern Western Ghats; "Project Nilgiri Tahr" launched by Tamil Nadu (2022)</td></tr>
+      <tr><td><strong>Malabar Civet</strong><br><em>Viverra civettina</em></td><td>Critically Endangered</td><td>Schedule I</td><td>Lowland forests of the Western Ghats, Kerala</td><td>Endemic to the Western Ghats; possibly on the brink of extinction — no confirmed sighting since the 1990s</td></tr>
+    </table>
+
+    <div class="callout">
+      <strong>Naming pattern to remember:</strong> Most named conservation programmes follow "Project + Species" (Project Tiger, Project Elephant, Project Snow Leopard, Project Hangul) — these are almost always MoEFCC-run, Centrally Sponsored flagship programmes, distinct from a species' IUCN or WPA classification.
+    </div>
+  </section>
+
+  <!-- SECTION 4: KEY AQUATIC SPECIES -->
+  <section class="notes" id="key-aquatic-species">
+    <h2>4. Key Aquatic Species</h2>
+    <table>
+      <tr><th>Species</th><th>IUCN Status</th><th>WPA Schedule</th><th>Habitat</th><th>Distinguishing Fact</th></tr>
+      <tr><td><strong>Gangetic River Dolphin</strong><br><em>Platanista gangetica</em></td><td>Endangered</td><td>Schedule I</td><td>Ganga-Brahmaputra-Meghna river system</td><td>India's National Aquatic Animal; functionally blind, navigates and hunts entirely by echolocation; Project Dolphin (2020) launched under Namami Gange</td></tr>
+      <tr><td><strong>Ganges Shark</strong><br><em>Glyphis gangeticus</em></td><td>Critically Endangered</td><td>Schedule I</td><td>Freshwater stretches of the Ganga and Brahmaputra</td><td>One of the world's rarest and least-studied sharks; a true freshwater shark, frequently misidentified as the Bull Shark</td></tr>
+      <tr><td><strong>Olive Ridley Turtle</strong><br><em>Lepidochelys olivacea</em></td><td>Vulnerable</td><td>Schedule I</td><td>Odisha coast — Gahirmatha, Rushikulya, Devi river mouth</td><td>Smallest and most abundant sea turtle species; famous for mass synchronised nesting called "arribada," with Gahirmatha hosting the world's largest rookery</td></tr>
+      <tr><td><strong>Dugong</strong><br><em>Dugong dugon</em></td><td>Vulnerable</td><td>Schedule I</td><td>Gulf of Mannar, Palk Bay, Gulf of Kachchh, Andaman &amp; Nicobar Islands</td><td>Only strictly herbivorous marine mammal ("sea cow"), entirely dependent on seagrass meadows; India's first Dugong Conservation Reserve declared in Palk Bay, Tamil Nadu (2022)</td></tr>
+      <tr><td><strong>Indian Skimmer</strong><br><em>Rynchops albicollis</em></td><td>Endangered</td><td>Schedule I</td><td>Sandbanks of large rivers — Chambal, Ganga, Mahanadi</td><td>Uniquely elongated lower mandible used to "skim" the water surface for fish while in low flight</td></tr>
+    </table>
+  </section>
+
+  <!-- SVG DIAGRAM 1: IUCN STATUS DISTRIBUTION -->
+  <section class="notes" id="iucn-distribution-diagram">
+    <h2 style="border:none;padding-bottom:0;">Diagram — IUCN Status Distribution Among Listed Species</h2>
+    <p>Across the 25 named bird, mammal and aquatic species above, the breakdown by IUCN Red List category is skewed heavily toward the most severe risk tiers — a pattern UPSC uses to test whether students can identify that "listed for UPSC" almost always means "high extinction risk."</p>
+    <div class="svg-wrap">
+      <svg viewBox="0 0 640 320" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+        <text x="320" y="24" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">IUCN Status Distribution — 25 Species Listed in This Topic</text>
+
+        <!-- axis -->
+        <line x1="90" y1="260" x2="600" y2="260" stroke="#aab8c4" stroke-width="1.5"/>
+        <line x1="90" y1="50" x2="90" y2="260" stroke="#aab8c4" stroke-width="1.5"/>
+        <text x="30" y="65" font-size="10" fill="#5a6266">12</text>
+        <text x="30" y="120" font-size="10" fill="#5a6266">9</text>
+        <text x="30" y="175" font-size="10" fill="#5a6266">6</text>
+        <text x="30" y="230" font-size="10" fill="#5a6266">3</text>
+        <text x="30" y="258" font-size="10" fill="#5a6266">0</text>
+        <line x1="86" y1="60" x2="600" y2="60" stroke="#eef1f4" stroke-width="1"/>
+        <line x1="86" y1="115" x2="600" y2="115" stroke="#eef1f4" stroke-width="1"/>
+        <line x1="86" y1="170" x2="600" y2="170" stroke="#eef1f4" stroke-width="1"/>
+        <line x1="86" y1="225" x2="600" y2="225" stroke="#eef1f4" stroke-width="1"/>
+
+        <!-- CR bar: 11 species -->
+        <rect x="150" y="60.8" width="90" height="199.2" fill="#c0392b" rx="4"/>
+        <text x="195" y="52" text-anchor="middle" font-size="12" font-weight="700" fill="#c0392b">11</text>
+        <text x="195" y="280" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2035">CR</text>
+        <text x="195" y="294" text-anchor="middle" font-size="9" fill="#5a6266">Critically Endangered</text>
+
+        <!-- EN bar: 8 species -->
+        <rect x="290" y="105.6" width="90" height="154.4" fill="#c47820" rx="4"/>
+        <text x="335" y="97" text-anchor="middle" font-size="12" font-weight="700" fill="#c47820">8</text>
+        <text x="335" y="280" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2035">EN</text>
+        <text x="335" y="294" text-anchor="middle" font-size="9" fill="#5a6266">Endangered</text>
+
+        <!-- VU bar: 6 species -->
+        <rect x="430" y="150.4" width="90" height="109.6" fill="#d4a017" rx="4"/>
+        <text x="475" y="142" text-anchor="middle" font-size="12" font-weight="700" fill="#8a6d0f">6</text>
+        <text x="475" y="280" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2035">VU</text>
+        <text x="475" y="294" text-anchor="middle" font-size="9" fill="#5a6266">Vulnerable</text>
+
+        <text x="320" y="312" text-anchor="middle" font-size="9" fill="#5a6266">CR = 44% · EN = 32% · VU = 24% of the 25 species listed — all 25 fall within the "Threatened" bracket</text>
+      </svg>
+      <div class="svg-caption">Fig 15.1 — IUCN Red List status breakdown across the 25 named India species in this topic (11 CR, 8 EN, 6 VU)</div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: INVASIVE FAUNA RECAP -->
+  <section class="notes" id="invasive-fauna-recap">
+    <h2>5. Invasive Fauna — Recap</h2>
+    <p>These invasive fauna species were covered in mechanism-and-pathway detail in <a href="/environment/biodiversity-loss-and-threats">Topic 12: Biodiversity Loss &amp; Threats</a>. This is a fact-recap table for revision purposes only.</p>
+    <table>
+      <tr><th>Species</th><th>Native Region</th><th>Impact in India</th></tr>
+      <tr><td><strong>African Catfish</strong><br><em>Clarias gariepinus</em></td><td>Africa</td><td>Aggressive predator of native fish; culture is officially banned in India but persists informally, especially in illegal fish-farming</td></tr>
+      <tr><td><strong>Apple Snail</strong><br><em>Pomacea</em ssp.></td><td>South America</td><td>Destroys paddy crops by feeding on young rice shoots; acts as a vector for the rat lungworm parasite (a human health risk)</td></tr>
+      <tr><td><strong>Red-eared Slider</strong><br><em>Trachemys scripta elegans</em></td><td>North America</td><td>Released pet-trade turtle that outcompetes native turtle species for basking sites and food in Indian wetlands</td></tr>
+    </table>
+    <div class="callout info">
+      <strong>Cross-link:</strong> See Topic 12 for the full invasive alien species (IAS) list, introduction pathways (ballast water, pet trade, ornamental plants, agriculture) and India's biosecurity response framework.
+    </div>
+  </section>
+
+  <!-- SECTION 6: KEY PLANT SPECIES -->
+  <section class="notes" id="key-plant-species">
+    <h2>6. Key Plant Species</h2>
+    <h3>Insectivorous Plants of India</h3>
+    <p>India hosts five genera of carnivorous plants, each using a mechanically distinct trapping strategy to supplement nutrient-poor soils (typically bogs, marshes and lateritic soils low in nitrogen).</p>
+    <table>
+      <tr><th>Species / Genus</th><th>Family</th><th>Trapping Mechanism (1-line)</th><th>Distribution in India</th></tr>
+      <tr><td><strong>Sundew</strong><br><em>Drosera</em> spp. (e.g. <em>D. indica</em>, <em>D. burmanii</em>)</td><td>Droseraceae</td><td>Sticky/flypaper trap — glandular tentacles secrete adhesive mucilage that traps insects, then curl inward to digest them</td><td>Western Ghats, north-eastern India, wetland margins</td></tr>
+      <tr><td><strong>Waterwheel Plant</strong><br><em>Aldrovanda vesiculosa</em></td><td>Droseraceae</td><td>Underwater snap trap — bilobed leaf pairs close rapidly around prey, mechanically similar to the Venus flytrap</td><td>Free-floating aquatic species, extremely rare/near-extirpated in parts of north-east India</td></tr>
+      <tr><td><strong>Pitcher Plant</strong><br><em>Nepenthes khasiana</em></td><td>Nepenthaceae</td><td>Pitfall trap — a modified leaf tip forms a fluid-filled pitcher; insects slip on the waxy rim, fall in and drown, then are digested by enzymes</td><td>India's only native <em>Nepenthes</em> species; endemic to the Khasi and Garo Hills, Meghalaya; Schedule III (specified plants) protected</td></tr>
+      <tr><td><strong>Bladderwort</strong><br><em>Utricularia</em> spp.</td><td>Lentibulariaceae</td><td>Bladder/suction trap — hollow underwater bladders maintain a vacuum; trigger hairs spring open a trapdoor, sucking in prey within milliseconds (fastest plant trap known)</td><td>Aquatic/semi-aquatic; widespread across Indian wetlands and paddy fields</td></tr>
+      <tr><td><strong>Butterwort</strong><br><em>Pinguicula</em> spp.</td><td>Lentibulariaceae</td><td>Flypaper trap — leaf surface is covered in glandular hairs secreting sticky mucilage that traps and slowly digests small insects</td><td>Restricted to the Himalayan region; least common of the five genera in India</td></tr>
+    </table>
+
+    <h3>Medicinal Plants of India — Named List</h3>
+    <table>
+      <tr><th>Plant</th><th>Primary Medicinal Use</th></tr>
+      <tr><td><em>Rauvolfia serpentina</em> (Sarpagandha)</td><td>Source of reserpine — used against hypertension and as an antipsychotic; overharvested from the wild</td></tr>
+      <tr><td><em>Withania somnifera</em> (Ashwagandha)</td><td>Adaptogen — used for stress, immunity and vitality</td></tr>
+      <tr><td><em>Ocimum sanctum</em> (Tulsi)</td><td>Respiratory ailments, immunity, considered sacred in Indian tradition</td></tr>
+      <tr><td><em>Curcuma longa</em> (Turmeric)</td><td>Anti-inflammatory, antiseptic, wound healing</td></tr>
+      <tr><td><em>Commiphora wightii</em> (Guggul)</td><td>Cholesterol-lowering resin, heavily overexploited in the wild</td></tr>
+      <tr><td><em>Aloe vera</em></td><td>Skin treatment, wound healing, digestive uses</td></tr>
+      <tr><td><em>Azadirachta indica</em> (Neem)</td><td>Antibacterial, antifungal, natural pesticide (neem-coated urea)</td></tr>
+      <tr><td><em>Saussurea costus</em> (Kuth)</td><td>Himalayan medicinal root, CITES Appendix I-listed due to overexploitation</td></tr>
+    </table>
+  </section>
+
+  <!-- SVG DIAGRAM 2: INSECTIVOROUS PLANT TRAPPING MECHANISMS -->
+  <section class="notes" id="insectivorous-trap-diagram">
+    <h2 style="border:none;padding-bottom:0;">Diagram — Insectivorous Plant Trapping Mechanisms</h2>
+    <p>Three fundamentally different trap designs are commonly asked to be matched with their genus — pitfall (Nepenthes), sticky/flypaper (Drosera) and bladder/suction (Utricularia).</p>
+    <div class="svg-wrap">
+      <svg viewBox="0 0 680 320" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+        <text x="340" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Insectivorous Plant Trapping Mechanisms — Three Panels</text>
+
+        <!-- Panel dividers -->
+        <line x1="230" y1="35" x2="230" y2="300" stroke="#eef1f4" stroke-width="1"/>
+        <line x1="455" y1="35" x2="455" y2="300" stroke="#eef1f4" stroke-width="1"/>
+
+        <!-- PANEL 1: Nepenthes pitfall trap -->
+        <text x="115" y="50" text-anchor="middle" font-size="12" font-weight="700" fill="#0d2035">1. Pitfall Trap</text>
+        <text x="115" y="64" text-anchor="middle" font-size="10" fill="#5a6266">Nepenthes khasiana</text>
+        <path d="M85,90 Q75,140 90,190 Q100,220 130,220 Q160,220 170,190 Q185,140 175,90 Z" fill="#1a7a5a" opacity="0.85"/>
+        <ellipse cx="130" cy="95" rx="45" ry="10" fill="#0a5c40"/>
+        <ellipse cx="130" cy="95" rx="35" ry="6" fill="#e8f5ef"/>
+        <circle cx="118" cy="130" r="4" fill="#0d2035"/>
+        <line x1="118" y1="126" x2="121" y2="118" stroke="#0d2035" stroke-width="1"/>
+        <text x="115" y="150" text-anchor="middle" font-size="8" fill="#fff">insect falls in</text>
+        <path d="M100,190 Q130,205 160,190" fill="none" stroke="#0a5c40" stroke-width="1"/>
+        <text x="115" y="245" text-anchor="middle" font-size="8.5" fill="#5a6266">Waxy rim → insect</text>
+        <text x="115" y="257" text-anchor="middle" font-size="8.5" fill="#5a6266">slips, drowns in fluid,</text>
+        <text x="115" y="269" text-anchor="middle" font-size="8.5" fill="#5a6266">digested by enzymes</text>
+        <line x1="65" y1="95" x2="30" y2="80" stroke="#aab8c4" stroke-width="1"/>
+        <text x="20" y="76" text-anchor="middle" font-size="8" fill="#5a6266">rim (peristome)</text>
+
+        <!-- PANEL 2: Drosera sticky trap -->
+        <text x="340" y="50" text-anchor="middle" font-size="12" font-weight="700" fill="#0d2035">2. Sticky (Flypaper) Trap</text>
+        <text x="340" y="64" text-anchor="middle" font-size="10" fill="#5a6266">Drosera (Sundew)</text>
+        <circle cx="340" cy="170" r="30" fill="#e8f5ef" stroke="#1a7a5a" stroke-width="1.5"/>
+        <line x1="340" y1="170" x2="315" y2="135" stroke="#1a7a5a" stroke-width="2"/>
+        <circle cx="315" cy="135" r="3.5" fill="#c47820"/>
+        <line x1="340" y1="170" x2="365" y2="135" stroke="#1a7a5a" stroke-width="2"/>
+        <circle cx="365" cy="135" r="3.5" fill="#c47820"/>
+        <line x1="340" y1="170" x2="308" y2="165" stroke="#1a7a5a" stroke-width="2"/>
+        <circle cx="308" cy="165" r="3.5" fill="#c47820"/>
+        <line x1="340" y1="170" x2="372" y2="165" stroke="#1a7a5a" stroke-width="2"/>
+        <circle cx="372" cy="165" r="3.5" fill="#c47820"/>
+        <line x1="340" y1="170" x2="320" y2="200" stroke="#1a7a5a" stroke-width="2"/>
+        <circle cx="320" cy="200" r="3.5" fill="#c47820"/>
+        <line x1="340" y1="170" x2="360" y2="200" stroke="#1a7a5a" stroke-width="2"/>
+        <circle cx="360" cy="200" r="3.5" fill="#c47820"/>
+        <circle cx="335" cy="145" r="3" fill="#0d2035"/>
+        <text x="340" y="245" text-anchor="middle" font-size="8.5" fill="#5a6266">Sticky mucilage droplets</text>
+        <text x="340" y="257" text-anchor="middle" font-size="8.5" fill="#5a6266">on tentacle tips trap prey;</text>
+        <text x="340" y="269" text-anchor="middle" font-size="8.5" fill="#5a6266">tentacles curl inward to digest</text>
+
+        <!-- PANEL 3: Utricularia bladder trap -->
+        <text x="565" y="50" text-anchor="middle" font-size="12" font-weight="700" fill="#0d2035">3. Bladder (Suction) Trap</text>
+        <text x="565" y="64" text-anchor="middle" font-size="10" fill="#5a6266">Utricularia (Bladderwort)</text>
+        <ellipse cx="565" cy="170" rx="38" ry="28" fill="#eaf2fb" stroke="#1a3d5c" stroke-width="1.5"/>
+        <path d="M527,170 L515,168 L515,172 Z" fill="#1a3d5c"/>
+        <line x1="527" y1="170" x2="512" y2="170" stroke="#1a3d5c" stroke-width="1.5"/>
+        <circle cx="508" cy="170" r="3" fill="#0d2035"/>
+        <path d="M600,155 Q615,150 625,140" stroke="#1a7a5a" stroke-width="2" fill="none"/>
+        <path d="M600,185 Q615,190 625,200" stroke="#1a7a5a" stroke-width="2" fill="none"/>
+        <text x="565" y="245" text-anchor="middle" font-size="8.5" fill="#5a6266">Vacuum inside bladder; trigger</text>
+        <text x="565" y="257" text-anchor="middle" font-size="8.5" fill="#5a6266">hairs spring trapdoor open —</text>
+        <text x="565" y="269" text-anchor="middle" font-size="8.5" fill="#5a6266">fastest plant trap, &lt;1 millisecond</text>
+
+        <text x="340" y="300" text-anchor="middle" font-size="9" font-style="italic" fill="#5a6266">All three mechanisms supplement nutrient-poor (nitrogen-deficient) bog/marsh soils</text>
+      </svg>
+      <div class="svg-caption">Fig 15.2 — Three Insectivorous Plant Trapping Mechanisms: Pitfall (Nepenthes), Sticky (Drosera), Bladder-Suction (Utricularia)</div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: MARINE PLANKTON, SEAGRASS & KELP -->
+  <section class="notes" id="marine-plankton-kelp">
+    <h2>7. Marine Plankton, Seagrass &amp; Kelp</h2>
+    <table>
+      <tr><th>Category</th><th>Examples</th><th>Ecological Role</th></tr>
+      <tr><td>Phytoplankton</td><td>Diatoms, dinoflagellates (e.g. <em>Noctiluca</em> — bioluminescent, causes red tides)</td><td>Primary producers of the ocean; responsible for roughly half of global photosynthetic oxygen production; base of the entire marine food web and driver of the "biological carbon pump"</td></tr>
+      <tr><td>Zooplankton</td><td>Copepods, krill, larval fish (ichthyoplankton), jellyfish larvae</td><td>Primary consumers; transfer energy from phytoplankton to fish, seabirds and whales; krill specifically underpin Antarctic marine food webs</td></tr>
+      <tr><td>Seagrass</td><td><em>Thalassia</em>, <em>Cymodocea</em>, <em>Halophila</em> — India's meadows in Gulf of Mannar, Palk Bay, Lakshadweep</td><td>True flowering plants (not algae); nursery habitat for fish, exclusive food source for Dugongs; among the most efficient <strong>blue carbon</strong> ecosystems per unit area on Earth</td></tr>
+      <tr><td>Kelp</td><td><em>Laminaria</em>, <em>Macrocystis</em> (giant kelp) — large brown algae of cold/temperate waters</td><td>Forms dense underwater "kelp forests" providing habitat and nursery grounds; largely absent from India's tropical coastal waters (occurs in California, South Africa, Tasmania); India instead promotes seaweed (macroalgae) farming — <em>Kappaphycus</em>, <em>Gracilaria</em> — under its Blue Economy policy</td></tr>
+    </table>
+
+    <div class="callout info">
+      <strong>Blue Carbon link:</strong> Seagrass meadows, mangroves and salt marshes together form the three "blue carbon" ecosystems recognised globally for capturing and storing atmospheric carbon in marine sediments far more efficiently, per hectare, than terrestrial forests — a recurring theme connecting this topic to India's coastal wetland conservation and climate mitigation commitments.
+    </div>
+
+    <div class="callout warn">
+      <strong>UPSC Trap:</strong> Do not confuse seagrass (a flowering plant, angiosperm, with roots and true leaves) with seaweed/kelp (multicellular algae with no true roots, stems or leaves) — this distinction is frequently tested in statement-based questions.
+    </div>
+  </section>
+
+  <!-- SECTION 8: CURRENT AFFAIRS -->
+  <section class="notes" id="current-affairs">
+    <h2>8. Current Affairs Link (2024–2026)</h2>
+    <p>Latest species census and population data — the most exam-relevant, fastest-changing facts on this topic. Always verify against the latest official release before your attempt.</p>
+
+    <div class="callout update">
+      <strong>Great Indian Bustard — conservation breeding <span class="update-tag">check for latest update or data</span></strong>
+      <p>Latest government estimates (2025) place the wild population at approximately <strong>150–200 individuals</strong> across Rajasthan's Desert National Park landscape and Gujarat's Kutch region. The conservation-breeding programme at Sam (Jaisalmer), run jointly by the Wildlife Institute of India (WII) and Rajasthan Forest Department, has hatched <strong>50+ chicks</strong> in captivity as of 2025 — a key step toward eventual reintroduction.</p>
+    </div>
+
+    <div class="callout update">
+      <strong>Asiatic Lion — 16th census <span class="update-tag">check for latest update or data</span></strong>
+      <p>The Gujarat Forest Department's population-estimation exercise (May 2025, the 16th count) reported approximately <strong>890+ individuals</strong> across the Saurashtra landscape, up from <strong>674 in 2020</strong> — a five-decade recovery, though the entire population remains confined to a single landscape, a standing extinction-risk concern.</p>
+    </div>
+
+    <div class="callout update">
+      <strong>GIB power-line mitigation — Supreme Court directions <span class="update-tag">check for latest update or data</span></strong>
+      <p>Following Supreme Court directions, 2025 saw continued rollout of bird diverters and underground cabling in "priority" and "potential" GIB habitat zones — balancing species survival against renewable-energy (solar/wind) transmission expansion in Rajasthan and Gujarat.</p>
+    </div>
+
+    <div class="callout warn">
+      <strong>UPSC Relevance:</strong> Fresh census figures for flagship species (GIB, Asiatic Lion, Tiger, Elephant, Snow Leopard) are asked almost every prelims cycle as direct data-recall questions, and feed into Mains GS-III answers on single-landscape species vulnerability and human-wildlife conflict from infrastructure expansion.
+    </div>
+  </section>
+
+  <!-- SECTION 9: PRELIMS PYQs -->
+  <section class="notes" id="prelims-pyq">
+    <h2>9. Prelims PYQs</h2>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2023</div>
+      <p><strong>Q.</strong> With reference to the Great Indian Bustard, consider the following statements:</p>
+      <p>1. It is the State bird of Rajasthan.<br>2. Its entire global range lies within Rajasthan state.<br>3. It is listed under Schedule I of the Wildlife (Protection) Act, 1972.</p>
+      <p>Which of the statements given above is/are correct?</p>
+      <ul class="options">
+        <li class="correct"><span class="opt-key">(a)</span>1 and 3 only</li>
+        <li><span class="opt-key">(b)</span>2 and 3 only</li>
+        <li><span class="opt-key">(c)</span>1, 2 and 3</li>
+        <li><span class="opt-key">(d)</span>1 only</li>
+      </ul>
+      <p class="ans"><strong>Ans: (a).</strong> 1 and 3 only — the species also occurs in Gujarat (Kutch) and historically in Maharashtra, Karnataka and Andhra Pradesh, so statement 2 is false.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2015</div>
+      <p><strong>Q.</strong> Consider the following statements regarding the Sociable Lapwing:</p>
+      <p>1. It breeds in the steppes of Kazakhstan and Central Asia.<br>2. It winters in parts of north-west India.<br>3. Its IUCN status is "Least Concern."</p>
+      <p>Which of the statements given above is/are correct?</p>
+      <ul class="options">
+        <li class="correct"><span class="opt-key">(a)</span>1 and 2 only</li>
+        <li><span class="opt-key">(b)</span>2 and 3 only</li>
+        <li><span class="opt-key">(c)</span>1 and 3 only</li>
+        <li><span class="opt-key">(d)</span>1, 2 and 3</li>
+      </ul>
+      <p class="ans"><strong>Ans: (a).</strong> 1 and 2 only — the Sociable Lapwing is Critically Endangered, not Least Concern.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2019</div>
+      <p><strong>Q.</strong> Which of the following statements about the Sarus Crane is/are correct?</p>
+      <p>1. It is the world's tallest flying bird.<br>2. It is India's only resident, non-migratory crane species.<br>3. It is the State bird of Uttar Pradesh.</p>
+      <p>Select the correct answer using the code below:</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>1 and 2 only</li>
+        <li><span class="opt-key">(b)</span>2 and 3 only</li>
+        <li><span class="opt-key">(c)</span>1 and 3 only</li>
+        <li class="correct"><span class="opt-key">(d)</span>1, 2 and 3</li>
+      </ul>
+      <p class="ans"><strong>Ans: (d).</strong> 1, 2 and 3 — all three statements are correct.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2021</div>
+      <p><strong>Q.</strong> The Snow Leopard is best described by which of the following?</p>
+      <ul class="options">
+        <li class="correct"><span class="opt-key">(a)</span>A high-altitude Trans-Himalayan predator, IUCN status Vulnerable, protected under Schedule I of the WPA, 1972</li>
+        <li><span class="opt-key">(b)</span>A lowland grassland specialist, IUCN status Least Concern</li>
+        <li><span class="opt-key">(c)</span>A marine mammal found off the Gujarat coast</li>
+        <li><span class="opt-key">(d)</span>A migratory bird found in the Thar Desert</li>
+      </ul>
+      <p class="ans"><strong>Ans: (a).</strong> A high-altitude Trans-Himalayan predator, IUCN status Vulnerable, protected under Schedule I of the WPA, 1972.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2020</div>
+      <p><strong>Q.</strong> With reference to the Asiatic Lion, consider the following statements:</p>
+      <p>1. Its only wild population is found in Gir National Park, Gujarat.<br>2. It can be distinguished from the African Lion by a longitudinal fold of skin along its belly.<br>3. Its IUCN status is "Critically Endangered."</p>
+      <p>Which of the statements given above is/are correct?</p>
+      <ul class="options">
+        <li class="correct"><span class="opt-key">(a)</span>1 and 2 only</li>
+        <li><span class="opt-key">(b)</span>2 and 3 only</li>
+        <li><span class="opt-key">(c)</span>1 and 3 only</li>
+        <li><span class="opt-key">(d)</span>1, 2 and 3</li>
+      </ul>
+      <p class="ans"><strong>Ans: (a).</strong> 1 and 2 only — the Asiatic Lion's IUCN status is "Endangered," not "Critically Endangered."</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2017</div>
+      <p><strong>Q.</strong> The One-horned Rhinoceros is found in the highest density in which of the following protected areas?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span>Gir National Park</li>
+        <li class="correct"><span class="opt-key">(b)</span>Kaziranga National Park</li>
+        <li><span class="opt-key">(c)</span>Dachigam National Park</li>
+        <li><span class="opt-key">(d)</span>Eravikulam National Park</li>
+      </ul>
+      <p class="ans"><strong>Ans: (b).</strong> Kaziranga National Park, Assam.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2018</div>
+      <p><strong>Q.</strong> Consider the following statements regarding the Dugong:</p>
+      <p>1. It is a herbivorous marine mammal dependent on seagrass beds.<br>2. India's first Dugong Conservation Reserve was declared in Tamil Nadu.<br>3. It is found only along the Odisha coast.</p>
+      <p>Which of the statements given above is/are correct?</p>
+      <ul class="options">
+        <li class="correct"><span class="opt-key">(a)</span>1 and 2 only</li>
+        <li><span class="opt-key">(b)</span>2 and 3 only</li>
+        <li><span class="opt-key">(c)</span>1 and 3 only</li>
+        <li><span class="opt-key">(d)</span>1, 2 and 3</li>
+      </ul>
+      <p class="ans"><strong>Ans: (a).</strong> 1 and 2 only — the Dugong is found in the Gulf of Mannar, Palk Bay, Gulf of Kachchh and Andaman &amp; Nicobar waters, not the Odisha coast.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2016</div>
+      <p><strong>Q.</strong> <em>Nepenthes khasiana</em>, found in India, is best described as:</p>
+      <ul class="options">
+        <li class="correct"><span class="opt-key">(a)</span>A carnivorous pitcher plant endemic to the Khasi and Garo Hills of Meghalaya</li>
+        <li><span class="opt-key">(b)</span>A migratory bird species of the Eastern Himalaya</li>
+        <li><span class="opt-key">(c)</span>A marine mammal found in the Gulf of Mannar</li>
+        <li><span class="opt-key">(d)</span>An invasive alien plant species</li>
+      </ul>
+      <p class="ans"><strong>Ans: (a).</strong> A carnivorous pitcher plant endemic to the Khasi and Garo Hills of Meghalaya — India's only native <em>Nepenthes</em> species.</p>
+    </div>
+
+    <div class="pyq">
+      <div class="year">UPSC Prelims 2022</div>
+      <p><strong>Q.</strong> Which of the following pairs of insectivorous plant and its trapping mechanism is correctly matched?</p>
+      <ul class="options">
+        <li><span class="opt-key">(a)</span><em>Nepenthes</em> — Bladder/suction trap</li>
+        <li><span class="opt-key">(b)</span><em>Drosera</em> — Pitfall trap</li>
+        <li><span class="opt-key">(c)</span><em>Utricularia</em> — Sticky/flypaper trap</li>
+        <li class="correct"><span class="opt-key">(d)</span><em>Nepenthes</em> — Pitfall trap</li>
+      </ul>
+      <p class="ans"><strong>Ans: (d).</strong> <em>Nepenthes</em> — Pitfall trap; <em>Drosera</em> uses a sticky/flypaper trap and <em>Utricularia</em> uses a bladder/suction trap.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 10: MAINS PYQ -->
+  <section class="notes" id="mains-pyq">
+    <h2>10. Mains PYQs</h2>
+    <div class="pyq">
+      <div class="year">Mains GS-III 2020</div>
+      <p><strong>Q.</strong> Discuss the conservation status and threats faced by the Great Indian Bustard, and evaluate the measures undertaken by the Government of India to protect the species. (250 words)</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> The Great Indian Bustard (<em>Ardeotis nigriceps</em>), state bird of Rajasthan and India's heaviest flying bird, is IUCN Critically Endangered and WPA Schedule I, with a wild population of only ~150–200 — a flagship of grassland conservation.</li>
+          <li><strong>Body — Threats:</strong>
+            <ul>
+              <li>Collision with overhead power-transmission lines (the single largest cause of adult mortality).</li>
+              <li>Grassland habitat loss/degradation and conversion to agriculture and industry.</li>
+              <li>Wind/solar infrastructure expansion across the Thar Desert range.</li>
+              <li>Poor natural recruitment — lays a single egg, ground-nesting (predation, disturbance).</li>
+            </ul>
+          </li>
+          <li><strong>Body — Government measures:</strong>
+            <ul>
+              <li>Supreme Court-directed bird diverters and underground cabling in priority habitat.</li>
+              <li>Project GIB conservation-breeding centre at Sam (Jaisalmer), run by WII — 50+ chicks hatched.</li>
+              <li>Species Recovery component under the Integrated Development of Wildlife Habitats scheme; Desert National Park protection.</li>
+            </ul>
+          </li>
+          <li><strong>Conclusion:</strong> The GIB is a textbook case of single-landscape vulnerability; its survival hinges on reconciling renewable-energy expansion with grassland conservation, not treating the two as a trade-off.</li>
+        </ol>
+        <span class="marks">250 words · 15 marks</span>
+      </div>
+    </div>
+
+    <div class="pyq">
+      <div class="year">Mains GS-III 2019</div>
+      <p><strong>Q.</strong> "India's Wildlife (Protection) Act, 1972 was significantly restructured by the 2022 Amendment." Examine the key changes and their implications for species and trade regulation. (250 words)</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> The WPA 1972 is India's principal wildlife-protection law; the 2022 Amendment rationalised its Schedule structure and aligned it with international commitments under CITES.</li>
+          <li><strong>Body — Key changes:</strong>
+            <ul>
+              <li>Reduced Schedules from six to four — Schedule I (highest protection), II (lesser penalty), III (specified plants), IV (CITES-listed species for trade).</li>
+              <li>Abolished the "vermin" category (old Schedule V) — no species can now be freely hunted as vermin.</li>
+              <li>Introduced a dedicated CITES-implementation schedule and management/scientific authorities.</li>
+              <li>Empowered the Centre to designate Standing Committees and regulate invasive alien species.</li>
+            </ul>
+          </li>
+          <li><strong>Body — Implications:</strong>
+            <ul>
+              <li>Simpler, clearer protection tiers reduce administrative ambiguity.</li>
+              <li>Direct CITES alignment strengthens control of international wildlife trade.</li>
+              <li>Concerns: reduced flexibility on genuine human-wildlife conflict (loss of vermin route); enforcement capacity remains the binding constraint.</li>
+            </ul>
+          </li>
+          <li><strong>Conclusion:</strong> The Amendment modernises India's wildlife law and harmonises it with global trade norms, but its impact depends on field-level enforcement and conflict-management alternatives.</li>
+        </ol>
+        <span class="marks">250 words · 15 marks</span>
+      </div>
+    </div>
+
+    <div class="pyq">
+      <div class="year">Mains GS-III 2017</div>
+      <p><strong>Q.</strong> Many flagship Indian species survive as single, isolated populations. Discuss the conservation risks this poses, using suitable examples, and suggest strategies to mitigate them. (250 words)</p>
+      <div class="model-answer">
+        <h5>Model Answer Framework</h5>
+        <ol>
+          <li><strong>Introduction:</strong> Several of India's most iconic species persist as a single geographic population — a fragile conservation state where one localised catastrophe can threaten the entire species.</li>
+          <li><strong>Body — Examples:</strong>
+            <ul>
+              <li><strong>Asiatic Lion</strong> — confined entirely to the Gir/Saurashtra landscape (~890+, 2025 census).</li>
+              <li><strong>Hangul (Kashmir stag)</strong> — largely restricted to Dachigam NP.</li>
+              <li><strong>Great Indian Bustard</strong> — a few fragmented Thar Desert pockets.</li>
+              <li><strong>One-horned Rhino</strong> — concentrated in Kaziranga.</li>
+            </ul>
+          </li>
+          <li><strong>Body — Risks:</strong>
+            <ul>
+              <li>Epidemic disease (e.g. canine distemper in lions) can wipe out a whole population.</li>
+              <li>Localised drought, fire, flood or poaching event; inbreeding and reduced genetic diversity.</li>
+            </ul>
+          </li>
+          <li><strong>Body — Strategies:</strong>
+            <ul>
+              <li>Establish a second/satellite population (e.g. long-pending Asiatic Lion translocation to Kuno).</li>
+              <li>Ex-situ conservation-breeding backup + reintroduction pipelines.</li>
+              <li>Landscape-level habitat corridors and disease surveillance.</li>
+            </ul>
+          </li>
+          <li><strong>Conclusion:</strong> Distributing risk across multiple populations and landscapes — not maximising numbers in a single site — is the core insurance principle for flagship-species survival.</li>
+        </ol>
+        <span class="marks">250 words · 15 marks</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 11: REVISION BOX -->
+  <section class="notes" id="revision">
+    <h2>11. 15-Minute Revision Box</h2>
+    <div class="revision-box">
+      <h3>Rapid Revision — Important Species Lists</h3>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Birds (10) — all except Sarus Crane are CR</h4>
+      <ul>
+        <li>GIB, Sociable Lapwing, Siberian Crane, Bengal Florican, White-bellied Heron, Himalayan Quail, Jerdon's Courser, Spoon-billed Sandpiper = CR.</li>
+        <li>Sarus Crane = VU (only Schedule IV, non-CR bird on the list) — world's tallest flying bird, India's only resident crane.</li>
+        <li>Nicobar Megapode = VU — mound-incubator, endemic to Nicobar Islands.</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Mammals (10)</h4>
+      <ul>
+        <li>CR: Hangul, Malabar Civet. EN: Red Panda, Asiatic Lion, Asian Elephant, Wild Water Buffalo, Pygmy Hog, Nilgiri Tahr. VU: Snow Leopard, One-horned Rhino.</li>
+        <li>"Project + Species" pattern: Project Tiger, Elephant, Snow Leopard, Hangul — all MoEFCC flagship programmes.</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Aquatic (5)</h4>
+      <ul>
+        <li>Gangetic Dolphin (EN, National Aquatic Animal), Ganges Shark (CR), Olive Ridley (VU, arribada at Gahirmatha), Dugong (VU, seagrass-dependent), Indian Skimmer (EN).</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">WPA 1972 Schedules (Post-2022)</h4>
+      <ul>
+        <li>Schedule I (highest) → Schedule II (high, lesser penalty) → Schedule III (specified plants) → Schedule IV (CITES-listed, trade). Old Schedule V (vermin) abolished.</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">IUCN Codes — Order</h4>
+      <ul>
+        <li>EX → EW → CR → EN → VU → NT → LC → DD → NE. "Threatened" = CR + EN + VU ONLY (NT is NOT threatened).</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Insectivorous Plants — Trap Types</h4>
+      <ul>
+        <li><strong>Nepenthes</strong> = Pitfall trap. <strong>Drosera</strong> &amp; <strong>Pinguicula</strong> = Sticky/flypaper trap. <strong>Aldrovanda</strong> = Snap trap (underwater). <strong>Utricularia</strong> = Bladder/suction trap (fastest, &lt;1 millisecond).</li>
+      </ul>
+
+      <h4 style="color:var(--brand-blue-dark);margin-top:14px;">Marine Ecology Quick Facts</h4>
+      <ul>
+        <li>Phytoplankton = ~50% of global oxygen + base of marine food web. Zooplankton = energy transfer to fish/whales.</li>
+        <li>Seagrass (flowering plant, blue carbon) ≠ Kelp (brown algae, cold-water only, largely absent from India).</li>
+        <li>2025: GIB population ~150-200; Asiatic Lion ~890+ (May 2025 census, up from 674 in 2020).</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<!-- ASIDE / SIDEBAR -->
+<aside>
+  <div class="aside-sticky">
+
+    <!-- WIDGET 1: Quick Reference -->
+    <div class="widget">
+      <h4>Quick Reference — IUCN Count</h4>
+      <table>
+        <tr><th>Status</th><th>Count (of 25)</th></tr>
+        <tr><td>Critically Endangered</td><td>11</td></tr>
+        <tr><td>Endangered</td><td>8</td></tr>
+        <tr><td>Vulnerable</td><td>6</td></tr>
+      </table>
+    </div>
+
+    <!-- WIDGET 2: Key Concepts -->
+    <div class="widget">
+      <h4>Key Concepts to Remember</h4>
+      <ul>
+        <li><strong>National Aquatic Animal</strong><br><span style="color:var(--muted);font-size:11px;">Gangetic River Dolphin — blind, echolocation</span></li>
+        <li><strong>Arribada</strong><br><span style="color:var(--muted);font-size:11px;">Olive Ridley mass nesting, Gahirmatha</span></li>
+        <li><strong>WPA 1972 — 4 Schedules (post-2022)</strong><br><span style="color:var(--muted);font-size:11px;">I (highest) → II → III (plants) → IV (CITES)</span></li>
+        <li><strong>Nepenthes vs Drosera vs Utricularia</strong><br><span style="color:var(--muted);font-size:11px;">Pitfall vs sticky vs bladder-suction trap</span></li>
+        <li><strong>Blue Carbon</strong><br><span style="color:var(--muted);font-size:11px;">Seagrass, mangrove, salt marsh — high-efficiency carbon sinks</span></li>
+      </ul>
+    </div>
+
+    <!-- WIDGET 3: Difficulty & Importance -->
+    <div class="widget">
+      <h4>Difficulty &amp; Importance</h4>
+      <div class="bar"><span class="lbl">Prelims Weight</span><span class="fill"><span style="width:95%"></span></span></div>
+      <div class="bar"><span class="lbl">Mains Relevance</span><span class="fill"><span style="width:40%"></span></span></div>
+      <div class="bar"><span class="lbl">Conceptual Depth</span><span class="fill"><span style="width:35%"></span></span></div>
+      <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:75%"></span></span></div>
+      <div class="bar"><span class="lbl">Overall Importance</span><span class="fill"><span style="width:88%"></span></span></div>
+      <p style="margin-top:8px;font-size:11px;color:var(--muted);">Fact-heavy, extremely high prelims yield; low conceptual difficulty but demands memorisation across 25+ species.</p>
+    </div>
+
+    <!-- WIDGET 4: Must-Know Tags -->
+    <div class="widget">
+      <h4>Must-Know Tags</h4>
+      <span class="tag orange">Species Lists</span>
+      <span class="tag">Prelims Facts</span>
+      <span class="tag green">IUCN Red List</span>
+      <span class="tag">WPA 1972</span>
+      <span class="tag orange">Great Indian Bustard</span>
+      <span class="tag">Asiatic Lion</span>
+      <span class="tag green">Snow Leopard</span>
+      <span class="tag">Gangetic Dolphin</span>
+      <span class="tag orange">Insectivorous Plants</span>
+      <span class="tag green">Blue Carbon</span>
+    </div>
+
+    <!-- WIDGET 5: Related Topics -->
+    <div class="widget">
+      <h4>Related Topics</h4>
+      <ul class="related">
+        <li><a href="/environment/in-situ-conservation">Environment T13: In-Situ Conservation</a></li>
+        <li><a href="/environment/ex-situ-conservation-and-forest-governance">Environment T14: Ex-Situ Conservation &amp; Forest Governance</a></li>
+        <li><a href="/environment/biodiversity-of-india">Environment T16: Biodiversity of India</a></li>
+      </ul>
+    </div>
+
+    <!-- WIDGET: Key Numbers & Facts -->
+    <div class="widget">
+      <h4>Key Numbers &amp; Facts</h4>
+      <ul class="mini">
+        <li><strong>GIB</strong> — ~150–200 wild (2025)</li>
+        <li><strong>Asiatic Lion</strong> — ~890+ (May 2025, 16th census)</li>
+        <li><strong>WPA 1972</strong> — 4 Schedules post-2022 (was 6)</li>
+        <li><strong>Threatened</strong> = CR + EN + VU only</li>
+        <li><strong>Phytoplankton</strong> — ~50% of global O₂</li>
+        <li><strong>Sarus Crane</strong> — world's tallest flying bird</li>
+        <li><strong>Gangetic Dolphin</strong> — National Aquatic Animal</li>
+      </ul>
+    </div>
+
+    <!-- WIDGET: Species at a Glance -->
+    <div class="widget">
+      <h4>Species at a Glance</h4>
+      <ul class="mini">
+        <li><strong>Nepenthes</strong> — pitfall trap (only native Indian pitcher)</li>
+        <li><strong>Drosera</strong> — sticky/flypaper trap</li>
+        <li><strong>Utricularia</strong> — bladder/suction (fastest, &lt;1 ms)</li>
+        <li><strong>Olive Ridley</strong> — arribada at Gahirmatha</li>
+        <li><strong>Dugong</strong> — seagrass-dependent, TN reserve</li>
+        <li><strong>Nicobar Megapode</strong> — mound-incubator, endemic</li>
+      </ul>
+    </div>
+
+    <!-- WIDGET: Data Sources to Bookmark -->
+    <div class="widget">
+      <h4>Data Sources to Bookmark</h4>
+      <a class="chip" href="https://www.iucnredlist.org" target="_blank" rel="noopener">iucnredlist.org — IUCN Red List</a>
+      <a class="chip" href="https://wii.gov.in" target="_blank" rel="noopener">wii.gov.in — Wildlife Institute of India</a>
+      <a class="chip" href="https://moef.gov.in" target="_blank" rel="noopener">moef.gov.in — Ministry of Environment</a>
+      <a class="chip" href="https://cites.org" target="_blank" rel="noopener">cites.org — CITES Appendices</a>
+      <a class="chip" href="https://zsi.gov.in" target="_blank" rel="noopener">zsi.gov.in — Zoological Survey of India</a>
+    </div>
+
+    <!-- WIDGET 6: Quick Navigation -->
+    <div class="widget">
+      <h4>Quick Navigation</h4>
+      <ul style="list-style:none;padding:0;margin:0;">
+        <li style="margin:4px 0;"><a href="#concept" style="font-size:12px;">Conceptual Clarity</a></li>
+        <li style="margin:4px 0;"><a href="#key-bird-species" style="font-size:12px;">Key Bird Species</a></li>
+        <li style="margin:4px 0;"><a href="#conceptual-clarity" style="font-size:12px;">Conceptual Clarity</a></li>
+        <li style="margin:4px 0;"><a href="#key-mammal-species" style="font-size:12px;">Key Mammal Species</a></li>
+        <li style="margin:4px 0;"><a href="#key-aquatic-species" style="font-size:12px;">Key Aquatic Species</a></li>
+        <li style="margin:4px 0;"><a href="#invasive-fauna-recap" style="font-size:12px;">Invasive Fauna Recap</a></li>
+        <li style="margin:4px 0;"><a href="#key-plant-species" style="font-size:12px;">Key Plant Species</a></li>
+        <li style="margin:4px 0;"><a href="#marine-plankton-kelp" style="font-size:12px;">Marine Plankton &amp; Kelp</a></li>
+        <li style="margin:4px 0;"><a href="#current-affairs" style="font-size:12px;">Current Affairs Link</a></li>
+        <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+        <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQ</a></li>
+        <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">15-Min Revision Box</a></li>
+      </ul>
+    </div>
+
+  </div>
+</aside>
+</div>
+</div>

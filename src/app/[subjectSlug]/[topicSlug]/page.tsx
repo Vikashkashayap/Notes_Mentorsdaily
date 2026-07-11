@@ -33,6 +33,10 @@ import { isSecurityTopicId, type SecurityTopicId } from "@/lib/security-notes";
 import { isDisasterTopicId, type DisasterTopicId } from "@/lib/disaster-notes";
 import { isEconomyTopicId, type EconomyTopicId } from "@/lib/economy-notes";
 import {
+  isEnvironmentTopicId,
+  type EnvironmentTopicId,
+} from "@/lib/environment-notes";
+import {
   isGovernanceTopicId,
   type GovernanceTopicId,
 } from "@/lib/governance-notes";
@@ -46,6 +50,8 @@ import { DisasterTopicFooterNav } from "@/components/notes/DisasterTopicFooterNa
 import { DisasterTopicNotesBody } from "@/components/notes/DisasterTopicNotesBody";
 import { EconomyTopicFooterNav } from "@/components/notes/EconomyTopicFooterNav";
 import { EconomyTopicNotesBody } from "@/components/notes/EconomyTopicNotesBody";
+import { EnvironmentTopicFooterNav } from "@/components/notes/EnvironmentTopicFooterNav";
+import { EnvironmentTopicNotesBody } from "@/components/notes/EnvironmentTopicNotesBody";
 import { GovernanceTopicFooterNav } from "@/components/notes/GovernanceTopicFooterNav";
 import { GovernanceTopicNotesBody } from "@/components/notes/GovernanceTopicNotesBody";
 
@@ -106,6 +112,8 @@ export default async function TopicPage({ params }: PageProps) {
   const isSecurity = subjectKey === "security" && isSecurityTopicId(chapter.id);
   const isDisaster = subjectKey === "disaster" && isDisasterTopicId(chapter.id);
   const isEconomy = subjectKey === "economy" && isEconomyTopicId(chapter.id);
+  const isEnvironment =
+    subjectKey === "environment" && isEnvironmentTopicId(chapter.id);
   const isGovernance =
     subjectKey === "governance" && isGovernanceTopicId(chapter.id);
 
@@ -225,6 +233,17 @@ export default async function TopicPage({ params }: PageProps) {
       <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
         <EconomyTopicNotesBody topicId={topicId} />
         <EconomyTopicFooterNav topicId={topicId} />
+        <TopicNotesEnhancements />
+      </TopicPageLayout>
+    );
+  }
+
+  if (isEnvironment) {
+    const topicId = chapter.id as EnvironmentTopicId;
+    return (
+      <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
+        <EnvironmentTopicNotesBody topicId={topicId} />
+        <EnvironmentTopicFooterNav topicId={topicId} />
         <TopicNotesEnhancements />
       </TopicPageLayout>
     );
