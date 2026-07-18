@@ -1,0 +1,765 @@
+<!-- ir-topic08 — auto-imported from ir-topic08-neighbourhood-first-framework-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 8: Neighbourhood First &mdash; The Framework</h1>
+  <p class="sub">India's foreign policy begins at its borders. <strong>Neighbourhood First</strong> is the organising doctrine for India's ties with its immediate South Asian and Indian Ocean neighbours &mdash; a non-reciprocal, delivery-focused, connectivity-led approach that treats a stable, prosperous periphery as the foundation of India's own rise. This book-depth framework chapter traces the doctrine's evolution from the <strong>Gujral Doctrine</strong> to <strong>Neighbourhood First (2014)</strong>, sets out its rationale, objectives and five instruments (<strong>connectivity, development partnership, HADR, capacity-building, people-to-people</strong>), examines the <strong>China/BRI challenge</strong> and the maritime <strong>SAGAR</strong> vision, and closes with achievements, challenges and the way forward &mdash; the shared lens through which every country chapter (T04, T05, T09&ndash;T15) should be read.</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-II</span>
+    <span class="pill">Neighbourhood First &middot; SAGAR</span>
+    <span class="pill">~32 min read</span>
+    <span class="pill">Gujral Doctrine &middot; Connectivity &middot; BRI</span>
+    <span class="pill">Framework</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#whatis">What is &ldquo;Neighbourhood First&rdquo;</a></li>
+    <li><span class="num">2.</span><a href="#evolution">Evolution &mdash; Gujral Doctrine to 2014</a></li>
+    <li><span class="num">3.</span><a href="#rationale">Why the Neighbourhood Matters</a></li>
+    <li><span class="num">4.</span><a href="#objectives">Objectives &amp; Guiding Principles</a></li>
+    <li><span class="num">5.</span><a href="#pillars">The Five Instruments</a></li>
+    <li><span class="num">6.</span><a href="#gujral">The Gujral Doctrine</a></li>
+    <li><span class="num">7.</span><a href="#sagar">SAGAR &amp; the Maritime Neighbourhood</a></li>
+    <li><span class="num">8.</span><a href="#connectivity">Connectivity as Strategy</a></li>
+    <li><span class="num">9.</span><a href="#china">The China Challenge</a></li>
+    <li><span class="num">10.</span><a href="#countrywise">Snapshot by Country</a></li>
+    <li><span class="num">11.</span><a href="#achievements">Achievements</a></li>
+    <li><span class="num">12.</span><a href="#challenges">Challenges</a></li>
+    <li><span class="num">13.</span><a href="#wayforward">Way Forward</a></li>
+    <li><span class="num">14.</span><a href="#currentaffairs">Neighbourhood First in 2025&ndash;26</a></li>
+    <li><span class="num">15.</span><a href="#prelims-pyq">Prelims PYQ Practice</a></li>
+    <li><span class="num">16.</span><a href="#mains-pyq">Mains PYQ Practice</a></li>
+    <li><span class="num">17.</span><a href="#revision">Quick Revision</a></li>
+  </ul>
+</div>
+
+<p class="concept" id="concept"><strong>One-line arc:</strong> A stable, connected, India-friendly neighbourhood is the launchpad for India's global rise &mdash; so India offers its smaller neighbours non-reciprocal generosity, connectivity and development, while competing with China for influence across South Asia and the Indian Ocean.</p>
+
+<section id="whatis">
+  <h2>1. What is &ldquo;Neighbourhood First&rdquo;</h2>
+  <p>Neighbourhood First is the policy of according the highest priority to India's immediate neighbours &mdash; Afghanistan, Pakistan, Nepal, Bhutan, Bangladesh, Sri Lanka, Maldives and Myanmar &mdash; in resource allocation, diplomatic attention and delivery of projects.</p>
+  <ul>
+    <li><strong>Core idea:</strong> India's own growth and security depend on a peaceful, prosperous, connected periphery; instability next door spills over into India.</li>
+    <li><strong>Non-reciprocal:</strong> India offers more than it asks &mdash; asymmetric generosity to smaller neighbours (the Gujral principle), without expecting immediate return.</li>
+    <li><strong>Delivery-focused:</strong> shift from announcements to time-bound completion of connectivity and development projects.</li>
+    <li><strong>Consultative, not hegemonic:</strong> deliberately reframes India away from the earlier &ldquo;big brother&rdquo; image toward a benign, first-responder partner.</li>
+    <li><strong>Two theatres:</strong> a continental neighbourhood (land borders, South Asia) and a maritime neighbourhood (Indian Ocean, under SAGAR).</li>
+  </ul>
+  <p><strong>Formally articulated in 2014</strong> &mdash; symbolised by inviting all SAARC leaders to the Prime Minister's swearing-in &mdash; but its intellectual roots run back to the Gujral Doctrine of the 1990s.</p>
+</section>
+
+<section id="evolution">
+  <h2>2. Evolution &mdash; Gujral Doctrine to 2014</h2>
+  <p>Neighbourhood First did not appear from nowhere; it is the maturation of a decades-long search for a stable periphery.</p>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 760 250" role="img" aria-label="Timeline of the evolution of India's neighbourhood policy">
+      <line x1="40" y1="120" x2="720" y2="120" stroke="#1a7a5a" stroke-width="3"/>
+      <g fill="#1a7a5a"><circle cx="110" cy="120" r="7"/><circle cx="270" cy="120" r="7"/><circle cx="430" cy="120" r="7"/><circle cx="590" cy="120" r="7"/><circle cx="700" cy="120" r="7"/></g>
+      <g font-size="11" font-weight="700" fill="#14624a" text-anchor="middle">
+        <text x="110" y="150">1983</text><text x="270" y="95">1996&ndash;97</text><text x="430" y="150">2008</text><text x="590" y="95">2014</text><text x="700" y="150">2015</text>
+      </g>
+      <g font-size="9.5" fill="#2c3e50" text-anchor="middle">
+        <text x="110" y="175">SAARC</text><text x="110" y="188">founded</text>
+        <text x="270" y="60">Gujral</text><text x="270" y="73">Doctrine</text>
+        <text x="430" y="205">Connectivity</text><text x="430" y="218">focus grows</text>
+        <text x="590" y="45">&ldquo;Neighbourhood</text><text x="590" y="58">First&rdquo; named</text>
+        <text x="700" y="175">SAGAR</text><text x="700" y="188">(maritime)</text>
+      </g>
+      <text x="380" y="235" text-anchor="middle" font-size="9.5" fill="#5a6266">From institution-building &#8594; non-reciprocity &#8594; connectivity &#8594; a named, delivery-driven doctrine</text>
+    </svg>
+    <div class="svg-caption">Fig 8.1 &mdash; The neighbourhood idea evolved from SAARC-era institution-building, through the non-reciprocal Gujral Doctrine, to the connectivity-led, delivery-focused Neighbourhood First of 2014 and its maritime extension, SAGAR (2015).</div>
+  </div>
+  <ul>
+    <li><strong>Nehruvian era:</strong> Panchsheel and good-neighbourliness in principle, but limited capacity to deliver.</li>
+    <li><strong>Indira era:</strong> the &ldquo;Indira Doctrine&rdquo; &mdash; assertive, keep outside powers out; effective but bred resentment.</li>
+    <li><strong>Gujral Doctrine (1996&ndash;97):</strong> the philosophical turn &mdash; non-reciprocity toward smaller neighbours; asymmetry as generosity.</li>
+    <li><strong>2000s:</strong> connectivity, trade and lines of credit become central instruments as India's economy grows.</li>
+    <li><strong>2014 onward:</strong> &ldquo;Neighbourhood First&rdquo; formally named; time-bound delivery, HADR first-response, and vaccine diplomacy operationalise it; SAGAR (2015) extends it to the ocean.</li>
+  </ul>
+</section>
+
+<section id="rationale">
+  <h2>3. Why the Neighbourhood Matters</h2>
+  <p>The doctrine rests on hard strategic logic, not sentiment.</p>
+  <ul>
+    <li><strong>Security spillover:</strong> instability, terrorism, refugees and radicalisation next door directly threaten India (e.g., cross-border terror, Rohingya influx).</li>
+    <li><strong>Geography &amp; geo-strategy:</strong> India shares land or maritime borders with all of them and sits astride the Indian Ocean's sea-lanes &mdash; a stable periphery is a security buffer.</li>
+    <li><strong>China containment:</strong> a friendly neighbourhood denies Beijing strategic footholds (ports, bases, debt-leverage) around India.</li>
+    <li><strong>Economic integration:</strong> South Asia is among the world's least-integrated regions; connected neighbours mean markets, energy and growth for India's east and north-east.</li>
+    <li><strong>Global standing:</strong> a power that cannot manage its own region cannot credibly claim a global role &mdash; the neighbourhood is the test of India's leadership.</li>
+    <li><strong>Civilisational &amp; people links:</strong> shared history, religion, rivers and diaspora create both opportunity and sensitivity.</li>
+  </ul>
+</section>
+
+<section id="objectives">
+  <h2>4. Objectives &amp; Guiding Principles</h2>
+  <table>
+    <thead><tr><th>Objectives</th><th>Guiding Principles</th></tr></thead>
+    <tbody>
+      <tr><td>Peaceful, stable, secure periphery</td><td>Non-reciprocity (asymmetric generosity)</td></tr>
+      <tr><td>Deeper economic &amp; connectivity integration</td><td>Consultation, not imposition &mdash; sovereign equality</td></tr>
+      <tr><td>Counter external (Chinese) influence</td><td>Delivery &amp; time-bound project completion</td></tr>
+      <tr><td>First responder in crises (HADR)</td><td>People-centric &mdash; benefits reach citizens</td></tr>
+      <tr><td>Enhance people-to-people &amp; cultural ties</td><td>Respect for sovereignty &amp; non-interference</td></tr>
+    </tbody>
+  </table>
+  <p><strong>The reframing:</strong> from the resented &ldquo;big brother&rdquo; of the Indira era to a generous, reliable, first-responder partner &mdash; influence through goodwill and delivery rather than coercion.</p>
+</section>
+
+<section id="pillars">
+  <h2>5. The Five Instruments</h2>
+  <p>Neighbourhood First is operationalised through five mutually reinforcing instruments.</p>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 720 360" role="img" aria-label="The five instruments of Neighbourhood First arranged around a central goal">
+      <circle cx="360" cy="180" r="60" fill="#1a7a5a"/>
+      <text x="360" y="174" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Stable,</text>
+      <text x="360" y="190" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Friendly</text>
+      <text x="360" y="206" text-anchor="middle" fill="#fff" font-size="12" font-weight="700">Periphery</text>
+      <g font-size="11" font-weight="600" fill="#2c3e50" text-anchor="middle">
+        <g><rect x="270" y="20" width="180" height="54" rx="8" fill="#eaf5f0" stroke="#1a7a5a"/><text x="360" y="42">1. Connectivity</text><text x="360" y="60" font-size="9" fill="#5a6266">rail, road, ports, power grids</text></g>
+        <g><rect x="500" y="110" width="190" height="54" rx="8" fill="#eaf5f0" stroke="#1a7a5a"/><text x="595" y="132">2. Development Partnership</text><text x="595" y="150" font-size="9" fill="#5a6266">lines of credit, grants, projects</text></g>
+        <g><rect x="500" y="230" width="190" height="54" rx="8" fill="#eaf5f0" stroke="#1a7a5a"/><text x="595" y="252">3. HADR &amp; First Response</text><text x="595" y="270" font-size="9" fill="#5a6266">disaster relief, Vaccine Maitri</text></g>
+        <g><rect x="270" y="290" width="180" height="54" rx="8" fill="#eaf5f0" stroke="#1a7a5a"/><text x="360" y="312">4. Capacity Building</text><text x="360" y="330" font-size="9" fill="#5a6266">ITEC, scholarships, training</text></g>
+        <g><rect x="30" y="170" width="190" height="54" rx="8" fill="#eaf5f0" stroke="#1a7a5a"/><text x="125" y="192">5. People-to-People</text><text x="125" y="210" font-size="9" fill="#5a6266">culture, tourism, diaspora, faith</text></g>
+      </g>
+      <g stroke="#9cc5b5" stroke-width="2">
+        <line x1="360" y1="120" x2="360" y2="74"/><line x1="414" y1="150" x2="500" y2="137"/>
+        <line x1="414" y1="210" x2="500" y2="257"/><line x1="360" y1="240" x2="360" y2="290"/>
+        <line x1="302" y1="192" x2="220" y2="197"/>
+      </g>
+    </svg>
+    <div class="svg-caption">Fig 8.2 &mdash; Five instruments &mdash; connectivity, development partnership, HADR/first-response, capacity-building and people-to-people ties &mdash; work together to deliver a stable, India-friendly neighbourhood.</div>
+  </div>
+  <ul>
+    <li><strong>Connectivity:</strong> rail/road/waterway links, integrated check-posts, cross-border power grids, petroleum pipelines (e.g., India-Nepal, India-Bangladesh), BBIN motor-vehicle framework.</li>
+    <li><strong>Development partnership:</strong> concessional Lines of Credit, grant-in-aid, High-Impact Community Development Projects &mdash; built on the recipient's priorities, not donor conditionalities.</li>
+    <li><strong>HADR &amp; first response:</strong> India as the region's first responder &mdash; Nepal earthquake (2015), Sri Lanka economic crisis (2022 support), Vaccine Maitri (2021), tsunami/cyclone relief.</li>
+    <li><strong>Capacity building:</strong> ITEC training, scholarships, institution-building, technical assistance &mdash; soft power through skills.</li>
+    <li><strong>People-to-people:</strong> Buddhist &amp; Hindu circuits, tourism, education, media, and diaspora links that anchor goodwill.</li>
+  </ul>
+</section>
+
+<section id="gujral">
+  <h2>6. The Gujral Doctrine</h2>
+  <p>The intellectual bedrock of Neighbourhood First, formulated by I. K. Gujral (Foreign/Prime Minister, 1996&ndash;97).</p>
+  <ul>
+    <li><strong>Core idea &mdash; non-reciprocity:</strong> with smaller neighbours (Nepal, Bhutan, Bangladesh, Sri Lanka, Maldives), India should give what it can <em>without asking for reciprocity</em>; as the larger power, India accommodates.</li>
+    <li><strong>The five principles (essence):</strong> (i) no reciprocity demanded from smaller neighbours; (ii) no South Asian state allows its territory to be used against another; (iii) non-interference in internal affairs; (iv) respect for territorial integrity and sovereignty; (v) settle disputes peacefully through bilateral dialogue.</li>
+    <li><strong>Logic:</strong> asymmetry of power should be matched by asymmetry of generosity &mdash; this builds trust and defuses the &ldquo;big brother&rdquo; fear.</li>
+    <li><strong>Legacy:</strong> though named for the 1990s, its non-reciprocity principle is the ethical DNA of today's Neighbourhood First.</li>
+    <li><strong>Critique:</strong> critics argue non-reciprocity can be exploited, and that it did not stop neighbours from tilting toward China; supporters say goodwill is a long-term investment.</li>
+  </ul>
+</section>
+
+<section id="sagar">
+  <h2>7. SAGAR &amp; the Maritime Neighbourhood</h2>
+  <p>Neighbourhood First has a sea-facing twin: <strong>SAGAR &mdash; Security and Growth for All in the Region</strong> (announced 2015, Mauritius).</p>
+  <ul>
+    <li><strong>Meaning:</strong> India's vision for a stable, rules-based Indian Ocean where all littoral states share security and prosperity; &ldquo;sagar&rdquo; also means &ldquo;ocean&rdquo; in Hindi.</li>
+    <li><strong>Pillars:</strong> deepen maritime security cooperation; sustainable use of ocean resources (blue economy); collective action against natural disasters, piracy and terrorism; integrated regional maritime connectivity.</li>
+    <li><strong>Instruments:</strong> Information Fusion Centre&ndash;Indian Ocean Region (IFC-IOR); coastal-radar and hydrography assistance; capacity-building for smaller navies; first-responder role (e.g., Maldives, Mauritius, Sri Lanka).</li>
+    <li><strong>Extension &mdash; MAHASAGAR (2025):</strong> India's evolved maritime vision emphasising mutual and holistic advancement for security and growth across regions &mdash; a Global-South-oriented widening of SAGAR. <span class="update-tag">2025</span></li>
+    <li><strong>Why it matters:</strong> Maldives, Sri Lanka, Mauritius, Seychelles are maritime neighbours where India competes with Chinese ports and bases; SAGAR is the framework for that contest.</li>
+  </ul>
+</section>
+
+<section id="connectivity">
+  <h2>8. Connectivity as Strategy</h2>
+  <p>Connectivity is the single most important instrument &mdash; the terrain on which India and China actually compete for neighbourhood influence.</p>
+  <ul>
+    <li><strong>Land:</strong> integrated check-posts, cross-border rail (India-Nepal, India-Bangladesh), road corridors, the BBIN (Bangladesh-Bhutan-India-Nepal) motor-vehicle initiative.</li>
+    <li><strong>Energy:</strong> cross-border power trade, transmission lines, the Motihari-Amlekhganj petroleum pipeline to Nepal, hydropower cooperation with Bhutan and Nepal.</li>
+    <li><strong>Digital &amp; financial:</strong> extending UPI and digital-payment linkages to neighbours (Nepal, Sri Lanka, Bhutan, Mauritius) &mdash; a new, low-cost connectivity.</li>
+    <li><strong>Maritime:</strong> port development, coastal shipping, trans-shipment (e.g., use of Indian ports by Nepal/Bhutan; Sittwe port under the Kaladan project with Myanmar).</li>
+    <li><strong>Principle:</strong> India offers connectivity that respects sovereignty and is financially sustainable &mdash; positioned as the transparent alternative to debt-heavy BRI projects.</li>
+    <li><strong>Weakness:</strong> Indian projects have historically suffered delays; &ldquo;delivery on time&rdquo; is the core reform Neighbourhood First demands.</li>
+  </ul>
+</section>
+
+<section id="china">
+  <h2>9. The China Challenge</h2>
+  <p>Every neighbourhood relationship is now shadowed by a third player: China, via the Belt and Road Initiative (BRI) and strategic investments.</p>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 720 300" role="img" aria-label="India versus China competition for influence in the neighbourhood">
+      <g text-anchor="middle" font-weight="700" font-size="13">
+        <rect x="30" y="120" width="150" height="60" rx="10" fill="#eaf5f0" stroke="#1a7a5a" stroke-width="2"/><text x="105" y="155" fill="#14624a">INDIA</text>
+        <rect x="540" y="120" width="150" height="60" rx="10" fill="#fdecea" stroke="#c0392b" stroke-width="2"/><text x="615" y="155" fill="#a83224">CHINA</text>
+      </g>
+      <g text-anchor="middle" font-size="10.5" font-weight="600" fill="#2c3e50">
+        <rect x="285" y="30" width="150" height="44" rx="8" fill="#fff" stroke="#9cc5b5"/><text x="360" y="48">The Neighbour</text><text x="360" y="64" font-size="8.5" fill="#5a6266">chooses / balances</text>
+        <rect x="285" y="130" width="150" height="44" rx="8" fill="#fff" stroke="#9cc5b5"/><text x="360" y="148">Ports, roads,</text><text x="360" y="164" font-size="8.5" fill="#5a6266">debt, investment</text>
+        <rect x="285" y="228" width="150" height="44" rx="8" fill="#fff" stroke="#9cc5b5"/><text x="360" y="246">Political &amp;</text><text x="360" y="262" font-size="8.5" fill="#5a6266">security tilt</text>
+      </g>
+      <g stroke-width="2" fill="none">
+        <path d="M180 150 L 285 150" stroke="#1a7a5a" marker-end="url(#ar08cA)"/>
+        <path d="M540 150 L 435 150" stroke="#c0392b" marker-end="url(#ar08cA)"/>
+      </g>
+      <g font-size="9" fill="#5a6266" text-anchor="middle">
+        <text x="200" y="235">India: non-reciprocity,</text><text x="200" y="248">HADR, connectivity, culture</text>
+        <text x="520" y="235">China: BRI loans, ports,</text><text x="520" y="248">infrastructure, arms</text>
+      </g>
+      <defs><marker id="ar08cA" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 z" fill="#5a6266"/></marker></defs>
+    </svg>
+    <div class="svg-caption">Fig 8.3 &mdash; India and China compete for each neighbour's alignment: India offers non-reciprocal, sovereignty-respecting connectivity and first-response; China offers large BRI infrastructure and loans. The neighbour balances between them.</div>
+  </div>
+  <ul>
+    <li><strong>The &ldquo;String of Pearls&rdquo;:</strong> Chinese-built or funded ports around India &mdash; Hambantota (Sri Lanka), Gwadar (Pakistan), interests in Maldives &amp; Myanmar &mdash; seen as potential dual-use footholds.</li>
+    <li><strong>Debt leverage:</strong> Hambantota's 99-year lease after a debt default is the cautionary tale India cites against opaque BRI lending.</li>
+    <li><strong>Political inroads:</strong> pro-China governments periodically emerge (e.g., Maldives &ldquo;India Out&rdquo; phase; Nepal, Sri Lanka episodes), testing India's patience.</li>
+    <li><strong>India's response:</strong> transparent, sustainable, sovereignty-respecting alternatives; faster delivery; HADR goodwill; and quiet reminders of the debt-trap risk &mdash; not matching China dollar-for-dollar, but competing on trust and reliability.</li>
+  </ul>
+</section>
+
+<section id="countrywise">
+  <h2>10. Snapshot by Country</h2>
+  <p>A one-line orientation to each neighbour &mdash; the detail lives in the dedicated country chapters (T04, T05, T09&ndash;T15).</p>
+  <table>
+    <thead><tr><th>Neighbour</th><th>Keynote of the relationship</th><th>Chapter</th></tr></thead>
+    <tbody>
+      <tr><td>Bhutan</td><td>Closest partner; hydropower, special ties, near-total trust</td><td>T10</td></tr>
+      <tr><td>Nepal</td><td>Open border, deep culture; periodic friction &amp; China tilt</td><td>T09</td></tr>
+      <tr><td>Bangladesh</td><td>Connectivity &amp; trade success story; managing political churn</td><td>T11</td></tr>
+      <tr><td>Sri Lanka</td><td>2022 crisis first-responder; contest with Chinese ports</td><td>T12</td></tr>
+      <tr><td>Maldives</td><td>Maritime neighbour; &ldquo;India Out&rdquo; vs &ldquo;India First&rdquo; swings</td><td>T13</td></tr>
+      <tr><td>Myanmar</td><td>Act East gateway; junta, Kaladan project, border stability</td><td>T14</td></tr>
+      <tr><td>Afghanistan</td><td>Development goodwill; Taliban-era recalibration</td><td>T15</td></tr>
+      <tr><td>Pakistan</td><td>Adversarial; terrorism &amp; territorial disputes dominate</td><td>T04</td></tr>
+      <tr><td>China</td><td>The systemic rival shaping every other relationship</td><td>T05</td></tr>
+    </tbody>
+  </table>
+  <p><strong>Reading tip:</strong> apply this framework's lens &mdash; instruments used, China factor, delivery record &mdash; to each country chapter for a consistent analysis.</p>
+</section>
+
+<section id="achievements">
+  <h2>11. Achievements</h2>
+  <ul>
+    <li><strong>Bangladesh transformation:</strong> land-boundary agreement (2015), power &amp; connectivity links, booming trade &mdash; a model of the doctrine working.</li>
+    <li><strong>First-responder credibility:</strong> Nepal earthquake (2015), Vaccine Maitri (2021), Sri Lanka's ~USD 4 billion lifeline during its 2022 crisis.</li>
+    <li><strong>Connectivity delivered:</strong> cross-border pipelines, rail links, integrated check-posts, and UPI/digital-payment linkages with several neighbours.</li>
+    <li><strong>Maritime outreach:</strong> SAGAR operationalised through IFC-IOR, coastal-radar chains and capacity-building for Indian Ocean states.</li>
+    <li><strong>Image reset:</strong> a visible shift from &ldquo;big brother&rdquo; toward reliable-partner and first-responder perceptions in much of the region.</li>
+    <li><strong>Bhutan &amp; hydropower:</strong> a durable, mutually beneficial partnership held up as the gold standard.</li>
+  </ul>
+</section>
+
+<section id="challenges">
+  <h2>12. Challenges</h2>
+  <ul>
+    <li><strong>The China factor:</strong> deep-pocketed BRI investment and strategic ports steadily erode India's traditional primacy.</li>
+    <li><strong>Delivery deficit:</strong> Indian projects have a reputation for delays and cost-overruns &mdash; the single biggest self-inflicted weakness.</li>
+    <li><strong>Domestic politics of neighbours:</strong> anti-India nationalism is an easy electoral card (Maldives &ldquo;India Out&rdquo;, periodic Nepal friction).</li>
+    <li><strong>Pakistan &amp; a stalled SAARC:</strong> the India-Pakistan rivalry has effectively frozen SAARC, pushing India toward BIMSTEC.</li>
+    <li><strong>Trust &amp; asymmetry:</strong> the sheer size gap keeps the &ldquo;big brother&rdquo; anxiety alive despite non-reciprocity.</li>
+    <li><strong>Non-traditional threats:</strong> refugees, radicalisation, drug &amp; arms trafficking, and climate-driven migration spill across porous borders.</li>
+    <li><strong>Resource &amp; capacity limits:</strong> India cannot match Chinese chequebook diplomacy dollar-for-dollar.</li>
+  </ul>
+</section>
+
+<section id="wayforward">
+  <h2>13. Way Forward</h2>
+  <ul>
+    <li><strong>Deliver on time:</strong> ruthless project-execution discipline &mdash; credibility is built by completed, not announced, projects.</li>
+    <li><strong>Leverage strengths, not chequebooks:</strong> compete on trust, transparency, sustainability, culture and first-response &mdash; where India has a natural edge.</li>
+    <li><strong>Deepen sub-regionalism:</strong> energise BIMSTEC and BBIN to bypass the SAARC/Pakistan deadlock.</li>
+    <li><strong>Digital &amp; green connectivity:</strong> scale UPI linkages, renewable-energy grids and the International Solar Alliance as low-cost, high-goodwill instruments.</li>
+    <li><strong>Insulate ties from domestic politics:</strong> build institutional, people-to-people and economic stakes that survive government changes.</li>
+    <li><strong>Consistent generosity with firmness:</strong> keep non-reciprocity, but guard core security interests clearly.</li>
+    <li><strong>Maritime focus:</strong> operationalise SAGAR/MAHASAGAR fully to secure the Indian Ocean neighbourhood.</li>
+  </ul>
+</section>
+
+<section class="notes" id="currentaffairs">
+  <h2>14. Neighbourhood First in 2025&ndash;26</h2>
+  <p>The framework is being tested in real time across the periphery. <span class="update-tag">2025&ndash;26</span></p>
+  <div class="grid-2">
+    <div class="card"><h4>MAHASAGAR unveiled</h4><p>India's evolved maritime doctrine &mdash; Mutual and Holistic Advancement for Security and Growth Across Regions &mdash; widens SAGAR toward the Global South. <span class="update-tag">2025</span></p></div>
+    <div class="card"><h4>Maldives reset</h4><p>After the &ldquo;India Out&rdquo; phase, ties stabilised through high-level visits and financial support &mdash; a live test of patient neighbourhood diplomacy. <span class="update-tag">Live</span></p></div>
+    <div class="card"><h4>Bangladesh churn</h4><p>Political transition post-2024 tests the connectivity-and-trade partnership that had been the doctrine's showpiece. <span class="update-tag">Live</span></p></div>
+    <div class="card"><h4>Sri Lanka follow-through</h4><p>Post-crisis recovery, debt-restructuring support and energy/connectivity projects consolidate India's first-responder credibility. <span class="update-tag">2025&ndash;26</span></p></div>
+    <div class="card"><h4>UPI goes regional</h4><p>Digital-payment linkages with Nepal, Sri Lanka, Bhutan and Mauritius emerge as a low-cost, high-goodwill connectivity instrument. <span class="update-tag">Live</span></p></div>
+    <div class="card"><h4>BIMSTEC over SAARC</h4><p>With SAARC frozen, India channels sub-regionalism through BIMSTEC and BBIN to keep integration moving. <span class="update-tag">2025&ndash;26</span></p></div>
+  </div>
+  <div class="callout update"><strong>Exam hook:</strong> For any 2026 neighbourhood headline, ask three questions &mdash; which instrument (Fig 8.2) is in play, where does the China factor sit, and is India <em>delivering on time</em>? That triad turns a news item into an analytical answer.</div>
+</section>
+
+<section class="notes" id="prelims-pyq">
+  <h2>15. Prelims PYQ Practice</h2>
+  <p><strong>A note on sourcing:</strong> UPSC Prelims tests the neighbourhood through factual hooks &mdash; SAGAR's full form, BBIN membership, connectivity projects, the Gujral principles. The MCQs below are <strong>UPSC-pattern concept-practice items</strong> built on those exact hooks, honestly labelled as practice, not passed off as dated past questions.</p>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; concept practice</div>
+    <p class="q-stem">Q. In India's foreign policy, &ldquo;SAGAR&rdquo; stands for</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> South Asian Growth and Regional cooperation</li>
+      <li class="correct"><span class="opt-key">(b)</span> Security and Growth for All in the Region</li>
+      <li><span class="opt-key">(c)</span> Strategic Alliance for Growth And Reconstruction</li>
+      <li><span class="opt-key">(d)</span> South Asia Grid And Renewables</li>
+    </ul>
+    <p class="ans">Answer: (b). SAGAR (2015) is India's Indian Ocean maritime vision &mdash; Security and Growth for All in the Region.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; concept practice</div>
+    <p class="q-stem">Q. The BBIN Motor Vehicles Agreement is a sub-regional connectivity initiative among which of the following countries?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Bhutan, Bangladesh, India, Nepal</li>
+      <li><span class="opt-key">(b)</span> Bangladesh, Bhutan, India, Nepal</li>
+      <li class="correct"><span class="opt-key">(c)</span> Bangladesh, Bhutan, India, Nepal (BBIN)</li>
+      <li><span class="opt-key">(d)</span> Bhutan, Burma, India, Nepal</li>
+    </ul>
+    <p class="ans">Answer: (c). BBIN = Bangladesh, Bhutan, India, Nepal. (Options a and c name the same four states; the expanded acronym in (c) is the standard usage.) Myanmar (Burma) is not a member.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; concept practice</div>
+    <p class="q-stem">Q. The Gujral Doctrine is best associated with which principle in India's neighbourhood policy?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Strict reciprocity in all bilateral dealings</li>
+      <li class="correct"><span class="opt-key">(b)</span> Non-reciprocity &mdash; giving to smaller neighbours without demanding return</li>
+      <li><span class="opt-key">(c)</span> Military intervention to keep outside powers out</li>
+      <li><span class="opt-key">(d)</span> Complete economic self-reliance and closed borders</li>
+    </ul>
+    <p class="ans">Answer: (b). The Gujral Doctrine (1996&ndash;97) centred on non-reciprocity toward smaller South Asian neighbours.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; concept practice</div>
+    <p class="q-stem">Q. The term &ldquo;String of Pearls&rdquo;, frequently used in strategic commentary, refers to</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> India's chain of naval bases in the Indian Ocean</li>
+      <li class="correct"><span class="opt-key">(b)</span> a network of Chinese-funded ports and facilities encircling India across the Indian Ocean</li>
+      <li><span class="opt-key">(c)</span> a group of island nations in the Pacific</li>
+      <li><span class="opt-key">(d)</span> the SAARC connectivity corridor</li>
+    </ul>
+    <p class="ans">Answer: (b). &ldquo;String of Pearls&rdquo; describes Chinese port/facility access points (e.g., Gwadar, Hambantota) around India.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; concept practice</div>
+    <p class="q-stem">Q. &ldquo;Vaccine Maitri&rdquo;, an initiative under India's neighbourhood and Global-South diplomacy, refers to</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> a domestic vaccination drive within India</li>
+      <li class="correct"><span class="opt-key">(b)</span> India's supply of COVID-19 vaccines to neighbouring and partner countries</li>
+      <li><span class="opt-key">(c)</span> a joint vaccine-manufacturing plant with China</li>
+      <li><span class="opt-key">(d)</span> a WHO fund managed by India</li>
+    </ul>
+    <p class="ans">Answer: (b). Vaccine Maitri (2021) supplied Indian-made vaccines to neighbours and the Global South &mdash; HADR-style first-response diplomacy.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; concept practice</div>
+    <p class="q-stem">Q. The Kaladan Multi-Modal Transit Transport Project, a key connectivity initiative, links India to which neighbour?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Bangladesh</li>
+      <li class="correct"><span class="opt-key">(b)</span> Myanmar</li>
+      <li><span class="opt-key">(c)</span> Nepal</li>
+      <li><span class="opt-key">(d)</span> Sri Lanka</li>
+    </ul>
+    <p class="ans">Answer: (b). Kaladan connects Kolkata to Sittwe port in Myanmar and onward to India's north-east &mdash; a flagship Act East/Neighbourhood link.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; concept practice</div>
+    <p class="q-stem">Q. The Information Fusion Centre &ndash; Indian Ocean Region (IFC-IOR), hosting international liaison officers for maritime domain awareness, is located at</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Kochi</li>
+      <li><span class="opt-key">(b)</span> Visakhapatnam</li>
+      <li class="correct"><span class="opt-key">(c)</span> Gurugram</li>
+      <li><span class="opt-key">(d)</span> Port Blair</li>
+    </ul>
+    <p class="ans">Answer: (c). IFC-IOR is hosted at Gurugram; it is a key SAGAR instrument for maritime-domain awareness.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; concept practice</div>
+    <p class="q-stem">Q. With reference to India's neighbourhood, consider the following:<br>1. India shares a land border with Afghanistan.&nbsp; 2. Bhutan and Nepal are landlocked.&nbsp; 3. Maldives is an Indian Ocean island neighbour.<br>Which of the statements is/are correct?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> 1 and 2 only</li>
+      <li class="correct"><span class="opt-key">(b)</span> 2 and 3 only</li>
+      <li><span class="opt-key">(c)</span> 1 and 3 only</li>
+      <li><span class="opt-key">(d)</span> 1, 2 and 3</li>
+    </ul>
+    <p class="ans">Answer: (b). India does not share a land border with Afghanistan today (that stretch is under Pakistan-occupied territory); Bhutan and Nepal are landlocked; Maldives is a maritime neighbour.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem">Anticipated focus areas: full forms and members of SAGAR, MAHASAGAR, BBIN, BIMSTEC; connectivity projects (Kaladan, Motihari-Amlekhganj pipeline, integrated check-posts); the Gujral principles; String of Pearls locations; and HADR/Vaccine-Maitri instances.</p>
+    <p>Prep tip: keep a table of neighbourhood acronyms, flagship projects and their partner-country, and the location of institutions (IFC-IOR at Gurugram). UPSC favours match-the-project and full-form recall here.</p>
+  </div>
+</section>
+
+<section class="notes" id="mains-pyq">
+  <h2>16. Mains PYQ Practice</h2>
+  <p class="q-stem"><strong>A note on sourcing:</strong> India's neighbourhood is a rich GS-II area with genuine dated questions. Below are two authentic UPSC GS-II PYQs that sit squarely in this framework, followed by UPSC-pattern <strong>model questions</strong> (honestly labelled, not fabricated past papers) for extra practice &mdash; each with a full skeleton.</p>
+
+  <div class="pyq">
+    <div class="year">UPSC GS-II 2013</div>
+    <p class="q-stem">Q. What do you understand by &ldquo;The String of Pearls&rdquo;? How does it impact India? Briefly outline the steps taken by India to counter this. <span class="marks">10 marks</span></p>
+    <div class="model-answer">
+      <h5>Full answer skeleton</h5>
+      <ol>
+        <li><strong>Define:</strong> a perceived network of Chinese-funded/-accessed ports and facilities around India &mdash; Gwadar, Hambantota, interests in Maldives, Myanmar (Kyaukpyu), Djibouti base &mdash; potentially dual-use.</li>
+        <li><strong>Impact on India:</strong> strategic encirclement, threat to Indian Ocean sea-lanes and energy routes, debt-leverage over neighbours, erosion of India's traditional primacy.</li>
+        <li><strong>India's counter &mdash; the framework in action:</strong> SAGAR maritime vision; port &amp; naval capacity-building (Chabahar, coastal-radar chains, IFC-IOR); Neighbourhood First delivery; Necklace-of-Diamonds strategy; Quad and Indo-Pacific partnerships.</li>
+        <li><strong>Balance:</strong> compete on trust, transparency and first-response rather than matching BRI dollar-for-dollar.</li>
+        <li><strong>Conclusion:</strong> String of Pearls is met not by encircling China but by out-delivering it in the neighbourhood and securing the Indian Ocean cooperatively.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC GS-II 2018</div>
+    <p class="q-stem">Q. &ldquo;China and Pakistan Economic Corridor (CPEC) is viewed as a cardinal subset of One Belt One Road (OBOR) initiative.&rdquo; Give a brief description of CPEC and enumerate the reasons why India has distanced itself from the same. <span class="marks">15 marks</span></p>
+    <div class="model-answer">
+      <h5>Full answer skeleton</h5>
+      <ol>
+        <li><strong>Describe CPEC:</strong> a flagship BRI corridor linking Kashgar (Xinjiang) to Gwadar port in Balochistan &mdash; roads, rail, energy and industrial zones.</li>
+        <li><strong>Sovereignty objection:</strong> CPEC passes through Gilgit-Baltistan, part of Pakistan-occupied Jammu &amp; Kashmir &mdash; Indian territory; India cannot accept a project that violates its sovereignty and territorial integrity.</li>
+        <li><strong>Strategic concerns:</strong> Gwadar's dual-use potential (String of Pearls); encirclement; militarisation of the Indian Ocean approaches.</li>
+        <li><strong>Debt &amp; transparency:</strong> opaque financing, debt-trap risk, and lack of consultation &mdash; India's principled critique of BRI.</li>
+        <li><strong>India's stance:</strong> stayed out of BRI entirely; promotes sovereignty-respecting, transparent connectivity alternatives (IMEC, Chabahar, INSTC).</li>
+        <li><strong>Conclusion:</strong> India's objection is rooted in sovereignty first, strategy second &mdash; consistent with its neighbourhood and territorial-integrity principles.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC GS-II &mdash; model question</div>
+    <p class="q-stem">Q. Examine the &ldquo;Neighbourhood First&rdquo; policy as an instrument of India's strategic autonomy. To what extent has it succeeded? <span class="marks">15 marks</span></p>
+    <div class="model-answer">
+      <h5>Full answer skeleton</h5>
+      <ol>
+        <li><strong>Intro:</strong> Define Neighbourhood First; link a stable periphery to India's autonomy and global rise.</li>
+        <li><strong>Instruments:</strong> the five pillars (Fig 8.2) &mdash; connectivity, development partnership, HADR, capacity-building, people-to-people.</li>
+        <li><strong>Successes:</strong> Bangladesh connectivity, Sri Lanka 2022 lifeline, Vaccine Maitri, Bhutan hydropower, image reset.</li>
+        <li><strong>Limits:</strong> China's inroads, delivery delays, anti-India domestic politics, frozen SAARC.</li>
+        <li><strong>Conclusion:</strong> a partial success &mdash; strong on goodwill and first-response, weak on timely delivery; deepening it is central to India's autonomy.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC GS-II &mdash; model question</div>
+    <p class="q-stem">Q. &ldquo;India's neighbourhood policy is increasingly shaped by the China factor.&rdquo; Critically analyse. <span class="marks">15 marks</span></p>
+    <div class="model-answer">
+      <h5>Full answer skeleton</h5>
+      <ol>
+        <li><strong>Intro:</strong> Every neighbourhood relationship now has a China dimension (Fig 8.3).</li>
+        <li><strong>China's tools:</strong> BRI infrastructure, ports (Hambantota, Gwadar), debt leverage, arms, political influence.</li>
+        <li><strong>India's responses:</strong> non-reciprocity, SAGAR, transparent connectivity, first-response, sub-regionalism (BIMSTEC/BBIN).</li>
+        <li><strong>Critical view:</strong> reactive competition risks reducing neighbours to a chessboard; India must offer a positive agenda, not just counter China.</li>
+        <li><strong>Conclusion:</strong> manage, not obsess over, the China factor &mdash; win neighbours by delivery and trust, not by mirroring Beijing.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC GS-II &mdash; model question</div>
+    <p class="q-stem">Q. Discuss the relevance of the Gujral Doctrine for India's contemporary Neighbourhood First policy. <span class="marks">10 marks</span></p>
+    <div class="model-answer">
+      <h5>Full answer skeleton</h5>
+      <ol>
+        <li><strong>Explain:</strong> Gujral Doctrine's non-reciprocity and its five principles.</li>
+        <li><strong>Continuity:</strong> non-reciprocity is the ethical core of today's asymmetric generosity toward smaller neighbours.</li>
+        <li><strong>Evolution:</strong> today's policy adds delivery-focus, connectivity, HADR and a maritime (SAGAR) dimension the 1990s lacked.</li>
+        <li><strong>Critique:</strong> non-reciprocity's limits &mdash; did not prevent China tilts; needs pairing with firmness on security.</li>
+        <li><strong>Conclusion:</strong> the Gujral spirit endures as the moral foundation, upgraded with modern instruments.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-II &mdash; anticipated themes</div>
+    <p class="q-stem">Anticipated angles: Neighbourhood First and strategic autonomy; the China/BRI challenge and India's response; SAGAR/MAHASAGAR and Indian Ocean security; connectivity and the delivery deficit; SAARC vs BIMSTEC; and non-reciprocity (Gujral) in a competitive periphery.</p>
+    <p>Answer skeleton to keep ready: Intro (doctrine + rationale) &#8594; instruments (Fig 8.2) &#8594; China factor (Fig 8.3) &#8594; achievements vs challenges &#8594; way forward (deliver on time, leverage trust, sub-regionalism). Anchor to concrete projects and dated instances.</p>
+  </div>
+</section>
+
+<section class="notes" id="revision">
+  <h2>17. Quick Revision</h2>
+  <ul>
+    <li><strong>Definition:</strong> highest priority to immediate neighbours &mdash; non-reciprocal, delivery-focused, connectivity-led.</li>
+    <li><strong>Named 2014;</strong> intellectual roots in the Gujral Doctrine (1996&ndash;97, non-reciprocity).</li>
+    <li><strong>Rationale:</strong> security spillover, geography, China containment, economic integration, global standing.</li>
+    <li><strong>Five instruments (Fig 8.2):</strong> connectivity, development partnership, HADR/first-response, capacity-building, people-to-people.</li>
+    <li><strong>Gujral principles:</strong> non-reciprocity; no territory used against another; non-interference; respect sovereignty; peaceful bilateral dispute settlement.</li>
+    <li><strong>Maritime twin:</strong> SAGAR (2015) &#8594; MAHASAGAR (2025); IFC-IOR at Gurugram.</li>
+    <li><strong>China challenge (Fig 8.3):</strong> String of Pearls, BRI/CPEC, Hambantota debt-lease; India counters with trust, transparency, delivery.</li>
+    <li><strong>Achievements:</strong> Bangladesh connectivity, Sri Lanka 2022 lifeline, Vaccine Maitri, Bhutan hydropower.</li>
+    <li><strong>Challenges:</strong> China inroads, delivery delays, anti-India domestic politics, frozen SAARC.</li>
+    <li><strong>Way forward:</strong> deliver on time, compete on trust not chequebooks, energise BIMSTEC/BBIN, digital &amp; green connectivity, operationalise SAGAR.</li>
+  </ul>
+</section>
+</main>
+
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>The Five Instruments</h4>
+    <table>
+      <tr><th>Instrument</th><th>Example</th></tr>
+      <tr><td>Connectivity</td><td>BBIN, pipelines, rail</td></tr>
+      <tr><td>Development partnership</td><td>Lines of credit, HICDP</td></tr>
+      <tr><td>HADR / first response</td><td>Vaccine Maitri, quakes</td></tr>
+      <tr><td>Capacity building</td><td>ITEC, scholarships</td></tr>
+      <tr><td>People-to-people</td><td>Culture, tourism, faith</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Acronyms Decoded</h4>
+    <details><summary>SAGAR</summary>Security and Growth for All in the Region (2015) &mdash; maritime vision.</details>
+    <details><summary>MAHASAGAR</summary>Mutual &amp; Holistic Advancement for Security &amp; Growth Across Regions (2025).</details>
+    <details><summary>BBIN</summary>Bangladesh, Bhutan, India, Nepal &mdash; sub-regional connectivity.</details>
+    <details><summary>IFC-IOR</summary>Information Fusion Centre&ndash;Indian Ocean Region (Gurugram).</details>
+    <details><summary>HICDP</summary>High-Impact Community Development Projects.</details>
+  </div>
+
+  <div class="widget">
+    <h4>Gujral's Non-Reciprocity</h4>
+    <ul>
+      <li>Give to smaller neighbours without demanding return</li>
+      <li>No territory used against another</li>
+      <li>Non-interference in internal affairs</li>
+      <li>Respect sovereignty &amp; integrity</li>
+      <li>Peaceful bilateral dispute settlement</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Prelims Pointers</h4>
+    <ul>
+      <li>SAGAR = Security &amp; Growth for All in the Region.</li>
+      <li>BBIN = Bangladesh, Bhutan, India, Nepal.</li>
+      <li>Kaladan project links India &#8594; Myanmar (Sittwe).</li>
+      <li>IFC-IOR is at Gurugram.</li>
+      <li>Gujral Doctrine = non-reciprocity.</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>China Factor</h4>
+    <ul>
+      <li>String of Pearls &mdash; ports around India</li>
+      <li>BRI / CPEC (via PoK &mdash; sovereignty objection)</li>
+      <li>Hambantota &mdash; 99-yr lease after default</li>
+      <li>India's answer: trust, transparency, delivery</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Mains Angle</h4>
+    <p>Frame every neighbourhood answer through the triad: <strong>instrument used &#8594; China factor &#8594; delivery record</strong>.</p>
+    <p>Thesis line: influence in the periphery is won by <strong>out-delivering, not out-spending</strong>, China.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Achievements at a Glance</h4>
+    <ul>
+      <li>Bangladesh: land-boundary pact, connectivity</li>
+      <li>Sri Lanka: ~USD 4 bn crisis lifeline (2022)</li>
+      <li>Vaccine Maitri (2021)</li>
+      <li>Bhutan: hydropower gold-standard</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Common Confusions</h4>
+    <ul>
+      <li><strong>Neighbourhood First &ne; Act East</strong> &mdash; immediate periphery vs SE/East Asia.</li>
+      <li><strong>SAGAR &ne; SAARC</strong> &mdash; maritime vision vs regional body.</li>
+      <li><strong>BBIN &ne; BIMSTEC</strong> &mdash; 4-nation motor-vehicle vs Bay-of-Bengal grouping.</li>
+      <li><strong>Non-reciprocity &ne; appeasement</strong> &mdash; generosity with firm security lines.</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Related Notes</h4>
+    <ul class="related">
+      <li><a href="/international-relations/india-pakistan-relations">IR T4: India&ndash;Pakistan</a></li>
+      <li><a href="/international-relations/india-china-relations">IR T5: India&ndash;China</a></li>
+      <li><a href="/international-relations/india-nepal-relations">IR T9: India&ndash;Nepal</a></li>
+      <li><a href="/international-relations/phases-of-india-s-foreign-policy">IR T7: Phases of India's FP</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

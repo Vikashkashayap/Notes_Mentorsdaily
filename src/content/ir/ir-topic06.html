@@ -1,0 +1,931 @@
+<!-- ir-topic06 — auto-imported from ir-topic06-ir-theory-core-concepts-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded header.topnav,
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded nav.breadcrumb,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .hero,
+.notes-topic-embedded section.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 6: IR Theory &amp; Core Concepts</h1>
+  <p class="sub">The conceptual grammar of International Relations &mdash; the vocabulary and lenses every later chapter silently assumes. This book-depth prelude covers the building blocks (<strong>State, Nation, Nation-State, sovereignty</strong> and the <strong>Westphalian order</strong>), the anatomy of <strong>power</strong> (hard, soft, smart, sharp), <strong>balance of power</strong> &amp; polarity, and the four great theoretical traditions &mdash; <strong>Realism &amp; Neorealism, Idealism/Liberalism &amp; Neoliberalism, Functionalism &amp; Neo-Functionalism, Marxism / Dependency / World-Systems</strong> &mdash; plus <strong>Constructivism</strong> and critical theories, and the many faces of <strong>nationalism &amp; self-determination</strong>. Every concept is anchored back to how it shapes India's foreign policy, with diagrams, comparison tables and PYQ-style practice + model answers.</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-II</span>
+    <span class="pill">State &middot; Nation &middot; Sovereignty</span>
+    <span class="pill">~34 min read</span>
+    <span class="pill">Realism &middot; Liberalism &middot; Marxism &middot; Constructivism</span>
+    <span class="pill">Foundational</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#whatis">What is IR &amp; Why Theory Matters</a></li>
+    <li><span class="num">2.</span><a href="#statenation">State, Nation &amp; Nation-State</a></li>
+    <li><span class="num">3.</span><a href="#sovereignty">Sovereignty &amp; the Westphalian Order</a></li>
+    <li><span class="num">4.</span><a href="#power">Power &amp; Its Forms</a></li>
+    <li><span class="num">5.</span><a href="#balance">Balance of Power &amp; Polarity</a></li>
+    <li><span class="num">6.</span><a href="#realism">Realism &amp; Neorealism</a></li>
+    <li><span class="num">7.</span><a href="#liberalism">Idealism, Liberalism &amp; Neoliberalism</a></li>
+    <li><span class="num">8.</span><a href="#functionalism">Functionalism &amp; Neo-Functionalism</a></li>
+    <li><span class="num">9.</span><a href="#marxism">Marxism, Dependency &amp; World-Systems</a></li>
+    <li><span class="num">10.</span><a href="#constructivism">Constructivism &amp; Critical Theories</a></li>
+    <li><span class="num">11.</span><a href="#nationalism">Nationalism &amp; Self-Determination</a></li>
+    <li><span class="num">12.</span><a href="#keyconcepts">Key Operating Concepts</a></li>
+    <li><span class="num">13.</span><a href="#application">Applying Theory to India's FP</a></li>
+    <li><span class="num">14.</span><a href="#significance">Significance &amp; Critique</a></li>
+    <li><span class="num">15.</span><a href="#currentaffairs">Theory in 2025&ndash;26 Debates</a></li>
+    <li><span class="num">16.</span><a href="#prelims-pyq">Prelims PYQ Practice</a></li>
+    <li><span class="num">17.</span><a href="#mains-pyq">Mains PYQ Practice</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">Rapid Revision</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Core distinction to lock first: State vs Nation</h3>
+  <p>A <strong>State</strong> is a <em>legal-political</em> entity: a defined territory, a permanent population, a government and sovereignty (the Montevideo criteria). A <strong>Nation</strong> is a <em>psychological-cultural</em> community &mdash; a people bound by shared identity, memory, language or the &ldquo;imagined&rdquo; will to live together. A <strong>Nation-State</strong> is the (rare, idealised) overlap where one nation maps neatly onto one state. India is deliberately a <strong>state-nation</strong> / civic nation &mdash; a single state holding many linguistic and cultural nations together by constitutional citizenship, not by one ethnicity. Keep this triad straight: almost every debate in IR &mdash; sovereignty, self-determination, nationalism, secession &mdash; is a fight over where the <em>state</em> ends and the <em>nation</em> begins.</p>
+</div>
+
+<section class="notes" id="whatis">
+  <h2>1. What is IR &amp; Why Theory Matters</h2>
+  <p><strong>International Relations (IR)</strong> is the study of interactions among actors that cross state borders &mdash; sovereign states first, but also international organisations, MNCs, NGOs, transnational movements and individuals. It asks the enduring questions: <em>Why do states cooperate or go to war? What is power and who has it? Why do some orders last and others collapse?</em></p>
+  <p>A <strong>theory</strong> is a simplifying lens &mdash; a set of assumptions that tells you <em>what to look at</em> and <em>what to ignore</em>. No fact in world politics &ldquo;speaks for itself&rdquo;; you always interpret it through a theory, consciously or not. Calling the 2020 Galwan clash a story of <em>power and security</em> is Realism; calling it a failure of <em>institutions and interdependence</em> is Liberalism; calling it a clash of <em>identities and ideas</em> is Constructivism.</p>
+  <h3>Levels of analysis (Kenneth Waltz's &ldquo;three images&rdquo;)</h3>
+  <ul>
+    <li><strong>Individual level</strong> &mdash; leaders, personalities, perceptions (e.g., a PM's worldview).</li>
+    <li><strong>State / domestic level</strong> &mdash; regime type, economy, bureaucracy, public opinion.</li>
+    <li><strong>System / international level</strong> &mdash; the distribution of power and anarchy among states.</li>
+  </ul>
+  <p>The single most important systemic fact for most theories is <strong>anarchy</strong> &mdash; not chaos, but the <em>absence of a world government above states</em>. There is no 911 for a state under attack; this simple structural fact drives much of Realist and Liberal reasoning alike.</p>
+  <div class="callout info"><strong>Why UPSC cares:</strong> Direct MCQs on pure theory are rare, but the <em>vocabulary</em> (sovereignty, soft power, balance of power, non-alignment as an idea, multipolarity) saturates GS-II bilateral and grouping questions and every editorial you will summarise. This chapter is the toolkit; later chapters are its application.</p></div>
+</section>
+
+<section class="notes" id="statenation">
+  <h2>2. State, Nation &amp; Nation-State</h2>
+  <p>These three are constantly confused in answer sheets. Fix the distinctions and the diagram below.</p>
+  <h3>The State (legal-political)</h3>
+  <p>Under the <strong>Montevideo Convention (1933)</strong>, a state needs four elements:</p>
+  <ol>
+    <li><strong>Defined territory</strong> &mdash; a demarcated land, air and maritime space.</li>
+    <li><strong>Permanent population</strong> &mdash; people who ordinarily reside there.</li>
+    <li><strong>Government</strong> &mdash; an effective authority that can enforce order.</li>
+    <li><strong>Sovereignty / capacity to enter relations</strong> &mdash; supreme internal authority and independence externally.</li>
+  </ol>
+  <h3>The Nation (psychological-cultural)</h3>
+  <p>A nation is a felt community. Ernest <strong>Renan</strong> called it a &ldquo;daily plebiscite&rdquo; &mdash; a continuous will to live together. Benedict <strong>Anderson</strong> called it an <strong>&ldquo;imagined community&rdquo;</strong>: its members will never meet, yet feel deep horizontal comradeship. Nations rest on shared markers &mdash; language, religion, history, memory, myth &mdash; but no single marker is essential.</p>
+  <h3>Types of nationalism (preview of &sect;11)</h3>
+  <div class="grid-2">
+    <div class="card"><h4>Civic nationalism</h4><p>Membership by shared values, citizenship and constitution &mdash; open, voluntary. India, France, USA lean civic.</p></div>
+    <div class="card"><h4>Ethnic / cultural nationalism</h4><p>Membership by descent, blood, language or faith &mdash; ascriptive, closed. Classic 19th-century German romantic nationalism.</p></div>
+  </div>
+  <h3>The Nation-State &amp; India as a &ldquo;state-nation&rdquo;</h3>
+  <p>A <strong>nation-state</strong> is the neat overlap of one nation and one state &mdash; historically rare (Japan, Iceland come close). Most states are <strong>multi-national</strong>. India is best described (Stepan, Linz &amp; Yadav) as a <strong>state-nation</strong>: it does <em>not</em> demand one language or one ethnicity; it holds many nations together through inclusive constitutional citizenship, federal accommodation and multiple complementary identities.</p>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 720 360" role="img" aria-label="Diagram of State, Nation and Nation-State with the four elements of statehood">
+      <defs>
+        <marker id="ar06a" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#1a3d5c"/></marker>
+      </defs>
+      <rect x="0" y="0" width="720" height="360" fill="#fbfcfd"/>
+      <text x="360" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#0d2035">State + Nation &#8594; Nation-State</text>
+      <!-- STATE circle -->
+      <circle cx="240" cy="180" r="130" fill="#1a3d5c" fill-opacity="0.12" stroke="#1a3d5c" stroke-width="2"/>
+      <text x="165" y="120" text-anchor="middle" font-size="15" font-weight="700" fill="#1a3d5c">STATE</text>
+      <text x="165" y="138" text-anchor="middle" font-size="10" fill="#5a6266">legal &#183; political</text>
+      <text x="150" y="165" font-size="10.5" fill="#1a3d5c">&#8226; Defined territory</text>
+      <text x="150" y="184" font-size="10.5" fill="#1a3d5c">&#8226; Permanent population</text>
+      <text x="150" y="203" font-size="10.5" fill="#1a3d5c">&#8226; Government</text>
+      <text x="150" y="222" font-size="10.5" fill="#1a3d5c">&#8226; Sovereignty</text>
+      <text x="150" y="246" font-size="9" fill="#5a6266">(Montevideo 1933)</text>
+      <!-- NATION circle -->
+      <circle cx="480" cy="180" r="130" fill="#c47820" fill-opacity="0.12" stroke="#c47820" stroke-width="2"/>
+      <text x="558" y="120" text-anchor="middle" font-size="15" font-weight="700" fill="#c47820">NATION</text>
+      <text x="558" y="138" text-anchor="middle" font-size="10" fill="#5a6266">psychological &#183; cultural</text>
+      <text x="512" y="165" font-size="10.5" fill="#b06a12">&#8226; Shared identity</text>
+      <text x="512" y="184" font-size="10.5" fill="#b06a12">&#8226; Language / faith</text>
+      <text x="512" y="203" font-size="10.5" fill="#b06a12">&#8226; Common history</text>
+      <text x="512" y="222" font-size="10.5" fill="#b06a12">&#8226; &ldquo;Imagined&rdquo; will</text>
+      <text x="512" y="246" font-size="9" fill="#5a6266">(Renan &#183; Anderson)</text>
+      <!-- overlap -->
+      <text x="360" y="176" text-anchor="middle" font-size="12" font-weight="700" fill="#0d2035">NATION-</text>
+      <text x="360" y="192" text-anchor="middle" font-size="12" font-weight="700" fill="#0d2035">STATE</text>
+      <text x="360" y="210" text-anchor="middle" font-size="9" fill="#5a6266">(rare overlap)</text>
+      <text x="360" y="330" text-anchor="middle" font-size="10.5" fill="#1a7a5a" font-weight="600">India = a state-nation: one state holding many nations by civic citizenship</text>
+      <line x1="360" y1="300" x2="360" y2="315" stroke="#1a7a5a" stroke-width="1.5" marker-end="url(#ar06a)"/>
+    </svg>
+    <div class="svg-caption">Fig 6.1 &mdash; The State (legal-political, four Montevideo elements) and the Nation (psychological-cultural) overlap only rarely as a true &ldquo;nation-state&rdquo;. India is a state-nation.</div>
+  </div>
+</section>
+
+<section class="notes" id="sovereignty">
+  <h2>3. Sovereignty &amp; the Westphalian Order</h2>
+  <p><strong>Sovereignty</strong> is the supreme, final authority of a state &mdash; the concept Jean Bodin and Thomas Hobbes theorised and that the <strong>Peace of Westphalia (1648)</strong> entrenched as the organising principle of modern world politics after Europe's Thirty Years&rsquo; War.</p>
+  <h3>Two faces of sovereignty</h3>
+  <ul>
+    <li><strong>Internal sovereignty</strong> &mdash; supreme authority <em>within</em> the territory; no higher power over the government domestically.</li>
+    <li><strong>External sovereignty</strong> &mdash; independence <em>from</em> outside control; legal equality of states and <strong>non-interference</strong> in internal affairs.</li>
+  </ul>
+  <h3>The Westphalian principles</h3>
+  <ol>
+    <li><strong>Territorial integrity</strong> &mdash; fixed, inviolable borders.</li>
+    <li><strong>Legal equality of states</strong> &mdash; one state, one vote in principle, regardless of size.</li>
+    <li><strong>Non-intervention</strong> in the domestic jurisdiction of others.</li>
+  </ol>
+  <p>These map directly onto the <strong>UN Charter</strong> (Art. 2) and onto India's own <strong>Panchsheel</strong> (1954) &mdash; mutual respect for sovereignty and territorial integrity, non-aggression, non-interference. India's insistence on sovereignty explains its long discomfort with external mediation on Kashmir and with intrusive conditionalities.</p>
+  <h3>Is sovereignty eroding?</h3>
+  <p>Globalisation, supranational bodies (EU, WTO dispute panels), human-rights norms (<strong>R2P &mdash; Responsibility to Protect</strong>), climate obligations and cross-border data flows all constrain the once-absolute state. Yet sovereignty has proven resilient: the 2020s wave of <strong>strategic autonomy, re-shoring and border assertion</strong> shows states reclaiming control. <span class="update-tag">2025&ndash;26</span> The tension between sovereignty and interdependence is <em>the</em> live debate of the decade.</p>
+  <div class="callout warn"><strong>Exam trap:</strong> Westphalia (1648) is the <em>birth of the sovereign-state system</em>, not of the UN or of international law as a whole. Do not confuse Westphalia (1648), the Congress of Vienna (1815), the League of Nations (1920) and the UN (1945) &mdash; each is a distinct milestone.</p></div>
+</section>
+
+<section class="notes" id="power">
+  <h2>4. Power &amp; Its Forms</h2>
+  <p><strong>Power</strong> is the currency of IR &mdash; the ability of A to make B do what B would not otherwise do, or to shape the environment so outcomes favour A. Power is <em>relational</em> (always power over/with someone), <em>contextual</em> (military power is useless against climate change) and <em>convertible</em> (economic weight buys diplomatic leverage).</p>
+  <h3>Elements of national power</h3>
+  <div class="grid-2">
+    <div class="card"><h4>Tangible</h4><p>Geography, population, natural resources, economic &amp; industrial capacity, military strength, technology.</p></div>
+    <div class="card"><h4>Intangible</h4><p>National morale, quality of leadership &amp; diplomacy, political stability, ideology, credibility.</p></div>
+  </div>
+  <h3>Joseph Nye's typology of power</h3>
+  <table>
+    <tr><th>Form</th><th>Mechanism</th><th>Instruments</th><th>Illustration</th></tr>
+    <tr><td><strong>Hard power</strong></td><td>Coercion &mdash; &ldquo;sticks&rdquo; &amp; payments</td><td>Military force, sanctions, aid conditionality</td><td>Deployments, embargoes</td></tr>
+    <tr><td><strong>Soft power</strong></td><td>Attraction &mdash; getting others to <em>want</em> what you want</td><td>Culture, values, legitimate policy, diaspora</td><td>Yoga, cinema, democracy brand, ICCR</td></tr>
+    <tr><td><strong>Smart power</strong></td><td>Skilful blend of hard + soft</td><td>Integrated statecraft</td><td>Vaccine Maitri + naval HADR</td></tr>
+    <tr><td><strong>Sharp power</strong></td><td>Manipulation &amp; distraction (a dark cousin of soft power)</td><td>Disinformation, covert influence, coercive media</td><td>Info-warfare, election interference</td></tr>
+  </table>
+  <p>India is a recognised <strong>soft-power</strong> heavyweight &mdash; a civilisational brand (yoga, Ayurveda, cinema, spirituality), the world's largest democracy, a 32-million-strong diaspora, and &ldquo;first-responder&rdquo; diplomacy (Vaccine Maitri, Operation Ganga/Kaveri evacuations). Its challenge is converting soft attraction and a large economy into decisive <strong>hard-power</strong> capability &mdash; the essence of the &ldquo;smart power&rdquo; project. <span class="update-tag">2025&ndash;26</span></p>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 720 340" role="img" aria-label="Power taxonomy: hard, soft, smart and sharp power on a coercion-to-attraction spectrum">
+      <defs>
+        <marker id="ar06p" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#5a6266"/></marker>
+      </defs>
+      <rect x="0" y="0" width="720" height="340" fill="#fbfcfd"/>
+      <text x="360" y="30" text-anchor="middle" font-size="16" font-weight="700" fill="#0d2035">The Spectrum of Power (after Joseph Nye)</text>
+      <!-- spectrum bar -->
+      <line x1="90" y1="70" x2="630" y2="70" stroke="#5a6266" stroke-width="2" marker-end="url(#ar06p)"/>
+      <text x="90" y="60" font-size="11" font-weight="700" fill="#c0392b">COERCION</text>
+      <text x="560" y="60" font-size="11" font-weight="700" fill="#1a7a5a">ATTRACTION</text>
+      <!-- hard -->
+      <rect x="70" y="95" width="150" height="130" rx="8" fill="#c0392b" fill-opacity="0.10" stroke="#c0392b" stroke-width="1.5"/>
+      <text x="145" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="#c0392b">HARD</text>
+      <text x="145" y="140" text-anchor="middle" font-size="9.5" fill="#5a6266">sticks &amp; payments</text>
+      <text x="145" y="160" text-anchor="middle" font-size="9.5" fill="#5a6266">military, sanctions</text>
+      <text x="145" y="180" text-anchor="middle" font-size="9.5" fill="#5a6266">aid conditionality</text>
+      <!-- sharp -->
+      <rect x="240" y="95" width="150" height="130" rx="8" fill="#8e44ad" fill-opacity="0.10" stroke="#8e44ad" stroke-width="1.5"/>
+      <text x="315" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="#8e44ad">SHARP</text>
+      <text x="315" y="140" text-anchor="middle" font-size="9.5" fill="#5a6266">manipulation</text>
+      <text x="315" y="160" text-anchor="middle" font-size="9.5" fill="#5a6266">disinformation</text>
+      <text x="315" y="180" text-anchor="middle" font-size="9.5" fill="#5a6266">covert influence</text>
+      <!-- smart (center, straddling) -->
+      <rect x="410" y="240" width="200" height="70" rx="8" fill="#1a3d5c" fill-opacity="0.10" stroke="#1a3d5c" stroke-width="1.5"/>
+      <text x="510" y="266" text-anchor="middle" font-size="13" font-weight="700" fill="#1a3d5c">SMART</text>
+      <text x="510" y="286" text-anchor="middle" font-size="9.5" fill="#5a6266">skilful blend of hard + soft</text>
+      <text x="510" y="300" text-anchor="middle" font-size="9" fill="#5a6266">= integrated statecraft</text>
+      <!-- soft -->
+      <rect x="460" y="95" width="180" height="130" rx="8" fill="#1a7a5a" fill-opacity="0.10" stroke="#1a7a5a" stroke-width="1.5"/>
+      <text x="550" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="#1a7a5a">SOFT</text>
+      <text x="550" y="140" text-anchor="middle" font-size="9.5" fill="#5a6266">attraction</text>
+      <text x="550" y="160" text-anchor="middle" font-size="9.5" fill="#5a6266">culture, values</text>
+      <text x="550" y="180" text-anchor="middle" font-size="9.5" fill="#5a6266">diaspora, policy</text>
+      <text x="550" y="200" text-anchor="middle" font-size="9" fill="#1a7a5a" font-weight="600">India's forte</text>
+    </svg>
+    <div class="svg-caption">Fig 6.3 &mdash; Power runs from coercion (hard, sharp) to attraction (soft); &ldquo;smart power&rdquo; is the deliberate blend. India leads on soft power and is building the hard-power leg.</div>
+  </div>
+</section>
+
+<section class="notes" id="balance">
+  <h2>5. Balance of Power &amp; Polarity</h2>
+  <p>The <strong>balance of power</strong> is both a <em>situation</em> (a rough equilibrium where no single state can dominate) and a <em>policy</em> (states act to prevent any one power from becoming hegemonic, usually by internal build-up or external alliances). It is the oldest recurring mechanism of the states-system.</p>
+  <h3>Polarity &mdash; how many great powers?</h3>
+  <div class="grid-3">
+    <div class="card"><h4>Unipolar</h4><p>One dominant power (the post-1991 &ldquo;unipolar moment&rdquo; of US primacy). Risk: over-reach &amp; balancing against the hegemon.</p></div>
+    <div class="card"><h4>Bipolar</h4><p>Two blocs (US vs USSR, 1945&ndash;91). Neorealists (Waltz) argue it is the <em>most stable</em> &mdash; clarity, no miscalculation.</p></div>
+    <div class="card"><h4>Multipolar</h4><p>Several great powers (19th-century Europe; the emerging 2020s order). Flexible but prone to miscalculation.</p></div>
+  </div>
+  <h3>Balancing vs bandwagoning</h3>
+  <ul>
+    <li><strong>Balancing</strong> &mdash; joining the weaker side to check a rising threat (internal = arming; external = alliances).</li>
+    <li><strong>Bandwagoning</strong> &mdash; siding with the stronger/threatening power for gain or safety.</li>
+    <li><strong>Buck-passing</strong> &mdash; hoping <em>another</em> state bears the cost of balancing.</li>
+  </ul>
+  <p>India's contemporary posture is best read as <strong>multi-alignment</strong> and soft or &ldquo;internal&rdquo; balancing: deepening ties with the US, Quad, France and Russia simultaneously to hedge against a rising China, while avoiding a binding alliance that would sacrifice <strong>strategic autonomy</strong>. The <strong>security dilemma</strong> &mdash; where one state's defensive build-up looks offensive to others, triggering spirals &mdash; explains much of the India&ndash;China&ndash;Pakistan dynamic. <span class="update-tag">2025&ndash;26</span> The talk of a <strong>multipolar world (and a multipolar Asia)</strong> is, in theory terms, a claim about shifting polarity.</p>
+  <div class="callout info"><strong>Link forward:</strong> Non-alignment (Topic 7) was India's Cold-War answer to bipolarity; strategic autonomy &amp; multi-alignment are its answers to unipolarity fading into multipolarity. Same instinct &mdash; keep options open &mdash; different structures.</p></div>
+</section>
+
+<section class="notes" id="realism">
+  <h2>6. Realism &amp; Neorealism</h2>
+  <p><strong>Realism</strong> is the oldest and most influential tradition &mdash; the &ldquo;default&rdquo; lens of statecraft. Its lineage runs from <strong>Thucydides</strong> (&ldquo;the strong do what they can, the weak suffer what they must&rdquo;), <strong>Kautilya's Arthashastra</strong> (mandala theory, matsya-nyaya &mdash; the &ldquo;logic of the fish&rdquo;), <strong>Machiavelli</strong> and <strong>Hobbes</strong>, to the 20th-century masters.</p>
+  <h3>Core assumptions</h3>
+  <ul>
+    <li><strong>States</strong> are the principal actors, and they are <strong>unitary &amp; rational</strong>.</li>
+    <li>The system is <strong>anarchic</strong> &mdash; no authority above states.</li>
+    <li>States pursue <strong>national interest defined as power &amp; security</strong>; survival is the supreme goal.</li>
+    <li>Morality is subordinate to <em>raison d'&eacute;tat</em>; there is no universal ethics that binds states.</li>
+  </ul>
+  <h3>Strands of Realism</h3>
+  <table>
+    <tr><th>Strand</th><th>Key thinker</th><th>Central claim</th></tr>
+    <tr><td><strong>Classical Realism</strong></td><td>Hans Morgenthau (<em>Politics Among Nations</em>)</td><td>The drive for power is rooted in flawed <em>human nature</em>; politics is governed by objective laws.</td></tr>
+    <tr><td><strong>Neorealism / Structural Realism</strong></td><td>Kenneth Waltz (<em>Theory of International Politics</em>)</td><td>It is the <em>structure</em> (anarchy + distribution of capabilities), not human nature, that forces states to seek security.</td></tr>
+    <tr><td><strong>Defensive Realism</strong></td><td>Waltz, Jervis</td><td>States seek <em>enough</em> power for security; excessive expansion provokes balancing and is self-defeating.</td></tr>
+    <tr><td><strong>Offensive Realism</strong></td><td>John Mearsheimer (<em>Tragedy of Great Power Politics</em>)</td><td>Anarchy pushes great powers to maximise relative power and aim for <em>regional hegemony</em>; China's rise cannot be peaceful.</td></tr>
+    <tr><td><strong>Neoclassical Realism</strong></td><td>Gideon Rose, Zakaria</td><td>Systemic pressures are filtered through domestic variables (perception, state strength).</td></tr>
+  </table>
+  <h3>Strengths &amp; criticisms</h3>
+  <div class="grid-2">
+    <div class="card"><h4>Strengths</h4><p>Explains war, arms races, alliances and the durability of great-power rivalry; parsimonious and policy-relevant.</p></div>
+    <div class="card"><h4>Criticisms</h4><p>Pessimistic &amp; status-quo; downplays cooperation, institutions, economics, ideas and non-state actors; failed to predict the peaceful end of the Cold War.</p></div>
+  </div>
+  <div class="callout"><strong>India lens:</strong> India's build-up of credible minimum deterrence, LAC infrastructure, the &ldquo;Necklace of Diamonds&rdquo; response to the &ldquo;String of Pearls&rdquo;, and its refusal to outsource security are textbook <strong>Realist</strong> behaviour, even as its rhetoric stays Liberal-Idealist.</p></div>
+</section>
+
+<section class="notes" id="liberalism">
+  <h2>7. Idealism, Liberalism &amp; Neoliberalism</h2>
+  <p>The <strong>Liberal</strong> tradition is Realism's great rival &mdash; optimistic about cooperation, progress and the taming of anarchy. Its roots are in Enlightenment thought (<strong>Immanuel Kant's</strong> <em>Perpetual Peace</em>) and its first IR incarnation was the inter-war <strong>Idealism</strong> of Woodrow Wilson.</p>
+  <h3>Idealism (inter-war)</h3>
+  <ul>
+    <li>Faith in <strong>international law, collective security and the League of Nations</strong>; war is preventable through institutions and public opinion.</li>
+    <li>Wilson's <strong>Fourteen Points</strong> &mdash; self-determination, open diplomacy, disarmament.</li>
+    <li>Discredited by the League's failure and WWII; E.H. Carr's <em>Twenty Years&rsquo; Crisis</em> attacked it as &ldquo;utopian&rdquo;.</li>
+  </ul>
+  <h3>Liberal / Neoliberal claims</h3>
+  <table>
+    <tr><th>Strand</th><th>Thinker</th><th>Claim</th></tr>
+    <tr><td><strong>Commercial (economic) liberalism</strong></td><td>Kant, Cobden</td><td>Trade &amp; interdependence raise the cost of war &mdash; &ldquo;when goods cross borders, armies don't&rdquo;.</td></tr>
+    <tr><td><strong>Democratic Peace Theory</strong></td><td>Michael Doyle (from Kant)</td><td>Democracies rarely fight <em>each other</em> &mdash; shared norms &amp; institutional checks.</td></tr>
+    <tr><td><strong>Institutional / Neoliberal</strong></td><td>Keohane &amp; Nye</td><td>Institutions reduce transaction costs, provide information &amp; enable cooperation even under anarchy.</td></tr>
+    <tr><td><strong>Complex interdependence</strong></td><td>Keohane &amp; Nye</td><td>Multiple channels, no hierarchy of issues, declining utility of force among interdependent states.</td></tr>
+  </table>
+  <h3>Neoliberalism vs Neorealism (the &ldquo;neo-neo&rdquo; debate)</h3>
+  <p>Both accept anarchy and rational states, but split on prospects for cooperation. Neorealists stress <strong>relative gains</strong> (who gains <em>more</em>?) and cheating; neoliberals stress <strong>absolute gains</strong> (are we both better off?) and institutions' ability to police cheating.</p>
+  <div class="callout"><strong>India lens:</strong> India's championing of the <strong>UN, WTO, climate multilateralism, G20 and reformed multilateralism</strong>, and its faith that economic interdependence stabilises ties, are Liberal-institutionalist. &ldquo;Non-alignment&rdquo; and &ldquo;strategic autonomy&rdquo; blend Idealist rhetoric with Realist practice.</p></div>
+</section>
+
+<section class="notes" id="functionalism">
+  <h2>8. Functionalism &amp; Neo-Functionalism</h2>
+  <p>These theories explain how cooperation &mdash; even <strong>integration</strong> &mdash; can grow, most visibly in the European project. They are the theoretical spine behind regional groupings you will study later (EU, ASEAN, SAARC, BIMSTEC).</p>
+  <h3>Functionalism (David Mitrany)</h3>
+  <ul>
+    <li>Peace is built not by grand political union but by <strong>technical, functional cooperation</strong> in low-politics areas (health, posts, transport, trade).</li>
+    <li><strong>&ldquo;Form follows function&rdquo;</strong> &mdash; institutions should be built around specific needs, not fixed territories.</li>
+    <li>Success in one sector builds habits of trust that <em>ramify</em> into others.</li>
+  </ul>
+  <h3>Neo-Functionalism (Ernst Haas)</h3>
+  <ul>
+    <li>Refined functionalism to explain European integration; introduced the key idea of <strong>&ldquo;spillover&rdquo;</strong>.</li>
+    <li><strong>Functional spillover</strong> &mdash; integrating one sector (coal &amp; steel) creates pressure to integrate related ones (trade, currency).</li>
+    <li><strong>Political spillover</strong> &mdash; interest groups &amp; elites shift loyalties to the supranational centre.</li>
+    <li>Integration is driven by self-interested elites, not idealism.</li>
+  </ul>
+  <div class="callout info"><strong>Exam pointer:</strong> The EU (Coal &amp; Steel Community &#8594; Common Market &#8594; single currency) is the classic spillover story. India's neighbourhood groupings (SAARC stalled, BBIN &amp; BIMSTEC promoted) show why <em>political</em> mistrust can block the functional logic &mdash; functionalism assumes cooperation can be de-linked from politics, which the subcontinent disproves.</p></div>
+</section>
+
+<section class="notes" id="marxism">
+  <h2>9. Marxism, Dependency &amp; World-Systems</h2>
+  <p>The <strong>Marxist</strong> family reads world politics as a story of <strong>economic class &amp; global inequality</strong>, not of states chasing security. The unit of analysis is the <em>global capitalist economy</em>, and its central fact is exploitation.</p>
+  <h3>Classical Marxism &amp; Leninism</h3>
+  <ul>
+    <li><strong>Marx &amp; Engels</strong> &mdash; history is class struggle; the base (economy) shapes the superstructure (politics, law, ideology).</li>
+    <li><strong>Lenin's</strong> <em>Imperialism, the Highest Stage of Capitalism</em> &mdash; capitalism exports its crises abroad; imperialism &amp; colonial rivalry are its logical outgrowth.</li>
+  </ul>
+  <h3>Dependency Theory (Prebisch, Frank, dos Santos)</h3>
+  <ul>
+    <li>The world is split into a wealthy <strong>Core (metropole)</strong> and a poor <strong>Periphery (satellite)</strong>.</li>
+    <li>Underdevelopment is not a &ldquo;stage&rdquo; but is <em>actively produced</em> by the core's extraction of surplus from the periphery &mdash; the &ldquo;development of underdevelopment&rdquo;.</li>
+    <li>Inspired Third-World demands for a <strong>New International Economic Order (NIEO)</strong> in the 1970s &mdash; a cause India helped lead.</li>
+  </ul>
+  <h3>World-Systems Theory (Immanuel Wallerstein)</h3>
+  <ul>
+    <li>A single <strong>capitalist world-economy</strong> with a three-tier structure: <strong>core, semi-periphery, periphery</strong>.</li>
+    <li>The <strong>semi-periphery</strong> (rising powers like India, Brazil, China) both exploits and is exploited &mdash; a mobile middle that stabilises the system.</li>
+  </ul>
+  <div class="callout"><strong>India lens:</strong> India's historic leadership of the <strong>G-77, NAM economic agenda, NIEO and &ldquo;Global South&rdquo;</strong> advocacy &mdash; and today's push for a fairer trade, debt, technology and climate-finance order &mdash; draws on this structural-inequality critique. <span class="update-tag">2025&ndash;26</span> &ldquo;Voice of the Global South&rdquo; summits are its current expression.</p></div>
+</section>
+
+<section class="notes" id="constructivism">
+  <h2>10. Constructivism &amp; Critical Theories</h2>
+  <p><strong>Constructivism</strong> is the major &ldquo;middle-ground&rdquo; challenger that rose after the Cold War's peaceful, unpredicted end. Its core claim: the international system is <em>socially constructed</em> &mdash; made of <strong>ideas, identities, norms and shared understandings</strong>, not just material power.</p>
+  <h3>Core ideas (Alexander Wendt, Nicholas Onuf)</h3>
+  <ul>
+    <li><strong>&ldquo;Anarchy is what states make of it&rdquo;</strong> (Wendt) &mdash; anarchy has no fixed logic; whether it breeds war or friendship depends on shared ideas. (500 British nuclear weapons are less threatening to the US than 5 North Korean ones &mdash; identity, not numbers, decides.)</li>
+    <li>Interests and identities are <strong>not given</strong> but formed through interaction and socialisation.</li>
+    <li><strong>Norms</strong> (sovereignty, human rights, the nuclear taboo, anti-apartheid) shape and constrain state behaviour.</li>
+  </ul>
+  <h3>Critical &amp; reflectivist theories (brief)</h3>
+  <div class="grid-2">
+    <div class="card"><h4>Feminism</h4><p>Gender is central to world politics; &ldquo;security&rdquo; and the state are gendered; asks &ldquo;where are the women?&rdquo; (Enloe, Tickner).</p></div>
+    <div class="card"><h4>Post-colonialism</h4><p>IR is written from a Western vantage; recovers the agency &amp; experience of the colonised (Said's <em>Orientalism</em>). Resonant for India.</p></div>
+    <div class="card"><h4>Critical Theory</h4><p>Frankfurt School / Cox &mdash; &ldquo;theory is always <em>for</em> someone&rdquo;; aims at emancipation, not just explanation.</p></div>
+    <div class="card"><h4>Green Theory</h4><p>Ecology &amp; planetary limits as the frame; the state-system is ill-suited to global environmental collective action.</p></div>
+  </div>
+  <p>Alongside these sits the <strong>English School</strong> (Hedley Bull's <em>Anarchical Society</em>) &mdash; a via media holding that states form an <strong>&ldquo;international society&rdquo;</strong> bound by shared rules &amp; institutions (diplomacy, international law, balance of power), sitting between Realism and Liberalism.</p>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 720 380" role="img" aria-label="Spectrum of IR theories from material/conflict to ideational/cooperation">
+      <rect x="0" y="0" width="720" height="380" fill="#fbfcfd"/>
+      <text x="360" y="28" text-anchor="middle" font-size="16" font-weight="700" fill="#0d2035">Mapping the Major IR Theories</text>
+      <text x="120" y="58" text-anchor="middle" font-size="10.5" font-weight="700" fill="#c0392b">MATERIAL &#183; CONFLICT</text>
+      <text x="600" y="58" text-anchor="middle" font-size="10.5" font-weight="700" fill="#1a7a5a">IDEATIONAL &#183; COOPERATION</text>
+      <line x1="60" y1="72" x2="660" y2="72" stroke="#dde3e8" stroke-width="2"/>
+      <!-- Realism -->
+      <rect x="45" y="95" width="150" height="120" rx="8" fill="#c0392b" fill-opacity="0.10" stroke="#c0392b" stroke-width="1.5"/>
+      <text x="120" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="#c0392b">REALISM</text>
+      <text x="120" y="138" text-anchor="middle" font-size="9" fill="#5a6266">power &amp; survival</text>
+      <text x="120" y="154" text-anchor="middle" font-size="9" fill="#5a6266">anarchy = self-help</text>
+      <text x="120" y="172" text-anchor="middle" font-size="8.5" fill="#5a6266">Morgenthau &#183; Waltz</text>
+      <text x="120" y="188" text-anchor="middle" font-size="8.5" fill="#5a6266">Mearsheimer</text>
+      <text x="120" y="205" text-anchor="middle" font-size="8.5" fill="#5a6266">(Kautilya, Thucydides)</text>
+      <!-- Marxism -->
+      <rect x="45" y="235" width="150" height="115" rx="8" fill="#8e44ad" fill-opacity="0.10" stroke="#8e44ad" stroke-width="1.5"/>
+      <text x="120" y="258" text-anchor="middle" font-size="12" font-weight="700" fill="#8e44ad">MARXISM</text>
+      <text x="120" y="276" text-anchor="middle" font-size="9" fill="#5a6266">class &amp; global</text>
+      <text x="120" y="290" text-anchor="middle" font-size="9" fill="#5a6266">inequality</text>
+      <text x="120" y="308" text-anchor="middle" font-size="8.5" fill="#5a6266">core&ndash;periphery</text>
+      <text x="120" y="324" text-anchor="middle" font-size="8.5" fill="#5a6266">Wallerstein &#183; Frank</text>
+      <!-- Constructivism (middle) -->
+      <rect x="285" y="150" width="160" height="140" rx="8" fill="#1a3d5c" fill-opacity="0.10" stroke="#1a3d5c" stroke-width="1.5"/>
+      <text x="365" y="176" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1a3d5c">CONSTRUCTIVISM</text>
+      <text x="365" y="196" text-anchor="middle" font-size="9" fill="#5a6266">ideas, identity, norms</text>
+      <text x="365" y="214" text-anchor="middle" font-size="9" fill="#5a6266">&ldquo;anarchy is what</text>
+      <text x="365" y="228" text-anchor="middle" font-size="9" fill="#5a6266">states make of it&rdquo;</text>
+      <text x="365" y="248" text-anchor="middle" font-size="8.5" fill="#5a6266">Wendt &#183; Onuf</text>
+      <text x="365" y="272" text-anchor="middle" font-size="8.5" fill="#5a6266">(English School nearby)</text>
+      <!-- Liberalism -->
+      <rect x="510" y="95" width="150" height="120" rx="8" fill="#1a7a5a" fill-opacity="0.10" stroke="#1a7a5a" stroke-width="1.5"/>
+      <text x="585" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="#1a7a5a">LIBERALISM</text>
+      <text x="585" y="138" text-anchor="middle" font-size="9" fill="#5a6266">cooperation, trade</text>
+      <text x="585" y="154" text-anchor="middle" font-size="9" fill="#5a6266">institutions, democracy</text>
+      <text x="585" y="172" text-anchor="middle" font-size="8.5" fill="#5a6266">Kant &#183; Wilson</text>
+      <text x="585" y="188" text-anchor="middle" font-size="8.5" fill="#5a6266">Keohane &amp; Nye</text>
+      <text x="585" y="205" text-anchor="middle" font-size="8.5" fill="#5a6266">(complex interdependence)</text>
+      <!-- Functionalism -->
+      <rect x="510" y="235" width="150" height="115" rx="8" fill="#0a6644" fill-opacity="0.10" stroke="#0a6644" stroke-width="1.5"/>
+      <text x="585" y="258" text-anchor="middle" font-size="11.5" font-weight="700" fill="#0a6644">FUNCTIONALISM</text>
+      <text x="585" y="276" text-anchor="middle" font-size="9" fill="#5a6266">integration via</text>
+      <text x="585" y="290" text-anchor="middle" font-size="9" fill="#5a6266">technical cooperation</text>
+      <text x="585" y="308" text-anchor="middle" font-size="8.5" fill="#5a6266">&ldquo;spillover&rdquo;</text>
+      <text x="585" y="324" text-anchor="middle" font-size="8.5" fill="#5a6266">Mitrany &#183; Haas</text>
+    </svg>
+    <div class="svg-caption">Fig 6.2 &mdash; The theory landscape: Realism &amp; Marxism stress material forces &amp; conflict/inequality; Liberalism &amp; Functionalism stress cooperation; Constructivism (with the English School) occupies the ideational middle ground.</div>
+  </div>
+</section>
+
+<section class="notes" id="nationalism">
+  <h2>11. Nationalism &amp; Self-Determination</h2>
+  <p><strong>Nationalism</strong> is the political principle that the nation and the state should be congruent &mdash; that each nation deserves self-government. It is the most powerful political force of the modern age, capable of both liberation (anti-colonial nationalism) and destruction (chauvinism, genocide).</p>
+  <h3>Types</h3>
+  <table>
+    <tr><th>Type</th><th>Basis of belonging</th><th>Character</th></tr>
+    <tr><td><strong>Civic</strong></td><td>Shared citizenship, values, constitution</td><td>Inclusive, voluntary (India, France, USA)</td></tr>
+    <tr><td><strong>Ethnic</strong></td><td>Common descent, blood, kinship</td><td>Exclusive, ascriptive</td></tr>
+    <tr><td><strong>Cultural / linguistic</strong></td><td>Shared language, religion, heritage</td><td>Can be inclusive or divisive</td></tr>
+    <tr><td><strong>Anti-colonial</strong></td><td>Shared experience of foreign rule</td><td>Emancipatory; forged India's freedom struggle</td></tr>
+  </table>
+  <h3>Self-determination &mdash; the double-edged norm</h3>
+  <p>The right of a people to determine their own political status (Wilson's Fourteen Points; UN Charter Art. 1). It legitimised <strong>decolonisation</strong>, but its <em>external</em> form (secession) collides with <strong>territorial integrity</strong> and sovereignty &mdash; the reason India distinguishes <strong>internal self-determination</strong> (autonomy, federalism, minority rights <em>within</em> a state) from external secession, which it firmly rejects.</p>
+  <div class="callout warn"><strong>India lens:</strong> India's response to sub-nationalisms (linguistic reorganisation of states, federal accommodation, Sixth Schedule) is the civic/state-nation model in action &mdash; grant internal self-determination to defuse demands for external self-determination. Pakistan's invocation of &ldquo;self-determination&rdquo; for Kashmir is countered on the ground that J&amp;K's accession and repeated elections settle the sovereignty question.</p></div>
+</section>
+
+<section class="notes" id="keyconcepts">
+  <h2>12. Key Operating Concepts</h2>
+  <p>A quick glossary of terms that recur across every later chapter &mdash; know each in one line.</p>
+  <div class="grid-2">
+    <div class="card"><h4>National interest</h4><p>The core goals a state pursues &mdash; survival, security, economic well-being, prestige. The compass of all foreign policy.</p></div>
+    <div class="card"><h4>Anarchy</h4><p>Absence of a world government above states &mdash; not chaos, but self-help. The starting premise of Realism &amp; Neoliberalism.</p></div>
+    <div class="card"><h4>Security dilemma</h4><p>One state's defensive measures look offensive to others, triggering counter-measures &amp; spirals (Herz, Jervis).</p></div>
+    <div class="card"><h4>Deterrence</h4><p>Preventing an action by threatening unacceptable retaliation; <strong>MAD</strong> (Mutually Assured Destruction) is its nuclear form. Underlies India's &ldquo;credible minimum deterrence&rdquo; &amp; No-First-Use.</p></div>
+    <div class="card"><h4>Diplomacy</h4><p>The peaceful management of relations by negotiation &mdash; bilateral, multilateral, summit, track-II, digital &amp; economic diplomacy.</p></div>
+    <div class="card"><h4>Hegemony</h4><p>Dominance of one power (Gramsci: leadership through consent, not just coercion). US primacy after 1991 is the reference case.</p></div>
+    <div class="card"><h4>Multilateralism</h4><p>Managing issues through rules &amp; institutions of three or more states (UN, WTO, G20); India seeks its <em>reform</em>, not rejection.</p></div>
+    <div class="card"><h4>Strategic autonomy</h4><p>Freedom to make independent choices without alignment to any bloc &mdash; India's post-non-alignment doctrine.</p></div>
+  </div>
+</section>
+
+<section class="notes" id="application">
+  <h2>13. Applying Theory to India's Foreign Policy</h2>
+  <p>India's foreign policy is not the child of any single theory &mdash; it is <strong>eclectic and pragmatic</strong>, blending traditions as circumstances demand. Mapping the lenses:</p>
+  <table>
+    <tr><th>Theory</th><th>How it shows up in Indian FP</th></tr>
+    <tr><td><strong>Realism</strong></td><td>Nuclear deterrence, LAC infrastructure, defence modernisation, refusal of external mediation, hedging against China, Kautilyan mandala thinking on the neighbourhood.</td></tr>
+    <tr><td><strong>Liberalism / Idealism</strong></td><td>Panchsheel, faith in the UN &amp; international law, championing reformed multilateralism, WTO &amp; climate diplomacy, democratic-values branding.</td></tr>
+    <tr><td><strong>Functionalism</strong></td><td>Promotion of BBIN, BIMSTEC &amp; sub-regional connectivity as apolitical, need-based cooperation to route around SAARC deadlock.</td></tr>
+    <tr><td><strong>Marxism / Dependency</strong></td><td>NAM economic agenda, NIEO, G-77 &amp; &ldquo;Voice of the Global South&rdquo;; demands for fairer trade, debt &amp; climate finance.</td></tr>
+    <tr><td><strong>Constructivism</strong></td><td>&ldquo;Vishwaguru&rdquo; &amp; civilisational identity, <em>Vasudhaiva Kutumbakam</em>, soft-power projection, norm entrepreneurship (ISA, IPOI, LiFE).</td></tr>
+  </table>
+  <div class="callout info"><strong>Answer strategy:</strong> The best Mains answers refuse to force India into one box. Frame India as a <strong>&ldquo;civilisational-Realist&rdquo;</strong> power &mdash; Liberal-institutionalist in rhetoric &amp; multilateral posture, Realist in security practice, and Constructivist in identity &amp; soft-power projection. This nuance scores.</p></div>
+</section>
+
+<section class="notes" id="significance">
+  <h2>14. Significance &amp; Critique of Theory</h2>
+  <h3>Why theory matters for the practitioner (and the aspirant)</h3>
+  <ul>
+    <li>It supplies the <strong>vocabulary</strong> and analytical categories for every issue &mdash; a shared language of statecraft.</li>
+    <li>It reveals hidden assumptions: knowing you are &ldquo;thinking Realist&rdquo; lets you test the alternative.</li>
+    <li>It offers <strong>prediction &amp; prescription</strong> &mdash; theories generate expectations and policy options.</li>
+    <li>For UPSC, it turns a scatter of current-affairs facts into a <strong>structured argument</strong>.</li>
+  </ul>
+  <h3>The critique</h3>
+  <ul>
+    <li><strong>Western-centric</strong> &mdash; mainstream IR is built on European history; post-colonial &amp; &ldquo;Global IR&rdquo; scholars (Acharya) demand pluralism &amp; non-Western concepts (Kautilya, Confucian, Ubuntu).</li>
+    <li><strong>Over-simplification</strong> &mdash; parsimony buys clarity at the cost of nuance; no theory fits every case.</li>
+    <li><strong>Predictive failures</strong> &mdash; few foresaw the peaceful end of the Cold War, the Arab Spring, or the speed of China's rise.</li>
+    <li><strong>Normative blind spots</strong> &mdash; Realism can excuse power politics; critical theorists insist theory should also <em>emancipate</em>.</li>
+  </ul>
+  <div class="callout"><strong>Amitav Acharya's &ldquo;Global IR&rdquo;</strong> is the key contemporary corrective &mdash; a call to de-centre the West and build a discipline that draws on the histories and ideas of the Global South, including India's own traditions of statecraft.</p></div>
+</section>
+
+<section class="notes" id="currentaffairs">
+  <h2>15. IR Theory in 2025&ndash;26 Debates</h2>
+  <p>Theory is not a museum piece &mdash; the biggest headlines of the mid-2020s are, at bottom, theoretical arguments. <span class="update-tag">2025&ndash;26</span></p>
+  <div class="grid-2">
+    <div class="card"><h4>Multipolarity vs a &ldquo;G-2&rdquo; world</h4><p>Is power genuinely diffusing to many centres (India, EU, Global South), or re-concentrating into a US&ndash;China bipolarity? A live <em>polarity</em> debate. <span class="update-tag">Live</span></p></div>
+    <div class="card"><h4>De-globalisation &amp; weaponised interdependence</h4><p>Tariffs, export controls, friend-shoring &amp; sanctions test the Liberal claim that trade pacifies &mdash; interdependence is now a <em>weapon</em> (Farrell &amp; Newman).</p></div>
+    <div class="card"><h4>Return of great-power war</h4><p>Ukraine &amp; West Asia revived Realist pessimism about anarchy, deterrence &amp; the balance of power.</p></div>
+    <div class="card"><h4>Norm contestation</h4><p>Sovereignty vs R2P, AI &amp; cyber governance, the &ldquo;rules-based order&rdquo; vs &ldquo;order based on the UN Charter&rdquo; &mdash; Constructivist battles over which norms rule.</p></div>
+    <div class="card"><h4>Voice of the Global South</h4><p>India's summitry channels Dependency/World-Systems concerns into demands for reformed multilateralism &amp; fairer finance.</p></div>
+    <div class="card"><h4>Strategic autonomy &amp; multi-alignment</h4><p>India engaging Quad, BRICS, SCO &amp; the West at once is balance-of-power hedging under emerging multipolarity.</p></div>
+  </div>
+  <div class="callout update"><strong>Exam hook:</strong> When a 2026 editorial says &ldquo;the rules-based order is fraying&rdquo;, translate it: a Constructivist worry about eroding norms + a Realist claim that power is re-concentrating + a Liberal defence of institutions. Naming the theory behind the headline is what separates a top answer.</p></div>
+</section>
+
+<section class="notes" id="prelims-pyq">
+  <h2>16. Prelims PYQ Practice</h2>
+  <p><strong>A note on sourcing:</strong> UPSC Prelims very rarely sets a stand-alone MCQ on <em>pure</em> IR theory (Realism, Liberalism, spillover, etc.); the concepts instead appear woven into current-affairs and organisation questions. The MCQs below are therefore <strong>UPSC-pattern concept-practice items</strong> built to the exam's standard &mdash; they are honestly labelled as practice, not passed off as dated past questions. Master the concept, and the real fact-based MCQ built on it becomes easy.</p>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; concept practice</div>
+    <p class="q-stem">Q. The term &ldquo;soft power&rdquo;, widely used in international relations, is best described as the ability of a state to</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> compel other states through the threat or use of military force</li>
+      <li class="correct"><span class="opt-key">(b)</span> obtain preferred outcomes through attraction &mdash; culture, values and legitimate policies &mdash; rather than coercion</li>
+      <li><span class="opt-key">(c)</span> impose economic sanctions to change another state's behaviour</li>
+      <li><span class="opt-key">(d)</span> acquire nuclear weapons for deterrence</li>
+    </ul>
+    <p class="ans">Answer: (b). Soft power (Joseph Nye) works through attraction and co-option; (a) and (c) are hard power, (d) is a hard-power capability.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; concept practice</div>
+    <p class="q-stem">Q. As per the Montevideo Convention (1933), which of the following is/are essential element(s) of statehood?<br>1. A defined territory&nbsp; 2. A permanent population&nbsp; 3. A government&nbsp; 4. Capacity to enter into relations with other states<br>Select the correct answer:</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> 1 and 3 only</li>
+      <li><span class="opt-key">(b)</span> 2 and 4 only</li>
+      <li class="correct"><span class="opt-key">(c)</span> 1, 2, 3 and 4</li>
+      <li><span class="opt-key">(d)</span> 1, 2 and 3 only</li>
+    </ul>
+    <p class="ans">Answer: (c). All four are the Montevideo criteria for a state. Note this defines a <em>state</em>, not a <em>nation</em>.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; concept practice</div>
+    <p class="q-stem">Q. The Peace of Westphalia (1648) is considered a landmark in international relations primarily because it</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> established the principle of the sovereign territorial state as the basis of the modern states-system</li>
+      <li><span class="opt-key">(b)</span> created the League of Nations</li>
+      <li><span class="opt-key">(c)</span> abolished colonialism in Asia and Africa</li>
+      <li><span class="opt-key">(d)</span> founded the United Nations Security Council</li>
+    </ul>
+    <p class="ans">Answer: (a). Westphalia entrenched sovereignty, legal equality and non-interference. The League (1920) and UN (1945) are far later milestones.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; concept practice</div>
+    <p class="q-stem">Q. In the context of IR theory, the concept of the &ldquo;security dilemma&rdquo; refers to a situation where</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> a state cannot decide which international organisation to join</li>
+      <li class="correct"><span class="opt-key">(b)</span> one state's measures to increase its own security make other states feel less secure, prompting counter-measures</li>
+      <li><span class="opt-key">(c)</span> a state faces both internal insurgency and external aggression at once</li>
+      <li><span class="opt-key">(d)</span> two allies disagree over burden-sharing in a war</li>
+    </ul>
+    <p class="ans">Answer: (b). The security dilemma (Herz, Jervis) drives arms races even between status-quo states under anarchy.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; concept practice</div>
+    <p class="q-stem">Q. &ldquo;Anarchy is what states make of it&rdquo; &mdash; this proposition is most closely associated with which school of International Relations theory?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Classical Realism</li>
+      <li><span class="opt-key">(b)</span> Neoliberal Institutionalism</li>
+      <li class="correct"><span class="opt-key">(c)</span> Constructivism</li>
+      <li><span class="opt-key">(d)</span> Dependency Theory</li>
+    </ul>
+    <p class="ans">Answer: (c). The statement is Alexander Wendt's; for constructivists anarchy has no fixed logic &mdash; ideas and identities give it meaning.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; concept practice</div>
+    <p class="q-stem">Q. The idea of &ldquo;spillover&rdquo; &mdash; that integration in one sector generates pressure to integrate related sectors &mdash; is central to which theory, most often used to explain European integration?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Offensive Realism</li>
+      <li class="correct"><span class="opt-key">(b)</span> Neo-Functionalism</li>
+      <li><span class="opt-key">(c)</span> World-Systems Theory</li>
+      <li><span class="opt-key">(d)</span> Democratic Peace Theory</li>
+    </ul>
+    <p class="ans">Answer: (b). Ernst Haas's neo-functionalism introduced &ldquo;spillover&rdquo;; the EU (Coal &amp; Steel &#8594; single market) is the classic case.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; concept practice</div>
+    <p class="q-stem">Q. The division of the world economy into a &ldquo;core&rdquo;, &ldquo;semi-periphery&rdquo; and &ldquo;periphery&rdquo; is a central feature of</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Kenneth Waltz's Neorealism</li>
+      <li><span class="opt-key">(b)</span> the English School's international society</li>
+      <li class="correct"><span class="opt-key">(c)</span> Immanuel Wallerstein's World-Systems Theory</li>
+      <li><span class="opt-key">(d)</span> Michael Doyle's Democratic Peace Theory</li>
+    </ul>
+    <p class="ans">Answer: (c). Wallerstein's three-tier capitalist world-economy; the semi-periphery (e.g., rising powers) is a mobile middle layer.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; concept practice</div>
+    <p class="q-stem">Q. Consider the following pairs of thinker and tradition:<br>1. Hans Morgenthau &mdash; Classical Realism&nbsp; 2. Immanuel Kant &mdash; Liberal/Idealist&nbsp; 3. John Mearsheimer &mdash; Offensive Realism<br>Which of the pairs is/are correctly matched?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> 1 and 2 only</li>
+      <li><span class="opt-key">(b)</span> 3 only</li>
+      <li class="correct"><span class="opt-key">(c)</span> 1, 2 and 3</li>
+      <li><span class="opt-key">(d)</span> 1 and 3 only</li>
+    </ul>
+    <p class="ans">Answer: (c). All three are correctly paired &mdash; Morgenthau (classical realism), Kant (liberal peace), Mearsheimer (offensive realism).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem">Anticipated focus areas: soft/sharp power distinctions in an information-warfare age; sovereignty vs R2P; the meaning of &ldquo;multipolarity&rdquo; and &ldquo;strategic autonomy&rdquo;; civic vs ethnic nationalism; matching IR thinkers to their core idea (Nye, Waltz, Wendt, Wallerstein, Haas, Mitrany); and terms trending in the news &mdash; &ldquo;weaponised interdependence&rdquo;, &ldquo;Global South&rdquo;, &ldquo;rules-based order&rdquo;.</p>
+    <p>Prep tip: prepare a one-line thinker&#8594;concept table and a &ldquo;power spectrum&rdquo; card. UPSC increasingly tests whether you can attach the right label to a term seen in an editorial, rather than pure textbook recall.</p>
+  </div>
+</section>
+
+<section class="notes" id="mains-pyq">
+  <h2>17. Mains PYQ Practice</h2>
+  <p class="q-stem"><strong>A note on sourcing:</strong> UPSC GS-II does not set questions on abstract IR theory as such; theory is the <em>lens</em> you apply to concrete foreign-policy questions. Below is one genuine dated GS-II question answerable through these concepts, followed by UPSC-pattern <strong>model questions</strong> (honestly labelled, not fabricated past papers) that let you rehearse deploying theory in an answer. Each carries a full skeleton.</p>
+
+  <div class="pyq">
+    <div class="year">UPSC GS-II 2019</div>
+    <p class="q-stem">Q. &ldquo;The long-sustained image of India as a leader of the oppressed and marginalised nations has disappeared on account of its new found role in the emerging global order.&rdquo; Elaborate. <span class="marks">15 marks</span></p>
+    <div class="model-answer">
+      <h5>Full answer skeleton</h5>
+      <ol>
+        <li><strong>Intro:</strong> India's post-independence identity (Constructivist self-image) as champion of the decolonised &mdash; NAM, G-77, NIEO, anti-apartheid &mdash; rooted in a Dependency-theory critique of an unequal order.</li>
+        <li><strong>The shift:</strong> Rise as a major economy &amp; &ldquo;emerging power&rdquo;; strategic convergence with the West (Quad, iCET); pursuit of UNSC permanent seat, NSG; selective, interest-based positions &mdash; a more Realist, status-seeking posture.</li>
+        <li><strong>Continuity, not disappearance:</strong> &ldquo;Voice of the Global South&rdquo; summits, vaccine &amp; disaster diplomacy, climate-justice &amp; reformed-multilateralism advocacy, championing the African Union in G20 &mdash; the leadership image is <em>re-cast</em>, not abandoned.</li>
+        <li><strong>Balance:</strong> India now blends solidarity with the South and partnership with the North &mdash; a bridging power, which some Southern states read as dilution.</li>
+        <li><strong>Conclusion:</strong> The image has evolved from moral crusader to pragmatic bridge; strategic autonomy lets India speak <em>for</em> the South while sitting at high tables &mdash; continuity of ends, change of means.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC GS-II &mdash; model question</div>
+    <p class="q-stem">Q. Examine the relevance of Realism and Liberalism in explaining India's contemporary foreign policy. Is either sufficient on its own? <span class="marks">15 marks</span></p>
+    <div class="model-answer">
+      <h5>Full answer skeleton</h5>
+      <ol>
+        <li><strong>Intro:</strong> Define both lenses in a line each; state the thesis that India is eclectic, not doctrinaire.</li>
+        <li><strong>Realist evidence:</strong> Nuclear deterrence &amp; No-First-Use, LAC build-up, defence modernisation, hedging vs China, refusal of external mediation, Kautilyan neighbourhood logic.</li>
+        <li><strong>Liberal evidence:</strong> Panchsheel, faith in UN/WTO, reformed multilateralism, economic interdependence, democratic-values branding, climate diplomacy.</li>
+        <li><strong>Why neither suffices:</strong> Realism misses India's institutionalism &amp; soft power; Liberalism misses its security pragmatism &amp; autonomy. Add Constructivism (civilisational identity) &amp; Dependency (Global South).</li>
+        <li><strong>Conclusion:</strong> India is a &ldquo;civilisational-Realist&rdquo; power &mdash; Realist in practice, Liberal in posture, Constructivist in identity. Theoretical pluralism, not purity, explains it.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC GS-II &mdash; model question</div>
+    <p class="q-stem">Q. &ldquo;Soft power is India's greatest strategic asset, yet its least leveraged one.&rdquo; Critically examine. <span class="marks">15 marks</span></p>
+    <div class="model-answer">
+      <h5>Full answer skeleton</h5>
+      <ol>
+        <li><strong>Intro:</strong> Define soft power (Nye) &mdash; attraction, not coercion; note India's deep civilisational reservoir.</li>
+        <li><strong>Assets:</strong> Yoga (Intl Day of Yoga), Ayurveda, cinema, cuisine, diaspora (32 mn), democracy brand, Buddhist heritage, Vaccine Maitri, ISA &amp; IPOI norm entrepreneurship.</li>
+        <li><strong>Under-leverage:</strong> Weak institutional funding vs China's Confucius Institutes/BRI narrative; sharp-power &amp; disinformation challenges; gap between attraction and material outcomes; domestic image risks.</li>
+        <li><strong>Way forward:</strong> Integrate soft with hard into &ldquo;smart power&rdquo;; resource ICCR &amp; cultural diplomacy; harness diaspora &amp; digital public goods (UPI, DPI).</li>
+        <li><strong>Conclusion:</strong> Soft power multiplies hard power but cannot substitute it; the task is conversion &mdash; from attraction to influence.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC GS-II &mdash; model question</div>
+    <p class="q-stem">Q. Trace the evolution of &ldquo;strategic autonomy&rdquo; from Nehruvian non-alignment. To what extent does it reflect Realist rather than Idealist thinking? <span class="marks">15 marks</span></p>
+    <div class="model-answer">
+      <h5>Full answer skeleton</h5>
+      <ol>
+        <li><strong>Intro:</strong> Non-alignment (1950s&ndash;80s) as a response to bipolarity; strategic autonomy as its post-Cold-War, multipolar successor.</li>
+        <li><strong>Continuity:</strong> Same instinct &mdash; keep options open, avoid binding alliances, protect decision-making freedom.</li>
+        <li><strong>Change:</strong> From moral/Idealist framing (peace, disarmament) to interest-driven multi-alignment (Quad + BRICS + SCO + Russia + West simultaneously) &mdash; a Realist hedging logic.</li>
+        <li><strong>Assessment:</strong> Rhetoric retains Idealist vocabulary; practice is increasingly Realist balance-of-power under emerging multipolarity.</li>
+        <li><strong>Conclusion:</strong> Strategic autonomy is non-alignment matured &mdash; Idealist in origin, Realist in execution.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC GS-II &mdash; model question</div>
+    <p class="q-stem">Q. The tension between state sovereignty and the norm of the Responsibility to Protect (R2P) reflects a deeper theoretical divide in International Relations. Discuss, with India's position. <span class="marks">15 marks</span></p>
+    <div class="model-answer">
+      <h5>Full answer skeleton</h5>
+      <ol>
+        <li><strong>Intro:</strong> Define sovereignty (Westphalian, non-intervention) and R2P (2005 World Summit &mdash; sovereignty as responsibility).</li>
+        <li><strong>Theoretical divide:</strong> Realists &amp; many Global-South states defend sovereignty &amp; non-interference; Liberals &amp; Constructivists back emerging human-protection norms.</li>
+        <li><strong>Risk of misuse:</strong> Libya (2011) &mdash; R2P stretched into regime change; deepened Southern suspicion.</li>
+        <li><strong>India's position:</strong> Cautious &mdash; supports Pillars I &amp; II (prevention, assistance), wary of Pillar III (coercive intervention); insists on UNSC authorisation &amp; non-selectivity.</li>
+        <li><strong>Conclusion:</strong> The clash is norm-contestation in action; India seeks a middle path &mdash; protect people without weaponising the norm against sovereignty.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-II &mdash; anticipated themes</div>
+    <p class="q-stem">Q (anticipated). &ldquo;A multipolar world is more contested than cooperative.&rdquo; In light of de-globalisation and weaponised interdependence, examine what IR theory tells us about the emerging order and India's place in it.</p>
+    <p style="font-size:13px;margin:6px 0 0"><strong>Skeleton:</strong> Define polarity &amp; multipolarity; Realist reading (contested, balance-of-power, security dilemmas) vs Liberal reading (institutions still bind); weaponised interdependence (Farrell &amp; Newman) undercutting the trade-pacifies thesis; India as a hedging &ldquo;bridging power&rdquo; using strategic autonomy &amp; Global-South leadership; conclude that theory predicts managed contestation, not orderly cooperation.</p>
+  </div>
+</section>
+
+<section class="notes" id="revision">
+  <div class="revision-box">
+    <h3>&#9733; Rapid Revision &mdash; IR Theory &amp; Core Concepts</h3>
+    <ul>
+      <li><strong>State vs Nation:</strong> State = legal-political (Montevideo's 4 elements: territory, population, government, sovereignty). Nation = psychological-cultural (Renan's &ldquo;daily plebiscite&rdquo;, Anderson's &ldquo;imagined community&rdquo;). Nation-state = rare overlap; India = <em>state-nation</em>.</li>
+      <li><strong>Sovereignty:</strong> internal (supreme within) + external (independent, non-interference). Born at <strong>Westphalia 1648</strong>. Eroded by globalisation/R2P; reasserted via strategic autonomy.</li>
+      <li><strong>Power (Nye):</strong> Hard (coerce) &#183; Soft (attract) &#183; Smart (blend) &#183; Sharp (manipulate). India = soft-power leader building hard power.</li>
+      <li><strong>Balance of power &amp; polarity:</strong> uni/bi/multipolar; balancing vs bandwagoning vs buck-passing; security dilemma. India = multi-alignment &amp; internal balancing.</li>
+      <li><strong>Realism:</strong> anarchy, survival, power. Classical (Morgenthau, human nature) &#183; Neorealism (Waltz, structure) &#183; Offensive (Mearsheimer) &#183; Defensive. Roots: Kautilya, Thucydides, Hobbes.</li>
+      <li><strong>Liberalism:</strong> cooperation via trade, institutions, democracy. Kant &#8594; Wilson (Idealism) &#8594; Keohane &amp; Nye (complex interdependence, neoliberal institutionalism). Democratic Peace (Doyle).</li>
+      <li><strong>Functionalism:</strong> Mitrany (&ldquo;form follows function&rdquo;) &amp; Haas (neo-functionalism, <strong>spillover</strong>) &mdash; EU is the model.</li>
+      <li><strong>Marxism family:</strong> Lenin (imperialism) &#183; Dependency (core&ndash;periphery, Frank) &#183; World-Systems (Wallerstein, semi-periphery). Underpins Global South/NIEO.</li>
+      <li><strong>Constructivism (Wendt):</strong> &ldquo;anarchy is what states make of it&rdquo; &mdash; ideas, identity, norms. Plus feminism, post-colonialism, English School (Bull's &ldquo;international society&rdquo;).</li>
+      <li><strong>Nationalism:</strong> civic vs ethnic vs cultural vs anti-colonial. Self-determination: internal (autonomy) vs external (secession) &mdash; India backs internal, rejects external.</li>
+      <li><strong>India = &ldquo;civilisational-Realist&rdquo;:</strong> Realist in security, Liberal in posture, Constructivist in identity, Dependency in Global-South advocacy. <strong>Global IR</strong> (Acharya) de-centres the West.</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Key Thinkers &#8594; Core Idea</h4>
+    <table>
+      <tr><th>Thinker</th><th>Associated with</th></tr>
+      <tr><td>Morgenthau</td><td>Classical Realism</td></tr>
+      <tr><td>Waltz</td><td>Neorealism / structure</td></tr>
+      <tr><td>Mearsheimer</td><td>Offensive Realism</td></tr>
+      <tr><td>Kant / Doyle</td><td>Liberal / Democratic Peace</td></tr>
+      <tr><td>Keohane &amp; Nye</td><td>Complex interdependence; soft power</td></tr>
+      <tr><td>Mitrany / Haas</td><td>Functionalism / spillover</td></tr>
+      <tr><td>Wallerstein</td><td>World-Systems</td></tr>
+      <tr><td>Wendt</td><td>Constructivism</td></tr>
+      <tr><td>Hedley Bull</td><td>English School</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Theory at a Glance</h4>
+    <table>
+      <tr><th>Theory</th><th>Driver</th></tr>
+      <tr><td>Realism</td><td>Power &amp; survival</td></tr>
+      <tr><td>Liberalism</td><td>Cooperation, institutions</td></tr>
+      <tr><td>Functionalism</td><td>Integration by need</td></tr>
+      <tr><td>Marxism</td><td>Class &amp; inequality</td></tr>
+      <tr><td>Constructivism</td><td>Ideas &amp; identity</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>The Great Debates</h4>
+    <ul>
+      <li><strong>1st:</strong> Idealism vs Realism (inter-war)</li>
+      <li><strong>2nd:</strong> Traditionalism vs Behaviouralism (method)</li>
+      <li><strong>3rd:</strong> Neorealism vs Neoliberalism (&ldquo;neo-neo&rdquo;)</li>
+      <li><strong>4th:</strong> Rationalism vs Reflectivism (Constructivism &amp; critical theory)</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Micro-Glossary</h4>
+    <details><summary>Anarchy</summary>No world government above states; self-help, not chaos.</details>
+    <details><summary>Security dilemma</summary>Defensive build-up looks offensive &#8594; spirals.</details>
+    <details><summary>Spillover</summary>Integration in one sector pushes integration in others.</details>
+    <details><summary>Core&ndash;periphery</summary>Wealthy centre extracts surplus from poor periphery.</details>
+    <details><summary>Deterrence / MAD</summary>Prevent attack by threat of unacceptable retaliation.</details>
+  </div>
+
+  <div class="widget">
+    <h4>Prelims Pointers</h4>
+    <ul>
+      <li>Montevideo = 4 elements of a <em>state</em>.</li>
+      <li>Westphalia 1648 = birth of sovereign-state system.</li>
+      <li>Soft power = Nye; &ldquo;anarchy is what states make of it&rdquo; = Wendt.</li>
+      <li>Spillover = neo-functionalism (Haas).</li>
+      <li>Core/semi-periphery/periphery = Wallerstein.</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Mains Angle</h4>
+    <p>Never force India into one theory. Frame it as <strong>&ldquo;civilisational-Realist&rdquo;</strong>: Realist in security, Liberal in posture, Constructivist in identity, Dependency in Global-South advocacy.</p>
+    <p>Cite <strong>Acharya's Global IR</strong> to show awareness of the West-centrism critique.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Power Spectrum Card</h4>
+    <div class="bar"><span class="lbl">Hard</span><span class="fill"><span style="width:95%"></span></span></div>
+    <div class="bar"><span class="lbl">Sharp</span><span class="fill"><span style="width:70%"></span></span></div>
+    <div class="bar"><span class="lbl">Smart</span><span class="fill"><span style="width:55%"></span></span></div>
+    <div class="bar"><span class="lbl">Soft</span><span class="fill"><span style="width:20%"></span></span></div>
+    <p style="font-size:11px;color:#5a6266;margin:6px 0 0">Left = coercion, right = attraction. Smart power blends both.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Common Confusions</h4>
+    <ul>
+      <li><strong>State &ne; Nation</strong> &mdash; legal vs cultural.</li>
+      <li><strong>Idealism &ne; Liberalism</strong> &mdash; Idealism is the inter-war ancestor.</li>
+      <li><strong>Soft &ne; Sharp</strong> &mdash; attraction vs manipulation.</li>
+      <li><strong>Realism &ne; realpolitik</strong> &mdash; theory vs policy style.</li>
+      <li><strong>Non-alignment &ne; neutrality</strong> &mdash; active, not passive.</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Related Notes</h4>
+    <ul class="related">
+      <li><a href="/international-relations/india-s-foreign-policy-evolution">IR T1: Foreign Policy &mdash; Evolution</a></li>
+      <li><a href="/international-relations/determinants-and-institutions-of-india-s-foreign-policy">IR T2: Determinants &amp; Institutions</a></li>
+      <li><a href="/international-relations/core-principles-and-doctrines-of-india-s-foreign-policy">IR T3: Principles &amp; Doctrines</a></li>
+      <li><a href="/international-relations/phases-of-india-s-foreign-policy">IR T7: Phases of India's FP</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

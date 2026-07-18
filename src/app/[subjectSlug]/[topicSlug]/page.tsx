@@ -40,6 +40,7 @@ import {
   isGovernanceTopicId,
   type GovernanceTopicId,
 } from "@/lib/governance-notes";
+import { isIrTopicId, type IrTopicId } from "@/lib/ir-notes";
 import { PolityTopicFooterNav } from "@/components/notes/PolityTopicFooterNav";
 import { PolityTopicNotesBody } from "@/components/notes/PolityTopicNotesBody";
 import { SocietyTopicFooterNav } from "@/components/notes/SocietyTopicFooterNav";
@@ -54,6 +55,8 @@ import { EnvironmentTopicFooterNav } from "@/components/notes/EnvironmentTopicFo
 import { EnvironmentTopicNotesBody } from "@/components/notes/EnvironmentTopicNotesBody";
 import { GovernanceTopicFooterNav } from "@/components/notes/GovernanceTopicFooterNav";
 import { GovernanceTopicNotesBody } from "@/components/notes/GovernanceTopicNotesBody";
+import { IrTopicFooterNav } from "@/components/notes/IrTopicFooterNav";
+import { IrTopicNotesBody } from "@/components/notes/IrTopicNotesBody";
 
 export const revalidate = 86400;
 
@@ -116,6 +119,7 @@ export default async function TopicPage({ params }: PageProps) {
     subjectKey === "environment" && isEnvironmentTopicId(chapter.id);
   const isGovernance =
     subjectKey === "governance" && isGovernanceTopicId(chapter.id);
+  const isIr = subjectKey === "ir" && isIrTopicId(chapter.id);
 
   if (isAncient) {
     const topicId = chapter.id as AncientTopicId;
@@ -255,6 +259,17 @@ export default async function TopicPage({ params }: PageProps) {
       <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
         <GovernanceTopicNotesBody topicId={topicId} />
         <GovernanceTopicFooterNav topicId={topicId} />
+        <TopicNotesEnhancements />
+      </TopicPageLayout>
+    );
+  }
+
+  if (isIr) {
+    const topicId = chapter.id as IrTopicId;
+    return (
+      <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
+        <IrTopicNotesBody topicId={topicId} />
+        <IrTopicFooterNav topicId={topicId} />
         <TopicNotesEnhancements />
       </TopicPageLayout>
     );

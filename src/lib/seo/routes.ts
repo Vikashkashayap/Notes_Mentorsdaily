@@ -33,6 +33,10 @@ import {
   isGovernanceTopicId,
 } from "@/lib/governance-notes";
 import {
+  getIrTopicSlug,
+  isIrTopicId,
+} from "@/lib/ir-notes";
+import {
   getMedievalTopicSlug,
   isMedievalTopicId,
 } from "@/lib/medieval-notes";
@@ -109,6 +113,9 @@ export function topicPath(subjectKey: SubjectKey, chapterId: string): string {
   }
   if (subjectKey === "governance" && isGovernanceTopicId(chapterId)) {
     return `${subjectHubPath("governance")}/${getGovernanceTopicSlug(chapterId)}`;
+  }
+  if (subjectKey === "ir" && isIrTopicId(chapterId)) {
+    return `${subjectHubPath("ir")}/${getIrTopicSlug(chapterId)}`;
   }
   return `${subjectHubPath(subjectKey)}/${topicSlugFromChapterId(chapterId)}`;
 }
@@ -191,6 +198,11 @@ export function getChapterByTopicSlug(
         isGovernanceTopicId(ch.id) && getGovernanceTopicSlug(ch.id) === slug,
     );
   }
+  if (subjectKey === "ir") {
+    return subject.chapters.find(
+      (ch) => isIrTopicId(ch.id) && getIrTopicSlug(ch.id) === slug,
+    );
+  }
   return subject.chapters.find(
     (ch) => topicSlugFromChapterId(ch.id) === slug,
   );
@@ -253,6 +265,10 @@ export function getChapterHref(
     if (!isGovernanceTopicId(chapter.id)) return null;
     return topicPath("governance", chapter.id);
   }
+  if (subjectKey === "ir" || isIrTopicId(chapter.id)) {
+    if (!isIrTopicId(chapter.id)) return null;
+    return topicPath("ir", chapter.id);
+  }
   return topicPath(subjectKey, chapter.id);
 }
 
@@ -291,6 +307,8 @@ export function getAllTopicPaths(): { subjectKey: SubjectKey; slug: string }[] {
         paths.push({ subjectKey: key, slug: getEnvironmentTopicSlug(ch.id) });
       } else if (key === "governance" && isGovernanceTopicId(ch.id)) {
         paths.push({ subjectKey: key, slug: getGovernanceTopicSlug(ch.id) });
+      } else if (key === "ir" && isIrTopicId(ch.id)) {
+        paths.push({ subjectKey: key, slug: getIrTopicSlug(ch.id) });
       } else if (
         key !== "ancient" &&
         key !== "medieval" &&
@@ -304,7 +322,8 @@ export function getAllTopicPaths(): { subjectKey: SubjectKey; slug: string }[] {
         key !== "disaster" &&
         key !== "economy" &&
         key !== "environment" &&
-        key !== "governance"
+        key !== "governance" &&
+        key !== "ir"
       ) {
         paths.push({
           subjectKey: key,
