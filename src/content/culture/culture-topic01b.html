@@ -1,0 +1,648 @@
+<!-- culture-topic01b — auto-imported from culture-topic01b-architecture-indo-islamic-colonial-modern-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Architecture (Part 2): Indo-Islamic, Colonial &amp; Modern</h1>
+  <p class="sub">The story of how a new structural grammar &mdash; the <strong>true arch, dome and minaret</strong> &mdash; met India's <strong>beam-and-bracket</strong> tradition to create a distinctive Indo-Islamic style, matured into the <strong>Mughal</strong> classicism of the Taj Mahal, splintered into rich <strong>regional schools</strong> (Sikh, Maratha, Rajput), was reshaped by <strong>colonial</strong> Gothic, Indo-Saracenic and Art Deco, and finally found a <strong>modern Indian idiom</strong> from Chandigarh to the new Parliament. This file covers the Delhi Sultanate &amp; provincial schools, the full Mughal arc from Babur to Aurangzeb, charbagh &amp; pietra dura, colonial styles and post-Independence architecture &mdash; with labelled diagrams, comparison tables and PYQs + model answers.</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-I</span>
+    <span class="pill">Sultanate &middot; Mughal &middot; Colonial</span>
+    <span class="pill">~38 min read</span>
+    <span class="pill">Charbagh &middot; Pietra Dura &middot; Indo-Saracenic</span>
+    <span class="pill">High Weight</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#overview">The Indo-Islamic Synthesis</a></li>
+    <li><span class="num">2.</span><a href="#sultanate">Delhi Sultanate Architecture</a></li>
+    <li><span class="num">3.</span><a href="#provincial">Provincial &amp; Regional Sultanate Schools</a></li>
+    <li><span class="num">4.</span><a href="#mughal">Mughal Architecture (Babur&ndash;Aurangzeb)</a></li>
+    <li><span class="num">5.</span><a href="#features">Signature Mughal Features</a></li>
+    <li><span class="num">6.</span><a href="#postmughal">Post-Mughal Regional Schools</a></li>
+    <li><span class="num">7.</span><a href="#colonial">Colonial Architecture</a></li>
+    <li><span class="num">8.</span><a href="#modern">Post-Independence &amp; Modern</a></li>
+    <li><span class="num">9.</span><a href="#currentaffairs">Conservation &amp; Current Relevance</a></li>
+    <li><span class="num">10.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><span class="num">11.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Frames Indo-Islamic &amp; Later Architecture</h3>
+  <p>This block is tested less on terminology than on <em>synthesis</em> &mdash; how two building traditions fused, and how each later phase (Mughal, regional, colonial, modern) reworked that fusion. Sort your prep:</p>
+  <ul>
+    <li><strong>Static/terminology</strong> &mdash; arcuate vs trabeate; true vs corbelled arch; charbagh, pietra dura, jali, chhatri, pishtaq, iwan, Buland Darwaza, double dome; monument&ndash;ruler pairs (Qutub&ndash;Aibak/Iltutmish, Taj&ndash;Shah Jahan). High recall.</li>
+    <li><strong>Stylistic evolution</strong> &mdash; Sultanate (austere, red sandstone, corbelled) &rarr; Mughal (grand, symmetrical, marble &amp; pietra dura) &rarr; colonial (Gothic, Indo-Saracenic, Art Deco) &rarr; modern (concrete, Corbusier, national symbolism). Feature-to-phase mapping.</li>
+    <li><strong>Analytical (GS-I)</strong> &mdash; architecture as cultural synthesis and a marker of composite culture; colonial architecture as an instrument of empire; heritage conservation vs modern needs. Needs idea + example + judgement.</li>
+  </ul>
+  <p><strong>Note:</strong> Indo-Islamic architecture is the classic textbook case of India's <em>composite (Ganga-Jamuni) culture</em> &mdash; craftsmen, motifs and techniques from many faiths and regions fused into a shared idiom; the monuments belong to the entire nation's heritage.</p>
+</div>
+
+<!-- SECTION 1 -->
+<section class="notes" id="overview">
+  <h2>1. The Indo-Islamic Synthesis</h2>
+  <p>When Turkic rulers established the Delhi Sultanate (1206), they brought a west-Asian structural vocabulary that met an entirely different Indian one. Indo-Islamic architecture is the <strong>fusion of these two grammars</strong> &mdash; not a wholesale import, because it was built by <em>Indian</em> masons using Indian material and, often, Hindu/Jain temple spolia.</p>
+  <table>
+    <tr><th>Aspect</th><th>Indian (Trabeate)</th><th>Islamic (Arcuate)</th></tr>
+    <tr><td>Spanning space</td><td><strong>Trabeate</strong> &mdash; beam laid across two posts (lintel); corbelled "false" arch/dome</td><td><strong>Arcuate</strong> &mdash; the <strong>true arch</strong> &amp; true dome (voussoirs + keystone), spanning far wider</td></tr>
+    <tr><td>Decoration</td><td>Figural sculpture; naturalistic motifs</td><td>Aniconic &mdash; <strong>calligraphy, arabesque, geometry</strong> (no images of living beings)</td></tr>
+    <tr><td>Materials &amp; finish</td><td>Stone, richly carved</td><td>Mortar &amp; concrete enabling large spans; later marble, tilework, <em>pietra dura</em></td></tr>
+    <tr><td>Key elements</td><td>Shikhara/vimana, mandapa, bracket</td><td>Dome, minaret, arch, mihrab, iwan, charbagh</td></tr>
+  </table>
+  <div class="callout info"><strong>Framing line for GS-I:</strong> the earliest mosques (Quwwat-ul-Islam) were literally built <em>from</em> demolished temples using corbelled "arches"; within two centuries Indian masons had mastered the true arch and dome &mdash; a fusion, not a replacement, that became the visual signature of composite culture.</div>
+</section>
+
+<!-- SECTION 2 -->
+<section class="notes" id="sultanate">
+  <h2>2. Delhi Sultanate Architecture</h2>
+  <p>The "Imperial Style" of the Delhi Sultanate evolves through five dynasties &mdash; from borrowed forms and corbelled arches to genuine arcuate construction and, finally, the sober monumentality of the Tughlaqs and the garden-tombs of the Lodhis.</p>
+  <table>
+    <tr><th>Dynasty</th><th>Features</th><th>Key monuments</th></tr>
+    <tr><td><strong>Slave / Mamluk</strong> (Aibak, Iltutmish)</td><td>Temple spolia; corbelled arches; first true beginnings; red sandstone.</td><td><strong>Quwwat-ul-Islam mosque</strong> &amp; <strong>Qutub Minar</strong> (begun Aibak, completed Iltutmish); Adhai-din-ka-Jhonpra (Ajmer)</td></tr>
+    <tr><td><strong>Khilji</strong></td><td>First <strong>true arch &amp; true dome</strong>; horseshoe/pointed arch; red sandstone with marble; "lotus-bud" fringe.</td><td><strong>Alai Darwaza</strong> (gateway, first true dome, 1311); Siri fort</td></tr>
+    <tr><td><strong>Tughlaq</strong></td><td>Austere, fortress-like; <strong>battered (sloping) walls</strong>; combination of arch-and-lintel; grey stone; minimal ornament &mdash; "crisis architecture".</td><td>Tughlaqabad; <strong>Tomb of Ghiyasuddin Tughlaq</strong>; Firoz Shah Kotla</td></tr>
+    <tr><td><strong>Sayyid &amp; Lodhi</strong></td><td>The <strong>garden-tomb</strong> and the <strong>octagonal &amp; square tomb</strong> types; <strong>double dome</strong> introduced; the seedbed of Mughal tomb design.</td><td>Lodhi Gardens tombs (Mohammed Shah, Sikandar Lodhi); Bara Gumbad</td></tr>
+  </table>
+  <div class="callout warn"><strong>Prelims lock:</strong> first <em>true dome/arch</em> = <strong>Alai Darwaza</strong> (Khilji); <em>battered walls</em> = <strong>Tughlaq</strong>; <em>double dome &amp; garden-tomb</em> begin under the <strong>Lodhis</strong>; Qutub Minar begun by <strong>Aibak</strong>, finished by <strong>Iltutmish</strong>.</div>
+</section>
+
+<!-- SECTION 3 -->
+<section class="notes" id="provincial">
+  <h2>3. Provincial &amp; Regional Sultanate Schools</h2>
+  <p>As provincial governors broke away, distinct regional idioms emerged &mdash; each blending the Islamic template with strong <em>local</em> temple traditions, material and climate. This diversity is a favourite match-the-pairs source.</p>
+  <table>
+    <tr><th>School</th><th>Signature</th><th>Examples</th></tr>
+    <tr><td><strong>Bengal</strong></td><td>Brick &amp; terracotta; curved "do-chala" bangla roof (later borrowed by Mughals as the <em>bangaldar</em>); black stone.</td><td>Adina Mosque (Pandua), Sixty-Dome (Bagerhat)</td></tr>
+    <tr><td><strong>Jaunpur (Sharqi)</strong></td><td>Bold arched screen (<em>pylon</em>) hiding the dome; austere, no minarets.</td><td>Atala &amp; Jama Masjid, Jaunpur</td></tr>
+    <tr><td><strong>Malwa (Mandu)</strong></td><td>No minarets; use of coloured stone, arch-and-lintel, stairways &amp; batter; "hill" architecture.</td><td><strong>Jahaz Mahal, Hindola Mahal, Jama Masjid (Mandu)</strong></td></tr>
+    <tr><td><strong>Gujarat</strong></td><td>Richest fusion with Jain/Hindu temple craft &mdash; carved <strong>jali</strong>, toranas, brackets.</td><td><strong>Sidi Saiyyed Mosque (jali)</strong>, Jama Masjid Ahmedabad, Rani Sipri</td></tr>
+    <tr><td><strong>Bijapur (Deccan)</strong></td><td>Bulbous dome; the world's second-largest dome; whispering gallery.</td><td><strong>Gol Gumbaz</strong> (tomb of Muhammad Adil Shah), Ibrahim Rauza</td></tr>
+  </table>
+  <div class="callout info"><strong>GS-I hook:</strong> the provincial schools prove Indo-Islamic architecture was never monolithic &mdash; Bengal's terracotta, Gujarat's Jain jali and Malwa's minaret-less "hill" forms show local craft traditions shaping the "Islamic" template as much as the reverse.</div>
+</section>
+
+<!-- SECTION 4 -->
+<section class="notes" id="mughal">
+  <h2>4. Mughal Architecture (Babur&ndash;Aurangzeb)</h2>
+  <p>Mughal architecture is the <strong>climax of the Indo-Islamic tradition</strong> &mdash; a grand, symmetrical, garden-set classicism that moves from Babur's Persian gardens, through Akbar's red-sandstone syncretism, to Shah Jahan's white-marble perfection, and finally decline under Aurangzeb.</p>
+  <table>
+    <tr><th>Emperor</th><th>Contribution</th><th>Key monuments</th></tr>
+    <tr><td><strong>Babur</strong></td><td>Introduced the <strong>charbagh</strong> (four-quartered Persian garden); little survives.</td><td>Aram Bagh (Agra); mosques at Panipat/Sambhal</td></tr>
+    <tr><td><strong>Humayun</strong></td><td>His <strong>tomb</strong> (built by Haji Begum) &mdash; first great <strong>garden-tomb</strong>, first grand <strong>double dome</strong>, red sandstone + white marble; a "dry run for the Taj".</td><td><strong>Humayun's Tomb</strong> (UNESCO); Din Panah</td></tr>
+    <tr><td><strong>Akbar</strong></td><td>Red sandstone; <strong>trabeate + arcuate</strong> mix; syncretic Hindu (bracket, chhatri, chhajja) motifs; the ceremonial capital.</td><td><strong>Fatehpur Sikri</strong> (Buland Darwaza, Panch Mahal, Diwan-i-Khas), Agra Fort, Akbar's Tomb (Sikandra)</td></tr>
+    <tr><td><strong>Jahangir</strong></td><td>Painting flourished over building; gardens; first <strong>full-marble, pietra-dura</strong> tomb (Itmad-ud-Daulah).</td><td><strong>Itmad-ud-Daulah ("Baby Taj")</strong>; Shalimar Bagh (Kashmir)</td></tr>
+    <tr><td><strong>Shah Jahan</strong></td><td>The <strong>golden age</strong> &mdash; white marble, pietra dura, foliated arches, bulbous domes, perfect symmetry.</td><td><strong>Taj Mahal</strong>, Red Fort &amp; Jama Masjid (Delhi), Moti Masjid, Shalimar Bagh (Lahore)</td></tr>
+    <tr><td><strong>Aurangzeb</strong></td><td>Austerity &amp; decline; poorer marble; the last imperial mausoleum.</td><td>Bibi-ka-Maqbara (Aurangabad, "Deccan Taj"), Badshahi Mosque, Moti Masjid (Red Fort)</td></tr>
+  </table>
+  <div class="callout warn"><strong>Prelims lock:</strong> first Mughal garden-tomb + first grand double dome = <strong>Humayun's Tomb</strong>; first all-marble pietra-dura tomb = <strong>Itmad-ud-Daulah</strong> (Jahangir); apogee = <strong>Taj Mahal</strong> (Shah Jahan); Buland Darwaza &amp; Fatehpur Sikri = <strong>Akbar</strong>.</div>
+</section>
+
+<!-- SECTION 5 -->
+<section class="notes" id="features">
+  <h2>5. Signature Mughal Features</h2>
+  <p>Beyond individual buildings, the examiner tests the <em>vocabulary</em> of Mughal design &mdash; the recurring elements that give the style its unmistakable look.</p>
+  <ul>
+    <li><strong>Charbagh:</strong> a garden quartered by walkways and water channels &mdash; a symbol of the Quranic paradise; the tomb sits at the centre (Humayun's, Taj) or edge (later riverfront gardens).</li>
+    <li><strong>Pietra dura (parchin kari):</strong> inlay of semi-precious stones (cornelian, jasper, lapis) into white marble in floral patterns &mdash; the hallmark of the Taj.</li>
+    <li><strong>Double dome:</strong> two shells &mdash; an outer bulbous dome for silhouette and an inner lower dome for interior proportion.</li>
+    <li><strong>Jali:</strong> perforated stone screens &mdash; light, privacy and ventilation, at their finest at the Taj and Sidi Saiyyed.</li>
+    <li><strong>Chhatri, chhajja, chabutra, pishtaq &amp; iwan:</strong> the domed kiosk, projecting eave, plinth, the tall arched gateway-frame and the vaulted hall &mdash; borrowed from Persian and Rajput sources alike.</li>
+    <li><strong>Foliated/multi-cusped arch &amp; guldasta:</strong> the ornate scalloped arch and slender corner pinnacles of Shah Jahan's style.</li>
+  </ul>
+  <div class="callout info"><strong>GS-I hook:</strong> the Taj Mahal is the perfect exam example of synthesis &mdash; a Persian charbagh, a Timurid double dome, Rajput chhatris and jali, and Indian marble craft, unified into one flawlessly symmetrical composition.</div>
+</section>
+
+<!-- SECTION 6 -->
+<section class="notes" id="postmughal">
+  <h2>6. Post-Mughal Regional Schools</h2>
+  <p>As Mughal power waned, successor states developed vigorous regional styles &mdash; each adapting Mughal grammar to local faith, climate and taste.</p>
+  <table>
+    <tr><th>School</th><th>Features</th><th>Examples</th></tr>
+    <tr><td><strong>Sikh</strong></td><td>Fluted "Shikhara/onion" domes, gilding, multi-foil arches, frescoed &amp; mirror work; kiosks (chhatris).</td><td><strong>Golden Temple (Harmandir Sahib), Amritsar</strong>; Gurdwaras</td></tr>
+    <tr><td><strong>Rajput</strong></td><td>Fort-palaces on hills; jharokhas, chhatris, jali, sheesh mahal; blend of Mughal + local.</td><td><strong>Amber, Mehrangarh, Chittor, City Palace &amp; Hawa Mahal (Jaipur)</strong></td></tr>
+    <tr><td><strong>Maratha</strong></td><td>Hill-forts (giri-durga) &amp; sea-forts; wooden temple <em>wada</em> houses; the ghats &amp; temple towers of Nashik/Wai.</td><td>Raigad, Sinhagad, Shaniwar Wada (Pune); Vitthala temple ghats</td></tr>
+    <tr><td><strong>Awadh (Nawabi)</strong></td><td>Late, ornate, stucco; the great <em>imambara</em> and labyrinth.</td><td><strong>Bara Imambara &amp; Bhulbhulaiya, Rumi Darwaza (Lucknow)</strong></td></tr>
+  </table>
+  <div class="callout warn"><strong>Prelims lock:</strong> gilded fluted dome + causeway on a sarovar = <strong>Golden Temple</strong>; Bara Imambara &amp; Rumi Darwaza = <strong>Awadh/Lucknow</strong>; Hawa Mahal &amp; jharokhas = <strong>Rajput/Jaipur</strong>.</div>
+</section>
+
+<!-- SECTION 7 -->
+<section class="notes" id="colonial">
+  <h2>7. Colonial Architecture</h2>
+  <p>European powers imported their own styles and then, tellingly, tried to "Indianise" them for legitimacy. Colonial architecture is thus both an aesthetic and a <em>political</em> statement &mdash; a favourite GS-I angle.</p>
+  <table>
+    <tr><th>Style / power</th><th>Features</th><th>Examples</th></tr>
+    <tr><td><strong>Portuguese</strong></td><td>Iberian Baroque churches; laterite &amp; lime.</td><td><strong>Basilica of Bom Jesus &amp; Se Cathedral, Goa</strong> (UNESCO)</td></tr>
+    <tr><td><strong>French</strong></td><td>Grid town planning; Mediterranean colonial.</td><td>Pondicherry (White Town)</td></tr>
+    <tr><td><strong>Neo-Classical &amp; Gothic (British)</strong></td><td>Greek columns, pediments; then Gothic Revival &mdash; pointed arches, spires, stained glass.</td><td>Metcalfe Hall &amp; GPO (Kolkata); <strong>Victoria Terminus/CSMT &amp; Bombay High Court</strong> (Gothic, UNESCO)</td></tr>
+    <tr><td><strong>Indo-Saracenic</strong></td><td><em>Hybrid</em>: European engineering + Mughal/Rajput domes, chhatris, jalis &mdash; empire wearing Indian dress.</td><td><strong>Victoria Memorial (Kolkata), Chennai Egmore/Madras HC, Muir College Allahabad, Mysore Palace</strong></td></tr>
+    <tr><td><strong>New Delhi (Lutyens/Baker)</strong></td><td>Classical axis + Indian motifs (chhatri, chhajja, elephant, the Sanchi-dome Rashtrapati Bhavan).</td><td><strong>Rashtrapati Bhavan, Rajpath, Secretariat, Parliament (1927)</strong></td></tr>
+    <tr><td><strong>Art Deco</strong></td><td>1930s streamlined, geometric, nautical; Mumbai has the world's second-largest ensemble.</td><td><strong>Marine Drive / Oval Maidan precinct</strong> (UNESCO, 2018)</td></tr>
+  </table>
+  <div class="callout info"><strong>GS-I hook:</strong> Indo-Saracenic is the mirror-image of Indo-Islamic &mdash; where the Sultans absorbed Indian craft into an imported form for religious legitimacy, the British grafted Indian domes onto European buildings for <em>political</em> legitimacy, presenting the Raj as heir to the Mughals.</div>
+</section>
+
+<!-- SECTION 8 -->
+<section class="notes" id="modern">
+  <h2>8. Post-Independence &amp; Modern Architecture</h2>
+  <p>After 1947, architecture had to express a new, plural, forward-looking nation &mdash; first through international modernism, then through a search for an authentically Indian modern idiom.</p>
+  <ul>
+    <li><strong>Modernist beginnings:</strong> <strong>Chandigarh</strong> designed by <strong>Le Corbusier</strong> (Capitol Complex, UNESCO 2016) &mdash; raw concrete (b&eacute;ton brut), the Open Hand; a symbol of Nehruvian modernity.</li>
+    <li><strong>Indian modernists:</strong> <strong>B.V. Doshi</strong> (India's first Pritzker laureate &mdash; IIM Bangalore, Aranya housing), <strong>Charles Correa</strong> (Gandhi Smarak Sangrahalaya, Jawahar Kala Kendra), <strong>Laurie Baker</strong> (cost-effective, climate-responsive brick).</li>
+    <li><strong>Iconic contemporary:</strong> the <strong>Lotus Temple</strong> (Baha'i, Delhi), <strong>Akshardham</strong> (revived Nagara craft in stone), <strong>Statue of Unity</strong> (world's tallest, 2018), the <strong>new Parliament / Central Vista</strong> (2023).</li>
+    <li><strong>Green &amp; vernacular revival:</strong> return to courtyards, jali, stepwells and passive cooling in sustainable design.</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims lock:</strong> Chandigarh Capitol = <strong>Le Corbusier</strong> (UNESCO 2016); India's first Pritzker = <strong>B.V. Doshi</strong>; Mumbai Art Deco/Victorian Gothic ensemble = UNESCO 2018.</div>
+</section>
+
+<!-- SECTION 9 -->
+<section class="notes" id="currentaffairs">
+  <h2>9. Conservation &amp; Current Relevance</h2>
+  <p>Later architecture stays topical through UNESCO listings, restoration debates and heritage-versus-development tensions. Verify the latest status before the exam. <span class="update-tag">check for latest update or data</span></p>
+  <div class="callout update"><strong>Recent recognitions:</strong> Mumbai's <strong>Victorian Gothic &amp; Art Deco Ensembles</strong> (2018), <strong>Jaipur walled city</strong> (2019) and <strong>Dholavira</strong> (2021) joined the World Heritage list; conservation of Humayun's Tomb (Aga Khan Trust) is a model project. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout info"><strong>Central Vista &amp; heritage debate:</strong> the redevelopment of the Lutyens' precinct and the new Parliament (2023) sharpened the debate on modern needs vs colonial-era heritage &mdash; a ready GS-I/essay hook.</div>
+  <div class="callout warn"><strong>Adaptive reuse &amp; law:</strong> monuments are protected under the <strong>AMASR Act 1958</strong> (100 m prohibited / 200 m regulated zones); the challenge is balancing living cities with monument protection. <span class="update-tag">check for latest update or data</span></div>
+</section>
+
+<!-- PRELIMS -->
+<section class="notes" id="prelims-pyq">
+  <h2>10. Prelims PYQs</h2>
+  <p style="font-size:13px;color:var(--muted)"><em>Concept-practice MCQs anchored to genuinely tested UPSC themes on Indo-Islamic, colonial &amp; modern architecture. Each carries a worked rationale. (Yearless = practice, not a dated paper.)</em></p>
+
+  <div class="pyq">
+    <div class="year">Concept practice</div>
+    <p class="q-stem"><strong>Q:</strong> The first true arch and true dome in India appear in which monument?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Qutub Minar</li>
+      <li class="correct"><span class="opt-key">(b)</span> Alai Darwaza</li>
+      <li><span class="opt-key">(c)</span> Quwwat-ul-Islam Mosque</li>
+      <li><span class="opt-key">(d)</span> Tomb of Ghiyasuddin Tughlaq</li>
+    </ul>
+    <p class="ans">Answer: (b) Alai Darwaza (Ala-ud-din Khilji, 1311) &mdash; the first structure with a genuine (voussoir) arch and true dome; earlier Slave-dynasty work used corbelled "false" arches.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Concept practice</div>
+    <p class="q-stem"><strong>Q:</strong> "Battered (sloping) walls" and a fortress-like austerity are the hallmark of which Sultanate dynasty's architecture?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Slave (Mamluk)</li>
+      <li><span class="opt-key">(b)</span> Khilji</li>
+      <li class="correct"><span class="opt-key">(c)</span> Tughlaq</li>
+      <li><span class="opt-key">(d)</span> Lodhi</li>
+    </ul>
+    <p class="ans">Answer: (c) Tughlaq. Sloping "battered" walls, grey stone, and a mix of arch and lintel define the sober, fortress-like Tughlaq style (Tughlaqabad, Ghiyasuddin's tomb).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Concept practice</div>
+    <p class="q-stem"><strong>Q:</strong> Which monument is regarded as the first great Mughal garden-tomb and the "precursor of the Taj Mahal"?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Itmad-ud-Daulah's Tomb</li>
+      <li class="correct"><span class="opt-key">(b)</span> Humayun's Tomb</li>
+      <li><span class="opt-key">(c)</span> Akbar's Tomb, Sikandra</li>
+      <li><span class="opt-key">(d)</span> Bibi-ka-Maqbara</li>
+    </ul>
+    <p class="ans">Answer: (b) Humayun's Tomb &mdash; the first grand charbagh-tomb with a large double dome in red sandstone and marble, prefiguring the Taj.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Concept practice</div>
+    <p class="q-stem"><strong>Q:</strong> The inlay of semi-precious stones into white marble seen in the Taj Mahal is known as &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Meenakari</li>
+      <li class="correct"><span class="opt-key">(b)</span> Pietra dura (parchin kari)</li>
+      <li><span class="opt-key">(c)</span> Jali</li>
+      <li><span class="opt-key">(d)</span> Fresco buono</li>
+    </ul>
+    <p class="ans">Answer: (b) Pietra dura / parchin kari &mdash; floral stone-inlay work; jali is a perforated screen and meenakari is enamel on metal.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Concept practice</div>
+    <p class="q-stem"><strong>Q:</strong> "Indo-Saracenic" architecture is best described as &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> a purely Mughal revival by Indian princes</li>
+      <li class="correct"><span class="opt-key">(b)</span> a colonial hybrid grafting Mughal/Rajput domes, chhatris and jalis onto European buildings</li>
+      <li><span class="opt-key">(c)</span> a Buddhist rock-cut style</li>
+      <li><span class="opt-key">(d)</span> the Art Deco of 1930s Bombay</li>
+    </ul>
+    <p class="ans">Answer: (b). Indo-Saracenic (Victoria Memorial, Madras HC, Mysore Palace) fused European engineering with Indian decorative forms as a statement of imperial legitimacy.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Concept practice</div>
+    <p class="q-stem"><strong>Q:</strong> Which pair is correctly matched?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Gol Gumbaz &mdash; Golden Temple architecture</li>
+      <li><span class="opt-key">(b)</span> Chandigarh Capitol &mdash; Charles Correa</li>
+      <li class="correct"><span class="opt-key">(c)</span> Sidi Saiyyed Mosque &mdash; famous jali (Gujarat school)</li>
+      <li><span class="opt-key">(d)</span> Bara Imambara &mdash; Rajput Jaipur</li>
+    </ul>
+    <p class="ans">Answer: (c). Sidi Saiyyed (Ahmedabad) is famed for its "tree of life" jali; Gol Gumbaz is a Bijapur tomb, Chandigarh is Le Corbusier, and Bara Imambara is Awadh (Lucknow).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> arcuate vs trabeate; Alai Darwaza first true dome; Tughlaq battered walls; Lodhi double dome/garden-tomb; monument&ndash;emperor pairs; charbagh &amp; pietra dura; provincial schools (Bengal terracotta, Gujarat jali, Mandu, Gol Gumbaz); Indo-Saracenic vs Gothic vs Art Deco; Chandigarh/Le Corbusier; recent UNESCO (Jaipur 2019, Mumbai ensembles 2018). <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- MAINS -->
+<section class="notes" id="mains-pyq">
+  <h2>11. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>GS-I model questions on synthesis, Mughal &amp; colonial architecture. Each carries a full skeleton &mdash; Introduction &rarr; body &rarr; Conclusion. (Labelled "model question" where a genuine dated PYQ is not being reproduced verbatim.)</em></p>
+
+  <div class="pyq">
+    <div class="year">Model question &mdash; GS-I <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> "Indo-Islamic architecture is a testimony to India's composite culture rather than a foreign imposition." Critically examine.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Indo-Islamic architecture arose when a west-Asian arcuate grammar met India's trabeate tradition; far from replacing the latter, it fused with it into a distinctive shared idiom.</li>
+        <li><strong>Evidence of synthesis (the core):</strong> temple spolia and corbelled arches at Quwwat-ul-Islam; Indian masons executing the work; Rajput chhatri, chhajja and jali on Akbar's Fatehpur Sikri; Bengal's bangla roof adopted by the Mughals.</li>
+        <li><strong>Material &amp; craft continuity:</strong> local stone, Gujarat's Jain carvers, terracotta of Bengal &mdash; Indian crafts shaped the "Islamic" template as much as the reverse.</li>
+        <li><strong>The counter-view (critical edge):</strong> early mosques did demolish temples; calligraphy and aniconism were genuinely new; patronage was foreign &mdash; so it was not a seamless merger but a negotiated one, with power asymmetries.</li>
+        <li><strong>The apogee as proof:</strong> the Taj Mahal unites a Persian charbagh, Timurid double dome, Rajput chhatris/jali and Indian marble craft &mdash; unimaginable in either parent tradition alone.</li>
+        <li><strong>Conclusion:</strong> the style is best read as <em>Ganga-Jamuni</em> composite culture in stone &mdash; a synthesis, born partly of conquest but sustained by centuries of shared craft, and today the heritage of all Indians.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Model question &mdash; GS-I <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Trace the evolution of Mughal architecture from Babur to Aurangzeb, and explain why the Taj Mahal is regarded as its climax.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Mughal architecture evolved over ~180 years from imported Persian gardens to a uniquely Indian marble classicism, peaking under Shah Jahan.</li>
+        <li><strong>Foundations (Babur&ndash;Humayun):</strong> the charbagh introduced; Humayun's Tomb establishes the garden-tomb, double dome and red-sandstone-and-marble palette.</li>
+        <li><strong>Akbar's syncretism:</strong> red sandstone, trabeate-arcuate mix and Hindu motifs at Fatehpur Sikri &mdash; architecture mirroring his composite statecraft (sulh-i-kul).</li>
+        <li><strong>Marble &amp; refinement (Jahangir&ndash;Shah Jahan):</strong> Itmad-ud-Daulah pioneers all-marble pietra dura; Shah Jahan perfects bulbous domes, foliated arches and flawless symmetry.</li>
+        <li><strong>Why the Taj is the climax:</strong> perfect bilateral symmetry, the charbagh setting, double dome, pietra dura, jali and marble luminosity fuse every earlier innovation into one harmonious whole.</li>
+        <li><strong>Decline (Aurangzeb) &amp; conclusion:</strong> Bibi-ka-Maqbara's poorer imitation marks the fall from that peak &mdash; confirming the Taj as the tradition's high point, technically and aesthetically.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Model question &mdash; GS-I <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> How did colonial architecture serve as an instrument of political legitimacy in British India? Illustrate.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> British colonial building was never merely functional &mdash; style was chosen to project authority, permanence and, increasingly, continuity with India's imperial past.</li>
+        <li><strong>Classical/Gothic as European power:</strong> Neo-Classical columns and Gothic spires (Victoria Terminus, Kolkata's public buildings) asserted Western civilisational superiority.</li>
+        <li><strong>Indo-Saracenic as co-optation:</strong> grafting Mughal domes and chhatris onto European frames (Victoria Memorial, Madras HC, Mysore Palace) presented the Raj as legitimate heir to the Mughals.</li>
+        <li><strong>New Delhi as imperial capital (the statement):</strong> Lutyens &amp; Baker's classical axis with Indian motifs and a Sanchi-dome Rashtrapati Bhavan monumentalised imperial permanence &mdash; ironically completed just before decolonisation.</li>
+        <li><strong>Critical edge:</strong> the same forms were later re-appropriated by the nation &mdash; the imperial capital became the republic's, showing architecture's meaning shifts with power.</li>
+        <li><strong>Conclusion:</strong> colonial architecture was "empire in stone" &mdash; a deliberate visual claim to legitimacy that independent India inherited and re-signified.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Model question &mdash; GS-I <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Discuss the search for a modern Indian architectural identity after Independence.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> A newly independent, plural republic needed an architecture that was modern yet Indian &mdash; a tension that defined the post-1947 story.</li>
+        <li><strong>International modernism:</strong> Le Corbusier's Chandigarh embodied Nehruvian modernity &mdash; concrete, functional, "unfettered by the traditions of the past".</li>
+        <li><strong>The Indian modernists (the resolution):</strong> B.V. Doshi (Pritzker 2018), Charles Correa and Achyut Kanvinde reinterpreted courtyards, climate response and vernacular form in modern materials; Laurie Baker pioneered low-cost, sustainable brick.</li>
+        <li><strong>Revivalist &amp; symbolic strand:</strong> Akshardham and temple projects revived classical Nagara craft; the Statue of Unity and new Parliament assert national symbolism.</li>
+        <li><strong>Critical edge:</strong> critics see revivalism as pastiche and glass-tower globalism as placeless &mdash; the challenge is a genuinely rooted, climate-responsive modernity.</li>
+        <li><strong>Conclusion:</strong> the most durable answer &mdash; Doshi, Correa, Baker &mdash; lay not in copying old forms but in translating Indian principles of space, light and climate into a contemporary idiom.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-I &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> Indo-Islamic synthesis &amp; composite culture; Mughal evolution/Taj as climax; provincial diversity; colonial architecture as power; Indo-Saracenic mirror of Indo-Islamic; heritage conservation vs development (Central Vista); modern Indian identity (Doshi, Correa, Baker). <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes revision-box" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; Indo-Islamic, Colonial &amp; Modern</h3>
+    <div class="revision-grid grid-2">
+      <div class="rev-col">
+        <h4>Synthesis &amp; Sultanate</h4>
+        <ul>
+          <li><strong>Trabeate</strong> (Indian beam) + <strong>arcuate</strong> (Islamic true arch/dome) = Indo-Islamic</li>
+          <li>Slave: Qutub Minar (Aibak/Iltutmish), Quwwat-ul-Islam (corbelled)</li>
+          <li><strong>Khilji: Alai Darwaza = first true arch/dome</strong></li>
+          <li><strong>Tughlaq: battered walls</strong>, austere; Lodhi: double dome + garden-tomb</li>
+        </ul>
+      </div>
+      <div class="rev-col">
+        <h4>Mughal</h4>
+        <ul>
+          <li>Babur: charbagh; <strong>Humayun's Tomb</strong> = 1st garden-tomb/double dome</li>
+          <li>Akbar: Fatehpur Sikri, Buland Darwaza (red sandstone, syncretic)</li>
+          <li>Jahangir: <strong>Itmad-ud-Daulah</strong> (1st marble pietra dura)</li>
+          <li><strong>Shah Jahan: Taj Mahal</strong>, Red Fort (climax); Aurangzeb: decline</li>
+        </ul>
+      </div>
+      <div class="rev-col">
+        <h4>Regional &amp; Provincial</h4>
+        <ul>
+          <li>Bengal terracotta; Gujarat jali (Sidi Saiyyed); Malwa Mandu (no minaret); <strong>Gol Gumbaz</strong> (Bijapur)</li>
+          <li>Sikh: <strong>Golden Temple</strong>; Rajput: Hawa Mahal/jharokha; Awadh: <strong>Bara Imambara</strong></li>
+        </ul>
+      </div>
+      <div class="rev-col">
+        <h4>Colonial &amp; Modern</h4>
+        <ul>
+          <li>Gothic: Victoria Terminus; <strong>Indo-Saracenic</strong>: Victoria Memorial, Mysore Palace; Art Deco: Mumbai (UNESCO 2018)</li>
+          <li>New Delhi: Lutyens/Baker; <strong>Chandigarh = Le Corbusier</strong> (UNESCO 2016)</li>
+          <li><strong>B.V. Doshi</strong> = 1st Indian Pritzker; Correa, Laurie Baker; Lotus Temple, new Parliament (2023)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes:</strong> Alai Darwaza (true dome) &middot; Tughlaq battered walls &middot; charbagh/pietra dura &middot; monument&ndash;emperor pairs &middot; Indo-Saracenic &middot; Chandigarh/Le Corbusier. Composite-culture note: these monuments are the shared heritage of all Indians.</div>
+  </div>
+</section>
+
+</main>
+
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Sultanate &rarr; Feature</h4>
+    <table>
+      <tr><th>Dynasty</th><th>Marker</th></tr>
+      <tr><td>Slave</td><td>Corbelled, Qutub</td></tr>
+      <tr><td>Khilji</td><td>True dome (Alai)</td></tr>
+      <tr><td>Tughlaq</td><td>Battered walls</td></tr>
+      <tr><td>Lodhi</td><td>Double dome</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Emperor &rarr; Monument</h4>
+    <table>
+      <tr><td>Humayun</td><td>Garden-tomb</td></tr>
+      <tr><td>Akbar</td><td>Fatehpur Sikri</td></tr>
+      <tr><td>Jahangir</td><td>Itmad-ud-Daulah</td></tr>
+      <tr><td>Shah Jahan</td><td>Taj Mahal</td></tr>
+      <tr><td>Aurangzeb</td><td>Bibi-ka-Maqbara</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Colonial Styles</h4>
+    <ul>
+      <li><strong>Gothic</strong> &mdash; Victoria Terminus</li>
+      <li><strong>Indo-Saracenic</strong> &mdash; Victoria Memorial</li>
+      <li><strong>Art Deco</strong> &mdash; Mumbai Marine Drive</li>
+      <li><strong>Modernism</strong> &mdash; Chandigarh</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:85%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains GS-I</span><span class="fill"><span style="width:82%"></span></span></div>
+    <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:90%"></span></span></div>
+    <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:70%"></span></span></div>
+    <p style="margin-top:8px;font-size:11px;color:var(--muted);">Synthesis &amp; monument-ruler pairs recur; colonial styles rising in relevance.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Mughal Vocabulary</h4>
+    <ul>
+      <li><strong>Charbagh</strong> &mdash; 4-quartered garden</li>
+      <li><strong>Pietra dura</strong> &mdash; stone inlay</li>
+      <li><strong>Double dome &middot; jali &middot; pishtaq</strong></li>
+      <li><strong>Chhatri &middot; chhajja &middot; iwan</strong></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">Alai Darwaza</span>
+    <span class="tag">Battered walls</span>
+    <span class="tag green">Charbagh</span>
+    <span class="tag">Pietra dura</span>
+    <span class="tag orange">Humayun's Tomb</span>
+    <span class="tag">Fatehpur Sikri</span>
+    <span class="tag green">Taj Mahal</span>
+    <span class="tag">Gol Gumbaz</span>
+    <span class="tag orange">Indo-Saracenic</span>
+    <span class="tag green">Golden Temple</span>
+    <span class="tag">Chandigarh</span>
+    <span class="tag orange">Art Deco Mumbai</span>
+  </div>
+
+  <div class="widget">
+    <h4>UNESCO &mdash; Later Sites</h4>
+    <ul>
+      <li>Chandigarh Capitol &mdash; 2016</li>
+      <li>Mumbai Victorian/Deco &mdash; 2018</li>
+      <li>Jaipur City &mdash; 2019</li>
+    </ul>
+    <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/art-culture/architecture-ancient-and-classical">1A: Ancient &amp; Classical Architecture</a></li>
+      <li><a href="/art-culture/unesco-heritage-ich-and-gi-tags">T5: UNESCO Heritage</a></li>
+      <li><a href="/art-culture/paintings-prehistoric-to-medieval">T4A: Paintings (to Medieval)</a></li>
+      <li><a href="/art-culture">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding:0;margin:0;">
+      <li style="margin:4px 0;"><a href="#overview" style="font-size:12px;">The Synthesis</a></li>
+      <li style="margin:4px 0;"><a href="#sultanate" style="font-size:12px;">Delhi Sultanate</a></li>
+      <li style="margin:4px 0;"><a href="#provincial" style="font-size:12px;">Provincial Schools</a></li>
+      <li style="margin:4px 0;"><a href="#mughal" style="font-size:12px;">Mughal Architecture</a></li>
+      <li style="margin:4px 0;"><a href="#features" style="font-size:12px;">Mughal Features</a></li>
+      <li style="margin:4px 0;"><a href="#postmughal" style="font-size:12px;">Post-Mughal Regional</a></li>
+      <li style="margin:4px 0;"><a href="#colonial" style="font-size:12px;">Colonial</a></li>
+      <li style="margin:4px 0;"><a href="#modern" style="font-size:12px;">Modern</a></li>
+      <li style="margin:4px 0;"><a href="#currentaffairs" style="font-size:12px;">Conservation</a></li>
+      <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

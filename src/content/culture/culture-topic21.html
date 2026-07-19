@@ -1,0 +1,618 @@
+<!-- culture-topic21 — auto-imported from culture-topic21-calendars-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 21: Indian Calendars &amp; Eras</h1>
+  <p class="sub">India reckons time in many parallel systems &mdash; the <strong>lunar</strong> Hijri, the <strong>luni-solar</strong> Vikram Samvat, the <strong>solar</strong> Saka that underpins the official <strong>National Calendar</strong>, and a mosaic of regional eras. The exam tests this as <em>era&ndash;founder&ndash;type</em> matching (which era begins in 78 CE? which is the National Calendar?), the epoch years, and the mechanics of the <em>panchang</em>. This book-depth file walks the lunar/solar/luni-solar distinction, the major eras (Vikram, Saka, Kali, Hijri, Kollam, Bengali), the Calendar Reform Committee and the National Calendar &mdash; with tables and PYQs + model answers.</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-I</span>
+    <span class="pill">Era &middot; Epoch &middot; Type</span>
+    <span class="pill">~26 min read</span>
+    <span class="pill">High Static Weight</span>
+    <span class="pill">National Calendar</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#overview">Overview &amp; Types</a></li>
+    <li><span class="num">2.</span><a href="#lunar-solar">Lunar, Solar &amp; Luni-Solar</a></li>
+    <li><span class="num">3.</span><a href="#vikram">Vikram Samvat</a></li>
+    <li><span class="num">4.</span><a href="#saka">Saka Era &amp; the National Calendar</a></li>
+    <li><span class="num">5.</span><a href="#other-eras">Other Eras (Kali, Hijri, Regional)</a></li>
+    <li><span class="num">6.</span><a href="#compare">Master Era Comparison Table</a></li>
+    <li><span class="num">7.</span><a href="#panchang">The Panchang &amp; Time-Units</a></li>
+    <li><span class="num">8.</span><a href="#significance">Cultural Significance</a></li>
+    <li><span class="num">9.</span><a href="#currentaffairs">Reform &amp; Current Affairs</a></li>
+    <li><span class="num">10.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><span class="num">11.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Frames Calendars</h3>
+  <p>Calendars are tested as <em>era&ndash;epoch&ndash;type matching</em> ("The Saka era began in which year?", "Which is India's National Calendar?") plus the panchang's five limbs. The productive skill is a grid keyed by era, its epoch year (in CE), its type (lunar/solar/luni-solar) and any founder association. Sort your prep:</p>
+  <ul>
+    <li><strong>Static/factual</strong> &mdash; epoch years (Vikram 57 BCE, Saka 78 CE, Kali 3102 BCE, Hijri 622 CE), which era is the National Calendar (Saka), and its month names (Chaitra&hellip;). High recall.</li>
+    <li><strong>Thematic/structural</strong> &mdash; the lunar vs solar vs luni-solar classification and why intercalary (adhik) months are needed to reconcile the two. Mechanism.</li>
+    <li><strong>Analytical (GS-I)</strong> &mdash; calendars as markers of cultural identity, the drive for a unified National Calendar, and time-reckoning as a scientific achievement. Needs idea + example + judgement.</li>
+  </ul>
+  <p><strong>Note:</strong> The single most-asked fact &mdash; India's <strong>National Calendar</strong> is the <em>Saka</em> calendar (adopted 22 March 1957), with <em>Chaitra</em> as the first month; its year is <em>78 less</em> than the Gregorian (2026 CE = Saka 1948). Do not confuse it with Vikram Samvat (57 BCE epoch).</p>
+</div>
+
+<!-- SECTION 1 -->
+<section class="notes" id="overview">
+  <h2>1. Overview &amp; Types</h2>
+  <p>A calendar is a system for organising days into longer units (months, years) to track seasons, festivals and history. India, with its long astronomical tradition and religious diversity, evolved several calendars side by side, each tied to the moon, the sun, or both. Understanding the three basic types is the key that unlocks every specific era.</p>
+  <svg viewBox="0 0 660 200" width="100%" style="max-width:660px;background:#fff;border:1px solid #e5e7eb;border-radius:8px;display:block;margin:10px 0" role="img" aria-label="Three types of calendars: lunar, solar, luni-solar">
+    <text x="330" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Three Types of Calendar Systems</text>
+    <rect x="20" y="44" width="195" height="138" rx="8" fill="#fff7ed" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="117" y="68" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b45309">Lunar</text>
+    <text x="117" y="90" text-anchor="middle" font-size="10.5" fill="#334155">Based on Moon phases</text>
+    <text x="117" y="108" text-anchor="middle" font-size="10.5" fill="#334155">~354 days/year</text>
+    <text x="117" y="126" text-anchor="middle" font-size="10.5" fill="#334155">Drifts vs seasons</text>
+    <text x="117" y="150" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0f172a">e.g. Hijri</text>
+    <rect x="232" y="44" width="195" height="138" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="329" y="68" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1d4ed8">Solar</text>
+    <text x="329" y="90" text-anchor="middle" font-size="10.5" fill="#334155">Based on Sun / seasons</text>
+    <text x="329" y="108" text-anchor="middle" font-size="10.5" fill="#334155">~365 days/year</text>
+    <text x="329" y="126" text-anchor="middle" font-size="10.5" fill="#334155">Fixed to seasons</text>
+    <text x="329" y="150" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0f172a">e.g. Saka, Gregorian</text>
+    <rect x="444" y="44" width="195" height="138" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="541" y="68" text-anchor="middle" font-size="12.5" font-weight="700" fill="#15803d">Luni-Solar</text>
+    <text x="541" y="90" text-anchor="middle" font-size="10.5" fill="#334155">Moon months + Sun year</text>
+    <text x="541" y="108" text-anchor="middle" font-size="10.5" fill="#334155">Adds adhik (extra) month</text>
+    <text x="541" y="126" text-anchor="middle" font-size="10.5" fill="#334155">Reconciles both</text>
+    <text x="541" y="150" text-anchor="middle" font-size="10.5" font-weight="700" fill="#0f172a">e.g. Vikram, Hindu</text>
+  </svg>
+  <ul>
+    <li><strong>Lunar:</strong> months follow the Moon (new moon to new moon, ~29.5 days); 12 months = ~354 days, so it drifts ~11 days/year against seasons (why Ramzan shifts).</li>
+    <li><strong>Solar:</strong> the year follows the Sun's return to the same point (~365.25 days); stays fixed to the seasons (Gregorian, Saka, Tamil, Malayalam calendars).</li>
+    <li><strong>Luni-solar:</strong> months are lunar but the year is kept in step with the Sun by inserting an extra <em>adhik maas</em> (intercalary month) roughly every ~2.5 years &mdash; most Hindu calendars, including Vikram Samvat.</li>
+  </ul>
+  <div class="callout info"><strong>One-line frame:</strong> lunar = moon-months that drift; solar = sun-year fixed to seasons; luni-solar = lunar months forced back into step with the sun by an extra month.</div>
+</section>
+
+<!-- SECTION 2 -->
+<section class="notes" id="lunar-solar">
+  <h2>2. Lunar, Solar &amp; Luni-Solar in Practice</h2>
+  <p>The three types are not just theory &mdash; they explain why festivals behave differently. Purely lunar dates walk backwards through the seasons; solar dates stay put; luni-solar dates wobble within a season. Two more distinctions matter for MCQs: the <em>amanta</em> vs <em>purnimanta</em> reckoning of the lunar month, and the two fortnights.</p>
+  <ul>
+    <li><strong>Why Ramzan/Id shifts ~11 days earlier each year:</strong> the Hijri calendar is purely lunar (354 days), with no intercalary month, so it slides against the solar seasons.</li>
+    <li><strong>Why Makar Sankranti is nearly fixed (~14 Jan):</strong> it is a <em>solar</em> event (Sun's entry into Capricorn/Makara), so it stays put &mdash; unlike lunar festivals such as Holi or Diwali.</li>
+    <li><strong>Amanta vs Purnimanta:</strong> the lunar month can end at the new moon (<em>amanta</em>, used in south/west India) or at the full moon (<em>purnimanta</em>, used in the north) &mdash; the same festival can thus fall in differently named months.</li>
+    <li><strong>Two fortnights (paksha):</strong> <em>Shukla paksha</em> (waxing, bright half) and <em>Krishna paksha</em> (waning, dark half); each has 15 <em>tithis</em> (lunar days).</li>
+    <li><strong>Adhik maas (Purushottam maas):</strong> the extra month inserted in luni-solar calendars to realign lunar months with the solar year.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims trap:</strong> festivals set by <em>solar</em> reckoning (Makar Sankranti, Pongal, Baisakhi) fall on nearly the same Gregorian date every year; festivals set by <em>lunar/luni-solar</em> reckoning (Diwali, Holi, Id) move.</div>
+</section>
+
+<!-- SECTION 3 -->
+<section class="notes" id="vikram">
+  <h2>3. Vikram Samvat</h2>
+  <p>Vikram Samvat is the most widely used traditional Hindu calendar in north and western India, and the basis of many Hindu festival dates. It is a luni-solar calendar with a distinctive epoch that puts it well ahead of the Gregorian year.</p>
+  <ul>
+    <li><strong>Epoch:</strong> begins in <strong>57 BCE</strong>, traditionally linked to King <em>Vikramaditya</em> of Ujjain (celebrating a victory over the Shakas). Add 57 to a CE year for the (approximate) Vikram year: 2026 CE &asymp; VS 2083.</li>
+    <li><strong>Type:</strong> luni-solar &mdash; lunar months adjusted to the solar year via <em>adhik maas</em>.</li>
+    <li><strong>Use:</strong> official calendar of Nepal; widely used across north/central/western India for religious and festival dates; New Year falls variously (Gudi Padwa/Chaitra in Maharashtra; Kartik/Diwali start for Gujarati traders).</li>
+    <li><strong>Months:</strong> Chaitra, Vaisakha, Jyeshtha, Ashadha, Shravana, Bhadrapada, Ashwina, Kartika, Margashirsha, Pausha, Magha, Phalguna.</li>
+  </ul>
+  <div class="callout info"><strong>GS-I hook:</strong> Vikram Samvat's link to Vikramaditya's victory over the Shakas is a reminder that Indian eras often commemorate <em>political</em> events &mdash; calendars are also records of history and identity.</div>
+</section>
+
+<!-- SECTION 4 -->
+<section class="notes" id="saka">
+  <h2>4. Saka Era &amp; the National Calendar</h2>
+  <p>The Saka era is the single most exam-important calendar because it is the basis of India's official <strong>National Calendar</strong>. Learn its epoch, its adoption date, its first month and the simple conversion to Gregorian.</p>
+  <ul>
+    <li><strong>Epoch:</strong> begins in <strong>78 CE</strong> (associated with the Kushana king Kanishka's accession, per common tradition). Saka year = CE year &minus; 78 (after its New Year): 2026 CE = Saka 1948.</li>
+    <li><strong>National Calendar of India:</strong> the Saka calendar was adopted as the official National Calendar on <strong>22 March 1957</strong>, on the recommendation of the <em>Calendar Reform Committee</em>. It is used alongside the Gregorian in the <em>Gazette of India</em>, All India Radio news, government calendars and communications.</li>
+    <li><strong>Structure:</strong> a solar calendar of 12 months starting with <strong>Chaitra</strong> (which begins on 22 March, or 21 March in a leap year); 365 days (366 in leap years). Chaitra has 30 days (31 in leap years).</li>
+    <li><strong>Months (Saka):</strong> Chaitra, Vaisakha, Jyaistha, Asadha, Sravana, Bhadra, Asvina, Kartika, Agrahayana, Pausa, Magha, Phalguna.</li>
+    <li><strong>Wide historical footprint:</strong> the Saka era was used across South and Southeast Asia (inscriptions, temple dating), making it a pan-Asian time-standard of the ancient world.</li>
+  </ul>
+  <table>
+    <thead><tr><th>Feature</th><th>Detail</th></tr></thead>
+    <tbody>
+      <tr><td>Type</td><td>Solar</td></tr>
+      <tr><td>Epoch</td><td>78 CE</td></tr>
+      <tr><td>Adopted as National Calendar</td><td>22 March 1957</td></tr>
+      <tr><td>First month</td><td>Chaitra (starts 22 March)</td></tr>
+      <tr><td>Conversion</td><td>Saka year = CE &minus; 78</td></tr>
+      <tr><td>Recommended by</td><td>Calendar Reform Committee (chair: Meghnad Saha)</td></tr>
+    </tbody>
+  </table>
+  <div class="callout warn"><strong>Prelims must-know:</strong> India's National Calendar = <strong>Saka</strong> (not Vikram); epoch <strong>78 CE</strong>; first month <strong>Chaitra</strong>; adopted <strong>1957</strong>. This exact cluster is the highest-probability MCQ in the topic.</div>
+</section>
+
+<!-- SECTION 5 -->
+<section class="notes" id="other-eras">
+  <h2>5. Other Eras (Kali, Hijri &amp; Regional)</h2>
+  <p>Several other eras appear in inscriptions, almanacs and regional new-years. Learn each one's epoch and type; the regional solar calendars (Tamil, Malayalam, Bengali) are especially relevant because their new-years are common festival questions.</p>
+  <ul>
+    <li><strong>Kali Yuga era:</strong> epoch <strong>3102 BCE</strong> (traditional start of the current Kali age); used in astronomical works (Aryabhata). The largest year-numbers you will see (e.g. Kali 5127).</li>
+    <li><strong>Hijri (Islamic) era:</strong> epoch <strong>622 CE</strong> (the Prophet's migration from Mecca to Medina); purely <em>lunar</em>, 354 days &mdash; hence Islamic festivals drift ~11 days earlier yearly.</li>
+    <li><strong>Kollam / Malayalam Era:</strong> epoch <strong>825 CE</strong>; solar; used in Kerala (Onam falls in the month of Chingam).</li>
+    <li><strong>Bengali San (Bangabda):</strong> a luni-solar/solar hybrid, reformed under Akbar; Pohela Boishakh is the Bengali New Year (mid-April).</li>
+    <li><strong>Tamil calendar:</strong> solar; Puthandu (Tamil New Year) falls ~14 April, sharing the mid-April solar cluster with Baisakhi (Punjab), Vishu (Kerala) and Pohela Boishakh (Bengal).</li>
+    <li><strong>Fasli &amp; other regnal eras:</strong> the Fasli (harvest/revenue) era was used for administrative/revenue purposes under the Mughals and later.</li>
+  </ul>
+  <table>
+    <thead><tr><th>Regional Calendar</th><th>Region</th><th>New Year</th><th>Type</th></tr></thead>
+    <tbody>
+      <tr><td>Tamil</td><td>Tamil Nadu</td><td>Puthandu (~14 Apr)</td><td>Solar</td></tr>
+      <tr><td>Malayalam (Kollam)</td><td>Kerala</td><td>Vishu (~14 Apr); Onam in Chingam</td><td>Solar</td></tr>
+      <tr><td>Bengali (Bangabda)</td><td>West Bengal</td><td>Pohela Boishakh (~15 Apr)</td><td>Solar/luni-solar</td></tr>
+      <tr><td>Vikram Samvat</td><td>N/W India, Nepal</td><td>Gudi Padwa / Diwali (regional)</td><td>Luni-solar</td></tr>
+      <tr><td>Assamese</td><td>Assam</td><td>Bohag Bihu (~14 Apr)</td><td>Solar</td></tr>
+    </tbody>
+  </table>
+  <div class="callout info"><strong>Prelims cluster:</strong> the <em>mid-April solar New Year</em> is a classic MCQ &mdash; Baisakhi (Punjab), Puthandu (Tamil Nadu), Vishu (Kerala), Pohela Boishakh (Bengal), Bihu (Assam) all cluster around 13&ndash;15 April because they are <em>solar</em> (Sun entering Mesha/Aries).</div>
+</section>
+
+<!-- SECTION 6 -->
+<section class="notes" id="compare">
+  <h2>6. Master Era Comparison Table</h2>
+  <p>The one grid to memorise &mdash; every era against its epoch (in CE terms), its type and its key association. Most calendar MCQs can be answered directly from this table.</p>
+  <table>
+    <thead><tr><th>Era / Calendar</th><th>Epoch</th><th>Type</th><th>Association / Use</th></tr></thead>
+    <tbody>
+      <tr><td>Kali Yuga</td><td>3102 BCE</td><td>&mdash;</td><td>Astronomical texts (Aryabhata)</td></tr>
+      <tr><td><strong>Vikram Samvat</strong></td><td>57 BCE</td><td>Luni-solar</td><td>Vikramaditya; N/W India, Nepal</td></tr>
+      <tr><td><strong>Saka</strong></td><td>78 CE</td><td>Solar</td><td>Kanishka; India's <strong>National Calendar</strong></td></tr>
+      <tr><td>Gupta era</td><td>319&ndash;320 CE</td><td>Luni-solar</td><td>Chandragupta I; Gupta inscriptions</td></tr>
+      <tr><td>Harsha era</td><td>606 CE</td><td>Luni-solar</td><td>Harshavardhana</td></tr>
+      <tr><td><strong>Hijri</strong></td><td>622 CE</td><td>Lunar</td><td>Prophet's migration (Hijra); Islamic dates</td></tr>
+      <tr><td>Kollam (Malayalam)</td><td>825 CE</td><td>Solar</td><td>Kerala; Onam</td></tr>
+      <tr><td>Gregorian</td><td>1 CE (AD)</td><td>Solar</td><td>Global civil calendar</td></tr>
+    </tbody>
+  </table>
+  <div class="callout warn"><strong>Trap-buster:</strong> Vikram = <strong>57 BCE</strong> (so VS year is <em>larger</em> than CE); Saka = <strong>78 CE</strong> (so Saka year is <em>smaller</em> than CE). Getting the direction of the offset right is half the question.</div>
+</section>
+
+<!-- SECTION 7 -->
+<section class="notes" id="panchang">
+  <h2>7. The Panchang &amp; Time-Units</h2>
+  <p>The <em>panchang</em> (Hindu almanac) is the working document of the traditional calendar &mdash; it fixes festival dates, auspicious timings (muhurta) and religious observances. Its name means "five limbs," and knowing the five is a ready MCQ.</p>
+  <ul>
+    <li><strong>The five limbs (panch-anga):</strong> <em>Tithi</em> (lunar day), <em>Vara</em> (weekday), <em>Nakshatra</em> (lunar mansion/asterism), <em>Yoga</em> (a Sun&ndash;Moon angular combination) and <em>Karana</em> (half of a tithi).</li>
+    <li><strong>Tithi:</strong> a lunar day; 30 tithis in a lunar month, 15 in each paksha (fortnight). Many festivals are fixed by tithi (e.g. Diwali = Amavasya of Kartik; Ekadashi, Purnima).</li>
+    <li><strong>Nakshatra:</strong> 27 (sometimes 28) star-clusters along the Moon's path; used to name months (the month is named after the nakshatra near which the full moon falls &mdash; e.g. Chaitra from Chitra).</li>
+    <li><strong>Ancient time-units:</strong> the tradition also had fine sub-day units &mdash; <em>ghati/danda</em>, <em>pala</em>, <em>vipala</em> &mdash; and long cosmological units (yuga, kalpa), reflecting India's deep astronomical mathematics.</li>
+    <li><strong>Muhurta:</strong> an auspicious time-window computed from the panchang for weddings, travel and rituals.</li>
+  </ul>
+  <div class="callout info"><strong>GS-I hook:</strong> the panchang shows that the Indian calendar is not merely a date-keeper but an <em>applied astronomy</em> &mdash; a bridge between the science of Aryabhata/Varahamihira and everyday religious and social life.</div>
+</section>
+
+<!-- SECTION 8 -->
+<section class="notes" id="significance">
+  <h2>8. Cultural Significance</h2>
+  <p>Calendars are among the most intimate carriers of culture &mdash; they set the rhythm of festivals, agriculture and worship, and they encode a community's history and identity. For GS-I, calendars illustrate both India's scientific heritage and its unity-in-diversity.</p>
+  <ul>
+    <li><strong>Identity &amp; continuity:</strong> distinct regional calendars (Tamil, Malayalam, Bengali) sustain linguistic and cultural identity, while the National Calendar expresses a shared civic time.</li>
+    <li><strong>Agriculture &amp; ecology:</strong> solar and luni-solar calendars are tied to sowing and harvest, which is why harvest festivals cluster with solar transitions (Sankranti, Baisakhi).</li>
+    <li><strong>Scientific heritage:</strong> the accuracy of Indian luni-solar reckoning (intercalation, nakshatra system) reflects a sophisticated astronomical tradition &mdash; a soft-power and heritage point.</li>
+    <li><strong>Diversity &amp; the need for a common standard:</strong> the multiplicity of calendars complicated administration, prompting the 1950s reform to create a single National Calendar.</li>
+    <li><strong>Living use:</strong> despite the Gregorian civil default, traditional calendars still govern almost every festival, fast and religious observance in India.</li>
+  </ul>
+  <div class="callout warn"><strong>Essay/GS-I frame:</strong> India's calendars are "many clocks, one civilization" &mdash; plural systems that each preserve a regional or religious identity, yet share a common astronomical science and, since 1957, a common civic National Calendar.</div>
+</section>
+
+<!-- SECTION 9 -->
+<section class="notes" id="currentaffairs">
+  <h2>9. Reform &amp; Current Affairs</h2>
+  <p>The story of calendar <em>reform</em> in modern India &mdash; the Calendar Reform Committee and the adoption of the National Calendar &mdash; is the most exam-relevant "current-affairs" anchor here, along with periodic debates on standard time and observance.</p>
+  <ul>
+    <li><strong>Calendar Reform Committee (1952&ndash;55):</strong> set up under the CSIR and chaired by the physicist <strong>Meghnad Saha</strong>; tasked with examining India's many calendars and recommending a unified, scientifically accurate one.</li>
+    <li><strong>Its recommendation:</strong> adopt a reformed <strong>Saka</strong> calendar as the National Calendar &mdash; implemented from <strong>22 March 1957</strong>.</li>
+    <li><strong>Where the National Calendar is used:</strong> Gazette of India, AIR news broadcasts, government calendars and official communications addressed to the public (alongside the Gregorian).</li>
+    <li><strong>Ongoing relevance:</strong> festival-date determination, IST vs regional-time debates and the interface of religious calendars with civic scheduling keep calendars in current affairs.</li>
+  </ul>
+  <div class="callout info"><strong>How to use in the exam:</strong> pair the fact (Saka National Calendar, 1957, Meghnad Saha) with the theme (unity-in-diversity, scientific heritage) to build a compact, well-anchored GS-I point.</div>
+</section>
+
+<!-- PRELIMS PYQ -->
+<section class="notes" id="prelims-pyq">
+  <h2>10. Prelims Practice Questions</h2>
+  <p>Concept-practice MCQs modelled on the UPSC Prelims pattern for this topic (eras, epochs, types and the National Calendar). Attempt before revealing the answer.</p>
+
+  <div class="pyq">
+    <p><strong>Q1.</strong> The National Calendar of India, based on the Saka era, has as its first month:</p>
+    <ul class="options">
+      <li><span class="opt-key">a)</span> Vaisakha</li>
+      <li><span class="opt-key">b)</span> Chaitra</li>
+      <li><span class="opt-key">c)</span> Kartika</li>
+      <li><span class="opt-key">d)</span> Magha</li>
+    </ul>
+    <p class="ans"><span class="correct">Answer: b) Chaitra</span> &mdash; the Saka National Calendar (adopted 22 March 1957) begins with Chaitra, which starts on 22 March (21 March in a leap year).</p>
+  </div>
+
+  <div class="pyq">
+    <p><strong>Q2.</strong> Consider the following pairs of era and its approximate epoch (starting year):</p>
+    <p>1. Vikram Samvat &mdash; 57 BCE<br>2. Saka era &mdash; 78 CE<br>3. Hijri era &mdash; 622 CE</p>
+    <p>Which of the pairs given above are correctly matched?</p>
+    <ul class="options">
+      <li><span class="opt-key">a)</span> 1 and 2 only</li>
+      <li><span class="opt-key">b)</span> 2 and 3 only</li>
+      <li><span class="opt-key">c)</span> 1 and 3 only</li>
+      <li><span class="opt-key">d)</span> 1, 2 and 3</li>
+    </ul>
+    <p class="ans"><span class="correct">Answer: d) 1, 2 and 3</span> &mdash; Vikram Samvat begins 57 BCE, the Saka era 78 CE, and the Hijri era 622 CE (the Prophet's migration). All three are correct.</p>
+  </div>
+
+  <div class="pyq">
+    <p><strong>Q3.</strong> Why do Islamic festivals such as Id shift about 10&ndash;11 days earlier each Gregorian year?</p>
+    <ul class="options">
+      <li><span class="opt-key">a)</span> The Hijri calendar is purely lunar with no intercalary month</li>
+      <li><span class="opt-key">b)</span> The Hijri calendar is solar and leap years are skipped</li>
+      <li><span class="opt-key">c)</span> The Hijri calendar adds an extra month every year</li>
+      <li><span class="opt-key">d)</span> The dates are fixed to the Gregorian calendar</li>
+    </ul>
+    <p class="ans"><span class="correct">Answer: a) The Hijri calendar is purely lunar with no intercalary month</span> &mdash; its 12 lunar months total ~354 days, ~11 short of the solar year, so its dates drift earlier against the seasons.</p>
+  </div>
+
+  <div class="pyq">
+    <p><strong>Q4.</strong> The <strong>Calendar Reform Committee</strong> that recommended India's National Calendar was chaired by:</p>
+    <ul class="options">
+      <li><span class="opt-key">a)</span> C. V. Raman</li>
+      <li><span class="opt-key">b)</span> Meghnad Saha</li>
+      <li><span class="opt-key">c)</span> Homi Bhabha</li>
+      <li><span class="opt-key">d)</span> S. N. Bose</li>
+    </ul>
+    <p class="ans"><span class="correct">Answer: b) Meghnad Saha</span> &mdash; the astrophysicist chaired the Calendar Reform Committee (1952&ndash;55), which recommended the reformed Saka calendar, adopted in 1957.</p>
+  </div>
+
+  <div class="pyq">
+    <p><strong>Q5.</strong> Which of the following festivals cluster around mid-April because they are reckoned by the <em>solar</em> calendar?</p>
+    <p>1. Baisakhi<br>2. Puthandu (Tamil New Year)<br>3. Pohela Boishakh (Bengali New Year)</p>
+    <ul class="options">
+      <li><span class="opt-key">a)</span> 1 and 2 only</li>
+      <li><span class="opt-key">b)</span> 2 and 3 only</li>
+      <li><span class="opt-key">c)</span> 1 and 3 only</li>
+      <li><span class="opt-key">d)</span> 1, 2 and 3</li>
+    </ul>
+    <p class="ans"><span class="correct">Answer: d) 1, 2 and 3</span> &mdash; all three are solar new-year festivals marking the Sun's entry into Mesha (Aries), so they cluster around 13&ndash;15 April every year.</p>
+  </div>
+
+  <div class="pyq">
+    <p><strong>Q6.</strong> The five limbs of the <em>Panchang</em> include which of the following?</p>
+    <p>1. Tithi<br>2. Nakshatra<br>3. Yoga<br>4. Karana</p>
+    <ul class="options">
+      <li><span class="opt-key">a)</span> 1 and 2 only</li>
+      <li><span class="opt-key">b)</span> 1, 2 and 3 only</li>
+      <li><span class="opt-key">c)</span> 1, 2, 3 and 4</li>
+      <li><span class="opt-key">d)</span> 2 and 4 only</li>
+    </ul>
+    <p class="ans"><span class="correct">Answer: c) 1, 2, 3 and 4</span> &mdash; the panch-anga are Tithi, Vara (weekday), Nakshatra, Yoga and Karana; all four listed are limbs (the fifth being Vara).</p>
+  </div>
+
+  <div class="callout warn"><strong>Note:</strong> These are concept-practice questions written in the UPSC pattern to drill high-frequency facts (epochs, types, the National Calendar); they are not reproductions of dated past papers.</div>
+</section>
+
+<!-- MAINS PYQ -->
+<section class="notes" id="mains-pyq">
+  <h2>11. Mains Practice Questions + Model Answers</h2>
+  <p>GS-I model questions on Indian calendars, each with a 6-point analytical skeleton (intro &rarr; four substantive points including the core and a critical edge &rarr; conclusion).</p>
+
+  <div class="model-answer">
+    <h5>Model Answer 1</h5>
+    <p><strong>Q. Distinguish between lunar, solar and luni-solar calendars, and explain how this distinction accounts for the behaviour of Indian festivals.</strong> (250 words)</p>
+    <ul>
+      <li><strong>Intro:</strong> India uses all three calendar types simultaneously; the type of calendar governing a festival explains whether its Gregorian date stays fixed or drifts.</li>
+      <li><strong>Lunar:</strong> months follow the Moon (~354-day year, no intercalation in the Hijri), so purely lunar festivals like Id shift ~11 days earlier each year.</li>
+      <li><strong>Solar (the core):</strong> the year follows the Sun and stays locked to the seasons; hence solar festivals &mdash; Makar Sankranti, Pongal, Baisakhi &mdash; recur on nearly the same date (~14 April/January) as they mark the Sun's entry into a zodiac sign.</li>
+      <li><strong>Luni-solar:</strong> lunar months realigned to the solar year by an adhik maas; festivals like Diwali and Holi wobble within a season but not across it.</li>
+      <li><strong>Critical edge:</strong> amanta/purnimanta reckoning means the same festival may fall in differently named months across regions &mdash; a source of apparent inconsistency that is actually systematic.</li>
+      <li><strong>Conclusion:</strong> Understanding the three types decodes the entire Indian festival calendar &mdash; and reveals the astronomical sophistication behind it.</li>
+    </ul>
+  </div>
+
+  <div class="model-answer">
+    <h5>Model Answer 2</h5>
+    <p><strong>Q. Discuss the significance of the Saka era and the rationale for adopting it as India's National Calendar.</strong> (250 words)</p>
+    <ul>
+      <li><strong>Intro:</strong> Among India's many calendars, the Saka era was chosen as the official National Calendar in 1957 &mdash; a deliberate act of scientific and civic standardisation.</li>
+      <li><strong>The Saka era:</strong> a solar calendar with epoch 78 CE, historically the most widely used dating system across ancient South and Southeast Asia, giving it pan-Indian and civilizational reach.</li>
+      <li><strong>The rationale (the core):</strong> India's dozens of regional calendars complicated administration and public communication; the Calendar Reform Committee under Meghnad Saha recommended a single, astronomically accurate, solar calendar &mdash; the reformed Saka &mdash; adopted 22 March 1957 (first month Chaitra).</li>
+      <li><strong>Use &amp; symbolism:</strong> employed in the Gazette, AIR and government communications alongside the Gregorian; it expresses an indigenous civic time without displacing the practical Gregorian default.</li>
+      <li><strong>Critical edge:</strong> its everyday adoption remains limited &mdash; the Gregorian dominates civil life and traditional calendars dominate religion &mdash; so the National Calendar is more symbolic than operational.</li>
+      <li><strong>Conclusion:</strong> The Saka National Calendar embodies a modern nation reclaiming an indigenous, scientific time-standard while remaining pragmatically plural.</li>
+    </ul>
+  </div>
+
+  <div class="model-answer">
+    <h5>Model Answer 3</h5>
+    <p><strong>Q. "Indian calendars reflect both scientific achievement and cultural diversity." Examine.</strong> (150 words)</p>
+    <ul>
+      <li><strong>Intro:</strong> India's calendars are simultaneously feats of astronomy and vessels of regional identity.</li>
+      <li><strong>Scientific achievement:</strong> luni-solar reckoning with precise intercalation, the 27-nakshatra system and fine time-units reflect the mathematics of Aryabhata and Varahamihira.</li>
+      <li><strong>Cultural diversity (the core):</strong> distinct regional calendars &mdash; Tamil, Malayalam (Kollam), Bengali, Vikram &mdash; anchor linguistic identities and set each community's festivals and new-years.</li>
+      <li><strong>Critical edge:</strong> this plurality complicated governance, which the 1957 National Calendar sought to reconcile without erasing diversity.</li>
+      <li><strong>Conclusion:</strong> Indian calendars are a rare fusion of hard science and living culture &mdash; a heritage worth preserving and studying.</li>
+    </ul>
+  </div>
+
+  <div class="model-answer">
+    <h5>Model Answer 4</h5>
+    <p><strong>Q. What is a Panchang? Explain its components and its role in Indian society.</strong> (150 words)</p>
+    <ul>
+      <li><strong>Intro:</strong> The Panchang is the traditional Hindu almanac &mdash; the applied instrument of the luni-solar calendar, used to fix dates and auspicious times.</li>
+      <li><strong>Meaning:</strong> "five limbs" &mdash; it computes five elements for each day.</li>
+      <li><strong>Components (the core):</strong> Tithi (lunar day), Vara (weekday), Nakshatra (lunar mansion), Yoga (Sun&ndash;Moon combination) and Karana (half-tithi) &mdash; together fixing festivals, fasts and muhurta.</li>
+      <li><strong>Social role:</strong> it governs weddings, rituals, agricultural timing and religious observance across much of India.</li>
+      <li><strong>Critical edge:</strong> regional variations (amanta/purnimanta) and differing almanacs can yield slightly different dates for the same festival.</li>
+      <li><strong>Conclusion:</strong> The Panchang bridges Indian astronomy and everyday life, keeping an ancient scientific tradition socially alive.</li>
+    </ul>
+  </div>
+
+  <div class="callout warn"><strong>Note:</strong> These are model questions in the UPSC GS-I pattern with full answers; they are not reproductions of dated past-year papers.</div>
+</section>
+
+<!-- REVISION BOX -->
+<section class="notes revision-box" id="revision">
+  <h2>&#9733; 15-Minute Revision Box</h2>
+  <p>Last-mile recall grid &mdash; epochs, types, the National Calendar and the panchang at a glance.</p>
+  <div class="revision-grid grid-2">
+    <div class="rev-col">
+      <h4>Epochs (highest yield)</h4>
+      <ul>
+        <li><strong>Kali Yuga:</strong> 3102 BCE</li>
+        <li><strong>Vikram Samvat:</strong> 57 BCE (luni-solar)</li>
+        <li><strong>Saka:</strong> 78 CE (solar) &mdash; National Calendar</li>
+        <li><strong>Hijri:</strong> 622 CE (lunar)</li>
+        <li><strong>Kollam:</strong> 825 CE (solar)</li>
+      </ul>
+    </div>
+    <div class="rev-col">
+      <h4>National Calendar</h4>
+      <ul>
+        <li>Based on <strong>Saka</strong> era (epoch 78 CE).</li>
+        <li>Adopted <strong>22 March 1957</strong>.</li>
+        <li>First month <strong>Chaitra</strong> (starts 22 Mar).</li>
+        <li>Saka year = CE &minus; 78 (2026 = Saka 1948).</li>
+        <li>Committee chair: <strong>Meghnad Saha</strong>.</li>
+      </ul>
+    </div>
+    <div class="rev-col">
+      <h4>Types &amp; Behaviour</h4>
+      <ul>
+        <li><strong>Lunar</strong> (Hijri): drifts ~11 days/yr earlier.</li>
+        <li><strong>Solar</strong> (Saka, Tamil): fixed to seasons.</li>
+        <li><strong>Luni-solar</strong> (Vikram): adds <em>adhik maas</em>.</li>
+        <li>Solar festivals (Sankranti, Baisakhi) = fixed date; lunar (Diwali, Id) = move.</li>
+      </ul>
+    </div>
+    <div class="rev-col">
+      <h4>Panchang (5 limbs)</h4>
+      <ul>
+        <li><strong>Tithi</strong> &mdash; lunar day</li>
+        <li><strong>Vara</strong> &mdash; weekday</li>
+        <li><strong>Nakshatra</strong> &mdash; lunar mansion (27)</li>
+        <li><strong>Yoga</strong> &mdash; Sun&ndash;Moon combination</li>
+        <li><strong>Karana</strong> &mdash; half-tithi</li>
+      </ul>
+    </div>
+  </div>
+  <div class="callout warn"><strong>Trap-buster:</strong> National Calendar = <strong>Saka</strong> (not Vikram); Vikram epoch <strong>57 BCE</strong> makes its year <em>larger</em> than CE, Saka epoch <strong>78 CE</strong> makes its year <em>smaller</em> than CE.</div>
+</section>
+
+</main>
+
+<aside>
+  <div class="widget">
+    <h4>Exam Weight</h4>
+    <p>Calendars appear in Prelims via <strong>era&ndash;epoch&ndash;type</strong> matching and the <strong>National Calendar</strong>; occasionally GS-I on heritage.</p>
+  </div>
+  <div class="widget">
+    <h4>National Calendar</h4>
+    <ul>
+      <li>Saka era (78 CE)</li>
+      <li>Adopted 1957</li>
+      <li>First month: Chaitra</li>
+    </ul>
+  </div>
+  <div class="widget">
+    <h4>Three Types</h4>
+    <ul>
+      <li>Lunar &mdash; Hijri</li>
+      <li>Solar &mdash; Saka, Tamil</li>
+      <li>Luni-solar &mdash; Vikram</li>
+    </ul>
+  </div>
+  <div class="widget">
+    <h4>Key Epochs</h4>
+    <ul>
+      <li>Vikram &mdash; 57 BCE</li>
+      <li>Saka &mdash; 78 CE</li>
+      <li>Hijri &mdash; 622 CE</li>
+      <li>Kollam &mdash; 825 CE</li>
+    </ul>
+  </div>
+  <div class="widget">
+    <h4>Conversion Trick</h4>
+    <p>Saka = CE &minus; 78. Vikram = CE + 57. (Directions are opposite &mdash; the classic trap.)</p>
+  </div>
+  <div class="widget">
+    <h4>Panchang 5 Limbs</h4>
+    <p>Tithi, Vara, Nakshatra, Yoga, Karana.</p>
+  </div>
+  <div class="widget">
+    <h4>Mid-April Cluster</h4>
+    <p>Baisakhi, Puthandu, Vishu, Pohela Boishakh, Bihu &mdash; all solar new-years (~13&ndash;15 Apr).</p>
+  </div>
+  <div class="widget">
+    <h4>Reform Fact</h4>
+    <p>Calendar Reform Committee (1952&ndash;55), chaired by <strong>Meghnad Saha</strong>.</p>
+  </div>
+  <div class="widget">
+    <h4>GS-I Line</h4>
+    <p>"Many clocks, one civilization" &mdash; plural calendars, shared astronomy, one civic National Calendar.</p>
+  </div>
+</aside>
+
+</div>
+</div>

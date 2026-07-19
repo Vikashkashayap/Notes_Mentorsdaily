@@ -1,0 +1,701 @@
+<!-- culture-topic10 — auto-imported from culture-topic10-puppetry-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 10: Indian Puppetry</h1>
+  <p class="sub">Puppetry (<em>Putul Kala</em>) is one of India's oldest and most ingenious folk arts &mdash; storytelling through crafted figures that combine <strong>sculpture, painting, music, dance and drama</strong> in miniature. The exam tests it almost entirely as <em>type&ndash;region&ndash;name</em> matching. This book-depth file covers the <strong>four classical types</strong> &mdash; <strong>string</strong> (Kathputli, Kundhei, Gombeyatta, Bommalattam), <strong>shadow</strong> (Tholu Bommalata, Ravanachhaya, Tholpavakoothu), <strong>glove/hand</strong> (Pavakathakali), and <strong>rod</strong> (Putul Nautch, Yampuri) &mdash; with region pairs, techniques, social role and PYQs with model answers.</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-I</span>
+    <span class="pill">4 Types &middot; Region Pairs</span>
+    <span class="pill">~30 min read</span>
+    <span class="pill">Folk &amp; Intangible Heritage</span>
+    <span class="pill">Moderate Weight</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#overview">Overview &amp; the Four Types</a></li>
+    <li><span class="num">2.</span><a href="#string">String Puppets</a></li>
+    <li><span class="num">3.</span><a href="#shadow">Shadow Puppets</a></li>
+    <li><span class="num">4.</span><a href="#glove">Glove / Hand Puppets</a></li>
+    <li><span class="num">5.</span><a href="#rod">Rod Puppets</a></li>
+    <li><span class="num">6.</span><a href="#compare">Regional Master Table</a></li>
+    <li><span class="num">7.</span><a href="#themes">Technique, Themes &amp; Storytelling</a></li>
+    <li><span class="num">8.</span><a href="#social">Social Role &amp; Significance</a></li>
+    <li><span class="num">9.</span><a href="#currentaffairs">Institutions, Decline &amp; Revival</a></li>
+    <li><span class="num">10.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><span class="num">11.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Frames Puppetry</h3>
+  <p>Puppetry is almost pure <em>type&ndash;region&ndash;name matching</em> ("Ravanachhaya belongs to which state and which type?"). The productive skill is holding the four-type grid with each region's local name locked in. Sort your prep:</p>
+  <ul>
+    <li><strong>Static/factual</strong> &mdash; the four types (string, shadow, glove, rod) and each state's name: Kathputli (Rajasthan, string), Tholu Bommalata (Andhra, shadow), Pavakathakali (Kerala, glove), Putul Nautch (Bengal, rod). High recall.</li>
+    <li><strong>Thematic/stylistic</strong> &mdash; how sound/image is produced: strings vs leather-silhouette-and-light vs hand-worn vs rod-supported; opaque vs translucent shadow puppets. Technique-to-type mapping.</li>
+    <li><strong>Analytical (GS-I)</strong> &mdash; puppetry as a composite folk art and mass medium of epics/social messaging, and as an endangered livelihood needing revival. Needs idea + example + judgement.</li>
+  </ul>
+  <p><strong>Note:</strong> A single memory grid solves most questions &mdash; <em>four types &times; the region name</em>. Shadow puppetry is concentrated in the South (Andhra, Karnataka, Kerala, Odisha, Maharashtra); string puppetry is the most widespread.</p>
+</div>
+
+<!-- SECTION 1 -->
+<section class="notes" id="overview">
+  <h2>1. Overview &amp; the Four Types</h2>
+  <p>Puppetry is a <strong>composite art</strong> &mdash; the puppet-maker is sculptor, painter and costumer, while the performance adds music, narration and movement. India classifies puppets into <strong>four types</strong> by how they are manipulated, and this grid is the backbone of the whole topic.</p>
+  <svg viewBox="0 0 660 200" width="100%" style="max-width:660px;background:#fff;border:1px solid #e5e7eb;border-radius:8px;display:block;margin:10px 0" role="img" aria-label="Four types of Indian puppets: String, Shadow, Glove/Hand, and Rod, with a representative regional form for each">
+    <text x="330" y="26" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Four Types of Indian Puppets</text>
+    <rect x="20" y="46" width="150" height="130" rx="8" fill="#fff7ed" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="95" y="70" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309">STRING</text>
+    <text x="95" y="92" text-anchor="middle" font-size="11" fill="#334155">Sutradharika</text>
+    <text x="95" y="118" text-anchor="middle" font-size="11" fill="#0f172a">Kathputli</text>
+    <text x="95" y="136" text-anchor="middle" font-size="11" fill="#0f172a">(Rajasthan)</text>
+    <text x="95" y="160" text-anchor="middle" font-size="10" fill="#64748b">jointed, string-worked</text>
+    <rect x="180" y="46" width="150" height="130" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="255" y="70" text-anchor="middle" font-size="13" font-weight="700" fill="#1d4ed8">SHADOW</text>
+    <text x="255" y="92" text-anchor="middle" font-size="11" fill="#334155">Chhaya</text>
+    <text x="255" y="118" text-anchor="middle" font-size="11" fill="#0f172a">Tholu Bommalata</text>
+    <text x="255" y="136" text-anchor="middle" font-size="11" fill="#0f172a">(Andhra)</text>
+    <text x="255" y="160" text-anchor="middle" font-size="10" fill="#64748b">leather + light + screen</text>
+    <rect x="340" y="46" width="150" height="130" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5"/>
+    <text x="415" y="70" text-anchor="middle" font-size="13" font-weight="700" fill="#047857">GLOVE</text>
+    <text x="415" y="92" text-anchor="middle" font-size="11" fill="#334155">Beni / Hand</text>
+    <text x="415" y="118" text-anchor="middle" font-size="11" fill="#0f172a">Pavakathakali</text>
+    <text x="415" y="136" text-anchor="middle" font-size="11" fill="#0f172a">(Kerala)</text>
+    <text x="415" y="160" text-anchor="middle" font-size="10" fill="#64748b">worn on the hand</text>
+    <rect x="500" y="46" width="150" height="130" rx="8" fill="#faf5ff" stroke="#8b5cf6" stroke-width="1.5"/>
+    <text x="575" y="70" text-anchor="middle" font-size="13" font-weight="700" fill="#6d28d9">ROD</text>
+    <text x="575" y="92" text-anchor="middle" font-size="11" fill="#334155">Dandi</text>
+    <text x="575" y="118" text-anchor="middle" font-size="11" fill="#0f172a">Putul Nautch</text>
+    <text x="575" y="136" text-anchor="middle" font-size="11" fill="#0f172a">(Bengal)</text>
+    <text x="575" y="160" text-anchor="middle" font-size="10" fill="#64748b">supported on rods</text>
+  </svg>
+  <ul>
+    <li><strong>String (Sutradharika):</strong> jointed wooden/cloth puppets worked by strings from above &mdash; the most widespread type.</li>
+    <li><strong>Shadow (Chhaya):</strong> flat leather figures pressed against a translucent screen lit from behind, so the audience sees moving silhouettes &mdash; concentrated in South India.</li>
+    <li><strong>Glove/Hand (Beni):</strong> small puppets worn like a glove and animated by the fingers &mdash; the head and arms move directly.</li>
+    <li><strong>Rod (Dandi):</strong> larger puppets supported and manipulated from below by rods &mdash; often an extension of glove puppets.</li>
+  </ul>
+  <div class="callout"><strong>One-line frame:</strong> Indian puppetry = four manipulation techniques (string, shadow, glove, rod) each localised under a regional name &mdash; a single 4&times;region grid answers most questions.</div>
+</section>
+
+<!-- SECTION 2 -->
+<section class="notes" id="string">
+  <h2>2. String Puppets</h2>
+  <p>String puppets (<em>marionettes</em>) are the most widespread Indian type &mdash; jointed figures suspended and worked by strings, capable of remarkably lifelike movement. Nearly every region has its own tradition.</p>
+  <table>
+    <tr><th>Name</th><th>State</th><th>Feature</th></tr>
+    <tr><td>Kathputli</td><td>Rajasthan</td><td>Most famous; carved wood, large flowing skirts, no legs; folk-tale &amp; legend themes</td></tr>
+    <tr><td>Kundhei</td><td>Odisha</td><td>Light wooden puppets, long flowing skirts, many joints</td></tr>
+    <tr><td>Gombeyatta</td><td>Karnataka</td><td>Highly stylised; costumes &amp; movements modelled on Yakshagana</td></tr>
+    <tr><td>Bommalattam</td><td>Tamil Nadu</td><td>Combines rod &amp; string; among the largest, heaviest puppets</td></tr>
+    <tr><td>Gopalila Kundhei</td><td>Odisha</td><td>Krishna-story string puppetry</td></tr>
+  </table>
+  <ul>
+    <li><strong>Kathputli (Rajasthan)</strong> is the iconic Indian marionette &mdash; carved from a single piece of wood, brightly painted, dressed in long skirts and worked with a few strings; the puppeteers (Bhat community) narrate legends of folk heroes.</li>
+    <li><strong>Bommalattam (Tamil Nadu)</strong> is technically hybrid &mdash; manipulated by both rods and strings, with the strings tied to a ring on the puppeteer's head &mdash; and uses the largest, heaviest puppets in India.</li>
+    <li><strong>Gombeyatta (Karnataka)</strong> takes its costume and stylised movement directly from Yakshagana theatre &mdash; a link between puppetry and folk drama.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims trap:</strong> Kathputli = Rajasthan (string). Kundhei = Odisha; Gombeyatta = Karnataka (string); Bommalattam = Tamil Nadu (rod+string hybrid). Do not confuse the Karnataka <em>string</em> Gombeyatta with the Karnataka <em>shadow</em> Togalu Gombeyatta.</div>
+</section>
+
+<!-- SECTION 3 -->
+<section class="notes" id="shadow">
+  <h2>3. Shadow Puppets</h2>
+  <p>Shadow puppetry is India's most distinctive form &mdash; flat, often translucent leather figures pressed to a back-lit screen so the audience watches coloured or black silhouettes. It is overwhelmingly a <strong>South Indian</strong> tradition, tied to epic recitation.</p>
+  <table>
+    <tr><th>Name</th><th>State</th><th>Feature</th></tr>
+    <tr><td>Tholu Bommalata</td><td>Andhra Pradesh</td><td>Large, colourful, translucent leather; "dance of leather puppets"</td></tr>
+    <tr><td>Togalu Gombeyatta</td><td>Karnataka</td><td>Size varies by social rank of the character</td></tr>
+    <tr><td>Ravanachhaya</td><td>Odisha</td><td>Opaque (no colour), one-piece (no joints); most delicate, poetic shadows</td></tr>
+    <tr><td>Tholpavakoothu</td><td>Kerala</td><td>Temple shadow theatre; Ramayana in Bhagavati temples</td></tr>
+    <tr><td>Charma Bahuli (Chamadyacha)</td><td>Maharashtra</td><td>Leather shadow puppets</td></tr>
+  </table>
+  <ul>
+    <li><strong>Tholu Bommalata (Andhra)</strong> uses the largest shadow puppets &mdash; made of translucent, richly coloured leather, so the shadows glow in colour; themes are the Ramayana and Mahabharata.</li>
+    <li><strong>Ravanachhaya (Odisha)</strong> is the most artistically refined &mdash; puppets are <em>opaque</em> (throwing black shadows), made in one piece without joints, producing delicate, poetic, moving silhouettes.</li>
+    <li><strong>Tholpavakoothu (Kerala)</strong> is a ritual temple shadow theatre performed in Devi (Bhagavati) temples, dramatising the Ramayana over many nights.</li>
+  </ul>
+  <div class="callout"><strong>GS-I hook:</strong> Shadow puppetry shows India's genius for the composite &mdash; leather-craft, painting, light and epic narration fuse into a single temple-and-village art, and it links South India to a shadow-theatre tradition spread across Asia.</div>
+</section>
+
+<!-- SECTION 4 -->
+<section class="notes" id="glove">
+  <h2>4. Glove / Hand Puppets</h2>
+  <p>Glove (or hand/sleeve) puppets are small figures worn on the hand and animated directly by the fingers &mdash; intimate, fast-moving and ideal for lively, comic and devotional storytelling.</p>
+  <table>
+    <tr><th>Name</th><th>State</th><th>Feature</th></tr>
+    <tr><td>Pavakathakali</td><td>Kerala</td><td>Glove puppets styled like Kathakali; epic themes, elaborate faces</td></tr>
+    <tr><td>Gulabo-Sitabo</td><td>Uttar Pradesh</td><td>Comic glove-puppet duo; satirical banter</td></tr>
+    <tr><td>Pavai Koothu / Sakhi Kandhei</td><td>Tamil Nadu / Odisha</td><td>Local glove traditions</td></tr>
+  </table>
+  <ul>
+    <li><strong>Pavakathakali (Kerala)</strong> is the marquee glove tradition &mdash; the puppets are dressed and painted exactly like Kathakali dancers (green faces, huge head-gear) and enact the same epic stories, to Kathakali-style music (Chenda, Chengila).</li>
+    <li><strong>Gulabo-Sitabo (UP)</strong> is a comic glove-puppet act built around the quarrels of two women (a wife and a mistress) &mdash; folk humour and social satire.</li>
+    <li><strong>Technique:</strong> the puppeteer's index finger moves the head and the thumb and middle finger the two arms &mdash; giving quick, expressive gestures suited to comedy and dialogue.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims trap:</strong> Pavakathakali = Kerala glove puppetry styled on Kathakali. Don't confuse it with Tholpavakoothu (Kerala <em>shadow</em> puppetry) &mdash; both are Kerala but one is glove, one is shadow.</div>
+</section>
+
+<!-- SECTION 5 -->
+<section class="notes" id="rod">
+  <h2>5. Rod Puppets</h2>
+  <p>Rod puppets are larger figures supported and worked from below by rods &mdash; essentially an extension of the glove puppet, allowing bigger, more elaborate figures. They are concentrated in eastern India.</p>
+  <table>
+    <tr><th>Name</th><th>State</th><th>Feature</th></tr>
+    <tr><td>Putul Nautch (Danger Putul)</td><td>West Bengal</td><td>Large costumed rod puppets; Jatra-style music &amp; themes</td></tr>
+    <tr><td>Yampuri</td><td>Bihar</td><td>One-piece wooden rod puppets (no joints); unique construction</td></tr>
+    <tr><td>Putul Nach</td><td>Odisha/Assam</td><td>Regional rod-puppet variants</td></tr>
+  </table>
+  <ul>
+    <li><strong>Putul Nautch (Bengal)</strong> uses large, richly costumed rod puppets, three to four feet tall, moved by a rod fixed to the neck; performances borrow Jatra's music and melodrama.</li>
+    <li><strong>Yampuri (Bihar)</strong> is distinctive for being made of <em>wood</em> in a single piece <em>without joints</em> &mdash; demanding great skill and dexterity from the puppeteer.</li>
+    <li><strong>Technique:</strong> the main rod supports the body/neck while thinner rods work the hands &mdash; the puppeteer stands or crouches behind a screen below the stage.</li>
+  </ul>
+  <div class="callout"><strong>GS-I hook:</strong> Rod puppetry's eastern home (Bengal, Bihar, Odisha) shows how a single technique adapts locally &mdash; Bengal's jointed, Jatra-influenced Putul Nautch versus Bihar's rigid, one-piece Yampuri.</div>
+</section>
+
+<!-- SECTION 6 -->
+<section class="notes" id="compare">
+  <h2>6. Regional Master Table</h2>
+  <p>The single most useful chart in this topic &mdash; the whole 4&times;region grid on one screen. Learn each <em>type&ndash;name&ndash;state</em> row, because that is exactly the form UPSC's matching questions take.</p>
+  <table>
+    <tr><th>Type</th><th>Name</th><th>State</th></tr>
+    <tr><td rowspan="4">String</td><td>Kathputli</td><td>Rajasthan</td></tr>
+    <tr><td>Kundhei</td><td>Odisha</td></tr>
+    <tr><td>Gombeyatta</td><td>Karnataka</td></tr>
+    <tr><td>Bommalattam (rod+string)</td><td>Tamil Nadu</td></tr>
+    <tr><td rowspan="4">Shadow</td><td>Tholu Bommalata</td><td>Andhra Pradesh</td></tr>
+    <tr><td>Togalu Gombeyatta</td><td>Karnataka</td></tr>
+    <tr><td>Ravanachhaya (opaque)</td><td>Odisha</td></tr>
+    <tr><td>Tholpavakoothu</td><td>Kerala</td></tr>
+    <tr><td rowspan="2">Glove</td><td>Pavakathakali</td><td>Kerala</td></tr>
+    <tr><td>Gulabo-Sitabo</td><td>Uttar Pradesh</td></tr>
+    <tr><td rowspan="2">Rod</td><td>Putul Nautch</td><td>West Bengal</td></tr>
+    <tr><td>Yampuri</td><td>Bihar</td></tr>
+  </table>
+  <ul>
+    <li><strong>Memory hooks:</strong> Kathputli = the famous Rajasthani string puppet; Ravanachhaya = Odisha's opaque, jointless shadow; Yampuri = Bihar's one-piece rod; Bommalattam = the big Tamil rod+string hybrid.</li>
+    <li><strong>Two-Karnataka trap:</strong> Gombeyatta (string) and Togalu Gombeyatta (shadow) both belong to Karnataka.</li>
+  </ul>
+  <div class="callout warn"><strong>Highest-frequency exam idea:</strong> match type + name + state. Kathputli (Rajasthan/string), Tholu Bommalata (Andhra/shadow), Ravanachhaya (Odisha/shadow, opaque), Pavakathakali (Kerala/glove), Putul Nautch (Bengal/rod), Yampuri (Bihar/rod).</div>
+</section>
+
+<!-- SECTION 7 -->
+<section class="notes" id="themes">
+  <h2>7. Technique, Themes &amp; Storytelling</h2>
+  <p>Beyond names, puppetry is a craft-and-performance system. Its <strong>themes</strong> and <strong>method</strong> explain why it endured for centuries as a village medium.</p>
+  <ul>
+    <li><strong>Composite craft:</strong> a puppet fuses wood/leather carving, painting, costume and jewellery &mdash; the maker is sculptor and artist; the show adds live music and narration.</li>
+    <li><strong>Themes:</strong> overwhelmingly the <em>Ramayana and Mahabharata</em>, Puranic tales, local legends and folk heroes &mdash; puppetry was a way of transmitting the epics to the illiterate.</li>
+    <li><strong>Manipulation:</strong> string (from above), rod (from below), glove (hand), shadow (leather against back-lit screen) &mdash; each demanding distinct puppeteer skills.</li>
+    <li><strong>Music &amp; narration:</strong> a <em>sutradhar</em> (narrator) and musicians voice the characters and drive the story &mdash; puppetry is never silent.</li>
+    <li><strong>Portability:</strong> a whole troupe and stage could travel village to village &mdash; making puppetry a truly mobile mass medium.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims trap:</strong> Shadow puppets can be translucent-and-coloured (Tholu Bommalata, Andhra) or opaque-and-black (Ravanachhaya, Odisha). Bommalattam uniquely uses <em>both</em> rods and strings.</div>
+</section>
+
+<!-- SECTION 8 -->
+<section class="notes" id="social">
+  <h2>8. Social Role &amp; Significance</h2>
+  <p>The Mains angle is <em>function</em> &mdash; what puppetry <strong>did</strong> for Indian society. It was, for centuries, one of the most effective mass media available to a largely non-literate population.</p>
+  <ul>
+    <li><strong>Popular education (the core):</strong> puppetry carried the epics, Puranas and moral tales to villages that had no books &mdash; a folk medium of religious and ethical instruction.</li>
+    <li><strong>Entertainment &amp; satire:</strong> comic forms (Gulabo-Sitabo) and lively marionette shows entertained while gently mocking social follies &mdash; a safe space for criticism.</li>
+    <li><strong>Modern development communication:</strong> government and NGOs have used puppetry for public messaging &mdash; literacy, health, family planning, environment &mdash; because it reaches rural audiences directly and cheaply.</li>
+    <li><strong>Livelihood &amp; community:</strong> hereditary puppeteer communities (e.g. the Bhats of Rajasthan) depend on the art for their living &mdash; making its decline an economic as well as cultural loss.</li>
+    <li><strong>Composite heritage:</strong> puppetry binds craft, music, drama and folklore into one intangible tradition &mdash; a microcosm of Indian folk culture.</li>
+  </ul>
+  <div class="callout"><strong>GS-I hook:</strong> Puppetry was India's original "mass media" &mdash; a portable, cheap, participatory way to teach epics and, today, to communicate development messages, which is exactly why it deserves state support.</div>
+</section>
+
+<!-- SECTION 9 -->
+<section class="notes" id="currentaffairs">
+  <h2>9. Institutions, Decline &amp; Revival</h2>
+  <p>Puppetry today is a <strong>threatened folk art</strong> &mdash; squeezed by cinema, television and mobile entertainment &mdash; kept alive by academies, festivals and dedicated troupes.</p>
+  <ul>
+    <li><strong>Sangeet Natak Akademi (1953):</strong> supports and documents puppetry as a performing art; it set up specialised centres and honours master puppeteers.</li>
+    <li><strong>Ishara Puppet Theatre &amp; UNIMA-India:</strong> modern institutions and the international puppetry body's Indian chapter promote and innovate the art (contemporary and educational puppetry).</li>
+    <li><strong>Decline factors:</strong> competition from cinema/TV/OTT, loss of village patronage, migration of hereditary puppeteers to other work, and few young learners &mdash; the classic intangible-heritage crisis.</li>
+    <li><strong>Revival levers:</strong> festivals, museum/tourism showcases (Shilpgram, Bhopal's Bharat Bhavan), development-communication contracts, and blending puppetry with education and modern themes.</li>
+    <li><strong>Why it matters:</strong> each dying tradition (a Ravanachhaya, a Yampuri) is an irreplaceable craft-and-performance system &mdash; safeguarding needs livelihood support, not just documentation.</li>
+  </ul>
+  <div class="callout warn"><strong>One-line frame:</strong> Puppetry survives only if the puppeteer can earn from it &mdash; so revival means new audiences and roles (education, development messaging, tourism), not merely archiving old shows. <span class="update-tag">check for latest update or data</span></div>
+</section>
+
+<!-- PRELIMS -->
+<section class="notes" id="prelims-pyq">
+  <h2>10. Prelims PYQs</h2>
+  <p style="font-size:13px;color:var(--muted)"><em>Concept-practice MCQs on Indian puppetry, built on genuine UPSC themes. Each carries a worked rationale.</em></p>
+
+  <div class="pyq">
+    <div class="year">Concept practice</div>
+    <p class="q-stem"><strong>Q:</strong> The famous Kathputli puppets, worked by strings and dressed in long flowing skirts, belong to which state?</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> Rajasthan</li>
+      <li><span class="opt-key">(b)</span> Odisha</li>
+      <li><span class="opt-key">(c)</span> Karnataka</li>
+      <li><span class="opt-key">(d)</span> West Bengal</li>
+    </ul>
+    <p class="ans">Answer: (a) Rajasthan. Kathputli is the iconic Rajasthani string marionette, carved from wood and performed by the Bhat community.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Concept practice</div>
+    <p class="q-stem"><strong>Q:</strong> Consider the following pairs of puppet form and type:<br>1. Tholu Bommalata &mdash; Shadow<br>2. Putul Nautch &mdash; Rod<br>3. Pavakathakali &mdash; String<br>Which of the pairs are correctly matched?</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> 1 and 2 only</li>
+      <li><span class="opt-key">(b)</span> 2 and 3 only</li>
+      <li><span class="opt-key">(c)</span> 1 and 3 only</li>
+      <li><span class="opt-key">(d)</span> 1, 2 and 3</li>
+    </ul>
+    <p class="ans">Answer: (a). Tholu Bommalata is a shadow form (Andhra) and Putul Nautch is a rod form (Bengal). Pavakathakali (Kerala) is a <em>glove</em> puppet form, not string &mdash; so pair 3 is wrong.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Concept practice</div>
+    <p class="q-stem"><strong>Q:</strong> Ravanachhaya, noted for its delicate, opaque (colourless) one-piece leather figures that throw black shadows, is a shadow-puppet tradition of &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Andhra Pradesh</li>
+      <li><span class="opt-key">(b)</span> Karnataka</li>
+      <li class="correct"><span class="opt-key">(c)</span> Odisha</li>
+      <li><span class="opt-key">(d)</span> Kerala</li>
+    </ul>
+    <p class="ans">Answer: (c) Odisha. Unlike the coloured, translucent Tholu Bommalata (Andhra), Ravanachhaya puppets are opaque and jointless, producing poetic black silhouettes.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Concept practice</div>
+    <p class="q-stem"><strong>Q:</strong> Which puppet form uniquely combines both rod and string manipulation and uses among the largest, heaviest puppets in India?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Kundhei (Odisha)</li>
+      <li class="correct"><span class="opt-key">(b)</span> Bommalattam (Tamil Nadu)</li>
+      <li><span class="opt-key">(c)</span> Yampuri (Bihar)</li>
+      <li><span class="opt-key">(d)</span> Gombeyatta (Karnataka)</li>
+    </ul>
+    <p class="ans">Answer: (b) Bommalattam (Tamil Nadu) &mdash; a hybrid worked by rods and strings, with the strings tied to a ring on the puppeteer's head.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Concept practice</div>
+    <p class="q-stem"><strong>Q:</strong> The Yampuri puppets, distinctive for being made of wood in a single piece without joints, are a rod-puppet tradition of &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> West Bengal</li>
+      <li class="correct"><span class="opt-key">(b)</span> Bihar</li>
+      <li><span class="opt-key">(c)</span> Assam</li>
+      <li><span class="opt-key">(d)</span> Jharkhand</li>
+    </ul>
+    <p class="ans">Answer: (b) Bihar. Yampuri's jointless one-piece construction demands unusual dexterity; Bengal's rod tradition is the jointed Putul Nautch.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Concept practice</div>
+    <p class="q-stem"><strong>Q:</strong> Pavakathakali, in which glove puppets are dressed and painted like Kathakali dancers to enact epic stories, belongs to &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Tamil Nadu</li>
+      <li><span class="opt-key">(b)</span> Karnataka</li>
+      <li class="correct"><span class="opt-key">(c)</span> Kerala</li>
+      <li><span class="opt-key">(d)</span> Andhra Pradesh</li>
+    </ul>
+    <p class="ans">Answer: (c) Kerala. Pavakathakali is a glove-puppet form styled on Kathakali; Kerala's shadow tradition is the separate Tholpavakoothu.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> type&ndash;name&ndash;state matching (Kathputli, Tholu Bommalata, Ravanachhaya, Pavakathakali, Putul Nautch, Yampuri); string vs shadow vs glove vs rod; translucent vs opaque shadow; Bommalattam (rod+string); two-Karnataka trap (Gombeyatta vs Togalu Gombeyatta). <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- MAINS -->
+<section class="notes" id="mains-pyq">
+  <h2>11. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>Model GS-I questions on Indian puppetry. Each carries a full skeleton &mdash; Introduction &rarr; body &rarr; Conclusion.</em></p>
+
+  <div class="pyq">
+    <div class="year">Model question &mdash; GS-I <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> "Indian puppetry is a composite folk art and one of the oldest mass media." Discuss its forms and social significance.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Puppetry blends sculpture, painting, music, dance and drama into a single miniature theatre, and for centuries served as one of India's most effective mass media for a non-literate society.</li>
+        <li><strong>Four forms:</strong> string (Kathputli, Rajasthan), shadow (Tholu Bommalata, Andhra; Ravanachhaya, Odisha), glove (Pavakathakali, Kerala) and rod (Putul Nautch, Bengal) &mdash; each a distinct regional craft.</li>
+        <li><strong>Composite craft (the core):</strong> the puppet-maker is sculptor, painter and costumer, while performance adds narration and live music &mdash; a microcosm of Indian folk culture.</li>
+        <li><strong>Social role:</strong> it carried the epics and moral tales to villages, entertained and satirised, and today is used for development communication (literacy, health).</li>
+        <li><strong>Critical edge:</strong> cinema, TV and lost patronage have pushed hereditary puppeteers into decline, making this a livelihood as well as heritage crisis.</li>
+        <li><strong>Conclusion:</strong> puppetry is folk India in miniature &mdash; preserving it means giving puppeteers new audiences and roles, not merely displaying old figures in museums.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Model question &mdash; GS-I <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Compare the four types of Indian puppetry and account for their regional distribution.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> India classifies puppets by manipulation into four types &mdash; string, shadow, glove and rod &mdash; each with a distinct technique and a characteristic regional home.</li>
+        <li><strong>String:</strong> the most widespread &mdash; jointed marionettes worked from above (Kathputli/Rajasthan, Kundhei/Odisha, Gombeyatta/Karnataka).</li>
+        <li><strong>Shadow (the core):</strong> flat leather figures on a back-lit screen, concentrated in the South &mdash; translucent-coloured (Tholu Bommalata/Andhra) or opaque (Ravanachhaya/Odisha), linked to temple epic-recitation.</li>
+        <li><strong>Glove &amp; rod:</strong> glove puppets are intimate and finger-worked (Pavakathakali/Kerala, Gulabo-Sitabo/UP); rod puppets are larger, worked from below, concentrated in the East (Putul Nautch/Bengal, Yampuri/Bihar).</li>
+        <li><strong>Regional logic:</strong> distribution followed local craft materials (leather in the South), theatre traditions (Yakshagana&ndash;Gombeyatta), and patron communities.</li>
+        <li><strong>Conclusion:</strong> the four types map India's regional creativity &mdash; one storytelling impulse expressed through locally-evolved techniques and materials.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Model question &mdash; GS-I <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> How can traditional puppetry be adapted as a tool for modern development communication?</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Puppetry's reach into rural, non-literate audiences makes it a natural vehicle for development messaging, extending its ancient role as a mass medium.</li>
+        <li><strong>Strengths:</strong> it is cheap, portable, participatory and locally trusted &mdash; capable of conveying complex messages through story and humour.</li>
+        <li><strong>Applications (the core):</strong> literacy, immunisation and health, family planning, sanitation, environmental awareness and voter education have all used puppet shows successfully.</li>
+        <li><strong>Institutional support:</strong> government, NGOs and bodies like the Sangeet Natak Akademi can commission puppeteers, giving them income and purpose.</li>
+        <li><strong>Critical edge:</strong> messaging must respect the art's aesthetics and not reduce puppeteers to mere mouthpieces; sustainability needs steady patronage.</li>
+        <li><strong>Conclusion:</strong> adapting puppetry for development marries livelihood with public good &mdash; keeping a dying art alive by giving it a contemporary mission.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Model question &mdash; GS-I <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Why is Indian folk puppetry in decline, and what measures can safeguard it?</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Once a thriving village medium, folk puppetry now survives precariously as its audiences and patrons vanish.</li>
+        <li><strong>Causes of decline:</strong> competition from cinema, TV and mobile entertainment; loss of feudal/village patronage; and migration of hereditary puppeteers to other livelihoods.</li>
+        <li><strong>Consequence (the core):</strong> rare traditions (Ravanachhaya, Yampuri) risk extinction, taking with them irreplaceable craft and performance knowledge.</li>
+        <li><strong>Safeguards:</strong> livelihood support and fellowships, festivals and tourism showcases, documentation, development-communication contracts, and integration into education.</li>
+        <li><strong>Critical edge:</strong> mere archiving is not enough &mdash; a living art needs living audiences and paying work.</li>
+        <li><strong>Conclusion:</strong> safeguarding puppetry means sustaining the puppeteer &mdash; combining cultural pride with real economic opportunity.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-I &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> puppetry as composite folk art &amp; mass medium; four types &amp; regional distribution; puppetry for development communication; decline &amp; safeguarding of folk performing arts; puppetry and transmission of the epics. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes revision-box" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; Indian Puppetry</h3>
+    <div class="revision-grid grid-2">
+      <div class="rev-col">
+        <h4>String Puppets</h4>
+        <ul>
+          <li><strong>Kathputli = Rajasthan</strong> (iconic marionette)</li>
+          <li>Kundhei = Odisha; Gombeyatta = Karnataka</li>
+          <li><strong>Bommalattam = Tamil Nadu</strong> (rod+string, largest)</li>
+        </ul>
+      </div>
+      <div class="rev-col">
+        <h4>Shadow Puppets (South)</h4>
+        <ul>
+          <li><strong>Tholu Bommalata = Andhra</strong> (translucent, coloured)</li>
+          <li><strong>Ravanachhaya = Odisha</strong> (opaque, one-piece)</li>
+          <li>Togalu Gombeyatta = Karnataka; Tholpavakoothu = Kerala</li>
+        </ul>
+      </div>
+      <div class="rev-col">
+        <h4>Glove Puppets</h4>
+        <ul>
+          <li><strong>Pavakathakali = Kerala</strong> (styled on Kathakali)</li>
+          <li>Gulabo-Sitabo = UP (comic duo)</li>
+          <li>Finger-worked; intimate &amp; fast</li>
+        </ul>
+      </div>
+      <div class="rev-col">
+        <h4>Rod Puppets (East)</h4>
+        <ul>
+          <li><strong>Putul Nautch = West Bengal</strong> (large, Jatra-style)</li>
+          <li><strong>Yampuri = Bihar</strong> (wood, one-piece, jointless)</li>
+          <li>Worked from below by rods</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes:</strong> type&ndash;name&ndash;state matching &middot; translucent (Andhra) vs opaque (Odisha) shadow &middot; Bommalattam (rod+string) &middot; two-Karnataka trap &middot; Pavakathakali (glove) vs Tholpavakoothu (shadow). Four types &times; region = the whole grid.</div>
+  </div>
+</section>
+
+</main>
+
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Type &rarr; State</h4>
+    <table>
+      <tr><th>Name</th><th>State</th></tr>
+      <tr><td>Kathputli (string)</td><td>Rajasthan</td></tr>
+      <tr><td>Tholu Bommalata (shadow)</td><td>Andhra</td></tr>
+      <tr><td>Pavakathakali (glove)</td><td>Kerala</td></tr>
+      <tr><td>Putul Nautch (rod)</td><td>Bengal</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>The Four Types</h4>
+    <ul>
+      <li><strong>String</strong> &mdash; worked from above</li>
+      <li><strong>Shadow</strong> &mdash; leather + back-light</li>
+      <li><strong>Glove</strong> &mdash; worn on hand</li>
+      <li><strong>Rod</strong> &mdash; worked from below</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Shadow Special</h4>
+    <ul>
+      <li>Tholu Bommalata &mdash; coloured, translucent</li>
+      <li>Ravanachhaya &mdash; opaque, jointless</li>
+      <li>Tholpavakoothu &mdash; Kerala temple</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:80%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains GS-I</span><span class="fill"><span style="width:55%"></span></span></div>
+    <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:90%"></span></span></div>
+    <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:45%"></span></span></div>
+    <p style="margin-top:8px;font-size:11px;color:var(--muted);">Pure type&ndash;region matching &mdash; easy marks if the grid is memorised.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Traps to Avoid</h4>
+    <ul>
+      <li>Gombeyatta (string) vs Togalu Gombeyatta (shadow)</li>
+      <li>Pavakathakali (glove) vs Tholpavakoothu (shadow)</li>
+      <li>Bommalattam = rod+string hybrid</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">Kathputli</span>
+    <span class="tag">Tholu Bommalata</span>
+    <span class="tag green">Ravanachhaya</span>
+    <span class="tag">Pavakathakali</span>
+    <span class="tag orange">Putul Nautch</span>
+    <span class="tag">Yampuri</span>
+    <span class="tag green">Bommalattam</span>
+    <span class="tag">Gombeyatta</span>
+    <span class="tag orange">Tholpavakoothu</span>
+    <span class="tag green">Kundhei</span>
+    <span class="tag">Gulabo-Sitabo</span>
+  </div>
+
+  <div class="widget">
+    <h4>Data Sources</h4>
+    <ul>
+      <li><a href="https://sangeetnatak.gov.in" target="_blank" rel="noopener">Sangeet Natak Akademi</a></li>
+      <li><a href="https://www.indiaculture.gov.in" target="_blank" rel="noopener">Ministry of Culture</a></li>
+      <li><a href="https://ccrtindia.gov.in" target="_blank" rel="noopener">CCRT</a></li>
+    </ul>
+    <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/art-culture/indian-theatre">T9: Indian Theatre</a></li>
+      <li><a href="/art-culture/indian-dance">T8: Indian Dance</a></li>
+      <li><a href="/art-culture/indian-handicrafts-and-art-forms">T6: Handicrafts</a></li>
+      <li><a href="/art-culture">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding:0;margin:0;">
+      <li style="margin:4px 0;"><a href="#overview" style="font-size:12px;">Overview</a></li>
+      <li style="margin:4px 0;"><a href="#string" style="font-size:12px;">String Puppets</a></li>
+      <li style="margin:4px 0;"><a href="#shadow" style="font-size:12px;">Shadow Puppets</a></li>
+      <li style="margin:4px 0;"><a href="#glove" style="font-size:12px;">Glove Puppets</a></li>
+      <li style="margin:4px 0;"><a href="#rod" style="font-size:12px;">Rod Puppets</a></li>
+      <li style="margin:4px 0;"><a href="#compare" style="font-size:12px;">Master Table</a></li>
+      <li style="margin:4px 0;"><a href="#themes" style="font-size:12px;">Technique &amp; Themes</a></li>
+      <li style="margin:4px 0;"><a href="#social" style="font-size:12px;">Social Role</a></li>
+      <li style="margin:4px 0;"><a href="#currentaffairs" style="font-size:12px;">Decline &amp; Revival</a></li>
+      <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

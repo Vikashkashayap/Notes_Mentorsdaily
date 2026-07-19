@@ -21,6 +21,10 @@ import {
   isDisasterTopicId,
 } from "@/lib/disaster-notes";
 import {
+  getCultureTopicSlug,
+  isCultureTopicId,
+} from "@/lib/culture-notes";
+import {
   getEconomyTopicSlug,
   isEconomyTopicId,
 } from "@/lib/economy-notes";
@@ -105,6 +109,9 @@ export function topicPath(subjectKey: SubjectKey, chapterId: string): string {
   if (subjectKey === "disaster" && isDisasterTopicId(chapterId)) {
     return `${subjectHubPath("disaster")}/${getDisasterTopicSlug(chapterId)}`;
   }
+  if (subjectKey === "culture" && isCultureTopicId(chapterId)) {
+    return `${subjectHubPath("culture")}/${getCultureTopicSlug(chapterId)}`;
+  }
   if (subjectKey === "economy" && isEconomyTopicId(chapterId)) {
     return `${subjectHubPath("economy")}/${getEconomyTopicSlug(chapterId)}`;
   }
@@ -180,6 +187,11 @@ export function getChapterByTopicSlug(
       (ch) => isDisasterTopicId(ch.id) && getDisasterTopicSlug(ch.id) === slug,
     );
   }
+  if (subjectKey === "culture") {
+    return subject.chapters.find(
+      (ch) => isCultureTopicId(ch.id) && getCultureTopicSlug(ch.id) === slug,
+    );
+  }
   if (subjectKey === "economy") {
     return subject.chapters.find(
       (ch) => isEconomyTopicId(ch.id) && getEconomyTopicSlug(ch.id) === slug,
@@ -253,6 +265,10 @@ export function getChapterHref(
     if (!isDisasterTopicId(chapter.id)) return null;
     return topicPath("disaster", chapter.id);
   }
+  if (subjectKey === "culture" || isCultureTopicId(chapter.id)) {
+    if (!isCultureTopicId(chapter.id)) return null;
+    return topicPath("culture", chapter.id);
+  }
   if (subjectKey === "economy" || isEconomyTopicId(chapter.id)) {
     if (!isEconomyTopicId(chapter.id)) return null;
     return topicPath("economy", chapter.id);
@@ -301,6 +317,8 @@ export function getAllTopicPaths(): { subjectKey: SubjectKey; slug: string }[] {
         paths.push({ subjectKey: key, slug: getSecurityTopicSlug(ch.id) });
       } else if (key === "disaster" && isDisasterTopicId(ch.id)) {
         paths.push({ subjectKey: key, slug: getDisasterTopicSlug(ch.id) });
+      } else if (key === "culture" && isCultureTopicId(ch.id)) {
+        paths.push({ subjectKey: key, slug: getCultureTopicSlug(ch.id) });
       } else if (key === "economy" && isEconomyTopicId(ch.id)) {
         paths.push({ subjectKey: key, slug: getEconomyTopicSlug(ch.id) });
       } else if (key === "environment" && isEnvironmentTopicId(ch.id)) {
@@ -320,6 +338,7 @@ export function getAllTopicPaths(): { subjectKey: SubjectKey; slug: string }[] {
         key !== "society" &&
         key !== "security" &&
         key !== "disaster" &&
+        key !== "culture" &&
         key !== "economy" &&
         key !== "environment" &&
         key !== "governance" &&

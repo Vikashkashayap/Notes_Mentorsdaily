@@ -1,0 +1,720 @@
+<!-- culture-topic03 — auto-imported from culture-topic03-artifacts-excavation-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 3: Artifacts &amp; Excavation</h1>
+  <p class="sub">Before the temple and the bronze come the <strong>sources</strong> that let us date and read them &mdash; the <strong>inscriptions</strong> chiselled by kings, the <strong>coins</strong> that carried their portraits, the <strong>pottery</strong> that marks a culture in the soil, and the great <strong>monastic universities</strong> that preserved knowledge. This book-depth file covers <strong>epigraphy</strong> (Brahmi, Kharosthi, Prinsep), the <strong>Ashokan edicts</strong>, <strong>numismatics</strong>, the <strong>pottery sequence</strong> (OCP &rarr; PGW &rarr; NBPW), and the ancient <strong>centres of learning</strong> &mdash; Takshashila, Nalanda, Vikramshila, Valabhi &mdash; with labelled diagrams, tables and genuine dated PYQs with model answers.</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-I</span>
+    <span class="pill">Edicts &middot; Coins &middot; Pottery</span>
+    <span class="pill">~33 min read</span>
+    <span class="pill">Nalanda &middot; Takshashila</span>
+    <span class="pill">High Weight</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#overview">Sources of History &amp; Archaeology</a></li>
+    <li><span class="num">2.</span><a href="#inscriptions">Inscriptions (Epigraphy)</a></li>
+    <li><span class="num">3.</span><a href="#edicts">The Ashokan Edicts</a></li>
+    <li><span class="num">4.</span><a href="#coins">Coins (Numismatics)</a></li>
+    <li><span class="num">5.</span><a href="#pottery">Pottery &amp; Ceramic Sequence</a></li>
+    <li><span class="num">6.</span><a href="#universities">Ancient Universities</a></li>
+    <li><span class="num">7.</span><a href="#monasteries">Monasteries &amp; Excavation Sites</a></li>
+    <li><span class="num">8.</span><a href="#dating">Dating Methods &amp; the ASI</a></li>
+    <li><span class="num">9.</span><a href="#currentaffairs">Antiquities, Revival &amp; Relevance</a></li>
+    <li><span class="num">10.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><span class="num">11.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Frames Artifacts &amp; Excavation</h3>
+  <p>This topic is tested as <em>source-criticism</em> &mdash; "what does this artifact <strong>tell us</strong>, and how reliable is it?" The examiner wants you to move from an object (a coin, an edict, a potsherd) to the historical inference it supports. Sort your prep:</p>
+  <ul>
+    <li><strong>Static/terminology</strong> &mdash; script&ndash;language pairs (Brahmi/Kharosthi, Prakrit/Greek/Aramaic), edict types (major rock, pillar, minor), coin metals and dynasties, the OCP&ndash;PGW&ndash;NBPW pottery order, university&ndash;patron pairs. High recall.</li>
+    <li><strong>Source discrimination</strong> &mdash; what each source proves: inscriptions (contemporary, official but self-glorifying), coins (economy, chronology, art, extent of empire), pottery (relative dating of cultures), monasteries (state of religion &amp; learning). Object-to-inference mapping.</li>
+    <li><strong>Analytical (GS-I)</strong> &mdash; why Gupta numismatic art marks a high point; inscriptions as history vs propaganda; ancient universities as a knowledge economy and the causes of their decline. Needs idea + example + judgement.</li>
+  </ul>
+  <p><strong>Note:</strong> These sources span the whole subcontinent &mdash; from Takshashila (in undivided India's north-west) and Sharada Peeth to Nalanda in the east and Keeladi in the deep south. All recovered antiquities are protected under the <strong>Antiquities &amp; Art Treasures Act, 1972</strong>, and their repatriation is a live matter of cultural sovereignty.</p>
+</div>
+
+<!-- SECTION 1 -->
+<section class="notes" id="overview">
+  <h2>1. Sources of History &amp; Archaeology</h2>
+  <p>History is reconstructed from two broad streams &mdash; <strong>literary</strong> sources (texts) and <strong>archaeological</strong> sources (material remains). This file deals mainly with the archaeological stream, which the examiner prizes because it is <em>contemporary and unedited</em> in a way that later copied manuscripts are not.</p>
+  <table>
+    <tr><th>Stream</th><th>Examples</th><th>Strength</th><th>Limitation</th></tr>
+    <tr><td>Literary &mdash; indigenous</td><td>Vedas, epics, Puranas, Sangam texts, Arthashastra</td><td>Rich on ideas, society, religion</td><td>Often undated, copied later, exaggerated</td></tr>
+    <tr><td>Literary &mdash; foreign accounts</td><td>Megasthenes' <em>Indica</em>, Fa-Hien, Hiuen Tsang, Al-Biruni</td><td>Outsider's dated observation</td><td>Hearsay, cultural bias</td></tr>
+    <tr><td>Archaeological &mdash; inscriptions</td><td>Edicts, prashastis, land grants</td><td>Contemporary, precisely located</td><td>Royal self-glorification</td></tr>
+    <tr><td>Archaeological &mdash; coins</td><td>Punch-marked, Kushana, Gupta gold</td><td>Economy, chronology, empire extent</td><td>Survive selectively</td></tr>
+    <tr><td>Archaeological &mdash; monuments/pottery</td><td>Stupas, viharas, PGW, NBPW</td><td>Relative dating of cultures</td><td>Interpretation needed</td></tr>
+  </table>
+  <ul>
+    <li><strong>Archaeology</strong> studies the past through material remains recovered by <em>excavation</em> and <em>exploration</em>; the <strong>Archaeological Survey of India (ASI)</strong>, founded 1861 under <strong>Alexander Cunningham</strong>, is the nodal body.</li>
+    <li><strong>Antiquity</strong> (legally, an object &ge;100 years old) and <strong>art treasure</strong> are protected categories &mdash; a fact that recurs in current-affairs prelims.</li>
+  </ul>
+  <div class="callout info"><strong>GS-I hook:</strong> No single source is complete; sound history <em>triangulates</em> &mdash; e.g. Samudragupta is known from the Allahabad inscription, his gold coins, <em>and</em> later texts, each checking the others.</div>
+</section>
+
+<!-- SECTION 2 -->
+<section class="notes" id="inscriptions">
+  <h2>2. Inscriptions (Epigraphy)</h2>
+  <p><strong>Epigraphy</strong> is the study of inscriptions; <strong>palaeography</strong> the study of ancient scripts. Inscriptions are the single most reliable source because they are contemporary, publicly displayed and hard to forge &mdash; but they are also official documents, so they glorify their patrons and must be read critically.</p>
+  <ul>
+    <li><strong>By purpose:</strong> <em>commemorative/eulogistic</em> (prashasti &mdash; praising a king), <em>donative</em> (recording gifts/land grants to temples or monks), <em>administrative</em> (edicts, laws), <em>votive/dedicatory</em> (at stupas, caves), and <em>memorial</em> (hero-stones, sati-stones).</li>
+    <li><strong>Scripts:</strong> <strong>Brahmi</strong> (left-to-right, the ancestor of most Indian scripts) and <strong>Kharosthi</strong> (right-to-left, used in the north-west). Ashokan edicts also used <strong>Greek</strong> and <strong>Aramaic</strong> in the far north-west.</li>
+    <li><strong>Decipherment:</strong> <strong>James Prinsep</strong> deciphered Brahmi and Kharosthi in <strong>1837</strong>, unlocking the entire early corpus &mdash; the reason "Devanampiya Piyadasi" could at last be identified as Ashoka.</li>
+  </ul>
+  <table>
+    <tr><th>Inscription</th><th>King / Author</th><th>Significance</th></tr>
+    <tr><td>Hathigumpha (Udayagiri, Odisha)</td><td>Kharavela (Chedi)</td><td>Kalinga king's deeds; earliest reference to a Jain king</td></tr>
+    <tr><td>Junagadh Rock</td><td>Rudradaman I (Saka)</td><td>First long inscription in chaste <strong>Sanskrit</strong>; repair of Sudarshana Lake</td></tr>
+    <tr><td>Allahabad (Prayag) Pillar</td><td>Samudragupta / by Harishena</td><td>Prashasti listing conquests &mdash; the "Indian Napoleon"</td></tr>
+    <tr><td>Aihole</td><td>Pulakeshin II / by Ravikirti</td><td>Chalukya victory over Harsha; dated in Saka era</td></tr>
+    <tr><td>Nanaghat &amp; Nasik</td><td>Satavahanas (Gautamiputra, Naganika)</td><td>Society, economy, donations of the Deccan</td></tr>
+    <tr><td>Besnagar (Heliodorus) Pillar</td><td>Heliodorus (Indo-Greek envoy)</td><td>A Greek turned <strong>Bhagavata</strong> &mdash; early Vaishnavism</td></tr>
+  </table>
+  <div class="callout success"><strong>Prelims trap:</strong> The <em>first</em> inscription in polished Sanskrit is Rudradaman's <strong>Junagadh</strong> (c. 150 CE); earlier inscriptions (Ashoka, Satavahana) used <strong>Prakrit</strong>. Sanskrit as the language of record is a Saka&ndash;Gupta development.</div>
+</section>
+
+<!-- SECTION 3 -->
+<section class="notes" id="edicts">
+  <h2>3. The Ashokan Edicts</h2>
+  <p>The edicts of Ashoka (c. 268&ndash;232 BCE) are the earliest deciphered, precisely dated royal documents in Indian history &mdash; and the first time a king speaks directly to his subjects about <strong>Dhamma</strong> (moral law). They are a source not just for Mauryan administration but for the very idea of a welfare-oriented state.</p>
+  <table>
+    <tr><th>Category</th><th>Number / Notes</th><th>Content</th></tr>
+    <tr><td>Major Rock Edicts</td><td>14</td><td>Dhamma, morality, tolerance, welfare, foreign relations</td></tr>
+    <tr><td>Pillar Edicts</td><td>7</td><td>Later reflections; policy review; polished sandstone pillars</td></tr>
+    <tr><td>Minor Rock Edicts</td><td>Several</td><td>Personal faith; <strong>Maski &amp; Gujarra</strong> name "Ashoka" directly</td></tr>
+    <tr><td>Separate (Kalinga) Edicts</td><td>2 (Dhauli, Jaugada)</td><td>Remorse after the Kalinga war; care of conquered peoples</td></tr>
+  </table>
+  <ul>
+    <li><strong>Languages &amp; scripts:</strong> mostly <strong>Prakrit in Brahmi</strong>; <strong>Kharosthi</strong> in the north-west (Shahbazgarhi, Mansehra); and <strong>Greek &amp; Aramaic</strong> in the far north-west (Kandahar) &mdash; proof of a multilingual empire reaching Hellenistic borders.</li>
+    <li><strong>Titles:</strong> Ashoka calls himself <em>Devanampiya</em> ("Beloved of the Gods") and <em>Piyadasi</em> ("of amiable appearance"); only Maski/Gujarra confirmed the identification.</li>
+    <li><strong>Dhamma:</strong> not a sect but a practical ethic &mdash; non-violence, respect for elders, tolerance of all sects, welfare works, and <em>dhamma-mahamattas</em> (officers of morality). A tool of imperial integration.</li>
+  </ul>
+  <div class="callout info"><strong>GS-I hook:</strong> Ashoka's edicts are simultaneously a <em>historical source</em> (dated, contemporary) and an act of <em>statecraft</em> &mdash; using stone as a mass medium to bind a vast, diverse empire through a shared moral vocabulary.</div>
+</section>
+
+<!-- SECTION 4 -->
+<section class="notes" id="coins">
+  <h2>4. Coins (Numismatics)</h2>
+  <p><strong>Numismatics</strong> &mdash; the study of coins &mdash; is a uniquely dense source: a single coin can fix a <em>date</em> (regnal legends), map the <em>extent</em> of an empire (where it is found), reveal the <em>economy</em> (metal, weight, purity), and record <em>art and religion</em> (deities, portraits, symbols). Where inscriptions are few, coins fill the gap.</p>
+  <div style="text-align:center;margin:16px 0">
+    <svg viewBox="0 0 420 180" width="100%" style="max-width:420px" role="img" aria-label="Schematic of a Gupta gold coin showing obverse and reverse">
+      <circle cx="105" cy="90" r="70" fill="#f4e2b8" stroke="#b8860b" stroke-width="3"/>
+      <circle cx="105" cy="90" r="60" fill="none" stroke="#b8860b" stroke-width="1" stroke-dasharray="3 3"/>
+      <text x="105" y="55" text-anchor="middle" font-size="10" fill="#7a5a00">legend (king's name)</text>
+      <path d="M95 75 l0 40 M95 95 l14 -8" stroke="#7a5a00" stroke-width="3" fill="none"/>
+      <circle cx="95" cy="70" r="6" fill="#7a5a00"/>
+      <text x="105" y="135" text-anchor="middle" font-size="9" fill="#7a5a00">king with bow / lyre / horse</text>
+      <text x="105" y="172" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Obverse</text>
+      <circle cx="315" cy="90" r="70" fill="#f4e2b8" stroke="#b8860b" stroke-width="3"/>
+      <text x="315" y="60" text-anchor="middle" font-size="10" fill="#7a5a00">deity (Lakshmi / Ganga)</text>
+      <circle cx="315" cy="95" r="16" fill="none" stroke="#7a5a00" stroke-width="2"/>
+      <path d="M315 79 l0 32 M299 95 l32 0" stroke="#7a5a00" stroke-width="1.5"/>
+      <text x="315" y="135" text-anchor="middle" font-size="9" fill="#7a5a00">seated goddess, throne</text>
+      <text x="315" y="172" text-anchor="middle" font-size="11" font-weight="bold" fill="#333">Reverse</text>
+    </svg>
+    <p style="font-size:11px;color:var(--muted)">Gupta gold coin (dinara): king in action on the obverse, a deity on the reverse &mdash; art at its numismatic peak.</p>
+  </div>
+  <table>
+    <tr><th>Coinage</th><th>Period / Dynasty</th><th>Feature</th></tr>
+    <tr><td><strong>Punch-marked (Karshapana)</strong></td><td>c. 6th CE BCE onward (Janapadas, Mauryas)</td><td>Earliest; silver/copper; symbols punched, <em>no legends</em></td></tr>
+    <tr><td>Indo-Greek</td><td>2nd&ndash;1st BCE</td><td><strong>First coins with a king's portrait and name</strong>; fine die-work</td></tr>
+    <tr><td>Kushana</td><td>1st&ndash;3rd CE</td><td>Abundant <strong>gold</strong>; a pantheon of Greek, Iranian, Indian deities</td></tr>
+    <tr><td><strong>Gupta gold (dinara)</strong></td><td>4th&ndash;6th CE</td><td>Numismatic high point &mdash; king with bow/lyre/horse, Lakshmi reverse</td></tr>
+    <tr><td>Satavahana</td><td>Deccan, 1st BCE&ndash;2nd CE</td><td>Mostly <strong>lead</strong> &amp; potin; ship motifs = overseas trade</td></tr>
+  </table>
+  <ul>
+    <li><strong>What coins prove:</strong> the debasement (falling gold purity) of later Gupta coins signals economic strain; hoards mark trade routes; Samudragupta's <em>lyre</em> coin reveals a musician-king; Kushana coins document a cosmopolitan, multi-religious realm.</li>
+    <li><strong>Roman coin hoards</strong> in South India (Sangam age) confirm a brisk <strong>Indo-Roman trade</strong> &mdash; a favourite prelims fact.</li>
+  </ul>
+  <div class="callout success"><strong>Prelims trap:</strong> Punch-marked coins carry <em>symbols, not legends</em>; the <em>first</em> coins to name and portray the issuing king are the <strong>Indo-Greek</strong> ones &mdash; a distinction UPSC loves.</div>
+</section>
+
+<!-- SECTION 5 -->
+<section class="notes" id="pottery">
+  <h2>5. Pottery &amp; the Ceramic Sequence</h2>
+  <p>Pottery is the archaeologist's clock. Because styles change slowly and predictably, a <em>ware</em> found in a soil layer dates that layer relative to others. The north-Indian sequence &mdash; OCP &rarr; PGW &rarr; NBPW &mdash; is one of the most frequently examined chronologies.</p>
+  <div style="text-align:center;margin:16px 0">
+    <svg viewBox="0 0 640 90" width="100%" style="max-width:640px" role="img" aria-label="Timeline of north Indian pottery cultures">
+      <line x1="20" y1="45" x2="620" y2="45" stroke="#888" stroke-width="2"/>
+      <g font-size="10" text-anchor="middle">
+        <circle cx="90" cy="45" r="6" fill="#c0622a"/><text x="90" y="30">OCP</text><text x="90" y="72" fill="#666">c.2000&ndash;1500 BCE</text>
+        <circle cx="240" cy="45" r="6" fill="#9aa0a6"/><text x="240" y="30">PGW</text><text x="240" y="72" fill="#666">c.1200&ndash;600 BCE</text>
+        <circle cx="400" cy="45" r="6" fill="#222"/><text x="400" y="30">NBPW</text><text x="400" y="72" fill="#666">c.700&ndash;200 BCE</text>
+        <circle cx="560" cy="45" r="6" fill="#7a2e2e"/><text x="560" y="30">BRW</text><text x="560" y="72" fill="#666">wide span</text>
+      </g>
+    </svg>
+  </div>
+  <table>
+    <tr><th>Ware</th><th>Associated with</th><th>Marker</th></tr>
+    <tr><td><strong>OCP</strong> (Ochre Coloured Pottery)</td><td>Copper Hoard culture, late Harappan fringe</td><td>Worn, ochre-rubbing surface</td></tr>
+    <tr><td><strong>PGW</strong> (Painted Grey Ware)</td><td><strong>Later Vedic</strong> age, upper Ganga&ndash;Yamuna doab</td><td>Fine grey ware, black geometric paint; linked to Mahabharata sites</td></tr>
+    <tr><td><strong>NBPW</strong> (Northern Black Polished Ware)</td><td>Age of the <strong>Mahajanapadas / early cities, Mauryas</strong></td><td>Glossy, mirror-like black surface &mdash; luxury de-luxe ware</td></tr>
+    <tr><td><strong>BRW</strong> (Black-and-Red Ware)</td><td>Megalithic South India &amp; elsewhere</td><td>Black interior/rim, red body (inverted firing)</td></tr>
+  </table>
+  <ul>
+    <li><strong>Harappan pottery</strong> is distinct: wheel-made, sturdy <em>red ware with black painted</em> designs (pipal leaves, peacocks) &mdash; a mature urban craft.</li>
+    <li><strong>Why it matters:</strong> the shift OCP &rarr; PGW &rarr; NBPW tracks the move from village to city (<em>second urbanisation</em>), the spread of iron, and rising social complexity &mdash; pottery is a proxy for the whole society.</li>
+  </ul>
+  <div class="callout info"><strong>GS-I hook:</strong> Reading the pottery sequence is reading the arc of early India &mdash; from post-Harappan villages (OCP), through the Later Vedic doab (PGW), to the first historical cities and empires (NBPW).</div>
+</section>
+
+<!-- SECTION 6 -->
+<section class="notes" id="universities">
+  <h2>6. Ancient Universities (Centres of Learning)</h2>
+  <p>India's ancient universities were <strong>monastic residential universities</strong> &mdash; endowed, international, and organised around debate. They are tested both as static facts (who founded which, who visited) and as GS-I themes (India as a knowledge economy; the causes of their decline).</p>
+  <table>
+    <tr><th>University</th><th>Location / Patron</th><th>Known for</th></tr>
+    <tr><td><strong>Takshashila (Taxila)</strong></td><td>NW (Gandhara); pre-Mauryan</td><td>Oldest; Panini, Chanakya, Charaka; medicine, grammar, statecraft</td></tr>
+    <tr><td><strong>Nalanda</strong></td><td>Bihar; <strong>Kumaragupta I</strong>, later Harsha &amp; Palas</td><td>Greatest Buddhist university; Hiuen Tsang &amp; I-tsing studied here; vast library "Dharmaganja"</td></tr>
+    <tr><td><strong>Vikramshila</strong></td><td>Bihar; <strong>Dharmapala</strong> (Pala)</td><td>Tantric Buddhism; Atisa Dipankara; rival of Nalanda</td></tr>
+    <tr><td><strong>Valabhi</strong></td><td>Gujarat (Maitrakas)</td><td>Hinayana centre; secular subjects; visited by I-tsing</td></tr>
+    <tr><td>Odantapuri &amp; Somapura</td><td>Bihar / Bengal (Palas)</td><td>Somapura (Paharpur) = largest monastery, a UNESCO site</td></tr>
+    <tr><td>Pushpagiri &amp; Sharada Peeth</td><td>Odisha / Kashmir</td><td>Regional Buddhist &amp; Sanskrit learning</td></tr>
+  </table>
+  <ul>
+    <li><strong>Features:</strong> free residential education, competitive oral entrance debates, international student bodies, huge endowed libraries, and instruction spanning Buddhist philosophy, logic, medicine, grammar, astronomy and the arts.</li>
+    <li><strong>Foreign testimony:</strong> the Chinese pilgrims <strong>Hiuen Tsang</strong> (7th CE) and <strong>I-tsing</strong> left detailed accounts of Nalanda's scale and rigour &mdash; a foreign literary source cross-checking the archaeology.</li>
+    <li><strong>Decline:</strong> the withdrawal of royal patronage after the Palas, the rise of a more ritual-bound orthodoxy, and finally the sack of Nalanda and Vikramshila by <strong>Bakhtiyar Khalji</strong> (c. 1193 CE) ended the tradition.</li>
+  </ul>
+  <div class="callout success"><strong>Prelims trap:</strong> <strong>Nalanda = Kumaragupta I</strong> (Gupta); <strong>Vikramshila &amp; Somapura = the Palas</strong> (Dharmapala). Mixing up the founding dynasty is the classic error.</div>
+</section>
+
+<!-- SECTION 7 -->
+<section class="notes" id="monasteries">
+  <h2>7. Monasteries &amp; Excavation Sites</h2>
+  <p>Beyond the famous universities, thousands of <strong>viharas</strong> (monasteries) and excavation sites document the everyday life of ancient India. How they are dug &mdash; layer by layer &mdash; is itself an exam theme, because <em>stratigraphy</em> underlies all relative dating.</p>
+  <div style="text-align:center;margin:16px 0">
+    <svg viewBox="0 0 420 170" width="100%" style="max-width:420px" role="img" aria-label="Archaeological stratigraphy showing older layers below younger ones">
+      <rect x="60" y="30" width="300" height="26" fill="#d9c6a5"/><text x="370" y="47" font-size="10" text-anchor="end" fill="#333">Layer 1 (youngest)</text>
+      <rect x="60" y="56" width="300" height="26" fill="#c2a877"/><text x="370" y="73" font-size="10" text-anchor="end" fill="#333">Layer 2</text>
+      <rect x="60" y="82" width="300" height="26" fill="#a9884f"/><text x="370" y="99" font-size="10" text-anchor="end" fill="#333">Layer 3</text>
+      <rect x="60" y="108" width="300" height="30" fill="#8c6a34"/><text x="370" y="127" font-size="10" text-anchor="end" fill="#fff">Layer 4 (oldest)</text>
+      <path d="M40 30 l0 108" stroke="#333" stroke-width="1.5" marker-end="url(#a)"/>
+      <text x="20" y="90" font-size="10" text-anchor="middle" fill="#333" transform="rotate(-90 20 90)">deeper = older</text>
+      <defs><marker id="a" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0 l8 4 l-8 4 z" fill="#333"/></marker></defs>
+    </svg>
+    <p style="font-size:11px;color:var(--muted)">Law of superposition: in an undisturbed mound, the deeper the layer, the older it is.</p>
+  </div>
+  <ul>
+    <li><strong>Types of monastic architecture:</strong> the rock-cut <em>chaitya</em> (prayer hall) and <em>vihara</em> (residence), and later the free-standing brick monastery (Nalanda, Somapura).</li>
+    <li><strong>Key sites &amp; what they yielded:</strong> Harappan cities (Mohenjo-daro, Dholavira, Rakhigarhi); early-historic <strong>Keeladi</strong> (Tamil Nadu &mdash; urban Sangam-age literacy); <strong>Sisupalgarh</strong>, <strong>Sanchi</strong>, <strong>Sarnath</strong>, <strong>Amaravati</strong>, <strong>Sannati/Kanaganahalli</strong> (the Ashoka portrait).</li>
+    <li><strong>Excavation method:</strong> horizontal (area) vs vertical (trench) digging; every artifact is recorded by <em>layer, position and association</em> &mdash; context is what turns an object into evidence.</li>
+  </ul>
+  <div class="callout info"><strong>GS-I hook:</strong> An artifact without its stratigraphic context is almost worthless &mdash; which is exactly why looting and unprovenanced antiquities destroy history, not just property.</div>
+</section>
+
+<!-- SECTION 8 -->
+<section class="notes" id="dating">
+  <h2>8. Dating Methods &amp; the Archaeological Survey of India</h2>
+  <p>Archaeology distinguishes <strong>relative dating</strong> (older/younger, from stratigraphy and typology) from <strong>absolute dating</strong> (a calendar age, from science). Both feed into how we date every artifact discussed above.</p>
+  <table>
+    <tr><th>Method</th><th>Type</th><th>Use</th></tr>
+    <tr><td>Stratigraphy</td><td>Relative</td><td>Order of layers (superposition)</td></tr>
+    <tr><td>Typology / seriation</td><td>Relative</td><td>Evolution of tool/pottery styles</td></tr>
+    <tr><td><strong>Radiocarbon (C-14)</strong></td><td>Absolute</td><td>Organic remains up to ~50,000 yrs</td></tr>
+    <tr><td>Dendrochronology</td><td>Absolute</td><td>Tree-ring counting</td></tr>
+    <tr><td>Thermoluminescence</td><td>Absolute</td><td>Dating fired pottery &amp; kilns</td></tr>
+  </table>
+  <ul>
+    <li><strong>ASI (1861):</strong> founded by <strong>Alexander Cunningham</strong>; today under the Ministry of Culture, it protects <em>Monuments of National Importance</em>, runs excavations, epigraphy and conservation, and maintains the <strong>National Museum</strong> lineage of collections.</li>
+    <li><strong>Legal frame:</strong> the <strong>Ancient Monuments &amp; Archaeological Sites and Remains (AMASR) Act, 1958</strong> (protection &amp; regulated zones) and the <strong>Antiquities &amp; Art Treasures Act, 1972</strong> (control of trade &amp; export of antiquities).</li>
+  </ul>
+  <div class="callout success"><strong>Prelims trap:</strong> <strong>AMASR Act 1958</strong> protects <em>monuments &amp; sites</em>; the <strong>Antiquities Act 1972</strong> controls <em>movable antiquities</em>. Keep the two Acts &mdash; and their years &mdash; separate.</div>
+</section>
+
+<!-- SECTION 9 -->
+<section class="notes" id="currentaffairs">
+  <h2>9. Antiquities, Revival &amp; Contemporary Relevance</h2>
+  <p>This static topic is unusually alive in the news, and UPSC increasingly links the two. Keep a few current threads ready to deploy as GS-I examples.</p>
+  <ul>
+    <li><strong>Nalanda revival:</strong> the modern <strong>Nalanda University</strong> (established by Act of Parliament, 2010; campus inaugurated at Rajgir, 2024) revives the ancient centre as a pan-Asian institution &mdash; a live symbol of civilisational continuity.</li>
+    <li><strong>Keeladi excavations</strong> (Tamil Nadu) push back the date of urban, literate Sangam-age culture in the deep south &mdash; feeding debates on the antiquity of Tamil-Brahmi.</li>
+    <li><strong>Antiquities repatriation:</strong> India has secured the return of many looted idols and artifacts (e.g. via cooperation with the US, Australia, and auction houses) &mdash; a matter of <em>cultural sovereignty</em> under the 1972 Act.</li>
+    <li><strong>Digital epigraphy &amp; museums:</strong> ASI's digitisation of inscriptions and the "Adopt a Heritage" scheme link conservation with public access.</li>
+  </ul>
+  <div class="callout warn"><strong>One-line frame:</strong> The way a nation excavates, protects and repatriates its artifacts is a statement about how it values its own past &mdash; heritage as both evidence and identity. <span class="update-tag">check for latest update or data</span></div>
+</section>
+
+<!-- PRELIMS -->
+<section class="notes" id="prelims-pyq">
+  <h2>10. Prelims PYQs</h2>
+  <p style="font-size:13px;color:var(--muted)"><em>Genuine dated UPSC questions plus concept-practice MCQs on artifacts &amp; excavation. Each carries a worked rationale.</em></p>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2019</div>
+    <p class="q-stem"><strong>Q:</strong> Which one of the following is not a Harappan site?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Chanhudaro</li>
+      <li><span class="opt-key">(b)</span> Kot Diji</li>
+      <li class="correct"><span class="opt-key">(c)</span> Sohgaura</li>
+      <li><span class="opt-key">(d)</span> Desalpur</li>
+    </ul>
+    <p class="ans">Answer: (c) Sohgaura &mdash; a site in Uttar Pradesh famous for a <em>Mauryan</em> copper-plate inscription (a famine-relief record), not a Harappan settlement. The other three are Harappan sites.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2019</div>
+    <p class="q-stem"><strong>Q:</strong> In which of the following relief sculpture inscriptions is 'Ranyo Ashoka' (King Ashoka) mentioned along with the stone portrait of Ashoka?</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> Kanganahalli</li>
+      <li><span class="opt-key">(b)</span> Sanchi</li>
+      <li><span class="opt-key">(c)</span> Shahbazgarhi</li>
+      <li><span class="opt-key">(d)</span> Sohgaura</li>
+    </ul>
+    <p class="ans">Answer: (a) Kanaganahalli (Sannati, Karnataka) &mdash; a relief panel labelled "Ranyo Ashoka" carries the only known contemporary <em>portrait</em> of Ashoka.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Concept practice</div>
+    <p class="q-stem"><strong>Q:</strong> The Brahmi and Kharosthi scripts of the Ashokan edicts were first deciphered by &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Alexander Cunningham</li>
+      <li class="correct"><span class="opt-key">(b)</span> James Prinsep</li>
+      <li><span class="opt-key">(c)</span> John Marshall</li>
+      <li><span class="opt-key">(d)</span> Mortimer Wheeler</li>
+    </ul>
+    <p class="ans">Answer: (b) James Prinsep (1837). His decipherment made it possible to read the edicts and identify "Devanampiya Piyadasi" as Ashoka.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Concept practice</div>
+    <p class="q-stem"><strong>Q:</strong> The first coins in India to bear both the name and the portrait of the issuing king were issued by the &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Mauryas (punch-marked)</li>
+      <li class="correct"><span class="opt-key">(b)</span> Indo-Greeks</li>
+      <li><span class="opt-key">(c)</span> Guptas</li>
+      <li><span class="opt-key">(d)</span> Satavahanas</li>
+    </ul>
+    <p class="ans">Answer: (b) Indo-Greeks. Punch-marked coins carry only symbols; the Indo-Greeks introduced legible royal portraits and names in the 2nd&ndash;1st century BCE.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Concept practice</div>
+    <p class="q-stem"><strong>Q:</strong> Painted Grey Ware (PGW) pottery is most closely associated with which cultural phase?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Mature Harappan</li>
+      <li class="correct"><span class="opt-key">(b)</span> Later Vedic age</li>
+      <li><span class="opt-key">(c)</span> Mauryan empire</li>
+      <li><span class="opt-key">(d)</span> Gupta age</li>
+    </ul>
+    <p class="ans">Answer: (b) Later Vedic. PGW (c. 1200&ndash;600 BCE) of the upper Ganga&ndash;Yamuna doab is the marker ware of the Later Vedic period; the glossy NBPW belongs to the later Mahajanapada&ndash;Mauryan cities.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Concept practice</div>
+    <p class="q-stem"><strong>Q:</strong> Vikramshila University, a great centre of Tantric Buddhism, was founded by &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Kumaragupta I</li>
+      <li><span class="opt-key">(b)</span> Harsha</li>
+      <li class="correct"><span class="opt-key">(c)</span> Dharmapala (Pala)</li>
+      <li><span class="opt-key">(d)</span> Kanishka</li>
+    </ul>
+    <p class="ans">Answer: (c) Dharmapala of the Pala dynasty. (Nalanda, by contrast, was founded by the Gupta king Kumaragupta I.)</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> script&ndash;language pairs (Brahmi/Kharosthi/Greek/Aramaic); edict categories &amp; the Maski/Gujarra "Ashoka"; inscription&ndash;author pairs (Allahabad&ndash;Harishena, Aihole&ndash;Ravikirti); coin metal&ndash;dynasty pairs (Gupta gold, Satavahana lead); OCP&ndash;PGW&ndash;NBPW order; university&ndash;patron pairs; AMASR 1958 vs Antiquities Act 1972. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- MAINS -->
+<section class="notes" id="mains-pyq">
+  <h2>11. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>Genuine dated UPSC GS-I questions plus model questions on archaeological sources. Each carries a full skeleton &mdash; Introduction &rarr; body &rarr; Conclusion.</em></p>
+
+  <div class="pyq">
+    <div class="year">UPSC Mains GS-I 2017 <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> How do you justify the view that the level of excellence of the Gupta numismatic art is not at all noticeable in later times?</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Gupta gold coinage (4th&ndash;6th CE) is regarded as the zenith of Indian numismatic art &mdash; a standard later dynasties never recovered.</li>
+        <li><strong>The peak (what made it excellent):</strong> exquisite die-engraving; dynamic king-in-action types (archer, lyrist Samudragupta, horse-sacrifice, tiger-slayer); elegant Sanskrit legends; a graceful deity reverse (Lakshmi/Ganga) &mdash; art and statecraft fused in gold.</li>
+        <li><strong>The decline (the core argument):</strong> later Gupta coins show <em>debasement</em> (falling gold content), cruder, stereotyped figures and repetitive legends &mdash; economic strain and loss of skilled ateliers.</li>
+        <li><strong>Why later times fell short:</strong> the post-Gupta shift to a <em>land-grant (feudal) economy</em> reduced coin circulation and monetisation; declining long-distance trade removed the demand and the patronage that sustained fine minting.</li>
+        <li><strong>Critical edge:</strong> some regional coinages (e.g. later dynasties) retained utility but never the <em>aesthetic ambition</em>; the Gupta achievement was as much cultural confidence as technique.</li>
+        <li><strong>Conclusion:</strong> the unmatched excellence of Gupta coins reflects a rare convergence of a monetised economy, imperial patronage and classical artistic maturity &mdash; conditions that the more agrarian, fragmented later polities could not reproduce.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Mains GS-I 2020 <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Pala period is the most significant phase in the history of Buddhism in India. Enumerate.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Under the Palas of Bengal-Bihar (8th&ndash;12th CE), the last great flowering of Indian Buddhism took place before its decline &mdash; a phase of institutional, artistic and international significance.</li>
+        <li><strong>Monastic universities (the core):</strong> Pala kings patronised <strong>Nalanda</strong> and founded <strong>Vikramshila</strong>, <strong>Odantapuri</strong> and <strong>Somapura (Paharpur)</strong> &mdash; the greatest concentration of Buddhist learning in the world.</li>
+        <li><strong>Tantric Vajrayana:</strong> the Palas nurtured Vajrayana Buddhism and scholars like <strong>Atisa Dipankara</strong>, whose mission shaped Tibetan Buddhism &mdash; a lasting trans-Himalayan legacy.</li>
+        <li><strong>Art &mdash; the Pala school:</strong> refined black-basalt sculpture and illustrated palm-leaf manuscripts spread the "Pala style" to Nepal, Tibet and Southeast Asia.</li>
+        <li><strong>International reach (critical edge):</strong> Pala Buddhism was an export &mdash; monks, texts and icons travelled across Asia, making Bengal a hub of a Buddhist commonwealth even as the faith waned elsewhere in India.</li>
+        <li><strong>Conclusion:</strong> the Pala period is "most significant" because it was simultaneously Buddhism's Indian climax and the bridge that carried it abroad &mdash; its end (with the sack of Nalanda/Vikramshila) marks the effective close of the tradition in its homeland.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Model question &mdash; GS-I <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> "Inscriptions are the most reliable, yet not an unbiased, source of ancient Indian history." Examine.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Epigraphy is prized as the most dependable source because inscriptions are contemporary, dated and publicly fixed in stone &mdash; but they are official texts, and reliability is not the same as objectivity.</li>
+        <li><strong>Why reliable:</strong> contemporaneity (no later copying errors); precise provenance (a known place); administrative value (land grants reveal economy, society, geography) &mdash; e.g. Satavahana donative records.</li>
+        <li><strong>Where they illuminate (the core):</strong> chronology and dynastic succession (Allahabad prashasti), language history (Junagadh's early Sanskrit), religion (Heliodorus pillar), and welfare/administration (Ashokan edicts).</li>
+        <li><strong>The bias (critical edge):</strong> most royal inscriptions are <em>prashastis</em> &mdash; eulogies that exaggerate victories and omit defeats; Harishena's account of Samudragupta is glorification, not neutral record.</li>
+        <li><strong>How historians correct for it:</strong> cross-checking with coins, foreign accounts and archaeology; reading donative/private inscriptions (less flattering) alongside royal ones.</li>
+        <li><strong>Conclusion:</strong> inscriptions are indispensable and the firmest chronological anchor we have, but they must be read critically &mdash; as evidence to be triangulated, not testimony to be trusted whole.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Model question &mdash; GS-I <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Assess the significance of the ancient Indian universities as centres of learning, and analyse the causes of their decline.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Takshashila, Nalanda, Vikramshila and Valabhi made early India one of the world's great knowledge economies &mdash; residential, international, and debate-driven.</li>
+        <li><strong>Significance &mdash; scale &amp; method:</strong> endowed free education, competitive oral entrance, vast libraries (Nalanda's "Dharmaganja"), and a curriculum from Buddhist logic to medicine, grammar and astronomy.</li>
+        <li><strong>International standing (the core):</strong> the accounts of Hiuen Tsang and I-tsing, and scholars like Atisa who carried Indian learning to Tibet, show these were hubs of a pan-Asian intellectual network.</li>
+        <li><strong>Causes of decline (critical edge):</strong> withdrawal of royal patronage after the Palas; over-dependence on a single monastic-Buddhist base; growing ritual orthodoxy narrowing free enquiry; and the destructive sack of Nalanda &amp; Vikramshila by Bakhtiyar Khalji (c. 1193).</li>
+        <li><strong>The deeper vulnerability:</strong> concentration of knowledge in a few endowed institutions &mdash; without a broad, decentralised base, a few blows could extinguish a whole tradition.</li>
+        <li><strong>Conclusion:</strong> their rise reflects the confidence of a plural, well-patronised society; their fall warns that knowledge institutions need diversified support and openness to survive &mdash; a lesson the modern Nalanda revival consciously invokes.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-I &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> inscriptions as source vs propaganda; Gupta numismatic art &amp; its decline; Ashokan Dhamma as statecraft; ancient universities &amp; their decline; pottery/stratigraphy in reconstructing early India; antiquities repatriation &amp; cultural sovereignty. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes revision-box" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; Artifacts &amp; Excavation</h3>
+    <div class="revision-grid grid-2">
+      <div class="rev-col">
+        <h4>Inscriptions &amp; Edicts</h4>
+        <ul>
+          <li>Scripts: <strong>Brahmi</strong> (L&rarr;R), <strong>Kharosthi</strong> (R&rarr;L); Greek &amp; Aramaic in NW. Deciphered by <strong>Prinsep (1837)</strong></li>
+          <li>Junagadh (Rudradaman) = first long <strong>Sanskrit</strong>; Allahabad = Samudragupta/Harishena; Aihole = Pulakeshin II/Ravikirti</li>
+          <li>Ashoka: 14 Major Rock + 7 Pillar + Minor edicts; <strong>Maski/Gujarra name "Ashoka"</strong>; Devanampiya Piyadasi</li>
+        </ul>
+      </div>
+      <div class="rev-col">
+        <h4>Coins (Numismatics)</h4>
+        <ul>
+          <li><strong>Punch-marked</strong> = earliest, symbols only, no legend</li>
+          <li><strong>Indo-Greeks</strong> = first king's name + portrait</li>
+          <li><strong>Kushana &amp; Gupta</strong> = gold; Gupta = numismatic peak; later = debased</li>
+        </ul>
+      </div>
+      <div class="rev-col">
+        <h4>Pottery Sequence</h4>
+        <ul>
+          <li>Order: <strong>OCP &rarr; PGW &rarr; NBPW</strong>; BRW = megalithic South</li>
+          <li><strong>PGW</strong> = Later Vedic doab; <strong>NBPW</strong> = glossy, Mahajanapada/Mauryan cities</li>
+          <li>Harappan = red ware, black paint (pipal, peacock)</li>
+        </ul>
+      </div>
+      <div class="rev-col">
+        <h4>Universities &amp; ASI</h4>
+        <ul>
+          <li><strong>Nalanda = Kumaragupta I</strong>; <strong>Vikramshila/Somapura = Palas</strong> (Dharmapala)</li>
+          <li>Takshashila = oldest (Panini, Chanakya); Hiuen Tsang &amp; I-tsing visited Nalanda</li>
+          <li>ASI (1861, Cunningham); <strong>AMASR 1958</strong> (monuments) vs <strong>Antiquities Act 1972</strong> (movables)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes:</strong> script&ndash;language pairs &middot; Ashokan edict categories &middot; first portrait coins (Indo-Greek) &middot; OCP&ndash;PGW&ndash;NBPW order &middot; Nalanda/Vikramshila patrons &middot; AMASR vs Antiquities Act. Heritage note: recovered antiquities are protected under the 1972 Act; repatriation is a matter of cultural sovereignty.</div>
+  </div>
+</section>
+
+</main>
+
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Coins at a Glance</h4>
+    <table>
+      <tr><th>Coinage</th><th>Metal</th></tr>
+      <tr><td>Punch-marked</td><td>Silver/copper</td></tr>
+      <tr><td>Kushana</td><td>Gold</td></tr>
+      <tr><td>Gupta</td><td>Gold (peak)</td></tr>
+      <tr><td>Satavahana</td><td>Lead/potin</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Pottery Order</h4>
+    <ul>
+      <li>1. OCP (post-Harappan)</li>
+      <li>2. PGW (Later Vedic)</li>
+      <li>3. NBPW (Mauryan cities)</li>
+      <li>4. BRW (megalithic South)</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Ashokan Edicts</h4>
+    <table>
+      <tr><td>Major Rock</td><td>14</td></tr>
+      <tr><td>Pillar</td><td>7</td></tr>
+      <tr><td>Name "Ashoka"</td><td>Maski, Gujarra</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:90%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains GS-I</span><span class="fill"><span style="width:72%"></span></span></div>
+    <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:94%"></span></span></div>
+    <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:60%"></span></span></div>
+    <p style="margin-top:8px;font-size:11px;color:var(--muted);">Script/coin/pottery pairs are perennial prelims favourites.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Universities &amp; Patrons</h4>
+    <ul>
+      <li><strong>Nalanda</strong> &mdash; Kumaragupta I</li>
+      <li><strong>Vikramshila</strong> &mdash; Dharmapala</li>
+      <li><strong>Takshashila</strong> &mdash; oldest, pre-Mauryan</li>
+      <li><strong>Valabhi</strong> &mdash; Maitrakas</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">Brahmi</span>
+    <span class="tag">Kharosthi</span>
+    <span class="tag green">Prinsep 1837</span>
+    <span class="tag">Ashokan Edicts</span>
+    <span class="tag orange">Punch-marked</span>
+    <span class="tag">Gupta gold</span>
+    <span class="tag green">PGW / NBPW</span>
+    <span class="tag">Nalanda</span>
+    <span class="tag orange">Vikramshila</span>
+    <span class="tag green">Kanaganahalli</span>
+    <span class="tag">AMASR 1958</span>
+  </div>
+
+  <div class="widget">
+    <h4>Data Sources</h4>
+    <ul>
+      <li><a href="https://asi.nic.in" target="_blank" rel="noopener">ASI</a></li>
+      <li><a href="https://www.nationalmuseumindia.gov.in" target="_blank" rel="noopener">National Museum</a></li>
+      <li><a href="https://www.indiaculture.gov.in" target="_blank" rel="noopener">Ministry of Culture</a></li>
+    </ul>
+    <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/art-culture/architecture-ancient-and-classical">1A: Ancient Architecture</a></li>
+      <li><a href="/art-culture/indian-sculpture">T2: Sculpture</a></li>
+      <li><a href="/art-culture/ancient-and-medieval-science-and-technology">T18: Ancient Science &amp; Tech</a></li>
+      <li><a href="/art-culture">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding:0;margin:0;">
+      <li style="margin:4px 0;"><a href="#overview" style="font-size:12px;">Sources</a></li>
+      <li style="margin:4px 0;"><a href="#inscriptions" style="font-size:12px;">Inscriptions</a></li>
+      <li style="margin:4px 0;"><a href="#edicts" style="font-size:12px;">Ashokan Edicts</a></li>
+      <li style="margin:4px 0;"><a href="#coins" style="font-size:12px;">Coins</a></li>
+      <li style="margin:4px 0;"><a href="#pottery" style="font-size:12px;">Pottery</a></li>
+      <li style="margin:4px 0;"><a href="#universities" style="font-size:12px;">Universities</a></li>
+      <li style="margin:4px 0;"><a href="#monasteries" style="font-size:12px;">Monasteries</a></li>
+      <li style="margin:4px 0;"><a href="#dating" style="font-size:12px;">Dating &amp; ASI</a></li>
+      <li style="margin:4px 0;"><a href="#currentaffairs" style="font-size:12px;">Antiquities</a></li>
+      <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

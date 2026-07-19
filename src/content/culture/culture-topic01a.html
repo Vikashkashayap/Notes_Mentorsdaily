@@ -1,0 +1,828 @@
+<!-- culture-topic01a — auto-imported from culture-topic01a-architecture-ancient-classical-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Architecture (Part 1): Ancient &amp; Classical India</h1>
+  <p class="sub">From the burnt-brick grid of <strong>Mohenjo-daro's Great Bath</strong> to the towering <em>gopurams</em> of Vijayanagara, Indian architecture is the single most heavily tested slice of Art &amp; Culture. This book-depth file covers <strong>sources &amp; stages</strong>, <strong>palaces &amp; forts</strong> (Mauryan Pataliputra &rarr; Gupta &rarr; South Indian), <strong>Ashokan pillar architecture</strong> with the Persian/Achaemenid comparison, <strong>stupa architecture</strong> (Sanchi, Bharhut, Amaravati), <strong>rock-cut caves</strong> (Barabar, Chaitya vs Vihara, Ajanta, Ellora, Elephanta), <strong>cities &amp; town planning</strong>, and the full grammar of <strong>temple architecture</strong> &mdash; Nagara, Dravida &amp; Vesara, with the Chandela, Chola, Hoysala, Vijayanagara, Pala-Sena and Odisha schools &mdash; with labelled diagrams, comparison tables and genuine dated PYQs with model answers.</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-I</span>
+    <span class="pill">Nagara &middot; Dravida &middot; Vesara</span>
+    <span class="pill">~40 min read</span>
+    <span class="pill">Ashokan Pillars &middot; Stupa &middot; Caves</span>
+    <span class="pill">Very High Weight</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#overview">Sources &amp; Stages of Indian Architecture</a></li>
+    <li><span class="num">2.</span><a href="#cities">Cities &amp; Town Planning (Harappan &amp; Mauryan)</a></li>
+    <li><span class="num">3.</span><a href="#forts">Palaces &amp; Forts</a></li>
+    <li><span class="num">4.</span><a href="#pillars">Ashokan Pillars &amp; the Persian Comparison</a></li>
+    <li><span class="num">5.</span><a href="#stupa">Stupa Architecture</a></li>
+    <li><span class="num">6.</span><a href="#caves">Rock-cut Cave Architecture</a></li>
+    <li><span class="num">7.</span><a href="#temple-grammar">Temple Architecture &mdash; Origins &amp; Grammar</a></li>
+    <li><span class="num">8.</span><a href="#styles">The Three Styles: Nagara, Dravida, Vesara</a></li>
+    <li><span class="num">9.</span><a href="#schools">Regional Temple Schools</a></li>
+    <li><span class="num">10.</span><a href="#currentaffairs">Conservation &amp; Current Relevance</a></li>
+    <li><span class="num">11.</span><a href="#prelims-pyq">Prelims PYQs (2012&ndash;2022)</a></li>
+    <li><span class="num">12.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Frames Ancient Architecture</h3>
+  <p>Architecture is tested as vocabulary (name the part), classification (which style/school), and analysis (why a form evolved). The examiner rewards the candidate who can read a monument, not merely recall it. Sort your prep into three buckets:</p>
+  <ul>
+    <li><strong>Static/terminology</strong> &mdash; parts of a stupa (<em>anda, harmika, yashti, medhi, toran, chhatra</em>), Chaitya vs Vihara, <em>garbhagriha &middot; shikhara &middot; vimana &middot; gopuram &middot; mandapa &middot; amalaka &middot; kalasha</em>, <em>Panchayatana</em>, patron dynasty&ndash;site pairs. Pure recall, high frequency.</li>
+    <li><strong>Classificatory/stylistic</strong> &mdash; placing a temple in Nagara (curvilinear <em>shikhara</em>, square plan, no boundary wall) vs Dravida (pyramidal <em>vimana</em>, enclosed courtyard, <em>gopuram</em>) vs Vesara (hybrid); reading sub-schools (Odisha, Khajuraho, Solanki, Chola, Hoysala, Vijayanagara). Needs feature-to-style mapping.</li>
+    <li><strong>Analytical (GS-I)</strong> &mdash; how patronage, material, religion and geography shaped form; Stupa-art as narrative; IVC town planning as a "civic" achievement; Chola temples as statements of imperial power. Needs idea + example + judgement.</li>
+  </ul>
+  <p><strong>Note:</strong> India's monuments are a living civilisational record protected under the AMASR Act 1958 and by the ASI; treat sites in Jammu &amp; Kashmir and Ladakh (e.g. Ladakh's early rock-cut heritage) as integral to the Indian cultural landscape.</p>
+</div>
+
+<!-- ===== SECTION 1 ===== -->
+<section class="notes" id="overview">
+  <h2>1. Sources &amp; Stages of Indian Architecture</h2>
+  <p>Indian architecture did not begin with temples. It begins with the <strong>civic architecture of the Indus Valley</strong> (c. 2600&ndash;1900 BCE), goes quiet in the perishable timber-and-thatch construction of the Vedic and early historic ages, and re-emerges dramatically under the <strong>Mauryas</strong> in stone. The great chronological divide the examiner tests is between two traditions of the classical age: <strong>rock-cut</strong> (subtractive &mdash; cut <em>out of</em> living rock) and <strong>structural</strong> (additive &mdash; built <em>up</em> from dressed stone or brick).</p>
+  <ul>
+    <li><strong>Material &amp; evidence:</strong> early construction used wood, bamboo and mud-brick (perishable), so little survives before the Mauryas; the stone imitation of wooden forms (e.g. rafters carved in Chaitya ceilings, the "wooden" ribs at Lomas Rishi) is a key clue to this transition.</li>
+    <li><strong>Two families:</strong> <strong>Rock-cut</strong> (Barabar &rarr; Ajanta &rarr; Ellora &rarr; Elephanta) and <strong>structural</strong> (Sanchi stupa railings &rarr; Gupta temples &rarr; the great medieval temples).</li>
+    <li><strong>Religion as patron:</strong> Buddhist (stupa, Chaitya, Vihara), Jain (cave-temples, later marble temples) and Hindu (the structural temple) each drove distinct forms; royal patronage turned religious buildings into political statements.</li>
+  </ul>
+  <div class="callout info"><strong>Framing line for GS-I:</strong> Indian architecture is best read as a dialogue between <em>faith, material and power</em> &mdash; the same stupa or temple simultaneously served worship, displayed a patron's authority, and solved a structural problem in the available medium.</div>
+</section>
+
+<!-- ===== SECTION 2 ===== -->
+<section class="notes" id="cities">
+  <h2>2. Cities &amp; Town Planning (Harappan &amp; Mauryan)</h2>
+  <p>The Indus Valley Civilisation gives India its <strong>first and most sophisticated tradition of civic planning</strong> &mdash; a full 1,500 years before the temple. The examiner tests it both as static fact (the Great Bath) and as a GS-I theme (inputs to modern urbanisation).</p>
+  <h3>2.1 Harappan Town Planning</h3>
+  <ul>
+    <li><strong>Grid layout:</strong> streets meeting at right angles on a <strong>chessboard/grid pattern</strong>; cities divided into a raised, fortified <strong>citadel</strong> (public/ritual buildings) to the west and a <strong>lower town</strong> (residential) to the east.</li>
+    <li><strong>Drainage:</strong> the world's first planned <strong>underground drainage system</strong> &mdash; covered brick drains with manholes running along every street, connected to household soak-pits; a public-health achievement unmatched in the ancient world.</li>
+    <li><strong>Standardisation:</strong> <strong>burnt bricks</strong> in a fixed ratio of <strong>4:2:1</strong> (length:breadth:height) used uniformly from Sindh to Gujarat &mdash; evidence of a shared measurement system and civic authority.</li>
+    <li><strong>The Great Bath (Mohenjo-daro):</strong> a watertight tank (~12&times;7&times;2.4 m) of finely fitted bricks sealed with gypsum mortar and bitumen, with steps at each end &mdash; almost certainly for <em>ritual bathing</em>; the signature public building of the Harappan world.</li>
+    <li><strong>Granaries, dockyard, wells:</strong> the great granary at Mohenjo-daro/Harappa; the tidal <strong>dockyard at Lothal</strong>; the water-harvesting reservoirs of <strong>Dholavira</strong>.</li>
+  </ul>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 680 360" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+      <text x="340" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2035">Fig 1.1 &mdash; Schematic of a Harappan City (Mohenjo-daro type)</text>
+      <!-- lower town grid -->
+      <rect x="250" y="50" width="400" height="270" fill="#f3ede0" stroke="#b8a878" stroke-width="1.4"/>
+      <text x="450" y="72" text-anchor="middle" font-size="12" font-weight="700" fill="#6b5a2a">LOWER TOWN (residential, grid)</text>
+      <!-- grid streets -->
+      <line x1="330" y1="80" x2="330" y2="320" stroke="#c9bd97" stroke-width="6"/>
+      <line x1="450" y1="80" x2="450" y2="320" stroke="#c9bd97" stroke-width="6"/>
+      <line x1="570" y1="80" x2="570" y2="320" stroke="#c9bd97" stroke-width="6"/>
+      <line x1="270" y1="150" x2="650" y2="150" stroke="#c9bd97" stroke-width="6"/>
+      <line x1="270" y1="240" x2="650" y2="240" stroke="#c9bd97" stroke-width="6"/>
+      <text x="392" y="115" text-anchor="middle" font-size="8" fill="#7a6a3a">houses</text>
+      <text x="510" y="200" text-anchor="middle" font-size="8" fill="#7a6a3a">houses</text>
+      <!-- citadel (west, raised) -->
+      <rect x="40" y="90" width="180" height="190" fill="#d8cba6" stroke="#9c8a58" stroke-width="1.6"/>
+      <text x="130" y="112" text-anchor="middle" font-size="12" font-weight="700" fill="#6b5a2a" style="paint-order:stroke;stroke:#fff;stroke-width:3px;stroke-linejoin:round">CITADEL (raised)</text>
+      <rect x="60" y="130" width="140" height="55" fill="#7fa9c9" stroke="#3a6b8c" stroke-width="1.4"/>
+      <text x="130" y="162" text-anchor="middle" font-size="11" font-weight="700" fill="#123a52" style="paint-order:stroke;stroke:#fff;stroke-width:2.5px;stroke-linejoin:round">GREAT BATH</text>
+      <rect x="60" y="200" width="65" height="60" fill="#c9b98a" stroke="#9c8a58"/>
+      <text x="92" y="234" text-anchor="middle" font-size="8" fill="#6b5a2a" style="paint-order:stroke;stroke:#fff;stroke-width:2px">Granary</text>
+      <rect x="140" y="200" width="60" height="60" fill="#c9b98a" stroke="#9c8a58"/>
+      <text x="170" y="234" text-anchor="middle" font-size="8" fill="#6b5a2a" style="paint-order:stroke;stroke:#fff;stroke-width:2px">Assembly</text>
+      <!-- drain -->
+      <line x1="220" y1="300" x2="650" y2="300" stroke="#3a6b8c" stroke-width="3" stroke-dasharray="7 4"/>
+      <text x="435" y="315" text-anchor="middle" font-size="9" fill="#123a52">covered underground drain (along every street)</text>
+      <text x="130" y="300" text-anchor="middle" font-size="8" fill="#6b5a2a">(WEST)</text>
+    </svg>
+    <div class="svg-caption">Fig 1.1 &mdash; Bipartite city: raised western citadel (Great Bath, granary, assembly hall) and gridded eastern lower town, laced with covered drains.</div>
+  </div>
+  <h3>2.2 Mauryan Urbanism &mdash; Pataliputra</h3>
+  <p>After a long gap, monumental urbanism returns with the Mauryan capital <strong>Pataliputra</strong> (modern Patna). The Greek ambassador <strong>Megasthenes</strong> (in <em>Indica</em>) described a city ~15 km long along the Ganga, girded by a <strong>timber palisade</strong> with 570 towers and 64 gates, and a moat &mdash; the timber fortification later confirmed by excavation.</p>
+  <ul>
+    <li><strong>The palace:</strong> a vast pillared hall (<em>the 80-pillar hall at Kumrahar</em>), which the Chinese pilgrim Fa-Hien thought too magnificent to be human work; wooden construction faced with polished stone.</li>
+    <li><strong>Mauryan polish:</strong> the distinctive mirror-like <strong>Mauryan polish</strong> on Chunar sandstone (seen on pillars and the Didarganj Yakshi) is a diagnostic marker of the age.</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims lock:</strong> Great Bath &rarr; Mohenjo-daro; Dockyard &rarr; Lothal; largest water reservoirs &rarr; Dholavira; Pataliputra's palisade described by <em>Megasthenes</em>; brick ratio <strong>4:2:1</strong>.</div>
+</section>
+
+<!-- ===== SECTION 3 ===== -->
+<section class="notes" id="forts">
+  <h2>3. Palaces &amp; Forts</h2>
+  <p>Because early palaces were built of timber, almost nothing survives from the ancient period &mdash; our knowledge is literary (Megasthenes, Fa-Hien) plus post-hole and stone-fragment evidence. Fort architecture, by contrast, becomes a rich structural tradition in the classical and early-medieval south.</p>
+  <table>
+    <tr><th>Period / dynasty</th><th>Palace &amp; fort features</th><th>Examples</th></tr>
+    <tr><td><strong>Mauryan</strong></td><td>Timber palaces faced in polished stone; pillared audience halls on the Achaemenid model; fortified capital.</td><td>Pataliputra palace, Kumrahar pillared hall</td></tr>
+    <tr><td><strong>Gupta &amp; post-Gupta</strong></td><td>Shift to durable stone/brick begins; modest secular remains; the age's genius flows into temples, not palaces.</td><td>(Palaces largely lost)</td></tr>
+    <tr><td><strong>South Indian (Pallava, Chola, Vijayanagara)</strong></td><td>Massive stone fortification; concentric enclosure walls; the fortified temple-city; secular <strong>Lotus Mahal &amp; elephant stables</strong> at Hampi show Indo-Islamic fusion.</td><td>Vijayanagara/Hampi royal centre; Gingee &amp; Vellore forts</td></tr>
+  </table>
+  <div class="callout info"><strong>GS-I hook:</strong> the loss of ancient palaces is itself a lesson &mdash; India's monumental energy was overwhelmingly channelled into <em>religious</em> and <em>funerary</em> architecture built to last (stone temples, stupas), while secular power built in perishable timber.</div>
+</section>
+
+<!-- ===== SECTION 4 ===== -->
+<section class="notes" id="pillars">
+  <h2>4. Ashokan Pillars &amp; the Persian Comparison</h2>
+  <p>The free-standing <strong>Ashokan pillar</strong> (c. 3rd century BCE) is the emblem of Mauryan art and a favourite comparison question: is it borrowed from Achaemenid Persia or indigenous? The examiner wants you to know both the <em>debt</em> and the <em>differences</em>.</p>
+  <h3>4.1 Structure of a Pillar</h3>
+  <ul>
+    <li><strong>Shaft:</strong> a single monolithic column of polished <strong>Chunar sandstone</strong>, tapering upward, <em>without a base</em>.</li>
+    <li><strong>Capital:</strong> a bell-shaped (inverted-lotus) <em>amalaka/campaniform</em> capital.</li>
+    <li><strong>Abacus:</strong> a circular or rectangular platform above the bell, carved with animals/motifs.</li>
+    <li><strong>Crowning animal:</strong> a lion, bull or elephant &mdash; carved with naturalism and finished with the mirror-like <strong>Mauryan polish</strong>.</li>
+  </ul>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 420 380" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+      <text x="210" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Fig 1.2 &mdash; Parts of an Ashokan Pillar (Sarnath)</text>
+      <!-- shaft -->
+      <polygon points="185,330 235,330 228,120 192,120" fill="#e7dcc3" stroke="#9c8a58" stroke-width="1.4"/>
+      <text x="300" y="230" font-size="11" fill="#6b5a2a">Monolithic shaft</text>
+      <line x1="240" y1="228" x2="296" y2="228" stroke="#9c8a58" stroke-width="1"/>
+      <text x="300" y="248" font-size="9" fill="#5a6266">(polished Chunar sandstone,</text>
+      <text x="300" y="260" font-size="9" fill="#5a6266">no base)</text>
+      <!-- bell capital -->
+      <path d="M186,120 Q160,98 210,86 Q260,98 234,120 Z" fill="#d8cba6" stroke="#9c8a58" stroke-width="1.4"/>
+      <text x="300" y="110" font-size="11" fill="#6b5a2a">Inverted-lotus (bell) capital</text>
+      <line x1="250" y1="106" x2="296" y2="106" stroke="#9c8a58" stroke-width="1"/>
+      <!-- abacus -->
+      <rect x="168" y="70" width="84" height="16" rx="3" fill="#c9b98a" stroke="#9c8a58" stroke-width="1.2"/>
+      <text x="300" y="80" font-size="11" fill="#6b5a2a">Abacus (lotus, animals, wheels)</text>
+      <line x1="253" y1="78" x2="296" y2="78" stroke="#9c8a58" stroke-width="1"/>
+      <!-- lions -->
+      <circle cx="210" cy="52" r="20" fill="#e0c98a" stroke="#9c8a58" stroke-width="1.2"/>
+      <text x="210" y="56" text-anchor="middle" font-size="8" font-weight="700" fill="#6b5a2a">4 LIONS</text>
+      <text x="30" y="52" font-size="11" fill="#6b5a2a">Crowning animal</text>
+      <text x="30" y="66" font-size="9" fill="#5a6266">(4 addorsed lions =</text>
+      <text x="30" y="78" font-size="9" fill="#5a6266">National Emblem)</text>
+      <line x1="118" y1="52" x2="188" y2="52" stroke="#9c8a58" stroke-width="1"/>
+    </svg>
+    <div class="svg-caption">Fig 1.2 &mdash; The Sarnath Lion Capital: four addorsed lions on an abacus bearing the Dharmachakra and four animals (lion, elephant, horse, bull), over an inverted-lotus bell &mdash; adopted as India's National Emblem.</div>
+  </div>
+  <h3>4.2 Persian (Achaemenid) vs Mauryan Pillars</h3>
+  <table>
+    <tr><th>Feature</th><th>Achaemenid / Persian (Persepolis)</th><th>Mauryan / Ashokan</th></tr>
+    <tr><td>Base</td><td>Rests on a moulded base</td><td><strong>No base</strong> &mdash; shaft rises directly</td></tr>
+    <tr><td>Shaft</td><td>Segmented (built in pieces), fluted</td><td><strong>Monolithic</strong> (single stone), smooth &amp; polished</td></tr>
+    <tr><td>Function</td><td>Structural &mdash; supports palace roofs</td><td><strong>Free-standing</strong> &mdash; independent monument bearing edicts</td></tr>
+    <tr><td>Capital animals</td><td>Static, heraldic</td><td>More naturalistic, dynamic</td></tr>
+  </table>
+  <div class="callout warn"><strong>Balanced verdict (Mains-ready):</strong> the Mauryan pillar <em>borrowed the idea</em> of the polished stone column and the bell capital from Achaemenid Persia, but <em>transformed</em> it &mdash; monolithic, base-less, free-standing, and carrying a distinctly Indian religious-political message (the Dharmachakra and Ashoka's edicts). Influence, not imitation.</div>
+</section>
+
+<!-- ===== SECTION 5 ===== -->
+<section class="notes" id="stupa">
+  <h2>5. Stupa Architecture</h2>
+  <p>A <strong>stupa</strong> is a hemispherical funerary mound raised over the relics of the Buddha or a saint &mdash; a <em>votive and commemorative</em> structure that became the earliest and most widespread Buddhist monument. Crucially for prelims, the <strong>mound-burial idea is pre-Buddhist</strong> (Vedic funerary mounds); Buddhism adapted and monumentalised it.</p>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 620 340" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+      <text x="310" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Fig 1.3 &mdash; Parts of a Stupa (Sanchi type)</text>
+      <!-- medhi base -->
+      <rect x="150" y="230" width="320" height="40" fill="#d8cba6" stroke="#9c8a58" stroke-width="1.4"/>
+      <text x="310" y="256" text-anchor="middle" font-size="10" font-weight="700" fill="#6b5a2a">MEDHI (raised drum / circumambulation terrace)</text>
+      <!-- anda dome -->
+      <path d="M180,230 A130,130 0 0 1 440,230 Z" fill="#e7dcc3" stroke="#9c8a58" stroke-width="1.6"/>
+      <text x="310" y="175" text-anchor="middle" font-size="12" font-weight="700" fill="#6b5a2a">ANDA (dome)</text>
+      <!-- harmika -->
+      <rect x="288" y="98" width="44" height="24" fill="#c9b98a" stroke="#9c8a58" stroke-width="1.2"/>
+      <text x="360" y="106" font-size="10" fill="#6b5a2a">Harmika (railing box)</text>
+      <line x1="332" y1="110" x2="356" y2="110" stroke="#9c8a58"/>
+      <!-- yashti + chhatra -->
+      <line x1="310" y1="98" x2="310" y2="60" stroke="#8a7a4a" stroke-width="3"/>
+      <text x="360" y="70" font-size="10" fill="#6b5a2a">Yashti (mast) + Chhatra (umbrellas)</text>
+      <ellipse cx="310" cy="60" rx="34" ry="7" fill="#e0c98a" stroke="#9c8a58"/>
+      <ellipse cx="310" cy="72" rx="24" ry="6" fill="#e0c98a" stroke="#9c8a58"/>
+      <!-- toran -->
+      <line x1="120" y1="270" x2="120" y2="200" stroke="#8a7a4a" stroke-width="5"/>
+      <line x1="110" y1="205" x2="150" y2="205" stroke="#8a7a4a" stroke-width="5"/>
+      <text x="70" y="292" font-size="10" fill="#6b5a2a">Torana (gateway)</text>
+      <!-- vedika -->
+      <line x1="150" y1="278" x2="470" y2="278" stroke="#8a7a4a" stroke-width="4" stroke-dasharray="10 5"/>
+      <text x="310" y="300" text-anchor="middle" font-size="10" fill="#6b5a2a">Vedika (railing) enclosing the pradakshina path</text>
+    </svg>
+    <div class="svg-caption">Fig 1.3 &mdash; Anda (dome over the relic), Harmika (railing atop the dome), Yashti bearing tiered Chhatras (honour umbrellas), Medhi (drum with the upper circumambulation path), Vedika (railing) and the four carved Toranas (gateways).</div>
+  </div>
+  <table>
+    <tr><th>Part</th><th>Meaning / function</th></tr>
+    <tr><td><strong>Anda</strong></td><td>The hemispherical dome (the mound of earth over the relic) &mdash; symbol of the cosmic mountain.</td></tr>
+    <tr><td><strong>Harmika</strong></td><td>Railed square platform atop the dome, the "abode of the gods".</td></tr>
+    <tr><td><strong>Yashti &amp; Chhatra</strong></td><td>Central mast rising from the harmika, bearing tiered honorific umbrellas (chhatravali).</td></tr>
+    <tr><td><strong>Medhi</strong></td><td>Raised drum/base giving an upper <em>pradakshina</em> (circumambulation) terrace.</td></tr>
+    <tr><td><strong>Vedika</strong></td><td>Stone railing enclosing the lower circumambulatory path.</td></tr>
+    <tr><td><strong>Torana</strong></td><td>Four ornately carved gateways at the cardinal points &mdash; the canvas for narrative sculpture.</td></tr>
+  </table>
+  <h3>5.1 Key Stupas</h3>
+  <ul>
+    <li><strong>Sanchi (MP):</strong> the best-preserved; begun by Ashoka, enlarged by the Shungas, with the famous Satavahana-era carved <strong>toranas</strong>. The Buddha is shown <em>aniconically</em> (footprints, empty throne, wheel, Bodhi tree) &mdash; not in human form.</li>
+    <li><strong>Bharhut (MP):</strong> Shunga period; celebrated for narrative relief panels and inscribed <em>Jataka</em> scenes (now largely in the Indian Museum, Kolkata).</li>
+    <li><strong>Amaravati (AP):</strong> Satavahana/Ikshvaku; built of white <strong>Palnad marble</strong>, with a flat drum-slab (<em>ayaka</em>) tradition; a distinct, more crowded and dynamic narrative style.</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims trap:</strong> the <em>concept of the stupa is pre-Buddhist</em> (funerary mound); Buddhism made it a relic-repository and a votive/commemorative monument. Sanchi = <em>aniconic</em> Buddha; the earliest Buddha <em>images</em> come later, at Gandhara &amp; Mathura.</div>
+</section>
+
+<!-- ===== SECTION 6 ===== -->
+<section class="notes" id="caves">
+  <h2>6. Rock-cut Cave Architecture</h2>
+  <p>Rock-cut architecture is <strong>subtractive</strong> &mdash; the monument is carved <em>downward and inward</em> out of a solid cliff, leaving no separate building. It runs for a thousand years from the austere Mauryan caves to the sculptural climax of Ellora, and its evolution is a favourite Mains theme.</p>
+  <h3>6.1 The Two Cave Types: Chaitya vs Vihara</h3>
+  <table>
+    <tr><th>Feature</th><th>Chaitya</th><th>Vihara</th></tr>
+    <tr><td>Function</td><td><strong>Prayer/worship hall</strong></td><td><strong>Monastery &mdash; monks' residence</strong></td></tr>
+    <tr><td>Plan</td><td>Long apsidal hall with a <strong>stupa</strong> at the far (apse) end</td><td>Square/rectangular central hall ringed by small cells (<em>cells</em>) for monks</td></tr>
+    <tr><td>Layout</td><td>Nave + two side aisles + rows of pillars for circumambulation</td><td>Central open court, verandah, surrounding cells; later a shrine</td></tr>
+    <tr><td>Facade</td><td>Distinctive horseshoe-shaped <strong>Chaitya window</strong> (sun-window)</td><td>Pillared verandah entrance</td></tr>
+  </table>
+  <div class="callout info"><strong>Memory aid:</strong> <em>Chaitya</em> = <strong>C</strong>hurch/worship (stupa inside); <em>Vihara</em> = "<strong>V</strong>iva/live" &mdash; the monks' dwelling. This exact distinction is a repeat prelims question.</div>
+  <h3>6.2 Evolution of the Caves</h3>
+  <ul>
+    <li><strong>Barabar &amp; Nagarjuni (Bihar), Mauryan:</strong> India's earliest rock-cut caves, dedicated by Ashoka and his grandson Dasaratha to the <strong>Ajivika</strong> sect; the <strong>Lomas Rishi</strong> cave copies a wooden-hut facade in stone and bears the mirror-Mauryan polish inside.</li>
+    <li><strong>Western Deccan (Satavahana), 2nd c. BCE&ndash;2nd c. CE:</strong> the great Hinayana Chaityas and Viharas &mdash; <strong>Bhaja, Karle</strong> (the grandest Chaitya hall), <strong>Bedsa, Nasik, Kanheri, Junnar</strong>.</li>
+    <li><strong>Ajanta (Maharashtra):</strong> 29 Buddhist caves (both Chaityas &amp; Viharas) over two phases (Satavahana Hinayana + Vakataka-era Mahayana, c. 5th c. CE); world-famous for <strong>mural paintings</strong> (tempera on plaster) of Jataka tales; a UNESCO World Heritage Site (1983); <em>only Buddhist</em>.</li>
+    <li><strong>Ellora (Maharashtra):</strong> 34 caves of <strong>three faiths</strong> &mdash; Buddhist, Hindu and Jain &mdash; carved under the Rashtrakutas; its climax is <strong>Cave 16, the Kailasa temple</strong>, the world's largest <em>monolithic</em> rock-cut structure, carved top-down from a single basalt hill; UNESCO WHS (1983).</li>
+    <li><strong>Elephanta (Maharashtra):</strong> Shaiva rock-cut caves on an island near Mumbai (Rashtrakuta/Kalachuri); home of the majestic <strong>Trimurti / Maheshamurti</strong> (Sadashiva); UNESCO WHS (1987).</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims lock:</strong> Ajanta = <em>Buddhist only + paintings</em>; Ellora = <em>three religions</em> (Buddhist/Hindu/Jain) + Kailasa monolith; Elephanta = <em>Shaiva Trimurti</em>; Barabar = earliest, <em>Ajivika</em>; Karle = largest Chaitya hall.</div>
+</section>
+
+<!-- ===== SECTION 7 ===== -->
+<section class="notes" id="temple-grammar">
+  <h2>7. Temple Architecture &mdash; Origins &amp; Grammar</h2>
+  <p>The structural Hindu temple crystallised in the <strong>Gupta age</strong> (4th&ndash;6th c. CE) &mdash; small, flat-roofed, single-cell shrines that grew, over five centuries, into the soaring temple-cities of the medieval south. Before you can classify a temple you must know its parts.</p>
+  <table>
+    <tr><th>Part</th><th>Meaning</th></tr>
+    <tr><td><strong>Garbhagriha</strong></td><td>"Womb-house" &mdash; the small, dark sanctum housing the main deity.</td></tr>
+    <tr><td><strong>Shikhara / Vimana</strong></td><td>The tower over the sanctum &mdash; curvilinear <em>shikhara</em> in the north, pyramidal <em>vimana</em> in the south.</td></tr>
+    <tr><td><strong>Mandapa</strong></td><td>Pillared hall(s) in front of the sanctum for worshippers (sometimes ardha-, maha- and nritya-mandapa).</td></tr>
+    <tr><td><strong>Antarala</strong></td><td>Vestibule linking the mandapa to the garbhagriha.</td></tr>
+    <tr><td><strong>Amalaka &amp; Kalasha</strong></td><td>The ribbed disc (amalaka) and pot-finial (kalasha) crowning a Nagara shikhara.</td></tr>
+    <tr><td><strong>Gopuram</strong></td><td>The monumental, ornate gateway-tower in the enclosure wall of a Dravida temple.</td></tr>
+    <tr><td><strong>Panchayatana</strong></td><td>A temple <em>plan</em>: a main shrine with four subsidiary shrines at the corners of the plinth (a "quincunx").</td></tr>
+  </table>
+  <ul>
+    <li><strong>Gupta stages:</strong> from flat-roofed (Temple 17, Sanchi) &rarr; a low shikhara appears (<strong>Dashavatara temple, Deogarh</strong>) &rarr; brick temple (<strong>Bhitargaon</strong>). These are the "laboratory" of the Indian temple.</li>
+    <li><strong>Nagara sub-schemes:</strong> Latina (single curvilinear tower), Shekhari (clustered mini-spires), Bhumija, Valabhi &mdash; the grammar of the northern spire.</li>
+  </ul>
+  <div class="callout info"><strong>GS-I hook:</strong> the temple is a <em>cosmic diagram in stone</em> &mdash; the garbhagriha is the still centre, the shikhara/vimana the axis-mountain (Meru), and the pradakshina the devotee's journey; classification (next section) simply reads how different regions solved the same symbolic programme.</div>
+</section>
+
+<!-- ===== SECTION 8 ===== -->
+<section class="notes" id="styles">
+  <h2>8. The Three Styles: Nagara, Dravida, Vesara</h2>
+  <p>The classic classification &mdash; from the <em>Shilpa</em> texts &mdash; divides temples into three orders by tower-form and plan. <strong>Nagara</strong> is the northern order, <strong>Dravida</strong> the southern, and <strong>Vesara</strong> the Deccan hybrid. This is the single most tested slot in Art &amp; Culture.</p>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 640 300" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+      <text x="320" y="22" text-anchor="middle" font-size="13" font-weight="700" fill="#0d2035">Fig 1.4 &mdash; Nagara vs Dravida Silhouette</text>
+      <!-- Nagara -->
+      <path d="M60,240 Q70,140 110,90 Q150,140 160,240 Z" fill="#e7dcc3" stroke="#9c8a58" stroke-width="1.6"/>
+      <circle cx="110" cy="82" r="10" fill="#c9b98a" stroke="#9c8a58"/>
+      <rect x="102" y="64" width="16" height="10" fill="#c9b98a" stroke="#9c8a58"/>
+      <text x="110" y="262" text-anchor="middle" font-size="12" font-weight="700" fill="#6b5a2a">NAGARA</text>
+      <text x="110" y="278" text-anchor="middle" font-size="9" fill="#5a6266">curvilinear shikhara + amalaka/kalasha</text>
+      <text x="180" y="90" font-size="9" fill="#5a6266">beehive curve</text>
+      <!-- Dravida -->
+      <polygon points="430,240 470,240 462,90 438,90" fill="#e7dcc3" stroke="#9c8a58" stroke-width="1.6"/>
+      <line x1="434" y1="200" x2="466" y2="200" stroke="#9c8a58"/>
+      <line x1="436" y1="160" x2="464" y2="160" stroke="#9c8a58"/>
+      <line x1="438" y1="120" x2="462" y2="120" stroke="#9c8a58"/>
+      <ellipse cx="450" cy="84" rx="16" ry="8" fill="#c9b98a" stroke="#9c8a58"/>
+      <text x="450" y="262" text-anchor="middle" font-size="12" font-weight="700" fill="#6b5a2a">DRAVIDA</text>
+      <text x="450" y="278" text-anchor="middle" font-size="9" fill="#5a6266">stepped pyramidal vimana + stupika</text>
+      <text x="500" y="150" font-size="9" fill="#5a6266">receding tiers (talas)</text>
+      <!-- gopuram -->
+      <polygon points="540,240 575,240 570,150 545,150" fill="#d8cba6" stroke="#9c8a58" stroke-width="1.4"/>
+      <text x="557" y="256" text-anchor="middle" font-size="9" fill="#6b5a2a">Gopuram</text>
+    </svg>
+    <div class="svg-caption">Fig 1.4 &mdash; The northern beehive <em>shikhara</em> (crowned by amalaka + kalasha) vs the southern stepped pyramidal <em>vimana</em> (crowned by a <em>stupika</em>), with the towering gateway <em>gopuram</em> of the Dravida enclosure.</div>
+  </div>
+  <table>
+    <tr><th>Feature</th><th>Nagara (North)</th><th>Dravida (South)</th><th>Vesara (Deccan hybrid)</th></tr>
+    <tr><td>Tower over sanctum</td><td><strong>Shikhara</strong> &mdash; curvilinear, "beehive"</td><td><strong>Vimana</strong> &mdash; stepped pyramid of tiers (talas)</td><td>Blend &mdash; shorter, ornate storeys with a Nagara-like curve</td></tr>
+    <tr><td>Crowning element</td><td>Amalaka + Kalasha</td><td>Octagonal <strong>Shikhara/Stupika</strong> (dome-finial)</td><td>Mixed</td></tr>
+    <tr><td>Enclosure &amp; gateway</td><td>Usually <strong>no boundary wall</strong>; no gopuram</td><td><strong>Walled courtyard</strong> with towering <strong>gopurams</strong></td><td>Compact, often star-shaped platform</td></tr>
+    <tr><td>Water tank</td><td>Rare</td><td>Temple <strong>tank</strong> common</td><td>Varies</td></tr>
+    <tr><td>Region &amp; patrons</td><td>N &amp; central India, Odisha, Rajputana</td><td>Tamil country &mdash; Pallava, Chola, Pandya, Nayaka</td><td>Karnataka &mdash; Chalukya, Hoysala</td></tr>
+    <tr><td>Examples</td><td>Khajuraho, Konark, Lingaraja, Modhera</td><td>Brihadeshwara (Thanjavur), Meenakshi (Madurai)</td><td>Badami, Pattadakal, Halebidu, Belur</td></tr>
+  </table>
+  <div class="callout warn"><strong>Prelims lock:</strong> Nagara = curvilinear shikhara, <em>no gopuram</em>; Dravida = pyramidal vimana + <em>gopuram + tank + enclosure</em>; Vesara = hybrid of the two (Chalukya/Hoysala Deccan). The very term set "Nagara, Dravida, Vesara" = <em>styles of temple architecture</em>.</div>
+</section>
+
+<!-- ===== SECTION 9 ===== -->
+<section class="notes" id="schools">
+  <h2>9. Regional Temple Schools</h2>
+  <p>Within these three orders, dynasties evolved signature sub-schools. Knowing the dynasty&ndash;site&ndash;feature triad is what separates a two-mark answer from a five-mark one.</p>
+  <h3>9.1 Nagara sub-schools</h3>
+  <table>
+    <tr><th>School / dynasty</th><th>Signature features</th><th>Key sites</th></tr>
+    <tr><td><strong>Odisha / Kalinga</strong> (Eastern Ganga)</td><td>Vertical <em>rekha-deul</em> tower (bada + gandi + mastaka); flat-roofed <em>jagamohana</em>; almost bare interiors, richly carved exteriors.</td><td><strong>Lingaraja</strong> (Bhubaneswar), <strong>Jagannath</strong> (Puri), <strong>Sun Temple, Konark</strong> (chariot with 24 wheels &amp; 7 horses)</td></tr>
+    <tr><td><strong>Chandela / Khajuraho</strong></td><td>Temple raised on a high platform; clustered <em>shekhari</em> spires rising like a mountain range; sandstone; famed erotic &amp; celestial sculpture; Nagara at its ornamental peak.</td><td><strong>Kandariya Mahadeva</strong>, Lakshmana, Vishvanatha (Khajuraho, MP)</td></tr>
+    <tr><td><strong>Solanki / Maru-Gurjara</strong></td><td>Intricately carved ceilings &amp; pillars; the stepwell (<em>vav</em>) tradition; light-coloured stone.</td><td><strong>Sun Temple, Modhera</strong> (with Surya Kund); <strong>Rani-ki-Vav</strong>, Patan; Dilwara (Jain)</td></tr>
+  </table>
+  <h3>9.2 Dravida evolution (Tamil country)</h3>
+  <table>
+    <tr><th>Dynasty</th><th>Contribution</th><th>Key monuments</th></tr>
+    <tr><td><strong>Pallava</strong></td><td>The <em>seedbed</em> of Dravida: from rock-cut (mandapas) &rarr; monolithic <strong>rathas</strong> &rarr; structural temples.</td><td><strong>Mamallapuram/Mahabalipuram</strong> (Pancha Rathas, Shore Temple, Descent of the Ganga relief), Kailasanatha (Kanchipuram)</td></tr>
+    <tr><td><strong>Chola</strong></td><td>The <em>zenith</em> &mdash; monumental scale, towering vimana, imperial statement; superb bronzes (Nataraja).</td><td><strong>Brihadeshwara (Rajarajeshwara), Thanjavur</strong> (~66 m vimana); Gangaikondacholapuram; Airavatesvara, Darasuram &mdash; the "Great Living Chola Temples" (UNESCO)</td></tr>
+    <tr><td><strong>Pandya</strong></td><td>Shift of emphasis to the <strong>gopuram</strong>: enclosure gateways now overtop the vimana; enclosed courtyards multiply.</td><td>Extensions at Madurai, Srirangam</td></tr>
+    <tr><td><strong>Vijayanagara</strong></td><td>Synthesis + innovation: composite pillars (rearing <em>yali</em>), the <strong>Kalyana Mandapa</strong> (marriage hall), the <em>amman</em> shrine, secular Indo-Islamic buildings.</td><td><strong>Vitthala &amp; Virupaksha temples, Hampi</strong>; Lotus Mahal, elephant stables</td></tr>
+    <tr><td><strong>Nayaka</strong></td><td>Grandest gopurams, thousand-pillared halls, sprawling prakaras (concentric enclosures).</td><td><strong>Meenakshi Amman Temple, Madurai</strong>; Ranganathaswamy, Srirangam (largest functioning temple complex)</td></tr>
+  </table>
+  <h3>9.3 Vesara &amp; the Hoysalas</h3>
+  <ul>
+    <li><strong>Chalukyas of Badami (Vesara cradle):</strong> the "experimental laboratory" at <strong>Aihole, Badami and Pattadakal</strong> (UNESCO) &mdash; where Nagara and Dravida forms stand side by side and begin to fuse.</li>
+    <li><strong>Hoysalas:</strong> star-shaped (<em>stellate</em>) plan on a raised platform (<em>jagati</em>); soft <strong>soapstone (chloritic schist)</strong> allowing jewel-like, lathe-turned detail; often multi-shrined (<em>trikuta</em>). Sites: <strong>Chennakeshava (Belur), Hoysaleswara (Halebidu), Keshava (Somanathapura)</strong> &mdash; inscribed as UNESCO WHS (2023).</li>
+    <li><strong>Pala-Sena (Bengal-Bihar):</strong> the great <strong>monastic universities</strong> and Buddhist temples &mdash; <strong>Nalanda, Vikramashila, Odantapuri, Somapura Mahavihara</strong> (Paharpur) &mdash; and a distinctive black-stone sculptural school that shaped SE-Asian and Tibetan art.</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims lock:</strong> <em>Kalyana Mandapa</em> = <strong>Vijayanagara</strong> hallmark (2019 PYQ); stellate plan + soapstone = <strong>Hoysala</strong>; chariot-temple with wheels = <strong>Konark</strong> (Odisha); Pancha Rathas = <strong>Pallava</strong>; Brihadeshwara = <strong>Chola</strong>.</div>
+</section>
+
+<!-- ===== SECTION 10 ===== -->
+<section class="notes" id="currentaffairs">
+  <h2>10. Conservation &amp; Current Relevance</h2>
+  <p>Architecture is not a dead subject &mdash; it recurs in the news through UNESCO listings, ASI restoration and heritage-diplomacy. Verify the latest inscriptions before the exam. <span class="update-tag">check for latest update or data</span></p>
+  <div class="callout update"><strong>Recent UNESCO inscriptions:</strong> the <strong>Sacred Ensembles of the Hoysalas</strong> (Belur, Halebidu, Somanathapura) were inscribed in <strong>2023</strong>; <strong>Santiniketan</strong> in 2023; the <strong>Moidams</strong> of the Ahom dynasty (Assam) in 2024 &mdash; India's tally of World Heritage Sites keeps rising. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout info"><strong>ASI &amp; the law:</strong> monuments are protected under the <strong>AMASR Act 1958</strong> (and its 2010 amendment creating "prohibited" and "regulated" zones of 100 m/200 m around protected monuments) &mdash; a live governance debate on heritage vs development.</div>
+  <div class="callout warn"><strong>Adaptive reuse &amp; diplomacy:</strong> temple architecture as soft power &mdash; Indian craftsmen and Nagara-style design at the BAPS temple, Abu Dhabi (2024); ongoing Angkor Wat conservation by ASI &mdash; the classical grammar exported abroad. <span class="update-tag">check for latest update or data</span></div>
+</section>
+
+<!-- ===== SECTION 11: PRELIMS ===== -->
+<section class="notes" id="prelims-pyq">
+  <h2>11. Prelims PYQs (2012&ndash;2022)</h2>
+  <p style="font-size:13px;color:var(--muted)"><em>Genuine dated UPSC Prelims questions on architecture. Each carries a worked rationale.</em></p>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2012</div>
+    <p class="q-stem"><strong>Q:</strong> The Nagara, the Dravida and the Vesara are the &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> three main racial groups of the Indian subcontinent</li>
+      <li><span class="opt-key">(b)</span> three main linguistic divisions into which the languages of India can be classified</li>
+      <li class="correct"><span class="opt-key">(c)</span> three main styles of Indian temple architecture</li>
+      <li><span class="opt-key">(d)</span> three main musical gharanas prevalent in India</li>
+    </ul>
+    <p class="ans">Answer: (c) three main styles of Indian temple architecture &mdash; Nagara (north), Dravida (south) and Vesara (Deccan hybrid).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2013</div>
+    <p class="q-stem"><strong>Q:</strong> Some Buddhist rock-cut caves are called Chaityas, while the others are called Viharas. What is the difference between the two?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Vihara is a place of worship, while Chaitya is the dwelling place of the monks</li>
+      <li class="correct"><span class="opt-key">(b)</span> Chaitya is a place of worship, while Vihara is the dwelling place of the monks</li>
+      <li><span class="opt-key">(c)</span> Chaitya is the stupa at the far end of the cave, while Vihara is the hall axial to it</li>
+      <li><span class="opt-key">(d)</span> There is no material difference between the two</li>
+    </ul>
+    <p class="ans">Answer: (b). A Chaitya is the prayer hall (with a stupa at the apsidal end); a Vihara is the monastery/residence with cells for monks.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2014</div>
+    <p class="q-stem"><strong>Q:</strong> With reference to the cultural history of India, the term 'Panchayatan' refers to &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> an assembly of village elders</li>
+      <li><span class="opt-key">(b)</span> a religious sect</li>
+      <li class="correct"><span class="opt-key">(c)</span> a style of temple construction</li>
+      <li><span class="opt-key">(d)</span> an administrative functionary</li>
+    </ul>
+    <p class="ans">Answer: (c). Panchayatana is a temple plan &mdash; a principal shrine with four subsidiary shrines at the corners of the plinth (a quincunx).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2019</div>
+    <p class="q-stem"><strong>Q:</strong> Building 'Kalyaana Mandapas' was a notable feature in the temple construction in the kingdom of &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Chalukya</li>
+      <li><span class="opt-key">(b)</span> Chandela</li>
+      <li><span class="opt-key">(c)</span> Rashtrakuta</li>
+      <li class="correct"><span class="opt-key">(d)</span> Vijayanagara</li>
+    </ul>
+    <p class="ans">Answer: (d) Vijayanagara. The pillared marriage-hall (Kalyana Mandapa), composite yali pillars and the amman shrine are Vijayanagara hallmarks (e.g. Hampi's Vitthala temple).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2021</div>
+    <p class="q-stem"><strong>Q:</strong> Consider the following pairs (Historical place &mdash; Well-known for): 1. Burzahom &mdash; Rock-cut shrines; 2. Chandraketugarh &mdash; Terracotta art; 3. Ganeshwar &mdash; Copper artefacts. Which of the pairs are correctly matched?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> 1 and 2 only</li>
+      <li class="correct"><span class="opt-key">(b)</span> 2 and 3 only</li>
+      <li><span class="opt-key">(c)</span> 1 and 3 only</li>
+      <li><span class="opt-key">(d)</span> 1, 2 and 3</li>
+    </ul>
+    <p class="ans">Answer: (b) 2 and 3 only. Burzahom (Kashmir) is famous for Neolithic <em>pit-dwellings</em>, not rock-cut shrines; Chandraketugarh = terracotta; Ganeshwar (Rajasthan) = copper artefacts.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims 2022</div>
+    <p class="q-stem"><strong>Q:</strong> With reference to ancient India, consider the following statements: 1. The concept of Stupa is Buddhist in origin. 2. Stupa was generally a repository of relics. 3. Stupa was a votive and commemorative structure in Buddhist tradition. Which of the statements given above are correct?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> 1 and 2 only</li>
+      <li class="correct"><span class="opt-key">(b)</span> 2 and 3 only</li>
+      <li><span class="opt-key">(c)</span> 1 and 3 only</li>
+      <li><span class="opt-key">(d)</span> 1, 2 and 3</li>
+    </ul>
+    <p class="ans">Answer: (b) 2 and 3 only. The stupa (funerary mound) is <em>pre-Buddhist</em> in origin; Buddhism adapted it into a relic-repository and a votive/commemorative monument.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> Nagara/Dravida/Vesara feature-matching; parts of a stupa (harmika, medhi, toran); Ashokan pillar vs Achaemenid; Ajanta (Buddhist/paintings) vs Ellora (three faiths, Kailasa) vs Elephanta (Trimurti); Hoysala stellate/soapstone; Konark chariot; Great Bath &amp; Harappan drainage; dynasty&ndash;site pairs (Pallava&ndash;Mamallapuram, Chola&ndash;Thanjavur). <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 12: MAINS ===== -->
+<section class="notes" id="mains-pyq">
+  <h2>12. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>Genuine dated UPSC GS-I questions on architecture. Each carries a full answer skeleton &mdash; Introduction &rarr; body &rarr; Conclusion.</em></p>
+
+  <div class="pyq">
+    <div class="year">UPSC Mains GS-I 2013 <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Chola architecture represents a high watermark in the evolution of temple architecture. Discuss.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Building on the Pallava seedbed, the Cholas (9th&ndash;13th c.) raised the Dravida temple to imperial scale &mdash; the Brihadeshwara temple at Thanjavur (Rajaraja I, 1010 CE) marks the summit of that evolution.</li>
+        <li><strong>Monumentality (the leap in scale):</strong> the ~66 m towering <em>vimana</em> &mdash; then the tallest in India &mdash; crowned by an 80-tonne single-stone <em>shikhara</em>, dwarfing the modest Pallava structural temples that preceded it.</li>
+        <li><strong>Structural &amp; planning maturity:</strong> a fully articulated Dravida programme &mdash; enclosed <em>prakara</em>, axial mandapas, subsidiary shrines, gopuram gateways and a granite (not soft sandstone) medium &mdash; showing engineering command.</li>
+        <li><strong>Art &amp; the bronze genius:</strong> superb wall sculpture, dance-pose (karana) panels, mural painting, and above all the <em>lost-wax</em> bronzes (Nataraja) &mdash; sculpture and architecture in unity.</li>
+        <li><strong>Temple as institution (critical edge):</strong> the Chola temple was also an economic and political engine &mdash; landholder, employer, bank and assembly hall &mdash; so its grandeur expressed imperial power, not only piety.</li>
+        <li><strong>Conclusion:</strong> in scale, structural logic, sculptural richness and civic role, Chola architecture is rightly the "high watermark" &mdash; recognised today as the UNESCO "Great Living Chola Temples".</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Mains GS-I 2014 <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> To what extent has the urban planning and culture of the Indus Valley Civilization provided inputs to the present-day urbanization? Discuss.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> The Harappan city (c. 2600&ndash;1900 BCE) is the world's earliest example of deliberate, standardised urban planning &mdash; several of its principles anticipate modern "smart city" ideals.</li>
+        <li><strong>Enduring inputs:</strong> the <em>grid</em> street layout, functional zoning (citadel vs lower town), standardised burnt bricks (4:2:1), and above all a <em>covered underground drainage</em> and public sanitation system &mdash; ideals the Swachh Bharat/AMRUT programmes still chase.</li>
+        <li><strong>Water &amp; civic amenities:</strong> reservoirs (Dholavira), wells, public baths and granaries &mdash; the germ of municipal water management and public infrastructure.</li>
+        <li><strong>Limits of the analogy (critical edge):</strong> the parallel is partial &mdash; modern urbanisation is driven by industrialisation, motor transport and vertical growth, faces informal slums and no evidence the Harappan model was consciously transmitted; the "inputs" are conceptual, not a direct lineage.</li>
+        <li><strong>Lessons for today:</strong> the Harappan priority on drainage, standardisation and planned zoning is a template for sustainable, sanitation-first urbanisation &mdash; a corrective to today's unplanned sprawl.</li>
+        <li><strong>Conclusion:</strong> IVC offers a powerful <em>conceptual</em> input &mdash; that a city is an engineered public good &mdash; even if not a literal ancestor of the modern Indian city.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Mains GS-I 2016 <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Early Buddhist Stupa-art, while depicting folk motifs and narratives, successfully expounds Buddhist ideals. Elucidate.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> The railings and toranas of Bharhut, Sanchi and Amaravati carry a dense narrative art that, though drawn from the everyday folk world, was carefully harnessed to teach Buddhist doctrine to a largely illiterate laity.</li>
+        <li><strong>Folk motifs absorbed:</strong> yakshas and yakshis (fertility spirits), the lotus, Gajalakshmi, animals, trees and nature-worship &mdash; the popular visual idiom made the message familiar and accessible.</li>
+        <li><strong>Narrative as sermon:</strong> Jataka tales (past lives of the Buddha) and events of his life are told in continuous relief &mdash; visual storytelling that conveyed karuna, dana and renunciation.</li>
+        <li><strong>Doctrine through aniconism (the key idea):</strong> the Buddha himself is <em>not</em> shown in human form &mdash; represented by footprints, the empty throne, the wheel, the Bodhi tree &mdash; teaching transcendence and <em>nirvana</em> precisely by absence.</li>
+        <li><strong>Ideals expounded:</strong> the Dharmachakra (the Law), the stupa (parinirvana), and circumambulation embed the Four Noble Truths and the path in the very act of worship.</li>
+        <li><strong>Conclusion:</strong> Stupa-art is a masterclass in translating abstract philosophy into a popular folk vocabulary &mdash; using the familiar to teach the transcendent.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Mains GS-I 2020 <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Indian Philosophy and tradition played a significant role in conceiving and shaping the monuments and their art in India. Discuss.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Indian monuments are not mere buildings but philosophy rendered in stone &mdash; Vedic, Buddhist, Jain and Agamic ideas dictated their plan, proportion and iconography.</li>
+        <li><strong>The temple as cosmos:</strong> the <em>Vastu-Purusha mandala</em> governs the square plan; the garbhagriha is the still centre (Brahman) and the shikhara/vimana the axis-mountain Meru &mdash; architecture as a diagram of the universe.</li>
+        <li><strong>Buddhist ideals in form:</strong> the stupa embodies parinirvana; aniconism at Sanchi expresses transcendence; the Chaitya's apsidal path enacts circumambulation of the Dharma.</li>
+        <li><strong>Iconography from philosophy:</strong> the Nataraja encodes the cosmic cycle (srishti&ndash;sthiti&ndash;samhara); the Trimurti at Elephanta renders the three-fold godhead; Jain <em>tirthankara</em> imagery expresses ascetic detachment.</li>
+        <li><strong>Tradition &amp; the guild (critical edge):</strong> the <em>Shilpa Shastras</em> and hereditary <em>sthapati</em> guilds transmitted canon and proportion across centuries, giving Indian art its remarkable continuity &mdash; though also its conservatism.</li>
+        <li><strong>Syncretism:</strong> the same philosophical grammar accommodated Hindu, Buddhist and Jain monuments side by side (Ellora), showing a shared civilisational aesthetic.</li>
+        <li><strong>Conclusion:</strong> from the mandala to the mudra, philosophy supplied the <em>meaning</em> that engineering and sculpture then embodied &mdash; the reason Indian monuments are read as sacred texts, not just structures.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-I &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> compare Nagara vs Dravida evolution; Gandhara/Mathura vs later temple sculpture; role of rock-cut caves in the growth of Indian art; how patronage (Mauryan, Satavahana, Chola, Vijayanagara) shaped architecture; heritage conservation vs development (AMASR 100 m rule); temple architecture as soft power. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes revision-box" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; Ancient &amp; Classical Architecture</h3>
+    <div class="revision-grid grid-2">
+      <div class="rev-col">
+        <h4>Cities, Pillars &amp; Stupas</h4>
+        <ul>
+          <li><strong>IVC:</strong> grid plan, citadel + lower town, covered drains, bricks <strong>4:2:1</strong>; <strong>Great Bath</strong> = Mohenjo-daro; dockyard = Lothal; reservoirs = Dholavira</li>
+          <li><strong>Ashokan pillar:</strong> monolithic, no base, Chunar sandstone, <strong>Mauryan polish</strong>; Sarnath lion capital = National Emblem</li>
+          <li><strong>vs Achaemenid:</strong> Persian = based, segmented, structural; Mauryan = base-less, monolithic, free-standing</li>
+          <li><strong>Stupa parts:</strong> anda, harmika, yashti+chhatra, medhi, vedika, torana; concept <em>pre-Buddhist</em></li>
+          <li>Sanchi (aniconic), Bharhut (Jatakas), Amaravati (marble)</li>
+        </ul>
+      </div>
+      <div class="rev-col">
+        <h4>Caves</h4>
+        <ul>
+          <li><strong>Chaitya</strong> = prayer hall + stupa; <strong>Vihara</strong> = monks' residence</li>
+          <li>Barabar = earliest, Ajivika; Karle = largest Chaitya</li>
+          <li><strong>Ajanta</strong> = Buddhist only + paintings; <strong>Ellora</strong> = 3 faiths + Kailasa monolith (Rashtrakuta); <strong>Elephanta</strong> = Shaiva Trimurti</li>
+        </ul>
+      </div>
+      <div class="rev-col">
+        <h4>Three Styles</h4>
+        <ul>
+          <li><strong>Nagara</strong> (N): curvilinear shikhara + amalaka/kalasha, no gopuram</li>
+          <li><strong>Dravida</strong> (S): pyramidal vimana, gopuram, enclosure, tank</li>
+          <li><strong>Vesara</strong> (Deccan): hybrid (Chalukya, Hoysala)</li>
+          <li><em>Panchayatana</em> = main + 4 corner shrines</li>
+        </ul>
+      </div>
+      <div class="rev-col">
+        <h4>Schools &amp; Sites</h4>
+        <ul>
+          <li>Odisha: Lingaraja, Konark (chariot); Chandela: <strong>Khajuraho</strong>; Solanki: Modhera</li>
+          <li>Pallava: Mamallapuram; <strong>Chola: Brihadeshwara</strong>; Nayaka: Meenakshi; <strong>Vijayanagara: Kalyana Mandapa</strong></li>
+          <li><strong>Hoysala:</strong> stellate + soapstone (Belur/Halebidu, UNESCO 2023); Pala: Nalanda/Somapura</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes:</strong> Nagara/Dravida/Vesara feature-match &middot; Chaitya vs Vihara &middot; stupa parts &middot; Ajanta/Ellora/Elephanta &middot; dynasty&ndash;site pairs &middot; Panchayatana &middot; stupa is pre-Buddhist. Cultural-integrity note: sites across J&amp;K, Ladakh and all states are integral to India's heritage.</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== SIDEBAR ===== -->
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Quick Reference &mdash; 3 Styles</h4>
+    <table>
+      <tr><th>Style</th><th>Tower</th></tr>
+      <tr><td><strong>Nagara</strong></td><td>Curvilinear shikhara</td></tr>
+      <tr><td><strong>Dravida</strong></td><td>Pyramidal vimana</td></tr>
+      <tr><td><strong>Vesara</strong></td><td>Hybrid</td></tr>
+    </table>
+    <p style="font-size:11px;color:var(--muted);margin:6px 0 0">Dravida adds gopuram + tank + wall.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Dynasty &rarr; Site</h4>
+    <table>
+      <tr><th>Dynasty</th><th>Signature</th></tr>
+      <tr><td>Pallava</td><td>Mamallapuram</td></tr>
+      <tr><td>Chola</td><td>Thanjavur</td></tr>
+      <tr><td>Chandela</td><td>Khajuraho</td></tr>
+      <tr><td>Hoysala</td><td>Belur/Halebidu</td></tr>
+      <tr><td>Vijayanagara</td><td>Hampi</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Caves at a Glance</h4>
+    <table>
+      <tr><td>Ajanta</td><td>Buddhist + paint</td></tr>
+      <tr><td>Ellora</td><td>3 faiths + Kailasa</td></tr>
+      <tr><td>Elephanta</td><td>Shaiva Trimurti</td></tr>
+      <tr><td>Barabar</td><td>Earliest, Ajivika</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:95%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains GS-I</span><span class="fill"><span style="width:88%"></span></span></div>
+    <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:96%"></span></span></div>
+    <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:60%"></span></span></div>
+    <p style="margin-top:8px;font-size:11px;color:var(--muted);">The most heavily tested Art &amp; Culture block &mdash; terminology &amp; classification recur yearly.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Stupa Parts</h4>
+    <ul>
+      <li><strong>Anda</strong> &mdash; dome over relic</li>
+      <li><strong>Harmika</strong> &mdash; railing atop dome</li>
+      <li><strong>Yashti + Chhatra</strong> &mdash; mast + umbrellas</li>
+      <li><strong>Medhi &middot; Vedika &middot; Torana</strong></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">Nagara</span>
+    <span class="tag">Dravida</span>
+    <span class="tag green">Vesara</span>
+    <span class="tag">Great Bath</span>
+    <span class="tag orange">Ashokan pillar</span>
+    <span class="tag">Chaitya/Vihara</span>
+    <span class="tag green">Kailasa Ellora</span>
+    <span class="tag">Trimurti</span>
+    <span class="tag orange">Panchayatana</span>
+    <span class="tag green">Kalyana Mandapa</span>
+    <span class="tag">Hoysala soapstone</span>
+    <span class="tag orange">Konark chariot</span>
+  </div>
+
+  <div class="widget">
+    <h4>UNESCO &mdash; Recent</h4>
+    <ul>
+      <li>Hoysala Ensembles &mdash; 2023</li>
+      <li>Santiniketan &mdash; 2023</li>
+      <li>Ahom Moidams &mdash; 2024</li>
+    </ul>
+    <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/art-culture/architecture-indo-islamic-colonial-and-modern">1B: Indo-Islamic, Colonial &amp; Modern</a></li>
+      <li><a href="/art-culture/indian-sculpture">T2: Sculpture</a></li>
+      <li><a href="/art-culture/unesco-heritage-ich-and-gi-tags">T5: UNESCO Heritage &amp; GI Tags</a></li>
+      <li><a href="/art-culture">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding:0;margin:0;">
+      <li style="margin:4px 0;"><a href="#overview" style="font-size:12px;">Sources &amp; Stages</a></li>
+      <li style="margin:4px 0;"><a href="#cities" style="font-size:12px;">Cities &amp; Town Planning</a></li>
+      <li style="margin:4px 0;"><a href="#forts" style="font-size:12px;">Palaces &amp; Forts</a></li>
+      <li style="margin:4px 0;"><a href="#pillars" style="font-size:12px;">Ashokan Pillars</a></li>
+      <li style="margin:4px 0;"><a href="#stupa" style="font-size:12px;">Stupa Architecture</a></li>
+      <li style="margin:4px 0;"><a href="#caves" style="font-size:12px;">Rock-cut Caves</a></li>
+      <li style="margin:4px 0;"><a href="#temple-grammar" style="font-size:12px;">Temple Grammar</a></li>
+      <li style="margin:4px 0;"><a href="#styles" style="font-size:12px;">Nagara/Dravida/Vesara</a></li>
+      <li style="margin:4px 0;"><a href="#schools" style="font-size:12px;">Regional Schools</a></li>
+      <li style="margin:4px 0;"><a href="#currentaffairs" style="font-size:12px;">Conservation</a></li>
+      <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

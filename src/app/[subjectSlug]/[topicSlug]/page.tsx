@@ -31,6 +31,7 @@ import { isPolityTopicId, type PolityTopicId } from "@/lib/polity-notes";
 import { isSocietyTopicId, type SocietyTopicId } from "@/lib/society-notes";
 import { isSecurityTopicId, type SecurityTopicId } from "@/lib/security-notes";
 import { isDisasterTopicId, type DisasterTopicId } from "@/lib/disaster-notes";
+import { isCultureTopicId, type CultureTopicId } from "@/lib/culture-notes";
 import { isEconomyTopicId, type EconomyTopicId } from "@/lib/economy-notes";
 import {
   isEnvironmentTopicId,
@@ -49,6 +50,8 @@ import { SecurityTopicFooterNav } from "@/components/notes/SecurityTopicFooterNa
 import { SecurityTopicNotesBody } from "@/components/notes/SecurityTopicNotesBody";
 import { DisasterTopicFooterNav } from "@/components/notes/DisasterTopicFooterNav";
 import { DisasterTopicNotesBody } from "@/components/notes/DisasterTopicNotesBody";
+import { CultureTopicFooterNav } from "@/components/notes/CultureTopicFooterNav";
+import { CultureTopicNotesBody } from "@/components/notes/CultureTopicNotesBody";
 import { EconomyTopicFooterNav } from "@/components/notes/EconomyTopicFooterNav";
 import { EconomyTopicNotesBody } from "@/components/notes/EconomyTopicNotesBody";
 import { EnvironmentTopicFooterNav } from "@/components/notes/EnvironmentTopicFooterNav";
@@ -114,6 +117,7 @@ export default async function TopicPage({ params }: PageProps) {
   const isSociety = subjectKey === "society" && isSocietyTopicId(chapter.id);
   const isSecurity = subjectKey === "security" && isSecurityTopicId(chapter.id);
   const isDisaster = subjectKey === "disaster" && isDisasterTopicId(chapter.id);
+  const isCulture = subjectKey === "culture" && isCultureTopicId(chapter.id);
   const isEconomy = subjectKey === "economy" && isEconomyTopicId(chapter.id);
   const isEnvironment =
     subjectKey === "environment" && isEnvironmentTopicId(chapter.id);
@@ -226,6 +230,17 @@ export default async function TopicPage({ params }: PageProps) {
       <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
         <DisasterTopicNotesBody topicId={topicId} />
         <DisasterTopicFooterNav topicId={topicId} />
+        <TopicNotesEnhancements />
+      </TopicPageLayout>
+    );
+  }
+
+  if (isCulture) {
+    const topicId = chapter.id as CultureTopicId;
+    return (
+      <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
+        <CultureTopicNotesBody topicId={topicId} />
+        <CultureTopicFooterNav topicId={topicId} />
         <TopicNotesEnhancements />
       </TopicPageLayout>
     );

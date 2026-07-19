@@ -1,0 +1,620 @@
+<!-- culture-topic22 — auto-imported from culture-topic22-institutions-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 22: Cultural Institutions</h1>
+  <p class="sub">India's cultural life is sustained by a web of government bodies &mdash; the <strong>Ministry of Culture</strong> at the apex, survey and archive bodies like the <strong>ASI</strong> and National Archives, the three national <strong>Akademis</strong> for the arts, training and diplomacy bodies like the <strong>NSD</strong> and <strong>ICCR</strong>, and research centres like the <strong>IGNCA</strong>. The exam tests this as <em>body&ndash;mandate&ndash;founding-year</em> matching (which body promotes music &amp; dance? which conducts cultural diplomacy?) and as GS-I discussion of the state's role in heritage. This book-depth file maps every major institution, its parent ministry, mandate and year &mdash; with tables and PYQs + model answers.</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-I</span>
+    <span class="pill">Body &middot; Mandate &middot; Year</span>
+    <span class="pill">~28 min read</span>
+    <span class="pill">High Static Weight</span>
+    <span class="pill">Akademis &amp; ASI</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#overview">Overview &amp; Structure</a></li>
+    <li><span class="num">2.</span><a href="#ministry">Ministry of Culture</a></li>
+    <li><span class="num">3.</span><a href="#survey">Survey &amp; Archive Bodies (ASI, AnSI, NAI)</a></li>
+    <li><span class="num">4.</span><a href="#akademis">The Three Akademis &amp; NSD</a></li>
+    <li><span class="num">5.</span><a href="#diplomacy">Diplomacy &amp; Research (ICCR, IGNCA)</a></li>
+    <li><span class="num">6.</span><a href="#museums">Museums, Libraries &amp; Zonal Centres</a></li>
+    <li><span class="num">7.</span><a href="#compare">Master Institutions Table</a></li>
+    <li><span class="num">8.</span><a href="#significance">Role &amp; Significance</a></li>
+    <li><span class="num">9.</span><a href="#currentaffairs">Reform &amp; Current Affairs</a></li>
+    <li><span class="num">10.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><span class="num">11.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Frames Cultural Institutions</h3>
+  <p>Institutions are tested as <em>body&ndash;mandate&ndash;year matching</em> ("Which Akademi promotes dance and drama?", "Which body conducts India's cultural diplomacy?"). The productive skill is a grid keyed by institution, parent ministry, one-line mandate and founding year. Sort your prep:</p>
+  <ul>
+    <li><strong>Static/factual</strong> &mdash; the three Akademis and their domains (Sangeet Natak = performing arts; Sahitya = literature; Lalit Kala = fine arts), ASI (1861), ICCR (1950), NSD (1959), IGNCA (1987). High recall.</li>
+    <li><strong>Thematic/structural</strong> &mdash; grouping bodies by function: survey/archive, promote/patronise (Akademis), train (NSD), diplomacy (ICCR), research (IGNCA), showcase (museums/ZCCs). Structure.</li>
+    <li><strong>Analytical (GS-I)</strong> &mdash; the state's role in preserving heritage, autonomy of cultural bodies, and culture as an instrument of diplomacy. Needs idea + example + judgement.</li>
+  </ul>
+  <p><strong>Note:</strong> Nail the three Akademis cold &mdash; <em>Sangeet Natak</em> (music, dance, drama), <em>Sahitya</em> (literature/letters) and <em>Lalit Kala</em> (fine/visual arts), all set up around 1953&ndash;54; and keep <em>ICCR</em> (cultural diplomacy abroad) distinct from <em>IGNCA</em> (arts research/archive).</p>
+</div>
+
+<!-- SECTION 1 -->
+<section class="notes" id="overview">
+  <h2>1. Overview &amp; Structure</h2>
+  <p>After Independence the state took on an active role as patron and custodian of culture. The result is a layered institutional architecture under the Union Ministry of Culture, complemented by bodies under External Affairs (for cultural diplomacy) and by autonomous academies. Understanding the functional grouping is the key to remembering the specific names.</p>
+  <svg viewBox="0 0 700 220" width="100%" style="max-width:700px;background:#fff;border:1px solid #e5e7eb;border-radius:8px;display:block;margin:10px 0" role="img" aria-label="Functional grouping of India's cultural institutions">
+    <text x="350" y="24" text-anchor="middle" font-size="15" font-weight="700" fill="#0f172a">Cultural Institutions by Function</text>
+    <rect x="20" y="44" width="155" height="150" rx="8" fill="#fff7ed" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="97" y="66" text-anchor="middle" font-size="11.5" font-weight="700" fill="#b45309">Survey &amp; Archive</text>
+    <text x="97" y="88" text-anchor="middle" font-size="10" fill="#334155">ASI (1861)</text>
+    <text x="97" y="106" text-anchor="middle" font-size="10" fill="#334155">AnSI (1945)</text>
+    <text x="97" y="124" text-anchor="middle" font-size="10" fill="#334155">Nat. Archives (1891)</text>
+    <text x="97" y="142" text-anchor="middle" font-size="10" fill="#334155">Nat. Museum (1949)</text>
+    <rect x="185" y="44" width="155" height="150" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="262" y="66" text-anchor="middle" font-size="11.5" font-weight="700" fill="#1d4ed8">Promote &amp; Train</text>
+    <text x="262" y="88" text-anchor="middle" font-size="10" fill="#334155">Sangeet Natak Ak.</text>
+    <text x="262" y="106" text-anchor="middle" font-size="10" fill="#334155">Sahitya Akademi</text>
+    <text x="262" y="124" text-anchor="middle" font-size="10" fill="#334155">Lalit Kala Akademi</text>
+    <text x="262" y="142" text-anchor="middle" font-size="10" fill="#334155">NSD (1959)</text>
+    <rect x="350" y="44" width="155" height="150" rx="8" fill="#f0fdf4" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="427" y="66" text-anchor="middle" font-size="11.5" font-weight="700" fill="#15803d">Diplomacy &amp; Research</text>
+    <text x="427" y="88" text-anchor="middle" font-size="10" fill="#334155">ICCR (1950)</text>
+    <text x="427" y="106" text-anchor="middle" font-size="10" fill="#334155">IGNCA (1987)</text>
+    <text x="427" y="124" text-anchor="middle" font-size="10" fill="#334155">IGRMS (Bhopal)</text>
+    <rect x="515" y="44" width="165" height="150" rx="8" fill="#fdf4ff" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="597" y="66" text-anchor="middle" font-size="11.5" font-weight="700" fill="#7e22ce">Showcase</text>
+    <text x="597" y="88" text-anchor="middle" font-size="10" fill="#334155">National Museum</text>
+    <text x="597" y="106" text-anchor="middle" font-size="10" fill="#334155">Nat. Gallery Mod. Art</text>
+    <text x="597" y="124" text-anchor="middle" font-size="10" fill="#334155">Zonal Cult. Centres</text>
+    <text x="597" y="142" text-anchor="middle" font-size="10" fill="#334155">National Libraries</text>
+  </svg>
+  <ul>
+    <li><strong>Apex:</strong> the Union <strong>Ministry of Culture</strong> is the nodal ministry, with a large family of attached offices, subordinate offices and autonomous bodies.</li>
+    <li><strong>Cross-ministry:</strong> the <strong>ICCR</strong> works under the Ministry of External Affairs (cultural diplomacy), a common MCQ distinction.</li>
+    <li><strong>Function-first memory:</strong> group by verb &mdash; survey/archive, promote/patronise, train, do diplomacy, research, showcase &mdash; then slot each named body in.</li>
+  </ul>
+  <div class="callout info"><strong>One-line frame:</strong> the state surveys and archives the past (ASI/NAI), patronises and trains the living arts (Akademis/NSD), takes culture abroad (ICCR), researches it (IGNCA) and shows it (museums/ZCCs).</div>
+</section>
+
+<!-- SECTION 2 -->
+<section class="notes" id="ministry">
+  <h2>2. Ministry of Culture</h2>
+  <p>The Ministry of Culture is the Union government's nodal agency for preserving and promoting art and culture. It functions largely through its network of attached/subordinate offices and autonomous institutions rather than directly, which is why the exam focuses on those bodies.</p>
+  <ul>
+    <li><strong>Mandate:</strong> conservation of monuments and heritage, promotion of literary/visual/performing arts, running museums, libraries and archives, commemorations and cultural agreements.</li>
+    <li><strong>Key attached/subordinate offices:</strong> Archaeological Survey of India, Anthropological Survey of India, National Archives of India, National Library, and the national museums.</li>
+    <li><strong>Autonomous bodies:</strong> the three Akademis, NSD, IGNCA, Zonal Cultural Centres, Gandhi Smriti, Nehru Memorial, Kalakshetra (Chennai), and others.</li>
+    <li><strong>Schemes:</strong> financial assistance to artists and organisations, the tableaux and cultural programmes, heritage-city and "Adopt a Heritage" initiatives.</li>
+  </ul>
+  <div class="callout info"><strong>GS-I hook:</strong> the ministry's model is <em>arm's-length patronage</em> &mdash; funding autonomous academies rather than running culture directly &mdash; intended to protect artistic freedom, though funding dependence keeps the autonomy debate alive.</div>
+</section>
+
+<!-- SECTION 3 -->
+<section class="notes" id="survey">
+  <h2>3. Survey &amp; Archive Bodies (ASI, AnSI, NAI)</h2>
+  <p>These are the custodians of the material and documentary past &mdash; the bodies that excavate, protect, study and store India's heritage. The ASI is the single most exam-important institution in the topic.</p>
+  <ul>
+    <li><strong>Archaeological Survey of India (ASI), 1861:</strong> founded by <em>Alexander Cunningham</em>; the premier body for archaeological research and the protection of <em>centrally protected monuments</em> under the AMASR Act, 1958. Conducts excavations, conservation and the maintenance of ticketed monuments (Taj Mahal, etc.).</li>
+    <li><strong>Anthropological Survey of India (AnSI), 1945:</strong> at Kolkata; studies India's peoples, tribes and biological/cultural anthropology (e.g. the "People of India" project).</li>
+    <li><strong>National Archives of India (NAI), 1891:</strong> (originally Imperial Record Department, Calcutta; moved to Delhi 1911) &mdash; the repository of the non-current records of the Government of India.</li>
+    <li><strong>National Museum (1949), New Delhi:</strong> the premier museum for antiquities and art; under it fall conservation and the National Museum Institute.</li>
+    <li><strong>Related bodies:</strong> the National Research Laboratory for Conservation of Cultural Property (NRLC, Lucknow) and Antiquities registration.</li>
+  </ul>
+  <table>
+    <thead><tr><th>Body</th><th>Year</th><th>Founder / Note</th><th>Function</th></tr></thead>
+    <tbody>
+      <tr><td>ASI</td><td>1861</td><td>Alexander Cunningham</td><td>Excavation &amp; monument protection</td></tr>
+      <tr><td>National Archives</td><td>1891</td><td>Imperial Record Dept.</td><td>Government records repository</td></tr>
+      <tr><td>Anthropological Survey (AnSI)</td><td>1945</td><td>Kolkata</td><td>Anthropology of India's peoples</td></tr>
+      <tr><td>National Museum</td><td>1949</td><td>New Delhi</td><td>Antiquities &amp; art display</td></tr>
+    </tbody>
+  </table>
+  <div class="callout warn"><strong>Prelims must-know:</strong> ASI = <strong>1861, Cunningham</strong>, protects <em>centrally</em> protected monuments under the AMASR Act 1958. This exact cluster recurs.</div>
+</section>
+
+<!-- SECTION 4 -->
+<section class="notes" id="akademis">
+  <h2>4. The Three Akademis &amp; NSD</h2>
+  <p>The three national Akademis, set up in the early 1950s, are the state's principal vehicles for promoting the arts &mdash; each covering a distinct domain. Along with the National School of Drama, they are the highest-yield MCQ cluster in this topic.</p>
+  <ul>
+    <li><strong>Sangeet Natak Akademi (1953):</strong> the national academy for <em>music, dance and drama</em> (performing arts) &mdash; India's first national cultural academy; confers the Sangeet Natak Akademi Awards and Fellowships (Ratna Sadsya).</li>
+    <li><strong>Sahitya Akademi (1954):</strong> the national academy of <em>letters (literature)</em> &mdash; promotes literature in 24 recognised languages, confers the Sahitya Akademi Award and Bhasha Samman.</li>
+    <li><strong>Lalit Kala Akademi (1954):</strong> the national academy of <em>fine/visual arts</em> (painting, sculpture, graphics) &mdash; runs the Triennale and national exhibitions.</li>
+    <li><strong>National School of Drama (NSD), 1959:</strong> premier <em>theatre-training</em> institution, New Delhi; runs the annual Bharat Rang Mahotsav theatre festival.</li>
+    <li><strong>Autonomy:</strong> the Akademis are autonomous bodies funded by the Ministry of Culture &mdash; the tension between state funding and creative independence is a recurring GS-I theme.</li>
+  </ul>
+  <table>
+    <thead><tr><th>Akademi / Body</th><th>Year</th><th>Domain</th></tr></thead>
+    <tbody>
+      <tr><td>Sangeet Natak Akademi</td><td>1953</td><td>Music, dance, drama (performing arts)</td></tr>
+      <tr><td>Sahitya Akademi</td><td>1954</td><td>Literature / letters</td></tr>
+      <tr><td>Lalit Kala Akademi</td><td>1954</td><td>Fine / visual arts</td></tr>
+      <tr><td>National School of Drama (NSD)</td><td>1959</td><td>Theatre training</td></tr>
+    </tbody>
+  </table>
+  <div class="callout warn"><strong>Trap-buster:</strong> Sangeet <em>Natak</em> = performing arts (music+dance+drama); Sahitya = literature; Lalit Kala = <em>visual</em> arts. Don't let "Natak" mislead you into thinking Sangeet Natak is only drama.</div>
+</section>
+
+<!-- SECTION 5 -->
+<section class="notes" id="diplomacy">
+  <h2>5. Diplomacy &amp; Research (ICCR, IGNCA)</h2>
+  <p>Two bodies extend culture outward and inward &mdash; the ICCR projects Indian culture abroad as soft power, while the IGNCA researches and archives the arts. Keep them clearly distinct, and note ICCR's unusual parent ministry.</p>
+  <ul>
+    <li><strong>Indian Council for Cultural Relations (ICCR), 1950:</strong> founded by <em>Maulana Abul Kalam Azad</em>; works under the <strong>Ministry of External Affairs</strong> to conduct India's <em>cultural diplomacy</em> &mdash; running cultural centres abroad, scholarships for foreign students, chairs of Indian studies and hosting festivals of India. Confers awards like the Tagore Award for Cultural Harmony.</li>
+    <li><strong>Indira Gandhi National Centre for the Arts (IGNCA), 1987:</strong> New Delhi; a premier <em>research, academic and archival</em> centre for the arts &mdash; documents manuscripts, folk and tribal arts, and interlinks the arts with the humanities.</li>
+    <li><strong>Indira Gandhi Rashtriya Manav Sangrahalaya (IGRMS), Bhopal:</strong> the national museum of mankind, an open-air anthropological museum.</li>
+    <li><strong>CCRT (Centre for Cultural Resources &amp; Training):</strong> links education with culture, training teachers to integrate culture in schooling.</li>
+  </ul>
+  <div class="callout info"><strong>GS-I/GS-II hook:</strong> the ICCR is where culture meets diplomacy &mdash; its cultural centres, scholarships and "Festivals of India" abroad are concrete instruments of India's soft power, useful in both GS-I (culture) and GS-II (diplomacy) answers.</div>
+</section>
+
+<!-- SECTION 6 -->
+<section class="notes" id="museums">
+  <h2>6. Museums, Libraries &amp; Zonal Centres</h2>
+  <p>The showcase and access layer &mdash; the museums, galleries, libraries and regional cultural centres that make heritage publicly visible. The Zonal Cultural Centres in particular are a favourite MCQ because of their number and city locations.</p>
+  <ul>
+    <li><strong>National Museum (New Delhi)</strong> and the <strong>National Gallery of Modern Art (NGMA)</strong> (New Delhi, with branches in Mumbai and Bengaluru) &mdash; antiquities and modern art respectively.</li>
+    <li><strong>Indian Museum, Kolkata (1814):</strong> the <em>oldest</em> and largest museum in India (and one of the oldest in Asia).</li>
+    <li><strong>National Library, Kolkata:</strong> the largest library in India, a library of public record.</li>
+    <li><strong>Seven Zonal Cultural Centres (ZCCs):</strong> set up from 1985 to promote and preserve regional folk and tribal arts &mdash; headquartered at <em>Patiala (North), Nagpur (South-Central), Udaipur (West), Kolkata (East), Allahabad/Prayagraj (North-Central), Dimapur (North-East)</em> and <em>Thanjavur (South)</em>.</li>
+    <li><strong>Kalakshetra Foundation, Chennai:</strong> founded by Rukmini Devi Arundale, a premier institution for Bharatanatyam and the arts.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims cluster:</strong> there are <strong>seven Zonal Cultural Centres</strong> (from 1985); the Indian Museum, Kolkata (1814) is India's <em>oldest</em> museum &mdash; two frequently tested facts.</div>
+</section>
+
+<!-- SECTION 7 -->
+<section class="notes" id="compare">
+  <h2>7. Master Institutions Table</h2>
+  <p>The single grid to revise &mdash; each institution against its parent ministry, one-line mandate and founding year. Most institution MCQs are answerable straight from this table.</p>
+  <table>
+    <thead><tr><th>Institution</th><th>Year</th><th>Parent</th><th>Mandate</th></tr></thead>
+    <tbody>
+      <tr><td>Archaeological Survey of India (ASI)</td><td>1861</td><td>Culture</td><td>Excavation &amp; monument protection</td></tr>
+      <tr><td>National Archives of India</td><td>1891</td><td>Culture</td><td>Government records repository</td></tr>
+      <tr><td>Anthropological Survey (AnSI)</td><td>1945</td><td>Culture</td><td>Anthropology of India</td></tr>
+      <tr><td>National Museum</td><td>1949</td><td>Culture</td><td>Antiquities &amp; art display</td></tr>
+      <tr><td>ICCR</td><td>1950</td><td><strong>External Affairs</strong></td><td>Cultural diplomacy abroad</td></tr>
+      <tr><td>Sangeet Natak Akademi</td><td>1953</td><td>Culture</td><td>Performing arts (music/dance/drama)</td></tr>
+      <tr><td>Sahitya Akademi</td><td>1954</td><td>Culture</td><td>Literature</td></tr>
+      <tr><td>Lalit Kala Akademi</td><td>1954</td><td>Culture</td><td>Fine / visual arts</td></tr>
+      <tr><td>National School of Drama (NSD)</td><td>1959</td><td>Culture</td><td>Theatre training</td></tr>
+      <tr><td>Zonal Cultural Centres (7)</td><td>1985</td><td>Culture</td><td>Regional folk/tribal arts</td></tr>
+      <tr><td>IGNCA</td><td>1987</td><td>Culture</td><td>Arts research &amp; archive</td></tr>
+    </tbody>
+  </table>
+  <div class="callout warn"><strong>Trap-buster:</strong> only the <strong>ICCR</strong> sits under <em>External Affairs</em> (cultural diplomacy); everything else is under the <em>Ministry of Culture</em>. This ministry-mismatch is a classic MCQ.</div>
+</section>
+
+<!-- SECTION 8 -->
+<section class="notes" id="significance">
+  <h2>8. Role &amp; Significance</h2>
+  <p>Cultural institutions are the machinery through which the state discharges its constitutional duty to protect heritage (Article 49) and citizens' duty to value composite culture (Article 51A). For GS-I they illustrate the balance between state patronage and creative autonomy.</p>
+  <ul>
+    <li><strong>Preservation:</strong> the ASI, NAI and museums conserve the material and documentary heritage that would otherwise decay or be lost.</li>
+    <li><strong>Patronage &amp; livelihood:</strong> the Akademis and ZCCs support artists, folk performers and endangered art-forms, sustaining living traditions and rural livelihoods.</li>
+    <li><strong>Soft power:</strong> the ICCR projects Indian culture globally, converting heritage into diplomatic goodwill.</li>
+    <li><strong>Access &amp; education:</strong> museums, libraries and the CCRT democratise access to culture and integrate it with schooling.</li>
+    <li><strong>The autonomy debate (critical):</strong> because these bodies depend on government funding and appointments, questions recur about political interference and the erosion of their autonomy &mdash; a live governance issue.</li>
+  </ul>
+  <div class="callout warn"><strong>Essay/GS-I frame:</strong> India's cultural institutions embody "patronage without control" as an ideal &mdash; the state must fund and protect heritage while safeguarding the arm's-length autonomy that keeps the arts free.</div>
+</section>
+
+<!-- SECTION 9 -->
+<section class="notes" id="currentaffairs">
+  <h2>9. Reform &amp; Current Affairs</h2>
+  <p>Recent developments &mdash; digitisation, monument-management partnerships and museum modernisation &mdash; keep cultural institutions in current affairs and offer ready contemporary hooks.</p>
+  <ul>
+    <li><strong>"Adopt a Heritage" (Monument Mitra):</strong> a scheme to involve the private sector/CSR in developing visitor amenities at monuments (with the ASI).</li>
+    <li><strong>Museum modernisation:</strong> the planned <em>Yuge Yugeen Bharat</em> National Museum (at the North &amp; South Blocks, Delhi) as a flagship redevelopment; digitisation of collections and archives.</li>
+    <li><strong>Digitisation:</strong> the National Digital Library, digitisation of NAI records and IGNCA's manuscript databases expand public access.</li>
+    <li><strong>Retrieval of antiquities:</strong> the ASI's role in the return of smuggled Indian antiquities from abroad &mdash; a recurring current-affairs theme with a soft-power angle.</li>
+    <li><strong>Autonomy &amp; funding debates:</strong> periodic concerns over appointments and grants to the Akademis and other bodies.</li>
+  </ul>
+  <div class="callout info"><strong>How to use in the exam:</strong> pair a body (ASI/ICCR) with a current hook (Adopt a Heritage, antiquity retrieval, new National Museum) to show both institutional knowledge and contemporary awareness.</div>
+</section>
+
+<!-- PRELIMS PYQ -->
+<section class="notes" id="prelims-pyq">
+  <h2>10. Prelims Practice Questions</h2>
+  <p>Concept-practice MCQs modelled on the UPSC Prelims pattern for this topic (bodies, mandates, years, parent ministries). Attempt before revealing the answer.</p>
+
+  <div class="pyq">
+    <p><strong>Q1.</strong> The Sangeet Natak Akademi is the national academy for:</p>
+    <ul class="options">
+      <li><span class="opt-key">a)</span> Literature</li>
+      <li><span class="opt-key">b)</span> Fine and visual arts</li>
+      <li><span class="opt-key">c)</span> Music, dance and drama</li>
+      <li><span class="opt-key">d)</span> Archaeology</li>
+    </ul>
+    <p class="ans"><span class="correct">Answer: c) Music, dance and drama</span> &mdash; the Sangeet Natak Akademi (1953) is the national academy for the performing arts; literature is Sahitya Akademi and visual arts is Lalit Kala Akademi.</p>
+  </div>
+
+  <div class="pyq">
+    <p><strong>Q2.</strong> The Indian Council for Cultural Relations (ICCR) functions under which ministry?</p>
+    <ul class="options">
+      <li><span class="opt-key">a)</span> Ministry of Culture</li>
+      <li><span class="opt-key">b)</span> Ministry of External Affairs</li>
+      <li><span class="opt-key">c)</span> Ministry of Education</li>
+      <li><span class="opt-key">d)</span> Ministry of Tourism</li>
+    </ul>
+    <p class="ans"><span class="correct">Answer: b) Ministry of External Affairs</span> &mdash; the ICCR (1950, founded by Maulana Azad) conducts India's cultural diplomacy and is under the MEA, not the Ministry of Culture.</p>
+  </div>
+
+  <div class="pyq">
+    <p><strong>Q3.</strong> Consider the following pairs of institution and founding year:</p>
+    <p>1. Archaeological Survey of India &mdash; 1861<br>2. Sahitya Akademi &mdash; 1954<br>3. National School of Drama &mdash; 1959</p>
+    <p>Which of the pairs given above are correctly matched?</p>
+    <ul class="options">
+      <li><span class="opt-key">a)</span> 1 and 2 only</li>
+      <li><span class="opt-key">b)</span> 2 and 3 only</li>
+      <li><span class="opt-key">c)</span> 1 and 3 only</li>
+      <li><span class="opt-key">d)</span> 1, 2 and 3</li>
+    </ul>
+    <p class="ans"><span class="correct">Answer: d) 1, 2 and 3</span> &mdash; ASI (1861, Cunningham), Sahitya Akademi (1954) and NSD (1959) are all correctly matched.</p>
+  </div>
+
+  <div class="pyq">
+    <p><strong>Q4.</strong> The Archaeological Survey of India was founded in 1861 by:</p>
+    <ul class="options">
+      <li><span class="opt-key">a)</span> John Marshall</li>
+      <li><span class="opt-key">b)</span> Alexander Cunningham</li>
+      <li><span class="opt-key">c)</span> Mortimer Wheeler</li>
+      <li><span class="opt-key">d)</span> William Jones</li>
+    </ul>
+    <p class="ans"><span class="correct">Answer: b) Alexander Cunningham</span> &mdash; the ASI was established in 1861 with Cunningham as its first Director-General; it protects centrally protected monuments under the AMASR Act, 1958.</p>
+  </div>
+
+  <div class="pyq">
+    <p><strong>Q5.</strong> With reference to the Zonal Cultural Centres (ZCCs), consider the following statements:</p>
+    <p>1. There are seven Zonal Cultural Centres in India.<br>2. They function under the Ministry of Culture.<br>3. They were established to promote regional folk and tribal arts.</p>
+    <p>Which of the statements given above are correct?</p>
+    <ul class="options">
+      <li><span class="opt-key">a)</span> 1 and 2 only</li>
+      <li><span class="opt-key">b)</span> 2 and 3 only</li>
+      <li><span class="opt-key">c)</span> 1 and 3 only</li>
+      <li><span class="opt-key">d)</span> 1, 2 and 3</li>
+    </ul>
+    <p class="ans"><span class="correct">Answer: d) 1, 2 and 3</span> &mdash; there are seven ZCCs (from 1985), under the Ministry of Culture, set up to promote regional folk and tribal arts. All three statements are correct.</p>
+  </div>
+
+  <div class="pyq">
+    <p><strong>Q6.</strong> Which of the following is the <em>oldest</em> museum in India?</p>
+    <ul class="options">
+      <li><span class="opt-key">a)</span> National Museum, New Delhi</li>
+      <li><span class="opt-key">b)</span> Indian Museum, Kolkata</li>
+      <li><span class="opt-key">c)</span> Salar Jung Museum, Hyderabad</li>
+      <li><span class="opt-key">d)</span> Government Museum, Chennai</li>
+    </ul>
+    <p class="ans"><span class="correct">Answer: b) Indian Museum, Kolkata</span> &mdash; established in 1814, it is the oldest and largest museum in India and one of the oldest in Asia.</p>
+  </div>
+
+  <div class="callout warn"><strong>Note:</strong> These are concept-practice questions written in the UPSC pattern to drill high-frequency facts (bodies, mandates, years); they are not reproductions of dated past papers.</div>
+</section>
+
+<!-- MAINS PYQ -->
+<section class="notes" id="mains-pyq">
+  <h2>11. Mains Practice Questions + Model Answers</h2>
+  <p>GS-I model questions on cultural institutions, each with a 6-point analytical skeleton (intro &rarr; four substantive points including the core and a critical edge &rarr; conclusion).</p>
+
+  <div class="model-answer">
+    <h5>Model Answer 1</h5>
+    <p><strong>Q. Examine the role of the state and its institutions in the preservation and promotion of India's cultural heritage.</strong> (250 words)</p>
+    <ul>
+      <li><strong>Intro:</strong> Independent India built a layered institutional architecture &mdash; anchored in Article 49 (protection of monuments) and 51A(f) (duty to value composite culture) &mdash; to preserve and promote heritage.</li>
+      <li><strong>Preservation:</strong> the ASI (1861) conserves monuments and excavates sites; the National Archives keeps the documentary record; museums safeguard antiquities.</li>
+      <li><strong>Promotion (the core):</strong> the three Akademis (Sangeet Natak, Sahitya, Lalit Kala) and NSD patronise and train the performing, literary and visual arts, while Zonal Cultural Centres sustain endangered folk and tribal forms and rural artist livelihoods.</li>
+      <li><strong>Projection:</strong> the ICCR carries Indian culture abroad as soft power through cultural centres, scholarships and festivals of India.</li>
+      <li><strong>Critical edge:</strong> dependence on state funding and appointments raises concerns about political interference and eroded autonomy; conservation also faces resource and manpower gaps (many unprotected monuments).</li>
+      <li><strong>Conclusion:</strong> The institutional model works best as arm's-length patronage &mdash; the state must fund and protect heritage while guaranteeing the autonomy that keeps culture free and vibrant.</li>
+    </ul>
+  </div>
+
+  <div class="model-answer">
+    <h5>Model Answer 2</h5>
+    <p><strong>Q. "Cultural institutions are instruments of India's soft power." Discuss with reference to the ICCR and related bodies.</strong> (250 words)</p>
+    <ul>
+      <li><strong>Intro:</strong> Soft power flows from a nation's culture and values; India's cultural institutions convert its civilizational heritage into diplomatic influence.</li>
+      <li><strong>The ICCR (the core):</strong> under the MEA, it runs Indian cultural centres worldwide, offers scholarships to foreign students, funds chairs of Indian studies and stages "Festivals of India" &mdash; building organic people-to-people goodwill that complements formal diplomacy.</li>
+      <li><strong>Supporting bodies:</strong> the ASI's antiquity-retrieval work, IGNCA's scholarship, and yoga/Ayurveda diplomacy amplify the cultural narrative abroad.</li>
+      <li><strong>Strategic value:</strong> cultural affinity in the neighbourhood and diaspora underpins India's regional influence and image as a civilizational power.</li>
+      <li><strong>Critical edge:</strong> soft power is diffuse and hard to convert into hard outcomes; under-funding and bureaucratic delivery limit reach compared with better-resourced rivals.</li>
+      <li><strong>Conclusion:</strong> Well-resourced and autonomous cultural institutions are a distinctive and cost-effective instrument of Indian diplomacy that deserves greater strategic investment.</li>
+    </ul>
+  </div>
+
+  <div class="model-answer">
+    <h5>Model Answer 3</h5>
+    <p><strong>Q. Distinguish between the mandates of the three national Akademis. Why is their autonomy important?</strong> (150 words)</p>
+    <ul>
+      <li><strong>Intro:</strong> The three national Akademis, set up in 1953&ndash;54, divide the arts between them and function as autonomous bodies under the Ministry of Culture.</li>
+      <li><strong>Sangeet Natak Akademi:</strong> the performing arts &mdash; music, dance and drama.</li>
+      <li><strong>Sahitya Akademi:</strong> literature, across 24 recognised languages.</li>
+      <li><strong>Lalit Kala Akademi (the core):</strong> the fine/visual arts &mdash; painting, sculpture and graphics.</li>
+      <li><strong>Why autonomy matters:</strong> arm's-length independence protects artistic freedom, keeps awards and grants merit-based and insulates culture from political direction.</li>
+      <li><strong>Critical edge:</strong> funding dependence and government appointments can compromise this autonomy in practice.</li>
+      <li><strong>Conclusion:</strong> Clear domains plus genuine autonomy let the Akademis nurture the arts without turning them into instruments of the state.</li>
+    </ul>
+  </div>
+
+  <div class="model-answer">
+    <h5>Model Answer 4</h5>
+    <p><strong>Q. Discuss the role of the Archaeological Survey of India in heritage conservation and the challenges it faces.</strong> (150 words)</p>
+    <ul>
+      <li><strong>Intro:</strong> The ASI (1861), under the Ministry of Culture, is the premier body for archaeology and the protection of centrally protected monuments.</li>
+      <li><strong>Roles:</strong> excavation and research, conservation of ~3,600 protected monuments, regulation under the AMASR Act 1958, and antiquity documentation and retrieval.</li>
+      <li><strong>The core:</strong> it is the frontline custodian converting India's material past into protected, publicly accessible heritage.</li>
+      <li><strong>Challenges:</strong> manpower and funding shortages, encroachment and urban pressure near monuments, the 100-metre prohibited-zone disputes, and vast <em>un</em>protected heritage.</li>
+      <li><strong>Way forward:</strong> partnerships (Adopt a Heritage), technology (3D documentation) and community involvement.</li>
+      <li><strong>Conclusion:</strong> Strengthening the ASI's capacity is essential to safeguard a heritage that is both a national and a global trust.</li>
+    </ul>
+  </div>
+
+  <div class="callout warn"><strong>Note:</strong> These are model questions in the UPSC GS-I pattern with full answers; they are not reproductions of dated past-year papers.</div>
+</section>
+
+<!-- REVISION BOX -->
+<section class="notes revision-box" id="revision">
+  <h2>&#9733; 15-Minute Revision Box</h2>
+  <p>Last-mile recall grid &mdash; bodies, years, domains and the one ministry-trap at a glance.</p>
+  <div class="revision-grid grid-2">
+    <div class="rev-col">
+      <h4>The Three Akademis</h4>
+      <ul>
+        <li><strong>Sangeet Natak</strong> (1953) &mdash; music/dance/drama</li>
+        <li><strong>Sahitya</strong> (1954) &mdash; literature</li>
+        <li><strong>Lalit Kala</strong> (1954) &mdash; visual arts</li>
+        <li><strong>NSD</strong> (1959) &mdash; theatre training</li>
+      </ul>
+    </div>
+    <div class="rev-col">
+      <h4>Survey &amp; Archive</h4>
+      <ul>
+        <li><strong>ASI</strong> (1861, Cunningham) &mdash; monuments</li>
+        <li><strong>National Archives</strong> (1891) &mdash; records</li>
+        <li><strong>AnSI</strong> (1945) &mdash; anthropology</li>
+        <li><strong>National Museum</strong> (1949)</li>
+        <li>Indian Museum, Kolkata (1814) = oldest</li>
+      </ul>
+    </div>
+    <div class="rev-col">
+      <h4>Diplomacy &amp; Research</h4>
+      <ul>
+        <li><strong>ICCR</strong> (1950, Azad) &mdash; <em>MEA</em>, cultural diplomacy</li>
+        <li><strong>IGNCA</strong> (1987) &mdash; arts research/archive</li>
+        <li><strong>IGRMS</strong> Bhopal &mdash; museum of mankind</li>
+        <li><strong>CCRT</strong> &mdash; culture in education</li>
+      </ul>
+    </div>
+    <div class="rev-col">
+      <h4>Showcase &amp; Traps</h4>
+      <ul>
+        <li><strong>7 Zonal Cultural Centres</strong> (from 1985)</li>
+        <li>National Library, Kolkata = largest</li>
+        <li>Kalakshetra (Chennai) &mdash; Rukmini Devi</li>
+        <li><strong>Trap:</strong> only ICCR is under MEA; all else under Culture.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="callout warn"><strong>Trap-buster:</strong> Sangeet <em>Natak</em> = <em>all</em> performing arts (not just drama); <strong>ICCR</strong> alone sits under External Affairs; Indian Museum Kolkata (1814) is the <em>oldest</em>.</div>
+</section>
+
+</main>
+
+<aside>
+  <div class="widget">
+    <h4>Exam Weight</h4>
+    <p>Institutions are high-yield Prelims fodder via <strong>body&ndash;mandate&ndash;year</strong> matching; GS-I on the state's role in heritage.</p>
+  </div>
+  <div class="widget">
+    <h4>Three Akademis</h4>
+    <ul>
+      <li>Sangeet Natak &mdash; performing arts</li>
+      <li>Sahitya &mdash; literature</li>
+      <li>Lalit Kala &mdash; visual arts</li>
+    </ul>
+  </div>
+  <div class="widget">
+    <h4>ASI Snapshot</h4>
+    <p>1861 &middot; Alexander Cunningham &middot; AMASR Act 1958 &middot; centrally protected monuments.</p>
+  </div>
+  <div class="widget">
+    <h4>Ministry Trap</h4>
+    <p><strong>ICCR</strong> &rarr; External Affairs. Everything else &rarr; Ministry of Culture.</p>
+  </div>
+  <div class="widget">
+    <h4>Diplomacy vs Research</h4>
+    <ul>
+      <li>ICCR (1950) &mdash; culture abroad</li>
+      <li>IGNCA (1987) &mdash; arts research</li>
+    </ul>
+  </div>
+  <div class="widget">
+    <h4>Zonal Centres</h4>
+    <p><strong>Seven ZCCs</strong> (from 1985): Patiala, Nagpur, Udaipur, Kolkata, Prayagraj, Dimapur, Thanjavur.</p>
+  </div>
+  <div class="widget">
+    <h4>Firsts &amp; Oldest</h4>
+    <ul>
+      <li>Indian Museum, Kolkata (1814) &mdash; oldest</li>
+      <li>National Library &mdash; largest</li>
+      <li>Sangeet Natak &mdash; first Akademi</li>
+    </ul>
+  </div>
+  <div class="widget">
+    <h4>Current Affairs</h4>
+    <p>Adopt a Heritage (Monument Mitra); Yuge Yugeen Bharat National Museum; antiquity retrieval.</p>
+  </div>
+  <div class="widget">
+    <h4>GS-I Line</h4>
+    <p>"Patronage without control" &mdash; fund and protect heritage while guarding arm's-length autonomy.</p>
+  </div>
+</aside>
+
+</div>
+</div>
