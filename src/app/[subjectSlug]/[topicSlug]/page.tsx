@@ -31,6 +31,7 @@ import { isPolityTopicId, type PolityTopicId } from "@/lib/polity-notes";
 import { isSocietyTopicId, type SocietyTopicId } from "@/lib/society-notes";
 import { isSecurityTopicId, type SecurityTopicId } from "@/lib/security-notes";
 import { isDisasterTopicId, type DisasterTopicId } from "@/lib/disaster-notes";
+import { isScienceTopicId, type ScienceTopicId } from "@/lib/science-notes";
 import { isCultureTopicId, type CultureTopicId } from "@/lib/culture-notes";
 import {
   isPostindependenceTopicId,
@@ -54,6 +55,8 @@ import { SecurityTopicFooterNav } from "@/components/notes/SecurityTopicFooterNa
 import { SecurityTopicNotesBody } from "@/components/notes/SecurityTopicNotesBody";
 import { DisasterTopicFooterNav } from "@/components/notes/DisasterTopicFooterNav";
 import { DisasterTopicNotesBody } from "@/components/notes/DisasterTopicNotesBody";
+import { ScienceTopicFooterNav } from "@/components/notes/ScienceTopicFooterNav";
+import { ScienceTopicNotesBody } from "@/components/notes/ScienceTopicNotesBody";
 import { CultureTopicFooterNav } from "@/components/notes/CultureTopicFooterNav";
 import { CultureTopicNotesBody } from "@/components/notes/CultureTopicNotesBody";
 import { PostindependenceTopicFooterNav } from "@/components/notes/PostindependenceTopicFooterNav";
@@ -123,6 +126,7 @@ export default async function TopicPage({ params }: PageProps) {
   const isSociety = subjectKey === "society" && isSocietyTopicId(chapter.id);
   const isSecurity = subjectKey === "security" && isSecurityTopicId(chapter.id);
   const isDisaster = subjectKey === "disaster" && isDisasterTopicId(chapter.id);
+  const isScience = subjectKey === "science" && isScienceTopicId(chapter.id);
   const isCulture = subjectKey === "culture" && isCultureTopicId(chapter.id);
   const isPostindependence =
     subjectKey === "postindependence" &&
@@ -239,6 +243,17 @@ export default async function TopicPage({ params }: PageProps) {
       <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
         <DisasterTopicNotesBody topicId={topicId} />
         <DisasterTopicFooterNav topicId={topicId} />
+        <TopicNotesEnhancements />
+      </TopicPageLayout>
+    );
+  }
+
+  if (isScience) {
+    const topicId = chapter.id as ScienceTopicId;
+    return (
+      <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
+        <ScienceTopicNotesBody topicId={topicId} />
+        <ScienceTopicFooterNav topicId={topicId} />
         <TopicNotesEnhancements />
       </TopicPageLayout>
     );

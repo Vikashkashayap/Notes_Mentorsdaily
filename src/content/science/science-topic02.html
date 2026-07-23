@@ -1,0 +1,828 @@
+<!-- science-topic02 — auto-imported from scitech-topic02-cell-tissues-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 2: The Cell &amp; Tissues</h1>
+  <p class="sub">The <strong>cell is the basic structural &amp; functional unit of life</strong> &mdash; every organism in Topic 1's classification is built from it. This single-source file covers <strong>cell theory</strong> and its discovery, the great <strong>prokaryotic vs eukaryotic</strong> divide, the <strong>plant vs animal cell</strong>, and each <strong>organelle</strong> (membrane, wall, nucleus, mitochondria, chloroplast, ER, Golgi, ribosomes, lysosomes, vacuoles, centrosome, cilia &amp; flagella, capsule, fimbriae), the <strong>genetic material &amp; nucleic acids</strong>, and how cells group into <strong>animal &amp; plant tissues</strong> &mdash; with labelled diagrams, tables and real dated PYQs with full model answers.</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Organelles &middot; Cell Theory</span>
+    <span class="pill">~35 min read</span>
+    <span class="pill">Prokaryote vs Eukaryote</span>
+    <span class="pill">High Prelims Weight</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#whatis">The Cell &amp; Cell Theory</a></li>
+    <li><span class="num">2.</span><a href="#protype">Prokaryotic vs Eukaryotic Cells</a></li>
+    <li><span class="num">3.</span><a href="#plantanimal">Plant Cell vs Animal Cell</a></li>
+    <li><span class="num">4.</span><a href="#boundary">Cell Boundary &mdash; Membrane, Wall &amp; Surface</a></li>
+    <li><span class="num">5.</span><a href="#organelles1">Organelles I &mdash; Nucleus, ER, Ribosomes, Golgi</a></li>
+    <li><span class="num">6.</span><a href="#organelles2">Organelles II &mdash; Mitochondria, Plastids, Lysosomes, Vacuoles, Centrosome</a></li>
+    <li><span class="num">7.</span><a href="#nucleic">Genetic Material &amp; Nucleic Acids</a></li>
+    <li><span class="num">8.</span><a href="#animaltissue">Animal Tissues</a></li>
+    <li><span class="num">9.</span><a href="#planttissue">Plant Tissues</a></li>
+    <li><span class="num">10.</span><a href="#currentaffairs">Current Affairs Link</a></li>
+    <li><span class="num">11.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><span class="num">12.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Tests the Cell</h3>
+  <p>The cell is a <strong>dense, high-return Prelims topic</strong>: a single diagram hides dozens of factual hooks. Sort your prep into three question-types:</p>
+  <ul>
+    <li><strong>Definitional / static</strong> &mdash; "which organelle does X?" (powerhouse = mitochondria; suicide bag = lysosome; protein factory = ribosome). Pure recall; the commonest style.</li>
+    <li><strong>Statement-elimination</strong> &mdash; two/three statements on, e.g., "prokaryotes lack a nuclear membrane and membrane-bound organelles" where one word decides the answer. Needs the prokaryote/eukaryote and plant/animal contrasts exact.</li>
+    <li><strong>Applied / current</strong> &mdash; a news hook (mitochondrial DNA, stem cells, CAR-T, lab-grown tissue) traced back to a cell fundamental. Also the GS-III bridge to biotech and health.</li>
+  </ul>
+  <p><strong>Highest-frequency themes:</strong> organelle functions &amp; nicknames &middot; prokaryote vs eukaryote &middot; plant vs animal cell differences &middot; mitochondria &amp; chloroplast (double membrane, own DNA) &middot; the four animal tissues &middot; meristematic vs permanent plant tissue &middot; xylem &amp; phloem.</p>
+</div>
+
+<!-- ===== SECTION 1 ===== -->
+<section class="notes" id="whatis">
+  <h2>1. The Cell &amp; Cell Theory</h2>
+  <p>The <strong>cell</strong> (Latin <em>cella</em> = small room) is the smallest unit that can carry out all life processes &mdash; the <strong>basic structural and functional unit of all living organisms</strong>. Organisms may be <strong>unicellular</strong> (one cell does everything, e.g. amoeba, bacteria) or <strong>multicellular</strong> (division of labour among many cells, e.g. humans).</p>
+  <h3>1.1 Discovery &mdash; who found what</h3>
+  <table>
+    <tr><th>Scientist</th><th>Contribution</th></tr>
+    <tr><td><strong>Robert Hooke (1665)</strong></td><td>First observed &amp; named "cells" &mdash; in a thin slice of cork under his microscope (actually dead cell walls).</td></tr>
+    <tr><td><strong>Anton van Leeuwenhoek</strong></td><td>First saw <strong>living cells</strong> (bacteria, protozoa &mdash; "animalcules") &mdash; "father of microbiology".</td></tr>
+    <tr><td><strong>Robert Brown (1831)</strong></td><td>Discovered the <strong>nucleus</strong>.</td></tr>
+    <tr><td><strong>Schleiden (1838) &amp; Schwann (1839)</strong></td><td>Proposed the <strong>cell theory</strong> (Schleiden for plants, Schwann for animals).</td></tr>
+    <tr><td><strong>Rudolf Virchow (1855)</strong></td><td>Added: "<em>Omnis cellula e cellula</em>" &mdash; every cell arises from a pre-existing cell.</td></tr>
+  </table>
+  <h3>1.2 The cell theory &mdash; three tenets</h3>
+  <ul>
+    <li>All living organisms are made of one or more <strong>cells</strong>.</li>
+    <li>The cell is the <strong>basic unit of structure and function</strong> in living things.</li>
+    <li>All cells arise from <strong>pre-existing cells</strong> (Virchow).</li>
+  </ul>
+  <div class="callout info"><strong>Prelims lock:</strong> Hooke <em>named</em> the cell (dead cork); Leeuwenhoek saw the first <em>living</em> cells; Brown found the <strong>nucleus</strong>; cell theory = <strong>Schleiden &amp; Schwann</strong>, completed by <strong>Virchow</strong>. These attributions are a repeat "match the following".</div>
+  <div class="callout"><strong>Size &amp; number facts:</strong> most cells are microscopic; the <strong>largest cell</strong> is an ostrich egg; the <strong>longest cell</strong> is the nerve cell (neuron); the smallest are mycoplasma/PPLO. Cell <em>shape</em> follows function (disc-shaped RBC, branched neuron, spindle muscle).</div>
+</section>
+
+<!-- ===== SECTION 2 ===== -->
+<section class="notes" id="protype">
+  <h2>2. Prokaryotic vs Eukaryotic Cells</h2>
+  <p>The single most important division in all biology is between <strong>prokaryotic</strong> ("before nucleus") and <strong>eukaryotic</strong> ("true nucleus") cells &mdash; the basis of the whole five-kingdom system in Topic 1.</p>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 680 260" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+      <text x="340" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2035">Fig 2.1 &mdash; Prokaryotic vs Eukaryotic Cell</text>
+      <!-- prokaryote -->
+      <text x="170" y="46" text-anchor="middle" font-size="12" font-weight="700" fill="#8a5417">PROKARYOTE (bacterium)</text>
+      <rect x="55" y="60" width="230" height="120" rx="60" fill="#fff4e0" stroke="#c47820" stroke-width="2"/>
+      <rect x="45" y="55" width="250" height="130" rx="65" fill="none" stroke="#9c8a58" stroke-width="1" stroke-dasharray="4 3"/>
+      <path d="M120,95 q30,-18 60,0 q30,18 55,-2" fill="none" stroke="#7a1f1f" stroke-width="2"/>
+      <text x="170" y="128" text-anchor="middle" font-size="8.5" fill="#5a6266">nucleoid (free DNA,</text>
+      <text x="170" y="140" text-anchor="middle" font-size="8.5" fill="#5a6266">no nuclear membrane)</text>
+      <circle cx="110" cy="150" r="3" fill="#1a7a5a"/><circle cx="140" cy="160" r="3" fill="#1a7a5a"/><circle cx="200" cy="155" r="3" fill="#1a7a5a"/>
+      <text x="235" y="168" font-size="8" fill="#0a6644">ribosomes</text>
+      <line x1="300" y1="70" x2="320" y2="70" stroke="#5a6266" stroke-width="1"/><text x="300" y="66" font-size="7.5" fill="#5a6266">flagellum</text>
+      <path d="M285,120 q25,0 40,0" fill="none" stroke="#5a6266" stroke-width="1.5"/>
+      <!-- eukaryote -->
+      <text x="510" y="46" text-anchor="middle" font-size="12" font-weight="700" fill="#0a6644">EUKARYOTE (animal cell)</text>
+      <rect x="400" y="60" width="230" height="120" rx="24" fill="#e8f5ef" stroke="#1a7a5a" stroke-width="2"/>
+      <circle cx="510" cy="120" r="34" fill="#c9e6d8" stroke="#0a6644" stroke-width="1.6"/>
+      <circle cx="510" cy="120" r="12" fill="#0a6644"/>
+      <text x="510" y="123" text-anchor="middle" font-size="7" fill="#fff">nucleolus</text>
+      <text x="510" y="168" text-anchor="middle" font-size="8.5" fill="#5a6266">true nucleus (membrane-bound)</text>
+      <ellipse cx="440" cy="85" rx="14" ry="8" fill="#fff4e0" stroke="#c47820" stroke-width="1.2"/><text x="440" y="88" text-anchor="middle" font-size="6.5" fill="#8a5417">mito</text>
+      <ellipse cx="585" cy="95" rx="14" ry="8" fill="#fff4e0" stroke="#c47820" stroke-width="1.2"/><text x="585" y="98" text-anchor="middle" font-size="6.5" fill="#8a5417">mito</text>
+      <path d="M430,150 q20,-8 40,0" fill="none" stroke="#1a3d5c" stroke-width="1.4"/><text x="450" y="165" text-anchor="middle" font-size="6.5" fill="#1a3d5c">ER</text>
+      <text x="340" y="240" text-anchor="middle" font-size="9.5" fill="#5a6266" font-style="italic">Prokaryote: no nuclear membrane, no membrane-bound organelles. Eukaryote: true nucleus + organelles.</text>
+    </svg>
+    <div class="svg-caption">Fig 2.1 &mdash; The defining difference: prokaryotes have free DNA (nucleoid) and no membrane-bound organelles; eukaryotes have a true nucleus and organelles.</div>
+  </div>
+
+  <table>
+    <tr><th>Feature</th><th>Prokaryotic</th><th>Eukaryotic</th></tr>
+    <tr><td><strong>Nucleus</strong></td><td>No true nucleus &mdash; DNA lies free as a <strong>nucleoid</strong>; no nuclear membrane.</td><td>True, membrane-bound nucleus.</td></tr>
+    <tr><td><strong>Membrane-bound organelles</strong></td><td>Absent (no mitochondria, ER, Golgi, plastids).</td><td>Present.</td></tr>
+    <tr><td><strong>Ribosomes</strong></td><td>Present but smaller (70S).</td><td>Larger (80S); 70S inside mitochondria/chloroplasts.</td></tr>
+    <tr><td><strong>Cell wall</strong></td><td>Present (peptidoglycan/murein in bacteria).</td><td>Present in plants (cellulose)/fungi (chitin); absent in animals.</td></tr>
+    <tr><td><strong>Size &amp; DNA</strong></td><td>Small (~1&ndash;10 &micro;m); single circular DNA, often plasmids.</td><td>Larger (~10&ndash;100 &micro;m); DNA on multiple linear chromosomes with histones.</td></tr>
+    <tr><td><strong>Examples</strong></td><td>Bacteria, cyanobacteria, archaea, mycoplasma.</td><td>Protists, fungi, plants, animals.</td></tr>
+  </table>
+  <div class="callout warn"><strong>Prelims lock:</strong> prokaryotes lack a <strong>nuclear membrane AND membrane-bound organelles</strong>, but they <em>do</em> have ribosomes and a cell wall. "Prokaryotes have no ribosomes" is a classic <em>false</em> statement.</div>
+</section>
+
+<!-- ===== SECTION 3 ===== -->
+<section class="notes" id="plantanimal">
+  <h2>3. Plant Cell vs Animal Cell</h2>
+  <p>Both are eukaryotic, but differ in a few decisive structures that come up almost every year.</p>
+  <table>
+    <tr><th>Structure</th><th>Plant cell</th><th>Animal cell</th></tr>
+    <tr><td><strong>Cell wall</strong></td><td>Present (cellulose) &mdash; rigid.</td><td>Absent &mdash; only a membrane.</td></tr>
+    <tr><td><strong>Plastids (incl. chloroplast)</strong></td><td>Present &mdash; enable photosynthesis.</td><td>Absent.</td></tr>
+    <tr><td><strong>Vacuole</strong></td><td>One <strong>large central</strong> vacuole.</td><td>Small or absent.</td></tr>
+    <tr><td><strong>Centrosome / centrioles</strong></td><td>Usually absent.</td><td>Present (help cell division).</td></tr>
+    <tr><td><strong>Shape</strong></td><td>Fixed, usually rectangular.</td><td>Irregular, rounded.</td></tr>
+    <tr><td><strong>Storage food</strong></td><td>Starch.</td><td>Glycogen.</td></tr>
+  </table>
+  <div class="callout info"><strong>Prelims lock:</strong> only <strong>plant</strong> cells have a <em>cell wall, plastids and a large central vacuole</em>; only <strong>animal</strong> cells reliably have a <em>centrosome</em>. Both have a nucleus, mitochondria, ER, Golgi, ribosomes and a cell membrane.</div>
+</section>
+
+<!-- ===== SECTION 4 ===== -->
+<section class="notes" id="boundary">
+  <h2>4. Cell Boundary &mdash; Membrane, Wall &amp; Surface Structures</h2>
+  <h3>4.1 Cell (plasma) membrane</h3>
+  <ul>
+    <li>The living outer boundary of every cell; a <strong>fluid mosaic</strong> of a phospholipid bilayer with embedded proteins (Singer &amp; Nicolson model).</li>
+    <li><strong>Selectively permeable</strong> &mdash; controls what enters/leaves (by diffusion, osmosis, active transport). This regulation is its defining role.</li>
+  </ul>
+  <h3>4.2 Cell wall</h3>
+  <ul>
+    <li>A non-living, rigid layer <em>outside</em> the membrane; gives shape and protection. Composition varies: <strong>cellulose</strong> (plants), <strong>chitin</strong> (fungi), <strong>peptidoglycan/murein</strong> (bacteria). Absent in animals.</li>
+  </ul>
+  <h3>4.3 Bacterial surface extras (from the syllabus)</h3>
+  <table>
+    <tr><th>Structure</th><th>Role</th></tr>
+    <tr><td><strong>Capsule</strong></td><td>Extra slimy protective layer outside the wall in some bacteria; aids in resisting drying &amp; the host immune system (virulence).</td></tr>
+    <tr><td><strong>Fimbriae (pili)</strong></td><td>Tiny hair-like projections for <strong>attachment</strong> to surfaces/host cells; sex pili aid gene transfer (conjugation).</td></tr>
+    <tr><td><strong>Flagella</strong></td><td>Long whip-like structure for <strong>movement</strong>.</td></tr>
+    <tr><td><strong>Cilia</strong></td><td>Short, numerous hair-like projections for movement or moving fluids (in some eukaryotes, e.g. Paramecium, human respiratory tract).</td></tr>
+  </table>
+  <div class="callout warn"><strong>Distinguish:</strong> <em>flagella</em> = few &amp; long (locomotion); <em>cilia</em> = many &amp; short; <em>fimbriae/pili</em> = attachment; <em>capsule</em> = protection/virulence. A common statement-matching trap.</div>
+</section>
+
+<!-- ===== SECTION 5 ===== -->
+<section class="notes" id="organelles1">
+  <h2>5. Organelles I &mdash; Nucleus, ER, Ribosomes, Golgi</h2>
+  <h3>5.1 Nucleus &mdash; the control centre</h3>
+  <ul>
+    <li>Bounded by a double <strong>nuclear membrane</strong> with pores; contains <strong>chromatin</strong> (DNA + protein), which condenses into <strong>chromosomes</strong> during division, and a dense <strong>nucleolus</strong> (makes ribosomes).</li>
+    <li>Directs all cell activity and carries hereditary information &mdash; the "brain" of the cell.</li>
+  </ul>
+  <h3>5.2 Endoplasmic reticulum (ER)</h3>
+  <ul>
+    <li>A network of membrane tubes/sheets. <strong>Rough ER</strong> (with ribosomes) &mdash; makes/transports <strong>proteins</strong>; <strong>Smooth ER</strong> (no ribosomes) &mdash; makes <strong>lipids</strong> &amp; detoxifies.</li>
+  </ul>
+  <h3>5.3 Ribosomes &mdash; the protein factory</h3>
+  <ul>
+    <li>Tiny granules of RNA + protein; the site of <strong>protein synthesis</strong>. Found free in cytoplasm or on rough ER. Present in <em>both</em> prokaryotes (70S) and eukaryotes (80S).</li>
+  </ul>
+  <h3>5.4 Golgi apparatus &mdash; the packaging &amp; despatch unit</h3>
+  <ul>
+    <li>Stacked flattened sacs that <strong>modify, package and secrete</strong> proteins/lipids; also forms <strong>lysosomes</strong> and cell-wall material in plants. Discovered by Camillo Golgi.</li>
+  </ul>
+  <div class="callout info"><strong>Nicknames to memorise:</strong> nucleus = "control centre/brain"; ribosome = "protein factory"; Golgi = "packaging &amp; despatch (post office)"; rough ER = protein transport; smooth ER = lipids &amp; detox.</div>
+</section>
+
+<!-- ===== SECTION 6 ===== -->
+<section class="notes" id="organelles2">
+  <h2>6. Organelles II &mdash; Mitochondria, Plastids, Lysosomes, Vacuoles, Centrosome</h2>
+  <h3>6.1 Mitochondria &mdash; the powerhouse</h3>
+  <ul>
+    <li><strong>Double-membraned</strong>; inner membrane folded into <strong>cristae</strong>. Site of <strong>aerobic respiration</strong> &mdash; makes <strong>ATP</strong> (energy). Hence "powerhouse of the cell".</li>
+    <li>Has its <strong>own DNA &amp; 70S ribosomes</strong> (semi-autonomous) &mdash; evidence for the <em>endosymbiotic theory</em> (mitochondria &amp; chloroplasts were once free-living bacteria). Mitochondrial DNA is <strong>maternally inherited</strong>.</li>
+  </ul>
+  <h3>6.2 Plastids (plant cells only)</h3>
+  <table>
+    <tr><th>Plastid</th><th>Role</th></tr>
+    <tr><td><strong>Chloroplast</strong></td><td>Green (chlorophyll); site of <strong>photosynthesis</strong>. Double-membraned; own DNA &amp; ribosomes.</td></tr>
+    <tr><td><strong>Chromoplast</strong></td><td>Coloured (red/yellow/orange) &mdash; flowers, fruits, carrots.</td></tr>
+    <tr><td><strong>Leucoplast</strong></td><td>Colourless &mdash; stores starch/oil/protein.</td></tr>
+  </table>
+  <h3>6.3 Lysosomes, vacuoles &amp; centrosome</h3>
+  <ul>
+    <li><strong>Lysosome</strong> &mdash; "suicide bag": contains digestive enzymes; breaks down waste &amp; worn-out parts; self-destructs the cell when needed.</li>
+    <li><strong>Vacuole</strong> &mdash; fluid-filled sac; large &amp; central in plant cells (stores cell sap, gives turgidity); small in animals.</li>
+    <li><strong>Centrosome/centrioles</strong> &mdash; in animal cells; organise the spindle fibres during cell division.</li>
+    <li><strong>Peroxisome</strong> &mdash; breaks down fatty acids &amp; detoxifies (e.g. hydrogen peroxide).</li>
+  </ul>
+  <div class="callout warn"><strong>High-yield facts:</strong> mitochondria &amp; chloroplasts are <strong>double-membraned with their own DNA</strong>. Lysosome = "suicide bag" (Golgi-derived). Only plant cells have plastids &amp; a large central vacuole; centrosome is typically animal-only.</div>
+</section>
+
+<!-- ===== SECTION 7 ===== -->
+<section class="notes" id="nucleic">
+  <h2>7. Genetic Material &amp; Nucleic Acids</h2>
+  <p>The nucleus stores the cell's instructions as <strong>nucleic acids</strong>. (Heredity &amp; genetics are covered in depth in Topic 4; here we fix the <em>structural</em> basics that Prelims tests.)</p>
+  <table>
+    <tr><th>Feature</th><th>DNA</th><th>RNA</th></tr>
+    <tr><td><strong>Full form</strong></td><td>Deoxyribonucleic acid</td><td>Ribonucleic acid</td></tr>
+    <tr><td><strong>Strands</strong></td><td>Double helix (two strands)</td><td>Usually single strand</td></tr>
+    <tr><td><strong>Sugar</strong></td><td>Deoxyribose</td><td>Ribose</td></tr>
+    <tr><td><strong>Bases</strong></td><td>A, T, G, C</td><td>A, <strong>U</strong> (uracil), G, C</td></tr>
+    <tr><td><strong>Role</strong></td><td>Stores hereditary information</td><td>Carries out protein synthesis (mRNA, tRNA, rRNA)</td></tr>
+  </table>
+  <ul>
+    <li>A <strong>gene</strong> is a segment of DNA that codes for a protein/trait. DNA is packaged with proteins into <strong>chromosomes</strong>; humans have <strong>46 (23 pairs)</strong>.</li>
+    <li>The <strong>double helix</strong> was described by <strong>Watson &amp; Crick (1953)</strong> (using Rosalind Franklin's X-ray data). Base pairing: <strong>A&ndash;T, G&ndash;C</strong>.</li>
+    <li>The flow of information: <strong>DNA &rarr; RNA &rarr; Protein</strong> (the "central dogma").</li>
+  </ul>
+  <div class="callout info"><strong>Prelims lock:</strong> RNA has <strong>uracil (U)</strong> instead of thymine and <strong>ribose</strong> sugar; DNA is double-stranded with deoxyribose. Watson &amp; Crick (1953) = double-helix structure. These recur in statement questions.</div>
+</section>
+
+<!-- ===== SECTION 8 ===== -->
+<section class="notes" id="animaltissue">
+  <h2>8. Animal Tissues</h2>
+  <p>A <strong>tissue</strong> is a group of similar cells performing a common function. In animals there are <strong>four</strong> basic types.</p>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 680 220" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,sans-serif">
+      <text x="340" y="22" text-anchor="middle" font-size="14" font-weight="700" fill="#0d2035">Fig 2.2 &mdash; The Four Animal Tissues</text>
+      <rect x="285" y="36" width="110" height="30" rx="6" fill="#0d2035"/><text x="340" y="56" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">ANIMAL TISSUE</text>
+      <rect x="30" y="110" width="140" height="70" rx="8" fill="#e8f0f8" stroke="#1a3d5c" stroke-width="1.2"/>
+      <text x="100" y="132" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2035">EPITHELIAL</text>
+      <text x="100" y="150" text-anchor="middle" font-size="8" fill="#5a6266">covering &amp; lining</text>
+      <text x="100" y="164" text-anchor="middle" font-size="8" fill="#5a6266">skin, gut lining</text>
+      <rect x="195" y="110" width="140" height="70" rx="8" fill="#fff4e0" stroke="#c47820" stroke-width="1.2"/>
+      <text x="265" y="132" text-anchor="middle" font-size="11" font-weight="700" fill="#8a5417">CONNECTIVE</text>
+      <text x="265" y="150" text-anchor="middle" font-size="8" fill="#5a6266">binds &amp; supports</text>
+      <text x="265" y="164" text-anchor="middle" font-size="8" fill="#5a6266">blood, bone, cartilage</text>
+      <rect x="360" y="110" width="140" height="70" rx="8" fill="#e8f5ef" stroke="#1a7a5a" stroke-width="1.2"/>
+      <text x="430" y="132" text-anchor="middle" font-size="11" font-weight="700" fill="#0a6644">MUSCULAR</text>
+      <text x="430" y="150" text-anchor="middle" font-size="8" fill="#5a6266">movement</text>
+      <text x="430" y="164" text-anchor="middle" font-size="8" fill="#5a6266">skeletal, cardiac, smooth</text>
+      <rect x="525" y="110" width="140" height="70" rx="8" fill="#e8f0f8" stroke="#1a3d5c" stroke-width="1.2"/>
+      <text x="595" y="132" text-anchor="middle" font-size="11" font-weight="700" fill="#0d2035">NERVOUS</text>
+      <text x="595" y="150" text-anchor="middle" font-size="8" fill="#5a6266">control &amp; signalling</text>
+      <text x="595" y="164" text-anchor="middle" font-size="8" fill="#5a6266">neurons</text>
+      <path d="M320,66 L100,110" stroke="#5a6266" stroke-width="1"/>
+      <path d="M330,66 L265,110" stroke="#5a6266" stroke-width="1"/>
+      <path d="M350,66 L430,110" stroke="#5a6266" stroke-width="1"/>
+      <path d="M360,66 L595,110" stroke="#5a6266" stroke-width="1"/>
+    </svg>
+    <div class="svg-caption">Fig 2.2 &mdash; Epithelial (covering), Connective (support), Muscular (movement), Nervous (control).</div>
+  </div>
+
+  <table>
+    <tr><th>Tissue</th><th>Function</th><th>Examples</th></tr>
+    <tr><td><strong>Epithelial</strong></td><td>Covering &amp; lining of body surfaces, cavities, organs; protection, absorption, secretion.</td><td>Skin, lining of mouth, gut &amp; blood vessels; glands.</td></tr>
+    <tr><td><strong>Connective</strong></td><td>Binds, supports &amp; connects; has a <strong>matrix</strong> between cells.</td><td><strong>Blood</strong> (fluid matrix), bone, cartilage, tendon, ligament, adipose (fat).</td></tr>
+    <tr><td><strong>Muscular</strong></td><td>Contraction &rarr; movement.</td><td><strong>Skeletal</strong> (voluntary, striated), <strong>cardiac</strong> (heart, involuntary, striated), <strong>smooth</strong> (involuntary, unstriated).</td></tr>
+    <tr><td><strong>Nervous</strong></td><td>Receives &amp; transmits impulses; control &amp; coordination.</td><td><strong>Neurons</strong> + supporting glial cells.</td></tr>
+  </table>
+  <div class="callout warn"><strong>High-yield:</strong> <strong>blood is a connective tissue</strong> (fluid matrix = plasma) &mdash; a favourite trap. Cardiac muscle is <em>striated but involuntary</em>; skeletal is striated &amp; voluntary; smooth is unstriated &amp; involuntary.</div>
+</section>
+
+<!-- ===== SECTION 9 ===== -->
+<section class="notes" id="planttissue">
+  <h2>9. Plant Tissues</h2>
+  <p>Plant tissues are broadly <strong>meristematic</strong> (dividing) or <strong>permanent</strong> (differentiated).</p>
+  <table>
+    <tr><th>Type</th><th>Sub-type / feature</th><th>Role</th></tr>
+    <tr><td rowspan="2"><strong>Meristematic</strong> (actively dividing)</td><td><strong>Apical</strong> (tips of root/shoot)</td><td>Increase in <strong>length</strong> (primary growth).</td></tr>
+    <tr><td><strong>Lateral</strong> (cambium) / Intercalary</td><td>Increase in <strong>girth</strong>; intercalary (at nodes) regrows grass.</td></tr>
+    <tr><td rowspan="3"><strong>Permanent &mdash; Simple</strong> (one cell type)</td><td><strong>Parenchyma</strong></td><td>Packing, storage, photosynthesis (chlorenchyma), buoyancy (aerenchyma).</td></tr>
+    <tr><td><strong>Collenchyma</strong></td><td>Flexible mechanical support (young stems, leaf stalks).</td></tr>
+    <tr><td><strong>Sclerenchyma</strong></td><td>Hard, dead cells &mdash; rigidity (husk, nut shell, fibres).</td></tr>
+    <tr><td rowspan="2"><strong>Permanent &mdash; Complex</strong> (vascular)</td><td><strong>Xylem</strong></td><td>Conducts <strong>water &amp; minerals</strong> upward (roots &rarr; leaves); also support. Mostly dead cells.</td></tr>
+    <tr><td><strong>Phloem</strong></td><td>Conducts <strong>food</strong> (sugars) both ways (translocation). Living cells.</td></tr>
+  </table>
+  <div class="callout info"><strong>Prelims lock:</strong> <strong>xylem = water (upward, dead cells)</strong>; <strong>phloem = food (both directions, living)</strong>. Meristem = growth zone. Sclerenchyma gives hardness (coconut husk). Cork (bark) is protective dead tissue.</div>
+  <div class="callout warn"><strong>Mains linkage (GS-III):</strong> tissue science underpins <em>tissue culture &amp; micropropagation</em> (Topic 10 biotech), <em>stem-cell &amp; regenerative medicine</em> and <em>lab-grown meat</em> &mdash; the fundamentals here feed directly into applied biotech questions.</div>
+</section>
+
+<!-- ===== SECTION 10: CURRENT AFFAIRS ===== -->
+<section class="notes" id="currentaffairs">
+  <h2>10. Current Affairs Link (2024&ndash;2026)</h2>
+  <p>Cell biology is static, but modern medicine and biotech keep giving it news hooks. Verify the latest before the exam. <span class="update-tag">check for latest update or data</span></p>
+  <div class="callout update"><strong>Stem cells &amp; regenerative medicine:</strong> stem cells (unspecialised cells that can become any tissue) drive therapy research &mdash; grounded in the cell &amp; tissue basics here. India regulates stem-cell therapy via ICMR-DBT guidelines. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout update"><strong>Mitochondrial biology:</strong> "three-parent baby" mitochondrial-replacement techniques and mitochondrial-DNA research keep the "powerhouse + own DNA + maternal inheritance" facts topical. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout warn"><strong>Lab-grown tissue &amp; cultured meat:</strong> tissue engineering and cell-cultured meat scale up globally &mdash; direct applications of animal-tissue and cell-culture fundamentals. <span class="update-tag">check for latest update or data</span></div>
+  <table>
+    <tr><th>Recent theme</th><th>Fundamental it tests</th><th>Why it matters for UPSC</th></tr>
+    <tr><td>Stem-cell therapy</td><td>Cell differentiation; tissues</td><td>GS-III health &amp; ethics; regulation.</td></tr>
+    <tr><td>CAR-T cell therapy (India's first, indigenous)</td><td>Cells &amp; immunity</td><td>Links to Topics 5 &amp; 10; a strong example.</td></tr>
+    <tr><td>Cultured / lab-grown meat</td><td>Animal tissue &amp; cell culture</td><td>GS-III food-tech &amp; sustainability.</td></tr>
+    <tr><td>Mitochondrial-replacement</td><td>Mitochondria &amp; mtDNA</td><td>Prelims fact + GS-IV ethics angle.</td></tr>
+  </table>
+  <ul>
+    <li><strong>Recurring exam hooks:</strong> powerhouse of the cell &middot; suicide bag &middot; prokaryote vs eukaryote &middot; plant vs animal cell &middot; is blood a tissue? &middot; xylem vs phloem &middot; organelle with its own DNA.</li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 11: PRELIMS ===== -->
+<section class="notes" id="prelims-pyq">
+  <h2>11. Prelims PYQs</h2>
+  <p style="font-size:13px;color:var(--muted)"><em>Objective questions anchored to genuinely tested UPSC themes on the cell &amp; tissues. Each carries a worked rationale.</em></p>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Organelles</div>
+    <p class="q-stem"><strong>Q:</strong> The "powerhouse of the cell", the site of aerobic respiration and ATP production, is the &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> ribosome</li>
+      <li class="correct"><span class="opt-key">(b)</span> mitochondrion</li>
+      <li><span class="opt-key">(c)</span> Golgi apparatus</li>
+      <li><span class="opt-key">(d)</span> lysosome</li>
+    </ul>
+    <p class="ans">Answer: (b) Mitochondrion &mdash; double-membraned, has its own DNA, and produces ATP by aerobic respiration.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Prokaryote</div>
+    <p class="q-stem"><strong>Q:</strong> Which of the following is characteristic of a prokaryotic cell?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Membrane-bound nucleus</li>
+      <li><span class="opt-key">(b)</span> Presence of mitochondria</li>
+      <li class="correct"><span class="opt-key">(c)</span> DNA lies free as a nucleoid</li>
+      <li><span class="opt-key">(d)</span> 80S ribosomes</li>
+    </ul>
+    <p class="ans">Answer: (c) In prokaryotes DNA is free (nucleoid) with no nuclear membrane; they lack mitochondria and have 70S ribosomes.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Tissues</div>
+    <p class="q-stem"><strong>Q:</strong> Which of the following is a connective tissue?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Skin epithelium</li>
+      <li class="correct"><span class="opt-key">(b)</span> Blood</li>
+      <li><span class="opt-key">(c)</span> Neuron</li>
+      <li><span class="opt-key">(d)</span> Smooth muscle</li>
+    </ul>
+    <p class="ans">Answer: (b) Blood is a connective tissue with a fluid matrix (plasma). Bone and cartilage are also connective tissues.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Plant cell</div>
+    <p class="q-stem"><strong>Q:</strong> Which structures are present in a plant cell but absent in a typical animal cell?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Nucleus and mitochondria</li>
+      <li class="correct"><span class="opt-key">(b)</span> Cell wall and chloroplast</li>
+      <li><span class="opt-key">(c)</span> Ribosomes and Golgi</li>
+      <li><span class="opt-key">(d)</span> Cell membrane and ER</li>
+    </ul>
+    <p class="ans">Answer: (b) Cell wall (cellulose) and chloroplast/plastids are plant-specific; the others are common to both.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Cell theory</div>
+    <p class="q-stem"><strong>Q:</strong> The dictum "Omnis cellula e cellula" (every cell arises from a pre-existing cell) was given by &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Robert Hooke</li>
+      <li><span class="opt-key">(b)</span> Schleiden</li>
+      <li class="correct"><span class="opt-key">(c)</span> Rudolf Virchow</li>
+      <li><span class="opt-key">(d)</span> Leeuwenhoek</li>
+    </ul>
+    <p class="ans">Answer: (c) Virchow (1855). Hooke named the cell; Schleiden &amp; Schwann framed the cell theory; Virchow completed it.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Vascular tissue</div>
+    <p class="q-stem"><strong>Q:</strong> In plants, the upward conduction of water and minerals from roots to leaves is carried out by &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> xylem</li>
+      <li><span class="opt-key">(b)</span> phloem</li>
+      <li><span class="opt-key">(c)</span> parenchyma</li>
+      <li><span class="opt-key">(d)</span> collenchyma</li>
+    </ul>
+    <p class="ans">Answer: (a) Xylem (mostly dead cells) conducts water upward; phloem translocates food (sugars) in both directions.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Organelle DNA</div>
+    <p class="q-stem"><strong>Q:</strong> Which two organelles possess their own DNA and ribosomes?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Golgi apparatus and lysosome</li>
+      <li><span class="opt-key">(b)</span> Nucleus and ribosome</li>
+      <li class="correct"><span class="opt-key">(c)</span> Mitochondrion and chloroplast</li>
+      <li><span class="opt-key">(d)</span> Vacuole and centrosome</li>
+    </ul>
+    <p class="ans">Answer: (c) Mitochondria and chloroplasts are semi-autonomous (own DNA + 70S ribosomes) &mdash; the basis of the endosymbiotic theory.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Nucleic acid</div>
+    <p class="q-stem"><strong>Q:</strong> Which nitrogenous base is present in RNA but not in DNA?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Thymine</li>
+      <li><span class="opt-key">(b)</span> Adenine</li>
+      <li class="correct"><span class="opt-key">(c)</span> Uracil</li>
+      <li><span class="opt-key">(d)</span> Guanine</li>
+    </ul>
+    <p class="ans">Answer: (c) RNA has uracil (U) in place of thymine (T); RNA sugar is ribose, DNA sugar is deoxyribose.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> organelle nicknames (powerhouse / suicide bag / protein factory) &middot; prokaryote vs eukaryote statements &middot; plant vs animal cell &middot; mitochondria &amp; chloroplast own DNA &middot; blood as connective tissue &middot; xylem vs phloem &middot; DNA vs RNA (uracil, ribose, strands) &middot; capsule/fimbriae/flagella/cilia roles &middot; cell-theory attributions. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 12: MAINS ===== -->
+<section class="notes" id="mains-pyq">
+  <h2>12. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>Cell fundamentals anchor applied GS-III questions on health, biotech and food-tech. The frameworks below show how to deploy them analytically.</em></p>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Stem cells hold great promise for regenerative medicine but raise scientific and ethical concerns. Discuss.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction &mdash; define:</strong> Stem cells are unspecialised cells able to divide and differentiate into specialised cell types &mdash; the biological basis of tissue repair.</li>
+        <li><strong>Types &amp; promise:</strong>
+          <ul>
+            <li><strong>Embryonic</strong> (pluripotent) &middot; <strong>adult/tissue</strong> (multipotent) &middot; <strong>induced pluripotent (iPSCs)</strong> &mdash; reprogrammed adult cells.</li>
+            <li>Applications: repair of damaged tissue (spinal cord, cardiac), bone-marrow transplants, drug testing, and organ regeneration.</li>
+          </ul>
+        </li>
+        <li><strong>Concerns:</strong> ethical use of embryos; risk of tumour formation (teratoma); immune rejection; unregulated/unproven "stem-cell clinics" exploiting patients.</li>
+        <li><strong>India's framework:</strong> ICMR-DBT National Guidelines for Stem Cell Research; only bone-marrow transplant is an approved therapy &mdash; the rest is research.</li>
+        <li><strong>Way forward:</strong> favour ethically-sound iPSCs, strict clinical-trial oversight, public awareness against quackery, and indigenous R&amp;D.</li>
+        <li><strong>Conclusion:</strong> harnessing stem cells needs the cell fundamentals plus firm ethical &amp; regulatory guardrails so promise is not lost to malpractice.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> "The endosymbiotic origin of mitochondria and chloroplasts is one of the most compelling ideas in cell biology." Explain, and note its relevance.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> The endosymbiotic theory holds that mitochondria &amp; chloroplasts were once free-living prokaryotes engulfed by an ancestral eukaryotic cell, becoming permanent organelles.</li>
+        <li><strong>Evidence:</strong>
+          <ul>
+            <li>Both have a <strong>double membrane</strong>, their <strong>own circular DNA</strong>, and <strong>70S (bacterial-type) ribosomes</strong>.</li>
+            <li>They divide independently (binary fission) and their DNA resembles bacterial DNA.</li>
+          </ul>
+        </li>
+        <li><strong>Significance:</strong> explains eukaryotic complexity &amp; energy capacity; underpins <em>maternal inheritance</em> of mtDNA (ancestry, forensics), mitochondrial-disease research, and mitochondrial-replacement therapy.</li>
+        <li><strong>Conclusion:</strong> a fundamental that links evolution (Topic 1) to modern medicine and biotechnology &mdash; a good cross-cutting example.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Cultured (lab-grown) meat is proposed as a sustainable protein source. Explain its cell-biology basis and its significance for India.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Cultured meat is real animal muscle tissue grown from a small sample of animal <strong>cells</strong> in a bioreactor, without rearing/slaughtering animals.</li>
+        <li><strong>Cell-biology basis:</strong> animal (muscle) <strong>stem cells</strong> are multiplied in a nutrient medium and differentiated into <strong>muscular tissue</strong> on a scaffold &mdash; a direct application of cell culture &amp; tissue science.</li>
+        <li><strong>Significance for India:</strong> lower land, water &amp; GHG footprint; food security &amp; protein for a large population; animal-welfare gains; new agri-biotech industry.</li>
+        <li><strong>Challenges:</strong> high cost, scale-up, regulation (FSSAI), consumer acceptance.</li>
+        <li><strong>Conclusion:</strong> a promising but nascent technology resting squarely on cell &amp; tissue fundamentals.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Explain how the structure of the cell membrane enables it to regulate the internal environment of the cell.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> The plasma membrane is the living boundary that separates the cell's interior from its surroundings and controls exchange &mdash; central to homeostasis.</li>
+        <li><strong>Structure (fluid mosaic model):</strong>
+          <ul>
+            <li>A <strong>phospholipid bilayer</strong> (hydrophilic heads out, hydrophobic tails in) with embedded &amp; mobile <strong>proteins</strong>, cholesterol and glycoproteins.</li>
+            <li>Fluidity lets components move; proteins act as channels, carriers, pumps &amp; receptors.</li>
+          </ul>
+        </li>
+        <li><strong>How it regulates:</strong> <em>selective permeability</em> &mdash; small/non-polar molecules diffuse freely; water by osmosis; ions &amp; large molecules via specific channels/carriers; <strong>active transport</strong> moves substances against gradients using ATP; receptors handle signalling.</li>
+        <li><strong>Significance:</strong> maintains ion balance, nutrient uptake, waste removal &amp; internal stability; its selectivity is also a target for drugs &amp; toxins.</li>
+        <li><strong>Conclusion:</strong> structure fits function &mdash; the fluid-mosaic design makes precise, selective regulation possible.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> stem cells &amp; regenerative medicine ethics &middot; endosymbiotic theory &amp; mitochondrial medicine &middot; cultured meat &amp; tissue engineering &middot; cell membrane &amp; drug targeting &middot; cell as the base of biotechnology. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; Cell &amp; Tissues</h3>
+    <div class="grid-2">
+      <div>
+        <strong>Cell &amp; theory:</strong>
+        <ul>
+          <li>Cell = basic structural &amp; functional unit of life</li>
+          <li>Hooke named cell (cork); Leeuwenhoek saw living cells; Brown found nucleus</li>
+          <li>Cell theory = <strong>Schleiden &amp; Schwann</strong>; Virchow: cells from pre-existing cells</li>
+          <li>Largest cell = ostrich egg; longest = neuron; smallest = mycoplasma</li>
+        </ul>
+        <strong>Prokaryote vs eukaryote:</strong>
+        <ul>
+          <li>Prokaryote: no nuclear membrane, no membrane-bound organelles, 70S ribosomes, DNA = nucleoid</li>
+          <li>Eukaryote: true nucleus + organelles, 80S ribosomes</li>
+        </ul>
+        <strong>Plant vs animal cell:</strong>
+        <ul>
+          <li>Plant only: cell wall (cellulose), plastids, large central vacuole; store starch</li>
+          <li>Animal only: centrosome; store glycogen</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Organelles (nicknames):</strong>
+        <ul>
+          <li>Mitochondria = powerhouse (double membrane, own DNA, ATP)</li>
+          <li>Chloroplast = photosynthesis (own DNA); Ribosome = protein factory</li>
+          <li>Golgi = packaging/post office; Lysosome = suicide bag</li>
+          <li>Rough ER = protein; Smooth ER = lipids &amp; detox; Nucleus = control centre</li>
+          <li>Surface: capsule = protection, fimbriae = attachment, flagella = movement, cilia = short &amp; many</li>
+        </ul>
+        <strong>Nucleic acids &amp; tissues:</strong>
+        <ul>
+          <li>DNA: double, deoxyribose, A-T-G-C; RNA: single, ribose, <strong>uracil</strong>; Watson &amp; Crick 1953</li>
+          <li>Animal tissues: epithelial, connective (<strong>blood</strong>!), muscular, nervous</li>
+          <li>Muscle: skeletal (voluntary striated), cardiac (involuntary striated), smooth (involuntary unstriated)</li>
+          <li>Plant: meristematic (growth); xylem = water up (dead), phloem = food both ways (living)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes:</strong> organelle nicknames &amp; functions &middot; prokaryote vs eukaryote &middot; plant vs animal cell &middot; mitochondria/chloroplast own DNA &middot; blood = connective tissue &middot; xylem vs phloem &middot; DNA vs RNA &middot; cell-theory scientists.</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== SIDEBAR ===== -->
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Quick Reference &mdash; Organelle Functions</h4>
+    <table>
+      <tr><th>Organelle</th><th>Role</th></tr>
+      <tr><td>Nucleus</td><td>Control centre</td></tr>
+      <tr><td>Mitochondria</td><td>Powerhouse (ATP)</td></tr>
+      <tr><td>Chloroplast</td><td>Photosynthesis</td></tr>
+      <tr><td>Ribosome</td><td>Protein synthesis</td></tr>
+      <tr><td>Golgi</td><td>Packaging</td></tr>
+      <tr><td>Lysosome</td><td>Suicide bag</td></tr>
+      <tr><td>ER (rough/smooth)</td><td>Protein / lipid</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Prokaryote vs Eukaryote</h4>
+    <table>
+      <tr><th>Feature</th><th>Pro / Eu</th></tr>
+      <tr><td>Nucleus</td><td>No / Yes</td></tr>
+      <tr><td>Organelles</td><td>No / Yes</td></tr>
+      <tr><td>Ribosome</td><td>70S / 80S</td></tr>
+      <tr><td>Example</td><td>Bacteria / Plant, animal</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Key Scientists</h4>
+    <table>
+      <tr><th>Name</th><th>Contribution</th></tr>
+      <tr><td>Hooke</td><td>Named cell (1665)</td></tr>
+      <tr><td>Leeuwenhoek</td><td>Living cells</td></tr>
+      <tr><td>Brown</td><td>Nucleus</td></tr>
+      <tr><td>Schleiden/Schwann</td><td>Cell theory</td></tr>
+      <tr><td>Virchow</td><td>Cell from cell</td></tr>
+      <tr><td>Watson &amp; Crick</td><td>DNA helix (1953)</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:92%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains GS-III</span><span class="fill"><span style="width:55%"></span></span></div>
+    <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:96%"></span></span></div>
+    <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:50%"></span></span></div>
+    <p style="margin-top:8px;font-size:11px;color:var(--muted);">Dense static scoring area &mdash; one diagram, many facts.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Cell &amp; Tissues at a Glance</h4>
+    <ul>
+      <li>Cell theory &amp; discoverers</li>
+      <li>Prokaryote vs eukaryote</li>
+      <li>Plant vs animal cell</li>
+      <li>Every organelle + nickname</li>
+      <li>DNA vs RNA basics</li>
+      <li>4 animal tissues</li>
+      <li>Plant tissues + xylem/phloem</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">Powerhouse = mito</span>
+    <span class="tag">Suicide bag = lysosome</span>
+    <span class="tag green">70S vs 80S</span>
+    <span class="tag">Nucleoid</span>
+    <span class="tag orange">Blood = connective</span>
+    <span class="tag">Xylem up, phloem both</span>
+    <span class="tag green">Own DNA: mito+chloro</span>
+    <span class="tag">RNA = uracil</span>
+    <span class="tag orange">Cellulose vs chitin</span>
+    <span class="tag">Watson-Crick 1953</span>
+  </div>
+
+  <div class="widget">
+    <h4>Data Sources to Bookmark</h4>
+    <ul>
+      <li><a href="https://dbtindia.gov.in" target="_blank" rel="noopener">Dept of Biotechnology</a></li>
+      <li><a href="https://www.icmr.gov.in" target="_blank" rel="noopener">ICMR</a> &mdash; stem-cell guidelines</li>
+      <li><a href="https://www.nccs.res.in" target="_blank" rel="noopener">NCCS Pune</a> &mdash; cell science</li>
+      <li><a href="https://pib.gov.in" target="_blank" rel="noopener">PIB</a></li>
+    </ul>
+    <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/science-technology/biology-life-processes-and-classification">S&amp;T T1: Life &amp; Classification</a></li>
+      <li><a href="/science-technology/human-physiology">S&amp;T T3: Human Physiology</a></li>
+      <li><a href="/science-technology/reproduction-and-genetics">S&amp;T T4: Reproduction &amp; Genetics</a></li>
+      <li><a href="/science-technology/biotechnology">S&amp;T T10: Biotechnology</a></li>
+      <li><a href="/science-technology">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding:0;margin:0;">
+      <li style="margin:4px 0;"><a href="#whatis" style="font-size:12px;">Cell &amp; Cell Theory</a></li>
+      <li style="margin:4px 0;"><a href="#protype" style="font-size:12px;">Prokaryote vs Eukaryote</a></li>
+      <li style="margin:4px 0;"><a href="#plantanimal" style="font-size:12px;">Plant vs Animal Cell</a></li>
+      <li style="margin:4px 0;"><a href="#boundary" style="font-size:12px;">Membrane &amp; Wall</a></li>
+      <li style="margin:4px 0;"><a href="#organelles1" style="font-size:12px;">Organelles I</a></li>
+      <li style="margin:4px 0;"><a href="#organelles2" style="font-size:12px;">Organelles II</a></li>
+      <li style="margin:4px 0;"><a href="#nucleic" style="font-size:12px;">Nucleic Acids</a></li>
+      <li style="margin:4px 0;"><a href="#animaltissue" style="font-size:12px;">Animal Tissues</a></li>
+      <li style="margin:4px 0;"><a href="#planttissue" style="font-size:12px;">Plant Tissues</a></li>
+      <li style="margin:4px 0;"><a href="#currentaffairs" style="font-size:12px;">Current Affairs</a></li>
+      <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

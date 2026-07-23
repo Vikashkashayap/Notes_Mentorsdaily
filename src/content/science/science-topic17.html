@@ -1,0 +1,705 @@
+<!-- science-topic17 — auto-imported from scitech-topic17-research-schemes-stip-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 17: India's S&amp;T Ecosystem &mdash; Institutions, Policy, Schemes &amp; Innovation</h1>
+  <p class="sub">This file is a complete GS-III account of how India <em>organises</em> science. It covers the <strong>R&amp;D institutions</strong> (CSIR, DST, DBT, ICMR, ICAR, DRDO, ISRO, DAE), <strong>S&amp;T governance</strong> &amp; the Principal Scientific Adviser, the <strong>Science, Technology &amp; Innovation Policy (STIP)</strong>, key <strong>schemes &amp; funding</strong> (ANRF/NRF, SERB, INSPIRE, awards), the <strong>innovation ecosystem</strong> (Startup India, Atal Innovation Mission, incubators), <strong>intellectual property rights &amp; patents</strong>, <strong>R&amp;D spending &amp; metrics</strong> (GERD, Global Innovation Index) and <strong>scientific temper</strong> (Article 51A) &mdash; with tables and real dated PYQs with full model answers. (Specific technologies are in Topics 8&ndash;16.)</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Institutions &middot; STIP</span>
+    <span class="pill">~35 min read</span>
+    <span class="pill">ANRF &amp; Innovation</span>
+    <span class="pill">IPR &amp; GERD</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#institutions">R&amp;D Institutions</a></li>
+    <li><span class="num">2.</span><a href="#governance">S&amp;T Governance &amp; PSA</a></li>
+    <li><span class="num">3.</span><a href="#stip">STIP &amp; S&amp;T Policy</a></li>
+    <li><span class="num">4.</span><a href="#anrf">ANRF &amp; Research Funding</a></li>
+    <li><span class="num">5.</span><a href="#schemes">Key Schemes &amp; Talent</a></li>
+    <li><span class="num">6.</span><a href="#innovation">Innovation &amp; Start-up Ecosystem</a></li>
+    <li><span class="num">7.</span><a href="#ipr">Intellectual Property Rights</a></li>
+    <li><span class="num">8.</span><a href="#metrics">R&amp;D Spending &amp; Metrics</a></li>
+    <li><span class="num">9.</span><a href="#temper">Scientific Temper &amp; Challenges</a></li>
+    <li><span class="num">10.</span><a href="#currentaffairs">Current Affairs Link</a></li>
+    <li><span class="num">11.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><span class="num">12.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Tests the S&amp;T Ecosystem</h3>
+  <p>This is an <strong>institutions- &amp; policy-heavy</strong> area that ties science to governance &amp; the economy. Sort your prep into three question-types:</p>
+  <ul>
+    <li><strong>Definitional / static</strong> &mdash; "which ministry runs CSIR?", "what is GERD?", "what is a patent?". Recall of bodies, schemes &amp; terms.</li>
+    <li><strong>Statement-elimination</strong> &mdash; matching institutions to their domains, scheme details, IPR facts where one detail decides the answer.</li>
+    <li><strong>Applied / current</strong> &mdash; a new policy or body in the news (ANRF, STIP, Global Innovation Index rank) linked to a fundamental &mdash; the strong GS-III innovation-economy bridge.</li>
+  </ul>
+  <p><strong>Highest-frequency themes:</strong> CSIR/DST/DBT/ICMR/ICAR &amp; their ministries &middot; PSA &middot; STIP &middot; ANRF &amp; SERB &middot; INSPIRE &amp; awards &middot; Startup India &amp; AIM &middot; IPR &amp; patents &middot; GERD &amp; Global Innovation Index &middot; scientific temper.</p>
+</div>
+
+<!-- ===== SECTION 1 ===== -->
+<section class="notes" id="institutions">
+  <h2>1. India's R&amp;D Institutions</h2>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 470 180" width="470" height="180" role="img" aria-label="India's major science agencies grouped by their parent ministry or department">
+      <rect x="0" y="0" width="470" height="180" fill="#ffffff"/>
+      <g font-family="sans-serif" font-size="9" text-anchor="middle">
+        <rect x="150" y="12" width="170" height="26" rx="4" fill="#1a3d5c"/><text x="235" y="29" fill="#fff" font-size="10">Union Government (S&amp;T)</text>
+        <line x1="235" y1="38" x2="60" y2="70" stroke="#999"/><line x1="235" y1="38" x2="160" y2="70" stroke="#999"/><line x1="235" y1="38" x2="310" y2="70" stroke="#999"/><line x1="235" y1="38" x2="410" y2="70" stroke="#999"/>
+        <rect x="15" y="72" width="90" height="24" rx="4" fill="#e8f0f8" stroke="#1a3d5c"/><text x="60" y="88">DST</text>
+        <rect x="120" y="72" width="90" height="24" rx="4" fill="#e8f0f8" stroke="#1a3d5c"/><text x="165" y="88">DBT</text>
+        <rect x="265" y="72" width="90" height="24" rx="4" fill="#f7e9d8" stroke="#c47820"/><text x="310" y="88">CSIR (MoST)</text>
+        <rect x="370" y="72" width="90" height="24" rx="4" fill="#f7e9d8" stroke="#c47820"/><text x="415" y="88">ICMR (Health)</text>
+        <rect x="60" y="120" width="100" height="24" rx="4" fill="#eef6ee" stroke="#2e7d32"/><text x="110" y="136">ICAR (Agri)</text>
+        <rect x="190" y="120" width="90" height="24" rx="4" fill="#eef6ee" stroke="#2e7d32"/><text x="235" y="136">DRDO (MoD)</text>
+        <rect x="310" y="120" width="120" height="24" rx="4" fill="#eef6ee" stroke="#2e7d32"/><text x="370" y="136">ISRO/DAE (PMO)</text>
+        <text x="235" y="168" font-size="8" fill="#555">Each agency leads a domain: science, biotech, industry, health, agriculture, defence, space, atomic energy.</text>
+      </g>
+    </svg>
+    <div class="svg-caption">Fig 17.1 &mdash; India's science is run through domain agencies under different ministries: <strong>DST/DBT/CSIR</strong> (Ministry of Science &amp; Technology), <strong>ICMR</strong> (Health), <strong>ICAR</strong> (Agriculture), <strong>DRDO</strong> (Defence), <strong>ISRO/DAE</strong> (under the PMO).</div>
+  </div>
+  <table>
+    <tr><th>Body</th><th>Domain</th><th>Ministry/Dept</th></tr>
+    <tr><td>CSIR</td><td>Industrial/scientific research (38+ labs)</td><td>Min. of Science &amp; Technology</td></tr>
+    <tr><td>DST</td><td>Science promotion, funding</td><td>Min. of Science &amp; Technology</td></tr>
+    <tr><td>DBT</td><td>Biotechnology</td><td>Min. of Science &amp; Technology</td></tr>
+    <tr><td>ICMR</td><td>Medical research</td><td>Min. of Health</td></tr>
+    <tr><td>ICAR</td><td>Agricultural research</td><td>Min. of Agriculture</td></tr>
+    <tr><td>DRDO</td><td>Defence research</td><td>Min. of Defence</td></tr>
+    <tr><td>ISRO / DAE</td><td>Space / atomic energy</td><td>Under the PMO</td></tr>
+  </table>
+  <div class="callout info"><strong>Prelims facts:</strong> CSIR, DST &amp; DBT are under the Ministry of Science &amp; Technology; ICMR under Health; ICAR under Agriculture; DRDO under Defence; <strong>ISRO (Dept of Space) &amp; DAE (atomic energy)</strong> report to the PMO. Match body to domain &amp; ministry &mdash; a classic Prelims pairing.</div>
+</section>
+
+<!-- ===== SECTION 2 ===== -->
+<section class="notes" id="governance">
+  <h2>2. S&amp;T Governance &amp; the PSA</h2>
+  <ul>
+    <li>The <strong>Principal Scientific Adviser (PSA)</strong> to the Government of India advises the PM &amp; Cabinet on science &amp; technology and coordinates across agencies.</li>
+    <li>The <strong>PM-STIAC (Science, Technology &amp; Innovation Advisory Council)</strong>, chaired by the PSA, drives national science missions.</li>
+    <li>The <strong>Ministry of Science &amp; Technology</strong> (with DST, DBT, DSIR/CSIR) &amp; sectoral ministries jointly run India's science apparatus.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> the PSA advises the government on S&amp;T &amp; chairs PM-STIAC; the Ministry of Science &amp; Technology houses DST, DBT &amp; DSIR (CSIR). Governance is spread across many ministries &mdash; hence coordination is a recurring challenge.</div>
+</section>
+
+<!-- ===== SECTION 3 ===== -->
+<section class="notes" id="stip">
+  <h2>3. STIP &amp; S&amp;T Policy Evolution</h2>
+  <ul>
+    <li>India's policy journey: Scientific Policy Resolution (1958) &rarr; Technology Policy Statement (1983) &rarr; S&amp;T Policy (2003) &rarr; STI Policy (2013) &rarr; the draft <strong>Science, Technology &amp; Innovation Policy (STIP)</strong>.</li>
+    <li><strong>STIP goals:</strong> make India a global S&amp;T leader, double the number of researchers &amp; GERD, promote <strong>open science</strong>, decentralised &amp; inclusive research, self-reliance &amp; a strong innovation culture.</li>
+    <li>Themes: research funding reform (ANRF), inclusivity &amp; diversity, technology self-reliance, science communication &amp; an "One Nation, One Subscription" for journals.</li>
+  </ul>
+  <div class="callout warn"><strong>GS-III hook:</strong> STIP aims to reposition India from a technology adopter to a technology leader &mdash; through more funding, more researchers, open &amp; inclusive science &amp; self-reliance. Knowing the policy lineage (1958&rarr;2013&rarr;STIP) helps in Mains framing.</div>
+</section>
+
+<!-- ===== SECTION 4 ===== -->
+<section class="notes" id="anrf">
+  <h2>4. ANRF &amp; Research Funding</h2>
+  <ul>
+    <li>The <strong>Anusandhan National Research Foundation (ANRF)</strong> &mdash; set up by the ANRF Act, 2023 &mdash; is the apex body to <strong>seed, grow &amp; promote research</strong> across universities &amp; institutions; it subsumed the earlier SERB.</li>
+    <li>ANRF emphasises <strong>private-sector funding</strong> (most of its corpus is to come from industry/philanthropy) to raise India's low R&amp;D spend &amp; back research in state/private universities.</li>
+    <li><strong>SERB (Science &amp; Engineering Research Board)</strong> earlier funded competitive research grants; ANRF now anchors this role.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> the ANRF (ANRF Act, 2023) is the apex research-funding body; it <strong>replaced/subsumed SERB</strong>; a key feature is leveraging <strong>private &amp; philanthropic funding</strong> to boost R&amp;D beyond government labs, especially in universities.</div>
+</section>
+
+<!-- ===== SECTION 5 ===== -->
+<section class="notes" id="schemes">
+  <h2>5. Key Schemes, Talent &amp; Awards</h2>
+  <ul>
+    <li><strong>INSPIRE</strong> (Innovation in Science Pursuit for Inspired Research) &mdash; scholarships &amp; fellowships to attract youth to science.</li>
+    <li><strong>Awards:</strong> the <strong>Rashtriya Vigyan Puraskar (RVP)</strong> now consolidates top science awards (which replaced the Shanti Swarup Bhatnagar-era scheme structure); other fellowships include Ramanujan &amp; JC Bose.</li>
+    <li><strong>Missions &amp; programmes:</strong> National Supercomputing, Quantum &amp; Semiconductor Missions (Topics 12&ndash;14), the National Mission on Interdisciplinary Cyber-Physical Systems (NM-ICPS), Deep Ocean Mission &amp; National Geospatial Policy.</li>
+    <li><strong>Talent &amp; skilling:</strong> schemes for women in science (e.g. WISE/GATI), returning scientists (VAJRA) &amp; research fellowships.</li>
+  </ul>
+  <div class="callout warn"><strong>GS-III hook:</strong> India's schemes span the pipeline &mdash; INSPIRE (attracting youth) &rarr; fellowships (retaining talent) &rarr; missions (frontier tech) &rarr; awards (recognition). A common gap is translating research into products; hence emphasis on innovation &amp; industry linkage.</div>
+</section>
+
+<!-- ===== SECTION 6 ===== -->
+<section class="notes" id="innovation">
+  <h2>6. Innovation &amp; Start-up Ecosystem</h2>
+  <ul>
+    <li><strong>Startup India</strong> &amp; the <strong>Startup India Seed Fund</strong> support new ventures; India has one of the world's largest start-up &amp; unicorn ecosystems.</li>
+    <li><strong>Atal Innovation Mission (AIM)</strong> (under NITI Aayog) runs <strong>Atal Tinkering Labs</strong> in schools &amp; <strong>Atal Incubation Centres</strong> to build a grassroots innovation culture.</li>
+    <li>Support structures: incubators &amp; accelerators, technology business incubators (via DST/CSIR), and iDEX for defence (Topic 16).</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> Atal Innovation Mission is under <strong>NITI Aayog</strong> (Atal Tinkering Labs in schools, Atal Incubation Centres); Startup India (with a Seed Fund) drives entrepreneurship. India ranks among the top start-up &amp; unicorn ecosystems globally.</div>
+</section>
+
+<!-- ===== SECTION 7 ===== -->
+<section class="notes" id="ipr">
+  <h2>7. Intellectual Property Rights (IPR)</h2>
+  <ul>
+    <li><strong>IPR</strong> protects creations of the mind: <strong>patents</strong> (inventions), <strong>copyright</strong> (creative works), <strong>trademarks</strong> (brands), <strong>designs</strong> &amp; <strong>geographical indications (GI)</strong>.</li>
+    <li>India's <strong>Patents Act, 1970</strong> (amended to meet <strong>TRIPS</strong>) &mdash; <strong>Section 3(d)</strong> curbs "evergreening" of pharma patents (Novartis case) to protect access to affordable medicines.</li>
+    <li>The <strong>National IPR Policy, 2016</strong> ("Creative India; Innovative India") promotes IP awareness, commercialisation &amp; enforcement; the CGPDTM administers IP offices.</li>
+    <li><strong>GI tags</strong> (e.g. Darjeeling tea, Banarasi saree) protect region-linked products &mdash; a frequent Prelims theme.</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims traps:</strong> patents = inventions; GI = region-linked goods; Section 3(d) of the Patents Act prevents patent evergreening (Novartis judgment); India is TRIPS-compliant; the National IPR Policy (2016) is administered via the CGPDTM/DPIIT.</div>
+</section>
+
+<!-- ===== SECTION 8 ===== -->
+<section class="notes" id="metrics">
+  <h2>8. R&amp;D Spending &amp; Metrics</h2>
+  <ul>
+    <li><strong>GERD (Gross Expenditure on R&amp;D)</strong> = a country's total R&amp;D spend, usually shown as a <strong>% of GDP</strong>. India's GERD (&asymp;0.6&ndash;0.7% of GDP) is <strong>low</strong> vs peers (2&ndash;4%) &amp; is dominated by government (private share is small) &mdash; a core weakness STIP/ANRF target.</li>
+    <li><strong>Global Innovation Index (GII)</strong> (WIPO) ranks innovation ecosystems; India has climbed steadily into the top ~40, leading among lower-middle-income economies.</li>
+    <li>India is a leader in scientific publications &amp; PhDs by volume but lags in per-capita output, patents &amp; research-to-commercialisation.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> GERD = total R&amp;D spend (% of GDP); India's is low (~0.6&ndash;0.7%) &amp; government-dominated; the Global Innovation Index is published by <strong>WIPO</strong>; raising private R&amp;D &amp; GERD is a stated STIP/ANRF goal.</div>
+</section>
+
+<!-- ===== SECTION 9 ===== -->
+<section class="notes" id="temper">
+  <h2>9. Scientific Temper &amp; Challenges</h2>
+  <ul>
+    <li><strong>Scientific temper</strong> &mdash; a rational, questioning, evidence-based outlook &mdash; is a <strong>Fundamental Duty under Article 51A(h)</strong> of the Constitution (the term is associated with Nehru).</li>
+    <li><strong>Challenges:</strong> low R&amp;D spend, weak industry&ndash;academia linkage, brain drain, poor research-to-product translation, bureaucratic delays &amp; the need for greater scientific literacy.</li>
+    <li><strong>Way forward:</strong> boost GERD (esp. private), reform funding (ANRF), strengthen universities, ease of doing research, promote open science &amp; innovation culture.</li>
+  </ul>
+  <div class="callout warn"><strong>GS-III hook:</strong> developing "scientific temper" (Article 51A(h)) &amp; a strong innovation ecosystem is the human-capital side of self-reliance. India's scale (talent, start-ups) is a strength; its low &amp; skewed R&amp;D funding &amp; weak commercialisation are the gaps STIP/ANRF aim to close.</div>
+</section>
+
+<!-- ===== SECTION 10: CURRENT AFFAIRS ===== -->
+<section class="notes" id="currentaffairs">
+  <h2>10. Current Affairs Link (2024&ndash;2026)</h2>
+  <p>Policy &amp; institutional changes here are frequent Prelims fodder &amp; Mains value-addition. Verify the latest before the exam. <span class="update-tag">check for latest update or data</span></p>
+  <div class="callout update"><strong>ANRF &amp; funding:</strong> operationalisation of the Anusandhan National Research Foundation &amp; private-funding moves apply Section 4. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout update"><strong>Innovation ranking:</strong> India's latest Global Innovation Index rank &amp; GERD figures apply Section 8. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout warn"><strong>Policy &amp; awards:</strong> STIP finalisation, Rashtriya Vigyan Puraskar &amp; new missions apply Sections 3 &amp; 5. <span class="update-tag">check for latest update or data</span></div>
+  <table>
+    <tr><th>Recent theme</th><th>Fundamental it tests</th><th>Why it matters for UPSC</th></tr>
+    <tr><td>ANRF launch</td><td>Research funding</td><td>GS-III R&amp;D reform.</td></tr>
+    <tr><td>GII rank / GERD</td><td>R&amp;D metrics</td><td>GS-III innovation economy.</td></tr>
+    <tr><td>STIP</td><td>S&amp;T policy</td><td>GS-III self-reliance.</td></tr>
+    <tr><td>Vigyan Puraskar</td><td>Awards</td><td>GS-III recognition.</td></tr>
+  </table>
+  <ul>
+    <li><strong>Recurring exam hooks:</strong> institution&ndash;ministry pairing &middot; PSA/PM-STIAC &middot; STIP &middot; ANRF vs SERB &middot; INSPIRE &amp; awards &middot; AIM/Startup India &middot; Section 3(d) &amp; GI &middot; GERD &amp; GII &middot; Article 51A(h).</li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 11: PRELIMS ===== -->
+<section class="notes" id="prelims-pyq">
+  <h2>11. Prelims PYQs</h2>
+  <p style="font-size:13px;color:var(--muted)"><em>Objective questions anchored to genuinely tested UPSC themes on India's S&amp;T ecosystem. Each carries a worked rationale.</em></p>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Institutions</div>
+    <p class="q-stem"><strong>Q:</strong> The Council of Scientific and Industrial Research (CSIR) functions under which ministry?</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> Ministry of Science and Technology</li>
+      <li><span class="opt-key">(b)</span> Ministry of Health</li>
+      <li><span class="opt-key">(c)</span> Ministry of Agriculture</li>
+      <li><span class="opt-key">(d)</span> Ministry of Defence</li>
+    </ul>
+    <p class="ans">Answer: (a) CSIR (with DST &amp; DBT) is under the Ministry of Science and Technology; ICMR is under Health, ICAR under Agriculture, DRDO under Defence.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Space &amp; atomic energy</div>
+    <p class="q-stem"><strong>Q:</strong> ISRO (Department of Space) and the Department of Atomic Energy report to &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Ministry of Science and Technology</li>
+      <li class="correct"><span class="opt-key">(b)</span> the Prime Minister's Office</li>
+      <li><span class="opt-key">(c)</span> Ministry of Defence</li>
+      <li><span class="opt-key">(d)</span> Ministry of Earth Sciences</li>
+    </ul>
+    <p class="ans">Answer: (b) The Department of Space (ISRO) and Department of Atomic Energy (DAE) function directly under the PMO, reflecting their strategic importance.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Research funding</div>
+    <p class="q-stem"><strong>Q:</strong> The Anusandhan National Research Foundation (ANRF) &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> replaced ISRO</li>
+      <li class="correct"><span class="opt-key">(b)</span> was set up under the ANRF Act, 2023 and subsumed SERB</li>
+      <li><span class="opt-key">(c)</span> is a private company</li>
+      <li><span class="opt-key">(d)</span> funds only defence research</li>
+    </ul>
+    <p class="ans">Answer: (b) ANRF (ANRF Act, 2023) is the apex research-funding body; it subsumed SERB and emphasises leveraging private/philanthropic funding.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Innovation mission</div>
+    <p class="q-stem"><strong>Q:</strong> The Atal Innovation Mission, which runs Atal Tinkering Labs, is under &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> NITI Aayog</li>
+      <li><span class="opt-key">(b)</span> DRDO</li>
+      <li><span class="opt-key">(c)</span> ISRO</li>
+      <li><span class="opt-key">(d)</span> RBI</li>
+    </ul>
+    <p class="ans">Answer: (a) The Atal Innovation Mission is under NITI Aayog; it runs Atal Tinkering Labs in schools and Atal Incubation Centres.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Patents</div>
+    <p class="q-stem"><strong>Q:</strong> Section 3(d) of India's Patents Act is significant because it &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> bans all pharmaceutical patents</li>
+      <li class="correct"><span class="opt-key">(b)</span> prevents "evergreening" of patents for minor modifications</li>
+      <li><span class="opt-key">(c)</span> grants lifetime patents</li>
+      <li><span class="opt-key">(d)</span> deals only with trademarks</li>
+    </ul>
+    <p class="ans">Answer: (b) Section 3(d) blocks evergreening (patents for trivial changes), upheld in the Novartis case &mdash; protecting access to affordable generic medicines.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; GI tag</div>
+    <p class="q-stem"><strong>Q:</strong> A Geographical Indication (GI) tag is granted to &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> any new invention</li>
+      <li class="correct"><span class="opt-key">(b)</span> products with a specific geographical origin and reputation</li>
+      <li><span class="opt-key">(c)</span> company logos</li>
+      <li><span class="opt-key">(d)</span> literary works</li>
+    </ul>
+    <p class="ans">Answer: (b) A GI identifies goods originating from a place whose quality/reputation is due to that origin (e.g. Darjeeling tea); patents cover inventions, trademarks cover brands.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; R&amp;D metric</div>
+    <p class="q-stem"><strong>Q:</strong> "GERD", used to compare countries' research effort, refers to &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> gross energy demand</li>
+      <li class="correct"><span class="opt-key">(b)</span> gross expenditure on R&amp;D (often as % of GDP)</li>
+      <li><span class="opt-key">(c)</span> a defence index</li>
+      <li><span class="opt-key">(d)</span> a pollution measure</li>
+    </ul>
+    <p class="ans">Answer: (b) GERD = Gross Expenditure on R&amp;D; India's (~0.6&ndash;0.7% of GDP) is low and government-dominated &mdash; a weakness STIP/ANRF target.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Constitution</div>
+    <p class="q-stem"><strong>Q:</strong> "To develop the scientific temper, humanism and the spirit of inquiry" is &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> a Fundamental Right</li>
+      <li><span class="opt-key">(b)</span> a Directive Principle</li>
+      <li class="correct"><span class="opt-key">(c)</span> a Fundamental Duty under Article 51A</li>
+      <li><span class="opt-key">(d)</span> a preambular ideal</li>
+    </ul>
+    <p class="ans">Answer: (c) Developing scientific temper is a Fundamental Duty under Article 51A(h), added by the 42nd Amendment.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> body&ndash;ministry pairing &middot; PSA/PM-STIAC &middot; STIP &middot; ANRF vs SERB &middot; INSPIRE/awards &middot; AIM &amp; Startup India &middot; Section 3(d) &amp; GI &middot; GERD &amp; Global Innovation Index (WIPO) &middot; Article 51A(h). <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 12: MAINS ===== -->
+<section class="notes" id="mains-pyq">
+  <h2>12. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>The S&amp;T ecosystem anchors GS-III questions on innovation, funding &amp; self-reliance. The frameworks below show how to deploy it analytically.</em></p>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> India spends too little on R&amp;D and translates too little research into products. Examine the causes and remedies.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> India's GERD (Section 8) is ~0.6&ndash;0.7% of GDP &mdash; low &amp; government-dominated &mdash; and research-to-product translation is weak.</li>
+        <li><strong>Causes:</strong>
+          <ul>
+            <li>Low private R&amp;D, weak industry&ndash;academia linkage, fragmented funding, poor IP commercialisation, brain drain &amp; bureaucratic delays.</li>
+          </ul>
+        </li>
+        <li><strong>Remedies:</strong> ANRF to leverage private funding, STIP reforms, stronger university research, incubators (AIM), IP support &amp; ease of doing research.</li>
+        <li><strong>Way forward:</strong> raise GERD toward 2%, incentivise corporate R&amp;D, mission-mode focus &amp; global collaboration.</li>
+        <li><strong>Conclusion:</strong> boosting &amp; diversifying R&amp;D funding is central to self-reliance &amp; a knowledge economy.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Discuss the objectives of the Anusandhan National Research Foundation (ANRF) and how it seeks to transform India's research landscape.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> ANRF (Section 4), under the ANRF Act 2023, is the apex body to seed &amp; grow research across India.</li>
+        <li><strong>Objectives:</strong>
+          <ul>
+            <li>Fund research in universities (not just national labs), leverage private/philanthropic money, promote interdisciplinary &amp; mission research, build a research culture.</li>
+          </ul>
+        </li>
+        <li><strong>Transformation:</strong> shifts funding beyond government, broadens the research base, subsumes SERB &amp; aligns with STIP goals.</li>
+        <li><strong>Challenges:</strong> mobilising private funds, autonomy, avoiding bureaucratisation, reaching state universities.</li>
+        <li><strong>Conclusion:</strong> if well-implemented, ANRF can decisively raise India's R&amp;D depth &amp; inclusivity.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> How does a strong intellectual property regime balance innovation with public interest? Illustrate with India's approach.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> IPR (Section 7) rewards innovation but must not block access &mdash; a balance India tries to strike.</li>
+        <li><strong>Innovation side:</strong> patents/trademarks/GI incentivise R&amp;D, investment &amp; branding; National IPR Policy (2016) promotes commercialisation.</li>
+        <li><strong>Public-interest side:</strong> Section 3(d) curbs evergreening; compulsory licensing &amp; TRIPS flexibilities protect access to medicines.</li>
+        <li><strong>Conclusion:</strong> India's calibrated IPR regime seeks both innovation incentives &amp; affordable access.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III / GS-II <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> "Developing scientific temper is essential for national development." Discuss in the context of India's Fundamental Duties.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Scientific temper (Section 9) &mdash; a rational, evidence-based outlook &mdash; is a Fundamental Duty under Article 51A(h).</li>
+        <li><strong>Why it matters:</strong>
+          <ul>
+            <li>Drives innovation &amp; problem-solving, counters superstition &amp; misinformation, improves health, governance &amp; economic productivity.</li>
+          </ul>
+        </li>
+        <li><strong>Enablers:</strong> quality education, science communication, INSPIRE &amp; grassroots innovation (Atal Tinkering Labs).</li>
+        <li><strong>Challenges:</strong> pseudoscience, weak scientific literacy, misinformation.</li>
+        <li><strong>Conclusion:</strong> a scientifically minded citizenry underpins a modern, self-reliant India.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> raising R&amp;D spend &amp; commercialisation &middot; ANRF &amp; funding reform &middot; STIP &amp; self-reliance &middot; IPR balance &middot; innovation/start-up ecosystem &middot; scientific temper. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; S&amp;T Ecosystem</h3>
+    <div class="grid-2">
+      <div>
+        <strong>Institutions:</strong>
+        <ul>
+          <li>CSIR/DST/DBT = Min. of Science &amp; Technology</li>
+          <li>ICMR = Health; ICAR = Agriculture; DRDO = Defence</li>
+          <li>ISRO (Dept of Space) &amp; DAE = under PMO</li>
+          <li>PSA advises govt &amp; chairs PM-STIAC</li>
+        </ul>
+        <strong>Policy &amp; funding:</strong>
+        <ul>
+          <li>Policy: 1958 &rarr; 1983 &rarr; 2003 &rarr; 2013 &rarr; STIP</li>
+          <li>ANRF (Act 2023) = apex funding, subsumed SERB, private money</li>
+          <li>INSPIRE = attract youth; RVP = top science award</li>
+          <li>Missions: Supercomputing/Quantum/Semiconductor/Deep Ocean</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Innovation &amp; IPR:</strong>
+        <ul>
+          <li>Atal Innovation Mission = NITI Aayog (Tinkering Labs)</li>
+          <li>Startup India + Seed Fund; large unicorn base</li>
+          <li>Patents Act 1970; Section 3(d) = no evergreening (Novartis)</li>
+          <li>GI = region-linked goods; National IPR Policy 2016 (TRIPS)</li>
+        </ul>
+        <strong>Metrics &amp; temper:</strong>
+        <ul>
+          <li>GERD ~0.6&ndash;0.7% GDP (low, govt-dominated)</li>
+          <li>Global Innovation Index = WIPO; India in top ~40</li>
+          <li>Scientific temper = Fundamental Duty, Article 51A(h)</li>
+          <li>Gaps: private R&amp;D, industry&ndash;academia, commercialisation</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes:</strong> body&ndash;ministry pairing &middot; PSA &middot; STIP &middot; ANRF vs SERB &middot; INSPIRE/awards &middot; AIM/Startup India &middot; Section 3(d) &amp; GI &middot; GERD &amp; GII &middot; Article 51A(h).</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== SIDEBAR ===== -->
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Quick Reference &mdash; Bodies</h4>
+    <table>
+      <tr><th>Body</th><th>Domain</th></tr>
+      <tr><td>CSIR</td><td>Industrial R&amp;D</td></tr>
+      <tr><td>ICMR</td><td>Medical</td></tr>
+      <tr><td>ICAR</td><td>Agriculture</td></tr>
+      <tr><td>ANRF</td><td>Funding</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Policy &amp; Schemes</h4>
+    <table>
+      <tr><th>Item</th><th>Note</th></tr>
+      <tr><td>STIP</td><td>Latest S&amp;T policy</td></tr>
+      <tr><td>ANRF</td><td>Act 2023</td></tr>
+      <tr><td>INSPIRE</td><td>Talent</td></tr>
+      <tr><td>AIM</td><td>NITI Aayog</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Key Facts &amp; Data</h4>
+    <table>
+      <tr><th>Item</th><th>Value</th></tr>
+      <tr><td>GERD</td><td>~0.6&ndash;0.7% GDP</td></tr>
+      <tr><td>GII</td><td>WIPO; top ~40</td></tr>
+      <tr><td>Sec 3(d)</td><td>No evergreening</td></tr>
+      <tr><td>Sci. temper</td><td>Art 51A(h)</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:85%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains GS-III</span><span class="fill"><span style="width:88%"></span></span></div>
+    <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:85%"></span></span></div>
+    <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:85%"></span></span></div>
+    <p style="margin-top:8px;font-size:11px;color:var(--muted);">Policy-heavy &mdash; track ANRF &amp; GII.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Ecosystem at a Glance</h4>
+    <ul>
+      <li>R&amp;D institutions</li>
+      <li>Governance &amp; PSA</li>
+      <li>STIP</li>
+      <li>ANRF &amp; funding</li>
+      <li>Schemes &amp; talent</li>
+      <li>Innovation &amp; start-ups</li>
+      <li>IPR</li>
+      <li>R&amp;D metrics</li>
+      <li>Scientific temper</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">CSIR/DST/DBT</span>
+    <span class="tag">ICMR/ICAR</span>
+    <span class="tag green">ISRO/DAE (PMO)</span>
+    <span class="tag">STIP</span>
+    <span class="tag orange">ANRF</span>
+    <span class="tag">INSPIRE</span>
+    <span class="tag green">Atal Innovation</span>
+    <span class="tag">Section 3(d)</span>
+    <span class="tag orange">GI tag</span>
+    <span class="tag">GERD/GII</span>
+    <span class="tag green">Art 51A(h)</span>
+  </div>
+
+  <div class="widget">
+    <h4>Data Sources to Bookmark</h4>
+    <ul>
+      <li><a href="https://dst.gov.in" target="_blank" rel="noopener">DST</a></li>
+      <li><a href="https://anrfonline.in" target="_blank" rel="noopener">ANRF</a></li>
+      <li><a href="https://www.wipo.int" target="_blank" rel="noopener">WIPO (GII)</a></li>
+      <li><a href="https://pib.gov.in" target="_blank" rel="noopener">PIB</a></li>
+    </ul>
+    <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/science-technology/biotechnology">S&amp;T T10: Biotechnology</a></li>
+      <li><a href="/science-technology/advanced-computing-supercomputers-and-quantum">S&amp;T T14: Advanced Computing</a></li>
+      <li><a href="/science-technology/emerging-and-frontier-technologies">S&amp;T T18: Emerging Frontiers</a></li>
+      <li><a href="/science-technology/space-technology-i-isro-and-launch-vehicles">S&amp;T T8: Space Tech I</a></li>
+      <li><a href="/science-technology">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding:0;margin:0;">
+      <li style="margin:4px 0;"><a href="#institutions" style="font-size:12px;">R&amp;D Institutions</a></li>
+      <li style="margin:4px 0;"><a href="#governance" style="font-size:12px;">Governance &amp; PSA</a></li>
+      <li style="margin:4px 0;"><a href="#stip" style="font-size:12px;">STIP</a></li>
+      <li style="margin:4px 0;"><a href="#anrf" style="font-size:12px;">ANRF &amp; Funding</a></li>
+      <li style="margin:4px 0;"><a href="#schemes" style="font-size:12px;">Schemes &amp; Talent</a></li>
+      <li style="margin:4px 0;"><a href="#innovation" style="font-size:12px;">Innovation &amp; Start-ups</a></li>
+      <li style="margin:4px 0;"><a href="#ipr" style="font-size:12px;">IPR</a></li>
+      <li style="margin:4px 0;"><a href="#metrics" style="font-size:12px;">R&amp;D Metrics</a></li>
+      <li style="margin:4px 0;"><a href="#temper" style="font-size:12px;">Scientific Temper</a></li>
+      <li style="margin:4px 0;"><a href="#currentaffairs" style="font-size:12px;">Current Affairs</a></li>
+      <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

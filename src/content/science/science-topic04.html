@@ -1,0 +1,731 @@
+<!-- science-topic04 — auto-imported from scitech-topic04-reproduction-genetics-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 4: Reproduction &amp; Genetics</h1>
+  <p class="sub">Reproduction continues life; genetics explains how traits pass from one generation to the next &mdash; both flow from the DNA &amp; chromosomes of Topic 2. This single-source file covers <strong>asexual vs sexual reproduction</strong>, the <strong>human reproductive system</strong>, <strong>cell division</strong> (mitosis vs meiosis), <strong>Mendel's laws of inheritance</strong>, the <strong>DNA&ndash;gene&ndash;chromosome</strong> relationship, <strong>sex determination</strong>, the common <strong>genetic disorders</strong> (haemophilia, colour blindness, thalassaemia, sickle-cell, Down syndrome), and the <strong>Human Genome Project &amp; modern genomics</strong> &mdash; with labelled diagrams, tables and real dated PYQs with full model answers.</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Mitosis vs Meiosis</span>
+    <span class="pill">~38 min read</span>
+    <span class="pill">Mendel &amp; Inheritance</span>
+    <span class="pill">Biotech Bridge</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#reprotypes">Reproduction &mdash; Asexual &amp; Sexual</a></li>
+    <li><span class="num">2.</span><a href="#human">Human Reproductive System</a></li>
+    <li><span class="num">3.</span><a href="#division">Cell Division &mdash; Mitosis &amp; Meiosis</a></li>
+    <li><span class="num">4.</span><a href="#dnagene">DNA, Gene &amp; Chromosome</a></li>
+    <li><span class="num">5.</span><a href="#mendel">Mendel's Laws of Inheritance</a></li>
+    <li><span class="num">6.</span><a href="#sexdet">Sex Determination</a></li>
+    <li><span class="num">7.</span><a href="#disorders">Genetic Disorders</a></li>
+    <li><span class="num">8.</span><a href="#mutation">Mutation &amp; Variation</a></li>
+    <li><span class="num">9.</span><a href="#genomics">Human Genome &amp; Genomics</a></li>
+    <li><span class="num">10.</span><a href="#currentaffairs">Current Affairs Link</a></li>
+    <li><span class="num">11.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><span class="num">12.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Tests Reproduction &amp; Genetics</h3>
+  <p>This topic is the <strong>conceptual bridge to biotechnology (Topic 10)</strong> and a steady Prelims scorer. Sort your prep into three question-types:</p>
+  <ul>
+    <li><strong>Definitional / static</strong> &mdash; "meiosis produces how many cells?", "which chromosome pair decides sex?". Pure recall.</li>
+    <li><strong>Statement-elimination</strong> &mdash; mitosis-vs-meiosis contrasts, dominant/recessive rules, sex-linked inheritance where one word decides the answer.</li>
+    <li><strong>Applied / current</strong> &mdash; a news hook (gene therapy, CRISPR, sickle-cell mission, DNA fingerprinting, genome sequencing) traced to a genetics fundamental &mdash; the GS-III biotech &amp; ethics bridge.</li>
+  </ul>
+  <p><strong>Highest-frequency themes:</strong> mitosis vs meiosis &middot; Mendel's laws &middot; sex determination (XX/XY) &middot; sex-linked disorders (haemophilia, colour blindness) &middot; DNA&ndash;gene&ndash;chromosome &middot; genetic disorders &amp; carriers &middot; Human Genome Project &middot; DNA fingerprinting.</p>
+</div>
+
+<!-- ===== SECTION 1 ===== -->
+<section class="notes" id="reprotypes">
+  <h2>1. Reproduction &mdash; Asexual &amp; Sexual</h2>
+  <p>Reproduction is the biological process of producing new individuals of the same kind &mdash; essential for the continuity of a species. It is of two broad types.</p>
+  <table>
+    <tr><th>Feature</th><th>Asexual</th><th>Sexual</th></tr>
+    <tr><td>Parents</td><td>Single parent</td><td>Two parents (usually)</td></tr>
+    <tr><td>Gametes</td><td>None</td><td>Male &amp; female gametes fuse</td></tr>
+    <tr><td>Offspring</td><td>Genetically identical (clones)</td><td>Genetically variable</td></tr>
+    <tr><td>Cell division</td><td>Mitosis</td><td>Meiosis (gametes) + fertilisation</td></tr>
+    <tr><td>Examples</td><td>Binary fission (bacteria, amoeba), budding (yeast, hydra), fragmentation, spore formation, vegetative propagation</td><td>Most animals &amp; flowering plants</td></tr>
+  </table>
+  <div class="callout info"><strong>Key idea:</strong> asexual reproduction is fast &amp; needs one parent but gives no variation; sexual reproduction is slower but creates <strong>variation</strong> &mdash; the raw material of evolution (Topic 1). Vegetative propagation (cuttings, grafting, tissue culture) is exploited in agriculture &amp; horticulture.</div>
+</section>
+
+<!-- ===== SECTION 2 ===== -->
+<section class="notes" id="human">
+  <h2>2. Human Reproductive System</h2>
+  <ul>
+    <li><strong>Male:</strong> testes produce <strong>sperm</strong> and testosterone; sperm mature in the epididymis and travel via the vas deferens.</li>
+    <li><strong>Female:</strong> ovaries produce <strong>ova (eggs)</strong> and hormones (oestrogen, progesterone); fertilisation occurs in the fallopian tube; the embryo implants in the <strong>uterus</strong>.</li>
+    <li><strong>Fertilisation:</strong> sperm (n) + egg (n) &rarr; <strong>zygote (2n)</strong> &rarr; embryo &rarr; fetus. Human gestation ~9 months.</li>
+    <li><strong>Menstrual cycle:</strong> ~28 days, regulated by hormones (FSH, LH, oestrogen, progesterone); ovulation ~day 14.</li>
+  </ul>
+  <div class="callout warn"><strong>GS-II health hook:</strong> reproductive &amp; child health, family planning, IVF/ART regulation (Surrogacy &amp; ART Acts), and maternal-health schemes all build on this. IVF (test-tube baby) uses in-vitro fertilisation.</div>
+</section>
+
+<!-- ===== SECTION 3 ===== -->
+<section class="notes" id="division">
+  <h2>3. Cell Division &mdash; Mitosis &amp; Meiosis</h2>
+  <p>All growth &amp; reproduction rest on cell division. There are two types &mdash; the contrast is a UPSC perennial.</p>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 600 210" width="600" height="210" role="img" aria-label="Mitosis versus meiosis outcomes">
+      <rect x="0" y="0" width="600" height="210" fill="#ffffff"/>
+      <g font-family="sans-serif" font-size="12" text-anchor="middle">
+        <circle cx="70" cy="60" r="26" fill="#e8f0f8" stroke="#1a3d5c"/><text x="70" y="64">2n</text>
+        <text x="70" y="105" font-size="11">Parent cell</text>
+        <text x="200" y="40" font-size="12" fill="#1a3d5c" font-weight="bold">MITOSIS</text>
+        <circle cx="300" cy="35" r="20" fill="#e8f0f8" stroke="#1a3d5c"/><text x="300" y="39">2n</text>
+        <circle cx="300" cy="85" r="20" fill="#e8f0f8" stroke="#1a3d5c"/><text x="300" y="89">2n</text>
+        <text x="430" y="60" font-size="11">2 identical cells (growth, repair)</text>
+        <path d="M96 55 h180" stroke="#5a6266" stroke-width="1.5" marker-end="url(#t04a)"/>
+        <text x="200" y="150" font-size="12" fill="#c47820" font-weight="bold">MEIOSIS</text>
+        <circle cx="300" cy="135" r="16" fill="#fff4e0" stroke="#c47820"/><text x="300" y="139" font-size="11">n</text>
+        <circle cx="345" cy="135" r="16" fill="#fff4e0" stroke="#c47820"/><text x="345" y="139" font-size="11">n</text>
+        <circle cx="300" cy="180" r="16" fill="#fff4e0" stroke="#c47820"/><text x="300" y="184" font-size="11">n</text>
+        <circle cx="345" cy="180" r="16" fill="#fff4e0" stroke="#c47820"/><text x="345" y="184" font-size="11">n</text>
+        <text x="450" y="160" font-size="11">4 gametes, half chromosomes (variation)</text>
+        <path d="M90 78 q60 70 190 90" stroke="#5a6266" stroke-width="1.5" fill="none" marker-end="url(#t04a)"/>
+        <defs><marker id="t04a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#5a6266"/></marker></defs>
+      </g>
+    </svg>
+    <div class="svg-caption">Fig 4.1 &mdash; Mitosis gives 2 identical diploid (2n) cells for growth/repair; meiosis gives 4 haploid (n) gametes with variation, halving the chromosome number.</div>
+  </div>
+
+  <table>
+    <tr><th>Feature</th><th>Mitosis</th><th>Meiosis</th></tr>
+    <tr><td>Where</td><td>Body (somatic) cells</td><td>Reproductive (germ) cells</td></tr>
+    <tr><td>Divisions</td><td>One</td><td>Two</td></tr>
+    <tr><td>Daughter cells</td><td>2</td><td>4</td></tr>
+    <tr><td>Chromosome number</td><td>Same as parent (2n)</td><td>Halved (n)</td></tr>
+    <tr><td>Result</td><td>Identical cells; growth, repair</td><td>Gametes; genetic variation</td></tr>
+  </table>
+  <div class="callout info"><strong>Prelims fact:</strong> meiosis maintains the constant chromosome number across generations (gametes are haploid, so fertilisation restores 2n) and generates variation via <strong>crossing over</strong>.</div>
+</section>
+
+<!-- ===== SECTION 4 ===== -->
+<section class="notes" id="dnagene">
+  <h2>4. DNA, Gene &amp; Chromosome</h2>
+  <p>These three nested terms confuse students &mdash; UPSC exploits exactly that.</p>
+  <ul>
+    <li><strong>DNA</strong> &mdash; the double-helix molecule carrying the genetic code (Topic 2).</li>
+    <li><strong>Gene</strong> &mdash; a specific segment of DNA that codes for one protein/trait; the unit of heredity.</li>
+    <li><strong>Chromosome</strong> &mdash; DNA tightly coiled with proteins (histones); humans have <strong>46 chromosomes (23 pairs)</strong>.</li>
+    <li><strong>Genome</strong> &mdash; the complete set of genes/DNA of an organism.</li>
+  </ul>
+  <div class="callout"><strong>Hierarchy:</strong> nucleotide &rarr; DNA &rarr; gene &rarr; chromosome &rarr; genome. Of 23 pairs, 22 are <strong>autosomes</strong> and 1 pair is the <strong>sex chromosomes</strong>. The "central dogma": DNA &rarr; RNA &rarr; protein.</div>
+</section>
+
+<!-- ===== SECTION 5 ===== -->
+<section class="notes" id="mendel">
+  <h2>5. Mendel's Laws of Inheritance</h2>
+  <p><strong>Gregor Mendel</strong> ("father of genetics"), working on pea plants (1866), gave the founding laws of heredity.</p>
+  <table>
+    <tr><th>Law</th><th>Statement</th></tr>
+    <tr><td>Law of Dominance</td><td>In a pair of contrasting traits, one (dominant) masks the other (recessive)</td></tr>
+    <tr><td>Law of Segregation</td><td>Paired alleles separate during gamete formation; each gamete gets one</td></tr>
+    <tr><td>Law of Independent Assortment</td><td>Genes for different traits are inherited independently</td></tr>
+  </table>
+  <ul>
+    <li><strong>Terms:</strong> allele (versions of a gene) &middot; homozygous (TT/tt) vs heterozygous (Tt) &middot; genotype (genetic make-up) vs phenotype (visible trait).</li>
+    <li>A monohybrid cross gives a phenotypic ratio of <strong>3:1</strong> in the F&#8322; generation; a dihybrid cross gives <strong>9:3:3:1</strong>.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims fact:</strong> Mendel is the "father of genetics"; a dominant allele needs only one copy to show, a recessive trait needs both copies (tt). Blood-group inheritance (Topic 3) is a codominance example.</div>
+</section>
+
+<!-- ===== SECTION 6 ===== -->
+<section class="notes" id="sexdet">
+  <h2>6. Sex Determination</h2>
+  <p>In humans, sex is decided by the <strong>sex chromosomes</strong>: females are <strong>XX</strong>, males are <strong>XY</strong>.</p>
+  <ul>
+    <li>The egg always carries an X; the sperm carries either X or Y. <strong>The father's sperm therefore decides the sex of the child</strong> (a crucial social-awareness point).</li>
+    <li>Sperm with X &rarr; XX (girl); sperm with Y &rarr; XY (boy). The Y chromosome carries the male-determining SRY gene.</li>
+  </ul>
+  <div class="callout warn"><strong>GS-I/II social hook:</strong> since the man's sperm determines sex, blaming the mother is scientifically wrong &mdash; a key message against sex-selective practices; the PCPNDT Act bans prenatal sex determination.</div>
+</section>
+
+<!-- ===== SECTION 7 ===== -->
+<section class="notes" id="disorders">
+  <h2>7. Genetic Disorders</h2>
+  <p>Genetic disorders arise from faulty genes or chromosomes. UPSC focuses on the inheritance pattern and carrier concept.</p>
+  <table>
+    <tr><th>Disorder</th><th>Type</th><th>Key fact</th></tr>
+    <tr><td>Haemophilia</td><td>X-linked recessive</td><td>Poor blood clotting; mostly affects males; "royal disease"</td></tr>
+    <tr><td>Colour blindness</td><td>X-linked recessive</td><td>Red-green confusion; mostly males</td></tr>
+    <tr><td>Thalassaemia</td><td>Autosomal recessive</td><td>Defective haemoglobin; needs transfusions</td></tr>
+    <tr><td>Sickle-cell anaemia</td><td>Autosomal recessive</td><td>Sickle-shaped RBCs; common in tribal India; gives malaria resistance in carriers</td></tr>
+    <tr><td>Down syndrome</td><td>Chromosomal (trisomy 21)</td><td>Extra chromosome 21; intellectual disability</td></tr>
+    <tr><td>Turner / Klinefelter</td><td>Sex-chromosome</td><td>XO (Turner, female) / XXY (Klinefelter, male)</td></tr>
+  </table>
+  <div class="callout warn"><strong>Prelims traps:</strong> haemophilia &amp; colour blindness are <strong>X-linked</strong> &mdash; females can be carriers, males mostly affected; Down syndrome is due to an <strong>extra chromosome</strong>, not a gene mutation; sickle-cell carriers are protected against malaria (a classic natural-selection example).</div>
+</section>
+
+<!-- ===== SECTION 8 ===== -->
+<section class="notes" id="mutation">
+  <h2>8. Mutation &amp; Variation</h2>
+  <ul>
+    <li><strong>Mutation</strong> &mdash; a heritable change in the DNA sequence; can be spontaneous or induced (by mutagens like radiation, UV, chemicals).</li>
+    <li>Mutations are the ultimate source of <strong>genetic variation</strong> and raw material for evolution &mdash; some harmful, some neutral, a few beneficial.</li>
+    <li><strong>Recombination</strong> during meiosis (crossing over) shuffles existing variation.</li>
+  </ul>
+  <div class="callout info"><strong>Link:</strong> mutation explains cancer (uncontrolled cell division), antibiotic/pesticide resistance, and new virus variants (Topic 5) &mdash; recurring GS-III applied hooks.</div>
+</section>
+
+<!-- ===== SECTION 9 ===== -->
+<section class="notes" id="genomics">
+  <h2>9. Human Genome &amp; Genomics</h2>
+  <ul>
+    <li>The <strong>Human Genome Project (HGP)</strong> (1990&ndash;2003) mapped all ~3 billion base pairs and ~20,000&ndash;25,000 human genes &mdash; a landmark of modern biology.</li>
+    <li><strong>DNA fingerprinting</strong> (forensics, paternity, disaster victim ID) uses unique repeat sequences; developed in India by the CCMB, Hyderabad.</li>
+    <li><strong>Genomics</strong> now drives precision/personalised medicine, gene therapy and gene editing (<strong>CRISPR</strong>) &mdash; the bridge to Topic 10 (Biotechnology).</li>
+    <li>India's own <strong>Genome India Project</strong> is sequencing a diverse set of Indian genomes.</li>
+  </ul>
+  <div class="callout warn"><strong>GS-III hook:</strong> gene editing raises promise (curing genetic disease) and deep ethics (designer babies, germline edits) &mdash; a favourite Mains &amp; GS-IV theme.</div>
+</section>
+
+<!-- ===== SECTION 10: CURRENT AFFAIRS ===== -->
+<section class="notes" id="currentaffairs">
+  <h2>10. Current Affairs Link (2024&ndash;2026)</h2>
+  <p>Genetics is intensely topical through gene editing, national missions and forensic science. Verify the latest before the exam. <span class="update-tag">check for latest update or data</span></p>
+  <div class="callout update"><strong>Sickle Cell Mission:</strong> India's National Sickle Cell Anaemia Elimination Mission (target 2047) screens &amp; supports tribal populations &mdash; a direct application of Section 7. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout update"><strong>Gene editing &amp; therapy:</strong> CRISPR-based therapies (e.g. for sickle-cell) and gene therapy approvals worldwide keep genome-editing ethics topical. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout warn"><strong>Genome India Project:</strong> completion of the reference dataset of thousands of Indian genomes advances precision medicine for the Indian population. <span class="update-tag">check for latest update or data</span></div>
+  <table>
+    <tr><th>Recent theme</th><th>Fundamental it tests</th><th>Why it matters for UPSC</th></tr>
+    <tr><td>Sickle Cell Mission</td><td>Genetic disorders</td><td>GS-II tribal health; policy.</td></tr>
+    <tr><td>CRISPR gene editing</td><td>DNA &amp; genes</td><td>GS-III biotech + GS-IV ethics.</td></tr>
+    <tr><td>Genome India Project</td><td>Genomics</td><td>GS-III precision medicine.</td></tr>
+    <tr><td>DNA Technology Bill</td><td>DNA fingerprinting</td><td>GS-II privacy &amp; forensics.</td></tr>
+  </table>
+  <ul>
+    <li><strong>Recurring exam hooks:</strong> mitosis vs meiosis &middot; father decides sex &middot; X-linked disorders &middot; sickle-cell &amp; malaria &middot; HGP facts &middot; CRISPR ethics &middot; DNA fingerprinting &amp; CCMB.</li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 11: PRELIMS ===== -->
+<section class="notes" id="prelims-pyq">
+  <h2>11. Prelims PYQs</h2>
+  <p style="font-size:13px;color:var(--muted)"><em>Objective questions anchored to genuinely tested UPSC themes on reproduction &amp; genetics. Each carries a worked rationale.</em></p>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Cell division</div>
+    <p class="q-stem"><strong>Q:</strong> Meiosis in a diploid cell produces &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> 2 diploid cells</li>
+      <li class="correct"><span class="opt-key">(b)</span> 4 haploid cells</li>
+      <li><span class="opt-key">(c)</span> 4 diploid cells</li>
+      <li><span class="opt-key">(d)</span> 2 haploid cells</li>
+    </ul>
+    <p class="ans">Answer: (b) Meiosis involves two divisions producing four haploid (n) gametes, halving the chromosome number.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Sex determination</div>
+    <p class="q-stem"><strong>Q:</strong> In humans, the sex of the child is determined by the &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> mother's egg</li>
+      <li class="correct"><span class="opt-key">(b)</span> father's sperm</li>
+      <li><span class="opt-key">(c)</span> both equally</li>
+      <li><span class="opt-key">(d)</span> environment</li>
+    </ul>
+    <p class="ans">Answer: (b) The egg always carries X; the sperm carries X or Y, so the father's sperm decides the sex (XX girl / XY boy).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Genetics</div>
+    <p class="q-stem"><strong>Q:</strong> Who is regarded as the "father of genetics"?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Charles Darwin</li>
+      <li class="correct"><span class="opt-key">(b)</span> Gregor Mendel</li>
+      <li><span class="opt-key">(c)</span> Watson</li>
+      <li><span class="opt-key">(d)</span> Morgan</li>
+    </ul>
+    <p class="ans">Answer: (b) Gregor Mendel, through his pea-plant experiments, gave the laws of inheritance and is the father of genetics.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Chromosomes</div>
+    <p class="q-stem"><strong>Q:</strong> How many chromosomes are present in a normal human body cell?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> 23</li>
+      <li class="correct"><span class="opt-key">(b)</span> 46</li>
+      <li><span class="opt-key">(c)</span> 48</li>
+      <li><span class="opt-key">(d)</span> 44</li>
+    </ul>
+    <p class="ans">Answer: (b) A human body (somatic) cell has 46 chromosomes (23 pairs); gametes have 23.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Disorders</div>
+    <p class="q-stem"><strong>Q:</strong> Haemophilia and colour blindness are examples of &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> autosomal dominant disorders</li>
+      <li class="correct"><span class="opt-key">(b)</span> X-linked recessive disorders</li>
+      <li><span class="opt-key">(c)</span> chromosomal disorders</li>
+      <li><span class="opt-key">(d)</span> nutritional disorders</li>
+    </ul>
+    <p class="ans">Answer: (b) Both are X-linked recessive &mdash; carried on the X chromosome and mostly affecting males, with females as carriers.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Down syndrome</div>
+    <p class="q-stem"><strong>Q:</strong> Down syndrome is caused by &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> a gene mutation</li>
+      <li><span class="opt-key">(b)</span> vitamin deficiency</li>
+      <li class="correct"><span class="opt-key">(c)</span> an extra copy of chromosome 21</li>
+      <li><span class="opt-key">(d)</span> an X-linked gene</li>
+    </ul>
+    <p class="ans">Answer: (c) Down syndrome (trisomy 21) results from an extra chromosome 21 &mdash; a chromosomal, not a single-gene, disorder.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Reproduction</div>
+    <p class="q-stem"><strong>Q:</strong> Budding is a method of asexual reproduction seen in &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> yeast and hydra</li>
+      <li><span class="opt-key">(b)</span> humans</li>
+      <li><span class="opt-key">(c)</span> ferns</li>
+      <li><span class="opt-key">(d)</span> birds</li>
+    </ul>
+    <p class="ans">Answer: (a) Yeast and hydra reproduce by budding &mdash; an outgrowth develops into a new individual.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Genomics</div>
+    <p class="q-stem"><strong>Q:</strong> DNA fingerprinting technology in India was pioneered by which institution?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> IISc Bangalore</li>
+      <li class="correct"><span class="opt-key">(b)</span> CCMB Hyderabad</li>
+      <li><span class="opt-key">(c)</span> AIIMS Delhi</li>
+      <li><span class="opt-key">(d)</span> NCCS Pune</li>
+    </ul>
+    <p class="ans">Answer: (b) The Centre for Cellular and Molecular Biology (CCMB), Hyderabad, pioneered DNA fingerprinting in India.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> mitosis vs meiosis outputs &middot; father decides sex &middot; Mendel's ratios (3:1, 9:3:3:1) &middot; X-linked disorders &amp; carriers &middot; sickle-cell &amp; malaria &middot; chromosome number &middot; HGP &amp; Genome India &middot; CRISPR &amp; DNA fingerprinting. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 12: MAINS ===== -->
+<section class="notes" id="mains-pyq">
+  <h2>12. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>Genetics anchors applied GS-III/IV questions on biotechnology, health equity and ethics. The frameworks below show how to deploy it analytically.</em></p>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> "Gene-editing technologies like CRISPR hold transformative potential for medicine but raise profound ethical questions." Discuss.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction &mdash; define:</strong> CRISPR is a precise gene-editing tool that can add, delete or correct DNA sequences &mdash; built on the genetics of Sections 4&ndash;9.</li>
+        <li><strong>Potential:</strong>
+          <ul>
+            <li>Cure genetic disorders (sickle-cell, thalassaemia); cancer therapy; agriculture (pest/climate-resilient crops); diagnostics.</li>
+            <li>Cheaper, faster and more precise than earlier methods.</li>
+          </ul>
+        </li>
+        <li><strong>Ethical concerns:</strong> germline (heritable) editing &amp; "designer babies"; consent of future generations; equity &amp; access; unintended off-target effects; biosecurity misuse.</li>
+        <li><strong>Governance:</strong> need for ethical guidelines (ICMR), regulatory oversight, global norms (WHO), and a line between somatic therapy and germline edits.</li>
+        <li><strong>Way forward:</strong> permit therapeutic somatic use with strict oversight; broad public debate; equitable access; caution on germline editing.</li>
+        <li><strong>Conclusion:</strong> harnessing CRISPR needs the science plus firm ethical &amp; regulatory guardrails.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-II <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Examine the significance of the National Sickle Cell Anaemia Elimination Mission for tribal health in India.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Sickle-cell anaemia is an autosomal-recessive disorder (Section 7) concentrated among tribal communities; the Mission aims to eliminate it by 2047.</li>
+        <li><strong>Significance:</strong>
+          <ul>
+            <li>Targets a long-neglected, high-burden tribal health problem; large-scale screening &amp; counselling.</li>
+            <li>Prevention via carrier screening before marriage; treatment &amp; support; reduces suffering &amp; out-of-pocket cost.</li>
+          </ul>
+        </li>
+        <li><strong>Challenges:</strong> reaching remote areas; stigma; genetic counselling capacity; sustained funding &amp; follow-up.</li>
+        <li><strong>Way forward:</strong> integrate with Ayushman Bharat &amp; tribal health; awareness; newer therapies (gene therapy) as they mature.</li>
+        <li><strong>Conclusion:</strong> a welcome, genetics-informed step toward health equity for tribal India.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> How does DNA fingerprinting work, and what are its applications and concerns?</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> DNA fingerprinting identifies individuals from unique, highly variable repeat sequences in their DNA (Section 9).</li>
+        <li><strong>How it works:</strong> a DNA sample is analysed for these repeats, producing a pattern unique to each person (except identical twins).</li>
+        <li><strong>Applications:</strong> criminal forensics; paternity/maternity disputes; disaster-victim &amp; missing-person identification; wildlife forensics.</li>
+        <li><strong>Concerns:</strong> privacy &amp; data protection; potential misuse &amp; surveillance; consent; need for a robust DNA-database law with safeguards.</li>
+        <li><strong>Conclusion:</strong> a powerful forensic tool that must be balanced with privacy protections.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Explain the significance of the Human Genome Project and India's Genome India Project for the future of medicine.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> The HGP (2003) mapped the entire human genome; Genome India is building a reference of diverse Indian genomes.</li>
+        <li><strong>Significance:</strong>
+          <ul>
+            <li>Enables <strong>precision/personalised medicine</strong> &mdash; tailoring treatment to an individual's genetic profile.</li>
+            <li>Better understanding of disease risk, drug response (pharmacogenomics) and population-specific variants.</li>
+          </ul>
+        </li>
+        <li><strong>India-specific value:</strong> captures the genetic diversity of Indian populations, often under-represented globally; aids disease research (diabetes, cardiac, rare disorders).</li>
+        <li><strong>Concerns:</strong> data privacy, consent, genetic discrimination, and equitable benefit-sharing.</li>
+        <li><strong>Conclusion:</strong> genomics is reshaping medicine; India's project ensures its population is not left out, if privacy is safeguarded.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> CRISPR &amp; gene-editing ethics &middot; sickle-cell mission &middot; DNA fingerprinting &amp; privacy &middot; genomics &amp; precision medicine &middot; GM &amp; genetic technology in agriculture (link Topic 10). <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; Reproduction &amp; Genetics</h3>
+    <div class="grid-2">
+      <div>
+        <strong>Reproduction &amp; division:</strong>
+        <ul>
+          <li>Asexual = 1 parent, clones (fission, budding, spores); sexual = variation</li>
+          <li>Mitosis: body cells, 1 division, 2 identical 2n cells (growth/repair)</li>
+          <li>Meiosis: germ cells, 2 divisions, 4 haploid (n) gametes (variation)</li>
+          <li>Zygote (2n) = sperm (n) + egg (n)</li>
+        </ul>
+        <strong>DNA &amp; Mendel:</strong>
+        <ul>
+          <li>Hierarchy: nucleotide &rarr; DNA &rarr; gene &rarr; chromosome &rarr; genome</li>
+          <li>Humans = 46 chromosomes (23 pairs); 22 autosome pairs + 1 sex pair</li>
+          <li>Mendel = father of genetics; monohybrid 3:1, dihybrid 9:3:3:1</li>
+          <li>Central dogma: DNA &rarr; RNA &rarr; protein</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Sex &amp; disorders:</strong>
+        <ul>
+          <li>Female XX, male XY; father's sperm decides sex; Y has SRY gene</li>
+          <li>Haemophilia &amp; colour blindness = X-linked recessive (mostly males)</li>
+          <li>Thalassaemia &amp; sickle-cell = autosomal recessive; sickle carrier resists malaria</li>
+          <li>Down syndrome = trisomy 21 (extra chromosome)</li>
+        </ul>
+        <strong>Genomics:</strong>
+        <ul>
+          <li>Human Genome Project 1990&ndash;2003; ~3 billion base pairs, ~20&ndash;25k genes</li>
+          <li>DNA fingerprinting = CCMB Hyderabad; forensics &amp; paternity</li>
+          <li>CRISPR = gene editing; Genome India = Indian genomes</li>
+          <li>Mutation = source of variation; PCPNDT bans sex determination</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes:</strong> mitosis vs meiosis &middot; father decides sex &middot; Mendel's ratios &middot; X-linked disorders &middot; sickle-cell &amp; malaria &middot; 46 chromosomes &middot; HGP &amp; CRISPR &middot; DNA fingerprinting.</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== SIDEBAR ===== -->
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Quick Reference &mdash; Mitosis vs Meiosis</h4>
+    <table>
+      <tr><th>Feature</th><th>Mit / Mei</th></tr>
+      <tr><td>Divisions</td><td>1 / 2</td></tr>
+      <tr><td>Cells</td><td>2 / 4</td></tr>
+      <tr><td>Chromosome</td><td>2n / n</td></tr>
+      <tr><td>Where</td><td>Body / Germ</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Disorder &rarr; Type</h4>
+    <table>
+      <tr><th>Disorder</th><th>Type</th></tr>
+      <tr><td>Haemophilia</td><td>X-linked</td></tr>
+      <tr><td>Colour blindness</td><td>X-linked</td></tr>
+      <tr><td>Sickle-cell</td><td>Autosomal rec.</td></tr>
+      <tr><td>Down syndrome</td><td>Trisomy 21</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Key Terms &amp; Data</h4>
+    <table>
+      <tr><th>Item</th><th>Value</th></tr>
+      <tr><td>Chromosomes</td><td>46 (23 pairs)</td></tr>
+      <tr><td>Female / Male</td><td>XX / XY</td></tr>
+      <tr><td>HGP</td><td>1990&ndash;2003</td></tr>
+      <tr><td>Genes</td><td>~20&ndash;25k</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:90%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains GS-III</span><span class="fill"><span style="width:68%"></span></span></div>
+    <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:92%"></span></span></div>
+    <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:70%"></span></span></div>
+    <p style="margin-top:8px;font-size:11px;color:var(--muted);">Strong biotech &amp; ethics bridge for Mains.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Genetics at a Glance</h4>
+    <ul>
+      <li>Asexual vs sexual</li>
+      <li>Human reproduction</li>
+      <li>Mitosis vs meiosis</li>
+      <li>DNA&ndash;gene&ndash;chromosome</li>
+      <li>Mendel's laws</li>
+      <li>Sex determination</li>
+      <li>Genetic disorders</li>
+      <li>Genomics &amp; CRISPR</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">Meiosis = 4 haploid</span>
+    <span class="tag">Mitosis = 2 identical</span>
+    <span class="tag green">Father decides sex</span>
+    <span class="tag">46 chromosomes</span>
+    <span class="tag orange">X-linked = haemophilia</span>
+    <span class="tag">Sickle = malaria resist</span>
+    <span class="tag green">Down = trisomy 21</span>
+    <span class="tag">Mendel = genetics</span>
+    <span class="tag orange">CCMB = DNA print</span>
+    <span class="tag">CRISPR = editing</span>
+  </div>
+
+  <div class="widget">
+    <h4>Data Sources to Bookmark</h4>
+    <ul>
+      <li><a href="https://dbtindia.gov.in" target="_blank" rel="noopener">Dept of Biotechnology</a></li>
+      <li><a href="https://www.ccmb.res.in" target="_blank" rel="noopener">CCMB Hyderabad</a></li>
+      <li><a href="https://www.icmr.gov.in" target="_blank" rel="noopener">ICMR</a></li>
+      <li><a href="https://pib.gov.in" target="_blank" rel="noopener">PIB</a></li>
+    </ul>
+    <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/science-technology/the-cell-and-tissues">S&amp;T T2: Cell &amp; Tissues</a></li>
+      <li><a href="/science-technology/human-physiology">S&amp;T T3: Human Physiology</a></li>
+      <li><a href="/science-technology/immunity-diseases-and-health">S&amp;T T5: Immunity &amp; Diseases</a></li>
+      <li><a href="/science-technology/biotechnology">S&amp;T T10: Biotechnology</a></li>
+      <li><a href="/science-technology">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding:0;margin:0;">
+      <li style="margin:4px 0;"><a href="#reprotypes" style="font-size:12px;">Reproduction Types</a></li>
+      <li style="margin:4px 0;"><a href="#human" style="font-size:12px;">Human Reproduction</a></li>
+      <li style="margin:4px 0;"><a href="#division" style="font-size:12px;">Mitosis &amp; Meiosis</a></li>
+      <li style="margin:4px 0;"><a href="#dnagene" style="font-size:12px;">DNA, Gene, Chromosome</a></li>
+      <li style="margin:4px 0;"><a href="#mendel" style="font-size:12px;">Mendel's Laws</a></li>
+      <li style="margin:4px 0;"><a href="#sexdet" style="font-size:12px;">Sex Determination</a></li>
+      <li style="margin:4px 0;"><a href="#disorders" style="font-size:12px;">Genetic Disorders</a></li>
+      <li style="margin:4px 0;"><a href="#mutation" style="font-size:12px;">Mutation</a></li>
+      <li style="margin:4px 0;"><a href="#genomics" style="font-size:12px;">Genomics</a></li>
+      <li style="margin:4px 0;"><a href="#currentaffairs" style="font-size:12px;">Current Affairs</a></li>
+      <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

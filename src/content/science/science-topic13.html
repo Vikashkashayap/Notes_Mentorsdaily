@@ -1,0 +1,703 @@
+<!-- science-topic13 — auto-imported from scitech-topic13-ai-robotics-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 13: Artificial Intelligence &amp; Robotics</h1>
+  <p class="sub">AI is the single hottest GS-III technology &mdash; touching every sector, economy, ethics &amp; security. This file covers what <strong>AI</strong> is (narrow vs general), <strong>machine learning</strong> &amp; <strong>deep learning</strong>, <strong>neural networks</strong>, <strong>generative AI</strong> &amp; large language models (ChatGPT), <strong>natural language processing</strong> &amp; computer vision, <strong>robotics</strong> &amp; automation, <strong>drones</strong> &amp; UAVs, the <strong>Internet of Things (IoT)</strong>, applications in health, agriculture, governance &amp; defence, <strong>AI risks &amp; ethics</strong> (bias, deepfakes, jobs), and India's <strong>AI policy</strong> (IndiaAI Mission, NITI Aayog strategy) &mdash; with labelled diagrams, tables and real dated PYQs with full model answers.</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Generative AI &middot; LLMs</span>
+    <span class="pill">~40 min read</span>
+    <span class="pill">AI Ethics &amp; IndiaAI</span>
+    <span class="pill">Very High CA Weight</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#whatis">What is AI?</a></li>
+    <li><span class="num">2.</span><a href="#ml">Machine &amp; Deep Learning</a></li>
+    <li><span class="num">3.</span><a href="#genai">Generative AI &amp; LLMs</a></li>
+    <li><span class="num">4.</span><a href="#nlpvision">NLP &amp; Computer Vision</a></li>
+    <li><span class="num">5.</span><a href="#robotics">Robotics &amp; Automation</a></li>
+    <li><span class="num">6.</span><a href="#drones">Drones &amp; UAVs</a></li>
+    <li><span class="num">7.</span><a href="#iot">Internet of Things</a></li>
+    <li><span class="num">8.</span><a href="#applications">Applications &amp; India's AI Policy</a></li>
+    <li><span class="num">9.</span><a href="#ethics">AI Risks &amp; Ethics</a></li>
+    <li><span class="num">10.</span><a href="#currentaffairs">Current Affairs Link</a></li>
+    <li><span class="num">11.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><span class="num">12.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Tests AI &amp; Robotics</h3>
+  <p>AI is a <strong>guaranteed, high-return</strong> area with heavy Mains weight (economy, ethics, governance). Sort your prep into three question-types:</p>
+  <ul>
+    <li><strong>Definitional / static</strong> &mdash; "what is machine learning?", "narrow vs general AI?", "what is an LLM?". Recall of concepts &amp; terms.</li>
+    <li><strong>Statement-elimination</strong> &mdash; ML vs deep learning, generative-AI features, robotics/IoT statements where one detail decides the answer.</li>
+    <li><strong>Applied / current</strong> &mdash; an AI reform or issue in the news (IndiaAI Mission, deepfakes, AI regulation) linked to a fundamental &mdash; the strong GS-III bridge (jobs, ethics, security).</li>
+  </ul>
+  <p><strong>Highest-frequency themes:</strong> narrow vs general AI &middot; machine vs deep learning &middot; generative AI &amp; LLMs &middot; NLP &amp; computer vision &middot; drones &amp; IoT &middot; AI ethics (bias, deepfakes, jobs) &middot; IndiaAI Mission.</p>
+</div>
+
+<!-- ===== SECTION 1 ===== -->
+<section class="notes" id="whatis">
+  <h2>1. What is Artificial Intelligence?</h2>
+  <ul>
+    <li><strong>AI</strong> = machines performing tasks that normally need human intelligence &mdash; learning, reasoning, perception, language &amp; decision-making.</li>
+    <li><strong>Narrow (weak) AI</strong> = does one specific task (face recognition, chatbots, recommendation) &mdash; all today's AI is narrow.</li>
+    <li><strong>General (strong) AI</strong> = human-level ability across any task &mdash; still hypothetical; <strong>Super AI</strong> = beyond human &mdash; theoretical.</li>
+    <li>AI includes many methods: machine learning, expert systems, robotics, NLP &amp; computer vision.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> all current AI is <strong>narrow AI</strong> (task-specific); general AI (human-level) &amp; super AI remain hypothetical; AI is a broad field, of which machine learning is one (dominant) approach.</div>
+</section>
+
+<!-- ===== SECTION 2 ===== -->
+<section class="notes" id="ml">
+  <h2>2. Machine Learning &amp; Deep Learning</h2>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 460 180" width="460" height="180" role="img" aria-label="AI contains machine learning which contains deep learning, nested circles">
+      <rect x="0" y="0" width="460" height="180" fill="#ffffff"/>
+      <g font-family="sans-serif" font-size="11" text-anchor="middle">
+        <circle cx="230" cy="90" r="82" fill="#eef4fa" stroke="#1a3d5c"/><text x="230" y="30">Artificial Intelligence</text>
+        <circle cx="230" cy="98" r="58" fill="#e4f0ea" stroke="#1a7a5a"/><text x="230" y="58" fill="#1a7a5a">Machine Learning</text>
+        <circle cx="230" cy="112" r="30" fill="#f7e9d8" stroke="#c47820"/><text x="230" y="116" font-size="10" fill="#c47820">Deep Learning</text>
+      </g>
+    </svg>
+    <div class="svg-caption">Fig 13.1 &mdash; AI &sup; Machine Learning &sup; Deep Learning. ML learns patterns from data; deep learning uses many-layered neural networks and drives most modern AI.</div>
+  </div>
+  <ul>
+    <li><strong>Machine Learning (ML)</strong> = systems that <em>learn patterns from data</em> instead of being explicitly programmed. Types: <em>supervised</em> (labelled data), <em>unsupervised</em> (finds patterns), <em>reinforcement</em> (learns by reward).</li>
+    <li><strong>Deep Learning</strong> = ML using <strong>artificial neural networks</strong> with many layers &mdash; inspired by the brain; powers image, speech &amp; language AI.</li>
+    <li>More data + more compute (GPUs) + better algorithms = the AI boom.</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims traps:</strong> <strong>ML is a subset of AI</strong>, and <strong>deep learning is a subset of ML</strong>. Supervised = labelled data; unsupervised = unlabelled/patterns; reinforcement = reward-based. Neural networks underpin deep learning.</div>
+</section>
+
+<!-- ===== SECTION 3 ===== -->
+<section class="notes" id="genai">
+  <h2>3. Generative AI &amp; Large Language Models</h2>
+  <ul>
+    <li><strong>Generative AI</strong> = AI that <em>creates</em> new content &mdash; text, images, audio, code &mdash; rather than only classifying. Examples: ChatGPT (text), image &amp; video generators.</li>
+    <li><strong>Large Language Models (LLMs)</strong> are deep-learning models trained on vast text to predict &amp; generate language; they use the <strong>"transformer"</strong> architecture.</li>
+    <li><strong>Strengths:</strong> drafting, summarising, coding, tutoring, translation. <strong>Limits:</strong> "hallucinations" (confident wrong answers), bias, and no true understanding.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> generative AI creates new content; LLMs (like ChatGPT) are transformer-based deep-learning models trained on huge text data; they can "hallucinate" false outputs &mdash; so human oversight is essential.</div>
+</section>
+
+<!-- ===== SECTION 4 ===== -->
+<section class="notes" id="nlpvision">
+  <h2>4. NLP &amp; Computer Vision</h2>
+  <table>
+    <tr><th>Field</th><th>What it does</th></tr>
+    <tr><td><strong>Natural Language Processing (NLP)</strong></td><td>Understanding &amp; generating human language &mdash; translation, chatbots, voice assistants, sentiment analysis</td></tr>
+    <tr><td><strong>Computer Vision</strong></td><td>Interpreting images/video &mdash; face &amp; object recognition, medical imaging, self-driving cars</td></tr>
+    <tr><td><strong>Speech recognition</strong></td><td>Converting speech to text (voice assistants)</td></tr>
+  </table>
+  <div class="callout warn"><strong>GS-III hook:</strong> NLP (Indian-language models like Bhashini) can bridge the language barrier in governance &amp; services; computer vision powers diagnostics, surveillance &amp; agriculture &mdash; but also raises privacy &amp; surveillance concerns.</div>
+</section>
+
+<!-- ===== SECTION 5 ===== -->
+<section class="notes" id="robotics">
+  <h2>5. Robotics &amp; Automation</h2>
+  <ul>
+    <li><strong>Robotics</strong> = designing machines that sense, decide &amp; act physically. A robot has sensors (input), a controller (processing) &amp; actuators (movement).</li>
+    <li><strong>Types:</strong> industrial robots (manufacturing), service robots, medical/surgical robots, <strong>cobots</strong> (work alongside humans), autonomous robots &amp; humanoids.</li>
+    <li><strong>Automation:</strong> combining AI + robotics for self-running processes; drives Industry 4.0 (smart factories).</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> a robot = sensors + controller + actuators; cobots collaborate safely with humans; robotics + AI + IoT + big data underpin "Industry 4.0" (the fourth industrial revolution).</div>
+</section>
+
+<!-- ===== SECTION 6 ===== -->
+<section class="notes" id="drones">
+  <h2>6. Drones &amp; UAVs</h2>
+  <ul>
+    <li><strong>Drones (UAVs)</strong> = unmanned aerial vehicles, remotely or autonomously flown. Uses: agriculture (spraying, mapping), delivery, surveillance, disaster relief, defence.</li>
+    <li>India's <strong>Drone Rules 2021</strong> liberalised drone use; the <strong>PLI scheme</strong> &amp; "Drone Shakti" promote domestic manufacturing; <strong>Namo Drone Didi</strong> empowers women SHGs with agri-drones.</li>
+    <li><strong>Security angle:</strong> drones are dual-use &mdash; used for smuggling &amp; attacks (needing counter-drone systems).</li>
+  </ul>
+  <div class="callout warn"><strong>GS-III hook:</strong> drones aid precision agriculture, logistics &amp; disaster response but pose security &amp; privacy risks &mdash; India balances promotion (Drone Rules 2021, PLI, Namo Drone Didi) with counter-drone defence.</div>
+</section>
+
+<!-- ===== SECTION 7 ===== -->
+<section class="notes" id="iot">
+  <h2>7. Internet of Things (IoT)</h2>
+  <ul>
+    <li><strong>IoT</strong> = everyday physical devices (appliances, sensors, vehicles) connected to the internet, sensing &amp; exchanging data &mdash; enabling smart homes, cities, health &amp; industry.</li>
+    <li>IoT + AI + 5G + cloud = real-time automation; generates the Big Data that trains AI (Topic 12).</li>
+    <li><strong>Concerns:</strong> security (many weak devices), privacy &amp; interoperability.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> IoT connects everyday devices online to collect &amp; share data; combined with 5G &amp; AI it enables smart cities, precision agriculture &amp; predictive maintenance &mdash; but weak device security is a major cyber risk.</div>
+</section>
+
+<!-- ===== SECTION 8 ===== -->
+<section class="notes" id="applications">
+  <h2>8. Applications &amp; India's AI Policy</h2>
+  <table>
+    <tr><th>Sector</th><th>AI application</th></tr>
+    <tr><td>Health</td><td>Diagnosis, imaging, drug discovery, tele-medicine</td></tr>
+    <tr><td>Agriculture</td><td>Crop advisory, pest detection, yield prediction, drones</td></tr>
+    <tr><td>Governance</td><td>Language translation (Bhashini), fraud detection, grievance handling</td></tr>
+    <tr><td>Finance &amp; defence</td><td>Credit scoring, fraud, autonomous systems, surveillance</td></tr>
+  </table>
+  <ul>
+    <li><strong>India's policy:</strong> NITI Aayog's "<strong>AI for All</strong>" National Strategy; the <strong>IndiaAI Mission</strong> (compute, datasets, skilling, safe &amp; inclusive AI); "AI for social good".</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> NITI Aayog's National Strategy = "AI for All" for inclusive growth; the IndiaAI Mission builds compute, datasets &amp; skilling; Bhashini = AI language-translation mission for Indian languages.</div>
+</section>
+
+<!-- ===== SECTION 9 ===== -->
+<section class="notes" id="ethics">
+  <h2>9. AI Risks &amp; Ethics</h2>
+  <ul>
+    <li><strong>Bias &amp; discrimination:</strong> AI trained on biased data can entrench social bias in hiring, credit &amp; policing.</li>
+    <li><strong>Deepfakes &amp; misinformation:</strong> generative AI can create fake but realistic media &mdash; a threat to trust, privacy &amp; democracy.</li>
+    <li><strong>Jobs:</strong> automation may displace routine work while creating new roles &mdash; needs reskilling.</li>
+    <li><strong>Other:</strong> privacy &amp; surveillance, "black-box" opacity, accountability, concentration of power, and autonomous weapons.</li>
+    <li><strong>Governance:</strong> global efforts (EU AI Act, Bletchley/AI-safety summits) &amp; India's "responsible AI" principles seek safe, ethical AI.</li>
+  </ul>
+  <div class="callout warn"><strong>GS-III/GS-IV hook:</strong> AI's power raises <strong>ethical &amp; governance</strong> questions &mdash; bias, deepfakes, jobs, privacy &amp; accountability. The answer is "responsible AI": fairness, transparency, human oversight &amp; regulation that enables innovation without harm.</div>
+</section>
+
+<!-- ===== SECTION 10: CURRENT AFFAIRS ===== -->
+<section class="notes" id="currentaffairs">
+  <h2>10. Current Affairs Link (2024&ndash;2026)</h2>
+  <p>AI is the fastest-moving tech news area. Verify the latest before the exam. <span class="update-tag">check for latest update or data</span></p>
+  <div class="callout update"><strong>IndiaAI Mission:</strong> compute infrastructure, indigenous foundation models &amp; datasets &amp; skilling apply Section 8. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout update"><strong>Generative AI &amp; regulation:</strong> new LLMs, deepfake advisories &amp; global AI-safety governance apply Sections 3 &amp; 9. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout warn"><strong>Drones &amp; robotics:</strong> Namo Drone Didi, drone manufacturing &amp; counter-drone systems apply Sections 5&ndash;6. <span class="update-tag">check for latest update or data</span></div>
+  <table>
+    <tr><th>Recent theme</th><th>Fundamental it tests</th><th>Why it matters for UPSC</th></tr>
+    <tr><td>IndiaAI Mission</td><td>AI policy</td><td>GS-III self-reliance in AI.</td></tr>
+    <tr><td>Generative AI / deepfakes</td><td>Gen AI &amp; ethics</td><td>GS-III/IV ethics &amp; democracy.</td></tr>
+    <tr><td>Drones (Namo Drone Didi)</td><td>Drones</td><td>GS-III agri &amp; security.</td></tr>
+    <tr><td>AI &amp; jobs</td><td>Automation</td><td>GS-III economy &amp; skilling.</td></tr>
+  </table>
+  <ul>
+    <li><strong>Recurring exam hooks:</strong> narrow vs general AI &middot; ML vs deep learning &middot; generative AI &amp; LLMs &middot; deepfakes &amp; bias &middot; drones &amp; IoT &middot; IndiaAI Mission &amp; Bhashini.</li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 11: PRELIMS ===== -->
+<section class="notes" id="prelims-pyq">
+  <h2>11. Prelims PYQs</h2>
+  <p style="font-size:13px;color:var(--muted)"><em>Objective questions anchored to genuinely tested UPSC themes on AI &amp; robotics. Each carries a worked rationale.</em></p>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; AI hierarchy</div>
+    <p class="q-stem"><strong>Q:</strong> Which statement about the relationship between AI, machine learning &amp; deep learning is correct?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> They are three unrelated fields</li>
+      <li class="correct"><span class="opt-key">(b)</span> Deep learning is a subset of machine learning, which is a subset of AI</li>
+      <li><span class="opt-key">(c)</span> AI is a subset of machine learning</li>
+      <li><span class="opt-key">(d)</span> Machine learning is a subset of deep learning</li>
+    </ul>
+    <p class="ans">Answer: (b) AI &sup; machine learning &sup; deep learning; deep learning uses many-layered neural networks and drives most modern AI.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Narrow AI</div>
+    <p class="q-stem"><strong>Q:</strong> All artificial intelligence in use today is best classified as &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> narrow (weak) AI</li>
+      <li><span class="opt-key">(b)</span> general (strong) AI</li>
+      <li><span class="opt-key">(c)</span> super AI</li>
+      <li><span class="opt-key">(d)</span> conscious AI</li>
+    </ul>
+    <p class="ans">Answer: (a) Today's AI is narrow &mdash; each system does specific tasks; general (human-level) &amp; super AI remain hypothetical.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Generative AI</div>
+    <p class="q-stem"><strong>Q:</strong> A large language model such as ChatGPT is an example of &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> a search engine</li>
+      <li class="correct"><span class="opt-key">(b)</span> generative AI</li>
+      <li><span class="opt-key">(c)</span> a spreadsheet program</li>
+      <li><span class="opt-key">(d)</span> a robotics controller</li>
+    </ul>
+    <p class="ans">Answer: (b) LLMs are generative AI &mdash; transformer-based deep-learning models that create text; they can "hallucinate" incorrect outputs.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; ML types</div>
+    <p class="q-stem"><strong>Q:</strong> In machine learning, learning from labelled data is called &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> supervised learning</li>
+      <li><span class="opt-key">(b)</span> unsupervised learning</li>
+      <li><span class="opt-key">(c)</span> reinforcement learning</li>
+      <li><span class="opt-key">(d)</span> deep learning</li>
+    </ul>
+    <p class="ans">Answer: (a) Supervised learning uses labelled examples; unsupervised finds patterns in unlabelled data; reinforcement learns via rewards.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; IoT</div>
+    <p class="q-stem"><strong>Q:</strong> The "Internet of Things" (IoT) refers to &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> a new internet protocol</li>
+      <li class="correct"><span class="opt-key">(b)</span> everyday physical devices connected online to sense &amp; share data</li>
+      <li><span class="opt-key">(c)</span> a social-media platform</li>
+      <li><span class="opt-key">(d)</span> a type of encryption</li>
+    </ul>
+    <p class="ans">Answer: (b) IoT connects everyday devices &amp; sensors to the internet; with 5G &amp; AI it powers smart cities, agriculture &amp; industry.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Deepfake</div>
+    <p class="q-stem"><strong>Q:</strong> "Deepfakes" are produced using &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> quantum computers</li>
+      <li class="correct"><span class="opt-key">(b)</span> AI/deep-learning techniques</li>
+      <li><span class="opt-key">(c)</span> blockchain</li>
+      <li><span class="opt-key">(d)</span> satellite imaging</li>
+    </ul>
+    <p class="ans">Answer: (b) Deepfakes use deep-learning (generative AI) to create realistic fake images/video/audio &mdash; a threat to trust, privacy &amp; democracy.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Robotics</div>
+    <p class="q-stem"><strong>Q:</strong> A "cobot" is &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> a robot designed to work safely alongside humans</li>
+      <li><span class="opt-key">(b)</span> a fully autonomous military robot</li>
+      <li><span class="opt-key">(c)</span> a chatbot</li>
+      <li><span class="opt-key">(d)</span> a cloud-based robot database</li>
+    </ul>
+    <p class="ans">Answer: (a) A cobot (collaborative robot) works alongside humans safely, unlike caged industrial robots &mdash; a feature of Industry 4.0.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; India AI</div>
+    <p class="q-stem"><strong>Q:</strong> "Bhashini" is an Indian initiative related to &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> drone manufacturing</li>
+      <li class="correct"><span class="opt-key">(b)</span> AI-based language translation for Indian languages</li>
+      <li><span class="opt-key">(c)</span> a supercomputer</li>
+      <li><span class="opt-key">(d)</span> a satellite constellation</li>
+    </ul>
+    <p class="ans">Answer: (b) Bhashini is an AI language-translation mission enabling digital services in Indian languages &mdash; bridging the language barrier in governance.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> AI/ML/deep-learning hierarchy &middot; narrow vs general AI &middot; generative AI &amp; LLMs &middot; supervised/unsupervised/reinforcement &middot; IoT &middot; drones &amp; cobots &middot; IndiaAI &amp; Bhashini &middot; deepfakes. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 12: MAINS ===== -->
+<section class="notes" id="mains-pyq">
+  <h2>12. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>AI anchors GS-III questions on economy, ethics, governance &amp; security. The frameworks below show how to deploy it analytically.</em></p>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Artificial intelligence is a double-edged sword. Discuss its opportunities and risks for India.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> AI (Section 1) can transform India's economy &amp; services but also poses serious risks &mdash; a double-edged tool.</li>
+        <li><strong>Opportunities:</strong>
+          <ul>
+            <li>Health (diagnosis), agriculture (advisory), governance (Bhashini, fraud detection), productivity &amp; a projected large GDP boost.</li>
+          </ul>
+        </li>
+        <li><strong>Risks:</strong> job displacement, bias, deepfakes &amp; misinformation, privacy &amp; surveillance, "black-box" opacity &amp; concentration of power.</li>
+        <li><strong>India's response:</strong> IndiaAI Mission, "AI for All", responsible-AI principles &amp; skilling.</li>
+        <li><strong>Way forward:</strong> ethical &amp; risk-based regulation, reskilling, indigenous capability &amp; inclusive access.</li>
+        <li><strong>Conclusion:</strong> harnessed responsibly, AI can drive inclusive growth; unmanaged, it can deepen harms.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Examine the impact of AI-driven automation on employment and the need for reskilling.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> AI + robotics automate routine work (Sections 5, 9), reshaping the labour market.</li>
+        <li><strong>Impact:</strong>
+          <ul>
+            <li>Displacement of routine manual &amp; clerical jobs; creation of new roles (AI, data, care); rising demand for higher skills; risk of inequality.</li>
+          </ul>
+        </li>
+        <li><strong>Reskilling need:</strong> digital &amp; cognitive skills, lifelong learning, and social-security cushions.</li>
+        <li><strong>India's tools:</strong> Skill India, IndiaAI skilling, industry partnerships.</li>
+        <li><strong>Way forward:</strong> proactive reskilling, education reform &amp; a just transition.</li>
+        <li><strong>Conclusion:</strong> the net effect depends on how well India reskills its workforce for an AI economy.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> What are deepfakes, and why are they a threat to democracy and privacy?</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Deepfakes (Section 9) are AI-generated realistic fake media.</li>
+        <li><strong>Threats:</strong>
+          <ul>
+            <li>Misinformation &amp; fake political content erode trust &amp; can sway elections; non-consensual imagery violates privacy &amp; dignity; fraud &amp; impersonation.</li>
+          </ul>
+        </li>
+        <li><strong>Response:</strong> detection tools, labelling/watermarking, platform accountability &amp; legal remedies.</li>
+        <li><strong>Conclusion:</strong> countering deepfakes needs technology, regulation &amp; digital literacy together.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> How can drones and IoT transform Indian agriculture &amp; disaster management? Note the challenges.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Drones (Section 6) &amp; IoT (Section 7) bring precise, real-time data &amp; action to farming &amp; disasters.</li>
+        <li><strong>Agriculture:</strong>
+          <ul>
+            <li>Crop mapping, targeted spraying, soil &amp; pest monitoring (Namo Drone Didi); IoT sensors for irrigation &amp; yields.</li>
+          </ul>
+        </li>
+        <li><strong>Disaster management:</strong> aerial survey &amp; damage mapping, search-and-rescue, delivering supplies, early warning via sensors.</li>
+        <li><strong>Challenges:</strong> cost &amp; skills, connectivity, data security &amp; privacy, regulation &amp; misuse.</li>
+        <li><strong>Conclusion:</strong> drones &amp; IoT can boost resilience &amp; productivity if access, skilling &amp; safety are ensured.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> AI opportunities vs risks &middot; AI &amp; jobs/reskilling &middot; deepfakes &amp; democracy &middot; AI ethics &amp; regulation &middot; drones/IoT for development &middot; India's AI self-reliance. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; AI &amp; Robotics</h3>
+    <div class="grid-2">
+      <div>
+        <strong>AI basics:</strong>
+        <ul>
+          <li>AI &sup; ML &sup; deep learning (nested)</li>
+          <li>All current AI = narrow; general/super AI = hypothetical</li>
+          <li>ML types: supervised (labelled), unsupervised (patterns), reinforcement (reward)</li>
+          <li>Deep learning = many-layer neural networks</li>
+        </ul>
+        <strong>Generative AI:</strong>
+        <ul>
+          <li>Creates new content; LLMs (ChatGPT) = transformer-based</li>
+          <li>Risk: "hallucination" (confident wrong answers)</li>
+          <li>NLP = language; computer vision = images</li>
+          <li>Bhashini = Indian-language AI translation</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Robotics, drones, IoT:</strong>
+        <ul>
+          <li>Robot = sensors + controller + actuators; cobot = works with humans</li>
+          <li>Industry 4.0 = AI + robotics + IoT + big data</li>
+          <li>Drones = UAVs; Drone Rules 2021, Namo Drone Didi</li>
+          <li>IoT = devices online; weak security = cyber risk</li>
+        </ul>
+        <strong>Policy &amp; ethics:</strong>
+        <ul>
+          <li>NITI Aayog "AI for All"; IndiaAI Mission (compute/data/skilling)</li>
+          <li>Risks: bias, deepfakes, jobs, privacy, black-box</li>
+          <li>Responsible AI = fairness, transparency, human oversight</li>
+          <li>Global: EU AI Act, AI-safety summits</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes:</strong> AI/ML/DL hierarchy &middot; narrow vs general AI &middot; generative AI &amp; LLMs &middot; deepfakes &amp; bias &middot; drones &amp; IoT &middot; IndiaAI &amp; Bhashini.</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== SIDEBAR ===== -->
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Quick Reference &mdash; AI Terms</h4>
+    <table>
+      <tr><th>Term</th><th>Meaning</th></tr>
+      <tr><td>Narrow AI</td><td>Task-specific</td></tr>
+      <tr><td>ML</td><td>Learns from data</td></tr>
+      <tr><td>Deep learning</td><td>Neural nets</td></tr>
+      <tr><td>LLM</td><td>Text generator</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>ML Types</h4>
+    <table>
+      <tr><th>Type</th><th>Data</th></tr>
+      <tr><td>Supervised</td><td>Labelled</td></tr>
+      <tr><td>Unsupervised</td><td>Patterns</td></tr>
+      <tr><td>Reinforcement</td><td>Reward</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Key Facts &amp; Data</h4>
+    <table>
+      <tr><th>Item</th><th>Value</th></tr>
+      <tr><td>Current AI</td><td>Narrow</td></tr>
+      <tr><td>Gen AI</td><td>Transformer</td></tr>
+      <tr><td>India strategy</td><td>AI for All</td></tr>
+      <tr><td>Lang AI</td><td>Bhashini</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:90%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains GS-III</span><span class="fill"><span style="width:95%"></span></span></div>
+    <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:75%"></span></span></div>
+    <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:98%"></span></span></div>
+    <p style="margin-top:8px;font-size:11px;color:var(--muted);">Hottest tech &mdash; heavy Mains weight.</p>
+  </div>
+
+  <div class="widget">
+    <h4>AI &amp; Robotics at a Glance</h4>
+    <ul>
+      <li>What is AI</li>
+      <li>ML &amp; deep learning</li>
+      <li>Generative AI &amp; LLMs</li>
+      <li>NLP &amp; vision</li>
+      <li>Robotics</li>
+      <li>Drones</li>
+      <li>IoT</li>
+      <li>Ethics &amp; IndiaAI</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">AI&sup;ML&sup;DL</span>
+    <span class="tag">Narrow AI today</span>
+    <span class="tag green">LLM = gen AI</span>
+    <span class="tag">Hallucination</span>
+    <span class="tag orange">Deepfake</span>
+    <span class="tag">Cobot</span>
+    <span class="tag green">Industry 4.0</span>
+    <span class="tag">IoT</span>
+    <span class="tag orange">IndiaAI Mission</span>
+    <span class="tag">Bhashini</span>
+  </div>
+
+  <div class="widget">
+    <h4>Data Sources to Bookmark</h4>
+    <ul>
+      <li><a href="https://indiaai.gov.in" target="_blank" rel="noopener">IndiaAI</a></li>
+      <li><a href="https://www.niti.gov.in" target="_blank" rel="noopener">NITI Aayog</a></li>
+      <li><a href="https://www.meity.gov.in" target="_blank" rel="noopener">MeitY</a></li>
+      <li><a href="https://pib.gov.in" target="_blank" rel="noopener">PIB</a></li>
+    </ul>
+    <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/science-technology/computer-and-it">S&amp;T T12: Computer &amp; IT</a></li>
+      <li><a href="/science-technology/advanced-computing-supercomputers-and-quantum">S&amp;T T14: Advanced Computing</a></li>
+      <li><a href="/science-technology/defence-technology">S&amp;T T16: Defence Technology</a></li>
+      <li><a href="/science-technology/emerging-and-frontier-technologies">S&amp;T T18: Emerging Frontiers</a></li>
+      <li><a href="/science-technology">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding:0;margin:0;">
+      <li style="margin:4px 0;"><a href="#whatis" style="font-size:12px;">What is AI</a></li>
+      <li style="margin:4px 0;"><a href="#ml" style="font-size:12px;">ML &amp; Deep Learning</a></li>
+      <li style="margin:4px 0;"><a href="#genai" style="font-size:12px;">Generative AI</a></li>
+      <li style="margin:4px 0;"><a href="#nlpvision" style="font-size:12px;">NLP &amp; Vision</a></li>
+      <li style="margin:4px 0;"><a href="#robotics" style="font-size:12px;">Robotics</a></li>
+      <li style="margin:4px 0;"><a href="#drones" style="font-size:12px;">Drones</a></li>
+      <li style="margin:4px 0;"><a href="#iot" style="font-size:12px;">IoT</a></li>
+      <li style="margin:4px 0;"><a href="#applications" style="font-size:12px;">Applications &amp; Policy</a></li>
+      <li style="margin:4px 0;"><a href="#ethics" style="font-size:12px;">Risks &amp; Ethics</a></li>
+      <li style="margin:4px 0;"><a href="#currentaffairs" style="font-size:12px;">Current Affairs</a></li>
+      <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

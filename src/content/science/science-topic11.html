@@ -1,0 +1,696 @@
+<!-- science-topic11 — auto-imported from scitech-topic11-nanotechnology-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 11: Nanotechnology &mdash; Nanomaterials, Applications &amp; Risks</h1>
+  <p class="sub">Nanotechnology is a compact but recurring GS-III area &mdash; small in size, huge in impact. This file covers the <strong>nanoscale</strong> &amp; why matter behaves differently there, the key <strong>nanomaterials</strong> (carbon nanotubes, <strong>graphene</strong>, fullerenes, <strong>quantum dots</strong>, nanoparticles), the two <strong>approaches</strong> (top-down vs bottom-up), and the wide <strong>applications</strong> in medicine (targeted drug delivery, diagnostics), electronics, <strong>energy</strong> (batteries, solar), <strong>water purification</strong>, agriculture &amp; textiles &mdash; plus India's <strong>Nano Mission</strong> &amp; institutions and the health, environmental &amp; ethical <strong>risks</strong> (nanotoxicity) &mdash; with labelled diagrams, tables and real dated PYQs with full model answers.</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Graphene &middot; Nanomedicine</span>
+    <span class="pill">~30 min read</span>
+    <span class="pill">Nano Mission</span>
+    <span class="pill">Medium CA Weight</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#nanoscale">The Nanoscale &amp; Why It Matters</a></li>
+    <li><span class="num">2.</span><a href="#materials">Key Nanomaterials</a></li>
+    <li><span class="num">3.</span><a href="#approaches">Approaches &amp; Fabrication</a></li>
+    <li><span class="num">4.</span><a href="#medicine">Nanomedicine &amp; Health</a></li>
+    <li><span class="num">5.</span><a href="#electronics">Electronics &amp; Computing</a></li>
+    <li><span class="num">6.</span><a href="#energywater">Energy &amp; Water</a></li>
+    <li><span class="num">7.</span><a href="#agritextile">Agriculture, Textiles &amp; Everyday</a></li>
+    <li><span class="num">8.</span><a href="#mission">India's Nano Mission</a></li>
+    <li><span class="num">9.</span><a href="#risks">Risks &amp; Nanotoxicity</a></li>
+    <li><span class="num">10.</span><a href="#currentaffairs">Current Affairs Link</a></li>
+    <li><span class="num">11.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><span class="num">12.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Tests Nanotechnology</h3>
+  <p>Nanotech is a <strong>focused, fact-based</strong> area &mdash; a few well-remembered materials &amp; applications cover most questions. Sort your prep into three question-types:</p>
+  <ul>
+    <li><strong>Definitional / static</strong> &mdash; "what is a nanometre?", "what is graphene?", "top-down vs bottom-up?". Recall of scale, materials &amp; terms.</li>
+    <li><strong>Statement-elimination</strong> &mdash; properties of carbon nanotubes/graphene/quantum dots, application matches where one detail decides the answer.</li>
+    <li><strong>Applied / current</strong> &mdash; a nano-based product or mission in the news linked to a fundamental &mdash; the GS-III bridge (health, energy, water).</li>
+  </ul>
+  <p><strong>Highest-frequency themes:</strong> nanometre scale &middot; carbon nanotubes &amp; graphene &middot; quantum dots &middot; top-down/bottom-up &middot; targeted drug delivery &middot; water purification &middot; Nano Mission &middot; nanotoxicity.</p>
+</div>
+
+<!-- ===== SECTION 1 ===== -->
+<section class="notes" id="nanoscale">
+  <h2>1. The Nanoscale &amp; Why It Matters</h2>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 460 150" width="460" height="150" role="img" aria-label="Scale from metre down to nanometre">
+      <rect x="0" y="0" width="460" height="150" fill="#ffffff"/>
+      <g font-family="sans-serif" font-size="10" text-anchor="middle">
+        <line x1="30" y1="80" x2="430" y2="80" stroke="#1a3d5c" stroke-width="2"/>
+        <circle cx="60" cy="80" r="4" fill="#1a3d5c"/><text x="60" y="65">1 m</text><text x="60" y="100" font-size="8">ball</text>
+        <circle cx="160" cy="80" r="4" fill="#1a7a5a"/><text x="160" y="65">1 mm</text><text x="160" y="100" font-size="8">grain</text>
+        <circle cx="260" cy="80" r="4" fill="#c47820"/><text x="260" y="65">1 &micro;m</text><text x="260" y="100" font-size="8">bacterium</text>
+        <circle cx="380" cy="80" r="6" fill="#c0392b"/><text x="380" y="60">1 nm = 10&#8315;&#8313; m</text><text x="380" y="100" font-size="8">DNA width ~2 nm</text>
+      </g>
+    </svg>
+    <div class="svg-caption">Fig 11.1 &mdash; The nanoscale: 1 nanometre (nm) = one-billionth of a metre. Nanotechnology works with matter roughly 1&ndash;100 nm &mdash; the scale of molecules &amp; DNA.</div>
+  </div>
+  <ul>
+    <li><strong>Nanotechnology</strong> = studying &amp; manipulating matter at 1&ndash;100 nanometres (1 nm = 10&#8315;&#8313; m, one-billionth of a metre).</li>
+    <li><strong>Why matter behaves differently:</strong> at the nanoscale, a large fraction of atoms sit on the surface, and <strong>quantum effects</strong> appear &mdash; so colour, strength, conductivity, melting point &amp; reactivity change dramatically. Gold, for example, looks red/purple as nanoparticles.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> 1 nm = one-billionth of a metre (10&#8315;&#8313; m); nanotech works at 1&ndash;100 nm; properties change because of high surface-area-to-volume ratio &amp; quantum effects &mdash; the same material shows new colour, strength or reactivity.</div>
+</section>
+
+<!-- ===== SECTION 2 ===== -->
+<section class="notes" id="materials">
+  <h2>2. Key Nanomaterials</h2>
+  <table>
+    <tr><th>Material</th><th>What it is / property</th></tr>
+    <tr><td><strong>Carbon nanotubes (CNT)</strong></td><td>Rolled graphene cylinders &mdash; extremely strong, light &amp; conductive</td></tr>
+    <tr><td><strong>Graphene</strong></td><td>Single one-atom-thick sheet of carbon &mdash; strongest known material, excellent conductor, flexible &amp; transparent</td></tr>
+    <tr><td><strong>Fullerene (Buckyball, C&#8326;&#8320;)</strong></td><td>Hollow carbon sphere &mdash; the third carbon form (with graphite &amp; diamond)</td></tr>
+    <tr><td><strong>Quantum dots</strong></td><td>Tiny semiconductor crystals whose colour depends on size &mdash; used in displays &amp; imaging</td></tr>
+    <tr><td><strong>Nanoparticles</strong></td><td>Silver (antibacterial), gold, titanium dioxide (sunscreen), iron oxide (imaging)</td></tr>
+  </table>
+  <div class="callout warn"><strong>Prelims traps:</strong> <strong>graphene</strong> = single-atom carbon sheet (strongest, great conductor); <strong>carbon nanotubes</strong> = rolled sheets; <strong>fullerene/buckyball</strong> = carbon sphere; <strong>quantum dots</strong> = size-tunable semiconductor crystals. All three carbon nanoforms are allotropes of carbon.</div>
+</section>
+
+<!-- ===== SECTION 3 ===== -->
+<section class="notes" id="approaches">
+  <h2>3. Approaches &amp; Fabrication</h2>
+  <ul>
+    <li><strong>Top-down:</strong> start with bulk material &amp; carve it down to nanostructures (like sculpting) &mdash; e.g. lithography in chip-making.</li>
+    <li><strong>Bottom-up:</strong> build structures atom-by-atom or molecule-by-molecule (self-assembly) &mdash; more precise, less waste.</li>
+    <li><strong>Tools:</strong> scanning tunnelling &amp; atomic force microscopes let scientists see &amp; move individual atoms.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> top-down = carve bulk down to nano; bottom-up = assemble from atoms/molecules up; atomic-scale microscopes (STM/AFM) image &amp; manipulate atoms &mdash; the birth of nanotech.</div>
+</section>
+
+<!-- ===== SECTION 4 ===== -->
+<section class="notes" id="medicine">
+  <h2>4. Nanomedicine &amp; Health</h2>
+  <ul>
+    <li><strong>Targeted drug delivery:</strong> nanoparticles carry a drug straight to diseased cells (e.g. tumour), sparing healthy tissue &amp; cutting side-effects.</li>
+    <li><strong>Diagnostics &amp; imaging:</strong> quantum dots &amp; magnetic nanoparticles improve early, precise detection &amp; contrast imaging.</li>
+    <li><strong>Others:</strong> nano-based vaccines (lipid nanoparticles carry mRNA), antibacterial silver dressings, tissue engineering &amp; biosensors.</li>
+  </ul>
+  <div class="callout warn"><strong>GS-III hook:</strong> nanomedicine promises cheaper, precise diagnosis &amp; treatment &mdash; targeted cancer therapy, early detection &amp; better vaccines (lipid nanoparticles delivered mRNA vaccines) &mdash; a health &amp; self-reliance theme.</div>
+</section>
+
+<!-- ===== SECTION 5 ===== -->
+<section class="notes" id="electronics">
+  <h2>5. Electronics &amp; Computing</h2>
+  <ul>
+    <li>Shrinking transistors to nanoscale keeps <strong>Moore's Law</strong> going &mdash; more powerful, efficient chips (Topic 12/14).</li>
+    <li><strong>Graphene &amp; CNT electronics:</strong> faster, flexible &amp; transparent circuits, better sensors &amp; displays (quantum-dot QLED screens).</li>
+    <li>Nanomaterials enable next-gen memory, flexible &amp; wearable electronics.</li>
+  </ul>
+  <div class="callout info"><strong>Key idea:</strong> nanotech is the backbone of modern electronics &mdash; ever-smaller transistors, and new materials (graphene, quantum dots) for faster, flexible, energy-efficient devices.</div>
+</section>
+
+<!-- ===== SECTION 6 ===== -->
+<section class="notes" id="energywater">
+  <h2>6. Energy &amp; Water</h2>
+  <table>
+    <tr><th>Use</th><th>How nanotech helps</th></tr>
+    <tr><td>Batteries</td><td>Nanomaterials boost capacity &amp; charging speed (Li-ion, next-gen)</td></tr>
+    <tr><td>Solar cells</td><td>Nanostructures &amp; quantum dots raise efficiency</td></tr>
+    <tr><td>Water purification</td><td>Nano-membranes &amp; nanoparticles remove pathogens, arsenic &amp; pollutants cheaply</td></tr>
+    <tr><td>Catalysis</td><td>High surface area speeds chemical &amp; fuel-cell reactions</td></tr>
+  </table>
+  <div class="callout warn"><strong>GS-III hook:</strong> nanotech-based <strong>water purification</strong> (removing arsenic, fluoride &amp; microbes) &amp; better <strong>batteries/solar</strong> address India's clean-water &amp; clean-energy priorities &mdash; strong development links.</div>
+</section>
+
+<!-- ===== SECTION 7 ===== -->
+<section class="notes" id="agritextile">
+  <h2>7. Agriculture, Textiles &amp; Everyday</h2>
+  <ul>
+    <li><strong>Agriculture:</strong> nano-fertilisers &amp; nano-pesticides (e.g. nano-urea) for efficient, targeted delivery &amp; less runoff; nanosensors for soil/crop monitoring.</li>
+    <li><strong>Textiles:</strong> stain-, water- &amp; odour-resistant fabrics; antibacterial coatings.</li>
+    <li><strong>Everyday:</strong> sunscreens (TiO&#8322;/ZnO nanoparticles), cosmetics, self-cleaning surfaces, food packaging.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> nano-urea (a nanoparticle fertiliser) improves nitrogen-use efficiency; nanoparticles like titanium/zinc oxide are used in sunscreens; nano-coatings give stain- &amp; water-resistant textiles.</div>
+</section>
+
+<!-- ===== SECTION 8 ===== -->
+<section class="notes" id="mission">
+  <h2>8. India's Nano Mission</h2>
+  <ul>
+    <li><strong>Nano Mission</strong> (launched 2007, under the Department of Science &amp; Technology) promotes nano R&amp;D, infrastructure, human resources &amp; applications &mdash; India is among the top nations in nanoscience publications.</li>
+    <li>Institutions: <strong>DST, INST Mohali</strong> (Institute of Nano Science &amp; Technology), IITs &amp; national labs; industry links for products like nano-urea.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> the Nano Mission (2007) under DST drives India's nanotech R&amp;D; INST Mohali is a dedicated nano institute; India ranks high globally in nanoscience research output.</div>
+</section>
+
+<!-- ===== SECTION 9 ===== -->
+<section class="notes" id="risks">
+  <h2>9. Risks &amp; Nanotoxicity</h2>
+  <ul>
+    <li><strong>Health risks:</strong> nanoparticles' tiny size lets them enter cells, lungs &amp; the bloodstream &mdash; possible toxicity ("nanotoxicity") that is still being studied.</li>
+    <li><strong>Environmental:</strong> release &amp; accumulation of nanoparticles in soil &amp; water; hard to detect &amp; regulate.</li>
+    <li><strong>Ethical / regulatory:</strong> weak labelling &amp; standards, privacy (nanosensors), equity of access, and dual-use/security concerns.</li>
+  </ul>
+  <div class="callout warn"><strong>GS-III hook:</strong> the same properties that make nanoparticles useful (small size, reactivity) also make them potentially <strong>toxic &amp; hard to regulate</strong> &mdash; needing safety testing, standards &amp; the precautionary principle before wide use.</div>
+</section>
+
+<!-- ===== SECTION 10: CURRENT AFFAIRS ===== -->
+<section class="notes" id="currentaffairs">
+  <h2>10. Current Affairs Link (2024&ndash;2026)</h2>
+  <p>Nanotech shows up via new materials &amp; products across health, energy &amp; agriculture. Verify the latest before the exam. <span class="update-tag">check for latest update or data</span></p>
+  <div class="callout update"><strong>Nano-agriculture:</strong> nano-urea &amp; nano-DAP roll-outs to cut fertiliser use &amp; imports apply Section 7. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout update"><strong>Graphene &amp; new materials:</strong> India's graphene/CNT research centres &amp; startups &amp; quantum-dot displays keep materials topical. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout warn"><strong>Nanomedicine:</strong> lipid-nanoparticle vaccines &amp; targeted-therapy research apply Section 4. <span class="update-tag">check for latest update or data</span></div>
+  <table>
+    <tr><th>Recent theme</th><th>Fundamental it tests</th><th>Why it matters for UPSC</th></tr>
+    <tr><td>Nano-urea / nano-DAP</td><td>Nano-agriculture</td><td>GS-III fertiliser self-reliance.</td></tr>
+    <tr><td>Graphene / quantum dots</td><td>Nanomaterials</td><td>GS-III advanced materials.</td></tr>
+    <tr><td>Nano drug delivery</td><td>Nanomedicine</td><td>GS-III health.</td></tr>
+    <tr><td>Nano water filters</td><td>Water tech</td><td>GS-III clean water.</td></tr>
+  </table>
+  <ul>
+    <li><strong>Recurring exam hooks:</strong> nanometre scale &middot; graphene &amp; CNT &middot; quantum dots &middot; targeted drug delivery &middot; nano-urea &middot; water purification &middot; Nano Mission &middot; nanotoxicity.</li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 11: PRELIMS ===== -->
+<section class="notes" id="prelims-pyq">
+  <h2>11. Prelims PYQs</h2>
+  <p style="font-size:13px;color:var(--muted)"><em>Objective questions anchored to genuinely tested UPSC themes on nanotechnology. Each carries a worked rationale.</em></p>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Nanoscale</div>
+    <p class="q-stem"><strong>Q:</strong> One nanometre is equal to &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> one-thousandth of a metre</li>
+      <li><span class="opt-key">(b)</span> one-millionth of a metre</li>
+      <li class="correct"><span class="opt-key">(c)</span> one-billionth of a metre</li>
+      <li><span class="opt-key">(d)</span> one-trillionth of a metre</li>
+    </ul>
+    <p class="ans">Answer: (c) 1 nanometre = 10&#8315;&#8313; m, one-billionth of a metre; nanotechnology works with matter at 1&ndash;100 nm.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Graphene</div>
+    <p class="q-stem"><strong>Q:</strong> Graphene is &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> a single-atom-thick sheet of carbon</li>
+      <li><span class="opt-key">(b)</span> a silicon-based semiconductor</li>
+      <li><span class="opt-key">(c)</span> a form of plastic</li>
+      <li><span class="opt-key">(d)</span> a metal alloy</li>
+    </ul>
+    <p class="ans">Answer: (a) Graphene is a one-atom-thick carbon sheet &mdash; the strongest known material and an excellent conductor, flexible and transparent.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Carbon forms</div>
+    <p class="q-stem"><strong>Q:</strong> A "buckyball" (fullerene) is a form of &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> silicon</li>
+      <li class="correct"><span class="opt-key">(b)</span> carbon</li>
+      <li><span class="opt-key">(c)</span> boron</li>
+      <li><span class="opt-key">(d)</span> nitrogen</li>
+    </ul>
+    <p class="ans">Answer: (b) A fullerene (buckyball, C&#8326;&#8320;) is a hollow carbon sphere &mdash; a carbon allotrope alongside graphite, diamond, graphene and nanotubes.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Quantum dots</div>
+    <p class="q-stem"><strong>Q:</strong> The colour emitted by a quantum dot depends mainly on its &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> chemical name</li>
+      <li class="correct"><span class="opt-key">(b)</span> size</li>
+      <li><span class="opt-key">(c)</span> temperature only</li>
+      <li><span class="opt-key">(d)</span> magnetic field</li>
+    </ul>
+    <p class="ans">Answer: (b) Quantum dots are tiny semiconductor crystals whose emitted colour is tuned by their size (a quantum effect) &mdash; used in displays &amp; bio-imaging.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Approaches</div>
+    <p class="q-stem"><strong>Q:</strong> The "bottom-up" approach in nanotechnology refers to &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> carving bulk material into nanostructures</li>
+      <li class="correct"><span class="opt-key">(b)</span> assembling structures atom-by-atom or molecule-by-molecule</li>
+      <li><span class="opt-key">(c)</span> heating materials to melt them</li>
+      <li><span class="opt-key">(d)</span> dissolving materials in acid</li>
+    </ul>
+    <p class="ans">Answer: (b) Bottom-up builds nanostructures from atoms/molecules up (self-assembly); top-down carves bulk material down to the nanoscale.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Properties</div>
+    <p class="q-stem"><strong>Q:</strong> Materials show new properties at the nanoscale mainly because of &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> lower density</li>
+      <li class="correct"><span class="opt-key">(b)</span> high surface-area-to-volume ratio and quantum effects</li>
+      <li><span class="opt-key">(c)</span> higher mass</li>
+      <li><span class="opt-key">(d)</span> radioactivity</li>
+    </ul>
+    <p class="ans">Answer: (b) At the nanoscale a large share of atoms are on the surface and quantum effects dominate, changing colour, strength, conductivity &amp; reactivity.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Application</div>
+    <p class="q-stem"><strong>Q:</strong> "Targeted drug delivery" using nanoparticles aims to &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> carry a drug directly to diseased cells, sparing healthy tissue</li>
+      <li><span class="opt-key">(b)</span> increase the overall dose of the drug</li>
+      <li><span class="opt-key">(c)</span> replace surgery entirely</li>
+      <li><span class="opt-key">(d)</span> edit the patient's genes</li>
+    </ul>
+    <p class="ans">Answer: (a) Nanoparticle carriers deliver drugs to specific (e.g. tumour) cells, improving effect and reducing side-effects on healthy tissue.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Nano Mission</div>
+    <p class="q-stem"><strong>Q:</strong> India's Nano Mission is administered under which department?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Department of Biotechnology</li>
+      <li class="correct"><span class="opt-key">(b)</span> Department of Science &amp; Technology</li>
+      <li><span class="opt-key">(c)</span> Department of Space</li>
+      <li><span class="opt-key">(d)</span> Department of Atomic Energy</li>
+    </ul>
+    <p class="ans">Answer: (b) The Nano Mission (2007) is run under the Department of Science &amp; Technology (DST); INST Mohali is a dedicated nano institute.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> nanometre scale &middot; graphene/CNT/fullerene &middot; quantum dots &middot; top-down vs bottom-up &middot; targeted drug delivery &middot; nano-urea &amp; water filters &middot; Nano Mission &middot; nanotoxicity. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 12: MAINS ===== -->
+<section class="notes" id="mains-pyq">
+  <h2>12. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>Nanotechnology anchors GS-III questions on health, energy, water &amp; frontier tech. The frameworks below show how to deploy it analytically.</em></p>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Discuss the applications of nanotechnology in addressing India's development challenges.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Nanotech's unusual nanoscale properties (Section 1) enable solutions across health, energy, water &amp; agriculture.</li>
+        <li><strong>Development applications:</strong>
+          <ul>
+            <li><strong>Health</strong> &mdash; targeted drug delivery, cheap diagnostics, better vaccines; <strong>water</strong> &mdash; nano-filters removing arsenic, fluoride &amp; microbes.</li>
+            <li><strong>Energy</strong> &mdash; efficient batteries &amp; solar cells; <strong>agriculture</strong> &mdash; nano-urea cutting fertiliser use &amp; imports.</li>
+          </ul>
+        </li>
+        <li><strong>Enablers:</strong> the Nano Mission, INST &amp; industry links for indigenous products.</li>
+        <li><strong>Concerns:</strong> nanotoxicity &amp; regulation must accompany deployment.</li>
+        <li><strong>Conclusion:</strong> nanotech is a versatile, low-cost tool for inclusive development if used safely.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> What is nanotoxicity, and why must it guide the regulation of nanotechnology?</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Nanotoxicity (Section 9) is the potential harm from nanoparticles due to their tiny size &amp; reactivity.</li>
+        <li><strong>Why a concern:</strong>
+          <ul>
+            <li>Particles can enter cells, lungs &amp; blood; accumulate in soil &amp; water; effects poorly understood &amp; hard to detect.</li>
+          </ul>
+        </li>
+        <li><strong>Regulatory need:</strong> safety testing, labelling, standards &amp; the precautionary principle before wide use.</li>
+        <li><strong>Conclusion:</strong> the same properties that make nanotech useful demand careful, science-based regulation.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Nanotechnology is called an "enabling technology". Explain with examples across sectors.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Nanotech is "enabling" because it improves many other technologies rather than being one product (Sections 4&ndash;7).</li>
+        <li><strong>Cross-sector examples:</strong>
+          <ul>
+            <li><strong>Electronics</strong> &mdash; smaller chips, graphene circuits; <strong>medicine</strong> &mdash; drug delivery &amp; diagnostics.</li>
+            <li><strong>Energy</strong> &mdash; batteries &amp; solar; <strong>materials</strong> &mdash; stronger, lighter composites; <strong>agriculture &amp; textiles</strong>.</li>
+          </ul>
+        </li>
+        <li><strong>Strategic value:</strong> underpins defence, space &amp; frontier tech (a self-reliance area).</li>
+        <li><strong>Conclusion:</strong> as a general-purpose enabler, nanotech multiplies gains across the economy.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> How can nanotechnology help India achieve safe drinking water and clean energy?</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Clean water &amp; energy are national priorities where nanotech offers cheap, scalable tools (Section 6).</li>
+        <li><strong>Water:</strong>
+          <ul>
+            <li>Nano-membranes &amp; nanoparticles remove pathogens, arsenic &amp; fluoride at low cost &mdash; vital for rural India.</li>
+          </ul>
+        </li>
+        <li><strong>Energy:</strong> nanomaterials improve battery capacity &amp; charging, and boost solar-cell efficiency &mdash; aiding the clean-energy transition.</li>
+        <li><strong>Challenges:</strong> cost, scale-up, safety &amp; regulation.</li>
+        <li><strong>Conclusion:</strong> nanotech can accelerate water &amp; energy access if paired with affordability &amp; safety.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> nanotech for development (water, health, agri) &middot; nanotoxicity &amp; regulation &middot; enabling technology across sectors &middot; nano-agriculture &middot; advanced materials (graphene). <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; Nanotechnology</h3>
+    <div class="grid-2">
+      <div>
+        <strong>Scale &amp; materials:</strong>
+        <ul>
+          <li>1 nm = one-billionth metre (10&#8315;&#8313; m); nanotech = 1&ndash;100 nm</li>
+          <li>New properties = high surface area + quantum effects</li>
+          <li>Graphene = single-atom carbon sheet (strongest, conductor)</li>
+          <li>CNT = rolled sheets; fullerene/buckyball = C&#8326;&#8320; sphere; quantum dots = size-tunable colour</li>
+        </ul>
+        <strong>Approaches:</strong>
+        <ul>
+          <li>Top-down = carve bulk to nano; bottom-up = build from atoms</li>
+          <li>STM/AFM microscopes image &amp; move atoms</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Applications:</strong>
+        <ul>
+          <li>Medicine: targeted drug delivery, diagnostics, lipid-NP mRNA vaccines</li>
+          <li>Energy: batteries, solar; Water: nano-filters (arsenic/fluoride)</li>
+          <li>Agri: nano-urea; Textiles: stain/water-resistant</li>
+          <li>Electronics: smaller chips, graphene/quantum-dot displays</li>
+        </ul>
+        <strong>India &amp; risks:</strong>
+        <ul>
+          <li>Nano Mission (2007) under DST; INST Mohali</li>
+          <li>Nanotoxicity = size/reactivity risk to health &amp; environment</li>
+          <li>Needs testing, standards, precautionary principle</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes:</strong> nanometre scale &middot; graphene &amp; CNT &middot; quantum dots &middot; top-down/bottom-up &middot; targeted drug delivery &middot; nano-urea &amp; water filters &middot; Nano Mission &middot; nanotoxicity.</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== SIDEBAR ===== -->
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Quick Reference &mdash; Materials</h4>
+    <table>
+      <tr><th>Material</th><th>Key trait</th></tr>
+      <tr><td>Graphene</td><td>1-atom sheet</td></tr>
+      <tr><td>CNT</td><td>Strong tube</td></tr>
+      <tr><td>Fullerene</td><td>Carbon sphere</td></tr>
+      <tr><td>Quantum dot</td><td>Size = colour</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Applications</h4>
+    <table>
+      <tr><th>Sector</th><th>Use</th></tr>
+      <tr><td>Medicine</td><td>Drug delivery</td></tr>
+      <tr><td>Water</td><td>Nano-filters</td></tr>
+      <tr><td>Agri</td><td>Nano-urea</td></tr>
+      <tr><td>Energy</td><td>Batteries/solar</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Key Facts &amp; Data</h4>
+    <table>
+      <tr><th>Item</th><th>Value</th></tr>
+      <tr><td>1 nm</td><td>10&#8315;&#8313; m</td></tr>
+      <tr><td>Nano range</td><td>1&ndash;100 nm</td></tr>
+      <tr><td>Nano Mission</td><td>2007, DST</td></tr>
+      <tr><td>Nano institute</td><td>INST Mohali</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:82%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains GS-III</span><span class="fill"><span style="width:72%"></span></span></div>
+    <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:85%"></span></span></div>
+    <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:70%"></span></span></div>
+    <p style="margin-top:8px;font-size:11px;color:var(--muted);">Compact &mdash; a few facts cover most Qs.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Nanotech at a Glance</h4>
+    <ul>
+      <li>Nanoscale &amp; properties</li>
+      <li>Nanomaterials</li>
+      <li>Approaches</li>
+      <li>Nanomedicine</li>
+      <li>Electronics</li>
+      <li>Energy &amp; water</li>
+      <li>Agri &amp; textiles</li>
+      <li>Nano Mission &amp; risks</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">1 nm = 10&#8315;&#8313; m</span>
+    <span class="tag">Graphene strongest</span>
+    <span class="tag green">CNT = rolled sheet</span>
+    <span class="tag">Buckyball = C&#8326;&#8320;</span>
+    <span class="tag orange">Quantum dot = size</span>
+    <span class="tag">Top-down/bottom-up</span>
+    <span class="tag green">Nano-urea</span>
+    <span class="tag">Drug delivery</span>
+    <span class="tag orange">Nano Mission 2007</span>
+    <span class="tag">Nanotoxicity</span>
+  </div>
+
+  <div class="widget">
+    <h4>Data Sources to Bookmark</h4>
+    <ul>
+      <li><a href="https://dst.gov.in" target="_blank" rel="noopener">Dept. of Science &amp; Technology</a></li>
+      <li><a href="https://www.inst.ac.in" target="_blank" rel="noopener">INST Mohali</a></li>
+      <li><a href="https://pib.gov.in" target="_blank" rel="noopener">PIB</a></li>
+      <li><a href="https://www.nature.com/subjects/nanoscience-and-technology" target="_blank" rel="noopener">Nature Nano</a></li>
+    </ul>
+    <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/science-technology/chemistry">S&amp;T T6: Chemistry</a></li>
+      <li><a href="/science-technology/biotechnology">S&amp;T T10: Biotechnology</a></li>
+      <li><a href="/science-technology/advanced-computing-supercomputers-and-quantum">S&amp;T T14: Advanced Computing</a></li>
+      <li><a href="/science-technology/emerging-and-frontier-technologies">S&amp;T T18: Emerging Frontiers</a></li>
+      <li><a href="/science-technology">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding:0;margin:0;">
+      <li style="margin:4px 0;"><a href="#nanoscale" style="font-size:12px;">Nanoscale</a></li>
+      <li style="margin:4px 0;"><a href="#materials" style="font-size:12px;">Nanomaterials</a></li>
+      <li style="margin:4px 0;"><a href="#approaches" style="font-size:12px;">Approaches</a></li>
+      <li style="margin:4px 0;"><a href="#medicine" style="font-size:12px;">Nanomedicine</a></li>
+      <li style="margin:4px 0;"><a href="#electronics" style="font-size:12px;">Electronics</a></li>
+      <li style="margin:4px 0;"><a href="#energywater" style="font-size:12px;">Energy &amp; Water</a></li>
+      <li style="margin:4px 0;"><a href="#agritextile" style="font-size:12px;">Agri &amp; Textiles</a></li>
+      <li style="margin:4px 0;"><a href="#mission" style="font-size:12px;">Nano Mission</a></li>
+      <li style="margin:4px 0;"><a href="#risks" style="font-size:12px;">Risks</a></li>
+      <li style="margin:4px 0;"><a href="#currentaffairs" style="font-size:12px;">Current Affairs</a></li>
+      <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

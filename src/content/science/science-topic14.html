@@ -1,0 +1,700 @@
+<!-- science-topic14 — auto-imported from scitech-topic14-computing-supercomputers-3dprinting-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 14: Advanced Computing &mdash; Supercomputers, Quantum &amp; Semiconductors</h1>
+  <p class="sub">This file covers the frontier of computing hardware &mdash; a rising GS-III area of missions &amp; strategy. It explains <strong>supercomputers</strong> &amp; <strong>high-performance computing</strong> (PARAM, National Supercomputing Mission), <strong>quantum computing</strong> (qubits, superposition, entanglement, National Quantum Mission), <strong>semiconductors</strong> &amp; chip-making (India Semiconductor Mission), <strong>3D printing / additive manufacturing</strong>, and <strong>edge &amp; neuromorphic computing</strong> &mdash; with their applications in weather, defence, drug discovery &amp; manufacturing &mdash; using labelled diagrams, tables and real dated PYQs with full model answers. (Software, networks &amp; cyber are in Topic 12; AI in Topic 13.)</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Quantum &middot; Semiconductors</span>
+    <span class="pill">~35 min read</span>
+    <span class="pill">PARAM &amp; Missions</span>
+    <span class="pill">High CA Weight</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#supercomputers">Supercomputers &amp; HPC</a></li>
+    <li><span class="num">2.</span><a href="#param">PARAM &amp; India's Mission</a></li>
+    <li><span class="num">3.</span><a href="#quantum">Quantum Computing</a></li>
+    <li><span class="num">4.</span><a href="#quantummission">National Quantum Mission</a></li>
+    <li><span class="num">5.</span><a href="#semiconductors">Semiconductors &amp; Chips</a></li>
+    <li><span class="num">6.</span><a href="#semimission">India Semiconductor Mission</a></li>
+    <li><span class="num">7.</span><a href="#printing">3D Printing / Additive Mfg</a></li>
+    <li><span class="num">8.</span><a href="#edge">Edge &amp; Neuromorphic Computing</a></li>
+    <li><span class="num">9.</span><a href="#applications">Applications &amp; Strategy</a></li>
+    <li><span class="num">10.</span><a href="#currentaffairs">Current Affairs Link</a></li>
+    <li><span class="num">11.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><span class="num">12.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Tests Advanced Computing</h3>
+  <p>This is a <strong>fact- &amp; mission-heavy</strong> area with growing strategic weight (self-reliance in chips &amp; quantum). Sort your prep into three question-types:</p>
+  <ul>
+    <li><strong>Definitional / static</strong> &mdash; "what is a qubit?", "what is a semiconductor?", "what is additive manufacturing?". Recall of concepts &amp; terms.</li>
+    <li><strong>Statement-elimination</strong> &mdash; quantum principles, chip-fab facts, mission details where one detail decides the answer.</li>
+    <li><strong>Applied / current</strong> &mdash; a mission or fab in the news (Quantum Mission, Semiconductor Mission, PARAM) linked to a fundamental &mdash; the strong GS-III strategic-autonomy bridge.</li>
+  </ul>
+  <p><strong>Highest-frequency themes:</strong> supercomputers &amp; PARAM &middot; qubits, superposition &amp; entanglement &middot; National Quantum Mission &middot; semiconductors &amp; India Semiconductor Mission &middot; 3D printing &middot; edge computing.</p>
+</div>
+
+<!-- ===== SECTION 1 ===== -->
+<section class="notes" id="supercomputers">
+  <h2>1. Supercomputers &amp; High-Performance Computing</h2>
+  <ul>
+    <li><strong>Supercomputer</strong> = an extremely fast computer that solves huge problems by <strong>parallel processing</strong> (many processors working together). Speed is measured in <strong>FLOPS</strong> (floating-point operations per second) &mdash; today's fastest reach the <strong>exascale</strong> (10&#185;&#8312; FLOPS).</li>
+    <li><strong>High-Performance Computing (HPC)</strong> powers weather &amp; climate forecasting, molecular &amp; drug simulation, aerospace/defence design, genomics &amp; AI training.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> supercomputers use massive parallel processing; speed is measured in FLOPS; exascale = 10&#185;&#8312; FLOPS. They are strategic assets for weather, nuclear, defence &amp; research &mdash; some tech is export-controlled, driving indigenous development.</div>
+</section>
+
+<!-- ===== SECTION 2 ===== -->
+<section class="notes" id="param">
+  <h2>2. PARAM &amp; India's Supercomputing Mission</h2>
+  <ul>
+    <li><strong>PARAM 8000</strong> (1991), built by <strong>C-DAC</strong> under Dr Vijay Bhatkar, was India's first indigenous supercomputer &mdash; a response to technology denial.</li>
+    <li>The <strong>National Supercomputing Mission (NSM)</strong> (C-DAC + IISc/DST-MeitY) deploys a network of supercomputers (PARAM series, e.g. PARAM Siddhi-AI) across institutions &amp; builds indigenous capability.</li>
+    <li>India uses HPC for monsoon forecasting (at IITM/NCMRWF), genomics, disaster modelling &amp; AI.</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims traps:</strong> India's first indigenous supercomputer = <strong>PARAM 8000</strong> (1991) by <strong>C-DAC</strong>; the National Supercomputing Mission builds &amp; deploys the PARAM series nationwide &mdash; a self-reliance story born of export controls.</div>
+</section>
+
+<!-- ===== SECTION 3 ===== -->
+<section class="notes" id="quantum">
+  <h2>3. Quantum Computing</h2>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 460 170" width="460" height="170" role="img" aria-label="Classical bit is 0 or 1, qubit can be both via superposition">
+      <rect x="0" y="0" width="460" height="170" fill="#ffffff"/>
+      <g font-family="sans-serif" font-size="11" text-anchor="middle">
+        <text x="115" y="24" font-weight="bold">Classical bit</text>
+        <circle cx="70" cy="80" r="24" fill="#e8f0f8" stroke="#1a3d5c"/><text x="70" y="84">0</text>
+        <circle cx="160" cy="80" r="24" fill="#e8f0f8" stroke="#1a3d5c"/><text x="160" y="84">1</text>
+        <text x="115" y="130" font-size="9" fill="#555">either 0 OR 1</text>
+        <text x="345" y="24" font-weight="bold">Qubit</text>
+        <circle cx="345" cy="82" r="34" fill="#f7e9d8" stroke="#c47820"/><text x="345" y="80">0 &amp; 1</text><text x="345" y="94" font-size="8">(superposition)</text>
+        <text x="345" y="140" font-size="9" fill="#555">both at once</text>
+      </g>
+    </svg>
+    <div class="svg-caption">Fig 14.1 &mdash; A classical bit is 0 or 1; a quantum bit (qubit) can be 0 and 1 at once (superposition), letting quantum computers explore many possibilities in parallel.</div>
+  </div>
+  <ul>
+    <li><strong>Quantum computing</strong> uses quantum physics (Topic 7) to process information with <strong>qubits</strong>.</li>
+    <li><strong>Superposition:</strong> a qubit can be 0 and 1 simultaneously; <strong>entanglement:</strong> qubits are linked so one's state instantly relates to another's &mdash; giving huge parallelism.</li>
+    <li><strong>Potential:</strong> breaking current encryption, drug &amp; materials discovery, optimisation &amp; AI. <strong>Challenge:</strong> qubits are fragile (need near-absolute-zero cooling &amp; error correction).</li>
+    <li><strong>Quantum communication</strong> (QKD) offers tamper-proof encryption; a "post-quantum" crypto shift is underway.</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims traps:</strong> qubit key ideas = <strong>superposition</strong> (0 &amp; 1 together) &amp; <strong>entanglement</strong>; quantum computers can threaten today's encryption (hence post-quantum cryptography &amp; QKD). They complement, not replace, classical computers.</div>
+</section>
+
+<!-- ===== SECTION 4 ===== -->
+<section class="notes" id="quantummission">
+  <h2>4. National Quantum Mission</h2>
+  <ul>
+    <li>The <strong>National Quantum Mission (NQM)</strong> aims to build quantum computers, secure <strong>quantum communication</strong>, quantum sensing &amp; materials &mdash; putting India among a few quantum-capable nations.</li>
+    <li>Four thematic hubs (T-Hubs) at leading institutes focus on computing, communication, sensing &amp; materials/devices.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> the National Quantum Mission targets quantum computing, communication, sensing &amp; materials via thematic hubs &mdash; a strategic push for quantum self-reliance &amp; secure communication.</div>
+</section>
+
+<!-- ===== SECTION 5 ===== -->
+<section class="notes" id="semiconductors">
+  <h2>5. Semiconductors &amp; Chips</h2>
+  <ul>
+    <li><strong>Semiconductor</strong> = a material (mainly <strong>silicon</strong>) whose conductivity lies between conductor &amp; insulator and can be controlled &mdash; the basis of all chips &amp; transistors (Topic 6/7).</li>
+    <li><strong>Chip (integrated circuit)</strong> packs billions of tiny transistors; smaller nodes (measured in nanometres) = faster, more efficient chips.</li>
+    <li><strong>The value chain:</strong> design &rarr; fabrication (fab/foundry) &rarr; assembly-test-packaging (ATMP/OSAT). Fabrication is extremely capital- &amp; tech-intensive, concentrated in a few countries (Taiwan, S. Korea, US) &mdash; a strategic vulnerability.</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims traps:</strong> semiconductors (silicon) have controllable, in-between conductivity &mdash; the heart of chips; chip "node" (in nm) indicates transistor size, not chip width; fabrication is the hardest, most concentrated stage of the value chain.</div>
+</section>
+
+<!-- ===== SECTION 6 ===== -->
+<section class="notes" id="semimission">
+  <h2>6. India Semiconductor Mission</h2>
+  <ul>
+    <li>The <strong>India Semiconductor Mission (ISM)</strong> &amp; Semicon India programme offer incentives for fabs, display fabs, ATMP/OSAT &amp; chip design (DLI scheme) to build a domestic ecosystem.</li>
+    <li>Goal: reduce import dependence, secure supply chains, &amp; make India a chip design &amp; manufacturing hub (fabs &amp; packaging units being set up).</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> the India Semiconductor Mission (under Semicon India) incentivises fabs, packaging (ATMP/OSAT) &amp; design; DLI = Design-Linked Incentive. Aim: strategic self-reliance in chips &mdash; the "new oil" of the digital age.</div>
+</section>
+
+<!-- ===== SECTION 7 ===== -->
+<section class="notes" id="printing">
+  <h2>7. 3D Printing / Additive Manufacturing</h2>
+  <ul>
+    <li><strong>3D printing (additive manufacturing)</strong> builds an object layer-by-layer from a digital design &mdash; the opposite of "subtractive" cutting/machining.</li>
+    <li><strong>Uses:</strong> rapid prototyping, custom implants &amp; prosthetics (bio-printing), aerospace &amp; defence parts, construction, and even rocket components.</li>
+    <li><strong>Benefits:</strong> less waste, complex customised shapes, on-demand local production; <strong>limits:</strong> speed, material range &amp; scale.</li>
+  </ul>
+  <div class="callout warn"><strong>GS-III hook:</strong> additive manufacturing enables customised, decentralised production (medical implants, spare parts, defence &amp; space components) &mdash; supporting self-reliance &amp; resilient supply chains; India has a National Strategy on Additive Manufacturing.</div>
+</section>
+
+<!-- ===== SECTION 8 ===== -->
+<section class="notes" id="edge">
+  <h2>8. Edge &amp; Neuromorphic Computing</h2>
+  <ul>
+    <li><strong>Edge computing</strong> processes data near where it is generated (on device/local) rather than in a distant cloud &mdash; cutting latency &amp; bandwidth, vital for IoT, autonomous vehicles &amp; real-time AI (Topic 12/13).</li>
+    <li><strong>Neuromorphic computing</strong> = chips designed to mimic the brain's neurons for very energy-efficient AI.</li>
+    <li><strong>Green computing</strong> &mdash; reducing energy &amp; e-waste of data centres &amp; devices &mdash; is a rising concern.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> edge computing = processing near the data source (low latency); neuromorphic chips mimic the brain for efficient AI; green computing tackles the energy &amp; e-waste footprint of computing.</div>
+</section>
+
+<!-- ===== SECTION 9 ===== -->
+<section class="notes" id="applications">
+  <h2>9. Applications &amp; Strategic Importance</h2>
+  <table>
+    <tr><th>Technology</th><th>Application</th></tr>
+    <tr><td>Supercomputers/HPC</td><td>Weather forecasting, defence, drug &amp; materials simulation, AI training</td></tr>
+    <tr><td>Quantum</td><td>Cryptography, secure communication, optimisation, drug discovery</td></tr>
+    <tr><td>Semiconductors</td><td>Every electronic device &mdash; phones, cars, defence, AI</td></tr>
+    <tr><td>3D printing</td><td>Medical implants, aerospace, defence, custom manufacturing</td></tr>
+  </table>
+  <div class="callout warn"><strong>GS-III hook:</strong> advanced computing is now a <strong>strategic &amp; economic</strong> domain &mdash; chips, quantum &amp; HPC underpin AI, defence &amp; the economy. Concentration in a few countries makes self-reliance (Quantum &amp; Semiconductor Missions) a national-security priority.</div>
+</section>
+
+<!-- ===== SECTION 10: CURRENT AFFAIRS ===== -->
+<section class="notes" id="currentaffairs">
+  <h2>10. Current Affairs Link (2024&ndash;2026)</h2>
+  <p>Chips &amp; quantum are among the most strategic tech-policy stories. Verify the latest before the exam. <span class="update-tag">check for latest update or data</span></p>
+  <div class="callout update"><strong>Semiconductor fabs:</strong> new chip fabs &amp; packaging units under the India Semiconductor Mission apply Sections 5&ndash;6. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout update"><strong>Quantum progress:</strong> National Quantum Mission hubs, indigenous quantum computers &amp; QKD demonstrations apply Sections 3&ndash;4. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout warn"><strong>Supercomputing:</strong> new PARAM systems &amp; exascale plans under the National Supercomputing Mission apply Sections 1&ndash;2. <span class="update-tag">check for latest update or data</span></div>
+  <table>
+    <tr><th>Recent theme</th><th>Fundamental it tests</th><th>Why it matters for UPSC</th></tr>
+    <tr><td>Semiconductor fabs</td><td>Chips</td><td>GS-III strategic self-reliance.</td></tr>
+    <tr><td>National Quantum Mission</td><td>Quantum</td><td>GS-III frontier tech &amp; security.</td></tr>
+    <tr><td>PARAM / NSM</td><td>Supercomputing</td><td>GS-III indigenous capability.</td></tr>
+    <tr><td>3D printing strategy</td><td>Additive mfg</td><td>GS-III manufacturing.</td></tr>
+  </table>
+  <ul>
+    <li><strong>Recurring exam hooks:</strong> PARAM &amp; C-DAC &middot; FLOPS/exascale &middot; qubit, superposition &amp; entanglement &middot; National Quantum Mission &middot; semiconductors &amp; ISM &middot; additive manufacturing &middot; edge computing.</li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 11: PRELIMS ===== -->
+<section class="notes" id="prelims-pyq">
+  <h2>11. Prelims PYQs</h2>
+  <p style="font-size:13px;color:var(--muted)"><em>Objective questions anchored to genuinely tested UPSC themes on advanced computing. Each carries a worked rationale.</em></p>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Quantum</div>
+    <p class="q-stem"><strong>Q:</strong> The basic unit of information in a quantum computer is the &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> bit</li>
+      <li class="correct"><span class="opt-key">(b)</span> qubit</li>
+      <li><span class="opt-key">(c)</span> byte</li>
+      <li><span class="opt-key">(d)</span> pixel</li>
+    </ul>
+    <p class="ans">Answer: (b) A qubit (quantum bit) can exist in superposition (0 and 1 at once), unlike a classical bit that is either 0 or 1.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Superposition</div>
+    <p class="q-stem"><strong>Q:</strong> "Superposition" in quantum computing means a qubit can &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> only be 0</li>
+      <li><span class="opt-key">(b)</span> only be 1</li>
+      <li class="correct"><span class="opt-key">(c)</span> be 0 and 1 at the same time</li>
+      <li><span class="opt-key">(d)</span> store no information</li>
+    </ul>
+    <p class="ans">Answer: (c) Superposition lets a qubit be 0 and 1 simultaneously, giving quantum computers massive parallelism; entanglement links qubits' states.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Supercomputer</div>
+    <p class="q-stem"><strong>Q:</strong> India's first indigenously developed supercomputer was &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> PARAM 8000</li>
+      <li><span class="opt-key">(b)</span> Aryabhata</li>
+      <li><span class="opt-key">(c)</span> SAGA-220</li>
+      <li><span class="opt-key">(d)</span> EKA</li>
+    </ul>
+    <p class="ans">Answer: (a) PARAM 8000 (1991), built by C-DAC under Dr Vijay Bhatkar, was India's first indigenous supercomputer, developed after technology denial.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Semiconductor</div>
+    <p class="q-stem"><strong>Q:</strong> A semiconductor is a material whose electrical conductivity is &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> higher than a metal</li>
+      <li><span class="opt-key">(b)</span> zero</li>
+      <li class="correct"><span class="opt-key">(c)</span> between that of a conductor and an insulator, and controllable</li>
+      <li><span class="opt-key">(d)</span> the same as an insulator</li>
+    </ul>
+    <p class="ans">Answer: (c) Semiconductors like silicon have intermediate, controllable conductivity &mdash; the basis of transistors and all chips.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Computing speed</div>
+    <p class="q-stem"><strong>Q:</strong> The processing speed of supercomputers is commonly measured in &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> bytes</li>
+      <li><span class="opt-key">(b)</span> hertz only</li>
+      <li class="correct"><span class="opt-key">(c)</span> FLOPS</li>
+      <li><span class="opt-key">(d)</span> pixels</li>
+    </ul>
+    <p class="ans">Answer: (c) FLOPS (floating-point operations per second) measures supercomputer speed; the fastest reach exascale (10&#185;&#8312; FLOPS).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; 3D printing</div>
+    <p class="q-stem"><strong>Q:</strong> 3D printing is also known as &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> subtractive manufacturing</li>
+      <li class="correct"><span class="opt-key">(b)</span> additive manufacturing</li>
+      <li><span class="opt-key">(c)</span> injection moulding</li>
+      <li><span class="opt-key">(d)</span> casting</li>
+    </ul>
+    <p class="ans">Answer: (b) 3D printing builds objects layer-by-layer (additive), unlike subtractive machining that cuts material away.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Quantum threat</div>
+    <p class="q-stem"><strong>Q:</strong> A major security implication of powerful quantum computers is that they could &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> break much of today's encryption</li>
+      <li><span class="opt-key">(b)</span> generate unlimited electricity</li>
+      <li><span class="opt-key">(c)</span> replace the internet</li>
+      <li><span class="opt-key">(d)</span> eliminate all software bugs</li>
+    </ul>
+    <p class="ans">Answer: (a) Quantum computers could crack current cryptography, driving "post-quantum cryptography" and quantum key distribution (QKD) for secure communication.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Edge computing</div>
+    <p class="q-stem"><strong>Q:</strong> "Edge computing" refers to processing data &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> only in large central data centres</li>
+      <li class="correct"><span class="opt-key">(b)</span> close to where it is generated</li>
+      <li><span class="opt-key">(c)</span> on paper</li>
+      <li><span class="opt-key">(d)</span> using quantum bits</li>
+    </ul>
+    <p class="ans">Answer: (b) Edge computing processes data near the source (on device/local), reducing latency &amp; bandwidth &mdash; vital for IoT &amp; real-time AI.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> qubit/superposition/entanglement &middot; PARAM &amp; C-DAC &middot; FLOPS/exascale &middot; National Quantum Mission &middot; semiconductors &amp; ISM &middot; additive manufacturing &middot; edge/neuromorphic. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 12: MAINS ===== -->
+<section class="notes" id="mains-pyq">
+  <h2>12. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>Advanced computing anchors GS-III questions on self-reliance, security &amp; the economy. The frameworks below show how to deploy it analytically.</em></p>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Semiconductors are the "new oil". Discuss their strategic importance and India's efforts at self-reliance.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Chips (Section 5) power every electronic device, so their supply is a strategic &amp; economic lever &mdash; the "new oil".</li>
+        <li><strong>Strategic importance:</strong>
+          <ul>
+            <li>Underpin defence, AI, telecom &amp; the economy; concentrated supply (Taiwan/S. Korea/US) creates vulnerability &amp; geopolitical leverage.</li>
+          </ul>
+        </li>
+        <li><strong>India's efforts:</strong> India Semiconductor Mission &amp; Semicon India &mdash; fabs, packaging (ATMP/OSAT), DLI for design, talent &amp; partnerships.</li>
+        <li><strong>Challenges:</strong> huge capital, technology &amp; talent gaps, water &amp; power needs, global competition.</li>
+        <li><strong>Way forward:</strong> stable policy, ecosystem building, design strength &amp; strategic partnerships.</li>
+        <li><strong>Conclusion:</strong> chip self-reliance is vital for India's strategic autonomy &amp; digital economy.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> What is quantum computing, and why is it considered strategically important? Discuss India's initiatives.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Quantum computing (Section 3) uses superposition &amp; entanglement to solve problems beyond classical computers.</li>
+        <li><strong>Strategic importance:</strong>
+          <ul>
+            <li>Could break current encryption (national-security stakes); accelerate drug/materials discovery, optimisation &amp; AI; secure communication via QKD.</li>
+          </ul>
+        </li>
+        <li><strong>India's initiative:</strong> the National Quantum Mission &mdash; computing, communication, sensing &amp; materials hubs.</li>
+        <li><strong>Challenges:</strong> fragile qubits, cooling &amp; error correction, talent &amp; funding, global race.</li>
+        <li><strong>Way forward:</strong> sustained R&amp;D, post-quantum cryptography readiness &amp; talent building.</li>
+        <li><strong>Conclusion:</strong> quantum capability is a frontier of strategic autonomy India cannot afford to miss.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> How do supercomputers contribute to India's development &amp; security?</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Supercomputers/HPC (Sections 1&ndash;2) solve massive problems by parallel processing.</li>
+        <li><strong>Contributions:</strong>
+          <ul>
+            <li><strong>Development</strong> &mdash; monsoon &amp; disaster forecasting, genomics, drug &amp; agriculture research, AI.</li>
+            <li><strong>Security</strong> &mdash; nuclear, aerospace &amp; defence simulation; cryptography.</li>
+          </ul>
+        </li>
+        <li><strong>India's push:</strong> National Supercomputing Mission &amp; the PARAM series (C-DAC) for indigenous capability.</li>
+        <li><strong>Conclusion:</strong> HPC is a strategic enabler of science, welfare &amp; security.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Additive manufacturing (3D printing) can reshape manufacturing &amp; supply chains. Examine.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> 3D printing (Section 7) builds objects layer-by-layer from digital designs &mdash; a shift from mass to customised production.</li>
+        <li><strong>Impact:</strong>
+          <ul>
+            <li>Customised implants &amp; prosthetics, aerospace &amp; defence parts, on-demand spare parts &amp; local production; less waste &amp; complex geometries.</li>
+          </ul>
+        </li>
+        <li><strong>Supply-chain effect:</strong> decentralised, resilient &amp; shorter supply chains; reduced inventory.</li>
+        <li><strong>Challenges:</strong> speed, scale, material range, standards &amp; IP; India's National Strategy on Additive Manufacturing addresses these.</li>
+        <li><strong>Conclusion:</strong> additive manufacturing supports self-reliant, resilient &amp; customised production.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> semiconductor self-reliance &middot; quantum computing &amp; security &middot; supercomputers for development &middot; additive manufacturing &amp; supply chains &middot; edge/green computing. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; Advanced Computing</h3>
+    <div class="grid-2">
+      <div>
+        <strong>Supercomputers:</strong>
+        <ul>
+          <li>Parallel processing; speed in FLOPS; exascale = 10&#185;&#8312;</li>
+          <li>PARAM 8000 (1991) = first indigenous, by C-DAC (Vijay Bhatkar)</li>
+          <li>National Supercomputing Mission = PARAM series nationwide</li>
+          <li>Used: weather, defence, drug &amp; AI</li>
+        </ul>
+        <strong>Quantum:</strong>
+        <ul>
+          <li>Qubit = superposition (0 &amp; 1) + entanglement</li>
+          <li>Can break current encryption &rarr; post-quantum crypto, QKD</li>
+          <li>National Quantum Mission: computing/communication/sensing/materials</li>
+          <li>Qubits fragile (cooling + error correction)</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Semiconductors:</strong>
+        <ul>
+          <li>Silicon; controllable in-between conductivity; basis of chips</li>
+          <li>Value chain: design &rarr; fab &rarr; ATMP/OSAT; fab most concentrated</li>
+          <li>India Semiconductor Mission (Semicon India); DLI for design</li>
+          <li>"New oil" &mdash; strategic self-reliance</li>
+        </ul>
+        <strong>3D printing &amp; edge:</strong>
+        <ul>
+          <li>3D printing = additive (layer-by-layer) vs subtractive</li>
+          <li>Uses: implants, aerospace, defence, spares</li>
+          <li>Edge computing = process near source (low latency)</li>
+          <li>Neuromorphic = brain-like efficient AI chips</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes:</strong> PARAM &amp; C-DAC &middot; FLOPS/exascale &middot; qubit/superposition/entanglement &middot; National Quantum Mission &middot; semiconductors &amp; ISM &middot; additive manufacturing &middot; edge computing.</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== SIDEBAR ===== -->
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Quick Reference &mdash; Tech</h4>
+    <table>
+      <tr><th>Tech</th><th>Key idea</th></tr>
+      <tr><td>Supercomputer</td><td>Parallel/FLOPS</td></tr>
+      <tr><td>Quantum</td><td>Qubit</td></tr>
+      <tr><td>Semiconductor</td><td>Silicon chip</td></tr>
+      <tr><td>3D printing</td><td>Additive</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>India's Missions</h4>
+    <table>
+      <tr><th>Mission</th><th>Focus</th></tr>
+      <tr><td>NSM</td><td>Supercomputers</td></tr>
+      <tr><td>NQM</td><td>Quantum</td></tr>
+      <tr><td>ISM</td><td>Chips</td></tr>
+      <tr><td>Nat. AM</td><td>3D printing</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Key Facts &amp; Data</h4>
+    <table>
+      <tr><th>Item</th><th>Value</th></tr>
+      <tr><td>PARAM 8000</td><td>1991, C-DAC</td></tr>
+      <tr><td>Exascale</td><td>10&#185;&#8312; FLOPS</td></tr>
+      <tr><td>Qubit</td><td>Superposition</td></tr>
+      <tr><td>Semiconductor</td><td>Silicon</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:85%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains GS-III</span><span class="fill"><span style="width:85%"></span></span></div>
+    <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:80%"></span></span></div>
+    <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:92%"></span></span></div>
+    <p style="margin-top:8px;font-size:11px;color:var(--muted);">Strategic &mdash; track chip &amp; quantum missions.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Advanced Computing at a Glance</h4>
+    <ul>
+      <li>Supercomputers &amp; HPC</li>
+      <li>PARAM &amp; NSM</li>
+      <li>Quantum computing</li>
+      <li>Quantum Mission</li>
+      <li>Semiconductors</li>
+      <li>Semiconductor Mission</li>
+      <li>3D printing</li>
+      <li>Edge/neuromorphic</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">PARAM 8000</span>
+    <span class="tag">FLOPS/exascale</span>
+    <span class="tag green">Qubit</span>
+    <span class="tag">Superposition</span>
+    <span class="tag orange">Entanglement</span>
+    <span class="tag">NQM</span>
+    <span class="tag green">Silicon chip</span>
+    <span class="tag">ISM / Semicon</span>
+    <span class="tag orange">Additive mfg</span>
+    <span class="tag">Edge computing</span>
+  </div>
+
+  <div class="widget">
+    <h4>Data Sources to Bookmark</h4>
+    <ul>
+      <li><a href="https://www.cdac.in" target="_blank" rel="noopener">C-DAC</a></li>
+      <li><a href="https://dst.gov.in" target="_blank" rel="noopener">DST (Quantum)</a></li>
+      <li><a href="https://www.meity.gov.in" target="_blank" rel="noopener">MeitY (Semicon)</a></li>
+      <li><a href="https://pib.gov.in" target="_blank" rel="noopener">PIB</a></li>
+    </ul>
+    <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/science-technology/computer-and-it">S&amp;T T12: Computer &amp; IT</a></li>
+      <li><a href="/science-technology/artificial-intelligence-and-robotics">S&amp;T T13: AI &amp; Robotics</a></li>
+      <li><a href="/science-technology/physics">S&amp;T T7: Physics</a></li>
+      <li><a href="/science-technology/emerging-and-frontier-technologies">S&amp;T T18: Emerging Frontiers</a></li>
+      <li><a href="/science-technology">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding:0;margin:0;">
+      <li style="margin:4px 0;"><a href="#supercomputers" style="font-size:12px;">Supercomputers</a></li>
+      <li style="margin:4px 0;"><a href="#param" style="font-size:12px;">PARAM &amp; NSM</a></li>
+      <li style="margin:4px 0;"><a href="#quantum" style="font-size:12px;">Quantum Computing</a></li>
+      <li style="margin:4px 0;"><a href="#quantummission" style="font-size:12px;">Quantum Mission</a></li>
+      <li style="margin:4px 0;"><a href="#semiconductors" style="font-size:12px;">Semiconductors</a></li>
+      <li style="margin:4px 0;"><a href="#semimission" style="font-size:12px;">Semiconductor Mission</a></li>
+      <li style="margin:4px 0;"><a href="#printing" style="font-size:12px;">3D Printing</a></li>
+      <li style="margin:4px 0;"><a href="#edge" style="font-size:12px;">Edge Computing</a></li>
+      <li style="margin:4px 0;"><a href="#applications" style="font-size:12px;">Applications</a></li>
+      <li style="margin:4px 0;"><a href="#currentaffairs" style="font-size:12px;">Current Affairs</a></li>
+      <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

@@ -1,0 +1,731 @@
+<!-- science-topic06 — auto-imported from scitech-topic06-chemistry-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 6: Chemistry</h1>
+  <p class="sub">Chemistry is the science of <strong>matter, its structure, and its transformations</strong> &mdash; the ground beneath materials, energy, medicine and industry. This single-source file covers the <strong>states &amp; classification of matter</strong>, <strong>atomic structure</strong> (electron, proton, neutron, isotopes), the <strong>periodic table</strong> &amp; its trends, <strong>chemical bonding</strong> (ionic, covalent, metallic), <strong>acids, bases &amp; salts</strong> and pH, <strong>metals, non-metals &amp; metallurgy</strong>, <strong>organic chemistry</strong> &amp; hydrocarbons, polymers, and the <strong>everyday chemistry</strong> of fuels, fertilizers, alloys, soaps, food &amp; medicine &mdash; with labelled diagrams, tables and real dated PYQs with full model answers.</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Periodic Table &middot; pH</span>
+    <span class="pill">~38 min read</span>
+    <span class="pill">Everyday Chemistry</span>
+    <span class="pill">High Prelims Weight</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#matter">Matter &mdash; States &amp; Classification</a></li>
+    <li><span class="num">2.</span><a href="#atom">Atomic Structure</a></li>
+    <li><span class="num">3.</span><a href="#periodic">The Periodic Table</a></li>
+    <li><span class="num">4.</span><a href="#bonding">Chemical Bonding</a></li>
+    <li><span class="num">5.</span><a href="#acidbase">Acids, Bases &amp; Salts (pH)</a></li>
+    <li><span class="num">6.</span><a href="#metals">Metals, Non-Metals &amp; Metallurgy</a></li>
+    <li><span class="num">7.</span><a href="#organic">Organic Chemistry &amp; Polymers</a></li>
+    <li><span class="num">8.</span><a href="#everyday">Everyday &amp; Industrial Chemistry</a></li>
+    <li><span class="num">9.</span><a href="#radioactivity">Radioactivity &amp; Nuclear Chemistry</a></li>
+    <li><span class="num">10.</span><a href="#currentaffairs">Current Affairs Link</a></li>
+    <li><span class="num">11.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><span class="num">12.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Tests Chemistry</h3>
+  <p>Chemistry in UPSC is <strong>applied &amp; everyday-oriented</strong>, not equation-heavy &mdash; the focus is on facts and uses. Sort your prep into three question-types:</p>
+  <ul>
+    <li><strong>Definitional / static</strong> &mdash; "which gas is used in...?", "pH of...?", "isotope of...?". Pure recall of properties &amp; uses.</li>
+    <li><strong>Statement-elimination</strong> &mdash; property statements (acid/base, metal/non-metal, ionic/covalent) where one word decides the answer.</li>
+    <li><strong>Applied / current</strong> &mdash; a material or process in the news (green hydrogen, lithium, rare earths, ethanol blending) traced to a chemistry fundamental &mdash; the GS-III energy/materials bridge.</li>
+  </ul>
+  <p><strong>Highest-frequency themes:</strong> gases &amp; their uses &middot; pH &amp; acids/bases &middot; isotopes &middot; periodic-table basics &middot; metals, alloys &amp; metallurgy &middot; polymers/plastics &middot; fuels &amp; combustion &middot; fertilizers &middot; everyday chemicals.</p>
+</div>
+
+<!-- ===== SECTION 1 ===== -->
+<section class="notes" id="matter">
+  <h2>1. Matter &mdash; States &amp; Classification</h2>
+  <p>Matter is anything with mass &amp; volume. It exists in three common states (plus plasma &amp; BEC).</p>
+  <table>
+    <tr><th>State</th><th>Shape / volume</th><th>Particle arrangement</th></tr>
+    <tr><td>Solid</td><td>Fixed shape &amp; volume</td><td>Closely packed, vibrate in place</td></tr>
+    <tr><td>Liquid</td><td>Fixed volume, no fixed shape</td><td>Loosely packed, can flow</td></tr>
+    <tr><td>Gas</td><td>Neither fixed</td><td>Far apart, move freely</td></tr>
+  </table>
+  <ul>
+    <li><strong>Plasma</strong> = ionised gas (in stars, neon signs); <strong>BEC</strong> = Bose-Einstein Condensate (near absolute zero, named after S.N. Bose).</li>
+    <li><strong>Changes of state:</strong> melting, freezing, evaporation, condensation, <strong>sublimation</strong> (solid&rarr;gas directly, e.g. camphor, dry ice, iodine, naphthalene).</li>
+    <li><strong>Classification:</strong> pure substances (elements &amp; compounds) vs mixtures (homogeneous &amp; heterogeneous). Element = one kind of atom; compound = fixed ratio of elements chemically bonded.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> the 4th state is plasma (most abundant state in the universe); dry ice is solid CO&#8322; that sublimes; alloys &amp; air are mixtures, water &amp; salt are compounds.</div>
+</section>
+
+<!-- ===== SECTION 2 ===== -->
+<section class="notes" id="atom">
+  <h2>2. Atomic Structure</h2>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 460 220" width="460" height="220" role="img" aria-label="Atom with nucleus and electron shells">
+      <rect x="0" y="0" width="460" height="220" fill="#ffffff"/>
+      <g font-family="sans-serif" font-size="12" text-anchor="middle">
+        <ellipse cx="230" cy="110" rx="120" ry="70" fill="none" stroke="#1a3d5c" stroke-width="1"/>
+        <ellipse cx="230" cy="110" rx="70" ry="42" fill="none" stroke="#1a3d5c" stroke-width="1"/>
+        <circle cx="230" cy="110" r="26" fill="#fdecec" stroke="#c0392b"/><text x="230" y="108" font-size="11">Nucleus</text><text x="230" y="122" font-size="10">p + n</text>
+        <circle cx="160" cy="110" r="7" fill="#c47820"/><circle cx="300" cy="110" r="7" fill="#c47820"/>
+        <circle cx="110" cy="110" r="7" fill="#1a7a5a"/><circle cx="350" cy="110" r="7" fill="#1a7a5a"/><circle cx="230" cy="40" r="7" fill="#1a7a5a"/>
+        <text x="80" y="200" font-size="11" fill="#c0392b">Proton (+), Neutron (0) in nucleus</text>
+        <text x="330" y="200" font-size="11" fill="#1a7a5a">Electrons (&minus;) in shells</text>
+      </g>
+    </svg>
+    <div class="svg-caption">Fig 6.1 &mdash; The atom: a tiny dense nucleus of protons (+) &amp; neutrons (0), surrounded by electrons (&minus;) in shells. The atom is electrically neutral.</div>
+  </div>
+
+  <table>
+    <tr><th>Particle</th><th>Charge</th><th>Location</th><th>Discovered by</th></tr>
+    <tr><td>Electron</td><td>&minus;1</td><td>Shells</td><td>J.J. Thomson</td></tr>
+    <tr><td>Proton</td><td>+1</td><td>Nucleus</td><td>Rutherford / Goldstein</td></tr>
+    <tr><td>Neutron</td><td>0</td><td>Nucleus</td><td>Chadwick</td></tr>
+  </table>
+  <ul>
+    <li><strong>Atomic number (Z)</strong> = number of protons (defines the element). <strong>Mass number (A)</strong> = protons + neutrons.</li>
+    <li><strong>Isotopes</strong> = same protons, different neutrons (e.g. C-12, C-14; U-235, U-238). <strong>Isobars</strong> = same mass number, different elements.</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims traps:</strong> atomic number = protons (not electrons); isotopes differ in neutrons; <strong>C-14</strong> is used for carbon dating; <strong>U-235</strong> is the fissile isotope (link Topic 15); heavy water = D&#8322;O (deuterium).</div>
+</section>
+
+<!-- ===== SECTION 3 ===== -->
+<section class="notes" id="periodic">
+  <h2>3. The Periodic Table</h2>
+  <p>The modern periodic table (Mendeleev proposed it; Moseley arranged it by atomic number) organises elements by increasing atomic number into <strong>periods</strong> (rows) &amp; <strong>groups</strong> (columns).</p>
+  <ul>
+    <li><strong>Groups:</strong> 18 vertical columns &mdash; elements with similar properties (e.g. Group 1 = alkali metals, Group 17 = halogens, Group 18 = noble/inert gases).</li>
+    <li><strong>Periods:</strong> 7 horizontal rows.</li>
+    <li><strong>Metals</strong> (left &amp; centre), <strong>non-metals</strong> (right), <strong>metalloids</strong> (staircase &mdash; Si, Ge; used in semiconductors).</li>
+  </ul>
+  <table>
+    <tr><th>Trend (left &rarr; right in a period)</th><th>Change</th></tr>
+    <tr><td>Atomic size</td><td>Decreases</td></tr>
+    <tr><td>Metallic character</td><td>Decreases (non-metallic increases)</td></tr>
+    <tr><td>Electronegativity</td><td>Increases</td></tr>
+  </table>
+  <div class="callout info"><strong>Prelims facts:</strong> noble gases (He, Ne, Ar) are inert (full outer shell); halogens are highly reactive non-metals; Mendeleev is the "father of the periodic table"; hydrogen's placement is unique.</div>
+</section>
+
+<!-- ===== SECTION 4 ===== -->
+<section class="notes" id="bonding">
+  <h2>4. Chemical Bonding</h2>
+  <p>Atoms bond to attain a stable (noble-gas) electron configuration &mdash; the octet rule.</p>
+  <table>
+    <tr><th>Bond</th><th>How</th><th>Examples / properties</th></tr>
+    <tr><td>Ionic (electrovalent)</td><td>Transfer of electrons (metal &rarr; non-metal)</td><td>NaCl; high m.p., conduct in solution</td></tr>
+    <tr><td>Covalent</td><td>Sharing of electrons (non-metals)</td><td>H&#8322;O, CO&#8322;, CH&#8322;; low m.p., poor conductors</td></tr>
+    <tr><td>Metallic</td><td>"Sea" of free electrons</td><td>Metals; conduct heat &amp; electricity, malleable</td></tr>
+  </table>
+  <div class="callout info"><strong>Prelims facts:</strong> ionic compounds conduct electricity when molten/dissolved (free ions); metals conduct due to free electrons; covalent compounds are usually poor conductors. A hydrogen bond (weak) explains water's unusual properties.</div>
+</section>
+
+<!-- ===== SECTION 5 ===== -->
+<section class="notes" id="acidbase">
+  <h2>5. Acids, Bases &amp; Salts (pH)</h2>
+  <ul>
+    <li><strong>Acids</strong> release H&#8314; ions, taste sour, turn blue litmus red (e.g. HCl, H&#8322;SO&#8324;, citric, acetic).</li>
+    <li><strong>Bases</strong> release OH&#8315; ions, taste bitter, turn red litmus blue (e.g. NaOH, ammonia, lime).</li>
+    <li><strong>Salt</strong> = product of acid + base (neutralisation); e.g. NaCl.</li>
+    <li><strong>pH scale (0&ndash;14):</strong> 7 = neutral, <7 acidic, >7 basic. Blood pH ~7.4; stomach acid ~1&ndash;2.</li>
+  </ul>
+  <div class="callout warn"><strong>Everyday/prelims links:</strong> antacids neutralise stomach acid; acid rain (pH < 5.6) from SO&#8322;/NO&#8339;; soil pH affects crops; baking soda = NaHCO&#8323; (mild base); the strongest common acid tested is H&#8322;SO&#8324; ("king of chemicals"). Universal indicator shows pH by colour.</div>
+</section>
+
+<!-- ===== SECTION 6 ===== -->
+<section class="notes" id="metals">
+  <h2>6. Metals, Non-Metals &amp; Metallurgy</h2>
+  <table>
+    <tr><th>Property</th><th>Metals</th><th>Non-metals</th></tr>
+    <tr><td>State</td><td>Solid (except mercury)</td><td>Solid, liquid or gas</td></tr>
+    <tr><td>Conductivity</td><td>Good</td><td>Poor (except graphite)</td></tr>
+    <tr><td>Malleable/ductile</td><td>Yes</td><td>No (brittle)</td></tr>
+    <tr><td>Nature of oxide</td><td>Basic</td><td>Acidic</td></tr>
+  </table>
+  <ul>
+    <li><strong>Metallurgy</strong> = extraction &amp; purification of metals from ores (mining &rarr; concentration &rarr; reduction &rarr; refining).</li>
+    <li><strong>Alloys</strong> (mixtures for better properties): steel (Fe+C), stainless steel (Fe+Cr+Ni), brass (Cu+Zn), bronze (Cu+Sn), solder (Pb+Sn).</li>
+    <li><strong>Corrosion:</strong> rusting of iron (needs air + water); prevented by galvanising, painting, alloying.</li>
+    <li><strong>Reactivity series:</strong> K > Na > Ca > Mg > Al > Zn > Fe > Cu > Ag > Au (more reactive metals displace less reactive).</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> mercury is the only liquid metal; gold &amp; platinum are least reactive (found free); aluminium resists corrosion via an oxide layer; graphite (non-metal) conducts electricity.</div>
+</section>
+
+<!-- ===== SECTION 7 ===== -->
+<section class="notes" id="organic">
+  <h2>7. Organic Chemistry &amp; Polymers</h2>
+  <ul>
+    <li><strong>Organic chemistry</strong> = chemistry of carbon compounds. Carbon forms 4 bonds (tetravalent) &amp; chains (catenation) &mdash; the basis of life &amp; fuels.</li>
+    <li><strong>Hydrocarbons:</strong> alkanes (single bonds, e.g. methane CH&#8324;), alkenes (double), alkynes (triple). Fossil fuels (petrol, diesel, LPG, natural gas) are hydrocarbon mixtures.</li>
+    <li><strong>Polymers</strong> = large molecules from repeating units (monomers): natural (rubber, cellulose, protein) &amp; synthetic (polythene, PVC, nylon, Teflon, bakelite).</li>
+    <li><strong>Biodegradable vs non-biodegradable</strong> plastics &mdash; the plastic-pollution problem.</li>
+  </ul>
+  <div class="callout warn"><strong>Everyday/GS-III links:</strong> plastics &amp; the single-use-plastic ban; ethanol (from sugarcane) blended into petrol; CNG &amp; LPG as cleaner fuels; carbon's uniqueness underlies both life &amp; the fuel economy.</div>
+</section>
+
+<!-- ===== SECTION 8 ===== -->
+<section class="notes" id="everyday">
+  <h2>8. Everyday &amp; Industrial Chemistry</h2>
+  <table>
+    <tr><th>Item</th><th>Chemistry</th></tr>
+    <tr><td>Soap &amp; detergent</td><td>Clean by emulsifying grease (hydrophilic + hydrophobic ends)</td></tr>
+    <tr><td>Fertilizers</td><td>Urea (N), DAP (N+P), MOP (K) &mdash; NPK nutrients</td></tr>
+    <tr><td>Common gases</td><td>O&#8322; (respiration), CO&#8322; (fire extinguisher, photosynthesis), N&#8322; (inert, packaging), H&#8322; (fuel), He (balloons), Cl&#8322; (water treatment)</td></tr>
+    <tr><td>Bleaching powder</td><td>Ca(OCl)Cl &mdash; disinfect &amp; bleach</td></tr>
+    <tr><td>Baking soda / washing soda</td><td>NaHCO&#8323; / Na&#8322;CO&#8323;</td></tr>
+    <tr><td>Preservatives &amp; antioxidants</td><td>Keep food from spoiling</td></tr>
+  </table>
+  <div class="callout info"><strong>High-yield uses:</strong> CO&#8322; &amp; foam extinguishers; chlorine &amp; ozone for water purification; nitrogen flushing to preserve food; urea as the main N-fertilizer; silver halides in old photography; sodium-vapour lamps (yellow).</div>
+</section>
+
+<!-- ===== SECTION 9 ===== -->
+<section class="notes" id="radioactivity">
+  <h2>9. Radioactivity &amp; Nuclear Chemistry (Basics)</h2>
+  <ul>
+    <li><strong>Radioactivity</strong> = spontaneous emission of radiation from unstable nuclei (discovered by Becquerel; the Curies). Emissions: <strong>alpha (&alpha;), beta (&beta;), gamma (&gamma;)</strong>.</li>
+    <li><strong>Half-life</strong> = time for half of a radioactive sample to decay (used in dating).</li>
+    <li><strong>Uses:</strong> C-14 (carbon dating), Co-60 (cancer radiotherapy, food irradiation), I-131 (thyroid), U-235 (nuclear energy &mdash; Topic 15).</li>
+    <li><strong>Fission</strong> (splitting nuclei &mdash; nuclear reactors, bombs) vs <strong>fusion</strong> (joining nuclei &mdash; the Sun, H-bomb).</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims facts:</strong> gamma rays are the most penetrating; alpha the least; carbon dating uses C-14; nuclear <strong>fusion</strong> powers the Sun; this section bridges to Nuclear Technology (Topic 15).</div>
+</section>
+
+<!-- ===== SECTION 10: CURRENT AFFAIRS ===== -->
+<section class="notes" id="currentaffairs">
+  <h2>10. Current Affairs Link (2024&ndash;2026)</h2>
+  <p>Chemistry stays topical through energy, materials &amp; environment. Verify the latest before the exam. <span class="update-tag">check for latest update or data</span></p>
+  <div class="callout update"><strong>Green hydrogen:</strong> India's National Green Hydrogen Mission promotes hydrogen (made by electrolysis of water) as a clean fuel &mdash; direct chemistry of Sections 4 &amp; 8. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout update"><strong>Critical minerals &amp; lithium:</strong> lithium (batteries), cobalt &amp; rare earths are strategic for EVs &amp; electronics; India's critical-minerals mission &amp; discoveries keep periodic-table chemistry topical. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout warn"><strong>Ethanol blending &amp; plastics:</strong> the ethanol-blended-petrol target and single-use-plastic ban apply organic &amp; polymer chemistry to policy. <span class="update-tag">check for latest update or data</span></div>
+  <table>
+    <tr><th>Recent theme</th><th>Fundamental it tests</th><th>Why it matters for UPSC</th></tr>
+    <tr><td>Green hydrogen</td><td>Electrolysis, gases</td><td>GS-III energy transition.</td></tr>
+    <tr><td>Lithium &amp; critical minerals</td><td>Metals, periodic table</td><td>GS-III strategic resources.</td></tr>
+    <tr><td>Ethanol blending</td><td>Organic chemistry</td><td>GS-III energy &amp; farm income.</td></tr>
+    <tr><td>Plastic ban</td><td>Polymers</td><td>GS-III environment.</td></tr>
+  </table>
+  <ul>
+    <li><strong>Recurring exam hooks:</strong> gases &amp; uses &middot; pH values &middot; isotopes &amp; dating &middot; alloys &middot; green hydrogen &middot; lithium/rare earths &middot; ethanol &middot; fission vs fusion.</li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 11: PRELIMS ===== -->
+<section class="notes" id="prelims-pyq">
+  <h2>11. Prelims PYQs</h2>
+  <p style="font-size:13px;color:var(--muted)"><em>Objective questions anchored to genuinely tested UPSC themes in chemistry. Each carries a worked rationale.</em></p>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Atomic structure</div>
+    <p class="q-stem"><strong>Q:</strong> Isotopes of an element have the same number of &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> protons but different neutrons</li>
+      <li><span class="opt-key">(b)</span> neutrons but different protons</li>
+      <li><span class="opt-key">(c)</span> protons and neutrons</li>
+      <li><span class="opt-key">(d)</span> electrons and neutrons</li>
+    </ul>
+    <p class="ans">Answer: (a) Isotopes have the same atomic number (protons) but different mass number (neutrons), e.g. C-12 and C-14.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; pH</div>
+    <p class="q-stem"><strong>Q:</strong> A solution with pH value 2 is &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> strongly acidic</li>
+      <li><span class="opt-key">(b)</span> neutral</li>
+      <li><span class="opt-key">(c)</span> weakly basic</li>
+      <li><span class="opt-key">(d)</span> strongly basic</li>
+    </ul>
+    <p class="ans">Answer: (a) On the 0&ndash;14 pH scale, values below 7 are acidic; pH 2 is strongly acidic (7 = neutral, above 7 = basic).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Gases</div>
+    <p class="q-stem"><strong>Q:</strong> Which gas is commonly used in fire extinguishers?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Oxygen</li>
+      <li><span class="opt-key">(b)</span> Hydrogen</li>
+      <li class="correct"><span class="opt-key">(c)</span> Carbon dioxide</li>
+      <li><span class="opt-key">(d)</span> Nitrogen</li>
+    </ul>
+    <p class="ans">Answer: (c) CO&#8322; is denser than air &amp; does not support combustion, so it smothers fires.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Alloys</div>
+    <p class="q-stem"><strong>Q:</strong> Brass is an alloy of &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> copper and tin</li>
+      <li class="correct"><span class="opt-key">(b)</span> copper and zinc</li>
+      <li><span class="opt-key">(c)</span> iron and carbon</li>
+      <li><span class="opt-key">(d)</span> iron and chromium</li>
+    </ul>
+    <p class="ans">Answer: (b) Brass = copper + zinc; bronze = copper + tin; steel = iron + carbon.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Metals</div>
+    <p class="q-stem"><strong>Q:</strong> Which is the only metal that is liquid at room temperature?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Sodium</li>
+      <li class="correct"><span class="opt-key">(b)</span> Mercury</li>
+      <li><span class="opt-key">(c)</span> Aluminium</li>
+      <li><span class="opt-key">(d)</span> Lead</li>
+    </ul>
+    <p class="ans">Answer: (b) Mercury is the only metal liquid at room temperature; bromine is the only liquid non-metal.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Radioactivity</div>
+    <p class="q-stem"><strong>Q:</strong> Carbon dating to find the age of fossils uses which isotope?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> C-12</li>
+      <li class="correct"><span class="opt-key">(b)</span> C-14</li>
+      <li><span class="opt-key">(c)</span> U-235</li>
+      <li><span class="opt-key">(d)</span> Co-60</li>
+    </ul>
+    <p class="ans">Answer: (b) The radioactive isotope C-14, with a known half-life, is used for carbon dating of once-living material.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Periodic table</div>
+    <p class="q-stem"><strong>Q:</strong> The elements of Group 18 of the periodic table are called &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> halogens</li>
+      <li><span class="opt-key">(b)</span> alkali metals</li>
+      <li class="correct"><span class="opt-key">(c)</span> noble (inert) gases</li>
+      <li><span class="opt-key">(d)</span> metalloids</li>
+    </ul>
+    <p class="ans">Answer: (c) Group 18 are the noble/inert gases (He, Ne, Ar...) with a full outer shell, hence very unreactive.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Fuels</div>
+    <p class="q-stem"><strong>Q:</strong> The main component of natural gas (CNG) is &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> methane</li>
+      <li><span class="opt-key">(b)</span> ethane</li>
+      <li><span class="opt-key">(c)</span> butane</li>
+      <li><span class="opt-key">(d)</span> propane</li>
+    </ul>
+    <p class="ans">Answer: (a) Natural gas / CNG is mainly methane (CH&#8324;); LPG is mainly butane &amp; propane.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> gases &amp; their uses &middot; pH values &middot; isotopes &amp; dating &middot; alloy compositions &middot; noble gases &amp; halogens &middot; acids/bases in daily life &middot; fuels (CNG, LPG, ethanol) &middot; fission vs fusion &middot; green hydrogen. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 12: MAINS ===== -->
+<section class="notes" id="mains-pyq">
+  <h2>12. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>Chemistry anchors applied GS-III questions on energy, materials &amp; environment. The frameworks below show how to deploy it analytically.</em></p>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> "Green hydrogen can be a game-changer for India's energy transition." Discuss its chemistry, potential and challenges.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction &mdash; define:</strong> Green hydrogen is hydrogen produced by the electrolysis of water using renewable electricity &mdash; a clean fuel whose only by-product is water (Sections 4, 8).</li>
+        <li><strong>Potential:</strong>
+          <ul>
+            <li>Decarbonise hard-to-abate sectors (steel, fertilizers, refining, heavy transport); energy storage; export opportunity.</li>
+            <li>Supports net-zero-2070 &amp; energy self-reliance; National Green Hydrogen Mission targets scale.</li>
+          </ul>
+        </li>
+        <li><strong>Challenges:</strong> high cost of electrolysers &amp; green power; water requirement; storage &amp; transport (low density, flammable); lack of infrastructure &amp; standards.</li>
+        <li><strong>Way forward:</strong> scale renewables, cut electrolyser cost via R&amp;D &amp; PLI, build pilot hubs, set standards, and blend into industry gradually.</li>
+        <li><strong>Conclusion:</strong> chemistry-driven and strategically vital &mdash; green hydrogen can anchor a clean, self-reliant energy future if costs fall.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Critical minerals like lithium and rare earths are the "new oil". Examine their significance and India's strategy to secure them.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Critical minerals (lithium, cobalt, nickel, rare earths) are essential to batteries, electronics, EVs &amp; defence &mdash; elements of the periodic table (Section 3) now of strategic value.</li>
+        <li><strong>Significance:</strong> backbone of the clean-energy &amp; digital economy; EV &amp; storage batteries; wind turbines; semiconductors &amp; defence.</li>
+        <li><strong>Challenges:</strong> import dependence; concentrated global supply (China dominance in processing); price volatility; environmental cost of mining.</li>
+        <li><strong>India's strategy:</strong> Critical Minerals Mission &amp; list; KABIL for overseas acquisition; domestic exploration (lithium finds); recycling; supply-chain partnerships (Minerals Security Partnership).</li>
+        <li><strong>Conclusion:</strong> securing critical minerals is vital for energy &amp; tech sovereignty &mdash; needing diversification, recycling &amp; sustainable mining.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Discuss the chemistry and policy behind ethanol blending in petrol and its benefits for India.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Ethanol (C&#8322;H&#8325;OH), an organic alcohol from sugarcane/grain, is blended with petrol to make a cleaner, partly renewable fuel (Section 7).</li>
+        <li><strong>Benefits:</strong> cuts crude-oil imports &amp; forex; lower emissions; extra income for farmers &amp; sugar mills; supports energy security.</li>
+        <li><strong>Policy:</strong> Ethanol Blended Petrol Programme with a rising blending target; incentives for distilleries.</li>
+        <li><strong>Concerns:</strong> food-vs-fuel &amp; water use; engine compatibility; feedstock diversification (use surplus/waste).</li>
+        <li><strong>Conclusion:</strong> a practical, chemistry-based step toward cleaner fuel &amp; farm income, if sustainability is managed.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Plastic pollution has become a major environmental challenge. Explain the chemistry involved and suggest solutions.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Plastics are synthetic polymers (Section 7) of repeating hydrocarbon monomers; their durability makes them useful but non-biodegradable.</li>
+        <li><strong>The problem:</strong>
+          <ul>
+            <li>Single-use plastics persist for centuries; break into microplastics entering food &amp; water.</li>
+            <li>Harm marine life, choke drains, and release toxins on burning.</li>
+          </ul>
+        </li>
+        <li><strong>Solutions:</strong> single-use-plastic ban; Extended Producer Responsibility; biodegradable &amp; compostable alternatives; recycling &amp; circular economy; behavioural change.</li>
+        <li><strong>Way forward:</strong> promote green chemistry (bioplastics), strengthen waste segregation, and enforce EPR.</li>
+        <li><strong>Conclusion:</strong> the same polymer chemistry that created the crisis can, redirected, help solve it.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> green hydrogen &middot; critical minerals &amp; lithium &middot; ethanol &amp; biofuels &middot; plastic pollution &amp; green chemistry &middot; battery chemistry &amp; EVs &middot; fertilizer &amp; food chemistry. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; Chemistry</h3>
+    <div class="grid-2">
+      <div>
+        <strong>Matter &amp; atom:</strong>
+        <ul>
+          <li>States: solid, liquid, gas (+ plasma, BEC); sublimation = solid&rarr;gas (camphor, dry ice)</li>
+          <li>Electron (&minus;, Thomson), proton (+, nucleus), neutron (0, Chadwick)</li>
+          <li>Atomic number = protons; isotopes differ in neutrons; C-14 = dating</li>
+          <li>Heavy water = D&#8322;O; U-235 = fissile</li>
+        </ul>
+        <strong>Periodic table &amp; bonding:</strong>
+        <ul>
+          <li>18 groups, 7 periods; Group 18 = noble gases, 17 = halogens, 1 = alkali metals</li>
+          <li>Mendeleev = father of periodic table</li>
+          <li>Ionic = transfer, covalent = share, metallic = free electrons</li>
+          <li>Ionic conducts in solution; metals conduct via free electrons</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Acids, metals:</strong>
+        <ul>
+          <li>pH 0&ndash;14; 7 neutral, <7 acid, >7 base; blood ~7.4</li>
+          <li>Acid = H&#8314; (sour, blue&rarr;red); base = OH&#8315; (bitter, red&rarr;blue)</li>
+          <li>Mercury = only liquid metal; gold/platinum least reactive</li>
+          <li>Brass = Cu+Zn, bronze = Cu+Sn, steel = Fe+C, stainless = Fe+Cr+Ni</li>
+        </ul>
+        <strong>Organic &amp; everyday:</strong>
+        <ul>
+          <li>Carbon = tetravalent, catenation; CNG = methane, LPG = butane/propane</li>
+          <li>Polymers: polythene, PVC, nylon, Teflon; plastic = non-biodegradable</li>
+          <li>CO&#8322; = fire extinguisher; N&#8322; = inert packaging; urea = N-fertilizer</li>
+          <li>Fission = split (reactor); fusion = join (Sun)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes:</strong> gases &amp; uses &middot; pH values &middot; isotopes &amp; dating &middot; alloys &middot; noble gases/halogens &middot; polymers &middot; fuels &middot; fission vs fusion &middot; green hydrogen &amp; critical minerals.</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== SIDEBAR ===== -->
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Quick Reference &mdash; Alloys</h4>
+    <table>
+      <tr><th>Alloy</th><th>Composition</th></tr>
+      <tr><td>Steel</td><td>Fe + C</td></tr>
+      <tr><td>Stainless steel</td><td>Fe + Cr + Ni</td></tr>
+      <tr><td>Brass</td><td>Cu + Zn</td></tr>
+      <tr><td>Bronze</td><td>Cu + Sn</td></tr>
+      <tr><td>Solder</td><td>Pb + Sn</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Gases &amp; Uses</h4>
+    <table>
+      <tr><th>Gas</th><th>Use</th></tr>
+      <tr><td>CO&#8322;</td><td>Fire extinguisher</td></tr>
+      <tr><td>N&#8322;</td><td>Inert packaging</td></tr>
+      <tr><td>He</td><td>Balloons</td></tr>
+      <tr><td>Cl&#8322;</td><td>Water treatment</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Key Data &amp; Discoverers</h4>
+    <table>
+      <tr><th>Item</th><th>Value</th></tr>
+      <tr><td>Neutral pH</td><td>7</td></tr>
+      <tr><td>Electron</td><td>Thomson</td></tr>
+      <tr><td>Neutron</td><td>Chadwick</td></tr>
+      <tr><td>Periodic table</td><td>Mendeleev</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:88%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains GS-III</span><span class="fill"><span style="width:60%"></span></span></div>
+    <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:90%"></span></span></div>
+    <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:72%"></span></span></div>
+    <p style="margin-top:8px;font-size:11px;color:var(--muted);">Applied &amp; everyday focus &mdash; memorise uses.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Chemistry at a Glance</h4>
+    <ul>
+      <li>States &amp; classification</li>
+      <li>Atom &amp; isotopes</li>
+      <li>Periodic table trends</li>
+      <li>Bonding types</li>
+      <li>Acids, bases &amp; pH</li>
+      <li>Metals &amp; alloys</li>
+      <li>Organic &amp; polymers</li>
+      <li>Everyday chemicals</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">Isotope = neutrons differ</span>
+    <span class="tag">pH 7 = neutral</span>
+    <span class="tag green">CO&#8322; extinguisher</span>
+    <span class="tag">Mercury liquid metal</span>
+    <span class="tag orange">Brass = Cu+Zn</span>
+    <span class="tag">Noble = inert</span>
+    <span class="tag green">CNG = methane</span>
+    <span class="tag">C-14 dating</span>
+    <span class="tag orange">Fusion = Sun</span>
+    <span class="tag">Green H&#8322;</span>
+  </div>
+
+  <div class="widget">
+    <h4>Data Sources to Bookmark</h4>
+    <ul>
+      <li><a href="https://mnre.gov.in" target="_blank" rel="noopener">Min. of New &amp; Renewable Energy</a></li>
+      <li><a href="https://mines.gov.in" target="_blank" rel="noopener">Ministry of Mines</a></li>
+      <li><a href="https://dst.gov.in" target="_blank" rel="noopener">Dept of Science &amp; Technology</a></li>
+      <li><a href="https://pib.gov.in" target="_blank" rel="noopener">PIB</a></li>
+    </ul>
+    <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/science-technology/physics">S&amp;T T7: Physics</a></li>
+      <li><a href="/science-technology/nanotechnology">S&amp;T T11: Nanotechnology</a></li>
+      <li><a href="/science-technology/nuclear-technology">S&amp;T T15: Nuclear Technology</a></li>
+      <li><a href="/science-technology/biology-life-processes-and-classification">S&amp;T T1: Life &amp; Classification</a></li>
+      <li><a href="/science-technology">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding:0;margin:0;">
+      <li style="margin:4px 0;"><a href="#matter" style="font-size:12px;">Matter</a></li>
+      <li style="margin:4px 0;"><a href="#atom" style="font-size:12px;">Atomic Structure</a></li>
+      <li style="margin:4px 0;"><a href="#periodic" style="font-size:12px;">Periodic Table</a></li>
+      <li style="margin:4px 0;"><a href="#bonding" style="font-size:12px;">Chemical Bonding</a></li>
+      <li style="margin:4px 0;"><a href="#acidbase" style="font-size:12px;">Acids, Bases &amp; pH</a></li>
+      <li style="margin:4px 0;"><a href="#metals" style="font-size:12px;">Metals &amp; Metallurgy</a></li>
+      <li style="margin:4px 0;"><a href="#organic" style="font-size:12px;">Organic &amp; Polymers</a></li>
+      <li style="margin:4px 0;"><a href="#everyday" style="font-size:12px;">Everyday Chemistry</a></li>
+      <li style="margin:4px 0;"><a href="#radioactivity" style="font-size:12px;">Radioactivity</a></li>
+      <li style="margin:4px 0;"><a href="#currentaffairs" style="font-size:12px;">Current Affairs</a></li>
+      <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

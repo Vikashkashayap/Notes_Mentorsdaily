@@ -1,0 +1,707 @@
+<!-- science-topic10 — auto-imported from scitech-topic10-biotechnology-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 10: Biotechnology &mdash; Genetic Engineering, GM Crops &amp; Gene Editing</h1>
+  <p class="sub">Biotechnology is a top GS-III science area &mdash; it links to agriculture, health, industry &amp; ethics. This file covers the <strong>basics</strong> of DNA, genes &amp; genetic engineering, the key <strong>tools</strong> (recombinant DNA, <strong>PCR</strong>, gene cloning, <strong>CRISPR-Cas9</strong> gene editing), <strong>GM crops</strong> (Bt cotton, Bt brinjal, GM mustard, golden rice), <strong>medical biotechnology</strong> (recombinant vaccines, insulin, <strong>gene &amp; stem-cell therapy</strong>, monoclonal antibodies), <strong>industrial &amp; environmental</strong> biotech, the <strong>bio-economy</strong> &amp; BioE3 policy, and <strong>bioethics, biosafety &amp; regulation</strong> (GEAC) &mdash; with labelled diagrams, tables and real dated PYQs with full model answers.</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">CRISPR &middot; GM Crops</span>
+    <span class="pill">~40 min read</span>
+    <span class="pill">Bioethics &amp; GEAC</span>
+    <span class="pill">High CA Weight</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#basics">Biotechnology Basics</a></li>
+    <li><span class="num">2.</span><a href="#tools">Genetic Engineering Tools</a></li>
+    <li><span class="num">3.</span><a href="#crispr">CRISPR &amp; Gene Editing</a></li>
+    <li><span class="num">4.</span><a href="#gmcrops">GM Crops &amp; Agriculture</a></li>
+    <li><span class="num">5.</span><a href="#medical">Medical Biotechnology</a></li>
+    <li><span class="num">6.</span><a href="#stemgene">Stem Cells &amp; Gene Therapy</a></li>
+    <li><span class="num">7.</span><a href="#industrial">Industrial &amp; Environmental</a></li>
+    <li><span class="num">8.</span><a href="#bioeconomy">Bio-economy &amp; Policy</a></li>
+    <li><span class="num">9.</span><a href="#ethics">Bioethics, Biosafety &amp; Regulation</a></li>
+    <li><span class="num">10.</span><a href="#currentaffairs">Current Affairs Link</a></li>
+    <li><span class="num">11.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><span class="num">12.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Tests Biotechnology</h3>
+  <p>Biotech is a <strong>high-frequency, high-scoring</strong> area straddling science, agriculture, health &amp; ethics. Sort your prep into three question-types:</p>
+  <ul>
+    <li><strong>Definitional / static</strong> &mdash; "what is recombinant DNA?", "what does CRISPR do?", "what is Bt in Bt cotton?". Recall of tools, techniques &amp; terms.</li>
+    <li><strong>Statement-elimination</strong> &mdash; GM-crop approvals, gene-editing mechanisms, vaccine types where one detail decides the answer.</li>
+    <li><strong>Applied / current</strong> &mdash; a technology or regulation in the news (GM mustard, gene-edited crops, BioE3) linked to a fundamental &mdash; the strong GS-III bridge (food security, health, ethics).</li>
+  </ul>
+  <p><strong>Highest-frequency themes:</strong> recombinant DNA &amp; PCR &middot; CRISPR-Cas9 &middot; Bt cotton/brinjal &amp; GM mustard &middot; golden rice &middot; stem cells &amp; gene therapy &middot; monoclonal antibodies &middot; GEAC &amp; biosafety &middot; bio-economy/BioE3.</p>
+</div>
+
+<!-- ===== SECTION 1 ===== -->
+<section class="notes" id="basics">
+  <h2>1. Biotechnology Basics</h2>
+  <ul>
+    <li><strong>Biotechnology</strong> = using living organisms (or their parts &mdash; cells, enzymes, genes) to make useful products or processes &mdash; from ancient fermentation (curd, bread) to modern genetic engineering.</li>
+    <li><strong>DNA &rarr; gene &rarr; protein:</strong> genes (segments of DNA) carry instructions to make proteins that decide an organism's traits (Topic 4). Manipulating genes lets us change traits.</li>
+    <li><strong>Types:</strong> <em>red</em> (medical), <em>green</em> (agriculture), <em>white</em> (industrial), <em>blue</em> (aquatic/marine) biotechnology.</li>
+    <li><strong>Genetic engineering</strong> = deliberately altering an organism's DNA &mdash; adding, removing or editing genes to give a desired trait (a "genetically modified organism", GMO).</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> biotech uses living systems to make products; a GMO has DNA altered by genetic engineering; red/green/white/blue biotech = medical/agri/industrial/marine. Modern biotech began with recombinant DNA in the 1970s.</div>
+</section>
+
+<!-- ===== SECTION 2 ===== -->
+<section class="notes" id="tools">
+  <h2>2. Genetic Engineering Tools</h2>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 460 190" width="460" height="190" role="img" aria-label="Recombinant DNA: cut gene with restriction enzyme, insert into plasmid vector">
+      <rect x="0" y="0" width="460" height="190" fill="#ffffff"/>
+      <g font-family="sans-serif" font-size="10" text-anchor="middle">
+        <rect x="30" y="40" width="120" height="22" rx="4" fill="#e8f0f8" stroke="#1a3d5c"/><text x="90" y="55">Source DNA (gene)</text>
+        <text x="90" y="82" font-size="9" fill="#c0392b">restriction enzyme cuts</text>
+        <circle cx="90" cy="130" r="26" fill="none" stroke="#1a7a5a" stroke-width="2"/><text x="90" y="133" font-size="9">plasmid</text>
+        <text x="230" y="132" font-size="14">&rarr;</text>
+        <circle cx="360" cy="130" r="26" fill="none" stroke="#1a7a5a" stroke-width="2"/><rect x="348" y="104" width="24" height="8" rx="2" fill="#c47820"/><text x="360" y="133" font-size="9">recombinant</text>
+        <text x="360" y="170" font-size="9" fill="#555">gene inserted &amp; sealed by ligase</text>
+      </g>
+    </svg>
+    <div class="svg-caption">Fig 10.1 &mdash; Recombinant DNA: a gene is cut with a restriction enzyme ("molecular scissors") and inserted into a plasmid vector, sealed by DNA ligase, then put into a host cell to express the trait.</div>
+  </div>
+  <table>
+    <tr><th>Tool</th><th>What it does</th></tr>
+    <tr><td><strong>Restriction enzymes</strong></td><td>"Molecular scissors" that cut DNA at specific sequences</td></tr>
+    <tr><td><strong>DNA ligase</strong></td><td>"Molecular glue" that joins DNA fragments</td></tr>
+    <tr><td><strong>Vectors (plasmids)</strong></td><td>Carry the new gene into a host cell</td></tr>
+    <tr><td><strong>PCR</strong></td><td>Polymerase Chain Reaction &mdash; makes millions of copies of a DNA segment (used in diagnosis, e.g. RT-PCR for COVID)</td></tr>
+    <tr><td><strong>Gene cloning</strong></td><td>Producing identical copies of a gene or organism</td></tr>
+  </table>
+  <div class="callout warn"><strong>Prelims traps:</strong> restriction enzymes <em>cut</em>, ligase <em>joins</em>; PCR <em>amplifies</em> (copies) DNA &mdash; it is a diagnostic/amplification tool, not editing. Recombinant DNA = combining DNA from different sources.</div>
+</section>
+
+<!-- ===== SECTION 3 ===== -->
+<section class="notes" id="crispr">
+  <h2>3. CRISPR &amp; Gene Editing</h2>
+  <ul>
+    <li><strong>CRISPR-Cas9</strong> is a precise, cheap gene-editing tool &mdash; a guide RNA locates a target DNA sequence and the Cas9 enzyme cuts it, letting scientists disable, correct or insert genes. (Nobel Prize 2020.)</li>
+    <li>Unlike older GM (which adds foreign genes), gene editing can tweak an organism's <strong>own</strong> genes &mdash; sometimes leaving no foreign DNA (site-directed nuclease SDN-1/2 edits).</li>
+    <li><strong>Uses:</strong> disease-resistant &amp; climate-resilient crops, treating genetic disorders (sickle cell), research. India has exempted certain gene-edited (SDN-1/SDN-2) plants from strict GM rules to speed research.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> CRISPR-Cas9 = guide RNA + Cas9 "molecular scissors" for precise editing (Nobel 2020); gene editing edits existing genes vs GM adding foreign genes; India eased rules for SDN-1/SDN-2 gene-edited crops.</div>
+</section>
+
+<!-- ===== SECTION 4 ===== -->
+<section class="notes" id="gmcrops">
+  <h2>4. GM Crops &amp; Agriculture</h2>
+  <table>
+    <tr><th>Crop</th><th>Trait / status in India</th></tr>
+    <tr><td><strong>Bt cotton</strong></td><td>Carries <em>Bacillus thuringiensis</em> gene for pest (bollworm) resistance &mdash; the <strong>only GM crop commercially grown</strong> in India (since 2002).</td></tr>
+    <tr><td><strong>Bt brinjal</strong></td><td>Pest-resistant brinjal &mdash; approved by GEAC but placed under a <strong>moratorium</strong> in India; grown in Bangladesh.</td></tr>
+    <tr><td><strong>GM (DMH-11) mustard</strong></td><td>Hybrid mustard using barnase/barstar genes &mdash; got environmental clearance; under legal &amp; public debate.</td></tr>
+    <tr><td><strong>Golden Rice</strong></td><td>Rice engineered to produce beta-carotene (Vitamin A) &mdash; aimed at fighting Vitamin-A deficiency.</td></tr>
+  </table>
+  <div class="callout warn"><strong>Prelims traps:</strong> <strong>Bt cotton is the only GM crop commercially cultivated in India</strong>; Bt brinjal is approved but under moratorium; GM mustard is a herbicide-tolerant hybrid under debate; golden rice targets Vitamin-A deficiency. Bt = a bacterial insecticidal gene.</div>
+</section>
+
+<!-- ===== SECTION 5 ===== -->
+<section class="notes" id="medical">
+  <h2>5. Medical Biotechnology</h2>
+  <ul>
+    <li><strong>Recombinant products:</strong> human insulin, growth hormone &amp; clotting factors made in engineered bacteria/yeast &mdash; safer &amp; cheaper than animal sources.</li>
+    <li><strong>Recombinant &amp; new-platform vaccines:</strong> Hepatitis-B (recombinant), DNA/mRNA &amp; vector vaccines (Topic 5) &mdash; faster to design.</li>
+    <li><strong>Monoclonal antibodies (mAbs):</strong> lab-made antibodies targeting one antigen &mdash; used in cancer, autoimmune disease &amp; COVID therapy.</li>
+    <li><strong>Molecular diagnostics:</strong> PCR, RT-PCR &amp; genetic tests for early, accurate disease detection.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> recombinant insulin was the first major biotech drug; monoclonal antibodies are single-target lab antibodies; recombinant Hepatitis-B vaccine is made without the whole virus. Biotech underpins modern diagnostics &amp; personalised medicine.</div>
+</section>
+
+<!-- ===== SECTION 6 ===== -->
+<section class="notes" id="stemgene">
+  <h2>6. Stem Cells &amp; Gene Therapy</h2>
+  <ul>
+    <li><strong>Stem cells</strong> are unspecialised cells that can divide &amp; become different cell types. <em>Embryonic</em> (pluripotent), <em>adult</em> (multipotent) &amp; <em>induced pluripotent (iPSC)</em> &mdash; adult cells reprogrammed to stem-like state.</li>
+    <li><strong>Uses:</strong> regenerative medicine, bone-marrow transplant, tissue repair, research &amp; drug testing.</li>
+    <li><strong>Gene therapy</strong> = treating a disease by correcting or replacing a faulty gene &mdash; <em>somatic</em> (body cells, not inherited) vs <em>germline</em> (heritable, ethically restricted).</li>
+    <li>CAR-T cell therapy (engineered immune cells) treats some cancers; India has developed its own CAR-T therapy.</li>
+  </ul>
+  <div class="callout warn"><strong>Ethics &amp; prelims:</strong> iPSCs avoid the ethical issue of embryonic stem cells; <strong>germline</strong> gene editing (heritable) is banned/restricted worldwide; somatic therapy affects only the patient. CAR-T = engineered T-cells against cancer.</div>
+</section>
+
+<!-- ===== SECTION 7 ===== -->
+<section class="notes" id="industrial">
+  <h2>7. Industrial &amp; Environmental Biotechnology</h2>
+  <table>
+    <tr><th>Area</th><th>Examples</th></tr>
+    <tr><td>Industrial (white)</td><td>Enzymes in detergents &amp; food, biofuels (ethanol), bio-plastics, fermentation products</td></tr>
+    <tr><td>Environmental</td><td><strong>Bioremediation</strong> (microbes cleaning oil/heavy-metal pollution), sewage treatment, biofertilisers &amp; biopesticides</td></tr>
+    <tr><td>Bio-energy</td><td>Ethanol blending, biogas, algal biofuel &mdash; links to clean energy</td></tr>
+    <tr><td>Bio-based materials</td><td>Bioplastics &amp; bio-manufacturing to cut fossil dependence</td></tr>
+  </table>
+  <div class="callout info"><strong>Key idea:</strong> industrial &amp; environmental biotech supports the <strong>circular, low-carbon bio-economy</strong> &mdash; replacing polluting chemical processes with cleaner biological ones (bioremediation, biofuels, biofertilisers).</div>
+</section>
+
+<!-- ===== SECTION 8 ===== -->
+<section class="notes" id="bioeconomy">
+  <h2>8. Bio-economy &amp; Policy</h2>
+  <ul>
+    <li><strong>Bio-economy</strong> = economic activity from biological resources &amp; biotech (pharma, agri-biotech, bio-industry, bio-services). India's bio-economy has grown rapidly to a multi-hundred-billion-dollar target.</li>
+    <li><strong>BioE3 Policy</strong> ("Biotechnology for Economy, Environment &amp; Employment") promotes bio-manufacturing, bio-foundries &amp; high-value bio-based products for sustainable growth.</li>
+    <li><strong>Department of Biotechnology (DBT)</strong> &amp; <strong>BIRAC</strong> fund research &amp; startups; missions on genome (Genome India), vaccines &amp; bio-manufacturing.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> BioE3 = Biotechnology for Economy, Environment &amp; Employment; DBT &amp; BIRAC drive biotech R&amp;D &amp; startups; Genome India project sequences Indian genomes for precision health.</div>
+</section>
+
+<!-- ===== SECTION 9 ===== -->
+<section class="notes" id="ethics">
+  <h2>9. Bioethics, Biosafety &amp; Regulation</h2>
+  <ul>
+    <li><strong>GEAC</strong> (Genetic Engineering Appraisal Committee, under MoEFCC) is the apex body approving GM organisms &amp; large-scale releases in India.</li>
+    <li><strong>Biosafety concerns:</strong> gene flow to wild/native species, effect on non-target insects &amp; biodiversity, herbicide overuse, corporate seed control, and unknown long-term effects.</li>
+    <li><strong>Bioethics:</strong> germline editing &amp; "designer babies", consent &amp; equity in gene therapy, patenting of life, and biosafety of gain-of-function research.</li>
+    <li><strong>Biosecurity:</strong> risk of misuse of pathogens/biotech (bioweapons) &mdash; governed by the Biological Weapons Convention.</li>
+  </ul>
+  <div class="callout warn"><strong>GS-III / GS-IV hook:</strong> biotech pits <strong>innovation &amp; food/health security</strong> against <strong>biosafety, ethics &amp; equity</strong>. GEAC regulates GM in India; the precautionary principle, informed consent &amp; a strong regulator are the balancing tools.</div>
+</section>
+
+<!-- ===== SECTION 10: CURRENT AFFAIRS ===== -->
+<section class="notes" id="currentaffairs">
+  <h2>10. Current Affairs Link (2024&ndash;2026)</h2>
+  <p>Biotech is a fast-moving news area spanning agriculture, health &amp; policy. Verify the latest before the exam. <span class="update-tag">check for latest update or data</span></p>
+  <div class="callout update"><strong>Gene editing &amp; GM debate:</strong> eased rules for gene-edited (SDN-1/2) crops, GM mustard court case &amp; new GM approvals apply Sections 3&ndash;4. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout update"><strong>BioE3 &amp; bio-economy:</strong> the BioE3 policy, bio-manufacturing push &amp; Genome India results keep biotech policy topical. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout warn"><strong>Medical biotech:</strong> indigenous CAR-T cancer therapy, mRNA/DNA vaccines &amp; new gene therapies apply Sections 5&ndash;6. <span class="update-tag">check for latest update or data</span></div>
+  <table>
+    <tr><th>Recent theme</th><th>Fundamental it tests</th><th>Why it matters for UPSC</th></tr>
+    <tr><td>Gene-edited crops / GM mustard</td><td>Gene editing / GM</td><td>GS-III food security &amp; ethics.</td></tr>
+    <tr><td>BioE3 &amp; bio-manufacturing</td><td>Bio-economy</td><td>GS-III economy &amp; jobs.</td></tr>
+    <tr><td>CAR-T &amp; gene therapy</td><td>Medical biotech</td><td>GS-III health.</td></tr>
+    <tr><td>Genome India</td><td>Genomics</td><td>GS-III precision health.</td></tr>
+  </table>
+  <ul>
+    <li><strong>Recurring exam hooks:</strong> CRISPR &middot; Bt cotton/brinjal &amp; GM mustard &middot; golden rice &middot; monoclonal antibodies &middot; stem cells &amp; CAR-T &middot; GEAC &middot; BioE3 &amp; bio-economy.</li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 11: PRELIMS ===== -->
+<section class="notes" id="prelims-pyq">
+  <h2>11. Prelims PYQs</h2>
+  <p style="font-size:13px;color:var(--muted)"><em>Objective questions anchored to genuinely tested UPSC themes on biotechnology. Each carries a worked rationale.</em></p>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; GM crops</div>
+    <p class="q-stem"><strong>Q:</strong> Which is the only genetically modified crop grown commercially in India?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Bt brinjal</li>
+      <li class="correct"><span class="opt-key">(b)</span> Bt cotton</li>
+      <li><span class="opt-key">(c)</span> GM mustard</li>
+      <li><span class="opt-key">(d)</span> Golden rice</li>
+    </ul>
+    <p class="ans">Answer: (b) Bt cotton (since 2002) is the only GM crop under commercial cultivation in India; Bt brinjal is under moratorium and GM mustard is still contested.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; CRISPR</div>
+    <p class="q-stem"><strong>Q:</strong> CRISPR-Cas9 technology is used for &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> amplifying DNA</li>
+      <li class="correct"><span class="opt-key">(b)</span> precise gene editing</li>
+      <li><span class="opt-key">(c)</span> sequencing proteins</li>
+      <li><span class="opt-key">(d)</span> cloning whole animals</li>
+    </ul>
+    <p class="ans">Answer: (b) CRISPR-Cas9 uses a guide RNA and the Cas9 enzyme to cut DNA at a target site, enabling precise gene editing (Nobel 2020). PCR amplifies DNA.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; PCR</div>
+    <p class="q-stem"><strong>Q:</strong> The Polymerase Chain Reaction (PCR) is primarily used to &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> edit genes</li>
+      <li><span class="opt-key">(b)</span> join DNA fragments</li>
+      <li class="correct"><span class="opt-key">(c)</span> make many copies of a DNA segment</li>
+      <li><span class="opt-key">(d)</span> destroy pathogens</li>
+    </ul>
+    <p class="ans">Answer: (c) PCR amplifies a DNA segment into millions of copies; RT-PCR is widely used in diagnostics (e.g. COVID-19).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Bt gene</div>
+    <p class="q-stem"><strong>Q:</strong> The "Bt" in Bt cotton refers to a gene sourced from &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> the bacterium <em>Bacillus thuringiensis</em></li>
+      <li><span class="opt-key">(b)</span> a virus</li>
+      <li><span class="opt-key">(c)</span> a fungus</li>
+      <li><span class="opt-key">(d)</span> another plant</li>
+    </ul>
+    <p class="ans">Answer: (a) Bt crops carry a gene from <em>Bacillus thuringiensis</em> that produces a protein toxic to specific pests, giving in-built insect resistance.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Golden rice</div>
+    <p class="q-stem"><strong>Q:</strong> Golden Rice is genetically engineered to be rich in &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> iron</li>
+      <li class="correct"><span class="opt-key">(b)</span> beta-carotene (Vitamin-A precursor)</li>
+      <li><span class="opt-key">(c)</span> protein</li>
+      <li><span class="opt-key">(d)</span> Vitamin-C</li>
+    </ul>
+    <p class="ans">Answer: (b) Golden Rice produces beta-carotene, which the body converts to Vitamin A, to tackle Vitamin-A deficiency and blindness.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Regulation</div>
+    <p class="q-stem"><strong>Q:</strong> In India, the apex body that approves the release of genetically modified organisms is the &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> ICMR</li>
+      <li class="correct"><span class="opt-key">(b)</span> GEAC</li>
+      <li><span class="opt-key">(c)</span> CSIR</li>
+      <li><span class="opt-key">(d)</span> FSSAI</li>
+    </ul>
+    <p class="ans">Answer: (b) The Genetic Engineering Appraisal Committee (GEAC), under the environment ministry, approves large-scale use &amp; release of GMOs in India.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Stem cells</div>
+    <p class="q-stem"><strong>Q:</strong> Induced pluripotent stem cells (iPSCs) are produced by &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> extracting cells from embryos</li>
+      <li class="correct"><span class="opt-key">(b)</span> reprogramming adult body cells to a stem-like state</li>
+      <li><span class="opt-key">(c)</span> cloning an animal</li>
+      <li><span class="opt-key">(d)</span> editing a single gene</li>
+    </ul>
+    <p class="ans">Answer: (b) iPSCs are adult cells reprogrammed to behave like embryonic stem cells, avoiding the ethical issues of embryonic stem cells.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Monoclonal antibodies</div>
+    <p class="q-stem"><strong>Q:</strong> Monoclonal antibodies are &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> identical antibodies targeting a single antigen</li>
+      <li><span class="opt-key">(b)</span> a mix of antibodies against many antigens</li>
+      <li><span class="opt-key">(c)</span> weakened viruses used as vaccines</li>
+      <li><span class="opt-key">(d)</span> gene-editing enzymes</li>
+    </ul>
+    <p class="ans">Answer: (a) Monoclonal antibodies are lab-made, identical antibodies that bind one specific antigen &mdash; used in cancer, autoimmune &amp; infectious-disease therapy.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> CRISPR vs PCR vs recombinant DNA &middot; Bt cotton/brinjal &amp; GM mustard &middot; golden rice &middot; stem-cell types &amp; CAR-T &middot; monoclonal antibodies &middot; GEAC &middot; BioE3 &amp; bio-economy. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 12: MAINS ===== -->
+<section class="notes" id="mains-pyq">
+  <h2>12. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>Biotechnology anchors GS-III questions on agriculture, health, economy &amp; ethics. The frameworks below show how to deploy it analytically.</em></p>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Discuss the potential and concerns of genetically modified crops in ensuring India's food security.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> GM crops (Section 4) engineer traits like pest resistance &amp; nutrition to raise yields &mdash; a contested tool for food security.</li>
+        <li><strong>Potential:</strong>
+          <ul>
+            <li>Higher yields &amp; lower pesticide use (Bt cotton); nutrition (golden rice); climate/pest resilience; reduced import dependence (edible oils via GM mustard).</li>
+          </ul>
+        </li>
+        <li><strong>Concerns:</strong> biosafety &amp; gene flow, effect on biodiversity &amp; non-target insects, herbicide overuse, corporate seed monopoly &amp; farmer dependence, and public trust.</li>
+        <li><strong>Way forward:</strong> a robust, transparent GEAC process, case-by-case science-based assessment, labelling, public participation &amp; support for indigenous seeds.</li>
+        <li><strong>Conclusion:</strong> GM can aid food &amp; nutrition security if paired with strong biosafety, regulation &amp; farmer interest.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Gene-editing technologies like CRISPR promise a revolution but raise ethical questions. Examine.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> CRISPR-Cas9 (Section 3) enables cheap, precise editing of genes &mdash; transformative for medicine &amp; agriculture.</li>
+        <li><strong>Promise:</strong>
+          <ul>
+            <li>Curing genetic disorders (sickle cell), disease/climate-resilient crops, faster research, and precision health.</li>
+          </ul>
+        </li>
+        <li><strong>Ethical concerns:</strong> heritable <strong>germline</strong> editing &amp; "designer babies", consent &amp; equity of access, off-target effects, and biosecurity misuse.</li>
+        <li><strong>Governance:</strong> ban on germline editing, strong ethics review, regulatory clarity (SDN categories), and international norms.</li>
+        <li><strong>Conclusion:</strong> the gains are immense but must be guided by ethics, safety &amp; equity so science serves humanity responsibly.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> How can biotechnology contribute to a sustainable bio-economy in India?</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> The bio-economy (Section 8) uses biological resources &amp; biotech for growth, environment &amp; jobs &mdash; India's BioE3 policy targets this.</li>
+        <li><strong>Contributions:</strong>
+          <ul>
+            <li>Bio-manufacturing &amp; bio-based materials replacing fossils; biofuels &amp; biogas; biofertilisers &amp; bioremediation; high-value pharma &amp; agri-biotech.</li>
+          </ul>
+        </li>
+        <li><strong>Enablers:</strong> DBT/BIRAC funding, startups, skilled talent &amp; supportive regulation.</li>
+        <li><strong>Conclusion:</strong> a well-supported biotech sector can drive green, inclusive &amp; self-reliant growth.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Assess the role of biotechnology in improving India's healthcare, along with the regulatory challenges.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Medical biotech (Sections 5&ndash;6) has transformed diagnosis, drugs &amp; therapy &mdash; from recombinant insulin to CAR-T.</li>
+        <li><strong>Healthcare gains:</strong>
+          <ul>
+            <li>Recombinant vaccines &amp; insulin; monoclonal antibodies; molecular diagnostics (RT-PCR); gene &amp; stem-cell therapy; precision/genomic medicine (Genome India).</li>
+          </ul>
+        </li>
+        <li><strong>Regulatory challenges:</strong> ethics of gene therapy &amp; stem cells, unproven "stem-cell clinics", data privacy in genomics, affordability &amp; access, and biosafety.</li>
+        <li><strong>Way forward:</strong> strong ethics &amp; regulatory framework, indigenous affordable production, &amp; equitable access.</li>
+        <li><strong>Conclusion:</strong> biotech can democratise quality healthcare if matched by robust, ethical regulation.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> GM crops &amp; food security &middot; CRISPR ethics &middot; bio-economy &amp; BioE3 &middot; biotech in healthcare &middot; stem cells/gene therapy regulation &middot; biosafety &amp; GEAC. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; Biotechnology</h3>
+    <div class="grid-2">
+      <div>
+        <strong>Tools:</strong>
+        <ul>
+          <li>Restriction enzyme = cut; ligase = join; vector/plasmid = carry gene</li>
+          <li>PCR = amplify DNA (RT-PCR diagnostics)</li>
+          <li>CRISPR-Cas9 = precise gene editing (guide RNA + Cas9, Nobel 2020)</li>
+          <li>Gene editing edits own genes vs GM adds foreign gene</li>
+        </ul>
+        <strong>GM crops:</strong>
+        <ul>
+          <li>Bt cotton = only GM crop commercial in India (2002)</li>
+          <li>Bt brinjal = approved but moratorium; GM mustard (DMH-11) debated</li>
+          <li>Golden rice = beta-carotene (Vitamin A)</li>
+          <li>Bt = Bacillus thuringiensis pest-resistance gene</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Medical biotech:</strong>
+        <ul>
+          <li>Recombinant insulin/vaccines; monoclonal antibodies = single-target</li>
+          <li>Stem cells: embryonic/adult/iPSC (iPSC avoids ethics)</li>
+          <li>Gene therapy: somatic (safe) vs germline (banned)</li>
+          <li>CAR-T = engineered T-cells vs cancer</li>
+        </ul>
+        <strong>Policy &amp; ethics:</strong>
+        <ul>
+          <li>GEAC = approves GMOs in India</li>
+          <li>BioE3 = biotech for Economy, Environment, Employment</li>
+          <li>DBT/BIRAC fund R&amp;D; Genome India = sequencing</li>
+          <li>Concerns: biosafety, gene flow, germline ethics, biosecurity</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes:</strong> CRISPR &middot; Bt cotton/brinjal &amp; GM mustard &middot; golden rice &middot; monoclonal antibodies &middot; stem cells &amp; CAR-T &middot; GEAC &middot; BioE3.</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== SIDEBAR ===== -->
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Quick Reference &mdash; Tools</h4>
+    <table>
+      <tr><th>Tool</th><th>Does</th></tr>
+      <tr><td>Restriction enz.</td><td>Cut DNA</td></tr>
+      <tr><td>Ligase</td><td>Join DNA</td></tr>
+      <tr><td>PCR</td><td>Copy DNA</td></tr>
+      <tr><td>CRISPR</td><td>Edit gene</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>GM Crops in India</h4>
+    <table>
+      <tr><th>Crop</th><th>Status</th></tr>
+      <tr><td>Bt cotton</td><td>Commercial</td></tr>
+      <tr><td>Bt brinjal</td><td>Moratorium</td></tr>
+      <tr><td>GM mustard</td><td>Debated</td></tr>
+      <tr><td>Golden rice</td><td>Vit-A</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Key Facts &amp; Data</h4>
+    <table>
+      <tr><th>Item</th><th>Value</th></tr>
+      <tr><td>Bt cotton</td><td>Since 2002</td></tr>
+      <tr><td>CRISPR Nobel</td><td>2020</td></tr>
+      <tr><td>GM regulator</td><td>GEAC</td></tr>
+      <tr><td>Policy</td><td>BioE3</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:90%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains GS-III</span><span class="fill"><span style="width:88%"></span></span></div>
+    <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:82%"></span></span></div>
+    <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:90%"></span></span></div>
+    <p style="margin-top:8px;font-size:11px;color:var(--muted);">Cross-cuts agri, health &amp; ethics.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Biotech at a Glance</h4>
+    <ul>
+      <li>Genetic engineering</li>
+      <li>PCR &amp; CRISPR</li>
+      <li>GM crops</li>
+      <li>Medical biotech</li>
+      <li>Stem cells &amp; gene therapy</li>
+      <li>Industrial/environmental</li>
+      <li>Bio-economy/BioE3</li>
+      <li>Bioethics &amp; GEAC</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">CRISPR = edit</span>
+    <span class="tag">PCR = copy</span>
+    <span class="tag green">Bt cotton only GM</span>
+    <span class="tag">Golden rice Vit-A</span>
+    <span class="tag orange">GEAC regulator</span>
+    <span class="tag">iPSC no ethics</span>
+    <span class="tag green">CAR-T cancer</span>
+    <span class="tag">mAb single-target</span>
+    <span class="tag orange">BioE3</span>
+    <span class="tag">Germline banned</span>
+  </div>
+
+  <div class="widget">
+    <h4>Data Sources to Bookmark</h4>
+    <ul>
+      <li><a href="https://dbtindia.gov.in" target="_blank" rel="noopener">Dept. of Biotechnology</a></li>
+      <li><a href="https://birac.nic.in" target="_blank" rel="noopener">BIRAC</a></li>
+      <li><a href="https://geacindia.gov.in" target="_blank" rel="noopener">GEAC</a></li>
+      <li><a href="https://pib.gov.in" target="_blank" rel="noopener">PIB</a></li>
+    </ul>
+    <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/science-technology/reproduction-and-genetics">S&amp;T T4: Reproduction &amp; Genetics</a></li>
+      <li><a href="/science-technology/immunity-diseases-and-health">S&amp;T T5: Immunity &amp; Health</a></li>
+      <li><a href="/science-technology/nanotechnology">S&amp;T T11: Nanotechnology</a></li>
+      <li><a href="/science-technology/india-s-science-and-technology-ecosystem">S&amp;T T17: Research &amp; Schemes</a></li>
+      <li><a href="/science-technology">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding:0;margin:0;">
+      <li style="margin:4px 0;"><a href="#basics" style="font-size:12px;">Basics</a></li>
+      <li style="margin:4px 0;"><a href="#tools" style="font-size:12px;">Tools</a></li>
+      <li style="margin:4px 0;"><a href="#crispr" style="font-size:12px;">CRISPR</a></li>
+      <li style="margin:4px 0;"><a href="#gmcrops" style="font-size:12px;">GM Crops</a></li>
+      <li style="margin:4px 0;"><a href="#medical" style="font-size:12px;">Medical Biotech</a></li>
+      <li style="margin:4px 0;"><a href="#stemgene" style="font-size:12px;">Stem &amp; Gene Therapy</a></li>
+      <li style="margin:4px 0;"><a href="#industrial" style="font-size:12px;">Industrial/Environ.</a></li>
+      <li style="margin:4px 0;"><a href="#bioeconomy" style="font-size:12px;">Bio-economy</a></li>
+      <li style="margin:4px 0;"><a href="#ethics" style="font-size:12px;">Ethics &amp; Regulation</a></li>
+      <li style="margin:4px 0;"><a href="#currentaffairs" style="font-size:12px;">Current Affairs</a></li>
+      <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

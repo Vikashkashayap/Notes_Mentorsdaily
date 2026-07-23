@@ -1,0 +1,725 @@
+<!-- science-topic08 — auto-imported from scitech-topic08-space-technology-1-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 8: Space Technology I &mdash; Fundamentals, ISRO &amp; Launch Vehicles</h1>
+  <p class="sub">Space technology is one of India's proudest strengths and a top current-affairs area. This first file covers the <strong>fundamentals</strong> &mdash; <strong>orbits</strong> (LEO, MEO, GEO), escape velocity &amp; <strong>satellite types</strong> &mdash; the story &amp; structure of <strong>ISRO</strong>, the family of Indian <strong>launch vehicles</strong> (SLV, PSLV, GSLV, LVM3/GSLV Mk-III, SSLV), <strong>cryogenic &amp; propulsion technology</strong>, India's <strong>satellite systems</strong> (INSAT, IRS/EOS, GSAT, <strong>NavIC</strong>), the <strong>spaceports</strong>, and the everyday <strong>applications</strong> in communication, remote sensing, navigation &amp; weather &mdash; with labelled diagrams, tables and real dated PYQs with full model answers. (Missions &amp; the space economy are in Topic 9.)</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">ISRO &middot; PSLV/GSLV</span>
+    <span class="pill">~40 min read</span>
+    <span class="pill">NavIC &amp; Cryogenics</span>
+    <span class="pill">Very High CA Weight</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#orbits">Orbits &amp; Satellite Basics</a></li>
+    <li><span class="num">2.</span><a href="#sattypes">Types of Satellites</a></li>
+    <li><span class="num">3.</span><a href="#isro">ISRO &mdash; History &amp; Centres</a></li>
+    <li><span class="num">4.</span><a href="#launchers">Indian Launch Vehicles</a></li>
+    <li><span class="num">5.</span><a href="#cryo">Cryogenic &amp; Propulsion Technology</a></li>
+    <li><span class="num">6.</span><a href="#satsystems">Indian Satellite Systems</a></li>
+    <li><span class="num">7.</span><a href="#navic">NavIC &mdash; Navigation</a></li>
+    <li><span class="num">8.</span><a href="#applications">Space Applications</a></li>
+    <li><span class="num">9.</span><a href="#spaceports">Spaceports &amp; Facilities</a></li>
+    <li><span class="num">10.</span><a href="#currentaffairs">Current Affairs Link</a></li>
+    <li><span class="num">11.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><span class="num">12.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Tests Space Technology</h3>
+  <p>Space is a <strong>guaranteed, high-return</strong> area &mdash; almost every year has a Prelims &amp; a Mains question. Sort your prep into three question-types:</p>
+  <ul>
+    <li><strong>Definitional / static</strong> &mdash; "which orbit is geostationary?", "PSLV vs GSLV?", "what is NavIC?". Recall of vehicles, orbits &amp; systems.</li>
+    <li><strong>Statement-elimination</strong> &mdash; launch-vehicle capabilities, orbit altitudes, satellite-purpose statements where one detail decides the answer.</li>
+    <li><strong>Applied / current</strong> &mdash; a mission or reform in the news linked to a fundamental &mdash; the strong GS-III science &amp; strategy bridge (self-reliance, dual-use, space economy).</li>
+  </ul>
+  <p><strong>Highest-frequency themes:</strong> orbits (LEO/MEO/GEO, geostationary vs sun-synchronous) &middot; PSLV/GSLV/LVM3/SSLV &middot; cryogenic engine &middot; NavIC &middot; remote sensing &amp; INSAT &middot; ISRO centres &middot; Sriharikota.</p>
+</div>
+
+<!-- ===== SECTION 1 ===== -->
+<section class="notes" id="orbits">
+  <h2>1. Orbits &amp; Satellite Basics</h2>
+  <p>A satellite stays in orbit because Earth's gravity provides the centripetal force (Topic 7) balancing its motion. Orbits are classed by altitude.</p>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 460 240" width="460" height="240" role="img" aria-label="Earth orbits LEO MEO GEO">
+      <rect x="0" y="0" width="460" height="240" fill="#ffffff"/>
+      <g font-family="sans-serif" font-size="11" text-anchor="middle">
+        <circle cx="230" cy="120" r="40" fill="#e8f0f8" stroke="#1a3d5c"/><text x="230" y="124">Earth</text>
+        <circle cx="230" cy="120" r="62" fill="none" stroke="#1a7a5a" stroke-dasharray="3"/><text x="230" y="46" font-size="10" fill="#1a7a5a">LEO (160&ndash;2000 km)</text>
+        <circle cx="230" cy="120" r="95" fill="none" stroke="#c47820" stroke-dasharray="3"/><text x="360" y="120" font-size="10" fill="#c47820">MEO (NavIC, GPS)</text>
+        <circle cx="230" cy="120" r="120" fill="none" stroke="#c0392b" stroke-dasharray="3"/><text x="230" y="12" font-size="10" fill="#c0392b">GEO (~35,786 km)</text>
+        <circle cx="230" cy="58" r="5" fill="#1a7a5a"/><circle cx="325" cy="120" r="5" fill="#c47820"/><circle cx="230" cy="0" r="5" fill="#c0392b"/>
+      </g>
+    </svg>
+    <div class="svg-caption">Fig 8.1 &mdash; Orbit altitudes. LEO (imaging, ISS), MEO (navigation), GEO/geostationary (~35,786 km, communication &amp; weather &mdash; appears fixed over one point).</div>
+  </div>
+
+  <table>
+    <tr><th>Orbit</th><th>Altitude</th><th>Use</th></tr>
+    <tr><td>LEO (Low Earth Orbit)</td><td>160&ndash;2000 km</td><td>Earth imaging, ISS, remote sensing</td></tr>
+    <tr><td>MEO (Medium Earth Orbit)</td><td>~2000&ndash;35,786 km</td><td>Navigation (GPS, NavIC)</td></tr>
+    <tr><td>GEO (Geostationary)</td><td>~35,786 km</td><td>Communication, weather (fixed over equator)</td></tr>
+    <tr><td>Sun-synchronous (polar)</td><td>~600&ndash;800 km</td><td>Remote sensing (passes at same local time)</td></tr>
+  </table>
+  <div class="callout warn"><strong>Prelims traps:</strong> a <strong>geostationary</strong> satellite orbits at ~35,786 km over the equator with a 24-hr period, so it appears fixed &mdash; ideal for TV &amp; weather. A <strong>sun-synchronous</strong> (polar) orbit suits imaging as it crosses at the same local time. Escape velocity ~11.2 km/s (Topic 7).</div>
+</section>
+
+<!-- ===== SECTION 2 ===== -->
+<section class="notes" id="sattypes">
+  <h2>2. Types of Satellites</h2>
+  <table>
+    <tr><th>Type</th><th>Purpose</th><th>Indian examples</th></tr>
+    <tr><td>Communication</td><td>TV, phone, internet, broadcasting</td><td>INSAT, GSAT series</td></tr>
+    <tr><td>Earth observation / Remote sensing</td><td>Imaging land, crops, disasters</td><td>IRS, Cartosat, RISAT, EOS series</td></tr>
+    <tr><td>Navigation</td><td>Positioning &amp; timing</td><td>NavIC (IRNSS)</td></tr>
+    <tr><td>Weather / Meteorological</td><td>Monsoon, cyclone tracking</td><td>INSAT-3D, Kalpana</td></tr>
+    <tr><td>Scientific / Astronomy</td><td>Space research</td><td>AstroSat, Aditya-L1 (Topic 9)</td></tr>
+  </table>
+  <div class="callout info"><strong>Prelims facts:</strong> communication &amp; weather satellites sit in geostationary orbit; remote-sensing satellites in sun-synchronous (polar) orbit; India has one of the largest civilian remote-sensing constellations.</div>
+</section>
+
+<!-- ===== SECTION 3 ===== -->
+<section class="notes" id="isro">
+  <h2>3. ISRO &mdash; History &amp; Centres</h2>
+  <ul>
+    <li><strong>ISRO</strong> (Indian Space Research Organisation), founded <strong>1969</strong>; father of the Indian space programme = <strong>Dr Vikram Sarabhai</strong>. Works under the Department of Space.</li>
+    <li>First Indian satellite: <strong>Aryabhata</strong> (1975, launched by USSR). First Indian-built launch: SLV-3 put Rohini in orbit (1980).</li>
+    <li><strong>Key centres:</strong>
+      <ul>
+        <li><strong>VSSC</strong> (Vikram Sarabhai Space Centre, Thiruvananthapuram) &mdash; launch vehicles.</li>
+        <li><strong>SDSC SHAR</strong> (Sriharikota) &mdash; the spaceport/launch site.</li>
+        <li><strong>U R Rao Satellite Centre</strong> (Bengaluru) &mdash; satellites.</li>
+        <li><strong>LPSC</strong> &mdash; liquid &amp; cryogenic propulsion; <strong>SAC</strong> (Ahmedabad) &mdash; payloads/applications.</li>
+      </ul>
+    </li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> Vikram Sarabhai = father of Indian space programme; Aryabhata = first Indian satellite (1975); ISRO founded 1969; commercial arm earlier Antrix, now NSIL; regulator/promoter IN-SPACe (Topic 9).</div>
+</section>
+
+<!-- ===== SECTION 4 ===== -->
+<section class="notes" id="launchers">
+  <h2>4. Indian Launch Vehicles</h2>
+  <p>A launch vehicle (rocket) carries satellites to orbit. India's workhorses:</p>
+  <table>
+    <tr><th>Vehicle</th><th>Capability</th><th>Notes</th></tr>
+    <tr><td><strong>PSLV</strong> (Polar Satellite Launch Vehicle)</td><td>Light&ndash;medium payloads to polar/sun-synchronous &amp; LEO</td><td>The reliable "workhorse"; launched Chandrayaan-1 &amp; Mangalyaan; famed multi-satellite launches (104 in one go, 2017)</td></tr>
+    <tr><td><strong>GSLV</strong> (Geosynchronous SLV)</td><td>Heavier comms satellites to GEO/GTO</td><td>Uses an indigenous cryogenic upper stage</td></tr>
+    <tr><td><strong>LVM3</strong> (GSLV Mk-III)</td><td>Heaviest &mdash; ~4 t to GTO, ~8 t to LEO</td><td>"Fat Boy"; carries Chandrayaan-2/3 &amp; Gaganyaan; launched OneWeb commercial payloads</td></tr>
+    <tr><td><strong>SSLV</strong> (Small Satellite LV)</td><td>Small satellites (~500 kg) to LEO</td><td>Low-cost, quick-turnaround, "launch-on-demand" for the small-sat market</td></tr>
+  </table>
+  <div class="callout warn"><strong>Prelims traps:</strong> <strong>PSLV</strong> is for polar/sun-synchronous &amp; lighter payloads; <strong>GSLV/LVM3</strong> for heavy geostationary/communication satellites &amp; deep-space missions. Remember PSLV launched India's Moon &amp; Mars firsts; LVM3 is the heaviest.</div>
+</section>
+
+<!-- ===== SECTION 5 ===== -->
+<section class="notes" id="cryo">
+  <h2>5. Cryogenic &amp; Propulsion Technology</h2>
+  <ul>
+    <li><strong>Cryogenic engine:</strong> uses super-cooled liquid fuel &mdash; liquid hydrogen (fuel) + liquid oxygen (oxidiser) &mdash; giving very high thrust/efficiency, essential for heavy GEO launches.</li>
+    <li>India developed its own cryogenic engine (CE-20 / CUS) after technology-denial by other nations &mdash; a self-reliance milestone.</li>
+    <li><strong>Propellant types:</strong> solid (simple, storable), liquid (controllable), cryogenic (most efficient). Rockets are multi-stage to shed weight.</li>
+    <li><strong>Semi-cryogenic engine</strong> (kerosene + liquid oxygen) is under development for future heavy lift.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> cryogenic = liquid H&#8322; + liquid O&#8322; at very low temperature; the cryogenic upper stage powers GSLV; India is among a few nations mastering cryogenic tech; reusability &amp; semi-cryogenic are the next steps.</div>
+</section>
+
+<!-- ===== SECTION 6 ===== -->
+<section class="notes" id="satsystems">
+  <h2>6. Indian Satellite Systems</h2>
+  <table>
+    <tr><th>System</th><th>Role</th></tr>
+    <tr><td>INSAT / GSAT</td><td>Communication, broadcasting, tele-education, telemedicine, weather</td></tr>
+    <tr><td>IRS / Cartosat / RISAT / EOS</td><td>Earth observation &amp; remote sensing (land, water, disaster, defence)</td></tr>
+    <tr><td>NavIC (IRNSS)</td><td>Regional navigation (Section 7)</td></tr>
+    <tr><td>Scientific satellites</td><td>AstroSat (astronomy), Aditya-L1 (Sun &mdash; Topic 9)</td></tr>
+  </table>
+  <div class="callout warn"><strong>GS-III hook:</strong> these systems power agriculture (crop &amp; drought monitoring), disaster management (cyclone/flood warning), fisheries, tele-medicine/education, and defence surveillance &mdash; the "space for development &amp; security" theme.</div>
+</section>
+
+<!-- ===== SECTION 7 ===== -->
+<section class="notes" id="navic">
+  <h2>7. NavIC &mdash; Navigation with Indian Constellation</h2>
+  <ul>
+    <li><strong>NavIC</strong> (Navigation with Indian Constellation; earlier IRNSS) is India's own regional navigation system &mdash; the desi alternative to the US GPS.</li>
+    <li>A constellation of satellites (in GEO &amp; geosynchronous orbits) covers India &amp; ~1500 km around it, giving position &amp; precise timing.</li>
+    <li><strong>Uses:</strong> transport &amp; fleet tracking, fishermen alerts, disaster management, defence, and now smartphones &amp; timing for power/telecom grids.</li>
+  </ul>
+  <div class="callout warn"><strong>Strategic significance:</strong> NavIC ends dependence on foreign systems (GPS can be degraded/denied in conflict) &mdash; a sovereignty &amp; security asset, and a recurring Mains theme on strategic autonomy.</div>
+</section>
+
+<!-- ===== SECTION 8 ===== -->
+<section class="notes" id="applications">
+  <h2>8. Space Applications</h2>
+  <table>
+    <tr><th>Sector</th><th>How space helps</th></tr>
+    <tr><td>Agriculture</td><td>Crop-area &amp; yield estimation, drought &amp; soil monitoring, insurance</td></tr>
+    <tr><td>Disaster management</td><td>Cyclone, flood &amp; landslide early warning; damage assessment</td></tr>
+    <tr><td>Communication</td><td>TV, phone, internet, tele-education &amp; tele-medicine to remote areas</td></tr>
+    <tr><td>Weather &amp; climate</td><td>Monsoon forecasting, ocean &amp; climate monitoring</td></tr>
+    <tr><td>Governance</td><td>Mapping, land records, infrastructure &amp; resource planning</td></tr>
+    <tr><td>Security</td><td>Border surveillance, reconnaissance, secure communication</td></tr>
+  </table>
+  <div class="callout info"><strong>Key idea:</strong> ISRO's guiding vision (from Sarabhai) is <strong>space for national development</strong> &mdash; applying advanced tech to real problems of agriculture, disaster, connectivity &amp; welfare.</div>
+</section>
+
+<!-- ===== SECTION 9 ===== -->
+<section class="notes" id="spaceports">
+  <h2>9. Spaceports &amp; Facilities</h2>
+  <ul>
+    <li><strong>SDSC SHAR, Sriharikota</strong> (Andhra Pradesh) &mdash; India's primary spaceport; near-equatorial location aids launches. Has two launch pads.</li>
+    <li><strong>Kulasekarapattinam</strong> (Tamil Nadu) &mdash; a new spaceport being built, mainly for SSLV/small-satellite launches to polar orbits.</li>
+    <li><strong>Thumba (TERLS)</strong> &mdash; the historic first sounding-rocket launch site (near the magnetic equator).</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> Sriharikota (SDSC SHAR) is the main launch site; a second spaceport at Kulasekarapattinam is coming up for small satellites; equatorial &amp; coastal locations are chosen for launch efficiency &amp; safety.</div>
+</section>
+
+<!-- ===== SECTION 10: CURRENT AFFAIRS ===== -->
+<section class="notes" id="currentaffairs">
+  <h2>10. Current Affairs Link (2024&ndash;2026)</h2>
+  <p>Space is the single most active S&amp;T news area. Verify the latest before the exam. <span class="update-tag">check for latest update or data</span></p>
+  <div class="callout update"><strong>New launch vehicles &amp; reusability:</strong> SSLV entering service, work on a Next-Generation Launch Vehicle (NGLV) &amp; reusable rockets, and a second spaceport keep launch tech topical. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout update"><strong>NavIC expansion:</strong> new-generation NavIC satellites, the L1 civilian signal, and mandated NavIC support in smartphones/vehicles apply Section 7. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout warn"><strong>Commercial launches:</strong> ISRO/NSIL launching foreign payloads (e.g. OneWeb on LVM3) signals India's growing share of the global launch market. <span class="update-tag">check for latest update or data</span></div>
+  <table>
+    <tr><th>Recent theme</th><th>Fundamental it tests</th><th>Why it matters for UPSC</th></tr>
+    <tr><td>SSLV / NGLV / reusability</td><td>Launch vehicles</td><td>GS-III cost &amp; self-reliance.</td></tr>
+    <tr><td>NavIC expansion</td><td>Navigation</td><td>GS-III strategic autonomy.</td></tr>
+    <tr><td>Commercial launches</td><td>Space economy</td><td>GS-III (links Topic 9).</td></tr>
+    <tr><td>New spaceport</td><td>Facilities</td><td>GS-III infrastructure.</td></tr>
+  </table>
+  <ul>
+    <li><strong>Recurring exam hooks:</strong> geostationary vs sun-synchronous &middot; PSLV vs GSLV/LVM3 &middot; cryogenic engine &middot; NavIC &middot; remote sensing uses &middot; Sriharikota &middot; ISRO centres.</li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 11: PRELIMS ===== -->
+<section class="notes" id="prelims-pyq">
+  <h2>11. Prelims PYQs</h2>
+  <p style="font-size:13px;color:var(--muted)"><em>Objective questions anchored to genuinely tested UPSC themes on space technology. Each carries a worked rationale.</em></p>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Orbits</div>
+    <p class="q-stem"><strong>Q:</strong> A geostationary satellite is placed at an altitude of approximately &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> 1000 km</li>
+      <li><span class="opt-key">(b)</span> 10,000 km</li>
+      <li class="correct"><span class="opt-key">(c)</span> 36,000 km</li>
+      <li><span class="opt-key">(d)</span> 100,000 km</li>
+    </ul>
+    <p class="ans">Answer: (c) A geostationary satellite orbits at ~35,786 km (~36,000 km) over the equator with a 24-hour period, appearing fixed.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Launch vehicles</div>
+    <p class="q-stem"><strong>Q:</strong> Which Indian launch vehicle is best suited for placing heavy communication satellites into geostationary transfer orbit?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> PSLV</li>
+      <li><span class="opt-key">(b)</span> SSLV</li>
+      <li class="correct"><span class="opt-key">(c)</span> GSLV / LVM3</li>
+      <li><span class="opt-key">(d)</span> SLV-3</li>
+    </ul>
+    <p class="ans">Answer: (c) GSLV and LVM3 (GSLV Mk-III), with cryogenic stages, carry heavy satellites to GTO; PSLV suits polar/sun-synchronous launches.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; NavIC</div>
+    <p class="q-stem"><strong>Q:</strong> NavIC is India's &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> communication satellite series</li>
+      <li class="correct"><span class="opt-key">(b)</span> regional satellite navigation system</li>
+      <li><span class="opt-key">(c)</span> weather satellite</li>
+      <li><span class="opt-key">(d)</span> reusable launch vehicle</li>
+    </ul>
+    <p class="ans">Answer: (b) NavIC (earlier IRNSS) is India's own regional navigation system covering India and its surroundings &mdash; an alternative to GPS.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Cryogenics</div>
+    <p class="q-stem"><strong>Q:</strong> A cryogenic rocket engine uses &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> solid propellant only</li>
+      <li class="correct"><span class="opt-key">(b)</span> liquid hydrogen and liquid oxygen at very low temperature</li>
+      <li><span class="opt-key">(c)</span> kerosene and air</li>
+      <li><span class="opt-key">(d)</span> nuclear fuel</li>
+    </ul>
+    <p class="ans">Answer: (b) A cryogenic engine burns super-cooled liquid hydrogen with liquid oxygen, giving high efficiency for heavy launches.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Remote sensing</div>
+    <p class="q-stem"><strong>Q:</strong> Remote-sensing (Earth observation) satellites are usually placed in which orbit?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Geostationary orbit</li>
+      <li class="correct"><span class="opt-key">(b)</span> Sun-synchronous (polar) orbit</li>
+      <li><span class="opt-key">(c)</span> Highly elliptical orbit</li>
+      <li><span class="opt-key">(d)</span> Lagrange point</li>
+    </ul>
+    <p class="ans">Answer: (b) Sun-synchronous polar orbits let imaging satellites cross each area at the same local time, giving consistent lighting.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; ISRO history</div>
+    <p class="q-stem"><strong>Q:</strong> The first Indian satellite, launched in 1975, was named &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> Aryabhata</li>
+      <li><span class="opt-key">(b)</span> Rohini</li>
+      <li><span class="opt-key">(c)</span> Bhaskara</li>
+      <li><span class="opt-key">(d)</span> INSAT-1A</li>
+    </ul>
+    <p class="ans">Answer: (a) Aryabhata (1975) was India's first satellite, launched with Soviet help; Vikram Sarabhai is the father of India's space programme.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Launch site</div>
+    <p class="q-stem"><strong>Q:</strong> India's primary satellite launch centre is located at &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Thumba</li>
+      <li class="correct"><span class="opt-key">(b)</span> Sriharikota</li>
+      <li><span class="opt-key">(c)</span> Ahmedabad</li>
+      <li><span class="opt-key">(d)</span> Bengaluru</li>
+    </ul>
+    <p class="ans">Answer: (b) The Satish Dhawan Space Centre (SDSC SHAR), Sriharikota, is India's main spaceport; a second one is coming up at Kulasekarapattinam.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; PSLV record</div>
+    <p class="q-stem"><strong>Q:</strong> The PSLV became famous in 2017 for launching a record number of satellites in a single mission &mdash; how many?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> 20</li>
+      <li><span class="opt-key">(b)</span> 68</li>
+      <li class="correct"><span class="opt-key">(c)</span> 104</li>
+      <li><span class="opt-key">(d)</span> 150</li>
+    </ul>
+    <p class="ans">Answer: (c) In 2017 PSLV-C37 launched 104 satellites in one flight &mdash; a then world record, showcasing the vehicle's versatility.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> geostationary vs sun-synchronous orbit &middot; PSLV vs GSLV/LVM3 vs SSLV &middot; cryogenic engine &middot; NavIC &middot; remote-sensing orbit &middot; ISRO centres &amp; firsts &middot; Sriharikota &amp; new spaceport &middot; satellite types. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 12: MAINS ===== -->
+<section class="notes" id="mains-pyq">
+  <h2>12. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>Space technology anchors GS-III questions on self-reliance, development &amp; strategy. The frameworks below show how to deploy it analytically.</em></p>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> "India's space programme has always been oriented towards national development." Elaborate with examples.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> From Vikram Sarabhai's vision (Section 3), ISRO's guiding aim has been applying space technology to India's real developmental problems, not prestige.</li>
+        <li><strong>Development applications:</strong>
+          <ul>
+            <li><strong>Agriculture</strong> &mdash; crop &amp; drought monitoring, yield estimation, crop insurance.</li>
+            <li><strong>Disaster management</strong> &mdash; cyclone/flood early warning saving lives; <strong>connectivity</strong> &mdash; tele-education &amp; tele-medicine to remote areas.</li>
+            <li><strong>Weather &amp; resources</strong> &mdash; monsoon forecasting, water &amp; land mapping; <strong>navigation</strong> &mdash; NavIC for fishermen &amp; transport.</li>
+          </ul>
+        </li>
+        <li><strong>Cost-effectiveness:</strong> frugal, indigenous missions (Mangalyaan) delivering high value at low cost.</li>
+        <li><strong>Way forward:</strong> deepen space-for-governance (mapping, DBT targeting), climate monitoring &amp; the space economy.</li>
+        <li><strong>Conclusion:</strong> India's space effort is a model of technology serving inclusive development.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Discuss the strategic significance of an indigenous navigation system (NavIC) and self-reliance in launch technology.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> NavIC (Section 7) and India's own launch vehicles &amp; cryogenic engine (Sections 4&ndash;5) embody strategic autonomy in space.</li>
+        <li><strong>Why self-reliance matters:</strong>
+          <ul>
+            <li>Foreign systems (GPS) can be degraded or denied in conflict &mdash; NavIC guarantees positioning &amp; timing for defence &amp; civilians.</li>
+            <li>Cryogenic technology was denied to India, forcing indigenous development &mdash; now a strategic capability for heavy &amp; deep-space launches.</li>
+          </ul>
+        </li>
+        <li><strong>Strategic gains:</strong> secure military navigation &amp; timing; independent access to space; leverage in the global launch market; dual-use resilience.</li>
+        <li><strong>Challenges:</strong> full NavIC coverage &amp; device adoption, heavy-lift &amp; reusability gaps, funding &amp; talent.</li>
+        <li><strong>Conclusion:</strong> indigenous space capability is core to India's sovereignty and its rise as a space power.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Explain the different types of orbits and why particular satellites are placed in each.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> A satellite's job dictates its orbit (Section 1); orbits differ by altitude &amp; path.</li>
+        <li><strong>Types &amp; use:</strong>
+          <ul>
+            <li><strong>GEO (~36,000 km):</strong> communication &amp; weather &mdash; stays fixed over one point.</li>
+            <li><strong>Sun-synchronous polar (~600&ndash;800 km):</strong> remote sensing &mdash; same local time each pass.</li>
+            <li><strong>MEO:</strong> navigation; <strong>LEO:</strong> imaging, ISS, space stations.</li>
+          </ul>
+        </li>
+        <li><strong>Trade-offs:</strong> higher orbit = wider coverage but weaker signal &amp; costlier launch; lower orbit = sharper imaging but narrow view.</li>
+        <li><strong>Conclusion:</strong> orbit choice balances coverage, resolution &amp; purpose.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> How can space-based technology strengthen India's disaster-management and agricultural resilience?</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Earth-observation, communication &amp; weather satellites (Sections 6, 8) give real-time data crucial for disasters &amp; farming.</li>
+        <li><strong>Disaster management:</strong>
+          <ul>
+            <li>Early warning for cyclones, floods &amp; landslides (INSAT weather); rapid damage mapping; emergency communication when networks fail.</li>
+          </ul>
+        </li>
+        <li><strong>Agricultural resilience:</strong> crop-area &amp; yield estimation, soil-moisture &amp; drought monitoring, pest/weather advisories, crop-insurance verification.</li>
+        <li><strong>Enablers:</strong> integrate satellite data with AI/GIS, disseminate to farmers &amp; agencies, and strengthen last-mile use.</li>
+        <li><strong>Conclusion:</strong> space technology is a force-multiplier for climate resilience &amp; food security.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> space for development &middot; self-reliance (NavIC, cryogenics) &middot; orbits &amp; satellite choice &middot; space &amp; disaster/agriculture &middot; commercial launch market (link Topic 9) &middot; dual-use space technology. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; Space Technology I</h3>
+    <div class="grid-2">
+      <div>
+        <strong>Orbits &amp; satellites:</strong>
+        <ul>
+          <li>GEO ~35,786 km (comms/weather, fixed); sun-synchronous polar (remote sensing)</li>
+          <li>MEO = navigation; LEO = imaging, ISS</li>
+          <li>Escape velocity ~11.2 km/s; orbit = gravity vs motion balance</li>
+          <li>Comm/weather = geostationary; imaging = polar</li>
+        </ul>
+        <strong>ISRO:</strong>
+        <ul>
+          <li>Founded 1969; Vikram Sarabhai = father of Indian space</li>
+          <li>Aryabhata = first satellite (1975); Sriharikota (SDSC SHAR) = spaceport</li>
+          <li>VSSC = launchers; URSC = satellites; LPSC = propulsion</li>
+          <li>New spaceport: Kulasekarapattinam (small sats)</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Launch vehicles:</strong>
+        <ul>
+          <li>PSLV = workhorse, polar/light (104 sats in 2017, Chandrayaan-1, Mangalyaan)</li>
+          <li>GSLV/LVM3 = heavy GEO, cryogenic; LVM3 heaviest ("Fat Boy")</li>
+          <li>SSLV = small sats, low-cost, on-demand</li>
+          <li>Cryogenic = liquid H&#8322; + liquid O&#8322; (very cold, high thrust)</li>
+        </ul>
+        <strong>Systems &amp; applications:</strong>
+        <ul>
+          <li>INSAT/GSAT = comms; IRS/Cartosat/RISAT = remote sensing</li>
+          <li>NavIC (IRNSS) = India's GPS alternative; strategic autonomy</li>
+          <li>Uses: agriculture, disaster, weather, tele-medicine/education, defence</li>
+          <li>Vision: "space for national development"</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes:</strong> geostationary vs sun-synchronous &middot; PSLV vs GSLV/LVM3 &middot; cryogenic engine &middot; NavIC &middot; remote-sensing orbit &middot; ISRO firsts &amp; centres &middot; Sriharikota.</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== SIDEBAR ===== -->
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Quick Reference &mdash; Orbits</h4>
+    <table>
+      <tr><th>Orbit</th><th>Use</th></tr>
+      <tr><td>GEO</td><td>Comms/weather</td></tr>
+      <tr><td>Sun-sync</td><td>Remote sensing</td></tr>
+      <tr><td>MEO</td><td>Navigation</td></tr>
+      <tr><td>LEO</td><td>Imaging/ISS</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Launch Vehicles</h4>
+    <table>
+      <tr><th>Vehicle</th><th>For</th></tr>
+      <tr><td>PSLV</td><td>Polar/light</td></tr>
+      <tr><td>GSLV</td><td>Heavy GEO</td></tr>
+      <tr><td>LVM3</td><td>Heaviest</td></tr>
+      <tr><td>SSLV</td><td>Small sats</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Key Facts &amp; Data</h4>
+    <table>
+      <tr><th>Item</th><th>Value</th></tr>
+      <tr><td>ISRO founded</td><td>1969</td></tr>
+      <tr><td>First satellite</td><td>Aryabhata 1975</td></tr>
+      <tr><td>GEO altitude</td><td>~36,000 km</td></tr>
+      <tr><td>PSLV record</td><td>104 sats</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:93%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains GS-III</span><span class="fill"><span style="width:82%"></span></span></div>
+    <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:85%"></span></span></div>
+    <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:95%"></span></span></div>
+    <p style="margin-top:8px;font-size:11px;color:var(--muted);">Guaranteed area &mdash; track ISRO news.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Space Tech I at a Glance</h4>
+    <ul>
+      <li>Orbits &amp; satellite basics</li>
+      <li>Satellite types</li>
+      <li>ISRO &amp; centres</li>
+      <li>Launch vehicles</li>
+      <li>Cryogenic tech</li>
+      <li>Satellite systems</li>
+      <li>NavIC navigation</li>
+      <li>Applications &amp; spaceports</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">GEO ~36,000 km</span>
+    <span class="tag">PSLV = workhorse</span>
+    <span class="tag green">LVM3 = heaviest</span>
+    <span class="tag">Cryo = H&#8322;+O&#8322;</span>
+    <span class="tag orange">NavIC = India GPS</span>
+    <span class="tag">Sun-sync = imaging</span>
+    <span class="tag green">Sarabhai</span>
+    <span class="tag">Aryabhata 1975</span>
+    <span class="tag orange">Sriharikota</span>
+    <span class="tag">SSLV small sats</span>
+  </div>
+
+  <div class="widget">
+    <h4>Data Sources to Bookmark</h4>
+    <ul>
+      <li><a href="https://www.isro.gov.in" target="_blank" rel="noopener">ISRO</a></li>
+      <li><a href="https://www.nsilindia.co.in" target="_blank" rel="noopener">NSIL</a></li>
+      <li><a href="https://www.inspace.gov.in" target="_blank" rel="noopener">IN-SPACe</a></li>
+      <li><a href="https://pib.gov.in" target="_blank" rel="noopener">PIB</a></li>
+    </ul>
+    <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/science-technology/space-technology-ii-missions-and-space-economy">S&amp;T T9: Space Tech II (Missions)</a></li>
+      <li><a href="/science-technology/physics">S&amp;T T7: Physics</a></li>
+      <li><a href="/science-technology/defence-technology">S&amp;T T16: Defence Technology</a></li>
+      <li><a href="/science-technology/computer-and-it">S&amp;T T12: Computer &amp; IT</a></li>
+      <li><a href="/science-technology">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding:0;margin:0;">
+      <li style="margin:4px 0;"><a href="#orbits" style="font-size:12px;">Orbits &amp; Basics</a></li>
+      <li style="margin:4px 0;"><a href="#sattypes" style="font-size:12px;">Satellite Types</a></li>
+      <li style="margin:4px 0;"><a href="#isro" style="font-size:12px;">ISRO &amp; Centres</a></li>
+      <li style="margin:4px 0;"><a href="#launchers" style="font-size:12px;">Launch Vehicles</a></li>
+      <li style="margin:4px 0;"><a href="#cryo" style="font-size:12px;">Cryogenic Tech</a></li>
+      <li style="margin:4px 0;"><a href="#satsystems" style="font-size:12px;">Satellite Systems</a></li>
+      <li style="margin:4px 0;"><a href="#navic" style="font-size:12px;">NavIC</a></li>
+      <li style="margin:4px 0;"><a href="#applications" style="font-size:12px;">Applications</a></li>
+      <li style="margin:4px 0;"><a href="#spaceports" style="font-size:12px;">Spaceports</a></li>
+      <li style="margin:4px 0;"><a href="#currentaffairs" style="font-size:12px;">Current Affairs</a></li>
+      <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

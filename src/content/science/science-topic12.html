@@ -1,0 +1,712 @@
+<!-- science-topic12 — auto-imported from scitech-topic12-computer-it-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 12: Computer &amp; IT &mdash; Networks, Cloud, Blockchain &amp; Digital India</h1>
+  <p class="sub">Information technology is a very high-weight GS-III area linking science, economy &amp; governance. This file covers <strong>computer basics</strong> (hardware, software, memory, generations), <strong>networks &amp; the Internet</strong> (protocols, IP, WWW, 4G/5G/6G), <strong>cloud computing</strong>, <strong>Big Data</strong> &amp; data centres, <strong>blockchain</strong> &amp; cryptocurrency, <strong>cyber security</strong> &amp; cyber attacks (malware, ransomware, phishing), <strong>digital public infrastructure</strong> (Aadhaar, UPI, ONDC), <strong>Digital India</strong> &amp; e-governance, and <strong>data protection</strong> (DPDP Act) &mdash; with labelled diagrams, tables and real dated PYQs with full model answers. (AI &amp; robotics are in Topic 13; supercomputers/quantum in Topic 14.)</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Blockchain &middot; 5G</span>
+    <span class="pill">~40 min read</span>
+    <span class="pill">Cyber Security &amp; DPI</span>
+    <span class="pill">Very High CA Weight</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#basics">Computer Basics</a></li>
+    <li><span class="num">2.</span><a href="#networks">Networks &amp; the Internet</a></li>
+    <li><span class="num">3.</span><a href="#mobile">Mobile Tech &mdash; 5G &amp; 6G</a></li>
+    <li><span class="num">4.</span><a href="#cloud">Cloud Computing &amp; Big Data</a></li>
+    <li><span class="num">5.</span><a href="#blockchain">Blockchain &amp; Cryptocurrency</a></li>
+    <li><span class="num">6.</span><a href="#cyber">Cyber Security</a></li>
+    <li><span class="num">7.</span><a href="#dpi">Digital Public Infrastructure</a></li>
+    <li><span class="num">8.</span><a href="#digitalindia">Digital India &amp; e-Governance</a></li>
+    <li><span class="num">9.</span><a href="#dataprotection">Data Protection &amp; Governance</a></li>
+    <li><span class="num">10.</span><a href="#currentaffairs">Current Affairs Link</a></li>
+    <li><span class="num">11.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><span class="num">12.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Tests Computers &amp; IT</h3>
+  <p>IT is a <strong>guaranteed, high-return</strong> area &mdash; almost every year has Prelims (blockchain, cloud, cyber terms) &amp; Mains (cyber security, DPI, digital governance) questions. Sort your prep into three question-types:</p>
+  <ul>
+    <li><strong>Definitional / static</strong> &mdash; "what is cloud computing?", "what is blockchain?", "IP address vs protocol?". Recall of concepts &amp; terms.</li>
+    <li><strong>Statement-elimination</strong> &mdash; blockchain features, cyber-attack types, DPI components where one detail decides the answer.</li>
+    <li><strong>Applied / current</strong> &mdash; a reform or incident in the news (DPDP Act, ransomware attack, UPI) linked to a fundamental &mdash; the strong GS-III governance bridge.</li>
+  </ul>
+  <p><strong>Highest-frequency themes:</strong> cloud &amp; big data &middot; blockchain/DLT &middot; 5G &middot; cyber security (malware, ransomware, phishing) &middot; DPI (Aadhaar, UPI, ONDC) &middot; Digital India &middot; DPDP Act.</p>
+</div>
+
+<!-- ===== SECTION 1 ===== -->
+<section class="notes" id="basics">
+  <h2>1. Computer Basics</h2>
+  <ul>
+    <li><strong>Hardware</strong> = physical parts (CPU, memory, input/output); <strong>software</strong> = programs (system software like OS, and application software).</li>
+    <li><strong>CPU</strong> (processor) = the "brain" &mdash; control unit + ALU (arithmetic logic unit). Computers work in <strong>binary</strong> (0s &amp; 1s); a bit = 0/1, a byte = 8 bits.</li>
+    <li><strong>Memory:</strong> primary (RAM = temporary/volatile, ROM = permanent) &amp; secondary (hard disk, SSD, USB &mdash; permanent storage).</li>
+    <li><strong>Generations:</strong> valves &rarr; transistors &rarr; integrated circuits &rarr; microprocessors &rarr; AI/parallel &mdash; each smaller, faster &amp; cheaper (Moore's Law).</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> computers use binary (0/1); bit = smallest unit, byte = 8 bits; RAM = volatile/temporary, ROM = non-volatile; CPU = control unit + ALU; Moore's Law = transistor count roughly doubles ~every two years.</div>
+</section>
+
+<!-- ===== SECTION 2 ===== -->
+<section class="notes" id="networks">
+  <h2>2. Networks &amp; the Internet</h2>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 460 170" width="460" height="170" role="img" aria-label="Devices connected via internet using IP addresses and protocols">
+      <rect x="0" y="0" width="460" height="170" fill="#ffffff"/>
+      <g font-family="sans-serif" font-size="10" text-anchor="middle">
+        <circle cx="230" cy="80" r="30" fill="#e8f0f8" stroke="#1a3d5c"/><text x="230" y="76">Internet</text><text x="230" y="90" font-size="8">(TCP/IP)</text>
+        <rect x="40" y="30" width="70" height="26" rx="4" fill="#f4f8fb" stroke="#1a7a5a"/><text x="75" y="47">Device A</text>
+        <rect x="40" y="110" width="70" height="26" rx="4" fill="#f4f8fb" stroke="#1a7a5a"/><text x="75" y="127">Server</text>
+        <rect x="350" y="30" width="70" height="26" rx="4" fill="#f4f8fb" stroke="#c47820"/><text x="385" y="47">Device B</text>
+        <rect x="350" y="110" width="70" height="26" rx="4" fill="#f4f8fb" stroke="#c47820"/><text x="385" y="127">Cloud</text>
+        <line x1="110" y1="43" x2="205" y2="72" stroke="#888"/><line x1="110" y1="123" x2="205" y2="90" stroke="#888"/>
+        <line x1="350" y1="43" x2="255" y2="72" stroke="#888"/><line x1="350" y1="123" x2="255" y2="90" stroke="#888"/>
+      </g>
+    </svg>
+    <div class="svg-caption">Fig 12.1 &mdash; The Internet is a global network of networks; devices communicate using <strong>protocols</strong> (rules like TCP/IP) and unique <strong>IP addresses</strong>. The Web (WWW) is a service running on the Internet.</div>
+  </div>
+  <ul>
+    <li><strong>Network</strong> = connected devices sharing data (LAN, WAN). The <strong>Internet</strong> = a global network of networks.</li>
+    <li><strong>Protocols</strong> = agreed rules for communication (TCP/IP, HTTP/HTTPS); an <strong>IP address</strong> uniquely identifies a device; <strong>DNS</strong> translates names to IP.</li>
+    <li><strong>WWW (Web)</strong> = a service of the Internet (webpages via HTTP); the Internet also carries email, streaming, etc.</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims traps:</strong> the <strong>Internet</strong> (infrastructure) is not the same as the <strong>WWW</strong> (a service on it); TCP/IP is the core protocol suite; an IP address identifies a device; DNS maps domain names to IP addresses.</div>
+</section>
+
+<!-- ===== SECTION 3 ===== -->
+<section class="notes" id="mobile">
+  <h2>3. Mobile Technology &mdash; 5G &amp; 6G</h2>
+  <table>
+    <tr><th>Generation</th><th>Feature</th></tr>
+    <tr><td>2G / 3G</td><td>Voice &amp; basic data / mobile internet</td></tr>
+    <tr><td>4G</td><td>High-speed broadband, video</td></tr>
+    <tr><td><strong>5G</strong></td><td>Very high speed &amp; capacity, ultra-low latency &mdash; enables IoT, smart factories, remote surgery, autonomous vehicles</td></tr>
+    <tr><td><strong>6G</strong> (future)</td><td>Even faster, AI-native, holographic &amp; sensing; India's Bharat 6G vision</td></tr>
+  </table>
+  <div class="callout info"><strong>Prelims facts:</strong> 5G's key advances are ultra-low latency &amp; massive device connectivity (IoT), not just speed; India has a Bharat 6G Vision for next-gen R&amp;D. IoT = "Internet of Things" &mdash; everyday devices connected online.</div>
+</section>
+
+<!-- ===== SECTION 4 ===== -->
+<section class="notes" id="cloud">
+  <h2>4. Cloud Computing &amp; Big Data</h2>
+  <ul>
+    <li><strong>Cloud computing</strong> = using computing resources (storage, servers, software) over the Internet on demand, instead of owning them &mdash; pay-as-you-use. Models: IaaS, PaaS, SaaS.</li>
+    <li><strong>Big Data</strong> = extremely large, fast, varied data sets (the "3 Vs": volume, velocity, variety) analysed for insights &mdash; powers AI, governance &amp; business.</li>
+    <li><strong>Data centres</strong> &amp; <strong>edge computing</strong> (processing near the source) support cloud &amp; IoT; data localisation is a policy issue.</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims traps:</strong> cloud = on-demand computing over the internet (IaaS/PaaS/SaaS); Big Data's 3 Vs = volume, velocity, variety; edge computing processes data near the source to cut latency. Data localisation = storing data within the country.</div>
+</section>
+
+<!-- ===== SECTION 5 ===== -->
+<section class="notes" id="blockchain">
+  <h2>5. Blockchain &amp; Cryptocurrency</h2>
+  <ul>
+    <li><strong>Blockchain</strong> = a distributed, tamper-evident digital ledger &mdash; records (blocks) are chained &amp; copied across many computers, so no single party controls it &amp; entries can't be altered easily. A type of <strong>Distributed Ledger Technology (DLT)</strong>.</li>
+    <li><strong>Features:</strong> decentralisation, transparency, immutability, security via cryptography. Uses "consensus" (e.g. proof-of-work/stake) to validate.</li>
+    <li><strong>Cryptocurrency</strong> (Bitcoin, etc.) is one use; others: smart contracts, supply-chain tracking, land records, digital identity.</li>
+    <li><strong>CBDC:</strong> the RBI's <strong>Digital Rupee (e&#8377;)</strong> is a central-bank digital currency &mdash; sovereign, unlike private crypto.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> blockchain = distributed, immutable ledger (a form of DLT); key traits = decentralisation, transparency, immutability; cryptocurrency is just one application; CBDC (Digital Rupee) is issued by the RBI, unlike private cryptocurrencies.</div>
+</section>
+
+<!-- ===== SECTION 6 ===== -->
+<section class="notes" id="cyber">
+  <h2>6. Cyber Security</h2>
+  <table>
+    <tr><th>Threat</th><th>What it is</th></tr>
+    <tr><td>Malware</td><td>Malicious software (virus, worm, trojan, spyware)</td></tr>
+    <tr><td><strong>Ransomware</strong></td><td>Locks/encrypts data &amp; demands ransom (e.g. WannaCry)</td></tr>
+    <tr><td><strong>Phishing</strong></td><td>Fraud tricking users into revealing passwords/OTP</td></tr>
+    <tr><td>DDoS</td><td>Flooding a service to crash it</td></tr>
+    <tr><td>Data breach</td><td>Stealing/leaking sensitive data</td></tr>
+  </table>
+  <ul>
+    <li><strong>India's framework:</strong> <strong>CERT-In</strong> (national cyber-incident response), <strong>NCIIPC</strong> (protects critical infrastructure), the Cyber Crime Coordination Centre (I4C) &amp; the IT Act.</li>
+    <li><strong>Concepts:</strong> encryption, firewalls, two-factor authentication, zero-trust; the "CIA triad" &mdash; Confidentiality, Integrity, Availability.</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims traps:</strong> <strong>ransomware</strong> encrypts &amp; demands payment; <strong>phishing</strong> tricks users into sharing credentials; <strong>DDoS</strong> overwhelms a service. CERT-In is India's nodal cyber-response agency; NCIIPC protects critical information infrastructure.</div>
+</section>
+
+<!-- ===== SECTION 7 ===== -->
+<section class="notes" id="dpi">
+  <h2>7. Digital Public Infrastructure (DPI)</h2>
+  <ul>
+    <li><strong>DPI</strong> = shared, open digital platforms (the "India Stack") that enable services at population scale &mdash; India is a global leader.</li>
+    <li><strong>Identity:</strong> <strong>Aadhaar</strong> (biometric digital ID); <strong>Payments:</strong> <strong>UPI</strong> (instant interoperable payments) &mdash; among the world's largest; <strong>Data:</strong> DigiLocker, Account Aggregator.</li>
+    <li><strong>ONDC</strong> (Open Network for Digital Commerce) &amp; <strong>OCEN</strong> (credit) extend DPI to e-commerce &amp; lending.</li>
+  </ul>
+  <div class="callout warn"><strong>GS-III hook:</strong> DPI (Aadhaar + UPI + data) has powered financial inclusion, Direct Benefit Transfer, and a booming digital economy &mdash; a model India is exporting globally (a soft-power &amp; development theme).</div>
+</section>
+
+<!-- ===== SECTION 8 ===== -->
+<section class="notes" id="digitalindia">
+  <h2>8. Digital India &amp; e-Governance</h2>
+  <table>
+    <tr><th>Pillar / initiative</th><th>Aim</th></tr>
+    <tr><td>Digital infrastructure</td><td>Broadband (BharatNet), digital identity, mobile connectivity</td></tr>
+    <tr><td>e-Governance</td><td>Services online (DigiLocker, UMANG, e-courts, GeM procurement)</td></tr>
+    <tr><td>Digital empowerment</td><td>Digital literacy (PMGDISHA), local-language content</td></tr>
+    <tr><td>Direct Benefit Transfer</td><td>JAM trinity (Jan Dhan&ndash;Aadhaar&ndash;Mobile) for leak-proof subsidies</td></tr>
+  </table>
+  <div class="callout info"><strong>Prelims facts:</strong> Digital India (2015) aims to make India a digitally empowered society; JAM = Jan Dhan + Aadhaar + Mobile enabling DBT; BharatNet connects gram panchayats with broadband; GeM = Government e-Marketplace.</div>
+</section>
+
+<!-- ===== SECTION 9 ===== -->
+<section class="notes" id="dataprotection">
+  <h2>9. Data Protection &amp; Governance</h2>
+  <ul>
+    <li><strong>DPDP Act, 2023</strong> (Digital Personal Data Protection) &mdash; India's data-protection law: consent-based processing, rights of "data principals", duties of "data fiduciaries", and a Data Protection Board.</li>
+    <li><strong>Right to privacy</strong> is a fundamental right (Puttaswamy judgment, 2017) &mdash; the basis for data protection.</li>
+    <li><strong>Issues:</strong> data localisation, surveillance vs privacy, cross-border data flows, and the digital divide.</li>
+  </ul>
+  <div class="callout warn"><strong>GS-II/III hook:</strong> the digital economy needs both <strong>data-driven innovation</strong> and <strong>privacy protection</strong>. The DPDP Act 2023 operationalises the fundamental right to privacy (Puttaswamy, 2017) &mdash; balancing growth, security &amp; individual rights.</div>
+</section>
+
+<!-- ===== SECTION 10: CURRENT AFFAIRS ===== -->
+<section class="notes" id="currentaffairs">
+  <h2>10. Current Affairs Link (2024&ndash;2026)</h2>
+  <p>IT is the most active governance-tech news area. Verify the latest before the exam. <span class="update-tag">check for latest update or data</span></p>
+  <div class="callout update"><strong>Data protection &amp; AI rules:</strong> DPDP Act rules, data-governance &amp; platform regulation apply Section 9. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout update"><strong>DPI &amp; UPI globalisation:</strong> UPI going international, ONDC expansion &amp; Digital Rupee pilots apply Sections 5&ndash;7. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout warn"><strong>Cyber attacks:</strong> ransomware &amp; data breaches on banks, health &amp; infrastructure keep cyber security topical. <span class="update-tag">check for latest update or data</span></div>
+  <table>
+    <tr><th>Recent theme</th><th>Fundamental it tests</th><th>Why it matters for UPSC</th></tr>
+    <tr><td>DPDP Act rules</td><td>Data protection</td><td>GS-II/III rights &amp; economy.</td></tr>
+    <tr><td>UPI / ONDC / e&#8377;</td><td>DPI &amp; blockchain</td><td>GS-III digital economy.</td></tr>
+    <tr><td>Ransomware / breaches</td><td>Cyber security</td><td>GS-III security.</td></tr>
+    <tr><td>5G / 6G roll-out</td><td>Mobile tech</td><td>GS-III infrastructure.</td></tr>
+  </table>
+  <ul>
+    <li><strong>Recurring exam hooks:</strong> blockchain vs crypto vs CBDC &middot; cloud &amp; big data &middot; cyber-attack types &amp; CERT-In &middot; DPI (Aadhaar/UPI/ONDC) &middot; DPDP Act &middot; 5G.</li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 11: PRELIMS ===== -->
+<section class="notes" id="prelims-pyq">
+  <h2>11. Prelims PYQs</h2>
+  <p style="font-size:13px;color:var(--muted)"><em>Objective questions anchored to genuinely tested UPSC themes on computers &amp; IT. Each carries a worked rationale.</em></p>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Blockchain</div>
+    <p class="q-stem"><strong>Q:</strong> Which of the following best describes blockchain technology?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> A centralised database controlled by a bank</li>
+      <li class="correct"><span class="opt-key">(b)</span> A distributed, tamper-evident digital ledger</li>
+      <li><span class="opt-key">(c)</span> A type of computer virus</li>
+      <li><span class="opt-key">(d)</span> A cloud storage service</li>
+    </ul>
+    <p class="ans">Answer: (b) Blockchain is a distributed, immutable ledger copied across many nodes (a form of DLT); cryptocurrency is only one of its applications.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Digital Rupee</div>
+    <p class="q-stem"><strong>Q:</strong> The Digital Rupee (e&#8377;) launched in India is a &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> private cryptocurrency</li>
+      <li class="correct"><span class="opt-key">(b)</span> central bank digital currency (CBDC)</li>
+      <li><span class="opt-key">(c)</span> stablecoin issued by banks</li>
+      <li><span class="opt-key">(d)</span> mobile wallet app</li>
+    </ul>
+    <p class="ans">Answer: (b) The Digital Rupee is a CBDC issued by the RBI &mdash; sovereign legal tender in digital form, unlike private cryptocurrencies.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Cloud</div>
+    <p class="q-stem"><strong>Q:</strong> "Cloud computing" essentially means &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> weather forecasting by computers</li>
+      <li class="correct"><span class="opt-key">(b)</span> using computing resources over the internet on demand</li>
+      <li><span class="opt-key">(c)</span> wireless charging</li>
+      <li><span class="opt-key">(d)</span> a type of satellite</li>
+    </ul>
+    <p class="ans">Answer: (b) Cloud computing delivers storage, servers &amp; software over the internet on a pay-as-you-use basis (IaaS/PaaS/SaaS), avoiding owning hardware.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Cyber threats</div>
+    <p class="q-stem"><strong>Q:</strong> Ransomware is a type of cyber attack that &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> encrypts a victim's data and demands payment to release it</li>
+      <li><span class="opt-key">(b)</span> floods a website with traffic to crash it</li>
+      <li><span class="opt-key">(c)</span> steals data silently over years</li>
+      <li><span class="opt-key">(d)</span> physically damages hardware</li>
+    </ul>
+    <p class="ans">Answer: (a) Ransomware encrypts/locks data and demands a ransom (e.g. WannaCry). Flooding a site is DDoS; tricking users for credentials is phishing.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Cyber agency</div>
+    <p class="q-stem"><strong>Q:</strong> CERT-In is India's nodal agency for &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> issuing Aadhaar</li>
+      <li class="correct"><span class="opt-key">(b)</span> responding to cyber-security incidents</li>
+      <li><span class="opt-key">(c)</span> regulating telecom tariffs</li>
+      <li><span class="opt-key">(d)</span> approving software patents</li>
+    </ul>
+    <p class="ans">Answer: (b) CERT-In (Indian Computer Emergency Response Team) is the national agency for cyber-incident response; NCIIPC protects critical information infrastructure.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Internet vs Web</div>
+    <p class="q-stem"><strong>Q:</strong> The World Wide Web (WWW) is &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> the same as the Internet</li>
+      <li class="correct"><span class="opt-key">(b)</span> a service that runs on the Internet</li>
+      <li><span class="opt-key">(c)</span> a type of cable</li>
+      <li><span class="opt-key">(d)</span> a search engine</li>
+    </ul>
+    <p class="ans">Answer: (b) The Internet is the underlying global network; the WWW is one service (webpages via HTTP) running on it, alongside email, streaming, etc.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; DPI</div>
+    <p class="q-stem"><strong>Q:</strong> UPI (Unified Payments Interface) is best described as &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> a cryptocurrency</li>
+      <li class="correct"><span class="opt-key">(b)</span> an instant interoperable digital-payment system</li>
+      <li><span class="opt-key">(c)</span> a data-storage standard</li>
+      <li><span class="opt-key">(d)</span> a mobile network</li>
+    </ul>
+    <p class="ans">Answer: (b) UPI enables instant, interoperable bank-to-bank payments via mobile &mdash; a pillar of India's Digital Public Infrastructure (India Stack).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Data law</div>
+    <p class="q-stem"><strong>Q:</strong> The DPDP Act, 2023 deals primarily with &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> cyber warfare</li>
+      <li class="correct"><span class="opt-key">(b)</span> protection of digital personal data</li>
+      <li><span class="opt-key">(c)</span> spectrum allocation</li>
+      <li><span class="opt-key">(d)</span> e-commerce taxation</li>
+    </ul>
+    <p class="ans">Answer: (b) The Digital Personal Data Protection Act, 2023 governs consent-based processing of personal data, giving rights to individuals &amp; duties to data fiduciaries, backed by the right to privacy (Puttaswamy, 2017).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> blockchain vs crypto vs CBDC &middot; cloud &amp; big data 3 Vs &middot; cyber-attack types &amp; CERT-In &middot; DPI (Aadhaar/UPI/ONDC) &middot; DPDP Act &amp; privacy &middot; 5G/IoT &middot; internet vs web. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 12: MAINS ===== -->
+<section class="notes" id="mains-pyq">
+  <h2>12. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>IT anchors GS-III questions on cyber security, digital economy &amp; governance. The frameworks below show how to deploy it analytically.</em></p>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Cyber security is central to national security in the digital age. Discuss the threats and India's preparedness.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> As governance, economy &amp; defence digitise, cyber security (Section 6) becomes core to national security.</li>
+        <li><strong>Threats:</strong>
+          <ul>
+            <li>Ransomware &amp; malware on banks, health &amp; power; phishing &amp; data breaches; attacks on critical infrastructure; state-sponsored &amp; supply-chain attacks.</li>
+          </ul>
+        </li>
+        <li><strong>India's preparedness:</strong> CERT-In, NCIIPC, I4C, the IT Act &amp; DPDP Act, a National Cyber Security Policy &amp; cyber commands.</li>
+        <li><strong>Gaps:</strong> skilled manpower, awareness, outdated systems, coordination &amp; a dedicated cyber-security law.</li>
+        <li><strong>Way forward:</strong> resilient infrastructure, capacity building, public-private cooperation &amp; international norms.</li>
+        <li><strong>Conclusion:</strong> cyber resilience is now inseparable from national security &amp; economic stability.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Digital Public Infrastructure has transformed governance &amp; the economy in India. Examine.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> DPI (Section 7) &mdash; the India Stack of digital identity, payments &amp; data &mdash; delivers services at population scale.</li>
+        <li><strong>Governance impact:</strong>
+          <ul>
+            <li>Aadhaar-enabled DBT &amp; JAM cut leakages; UPI &amp; digital services widen access &amp; formalise the economy.</li>
+          </ul>
+        </li>
+        <li><strong>Economic impact:</strong> financial inclusion, fintech growth, ONDC-enabled e-commerce &amp; a globally exported model.</li>
+        <li><strong>Concerns:</strong> privacy &amp; data protection (DPDP Act), exclusion errors, digital divide &amp; cyber risk.</li>
+        <li><strong>Way forward:</strong> inclusive design, grievance redress, robust privacy &amp; cyber security.</li>
+        <li><strong>Conclusion:</strong> DPI is a powerful tool for inclusive, efficient governance if rights &amp; access are safeguarded.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Distinguish between blockchain, cryptocurrency and a central bank digital currency (CBDC).</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> These are related but distinct (Section 5).</li>
+        <li><strong>Distinctions:</strong>
+          <ul>
+            <li><strong>Blockchain</strong> = the underlying distributed-ledger technology; <strong>cryptocurrency</strong> = a private digital asset built on it; <strong>CBDC</strong> = sovereign digital currency issued by the central bank.</li>
+          </ul>
+        </li>
+        <li><strong>Key contrast:</strong> crypto is decentralised &amp; volatile; CBDC (Digital Rupee) is state-backed legal tender.</li>
+        <li><strong>Conclusion:</strong> blockchain is the tech; crypto &amp; CBDC are different applications with very different trust models.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Balancing data-driven innovation with the right to privacy is a key challenge. Discuss with reference to the DPDP Act.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> The digital economy runs on data, but data use can violate privacy &mdash; a fundamental right (Puttaswamy, 2017).</li>
+        <li><strong>The tension:</strong>
+          <ul>
+            <li>Data powers AI, DPI &amp; services; unchecked use risks surveillance, profiling &amp; breaches.</li>
+          </ul>
+        </li>
+        <li><strong>DPDP Act 2023:</strong> consent-based processing, data-principal rights, fiduciary duties &amp; a Data Protection Board (Section 9).</li>
+        <li><strong>Challenges:</strong> wide government exemptions, localisation, enforcement capacity &amp; cross-border flows.</li>
+        <li><strong>Way forward:</strong> strong independent regulator, privacy-by-design &amp; clear limits on state access.</li>
+        <li><strong>Conclusion:</strong> well-designed data law can enable innovation while protecting citizens' rights.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> cyber security &amp; national security &middot; DPI &amp; digital economy &middot; blockchain applications beyond crypto &middot; data protection vs privacy &middot; 5G/IoT &amp; digital divide. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; Computer &amp; IT</h3>
+    <div class="grid-2">
+      <div>
+        <strong>Basics &amp; networks:</strong>
+        <ul>
+          <li>Binary (0/1); bit vs byte (8 bits); RAM volatile, ROM permanent</li>
+          <li>CPU = control unit + ALU; Moore's Law</li>
+          <li>Internet &ne; WWW (web = service on internet); TCP/IP, IP address, DNS</li>
+          <li>5G = low latency + IoT; Bharat 6G vision</li>
+        </ul>
+        <strong>Cloud, big data, blockchain:</strong>
+        <ul>
+          <li>Cloud = on-demand computing (IaaS/PaaS/SaaS)</li>
+          <li>Big Data 3 Vs = volume, velocity, variety</li>
+          <li>Blockchain = distributed immutable ledger (DLT); crypto = one use</li>
+          <li>Digital Rupee (e&#8377;) = RBI CBDC, not private crypto</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Cyber security:</strong>
+        <ul>
+          <li>Ransomware = encrypt + demand; phishing = trick for credentials; DDoS = flood</li>
+          <li>CERT-In = cyber response; NCIIPC = critical infra</li>
+          <li>CIA triad = Confidentiality, Integrity, Availability</li>
+        </ul>
+        <strong>DPI &amp; governance:</strong>
+        <ul>
+          <li>India Stack: Aadhaar (ID) + UPI (payments) + data (DigiLocker/AA)</li>
+          <li>ONDC = open e-commerce; JAM = Jan Dhan+Aadhaar+Mobile (DBT)</li>
+          <li>Digital India (2015); BharatNet; GeM</li>
+          <li>DPDP Act 2023; privacy = FR (Puttaswamy 2017)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes:</strong> blockchain/CBDC &middot; cloud &amp; big data &middot; cyber-attack types &amp; CERT-In &middot; DPI (Aadhaar/UPI/ONDC) &middot; DPDP Act &middot; 5G.</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== SIDEBAR ===== -->
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Quick Reference &mdash; Terms</h4>
+    <table>
+      <tr><th>Term</th><th>Meaning</th></tr>
+      <tr><td>Cloud</td><td>On-demand compute</td></tr>
+      <tr><td>Blockchain</td><td>Distributed ledger</td></tr>
+      <tr><td>CBDC</td><td>e&#8377; by RBI</td></tr>
+      <tr><td>UPI</td><td>Instant payments</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Cyber Threats</h4>
+    <table>
+      <tr><th>Threat</th><th>Action</th></tr>
+      <tr><td>Ransomware</td><td>Encrypt+ransom</td></tr>
+      <tr><td>Phishing</td><td>Steal creds</td></tr>
+      <tr><td>DDoS</td><td>Flood service</td></tr>
+      <tr><td>Malware</td><td>Malicious code</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Key Facts &amp; Data</h4>
+    <table>
+      <tr><th>Item</th><th>Value</th></tr>
+      <tr><td>Byte</td><td>8 bits</td></tr>
+      <tr><td>Big Data</td><td>3 Vs</td></tr>
+      <tr><td>Cyber agency</td><td>CERT-In</td></tr>
+      <tr><td>Data law</td><td>DPDP 2023</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:92%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains GS-III</span><span class="fill"><span style="width:90%"></span></span></div>
+    <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:80%"></span></span></div>
+    <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:95%"></span></span></div>
+    <p style="margin-top:8px;font-size:11px;color:var(--muted);">Governance-tech &mdash; very high weight.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Computer &amp; IT at a Glance</h4>
+    <ul>
+      <li>Computer basics</li>
+      <li>Networks &amp; internet</li>
+      <li>5G/6G</li>
+      <li>Cloud &amp; big data</li>
+      <li>Blockchain &amp; CBDC</li>
+      <li>Cyber security</li>
+      <li>DPI &amp; Digital India</li>
+      <li>Data protection</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">Blockchain = DLT</span>
+    <span class="tag">e&#8377; = CBDC</span>
+    <span class="tag green">UPI = DPI</span>
+    <span class="tag">Cloud IaaS/PaaS/SaaS</span>
+    <span class="tag orange">Ransomware</span>
+    <span class="tag">CERT-In</span>
+    <span class="tag green">Big Data 3 Vs</span>
+    <span class="tag">Internet &ne; WWW</span>
+    <span class="tag orange">DPDP 2023</span>
+    <span class="tag">JAM trinity</span>
+  </div>
+
+  <div class="widget">
+    <h4>Data Sources to Bookmark</h4>
+    <ul>
+      <li><a href="https://www.meity.gov.in" target="_blank" rel="noopener">MeitY</a></li>
+      <li><a href="https://www.cert-in.org.in" target="_blank" rel="noopener">CERT-In</a></li>
+      <li><a href="https://www.npci.org.in" target="_blank" rel="noopener">NPCI (UPI)</a></li>
+      <li><a href="https://pib.gov.in" target="_blank" rel="noopener">PIB</a></li>
+    </ul>
+    <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/science-technology/artificial-intelligence-and-robotics">S&amp;T T13: AI &amp; Robotics</a></li>
+      <li><a href="/science-technology/advanced-computing-supercomputers-and-quantum">S&amp;T T14: Advanced Computing</a></li>
+      <li><a href="/science-technology/defence-technology">S&amp;T T16: Defence Technology</a></li>
+      <li><a href="/science-technology/emerging-and-frontier-technologies">S&amp;T T18: Emerging Frontiers</a></li>
+      <li><a href="/science-technology">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding:0;margin:0;">
+      <li style="margin:4px 0;"><a href="#basics" style="font-size:12px;">Computer Basics</a></li>
+      <li style="margin:4px 0;"><a href="#networks" style="font-size:12px;">Networks &amp; Internet</a></li>
+      <li style="margin:4px 0;"><a href="#mobile" style="font-size:12px;">5G &amp; 6G</a></li>
+      <li style="margin:4px 0;"><a href="#cloud" style="font-size:12px;">Cloud &amp; Big Data</a></li>
+      <li style="margin:4px 0;"><a href="#blockchain" style="font-size:12px;">Blockchain</a></li>
+      <li style="margin:4px 0;"><a href="#cyber" style="font-size:12px;">Cyber Security</a></li>
+      <li style="margin:4px 0;"><a href="#dpi" style="font-size:12px;">Digital Public Infra</a></li>
+      <li style="margin:4px 0;"><a href="#digitalindia" style="font-size:12px;">Digital India</a></li>
+      <li style="margin:4px 0;"><a href="#dataprotection" style="font-size:12px;">Data Protection</a></li>
+      <li style="margin:4px 0;"><a href="#currentaffairs" style="font-size:12px;">Current Affairs</a></li>
+      <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

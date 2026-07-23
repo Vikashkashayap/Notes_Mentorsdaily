@@ -1,0 +1,745 @@
+<!-- science-topic07 — auto-imported from scitech-topic07-physics-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 7: Physics</h1>
+  <p class="sub">Physics is the science of <strong>matter, energy, motion and their interactions</strong> &mdash; the engine behind all technology. This single-source file covers <strong>units &amp; measurement</strong>, <strong>motion, force &amp; Newton's laws</strong>, <strong>work, energy &amp; power</strong>, <strong>gravitation</strong> (weight, escape velocity), <strong>heat &amp; thermodynamics</strong>, <strong>light &amp; optics</strong> (reflection, refraction, lenses, laser), <strong>sound &amp; waves</strong> (ultrasound, SONAR), <strong>electricity &amp; magnetism</strong> (the electromagnetic spectrum), and <strong>modern physics</strong> (quantum, relativity, semiconductors) &mdash; with labelled diagrams, tables and real dated PYQs with full model answers.</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Optics &middot; EM Spectrum</span>
+    <span class="pill">~40 min read</span>
+    <span class="pill">Everyday Applications</span>
+    <span class="pill">High Prelims Weight</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#units">Units &amp; Measurement</a></li>
+    <li><span class="num">2.</span><a href="#motion">Motion, Force &amp; Newton's Laws</a></li>
+    <li><span class="num">3.</span><a href="#energy">Work, Energy &amp; Power</a></li>
+    <li><span class="num">4.</span><a href="#gravity">Gravitation</a></li>
+    <li><span class="num">5.</span><a href="#heat">Heat &amp; Thermodynamics</a></li>
+    <li><span class="num">6.</span><a href="#optics">Light &amp; Optics</a></li>
+    <li><span class="num">7.</span><a href="#sound">Sound &amp; Waves</a></li>
+    <li><span class="num">8.</span><a href="#electricity">Electricity &amp; Magnetism</a></li>
+    <li><span class="num">9.</span><a href="#modern">Modern Physics</a></li>
+    <li><span class="num">10.</span><a href="#currentaffairs">Current Affairs Link</a></li>
+    <li><span class="num">11.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><span class="num">12.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Tests Physics</h3>
+  <p>UPSC physics is <strong>concept- &amp; application-based</strong>, rarely numerical &mdash; the focus is on why everyday phenomena happen. Sort your prep into three question-types:</p>
+  <ul>
+    <li><strong>Definitional / static</strong> &mdash; "SI unit of...?", "which wave is used in...?". Recall of units, laws &amp; applications.</li>
+    <li><strong>Statement-elimination</strong> &mdash; property statements (reflection/refraction, AC/DC, conductor/insulator) where one word decides the answer.</li>
+    <li><strong>Applied / current</strong> &mdash; a technology in the news (optical fibre, laser, quantum computing, superconductors) traced to a physics fundamental &mdash; the GS-III tech bridge.</li>
+  </ul>
+  <p><strong>Highest-frequency themes:</strong> SI units &middot; Newton's laws &amp; everyday examples &middot; escape velocity &middot; optics (mirrors, lenses, total internal reflection) &middot; EM spectrum &amp; wave uses &middot; sound &amp; ultrasound &middot; electricity basics &middot; semiconductors &amp; modern physics.</p>
+</div>
+
+<!-- ===== SECTION 1 ===== -->
+<section class="notes" id="units">
+  <h2>1. Units &amp; Measurement</h2>
+  <p>Physics rests on measurement. The <strong>SI system</strong> has seven base units.</p>
+  <table>
+    <tr><th>Quantity</th><th>SI unit</th><th>Symbol</th></tr>
+    <tr><td>Length</td><td>metre</td><td>m</td></tr>
+    <tr><td>Mass</td><td>kilogram</td><td>kg</td></tr>
+    <tr><td>Time</td><td>second</td><td>s</td></tr>
+    <tr><td>Electric current</td><td>ampere</td><td>A</td></tr>
+    <tr><td>Temperature</td><td>kelvin</td><td>K</td></tr>
+    <tr><td>Amount of substance</td><td>mole</td><td>mol</td></tr>
+    <tr><td>Luminous intensity</td><td>candela</td><td>cd</td></tr>
+  </table>
+  <ul>
+    <li><strong>Derived units:</strong> force = newton (N), energy = joule (J), power = watt (W), pressure = pascal (Pa), frequency = hertz (Hz).</li>
+    <li><strong>Scalar</strong> (magnitude only: mass, speed, energy) vs <strong>vector</strong> (magnitude + direction: velocity, force, acceleration).</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> the SI unit of force is the newton, of power the watt, of pressure the pascal; light-year measures distance (not time); horsepower &amp; watt measure power.</div>
+</section>
+
+<!-- ===== SECTION 2 ===== -->
+<section class="notes" id="motion">
+  <h2>2. Motion, Force &amp; Newton's Laws</h2>
+  <table>
+    <tr><th>Law</th><th>Statement</th><th>Everyday example</th></tr>
+    <tr><td>First (Inertia)</td><td>A body stays at rest/uniform motion unless a force acts</td><td>Jerk forward when a bus stops suddenly</td></tr>
+    <tr><td>Second (F = ma)</td><td>Force = mass &times; acceleration</td><td>Harder push &rarr; faster acceleration</td></tr>
+    <tr><td>Third (Action-reaction)</td><td>Every action has an equal &amp; opposite reaction</td><td>Rocket &amp; gun recoil; swimming</td></tr>
+  </table>
+  <ul>
+    <li><strong>Momentum</strong> = mass &times; velocity; conserved in collisions. The third law + conservation of momentum explains rocket propulsion (Topic 8).</li>
+    <li><strong>Friction</strong> opposes motion &mdash; useful (walking, brakes) yet wasteful (heat, wear).</li>
+    <li><strong>Centripetal force</strong> keeps a body in circular motion (e.g. satellite orbit).</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> inertia depends on mass; a rocket works on Newton's third law &amp; conservation of momentum; seatbelts counter inertia; banking of roads uses centripetal force.</div>
+</section>
+
+<!-- ===== SECTION 3 ===== -->
+<section class="notes" id="energy">
+  <h2>3. Work, Energy &amp; Power</h2>
+  <ul>
+    <li><strong>Work</strong> = force &times; displacement (unit: joule). <strong>Power</strong> = rate of work (unit: watt).</li>
+    <li><strong>Energy</strong> = capacity to do work. <strong>Kinetic energy</strong> (motion) &amp; <strong>potential energy</strong> (position) interconvert.</li>
+    <li><strong>Law of conservation of energy:</strong> energy can neither be created nor destroyed, only transformed &mdash; the master law.</li>
+    <li>Forms: mechanical, heat, light, sound, electrical, chemical, nuclear.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> unit of energy = joule; 1 kWh (unit of electricity bill) = energy; a swinging pendulum &amp; a dam show PE&harr;KE conversion; efficiency is always <100% (some energy lost as heat).</div>
+</section>
+
+<!-- ===== SECTION 4 ===== -->
+<section class="notes" id="gravity">
+  <h2>4. Gravitation</h2>
+  <ul>
+    <li><strong>Newton's law of gravitation:</strong> every mass attracts every other mass; force &prop; masses, inversely &prop; distance&sup2;.</li>
+    <li><strong>g</strong> (acceleration due to gravity) ≈ 9.8 m/s&sup2; on Earth; g on the Moon is ~1/6th of Earth's.</li>
+    <li><strong>Mass</strong> (amount of matter, constant) vs <strong>weight</strong> (= mass &times; g, varies with location).</li>
+    <li><strong>Escape velocity</strong> from Earth ≈ 11.2 km/s (minimum to leave Earth's gravity &mdash; key for rockets, Topic 8).</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> weight is less on the Moon (lower g), mass is unchanged; astronauts float due to free-fall ("weightlessness"), not zero gravity; escape velocity ~11.2 km/s.</div>
+</section>
+
+<!-- ===== SECTION 5 ===== -->
+<section class="notes" id="heat">
+  <h2>5. Heat &amp; Thermodynamics</h2>
+  <ul>
+    <li><strong>Heat</strong> = energy in transit due to temperature difference; flows hot &rarr; cold.</li>
+    <li><strong>Transfer modes:</strong> conduction (solids), convection (fluids), radiation (no medium, e.g. Sun's heat).</li>
+    <li><strong>Temperature scales:</strong> Celsius (&deg;C), Fahrenheit (&deg;F), Kelvin (K, absolute; 0 K = &minus;273&deg;C).</li>
+    <li><strong>Specific heat</strong> of water is high &mdash; why coastal climates are moderate &amp; water is a good coolant.</li>
+    <li><strong>Thermodynamics laws:</strong> 0th (thermal equilibrium), 1st (energy conservation), 2nd (entropy/disorder increases).</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> radiation needs no medium (heat from the Sun); Kelvin is the SI temperature unit; water's high specific heat makes it a coolant &amp; moderates climate; a thermos flask blocks all three transfer modes.</div>
+</section>
+
+<!-- ===== SECTION 6 ===== -->
+<section class="notes" id="optics">
+  <h2>6. Light &amp; Optics</h2>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 560 190" width="560" height="190" role="img" aria-label="Reflection, refraction and total internal reflection">
+      <rect x="0" y="0" width="560" height="190" fill="#ffffff"/>
+      <g font-family="sans-serif" font-size="11" text-anchor="middle">
+        <line x1="40" y1="30" x2="140" y2="95" stroke="#c47820" stroke-width="2" marker-end="url(#t07a)"/>
+        <line x1="140" y1="95" x2="240" y2="30" stroke="#1a3d5c" stroke-width="2" marker-end="url(#t07a)"/>
+        <line x1="40" y1="95" x2="250" y2="95" stroke="#999" stroke-dasharray="4"/>
+        <text x="140" y="120">Reflection</text><text x="140" y="134" font-size="10">angle in = angle out</text>
+        <line x1="330" y1="30" x2="410" y2="95" stroke="#c47820" stroke-width="2"/>
+        <rect x="300" y="95" width="220" height="55" fill="#e8f0f8" opacity="0.6"/>
+        <line x1="410" y1="95" x2="470" y2="150" stroke="#1a3d5c" stroke-width="2" marker-end="url(#t07a)"/>
+        <text x="410" y="175">Refraction (bends in denser medium)</text>
+        <defs><marker id="t07a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#333"/></marker></defs>
+      </g>
+    </svg>
+    <div class="svg-caption">Fig 7.1 &mdash; Reflection (light bounces back, angle in = angle out) and refraction (light bends when entering a denser medium). Total internal reflection underlies optical fibres.</div>
+  </div>
+
+  <table>
+    <tr><th>Phenomenon</th><th>Meaning / example</th></tr>
+    <tr><td>Reflection</td><td>Light bounces back (mirrors); concave (converging), convex (diverging, wider view &mdash; vehicle mirrors)</td></tr>
+    <tr><td>Refraction</td><td>Light bends between media (lens, pencil-in-water); causes twinkling of stars, mirage</td></tr>
+    <tr><td>Dispersion</td><td>White light splits into 7 colours (VIBGYOR) &mdash; prism, rainbow</td></tr>
+    <tr><td>Total internal reflection</td><td>Basis of optical fibres &amp; sparkle of diamond</td></tr>
+    <tr><td>Scattering</td><td>Blue sky &amp; red sunset (Rayleigh scattering)</td></tr>
+  </table>
+  <ul>
+    <li><strong>Human eye defects:</strong> myopia (short sight &mdash; concave lens); hypermetropia (long sight &mdash; convex lens).</li>
+    <li><strong>LASER</strong> = Light Amplification by Stimulated Emission of Radiation &mdash; a coherent, single-colour, intense beam; used in surgery, communication, barcode scanners, printing &amp; defence.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> sky is blue &amp; sunset red due to scattering; optical fibres work by total internal reflection; convex mirrors give a wider field (rear-view); a prism disperses light; VIBGYOR order.</div>
+</section>
+
+<!-- ===== SECTION 7 ===== -->
+<section class="notes" id="sound">
+  <h2>7. Sound &amp; Waves</h2>
+  <ul>
+    <li><strong>Sound</strong> is a mechanical (longitudinal) wave &mdash; needs a medium (cannot travel in vacuum). Speed in air ~343 m/s; faster in water &amp; solids.</li>
+    <li><strong>Frequency ranges:</strong> infrasound (<20 Hz), audible (20&ndash;20,000 Hz), ultrasound (>20,000 Hz).</li>
+    <li><strong>Ultrasound uses:</strong> medical scanning (sonography), cleaning, non-destructive testing; <strong>SONAR</strong> (echo) measures ocean depth &amp; detects submarines.</li>
+    <li><strong>Echo</strong> = reflected sound; reverberation = persistence in a hall.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> sound cannot travel in vacuum (light can); ultrasound > 20 kHz (used in scans &amp; SONAR); bats &amp; dolphins use ultrasound; the Doppler effect changes pitch of a passing siren.</div>
+</section>
+
+<!-- ===== SECTION 8 ===== -->
+<section class="notes" id="electricity">
+  <h2>8. Electricity &amp; Magnetism</h2>
+  <ul>
+    <li><strong>Ohm's law:</strong> V = IR (voltage = current &times; resistance). Unit of current = ampere, potential = volt, resistance = ohm, power = watt.</li>
+    <li><strong>Conductors</strong> (metals) vs <strong>insulators</strong> (rubber, plastic) vs <strong>semiconductors</strong> (silicon).</li>
+    <li><strong>AC vs DC:</strong> alternating current (grid supply, changes direction) vs direct current (batteries, one direction).</li>
+    <li><strong>Electromagnetism:</strong> current produces a magnetic field (electromagnet, motor); a changing magnetic field induces current (generator, transformer &mdash; Faraday).</li>
+  </ul>
+  <h3>The electromagnetic (EM) spectrum</h3>
+  <table>
+    <tr><th>Wave (low &rarr; high energy)</th><th>Use</th></tr>
+    <tr><td>Radio waves</td><td>Broadcasting, communication</td></tr>
+    <tr><td>Microwaves</td><td>Cooking, radar, mobile/satellite</td></tr>
+    <tr><td>Infrared</td><td>Remote controls, night vision, heating</td></tr>
+    <tr><td>Visible light</td><td>Sight (VIBGYOR)</td></tr>
+    <tr><td>Ultraviolet</td><td>Sterilisation; ozone absorbs it</td></tr>
+    <tr><td>X-rays</td><td>Medical imaging, security scans</td></tr>
+    <tr><td>Gamma rays</td><td>Cancer therapy, sterilisation (most energetic)</td></tr>
+  </table>
+  <div class="callout warn"><strong>Prelims facts:</strong> all EM waves travel at the speed of light &amp; can move through vacuum; gamma rays are most energetic/penetrating, radio least; microwaves for mobile &amp; radar; X-rays for imaging; fuse &amp; earthing are safety devices.</div>
+</section>
+
+<!-- ===== SECTION 9 ===== -->
+<section class="notes" id="modern">
+  <h2>9. Modern Physics</h2>
+  <ul>
+    <li><strong>Quantum theory</strong> (Planck, Einstein): energy comes in packets (quanta/photons); explains the photoelectric effect (basis of solar cells &amp; sensors).</li>
+    <li><strong>Relativity</strong> (Einstein): E = mc&sup2; (mass-energy equivalence, basis of nuclear energy); nothing exceeds the speed of light.</li>
+    <li><strong>Semiconductors</strong> (silicon, germanium): conductivity between conductor &amp; insulator; the basis of all electronics, diodes, transistors &amp; chips (Topic 12).</li>
+    <li><strong>Superconductors:</strong> zero electrical resistance at very low temperature; used in MRI, maglev; research into room-temperature superconductors is hot.</li>
+    <li><strong>Quantum technology:</strong> quantum computing, cryptography &amp; sensing &mdash; the frontier (Topic 12/18).</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> E = mc&sup2; underlies nuclear energy; solar cells use the photoelectric effect; semiconductors run electronics; superconductors have zero resistance; quantum computing uses qubits.</div>
+</section>
+
+<!-- ===== SECTION 10: CURRENT AFFAIRS ===== -->
+<section class="notes" id="currentaffairs">
+  <h2>10. Current Affairs Link (2024&ndash;2026)</h2>
+  <p>Physics powers frontier technology &mdash; quantum, photonics &amp; energy. Verify the latest before the exam. <span class="update-tag">check for latest update or data</span></p>
+  <div class="callout update"><strong>National Quantum Mission:</strong> India's mission builds quantum computing, communication &amp; sensing &mdash; direct applications of Section 9 modern physics. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout update"><strong>Photonics &amp; optical fibre:</strong> the BharatNet/optical-fibre rollout and laser/photonics R&amp;D apply Section 6 optics to communication &amp; defence. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout warn"><strong>Superconductivity buzz:</strong> claims &amp; research on room-temperature superconductors keep the physics topical (verify claims carefully). <span class="update-tag">check for latest update or data</span></div>
+  <table>
+    <tr><th>Recent theme</th><th>Fundamental it tests</th><th>Why it matters for UPSC</th></tr>
+    <tr><td>National Quantum Mission</td><td>Quantum physics</td><td>GS-III frontier tech &amp; security.</td></tr>
+    <tr><td>Optical fibre / photonics</td><td>Total internal reflection</td><td>GS-III digital infrastructure.</td></tr>
+    <tr><td>Superconductor research</td><td>Modern physics</td><td>GS-III energy &amp; transport.</td></tr>
+    <tr><td>Semiconductor mission</td><td>Semiconductors</td><td>GS-III electronics self-reliance.</td></tr>
+  </table>
+  <ul>
+    <li><strong>Recurring exam hooks:</strong> SI units &middot; Newton's laws &middot; escape velocity &middot; optics (TIR, scattering) &middot; EM spectrum &amp; uses &middot; ultrasound &amp; SONAR &middot; semiconductors &middot; quantum &amp; superconductors.</li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 11: PRELIMS ===== -->
+<section class="notes" id="prelims-pyq">
+  <h2>11. Prelims PYQs</h2>
+  <p style="font-size:13px;color:var(--muted)"><em>Objective questions anchored to genuinely tested UPSC themes in physics. Each carries a worked rationale.</em></p>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Units</div>
+    <p class="q-stem"><strong>Q:</strong> The SI unit of force is the &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> joule</li>
+      <li class="correct"><span class="opt-key">(b)</span> newton</li>
+      <li><span class="opt-key">(c)</span> watt</li>
+      <li><span class="opt-key">(d)</span> pascal</li>
+    </ul>
+    <p class="ans">Answer: (b) Force is measured in newtons (N); joule = energy, watt = power, pascal = pressure.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Newton's laws</div>
+    <p class="q-stem"><strong>Q:</strong> A rocket moves forward on the principle of &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Newton's first law</li>
+      <li><span class="opt-key">(b)</span> Archimedes' principle</li>
+      <li class="correct"><span class="opt-key">(c)</span> Newton's third law (action-reaction)</li>
+      <li><span class="opt-key">(d)</span> Bernoulli's principle</li>
+    </ul>
+    <p class="ans">Answer: (c) A rocket expels gas backward and is pushed forward &mdash; Newton's third law plus conservation of momentum.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Optics</div>
+    <p class="q-stem"><strong>Q:</strong> Optical fibres work on the principle of &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> dispersion</li>
+      <li><span class="opt-key">(b)</span> diffraction</li>
+      <li class="correct"><span class="opt-key">(c)</span> total internal reflection</li>
+      <li><span class="opt-key">(d)</span> scattering</li>
+    </ul>
+    <p class="ans">Answer: (c) Light stays inside the fibre by repeated total internal reflection, enabling high-speed data transmission.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Sound</div>
+    <p class="q-stem"><strong>Q:</strong> Sound waves cannot travel through &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> air</li>
+      <li><span class="opt-key">(b)</span> water</li>
+      <li><span class="opt-key">(c)</span> steel</li>
+      <li class="correct"><span class="opt-key">(d)</span> vacuum</li>
+    </ul>
+    <p class="ans">Answer: (d) Sound is a mechanical wave needing a medium; it cannot travel through vacuum (unlike light).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; EM spectrum</div>
+    <p class="q-stem"><strong>Q:</strong> Which of the following electromagnetic waves has the highest energy?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Radio waves</li>
+      <li><span class="opt-key">(b)</span> Microwaves</li>
+      <li><span class="opt-key">(c)</span> Visible light</li>
+      <li class="correct"><span class="opt-key">(d)</span> Gamma rays</li>
+    </ul>
+    <p class="ans">Answer: (d) Gamma rays have the highest frequency/energy &amp; greatest penetration; radio waves the lowest.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Gravitation</div>
+    <p class="q-stem"><strong>Q:</strong> The weight of a body on the Moon is about &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> the same as on Earth</li>
+      <li class="correct"><span class="opt-key">(b)</span> one-sixth of that on Earth</li>
+      <li><span class="opt-key">(c)</span> twice that on Earth</li>
+      <li><span class="opt-key">(d)</span> zero</li>
+    </ul>
+    <p class="ans">Answer: (b) The Moon's gravity is ~1/6th of Earth's, so weight is one-sixth; mass stays the same.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Everyday physics</div>
+    <p class="q-stem"><strong>Q:</strong> The blue colour of the sky is due to &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> reflection of light</li>
+      <li class="correct"><span class="opt-key">(b)</span> scattering of light</li>
+      <li><span class="opt-key">(c)</span> refraction of light</li>
+      <li><span class="opt-key">(d)</span> total internal reflection</li>
+    </ul>
+    <p class="ans">Answer: (b) Shorter (blue) wavelengths scatter more (Rayleigh scattering), making the sky appear blue; at sunset longer red light dominates.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Modern physics</div>
+    <p class="q-stem"><strong>Q:</strong> A superconductor is a material that has &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> very high resistance</li>
+      <li class="correct"><span class="opt-key">(b)</span> zero electrical resistance below a critical temperature</li>
+      <li><span class="opt-key">(c)</span> variable resistance with light</li>
+      <li><span class="opt-key">(d)</span> resistance only to AC</li>
+    </ul>
+    <p class="ans">Answer: (b) Superconductors show zero electrical resistance below a critical temperature &mdash; used in MRI &amp; maglev.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> SI units &middot; Newton's laws &amp; examples &middot; escape velocity &middot; TIR &amp; optical fibre &middot; scattering (sky/sunset) &middot; ultrasound &amp; SONAR &middot; EM-wave uses &middot; semiconductors &middot; quantum &amp; superconductors. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 12: MAINS ===== -->
+<section class="notes" id="mains-pyq">
+  <h2>12. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>Physics anchors applied GS-III questions on frontier technology &amp; infrastructure. The frameworks below show how to deploy it analytically.</em></p>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> "Quantum technology is the next strategic frontier." Explain the underlying physics and discuss India's National Quantum Mission.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction &mdash; define:</strong> Quantum technology exploits quantum-mechanical effects (superposition, entanglement) &mdash; from the modern physics of Section 9.</li>
+        <li><strong>The physics &amp; applications:</strong>
+          <ul>
+            <li><strong>Quantum computing</strong> (qubits) &mdash; solve problems intractable for classical computers.</li>
+            <li><strong>Quantum communication/cryptography</strong> &mdash; theoretically unbreakable security; <strong>quantum sensing</strong> &mdash; ultra-precise measurement.</li>
+          </ul>
+        </li>
+        <li><strong>Strategic value:</strong> cybersecurity, defence, drug discovery, finance &amp; materials; whoever leads gains an edge.</li>
+        <li><strong>India's Mission:</strong> National Quantum Mission funds hubs in computing, communication, sensing &amp; materials; builds talent &amp; ecosystem.</li>
+        <li><strong>Challenges:</strong> hardware complexity, error correction, talent, and the "harvest-now-decrypt-later" security threat needing post-quantum cryptography.</li>
+        <li><strong>Conclusion:</strong> mastering quantum tech is vital for future security &amp; competitiveness; the Mission is a timely bet.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Discuss the role of the electromagnetic spectrum in modern communication and its strategic importance.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> The EM spectrum (Section 8) is the range of radiation from radio waves to gamma rays; different bands carry information wirelessly.</li>
+        <li><strong>Role in communication:</strong>
+          <ul>
+            <li>Radio &amp; microwaves &mdash; broadcasting, mobile (2G&ndash;5G), satellite &amp; radar; infrared &mdash; short-range; optical fibre &mdash; light for high-speed data.</li>
+            <li>Spectrum is a finite natural resource, allocated &amp; auctioned by the state.</li>
+          </ul>
+        </li>
+        <li><strong>Strategic importance:</strong> backbone of the digital economy, defence, navigation (NavIC) &amp; disaster response; spectrum sovereignty &amp; security.</li>
+        <li><strong>Challenges:</strong> congestion, interference, equitable &amp; efficient allocation, and 5G/6G readiness.</li>
+        <li><strong>Conclusion:</strong> efficient, secure spectrum management is critical national infrastructure.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> How do lasers and optical fibres work, and what are their applications?</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> A laser is an intense, coherent, single-wavelength beam (Section 6); an optical fibre guides light by total internal reflection.</li>
+        <li><strong>How they work:</strong> laser light is amplified by stimulated emission; in a fibre, light bounces internally down a thin glass thread with minimal loss.</li>
+        <li><strong>Applications:</strong> communication (high-speed internet); medicine (surgery, eye &amp; cancer treatment); industry (cutting, welding); defence (ranging, directed-energy); barcode scanners &amp; printing.</li>
+        <li><strong>Significance:</strong> together they underpin the internet, healthcare &amp; strategic tech.</li>
+        <li><strong>Conclusion:</strong> photonics is a foundational, high-impact technology for India's digital future.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Explain how physics principles underpin renewable-energy technologies and their role in India's energy transition.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Renewable technologies convert natural energy flows using physics principles (Sections 3, 8, 9).</li>
+        <li><strong>Physics behind them:</strong>
+          <ul>
+            <li><strong>Solar PV</strong> &mdash; photoelectric effect (photons free electrons in semiconductors).</li>
+            <li><strong>Wind &amp; hydro</strong> &mdash; kinetic energy &rarr; electricity via electromagnetic induction; <strong>batteries</strong> &mdash; electrochemical storage.</li>
+          </ul>
+        </li>
+        <li><strong>Role in transition:</strong> cut fossil dependence &amp; emissions; energy security; support net-zero-2070 &amp; rural electrification.</li>
+        <li><strong>Challenges:</strong> intermittency &amp; storage, grid integration, land &amp; material needs.</li>
+        <li><strong>Conclusion:</strong> physics-driven renewables are central to a sustainable, self-reliant energy future.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> quantum technology &amp; mission &middot; EM spectrum &amp; communication &middot; lasers &amp; photonics &middot; semiconductors &amp; electronics &middot; renewable-energy physics &middot; superconductivity. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; Physics</h3>
+    <div class="grid-2">
+      <div>
+        <strong>Units &amp; mechanics:</strong>
+        <ul>
+          <li>SI base 7: m, kg, s, A, K, mol, cd; force = N, energy = J, power = W, pressure = Pa</li>
+          <li>Newton: 1st inertia, 2nd F=ma, 3rd action-reaction (rocket)</li>
+          <li>Momentum = mv (conserved); energy conserved, only transforms</li>
+          <li>Escape velocity ~11.2 km/s; Moon g = 1/6 Earth</li>
+        </ul>
+        <strong>Heat &amp; optics:</strong>
+        <ul>
+          <li>Transfer: conduction, convection, radiation (no medium)</li>
+          <li>Kelvin = SI temp; water high specific heat (coolant)</li>
+          <li>Sky blue &amp; sunset red = scattering; optical fibre = TIR</li>
+          <li>Convex mirror = wider view; myopia concave, hypermetropia convex</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Sound &amp; electricity:</strong>
+        <ul>
+          <li>Sound needs medium (no vacuum); ultrasound > 20 kHz (scan, SONAR)</li>
+          <li>Ohm: V = IR; AC (grid) vs DC (battery)</li>
+          <li>EM spectrum: radio&rarr;micro&rarr;IR&rarr;visible&rarr;UV&rarr;X-ray&rarr;gamma (energy up)</li>
+          <li>All EM waves = speed of light, travel in vacuum; gamma most energetic</li>
+        </ul>
+        <strong>Modern physics:</strong>
+        <ul>
+          <li>E = mc&sup2; (nuclear); photoelectric effect (solar cells)</li>
+          <li>Semiconductor = Si/Ge (electronics); superconductor = zero resistance</li>
+          <li>Quantum computing = qubits; National Quantum Mission</li>
+          <li>Laser = coherent single-colour beam</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes:</strong> SI units &middot; Newton's laws &middot; escape velocity &middot; TIR &amp; optical fibre &middot; scattering &middot; EM-wave uses &middot; ultrasound/SONAR &middot; semiconductors &middot; quantum &amp; superconductors.</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== SIDEBAR ===== -->
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Quick Reference &mdash; SI Units</h4>
+    <table>
+      <tr><th>Quantity</th><th>Unit</th></tr>
+      <tr><td>Force</td><td>Newton</td></tr>
+      <tr><td>Energy</td><td>Joule</td></tr>
+      <tr><td>Power</td><td>Watt</td></tr>
+      <tr><td>Pressure</td><td>Pascal</td></tr>
+      <tr><td>Frequency</td><td>Hertz</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>EM Wave &rarr; Use</h4>
+    <table>
+      <tr><th>Wave</th><th>Use</th></tr>
+      <tr><td>Microwave</td><td>Mobile/radar</td></tr>
+      <tr><td>Infrared</td><td>Remote/night</td></tr>
+      <tr><td>X-ray</td><td>Imaging</td></tr>
+      <tr><td>Gamma</td><td>Cancer therapy</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Key Data</h4>
+    <table>
+      <tr><th>Item</th><th>Value</th></tr>
+      <tr><td>Escape velocity</td><td>11.2 km/s</td></tr>
+      <tr><td>g (Earth)</td><td>9.8 m/s&sup2;</td></tr>
+      <tr><td>Audible sound</td><td>20&ndash;20k Hz</td></tr>
+      <tr><td>0 K</td><td>&minus;273&deg;C</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:90%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains GS-III</span><span class="fill"><span style="width:62%"></span></span></div>
+    <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:88%"></span></span></div>
+    <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:75%"></span></span></div>
+    <p style="margin-top:8px;font-size:11px;color:var(--muted);">Concept + application, rarely numerical.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Physics at a Glance</h4>
+    <ul>
+      <li>Units &amp; measurement</li>
+      <li>Motion &amp; Newton's laws</li>
+      <li>Energy &amp; power</li>
+      <li>Gravitation</li>
+      <li>Heat &amp; thermodynamics</li>
+      <li>Light &amp; optics</li>
+      <li>Sound &amp; EM spectrum</li>
+      <li>Modern &amp; quantum physics</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">Force = newton</span>
+    <span class="tag">Rocket = 3rd law</span>
+    <span class="tag green">Fibre = TIR</span>
+    <span class="tag">Sound needs medium</span>
+    <span class="tag orange">Gamma = highest E</span>
+    <span class="tag">Sky = scattering</span>
+    <span class="tag green">E = mc&sup2;</span>
+    <span class="tag">Semiconductor = Si</span>
+    <span class="tag orange">Escape 11.2 km/s</span>
+    <span class="tag">Qubit</span>
+  </div>
+
+  <div class="widget">
+    <h4>Data Sources to Bookmark</h4>
+    <ul>
+      <li><a href="https://dst.gov.in" target="_blank" rel="noopener">Dept of Science &amp; Technology</a></li>
+      <li><a href="https://dst.gov.in/quantum" target="_blank" rel="noopener">National Quantum Mission</a></li>
+      <li><a href="https://www.meity.gov.in" target="_blank" rel="noopener">MeitY</a></li>
+      <li><a href="https://pib.gov.in" target="_blank" rel="noopener">PIB</a></li>
+    </ul>
+    <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/science-technology/chemistry">S&amp;T T6: Chemistry</a></li>
+      <li><a href="/science-technology/space-technology-i-isro-and-launch-vehicles">S&amp;T T8: Space Tech I</a></li>
+      <li><a href="/science-technology/computer-and-it">S&amp;T T12: Computer &amp; IT</a></li>
+      <li><a href="/science-technology/nuclear-technology">S&amp;T T15: Nuclear Technology</a></li>
+      <li><a href="/science-technology">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding:0;margin:0;">
+      <li style="margin:4px 0;"><a href="#units" style="font-size:12px;">Units &amp; Measurement</a></li>
+      <li style="margin:4px 0;"><a href="#motion" style="font-size:12px;">Motion &amp; Laws</a></li>
+      <li style="margin:4px 0;"><a href="#energy" style="font-size:12px;">Energy &amp; Power</a></li>
+      <li style="margin:4px 0;"><a href="#gravity" style="font-size:12px;">Gravitation</a></li>
+      <li style="margin:4px 0;"><a href="#heat" style="font-size:12px;">Heat</a></li>
+      <li style="margin:4px 0;"><a href="#optics" style="font-size:12px;">Light &amp; Optics</a></li>
+      <li style="margin:4px 0;"><a href="#sound" style="font-size:12px;">Sound &amp; Waves</a></li>
+      <li style="margin:4px 0;"><a href="#electricity" style="font-size:12px;">Electricity &amp; Magnetism</a></li>
+      <li style="margin:4px 0;"><a href="#modern" style="font-size:12px;">Modern Physics</a></li>
+      <li style="margin:4px 0;"><a href="#currentaffairs" style="font-size:12px;">Current Affairs</a></li>
+      <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

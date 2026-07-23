@@ -1,0 +1,709 @@
+<!-- science-topic18 — auto-imported from scitech-topic18-emerging-frontiers-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 18: Emerging &amp; Frontier Technologies &mdash; Materials, Green Tech, Bio, Fusion &amp; Beyond</h1>
+  <p class="sub">This file rounds off the S&amp;T subject with the <em>frontier</em> &mdash; the technologies just entering the news. It covers <strong>advanced materials</strong> (graphene, metamaterials, superconductors), <strong>green &amp; clean tech</strong> (green hydrogen, fuel cells, batteries, carbon capture), <strong>synthetic biology &amp; gene drives</strong>, <strong>nuclear fusion frontiers</strong> (ITER, tokamaks), <strong>brain-computer interfaces &amp; neurotech</strong>, <strong>next-generation digital</strong> (6G, metaverse, digital twins, Web3), the <strong>convergence of technologies</strong> (bio&ndash;nano&ndash;info&ndash;cogno) and their <strong>ethics &amp; governance</strong> &mdash; with a labelled diagram, tables and real dated PYQs with full model answers. (Quantum/semiconductors are in Topic 14; AI in Topic 13; biotech in Topic 10.)</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Materials &middot; Green Tech</span>
+    <span class="pill">~35 min read</span>
+    <span class="pill">Fusion &amp; Neurotech</span>
+    <span class="pill">High CA Weight</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#overview">Emerging Tech &amp; Convergence</a></li>
+    <li><span class="num">2.</span><a href="#materials">Advanced Materials</a></li>
+    <li><span class="num">3.</span><a href="#hydrogen">Green Hydrogen &amp; Fuel Cells</a></li>
+    <li><span class="num">4.</span><a href="#storage">Energy Storage &amp; Carbon Capture</a></li>
+    <li><span class="num">5.</span><a href="#synbio">Synthetic Biology &amp; Gene Drives</a></li>
+    <li><span class="num">6.</span><a href="#fusion">Nuclear Fusion Frontiers</a></li>
+    <li><span class="num">7.</span><a href="#neuro">Neurotech &amp; Brain-Computer Interfaces</a></li>
+    <li><span class="num">8.</span><a href="#digital">Next-Gen Digital (6G, Web3)</a></li>
+    <li><span class="num">9.</span><a href="#ethics">Ethics &amp; Governance</a></li>
+    <li><span class="num">10.</span><a href="#currentaffairs">Current Affairs Link</a></li>
+    <li><span class="num">11.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><span class="num">12.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Tests Emerging Technologies</h3>
+  <p>This is a <strong>current-affairs-heavy, forward-looking</strong> area rewarding awareness of what's new. Sort your prep into three question-types:</p>
+  <ul>
+    <li><strong>Definitional / static</strong> &mdash; "what is graphene?", "what is green hydrogen?", "what is a brain-computer interface?". Recall of the new concept &amp; its property.</li>
+    <li><strong>Statement-elimination</strong> &mdash; hydrogen colours, material properties, fusion facts where one detail decides the answer.</li>
+    <li><strong>Applied / current</strong> &mdash; a technology or mission in the news (National Green Hydrogen Mission, ITER, 6G) linked to a fundamental &mdash; the strong GS-III innovation &amp; sustainability bridge.</li>
+  </ul>
+  <p><strong>Highest-frequency themes:</strong> graphene &amp; advanced materials &middot; green hydrogen &amp; fuel cells &middot; batteries &amp; carbon capture &middot; synthetic biology &middot; fusion/ITER &middot; brain-computer interfaces &middot; 6G/Web3 &middot; technology convergence &amp; ethics.</p>
+</div>
+
+<!-- ===== SECTION 1 ===== -->
+<section class="notes" id="overview">
+  <h2>1. Emerging Technologies &amp; Convergence</h2>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 460 190" width="460" height="190" role="img" aria-label="Four converging technology fields — Nano, Bio, Info and Cogno — overlapping at the centre">
+      <rect x="0" y="0" width="460" height="190" fill="#ffffff"/>
+      <g font-family="sans-serif" font-size="11" text-anchor="middle">
+        <text x="230" y="18" font-weight="bold" font-size="12">NBIC Convergence</text>
+        <circle cx="185" cy="90" r="55" fill="#1a3d5c" fill-opacity="0.14" stroke="#1a3d5c"/>
+        <circle cx="275" cy="90" r="55" fill="#c47820" fill-opacity="0.14" stroke="#c47820"/>
+        <circle cx="230" cy="135" r="55" fill="#2e7d32" fill-opacity="0.14" stroke="#2e7d32"/>
+        <circle cx="230" cy="55" r="55" fill="#7b1fa2" fill-opacity="0.12" stroke="#7b1fa2"/>
+        <text x="150" y="90" font-size="10">Nano</text>
+        <text x="312" y="90" font-size="10">Info</text>
+        <text x="230" y="165" font-size="10">Bio</text>
+        <text x="230" y="30" font-size="10">Cogno</text>
+        <text x="230" y="98" font-size="8" font-weight="bold">converge</text>
+      </g>
+    </svg>
+    <div class="svg-caption">Fig 18.1 &mdash; Frontier progress increasingly comes from <strong>convergence</strong> &mdash; Nano, Bio, Info &amp; Cogno (NBIC) technologies overlapping (e.g. bio-nano sensors, AI-designed materials, neuro-computing).</div>
+  </div>
+  <ul>
+    <li><strong>Emerging technologies</strong> are early-stage, fast-evolving fields with disruptive potential &mdash; often at the <strong>convergence</strong> of disciplines (bio + nano + info + cogno, "NBIC").</li>
+    <li>They promise big gains (energy, health, materials, computing) but bring uncertainty, ethical questions &amp; the need for anticipatory governance.</li>
+    <li>India tracks these through missions, the PSA's advisory councils &amp; sectoral programmes (Topic 17).</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> emerging tech is disruptive, early-stage &amp; often <strong>convergent</strong> (NBIC &mdash; nano/bio/info/cogno). Their value lies in cross-domain combinations (e.g. AI-designed materials, bio-nano sensors); governance must be anticipatory.</div>
+</section>
+
+<!-- ===== SECTION 2 ===== -->
+<section class="notes" id="materials">
+  <h2>2. Advanced Materials</h2>
+  <ul>
+    <li><strong>Graphene</strong> = a single layer of carbon atoms (a 2D material); extremely strong, light, conductive &amp; flexible &mdash; used in electronics, sensors, batteries &amp; composites (Topic 11 link).</li>
+    <li><strong>Metamaterials</strong> = engineered materials with properties not found in nature (e.g. negative refractive index) &mdash; enabling "cloaking", better antennas &amp; superlenses.</li>
+    <li><strong>Superconductors</strong> = materials with <strong>zero electrical resistance</strong> below a critical temperature; used in MRI, maglev &amp; fusion magnets. "Room-temperature superconductivity" is a holy grail.</li>
+    <li><strong>Other:</strong> shape-memory alloys, aerogels, perovskites (solar), and biodegradable/smart materials.</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims traps:</strong> graphene = one-atom-thick 2D carbon (strong &amp; highly conductive); metamaterials get properties from <strong>structure</strong>, not composition; superconductors have <strong>zero resistance</strong> below a critical temperature (used in MRI &amp; maglev).</div>
+</section>
+
+<!-- ===== SECTION 3 ===== -->
+<section class="notes" id="hydrogen">
+  <h2>3. Green Hydrogen &amp; Fuel Cells</h2>
+  <ul>
+    <li><strong>Hydrogen "colours"</strong> denote how it's made: <strong>green</strong> (electrolysis of water using renewable electricity &mdash; clean), <strong>grey</strong> (from fossil gas), <strong>blue</strong> (fossil + carbon capture). Green hydrogen is a clean fuel &amp; energy carrier.</li>
+    <li><strong>Fuel cell</strong> = a device that converts hydrogen + oxygen directly into electricity, emitting only water &mdash; powering vehicles &amp; backup systems.</li>
+    <li><strong>National Green Hydrogen Mission</strong> aims to make India a global hub for green-hydrogen production &amp; export, decarbonising industry &amp; transport.</li>
+    <li>Uses: green steel &amp; fertiliser, long-haul transport, energy storage &amp; grid balancing.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> green hydrogen = made by electrolysis using <strong>renewable</strong> power (zero-carbon); grey = from fossil gas; blue = fossil + carbon capture. A fuel cell converts hydrogen to electricity, emitting only water. India runs a National Green Hydrogen Mission.</div>
+</section>
+
+<!-- ===== SECTION 4 ===== -->
+<section class="notes" id="storage">
+  <h2>4. Energy Storage &amp; Carbon Capture</h2>
+  <ul>
+    <li><strong>Batteries:</strong> lithium-ion dominates; emerging chemistries &mdash; <strong>sodium-ion</strong>, solid-state &amp; flow batteries &mdash; aim for safer, cheaper, longer-life storage. Critical minerals (lithium, cobalt) drive supply-chain concerns.</li>
+    <li><strong>Storage matters</strong> because solar/wind are intermittent; large-scale storage (batteries, pumped hydro, green hydrogen) is key to a renewable grid.</li>
+    <li><strong>Carbon Capture, Utilisation &amp; Storage (CCUS)</strong> traps CO&#8322; from industry/power &amp; stores or reuses it &mdash; a tool for hard-to-abate sectors &amp; net-zero.</li>
+    <li>India's net-zero-by-2070 goal &amp; energy transition make storage &amp; CCUS strategic (links to critical-mineral security &amp; KABIL).</li>
+  </ul>
+  <div class="callout warn"><strong>GS-III hook:</strong> the clean-energy transition needs cheap storage (batteries, green hydrogen, pumped hydro) to tame intermittent renewables, plus CCUS for hard-to-abate industry. This ties to critical-mineral security &mdash; a strategic vulnerability driving indigenous exploration &amp; recycling.</div>
+</section>
+
+<!-- ===== SECTION 5 ===== -->
+<section class="notes" id="synbio">
+  <h2>5. Synthetic Biology &amp; Gene Drives</h2>
+  <ul>
+    <li><strong>Synthetic biology</strong> = designing &amp; building new biological parts or organisms (engineering biology) &mdash; e.g. microbes engineered to make fuels, medicines or materials (Topic 10 link).</li>
+    <li><strong>Gene drives</strong> = genetic systems that force a trait to spread rapidly through a wild population (e.g. to suppress malaria-carrying mosquitoes) &mdash; powerful but ecologically risky.</li>
+    <li><strong>Applications:</strong> biomanufacturing, biofuels, engineered vaccines &amp; therapies, biosensors, and lab-grown/cultivated meat.</li>
+    <li><strong>Concerns:</strong> biosafety, biosecurity (dual-use), ecological impact &amp; ethics &mdash; needing strong regulation (Topic 10's GEAC).</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> synthetic biology <strong>engineers</strong> new biological systems (beyond editing existing genes); gene drives push an inherited trait rapidly through a wild population (proposed for malaria control) but raise ecological &amp; biosecurity concerns.</div>
+</section>
+
+<!-- ===== SECTION 6 ===== -->
+<section class="notes" id="fusion">
+  <h2>6. Nuclear Fusion Frontiers</h2>
+  <ul>
+    <li><strong>Fusion</strong> (Topic 15) joins light nuclei (deuterium + tritium) to release huge energy with abundant fuel &amp; little long-lived waste &mdash; the "clean" nuclear frontier.</li>
+    <li><strong>ITER</strong> (International Thermonuclear Experimental Reactor, France) is the world's largest fusion project; <strong>India is one of the partner members</strong>. It uses a <strong>tokamak</strong> (magnetic-confinement doughnut) to hold super-hot plasma.</li>
+    <li>India runs its own tokamaks (Aditya, SST-1) &amp; contributes key components to ITER.</li>
+    <li><strong>Challenge:</strong> achieving sustained net-energy-gain fusion at commercial scale; private fusion start-ups are accelerating progress.</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims traps:</strong> fusion = joining nuclei (Sun/H-bomb), more energy &amp; less waste than fission but not yet commercial; <strong>ITER</strong> (in France) is the flagship international fusion project &amp; India is a partner; a <strong>tokamak</strong> uses magnetic fields to confine hot plasma.</div>
+</section>
+
+<!-- ===== SECTION 7 ===== -->
+<section class="notes" id="neuro">
+  <h2>7. Neurotech &amp; Brain-Computer Interfaces</h2>
+  <ul>
+    <li><strong>Brain-Computer Interface (BCI)</strong> = a system that reads brain signals to control a computer/device directly &mdash; helping paralysed patients communicate or move prosthetics.</li>
+    <li><strong>Neurotechnology</strong> more broadly includes brain imaging, neural implants &amp; neuro-stimulation for medical &amp; enhancement uses.</li>
+    <li><strong>Promise:</strong> restoring movement/speech, treating neurological disorders; <strong>concerns:</strong> mental privacy ("neuro-rights"), consent, safety &amp; enhancement ethics.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> a brain-computer interface (BCI) links the brain directly to a device by reading neural signals &mdash; used to help paralysed patients &amp; control prosthetics; it raises new "neuro-rights" &amp; mental-privacy questions.</div>
+</section>
+
+<!-- ===== SECTION 8 ===== -->
+<section class="notes" id="digital">
+  <h2>8. Next-Generation Digital</h2>
+  <ul>
+    <li><strong>6G</strong> = the next mobile generation after 5G (Topic 12) &mdash; targeting ultra-high speeds, near-zero latency &amp; ubiquitous sensing/AI; India's <strong>Bharat 6G Vision</strong> aims for a lead role in standards &amp; patents.</li>
+    <li><strong>Metaverse</strong> = immersive, persistent virtual/augmented-reality worlds (VR/AR); <strong>digital twins</strong> = virtual replicas of physical systems for simulation &amp; monitoring.</li>
+    <li><strong>Web3</strong> = a decentralised internet built on blockchain (Topic 12) &mdash; user-owned data &amp; tokens; still evolving.</li>
+    <li>These converge with AI, IoT &amp; cloud to reshape work, industry &amp; entertainment.</li>
+  </ul>
+  <div class="callout warn"><strong>GS-III hook:</strong> next-gen digital (6G, metaverse, digital twins, Web3) will reshape connectivity, industry &amp; the economy. India's Bharat 6G Vision seeks a shift from technology adopter to <strong>standard-setter</strong> &mdash; a strategic bid for digital self-reliance &amp; IP.</div>
+</section>
+
+<!-- ===== SECTION 9 ===== -->
+<section class="notes" id="ethics">
+  <h2>9. Ethics, Governance &amp; the Road Ahead</h2>
+  <ul>
+    <li>Emerging tech raises shared concerns: <strong>safety, privacy, dual-use/security, equity (digital &amp; tech divides), job disruption &amp; ecological risk</strong>.</li>
+    <li><strong>Anticipatory governance</strong> &mdash; regulating <em>before</em> harms materialise &mdash; is needed: ethics boards, standards, international cooperation &amp; the precautionary principle.</li>
+    <li>India's approach: mission-mode programmes, the PSA/PM-STIAC (Topic 17), sectoral regulators (GEAC, AERB) &amp; a push for indigenous capability &amp; standards.</li>
+    <li><strong>Opportunity for India:</strong> leapfrogging via frontier tech (green hydrogen, 6G, fusion, synbio) &mdash; if backed by R&amp;D funding, talent &amp; sound governance.</li>
+  </ul>
+  <div class="callout warn"><strong>GS-III hook:</strong> the recurring Mains angle is <strong>promise vs peril</strong> &mdash; each frontier tech offers big gains but needs anticipatory, ethical governance (safety, privacy, equity, security). India's edge lies in combining indigenous R&amp;D with agile, precautionary regulation.</div>
+</section>
+
+<!-- ===== SECTION 10: CURRENT AFFAIRS ===== -->
+<section class="notes" id="currentaffairs">
+  <h2>10. Current Affairs Link (2024&ndash;2026)</h2>
+  <p>Frontier tech is the most dynamic S&amp;T space &mdash; almost always in the news. Verify the latest before the exam. <span class="update-tag">check for latest update or data</span></p>
+  <div class="callout update"><strong>Green hydrogen &amp; storage:</strong> National Green Hydrogen Mission projects, battery/PLI moves &amp; critical-mineral tie-ups apply Sections 3&ndash;4. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout update"><strong>Fusion &amp; 6G:</strong> ITER milestones &amp; Bharat 6G Vision progress apply Sections 6 &amp; 8. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout warn"><strong>Bio &amp; neuro frontiers:</strong> synthetic-biology &amp; BCI advances (and their regulation) apply Sections 5 &amp; 7. <span class="update-tag">check for latest update or data</span></div>
+  <table>
+    <tr><th>Recent theme</th><th>Fundamental it tests</th><th>Why it matters for UPSC</th></tr>
+    <tr><td>Green Hydrogen Mission</td><td>Green hydrogen</td><td>GS-III energy transition.</td></tr>
+    <tr><td>ITER / fusion</td><td>Fusion</td><td>GS-III frontier energy.</td></tr>
+    <tr><td>Bharat 6G Vision</td><td>Next-gen digital</td><td>GS-III digital self-reliance.</td></tr>
+    <tr><td>Synthetic biology</td><td>Engineering biology</td><td>GS-III bio-economy &amp; ethics.</td></tr>
+  </table>
+  <ul>
+    <li><strong>Recurring exam hooks:</strong> graphene &amp; materials &middot; green hydrogen colours &amp; fuel cells &middot; batteries &amp; CCUS &middot; synthetic biology &amp; gene drives &middot; ITER/tokamak &middot; BCI &middot; 6G/Web3 &middot; convergence &amp; ethics.</li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 11: PRELIMS ===== -->
+<section class="notes" id="prelims-pyq">
+  <h2>11. Prelims PYQs</h2>
+  <p style="font-size:13px;color:var(--muted)"><em>Objective questions anchored to genuinely tested UPSC themes on emerging technologies. Each carries a worked rationale.</em></p>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Advanced materials</div>
+    <p class="q-stem"><strong>Q:</strong> Graphene is &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> a single layer of carbon atoms arranged in a 2D lattice</li>
+      <li><span class="opt-key">(b)</span> a form of liquid silicon</li>
+      <li><span class="opt-key">(c)</span> a radioactive metal</li>
+      <li><span class="opt-key">(d)</span> a type of plastic</li>
+    </ul>
+    <p class="ans">Answer: (a) Graphene is a one-atom-thick 2D sheet of carbon &mdash; extremely strong, light &amp; highly conductive, used in electronics, sensors &amp; batteries.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Green hydrogen</div>
+    <p class="q-stem"><strong>Q:</strong> "Green hydrogen" is hydrogen produced by &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> burning coal</li>
+      <li><span class="opt-key">(b)</span> steam reforming of natural gas</li>
+      <li class="correct"><span class="opt-key">(c)</span> electrolysis of water using renewable electricity</li>
+      <li><span class="opt-key">(d)</span> nuclear fission</li>
+    </ul>
+    <p class="ans">Answer: (c) Green hydrogen is made by splitting water via electrolysis using renewable power (zero-carbon); grey is from fossil gas, blue is fossil + carbon capture.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Fuel cell</div>
+    <p class="q-stem"><strong>Q:</strong> A hydrogen fuel cell produces electricity and emits mainly &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> carbon dioxide</li>
+      <li class="correct"><span class="opt-key">(b)</span> water</li>
+      <li><span class="opt-key">(c)</span> methane</li>
+      <li><span class="opt-key">(d)</span> nitrogen oxides</li>
+    </ul>
+    <p class="ans">Answer: (b) A fuel cell combines hydrogen &amp; oxygen to make electricity, emitting only water &mdash; a clean alternative for vehicles &amp; backup power.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Superconductor</div>
+    <p class="q-stem"><strong>Q:</strong> A superconductor is a material that, below a critical temperature, has &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> very high electrical resistance</li>
+      <li class="correct"><span class="opt-key">(b)</span> zero electrical resistance</li>
+      <li><span class="opt-key">(c)</span> no magnetic property</li>
+      <li><span class="opt-key">(d)</span> the ability to generate energy</li>
+    </ul>
+    <p class="ans">Answer: (b) Superconductors have zero electrical resistance below a critical temperature &mdash; used in MRI machines, maglev trains &amp; fusion magnets.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Fusion project</div>
+    <p class="q-stem"><strong>Q:</strong> ITER, of which India is a member, is associated with &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> nuclear fission power</li>
+      <li class="correct"><span class="opt-key">(b)</span> experimental nuclear fusion using a tokamak</li>
+      <li><span class="opt-key">(c)</span> space exploration</li>
+      <li><span class="opt-key">(d)</span> gene editing</li>
+    </ul>
+    <p class="ans">Answer: (b) ITER (in France) is the world's largest experimental fusion reactor using a tokamak to confine hot plasma; India is a partner member.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Synthetic biology</div>
+    <p class="q-stem"><strong>Q:</strong> Synthetic biology is best described as &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> the study of fossils</li>
+      <li class="correct"><span class="opt-key">(b)</span> designing and constructing new biological parts or organisms</li>
+      <li><span class="opt-key">(c)</span> cloning only</li>
+      <li><span class="opt-key">(d)</span> synthetic fertiliser production</li>
+    </ul>
+    <p class="ans">Answer: (b) Synthetic biology engineers new biological systems (e.g. microbes that make fuels or medicines), going beyond editing existing genes.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Brain-computer interface</div>
+    <p class="q-stem"><strong>Q:</strong> A Brain-Computer Interface (BCI) primarily &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> stores data in DNA</li>
+      <li class="correct"><span class="opt-key">(b)</span> reads brain signals to control a device directly</li>
+      <li><span class="opt-key">(c)</span> is a type of battery</li>
+      <li><span class="opt-key">(d)</span> generates electricity from the brain</li>
+    </ul>
+    <p class="ans">Answer: (b) A BCI reads neural signals to control computers/prosthetics directly &mdash; helping paralysed patients, but raising mental-privacy ("neuro-rights") concerns.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Next-gen digital</div>
+    <p class="q-stem"><strong>Q:</strong> A "digital twin" is &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> two identical smartphones</li>
+      <li class="correct"><span class="opt-key">(b)</span> a virtual replica of a physical system used for simulation &amp; monitoring</li>
+      <li><span class="opt-key">(c)</span> a cryptocurrency</li>
+      <li><span class="opt-key">(d)</span> a backup hard drive</li>
+    </ul>
+    <p class="ans">Answer: (b) A digital twin is a live virtual replica of a physical object/process, used to simulate, monitor &amp; optimise it &mdash; part of next-gen digital &amp; Industry 4.0.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> graphene/metamaterials/superconductors &middot; hydrogen colours &amp; fuel cells &middot; battery chemistries &amp; CCUS &middot; synthetic biology &amp; gene drives &middot; ITER/tokamak &middot; BCI &amp; neuro-rights &middot; 6G/Web3/digital twin &middot; NBIC convergence. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 12: MAINS ===== -->
+<section class="notes" id="mains-pyq">
+  <h2>12. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>Emerging tech anchors GS-III questions on innovation, sustainability &amp; governance. The frameworks below show how to deploy it analytically.</em></p>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Green hydrogen is often called the fuel of the future. Discuss its potential and challenges for India.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Green hydrogen (Section 3) &mdash; made by renewable-powered electrolysis &mdash; is a clean fuel central to India's energy transition.</li>
+        <li><strong>Potential:</strong>
+          <ul>
+            <li>Decarbonises hard-to-abate sectors (steel, fertiliser, transport), enables storage &amp; exports; India's National Green Hydrogen Mission targets a global hub.</li>
+          </ul>
+        </li>
+        <li><strong>Challenges:</strong> high cost, electrolyser &amp; renewable-power scale-up, water use, storage/transport &amp; infrastructure.</li>
+        <li><strong>Way forward:</strong> incentives, R&amp;D, falling renewable costs, demand mandates &amp; global partnerships.</li>
+        <li><strong>Conclusion:</strong> green hydrogen can advance energy security, net-zero &amp; industrial competitiveness.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Emerging technologies offer great promise but also serious risks. Examine with the need for anticipatory governance.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Frontier tech (Section 9) &mdash; synbio, AI, neurotech, gene drives &mdash; is disruptive &amp; convergent, demanding foresight.</li>
+        <li><strong>Promise:</strong>
+          <ul>
+            <li>Clean energy, better health, new materials, economic leapfrogging.</li>
+          </ul>
+        </li>
+        <li><strong>Risks:</strong> safety, privacy, dual-use/biosecurity, ecological harm, equity &amp; job disruption.</li>
+        <li><strong>Anticipatory governance:</strong> ethics boards, standards, precautionary principle, agile regulation &amp; international cooperation; India's PSA/PM-STIAC &amp; sectoral regulators (GEAC, AERB).</li>
+        <li><strong>Conclusion:</strong> harnessing frontier tech safely needs innovation paired with foresightful, ethical regulation.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> How can energy storage &amp; carbon capture support India's clean-energy transition?</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Storage &amp; CCUS (Section 4) address the intermittency of renewables &amp; hard-to-abate emissions.</li>
+        <li><strong>Roles:</strong>
+          <ul>
+            <li>Batteries/pumped hydro/green hydrogen store surplus renewable power; CCUS traps CO&#8322; from industry &amp; power.</li>
+          </ul>
+        </li>
+        <li><strong>Challenges:</strong> cost, critical-mineral supply, CCUS scale &amp; economics.</li>
+        <li><strong>Conclusion:</strong> both are essential enablers of a reliable, low-carbon grid toward net-zero-2070.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> "The convergence of technologies is the defining feature of the coming decades." Discuss with India's opportunities.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Progress increasingly comes from convergence (Section 1) &mdash; NBIC (nano/bio/info/cogno) blending across fields.</li>
+        <li><strong>Manifestations:</strong>
+          <ul>
+            <li>AI-designed materials &amp; drugs, bio-nano sensors, neuro-computing, synthetic biology + AI &mdash; multiplying possibilities.</li>
+          </ul>
+        </li>
+        <li><strong>India's opportunities:</strong> leapfrog via green hydrogen, 6G, fusion, synbio; strong talent &amp; digital base; missions &amp; ANRF funding.</li>
+        <li><strong>Challenges:</strong> R&amp;D funding, interdisciplinary skills, governance &amp; ethics.</li>
+        <li><strong>Conclusion:</strong> converging tech, well-governed, can propel India into technological leadership.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> green hydrogen &amp; energy transition &middot; storage &amp; CCUS &middot; synthetic biology promise/peril &middot; fusion &amp; ITER &middot; emerging-tech governance &amp; ethics &middot; NBIC convergence &amp; India's leapfrog. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; Emerging Frontiers</h3>
+    <div class="grid-2">
+      <div>
+        <strong>Materials &amp; energy:</strong>
+        <ul>
+          <li>Graphene = 1-atom 2D carbon (strong, conductive)</li>
+          <li>Metamaterials = structure-derived properties; superconductor = zero resistance</li>
+          <li>Green H&#8322; = electrolysis + renewables; grey/blue = fossil-based</li>
+          <li>Fuel cell = H&#8322;&rarr;electricity, emits water; National Green Hydrogen Mission</li>
+        </ul>
+        <strong>Storage &amp; fusion:</strong>
+        <ul>
+          <li>Batteries: Li-ion, sodium-ion, solid-state; CCUS for hard-to-abate</li>
+          <li>Fusion = joining nuclei; ITER (France, tokamak); India a partner</li>
+          <li>India tokamaks: Aditya, SST-1</li>
+          <li>Net-zero 2070; critical-mineral security</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Bio &amp; neuro:</strong>
+        <ul>
+          <li>Synthetic biology = engineering new organisms/parts</li>
+          <li>Gene drives = force a trait through wild populations (malaria)</li>
+          <li>BCI = read brain signals to control devices; neuro-rights</li>
+          <li>Regulators: GEAC, AERB</li>
+        </ul>
+        <strong>Digital &amp; convergence:</strong>
+        <ul>
+          <li>6G = post-5G (Bharat 6G Vision); digital twin = virtual replica</li>
+          <li>Web3 = decentralised, blockchain-based internet</li>
+          <li>NBIC convergence = nano+bio+info+cogno</li>
+          <li>Governance = anticipatory, precautionary, ethical</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes:</strong> graphene &amp; materials &middot; green hydrogen &amp; fuel cells &middot; batteries &amp; CCUS &middot; synthetic biology &middot; fusion/ITER &middot; BCI &middot; 6G/Web3 &middot; convergence &amp; ethics.</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== SIDEBAR ===== -->
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Quick Reference &mdash; Frontiers</h4>
+    <table>
+      <tr><th>Tech</th><th>Key idea</th></tr>
+      <tr><td>Graphene</td><td>2D carbon</td></tr>
+      <tr><td>Green H&#8322;</td><td>Electrolysis</td></tr>
+      <tr><td>Fusion</td><td>Join nuclei</td></tr>
+      <tr><td>BCI</td><td>Brain&ndash;device</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Missions &amp; Projects</h4>
+    <table>
+      <tr><th>Item</th><th>Note</th></tr>
+      <tr><td>Green H&#8322; Mission</td><td>Hydrogen hub</td></tr>
+      <tr><td>ITER</td><td>Fusion, India partner</td></tr>
+      <tr><td>Bharat 6G</td><td>Next-gen telecom</td></tr>
+      <tr><td>SST-1/Aditya</td><td>India tokamaks</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Key Facts &amp; Data</h4>
+    <table>
+      <tr><th>Item</th><th>Value</th></tr>
+      <tr><td>Green H&#8322;</td><td>Renewable electrolysis</td></tr>
+      <tr><td>Superconductor</td><td>Zero resistance</td></tr>
+      <tr><td>ITER</td><td>France, tokamak</td></tr>
+      <tr><td>NBIC</td><td>Nano/Bio/Info/Cogno</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:85%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains GS-III</span><span class="fill"><span style="width:90%"></span></span></div>
+    <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:78%"></span></span></div>
+    <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:95%"></span></span></div>
+    <p style="margin-top:8px;font-size:11px;color:var(--muted);">Most CA-driven &mdash; track missions &amp; news.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Frontiers at a Glance</h4>
+    <ul>
+      <li>Convergence (NBIC)</li>
+      <li>Advanced materials</li>
+      <li>Green hydrogen</li>
+      <li>Storage &amp; CCUS</li>
+      <li>Synthetic biology</li>
+      <li>Fusion (ITER)</li>
+      <li>Neurotech &amp; BCI</li>
+      <li>6G &amp; Web3</li>
+      <li>Ethics &amp; governance</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">Graphene</span>
+    <span class="tag">Superconductor</span>
+    <span class="tag green">Green hydrogen</span>
+    <span class="tag">Fuel cell</span>
+    <span class="tag orange">CCUS</span>
+    <span class="tag">Synthetic biology</span>
+    <span class="tag green">ITER/tokamak</span>
+    <span class="tag">BCI</span>
+    <span class="tag orange">6G</span>
+    <span class="tag">Web3</span>
+    <span class="tag green">NBIC</span>
+  </div>
+
+  <div class="widget">
+    <h4>Data Sources to Bookmark</h4>
+    <ul>
+      <li><a href="https://mnre.gov.in" target="_blank" rel="noopener">MNRE (Green H&#8322;)</a></li>
+      <li><a href="https://dst.gov.in" target="_blank" rel="noopener">DST</a></li>
+      <li><a href="https://www.iter.org" target="_blank" rel="noopener">ITER</a></li>
+      <li><a href="https://pib.gov.in" target="_blank" rel="noopener">PIB</a></li>
+    </ul>
+    <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/science-technology/advanced-computing-supercomputers-and-quantum">S&amp;T T14: Advanced Computing</a></li>
+      <li><a href="/science-technology/biotechnology">S&amp;T T10: Biotechnology</a></li>
+      <li><a href="/science-technology/nuclear-technology">S&amp;T T15: Nuclear Technology</a></li>
+      <li><a href="/science-technology/india-s-science-and-technology-ecosystem">S&amp;T T17: R&amp;D &amp; STIP</a></li>
+      <li><a href="/science-technology">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding:0;margin:0;">
+      <li style="margin:4px 0;"><a href="#overview" style="font-size:12px;">Emerging &amp; Convergence</a></li>
+      <li style="margin:4px 0;"><a href="#materials" style="font-size:12px;">Advanced Materials</a></li>
+      <li style="margin:4px 0;"><a href="#hydrogen" style="font-size:12px;">Green Hydrogen</a></li>
+      <li style="margin:4px 0;"><a href="#storage" style="font-size:12px;">Storage &amp; CCUS</a></li>
+      <li style="margin:4px 0;"><a href="#synbio" style="font-size:12px;">Synthetic Biology</a></li>
+      <li style="margin:4px 0;"><a href="#fusion" style="font-size:12px;">Fusion Frontiers</a></li>
+      <li style="margin:4px 0;"><a href="#neuro" style="font-size:12px;">Neurotech &amp; BCI</a></li>
+      <li style="margin:4px 0;"><a href="#digital" style="font-size:12px;">Next-Gen Digital</a></li>
+      <li style="margin:4px 0;"><a href="#ethics" style="font-size:12px;">Ethics &amp; Governance</a></li>
+      <li style="margin:4px 0;"><a href="#currentaffairs" style="font-size:12px;">Current Affairs</a></li>
+      <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

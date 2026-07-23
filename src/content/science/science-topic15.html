@@ -1,0 +1,733 @@
+<!-- science-topic15 — auto-imported from scitech-topic15-nuclear-technology-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 15: Nuclear Technology &mdash; Fission, Fusion, Reactors &amp; Non-Proliferation</h1>
+  <p class="sub">This file is a complete GS-III account of nuclear science &amp; policy. It explains <strong>nuclear fission &amp; fusion</strong>, <strong>radioactivity &amp; isotopes</strong>, <strong>nuclear reactors</strong> &amp; their types (PHWR, FBR, PWR, SMR), <strong>India's three-stage nuclear power programme</strong> &amp; the <strong>thorium</strong> plan, <strong>nuclear power in India</strong> (NPCIL, Kudankulam), <strong>nuclear safety &amp; waste</strong> (Chernobyl, Fukushima), the <strong>non-proliferation regime</strong> (NPT, IAEA, NSG &amp; the 2008 nuclear deal), and <strong>non-power applications</strong> in medicine, agriculture &amp; industry &mdash; with labelled diagrams, tables and real dated PYQs with full model answers. (Basic atomic physics is in Topic 7.)</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Fission &middot; Fusion</span>
+    <span class="pill">~35 min read</span>
+    <span class="pill">3-Stage &amp; Thorium</span>
+    <span class="pill">NPT / IAEA / NSG</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#fissionfusion">Fission &amp; Fusion</a></li>
+    <li><span class="num">2.</span><a href="#radioactivity">Radioactivity &amp; Isotopes</a></li>
+    <li><span class="num">3.</span><a href="#reactors">Nuclear Reactors &amp; Types</a></li>
+    <li><span class="num">4.</span><a href="#threestage">Three-Stage Programme</a></li>
+    <li><span class="num">5.</span><a href="#thorium">Thorium &amp; Fuel Cycle</a></li>
+    <li><span class="num">6.</span><a href="#powerindia">Nuclear Power in India</a></li>
+    <li><span class="num">7.</span><a href="#safety">Nuclear Safety &amp; Waste</a></li>
+    <li><span class="num">8.</span><a href="#nonprolif">Non-Proliferation Regime</a></li>
+    <li><span class="num">9.</span><a href="#applications">Non-Power Applications</a></li>
+    <li><span class="num">10.</span><a href="#currentaffairs">Current Affairs Link</a></li>
+    <li><span class="num">11.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><span class="num">12.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Tests Nuclear Technology</h3>
+  <p>This is a <strong>high-frequency</strong> area bridging pure science &amp; strategic policy. Sort your prep into three question-types:</p>
+  <ul>
+    <li><strong>Definitional / static</strong> &mdash; "what is fission?", "what is a fast breeder reactor?", "which isotope is fissile?". Recall of concepts &amp; terms.</li>
+    <li><strong>Statement-elimination</strong> &mdash; reactor types, three-stage-programme sequence, NPT/NSG facts where one detail decides the answer.</li>
+    <li><strong>Applied / current</strong> &mdash; a reactor, mission or treaty in the news (Kudankulam, thorium, NSG, fusion/ITER) linked to a fundamental &mdash; the strong GS-III energy &amp; strategic-autonomy bridge.</li>
+  </ul>
+  <p><strong>Highest-frequency themes:</strong> fission vs fusion &middot; U-235/U-238/Pu-239/U-233 &amp; fissile vs fertile &middot; reactor types (PHWR/FBR/SMR) &middot; three-stage programme &amp; thorium &middot; Kudankulam &amp; NPCIL &middot; NPT/IAEA/NSG &amp; the 2008 deal &middot; radioisotopes in medicine/agriculture.</p>
+</div>
+
+<!-- ===== SECTION 1 ===== -->
+<section class="notes" id="fissionfusion">
+  <h2>1. Nuclear Fission &amp; Fusion</h2>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 470 190" width="470" height="190" role="img" aria-label="A neutron splits a uranium-235 nucleus releasing energy and more neutrons, sustaining a chain reaction">
+      <rect x="0" y="0" width="470" height="190" fill="#ffffff"/>
+      <g font-family="sans-serif" font-size="10" text-anchor="middle">
+        <text x="235" y="18" font-weight="bold" font-size="12">Nuclear Fission &mdash; Chain Reaction</text>
+        <circle cx="40" cy="95" r="4" fill="#c47820"/><text x="40" y="118" font-size="8">neutron</text>
+        <line x1="46" y1="95" x2="96" y2="95" stroke="#555" stroke-dasharray="3 3"/>
+        <circle cx="120" cy="95" r="26" fill="#e8f0f8" stroke="#1a3d5c"/><text x="120" y="92">U-235</text><text x="120" y="104" font-size="7">nucleus</text>
+        <path d="M150 95 L185 95" stroke="#1a3d5c" stroke-width="1.5" marker-end="url(#ar)"/>
+        <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#1a3d5c"/></marker></defs>
+        <circle cx="215" cy="70" r="16" fill="#f7e9d8" stroke="#c47820"/><text x="215" y="73" font-size="8">fragment</text>
+        <circle cx="215" cy="120" r="16" fill="#f7e9d8" stroke="#c47820"/><text x="215" y="123" font-size="8">fragment</text>
+        <circle cx="270" cy="55" r="4" fill="#c47820"/><circle cx="278" cy="95" r="4" fill="#c47820"/><circle cx="270" cy="135" r="4" fill="#c47820"/>
+        <text x="300" y="60" font-size="8" text-anchor="start">+ 2&ndash;3 neutrons</text>
+        <text x="300" y="98" font-size="8" text-anchor="start" fill="#b00">+ ENERGY (heat)</text>
+        <text x="300" y="136" font-size="8" text-anchor="start">&rarr; hit more U-235</text>
+        <text x="395" y="120" font-size="8" fill="#555">&rarr; chain reaction</text>
+      </g>
+    </svg>
+    <div class="svg-caption">Fig 15.1 &mdash; In fission, a slow neutron splits a U-235 nucleus into lighter fragments, releasing heat and 2&ndash;3 fresh neutrons; these split further nuclei, sustaining a controlled <strong>chain reaction</strong> in a reactor (uncontrolled in a bomb).</div>
+  </div>
+  <ul>
+    <li><strong>Nuclear fission</strong> = a heavy nucleus (e.g. U-235, Pu-239) <strong>splits</strong> into lighter nuclei when struck by a neutron, releasing large energy (from mass&ndash;energy, E=mc&sup2;) plus 2&ndash;3 neutrons that sustain a <strong>chain reaction</strong>. This powers reactors &amp; atom bombs.</li>
+    <li><strong>Nuclear fusion</strong> = light nuclei (e.g. hydrogen isotopes deuterium &amp; tritium) <strong>join</strong> to form a heavier nucleus (helium), releasing even more energy &mdash; it powers the Sun &amp; the hydrogen bomb.</li>
+    <li><strong>Fusion vs fission:</strong> fusion needs extreme temperature/pressure, produces little long-lived waste &amp; abundant fuel, but is not yet commercially viable (research reactors like <strong>ITER</strong>, tokamaks). Fission is proven but leaves radioactive waste.</li>
+    <li><strong>Critical mass</strong> = minimum fissile mass needed to sustain a chain reaction; a <strong>moderator</strong> slows neutrons to make fission more likely.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> fission = splitting (reactors &amp; atom bomb); fusion = joining (Sun &amp; hydrogen bomb); fusion releases more energy per unit mass &amp; less waste but is not yet commercial; ITER is the international fusion project. Both convert a tiny mass into huge energy (E=mc&sup2;).</div>
+</section>
+
+<!-- ===== SECTION 2 ===== -->
+<section class="notes" id="radioactivity">
+  <h2>2. Radioactivity &amp; Isotopes</h2>
+  <ul>
+    <li><strong>Radioactivity</strong> = spontaneous emission of radiation from unstable nuclei as <strong>alpha</strong> (&alpha;, helium nuclei), <strong>beta</strong> (&beta;, electrons) &amp; <strong>gamma</strong> (&gamma;, high-energy waves) rays. Penetration: gamma &gt; beta &gt; alpha; ionising ability the reverse.</li>
+    <li><strong>Isotopes</strong> = atoms of the same element with the same protons but different neutrons (e.g. U-235 &amp; U-238; C-12 &amp; C-14). Some isotopes are radioactive (<strong>radioisotopes</strong>).</li>
+    <li><strong>Half-life</strong> = time for half of a radioactive sample to decay &mdash; used in <strong>carbon dating</strong> (C-14) &amp; medical dosing.</li>
+    <li><strong>Fissile vs fertile:</strong> <strong>fissile</strong> nuclei readily undergo fission with slow neutrons (U-235, Pu-239, U-233); <strong>fertile</strong> nuclei (U-238, Th-232) themselves don't fission but can be <strong>converted</strong> into fissile material in a reactor.</li>
+  </ul>
+  <table>
+    <tr><th>Isotope</th><th>Nature</th><th>Role</th></tr>
+    <tr><td>U-235</td><td>Fissile (0.7% of natural U)</td><td>Reactor &amp; bomb fuel</td></tr>
+    <tr><td>U-238</td><td>Fertile</td><td>&rarr; Pu-239 (Stage II)</td></tr>
+    <tr><td>Pu-239</td><td>Fissile (man-made)</td><td>FBR fuel, weapons</td></tr>
+    <tr><td>Th-232</td><td>Fertile</td><td>&rarr; U-233 (Stage III)</td></tr>
+    <tr><td>U-233</td><td>Fissile (man-made)</td><td>Thorium-cycle fuel</td></tr>
+  </table>
+  <div class="callout warn"><strong>Prelims traps:</strong> only <strong>U-235</strong> is naturally fissile (and only 0.7% of natural uranium); U-238 &amp; Th-232 are <strong>fertile</strong> &mdash; converted to Pu-239 &amp; U-233 respectively. Half-life underlies carbon dating; gamma rays are the most penetrating.</div>
+</section>
+
+<!-- ===== SECTION 3 ===== -->
+<section class="notes" id="reactors">
+  <h2>3. Nuclear Reactors &amp; Their Types</h2>
+  <ul>
+    <li>A <strong>nuclear reactor</strong> controls a fission chain reaction to release heat, which boils water to spin a steam turbine &amp; generate electricity. Key parts: <strong>fuel</strong> (U/Pu), <strong>moderator</strong> (slows neutrons &mdash; heavy water/graphite/light water), <strong>control rods</strong> (absorb neutrons &mdash; boron/cadmium, to control/stop the reaction), <strong>coolant</strong> &amp; <strong>shielding</strong>.</li>
+    <li><strong>PHWR (Pressurised Heavy Water Reactor)</strong> &mdash; India's workhorse; uses <strong>natural uranium</strong> fuel with <strong>heavy water</strong> (D&#8322;O) as moderator &amp; coolant. Indigenous, no enrichment needed.</li>
+    <li><strong>PWR (Pressurised Water Reactor)</strong> &mdash; uses enriched uranium &amp; light water (e.g. Kudankulam, Russian VVER).</li>
+    <li><strong>FBR (Fast Breeder Reactor)</strong> &mdash; uses fast (unmoderated) neutrons &amp; <strong>breeds</strong> more fissile fuel (Pu-239 from U-238) than it consumes; core of India's Stage II (PFBR at Kalpakkam).</li>
+    <li><strong>SMR (Small Modular Reactor)</strong> &mdash; compact, factory-built reactors (up to ~300 MW) for flexible, safer deployment; a global &amp; Indian focus area.</li>
+  </ul>
+  <table>
+    <tr><th>Reactor</th><th>Fuel</th><th>Moderator</th></tr>
+    <tr><td>PHWR</td><td>Natural uranium</td><td>Heavy water (D&#8322;O)</td></tr>
+    <tr><td>PWR / VVER</td><td>Enriched uranium</td><td>Light water</td></tr>
+    <tr><td>FBR</td><td>Pu-239 / U-238 blanket</td><td>None (fast neutrons)</td></tr>
+    <tr><td>SMR</td><td>Enriched (varies)</td><td>Varies (compact)</td></tr>
+  </table>
+  <div class="callout warn"><strong>Prelims traps:</strong> India's mainstay = <strong>PHWR</strong> (natural uranium + heavy-water moderator); a <strong>breeder</strong> makes more fuel than it burns using fast neutrons (no moderator); control rods (boron/cadmium) <strong>absorb</strong> neutrons to control the reaction; heavy water is a moderator, not a fuel.</div>
+</section>
+
+<!-- ===== SECTION 4 ===== -->
+<section class="notes" id="threestage">
+  <h2>4. India's Three-Stage Nuclear Power Programme</h2>
+  <ul>
+    <li>Conceived by <strong>Dr Homi Bhabha</strong>, the programme aims to use India's <strong>limited uranium but vast thorium</strong> reserves through three linked stages, each feeding the next.</li>
+    <li><strong>Stage I &mdash; PHWRs:</strong> burn natural uranium (U-235) in heavy-water reactors; the spent fuel yields <strong>plutonium-239</strong>.</li>
+    <li><strong>Stage II &mdash; Fast Breeder Reactors:</strong> use that <strong>Pu-239</strong> to breed more Pu-239 (from U-238) <em>and</em> to convert <strong>Th-232 &rarr; U-233</strong> in a thorium blanket, building up a U-233 stockpile.</li>
+    <li><strong>Stage III &mdash; Thorium reactors:</strong> use <strong>U-233 with thorium</strong> for a nearly self-sustaining thorium cycle &mdash; tapping India's huge thorium reserves for long-term energy security.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> the three-stage programme (Homi Bhabha) sequence = PHWR (U-235 &rarr; Pu-239) &rarr; FBR (Pu-239 breeds Pu &amp; makes U-233 from Th-232) &rarr; Thorium reactors (U-233 + Th). It exists because India has <strong>little uranium but abundant thorium</strong> (monazite sands of Kerala/Odisha).</div>
+</section>
+
+<!-- ===== SECTION 5 ===== -->
+<section class="notes" id="thorium">
+  <h2>5. Thorium &amp; the Fuel Cycle</h2>
+  <ul>
+    <li>India holds among the world's <strong>largest thorium reserves</strong> (in <strong>monazite</strong> beach sands), but only <strong>modest uranium</strong> &mdash; the entire three-stage logic flows from this.</li>
+    <li><strong>Thorium (Th-232) is fertile, not fissile</strong> &mdash; it must first be converted to fissile <strong>U-233</strong> inside a reactor before it can generate power. Hence thorium cannot be used directly in Stage I.</li>
+    <li><strong>Advantages of thorium:</strong> abundant, produces less long-lived waste &amp; less weapons-usable plutonium, better proliferation resistance.</li>
+    <li><strong>AHWR (Advanced Heavy Water Reactor)</strong> is designed to demonstrate large-scale thorium use. <strong>Reprocessing</strong> &amp; the <strong>closed fuel cycle</strong> (recycling spent fuel) are central to India's approach.</li>
+  </ul>
+  <div class="callout warn"><strong>GS-III hook:</strong> thorium is India's strategic energy trump card &mdash; but because it is <strong>fertile</strong>, unlocking it needs the breeder (Stage II) to create U-233 first. Delays in Stage II (FBR commissioning) are the bottleneck for the thorium age; hence interest in imported uranium (post-2008 deal) to expand Stage I.</div>
+</section>
+
+<!-- ===== SECTION 6 ===== -->
+<section class="notes" id="powerindia">
+  <h2>6. Nuclear Power in India</h2>
+  <ul>
+    <li><strong>NPCIL (Nuclear Power Corporation of India Ltd)</strong> operates India's power reactors; the <strong>DAE (Department of Atomic Energy)</strong> oversees the programme; <strong>BARC</strong> is the premier R&amp;D body.</li>
+    <li>Nuclear power is a small but firm, low-carbon share of India's electricity mix, mostly from indigenous <strong>PHWRs</strong> plus imported <strong>LWRs</strong>.</li>
+    <li><strong>Kudankulam (Tamil Nadu)</strong> = India's largest nuclear plant, Russian <strong>VVER (PWR)</strong> units built with Russian cooperation.</li>
+    <li>Other stations: Tarapur (India's oldest), Rawatbhata, Kaiga, Kakrapar, Kalpakkam (with the <strong>PFBR</strong>), Narora. Government has approved a fleet-mode expansion of indigenous 700 MWe PHWRs.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> reactors are run by <strong>NPCIL</strong> under the <strong>DAE</strong>; <strong>Kudankulam</strong> (Tamil Nadu) uses Russian VVER (PWR) reactors; <strong>Tarapur</strong> is the oldest; the <strong>PFBR</strong> (prototype fast breeder) is at <strong>Kalpakkam</strong>; indigenous PHWRs are being built in "fleet mode" (700 MWe).</div>
+</section>
+
+<!-- ===== SECTION 7 ===== -->
+<section class="notes" id="safety">
+  <h2>7. Nuclear Safety &amp; Waste Management</h2>
+  <ul>
+    <li><strong>Major accidents:</strong> <strong>Chernobyl</strong> (1986, USSR &mdash; reactor explosion, worst civil nuclear disaster) &amp; <strong>Fukushima</strong> (2011, Japan &mdash; earthquake+tsunami caused meltdowns; reshaped global safety &amp; siting norms). India's own <strong>Three Mile Island</strong> reference point is 1979 (USA).</li>
+    <li><strong>Radioactive waste</strong> is classified low/intermediate/high-level; high-level waste stays hazardous for millennia &mdash; managed by <strong>vitrification</strong> (locking in glass) &amp; deep-geological storage.</li>
+    <li><strong>Regulation:</strong> the <strong>AERB (Atomic Energy Regulatory Board)</strong> is India's nuclear safety regulator. Debate exists over making it fully independent.</li>
+    <li><strong>Civil Liability for Nuclear Damage Act, 2010</strong> channels accident liability to the operator (with supplier recourse) &mdash; a sticking point for foreign suppliers.</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims traps:</strong> Chernobyl (1986, USSR) &amp; Fukushima (2011, Japan, tsunami-triggered) are the landmark disasters; India's regulator = <strong>AERB</strong>; high-level waste is managed by <strong>vitrification</strong> + deep geological disposal; the 2010 Civil Liability Act provides <strong>supplier recourse</strong>, which deterred some foreign vendors.</div>
+</section>
+
+<!-- ===== SECTION 8 ===== -->
+<section class="notes" id="nonprolif">
+  <h2>8. The Non-Proliferation Regime</h2>
+  <ul>
+    <li><strong>NPT (Non-Proliferation Treaty, 1968)</strong> recognises only 5 nuclear-weapon states (US, Russia, UK, France, China) &amp; bars others from weapons. <strong>India has NOT signed the NPT</strong>, calling it discriminatory; India is a responsible nuclear power with a <strong>"No First Use"</strong> doctrine &amp; a voluntary test moratorium.</li>
+    <li><strong>IAEA (International Atomic Energy Agency)</strong> promotes peaceful nuclear use &amp; runs <strong>safeguards/inspections</strong> to prevent diversion to weapons.</li>
+    <li><strong>NSG (Nuclear Suppliers Group)</strong> controls exports of nuclear material &amp; technology. India seeks membership (backed by most, blocked mainly by China over the NPT-signature issue).</li>
+    <li><strong>The 2008 India&ndash;US Civil Nuclear Deal (123 Agreement)</strong> + the NSG waiver ended India's nuclear isolation, letting India trade in civil nuclear fuel/tech while keeping military facilities outside safeguards (separation plan). Other regimes: <strong>CTBT</strong> (test ban &mdash; India hasn't signed), <strong>MTCR/Wassenaar/Australia Group</strong> (India is a member of these three).</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> India is <strong>not</strong> a signatory to the NPT or CTBT but follows No First Use &amp; a test moratorium; the <strong>2008 NSG waiver + 123 Agreement</strong> opened civil nuclear commerce; India is a member of the <strong>MTCR, Wassenaar Arrangement &amp; Australia Group</strong> but not the NSG (China blocks). IAEA safeguards apply to India's civil (not military) reactors.</div>
+</section>
+
+<!-- ===== SECTION 9 ===== -->
+<section class="notes" id="applications">
+  <h2>9. Non-Power Applications of Nuclear Technology</h2>
+  <ul>
+    <li><strong>Medicine:</strong> radioisotopes for diagnosis (technetium-99m, iodine-131 scans, PET using fluorine-18) &amp; therapy (cobalt-60 &amp; radiotherapy for cancer); sterilisation of medical equipment.</li>
+    <li><strong>Agriculture:</strong> mutation breeding for improved crop varieties, radiation-based <strong>food preservation/irradiation</strong> (onions, spices), the <strong>Sterile Insect Technique</strong> for pest control, and tracers for fertiliser/soil studies.</li>
+    <li><strong>Industry:</strong> gamma radiography to detect flaws in metals/welds, thickness &amp; level gauges, and <strong>nucleonic gauges</strong>.</li>
+    <li><strong>Other:</strong> carbon dating (archaeology), hydrology tracers, and space (radioisotope thermoelectric generators). India's <strong>BARC</strong> supplies radioisotopes; Bhabhatron is an indigenous cancer-therapy machine.</li>
+  </ul>
+  <div class="callout warn"><strong>GS-III hook:</strong> nuclear technology is not just power &mdash; radioisotopes (Co-60, I-131, Tc-99m) drive cancer care, food irradiation extends shelf life &amp; cuts waste, and industrial gauging aids quality control. This "atoms for peace" dimension often anchors Mains value-addition &amp; Prelims one-liners.</div>
+</section>
+
+<!-- ===== SECTION 10: CURRENT AFFAIRS ===== -->
+<section class="notes" id="currentaffairs">
+  <h2>10. Current Affairs Link (2024&ndash;2026)</h2>
+  <p>Nuclear energy &amp; strategy are recurring tech-policy stories &mdash; verify the latest before the exam. <span class="update-tag">check for latest update or data</span></p>
+  <div class="callout update"><strong>Nuclear expansion:</strong> fleet-mode 700 MWe PHWRs, SMR plans &amp; moves to open the sector to private/foreign participation apply Sections 3 &amp; 6. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout update"><strong>Fast breeder &amp; thorium:</strong> progress on the PFBR at Kalpakkam (Stage II) &amp; thorium-cycle milestones apply Sections 4&ndash;5. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout warn"><strong>Fusion &amp; diplomacy:</strong> ITER progress and NSG-membership/liability-law debates apply Sections 1 &amp; 8. <span class="update-tag">check for latest update or data</span></div>
+  <table>
+    <tr><th>Recent theme</th><th>Fundamental it tests</th><th>Why it matters for UPSC</th></tr>
+    <tr><td>Fleet-mode PHWRs / SMRs</td><td>Reactors</td><td>GS-III clean-energy transition.</td></tr>
+    <tr><td>PFBR at Kalpakkam</td><td>Three-stage / breeder</td><td>GS-III energy security.</td></tr>
+    <tr><td>NSG membership</td><td>Non-proliferation</td><td>GS-II/III strategic autonomy.</td></tr>
+    <tr><td>ITER / fusion</td><td>Fusion</td><td>GS-III frontier energy.</td></tr>
+  </table>
+  <ul>
+    <li><strong>Recurring exam hooks:</strong> fission vs fusion &middot; fissile vs fertile &middot; PHWR/FBR/SMR &middot; three-stage &amp; thorium &middot; Kudankulam/NPCIL &middot; Chernobyl/Fukushima &amp; AERB &middot; NPT/IAEA/NSG &amp; the 2008 deal &middot; radioisotopes.</li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 11: PRELIMS ===== -->
+<section class="notes" id="prelims-pyq">
+  <h2>11. Prelims PYQs</h2>
+  <p style="font-size:13px;color:var(--muted)"><em>Objective questions anchored to genuinely tested UPSC themes on nuclear technology. Each carries a worked rationale.</em></p>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Fission vs fusion</div>
+    <p class="q-stem"><strong>Q:</strong> The energy of the Sun is produced by &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> nuclear fission of uranium</li>
+      <li class="correct"><span class="opt-key">(b)</span> nuclear fusion of hydrogen</li>
+      <li><span class="opt-key">(c)</span> chemical burning</li>
+      <li><span class="opt-key">(d)</span> radioactive decay only</li>
+    </ul>
+    <p class="ans">Answer: (b) The Sun fuses hydrogen nuclei into helium (fusion), releasing enormous energy; fission (splitting) powers reactors and atom bombs.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Fissile material</div>
+    <p class="q-stem"><strong>Q:</strong> Which of the following is a naturally occurring fissile material?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Uranium-238</li>
+      <li><span class="opt-key">(b)</span> Thorium-232</li>
+      <li class="correct"><span class="opt-key">(c)</span> Uranium-235</li>
+      <li><span class="opt-key">(d)</span> Plutonium-239</li>
+    </ul>
+    <p class="ans">Answer: (c) U-235 (0.7% of natural uranium) is the only naturally fissile isotope; U-238 &amp; Th-232 are fertile; Pu-239 is man-made in reactors.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Indian reactor</div>
+    <p class="q-stem"><strong>Q:</strong> India's indigenous PHWRs primarily use &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> natural uranium fuel with heavy water as moderator</li>
+      <li><span class="opt-key">(b)</span> enriched uranium with graphite moderator</li>
+      <li><span class="opt-key">(c)</span> plutonium with light water</li>
+      <li><span class="opt-key">(d)</span> thorium directly</li>
+    </ul>
+    <p class="ans">Answer: (a) The Pressurised Heavy Water Reactor uses natural uranium fuel with heavy water (D&#8322;O) as both moderator and coolant &mdash; no enrichment needed.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Three-stage</div>
+    <p class="q-stem"><strong>Q:</strong> The third stage of India's nuclear power programme is based on &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> natural uranium</li>
+      <li><span class="opt-key">(b)</span> plutonium-239</li>
+      <li class="correct"><span class="opt-key">(c)</span> thorium and uranium-233</li>
+      <li><span class="opt-key">(d)</span> enriched uranium</li>
+    </ul>
+    <p class="ans">Answer: (c) Stage III uses thorium (Th-232) with fissile U-233 bred earlier &mdash; tapping India's vast thorium reserves. Stage I = U-235 (PHWR), Stage II = Pu-239 (FBR).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Breeder reactor</div>
+    <p class="q-stem"><strong>Q:</strong> A Fast Breeder Reactor is one that &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> uses only thorium fuel</li>
+      <li class="correct"><span class="opt-key">(b)</span> produces more fissile material than it consumes</li>
+      <li><span class="opt-key">(c)</span> requires no fuel</li>
+      <li><span class="opt-key">(d)</span> uses light water as moderator</li>
+    </ul>
+    <p class="ans">Answer: (b) A breeder uses fast (unmoderated) neutrons to convert fertile U-238 into fissile Pu-239, breeding more fuel than it burns; India's PFBR is at Kalpakkam.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Control rods</div>
+    <p class="q-stem"><strong>Q:</strong> In a nuclear reactor, control rods (of boron/cadmium) are used to &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> speed up neutrons</li>
+      <li class="correct"><span class="opt-key">(b)</span> absorb neutrons and control the reaction</li>
+      <li><span class="opt-key">(c)</span> act as fuel</li>
+      <li><span class="opt-key">(d)</span> cool the core</li>
+    </ul>
+    <p class="ans">Answer: (b) Control rods absorb excess neutrons to control or stop the chain reaction; the moderator (e.g. heavy water) slows neutrons, and the coolant removes heat.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Non-proliferation</div>
+    <p class="q-stem"><strong>Q:</strong> With reference to India and the nuclear regime, which is correct?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> India has signed the NPT</li>
+      <li class="correct"><span class="opt-key">(b)</span> India is a member of the MTCR, Wassenaar Arrangement and Australia Group but not the NSG</li>
+      <li><span class="opt-key">(c)</span> India has signed the CTBT</li>
+      <li><span class="opt-key">(d)</span> India is a founding NSG member</li>
+    </ul>
+    <p class="ans">Answer: (b) India has not signed the NPT or CTBT; it joined the MTCR, Wassenaar Arrangement and Australia Group, but NSG membership is blocked (mainly by China).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Radioisotope</div>
+    <p class="q-stem"><strong>Q:</strong> Cobalt-60 is widely used in &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> cancer radiotherapy and sterilisation</li>
+      <li><span class="opt-key">(b)</span> making nuclear fuel</li>
+      <li><span class="opt-key">(c)</span> carbon dating</li>
+      <li><span class="opt-key">(d)</span> generating electricity</li>
+    </ul>
+    <p class="ans">Answer: (a) Cobalt-60 emits gamma rays used in cancer radiotherapy and to sterilise equipment/food; C-14 (not Co-60) is used in carbon dating.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> fission vs fusion &amp; ITER &middot; fissile vs fertile (U-235/U-238/Th-232/Pu-239/U-233) &middot; PHWR/FBR/SMR &middot; three-stage sequence &middot; Kudankulam/PFBR &middot; AERB &amp; liability law &middot; NPT/NSG &amp; 2008 deal &middot; radioisotopes. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 12: MAINS ===== -->
+<section class="notes" id="mains-pyq">
+  <h2>12. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>Nuclear technology anchors GS-III questions on energy security, self-reliance &amp; strategy. The frameworks below show how to deploy it analytically.</em></p>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Explain India's three-stage nuclear power programme and its significance for energy security.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Conceived by Homi Bhabha, the three-stage programme (Section 4) leverages India's limited uranium but vast thorium to build energy self-reliance.</li>
+        <li><strong>The three stages:</strong>
+          <ul>
+            <li>Stage I &mdash; PHWRs burn natural uranium, yielding Pu-239; Stage II &mdash; FBRs breed Pu-239 and convert Th-232 to U-233; Stage III &mdash; thorium reactors run on U-233.</li>
+          </ul>
+        </li>
+        <li><strong>Significance:</strong> converts abundant thorium into usable fuel &rarr; long-term energy security, low-carbon power, strategic autonomy &amp; reduced import dependence.</li>
+        <li><strong>Challenges:</strong> slow FBR commissioning, technical complexity of the thorium cycle, uranium shortage in Stage I, safety &amp; cost.</li>
+        <li><strong>Way forward:</strong> accelerate the PFBR &amp; AHWR, use imported uranium (post-2008 deal) to expand Stage I, and add SMRs.</li>
+        <li><strong>Conclusion:</strong> the programme is India's roadmap to a self-reliant, thorium-powered low-carbon future.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Nuclear energy is a double-edged sword. Discuss its role in India's clean-energy transition and the safety concerns involved.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Nuclear power (Sections 6&ndash;7) offers firm low-carbon electricity but carries safety &amp; waste risks &mdash; a double-edged sword.</li>
+        <li><strong>Role in clean-energy transition:</strong>
+          <ul>
+            <li>Reliable base-load, low lifecycle emissions, complements intermittent solar/wind, supports net-zero &amp; energy security.</li>
+          </ul>
+        </li>
+        <li><strong>Safety &amp; other concerns:</strong> accident risk (Chernobyl, Fukushima), long-lived radioactive waste, cost &amp; time overruns, public acceptance &amp; the liability law deterring suppliers.</li>
+        <li><strong>Mitigation:</strong> strong independent regulation (AERB), robust siting &amp; passive-safety designs, SMRs, vitrification &amp; deep disposal, transparency.</li>
+        <li><strong>Conclusion:</strong> with rigorous safety, nuclear energy is a valuable pillar of India's low-carbon mix.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III / GS-II <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Examine India's stand on the global non-proliferation regime and the significance of the 2008 civil nuclear deal.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> India (Section 8) is outside the NPT, viewing it as discriminatory, yet upholds a responsible record (No First Use, test moratorium).</li>
+        <li><strong>India's stand:</strong>
+          <ul>
+            <li>Rejects discriminatory NPT/CTBT; seeks recognition as a responsible nuclear power; member of MTCR/Wassenaar/Australia Group; seeks NSG entry.</li>
+          </ul>
+        </li>
+        <li><strong>Significance of the 2008 deal:</strong> the 123 Agreement + NSG waiver ended nuclear isolation, enabling civil fuel/technology imports while separating military facilities &mdash; boosting energy &amp; diplomatic standing.</li>
+        <li><strong>Continuing hurdles:</strong> NSG membership blocked by China, liability-law concerns, uranium supply.</li>
+        <li><strong>Conclusion:</strong> the deal was a diplomatic breakthrough; NSG entry remains the unfinished agenda of India's strategic autonomy.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Beyond electricity, how does nuclear technology serve society? Illustrate.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Nuclear technology (Section 9) has wide "atoms for peace" applications beyond power.</li>
+        <li><strong>Applications:</strong>
+          <ul>
+            <li><strong>Medicine</strong> &mdash; cancer radiotherapy (Co-60), diagnostic scans (Tc-99m, I-131), equipment sterilisation.</li>
+            <li><strong>Agriculture</strong> &mdash; mutation breeding, food irradiation, sterile insect technique.</li>
+            <li><strong>Industry &amp; science</strong> &mdash; flaw detection, gauging, carbon dating, hydrology tracers.</li>
+          </ul>
+        </li>
+        <li><strong>India's role:</strong> BARC supplies radioisotopes; Bhabhatron aids affordable cancer care.</li>
+        <li><strong>Conclusion:</strong> nuclear science advances health, food security &amp; industry &mdash; not just energy.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> three-stage &amp; thorium for energy security &middot; nuclear in the clean-energy transition &amp; safety &middot; India &amp; non-proliferation / NSG / 2008 deal &middot; SMRs &amp; private participation &middot; non-power applications. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; Nuclear Technology</h3>
+    <div class="grid-2">
+      <div>
+        <strong>Science:</strong>
+        <ul>
+          <li>Fission = splitting (reactors/atom bomb); Fusion = joining (Sun/H-bomb, ITER)</li>
+          <li>Fissile: U-235 (natural), Pu-239, U-233 (man-made)</li>
+          <li>Fertile: U-238 &rarr; Pu-239; Th-232 &rarr; U-233</li>
+          <li>Half-life &rarr; carbon dating; &gamma; most penetrating</li>
+        </ul>
+        <strong>Reactors:</strong>
+        <ul>
+          <li>PHWR = natural U + heavy water (India's mainstay)</li>
+          <li>FBR = fast neutrons, breeds fuel (PFBR, Kalpakkam)</li>
+          <li>Control rods (boron/cadmium) absorb neutrons</li>
+          <li>SMR = small modular, up to ~300 MW</li>
+        </ul>
+      </div>
+      <div>
+        <strong>India's programme:</strong>
+        <ul>
+          <li>3-stage (Homi Bhabha): PHWR &rarr; FBR &rarr; Thorium</li>
+          <li>Thorium is fertile; needs U-233 first (via breeder)</li>
+          <li>NPCIL/DAE/BARC; AERB = regulator</li>
+          <li>Kudankulam = Russian VVER (PWR); Tarapur oldest</li>
+        </ul>
+        <strong>Policy &amp; uses:</strong>
+        <ul>
+          <li>India NOT in NPT/CTBT; No First Use; in MTCR/Wassenaar/Australia Group; not NSG</li>
+          <li>2008 deal = 123 Agreement + NSG waiver</li>
+          <li>Chernobyl (1986), Fukushima (2011); vitrification for waste</li>
+          <li>Radioisotopes: Co-60, I-131, Tc-99m (medicine/agri/industry)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes:</strong> fission vs fusion &middot; fissile vs fertile &middot; PHWR/FBR/SMR &middot; three-stage &amp; thorium &middot; Kudankulam/NPCIL &middot; AERB &amp; safety &middot; NPT/IAEA/NSG &amp; 2008 deal &middot; radioisotopes.</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== SIDEBAR ===== -->
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Quick Reference &mdash; Nuclear</h4>
+    <table>
+      <tr><th>Term</th><th>Key idea</th></tr>
+      <tr><td>Fission</td><td>Splitting</td></tr>
+      <tr><td>Fusion</td><td>Joining</td></tr>
+      <tr><td>Fissile</td><td>U-235/Pu-239/U-233</td></tr>
+      <tr><td>Fertile</td><td>U-238/Th-232</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Reactors &amp; Bodies</h4>
+    <table>
+      <tr><th>Item</th><th>Note</th></tr>
+      <tr><td>PHWR</td><td>Natural U + D&#8322;O</td></tr>
+      <tr><td>PFBR</td><td>Kalpakkam (Stage II)</td></tr>
+      <tr><td>Kudankulam</td><td>Russian VVER</td></tr>
+      <tr><td>AERB</td><td>Regulator</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Key Facts &amp; Data</h4>
+    <table>
+      <tr><th>Item</th><th>Value</th></tr>
+      <tr><td>U-235 in natural U</td><td>~0.7%</td></tr>
+      <tr><td>Chernobyl</td><td>1986, USSR</td></tr>
+      <tr><td>Fukushima</td><td>2011, Japan</td></tr>
+      <tr><td>Nuclear deal</td><td>2008 (123 + NSG)</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:90%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains GS-III</span><span class="fill"><span style="width:88%"></span></span></div>
+    <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:88%"></span></span></div>
+    <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:82%"></span></span></div>
+    <p style="margin-top:8px;font-size:11px;color:var(--muted);">Static-heavy &mdash; master reactor &amp; treaty facts.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Nuclear Tech at a Glance</h4>
+    <ul>
+      <li>Fission &amp; fusion</li>
+      <li>Radioactivity &amp; isotopes</li>
+      <li>Reactors &amp; types</li>
+      <li>Three-stage programme</li>
+      <li>Thorium &amp; fuel cycle</li>
+      <li>Nuclear power in India</li>
+      <li>Safety &amp; waste</li>
+      <li>Non-proliferation</li>
+      <li>Non-power uses</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">Fission/Fusion</span>
+    <span class="tag">U-235</span>
+    <span class="tag green">Th-232</span>
+    <span class="tag">PHWR</span>
+    <span class="tag orange">FBR/PFBR</span>
+    <span class="tag">3-Stage</span>
+    <span class="tag green">Kudankulam</span>
+    <span class="tag">AERB</span>
+    <span class="tag orange">NPT/NSG</span>
+    <span class="tag">2008 deal</span>
+    <span class="tag green">Co-60/I-131</span>
+  </div>
+
+  <div class="widget">
+    <h4>Data Sources to Bookmark</h4>
+    <ul>
+      <li><a href="https://dae.gov.in" target="_blank" rel="noopener">DAE</a></li>
+      <li><a href="https://www.npcil.nic.in" target="_blank" rel="noopener">NPCIL</a></li>
+      <li><a href="https://www.barc.gov.in" target="_blank" rel="noopener">BARC</a></li>
+      <li><a href="https://www.iaea.org" target="_blank" rel="noopener">IAEA</a></li>
+    </ul>
+    <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/science-technology/physics">S&amp;T T7: Physics</a></li>
+      <li><a href="/science-technology/defence-technology">S&amp;T T16: Defence Technology</a></li>
+      <li><a href="/science-technology/space-technology-ii-missions-and-space-economy">S&amp;T T9: Space Tech II</a></li>
+      <li><a href="/science-technology/emerging-and-frontier-technologies">S&amp;T T18: Emerging Frontiers</a></li>
+      <li><a href="/science-technology">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding:0;margin:0;">
+      <li style="margin:4px 0;"><a href="#fissionfusion" style="font-size:12px;">Fission &amp; Fusion</a></li>
+      <li style="margin:4px 0;"><a href="#radioactivity" style="font-size:12px;">Radioactivity</a></li>
+      <li style="margin:4px 0;"><a href="#reactors" style="font-size:12px;">Reactors &amp; Types</a></li>
+      <li style="margin:4px 0;"><a href="#threestage" style="font-size:12px;">Three-Stage Programme</a></li>
+      <li style="margin:4px 0;"><a href="#thorium" style="font-size:12px;">Thorium &amp; Fuel Cycle</a></li>
+      <li style="margin:4px 0;"><a href="#powerindia" style="font-size:12px;">Nuclear Power in India</a></li>
+      <li style="margin:4px 0;"><a href="#safety" style="font-size:12px;">Safety &amp; Waste</a></li>
+      <li style="margin:4px 0;"><a href="#nonprolif" style="font-size:12px;">Non-Proliferation</a></li>
+      <li style="margin:4px 0;"><a href="#applications" style="font-size:12px;">Non-Power Uses</a></li>
+      <li style="margin:4px 0;"><a href="#currentaffairs" style="font-size:12px;">Current Affairs</a></li>
+      <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

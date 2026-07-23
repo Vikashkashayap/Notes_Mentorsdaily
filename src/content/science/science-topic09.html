@@ -1,0 +1,712 @@
+<!-- science-topic09 — auto-imported from scitech-topic09-space-technology-2-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 9: Space Technology II &mdash; Missions, Space Economy &amp; Governance</h1>
+  <p class="sub">This second space file covers the part that dominates current affairs &mdash; India's flagship <strong>missions</strong>: human spaceflight (<strong>Gaganyaan</strong>), the lunar programme (<strong>Chandrayaan-1/2/3</strong>), interplanetary missions (<strong>Mangalyaan</strong>/Mars), and solar &amp; astronomy missions (<strong>Aditya-L1, AstroSat, XPoSat</strong>) &mdash; plus the booming <strong>space economy &amp; privatisation</strong> (<strong>IN-SPACe, NSIL</strong>, startups), <strong>space debris</strong> &amp; sustainability, <strong>space law &amp; governance</strong>, and the <strong>emerging frontiers</strong> (reusable rockets, NGLV, the planned Bharatiya Antariksh Station, space tourism) &mdash; with labelled diagrams, tables and real dated PYQs with full model answers. (Fundamentals, ISRO &amp; launch vehicles are in Topic 8.)</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Gaganyaan &middot; Chandrayaan-3</span>
+    <span class="pill">~40 min read</span>
+    <span class="pill">Space Economy</span>
+    <span class="pill">Very High CA Weight</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#gaganyaan">Human Spaceflight &mdash; Gaganyaan</a></li>
+    <li><span class="num">2.</span><a href="#lunar">Lunar Programme &mdash; Chandrayaan</a></li>
+    <li><span class="num">3.</span><a href="#interplanetary">Interplanetary Missions</a></li>
+    <li><span class="num">4.</span><a href="#astronomy">Solar &amp; Space Astronomy</a></li>
+    <li><span class="num">5.</span><a href="#economy">Space Economy &amp; Privatisation</a></li>
+    <li><span class="num">6.</span><a href="#debris">Space Debris &amp; Sustainability</a></li>
+    <li><span class="num">7.</span><a href="#governance">Space Law &amp; Governance</a></li>
+    <li><span class="num">8.</span><a href="#emerging">Emerging Frontiers</a></li>
+    <li><span class="num">9.</span><a href="#devsecurity">Space for Development &amp; Security</a></li>
+    <li><span class="num">10.</span><a href="#currentaffairs">Current Affairs Link</a></li>
+    <li><span class="num">11.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><span class="num">12.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Tests Space Missions</h3>
+  <p>Missions &amp; the space economy are the <strong>hottest current-affairs</strong> part of S&amp;T &mdash; almost every mission triggers a Prelims &amp; a Mains question. Sort your prep into three question-types:</p>
+  <ul>
+    <li><strong>Definitional / static</strong> &mdash; "what does Chandrayaan-3 carry?", "where is Aditya-L1 placed?", "what is IN-SPACe?". Recall of mission names, orbits, payloads &amp; agencies.</li>
+    <li><strong>Statement-elimination</strong> &mdash; mission firsts, landing sites, instrument purposes, agency roles where one wrong detail decides the answer.</li>
+    <li><strong>Applied / current</strong> &mdash; a mission or reform in the news linked to strategy or the economy &mdash; the strong GS-III bridge (self-reliance, space economy, governance).</li>
+  </ul>
+  <p><strong>Highest-frequency themes:</strong> Chandrayaan-3 (south-pole landing) &middot; Gaganyaan &middot; Aditya-L1 (L1 point) &middot; Mangalyaan &middot; IN-SPACe/NSIL &amp; startups &middot; space debris &middot; NGLV/reusability &middot; space station plans.</p>
+</div>
+
+<!-- ===== SECTION 1 ===== -->
+<section class="notes" id="gaganyaan">
+  <h2>1. Human Spaceflight &mdash; Gaganyaan</h2>
+  <ul>
+    <li><strong>Gaganyaan</strong> is India's first human spaceflight programme &mdash; aims to send a crew (astronauts, called <strong>Gagannauts/Vyomanauts</strong>) to Low Earth Orbit (~400 km) for a few days and return them safely.</li>
+    <li>Launched on the human-rated <strong>LVM3 (HLVM3)</strong>; the <strong>crew module</strong> houses the astronauts and the <strong>service module</strong> supports it in orbit; a <strong>Crew Escape System</strong> pulls the crew away in an emergency.</li>
+    <li>Precursor tests: uncrewed test flights (TV-D1 abort test, G1) and a robotic mission (<strong>Vyommitra</strong>, a humanoid) before the crewed flight.</li>
+    <li>Follow-on vision: <strong>Bharatiya Antariksh Station</strong> (Indian space station) and an Indian crewed Moon landing in the long term.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> Gaganyaan = India's first crewed mission to LEO on human-rated LVM3; includes crew escape system &amp; a humanoid (Vyommitra) test; would make India the 4th nation with independent human spaceflight (after USSR/Russia, USA, China).</div>
+</section>
+
+<!-- ===== SECTION 2 ===== -->
+<section class="notes" id="lunar">
+  <h2>2. Lunar Programme &mdash; Chandrayaan</h2>
+  <table>
+    <tr><th>Mission</th><th>Year</th><th>Achievement</th></tr>
+    <tr><td><strong>Chandrayaan-1</strong></td><td>2008</td><td>First Indian Moon mission (orbiter + impactor); confirmed <strong>water molecules</strong> on the Moon &mdash; a landmark discovery.</td></tr>
+    <tr><td><strong>Chandrayaan-2</strong></td><td>2019</td><td>Orbiter (still working) + Vikram lander + Pragyan rover; the lander crash-landed but the orbiter returns rich data.</td></tr>
+    <tr><td><strong>Chandrayaan-3</strong></td><td>2023</td><td>Successful <strong>soft landing near the lunar south pole</strong> &mdash; India became the <strong>1st country to land near the south pole</strong> &amp; the 4th to soft-land on the Moon. Vikram lander + Pragyan rover.</td></tr>
+  </table>
+  <div class="callout warn"><strong>Prelims traps:</strong> Chandrayaan-1 found water on the Moon; Chandrayaan-2's <strong>orbiter</strong> succeeded though the lander failed; Chandrayaan-3 achieved the <strong>south-pole soft landing</strong> (landing site named <strong>Shiv Shakti Point</strong>). The south pole matters for possible water-ice in permanently shadowed craters.</div>
+</section>
+
+<!-- ===== SECTION 3 ===== -->
+<section class="notes" id="interplanetary">
+  <h2>3. Interplanetary Missions</h2>
+  <ul>
+    <li><strong>Mangalyaan (Mars Orbiter Mission, MOM), 2013&ndash;14:</strong> India's first interplanetary mission &mdash; made India the <strong>first nation to reach Mars orbit on its first attempt</strong>, and did so at remarkably low cost (frugal engineering).</li>
+    <li>Launched by PSLV; used Earth's gravity (slingshot manoeuvres) to reach Mars &mdash; showcasing indigenous deep-space navigation.</li>
+    <li><strong>Future:</strong> a Venus mission (<strong>Shukrayaan</strong>) and a follow-up Mars mission (MOM-2 / Mangalyaan-2) are planned; also participation/interest in Mars &amp; asteroid science.</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> Mangalyaan/MOM (2013&ndash;14) = India's first Mars mission &amp; first-attempt success, launched by PSLV; low-cost benchmark; Shukrayaan = planned Venus orbiter.</div>
+</section>
+
+<!-- ===== SECTION 4 ===== -->
+<section class="notes" id="astronomy">
+  <h2>4. Solar &amp; Space Astronomy Missions</h2>
+  <div class="svg-wrap">
+    <svg viewBox="0 0 460 200" width="460" height="200" role="img" aria-label="Aditya-L1 at Lagrange point L1 between Sun and Earth">
+      <rect x="0" y="0" width="460" height="200" fill="#ffffff"/>
+      <g font-family="sans-serif" font-size="11" text-anchor="middle">
+        <circle cx="60" cy="100" r="28" fill="#f4d35e" stroke="#c47820"/><text x="60" y="104" font-size="10">Sun</text>
+        <circle cx="400" cy="100" r="20" fill="#e8f0f8" stroke="#1a3d5c"/><text x="400" y="104" font-size="10">Earth</text>
+        <line x1="88" y1="100" x2="380" y2="100" stroke="#888" stroke-dasharray="3"/>
+        <circle cx="340" cy="100" r="6" fill="#c0392b"/><text x="340" y="82" font-size="10" fill="#c0392b">L1 (Aditya-L1)</text>
+        <text x="340" y="128" font-size="9" fill="#555">~1.5 million km from Earth</text>
+      </g>
+    </svg>
+    <div class="svg-caption">Fig 9.1 &mdash; Aditya-L1 sits at the Sun&ndash;Earth Lagrange point L1 (~1.5 million km from Earth), giving a continuous, unobstructed view of the Sun.</div>
+  </div>
+  <table>
+    <tr><th>Mission</th><th>Studies</th></tr>
+    <tr><td><strong>Aditya-L1</strong></td><td>India's first solar mission &mdash; observes the Sun's corona, solar wind &amp; flares from the <strong>L1 point</strong> (halo orbit); helps space-weather forecasting.</td></tr>
+    <tr><td><strong>AstroSat</strong></td><td>India's first dedicated multi-wavelength <strong>space observatory</strong> (UV, X-ray, visible) &mdash; studies stars, black holes &amp; galaxies.</td></tr>
+    <tr><td><strong>XPoSat</strong></td><td>X-ray Polarimeter Satellite &mdash; studies polarisation of bright X-ray sources (e.g. neutron stars, black holes).</td></tr>
+  </table>
+  <div class="callout warn"><strong>Prelims traps:</strong> Aditya-L1 does <strong>not</strong> land on or touch the Sun &mdash; it parks at L1 to watch it continuously. A Lagrange point is where the Sun's &amp; Earth's gravity balance so a satellite stays put with little fuel. AstroSat = multi-wavelength observatory; XPoSat = X-ray polarimetry.</div>
+</section>
+
+<!-- ===== SECTION 5 ===== -->
+<section class="notes" id="economy">
+  <h2>5. Space Economy &amp; Privatisation</h2>
+  <ul>
+    <li>India opened the space sector to <strong>private players</strong> to grow its share of the global space economy. Key institutions:</li>
+  </ul>
+  <table>
+    <tr><th>Body</th><th>Role</th></tr>
+    <tr><td><strong>IN-SPACe</strong></td><td>Indian National Space Promotion &amp; Authorisation Centre &mdash; single-window <strong>promoter &amp; regulator</strong> that authorises &amp; enables private space activity.</td></tr>
+    <tr><td><strong>NSIL</strong></td><td>NewSpace India Ltd &mdash; ISRO's <strong>commercial arm</strong> (successor to Antrix); markets launches, satellites &amp; technology transfer on a demand-driven basis.</td></tr>
+    <tr><td><strong>ISRO</strong></td><td>R&amp;D, deep-space missions &amp; capacity building; shares facilities &amp; tech with industry.</td></tr>
+    <tr><td><strong>Private startups</strong></td><td>Skyroot, Agnikul (launch vehicles), Pixxel, Dhruva Space (satellites) &mdash; a fast-growing NewSpace ecosystem.</td></tr>
+  </table>
+  <div class="callout info"><strong>Prelims facts:</strong> IN-SPACe = single-window promoter/regulator for private space; NSIL = ISRO's commercial arm (replaced Antrix); the Indian Space Policy 2023 formalised roles of ISRO, IN-SPACe, NSIL &amp; the private sector. FDI in the space sector has been liberalised.</div>
+</section>
+
+<!-- ===== SECTION 6 ===== -->
+<section class="notes" id="debris">
+  <h2>6. Space Debris &amp; Sustainability</h2>
+  <ul>
+    <li><strong>Space debris</strong> = defunct satellites, spent rocket stages &amp; fragments orbiting Earth at high speed &mdash; a growing collision hazard for working satellites &amp; the ISS.</li>
+    <li><strong>Kessler syndrome:</strong> a runaway chain of collisions creating ever more debris, potentially making some orbits unusable.</li>
+    <li>India's response: <strong>ISRO System for Safe &amp; Sustainable Space Operations (IS4OM)</strong> &amp; <strong>Project NETRA</strong> track debris &amp; protect assets; a policy goal of a <strong>debris-free space mission</strong> is being pursued.</li>
+    <li>Mitigation: de-orbiting old satellites, controlled re-entry, avoiding explosions in orbit, and international norms.</li>
+  </ul>
+  <div class="callout warn"><strong>GS-III hook:</strong> space sustainability is a rising governance theme &mdash; more launches &amp; mega-constellations raise debris &amp; congestion risks, needing global rules &amp; responsible behaviour (a "tragedy of the commons" in orbit).</div>
+</section>
+
+<!-- ===== SECTION 7 ===== -->
+<section class="notes" id="governance">
+  <h2>7. Space Law &amp; Governance</h2>
+  <table>
+    <tr><th>Instrument</th><th>Core idea</th></tr>
+    <tr><td><strong>Outer Space Treaty, 1967</strong></td><td>Space is the "province of all mankind"; no national appropriation of celestial bodies; peaceful use; no weapons of mass destruction in orbit.</td></tr>
+    <tr><td><strong>Rescue Agreement / Liability / Registration</strong></td><td>Return of astronauts, liability for damage caused by space objects, and registration of launches.</td></tr>
+    <tr><td><strong>Moon Agreement / Artemis Accords</strong></td><td>Frameworks on Moon resources &amp; cooperation; India signed the <strong>Artemis Accords</strong> (2023).</td></tr>
+    <tr><td><strong>Indian Space Policy 2023</strong></td><td>Defines roles of ISRO, IN-SPACe, NSIL &amp; private players; enables the space economy.</td></tr>
+  </table>
+  <div class="callout info"><strong>Prelims facts:</strong> the Outer Space Treaty (1967) is the foundation of space law &mdash; space belongs to all, cannot be claimed by any nation, and must be used peacefully. India signed the US-led Artemis Accords in 2023.</div>
+</section>
+
+<!-- ===== SECTION 8 ===== -->
+<section class="notes" id="emerging">
+  <h2>8. Emerging Frontiers</h2>
+  <ul>
+    <li><strong>Reusable Launch Vehicles (RLV):</strong> ISRO's RLV-TD / "Pushpak" experiments aim at reusable rockets to cut launch cost dramatically (like SpaceX).</li>
+    <li><strong>Next-Generation Launch Vehicle (NGLV):</strong> a planned heavy-lift, partly reusable rocket to replace/augment LVM3 for future stations &amp; crewed Moon missions.</li>
+    <li><strong>Bharatiya Antariksh Station (BAS):</strong> India's own planned space station, to be built module-by-module after Gaganyaan.</li>
+    <li><strong>Space tourism, mega-constellations &amp; on-orbit servicing:</strong> global trends India is preparing for through private participation.</li>
+  </ul>
+  <div class="callout warn"><strong>GS-III hook:</strong> reusability &amp; NGLV are about <strong>cost &amp; competitiveness</strong> in the global launch market; the space station &amp; crewed Moon goals mark India's leap from applications to human exploration &mdash; a self-reliance &amp; great-power theme.</div>
+</section>
+
+<!-- ===== SECTION 9 ===== -->
+<section class="notes" id="devsecurity">
+  <h2>9. Space for Development &amp; Security</h2>
+  <table>
+    <tr><th>Dimension</th><th>How missions &amp; economy help</th></tr>
+    <tr><td>Development</td><td>Data from missions &amp; satellites drive agriculture, disaster, climate &amp; connectivity (Topic 8), plus jobs &amp; industry from the space economy.</td></tr>
+    <tr><td>Strategic / security</td><td>Independent access to space, surveillance, secure navigation (NavIC) &amp; resilience against denial; <strong>Mission Shakti</strong> (2019 ASAT test) showed anti-satellite capability.</td></tr>
+    <tr><td>Diplomacy</td><td>"Space diplomacy" &mdash; South Asia Satellite, launching foreign payloads, and cooperation (NISAR with NASA) build soft power.</td></tr>
+    <tr><td>Economy</td><td>Growing share of the global space economy through IN-SPACe/NSIL &amp; startups; technology spin-offs.</td></tr>
+  </table>
+  <div class="callout info"><strong>Key idea:</strong> space has become a <strong>dual-use</strong> strategic &amp; developmental asset &mdash; the same capability serves welfare, the economy, diplomacy and defence, making it central to India's rise.</div>
+</section>
+
+<!-- ===== SECTION 10: CURRENT AFFAIRS ===== -->
+<section class="notes" id="currentaffairs">
+  <h2>10. Current Affairs Link (2024&ndash;2026)</h2>
+  <p>Missions &amp; the space economy are the single most active S&amp;T news area. Verify the latest before the exam. <span class="update-tag">check for latest update or data</span></p>
+  <div class="callout update"><strong>Gaganyaan &amp; human spaceflight:</strong> crew selection, uncrewed test flights &amp; the Bharatiya Antariksh Station roadmap keep human spaceflight topical. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout update"><strong>New missions:</strong> Chandrayaan follow-ups, Shukrayaan (Venus), NISAR (India&ndash;US Earth-observation) &amp; NGLV/reusable-rocket tests apply Sections 2&ndash;4 &amp; 8. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout warn"><strong>Space economy &amp; policy:</strong> Indian Space Policy 2023, FDI liberalisation, IN-SPACe authorisations &amp; startup launches (Skyroot, Agnikul) signal a booming private sector. <span class="update-tag">check for latest update or data</span></div>
+  <table>
+    <tr><th>Recent theme</th><th>Fundamental it tests</th><th>Why it matters for UPSC</th></tr>
+    <tr><td>Gaganyaan / space station</td><td>Human spaceflight</td><td>GS-III self-reliance &amp; prestige.</td></tr>
+    <tr><td>Chandrayaan-3 / Aditya-L1</td><td>Missions</td><td>GS-III science &amp; firsts.</td></tr>
+    <tr><td>IN-SPACe / startups / policy</td><td>Space economy</td><td>GS-III economy &amp; reforms.</td></tr>
+    <tr><td>Space debris / governance</td><td>Sustainability</td><td>GS-III global commons.</td></tr>
+  </table>
+  <ul>
+    <li><strong>Recurring exam hooks:</strong> Chandrayaan-3 south pole &middot; Aditya-L1 &amp; L1 point &middot; Gaganyaan &middot; Mangalyaan first-attempt &middot; IN-SPACe/NSIL &middot; space debris &middot; NGLV/reusability &middot; Artemis Accords.</li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 11: PRELIMS ===== -->
+<section class="notes" id="prelims-pyq">
+  <h2>11. Prelims PYQs</h2>
+  <p style="font-size:13px;color:var(--muted)"><em>Objective questions anchored to genuinely tested UPSC themes on space missions &amp; the space economy. Each carries a worked rationale.</em></p>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Chandrayaan-3</div>
+    <p class="q-stem"><strong>Q:</strong> Chandrayaan-3 is notable for being the first mission to soft-land near which region of the Moon?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> The lunar equator</li>
+      <li><span class="opt-key">(b)</span> The near-side centre</li>
+      <li class="correct"><span class="opt-key">(c)</span> The lunar south pole</li>
+      <li><span class="opt-key">(d)</span> The far-side highlands</li>
+    </ul>
+    <p class="ans">Answer: (c) In 2023 Chandrayaan-3 made the first-ever soft landing near the lunar south pole, a region of interest for possible water-ice; India became the 4th nation to soft-land on the Moon.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Aditya-L1</div>
+    <p class="q-stem"><strong>Q:</strong> India's Aditya-L1 mission is placed at &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> a low Earth orbit</li>
+      <li class="correct"><span class="opt-key">(b)</span> the Sun&ndash;Earth Lagrange point L1</li>
+      <li><span class="opt-key">(c)</span> the surface of the Sun</li>
+      <li><span class="opt-key">(d)</span> a geostationary orbit</li>
+    </ul>
+    <p class="ans">Answer: (b) Aditya-L1 orbits the L1 Lagrange point (~1.5 million km from Earth), where gravitational forces balance, giving a continuous unobstructed view of the Sun. It does not touch the Sun.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Mangalyaan</div>
+    <p class="q-stem"><strong>Q:</strong> The Mars Orbiter Mission (Mangalyaan) is significant because India &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> reached Mars orbit on its first attempt</li>
+      <li><span class="opt-key">(b)</span> landed a rover on Mars</li>
+      <li><span class="opt-key">(c)</span> was the first country to reach Mars</li>
+      <li><span class="opt-key">(d)</span> used a cryogenic GSLV launch</li>
+    </ul>
+    <p class="ans">Answer: (a) Mangalyaan (2013&ndash;14) made India the first nation to reach Mars orbit on its first attempt, at very low cost; it was an orbiter (no landing) launched by PSLV.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Space bodies</div>
+    <p class="q-stem"><strong>Q:</strong> IN-SPACe is best described as &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> ISRO's deep-space network</li>
+      <li class="correct"><span class="opt-key">(b)</span> the single-window promoter and regulator for private space activity</li>
+      <li><span class="opt-key">(c)</span> a launch vehicle</li>
+      <li><span class="opt-key">(d)</span> a space observatory</li>
+    </ul>
+    <p class="ans">Answer: (b) IN-SPACe authorises &amp; promotes private space activity as a single-window body; NSIL is ISRO's commercial arm (successor to Antrix).</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Chandrayaan-1</div>
+    <p class="q-stem"><strong>Q:</strong> A major scientific discovery credited to Chandrayaan-1 was the detection of &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> life on the Moon</li>
+      <li class="correct"><span class="opt-key">(b)</span> water molecules on the Moon</li>
+      <li><span class="opt-key">(c)</span> a magnetic field on the Moon</li>
+      <li><span class="opt-key">(d)</span> volcanoes on the Moon</li>
+    </ul>
+    <p class="ans">Answer: (b) Chandrayaan-1 (2008) confirmed water molecules on the lunar surface &mdash; a landmark that reshaped lunar science.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Space law</div>
+    <p class="q-stem"><strong>Q:</strong> The foundational treaty of international space law, declaring space the "province of all mankind", is the &mdash;</p>
+    <ul class="options">
+      <li class="correct"><span class="opt-key">(a)</span> Outer Space Treaty, 1967</li>
+      <li><span class="opt-key">(b)</span> Antarctic Treaty, 1959</li>
+      <li><span class="opt-key">(c)</span> Law of the Sea, 1982</li>
+      <li><span class="opt-key">(d)</span> Artemis Accords, 2020</li>
+    </ul>
+    <p class="ans">Answer: (a) The Outer Space Treaty (1967) bars national appropriation of celestial bodies, mandates peaceful use and prohibits weapons of mass destruction in orbit.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Space debris</div>
+    <p class="q-stem"><strong>Q:</strong> The term "Kessler syndrome" refers to &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> radiation sickness in astronauts</li>
+      <li class="correct"><span class="opt-key">(b)</span> a cascade of collisions among orbital debris</li>
+      <li><span class="opt-key">(c)</span> loss of satellite signal in polar orbit</li>
+      <li><span class="opt-key">(d)</span> engine failure during re-entry</li>
+    </ul>
+    <p class="ans">Answer: (b) Kessler syndrome is a runaway chain of debris collisions that generates ever more debris, potentially rendering some orbits unusable. India tracks debris via Project NETRA/IS4OM.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Gaganyaan</div>
+    <p class="q-stem"><strong>Q:</strong> Gaganyaan will be launched using which vehicle?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> PSLV</li>
+      <li><span class="opt-key">(b)</span> SSLV</li>
+      <li class="correct"><span class="opt-key">(c)</span> Human-rated LVM3 (HLVM3)</li>
+      <li><span class="opt-key">(d)</span> GSLV Mk-I</li>
+    </ul>
+    <p class="ans">Answer: (c) Gaganyaan uses the human-rated LVM3 (HLVM3), India's heaviest rocket, with a crew escape system for astronaut safety.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> Chandrayaan-3 south pole &amp; landing site &middot; Aditya-L1 &amp; L1 point &middot; Mangalyaan firsts &middot; AstroSat/XPoSat &middot; IN-SPACe/NSIL &middot; Outer Space Treaty &middot; space debris/NETRA &middot; Gaganyaan &amp; space station. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 12: MAINS ===== -->
+<section class="notes" id="mains-pyq">
+  <h2>12. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>Space missions &amp; the economy anchor GS-III questions on self-reliance, the economy &amp; strategy. The frameworks below show how to deploy them analytically.</em></p>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> "India's recent space missions mark a shift from application-driven to exploration-driven space activity." Discuss.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Traditionally ISRO focused on space-for-development (Topic 8); recent missions add human spaceflight &amp; planetary exploration.</li>
+        <li><strong>Evidence of the shift:</strong>
+          <ul>
+            <li><strong>Exploration</strong> &mdash; Chandrayaan-3's south-pole landing, Aditya-L1 solar science, Mangalyaan &amp; planned Venus mission.</li>
+            <li><strong>Human spaceflight</strong> &mdash; Gaganyaan &amp; the planned Bharatiya Antariksh Station and crewed Moon goal.</li>
+          </ul>
+        </li>
+        <li><strong>Continuity too:</strong> applications (agriculture, disaster, NavIC) remain the backbone; exploration builds capability &amp; prestige atop them.</li>
+        <li><strong>Significance:</strong> scientific returns, technological spin-offs, national morale, and a stronger position in the global space order.</li>
+        <li><strong>Way forward:</strong> balance ambitious exploration with cost-effectiveness &amp; developmental relevance.</li>
+        <li><strong>Conclusion:</strong> India is broadening &mdash; not abandoning &mdash; its development-first ethos, adding exploration as a new pillar.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Examine the rationale and challenges of opening India's space sector to private players.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Reforms (IN-SPACe, NSIL, Space Policy 2023, FDI) opened space to private industry (Section 5) to capture a larger share of the global space economy.</li>
+        <li><strong>Rationale:</strong>
+          <ul>
+            <li>Free ISRO for R&amp;D &amp; deep-space; harness private capital, agility &amp; innovation; create jobs &amp; exports; meet rising launch/satellite demand.</li>
+          </ul>
+        </li>
+        <li><strong>Progress:</strong> startups like Skyroot &amp; Agnikul (launchers), Pixxel &amp; Dhruva (satellites); IN-SPACe authorisations.</li>
+        <li><strong>Challenges:</strong> funding &amp; long gestation, regulatory clarity, IP &amp; technology sharing, level playing field vs ISRO, skilled talent, and export controls.</li>
+        <li><strong>Way forward:</strong> stable policy, ease of authorisation, anchor demand (govt as customer), and a robust space law.</li>
+        <li><strong>Conclusion:</strong> a well-regulated private ecosystem can multiply India's space capability &amp; economy.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> What is space debris, and why is its management a growing global concern?</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Space debris (Section 6) is defunct satellites, spent stages &amp; fragments orbiting at high speed.</li>
+        <li><strong>Why a concern:</strong>
+          <ul>
+            <li>Collision risk to working satellites &amp; the ISS; the <strong>Kessler syndrome</strong> could make orbits unusable; more launches &amp; mega-constellations worsen congestion.</li>
+          </ul>
+        </li>
+        <li><strong>India's response:</strong> Project NETRA &amp; IS4OM for tracking; a debris-free-mission goal.</li>
+        <li><strong>Global need:</strong> shared norms, de-orbiting rules &amp; responsible behaviour &mdash; a global-commons governance issue.</li>
+        <li><strong>Conclusion:</strong> sustainable use of orbits needs collective action before congestion becomes crisis.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Space has become a dual-use strategic domain. Analyse its significance for India's security and diplomacy.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> The same space capabilities serve both civilian &amp; military ends (Section 9) &mdash; making space a strategic domain.</li>
+        <li><strong>Security dimension:</strong>
+          <ul>
+            <li>Surveillance &amp; reconnaissance satellites; secure navigation (NavIC); anti-satellite capability (Mission Shakti, 2019); resilient communication.</li>
+          </ul>
+        </li>
+        <li><strong>Diplomacy dimension:</strong> space diplomacy via the South Asia Satellite, launching foreign payloads, and cooperation (NISAR, Artemis Accords) builds soft power &amp; partnerships.</li>
+        <li><strong>Challenges:</strong> weaponisation risks &amp; an arms race, debris, dependence in some tech, and the need for norms.</li>
+        <li><strong>Way forward:</strong> strengthen indigenous capability, push for responsible-behaviour norms, &amp; integrate space into national security doctrine.</li>
+        <li><strong>Conclusion:</strong> space is now central to India's strategic autonomy &amp; global standing.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> exploration vs application shift &middot; privatisation of space &middot; space debris &amp; governance &middot; dual-use space &amp; security &middot; human spaceflight &amp; space station &middot; space economy &amp; startups. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; Space Technology II</h3>
+    <div class="grid-2">
+      <div>
+        <strong>Missions:</strong>
+        <ul>
+          <li>Chandrayaan-1 (2008) = found water; Chandrayaan-2 (2019) orbiter OK, lander failed</li>
+          <li>Chandrayaan-3 (2023) = 1st south-pole soft landing (Shiv Shakti Point), 4th to soft-land</li>
+          <li>Mangalyaan/MOM (2013&ndash;14) = Mars on 1st attempt, low cost, by PSLV</li>
+          <li>Aditya-L1 = Sun from L1 point; AstroSat = observatory; XPoSat = X-ray polarimetry</li>
+        </ul>
+        <strong>Human spaceflight:</strong>
+        <ul>
+          <li>Gaganyaan = 1st crew to LEO on human-rated LVM3; crew escape system; Vyommitra humanoid</li>
+          <li>Bharatiya Antariksh Station = planned Indian space station</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Space economy &amp; governance:</strong>
+        <ul>
+          <li>IN-SPACe = single-window promoter/regulator; NSIL = ISRO's commercial arm (ex-Antrix)</li>
+          <li>Indian Space Policy 2023; FDI liberalised; startups Skyroot, Agnikul, Pixxel</li>
+          <li>Outer Space Treaty 1967 = space = province of all mankind, no appropriation</li>
+          <li>India signed Artemis Accords (2023)</li>
+        </ul>
+        <strong>Sustainability &amp; frontiers:</strong>
+        <ul>
+          <li>Space debris; Kessler syndrome; Project NETRA / IS4OM</li>
+          <li>RLV/Pushpak &amp; NGLV = reusability &amp; heavy lift</li>
+          <li>Mission Shakti (2019) = ASAT test; dual-use space</li>
+          <li>Shukrayaan = planned Venus mission; NISAR = India&ndash;US EO satellite</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes:</strong> Chandrayaan-3 south pole &middot; Aditya-L1 &amp; L1 &middot; Mangalyaan firsts &middot; IN-SPACe/NSIL &middot; space debris &middot; Outer Space Treaty &middot; Gaganyaan &amp; space station.</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== SIDEBAR ===== -->
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Quick Reference &mdash; Missions</h4>
+    <table>
+      <tr><th>Mission</th><th>Target</th></tr>
+      <tr><td>Chandrayaan-3</td><td>Moon south pole</td></tr>
+      <tr><td>Aditya-L1</td><td>Sun (L1)</td></tr>
+      <tr><td>Mangalyaan</td><td>Mars</td></tr>
+      <tr><td>Gaganyaan</td><td>Crew to LEO</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Space Economy Bodies</h4>
+    <table>
+      <tr><th>Body</th><th>Role</th></tr>
+      <tr><td>IN-SPACe</td><td>Promote/regulate</td></tr>
+      <tr><td>NSIL</td><td>Commercial arm</td></tr>
+      <tr><td>ISRO</td><td>R&amp;D/missions</td></tr>
+      <tr><td>Startups</td><td>NewSpace</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Key Facts &amp; Data</h4>
+    <table>
+      <tr><th>Item</th><th>Value</th></tr>
+      <tr><td>Chandrayaan-3</td><td>2023, S-pole</td></tr>
+      <tr><td>Mangalyaan</td><td>2013&ndash;14</td></tr>
+      <tr><td>Aditya-L1</td><td>L1, 1.5M km</td></tr>
+      <tr><td>OST</td><td>1967</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:95%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains GS-III</span><span class="fill"><span style="width:88%"></span></span></div>
+    <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:78%"></span></span></div>
+    <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:98%"></span></span></div>
+    <p style="margin-top:8px;font-size:11px;color:var(--muted);">Hottest CA area &mdash; track every mission.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Space Tech II at a Glance</h4>
+    <ul>
+      <li>Gaganyaan (human)</li>
+      <li>Chandrayaan (Moon)</li>
+      <li>Mangalyaan (Mars)</li>
+      <li>Aditya-L1 &amp; AstroSat</li>
+      <li>Space economy</li>
+      <li>Space debris</li>
+      <li>Space law</li>
+      <li>Emerging frontiers</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">Chandrayaan-3 S-pole</span>
+    <span class="tag">Aditya-L1 = L1</span>
+    <span class="tag green">Mangalyaan 1st try</span>
+    <span class="tag">IN-SPACe regulator</span>
+    <span class="tag orange">NSIL = ex-Antrix</span>
+    <span class="tag">OST 1967</span>
+    <span class="tag green">Gaganyaan HLVM3</span>
+    <span class="tag">Kessler syndrome</span>
+    <span class="tag orange">Mission Shakti ASAT</span>
+    <span class="tag">Artemis Accords</span>
+  </div>
+
+  <div class="widget">
+    <h4>Data Sources to Bookmark</h4>
+    <ul>
+      <li><a href="https://www.isro.gov.in" target="_blank" rel="noopener">ISRO</a></li>
+      <li><a href="https://www.inspace.gov.in" target="_blank" rel="noopener">IN-SPACe</a></li>
+      <li><a href="https://www.nsilindia.co.in" target="_blank" rel="noopener">NSIL</a></li>
+      <li><a href="https://pib.gov.in" target="_blank" rel="noopener">PIB</a></li>
+    </ul>
+    <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/science-technology/space-technology-i-isro-and-launch-vehicles">S&amp;T T8: Space Tech I (Fundamentals)</a></li>
+      <li><a href="/science-technology/defence-technology">S&amp;T T16: Defence Technology</a></li>
+      <li><a href="/science-technology/physics">S&amp;T T7: Physics</a></li>
+      <li><a href="/science-technology/india-s-science-and-technology-ecosystem">S&amp;T T17: Research &amp; Schemes</a></li>
+      <li><a href="/science-technology">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding:0;margin:0;">
+      <li style="margin:4px 0;"><a href="#gaganyaan" style="font-size:12px;">Gaganyaan</a></li>
+      <li style="margin:4px 0;"><a href="#lunar" style="font-size:12px;">Chandrayaan</a></li>
+      <li style="margin:4px 0;"><a href="#interplanetary" style="font-size:12px;">Interplanetary</a></li>
+      <li style="margin:4px 0;"><a href="#astronomy" style="font-size:12px;">Solar &amp; Astronomy</a></li>
+      <li style="margin:4px 0;"><a href="#economy" style="font-size:12px;">Space Economy</a></li>
+      <li style="margin:4px 0;"><a href="#debris" style="font-size:12px;">Space Debris</a></li>
+      <li style="margin:4px 0;"><a href="#governance" style="font-size:12px;">Space Law</a></li>
+      <li style="margin:4px 0;"><a href="#emerging" style="font-size:12px;">Emerging Frontiers</a></li>
+      <li style="margin:4px 0;"><a href="#devsecurity" style="font-size:12px;">Development &amp; Security</a></li>
+      <li style="margin:4px 0;"><a href="#currentaffairs" style="font-size:12px;">Current Affairs</a></li>
+      <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>

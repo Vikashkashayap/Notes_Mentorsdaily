@@ -1,0 +1,816 @@
+<!-- science-topic03 — auto-imported from scitech-topic03-human-physiology-upsc-notes.html -->
+<style data-topic-notes>
+:root{
+  --brand-blue:#1a3d5c;
+  --brand-blue-dark:#0d2035;
+  --brand-blue-light:#e8f0f8;
+  --brand-orange:#c47820;
+  --green:#1a7a5a;
+  --text:#1a1a1a;
+  --muted:#5a6266;
+  --line:#dde3e8;
+  --bg:#fafbfc;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.65;color:var(--text);background:var(--bg)}
+a{color:var(--brand-blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.topnav{position:fixed;top:0;left:0;right:0;background:#fff;border-bottom:1px solid var(--line);z-index:1000;padding:10px 24px;display:flex;justify-content:space-between;align-items:center}
+.topnav .brand{font-weight:800;color:var(--brand-blue-dark);font-size:18px}
+.topnav .brand span{color:var(--brand-orange)}
+.topnav .breadcrumbs{font-size:13px;color:var(--muted)}
+.topnav .breadcrumbs a{color:var(--muted)}
+.layout{max-width:1280px;margin:0 auto;padding:80px 24px 40px;display:grid;grid-template-columns:1fr 320px;gap:32px}
+main{min-width:0}
+aside{min-width:0}
+.hero{background:linear-gradient(120deg,#46586a 0%,#33414f 50%,#222b34 100%);color:#fff;padding:44px 36px;border-radius:14px;margin-bottom:28px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-40px;right:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(196,120,32,0.22),transparent 70%)}
+.hero h1{margin:0 0 14px;font-size:34px;line-height:1.2;font-weight:800}
+.hero .sub{font-size:16px;opacity:0.92;margin-bottom:20px;max-width:820px;line-height:1.6}
+.hero .meta{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}
+.hero .pill{background:rgba(255,255,255,0.14);padding:6px 15px;border-radius:24px;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.14)}
+.hero .pill.primary{background:rgba(196,120,32,0.28);border-color:rgba(196,120,32,0.55);color:#fff;font-weight:600}
+.toc{background:#fff;border:1px solid var(--line);padding:20px 24px;border-radius:10px;margin-bottom:24px}
+.toc h3{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:0.8px;color:var(--brand-blue-dark)}
+.toc ul{margin:0;padding-left:0;list-style:none;font-size:15px;columns:2;column-gap:32px}
+.toc li{margin-bottom:8px;break-inside:avoid}
+.toc li .num{display:inline-block;min-width:22px;color:var(--brand-orange);font-weight:700}
+.concept-box{background:linear-gradient(135deg,#fff8ec,#fff);border-left:5px solid var(--brand-orange);padding:18px 22px;border-radius:8px;margin:20px 0}
+.concept-box h3{margin:0 0 8px;color:var(--brand-orange);font-size:16px}
+section.notes{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px;margin-bottom:24px}
+section.notes h2{margin:0 0 16px;font-size:24px;color:var(--brand-blue-dark);border-bottom:3px solid var(--brand-orange);padding-bottom:8px;display:inline-block}
+section.notes h3{font-size:19px;color:var(--brand-blue-dark);margin-top:24px;margin-bottom:10px}
+section.notes h4{font-size:16px;color:var(--brand-blue);margin-top:18px;margin-bottom:8px}
+section.notes p{margin:0 0 12px}
+section.notes ul, section.notes ol{margin:0 0 14px;padding-left:22px}
+section.notes li{margin-bottom:6px}
+.callout{background:#f0f7f4;border-left:4px solid var(--green);padding:14px 18px;border-radius:6px;margin:16px 0}
+.callout.warn{background:#fff5e6;border-left-color:var(--brand-orange)}
+.callout.info{background:var(--brand-blue-light);border-left-color:var(--brand-blue)}
+.callout.update{background:#fef0f0;border-left-color:#c0392b}
+.callout strong{color:var(--brand-blue-dark)}
+.update-tag{display:inline-block;background:#c0392b;color:#fff;font-size:10px;padding:2px 7px;border-radius:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-left:4px;vertical-align:middle}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+th{background:var(--brand-blue-light);color:var(--brand-blue-dark);font-weight:700}
+tr:nth-child(even) td{background:#fafbfc}
+.svg-wrap{background:#fff;border:1px dashed var(--line);border-radius:10px;padding:14px;margin:18px 0;text-align:center;overflow-x:auto}
+.svg-wrap svg{max-width:100%;height:auto}
+.svg-caption{font-size:12px;color:var(--muted);margin-top:6px;font-style:italic}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:14px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h4{margin-top:0;color:var(--brand-blue-dark)}
+.tag{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 9px;border-radius:12px;margin:2px 3px 2px 0;font-weight:600}
+.tag.orange{background:#fff4e0;color:var(--brand-orange)}
+.tag.green{background:#e8f5ef;color:#0a6644}
+.pyq{background:#fff7ed;border-left:4px solid var(--brand-orange);padding:14px 18px;margin:12px 0;border-radius:6px;font-size:14px}
+.pyq .year{font-weight:700;color:var(--brand-orange);font-size:12px;text-transform:uppercase;letter-spacing:0.6px}
+.pyq .q-stem{margin:6px 0 8px}
+.pyq .options{list-style:none;padding-left:0;margin:0 0 10px}
+.pyq .options li{margin:0;padding:6px 12px;border-bottom:1px solid #f0e2cf;font-size:14px}
+.pyq .options li:last-child{border-bottom:none}
+.pyq .options li.correct{background:#eaf6ef;border-left:3px solid var(--green);font-weight:600}
+.pyq .opt-key{display:inline-block;min-width:24px;font-weight:700;color:var(--brand-blue-dark)}
+.pyq .ans{margin:4px 0 0;font-size:13px;color:var(--green);font-weight:600}
+.model-answer{background:#fff;border:1px solid var(--line);border-radius:8px;padding:14px 18px;margin-top:10px}
+.model-answer h5{margin:0 0 10px;font-size:14px;text-transform:uppercase;letter-spacing:0.5px;color:var(--brand-blue-dark);border-bottom:2px solid var(--brand-orange);padding-bottom:6px;display:inline-block}
+.model-answer ol{margin:0;padding-left:20px}
+.model-answer ol>li{margin-bottom:9px}
+.model-answer ul{margin:5px 0 5px;padding-left:18px}
+.model-answer ul li{margin-bottom:4px}
+.marks{display:inline-block;background:var(--brand-blue-light);color:var(--brand-blue-dark);font-size:11px;padding:2px 8px;border-radius:10px;font-weight:600;margin-left:6px}
+.revision-box{background:linear-gradient(135deg,#fef9e7,#fff);border:2px solid var(--brand-orange);border-radius:12px;padding:20px 24px;margin:20px 0}
+.revision-box h3{color:var(--brand-orange);margin-top:0}
+.widget{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:16px;font-size:13px}
+.widget h4{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:0.6px;color:var(--brand-blue-dark);border-bottom:1px solid var(--line);padding-bottom:5px}
+.widget table{font-size:12px;margin:6px 0}
+.widget th, .widget td{padding:5px 7px}
+.widget ul{padding-left:18px;margin:6px 0}
+.widget .bar{display:flex;align-items:center;font-size:11px;margin:4px 0}
+.widget .bar .lbl{flex:0 0 90px;color:var(--muted)}
+.widget .bar .fill{flex:1;height:7px;background:#eee;border-radius:4px;overflow:hidden}
+.widget .bar .fill span{display:block;height:100%;background:linear-gradient(90deg,var(--brand-blue),var(--brand-orange))}
+.widget details{margin:6px 0;font-size:12px}
+.widget details summary{cursor:pointer;font-weight:600;color:var(--brand-blue-dark);padding:4px 0}
+.widget .related li{margin:5px 0;font-size:12px}
+.aside-sticky{position:sticky;top:80px}
+footer{background:var(--brand-blue-dark);color:#c8d8e8;padding:30px 24px;text-align:center;font-size:13px;margin-top:30px}
+footer a{color:#fff}
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;padding:74px 14px 28px}
+  aside{order:2}
+  .aside-sticky{position:static}
+  .toc ul{columns:1}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .hero h1{font-size:22px}
+  section.notes{padding:18px}
+}
+@media print{
+  .topnav,aside,.svg-wrap{display:none}
+  body{background:#fff;font-size:11pt}
+  .layout{display:block;padding:0;max-width:none}
+  .hero{background:#fff;color:#000;border:1px solid #999}
+  section.notes{break-inside:avoid;border:none;padding:8px 0}
+}
+
+/* Next.js: shared app navbar; hide embedded chrome */
+.notes-topic-embedded nav.topnav,
+.notes-topic-embedded nav.navbar,
+.notes-topic-embedded .breadcrumbs,
+.notes-topic-embedded footer { display: none !important; }
+
+.notes-topic-embedded header {
+  max-width: 1280px;
+  margin: 0 auto 24px;
+  border-radius: 14px;
+}
+
+.notes-topic-embedded .layout {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 320px !important;
+  gap: 28px !important;
+  align-items: start !important;
+  max-width: 1280px !important;
+  margin: 0 auto !important;
+  padding: 0 0 28px !important;
+}
+
+.notes-topic-embedded .layout > main { min-width: 0; }
+
+.notes-topic-embedded .layout > aside,
+.notes-topic-embedded .aside-sticky {
+  position: sticky !important;
+  top: 88px !important;
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .notes-topic-embedded .layout {
+    grid-template-columns: 1fr !important;
+    padding: 0 0 18px !important;
+  }
+  .notes-topic-embedded .layout > aside,
+  .notes-topic-embedded .aside-sticky {
+    position: static !important;
+  }
+}
+</style>
+<div class="notes-topic-embedded">
+<div class="layout">
+<main>
+
+<div class="hero">
+  <h1>Topic 3: Human Physiology</h1>
+  <p class="sub">Physiology is the study of <strong>how the body's systems work</strong> &mdash; built from the cells &amp; tissues of Topic 2. This single-source file covers the <strong>digestive</strong>, <strong>respiratory</strong>, <strong>circulatory</strong> (heart, blood, blood groups, Rh factor), <strong>excretory</strong> (kidney, nephron, dialysis), <strong>nervous</strong> and <strong>endocrine</strong> (all hormones &amp; disorders) systems, the <strong>skeletal-muscular</strong> system and <strong>sense organs</strong>, and the <strong>vitamins, minerals &amp; deficiency diseases</strong> that UPSC loves &mdash; with labelled diagrams, tables and real dated PYQs with full model answers.</p>
+  <div class="meta">
+    <span class="pill primary">UPSC Prelims &middot; Mains GS-III</span>
+    <span class="pill">Hormones &middot; Blood Groups</span>
+    <span class="pill">~40 min read</span>
+    <span class="pill">Deficiency Diseases</span>
+    <span class="pill">Very High Prelims Weight</span>
+  </div>
+</div>
+
+<div class="toc">
+  <h3>On this page</h3>
+  <ul>
+    <li><span class="num">1.</span><a href="#digestive">Digestive System &amp; Nutrition</a></li>
+    <li><span class="num">2.</span><a href="#respiratory">Respiratory System</a></li>
+    <li><span class="num">3.</span><a href="#circulatory">Circulatory System &mdash; Heart</a></li>
+    <li><span class="num">4.</span><a href="#blood">Blood &amp; Blood Groups</a></li>
+    <li><span class="num">5.</span><a href="#excretory">Excretory System &mdash; Kidney</a></li>
+    <li><span class="num">6.</span><a href="#nervous">Nervous System</a></li>
+    <li><span class="num">7.</span><a href="#endocrine">Endocrine System &amp; Hormones</a></li>
+    <li><span class="num">8.</span><a href="#skeletal">Skeletal, Muscular &amp; Sense Organs</a></li>
+    <li><span class="num">9.</span><a href="#vitamins">Vitamins, Minerals &amp; Deficiency Diseases</a></li>
+    <li><span class="num">10.</span><a href="#currentaffairs">Current Affairs Link</a></li>
+    <li><span class="num">11.</span><a href="#prelims-pyq">Prelims PYQs</a></li>
+    <li><span class="num">12.</span><a href="#mains-pyq">Mains PYQs + Model Answers</a></li>
+    <li><span class="num">&#9733;</span><a href="#revision">15-Minute Revision Box</a></li>
+  </ul>
+</div>
+
+<div class="concept-box" id="concept">
+  <h3>Conceptual Clarity &mdash; How UPSC Tests Human Physiology</h3>
+  <p>Human physiology is among the <strong>highest-yield Prelims areas</strong> in S&amp;T &mdash; almost every year sees a question on hormones, vitamins, or blood. Sort your prep into three question-types:</p>
+  <ul>
+    <li><strong>Definitional / static</strong> &mdash; "which gland secretes insulin?", "deficiency of vitamin C causes?". Pure recall; the commonest style and easiest marks.</li>
+    <li><strong>Statement-elimination</strong> &mdash; matched pairs (hormone&ndash;gland, vitamin&ndash;disease, organ&ndash;function) where one wrong match decides the answer. Needs the tables below memorised exact.</li>
+    <li><strong>Applied / current</strong> &mdash; a health news hook (diabetes burden, dialysis, organ transplant, universal donor) traced back to a physiology fundamental &mdash; the GS-III / GS-II health bridge.</li>
+  </ul>
+  <p><strong>Highest-frequency themes:</strong> hormone&ndash;gland pairs &amp; disorders &middot; vitamin &amp; mineral deficiency diseases &middot; blood groups &amp; universal donor/recipient &middot; kidney &amp; dialysis &middot; digestive enzymes &middot; human heart &amp; double circulation &middot; neuron &amp; reflex arc.</p>
+</div>
+
+<!-- ===== SECTION 1 ===== -->
+<section class="notes" id="digestive">
+  <h2>1. Digestive System &amp; Nutrition</h2>
+  <p>Digestion is the breakdown of complex food into simple, absorbable molecules. The human digestive system is a ~9 m <strong>alimentary canal</strong> (mouth &rarr; oesophagus &rarr; stomach &rarr; small intestine &rarr; large intestine &rarr; anus) plus associated glands (salivary glands, liver, pancreas).</p>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 640 220" width="640" height="220" role="img" aria-label="Human alimentary canal from mouth to anus">
+      <rect x="0" y="0" width="640" height="220" fill="#ffffff"/>
+      <g font-family="sans-serif" font-size="12" text-anchor="middle">
+        <rect x="20" y="90" width="70" height="34" rx="6" fill="#e8f0f8" stroke="#1a3d5c"/><text x="55" y="111">Mouth</text>
+        <rect x="110" y="90" width="80" height="34" rx="6" fill="#e8f0f8" stroke="#1a3d5c"/><text x="150" y="111">Oesophagus</text>
+        <rect x="210" y="90" width="70" height="34" rx="6" fill="#fff4e0" stroke="#c47820"/><text x="245" y="111">Stomach</text>
+        <rect x="300" y="90" width="110" height="34" rx="6" fill="#fff4e0" stroke="#c47820"/><text x="355" y="111">Small intestine</text>
+        <rect x="430" y="90" width="110" height="34" rx="6" fill="#e8f0f8" stroke="#1a3d5c"/><text x="485" y="111">Large intestine</text>
+        <rect x="560" y="90" width="60" height="34" rx="6" fill="#e8f0f8" stroke="#1a3d5c"/><text x="590" y="111">Anus</text>
+        <path d="M90 107 h20 M190 107 h20 M280 107 h20 M410 107 h20 M540 107 h20" stroke="#5a6266" stroke-width="1.5" fill="none" marker-end="url(#t03a)"/>
+        <defs><marker id="t03a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#5a6266"/></marker></defs>
+        <text x="245" y="70" font-size="11" fill="#c47820">HCl + pepsin</text>
+        <text x="355" y="160" font-size="11" fill="#1a7a5a">main absorption site</text>
+        <text x="485" y="160" font-size="11" fill="#5a6266">water absorption</text>
+      </g>
+    </svg>
+    <div class="svg-caption">Fig 3.1 &mdash; The alimentary canal. Chemical digestion peaks in the stomach &amp; small intestine; the small intestine is the chief site of absorption.</div>
+  </div>
+
+  <h3>Digestive enzymes &amp; where they act</h3>
+  <table>
+    <tr><th>Region</th><th>Secretion / enzyme</th><th>Acts on</th></tr>
+    <tr><td>Mouth (saliva)</td><td>Salivary amylase (ptyalin)</td><td>Starch &rarr; maltose</td></tr>
+    <tr><td>Stomach (gastric juice)</td><td>HCl + pepsin; rennin (infants)</td><td>Proteins &rarr; peptides; kills microbes</td></tr>
+    <tr><td>Small intestine (pancreas)</td><td>Trypsin, lipase, amylase</td><td>Proteins, fats, carbs</td></tr>
+    <tr><td>Liver</td><td>Bile (no enzyme)</td><td>Emulsifies fats</td></tr>
+    <tr><td>Small intestine (intestinal juice)</td><td>Maltase, lactase, peptidase</td><td>Final breakdown &rarr; glucose, amino acids</td></tr>
+  </table>
+  <div class="callout info"><strong>Key facts:</strong> the <strong>liver</strong> is the largest gland/internal organ; the <strong>pancreas</strong> is both exocrine (enzymes) and endocrine (insulin). Bile is stored in the <strong>gall bladder</strong>. The <strong>small intestine</strong> (with villi) is the main site of absorption; the <strong>large intestine</strong> absorbs water.</div>
+  <div class="callout warn"><strong>GS-III / GS-II hook:</strong> malnutrition, the "hidden hunger" of micronutrient deficiency, and India's fortification &amp; POSHAN Abhiyaan schemes all rest on digestion &amp; nutrition fundamentals.</div>
+</section>
+
+<!-- ===== SECTION 2 ===== -->
+<section class="notes" id="respiratory">
+  <h2>2. Respiratory System</h2>
+  <p>Respiration supplies O&#8322; to cells and removes CO&#8322;. Air path: <strong>nostrils &rarr; pharynx &rarr; larynx (voice box) &rarr; trachea &rarr; bronchi &rarr; bronchioles &rarr; alveoli</strong>. Gas exchange happens across the thin-walled <strong>alveoli</strong> of the lungs.</p>
+  <ul>
+    <li><strong>Breathing mechanism:</strong> the <strong>diaphragm</strong> and intercostal muscles change chest volume &mdash; inhalation (diaphragm flattens) and exhalation (relaxes).</li>
+    <li><strong>Transport:</strong> O&#8322; is carried by <strong>haemoglobin</strong> in RBCs (as oxyhaemoglobin); most CO&#8322; travels as bicarbonate in plasma.</li>
+    <li><strong>Cellular respiration:</strong> glucose + O&#8322; &rarr; CO&#8322; + H&#8322;O + ATP (in mitochondria &mdash; link to Topic 2).</li>
+  </ul>
+  <table>
+    <tr><th>Term</th><th>Meaning</th></tr>
+    <tr><td>Aerobic respiration</td><td>With O&#8322; &rarr; 38 ATP (net ~36); complete breakdown</td></tr>
+    <tr><td>Anaerobic respiration</td><td>Without O&#8322; &rarr; lactic acid (muscle) / ethanol (yeast); little ATP</td></tr>
+    <tr><td>Vital capacity</td><td>Max air exhaled after deepest inhalation</td></tr>
+  </table>
+  <div class="callout"><strong>Health links:</strong> asthma, COPD, TB, silicosis and air-pollution effects (PM2.5) all target the respiratory tract &mdash; recurring GS-III &amp; environment cross-links. <strong>Carbon monoxide</strong> is dangerous because it binds haemoglobin ~200&times; more strongly than O&#8322;.</div>
+</section>
+
+<!-- ===== SECTION 3 ===== -->
+<section class="notes" id="circulatory">
+  <h2>3. Circulatory System &mdash; The Heart</h2>
+  <p>The human heart is a <strong>four-chambered</strong> muscular pump (two atria + two ventricles) that drives <strong>double circulation</strong> &mdash; blood passes through the heart twice per full body circuit (pulmonary + systemic).</p>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 560 260" width="560" height="260" role="img" aria-label="Four-chambered human heart and double circulation">
+      <rect x="0" y="0" width="560" height="260" fill="#ffffff"/>
+      <g font-family="sans-serif" font-size="12" text-anchor="middle">
+        <rect x="180" y="40" width="90" height="70" rx="8" fill="#e8f0f8" stroke="#1a3d5c"/><text x="225" y="70">Right</text><text x="225" y="86">Atrium</text>
+        <rect x="290" y="40" width="90" height="70" rx="8" fill="#fdecec" stroke="#c0392b"/><text x="335" y="70">Left</text><text x="335" y="86">Atrium</text>
+        <rect x="180" y="120" width="90" height="90" rx="8" fill="#e8f0f8" stroke="#1a3d5c"/><text x="225" y="160">Right</text><text x="225" y="176">Ventricle</text>
+        <rect x="290" y="120" width="90" height="90" rx="8" fill="#fdecec" stroke="#c0392b"/><text x="335" y="160">Left</text><text x="335" y="176">Ventricle</text>
+        <text x="90" y="75" font-size="11" fill="#1a3d5c">Deoxygenated</text><text x="90" y="90" font-size="11" fill="#1a3d5c">(from body)</text>
+        <path d="M150 75 h30" stroke="#1a3d5c" stroke-width="2" marker-end="url(#t03b)"/>
+        <text x="470" y="75" font-size="11" fill="#c0392b">Oxygenated</text><text x="470" y="90" font-size="11" fill="#c0392b">(to body / aorta)</text>
+        <path d="M410 75 h-30" stroke="#c0392b" stroke-width="2" marker-end="url(#t03b)"/>
+        <text x="280" y="235" font-size="11" fill="#5a6266">Left ventricle has the thickest wall (pumps to whole body)</text>
+        <defs><marker id="t03b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#5a6266"/></marker></defs>
+      </g>
+    </svg>
+    <div class="svg-caption">Fig 3.2 &mdash; The four-chambered heart. Right side handles deoxygenated blood (to lungs); left side handles oxygenated blood (to body). Valves prevent backflow.</div>
+  </div>
+
+  <ul>
+    <li><strong>Pulmonary circulation:</strong> right ventricle &rarr; lungs &rarr; left atrium (picks up O&#8322;).</li>
+    <li><strong>Systemic circulation:</strong> left ventricle &rarr; aorta &rarr; body &rarr; right atrium (returns CO&#8322;).</li>
+    <li><strong>Arteries</strong> carry blood away from heart (thick, no valves; O&#8322;-rich except pulmonary artery). <strong>Veins</strong> return blood to heart (valves; O&#8322;-poor except pulmonary vein).</li>
+    <li><strong>Pacemaker:</strong> the <strong>SA node</strong> (sino-atrial) sets the heartbeat. Normal rate ~72/min. BP normal ~120/80 mmHg.</li>
+  </ul>
+  <div class="callout warn"><strong>Prelims trap:</strong> the <strong>pulmonary artery</strong> is the only artery carrying deoxygenated blood; the <strong>pulmonary vein</strong> is the only vein carrying oxygenated blood.</div>
+</section>
+
+<!-- ===== SECTION 4 ===== -->
+<section class="notes" id="blood">
+  <h2>4. Blood &amp; Blood Groups</h2>
+  <p>Blood is a <strong>connective tissue</strong> (Topic 2!) with a fluid matrix, <strong>plasma</strong> (~55%), suspending the formed elements (~45%).</p>
+  <table>
+    <tr><th>Component</th><th>Function</th></tr>
+    <tr><td>Plasma</td><td>Transports nutrients, hormones, wastes; ~90% water</td></tr>
+    <tr><td>RBC (erythrocytes)</td><td>Carry O&#8322; (haemoglobin); no nucleus in mammals; made in bone marrow</td></tr>
+    <tr><td>WBC (leucocytes)</td><td>Immunity &amp; defence (link Topic 5)</td></tr>
+    <tr><td>Platelets (thrombocytes)</td><td>Blood clotting</td></tr>
+  </table>
+  <h3>ABO &amp; Rh blood groups</h3>
+  <table>
+    <tr><th>Group</th><th>Antigen (RBC)</th><th>Antibody (plasma)</th><th>Can receive from</th></tr>
+    <tr><td>A</td><td>A</td><td>anti-B</td><td>A, O</td></tr>
+    <tr><td>B</td><td>B</td><td>anti-A</td><td>B, O</td></tr>
+    <tr><td>AB</td><td>A &amp; B</td><td>none</td><td>ALL &mdash; universal recipient</td></tr>
+    <tr><td>O</td><td>none</td><td>anti-A &amp; anti-B</td><td>O only</td></tr>
+  </table>
+  <div class="callout info"><strong>Universal donor = O negative</strong> (no antigens). <strong>Universal recipient = AB positive</strong> (no antibodies). <strong>Rh factor:</strong> Rh+ has the D antigen; Rh&minus; lacks it. An Rh&minus; mother carrying an Rh+ fetus can develop <strong>erythroblastosis fetalis</strong> in later pregnancies &mdash; prevented by anti-D injection.</div>
+  <div class="callout warn"><strong>GS-II health hook:</strong> voluntary blood donation, e-Rakt Kosh blood banks, and thalassaemia/haemophilia (clotting-factor) programmes all build on this.</div>
+</section>
+
+<!-- ===== SECTION 5 ===== -->
+<section class="notes" id="excretory">
+  <h2>5. Excretory System &mdash; The Kidney</h2>
+  <p>Excretion removes nitrogenous wastes (mainly <strong>urea</strong>). The two <strong>kidneys</strong> filter blood; the functional unit is the <strong>nephron</strong> (~1 million per kidney).</p>
+
+  <div class="svg-wrap">
+    <svg viewBox="0 0 560 200" width="560" height="200" role="img" aria-label="Nephron filtration to urine">
+      <rect x="0" y="0" width="560" height="200" fill="#ffffff"/>
+      <g font-family="sans-serif" font-size="12" text-anchor="middle">
+        <circle cx="90" cy="90" r="34" fill="#fdecec" stroke="#c0392b"/><text x="90" y="94">Glomerulus</text>
+        <rect x="180" y="70" width="110" height="40" rx="8" fill="#e8f0f8" stroke="#1a3d5c"/><text x="235" y="88">Tubule</text><text x="235" y="103">(reabsorption)</text>
+        <rect x="330" y="70" width="90" height="40" rx="8" fill="#fff4e0" stroke="#c47820"/><text x="375" y="94">Ureter</text>
+        <rect x="450" y="70" width="90" height="40" rx="8" fill="#e8f0f8" stroke="#1a3d5c"/><text x="495" y="88">Bladder</text><text x="495" y="103">&rarr; urine</text>
+        <path d="M124 90 h56 M290 90 h40 M420 90 h30" stroke="#5a6266" stroke-width="1.5" marker-end="url(#t03c)"/>
+        <text x="90" y="150" font-size="11" fill="#c0392b">filters blood</text>
+        <text x="235" y="150" font-size="11" fill="#1a7a5a">water, glucose, salts back</text>
+        <defs><marker id="t03c" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#5a6266"/></marker></defs>
+      </g>
+    </svg>
+    <div class="svg-caption">Fig 3.3 &mdash; The nephron. The glomerulus filters blood; the tubule reabsorbs useful substances; waste passes as urine via ureter &rarr; bladder.</div>
+  </div>
+
+  <ul>
+    <li><strong>Steps:</strong> glomerular filtration &rarr; tubular reabsorption (glucose, water, salts returned) &rarr; secretion &rarr; urine.</li>
+    <li><strong>Dialysis</strong> = artificial filtering of blood when kidneys fail (haemodialysis). Chronic failure needs a <strong>kidney transplant</strong>.</li>
+    <li>Other excretory organs: <strong>lungs</strong> (CO&#8322;), <strong>skin</strong> (sweat), <strong>liver</strong> (urea formation, bile pigments).</li>
+  </ul>
+  <div class="callout warn"><strong>GS-II health hook:</strong> rising CKD (chronic kidney disease) &amp; diabetes burden, dialysis under PMNDP, and organ-donation (Transplantation of Human Organs Act, NOTTO) are recurring themes.</div>
+</section>
+
+<!-- ===== SECTION 6 ===== -->
+<section class="notes" id="nervous">
+  <h2>6. Nervous System</h2>
+  <p>The nervous system is the body's fast electrical control network. It has the <strong>CNS</strong> (brain + spinal cord) and the <strong>PNS</strong> (nerves). Its unit is the <strong>neuron</strong> (longest cell in the body &mdash; Topic 2).</p>
+  <h3>Parts of the brain</h3>
+  <table>
+    <tr><th>Part</th><th>Controls</th></tr>
+    <tr><td>Cerebrum</td><td>Thinking, memory, voluntary action, intelligence</td></tr>
+    <tr><td>Cerebellum</td><td>Balance, posture, coordination</td></tr>
+    <tr><td>Medulla oblongata</td><td>Involuntary vitals &mdash; heartbeat, breathing, BP</td></tr>
+    <tr><td>Hypothalamus</td><td>Temperature, hunger, thirst; links to endocrine</td></tr>
+  </table>
+  <ul>
+    <li><strong>Neuron parts:</strong> dendrites (receive) &rarr; cell body &rarr; axon (transmit); signal crosses the <strong>synapse</strong> via neurotransmitters.</li>
+    <li><strong>Reflex arc:</strong> a rapid involuntary response (e.g. hand off a hot object) processed by the <strong>spinal cord</strong>, not the brain &mdash; receptor &rarr; sensory neuron &rarr; spinal cord &rarr; motor neuron &rarr; effector.</li>
+    <li><strong>Autonomic:</strong> sympathetic ("fight or flight") vs parasympathetic ("rest and digest").</li>
+  </ul>
+  <div class="callout info"><strong>Prelims facts:</strong> myelin sheath speeds impulses; the medulla controls life-support reflexes; the reflex action is faster because it bypasses the brain.</div>
+</section>
+
+<!-- ===== SECTION 7 ===== -->
+<section class="notes" id="endocrine">
+  <h2>7. Endocrine System &amp; Hormones</h2>
+  <p>The endocrine system is the body's slow chemical control network &mdash; <strong>ductless glands</strong> secrete <strong>hormones</strong> directly into the blood. This is the single most-tested table in physiology.</p>
+  <table>
+    <tr><th>Gland</th><th>Hormone</th><th>Function / disorder</th></tr>
+    <tr><td>Pituitary ("master gland")</td><td>Growth hormone (GH)</td><td>Growth; excess = gigantism/acromegaly, deficiency = dwarfism</td></tr>
+    <tr><td>Thyroid</td><td>Thyroxine (needs iodine)</td><td>Metabolism; deficiency = goitre/cretinism, excess = Graves'</td></tr>
+    <tr><td>Parathyroid</td><td>Parathormone</td><td>Calcium balance</td></tr>
+    <tr><td>Pancreas (islets)</td><td>Insulin &amp; glucagon</td><td>Blood sugar; insulin deficiency = <strong>diabetes mellitus</strong></td></tr>
+    <tr><td>Adrenal</td><td>Adrenaline; cortisol</td><td>"Fight or flight"; stress response</td></tr>
+    <tr><td>Testis / Ovary</td><td>Testosterone / Oestrogen &amp; progesterone</td><td>Secondary sexual characters; reproduction (Topic 4)</td></tr>
+  </table>
+  <div class="callout warn"><strong>High-frequency traps:</strong> pituitary = master gland (but hypothalamus controls it); <strong>iodine</strong> deficiency &rarr; goitre (basis of iodised-salt policy); insulin is made in the pancreas (islets of Langerhans), not the liver; adrenaline is the "emergency hormone".</div>
+  <div class="callout"><strong>GS-II/III hook:</strong> India's huge diabetes &amp; thyroid-disorder burden, the National Iodine Deficiency Disorders Control Programme (NIDDCP), and lifestyle-disease NCD strategy all build on this.</div>
+</section>
+
+<!-- ===== SECTION 8 ===== -->
+<section class="notes" id="skeletal">
+  <h2>8. Skeletal, Muscular &amp; Sense Organs</h2>
+  <ul>
+    <li><strong>Skeletal system:</strong> the adult human body has <strong>206 bones</strong> (a newborn has ~300). Functions: support, protection, movement, blood-cell formation (marrow), mineral storage (Ca, P). The <strong>femur</strong> (thigh) is the longest bone; the <strong>stapes</strong> (ear) is the smallest.</li>
+    <li><strong>Joints:</strong> ball-and-socket (shoulder, hip), hinge (elbow, knee), pivot (neck).</li>
+    <li><strong>Muscles:</strong> skeletal (voluntary, striated), smooth (involuntary), cardiac (heart) &mdash; from Topic 2 tissues.</li>
+  </ul>
+  <h3>Sense organs</h3>
+  <table>
+    <tr><th>Organ</th><th>Key facts</th></tr>
+    <tr><td>Eye</td><td>Retina has rods (dim light) &amp; cones (colour); image forms on retina; myopia = short-sight (concave lens), hypermetropia = long-sight (convex lens)</td></tr>
+    <tr><td>Ear</td><td>Hearing + balance; ear ossicles = malleus, incus, stapes</td></tr>
+    <tr><td>Skin</td><td>Largest organ; touch, temperature, pain</td></tr>
+    <tr><td>Tongue</td><td>Taste (sweet, sour, salt, bitter, umami)</td></tr>
+  </table>
+  <div class="callout info"><strong>Prelims facts:</strong> vitamin A deficiency &rarr; night blindness; cataract = clouding of lens; the smallest bone (stapes) and largest bone (femur) are common one-liners.</div>
+</section>
+
+<!-- ===== SECTION 9 ===== -->
+<section class="notes" id="vitamins">
+  <h2>9. Vitamins, Minerals &amp; Deficiency Diseases</h2>
+  <p>Vitamins are micronutrients needed in tiny amounts. <strong>Fat-soluble = A, D, E, K</strong> (stored in body); <strong>water-soluble = B-complex &amp; C</strong> (not stored, needed daily). This table is a UPSC perennial.</p>
+  <table>
+    <tr><th>Vitamin</th><th>Chemical name</th><th>Deficiency disease</th></tr>
+    <tr><td>A</td><td>Retinol</td><td>Night blindness, xerophthalmia</td></tr>
+    <tr><td>B1</td><td>Thiamine</td><td>Beriberi</td></tr>
+    <tr><td>B3</td><td>Niacin</td><td>Pellagra</td></tr>
+    <tr><td>B12</td><td>Cobalamin</td><td>Pernicious anaemia</td></tr>
+    <tr><td>C</td><td>Ascorbic acid</td><td>Scurvy (bleeding gums)</td></tr>
+    <tr><td>D</td><td>Calciferol</td><td>Rickets (children), osteomalacia (adults)</td></tr>
+    <tr><td>K</td><td>Phylloquinone</td><td>Poor blood clotting</td></tr>
+  </table>
+  <h3>Minerals</h3>
+  <table>
+    <tr><th>Mineral</th><th>Role</th><th>Deficiency</th></tr>
+    <tr><td>Iron</td><td>Haemoglobin</td><td>Anaemia</td></tr>
+    <tr><td>Iodine</td><td>Thyroxine</td><td>Goitre</td></tr>
+    <tr><td>Calcium</td><td>Bones, teeth, clotting</td><td>Weak bones, rickets</td></tr>
+    <tr><td>Fluorine</td><td>Teeth</td><td>Dental caries; excess = fluorosis</td></tr>
+  </table>
+  <div class="callout warn"><strong>GS-II hook:</strong> "hidden hunger" &mdash; iron, iodine &amp; vitamin-A deficiency drive India's food-fortification, POSHAN Abhiyaan, mid-day-meal and anaemia-mukt-Bharat programmes. Vitamin D deficiency is now widespread even in sunny India.</div>
+  <div class="callout info"><strong>Memory hook:</strong> vitamin D is the only one the body makes (in skin, via sunlight); vitamin C deficiency (scurvy) once devastated sailors &mdash; hence "limey".</div>
+</section>
+
+<!-- ===== SECTION 10: CURRENT AFFAIRS ===== -->
+<section class="notes" id="currentaffairs">
+  <h2>10. Current Affairs Link (2024&ndash;2026)</h2>
+  <p>Physiology stays topical through health policy, disease burden and medical technology. Verify the latest before the exam. <span class="update-tag">check for latest update or data</span></p>
+  <div class="callout update"><strong>Diabetes &amp; NCD burden:</strong> India is a "diabetes capital" &mdash; ICMR-INDIAB data show a large diabetic &amp; pre-diabetic population, keeping the insulin/pancreas facts and the NCD strategy topical. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout update"><strong>Organ donation &amp; transplant:</strong> NOTTO reforms, "one nation one policy" for organ transplants, and rising kidney transplants keep excretory-system &amp; ethics angles live. <span class="update-tag">check for latest update or data</span></div>
+  <div class="callout warn"><strong>Anaemia &amp; nutrition:</strong> Anaemia Mukt Bharat and food fortification target iron/iodine/vitamin deficiencies &mdash; direct applications of Section 9. <span class="update-tag">check for latest update or data</span></div>
+  <table>
+    <tr><th>Recent theme</th><th>Fundamental it tests</th><th>Why it matters for UPSC</th></tr>
+    <tr><td>Diabetes / NCD rise</td><td>Insulin, endocrine</td><td>GS-II health; lifestyle diseases.</td></tr>
+    <tr><td>Organ transplant reform</td><td>Kidney, excretory</td><td>GS-II policy + GS-IV ethics.</td></tr>
+    <tr><td>Anaemia Mukt Bharat</td><td>Iron, blood</td><td>GS-II nutrition &amp; women/child health.</td></tr>
+    <tr><td>Millet / fortification push</td><td>Vitamins &amp; minerals</td><td>GS-III food security.</td></tr>
+  </table>
+  <ul>
+    <li><strong>Recurring exam hooks:</strong> master gland &middot; iodine &amp; goitre &middot; universal donor/recipient &middot; vitamin C = scurvy &middot; insulin &amp; pancreas &middot; pulmonary artery paradox &middot; reflex arc bypasses brain.</li>
+  </ul>
+</section>
+
+<!-- ===== SECTION 11: PRELIMS ===== -->
+<section class="notes" id="prelims-pyq">
+  <h2>11. Prelims PYQs</h2>
+  <p style="font-size:13px;color:var(--muted)"><em>Objective questions anchored to genuinely tested UPSC themes on human physiology. Each carries a worked rationale.</em></p>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Endocrine</div>
+    <p class="q-stem"><strong>Q:</strong> Insulin, which regulates blood-sugar level, is secreted by the &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> liver</li>
+      <li class="correct"><span class="opt-key">(b)</span> pancreas</li>
+      <li><span class="opt-key">(c)</span> thyroid</li>
+      <li><span class="opt-key">(d)</span> adrenal gland</li>
+    </ul>
+    <p class="ans">Answer: (b) Insulin is secreted by the beta cells of the islets of Langerhans in the pancreas; its deficiency causes diabetes mellitus.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Vitamins</div>
+    <p class="q-stem"><strong>Q:</strong> Deficiency of which vitamin causes scurvy?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Vitamin A</li>
+      <li><span class="opt-key">(b)</span> Vitamin B12</li>
+      <li class="correct"><span class="opt-key">(c)</span> Vitamin C</li>
+      <li><span class="opt-key">(d)</span> Vitamin D</li>
+    </ul>
+    <p class="ans">Answer: (c) Vitamin C (ascorbic acid) deficiency causes scurvy &mdash; bleeding gums &amp; poor wound healing.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Blood groups</div>
+    <p class="q-stem"><strong>Q:</strong> A person with which blood group is the universal donor?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> AB positive</li>
+      <li><span class="opt-key">(b)</span> A negative</li>
+      <li class="correct"><span class="opt-key">(c)</span> O negative</li>
+      <li><span class="opt-key">(d)</span> B positive</li>
+    </ul>
+    <p class="ans">Answer: (c) O negative has no A/B antigens and no Rh(D) antigen, so it can be given to anyone &mdash; the universal donor. AB positive is the universal recipient.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Heart</div>
+    <p class="q-stem"><strong>Q:</strong> Which blood vessel carries deoxygenated blood?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Aorta</li>
+      <li><span class="opt-key">(b)</span> Pulmonary vein</li>
+      <li class="correct"><span class="opt-key">(c)</span> Pulmonary artery</li>
+      <li><span class="opt-key">(d)</span> Carotid artery</li>
+    </ul>
+    <p class="ans">Answer: (c) The pulmonary artery is the only artery carrying deoxygenated blood (heart &rarr; lungs); the pulmonary vein is the only vein carrying oxygenated blood.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Nervous</div>
+    <p class="q-stem"><strong>Q:</strong> Which part of the brain controls involuntary actions such as heartbeat and breathing?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> Cerebrum</li>
+      <li><span class="opt-key">(b)</span> Cerebellum</li>
+      <li class="correct"><span class="opt-key">(c)</span> Medulla oblongata</li>
+      <li><span class="opt-key">(d)</span> Hypothalamus</li>
+    </ul>
+    <p class="ans">Answer: (c) The medulla oblongata controls vital involuntary functions &mdash; heartbeat, breathing and blood pressure.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Thyroid</div>
+    <p class="q-stem"><strong>Q:</strong> Goitre is caused by the deficiency of &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> iron</li>
+      <li class="correct"><span class="opt-key">(b)</span> iodine</li>
+      <li><span class="opt-key">(c)</span> calcium</li>
+      <li><span class="opt-key">(d)</span> vitamin C</li>
+    </ul>
+    <p class="ans">Answer: (b) Iodine deficiency impairs thyroxine synthesis, enlarging the thyroid (goitre) &mdash; the basis of the iodised-salt policy.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Digestion</div>
+    <p class="q-stem"><strong>Q:</strong> The main site of absorption of digested food in humans is the &mdash;</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> stomach</li>
+      <li class="correct"><span class="opt-key">(b)</span> small intestine</li>
+      <li><span class="opt-key">(c)</span> large intestine</li>
+      <li><span class="opt-key">(d)</span> liver</li>
+    </ul>
+    <p class="ans">Answer: (b) The small intestine, with its villi, is the chief site of absorption; the large intestine mainly absorbs water.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">UPSC Prelims &mdash; Skeleton</div>
+    <p class="q-stem"><strong>Q:</strong> How many bones are there in the adult human body?</p>
+    <ul class="options">
+      <li><span class="opt-key">(a)</span> 300</li>
+      <li><span class="opt-key">(b)</span> 256</li>
+      <li class="correct"><span class="opt-key">(c)</span> 206</li>
+      <li><span class="opt-key">(d)</span> 180</li>
+    </ul>
+    <p class="ans">Answer: (c) An adult has 206 bones; a newborn has ~300, many of which fuse with growth.</p>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Prelims &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> hormone&ndash;gland matching &middot; vitamin&ndash;deficiency matching &middot; universal donor/recipient &middot; pulmonary artery/vein &middot; SA node pacemaker &middot; reflex arc &amp; spinal cord &middot; enzymes &amp; their substrates &middot; nephron &amp; dialysis &middot; smallest/largest bone. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<!-- ===== SECTION 12: MAINS ===== -->
+<section class="notes" id="mains-pyq">
+  <h2>12. Mains PYQs + Model Answers</h2>
+  <p class="q-stem" style="font-size:13px;color:var(--muted)"><em>Physiology anchors applied GS-II/III questions on public health, nutrition and medical technology. The frameworks below show how to deploy it analytically.</em></p>
+
+  <div class="pyq">
+    <div class="year">Mains GS-II <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> "The rising burden of non-communicable diseases (NCDs) like diabetes reflects a nutrition and lifestyle transition in India." Discuss and suggest measures.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction &mdash; define:</strong> NCDs are chronic non-infectious diseases (diabetes, hypertension, heart disease) now causing the majority of deaths in India; diabetes reflects failure of insulin regulation (Section 7).</li>
+        <li><strong>Drivers:</strong>
+          <ul>
+            <li>Dietary transition &mdash; more sugar, refined carbs &amp; processed food; sedentary urban lifestyles; stress; rising obesity.</li>
+            <li>Ageing population and genetic predisposition of Indians to central obesity &amp; insulin resistance.</li>
+          </ul>
+        </li>
+        <li><strong>Consequences:</strong> productivity &amp; economic loss; catastrophic health spending; strain on health system; complications (CKD needing dialysis &mdash; Section 5).</li>
+        <li><strong>Measures:</strong> National NCD programme &amp; population screening; sugar/fat labelling &amp; taxation; millet &amp; balanced-diet promotion (Eat Right India); physical-activity &amp; Fit India; strengthen primary care (Ayushman Bharat HWCs).</li>
+        <li><strong>Way forward:</strong> a preventive, "health-in-all-policies" approach linking nutrition, environment &amp; behaviour.</li>
+        <li><strong>Conclusion:</strong> tackling NCDs needs physiology-informed prevention, not just treatment.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-II <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Micronutrient deficiency ("hidden hunger") persists despite adequate calorie availability in India. Examine the causes and the government's response.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Hidden hunger is deficiency of essential vitamins &amp; minerals (iron, iodine, vitamin A, D) even when calorie intake is sufficient (Section 9).</li>
+        <li><strong>Extent:</strong> high anaemia among women &amp; children (NFHS), widespread vitamin-D &amp; iron deficiency &mdash; impairs immunity, cognition &amp; productivity.</li>
+        <li><strong>Causes:</strong> monotonous cereal-heavy diets; poor dietary diversity; poverty; low awareness; poor absorption due to infection/sanitation.</li>
+        <li><strong>Government response:</strong> POSHAN Abhiyaan; Anaemia Mukt Bharat; food fortification (iodised salt, fortified rice/wheat/oil); mid-day meal &amp; ICDS; millet promotion.</li>
+        <li><strong>Way forward:</strong> dietary diversification, biofortification, behaviour-change communication, convergence across schemes.</li>
+        <li><strong>Conclusion:</strong> fixing hidden hunger needs nutrition-sensitive, not just calorie-focused, policy.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-IV / GS-II <span class="marks">10 marks &middot; 150 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Organ donation in India remains low despite a large need. Discuss the physiological basis and the ethical &amp; policy challenges.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Organ transplantation replaces a failed organ (e.g. kidney &mdash; Section 5) with a healthy donor organ; India's donation rate is far below demand.</li>
+        <li><strong>Physiological basis:</strong> matching (blood group, tissue/HLA) prevents immune rejection; brain-death certification enables deceased donation.</li>
+        <li><strong>Challenges:</strong> low awareness &amp; myths; family reluctance; weak infrastructure; commercial exploitation &amp; organ trafficking; unequal access.</li>
+        <li><strong>Policy &amp; ethics:</strong> Transplantation of Human Organs Act; NOTTO/"one nation one policy"; presumed-consent debate; equity in allocation.</li>
+        <li><strong>Conclusion:</strong> raising donation needs awareness, robust registries &amp; ethical safeguards against a black market.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III <span class="marks">15 marks &middot; 250 words</span></div>
+    <p class="q-stem"><strong>Q:</strong> Explain how the endocrine system maintains homeostasis, with examples of disorders relevant to public health.</p>
+    <div class="model-answer">
+      <h5>Model Answer</h5>
+      <ol>
+        <li><strong>Introduction:</strong> Homeostasis is the maintenance of a stable internal environment; the endocrine system does this chemically via hormones from ductless glands (Section 7).</li>
+        <li><strong>Mechanism:</strong>
+          <ul>
+            <li><strong>Feedback loops</strong> &mdash; e.g. insulin &amp; glucagon keep blood glucose steady; thyroxine sets metabolic rate; hypothalamus&ndash;pituitary axis coordinates the rest.</li>
+            <li>Slow but widespread &amp; sustained control, complementing the fast nervous system.</li>
+          </ul>
+        </li>
+        <li><strong>Disorders &amp; public health:</strong> diabetes (insulin); goitre/cretinism (iodine); dwarfism/gigantism (GH); each a major population-health issue.</li>
+        <li><strong>Policy links:</strong> iodised salt (NIDDCP), NCD screening, and thyroid/diabetes management build on this.</li>
+        <li><strong>Conclusion:</strong> endocrine balance is central to health; its failure translates directly into disease burden and policy need.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="pyq">
+    <div class="year">Mains GS-III &mdash; anticipated themes</div>
+    <p class="q-stem"><strong>Likely:</strong> NCD &amp; diabetes burden &middot; hidden hunger &amp; fortification &middot; organ donation ethics &middot; endocrine homeostasis &middot; blood donation &amp; safety &middot; dialysis &amp; CKD. <span class="update-tag">check for latest update or data</span></p>
+  </div>
+</section>
+
+<section class="notes" id="revision">
+  <h2>15-Minute Revision Box</h2>
+  <div class="revision-box">
+    <h3>Must-Remember Facts &mdash; Human Physiology</h3>
+    <div class="grid-2">
+      <div>
+        <strong>Digestion &amp; respiration:</strong>
+        <ul>
+          <li>Liver = largest gland; pancreas = exo + endocrine; bile emulsifies fat</li>
+          <li>Small intestine = main absorption; large intestine = water</li>
+          <li>Pulmonary artery = deoxygenated; pulmonary vein = oxygenated</li>
+          <li>CO binds haemoglobin ~200&times; stronger than O&#8322;</li>
+        </ul>
+        <strong>Heart &amp; blood:</strong>
+        <ul>
+          <li>4 chambers; left ventricle = thickest; SA node = pacemaker; ~72/min, 120/80</li>
+          <li>Blood = connective tissue; O&minus; = universal donor, AB+ = universal recipient</li>
+          <li>Platelets clot; RBC = haemoglobin (no nucleus in mammals)</li>
+        </ul>
+        <strong>Excretion &amp; nervous:</strong>
+        <ul>
+          <li>Nephron = kidney unit; urea = main waste; dialysis when kidneys fail</li>
+          <li>Cerebrum = thinking, cerebellum = balance, medulla = heartbeat/breathing</li>
+          <li>Reflex arc = spinal cord (bypasses brain)</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Hormones (gland &rarr; disorder):</strong>
+        <ul>
+          <li>Pituitary = master gland &rarr; dwarfism/gigantism</li>
+          <li>Thyroid (iodine) &rarr; goitre/cretinism</li>
+          <li>Pancreas (insulin) &rarr; diabetes</li>
+          <li>Adrenaline = emergency hormone</li>
+        </ul>
+        <strong>Vitamins (deficiency):</strong>
+        <ul>
+          <li>A &rarr; night blindness; C &rarr; scurvy; D &rarr; rickets</li>
+          <li>B1 &rarr; beriberi; B3 &rarr; pellagra; B12 &rarr; pernicious anaemia; K &rarr; poor clotting</li>
+          <li>Fat-soluble = A,D,E,K; water-soluble = B,C</li>
+        </ul>
+        <strong>Minerals &amp; bones:</strong>
+        <ul>
+          <li>Iron &rarr; anaemia; iodine &rarr; goitre; calcium &rarr; bones</li>
+          <li>206 bones; femur = longest, stapes = smallest</li>
+          <li>Vitamin A &rarr; night blindness; eye: rods (dim) + cones (colour)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn" style="margin-top:14px"><strong>Highest-frequency themes:</strong> hormone&ndash;gland pairs &middot; vitamin&ndash;disease pairs &middot; universal donor/recipient &middot; pulmonary artery paradox &middot; master gland &middot; iodine &amp; goitre &middot; reflex arc bypasses brain &middot; nephron &amp; dialysis.</div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== SIDEBAR ===== -->
+<aside>
+<div class="aside-sticky">
+
+  <div class="widget">
+    <h4>Quick Reference &mdash; Body Systems</h4>
+    <table>
+      <tr><th>System</th><th>Key organ</th></tr>
+      <tr><td>Digestive</td><td>Small intestine</td></tr>
+      <tr><td>Respiratory</td><td>Lungs (alveoli)</td></tr>
+      <tr><td>Circulatory</td><td>Heart</td></tr>
+      <tr><td>Excretory</td><td>Kidney</td></tr>
+      <tr><td>Nervous</td><td>Brain</td></tr>
+      <tr><td>Endocrine</td><td>Pituitary</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Hormone &rarr; Gland</h4>
+    <table>
+      <tr><th>Hormone</th><th>Gland</th></tr>
+      <tr><td>Insulin</td><td>Pancreas</td></tr>
+      <tr><td>Thyroxine</td><td>Thyroid</td></tr>
+      <tr><td>Adrenaline</td><td>Adrenal</td></tr>
+      <tr><td>Growth hormone</td><td>Pituitary</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Vitamin &rarr; Deficiency</h4>
+    <table>
+      <tr><th>Vitamin</th><th>Disease</th></tr>
+      <tr><td>A</td><td>Night blindness</td></tr>
+      <tr><td>B1</td><td>Beriberi</td></tr>
+      <tr><td>C</td><td>Scurvy</td></tr>
+      <tr><td>D</td><td>Rickets</td></tr>
+    </table>
+  </div>
+
+  <div class="widget">
+    <h4>Difficulty &amp; Importance</h4>
+    <div class="bar"><span class="lbl">Prelims</span><span class="fill"><span style="width:95%"></span></span></div>
+    <div class="bar"><span class="lbl">Mains GS-II/III</span><span class="fill"><span style="width:62%"></span></span></div>
+    <div class="bar"><span class="lbl">Static Facts</span><span class="fill"><span style="width:97%"></span></span></div>
+    <div class="bar"><span class="lbl">Current Affairs</span><span class="fill"><span style="width:60%"></span></span></div>
+    <p style="margin-top:8px;font-size:11px;color:var(--muted);">Top-scoring static area &mdash; tables win marks.</p>
+  </div>
+
+  <div class="widget">
+    <h4>Physiology at a Glance</h4>
+    <ul>
+      <li>Digestive enzymes &amp; sites</li>
+      <li>Respiration &amp; gas exchange</li>
+      <li>Heart &amp; double circulation</li>
+      <li>Blood groups &amp; Rh</li>
+      <li>Kidney &amp; dialysis</li>
+      <li>Brain parts &amp; reflex</li>
+      <li>Hormones &amp; disorders</li>
+      <li>Vitamins &amp; deficiency</li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Must-Know Tags</h4>
+    <span class="tag orange">Master gland = pituitary</span>
+    <span class="tag">Insulin = pancreas</span>
+    <span class="tag green">O&minus; universal donor</span>
+    <span class="tag">AB+ universal recipient</span>
+    <span class="tag orange">Iodine = goitre</span>
+    <span class="tag">C = scurvy</span>
+    <span class="tag green">D = rickets</span>
+    <span class="tag">206 bones</span>
+    <span class="tag orange">Pulmonary artery = deoxy</span>
+    <span class="tag">Medulla = heartbeat</span>
+  </div>
+
+  <div class="widget">
+    <h4>Data Sources to Bookmark</h4>
+    <ul>
+      <li><a href="https://www.mohfw.gov.in" target="_blank" rel="noopener">Ministry of Health &amp; FW</a></li>
+      <li><a href="https://www.icmr.gov.in" target="_blank" rel="noopener">ICMR</a></li>
+      <li><a href="https://www.notto.gov.in" target="_blank" rel="noopener">NOTTO</a> &mdash; organ donation</li>
+      <li><a href="https://pib.gov.in" target="_blank" rel="noopener">PIB</a></li>
+    </ul>
+    <p style="font-size:10px;color:var(--muted);margin:6px 0 0"><span class="update-tag">check latest</span></p>
+  </div>
+
+  <div class="widget">
+    <h4>Related Topics</h4>
+    <ul class="related">
+      <li><a href="/science-technology/the-cell-and-tissues">S&amp;T T2: Cell &amp; Tissues</a></li>
+      <li><a href="/science-technology/reproduction-and-genetics">S&amp;T T4: Reproduction &amp; Genetics</a></li>
+      <li><a href="/science-technology/immunity-diseases-and-health">S&amp;T T5: Immunity &amp; Diseases</a></li>
+      <li><a href="/science-technology/biotechnology">S&amp;T T10: Biotechnology</a></li>
+      <li><a href="/science-technology">All UPSC Notes</a></li>
+    </ul>
+  </div>
+
+  <div class="widget">
+    <h4>Quick Navigation</h4>
+    <ul style="list-style:none;padding:0;margin:0;">
+      <li style="margin:4px 0;"><a href="#digestive" style="font-size:12px;">Digestive System</a></li>
+      <li style="margin:4px 0;"><a href="#respiratory" style="font-size:12px;">Respiratory System</a></li>
+      <li style="margin:4px 0;"><a href="#circulatory" style="font-size:12px;">Heart</a></li>
+      <li style="margin:4px 0;"><a href="#blood" style="font-size:12px;">Blood &amp; Blood Groups</a></li>
+      <li style="margin:4px 0;"><a href="#excretory" style="font-size:12px;">Kidney</a></li>
+      <li style="margin:4px 0;"><a href="#nervous" style="font-size:12px;">Nervous System</a></li>
+      <li style="margin:4px 0;"><a href="#endocrine" style="font-size:12px;">Hormones</a></li>
+      <li style="margin:4px 0;"><a href="#skeletal" style="font-size:12px;">Skeleton &amp; Senses</a></li>
+      <li style="margin:4px 0;"><a href="#vitamins" style="font-size:12px;">Vitamins &amp; Minerals</a></li>
+      <li style="margin:4px 0;"><a href="#currentaffairs" style="font-size:12px;">Current Affairs</a></li>
+      <li style="margin:4px 0;"><a href="#prelims-pyq" style="font-size:12px;">Prelims PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#mains-pyq" style="font-size:12px;">Mains PYQs</a></li>
+      <li style="margin:4px 0;"><a href="#revision" style="font-size:12px;">Revision Box</a></li>
+    </ul>
+  </div>
+
+</div>
+</aside>
+
+</div>
+</div>
