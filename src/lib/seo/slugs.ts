@@ -6,6 +6,7 @@ export const SUBJECT_SLUG: Record<SubjectKey, string> = {
   ancient: "ancient-history",
   medieval: "medieval-history",
   history: "modern-history",
+  postindependence: "post-independence",
   worldhistory: "world-history",
   culture: "art-culture",
   geo: "geography",

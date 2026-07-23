@@ -25,6 +25,10 @@ import {
   isCultureTopicId,
 } from "@/lib/culture-notes";
 import {
+  getPostindependenceTopicSlug,
+  isPostindependenceTopicId,
+} from "@/lib/postindependence-notes";
+import {
   getEconomyTopicSlug,
   isEconomyTopicId,
 } from "@/lib/economy-notes";
@@ -88,6 +92,12 @@ export function topicPath(subjectKey: SubjectKey, chapterId: string): string {
   if (subjectKey === "history" && isModernTopicId(chapterId)) {
     return `${subjectHubPath("history")}/${getModernTopicSlug(chapterId)}`;
   }
+  if (
+    subjectKey === "postindependence" &&
+    isPostindependenceTopicId(chapterId)
+  ) {
+    return `${subjectHubPath("postindependence")}/${getPostindependenceTopicSlug(chapterId)}`;
+  }
   if (subjectKey === "worldhistory" && isWorldTopicId(chapterId)) {
     return `${subjectHubPath("worldhistory")}/${getWorldTopicSlug(chapterId)}`;
   }
@@ -148,6 +158,13 @@ export function getChapterByTopicSlug(
     return subject.chapters.find(
       (ch) =>
         isModernTopicId(ch.id) && getModernTopicSlug(ch.id) === slug,
+    );
+  }
+  if (subjectKey === "postindependence") {
+    return subject.chapters.find(
+      (ch) =>
+        isPostindependenceTopicId(ch.id) &&
+        getPostindependenceTopicSlug(ch.id) === slug,
     );
   }
   if (subjectKey === "worldhistory") {
@@ -237,6 +254,13 @@ export function getChapterHref(
     if (!isModernTopicId(chapter.id)) return null;
     return topicPath("history", chapter.id);
   }
+  if (
+    subjectKey === "postindependence" ||
+    isPostindependenceTopicId(chapter.id)
+  ) {
+    if (!isPostindependenceTopicId(chapter.id)) return null;
+    return topicPath("postindependence", chapter.id);
+  }
   if (subjectKey === "worldhistory" || isWorldTopicId(chapter.id)) {
     if (!isWorldTopicId(chapter.id)) return null;
     return topicPath("worldhistory", chapter.id);
@@ -303,6 +327,14 @@ export function getAllTopicPaths(): { subjectKey: SubjectKey; slug: string }[] {
         paths.push({ subjectKey: key, slug: getMedievalTopicSlug(ch.id) });
       } else if (key === "history" && isModernTopicId(ch.id)) {
         paths.push({ subjectKey: key, slug: getModernTopicSlug(ch.id) });
+      } else if (
+        key === "postindependence" &&
+        isPostindependenceTopicId(ch.id)
+      ) {
+        paths.push({
+          subjectKey: key,
+          slug: getPostindependenceTopicSlug(ch.id),
+        });
       } else if (key === "worldhistory" && isWorldTopicId(ch.id)) {
         paths.push({ subjectKey: key, slug: getWorldTopicSlug(ch.id) });
       } else if (key === "worldgeo" && isWorldGeoTopicId(ch.id)) {
@@ -331,6 +363,7 @@ export function getAllTopicPaths(): { subjectKey: SubjectKey; slug: string }[] {
         key !== "ancient" &&
         key !== "medieval" &&
         key !== "history" &&
+        key !== "postindependence" &&
         key !== "worldhistory" &&
         key !== "worldgeo" &&
         key !== "ethics" &&

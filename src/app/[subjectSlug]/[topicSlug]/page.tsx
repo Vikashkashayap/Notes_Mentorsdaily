@@ -32,6 +32,10 @@ import { isSocietyTopicId, type SocietyTopicId } from "@/lib/society-notes";
 import { isSecurityTopicId, type SecurityTopicId } from "@/lib/security-notes";
 import { isDisasterTopicId, type DisasterTopicId } from "@/lib/disaster-notes";
 import { isCultureTopicId, type CultureTopicId } from "@/lib/culture-notes";
+import {
+  isPostindependenceTopicId,
+  type PostindependenceTopicId,
+} from "@/lib/postindependence-notes";
 import { isEconomyTopicId, type EconomyTopicId } from "@/lib/economy-notes";
 import {
   isEnvironmentTopicId,
@@ -52,6 +56,8 @@ import { DisasterTopicFooterNav } from "@/components/notes/DisasterTopicFooterNa
 import { DisasterTopicNotesBody } from "@/components/notes/DisasterTopicNotesBody";
 import { CultureTopicFooterNav } from "@/components/notes/CultureTopicFooterNav";
 import { CultureTopicNotesBody } from "@/components/notes/CultureTopicNotesBody";
+import { PostindependenceTopicFooterNav } from "@/components/notes/PostindependenceTopicFooterNav";
+import { PostindependenceTopicNotesBody } from "@/components/notes/PostindependenceTopicNotesBody";
 import { EconomyTopicFooterNav } from "@/components/notes/EconomyTopicFooterNav";
 import { EconomyTopicNotesBody } from "@/components/notes/EconomyTopicNotesBody";
 import { EnvironmentTopicFooterNav } from "@/components/notes/EnvironmentTopicFooterNav";
@@ -118,6 +124,9 @@ export default async function TopicPage({ params }: PageProps) {
   const isSecurity = subjectKey === "security" && isSecurityTopicId(chapter.id);
   const isDisaster = subjectKey === "disaster" && isDisasterTopicId(chapter.id);
   const isCulture = subjectKey === "culture" && isCultureTopicId(chapter.id);
+  const isPostindependence =
+    subjectKey === "postindependence" &&
+    isPostindependenceTopicId(chapter.id);
   const isEconomy = subjectKey === "economy" && isEconomyTopicId(chapter.id);
   const isEnvironment =
     subjectKey === "environment" && isEnvironmentTopicId(chapter.id);
@@ -241,6 +250,17 @@ export default async function TopicPage({ params }: PageProps) {
       <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
         <CultureTopicNotesBody topicId={topicId} />
         <CultureTopicFooterNav topicId={topicId} />
+        <TopicNotesEnhancements />
+      </TopicPageLayout>
+    );
+  }
+
+  if (isPostindependence) {
+    const topicId = chapter.id as PostindependenceTopicId;
+    return (
+      <TopicPageLayout subjectKey={subjectKey} chapter={chapter}>
+        <PostindependenceTopicNotesBody topicId={topicId} />
+        <PostindependenceTopicFooterNav topicId={topicId} />
         <TopicNotesEnhancements />
       </TopicPageLayout>
     );

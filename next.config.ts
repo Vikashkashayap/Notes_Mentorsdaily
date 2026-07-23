@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
       { source: "/upsc-notes/worldhistory", destination: "/world-history", permanent: true },
       { source: "/upsc-notes/world", destination: "/world-history", permanent: true },
       { source: "/upsc-notes/culture", destination: "/art-culture", permanent: true },
+      { source: "/upsc-notes/postindependence", destination: "/post-independence", permanent: true },
       { source: "/upsc-notes/geo", destination: "/geography", permanent: true },
       { source: "/upsc-notes/worldgeo", destination: "/world-geography", permanent: true },
       { source: "/upsc-notes/economy", destination: "/economy", permanent: true },
